@@ -1,5 +1,316 @@
 # 03. Psicologia como ciência: o método científico aplicado ao comportamento
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o que é uma definição operacional e por que ela é indispensável — e insuficiente sozinha.
+- **Identificar** as falácias do *jingle* e do *jangle* em afirmações sobre medidas psicológicas.
+- **Descrever** por que o objeto de estudo da psicologia reage a ser estudado, e como características de demanda, efeitos do experimentador e placebo ameaçam a inferência.
+- **Justificar** o duplo-cego a partir do problema que ele resolve, em vez de tratá-lo como formalidade.
+- **Reconhecer** o *p-hacking*, o HARKing e o jardim dos caminhos que se bifurcam como fontes de falso-positivo.
+- **Avaliar** o pré-registro e a ciência aberta como respostas estruturais, entendendo o que cada um corrige e o que não corrige.
 :::
+
+O Cap. 1 estabeleceu que a psicologia se distingue do senso comum pelo método, e o Cap. 2 mostrou onde o método decide e onde não decide. Falta a pergunta do meio: **como**, exatamente, se aplica o método científico a algo tão escorregadio quanto o comportamento?
+
+A pergunta não é retórica. A física estuda objetos que não sabem que estão sendo estudados, não têm opinião sobre a hipótese e não tentam ajudar o pesquisador. Um elétron não muda de comportamento por simpatia. Um participante de pesquisa faz as três coisas, e isso não é um detalhe incômodo — é a característica que define os problemas metodológicos desta ciência.
+
+Este capítulo trata da lógica dessa adaptação. O Vol 3 fará o trabalho técnico — desenhos, amostragem, estatística. Aqui interessa o raciocínio: **por que** cada salvaguarda existe e que erro específico ela previne. Quem entende isso lê um artigo científico de outro jeito, e é o objetivo declarado do Cap. 21.
+
+## O problema da medida
+
+### Definições operacionais
+
+Suponha a hipótese: "frustração aumenta a agressividade". Ela parece testável até você tentar testá-la. O que é frustração? O que conta como agressividade? Sem uma resposta pública, dois pesquisadores podem "testar a mesma hipótese" e medir coisas diferentes, e nenhuma discordância entre eles jamais se resolveria.
+
+Uma **definição operacional** especifica o conjunto de operações pelas quais uma variável é produzida ou medida. Frustração pode ser operacionalizada como "ser interrompido a 90% de uma tarefa com recompensa prometida". Agressividade, como "intensidade do ruído que o participante escolhe direcionar a outro". A ideia vem da física — Bridgman propôs que o significado de um conceito científico se esgota nas operações que o medem [@bridgman1927] — e é a exigência mínima para que a psicologia produza afirmações verificáveis.
+
+O operacionismo estrito, na versão de Bridgman, foi abandonado, e é importante entender por quê. Se o conceito **é** a operação, então cada medida diferente define um conceito diferente: a inteligência medida pelo teste A seria outra coisa que a inteligência medida pelo teste B, e falar de "inteligência" em geral seria ilegítimo. Isso é insustentável e paralisa a ciência.
+
+A saída, que organiza a psicologia até hoje, são as **operações convergentes**: nenhuma medida isolada define o construto, mas várias medidas imperfeitas e independentes, quando convergem, triangulam algo real [@garner1956]. É por isso que a ansiedade é estudada simultaneamente por autorrelato, comportamento de esquiva, condutância da pele e cortisol. Cada medida tem defeitos próprios; se todas apontam na mesma direção, é implausível que o resultado seja artefato de todas ao mesmo tempo, porque seus defeitos são diferentes.
+
+A @fig-operacionalizacao organiza o esquema.
+
+::: {#fig-operacionalizacao}
+```{.tikz}
+%%| filename: operacionalizacao
+%%| alt: Diagrama da operacionalização. No topo, uma caixa azul representa o construto latente "Ansiedade", que não é observável diretamente. Dela partem setas para baixo em direção a quatro medidas observáveis distintas, dispostas lado a lado: autorrelato em questionário, comportamento de esquiva, condutância da pele e nível de cortisol. Uma chave abaixo das quatro medidas indica que sua convergência é o que triangula o construto, já que cada medida isolada tem defeitos próprios e diferentes.
+\begin{tikzpicture}[
+  lat/.style={draw, thick, rounded corners=4pt, draw=manualblue, fill=manualblue!8,
+              minimum width=3.6cm, minimum height=1.1cm, align=center, font=\small\bfseries},
+  med/.style={draw, thick, rounded corners=3pt, draw=manualgreen, fill=manualgreen!8,
+              minimum width=2.3cm, minimum height=1.0cm, align=center, font=\scriptsize},
+  f/.style={->, >=Stealth, thick, manualgray}
+]
+  \node[lat] (c) at (0,2.6) {Ansiedade\\{\scriptsize\mdseries construto latente — não observável}};
+
+  \node[med] (m1) at (-5.1,0) {autorrelato\\{\tiny(questionário)}};
+  \node[med] (m2) at (-1.7,0) {esquiva\\{\tiny(comportamento)}};
+  \node[med] (m3) at (1.7,0)  {condutância\\da pele};
+  \node[med] (m4) at (5.1,0)  {cortisol\\{\tiny(hormônio)}};
+
+  \foreach \m in {m1,m2,m3,m4} { \draw[f] (c) -- (\m); }
+
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, manualgray, thick]
+    (-5.1,-0.75) -- (5.1,-0.75);
+  \node[font=\scriptsize, text=manualgray, align=center, anchor=north] at (0,-1.15)
+    {\textbf{operações convergentes}: cada medida é imperfeita, mas seus defeitos\\
+     são diferentes — a convergência é que torna o construto crível};
+\end{tikzpicture}
+```
+Um construto latente não é observado diretamente: ele é triangulado por medidas independentes. Nenhuma delas *é* a ansiedade; juntas, e apenas se convergirem, elas a tornam mensurável.
+:::
+
+::: {.atencao}
+**As falácias do *jingle* e do *jangle*.**
+
+Dois erros simétricos assombram a leitura de resultados psicológicos.
+
+A falácia do ***jingle***: supor que duas medidas com o **mesmo nome** medem a mesma coisa. "Autoestima" num inventário clínico e "autoestima" num questionário de uma revista compartilham o rótulo e pouco mais. "Inteligência emocional" designa, na literatura, ao menos duas famílias de construtos bastante diferentes.
+
+A falácia do ***jangle***: supor que duas medidas com **nomes diferentes** medem coisas diferentes. Vários construtos de personalidade rebatizados ao longo de décadas correlacionam-se tão alto entre si que é difícil sustentar que sejam distintos.
+
+Campbell e Fiske propuseram a solução formal: uma medida precisa exibir **validade convergente** (correlacionar-se com outras medidas do mesmo construto) e **validade discriminante** (não se correlacionar demais com medidas de construtos diferentes) [@campbell_fiske1959]. Ao ler qualquer afirmação sobre uma medida psicológica, a pergunta certa nunca é "o nome faz sentido?", e sim **"o que exatamente foi medido, e como sabemos que é isso?"**. O Vol 3, Cap. 16 desenvolve o assunto.
+:::
+
+## O objeto de estudo reage
+
+Aqui está a diferença que separa a psicologia das ciências naturais. Um mineral não tem hipótese sobre o que o geólogo espera encontrar. Um participante tem — e age de acordo com ela.
+
+### Características de demanda
+
+Martin Orne observou algo desconfortável: participantes de experimentos não são passivos. Eles tentam descobrir do que trata o estudo e, em geral, tentam **colaborar** — comportando-se como imaginam que o "bom participante" deveria. Todas as pistas que permitem essa inferência — instruções, ambiente, o que se rumoreja, o próprio jeito do experimentador — são as **características de demanda** [@orne1962].
+
+Orne demonstrou o ponto com uma elegância cruel. Procurando uma tarefa tão tediosa que qualquer pessoa a abandonaria, propôs a participantes somar milhares de números em folhas que, ao terminar cada uma, deviam rasgar em pedaços e jogar fora — para então começar outra. A tarefa era literalmente sem propósito e sem produto. Os participantes seguiram por horas. O motivo não era a tarefa: era o contexto. Estar num experimento legitima quase qualquer pedido; o participante presume que há uma razão, mesmo quando não há.
+
+A consequência é grave: se o participante adivinha a hipótese, ele pode confirmá-la por cortesia. O resultado positivo não seria fraude — seria um efeito real do experimento sobre o participante, só que não o efeito que se pretendia medir.
+
+### Efeitos do experimentador
+
+O outro lado é pior, porque o contaminador não sabe que contamina.
+
+::: {.experimento}
+**Ratos "brilhantes" e ratos "burros"** [@rosenthal_fode1963]
+
+**Desenho.** Rosenthal e Fode entregaram ratos a estudantes de psicologia para uma tarefa de labirinto. A metade deles foi informada de que seus ratos vinham de uma linhagem geneticamente selecionada para aprender rápido (*maze-bright*); a outra metade, de que os seus eram lentos (*maze-dull*). Na verdade os ratos eram os mesmos, distribuídos **ao acaso** entre os alunos.
+
+**Resultado.** Os ratos rotulados como brilhantes tiveram desempenho superior aos rotulados como lentos.
+
+**Interpretação.** Como a expectativa estava apenas na cabeça do estudante, o efeito só pode ter sido produzido por ele — provavelmente por diferenças sutis no manuseio dos animais, na atenção e no registro das medidas. Ninguém trapaceou conscientemente. O viés operou por vias que os próprios experimentadores não percebiam, o que é exatamente o que o Cap. 1 previa com Nisbett e Wilson: não se tem acesso privilegiado aos próprios processos.
+
+**Limitações.** Amostra pequena, e o estudo é dos anos 1960. O programa que Rosenthal derivou dele — o efeito Pigmalião, segundo o qual expectativas de professores elevariam o QI de alunos [@rosenthal_jacobson1968] — é **bem mais contestado**: replicações produziram resultados inconsistentes e efeitos muito menores, e a crítica metodológica ao estudo original é substancial. O Vol 15, Cap. 98 trata dessa literatura com o cuidado devido. O que sobrevive robustamente é a lição metodológica: **quem sabe a hipótese pode influenciar o resultado sem querer**.
+:::
+
+O ancestral desse problema é anterior à psicologia experimental e continua sendo a melhor ilustração dele.
+
+::: {.estudo-caso}
+**Hans, o Esperto**
+
+No início do século XX, o cavalo Hans, do professor von Osten, aparentemente fazia aritmética. Perguntavam "quanto é 5 mais 3?" e ele batia o casco oito vezes. Acertava raízes quadradas, datas, notas musicais. Uma comissão de especialistas examinou o caso e não encontrou fraude — von Osten era sincero e não estava enganando ninguém.
+
+Oskar Pfungst resolveu o enigma com dois experimentos simples [@pfungst1911]. Primeiro: Hans só acertava se **quem perguntava sabia a resposta**. Segundo: Hans só acertava se **podia ver** quem perguntava. A explicação: ao se aproximar do número correto de batidas, o interrogador relaxava ou movia imperceptivelmente a cabeça, e Hans — que era, de fato, extraordinário — havia aprendido a ler essa pista e parar.
+
+**Por que este caso importa.** Hans não fazia contas; fazia algo mais interessante: detectava sinais involuntários que os humanos presentes não sabiam estar emitindo. É o efeito do experimentador em estado puro, e o desenho de Pfungst é a solução ainda usada: **cegar a fonte da informação**. Este caso reaparece toda vez que alguém alega comunicação facilitada, detecção sobrenatural ou capacidade extraordinária avaliada por quem torce pelo resultado.
+:::
+
+### Placebo e a necessidade do duplo-cego
+
+Some os dois problemas — o participante quer melhorar, o pesquisador quer que melhore — e a conclusão é inevitável: comparar "tratamento" com "nada" não isola o efeito do tratamento.
+
+O **cego simples** mantém o participante ignorante da condição; o **duplo-cego**, também o experimentador que aplica e avalia. O duplo-cego não é burocracia: é a única forma conhecida de impedir que a expectativa de qualquer das partes produza o resultado. Foi isso que o teste da astrologia do Cap. 1 fez direito.
+
+::: {.atencao}
+**"O efeito placebo é poderosíssimo."**
+
+Afirmação repetida à exaustão, e mais frágil do que parece. Hróbjartsson e Gøtzsche reuniram ensaios clínicos que continham **três** braços — tratamento, placebo e *nenhum tratamento* — o que permite comparar o placebo com a ausência de intervenção, e não apenas com o tratamento. O achado: em desfechos **objetivos** (pressão arterial, exames laboratoriais), o placebo teve pouco ou nenhum efeito; efeitos apareciam sobretudo em desfechos **subjetivos** relatados pelo paciente, com destaque para dor, e ainda assim modestos [@hrobjartsson_gotzsche2001].
+
+A confusão vem de atribuir ao placebo o que na verdade é **regressão à média** (Cap. 18), remissão espontânea e viés de relato: pessoas procuram tratamento quando estão pior, e tendem a melhorar de qualquer forma. O grupo "nenhum tratamento" revela quanto dessa melhora aconteceria sozinha — e é justamente ele que quase nunca existe. Isso não torna o placebo irrelevante: dor e sofrimento subjetivo importam, e são o alvo de boa parte da clínica. Mas "o placebo cura" é uma extrapolação que os dados não sustentam.
+
+O mesmo raciocínio, no Cap. 5: quando um site diz que uma prática "funciona porque as pessoas melhoram", pergunte **comparado com o quê**.
+:::
+
+::: {.na-pratica}
+**O efeito Hawthorne, e por que ele é um bom exemplo de tudo isto**
+
+Você provavelmente já ouviu: nos anos 1920, na fábrica Hawthorne da Western Electric, pesquisadores variaram a iluminação e observaram que a produtividade subia — e subia também quando a luz *diminuía*. A conclusão virou folclore de manual: as pessoas melhoram simplesmente por saberem que estão sendo observadas. É o "efeito Hawthorne", citado há décadas como o exemplo canônico de reatividade.
+
+Levitt e List conseguiram localizar os dados originais dos experimentos de iluminação — que se acreditavam perdidos — e reanalisaram-nos. O padrão dramático **não se sustenta**: boa parte do que era lido como efeito da observação se explica por artefatos como o fato de os experimentos começarem às segundas-feiras (a produção já subia às segundas de qualquer modo) e por tendências sazonais. A evidência de um efeito Hawthorne nos dados originais é, na melhor das hipóteses, fraca [@levitt_list2011].
+
+A ironia é perfeita, e vale como resumo do capítulo. O exemplo mais famoso de "as pessoas mudam quando observadas" é, ele próprio, um caso de leitura frouxa de dados que sobreviveu por repetição. Duas lições ficam: **reatividade é real e precisa ser controlada** — é o que justifica cegar, disfarçar hipóteses e usar medidas não reativas; e **a fama de um achado não é evidência dele** (Cap. 1). Ao ouvir "está provado pelo experimento de Hawthorne", a resposta certa é: qual dado, exatamente?
+:::
+
+## Como um resultado falso nasce sem ninguém mentir
+
+Suponha agora que tudo isso foi controlado: definições operacionais claras, duplo-cego, grupo controle. O resultado ainda pode ser falso — e é aqui que a psicologia aprendeu sua lição mais dura.
+
+### Graus de liberdade do pesquisador
+
+Ao analisar dados, o pesquisador toma dezenas de decisões pequenas e defensáveis. Excluir participantes com tempos de resposta absurdos? Onde cortar? Incluir sexo como covariável? Coletar mais 20 participantes, já que está perto de significativo? Analisar as três medidas de agressividade separadamente ou combiná-las? Cada escolha é razoável. O problema é que, se você as toma **olhando para o resultado**, você já não está testando uma hipótese: está procurando um número.
+
+Simmons, Nelson e Simonsohn deram a esse conjunto o nome de **graus de liberdade do pesquisador** e provaram o ponto de forma inesquecível. Por simulação, mostraram que combinações modestas dessas escolhas elevam a taxa de falso-positivo de 5% para mais de 60%. E então fizeram um experimento real, com participantes reais, cujo resultado — estatisticamente significativo — era que **ouvir uma certa canção deixava as pessoas literalmente mais jovens**, reduzindo sua idade cronológica [@simmons2011]. A conclusão é impossível, e é esse o ponto: usando apenas práticas então comuns e sem falsificar um único dado, obtém-se qualquer coisa.
+
+::: {#fig-caminhos}
+```{.tikz}
+%%| filename: caminhos-bifurcam
+%%| alt: Diagrama em árvore do jardim dos caminhos que se bifurcam. Um ponto inicial rotulado "dados coletados" se ramifica em duas escolhas analíticas defensáveis, cada uma das quais se ramifica novamente, e assim por diante, produzindo dezesseis caminhos finais. Quinze deles aparecem em cinza, indicando resultados não significativos, e um aparece destacado em vermelho, indicando o único caminho que atingiu significância estatística e que acabou sendo o publicado. O rótulo explica que testar um caminho é ciência, mas escolher o caminho depois de ver o resultado infla o falso-positivo.
+\begin{tikzpicture}[
+  scale=0.95, transform shape,
+  no/.style={circle, fill=manualgray, inner sep=1.5pt},
+  hit/.style={circle, fill=manualred, inner sep=2.2pt},
+  lk/.style={manualgray, thin},
+  hk/.style={manualred, thick}
+]
+  \node[circle, fill=manualblue, inner sep=2.5pt] (r) at (0,0) {};
+  \node[font=\scriptsize, text=manualblue, anchor=east] at (-0.25,0) {dados coletados};
+
+  % nivel 1
+  \foreach \i/\y in {1/1.9, 2/-1.9} { \node[no] (a\i) at (1.7,\y) {}; \draw[lk] (r) -- (a\i); }
+  % nivel 2
+  \foreach \i/\y in {1/2.9, 2/0.95, 3/-0.95, 4/-2.9} { \node[no] (b\i) at (3.4,\y) {}; }
+  \draw[lk] (a1) -- (b1); \draw[lk] (a1) -- (b2);
+  \draw[lk] (a2) -- (b3); \draw[lk] (a2) -- (b4);
+  % nivel 3
+  \foreach \i/\y in {1/3.4, 2/2.4, 3/1.45, 4/0.45, 5/-0.45, 6/-1.45, 7/-2.4, 8/-3.4} {
+    \node[no] (c\i) at (5.1,\y) {}; }
+  \draw[lk] (b1) -- (c1); \draw[lk] (b1) -- (c2);
+  \draw[lk] (b2) -- (c3); \draw[lk] (b2) -- (c4);
+  \draw[lk] (b3) -- (c5); \draw[lk] (b3) -- (c6);
+  \draw[lk] (b4) -- (c7); \draw[lk] (b4) -- (c8);
+  % nivel 4 (folhas)
+  \foreach \i/\y in {1/3.65, 2/3.15, 3/2.65, 4/2.15, 5/1.7, 6/1.2, 7/0.7, 8/0.2,
+                     9/-0.2, 10/-0.7, 11/-1.2, 12/-1.7, 13/-2.15, 14/-2.65, 15/-3.15, 16/-3.65} {
+    \node[no] (d\i) at (6.8,\y) {}; }
+  \foreach \p/\a/\b in {c1/d1/d2, c2/d3/d4, c3/d5/d6, c4/d7/d8,
+                        c5/d9/d10, c6/d11/d12, c7/d13/d14, c8/d15/d16} {
+    \draw[lk] (\p) -- (\a); \draw[lk] (\p) -- (\b); }
+
+  % caminho "vencedor"
+  \draw[hk] (r) -- (a1); \draw[hk] (a1) -- (b2); \draw[hk] (b2) -- (c4); \draw[hk] (c4) -- (d7);
+  \node[hit] at (6.8,0.7) {};
+  \node[font=\scriptsize\bfseries, text=manualred, anchor=west] at (7.15,0.7) {$p < 0{,}05$ — publicado};
+
+  \node[font=\scriptsize, text=manualgray, anchor=west] at (7.15,-1.9)
+    {\textbf{15 caminhos} igualmente};
+  \node[font=\scriptsize, text=manualgray, anchor=west] at (7.15,-2.35)
+    {defensáveis, não relatados};
+
+  \node[font=\scriptsize, text=manualgray, align=center] at (3.4,-4.5)
+    {cada bifurcação é uma escolha analítica razoável (excluir outliers? incluir covariável? coletar mais?)\\
+     testar \emph{um} caminho definido de antemão é ciência; \textbf{escolher o caminho depois de ver o resultado} é fabricar significância};
+\end{tikzpicture}
+```
+O jardim dos caminhos que se bifurcam. O pesquisador não precisa testar todos os caminhos para inflar o falso-positivo: basta que a escolha do caminho dependa dos dados [@gelman_loken2014].
+:::
+
+Gelman e Loken refinaram o diagnóstico de um modo que desarma a defesa mais comum. Um pesquisador honesto dirá: "eu não testei vinte análises, testei uma só". Verdade — mas se, diante de *outros* dados, ele teria feito *outra* escolha igualmente defensável, então o teste que ele fez não tem a taxa de erro que ele pensa. É o **jardim dos caminhos que se bifurcam**: não é preciso pescar conscientemente para que a análise seja contingente aos dados [@gelman_loken2014]. Por isso o problema não se resolve pedindo que as pessoas sejam honestas. Elas já são.
+
+### HARKing
+
+Um segundo mecanismo, ainda mais invisível. **HARKing** — *Hypothesizing After the Results are Known* — é formular a hipótese depois de ver os dados e apresentá-la como se fosse prévia [@kerr1998].
+
+Por que isso é fatal? Volte ao Cap. 1: o valor de uma previsão vem de ela poder falhar. Uma "previsão" feita depois do resultado não correu risco nenhum — ela tem 100% de chance de acertar, porque foi desenhada para isso. O artigo resultante conta uma história limpa e teoricamente elegante, sem o rastro dos vinte resultados nulos que a precederam. E o leitor, sem esse rastro, superestima grosseiramente a evidência.
+
+Note a conexão com Lazarsfeld: o senso comum explica qualquer resultado *depois* que ele aparece. O HARKing importa exatamente esse vício para dentro da literatura científica, com aparato estatístico.
+
+### Por que tanto resultado falso sobrevive
+
+John Ioannidis reuniu esses fatores num argumento formal cujo título já é um resumo: a maior parte dos achados publicados é falsa. O raciocínio é probabilístico. Quando se testam muitas hipóteses com baixa probabilidade a priori, usando amostras pequenas (baixo poder), com flexibilidade analítica e num sistema que só publica resultados positivos, a proporção de achados publicados que são verdadeiros despenca — mesmo com todo mundo seguindo as regras [@ioannidis2005].
+
+O ponto crucial, e o mais difícil de aceitar: **nada disso requer má-fé**. Requer apenas incentivos — publicar ou perecer — operando sobre pessoas normais com liberdade analítica normal. É um problema de sistema, e é por isso que a resposta teve de ser estrutural.
+
+## As respostas
+
+Se o problema é estrutural, apelos à virtude não bastam. As correções que a psicologia adotou atacam o mecanismo.
+
+**Pré-registro.** Registrar publicamente, *antes* de coletar, a hipótese, o desenho, o tamanho da amostra e o plano de análise. Isso poda o jardim dos caminhos: com o caminho fixado de antemão, a taxa de erro volta a ser a que a estatística supõe. E torna o HARKing detectável, ao deixar registro público do que se previa [@nosek2018]. Note o que o pré-registro **não** faz: ele não proíbe análise exploratória. Ele exige que exploração seja rotulada como exploração — hipótese gerada, não testada. A exploração continua sendo essencial; o que era ilegítimo era vendê-la como confirmação.
+
+**Relatórios registrados** (*registered reports*). Versão mais forte: a revista avalia o artigo **antes** dos resultados, com base na pergunta e no método, e se compromete a publicar independentemente do desfecho. Isso ataca a raiz — o viés de publicação — porque remove o incentivo a produzir resultados positivos.
+
+**Ciência aberta.** Dados, materiais e código públicos, para que terceiros verifiquem e reanalisem; e replicação valorizada em vez de desprezada [@nosek2015].
+
+**Poder estatístico e amostras maiores.** Boa parte do problema era amostra pequena, que produz estimativas instáveis e, filtradas pela significância, sistematicamente infladas (Vol 3, Cap. 19).
+
+::: {.atencao}
+**Ceticismo não é niilismo.** Um capítulo assim pode induzir a conclusão errada — "então não dá para confiar em nada, e minha opinião vale o mesmo que um estudo". Não vale, e o raciocínio que leva a isso é autodestrutivo: **você só sabe que existe *p-hacking*, HARKing e viés de publicação porque psicólogos investigaram isso com métodos rigorosos e publicaram os resultados contra o próprio interesse profissional.** O ceticismo desta página é filho do método, não seu adversário.
+
+A atitude correta não é rejeitar tudo nem aceitar tudo. É calibrar: um achado pré-registrado, replicado em amostra grande, com dados abertos e efeito consistente merece confiança alta. Um estudo único, com 20 participantes, resultado surpreendente e imprensa entusiasmada merece um "talvez". A diferença entre os dois é o que este capítulo ensinou a ver.
+:::
+
+## Onde isso deixa o leitor
+
+O método da psicologia é o método científico com uma complicação irredutível: o objeto de estudo tem opinião sobre o estudo. Toda a engenharia deste capítulo — definição operacional, operações convergentes, cegamento, pré-registro — existe para lidar com um único fato: **quem observa e quem é observado querem, ambos, que dê certo.**
+
+Note que as salvaguardas não são regras arbitrárias a decorar. Cada uma responde a um erro documentado: o duplo-cego existe por causa de Hans e dos ratos de Rosenthal; o grupo sem tratamento, por causa da regressão à média; o pré-registro, por causa da canção que rejuvenescia. Quem entende o erro deduz a salvaguarda — e é isso que separa aplicar método de seguir protocolo.
+
+O Cap. 4 mostra onde essas pessoas trabalham, e o Cap. 5 usa tudo isto para desmontar os mitos que sobreviveram justamente por nunca terem passado por nada disso.
+
+::: {.callout-sintese}
+- **Definições operacionais** especificam as operações que produzem e medem uma variável. São indispensáveis — mas o operacionismo estrito falha, porque o conceito não se esgota numa medida.
+- **Operações convergentes** são a saída: várias medidas imperfeitas, com defeitos diferentes, triangulando o construto. A convergência é que dá credibilidade.
+- ***Jingle*** é supor que nomes iguais medem a mesma coisa; ***jangle***, que nomes diferentes medem coisas diferentes. A pergunta certa é sempre "o que foi medido, e como sabemos que é isso?".
+- **O objeto reage.** Características de demanda: o participante infere a hipótese e coopera. Efeitos do experimentador: quem sabe a hipótese influencia o resultado sem perceber — Hans, o Esperto, e os ratos "brilhantes". Daí o **duplo-cego**.
+- **O efeito placebo é mais fraco do que a fama sugere**: aparece sobretudo em desfechos subjetivos, e boa parte do que se atribui a ele é regressão à média e remissão espontânea. Sem grupo "nenhum tratamento", não dá para saber.
+- **O efeito Hawthorne, reanalisado nos dados originais, quase não se sustenta** — o exemplo canônico de reatividade é ele próprio um caso de leitura frouxa que sobreviveu por repetição.
+- **Falsos positivos nascem sem má-fé**, a partir dos graus de liberdade do pesquisador, do jardim dos caminhos que se bifurcam e do HARKing, dentro de um sistema que só publica resultados positivos.
+- **As respostas são estruturais**: pré-registro, relatórios registrados, ciência aberta, mais poder estatístico. Apelo à virtude não resolve problema de incentivo.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Definição operacional**
+:   Especificação do conjunto de operações pelas quais uma variável é produzida ou medida [@bridgman1927].
+
+**Operações convergentes**
+:   Estratégia de sustentar um construto por várias medidas independentes e imperfeitas, cujos defeitos diferem entre si [@garner1956].
+
+**Construto latente**
+:   Variável não observável diretamente (ansiedade, inteligência), inferida a partir de indicadores mensuráveis.
+
+**Falácia do *jingle***
+:   Supor que medidas com o mesmo nome avaliam o mesmo construto.
+
+**Falácia do *jangle***
+:   Supor que medidas com nomes diferentes avaliam construtos diferentes.
+
+**Validade convergente e discriminante**
+:   Exigência de que uma medida se correlacione com outras do mesmo construto e não se correlacione demais com medidas de construtos distintos [@campbell_fiske1959].
+
+**Características de demanda**
+:   Pistas que permitem ao participante inferir a hipótese, levando-o a se comportar conforme o que supõe ser esperado [@orne1962].
+
+**Efeito do experimentador**
+:   Influência não intencional das expectativas do pesquisador sobre o comportamento medido ou seu registro [@rosenthal_fode1963].
+
+**Duplo-cego**
+:   Procedimento em que participante e experimentador desconhecem a condição de tratamento.
+
+**Efeito placebo**
+:   Mudança atribuível à expectativa de tratamento, e não ao princípio ativo; concentra-se em desfechos subjetivos [@hrobjartsson_gotzsche2001].
+
+**Graus de liberdade do pesquisador**
+:   Conjunto de escolhas analíticas defensáveis que, se tomadas em função do resultado, inflam o falso-positivo [@simmons2011].
+
+**Jardim dos caminhos que se bifurcam**
+:   Situação em que a análise realizada depende dos dados observados, mesmo sem pescaria consciente, invalidando a taxa de erro nominal [@gelman_loken2014].
+
+**HARKing**
+:   Formular a hipótese depois de conhecer os resultados e apresentá-la como prévia [@kerr1998].
+
+**Pré-registro**
+:   Registro público de hipótese, desenho e plano de análise antes da coleta [@nosek2018].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique por que o operacionismo estrito de Bridgman foi abandonado e o que as operações convergentes resolvem que uma definição operacional isolada não resolve.
+
+2. **(Recuperação.)** Descreva os dois experimentos de Pfungst com Hans e explique por que eles, juntos, identificam a causa do desempenho do cavalo — e por que nenhum dos dois sozinho bastaria.
+
+3. **(Aplicação.)** Um aplicativo afirma: "87% dos usuários relataram menos ansiedade após 30 dias." Aponte (a) o problema de definição operacional; (b) qual grupo de comparação está faltando; (c) dois fenômenos discutidos neste capítulo que produziriam esse resultado mesmo se o aplicativo fosse inerte.
+
+4. **(Reflexão crítica.)** Um pesquisador diz: "Não faço *p-hacking* — analiso os dados de um jeito só." Use o argumento do jardim dos caminhos que se bifurcam para explicar por que a afirmação, ainda que sincera, não garante a taxa de erro que ele supõe. O que o pré-registro acrescenta que a honestidade individual não acrescenta?
+
+5. **(Reflexão crítica.)** O efeito Hawthorne e o efeito Pigmalião são citados em milhares de textos, e ambos são bem mais frágeis do que sua fama. Ao mesmo tempo, a reatividade e os efeitos de expectativa são reais e justificam o duplo-cego. Explique como as duas coisas convivem sem contradição, e o que isso ensina sobre citar "o experimento clássico X".
+
+6. **(Integração.)** Desenhe um estudo para testar se meditação reduz ansiedade em estudantes. Especifique: (a) a definição operacional de ansiedade, com pelo menos duas medidas convergentes que tenham defeitos diferentes; (b) os grupos de comparação necessários, incluindo o que o Cap. 3 exige além do placebo; (c) como você cegaria o estudo, e por que o cegamento completo é particularmente difícil aqui; (d) o que você pré-registraria.
