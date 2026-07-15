@@ -1,0 +1,1304 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Manual de Psicologia",
+    "section": "",
+    "text": "Apresentação\nManual de Psicologia é um livro-texto aberto, em português do Brasil, da série Manuais de Ciências. Ele percorre a psicologia do básico ao avançado e cobre a disciplina como um todo — dos fundamentos históricos e metodológicos aos processos psicológicos básicos, e destes às grandes áreas aplicadas.\nO manual foi escrito para um leitor que pode estar começando agora: nenhum capítulo pressupõe formação prévia em psicologia. Mas ele não para no elementar. Cada tema é levado até onde a evidência atual permite, incluindo as controvérsias que ainda não foram resolvidas — porque fingir que elas não existem seria uma má introdução à ciência.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "index.html#a-proposta",
+    "href": "index.html#a-proposta",
+    "title": "Manual de Psicologia",
+    "section": "A proposta",
+    "text": "A proposta\nA psicologia é uma ciência empírica. Essa frase parece banal, mas organiza tudo o que vem a seguir. Significa que as afirmações deste manual não valem por serem intuitivas, antigas ou repetidas com convicção: valem na medida em que sobrevivem a testes que poderiam tê-las derrubado.\nTrês compromissos decorrem disso e atravessam todos os capítulos:\nDistinguir senso comum de ciência. Todo mundo já tem uma psicologia informal — uma coleção de intuições sobre por que as pessoas fazem o que fazem. Parte considerável dessas intuições está errada, e o manual mostra como sabemos que está.\nAncorar em evidência. Afirmações empíricas relevantes vêm acompanhadas de sua fonte. Onde a evidência é forte, dizemos isso. Onde é frágil, contestada ou não replicou, dizemos isso também.\nApresentar teorias concorrentes com equilíbrio. Em vários pontos da psicologia há mais de uma explicação viva para o mesmo fenômeno. O manual expõe as alternativas pelos seus melhores argumentos, em vez de eleger uma vencedora antecipada.\nA cada tema, o percurso é: conceito → experimento → aplicação. A teoria explica o fenômeno, o experimento mostra por que acreditamos nela, e a aplicação mostra o que muda no mundo por causa disso.\n\nEste manual é educacional. Ele não oferece diagnóstico, avaliação ou orientação clínica, e nada aqui substitui a consulta a um profissional qualificado. Os casos clínicos apresentados são ilustrativos — fictícios ou historicamente documentados — e servem para tornar conceitos concretos, não para que o leitor os aplique a si mesmo ou a terceiros.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "index.html#como-o-manual-está-organizado",
+    "href": "index.html#como-o-manual-está-organizado",
+    "title": "Manual de Psicologia",
+    "section": "Como o manual está organizado",
+    "text": "Como o manual está organizado\nA obra tem 15 volumes, agrupados em 3 fases, com cerca de 105 capítulos.\nFase 1 — Fundamentos, História e Métodos. O que a psicologia é, de onde veio e como ela produz conhecimento. É a fase que ensina a ler o resto do manual criticamente.\nFase 2 — Processos Psicológicos Básicos. Os mecanismos gerais que operam em qualquer mente humana: bases biológicas, sensação e percepção, consciência, aprendizagem, memória e cognição, motivação e emoção.\nFase 3 — Diferenças, Sociedade e Aplicações. Como as pessoas diferem entre si e ao longo da vida, como se comportam em grupo, o que acontece quando os processos se tornam sofrimento, e o que a psicologia faz no mundo.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "index.html#grafo-de-pré-requisitos",
+    "href": "index.html#grafo-de-pré-requisitos",
+    "title": "Manual de Psicologia",
+    "section": "Grafo de pré-requisitos",
+    "text": "Grafo de pré-requisitos\nO manual foi projetado para leitura linear, mas não exige. O diagrama abaixo mostra as dependências reais entre volumes: uma seta significa que o volume de destino fica consideravelmente mais claro depois do de origem.\n\n\n\n\n\n\nflowchart TD\n  subgraph F1 [\"FASE 1 — Fundamentos, História e Métodos\"]\n    V1[\"Vol 1&lt;br/&gt;O que é Psicologia\"]\n    V2[\"Vol 2&lt;br/&gt;História e Sistemas\"]\n    V3[\"Vol 3&lt;br/&gt;Métodos e Estatística\"]\n  end\n\n  subgraph F2 [\"FASE 2 — Processos Psicológicos Básicos\"]\n    V4[\"Vol 4&lt;br/&gt;Bases Biológicas\"]\n    V5[\"Vol 5&lt;br/&gt;Sensação e Percepção\"]\n    V6[\"Vol 6&lt;br/&gt;Consciência\"]\n    V7[\"Vol 7&lt;br/&gt;Aprendizagem\"]\n    V8[\"Vol 8&lt;br/&gt;Memória e Cognição\"]\n    V9[\"Vol 9&lt;br/&gt;Motivação e Emoção\"]\n  end\n\n  subgraph F3 [\"FASE 3 — Diferenças, Sociedade e Aplicações\"]\n    V10[\"Vol 10&lt;br/&gt;Desenvolvimento\"]\n    V11[\"Vol 11&lt;br/&gt;Personalidade\"]\n    V12[\"Vol 12&lt;br/&gt;Psicologia Social\"]\n    V13[\"Vol 13&lt;br/&gt;Psicopatologia\"]\n    V14[\"Vol 14&lt;br/&gt;Tratamentos e Terapias\"]\n    V15[\"Vol 15&lt;br/&gt;Aplicada e Fronteiras\"]\n  end\n\n  V1 --&gt; V2\n  V1 --&gt; V3\n  V2 --&gt; V4\n  V3 --&gt; V4\n  V3 --&gt; V13\n  V4 --&gt; V5\n  V4 --&gt; V6\n  V4 --&gt; V9\n  V5 --&gt; V6\n  V5 --&gt; V8\n  V7 --&gt; V8\n  V4 --&gt; V7\n  V8 --&gt; V10\n  V8 --&gt; V12\n  V9 --&gt; V12\n  V9 --&gt; V13\n  V10 --&gt; V11\n  V11 --&gt; V13\n  V12 --&gt; V13\n  V13 --&gt; V14\n  V14 --&gt; V15\n  V10 --&gt; V15\n  V12 --&gt; V15\n\n  classDef fase1 fill:#eaf1f8,stroke:#2c5f8d,stroke-width:1px,color:#1a3a56;\n  classDef fase2 fill:#ecf5f0,stroke:#3d7a5d,stroke-width:1px,color:#224635;\n  classDef fase3 fill:#f2eef8,stroke:#6b4e8f,stroke-width:1px,color:#3d2c52;\n\n  class V1,V2,V3 fase1;\n  class V4,V5,V6,V7,V8,V9 fase2;\n  class V10,V11,V12,V13,V14,V15 fase3;\n\n\n\n\nFigura 1: Dependências entre os volumes do manual.\n\n\n\n\n\nDuas leituras do grafo merecem destaque. O Vol 3 (Métodos) alimenta tanto as bases biológicas quanto a psicopatologia: sem entender o que é um bom estudo, não há como avaliar uma alegação sobre o cérebro nem sobre a eficácia de um tratamento. E o Vol 4 (Bases Biológicas) é o gargalo da Fase 2 — quase todo processo psicológico básico tem um substrato neural que o capítulo torna inteligível.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "index.html#convenções-do-texto",
+    "href": "index.html#convenções-do-texto",
+    "title": "Manual de Psicologia",
+    "section": "Convenções do texto",
+    "text": "Convenções do texto\nAo longo dos capítulos, cinco tipos de caixa recorrem:\n\nDescreve um estudo marcante: o desenho, o resultado, a interpretação e — sempre — as limitações. É aqui que a evidência aparece em sua forma bruta.\n\n\nTraz uma vinheta clínica ou aplicada, fictícia ou historicamente documentada, para aterrar um conceito abstrato em uma situação concreta.\n\n\nFaz a ponte entre o fenômeno psicológico e seu substrato biológico.\n\n\nMostra a aplicação concreta do conceito no dia a dia, na clínica, no trabalho ou na educação.\n\n\nSinaliza um erro comum, um mito desmontado ou uma distinção conceitual fina que costuma passar despercebida.\n\nCada capítulo abre com objetivos de aprendizagem e fecha com síntese, glossário e questões — parte de recuperação factual, parte de reflexão crítica.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "index.html#sobre-a-obra",
+    "href": "index.html#sobre-a-obra",
+    "title": "Manual de Psicologia",
+    "section": "Sobre a obra",
+    "text": "Sobre a obra\nO manual é open-source e foi produzido de forma autônoma com Claude Code, sob a série Manuais de Ciências. Correções, críticas e sugestões são bem-vindas no repositório. Como toda ciência viva, este texto é uma versão provisória — e melhora quando alguém aponta onde ele está errado.",
+    "crumbs": [
+      "Apresentação"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "",
+    "text": "O que é psicologia?\nVocê já é psicólogo. Não no sentido profissional — no sentido de que passa o dia inteiro fazendo psicologia informal. Ao decidir que aquele colega está de mau humor e que é melhor pedir o favor amanhã, você formulou uma hipótese sobre um estado mental que não pode observar, previu um comportamento futuro a partir dela e ajustou sua ação. Ninguém atravessa a vida social sem uma teoria da mente alheia rodando o tempo todo, em segundo plano, sem esforço aparente.\nEssa competência é notável e é, ao mesmo tempo, o principal obstáculo deste manual. Porque ela produz a impressão de que a psicologia científica é uma versão pretensiosa de algo que todos já sabemos — que ela apenas confirma, com jargão e estatística, o que qualquer pessoa sensata diria de graça. Poucas ciências enfrentam esse problema. Ninguém acha que já entende de física de partículas por ter derrubado um copo. Mas todo mundo já teve medo, se lembrou de um rosto, aprendeu um hábito, se apaixonou — e conclui daí que entende medo, memória, aprendizagem e amor.\nEste capítulo defende a tese oposta: sua psicologia intuitiva é boa o bastante para navegar o cotidiano e ruim o bastante para errar sistematicamente quando o assunto exige precisão. E a diferença entre as duas — a informal e a científica — não é de vocabulário. É de método.\nComecemos pela definição de trabalho, que atravessará os quinze volumes deste manual:\nÉ uma frase curta com três compromissos pesados. Vale desmontá-la peça por peça, porque cada uma delas foi objeto de disputa histórica — e a definição atual é o resultado provisório dessas brigas (VandenBos, 2015).",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#o-que-é-psicologia",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#o-que-é-psicologia",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "",
+    "text": "Psicologia é o estudo científico do comportamento e dos processos mentais.\n\n\n\nComportamento\nComportamento é tudo o que um organismo faz e que pode ser observado e registrado por terceiros: apertar um botão, fugir, sorrir, escolher a caixa da esquerda, levar 340 milissegundos a mais para nomear uma cor. É a parte pública do objeto de estudo.\nA ênfase no observável não é um detalhe técnico — foi uma revolução. Quando John Watson publicou seu manifesto behaviorista em 1913, ele propôs que a psicologia abandonasse por completo a consciência como objeto e se tornasse “um ramo puramente objetivo e experimental das ciências naturais”, cuja meta seria a previsão e o controle do comportamento (Watson, 1913). A proposta era radical e, em parte, deu certo: forçou a disciplina a definir seus termos de modo que outra pessoa pudesse verificar. Em parte, custou caro: expulsou do laboratório perguntas que importavam.\n\n\nProcessos mentais\nProcessos mentais são os eventos internos — percepções, memórias, pensamentos, emoções, motivações — que não podem ser observados diretamente, mas cujos efeitos podem ser medidos. Eles voltaram à definição porque a exclusão behaviorista se mostrou cara demais: é impossível explicar linguagem, resolução de problemas ou memória sem postular processos internos (o Vol 2 conta essa história por inteiro).\nA objeção óbvia é: se não dá para ver, como estudar? A resposta é que a psicologia faz o que outras ciências fazem com entidades não observáveis. Ninguém jamais viu um elétron; infere-se sua existência a partir de efeitos mensuráveis previstos por uma teoria. Do mesmo modo, ninguém vê uma memória de trabalho — mede-se o tempo de resposta, a taxa de erro, o padrão de interferência, a ativação cerebral, e infere-se a estrutura que melhor explica o conjunto.\n\n“Se depende de inferência, então é só opinião.” Não. Há uma diferença entre inferência disciplinada e chute. A inferência científica se compromete de antemão com previsões que poderiam falhar, e falha publicamente quando os dados não vêm. A opinião não arrisca nada: ela se ajusta ao resultado depois que ele aparece. O que separa as duas não é o acesso direto ao objeto — é a exposição ao erro.\n\nNote também que a definição diz organismo, não pessoa. Boa parte do que sabemos sobre aprendizagem, memória e emoção veio de estudos com outras espécies. Isso não é um substituto de conveniência: é a aposta de que existem princípios gerais de funcionamento, e ela se sustenta na medida em que as generalizações se confirmam — e é corrigida quando não se confirmam.\n\n\nCientífico\nEste é o termo decisivo, e a razão de este manual existir na forma em que existe. “Científico” não descreve o assunto estudado, e sim o procedimento pelo qual as afirmações são produzidas e defendidas. Astrologia e astronomia falam dos mesmos objetos; não são a mesma coisa.\nSer científico significa, minimamente: definir os termos de modo que outra pessoa possa medi-los da mesma forma; expor as afirmações a testes que poderiam refutá-las; tornar público o suficiente para que terceiros repitam o procedimento; e revisar a crença quando o resultado contraria a expectativa (Stanovich, 2019). Nada disso garante acerto. Garante apenas que o erro tem como aparecer — o que, a longo prazo, é a única coisa que separa conhecimento de convicção.\nHistoricamente, esse compromisso tem data. A psicologia existia como ramo da filosofia havia séculos, mas foi quando Wilhelm Wundt levou o método experimental para o estudo da experiência consciente, em Leipzig, que ela passou a se organizar como disciplina autônoma (Wundt, 1874). William James, do outro lado do Atlântico, deu-lhe uma prosa e um programa que ainda se lê com proveito (James, 1890). O Vol 2 desenvolve essa história; por ora, retenha o ponto: a psicologia não se tornou ciência ao descobrir um objeto novo, e sim ao adotar um método diferente para um objeto antigo.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#a-ilusão-do-óbvio",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#a-ilusão-do-óbvio",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "A ilusão do óbvio",
+    "text": "A ilusão do óbvio\nSe a psicologia científica só confirmasse o senso comum, ela seria um desperdício caro de dinheiro público. O problema com essa acusação é que ela é impossível de sustentar — e a demonstração mais elegante disso tem mais de setenta anos.\n\nO soldado americano e a obviedade retroativa (Lazarsfeld, 1949)\nEm 1949, o sociólogo Paul Lazarsfeld resenhou The American Soldier, um estudo monumental com centenas de milhares de militares na Segunda Guerra. Antes de apresentar os resultados, ele listou alguns achados para o leitor julgar:\n\nSoldados com mais escolaridade apresentaram mais problemas de ajustamento que os menos escolarizados.\nSoldados do Sul lidaram melhor com o clima quente das ilhas do Pacífico que os do Norte.\nSoldados brancos estavam mais ansiosos por promoção que os negros.\nEnquanto durou a guerra, os soldados estavam mais ansiosos para voltar para casa do que depois que ela terminou.\n\nCada item soa evidente, e o leitor pode reconstruir a explicação de cada um sem esforço: a vida intelectual amolece; sulistas estão aclimatados; a discriminação reduziu expectativas; ninguém quer morrer.\nLazarsfeld então revela: todos os resultados listados são o inverso do que o estudo encontrou. Os menos escolarizados tiveram mais problemas de ajustamento; nortistas e sulistas não diferiram; soldados negros mostraram mais ânsia por promoção; e a pressão para voltar para casa cresceu depois do fim da guerra.\nInterpretação. O ponto de Lazarsfeld não é que o senso comum erra sempre — é que ele explica com igual desenvoltura qualquer resultado e o seu oposto. Uma teoria que acomoda todos os desfechos possíveis não previu nenhum. Se toda afirmação e seu contrário parecem igualmente óbvios, então há algo errado com o critério de obviedade.\nLimitações. Trata-se de uma demonstração retórica em uma resenha, não de um experimento controlado — Lazarsfeld não mediu sistematicamente as previsões de ninguém. A demonstração rigorosa viria depois, no laboratório de Baruch Fischhoff.\n\nO que Lazarsfeld exibiu de forma anedótica, Fischhoff transformou em fenômeno mensurável. Em uma série de experimentos, ele mostrou que pessoas informadas do desfecho de um evento superestimam sistematicamente a probabilidade que teriam atribuído a ele antes de sabê-lo — e, mais perturbador, o efeito persiste mesmo quando elas são instruídas a ignorar o que já sabem (Fischhoff, 1975). É o viés retrospectivo (hindsight bias): o conhecimento do resultado reorganiza silenciosamente a memória do que se acreditava antes.\nA consequência para este manual é direta. Quando você ler um achado nos próximos capítulos e sentir que já sabia, essa sensação não é evidência de que você sabia. O teste honesto é outro: comprometa-se com a previsão antes de virar a página. Faça isso algumas vezes e o placar do senso comum piora rapidamente.\nE há um problema mais fundo, que não se resolve prestando mais atenção. Nisbett e Wilson revisaram um conjunto de estudos em que as pessoas relatavam com confiança as razões de suas próprias escolhas — e os relatos, confrontados com as variáveis que de fato manipulavam o comportamento, estavam errados (Nisbett; Wilson, 1977). As pessoas não estavam mentindo. Elas não tinham acesso privilegiado aos processos que geraram sua conduta e, na ausência desse acesso, produziam explicações plausíveis. Introspecção não é uma janela para o mecanismo; é frequentemente uma teoria sobre si mesmo, construída depois do fato.\n\nUm dólar vale mais que vinte (Festinger; Carlsmith, 1959)\nDesenho. Participantes executaram por uma hora tarefas deliberadamente tediosas (girar pinos em um tabuleiro, um quarto de volta por vez). Em seguida, o experimentador pedia um favor: dizer ao próximo participante, que aguardava, que a tarefa tinha sido interessante e divertida. Um grupo recebeu US$ 1 para mentir; outro recebeu US$ 20 (algo em torno de US$ 200 em valores atuais). Um grupo-controle não mentiu. Depois, todos avaliaram em particular o quanto haviam de fato gostado da tarefa.\nPrevisão do senso comum. Quem recebeu mais deveria gostar mais — mais recompensa, mais reforço, mais simpatia pela atividade.\nResultado. O oposto. Os participantes pagos com US$ 1 declararam ter gostado mais da tarefa que os pagos com US$ 20, cuja avaliação mal diferiu do controle.\nInterpretação. Festinger e Carlsmith explicaram o achado pela dissonância cognitiva: sustentar simultaneamente “a tarefa foi chata” e “eu disse a alguém que foi divertida” gera desconforto. Quem recebeu US$ 20 tinha justificativa externa suficiente — menti porque me pagaram bem —, e a dissonância evapora. Quem recebeu US$ 1 não tinha essa saída, e a via mais barata para reduzir o desconforto era ajustar a própria crença: talvez a tarefa não tenha sido tão ruim assim. A atitude mudou para acompanhar o comportamento, e não o contrário.\nLimitações. O estudo é de 1959, com amostra pequena, composta apenas por homens universitários de Stanford, e envolveu engano — hoje ele passaria por um comitê de ética com exigências consideráveis (Vol 3, Cap. 20). Sua interpretação foi disputada por décadas: teorias da autopercepção explicam o mesmo dado sem postular desconforto interno (Vol 12). E, como boa parte da psicologia social clássica, o paradigma é objeto de reexame sob os critérios de replicabilidade atuais. Nada disso apaga o essencial para este capítulo: a previsão intuitiva estava não apenas errada, mas invertida.\n\nVale reter a estrutura dos dois casos, porque ela se repetirá no manual inteiro. Não é que a intuição erre por distração. É que ela erra em direções sistemáticas e previsíveis — o que a torna, ela própria, objeto de estudo científico. Tversky e Kahneman construíram um programa de pesquisa inteiro mapeando esses atalhos de julgamento e seus desvios característicos (Kahneman, 2011; Tversky; Kahneman, 1974), tema do Cap. 47.\n\nPor que o horóscopo parece falar de você\nEm 1948, Bertram Forer aplicou um teste de personalidade a seus alunos e devolveu a cada um o que apresentou como seu perfil individual. Pediu que avaliassem, de 0 a 5, o quanto a descrição os retratava. A média foi 4,26 — quase perfeita.\nTodos haviam recebido exatamente o mesmo texto, montado por Forer a partir de um livro de astrologia de banca de jornal (Forer, 1949). Ele continha frases como “você tem grande necessidade de que os outros gostem e o admirem” e “às vezes é extrovertido e sociável, às vezes introvertido e reservado”.\nO efeito Forer (ou efeito Barnum) explica boa parte do sucesso de horóscopos, mapas astrais, leituras de mão e de vários testes de personalidade vendidos a empresas: afirmações suficientemente vagas, de conteúdo majoritariamente positivo e que abarcam os dois polos de cada traço, são aceitas como descrições precisas e pessoais por quase qualquer um. A validação não vem do instrumento — vem do leitor, que preenche as lacunas com a própria vida.\nIsso é diretamente útil. Diante de qualquer perfil, teste ou descrição de personalidade, faça a pergunta de Forer: esta descrição poderia ser rejeitada por alguém? Se a resposta for não — se ela serve para todo mundo —, ela não informa nada sobre você em particular. O Vol 11 aplica esse critério aos instrumentos de avaliação de personalidade que efetivamente passam no teste, e aos muitos que não passam.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#três-níveis-de-análise",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#três-níveis-de-análise",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "Três níveis de análise",
+    "text": "Três níveis de análise\nSe a intuição não basta, o que a psicologia coloca no lugar? Não uma explicação única, mas um conjunto articulado de explicações em níveis diferentes — e entender essa arquitetura evita boa parte das confusões que atrapalham o público e, às vezes, os próprios pesquisadores.\nConsidere uma pergunta simples: por que essa pessoa está com medo?\nHá pelo menos três respostas corretas e simultâneas. No nível biológico: um circuito envolvendo a amígdala detectou um sinal de ameaça e disparou uma cascata autonômica e hormonal. No nível psicológico: a pessoa avaliou a situação como perigosa e além de sua capacidade de enfrentamento, e experimenta isso como medo. No nível sociocultural: aquilo que ela aprendeu a temer, e o modo como lhe é permitido demonstrar medo, foram moldados pela cultura, pela família e pelo grupo. A Figura 1.1 organiza essa estrutura.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1.1: Os três níveis de análise da psicologia. As setas apontam nos dois sentidos: o nível biológico condiciona o psicológico, mas a experiência psicológica e o ambiente social também alteram o funcionamento biológico.\n\n\n\nDuas leituras dessa figura são decisivas, e ambas são frequentemente feitas errado.\nAs setas apontam nos dois sentidos. É tentador imaginar uma hierarquia em que o biológico causa o psicológico, que por sua vez causa o social. A evidência não coopera. Estresse social crônico altera a regulação hormonal; aprender uma habilidade reorganiza o córtex; psicoterapia — que é conversa — modifica padrões mensuráveis de atividade cerebral. A causalidade circula nos dois sentidos, e o Vol 4 trata dessa via de mão dupla em detalhe.\nNíveis diferentes não competem. Dizer que o medo “é” atividade da amígdala e dizer que ele “é” a avaliação de uma ameaça não são afirmações rivais, do mesmo modo que descrever um romance pela tinta no papel não refuta descrevê-lo pelo enredo. Cada nível responde a uma pergunta diferente. Essa intuição foi formalizada em duas tradições que valem menção: Tinbergen mostrou que qualquer comportamento animal admite quatro perguntas independentes — mecanismo, desenvolvimento, função adaptativa e evolução — e que confundi-las gera pseudodebates (Tinbergen, 1963); Marr propôs, para o estudo da visão, três níveis distintos de descrição — computacional, algorítmico e de implementação (Marr, 1982). O erro que ambos combatiam é o mesmo: tomar a resposta a uma pergunta como refutação da resposta a outra.\n\nO reducionismo apressado. “O amor é só dopamina.” “A depressão é só um desequilíbrio químico.” Esse tipo de frase confunde correlato com explicação completa, e a palavra que faz o estrago é “só”. Sim, há neuroquímica no amor e alterações neurobiológicas na depressão — e nenhuma das duas descrições captura por que esta pessoa se apaixonou por aquela, ou por que o quadro depressivo começou depois de um luto. A hipótese do desequilíbrio químico como explicação suficiente da depressão, em particular, é muito mais frágil do que sua difusão popular sugere (Vol 13, Cap. 79). Encontrar o substrato neural de um fenômeno é uma conquista real — e não dispensa os outros níveis.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#como-a-psicologia-sabe-o-que-sabe",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#como-a-psicologia-sabe-o-que-sabe",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "Como a psicologia sabe o que sabe",
+    "text": "Como a psicologia sabe o que sabe\nDistinguir psicologia de senso comum exige, por fim, olhar para o procedimento. A Figura 1.2 apresenta o ciclo empírico em sua forma mais simples — uma idealização, como toda figura de método, mas útil.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1.2: O ciclo empírico. O que faz dele ciência não é a coleta de dados, e sim a seta de retorno: a teoria está permanentemente sob risco de ser corrigida pelo que se observa.\n\n\n\nO passo que carrega o peso é a hipótese arriscada. Uma previsão só testa uma teoria se houver um resultado possível que a derrubaria. É a exigência de falseabilidade, que Popper propôs como critério de demarcação entre ciência e não-ciência (Popper, 1959): teorias que explicam qualquer desfecho — como o senso comum de Lazarsfeld — não são fortes, são vazias. Uma teoria que proíbe muitos resultados diz muito sobre o mundo; uma que não proíbe nenhum não diz nada.\nPaul Meehl fez a esta disciplina uma crítica que ainda dói e que o leitor deve carregar para os capítulos seguintes: boa parte da psicologia se acostumou a testar hipóteses frouxas demais (Meehl, 1978). Mostrar que um efeito existe e não é exatamente zero é uma previsão barata — quase sempre alguma diferença aparece se a amostra for grande o bastante. Teorias sérias arriscam mais: preveem a direção, o tamanho e as condições em que o efeito deve desaparecer. O Vol 3 desenvolve o método; o essencial aqui é o critério — pergunte sempre o que derrubaria esta afirmação. Se não houver resposta, o problema não é seu.\n\nA honestidade sobre a própria disciplina\nUm manual que exigisse ceticismo do leitor e o dispensasse para si mesmo seria incoerente. Então: a psicologia tem um problema de replicabilidade conhecido e documentado.\nEm 2015, a Open Science Collaboration tentou replicar 100 estudos publicados em três das principais revistas de psicologia, com desenhos revisados pelos autores originais e amostras em geral maiores. Enquanto 97% dos estudos originais relatavam efeitos estatisticamente significativos, apenas cerca de 36% das replicações os obtiveram, e o tamanho médio do efeito caiu para aproximadamente metade do original (Open Science Collaboration, 2015). Um projeto posterior, restrito a experimentos de ciências sociais publicados na Nature e na Science, replicou cerca de 62% dos achados, também com efeitos menores (Camerer et al., 2018).\nEsses números foram e continuam sendo debatidos. Gilbert e colegas argumentaram que parte das falhas se deve a diferenças metodológicas entre original e replicação e a erro de amostragem, e que os dados seriam compatíveis com uma taxa de replicabilidade mais alta do que a leitura pessimista sugere (Gilbert et al., 2016) — resposta, por sua vez, contestada pelos autores originais. A controvérsia não está encerrada, e o Cap. 105 volta a ela com o cuidado que ela merece.\nDuas conclusões, porém, são seguras. A primeira: alguns resultados famosos, repetidos em livros-texto por décadas, não sobrevivem ao escrutínio — e este manual sinaliza isso onde ocorre, no lugar em que o achado aparece, não em uma nota de rodapé. A segunda, e mais importante: quem descobriu o problema foi a própria psicologia, com seus próprios métodos, e respondeu com pré-registro, replicações em larga escala, dados abertos e amostras maiores. Uma disciplina capaz de publicar que um terço de sua produção de ponta não replica está fazendo exatamente aquilo que a distingue do senso comum. A astrologia nunca publicou um relatório de replicação.\n\n“Usamos apenas 10% do cérebro.”\nTalvez o mito mais resistente sobre a mente. Ele é falso em todos os sentidos em que se pode ser falso (Beyerstein, 1999; Lilienfeld et al., 2010):\n\nNeuroimagem. Não há regiões permanentemente silenciosas. Ao longo de um dia, praticamente todo o cérebro se ativa; mesmo em repouso o consumo metabólico é altíssimo.\nEvolução e metabolismo. O cérebro é cerca de 2% da massa corporal e consome cerca de 20% da energia em repouso. Um órgão tão caro com 90% de capacidade ociosa seria um absurdo evolutivo.\nLesões. Se 90% fosse dispensável, a maioria das lesões cerebrais seria inócua. Não é o que a neurologia observa: dano a áreas muito pequenas produz déficits específicos e graves (Vol 15, Cap. 99).\nNeurônios sem uso morrem. Circuitos sem função são podados ao longo do desenvolvimento (Vol 4, Cap. 28).\n\nPor que o mito sobrevive? Porque é reconfortante — sugere uma reserva enorme de potencial à espera de ser destravada — e porque sustenta um mercado inteiro de cursos e produtos que prometem o destravamento. Vale como exemplo geral: a popularidade de uma afirmação sobre a mente não guarda relação com sua evidência. O Cap. 5 dedica-se a esses mitos.\n\n\n\nE quando o método é aplicado a uma pseudociência?\nUma última demonstração fecha o argumento deste capítulo, porque mostra o método fazendo o que o senso comum não faz: correndo o risco de perder.\n\nUm teste duplo-cego da astrologia (Carlson, 1985)\nDesenho. Shawn Carlson montou um teste que os próprios astrólogos ajudaram a desenhar e aceitaram previamente como justo — detalhe crucial, porque elimina a acusação retroativa de que o teste era inadequado. Astrólogos indicados por organizações da área receberam o mapa astral de uma pessoa e três perfis de personalidade obtidos por um inventário psicométrico padrão (o CPI), um deles do sujeito real e dois de outras pessoas. A tarefa: escolher qual perfil correspondia ao mapa. Os astrólogos haviam concordado de antemão com o critério de sucesso.\nResultado. A taxa de acerto ficou em torno de um terço — exatamente o esperado pelo acaso ao escolher entre três alternativas. Publicado na Nature, o estudo não encontrou desempenho acima do acaso.\nInterpretação. O que faz deste um bom experimento não é o resultado, e sim a estrutura: critério de sucesso definido antes da coleta, avaliadores cegos à hipótese e um desfecho possível — que os astrólogos acertassem — que teria constituído evidência genuína a favor da astrologia. A previsão era arriscada, e não sobreviveu.\nLimitações. É um único estudo, com número modesto de astrólogos, e aspectos de sua análise estatística foram criticados posteriormente. Ele não prova a impossibilidade lógica da astrologia — nenhum experimento faz isso com nenhuma teoria. Mostra algo mais modesto e mais útil: quando submetida ao mesmo procedimento a que a psicologia submete suas próprias afirmações, a alegação não se sustentou.\n\nGuarde o contraste. A psicologia publicou um relatório dizendo que boa parte de seus achados de ponta não replica. A astrologia, diante de um teste que ela mesma ajudou a desenhar e não passou, seguiu inalterada. A diferença entre as duas nunca esteve no assunto. Está no que cada uma faz quando os dados contrariam a expectativa.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#o-alcance-e-os-limites-do-que-vem-a-seguir",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#o-alcance-e-os-limites-do-que-vem-a-seguir",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "O alcance e os limites do que vem a seguir",
+    "text": "O alcance e os limites do que vem a seguir\nDuas advertências antes de seguir, ambas retomadas ao longo do manual.\nA psicologia é uma ciência de populações, não de oráculos. Os achados dos próximos capítulos são, quase sempre, afirmações sobre médias, distribuições e probabilidades. Que um efeito seja robusto em milhares de pessoas não permite prever com segurança o que você fará amanhã. Isso não é fraqueza da disciplina — é a mesma relação que a epidemiologia tem com o paciente individual. Confundir os dois níveis é a origem de boa parte do mau uso da psicologia, dentro e fora da academia.\nA base de evidências é enviesada, e você precisa saber disso desde o primeiro capítulo. Henrich, Heine e Norenzayan mostraram que a esmagadora maioria dos participantes de pesquisa em psicologia vem de sociedades WEIRD — ocidentais, escolarizadas, industrializadas, ricas e democráticas —, um recorte que representa uma fração pequena e atípica da humanidade e que difere de outras populações em domínios que vão da percepção visual ao raciocínio moral (Henrich; Heine; Norenzayan, 2010). Como este manual é brasileiro, a advertência é dupla: transportar um resultado obtido com calouros norte-americanos para o Brasil é uma hipótese, não um dado. Onde houver evidência nacional, este manual a usa; onde não houver, ele diz que não há. O Cap. 103 trata do tema de frente.\nVale fechar onde George Miller fechou, em 1969, seu discurso como presidente da Associação Americana de Psicologia. Ele argumentou que o maior serviço da psicologia à sociedade não seria aplicar seu conhecimento sobre as pessoas, mas entregá-lo a elas — giving psychology away —, porque compreender a si mesmo e aos outros muda o que as pessoas conseguem fazer com a própria vida (Miller, 1969). Um manual aberto, em português, é uma tentativa modesta de fazer exatamente isso.\nO que vem a seguir, então, não é uma coleção de curiosidades sobre a mente. É o registro do que sobrou depois que um número muito grande de ideias plausíveis foi testado e não sobreviveu.\n\n\nPsicologia é o estudo científico do comportamento e dos processos mentais. “Comportamento” é o que se observa; “processos mentais” são eventos internos inferidos a partir de efeitos mensuráveis; “científico” descreve o procedimento, não o assunto.\nO senso comum psicológico é um mau guia porque explica tudo. Lazarsfeld mostrou que resultados opostos parecem igualmente óbvios; Fischhoff demonstrou que o viés retrospectivo faz o conhecimento do desfecho reescrever a memória do que se esperava. “Eu já sabia” não é evidência.\nA introspecção não dá acesso ao mecanismo. As pessoas relatam com confiança razões erradas para o próprio comportamento, e não estão mentindo — estão teorizando sobre si mesmas depois do fato.\nA intuição erra em direções sistemáticas. Festinger e Carlsmith obtiveram o inverso da previsão do senso comum: quem foi pago US$ 1 para mentir passou a gostar mais da tarefa que quem foi pago US$ 20.\nA explicação psicológica opera em três níveis — biológico, psicológico e sociocultural —, que se influenciam nos dois sentidos e respondem a perguntas diferentes. Níveis não competem; “é só química” confunde correlato com explicação.\nFalseabilidade é o critério. Uma teoria que nenhum resultado poderia derrubar não é forte, é vazia. Diante de qualquer afirmação: o que a refutaria?\nA psicologia tem um problema de replicabilidade documentado — e o fato de tê-lo documentado, com seus próprios métodos, é o que a separa da pseudociência. O contraste com a astrologia não está no objeto, mas na resposta ao dado contrário.\nOs achados são sobre populações, não sobre você, e vêm majoritariamente de amostras WEIRD. Generalizar para o Brasil é hipótese a testar, não conclusão.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#glossário-do-capítulo",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#glossário-do-capítulo",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "Glossário do capítulo",
+    "text": "Glossário do capítulo\n\n\nComportamento\n\nTudo o que um organismo faz e que pode ser observado e registrado por terceiros.\n\nProcessos mentais\n\nEventos internos — percepções, memórias, pensamentos, emoções — não observáveis diretamente, mas inferidos a partir de efeitos mensuráveis.\n\nSenso comum psicológico\n\nConjunto de intuições cotidianas sobre por que as pessoas agem como agem. Suficiente para a vida social, insuficiente como conhecimento, porque acomoda qualquer resultado.\n\nViés retrospectivo (hindsight bias)\n\nTendência a superestimar, depois de conhecer o desfecho, a probabilidade que se teria atribuído a ele antes. Persiste mesmo quando a pessoa é instruída a ignorá-lo (Fischhoff, 1975).\n\nDissonância cognitiva\n\nDesconforto gerado por sustentar simultaneamente cognições incompatíveis; motiva mudança de crença ou de comportamento para reduzi-lo (Festinger; Carlsmith, 1959).\n\nEfeito Forer (ou efeito Barnum)\n\nTendência a aceitar como descrição pessoal precisa afirmações vagas e genéricas que se aplicariam a quase qualquer pessoa (Forer, 1949).\n\nNíveis de análise\n\nOs planos complementares — biológico, psicológico e sociocultural — em que um mesmo fenômeno pode ser explicado, com influência recíproca entre eles.\n\nReducionismo apressado\n\nErro de tomar a descrição em um nível (em geral o biológico) como explicação suficiente do fenômeno, descartando os demais. Detectável pela palavra “só”.\n\nFalseabilidade\n\nPropriedade de uma afirmação que especifica de antemão quais resultados a refutariam; critério de demarcação entre ciência e não-ciência (Popper, 1959).\n\nHipótese arriscada\n\nPrevisão que proíbe resultados — quanto mais desfechos possíveis ela exclui, mais informativa é (Meehl, 1978).\n\nCrise de replicabilidade\n\nConstatação, a partir de esforços sistemáticos de replicação, de que parte relevante dos achados publicados não se reproduz, ou se reproduz com efeitos menores (Open Science Collaboration, 2015).\n\nWEIRD\n\nAcrônimo para Western, Educated, Industrialized, Rich, Democratic; descreve o recorte atípico de população que domina as amostras de pesquisa em psicologia (Henrich; Heine; Norenzayan, 2010).",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#para-refletir",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-01-introducao.html#para-refletir",
+    "title": "01. Introdução: definição, objeto de estudo, senso comum × ciência",
+    "section": "Para refletir",
+    "text": "Para refletir\n\n(Recuperação.) Desmonte a definição “psicologia é o estudo científico do comportamento e dos processos mentais” em seus três componentes e explique o que cada um exclui. Por que “científico” é o termo que faz o trabalho pesado?\n(Recuperação.) Explique, com o experimento de Festinger e Carlsmith, por que uma recompensa menor produziu uma mudança de atitude maior. Qual era a previsão do senso comum e por que ela falhou?\n(Aplicação.) Um site afirma: “Pessoas que ouvem música clássica são mais inteligentes.” Formule (a) o que precisaria ser observado para refutar a afirmação; (b) uma explicação alternativa para uma correlação genuína entre ouvir música clássica e obter escores altos que não envolva a música causar inteligência.\n(Reflexão crítica.) Lazarsfeld mostrou que resultados opostos parecem igualmente óbvios. Escolha uma afirmação que você considera evidente sobre comportamento humano — por exemplo, “quem sofre bullying na infância se torna um adulto mais retraído”. Enuncie o seu oposto e construa a explicação de senso comum que tornaria esse oposto igualmente óbvio. O que esse exercício revela sobre o valor probatório da sensação de obviedade?\n(Reflexão crítica.) Um colega argumenta: “Se a psicologia falha em replicar um terço dos seus estudos de ponta, ela não é uma ciência confiável — mais vale confiar na intuição.” Responda ao argumento. Sua resposta deve considerar como sabemos da taxa de falha, e o que a astrologia do estudo de Carlson fez em situação análoga.\n(Integração.) Uma pessoa desenvolve medo intenso de dirigir depois de um acidente. Construa uma explicação em cada um dos três níveis de análise da Figura 1.1 e, em seguida, aponte uma influência que vá “de cima para baixo” — do nível sociocultural ou psicológico sobre o biológico. Por que a frase “esse medo é só uma hiperatividade da amígdala” seria um caso de reducionismo apressado?\n\n\n\n\n\nBEYERSTEIN, Barry L. Whence cometh the myth that we only use ten percent of our brains? Em: DELLA SALA, Sergio (Ed.). Mind Myths: Exploring Popular Assumptions About the Mind and Brain. Chichester: John Wiley & Sons, 1999. p. 3–24.\n\n\nCAMERER, Colin F. et al. Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, v. 2, n. 9, p. 637–644, 2018.\n\n\nCARLSON, Shawn. A double-blind test of astrology. Nature, v. 318, n. 6045, p. 419–425, 1985.\n\n\nFESTINGER, Leon; CARLSMITH, James M. Cognitive consequences of forced compliance. The Journal of Abnormal and Social Psychology, v. 58, n. 2, p. 203–210, 1959.\n\n\nFISCHHOFF, Baruch. Hindsight is not equal to foresight: The effect of outcome knowledge on judgment under uncertainty. Journal of Experimental Psychology: Human Perception and Performance, v. 1, n. 3, p. 288–299, 1975.\n\n\nFORER, Bertram R. The fallacy of personal validation: A classroom demonstration of gullibility. The Journal of Abnormal and Social Psychology, v. 44, n. 1, p. 118–123, 1949.\n\n\nGILBERT, Daniel T. et al. Comment on «Estimating the reproducibility of psychological science». Science, v. 351, n. 6277, p. 1037, 2016.\n\n\nHENRICH, Joseph; HEINE, Steven J.; NORENZAYAN, Ara. The weirdest people in the world? Behavioral and Brain Sciences, v. 33, n. 2-3, p. 61–83, 2010.\n\n\nJAMES, William. The Principles of Psychology. New York: Henry Holt; Company, 1890.\n\n\nKAHNEMAN, Daniel. Thinking, Fast and Slow. New York: Farrar, Straus; Giroux, 2011.\n\n\nLAZARSFELD, Paul F. The American Soldier — An Expository Review. Public Opinion Quarterly, v. 13, n. 3, p. 377–404, 1949.\n\n\nLILIENFELD, Scott O. et al. 50 Great Myths of Popular Psychology: Shattering Widespread Misconceptions about Human Behavior. Chichester: Wiley-Blackwell, 2010.\n\n\nMARR, David. Vision: A Computational Investigation into the Human Representation and Processing of Visual Information. San Francisco: W. H. Freeman, 1982.\n\n\nMEEHL, Paul E. Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology. Journal of Consulting and Clinical Psychology, v. 46, n. 4, p. 806–834, 1978.\n\n\nMILLER, George A. Psychology as a means of promoting human welfare. American Psychologist, v. 24, n. 12, p. 1063–1075, 1969.\n\n\nNISBETT, Richard E.; WILSON, Timothy D. Telling more than we can know: Verbal reports on mental processes. Psychological Review, v. 84, n. 3, p. 231–259, 1977.\n\n\nOPEN SCIENCE COLLABORATION. Estimating the reproducibility of psychological science. Science, v. 349, n. 6251, p. aac4716, 2015.\n\n\nPOPPER, Karl R. The Logic of Scientific Discovery. London: Hutchinson, 1959.\n\n\nSTANOVICH, Keith E. How to Think Straight About Psychology. 11. ed. Boston: Pearson, 2019.\n\n\nTINBERGEN, Niko. On aims and methods of ethology. Zeitschrift für Tierpsychologie, v. 20, n. 4, p. 410–433, 1963.\n\n\nTVERSKY, Amos; KAHNEMAN, Daniel. Judgment under uncertainty: Heuristics and biases. Science, v. 185, n. 4157, p. 1124–1131, 1974.\n\n\nVANDENBOS, Gary R. (ED.). APA Dictionary of Psychology. 2. ed. Washington, DC: American Psychological Association, 2015.\n\n\nWATSON, John B. Psychology as the behaviorist views it. Psychological Review, v. 20, n. 2, p. 158–177, 1913.\n\n\nWUNDT, Wilhelm. Grundzüge der physiologischen Psychologie. Leipzig: Wilhelm Engelmann, 1874.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>01. Introdução: definição, objeto de estudo, senso comum × ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.html",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.html",
+    "title": "02. As grandes questões (natureza × cultura, mente–corpo, consciência, livre-arbítrio)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>02. As grandes questões (natureza × cultura, mente–corpo, consciência, livre-arbítrio)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-03-psicologia-como-ciencia.html",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-03-psicologia-como-ciencia.html",
+    "title": "03. Psicologia como ciência: o método científico aplicado ao comportamento",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>03. Psicologia como ciência: o método científico aplicado ao comportamento</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-04-areas-atuacao.html",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-04-areas-atuacao.html",
+    "title": "04. Áreas e campos de atuação do psicólogo",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>04. Áreas e campos de atuação do psicólogo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol01-o-que-e-psicologia/cap-05-mitos.html",
+    "href": "capitulos/vol01-o-que-e-psicologia/cap-05-mitos.html",
+    "title": "05. Mitos e concepções equivocadas sobre a psicologia",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>05. Mitos e concepções equivocadas sobre a psicologia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-06-raizes-filosoficas.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-06-raizes-filosoficas.html",
+    "title": "06. Raízes filosóficas: da filosofia à ciência",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>06. Raízes filosóficas: da filosofia à ciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.html",
+    "title": "07. Estruturalismo e Funcionalismo (Wundt, Titchener, James)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>07. Estruturalismo e Funcionalismo (Wundt, Titchener, James)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-08-behaviorismo.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-08-behaviorismo.html",
+    "title": "08. Behaviorismo (Watson, Skinner)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>08. Behaviorismo (Watson, Skinner)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-09-gestalt.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-09-gestalt.html",
+    "title": "09. Gestalt",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>09. Gestalt</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-10-psicanalise.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-10-psicanalise.html",
+    "title": "10. Psicanálise (Freud e desdobramentos)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>10. Psicanálise (Freud e desdobramentos)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-11-humanismo.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-11-humanismo.html",
+    "title": "11. Humanismo (Rogers, Maslow)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>11. Humanismo (Rogers, Maslow)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-12-revolucao-cognitiva.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-12-revolucao-cognitiva.html",
+    "title": "12. A revolução cognitiva",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>12. A revolução cognitiva</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.html",
+    "href": "capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.html",
+    "title": "13. Perspectivas contemporâneas (evolucionista, sociocultural, neurociência)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>13. Perspectivas contemporâneas (evolucionista, sociocultural, neurociência)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-14-metodo-experimental.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-14-metodo-experimental.html",
+    "title": "14. O método experimental",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>14. O método experimental</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.html",
+    "title": "15. Métodos não-experimentais (correlacional, observacional, survey, estudo de caso)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>15. Métodos não-experimentais (correlacional, observacional, survey, estudo de caso)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.html",
+    "title": "16. Variáveis, validade e confiabilidade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>16. Variáveis, validade e confiabilidade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-17-amostragem.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-17-amostragem.html",
+    "title": "17. Amostragem",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>17. Amostragem</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-18-estatistica-descritiva.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-18-estatistica-descritiva.html",
+    "title": "18. Estatística descritiva",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>18. Estatística descritiva</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.html",
+    "title": "19. Estatística inferencial (fundamentos)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>19. Estatística inferencial (fundamentos)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-20-etica-pesquisa.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-20-etica-pesquisa.html",
+    "title": "20. Ética em pesquisa (comitês, consentimento, TCLE)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>20. Ética em pesquisa (comitês, consentimento, TCLE)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.html",
+    "href": "capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.html",
+    "title": "21. Leitura crítica de artigos científicos",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 1 — Fundamentos, História e Métodos",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>21. Leitura crítica de artigos científicos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-22-neuronio.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-22-neuronio.html",
+    "title": "22. O neurônio e a comunicação neural",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>22. O neurônio e a comunicação neural</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.html",
+    "title": "23. O sistema nervoso (central e periférico)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>23. O sistema nervoso (central e periférico)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-24-cerebro.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-24-cerebro.html",
+    "title": "24. O cérebro: estruturas e funções",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>24. O cérebro: estruturas e funções</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.html",
+    "title": "25. Sistema endócrino e hormônios",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>25. Sistema endócrino e hormônios</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.html",
+    "title": "26. Genética do comportamento",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>26. Genética do comportamento</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-27-neuroimagem.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-27-neuroimagem.html",
+    "title": "27. Métodos de estudo do cérebro (neuroimagem)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>27. Métodos de estudo do cérebro (neuroimagem)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol04-bases-biologicas/cap-28-plasticidade.html",
+    "href": "capitulos/vol04-bases-biologicas/cap-28-plasticidade.html",
+    "title": "28. Plasticidade neural",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>28. Plasticidade neural</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-29-principios-sensacao.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-29-principios-sensacao.html",
+    "title": "29. Princípios de sensação (psicofísica, limiares)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>29. Princípios de sensação (psicofísica, limiares)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-30-visao.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-30-visao.html",
+    "title": "30. Visão",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>30. Visão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-31-audicao.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-31-audicao.html",
+    "title": "31. Audição",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>31. Audição</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.html",
+    "title": "32. Outros sentidos (olfato, paladar, tato, propriocepção, dor)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>32. Outros sentidos (olfato, paladar, tato, propriocepção, dor)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.html",
+    "title": "33. Organização perceptual (Gestalt, profundidade, constâncias)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>33. Organização perceptual (Gestalt, profundidade, constâncias)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.html",
+    "href": "capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.html",
+    "title": "34. Atenção, percepção e ilusões",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>34. Atenção, percepção e ilusões</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol06-consciencia/cap-35-natureza-consciencia.html",
+    "href": "capitulos/vol06-consciencia/cap-35-natureza-consciencia.html",
+    "title": "35. A natureza da consciência",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>35. A natureza da consciência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol06-consciencia/cap-36-sono-ritmos.html",
+    "href": "capitulos/vol06-consciencia/cap-36-sono-ritmos.html",
+    "title": "36. Sono e ritmos circadianos",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>36. Sono e ritmos circadianos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol06-consciencia/cap-37-sonhos.html",
+    "href": "capitulos/vol06-consciencia/cap-37-sonhos.html",
+    "title": "37. Sonhos",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>37. Sonhos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol06-consciencia/cap-38-estados-alterados.html",
+    "href": "capitulos/vol06-consciencia/cap-38-estados-alterados.html",
+    "title": "38. Estados alterados (hipnose, meditação, substâncias psicoativas)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>38. Estados alterados (hipnose, meditação, substâncias psicoativas)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol07-aprendizagem/cap-39-condicionamento-classico.html",
+    "href": "capitulos/vol07-aprendizagem/cap-39-condicionamento-classico.html",
+    "title": "39. Condicionamento clássico (Pavlov)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>39. Condicionamento clássico (Pavlov)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol07-aprendizagem/cap-40-condicionamento-operante.html",
+    "href": "capitulos/vol07-aprendizagem/cap-40-condicionamento-operante.html",
+    "title": "40. Condicionamento operante (Skinner)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>40. Condicionamento operante (Skinner)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol07-aprendizagem/cap-41-aprendizagem-observacional.html",
+    "href": "capitulos/vol07-aprendizagem/cap-41-aprendizagem-observacional.html",
+    "title": "41. Aprendizagem observacional (Bandura)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>41. Aprendizagem observacional (Bandura)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.html",
+    "href": "capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.html",
+    "title": "42. Cognição e aprendizagem",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>42. Cognição e aprendizagem</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-43-modelos-memoria.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-43-modelos-memoria.html",
+    "title": "43. Modelos de memória",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>43. Modelos de memória</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-44-codificacao-recuperacao.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-44-codificacao-recuperacao.html",
+    "title": "44. Codificação, armazenamento e recuperação",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>44. Codificação, armazenamento e recuperação</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-45-esquecimento-memoria-falsa.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-45-esquecimento-memoria-falsa.html",
+    "title": "45. Esquecimento e memória falsa",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>45. Esquecimento e memória falsa</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-46-pensamento-problemas.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-46-pensamento-problemas.html",
+    "title": "46. Pensamento, conceitos e resolução de problemas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>46. Pensamento, conceitos e resolução de problemas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-47-decisao-heuristicas.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-47-decisao-heuristicas.html",
+    "title": "47. Tomada de decisão e heurísticas (vieses cognitivos)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>47</span>  <span class='chapter-title'>47. Tomada de decisão e heurísticas (vieses cognitivos)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-48-linguagem.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-48-linguagem.html",
+    "title": "48. Linguagem",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>48. Linguagem</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-49-inteligencia-teorias.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-49-inteligencia-teorias.html",
+    "title": "49. Inteligência: teorias",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>49. Inteligência: teorias</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol08-memoria-cognicao/cap-50-inteligencia-avaliacao.html",
+    "href": "capitulos/vol08-memoria-cognicao/cap-50-inteligencia-avaliacao.html",
+    "title": "50. Inteligência: avaliação e controvérsias",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>50. Inteligência: avaliação e controvérsias</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.html",
+    "title": "51. Teorias da motivação",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>51. Teorias da motivação</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-52-motivacoes-basicas.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-52-motivacoes-basicas.html",
+    "title": "52. Motivações básicas (fome, sede, sexo)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>52. Motivações básicas (fome, sede, sexo)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-53-motivacoes-sociais.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-53-motivacoes-sociais.html",
+    "title": "53. Motivações sociais (realização, pertencimento)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>53</span>  <span class='chapter-title'>53. Motivações sociais (realização, pertencimento)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-54-teorias-emocao.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-54-teorias-emocao.html",
+    "title": "54. Teorias da emoção",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>54</span>  <span class='chapter-title'>54. Teorias da emoção</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-55-expressao-regulacao.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-55-expressao-regulacao.html",
+    "title": "55. Expressão e regulação emocional",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>55</span>  <span class='chapter-title'>55. Expressão e regulação emocional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.html",
+    "href": "capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.html",
+    "title": "56. Estresse e enfrentamento (coping)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 2 — Processos Psicológicos Básicos",
+      "<span class='chapter-number'>56</span>  <span class='chapter-title'>56. Estresse e enfrentamento (coping)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-57-conceitos-desenvolvimento.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-57-conceitos-desenvolvimento.html",
+    "title": "57. Conceitos e questões do desenvolvimento",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>57</span>  <span class='chapter-title'>57. Conceitos e questões do desenvolvimento</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-58-pre-natal-infancia.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-58-pre-natal-infancia.html",
+    "title": "58. Desenvolvimento pré-natal e infância",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>58</span>  <span class='chapter-title'>58. Desenvolvimento pré-natal e infância</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-59-desenvolvimento-cognitivo.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-59-desenvolvimento-cognitivo.html",
+    "title": "59. Desenvolvimento cognitivo (Piaget, Vygotsky)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>59</span>  <span class='chapter-title'>59. Desenvolvimento cognitivo (Piaget, Vygotsky)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-60-desenvolvimento-social-emocional.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-60-desenvolvimento-social-emocional.html",
+    "title": "60. Desenvolvimento social e emocional (apego, Erikson)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>60</span>  <span class='chapter-title'>60. Desenvolvimento social e emocional (apego, Erikson)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-61-desenvolvimento-moral.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-61-desenvolvimento-moral.html",
+    "title": "61. Desenvolvimento moral (Kohlberg e críticas)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>61</span>  <span class='chapter-title'>61. Desenvolvimento moral (Kohlberg e críticas)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-62-adolescencia.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-62-adolescencia.html",
+    "title": "62. Adolescência",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>62</span>  <span class='chapter-title'>62. Adolescência</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol10-desenvolvimento/cap-63-adultez-envelhecimento.html",
+    "href": "capitulos/vol10-desenvolvimento/cap-63-adultez-envelhecimento.html",
+    "title": "63. Idade adulta e envelhecimento",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>63</span>  <span class='chapter-title'>63. Idade adulta e envelhecimento</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-64-conceito-personalidade.html",
+    "href": "capitulos/vol11-personalidade/cap-64-conceito-personalidade.html",
+    "title": "64. O conceito de personalidade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>64</span>  <span class='chapter-title'>64. O conceito de personalidade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-65-psicodinamicas.html",
+    "href": "capitulos/vol11-personalidade/cap-65-psicodinamicas.html",
+    "title": "65. Teorias psicodinâmicas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>65</span>  <span class='chapter-title'>65. Teorias psicodinâmicas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-66-humanistas.html",
+    "href": "capitulos/vol11-personalidade/cap-66-humanistas.html",
+    "title": "66. Teorias humanistas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>66</span>  <span class='chapter-title'>66. Teorias humanistas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-67-tracos-big-five.html",
+    "href": "capitulos/vol11-personalidade/cap-67-tracos-big-five.html",
+    "title": "67. Teorias dos traços (Big Five / CGF)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>67</span>  <span class='chapter-title'>67. Teorias dos traços (Big Five / CGF)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-68-sociocognitivas.html",
+    "href": "capitulos/vol11-personalidade/cap-68-sociocognitivas.html",
+    "title": "68. Teorias sociocognitivas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>68</span>  <span class='chapter-title'>68. Teorias sociocognitivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.html",
+    "href": "capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.html",
+    "title": "69. Avaliação da personalidade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>69</span>  <span class='chapter-title'>69. Avaliação da personalidade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-70-cognicao-social.html",
+    "href": "capitulos/vol12-psicologia-social/cap-70-cognicao-social.html",
+    "title": "70. Cognição social e atribuição",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>70</span>  <span class='chapter-title'>70. Cognição social e atribuição</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-71-atitudes-persuasao.html",
+    "href": "capitulos/vol12-psicologia-social/cap-71-atitudes-persuasao.html",
+    "title": "71. Atitudes e persuasão",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>71</span>  <span class='chapter-title'>71. Atitudes e persuasão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.html",
+    "href": "capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.html",
+    "title": "72. Conformidade, obediência e influência social",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>72</span>  <span class='chapter-title'>72. Conformidade, obediência e influência social</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-73-relacoes-atracao.html",
+    "href": "capitulos/vol12-psicologia-social/cap-73-relacoes-atracao.html",
+    "title": "73. Relações interpessoais e atração",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>73</span>  <span class='chapter-title'>73. Relações interpessoais e atração</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-74-pro-social-agressao.html",
+    "href": "capitulos/vol12-psicologia-social/cap-74-pro-social-agressao.html",
+    "title": "74. Comportamento pró-social e agressão",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>74</span>  <span class='chapter-title'>74. Comportamento pró-social e agressão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol12-psicologia-social/cap-75-grupos-preconceito.html",
+    "href": "capitulos/vol12-psicologia-social/cap-75-grupos-preconceito.html",
+    "title": "75. Grupos, preconceito e processos intergrupais",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>75</span>  <span class='chapter-title'>75. Grupos, preconceito e processos intergrupais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-76-normalidade-anormalidade.html",
+    "href": "capitulos/vol13-psicopatologia/cap-76-normalidade-anormalidade.html",
+    "title": "76. Normalidade e anormalidade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>76</span>  <span class='chapter-title'>76. Normalidade e anormalidade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-77-classificacao-dsm-cid.html",
+    "href": "capitulos/vol13-psicopatologia/cap-77-classificacao-dsm-cid.html",
+    "title": "77. Sistemas de classificação (DSM-5-TR e CID-11)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>77</span>  <span class='chapter-title'>77. Sistemas de classificação (DSM-5-TR e CID-11)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-78-transtornos-ansiedade.html",
+    "href": "capitulos/vol13-psicopatologia/cap-78-transtornos-ansiedade.html",
+    "title": "78. Transtornos de ansiedade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>78</span>  <span class='chapter-title'>78. Transtornos de ansiedade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-79-transtornos-humor.html",
+    "href": "capitulos/vol13-psicopatologia/cap-79-transtornos-humor.html",
+    "title": "79. Transtornos do humor (depressivos e bipolares)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>79</span>  <span class='chapter-title'>79. Transtornos do humor (depressivos e bipolares)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-80-trauma-estresse.html",
+    "href": "capitulos/vol13-psicopatologia/cap-80-trauma-estresse.html",
+    "title": "80. Transtornos relacionados a trauma e estresse",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>80</span>  <span class='chapter-title'>80. Transtornos relacionados a trauma e estresse</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-81-toc-relacionados.html",
+    "href": "capitulos/vol13-psicopatologia/cap-81-toc-relacionados.html",
+    "title": "81. TOC e transtornos relacionados",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>81</span>  <span class='chapter-title'>81. TOC e transtornos relacionados</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-82-esquizofrenia-psicoticos.html",
+    "href": "capitulos/vol13-psicopatologia/cap-82-esquizofrenia-psicoticos.html",
+    "title": "82. Esquizofrenia e transtornos psicóticos",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>82</span>  <span class='chapter-title'>82. Esquizofrenia e transtornos psicóticos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-83-transtornos-personalidade.html",
+    "href": "capitulos/vol13-psicopatologia/cap-83-transtornos-personalidade.html",
+    "title": "83. Transtornos de personalidade",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>83</span>  <span class='chapter-title'>83. Transtornos de personalidade</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-84-transtornos-alimentares.html",
+    "href": "capitulos/vol13-psicopatologia/cap-84-transtornos-alimentares.html",
+    "title": "84. Transtornos alimentares",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>84</span>  <span class='chapter-title'>84. Transtornos alimentares</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-85-neurodesenvolvimento.html",
+    "href": "capitulos/vol13-psicopatologia/cap-85-neurodesenvolvimento.html",
+    "title": "85. Transtornos do neurodesenvolvimento (TEA, TDAH)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>85</span>  <span class='chapter-title'>85. Transtornos do neurodesenvolvimento (TEA, TDAH)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol13-psicopatologia/cap-86-uso-substancias.html",
+    "href": "capitulos/vol13-psicopatologia/cap-86-uso-substancias.html",
+    "title": "86. Transtornos por uso de substâncias",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>86</span>  <span class='chapter-title'>86. Transtornos por uso de substâncias</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-87-fundamentos-intervencao.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-87-fundamentos-intervencao.html",
+    "title": "87. Fundamentos da intervenção psicológica",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>87</span>  <span class='chapter-title'>87. Fundamentos da intervenção psicológica</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-88-terapias-psicodinamicas.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-88-terapias-psicodinamicas.html",
+    "title": "88. Terapias psicodinâmicas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>88</span>  <span class='chapter-title'>88. Terapias psicodinâmicas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-89-terapias-humanistas.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-89-terapias-humanistas.html",
+    "title": "89. Terapias humanistas",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>89</span>  <span class='chapter-title'>89. Terapias humanistas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-90-terapia-comportamental.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-90-terapia-comportamental.html",
+    "title": "90. Terapia comportamental",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>90</span>  <span class='chapter-title'>90. Terapia comportamental</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-91-tcc.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-91-tcc.html",
+    "title": "91. Terapia cognitivo-comportamental (TCC)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>91</span>  <span class='chapter-title'>91. Terapia cognitivo-comportamental (TCC)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-92-terapias-contextuais.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-92-terapias-contextuais.html",
+    "title": "92. Terapias contextuais (ACT, DBT, mindfulness)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>92</span>  <span class='chapter-title'>92. Terapias contextuais (ACT, DBT, mindfulness)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-93-terapias-sistemicas.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-93-terapias-sistemicas.html",
+    "title": "93. Terapias sistêmicas e de grupo",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>93</span>  <span class='chapter-title'>93. Terapias sistêmicas e de grupo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-94-psicofarmacos.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-94-psicofarmacos.html",
+    "title": "94. Tratamentos biomédicos (psicofármacos)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>94</span>  <span class='chapter-title'>94. Tratamentos biomédicos (psicofármacos)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol14-tratamentos-terapias/cap-95-pratica-baseada-evidencias.html",
+    "href": "capitulos/vol14-tratamentos-terapias/cap-95-pratica-baseada-evidencias.html",
+    "title": "95. Eficácia e prática baseada em evidências",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>95</span>  <span class='chapter-title'>95. Eficácia e prática baseada em evidências</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-96-psicologia-saude.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-96-psicologia-saude.html",
+    "title": "96. Psicologia da saúde",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>96</span>  <span class='chapter-title'>96. Psicologia da saúde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-97-organizacional-trabalho.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-97-organizacional-trabalho.html",
+    "title": "97. Psicologia organizacional e do trabalho",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>97</span>  <span class='chapter-title'>97. Psicologia organizacional e do trabalho</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-98-escolar-educacional.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-98-escolar-educacional.html",
+    "title": "98. Psicologia escolar e educacional",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>98</span>  <span class='chapter-title'>98. Psicologia escolar e educacional</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-99-neuropsicologia.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-99-neuropsicologia.html",
+    "title": "99. Neuropsicologia",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>99</span>  <span class='chapter-title'>99. Neuropsicologia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-100-psicologia-positiva.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-100-psicologia-positiva.html",
+    "title": "100. Psicologia positiva",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>100</span>  <span class='chapter-title'>100. Psicologia positiva</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-101-juridica-forense.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-101-juridica-forense.html",
+    "title": "101. Psicologia jurídica e forense",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>101</span>  <span class='chapter-title'>101. Psicologia jurídica e forense</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-102-esporte.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-102-esporte.html",
+    "title": "102. Psicologia do esporte",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>102</span>  <span class='chapter-title'>102. Psicologia do esporte</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.html",
+    "title": "103. Psicologia, cultura e diversidade (transcultural)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>103</span>  <span class='chapter-title'>103. Psicologia, cultura e diversidade (transcultural)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-104-psicologia-no-brasil.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-104-psicologia-no-brasil.html",
+    "title": "104. A psicologia no Brasil (história, profissão, CFP/CRP, ética)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>104</span>  <span class='chapter-title'>104. A psicologia no Brasil (história, profissão, CFP/CRP, ética)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/vol15-aplicada-fronteiras/cap-105-topicos-contemporaneos.html",
+    "href": "capitulos/vol15-aplicada-fronteiras/cap-105-topicos-contemporaneos.html",
+    "title": "105. Tópicos contemporâneos e fronteiras (ciberpsicologia, IA, replicabilidade, ciência aberta)",
+    "section": "",
+    "text": "🚧 Em construção.",
+    "crumbs": [
+      "Fase 3 — Diferenças, Sociedade e Aplicações",
+      "<span class='chapter-number'>105</span>  <span class='chapter-title'>105. Tópicos contemporâneos e fronteiras (ciberpsicologia, IA, replicabilidade, ciência aberta)</span>"
+    ]
+  },
+  {
+    "objectID": "referencias.html",
+    "href": "referencias.html",
+    "title": "Referências",
+    "section": "",
+    "text": "BEYERSTEIN, Barry L. Whence cometh the myth that we only use ten percent\nof our brains? In: DELLA SALA, Sergio (Org.). Mind\nMyths: Exploring Popular Assumptions About the Mind and Brain.\nChichester: John Wiley & Sons, 1999. p. 3–24.\n\n\nCAMERER, Colin F. et al. Evaluating the\nreplicability of social science experiments in Nature and\nScience between 2010 and 2015. Nature Human\nBehaviour, v. 2, n. 9, p. 637–644, 2018.\n\n\nCARLSON, Shawn. A\ndouble-blind test of astrology. Nature, v. 318, n.\n6045, p. 419–425, 1985.\n\n\nFESTINGER, Leon; CARLSMITH, James M. Cognitive consequences of forced\ncompliance. The Journal of Abnormal and Social\nPsychology, v. 58, n. 2, p. 203–210, 1959.\n\n\nFISCHHOFF, Baruch. Hindsight is not equal\nto foresight: The effect of outcome knowledge on judgment under\nuncertainty. Journal of Experimental Psychology: Human\nPerception and Performance, v. 1, n. 3, p. 288–299, 1975.\n\n\nFORER, Bertram R. The fallacy\nof personal validation: A classroom demonstration of gullibility.\nThe Journal of Abnormal and Social Psychology, v. 44,\nn. 1, p. 118–123, 1949.\n\n\nGILBERT, Daniel T. et al. Comment on\n“Estimating the reproducibility of psychological\nscience”. Science, v. 351, n. 6277, p. 1037,\n2016.\n\n\nHENRICH, Joseph; HEINE, Steven J.; NORENZAYAN, Ara. The weirdest people in\nthe world? Behavioral and Brain Sciences, v. 33, n.\n2-3, p. 61–83, 2010.\n\n\nJAMES, William. The Principles of Psychology. New York:\nHenry Holt; Company, 1890.\n\n\nKAHNEMAN, Daniel. Thinking, Fast and Slow. New York:\nFarrar, Straus; Giroux, 2011.\n\n\nLAZARSFELD, Paul F. The\nAmerican Soldier — An Expository Review. Public Opinion\nQuarterly, v. 13, n. 3, p. 377–404, 1949.\n\n\nLILIENFELD, Scott O. et al. 50 Great Myths of Popular\nPsychology: Shattering Widespread Misconceptions about Human\nBehavior. Chichester: Wiley-Blackwell, 2010.\n\n\nMARR, David. Vision: A Computational Investigation into the\nHuman Representation and Processing of Visual Information. San\nFrancisco: W. H. Freeman, 1982.\n\n\nMEEHL, Paul E. Theoretical risks and\ntabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft\npsychology. Journal of Consulting and Clinical\nPsychology, v. 46, n. 4, p. 806–834, 1978.\n\n\nMILLER, George A. Psychology\nas a means of promoting human welfare. American\nPsychologist, v. 24, n. 12, p. 1063–1075, 1969.\n\n\nNISBETT, Richard E.; WILSON, Timothy D. Telling more than we\ncan know: Verbal reports on mental processes. Psychological\nReview, v. 84, n. 3, p. 231–259, 1977.\n\n\nOPEN SCIENCE COLLABORATION. Estimating the\nreproducibility of psychological science. Science,\nv. 349, n. 6251, p. aac4716, 2015.\n\n\nPOPPER, Karl R. The Logic of Scientific Discovery.\nLondon: Hutchinson, 1959.\n\n\nSTANOVICH, Keith E. How to Think Straight About\nPsychology. 11. ed. Boston: Pearson, 2019.\n\n\nTINBERGEN, Niko. On aims and\nmethods of ethology. Zeitschrift für Tierpsychologie, v. 20, n. 4, p.\n410–433, 1963.\n\n\nTVERSKY, Amos; KAHNEMAN, Daniel. Judgment under\nuncertainty: Heuristics and biases. Science, v.\n185, n. 4157, p. 1124–1131, 1974.\n\n\nVANDENBOS, Gary R. (ORG.). APA Dictionary of\nPsychology. 2. ed. Washington, DC: American Psychological\nAssociation, 2015.\n\n\nWATSON, John B. Psychology as\nthe behaviorist views it. Psychological Review, v.\n20, n. 2, p. 158–177, 1913.\n\n\nWUNDT, Wilhelm. Grundzüge der physiologischen\nPsychologie. Leipzig: Wilhelm Engelmann, 1874.",
+    "crumbs": [
+      "Referências"
+    ]
+  }
+]
