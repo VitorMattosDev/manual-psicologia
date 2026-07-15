@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -688,8 +737,39 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#natureza-cultura" id="toc-natureza-cultura" class="nav-link active" data-scroll-target="#natureza-cultura">Natureza × cultura</a>
+  <ul class="collapse">
+  <li><a href="#a-pergunta-errada" id="toc-a-pergunta-errada" class="nav-link" data-scroll-target="#a-pergunta-errada">A pergunta errada</a></li>
+  <li><a href="#o-que-a-herdabilidade-realmente-é" id="toc-o-que-a-herdabilidade-realmente-é" class="nav-link" data-scroll-target="#o-que-a-herdabilidade-realmente-é">O que a herdabilidade realmente é</a></li>
+  <li><a href="#o-que-os-dados-mostram" id="toc-o-que-os-dados-mostram" class="nav-link" data-scroll-target="#o-que-os-dados-mostram">O que os dados mostram</a></li>
+  <li><a href="#como-os-dois-lados-de-fato-se-encontram" id="toc-como-os-dois-lados-de-fato-se-encontram" class="nav-link" data-scroll-target="#como-os-dois-lados-de-fato-se-encontram">Como os dois lados de fato se encontram</a></li>
+  <li><a href="#uma-lição-de-método-que-custou-caro" id="toc-uma-lição-de-método-que-custou-caro" class="nav-link" data-scroll-target="#uma-lição-de-método-que-custou-caro">Uma lição de método que custou caro</a></li>
+  </ul></li>
+  <li><a href="#mente-e-corpo" id="toc-mente-e-corpo" class="nav-link" data-scroll-target="#mente-e-corpo">Mente e corpo</a>
+  <ul class="collapse">
+  <li><a href="#o-problema" id="toc-o-problema" class="nav-link" data-scroll-target="#o-problema">O problema</a></li>
+  <li><a href="#a-aposta-monista" id="toc-a-aposta-monista" class="nav-link" data-scroll-target="#a-aposta-monista">A aposta monista</a></li>
+  </ul></li>
+  <li><a href="#consciência" id="toc-consciência" class="nav-link" data-scroll-target="#consciência">Consciência</a>
+  <ul class="collapse">
+  <li><a href="#o-problema-fácil-e-o-problema-difícil" id="toc-o-problema-fácil-e-o-problema-difícil" class="nav-link" data-scroll-target="#o-problema-fácil-e-o-problema-difícil">O problema fácil e o problema difícil</a></li>
+  <li><a href="#o-que-a-ciência-da-consciência-de-fato-faz" id="toc-o-que-a-ciência-da-consciência-de-fato-faz" class="nav-link" data-scroll-target="#o-que-a-ciência-da-consciência-de-fato-faz">O que a ciência da consciência de fato faz</a></li>
+  </ul></li>
+  <li><a href="#livre-arbítrio" id="toc-livre-arbítrio" class="nav-link" data-scroll-target="#livre-arbítrio">Livre-arbítrio</a>
+  <ul class="collapse">
+  <li><a href="#o-experimento-que-virou-manchete" id="toc-o-experimento-que-virou-manchete" class="nav-link" data-scroll-target="#o-experimento-que-virou-manchete">O experimento que virou manchete</a></li>
+  <li><a href="#o-que-isso-realmente-decide" id="toc-o-que-isso-realmente-decide" class="nav-link" data-scroll-target="#o-que-isso-realmente-decide">O que isso realmente decide</a></li>
+  </ul></li>
+  <li><a href="#o-padrão-comum" id="toc-o-padrão-comum" class="nav-link" data-scroll-target="#o-padrão-comum">O padrão comum</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +793,1195 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Explicar</strong> por que “natureza × cultura” é uma falsa dicotomia e substituí-la pela pergunta correta sobre interação.</li>
+<li><strong>Definir</strong> herdabilidade com precisão e identificar os três erros mais comuns em sua interpretação.</li>
+<li><strong>Distinguir</strong> dualismo de monismo e explicar por que a psicologia contemporânea opera sob pressupostos monistas sem que isso resolva o problema.</li>
+<li><strong>Diferenciar</strong> os problemas “fáceis” da consciência do <strong>problema difícil</strong>, e avaliar o que as teorias atuais de fato explicam.</li>
+<li><strong>Descrever</strong> o experimento de Libet, sua interpretação original e a releitura de Schurger, articulando o que ele realmente demonstra.</li>
+<li><strong>Posicionar-se</strong> de forma informada sobre compatibilismo, reconhecendo onde a evidência empírica ajuda e onde a questão permanece conceitual.</li>
+</ul>
 </div>
+<p>O Cap. 1 defendeu que a psicologia se distingue do senso comum pelo método. Mas método serve para responder perguntas, e algumas perguntas são grandes o bastante para atravessar a disciplina inteira sem se deixar responder de vez. Este capítulo trata de quatro delas.</p>
+<p>São questões peculiares porque nenhuma é <em>puramente</em> empírica. Cada uma tem um núcleo conceitual — filosófico — que nenhum experimento resolve sozinho, e uma periferia empírica onde os dados mordem de verdade. A tentação é dupla e simétrica: tratar tudo como filosofia (e concluir que a ciência nada tem a dizer) ou tratar tudo como empiria (e imaginar que mais um experimento encerra o assunto). As duas tentações erram.</p>
+<p>O que este capítulo oferece não é uma resposta a cada questão, e sim algo mais útil: a capacidade de saber, em cada uma delas, <strong>onde a evidência decide e onde ela não decide</strong>. Essa fronteira é a parte que os capítulos seguintes vão pressupor.</p>
+<section id="natureza-cultura" class="level2">
+<h2 class="anchored" data-anchor-id="natureza-cultura">Natureza × cultura</h2>
+<section id="a-pergunta-errada" class="level3">
+<h3 class="anchored" data-anchor-id="a-pergunta-errada">A pergunta errada</h3>
+<p>Comecemos pelo veredito, porque ele economiza tempo: <strong>a dicotomia natureza × cultura está morta</strong>, e o que a matou não foi um argumento filosófico, foi a evidência.</p>
+<p>A pergunta “é genético ou aprendido?” pressupõe que as duas fontes sejam causas separadas e somáveis, como se cada característica humana tivesse uma fração vinda dos genes e outra do ambiente, disputando um total fixo. Nenhum organismo funciona assim. Um gene não faz nada fora de um ambiente; um ambiente não faz nada exceto sobre um organismo estruturado geneticamente. Perguntar qual dos dois causou um traço é como perguntar se a área de um retângulo se deve à largura ou à altura.</p>
+<p>A analogia é de Donald Hebb, e continua sendo a melhor correção disponível. Mas ela tem um limite que vale enunciar de imediato, porque é onde as pessoas erram na direção oposta: dizer que a pergunta “qual dos dois?” é malformada <strong>não</strong> significa que a genética comportamental não meça nada. Ela mede — só que outra coisa.</p>
+</section>
+<section id="o-que-a-herdabilidade-realmente-é" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-a-herdabilidade-realmente-é">O que a herdabilidade realmente é</h3>
+<p><strong>Herdabilidade</strong> (<span class="math inline">\(h^2\)</span>) é a proporção da <strong>variância</strong> de um traço, <strong>numa população específica, num ambiente específico</strong>, que é atribuível à variância genética entre os indivíduos dessa população.</p>
+<p>Cada elemento dessa definição faz trabalho, e ignorar qualquer um deles produz um erro grave:</p>
+<p><strong>É sobre variância, não sobre indivíduos.</strong> Dizer que a altura tem <span class="math inline">\(h^2 \approx 0{,}8\)</span> não significa que 80% da sua altura veio dos genes e 20% da comida. Essa frase não tem sentido. Significa que, <em>entre</em> as pessoas daquela população, cerca de 80% das <em>diferenças</em> de altura acompanham diferenças genéticas. Herdabilidade é uma estatística de população; aplicada a um indivíduo, ela simplesmente não se define <span class="citation" data-cites="moore_shenk2017">(<a href="../../referencias.html#ref-moore_shenk2017" role="doc-biblioref">Moore; Shenk, 2017</a>)</span>.</p>
+<p><strong>É relativa a uma população e a um ambiente.</strong> Como é uma razão entre variâncias, o valor muda quando o ambiente muda — e muda de formas contraintuitivas. Se você equalizar perfeitamente a nutrição de todos, a variância ambiental cai, e a herdabilidade da altura <em>sobe</em>, sem que nenhum gene tenha mudado. Inversamente, num ambiente muito desigual, a herdabilidade <em>cai</em>. <strong>Herdabilidade alta não significa “pouco afetado pelo ambiente”</strong> — significa que, naquele ambiente, o ambiente variava pouco.</p>
+<p><strong>Não diz nada sobre maleabilidade.</strong> A miopia é altamente herdável e se corrige com óculos. A fenilcetonúria é uma condição genética de herança simples cujo efeito devastador é neutralizado por uma dieta. Herdabilidade não é destino, e essa confusão é a mais politicamente perigosa da lista.</p>
+<p><strong>Não autoriza conclusões sobre diferenças entre grupos.</strong> Este é o erro mais caro. Richard Lewontin ofereceu a imagem definitiva: pegue um punhado de sementes geneticamente variadas e divida-o em dois vasos. No vaso A, solo rico; no vaso B, solo pobre. <em>Dentro</em> de cada vaso, toda a variação de altura das plantas é genética — a herdabilidade é 1,0, porque o solo é idêntico para todas ali. E, no entanto, a diferença <em>entre</em> os vasos é 100% ambiental <span class="citation" data-cites="lewontin1970">(<a href="../../referencias.html#ref-lewontin1970" role="doc-biblioref">Lewontin, 1970</a>)</span>. Herdabilidade dentro de grupos não licencia nenhuma inferência sobre a origem das diferenças entre grupos. O manual retorna a isso no Cap. 50, onde essa confusão tem história.</p>
+<div class="atencao">
+<p><strong>“Herdabilidade de 50% significa que metade do traço vem dos genes.”</strong></p>
+<p>Não. Significa que metade da <em>variação observada naquela população, naquele ambiente</em> acompanha variação genética. As três palavras que quase sempre somem — variação, população, ambiente — são justamente as que sustentam o conceito.</p>
+<p>Um teste rápido para detectar o erro: se a frase sobre herdabilidade continuar fazendo sentido quando aplicada a <strong>uma única pessoa</strong>, ela está errada. Herdabilidade de um indivíduo não existe, do mesmo modo que não existe a taxa de natalidade de uma pessoa.</p>
+</div>
+</section>
+<section id="o-que-os-dados-mostram" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-os-dados-mostram">O que os dados mostram</h3>
+<p>Com o conceito no lugar, os dados são notáveis. A maior síntese disponível reuniu praticamente todos os estudos de gêmeos publicados em cinquenta anos — mais de 14,5 milhões de pares de gêmeos, cobrindo 17.804 traços — e encontrou uma herdabilidade média em torno de <strong>49%</strong> para o conjunto dos traços humanos, com padrão de resultados amplamente compatível com um modelo aditivo simples <span class="citation" data-cites="polderman2015">(<a href="../../referencias.html#ref-polderman2015" role="doc-biblioref">Polderman et al., 2015</a>)</span>. O Estudo de Minnesota com gêmeos criados separados, que tornou a área conhecida do grande público, já apontava nessa direção: gêmeos idênticos separados ao nascer e reencontrados na vida adulta se parecem substancialmente em traços psicológicos <span class="citation" data-cites="bouchard1990">(<a href="../../referencias.html#ref-bouchard1990" role="doc-biblioref">Bouchard et al., 1990</a>)</span>.</p>
+<p>Eric Turkheimer condensou o achado central da área em três “leis” que valem mais que muitos artigos <span class="citation" data-cites="turkheimer2000">(<a href="../../referencias.html#ref-turkheimer2000" role="doc-biblioref">Turkheimer, 2000</a>)</span>. Primeira: <strong>todos os traços comportamentais humanos são herdáveis</strong> — não há traço psicológico com <span class="math inline">\(h^2\)</span> igual a zero. Segunda: <strong>o efeito de crescer na mesma família é menor que o efeito dos genes</strong>. Terceira, e a mais interessante: <strong>uma porção substancial da variação não é explicada nem pelos genes nem pelas famílias</strong> — o chamado ambiente não compartilhado, que inclui tudo aquilo que difere entre irmãos criados juntos, e provavelmente também ruído do desenvolvimento.</p>
+<div class="experimento">
+<p><strong>Gêmeos separados ao nascer</strong> <span class="citation" data-cites="bouchard1990">(<a href="../../referencias.html#ref-bouchard1990" role="doc-biblioref">Bouchard et al., 1990</a>)</span></p>
+<p><strong>Desenho.</strong> A partir de 1979, a equipe de Thomas Bouchard localizou e trouxe a Minnesota gêmeos monozigóticos (idênticos) e dizigóticos (fraternos) que haviam sido separados na primeira infância e criados em famílias diferentes. Cada par passou por cerca de 50 horas de avaliação: personalidade, interesses, atitudes, capacidade cognitiva, história médica. A lógica é elegante: gêmeos idênticos compartilham ~100% dos genes; se foram criados em ambientes distintos, a semelhança remanescente estima a contribuição genética.</p>
+<p><strong>Resultado.</strong> As semelhanças foram maiores do que quase todos esperavam. Em capacidade cognitiva geral, a correlação entre idênticos criados separados ficou em torno de 0,70. Traços de personalidade, interesses ocupacionais e até atitudes sociais mostraram contribuição genética substancial. Criar-se em lares diferentes reduzia a semelhança bem menos do que a intuição previa.</p>
+<p><strong>Interpretação.</strong> O estudo foi decisivo para enterrar o ambientalismo radical — a ideia de que a criança é uma folha em branco moldada pela criação. Nenhum traço psicológico se mostrou imune à genética.</p>
+<p><strong>Limitações.</strong> E são sérias, o que raramente aparece nas reportagens. A amostra é pequena e <strong>auto-selecionada</strong>: os pares foram localizados em boa medida por publicidade, e gêmeos que se reencontram e aceitam 50 horas de teste podem ser justamente os mais parecidos. As “separações” nem sempre foram completas — vários pares tiveram contato antes da avaliação, e agências de adoção tendiam a colocar bebês em lares socioeconomicamente semelhantes, o que infla a estimativa genética ao reduzir a variação ambiental real. Além disso, as histórias de coincidências espantosas que popularizaram o estudo (os “gêmeos Jim”) são <strong>anedotas</strong>, não dados: com centenas de variáveis comparadas, coincidências chamativas são estatisticamente esperadas — é o problema do atirador texano (Cap. 21). O achado central sobrevive a essas críticas, e foi confirmado por amostras muito maiores e mais limpas <span class="citation" data-cites="polderman2015">(<a href="../../referencias.html#ref-polderman2015" role="doc-biblioref">Polderman et al., 2015</a>)</span>; as estimativas pontuais deste estudo específico, não necessariamente.</p>
+</div>
+</section>
+<section id="como-os-dois-lados-de-fato-se-encontram" class="level3">
+<h3 class="anchored" data-anchor-id="como-os-dois-lados-de-fato-se-encontram">Como os dois lados de fato se encontram</h3>
+<p>Se genes e ambiente não se somam, como interagem? A <a href="#fig-genes-ambiente" class="quarto-xref">Figura&nbsp;<span>2.1</span></a> organiza as quatro vias principais, todas com evidência independente.</p>
+<div id="fig-genes-ambiente" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-genes-ambiente-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Diagrama mostrando a interação entre genes e ambiente. À esquerda, uma caixa vermelha &quot;Genes&quot;; à direita, uma caixa verde &quot;Ambiente&quot;; ao centro, uma caixa azul &quot;Fenótipo&quot; (o traço observado). Setas partem de genes e ambiente para o fenótipo. Quatro vias de interação são rotuladas ao redor: interação gene-ambiente (o efeito do ambiente depende do genótipo), correlação gene-ambiente (o genótipo influencia a que ambientes a pessoa se expõe), epigenética (o ambiente altera a expressão dos genes) e uma seta de retorno do fenótipo para o ambiente, indicando que o comportamento modifica o próprio contexto." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="335.285559pt" height="167.353365pt" viewbox="-68.014948 -68.014946 335.285559 167.353365">
+<defs>
+<path id="tz_genes_ambiente_g0-19" d="M3.277709-4.02391C3.375342-4.065753 3.57061-4.177335 3.57061-4.42142C3.57061-4.609714 3.403238-4.902615 3.110336-4.902615C2.949938-4.902615 2.852304-4.818929 2.817435-4.78406L1.862017-3.856538L2.113076-3.493898L3.277709-4.02391Z"></path>
+<path id="tz_genes_ambiente_g0-24" d="M2.698879 .083686H1.8132V.425405C2.064259 .425405 2.552428 .439352 2.552428 .760149C2.552428 1.108842 1.659776 1.108842 1.380822 1.108842H1.066999V1.429639H1.506351C3.305604 1.429639 3.438107 1.018182 3.438107 .760149C3.438107 .292902 2.970859 .188294 2.698879 .146451V.083686Z"></path>
+<path id="tz_genes_ambiente_g0-65" d="M3.758904-4.714321C3.668244-4.909589 3.584558-4.909589 3.375342-4.909589C3.159153-4.909589 3.075467-4.909589 2.984807-4.714321L1.108842-.516065C1.066999-.432379 1.060025-.425405 .885679-.404483C.753176-.390535 .683437-.390535 .564882-.390535H.355666V0C.383562 0 .913574-.027895 1.227397-.027895C1.534247-.027895 2.182814 0 2.217684 0V-.390535C2.196762-.390535 1.617933-.390535 1.617933-.446326C1.617933-.4533 1.645828-.509091 1.652802-.523039L2.02939-1.366874H4.156413L4.595766-.390535H3.96812V0C4.33076-.027895 4.867746-.027895 5.23736-.027895C5.669738-.027895 6.290411-.006974 6.388045 0V-.390535H5.697634L3.758904-4.714321ZM3.089415-3.737983L3.982067-1.75741H2.203736L3.089415-3.737983Z"></path>
+<path id="tz_genes_ambiente_g0-71" d="M5.969614-1.527273H6.590286V-1.917808C6.485679-1.910834 5.837111-1.889913 5.404732-1.889913C5.125778-1.889913 4.839851-1.896887 4.553923-1.896887C4.351681-1.896887 4.002989-1.903861 3.800747-1.917808V-1.527273H4.916563V-.878705C4.916563-.697385 4.916563-.306849 3.870486-.306849C3.556663-.306849 2.789539-.334745 2.238605-.801993C1.910834-1.080946 1.659776-1.520299 1.659776-2.399004C1.659776-3.103362 1.820174-3.612453 2.189788-3.961146C2.650062-4.38655 3.340473-4.47721 3.772852-4.47721C4.553923-4.47721 5.293151-4.002989 5.467497-3.103362C5.495392-2.956912 5.502366-2.93599 5.697634-2.93599H5.746451C5.948692-2.93599 5.969614-2.956912 5.969614-3.159153V-4.644583C5.969614-4.78406 5.969614-4.867746 5.809215-4.867746C5.725529-4.867746 5.711582-4.860772 5.641843-4.798007L5.174595-4.393524C4.470237-4.867746 3.828643-4.867746 3.605479-4.867746C1.590037-4.867746 .523039-3.737983 .523039-2.39203C.523039-1.26924 1.325031 .083686 3.668244 .083686C4.044832 .083686 4.853798 .069738 5.209465-.292902C5.369863-.18132 5.788294 0 5.844085 0C5.969614 0 5.969614-.118555 5.969614-.223163V-1.527273Z"></path>
+<path id="tz_genes_ambiente_g0-97" d="M3.682192-2.057285C3.682192-2.629141 3.221918-3.159153 1.966625-3.159153C1.562142-3.159153 .585803-3.159153 .585803-2.468742C.585803-2.161893 .808966-1.980573 1.066999-1.980573C1.373848-1.980573 1.555168-2.196762 1.555168-2.461768C1.555168-2.615193 1.492403-2.719801 1.471482-2.740722C1.457534-2.761644 1.45056-2.775592 1.45056-2.789539C1.45056-2.824408 1.896887-2.838356 1.945704-2.838356C2.433873-2.838356 2.796513-2.643088 2.796513-2.050311V-1.862017C2.454795-1.862017 .285928-1.834122 .285928-.801993C.285928-.153425 1.053051 .041843 1.750436 .041843C2.489664 .041843 2.817435-.292902 2.93599-.474222C2.93599-.174346 3.124284 0 3.696139 0H4.107597C4.2401 0 4.351681 0 4.351681-.195268S4.247073-.390535 4.100623-.390535C3.682192-.390535 3.682192-.446326 3.682192-.606725V-2.057285ZM2.796513-.955417C2.796513-.808966 2.796513-.606725 2.524533-.439352C2.259527-.278954 1.931756-.278954 1.889913-.278954C1.499377-.278954 1.164633-.495143 1.164633-.808966C1.164633-1.380822 2.099128-1.569116 2.796513-1.590037V-.955417Z"></path>
+<path id="tz_genes_ambiente_g0-99" d="M3.731009-.795019C3.731009-.920548 3.612453-.920548 3.507846-.920548C3.347447-.920548 3.333499-.913574 3.284682-.808966C3.180075-.578829 2.956912-.313823 2.419925-.313823C1.297136-.313823 1.297136-1.290162 1.297136-1.57609C1.297136-2.099128 1.380822-2.803487 2.315318-2.803487C2.357161-2.803487 2.75467-2.796513 2.75467-2.768618C2.75467-2.75467 2.747696-2.747696 2.740722-2.740722C2.726775-2.719801 2.66401-2.615193 2.66401-2.461768C2.66401-2.175841 2.873225-1.980573 3.145205-1.980573C3.431133-1.980573 3.633375-2.175841 3.633375-2.468742C3.633375-3.138232 2.698879-3.159153 2.294396-3.159153C.739228-3.159153 .327771-2.196762 .327771-1.548194C.327771-.732254 .934496 .041843 2.252553 .041843C2.594271 .041843 2.949938-.013948 3.228892-.174346C3.626401-.411457 3.731009-.753176 3.731009-.795019Z"></path>
+<path id="tz_genes_ambiente_g0-101" d="M3.598506-1.45056C3.744956-1.45056 3.84259-1.45056 3.84259-1.659776C3.84259-1.862017 3.793773-2.385056 3.459029-2.726775C3.082441-3.103362 2.566376-3.159153 2.182814-3.159153C.892653-3.159153 .278954-2.39203 .278954-1.569116C.278954-.739228 .920548 .041843 2.30137 .041843C2.552428 .041843 2.956912 .013948 3.305604-.174346C3.717061-.390535 3.84259-.72528 3.84259-.795019C3.84259-.948443 3.689166-.948443 3.619427-.948443C3.493898-.948443 3.459029-.941469 3.403238-.829888C3.152179-.313823 2.517559-.313823 2.399004-.313823C1.297136-.313823 1.262267-1.129763 1.248319-1.45056H3.598506ZM1.248319-1.743462C1.255293-2.015442 1.290162-2.838356 2.189788-2.838356S3.138232-2.043337 3.152179-1.743462H1.248319Z"></path>
+<path id="tz_genes_ambiente_g0-103" d="M1.659776-.620672C1.415691-.620672 1.318057-.620672 1.199502-.718306C1.129763-.774097 1.039103-.878705 1.039103-1.046077C1.039103-1.08792 1.039103-1.164633 1.08792-1.227397C1.45056-1.053051 1.855044-1.053051 2.001494-1.053051C3.180075-1.053051 3.528767-1.66675 3.528767-2.092154C3.528767-2.447821 3.312578-2.684932 3.249813-2.740722C3.361395-2.782565 3.521793-2.831382 3.668244-2.84533C3.654296-2.810461 3.647323-2.75467 3.647323-2.712827C3.647323-2.461768 3.856538-2.357161 3.996015-2.357161C4.156413-2.357161 4.351681-2.475716 4.351681-2.712827C4.351681-2.929016 4.177335-3.180075 3.828643-3.180075C3.542715-3.180075 3.228892-3.068493 3.019676-2.915068C2.608219-3.138232 2.168867-3.138232 2.001494-3.138232C.864757-3.138232 .481196-2.545455 .481196-2.099128C.481196-1.701619 .72528-1.478456 .850809-1.373848C.690411-1.17858 .627646-.976339 .627646-.760149C.627646-.502117 .72528-.27198 .9066-.09066C.662516-.034869 .278954 .139477 .278954 .502117C.278954 .920548 .767123 1.401743 2.252553 1.401743C3.535741 1.401743 4.226152 1.03213 4.226152 .481196C4.226152 .341719 4.20523-.160399 3.626401-.432379C3.20797-.620672 2.747696-.620672 2.036364-.620672H1.659776ZM2.001494-1.373848C1.311083-1.373848 1.311083-1.820174 1.311083-2.092154C1.311083-2.371108 1.311083-2.817435 2.001494-2.817435C2.698879-2.817435 2.698879-2.378082 2.698879-2.099128C2.698879-1.8132 2.698879-1.373848 2.001494-1.373848ZM2.461768 .132503C2.636115 .132503 3.542715 .132503 3.542715 .502117C3.542715 .732254 3.249813 1.080946 2.252553 1.080946C1.297136 1.080946 .962391 .753176 .962391 .495143C.962391 .132503 1.443587 .132503 1.534247 .132503H2.461768Z"></path>
+<path id="tz_genes_ambiente_g0-105" d="M1.827148-4.274969C1.827148-4.609714 1.555168-4.846824 1.262267-4.846824C.927522-4.846824 .690411-4.574844 .690411-4.281943C.690411-3.947198 .962391-3.710087 1.255293-3.710087C1.590037-3.710087 1.827148-3.982067 1.827148-4.274969ZM.488169-3.082441V-2.691905C.885679-2.691905 .934496-2.691905 .934496-2.419925V-.390535H.467248V0C.481196 0 1.03213-.027895 1.345953-.027895C1.63188-.027895 1.910834-.020922 2.196762 0V-.390535H1.771357V-3.138232L.488169-3.082441Z"></path>
+<path id="tz_genes_ambiente_g0-108" d="M1.771357-4.839851L.467248-4.78406V-4.393524C.878705-4.393524 .934496-4.393524 .934496-4.121544V-.390535H.467248V0C.488169 0 1.03213-.027895 1.352927-.027895C1.694645-.027895 2.217684 0 2.238605 0V-.390535H1.771357V-4.839851Z"></path>
+<path id="tz_genes_ambiente_g0-110" d="M4.267995-2.099128C4.267995-2.956912 3.717061-3.138232 3.075467-3.138232C2.231631-3.138232 1.841096-2.636115 1.708593-2.412951V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.390535H.446326V0C.4533 0 1.018182-.027895 1.352927-.027895C1.694645-.027895 2.259527 0 2.266501 0V-.390535H1.799253V-1.736488C1.799253-2.545455 2.524533-2.817435 2.942964-2.817435C3.249813-2.817435 3.382316-2.657036 3.382316-2.154919V-.390535H2.915068V0C2.922042 0 3.486924-.027895 3.821669-.027895C4.163387-.027895 4.728269 0 4.735243 0V-.390535H4.267995V-2.099128Z"></path>
+<path id="tz_genes_ambiente_g0-111" d="M4.226152-1.520299C4.226152-2.350187 3.619427-3.159153 2.252553-3.159153C.871731-3.159153 .278954-2.343213 .278954-1.520299C.278954-.704359 .899626 .041843 2.252553 .041843C3.612453 .041843 4.226152-.711333 4.226152-1.520299ZM2.252553-.313823C1.248319-.313823 1.248319-1.004234 1.248319-1.603985C1.248319-2.161893 1.248319-2.838356 2.252553-2.838356S3.256787-2.161893 3.256787-1.603985C3.256787-1.004234 3.256787-.313823 2.252553-.313823Z"></path>
+<path id="tz_genes_ambiente_g0-112" d="M2.203736 .962391H1.736488V-.258032C1.910834-.139477 2.252553 .041843 2.740722 .041843C3.940224 .041843 4.672478-.63462 4.672478-1.555168C4.672478-2.399004 4.065753-3.138232 2.880199-3.138232C2.517559-3.138232 2.092154-3.068493 1.687671-2.817435V-3.138232L.383562-3.082441V-2.691905C.502117-2.691905 .641594-2.691905 .732254-2.677958C.850809-2.657036 .850809-2.580324 .850809-2.447821V.962391H.383562V1.352927C.390535 1.352927 .955417 1.325031 1.290162 1.325031C1.63188 1.325031 2.196762 1.352927 2.203736 1.352927V.962391ZM1.736488-2.231631C1.736488-2.364134 1.743462-2.371108 1.841096-2.461768C2.175841-2.75467 2.587298-2.782565 2.733748-2.782565C3.326526-2.782565 3.703113-2.308344 3.703113-1.555168C3.703113-.648568 3.180075-.278954 2.650062-.278954S1.820174-.655542 1.736488-.774097V-2.231631Z"></path>
+<path id="tz_genes_ambiente_g0-114" d="M1.687671-1.464508C1.687671-2.092154 1.973599-2.782565 2.601245-2.817435C2.594271-2.810461 2.503611-2.691905 2.503611-2.517559C2.503611-2.245579 2.698879-2.043337 2.977833-2.043337S3.452055-2.245579 3.452055-2.517559C3.452055-2.901121 3.061519-3.138232 2.629141-3.138232C2.127024-3.138232 1.792279-2.803487 1.603985-2.371108H1.597011V-3.138232L.383562-3.082441V-2.691905C.795019-2.691905 .850809-2.691905 .850809-2.419925V-.390535H.383562V0C.411457 0 .948443-.027895 1.276214-.027895C1.548194-.027895 2.224658 0 2.273474 0V-.390535H1.687671V-1.464508Z"></path>
+<path id="tz_genes_ambiente_g0-116" d="M1.708593-2.705853H2.84533V-3.096389H1.708593V-4.428394H1.26924C1.262267-3.779826 .934496-3.047572 .195268-3.02665V-2.705853H.822914V-.843836C.822914-.153425 1.387796 .041843 1.994521 .041843C2.545455 .041843 2.991781-.278954 2.991781-.843836V-1.206476H2.552428V-.871731C2.552428-.390535 2.259527-.313823 2.12005-.313823C1.715567-.313823 1.708593-.655542 1.708593-.843836V-2.705853Z"></path>
+<path id="tz_genes_ambiente_g0-123" d="M4.47721-1.750436V-2.071233H.027895V-1.750436H4.47721Z"></path>
+<path id="tz_genes_ambiente_g0-126" d="M3.507846-4.839851C3.38929-4.721295 3.159153-4.533001 2.873225-4.533001C2.705853-4.533001 2.566376-4.581818 2.315318-4.6934C2.147945-4.770112 1.980573-4.839851 1.792279-4.839851C1.48543-4.839851 1.373848-4.735243 .774097-4.14944L.99726-3.919303C1.115816-4.037858 1.345953-4.226152 1.63188-4.226152C1.799253-4.226152 1.93873-4.177335 2.189788-4.065753C2.357161-3.989041 2.524533-3.919303 2.712827-3.919303C3.019676-3.919303 3.131258-4.02391 3.731009-4.609714L3.507846-4.839851Z"></path>
+<path id="tz_genes_ambiente_g1-19" d="M3.882441-5.263263C4.00797-5.326027 4.223163-5.44259 4.223163-5.738481C4.223163-6.043337 3.945205-6.312329 3.676214-6.312329C3.461021-6.312329 3.371357-6.213699 3.120299-5.935741C2.914072-5.711582 2.411955-5.137733 2.196762-4.913574L2.47472-4.545953L3.882441-5.263263Z"></path>
+<path id="tz_genes_ambiente_g1-65" d="M4.393524-6.034371C4.294894-6.276463 4.160399-6.276463 3.999004-6.276463S3.703113-6.276463 3.604483-6.034371L1.33599-.645579C1.273225-.502117 1.273225-.493151 1.049066-.466252C.896638-.448319 .726276-.439352 .573848-.439352H.385554V0C.887671-.017933 1.004234-.026899 1.479452-.026899C1.829141-.026899 2.116065-.026899 2.67198 0V-.439352C2.429888-.439352 2.125031-.439352 1.873973-.537983L2.367123-1.721544H4.850809L5.388792-.439352H4.545953V0C4.859776-.026899 5.76538-.026899 6.133001-.026899C6.509589-.026899 7.271731-.026899 7.612453 0V-.439352H6.742715L4.393524-6.034371ZM3.61345-4.671482L4.662516-2.160897H2.555417L3.61345-4.671482Z"></path>
+<path id="tz_genes_ambiente_g1-70" d="M5.944707-6.097136H.376588V-5.657783H1.344956V-.439352H.376588V0C.690411-.026899 1.667746-.026899 2.044334-.026899C2.465753-.026899 3.48792-.026899 3.855542 0V-.439352H2.645081V-2.833375H3.129265C3.999004-2.833375 4.079701-2.447821 4.079701-1.784309H4.536986V-4.321793H4.079701C4.079701-3.658281 3.999004-3.272727 3.129265-3.272727H2.645081V-5.657783H3.963138C5.406725-5.657783 5.630884-4.985305 5.76538-3.918306H6.222665L5.944707-6.097136Z"></path>
+<path id="tz_genes_ambiente_g1-71" d="M7.065504-2.044334H7.800747V-2.483686C7.451059-2.456787 6.670984-2.456787 6.28543-2.456787C5.837111-2.456787 4.832877-2.456787 4.438356-2.483686V-2.044334H5.76538V-1.147696C5.76538-.959402 5.76538-.699377 5.379826-.502117C5.1467-.385554 4.841843-.331756 4.545953-.331756C4.061768-.331756 3.165131-.42142 2.537484-1.111831C2.008468-1.703611 1.999502-2.698879 1.999502-3.084433C1.999502-3.756912 2.080199-4.599751 2.618182-5.1467C3.227895-5.756413 4.088667-5.819178 4.474222-5.819178C5.263263-5.819178 6.303362-5.34396 6.536488-3.918306C6.554421-3.801743 6.662017-3.801743 6.796513-3.801743C7.038605-3.801743 7.065504-3.819676 7.065504-4.061768V-5.998506C7.065504-6.1599 7.065504-6.258531 6.886177-6.258531C6.796513-6.258531 6.77858-6.240598 6.697883-6.168867L6.106102-5.648817C5.595019-6.06127 4.940473-6.258531 4.285928-6.258531C1.972603-6.258531 .591781-4.895641 .591781-3.075467C.591781-1.33599 1.882939 .107597 4.303861 .107597C4.716314 .107597 5.595019 .080697 6.06127-.439352C6.312329-.251059 6.859278 0 6.931009 0C7.065504 0 7.065504-.134496 7.065504-.260025V-2.044334Z"></path>
+<path id="tz_genes_ambiente_g1-98" d="M1.972603-6.222665L.367621-6.150934V-5.711582C.905604-5.711582 .977335-5.711582 .977335-5.361893V0H1.43462L1.85604-.511083C2.142964-.224159 2.582316 .053798 3.218929 .053798C4.617684 .053798 5.532254-.789041 5.532254-1.990535C5.532254-3.200996 4.662516-4.034869 3.335492-4.034869C2.618182-4.034869 2.142964-3.730012 1.972603-3.604483V-6.222665ZM2.026401-3.102366C2.25056-3.38929 2.680946-3.676214 3.227895-3.676214C4.339726-3.676214 4.339726-2.600249 4.339726-2.008468C4.339726-1.63188 4.339726-1.165629 4.151432-.842839C3.855542-.340722 3.308593-.304857 3.129265-.304857C2.57335-.304857 2.214695-.645579 2.026401-.932503V-3.102366Z"></path>
+<path id="tz_genes_ambiente_g1-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_genes_ambiente_g1-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_genes_ambiente_g1-109" d="M7.989041-2.734745C7.989041-3.792777 7.352428-4.034869 6.563387-4.034869C5.630884-4.034869 5.173599-3.469988 5.003238-3.19203C4.805978-3.999004 4.016936-4.034869 3.622416-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.272727 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.999004-3.496887 3.999004-2.815442V-.439352H3.38929V0C4.052802-.026899 4.160399-.026899 4.519054-.026899C4.886675-.026899 4.976339-.026899 5.657783 0V-.439352H5.04807V-2.27746C5.04807-3.272727 5.872976-3.676214 6.410959-3.676214C6.751681-3.676214 6.939975-3.496887 6.939975-2.815442V-.439352H6.330262V0C6.993773-.026899 7.10137-.026899 7.460025-.026899C7.827646-.026899 7.91731-.026899 8.598755 0V-.439352H7.989041V-2.734745Z"></path>
+<path id="tz_genes_ambiente_g1-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_genes_ambiente_g1-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_genes_ambiente_g1-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_genes_ambiente_g1-115" d="M3.559651-3.801743C3.559651-3.963138 3.559651-4.061768 3.380324-4.061768C3.29066-4.061768 3.147198-3.990037 2.985803-3.900374C2.698879-4.025903 2.349191-4.061768 2.0533-4.061768C1.775342-4.061768 .349689-4.061768 .349689-2.878207C.349689-1.936737 1.524284-1.739477 1.838107-1.685679C2.57335-1.560149 3.165131-1.461519 3.165131-.950436C3.165131-.304857 2.322291-.304857 2.125031-.304857C1.667746-.304857 1.084932-.42142 .824907-1.246326C.780075-1.398755 .771108-1.425654 .582814-1.425654C.349689-1.425654 .349689-1.371856 .349689-1.156663V-.206227C.349689-.044832 .349689 .053798 .529016 .053798C.591781 .053798 .609714 .053798 .806974-.071731L1.049066-.224159C1.470486 .053798 1.945704 .053798 2.125031 .053798C2.394022 .053798 3.828643 .053798 3.828643-1.255293C3.828643-1.712578 3.568618-1.999502 3.407223-2.133998C3.003736-2.47472 2.716812-2.519552 2.008468-2.636115C1.578082-2.707846 1.0132-2.797509 1.0132-3.200996C1.0132-3.738979 1.847073-3.738979 2.044334-3.738979C3.048568-3.738979 3.084433-3.209963 3.102366-2.96787C3.111333-2.842341 3.236862-2.842341 3.326526-2.842341C3.550685-2.842341 3.559651-2.887173 3.559651-3.102366V-3.801743Z"></path>
+<path id="tz_genes_ambiente_g1-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+<path id="tz_genes_ambiente_g2-2" d="M4.881694-3.270735C4.958406-3.347447 4.979328-3.38929 4.979328-3.438107C4.979328-3.549689 4.888667-3.612453 4.811955-3.612453C4.742217-3.612453 4.721295-3.591532 4.637609-3.507846L3.110336-1.987547L1.57609-3.514819C1.506351-3.584558 1.478456-3.612453 1.415691-3.612453C1.318057-3.612453 1.241345-3.535741 1.241345-3.438107C1.241345-3.375342 1.262267-3.354421 1.345953-3.270735L2.866252-1.750436L1.345953-.230137C1.248319-.132503 1.241345-.097634 1.241345-.055791C1.241345 .041843 1.318057 .118555 1.415691 .118555C1.478456 .118555 1.499377 .097634 1.57609 .020922L3.110336-1.506351L4.700374 .083686C4.735243 .104608 4.770112 .118555 4.811955 .118555C4.888667 .118555 4.979328 .055791 4.979328-.055791C4.979328-.111582 4.96538-.125529 4.944458-.146451C4.930511-.174346 3.577584-1.527273 3.354421-1.743462L4.881694-3.270735Z"></path>
+<path id="tz_genes_ambiente_g3-12" d="M2.719801-3.02665C2.643088-3.019676 2.608219-3.019676 2.594271-3.012702S2.566376-3.005729 2.468742-3.005729H1.3599V-3.765878C1.3599-4.456289 2.078207-4.714321 2.559402-4.714321C2.796513-4.714321 3.033624-4.665504 3.214944-4.519054C2.963885-4.463263 2.942964-4.267995 2.942964-4.184309C2.942964-3.96812 3.11731-3.84259 3.284682-3.84259C3.410212-3.84259 3.626401-3.926276 3.626401-4.198257C3.626401-4.581818 3.235866-4.909589 2.587298-4.909589C1.862017-4.909589 .864757-4.581818 .864757-3.772852V-3.005729H.265006V-2.75467H.864757V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.355666 0 .843836-.027895 1.12279-.027895C1.387796-.027895 1.645828-.020922 1.910834 0V-.251059C1.457534-.251059 1.387796-.251059 1.387796-.550934V-2.75467H2.775592C3.061519-2.75467 3.11731-2.684932 3.11731-2.378082V-.550934C3.11731-.251059 3.047572-.251059 2.594271-.251059V0C2.608219 0 3.096389-.027895 3.375342-.027895C3.640349-.027895 3.898381-.020922 4.163387 0V-.251059C3.710087-.251059 3.640349-.251059 3.640349-.550934V-3.089415L2.719801-3.02665Z"></path>
+<path id="tz_genes_ambiente_g3-13" d="M3.640349-4.839851C3.584558-4.832877 3.375342-4.798007 3.354421-4.798007C3.340473-4.798007 3.326526-4.798007 3.291656-4.818929C3.040598-4.909589 2.740722-4.909589 2.608219-4.909589C1.75741-4.909589 .864757-4.533001 .864757-3.772852V-3.005729H.265006V-2.75467H.864757V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.355666 0 .843836-.027895 1.12279-.027895C1.387796-.027895 1.645828-.020922 1.910834 0V-.251059C1.457534-.251059 1.387796-.251059 1.387796-.550934V-2.75467H3.11731V-.550934C3.11731-.251059 3.047572-.251059 2.594271-.251059V0C2.608219 0 3.096389-.027895 3.375342-.027895C3.640349-.027895 3.898381-.020922 4.163387 0V-.251059C3.710087-.251059 3.640349-.251059 3.640349-.550934V-4.839851ZM1.3599-3.005729V-3.765878C1.3599-4.379577 1.931756-4.714321 2.601245-4.714321C2.775592-4.714321 2.915068-4.707347 3.089415-4.665504C3.005729-4.609714 2.956912-4.505106 2.956912-4.400498C2.956912-4.358655 2.970859-4.20523 3.11731-4.121544V-3.005729H1.3599Z"></path>
+<path id="tz_genes_ambiente_g3-19" d="M1.799253-3.528767C2.343213-3.926276 2.768618-4.219178 2.901121-4.323786C3.012702-4.400498 3.075467-4.449315 3.075467-4.581818S2.956912-4.867746 2.789539-4.867746C2.677958-4.867746 2.622167-4.804981 2.552428-4.728269L1.638854-3.710087L1.799253-3.528767Z"></path>
+<path id="tz_genes_ambiente_g3-24" d="M2.259527 .139477H1.708593V.481196C2.175841 .488169 2.350187 .662516 2.350187 .850809C2.350187 1.12279 1.987547 1.227397 1.311083 1.227397H1.060025V1.422665H1.401743C1.408717 1.422665 1.966625 1.422665 2.322291 1.345953C2.608219 1.283188 2.901121 1.164633 2.901121 .850809C2.901121 .571856 2.691905 .390535 2.259527 .320797V.139477Z"></path>
+<path id="tz_genes_ambiente_g3-97" d="M3.110336-1.868991C3.110336-2.238605 3.110336-2.503611 2.789539-2.761644C2.503611-2.998755 2.168867-3.110336 1.75741-3.110336C1.094894-3.110336 .627646-2.859278 .627646-2.433873C.627646-2.21071 .781071-2.092154 .962391-2.092154C1.150685-2.092154 1.290162-2.231631 1.290162-2.419925C1.290162-2.538481 1.234371-2.684932 1.046077-2.740722C1.297136-2.915068 1.701619-2.915068 1.743462-2.915068C2.133998-2.915068 2.559402-2.657036 2.559402-2.071233V-1.855044C2.175841-1.841096 1.715567-1.820174 1.206476-1.63188C.578829-1.401743 .383562-1.018182 .383562-.704359C.383562-.104608 1.108842 .069738 1.603985 .069738C2.161893 .069738 2.489664-.244085 2.636115-.516065C2.66401-.230137 2.852304 .034869 3.173101 .034869C3.187049 .034869 3.863512 .034869 3.863512-.627646V-1.011208H3.626401V-.63462C3.626401-.564882 3.626401-.230137 3.368369-.230137S3.110336-.557908 3.110336-.648568V-1.868991ZM2.559402-.983313C2.559402-.313823 1.973599-.125529 1.659776-.125529C1.30411-.125529 .969365-.36264 .969365-.704359C.969365-1.08792 1.30411-1.624907 2.559402-1.673724V-.983313Z"></path>
+<path id="tz_genes_ambiente_g3-98" d="M1.387796-4.839851L.341719-4.763138V-4.51208C.81594-4.51208 .864757-4.456289 .864757-4.107597V0H1.101868L1.345953-.425405C1.610959-.076712 1.994521 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.357161 3.354421-3.075467 2.440847-3.075467C2.022416-3.075467 1.638854-2.908095 1.387796-2.657036V-4.839851ZM1.415691-2.336239C1.610959-2.657036 1.987547-2.880199 2.405978-2.880199C2.796513-2.880199 3.075467-2.657036 3.214944-2.447821C3.354421-2.245579 3.438107-1.973599 3.438107-1.513325C3.438107-1.352927 3.438107-.829888 3.152179-.502117C2.873225-.188294 2.531507-.125529 2.329265-.125529C1.771357-.125529 1.492403-.564882 1.415691-.711333V-2.336239Z"></path>
+<path id="tz_genes_ambiente_g3-99" d="M2.712827-2.782565C2.587298-2.726775 2.517559-2.615193 2.517559-2.475716C2.517559-2.287422 2.650062-2.147945 2.84533-2.147945C3.033624-2.147945 3.180075-2.266501 3.180075-2.489664C3.180075-3.110336 2.21071-3.110336 2.015442-3.110336C.969365-3.110336 .320797-2.308344 .320797-1.506351C.320797-.627646 1.066999 .069738 1.980573 .069738C3.019676 .069738 3.263761-.753176 3.263761-.836862S3.173101-.920548 3.145205-.920548C3.054545-.920548 3.047572-.899626 3.012702-.801993C2.859278-.369614 2.489664-.153425 2.064259-.153425C1.583064-.153425 .955417-.509091 .955417-1.513325C.955417-2.399004 1.387796-2.887173 2.036364-2.887173C2.127024-2.887173 2.461768-2.887173 2.712827-2.782565Z"></path>
+<path id="tz_genes_ambiente_g3-100" d="M2.48269-4.763138V-4.51208C2.949938-4.51208 3.005729-4.463263 3.005729-4.121544V-2.677958C2.747696-2.929016 2.412951-3.075467 2.02939-3.075467C1.101868-3.075467 .320797-2.378082 .320797-1.499377C.320797-.627646 1.060025 .069738 1.945704 .069738C2.517559 .069738 2.859278-.237111 2.977833-.36264V.069738L4.051806 0V-.251059C3.584558-.251059 3.528767-.299875 3.528767-.641594V-4.839851L2.48269-4.763138ZM2.977833-.732254C2.796513-.404483 2.440847-.125529 1.987547-.125529C1.597011-.125529 1.318057-.355666 1.17858-.557908C1.039103-.767123 .955417-1.046077 .955417-1.492403C.955417-1.652802 .955417-2.175841 1.241345-2.503611C1.520299-2.817435 1.862017-2.880199 2.064259-2.880199C2.399004-2.880199 2.698879-2.726775 2.894147-2.475716C2.977833-2.364134 2.977833-2.357161 2.977833-2.224658V-.732254Z"></path>
+<path id="tz_genes_ambiente_g3-101" d="M3.068493-1.590037C3.214944-1.590037 3.263761-1.590037 3.263761-1.743462C3.263761-2.357161 2.922042-3.110336 1.882939-3.110336C.969365-3.110336 .27198-2.385056 .27198-1.527273C.27198-.641594 1.046077 .069738 1.973599 .069738C2.915068 .069738 3.263761-.683437 3.263761-.836862C3.263761-.864757 3.249813-.934496 3.145205-.934496C3.054545-.934496 3.040598-.892653 3.019676-.822914C2.803487-.258032 2.273474-.153425 2.022416-.153425C1.694645-.153425 1.380822-.299875 1.171606-.564882C.913574-.892653 .9066-1.318057 .9066-1.590037H3.068493ZM.913574-1.771357C.990286-2.75467 1.617933-2.915068 1.882939-2.915068C2.740722-2.915068 2.768618-1.945704 2.775592-1.771357H.913574Z"></path>
+<path id="tz_genes_ambiente_g3-102" d="M1.436613-2.75467H2.308344V-3.005729H1.408717V-3.7868C1.408717-4.42142 1.785305-4.714321 2.085181-4.714321C2.147945-4.714321 2.217684-4.700374 2.287422-4.679452C2.189788-4.623661 2.133998-4.51208 2.133998-4.400498C2.133998-4.212204 2.266501-4.079701 2.454795-4.079701S2.775592-4.212204 2.775592-4.400498C2.775592-4.700374 2.475716-4.909589 2.092154-4.909589C1.54122-4.909589 .913574-4.519054 .913574-3.7868V-3.005729H.313823V-2.75467H.913574V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.425405 0 .899626-.027895 1.185554-.027895C1.48543-.027895 1.792279-.013948 2.092154 0V-.251059H1.952677C1.436613-.251059 1.436613-.327771 1.436613-.564882V-2.75467Z"></path>
+<path id="tz_genes_ambiente_g3-103" d="M1.004234-1.241345C1.108842-1.17858 1.3599-1.025156 1.764384-1.025156C2.48269-1.025156 3.005729-1.506351 3.005729-2.050311C3.005729-2.322291 2.880199-2.538481 2.712827-2.719801C3.02665-2.942964 3.29863-2.949938 3.417186-2.949938C3.38929-2.922042 3.354421-2.894147 3.354421-2.782565C3.354421-2.643088 3.459029-2.559402 3.577584-2.559402C3.675218-2.559402 3.800747-2.629141 3.800747-2.789539S3.668244-3.145205 3.38929-3.145205C3.284682-3.145205 2.908095-3.124284 2.580324-2.824408C2.371108-2.977833 2.078207-3.075467 1.771357-3.075467C1.053051-3.075467 .530012-2.594271 .530012-2.050311C.530012-1.778331 .669489-1.527273 .864757-1.345953C.808966-1.283188 .655542-1.053051 .655542-.781071C.655542-.690411 .676463-.36264 .948443-.160399C.63462-.055791 .27198 .174346 .27198 .536986C.27198 1.046077 1.039103 1.429639 1.980573 1.429639C2.866252 1.429639 3.689166 1.080946 3.689166 .523039C3.689166 .313823 3.605479-.062765 3.221918-.27198C2.810461-.488169 2.399004-.488169 1.72254-.488169C1.569116-.488169 1.318057-.488169 1.262267-.495143C1.039103-.54396 .913574-.753176 .913574-.955417C.913574-1.129763 .962391-1.185554 1.004234-1.241345ZM1.771357-1.234371C1.08792-1.234371 1.08792-1.903861 1.08792-2.050311C1.08792-2.161893 1.08792-2.440847 1.227397-2.622167C1.325031-2.740722 1.513325-2.866252 1.764384-2.866252C2.447821-2.866252 2.447821-2.196762 2.447821-2.050311C2.447821-1.93873 2.447821-1.659776 2.308344-1.478456C2.21071-1.3599 2.022416-1.234371 1.771357-1.234371ZM1.771357-.020922C2.39203-.020922 3.263761-.020922 3.263761 .530012C3.263761 .899626 2.712827 1.220423 1.980573 1.220423S.697385 .892653 .697385 .530012C.697385 .285928 .920548-.013948 1.366874-.020922H1.771357Z"></path>
+<path id="tz_genes_ambiente_g3-105" d="M1.471482-4.302864C1.471482-4.505106 1.30411-4.700374 1.066999-4.700374C.857783-4.700374 .669489-4.533001 .669489-4.302864C.669489-4.051806 .871731-3.898381 1.066999-3.898381C1.290162-3.898381 1.471482-4.072727 1.471482-4.302864ZM.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467L.411457-2.998755Z"></path>
+<path id="tz_genes_ambiente_g3-108" d="M1.436613-4.839851L.390535-4.763138V-4.51208C.857783-4.51208 .913574-4.463263 .913574-4.121544V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.436613-.027895 1.694645-.020922 1.959651 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.550934V-4.839851Z"></path>
+<path id="tz_genes_ambiente_g3-109" d="M5.732503-2.113076C5.732503-2.719801 5.432628-3.075467 4.686426-3.075467C4.135492-3.075467 3.758904-2.775592 3.57061-2.426899C3.431133-2.922042 3.054545-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-1.806227C3.591532-2.538481 4.170361-2.880199 4.630635-2.880199C5.118804-2.880199 5.181569-2.496638 5.181569-2.140971V-.550934C5.181569-.251059 5.111831-.251059 4.658531-.251059V0C4.672478 0 5.160648-.027895 5.453549-.027895C5.711582-.027895 6.192777-.006974 6.255542 0V-.251059C5.802242-.251059 5.732503-.251059 5.732503-.550934V-2.113076Z"></path>
+<path id="tz_genes_ambiente_g3-110" d="M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z"></path>
+<path id="tz_genes_ambiente_g3-111" d="M3.689166-1.48543C3.689166-2.357161 2.942964-3.110336 1.980573-3.110336S.27198-2.357161 .27198-1.48543C.27198-.620672 1.039103 .069738 1.980573 .069738S3.689166-.620672 3.689166-1.48543ZM1.980573-.153425C1.72254-.153425 1.345953-.237111 1.115816-.578829C.927522-.864757 .9066-1.227397 .9066-1.548194C.9066-1.84807 .913574-2.259527 1.157659-2.559402C1.332005-2.761644 1.624907-2.915068 1.980573-2.915068C2.39203-2.915068 2.684932-2.719801 2.838356-2.503611C3.033624-2.231631 3.054545-1.882939 3.054545-1.548194S3.033624-.843836 2.831382-.557908C2.643088-.292902 2.322291-.153425 1.980573-.153425Z"></path>
+<path id="tz_genes_ambiente_g3-112" d="M1.93873 1.101868C1.48543 1.101868 1.415691 1.101868 1.415691 .801993V-.334745C1.45056-.299875 1.778331 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.364134 3.361395-3.075467 2.475716-3.075467C2.078207-3.075467 1.673724-2.929016 1.387796-2.650062V-3.075467L.341719-2.998755V-2.747696C.829888-2.747696 .864757-2.712827 .864757-2.419925V.801993C.864757 1.101868 .795019 1.101868 .341719 1.101868V1.352927C.355666 1.352927 .843836 1.325031 1.136737 1.325031C1.39477 1.325031 1.875965 1.345953 1.93873 1.352927V1.101868ZM1.415691-2.322291C1.624907-2.670984 2.02939-2.852304 2.399004-2.852304C2.984807-2.852304 3.438107-2.238605 3.438107-1.506351C3.438107-.711333 2.915068-.125529 2.322291-.125529C1.708593-.125529 1.436613-.662516 1.415691-.704359V-2.322291Z"></path>
+<path id="tz_genes_ambiente_g3-113" d="M3.528767-3.075467H3.319552L3.068493-2.468742C2.852304-2.803487 2.503611-3.075467 2.008468-3.075467C1.108842-3.075467 .320797-2.39203 .320797-1.499377C.320797-.627646 1.066999 .069738 1.945704 .069738C2.503611 .069738 2.803487-.230137 2.977833-.404483V.801993C2.977833 1.101868 2.908095 1.101868 2.454795 1.101868V1.352927C2.468742 1.352927 2.956912 1.325031 3.249813 1.325031C3.507846 1.325031 3.989041 1.345953 4.051806 1.352927V1.101868C3.598506 1.101868 3.528767 1.101868 3.528767 .801993V-3.075467ZM3.005729-1.004234C3.005729-.878705 3.005729-.850809 2.901121-.669489C2.691905-.327771 2.343213-.125529 1.987547-.125529C1.408717-.125529 .955417-.753176 .955417-1.492403C.955417-2.308344 1.506351-2.852304 2.064259-2.852304C2.650062-2.852304 3.005729-2.280448 3.005729-1.889913V-1.004234Z"></path>
+<path id="tz_genes_ambiente_g3-114" d="M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z"></path>
+<path id="tz_genes_ambiente_g3-115" d="M2.643088-2.929016C2.643088-3.047572 2.643088-3.110336 2.545455-3.110336C2.510585-3.110336 2.496638-3.110336 2.405978-3.02665C2.39203-3.019676 2.322291-2.956912 2.280448-2.922042C2.071233-3.068493 1.806227-3.110336 1.548194-3.110336C.550934-3.110336 .313823-2.587298 .313823-2.238605C.313823-2.015442 .411457-1.834122 .578829-1.694645C.843836-1.464508 1.108842-1.415691 1.54122-1.345953C1.889913-1.283188 2.454795-1.185554 2.454795-.718306C2.454795-.446326 2.266501-.125529 1.597011-.125529S.683437-.564882 .557908-1.039103C.536986-1.129763 .530012-1.157659 .432379-1.157659C.313823-1.157659 .313823-1.108842 .313823-.969365V-.111582C.313823 .006974 .313823 .069738 .411457 .069738C.474222 .069738 .606725-.076712 .746202-.230137C1.053051 .055791 1.429639 .069738 1.597011 .069738C2.503611 .069738 2.838356-.418431 2.838356-.913574C2.838356-1.17858 2.719801-1.387796 2.538481-1.555168C2.273474-1.799253 1.952677-1.855044 1.708593-1.896887C1.150685-1.994521 .697385-2.078207 .697385-2.447821C.697385-2.670984 .885679-2.942964 1.548194-2.942964C2.357161-2.942964 2.39203-2.378082 2.405978-2.175841C2.412951-2.099128 2.496638-2.099128 2.524533-2.099128C2.643088-2.099128 2.643088-2.147945 2.643088-2.280448V-2.929016Z"></path>
+<path id="tz_genes_ambiente_g3-116" d="M1.401743-2.75467H2.489664V-3.005729H1.401743V-4.288917H1.164633C1.157659-3.66127 .871731-2.970859 .202242-2.949938V-2.75467H.850809V-.871731C.850809-.09066 1.436613 .069738 1.827148 .069738C2.294396 .069738 2.615193-.327771 2.615193-.878705V-1.262267H2.378082V-.885679C2.378082-.411457 2.154919-.153425 1.882939-.153425C1.401743-.153425 1.401743-.739228 1.401743-.864757V-2.75467Z"></path>
+<path id="tz_genes_ambiente_g3-117" d="M2.517559-2.998755V-2.747696C2.984807-2.747696 3.040598-2.698879 3.040598-2.357161V-1.164633C3.040598-.550934 2.643088-.125529 2.113076-.125529C1.478456-.125529 1.45056-.425405 1.45056-.781071V-3.075467L.376588-2.998755V-2.747696C.899626-2.747696 .899626-2.726775 .899626-2.106102V-1.060025C.899626-.578829 .899626 .069738 2.064259 .069738C2.217684 .069738 2.726775 .069738 3.061519-.516065H3.068493V.069738L4.11457 0V-.251059C3.647323-.251059 3.591532-.299875 3.591532-.641594V-3.075467L2.517559-2.998755Z"></path>
+<path id="tz_genes_ambiente_g3-118" d="M3.305604-2.322291C3.500872-2.747696 3.849564-2.75467 3.961146-2.75467V-3.005729C3.7868-2.991781 3.605479-2.977833 3.431133-2.977833C3.242839-2.977833 2.984807-2.984807 2.796513-3.005729V-2.75467C3.089415-2.740722 3.089415-2.510585 3.089415-2.489664C3.089415-2.454795 3.082441-2.385056 3.033624-2.287422L2.245579-.564882L1.380822-2.461768C1.380822-2.468742 1.338979-2.545455 1.338979-2.594271C1.338979-2.75467 1.57609-2.75467 1.694645-2.75467V-3.005729C1.680697-3.005729 1.185554-2.977833 .899626-2.977833C.690411-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.599751-2.75467 .683437-2.740722 .788045-2.503611L1.889913-.076712C1.924782 .006974 1.966625 .069738 2.085181 .069738C2.217684 .069738 2.245579 .006974 2.280448-.069738L3.305604-2.322291Z"></path>
+<path id="tz_genes_ambiente_g3-120" d="M2.364134-1.562142C2.357161-1.569116 2.308344-1.624907 2.308344-1.63188C2.308344-1.652802 2.768618-2.147945 2.831382-2.21071C3.075467-2.48269 3.319552-2.747696 3.870486-2.75467V-3.005729C3.675218-2.991781 3.472976-2.977833 3.284682-2.977833C3.075467-2.977833 2.803487-2.984807 2.594271-3.005729V-2.75467C2.712827-2.733748 2.733748-2.657036 2.733748-2.594271C2.733748-2.580324 2.733748-2.475716 2.629141-2.357161L2.140971-1.806227L1.562142-2.468742C1.492403-2.545455 1.48543-2.580324 1.48543-2.608219C1.48543-2.712827 1.583064-2.75467 1.673724-2.75467V-3.005729C1.415691-2.984807 1.150685-2.977833 .892653-2.977833C.683437-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.536986-2.75467 .718306-2.75467 .899626-2.545455L1.771357-1.54122C1.778331-1.534247 1.827148-1.478456 1.827148-1.471482C1.827148-1.45056 1.30411-.878705 1.234371-.801993C.976339-.523039 .739228-.265006 .18132-.251059V0C.390535-.013948 .54396-.027895 .760149-.027895C.969365-.027895 1.248319-.020922 1.457534 0V-.251059C1.373848-.265006 1.318057-.313823 1.318057-.411457C1.318057-.54396 1.39477-.63462 1.506351-.753176L1.994521-1.290162L2.601245-.599751C2.733748-.4533 2.733748-.439352 2.733748-.397509C2.733748-.258032 2.57335-.251059 2.545455-.251059V0C2.608219-.006974 3.110336-.027895 3.333499-.027895S3.779826-.020922 4.002989 0V-.251059C3.535741-.251059 3.47995-.292902 3.319552-.474222L2.364134-1.562142Z"></path>
+<path id="tz_genes_ambiente_g3-126" d="M3.124284-4.6934C2.922042-4.47721 2.719801-4.372603 2.524533-4.372603C2.343213-4.372603 2.133998-4.47721 2.078207-4.51208C1.827148-4.630635 1.680697-4.6934 1.527273-4.6934C1.241345-4.6934 1.136737-4.581818 .697385-4.135492L.836862-3.996015C1.039103-4.212204 1.241345-4.316812 1.436613-4.316812C1.617933-4.316812 1.827148-4.212204 1.882939-4.177335C2.133998-4.05878 2.280448-3.996015 2.433873-3.996015C2.719801-3.996015 2.824408-4.107597 3.263761-4.553923L3.124284-4.6934Z"></path>
+</defs>
+<g id="tz_genes_ambiente_page1">
+<g stroke-miterlimit="10" transform="translate(99.62783,9.648374)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#fcf0f0">
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#fcf0f0">
+<path d="M-97.89412 15.6491H-163.87144C-166.08061 15.6491-167.87144 13.85826-167.87144 11.6491V-11.6491C-167.87144-13.85826-166.08061-15.6491-163.87144-15.6491H-97.89412C-95.68495-15.6491-93.89412-13.85826-93.89412-11.6491V11.6491C-93.89412 13.85826-95.68495 15.6491-97.89412 15.6491ZM-167.87144-15.6491"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-145.01288,-3.0875)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g1-71"></use>
+<use x="107.965913" y="9.648374" href="#tz_genes_ambiente_g1-101"></use>
+<use x="112.834417" y="9.648374" href="#tz_genes_ambiente_g1-110"></use>
+<use x="118.728906" y="9.648374" href="#tz_genes_ambiente_g1-101"></use>
+<use x="123.59741" y="9.648374" href="#tz_genes_ambiente_g1-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#3fb618">
+<g fill="#f0faed">
+<g stroke-width="0.8">
+<g stroke="#3fb618">
+<g fill="#f0faed">
+<path d="M163.87144 15.6491H97.89412C95.68495 15.6491 93.89412 13.85826 93.89412 11.6491V-11.6491C93.89412-13.85826 95.68495-15.6491 97.89412-15.6491H163.87144C166.08061-15.6491 167.87144-13.85826 167.87144-11.6491V11.6491C167.87144 13.85826 166.08061 15.6491 163.87144 15.6491ZM93.89412-15.6491"></path>
+</g>
+</g>
+</g>
+<g transform="translate(108.3699,-3.125)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g1-65"></use>
+<use x="107.633834" y="9.648374" href="#tz_genes_ambiente_g1-109"></use>
+<use x="116.180824" y="9.648374" href="#tz_genes_ambiente_g1-98"></use>
+<use x="122.075312" y="9.648374" href="#tz_genes_ambiente_g1-105"></use>
+<use x="125.02256" y="9.648374" href="#tz_genes_ambiente_g1-101"></use>
+<use x="129.891065" y="9.648374" href="#tz_genes_ambiente_g1-110"></use>
+<use x="135.490806" y="9.648374" href="#tz_genes_ambiente_g1-116"></use>
+<use x="139.616947" y="9.648374" href="#tz_genes_ambiente_g1-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<path d="M32.98866-58.3282H-32.98866C-35.19783-58.3282-36.98866-60.11903-36.98866-62.3282V-85.62639C-36.98866-87.83556-35.19783-89.62639-32.98866-89.62639H32.98866C35.19783-89.62639 36.98866-87.83556 36.98866-85.62639V-62.3282C36.98866-60.11903 35.19783-58.3282 32.98866-58.3282ZM-36.98866-89.62639"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-30.78209,-82.0068)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="110.085227" y="-1.31053" href="#tz_genes_ambiente_g1-70"></use>
+<use x="115.869" y="-1.31053" href="#tz_genes_ambiente_g1-101"></use>
+<use x="120.737505" y="-1.31053" href="#tz_genes_ambiente_g1-110"></use>
+<use x="126.631993" y="-1.31053" href="#tz_genes_ambiente_g1-19"></use>
+<use x="126.631993" y="-1.31053" href="#tz_genes_ambiente_g1-111"></use>
+<use x="131.937035" y="-1.31053" href="#tz_genes_ambiente_g1-116"></use>
+<use x="136.063176" y="-1.31053" href="#tz_genes_ambiente_g1-105"></use>
+<use x="139.010424" y="-1.31053" href="#tz_genes_ambiente_g1-112"></use>
+<use x="145.199645" y="-1.31053" href="#tz_genes_ambiente_g1-111"></use>
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="106.283462" y="9.648374" href="#tz_genes_ambiente_g3-116"></use>
+<use x="109.396805" y="9.648374" href="#tz_genes_ambiente_g3-114"></use>
+<use x="112.510148" y="9.648374" href="#tz_genes_ambiente_g3-97"></use>
+<use x="116.481389" y="9.648374" href="#tz_genes_ambiente_g3-24"></use>
+<use x="116.481391" y="9.648374" href="#tz_genes_ambiente_g3-99"></use>
+<use x="120.023683" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="126.679315" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="130.650556" y="9.648374" href="#tz_genes_ambiente_g3-98"></use>
+<use x="135.050745" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="138.206985" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="141.749277" y="9.648374" href="#tz_genes_ambiente_g3-114"></use>
+<use x="144.86262" y="9.648374" href="#tz_genes_ambiente_g3-118"></use>
+<use x="148.619393" y="9.648374" href="#tz_genes_ambiente_g3-97"></use>
+<use x="152.590634" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="156.990823" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M-102.48882-16.04909L-31.95766-55.89885" fill="none"></path>
+<g transform="matrix(0.8706,-0.49188,0.49188,0.8706,-34.11179,-54.6818)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M102.48882-16.04909L31.95766-55.89885" fill="none"></path>
+<g transform="matrix(-0.8706,-0.49188,0.49188,-0.8706,34.11179,-54.6818)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-89.36841 0H89.36841" fill="none"></path>
+<g transform="matrix(-1.0,0.0,0.0,-1.0,-86.89412,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(86.89412,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="translate(-36.146,2.20009)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="106.116589" y="-6.291851" href="#tz_genes_ambiente_g0-105"></use>
+<use x="108.648747" y="-6.291851" href="#tz_genes_ambiente_g0-110"></use>
+<use x="113.410053" y="-6.291851" href="#tz_genes_ambiente_g0-116"></use>
+<use x="116.932944" y="-6.291851" href="#tz_genes_ambiente_g0-101"></use>
+<use x="121.063983" y="-6.291851" href="#tz_genes_ambiente_g0-114"></use>
+<use x="124.791672" y="-6.291851" href="#tz_genes_ambiente_g0-97"></use>
+<use x="129.181446" y="-6.291851" href="#tz_genes_ambiente_g0-24"></use>
+<use x="129.181459" y="-6.291851" href="#tz_genes_ambiente_g0-99"></use>
+<use x="133.137782" y="-6.291851" href="#tz_genes_ambiente_g0-126"></use>
+<use x="133.199717" y="-6.291851" href="#tz_genes_ambiente_g0-97"></use>
+<use x="137.589491" y="-6.291851" href="#tz_genes_ambiente_g0-111"></use>
+<use x="145.130642" y="-6.291851" href="#tz_genes_ambiente_g0-71"></use>
+<use x="152.184738" y="-6.291851" href="#tz_genes_ambiente_g2-2"></use>
+<use x="158.411418" y="-6.291851" href="#tz_genes_ambiente_g0-65"></use>
+<use x="100.323144" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="106.978776" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="110.521068" y="1.678262" href="#tz_genes_ambiente_g3-102"></use>
+<use x="112.990995" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="116.533287" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="118.788732" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="121.902075" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="128.557707" y="1.678262" href="#tz_genes_ambiente_g3-100"></use>
+<use x="132.957896" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="139.613529" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="143.584769" y="1.678262" href="#tz_genes_ambiente_g3-109"></use>
+<use x="149.91522" y="1.678262" href="#tz_genes_ambiente_g3-98"></use>
+<use x="154.315409" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="156.570855" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="160.113146" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="164.298854" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="167.412197" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="104.028019" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="107.570311" y="9.648374" href="#tz_genes_ambiente_g3-112"></use>
+<use x="112.184967" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="115.727259" y="9.648374" href="#tz_genes_ambiente_g3-110"></use>
+<use x="120.127448" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="124.527637" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="130.75432" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="135.154509" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="141.810141" y="9.648374" href="#tz_genes_ambiente_g3-103"></use>
+<use x="145.781382" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="149.323674" y="9.648374" href="#tz_genes_ambiente_g3-110"></use>
+<use x="153.723863" y="9.648374" href="#tz_genes_ambiente_g3-19"></use>
+<use x="153.723866" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="157.695106" y="9.648374" href="#tz_genes_ambiente_g3-116"></use>
+<use x="160.808449" y="9.648374" href="#tz_genes_ambiente_g3-105"></use>
+<use x="163.063895" y="9.648374" href="#tz_genes_ambiente_g3-112"></use>
+<use x="167.678551" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-105.2235 16.04909C-35.6253 59.53888 35.6253 59.53888 101.72475 18.23532" fill="none"></path>
+<g transform="matrix(0.84804,-0.5299,0.5299,0.84804,99.62645,19.54648)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(-40.66129,53.76048)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="109.48386" y="-6.291851" href="#tz_genes_ambiente_g0-99"></use>
+<use x="113.502115" y="-6.291851" href="#tz_genes_ambiente_g0-111"></use>
+<use x="118.01574" y="-6.291851" href="#tz_genes_ambiente_g0-114"></use>
+<use x="121.743429" y="-6.291851" href="#tz_genes_ambiente_g0-114"></use>
+<use x="125.471117" y="-6.291851" href="#tz_genes_ambiente_g0-101"></use>
+<use x="129.602156" y="-6.291851" href="#tz_genes_ambiente_g0-108"></use>
+<use x="132.134314" y="-6.291851" href="#tz_genes_ambiente_g0-97"></use>
+<use x="136.524088" y="-6.291851" href="#tz_genes_ambiente_g0-24"></use>
+<use x="136.524102" y="-6.291851" href="#tz_genes_ambiente_g0-99"></use>
+<use x="140.480424" y="-6.291851" href="#tz_genes_ambiente_g0-126"></use>
+<use x="140.542359" y="-6.291851" href="#tz_genes_ambiente_g0-97"></use>
+<use x="144.932133" y="-6.291851" href="#tz_genes_ambiente_g0-111"></use>
+<use x="152.473284" y="-6.291851" href="#tz_genes_ambiente_g0-71"></use>
+<use x="159.527381" y="-6.291851" href="#tz_genes_ambiente_g0-123"></use>
+<use x="164.041006" y="-6.291851" href="#tz_genes_ambiente_g0-65"></use>
+<use x="100.58051" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="107.236142" y="1.678262" href="#tz_genes_ambiente_g3-103"></use>
+<use x="111.207383" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="114.749675" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="119.149864" y="1.678262" href="#tz_genes_ambiente_g3-19"></use>
+<use x="119.149867" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="123.121107" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="126.23445" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="128.489896" y="1.678262" href="#tz_genes_ambiente_g3-112"></use>
+<use x="133.104552" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="139.760184" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="142.01563" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="146.415819" y="1.678262" href="#tz_genes_ambiente_g3-13"></use>
+<use x="150.926704" y="1.678262" href="#tz_genes_ambiente_g3-117"></use>
+<use x="155.326893" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="158.869184" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="163.269374" y="1.678262" href="#tz_genes_ambiente_g3-99"></use>
+<use x="166.811665" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="169.067111" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="175.722743" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g3-113"></use>
+<use x="103.813531" y="9.648374" href="#tz_genes_ambiente_g3-117"></use>
+<use x="108.213721" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="114.440404" y="9.648374" href="#tz_genes_ambiente_g3-97"></use>
+<use x="118.411644" y="9.648374" href="#tz_genes_ambiente_g3-109"></use>
+<use x="124.742095" y="9.648374" href="#tz_genes_ambiente_g3-98"></use>
+<use x="129.142284" y="9.648374" href="#tz_genes_ambiente_g3-105"></use>
+<use x="131.39773" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="134.940022" y="9.648374" href="#tz_genes_ambiente_g3-110"></use>
+<use x="139.125729" y="9.648374" href="#tz_genes_ambiente_g3-116"></use>
+<use x="142.239072" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="145.781364" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="151.621996" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="154.778237" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="161.00492" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="164.547212" y="9.648374" href="#tz_genes_ambiente_g3-120"></use>
+<use x="168.732933" y="9.648374" href="#tz_genes_ambiente_g3-112"></use>
+<use x="173.133122" y="9.648374" href="#tz_genes_ambiente_g3-126"></use>
+<use x="173.133125" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="177.104366" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M105.2235-16.04909C35.6253-59.53888-35.6253-59.53888-101.72475-18.23532" fill="none"></path>
+<g transform="matrix(-0.84804,0.5299,-0.5299,-0.84804,-99.62645,-19.54648)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(-34.40225,-73.26048)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="111.941608" y="-6.291851" href="#tz_genes_ambiente_g0-101"></use>
+<use x="116.072647" y="-6.291851" href="#tz_genes_ambiente_g0-112"></use>
+<use x="121.081635" y="-6.291851" href="#tz_genes_ambiente_g0-105"></use>
+<use x="123.613793" y="-6.291851" href="#tz_genes_ambiente_g0-103"></use>
+<use x="128.127418" y="-6.291851" href="#tz_genes_ambiente_g0-101"></use>
+<use x="132.258457" y="-6.291851" href="#tz_genes_ambiente_g0-110"></use>
+<use x="137.076146" y="-6.291851" href="#tz_genes_ambiente_g0-19"></use>
+<use x="137.267448" y="-6.291851" href="#tz_genes_ambiente_g0-101"></use>
+<use x="141.398487" y="-6.291851" href="#tz_genes_ambiente_g0-116"></use>
+<use x="144.921378" y="-6.291851" href="#tz_genes_ambiente_g0-105"></use>
+<use x="147.453536" y="-6.291851" href="#tz_genes_ambiente_g0-99"></use>
+<use x="151.471791" y="-6.291851" href="#tz_genes_ambiente_g0-97"></use>
+<use x="100.249826" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="106.905458" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="110.876699" y="1.678262" href="#tz_genes_ambiente_g3-109"></use>
+<use x="117.207149" y="1.678262" href="#tz_genes_ambiente_g3-98"></use>
+<use x="121.607338" y="1.678262" href="#tz_genes_ambiente_g3-105"></use>
+<use x="123.862784" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="127.405076" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="131.590783" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="134.704126" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="140.93081" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="144.90205" y="1.678262" href="#tz_genes_ambiente_g3-108"></use>
+<use x="147.157496" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="150.270839" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="153.813131" y="1.678262" href="#tz_genes_ambiente_g3-114"></use>
+<use x="156.926474" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="163.582106" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="103.170122" y="9.648374" href="#tz_genes_ambiente_g3-120"></use>
+<use x="107.355843" y="9.648374" href="#tz_genes_ambiente_g3-112"></use>
+<use x="111.756032" y="9.648374" href="#tz_genes_ambiente_g3-114"></use>
+<use x="114.869375" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="118.411667" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="121.567908" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="124.724148" y="9.648374" href="#tz_genes_ambiente_g3-126"></use>
+<use x="124.724151" y="9.648374" href="#tz_genes_ambiente_g3-97"></use>
+<use x="128.695392" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="135.351024" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="139.751213" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="143.722453" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+<use x="149.563086" y="9.648374" href="#tz_genes_ambiente_g3-103"></use>
+<use x="153.534326" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="157.076618" y="9.648374" href="#tz_genes_ambiente_g3-110"></use>
+<use x="161.476807" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="165.019099" y="9.648374" href="#tz_genes_ambiente_g3-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M37.38866-73.01428C76.5135-68.64423 102.41292-50.92857 118.75566-19.70422" fill="none"></path>
+<g transform="matrix(0.46368,0.88594,-0.88594,0.46368,117.60838,-21.89629)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(92.58752,-62.12546)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(99.62783,9.648374)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="103.388052" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="110.043684" y="1.678262" href="#tz_genes_ambiente_g3-99"></use>
+<use x="113.585975" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="117.557216" y="1.678262" href="#tz_genes_ambiente_g3-109"></use>
+<use x="124.102149" y="1.678262" href="#tz_genes_ambiente_g3-112"></use>
+<use x="128.716804" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="132.688045" y="1.678262" href="#tz_genes_ambiente_g3-114"></use>
+<use x="135.801388" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="138.914731" y="1.678262" href="#tz_genes_ambiente_g3-97"></use>
+<use x="142.885972" y="1.678262" href="#tz_genes_ambiente_g3-109"></use>
+<use x="149.430904" y="1.678262" href="#tz_genes_ambiente_g3-101"></use>
+<use x="152.973196" y="1.678262" href="#tz_genes_ambiente_g3-110"></use>
+<use x="157.158903" y="1.678262" href="#tz_genes_ambiente_g3-116"></use>
+<use x="160.272246" y="1.678262" href="#tz_genes_ambiente_g3-111"></use>
+<use x="99.62783" y="9.648374" href="#tz_genes_ambiente_g3-109"></use>
+<use x="106.172763" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="110.35847" y="9.648374" href="#tz_genes_ambiente_g3-100"></use>
+<use x="114.758659" y="9.648374" href="#tz_genes_ambiente_g3-105"></use>
+<use x="117.014105" y="9.648374" href="#tz_genes_ambiente_g3-12"></use>
+<use x="121.524989" y="9.648374" href="#tz_genes_ambiente_g3-99"></use>
+<use x="125.067281" y="9.648374" href="#tz_genes_ambiente_g3-97"></use>
+<use x="131.722913" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="138.378545" y="9.648374" href="#tz_genes_ambiente_g3-99"></use>
+<use x="141.920837" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+<use x="145.892077" y="9.648374" href="#tz_genes_ambiente_g3-110"></use>
+<use x="150.077785" y="9.648374" href="#tz_genes_ambiente_g3-116"></use>
+<use x="153.191128" y="9.648374" href="#tz_genes_ambiente_g3-101"></use>
+<use x="156.73342" y="9.648374" href="#tz_genes_ambiente_g3-120"></use>
+<use x="160.919141" y="9.648374" href="#tz_genes_ambiente_g3-116"></use>
+<use x="164.032484" y="9.648374" href="#tz_genes_ambiente_g3-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-genes-ambiente-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.1: Genes e ambiente não são causas paralelas que se somam. Eles se determinam mutuamente por pelo menos quatro vias, e o próprio comportamento realimenta o ambiente que o produziu.
+</figcaption>
+</figure>
+</div>
+<p>A <strong>correlação gene–ambiente</strong> é a via mais subestimada. Scarr e McCartney mostraram que o genótipo não espera passivamente pelo ambiente: ele ajuda a selecioná-lo <span class="citation" data-cites="scarr_mccartney1983">(<a href="../../referencias.html#ref-scarr_mccartney1983" role="doc-biblioref">Scarr; McCartney, 1983</a>)</span>. Uma criança com predisposição à leitura pede livros, é vista como leitora, ganha mais livros e escolhe amigos que leem — construindo ativamente o ambiente que depois “explicará” seu vocabulário. O que parece efeito puro do ambiente pode ser genótipo se expressando <em>através</em> da escolha de ambientes. Isso torna a separação estatística entre os dois muito mais escorregadia do que o modelo aditivo sugere.</p>
+<p>A <strong>epigenética</strong> fornece o mecanismo molecular da via inversa. No trabalho mais citado da área, Weaver e colegas mostraram que ratas que lambem e cuidam mais de seus filhotes produzem alterações duradouras na metilação do gene do receptor de glicocorticoides no hipocampo das crias, mudando por toda a vida a resposta ao estresse — e que o efeito podia ser revertido farmacologicamente <span class="citation" data-cites="weaver2004">(<a href="../../referencias.html#ref-weaver2004" role="doc-biblioref">Weaver et al., 2004</a>)</span>. Cuidado materno, um evento inteiramente ambiental, reescreve a expressão gênica.</p>
+<div class="atencao">
+<p><strong>Cuidado com a epigenética de divulgação.</strong> O achado de Weaver é sólido e importante, e virou combustível para afirmações muito além do que sustenta — sobretudo a ideia de que traumas dos avós estariam gravados no seu DNA. A herança epigenética <strong>transgeracional</strong> em humanos é, hoje, uma hipótese com evidência fraca e altamente disputada: os mecanismos de reprogramação entre gerações apagam a maior parte das marcas, e os estudos humanos disponíveis são observacionais e confundidos. “O ambiente regula a expressão gênica ao longo da vida” está bem estabelecido. “O sofrimento dos seus avós está no seu genoma” não está. O Vol 4 separa as duas afirmações com cuidado.</p>
+</div>
+</section>
+<section id="uma-lição-de-método-que-custou-caro" class="level3">
+<h3 class="anchored" data-anchor-id="uma-lição-de-método-que-custou-caro">Uma lição de método que custou caro</h3>
+<p>A <strong>interação gene × ambiente</strong> parecia o caminho mais promissor da psicologia dos anos 2000 — e a história do que aconteceu com ela é uma das mais instrutivas deste manual.</p>
+<p>Em 2003, Caspi e colegas relataram na <em>Science</em> um resultado belíssimo: um polimorfismo do gene transportador de serotonina (5-HTTLPR) moderava o efeito do estresse sobre a depressão. Portadores da variante curta que sofriam eventos estressantes deprimiam mais; sem estresse, não deprimiam mais que ninguém. Nem gene, nem ambiente — a interação <span class="citation" data-cites="caspi2003">(<a href="../../referencias.html#ref-caspi2003" role="doc-biblioref">Caspi et al., 2003</a>)</span>. O artigo foi citado milhares de vezes e virou o exemplo canônico de como a nova genética resolveria a velha dicotomia.</p>
+<p>Não replicou. Uma meta-análise de 14 estudos não encontrou a interação <span class="citation" data-cites="risch2009">(<a href="../../referencias.html#ref-risch2009" role="doc-biblioref">Risch et al., 2009</a>)</span>. E o golpe decisivo veio depois: Border e colegas testaram, em amostras muito grandes e com métodos pré-especificados, os 18 genes candidatos historicamente mais estudados em depressão — incluindo o 5-HTTLPR — e não encontraram apoio nem para os efeitos principais nem para as interações gene × ambiente. A conclusão dos autores é dura: a literatura de genes candidatos em depressão é, em larga medida, um artefato de amostras pequenas e flexibilidade analítica <span class="citation" data-cites="border2019">(<a href="../../referencias.html#ref-border2019" role="doc-biblioref">Border et al., 2019</a>)</span>.</p>
+<p>A lição não é que genes não importam para a depressão — importam, e a herdabilidade é substancial. É que <strong>eles não importam através de um punhado de genes de efeito grande</strong>. A arquitetura genética dos traços psicológicos é poligênica: milhares de variantes, cada uma com efeito minúsculo <span class="citation" data-cites="plomin2018">(<a href="../../referencias.html#ref-plomin2018" role="doc-biblioref">Plomin, 2018</a>)</span>. E é aqui que o Cap. 1 volta: um campo inteiro passou quinze anos perseguindo efeitos que provavelmente nunca existiram, porque a hipótese era barata demais e as amostras, pequenas demais — exatamente o que Meehl havia diagnosticado. Guarde este caso: ele reaparecerá, com outros nomes, no Vol 13.</p>
+</section>
+</section>
+<section id="mente-e-corpo" class="level2">
+<h2 class="anchored" data-anchor-id="mente-e-corpo">Mente e corpo</h2>
+<section id="o-problema" class="level3">
+<h3 class="anchored" data-anchor-id="o-problema">O problema</h3>
+<p>Você decide levantar o braço, e o braço sobe. Descrito assim, parece trivial. Descrito com precisão, é desconcertante: um evento aparentemente imaterial — uma decisão, algo que não tem massa, carga ou localização — precede e aparentemente causa um evento inteiramente físico, a contração de fibras musculares. Como?</p>
+<p>Descartes deu a essa questão sua formulação moderna e sua resposta mais influente. Ele propôs o <strong>dualismo de substância</strong>: existem duas coisas de natureza radicalmente distinta, a matéria (<em>res extensa</em>, que ocupa espaço) e o pensamento (<em>res cogitans</em>, que não ocupa), interagindo de algum modo no corpo humano <span class="citation" data-cites="descartes1641">(<a href="../../referencias.html#ref-descartes1641" role="doc-biblioref">Descartes, 1641</a>)</span>. Descartes chegou a apontar a glândula pineal como o ponto de encontro.</p>
+<p>O problema do dualismo nunca foi ser estranho — foi ser <strong>inútil</strong>. Se a mente não é física, como ela empurra um neurônio? Qualquer causação exige transferência de energia, e uma substância sem propriedades físicas não tem energia a transferir. Postular a interação não a explica; apenas nomeia o mistério. Foi essa objeção — feita já no século XVII pela princesa Elisabeth da Boêmia, em correspondência com o próprio Descartes — que a filosofia nunca conseguiu responder em nome dele.</p>
+</section>
+<section id="a-aposta-monista" class="level3">
+<h3 class="anchored" data-anchor-id="a-aposta-monista">A aposta monista</h3>
+<p>A psicologia contemporânea opera sob <strong>monismo</strong>: existe um tipo de coisa, e processos mentais são o que o cérebro faz. Eric Kandel formulou essa premissa para a psiquiatria em termos que se tornaram padrão: todos os processos mentais derivam de operações do cérebro, e portanto qualquer alteração mental — inclusive a produzida por psicoterapia — é necessariamente uma alteração cerebral <span class="citation" data-cites="kandel1998">(<a href="../../referencias.html#ref-kandel1998" role="doc-biblioref">Kandel, 1998</a>)</span>.</p>
+<p>É importante entender o <strong>status</strong> dessa aposta. Ela não foi provada; foi adotada porque funciona. Cada década de neurociência estreita o espaço em que um dualista poderia operar: lesões específicas produzem déficits mentais específicos, substâncias específicas alteram estados mentais específicos, estimulação de regiões específicas evoca experiências específicas. Nada disso é uma refutação lógica do dualismo — é a acumulação de uma dívida explicativa que o dualismo não paga.</p>
+<div class="estudo-caso">
+<p><strong>Phineas Gage e a barra de ferro</strong></p>
+<p>Em 13 de setembro de 1848, em Cavendish, Vermont, uma explosão prematura lançou uma barra de ferro de pouco mais de um metro através do crânio do capataz ferroviário Phineas Gage. A barra entrou sob a bochecha esquerda, atravessou o lobo frontal e saiu pelo topo da cabeça, caindo a dezenas de metros. Gage não perdeu a consciência. Falou em poucos minutos, caminhou com ajuda e, meses depois, estava fisicamente recuperado: andava, falava, lembrava, tinha os sentidos intactos.</p>
+<p>Mas, segundo o relato de seu médico John Harlow, ele não era mais o mesmo. O homem antes descrito como responsável e comedido teria se tornado irregular, irreverente, incapaz de sustentar planos — “Gage já não era Gage” <span class="citation" data-cites="harlow1868">(<a href="../../referencias.html#ref-harlow1868" role="doc-biblioref">Harlow, 1868</a>)</span>.</p>
+<p><strong>O que o caso mostra.</strong> Uma barra de ferro atravessando tecido cerebral alterou o caráter, o planejamento e a conduta social de uma pessoa. Não a memória, não a linguagem, não os sentidos: exatamente aquilo que a tradição atribuía à alma. Para o dualismo, isso é constrangedor de um modo particular — não porque prove que a mente é o cérebro, mas porque exige explicar por que uma substância imaterial precisa de um lobo frontal intacto para fazer planos. O caso ancorou a tese de Damásio de que emoção e razão não são adversárias, e que a lesão frontal compromete a decisão justamente ao desconectar o raciocínio dos marcadores afetivos <span class="citation" data-cites="damasio1994">(<a href="../../referencias.html#ref-damasio1994" role="doc-biblioref">Damasio, 1994</a>)</span>.</p>
+<p><strong>Um alerta que quase sempre falta.</strong> O caso de Gage é o mais citado e o mais distorcido da neuropsicologia. O relato de Harlow é breve, retrospectivo, sem qualquer avaliação padronizada, e a versão popular — Gage como um bêbado violento e errante — não tem base documental. Há evidência de que ele se reorganizou consideravelmente: trabalhou por anos como condutor de diligência no Chile, função que exige planejamento, rotina e trato social. Este é um <strong>estudo de caso único</strong>, com todas as limitações do desenho (Cap. 15): não há controle, não há medida pré-lesão, e a reconstrução da lesão é inferida do crânio. Ele sugere hipóteses; não as testa. O Cap. 99 retoma Gage com a distância que ele merece.</p>
+</div>
+<div class="na-pratica">
+<p><strong>A via de mão dupla, na clínica</strong></p>
+<p>Se mente e cérebro são o mesmo sistema descrito em dois níveis (Cap. 1), então a causação corre nos dois sentidos — e isso tem consequência prática imediata.</p>
+<p>Um medicamento altera a neuroquímica e muda a experiência: ninguém se surpreende. Mas o inverso também vale: a psicoterapia, que é literalmente conversa, produz mudanças mensuráveis de funcionamento cerebral. Isso não é misticismo nem “força do pensamento” — é a consequência trivial do monismo. Se toda experiência é um processo cerebral, então uma experiência que muda a pessoa <strong>é</strong> uma mudança cerebral. Uma terapia eficaz não poderia deixar o cérebro intocado, do mesmo modo que aprender a andar de bicicleta não deixa.</p>
+<p>O corolário prático, desenvolvido no Vol 14: dizer que um problema é “biológico” não implica que a solução deva ser farmacológica, e dizer que ele é “psicológico” não o torna menos real ou menos cerebral. A escolha do tratamento é uma questão empírica sobre o que funciona para aquele quadro — não uma dedução a partir do nível em que se descreveu o problema.</p>
+</div>
+</section>
+</section>
+<section id="consciência" class="level2">
+<h2 class="anchored" data-anchor-id="consciência">Consciência</h2>
+<section id="o-problema-fácil-e-o-problema-difícil" class="level3">
+<h3 class="anchored" data-anchor-id="o-problema-fácil-e-o-problema-difícil">O problema fácil e o problema difícil</h3>
+<p>Aqui a psicologia encontra seu limite mais interessante, e a distinção que o organiza é de David Chalmers.</p>
+<p>Os <strong>problemas fáceis</strong> da consciência são: como o cérebro discrimina estímulos, integra informação, acessa estados internos, controla o comportamento, relata o que percebe, difere entre vigília e sono. São chamados “fáceis” não porque sejam simples — são endiabradamente difíceis — mas porque sabemos que tipo de resposta os resolveria: identificar o mecanismo. É ciência normal, e ela progride.</p>
+<p>O <strong>problema difícil</strong> é outro: por que qualquer um desses processos é <strong>acompanhado de experiência subjetiva</strong>? Por que processar comprimentos de onda de 700 nm não acontece “às escuras”, como acontece num sensor, e sim vem com a vermelhidão do vermelho? <span class="citation" data-cites="chalmers1995">(<a href="../../referencias.html#ref-chalmers1995" role="doc-biblioref">Chalmers, 1995</a>)</span></p>
+<p>Thomas Nagel formulou a mesma intuição de forma mais memorável: por mais que você saiba sobre a ecolocalização de um morcego — anatomia, fisiologia, algoritmo completo —, você não saberá <strong>como é ser</strong> um morcego. Existe algo que é ser um morcego, e a descrição objetiva em terceira pessoa parece deixar exatamente isso de fora <span class="citation" data-cites="nagel1974">(<a href="../../referencias.html#ref-nagel1974" role="doc-biblioref">Nagel, 1974</a>)</span>.</p>
+<p>Nada disso é obscurantismo, e é importante ser justo com os dois lados. Uma tradição respeitável sustenta que o problema difícil é uma ilusão conceitual — que, uma vez explicados todos os problemas fáceis, não sobrará nada a explicar, e a sensação de que sobra é um artefato de como pensamos sobre nós mesmos. Outra tradição sustenta que ele é o problema real e que a ciência atual sequer sabe que forma teria a resposta. Este manual não decide a questão, porque ela não está decidida.</p>
+</section>
+<section id="o-que-a-ciência-da-consciência-de-fato-faz" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-a-ciência-da-consciência-de-fato-faz">O que a ciência da consciência de fato faz</h3>
+<p>Diante do impasse, a estratégia produtiva foi trocar de pergunta: em vez de explicar por que há experiência, mapear <strong>o que difere no cérebro</strong> quando um conteúdo é consciente e quando não é — os correlatos neurais da consciência.</p>
+<div class="experimento">
+<p><strong>Visão cega</strong> <span class="citation" data-cites="weiskrantz1974">(<a href="../../referencias.html#ref-weiskrantz1974" role="doc-biblioref">Weiskrantz et al., 1974</a>)</span></p>
+<p><strong>Desenho.</strong> Um paciente com lesão no córtex visual primário (V1) relatava não enxergar nada em parte do campo visual. Weiskrantz e colegas pediram que ele “adivinhasse” — apontasse, ou dissesse se um estímulo era uma linha horizontal ou vertical — em relação a estímulos apresentados justamente na região que ele afirmava não ver.</p>
+<p><strong>Resultado.</strong> Ele acertava muito acima do acaso. Localizava alvos que dizia não perceber, discriminava orientações que dizia não ver. E permanecia genuinamente surpreso quando informado de seu desempenho: subjetivamente, estava chutando.</p>
+<p><strong>Interpretação.</strong> A visão cega dissocia <strong>processamento</strong> de <strong>experiência consciente</strong>. A informação visual chega, é analisada e guia a ação — sem ser acompanhada de qualquer sensação de ver. Isso é exatamente o material do problema difícil, tornado empírico: aqui está um sistema fazendo os problemas fáceis (discriminar, guiar ação, responder) sem o acompanhamento subjetivo. Vias visuais secundárias, que contornam V1, sustentam o desempenho.</p>
+<p><strong>Limitações.</strong> O fenômeno é raro, estudado em pouquíssimos pacientes, e sua interpretação é disputada: críticos argumentam que pode haver visão residual muito degradada — consciência fraca, não ausente — e que o critério de relato é sensível a como a pergunta é feita. A dissociação total entre processamento e experiência é mais difícil de estabelecer do que a versão popular sugere.</p>
+</div>
+<p>Duas famílias de teoria dominam o campo, e vale expor os pontos fortes de cada uma. A <strong>teoria do espaço de trabalho global</strong>, de Baars e desenvolvida experimentalmente por Dehaene, propõe que a consciência é o que acontece quando uma informação é “transmitida” globalmente, tornando-se disponível a muitos sistemas ao mesmo tempo — memória, linguagem, decisão, ação. O inconsciente é local e paralelo; o consciente é global e serial <span class="citation" data-cites="baars1988 dehaene2014">(<a href="../../referencias.html#ref-baars1988" role="doc-biblioref">Baars, 1988</a>; <a href="../../referencias.html#ref-dehaene2014" role="doc-biblioref">Dehaene, 2014</a>)</span>. Ela tem previsões testáveis e um bom histórico empírico. A <strong>teoria da informação integrada</strong>, de Tononi, faz a aposta oposta: a consciência não é um tipo de processamento, e sim uma propriedade intrínseca de qualquer sistema que integre informação de determinada maneira, quantificável por uma medida (<span class="math inline">\(\Phi\)</span>) <span class="citation" data-cites="tononi2004">(<a href="../../referencias.html#ref-tononi2004" role="doc-biblioref">Tononi, 2004</a>)</span>. Ela ataca o problema difícil de frente, ao preço de consequências que muitos consideram implausíveis — sistemas simples teriam algum grau de experiência.</p>
+<p>Vale ser explícito quanto ao estado da questão: <strong>nenhuma das duas está estabelecida</strong>, elas fazem previsões divergentes, e o campo trata a disputa como aberta. Este manual apresenta as duas porque a evidência atual não escolhe entre elas — e essa honestidade é o Cap. 35 em miniatura.</p>
+</section>
+</section>
+<section id="livre-arbítrio" class="level2">
+<h2 class="anchored" data-anchor-id="livre-arbítrio">Livre-arbítrio</h2>
+<section id="o-experimento-que-virou-manchete" class="level3">
+<h3 class="anchored" data-anchor-id="o-experimento-que-virou-manchete">O experimento que virou manchete</h3>
+<p>Se o monismo está certo e todo evento mental é um evento cerebral, e se eventos cerebrais seguem as leis da física, o que sobra da sensação de escolher? A questão era filosófica até 1983, quando Benjamin Libet a levou para o laboratório.</p>
+<div id="fig-libet" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-libet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Linha do tempo do experimento de Libet, medida em milissegundos antes do movimento. Em aproximadamente menos 550 milissegundos aparece o início do potencial de prontidão, registrado no EEG. Em aproximadamente menos 200 milissegundos aparece o instante W, em que a pessoa relata ter tomado consciência da intenção de mover. No instante zero ocorre o movimento do pulso. Uma chave destaca o intervalo de cerca de 350 milissegundos entre o potencial de prontidão e a consciência da intenção, que é a base da interpretação de que o cérebro inicia a ação antes da decisão consciente." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="303.018819pt" height="115.067507pt" viewbox="-68.014948 -68.01495 303.018819 115.067507">
+<defs>
+<path id="tz_libet_g0-87" d="M8.326775-4.267995C8.375592-4.393524 8.480199-4.393524 8.828892-4.393524H8.98929V-4.78406C8.731258-4.763138 8.480199-4.756164 8.222167-4.756164C7.99203-4.756164 7.224907-4.78406 7.197011-4.78406V-4.393524H7.32254C7.371357-4.393524 7.880448-4.393524 7.880448-4.337733C7.880448-4.316812 7.859527-4.274969 7.852553-4.254047L6.576339-1.164633L5.23736-4.393524H5.878954V-4.78406C5.50934-4.756164 4.993275-4.756164 4.616687-4.756164C4.337733-4.756164 3.612453-4.78406 3.542715-4.78406V-4.393524H4.14944L4.372603-3.856538L3.256787-1.164633L1.924782-4.393524H2.559402V-4.78406C2.447821-4.777086 1.527273-4.756164 1.30411-4.756164C1.025156-4.756164 .299875-4.78406 .230137-4.78406V-4.393524H.836862L2.608219-.118555C2.677958 .041843 2.712827 .083686 2.949938 .083686C3.152179 .083686 3.214944 .076712 3.29863-.118555L4.609714-3.284682L5.913823-.118555C5.997509 .083686 6.102117 .083686 6.269489 .083686C6.499626 .083686 6.541469 .048817 6.611208-.118555L8.326775-4.267995Z"></path>
+<path id="tz_libet_g0-97" d="M3.682192-2.057285C3.682192-2.629141 3.221918-3.159153 1.966625-3.159153C1.562142-3.159153 .585803-3.159153 .585803-2.468742C.585803-2.161893 .808966-1.980573 1.066999-1.980573C1.373848-1.980573 1.555168-2.196762 1.555168-2.461768C1.555168-2.615193 1.492403-2.719801 1.471482-2.740722C1.457534-2.761644 1.45056-2.775592 1.45056-2.789539C1.45056-2.824408 1.896887-2.838356 1.945704-2.838356C2.433873-2.838356 2.796513-2.643088 2.796513-2.050311V-1.862017C2.454795-1.862017 .285928-1.834122 .285928-.801993C.285928-.153425 1.053051 .041843 1.750436 .041843C2.489664 .041843 2.817435-.292902 2.93599-.474222C2.93599-.174346 3.124284 0 3.696139 0H4.107597C4.2401 0 4.351681 0 4.351681-.195268S4.247073-.390535 4.100623-.390535C3.682192-.390535 3.682192-.446326 3.682192-.606725V-2.057285ZM2.796513-.955417C2.796513-.808966 2.796513-.606725 2.524533-.439352C2.259527-.278954 1.931756-.278954 1.889913-.278954C1.499377-.278954 1.164633-.495143 1.164633-.808966C1.164633-1.380822 2.099128-1.569116 2.796513-1.590037V-.955417Z"></path>
+<path id="tz_libet_g0-99" d="M3.731009-.795019C3.731009-.920548 3.612453-.920548 3.507846-.920548C3.347447-.920548 3.333499-.913574 3.284682-.808966C3.180075-.578829 2.956912-.313823 2.419925-.313823C1.297136-.313823 1.297136-1.290162 1.297136-1.57609C1.297136-2.099128 1.380822-2.803487 2.315318-2.803487C2.357161-2.803487 2.75467-2.796513 2.75467-2.768618C2.75467-2.75467 2.747696-2.747696 2.740722-2.740722C2.726775-2.719801 2.66401-2.615193 2.66401-2.461768C2.66401-2.175841 2.873225-1.980573 3.145205-1.980573C3.431133-1.980573 3.633375-2.175841 3.633375-2.468742C3.633375-3.138232 2.698879-3.159153 2.294396-3.159153C.739228-3.159153 .327771-2.196762 .327771-1.548194C.327771-.732254 .934496 .041843 2.252553 .041843C2.594271 .041843 2.949938-.013948 3.228892-.174346C3.626401-.411457 3.731009-.753176 3.731009-.795019Z"></path>
+<path id="tz_libet_g0-100" d="M2.84533-4.78406V-4.393524C3.256787-4.393524 3.312578-4.393524 3.312578-4.121544V-2.84533C2.880199-3.110336 2.489664-3.138232 2.259527-3.138232C1.011208-3.138232 .327771-2.426899 .327771-1.54122C.327771-.676463 .976339 .041843 2.168867 .041843C2.615193 .041843 2.984807-.097634 3.263761-.292902V.041843L4.616687 0V-.390535C4.20523-.390535 4.14944-.390535 4.14944-.662516V-4.839851L2.84533-4.78406ZM3.263761-.808966C3.103362-.578829 2.761644-.278954 2.252553-.278954C1.297136-.278954 1.297136-1.115816 1.297136-1.527273C1.297136-1.959651 1.297136-2.817435 2.343213-2.817435C2.929016-2.817435 3.242839-2.426899 3.263761-2.399004V-.808966Z"></path>
+<path id="tz_libet_g0-101" d="M3.598506-1.45056C3.744956-1.45056 3.84259-1.45056 3.84259-1.659776C3.84259-1.862017 3.793773-2.385056 3.459029-2.726775C3.082441-3.103362 2.566376-3.159153 2.182814-3.159153C.892653-3.159153 .278954-2.39203 .278954-1.569116C.278954-.739228 .920548 .041843 2.30137 .041843C2.552428 .041843 2.956912 .013948 3.305604-.174346C3.717061-.390535 3.84259-.72528 3.84259-.795019C3.84259-.948443 3.689166-.948443 3.619427-.948443C3.493898-.948443 3.459029-.941469 3.403238-.829888C3.152179-.313823 2.517559-.313823 2.399004-.313823C1.297136-.313823 1.262267-1.129763 1.248319-1.45056H3.598506ZM1.248319-1.743462C1.255293-2.015442 1.290162-2.838356 2.189788-2.838356S3.138232-2.043337 3.152179-1.743462H1.248319Z"></path>
+<path id="tz_libet_g0-105" d="M1.827148-4.274969C1.827148-4.609714 1.555168-4.846824 1.262267-4.846824C.927522-4.846824 .690411-4.574844 .690411-4.281943C.690411-3.947198 .962391-3.710087 1.255293-3.710087C1.590037-3.710087 1.827148-3.982067 1.827148-4.274969ZM.488169-3.082441V-2.691905C.885679-2.691905 .934496-2.691905 .934496-2.419925V-.390535H.467248V0C.481196 0 1.03213-.027895 1.345953-.027895C1.63188-.027895 1.910834-.020922 2.196762 0V-.390535H1.771357V-3.138232L.488169-3.082441Z"></path>
+<path id="tz_libet_g0-108" d="M1.771357-4.839851L.467248-4.78406V-4.393524C.878705-4.393524 .934496-4.393524 .934496-4.121544V-.390535H.467248V0C.488169 0 1.03213-.027895 1.352927-.027895C1.694645-.027895 2.217684 0 2.238605 0V-.390535H1.771357V-4.839851Z"></path>
+<path id="tz_libet_g0-109" d="M6.750685-2.099128C6.750685-2.970859 6.171856-3.138232 5.558157-3.138232C4.888667-3.138232 4.463263-2.824408 4.233126-2.48269C4.05878-3.089415 3.459029-3.138232 3.082441-3.138232C2.245579-3.138232 1.84807-2.650062 1.708593-2.412951V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.390535H.446326V0C.4533 0 1.018182-.027895 1.352927-.027895C1.694645-.027895 2.259527 0 2.266501 0V-.390535H1.799253V-1.736488C1.799253-2.559402 2.545455-2.817435 2.942964-2.817435C3.256787-2.817435 3.38929-2.66401 3.38929-2.147945V-.390535H2.922042V0C2.929016 0 3.493898-.027895 3.828643-.027895C4.170361-.027895 4.735243 0 4.742217 0V-.390535H4.274969V-1.736488C4.274969-2.559402 5.021171-2.817435 5.41868-2.817435C5.732503-2.817435 5.865006-2.66401 5.865006-2.147945V-.390535H5.397758V0C5.404732 0 5.969614-.027895 6.304359-.027895C6.646077-.027895 7.210959 0 7.217933 0V-.390535H6.750685V-2.099128Z"></path>
+<path id="tz_libet_g0-110" d="M4.267995-2.099128C4.267995-2.956912 3.717061-3.138232 3.075467-3.138232C2.231631-3.138232 1.841096-2.636115 1.708593-2.412951V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.390535H.446326V0C.4533 0 1.018182-.027895 1.352927-.027895C1.694645-.027895 2.259527 0 2.266501 0V-.390535H1.799253V-1.736488C1.799253-2.545455 2.524533-2.817435 2.942964-2.817435C3.249813-2.817435 3.382316-2.657036 3.382316-2.154919V-.390535H2.915068V0C2.922042 0 3.486924-.027895 3.821669-.027895C4.163387-.027895 4.728269 0 4.735243 0V-.390535H4.267995V-2.099128Z"></path>
+<path id="tz_libet_g0-111" d="M4.226152-1.520299C4.226152-2.350187 3.619427-3.159153 2.252553-3.159153C.871731-3.159153 .278954-2.343213 .278954-1.520299C.278954-.704359 .899626 .041843 2.252553 .041843C3.612453 .041843 4.226152-.711333 4.226152-1.520299ZM2.252553-.313823C1.248319-.313823 1.248319-1.004234 1.248319-1.603985C1.248319-2.161893 1.248319-2.838356 2.252553-2.838356S3.256787-2.161893 3.256787-1.603985C3.256787-1.004234 3.256787-.313823 2.252553-.313823Z"></path>
+<path id="tz_libet_g0-112" d="M2.203736 .962391H1.736488V-.258032C1.910834-.139477 2.252553 .041843 2.740722 .041843C3.940224 .041843 4.672478-.63462 4.672478-1.555168C4.672478-2.399004 4.065753-3.138232 2.880199-3.138232C2.517559-3.138232 2.092154-3.068493 1.687671-2.817435V-3.138232L.383562-3.082441V-2.691905C.502117-2.691905 .641594-2.691905 .732254-2.677958C.850809-2.657036 .850809-2.580324 .850809-2.447821V.962391H.383562V1.352927C.390535 1.352927 .955417 1.325031 1.290162 1.325031C1.63188 1.325031 2.196762 1.352927 2.203736 1.352927V.962391ZM1.736488-2.231631C1.736488-2.364134 1.743462-2.371108 1.841096-2.461768C2.175841-2.75467 2.587298-2.782565 2.733748-2.782565C3.326526-2.782565 3.703113-2.308344 3.703113-1.555168C3.703113-.648568 3.180075-.278954 2.650062-.278954S1.820174-.655542 1.736488-.774097V-2.231631Z"></path>
+<path id="tz_libet_g0-114" d="M1.687671-1.464508C1.687671-2.092154 1.973599-2.782565 2.601245-2.817435C2.594271-2.810461 2.503611-2.691905 2.503611-2.517559C2.503611-2.245579 2.698879-2.043337 2.977833-2.043337S3.452055-2.245579 3.452055-2.517559C3.452055-2.901121 3.061519-3.138232 2.629141-3.138232C2.127024-3.138232 1.792279-2.803487 1.603985-2.371108H1.597011V-3.138232L.383562-3.082441V-2.691905C.795019-2.691905 .850809-2.691905 .850809-2.419925V-.390535H.383562V0C.411457 0 .948443-.027895 1.276214-.027895C1.548194-.027895 2.224658 0 2.273474 0V-.390535H1.687671V-1.464508Z"></path>
+<path id="tz_libet_g0-115" d="M3.012702-2.93599C3.012702-3.075467 3.012702-3.159153 2.84533-3.159153C2.796513-3.159153 2.775592-3.159153 2.66401-3.103362C2.650062-3.096389 2.559402-3.054545 2.531507-3.054545C2.524533-3.054545 2.510585-3.054545 2.48269-3.068493C2.196762-3.159153 1.903861-3.159153 1.75741-3.159153C1.555168-3.159153 1.129763-3.159153 .781071-2.970859C.383562-2.747696 .327771-2.385056 .327771-2.224658C.327771-1.471482 1.248319-1.332005 1.736488-1.255293C2.161893-1.192528 2.670984-1.115816 2.670984-.753176C2.670984-.278954 1.980573-.278954 1.8132-.278954C1.150685-.278954 .9066-.578829 .774097-.955417C.732254-1.073973 .72528-1.08792 .550934-1.08792C.348692-1.08792 .327771-1.066999 .327771-.864757V-.18132C.327771-.041843 .327771 .041843 .488169 .041843C.550934 .041843 .564882 .041843 .711333-.048817C.753176-.069738 .864757-.132503 .9066-.160399C1.26924 .041843 1.645828 .041843 1.806227 .041843C2.036364 .041843 3.235866 .041843 3.235866-.990286C3.235866-1.311083 3.068493-1.534247 2.908095-1.66675C2.580324-1.93873 2.280448-1.987547 1.701619-2.078207C1.30411-2.140971 .892653-2.203736 .892653-2.48269C.892653-2.873225 1.590037-2.873225 1.736488-2.873225C2.524533-2.873225 2.552428-2.552428 2.57335-2.385056C2.587298-2.245579 2.629141-2.231631 2.789539-2.231631C2.991781-2.231631 3.012702-2.252553 3.012702-2.454795V-2.93599Z"></path>
+<path id="tz_libet_g0-116" d="M1.708593-2.705853H2.84533V-3.096389H1.708593V-4.428394H1.26924C1.262267-3.779826 .934496-3.047572 .195268-3.02665V-2.705853H.822914V-.843836C.822914-.153425 1.387796 .041843 1.994521 .041843C2.545455 .041843 2.991781-.278954 2.991781-.843836V-1.206476H2.552428V-.871731C2.552428-.390535 2.259527-.313823 2.12005-.313823C1.715567-.313823 1.708593-.655542 1.708593-.843836V-2.705853Z"></path>
+<path id="tz_libet_g0-118" d="M3.996015-2.587298C4.044832-2.677958 4.051806-2.684932 4.198257-2.698879C4.281943-2.705853 4.456289-2.705853 4.505106-2.705853V-3.096389C4.288917-3.082441 4.142466-3.068493 3.919303-3.068493C3.710087-3.068493 3.438107-3.075467 3.228892-3.096389V-2.705853C3.410212-2.705853 3.452055-2.691905 3.535741-2.66401L2.601245-.829888L1.645828-2.705853H1.973599V-3.096389C1.673724-3.082441 1.366874-3.068493 1.066999-3.068493C.795019-3.068493 .523039-3.075467 .251059-3.096389V-2.705853H.704359L2.008468-.153425C2.099128 .027895 2.168867 .041843 2.378082 .041843S2.650062 .027895 2.747696-.153425L3.996015-2.587298Z"></path>
+<path id="tz_libet_g0-126" d="M3.507846-4.839851C3.38929-4.721295 3.159153-4.533001 2.873225-4.533001C2.705853-4.533001 2.566376-4.581818 2.315318-4.6934C2.147945-4.770112 1.980573-4.839851 1.792279-4.839851C1.48543-4.839851 1.373848-4.735243 .774097-4.14944L.99726-3.919303C1.115816-4.037858 1.345953-4.226152 1.63188-4.226152C1.799253-4.226152 1.93873-4.177335 2.189788-4.065753C2.357161-3.989041 2.524533-3.919303 2.712827-3.919303C3.019676-3.919303 3.131258-4.02391 3.731009-4.609714L3.507846-4.839851Z"></path>
+<path id="tz_libet_g1-25" d="M5.683686-3.333499C5.683686-3.57061 5.586052-3.591532 5.565131-3.591532C5.495392-3.591532 5.453549-3.47995 5.446575-3.403238C5.439601-3.256787 5.41868-3.012702 5.118804-2.782565C4.979328-2.677958 4.735243-2.545455 4.393524-2.545455C3.975093-2.545455 3.633375-2.740722 3.221918-3.005729C2.726775-3.333499 2.322291-3.598506 1.827148-3.598506C1.129763-3.598506 .536986-3.068493 .536986-2.329265C.536986-2.085181 .63462-2.071233 .655542-2.071233C.732254-2.071233 .767123-2.196762 .774097-2.259527C.781071-2.405978 .801993-2.650062 1.101868-2.880199C1.241345-2.984807 1.48543-3.11731 1.827148-3.11731C2.245579-3.11731 2.587298-2.922042 2.998755-2.657036C3.493898-2.329265 3.898381-2.064259 4.393524-2.064259C5.090909-2.064259 5.683686-2.594271 5.683686-3.333499ZM5.683686-1.492403C5.683686-1.72254 5.593026-1.750436 5.565131-1.750436C5.495392-1.750436 5.453549-1.63188 5.446575-1.562142C5.439601-1.415691 5.41868-1.171606 5.118804-.941469C4.979328-.836862 4.735243-.704359 4.393524-.704359C3.975093-.704359 3.633375-.899626 3.221918-1.164633C2.726775-1.492403 2.322291-1.75741 1.827148-1.75741C1.129763-1.75741 .536986-1.227397 .536986-.488169C.536986-.244085 .63462-.230137 .655542-.230137C.732254-.230137 .767123-.355666 .774097-.418431C.781071-.564882 .801993-.808966 1.101868-1.039103C1.241345-1.143711 1.48543-1.276214 1.827148-1.276214C2.245579-1.276214 2.587298-1.080946 2.998755-.81594C3.493898-.488169 3.898381-.223163 4.393524-.223163C5.090909-.223163 5.683686-.753176 5.683686-1.492403Z"></path>
+<path id="tz_libet_g2-13" d="M3.640349-4.839851C3.584558-4.832877 3.375342-4.798007 3.354421-4.798007C3.340473-4.798007 3.326526-4.798007 3.291656-4.818929C3.040598-4.909589 2.740722-4.909589 2.608219-4.909589C1.75741-4.909589 .864757-4.533001 .864757-3.772852V-3.005729H.265006V-2.75467H.864757V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.355666 0 .843836-.027895 1.12279-.027895C1.387796-.027895 1.645828-.020922 1.910834 0V-.251059C1.457534-.251059 1.387796-.251059 1.387796-.550934V-2.75467H3.11731V-.550934C3.11731-.251059 3.047572-.251059 2.594271-.251059V0C2.608219 0 3.096389-.027895 3.375342-.027895C3.640349-.027895 3.898381-.020922 4.163387 0V-.251059C3.710087-.251059 3.640349-.251059 3.640349-.550934V-4.839851ZM1.3599-3.005729V-3.765878C1.3599-4.379577 1.931756-4.714321 2.601245-4.714321C2.775592-4.714321 2.915068-4.707347 3.089415-4.665504C3.005729-4.609714 2.956912-4.505106 2.956912-4.400498C2.956912-4.358655 2.970859-4.20523 3.11731-4.121544V-3.005729H1.3599Z"></path>
+<path id="tz_libet_g2-16" d="M1.436613-3.075467L.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467Z"></path>
+<path id="tz_libet_g2-19" d="M1.799253-3.528767C2.343213-3.926276 2.768618-4.219178 2.901121-4.323786C3.012702-4.400498 3.075467-4.449315 3.075467-4.581818S2.956912-4.867746 2.789539-4.867746C2.677958-4.867746 2.622167-4.804981 2.552428-4.728269L1.638854-3.710087L1.799253-3.528767Z"></path>
+<path id="tz_libet_g2-24" d="M2.259527 .139477H1.708593V.481196C2.175841 .488169 2.350187 .662516 2.350187 .850809C2.350187 1.12279 1.987547 1.227397 1.311083 1.227397H1.060025V1.422665H1.401743C1.408717 1.422665 1.966625 1.422665 2.322291 1.345953C2.608219 1.283188 2.901121 1.164633 2.901121 .850809C2.901121 .571856 2.691905 .390535 2.259527 .320797V.139477Z"></path>
+<path id="tz_libet_g2-34" d="M1.025156-4.170361C1.025156-3.947198 1.025156-3.375342 .474222-2.887173C.425405-2.84533 .411457-2.824408 .411457-2.789539C.411457-2.747696 .460274-2.684932 .509091-2.684932C.592777-2.684932 1.220423-3.221918 1.220423-4.079701C1.220423-4.491158 1.053051-4.839851 .711333-4.839851C.446326-4.839851 .313823-4.630635 .313823-4.442341C.313823-4.247073 .439352-4.037858 .718306-4.037858C.913574-4.037858 .976339-4.107597 1.025156-4.170361ZM2.524533-4.170361C2.524533-3.947198 2.524533-3.375342 1.973599-2.887173C1.924782-2.84533 1.910834-2.824408 1.910834-2.789539C1.910834-2.747696 1.959651-2.684932 2.008468-2.684932C2.092154-2.684932 2.719801-3.221918 2.719801-4.079701C2.719801-4.491158 2.552428-4.839851 2.21071-4.839851C1.945704-4.839851 1.8132-4.630635 1.8132-4.442341C1.8132-4.247073 1.93873-4.037858 2.217684-4.037858C2.412951-4.037858 2.475716-4.107597 2.524533-4.170361Z"></path>
+<path id="tz_libet_g2-40" d="M2.475716-5.230386C1.150685-4.29589 .801993-2.817435 .801993-1.750436C.801993-.767123 1.094894 .760149 2.475716 1.736488C2.531507 1.736488 2.615193 1.736488 2.615193 1.652802C2.615193 1.610959 2.594271 1.597011 2.545455 1.548194C1.617933 .711333 1.276214-.474222 1.276214-1.743462C1.276214-3.626401 1.994521-4.546949 2.566376-5.063014C2.594271-5.090909 2.615193-5.111831 2.615193-5.1467C2.615193-5.230386 2.531507-5.230386 2.475716-5.230386Z"></path>
+<path id="tz_libet_g2-41" d="M.627646-5.230386C.578829-5.230386 .495143-5.230386 .495143-5.1467C.495143-5.111831 .516065-5.090909 .557908-5.042092C1.157659-4.491158 1.827148-3.549689 1.827148-1.750436C1.827148-.292902 1.373848 .808966 .620672 1.492403C.502117 1.610959 .495143 1.617933 .495143 1.652802S.516065 1.736488 .585803 1.736488C.669489 1.736488 1.332005 1.276214 1.792279 .404483C2.099128-.174346 2.30137-.927522 2.30137-1.743462C2.30137-2.726775 2.008468-4.254047 .627646-5.230386Z"></path>
+<path id="tz_libet_g2-45" d="M2.189788-1.262267V-1.736488H.139477V-1.262267H2.189788Z"></path>
+<path id="tz_libet_g2-48" d="M3.598506-2.224658C3.598506-2.991781 3.507846-3.542715 3.187049-4.030884C2.970859-4.351681 2.538481-4.630635 1.980573-4.630635C.36264-4.630635 .36264-2.726775 .36264-2.224658S.36264 .139477 1.980573 .139477S3.598506-1.72254 3.598506-2.224658ZM1.980573-.055791C1.659776-.055791 1.234371-.244085 1.094894-.81594C.99726-1.227397 .99726-1.799253 .99726-2.315318C.99726-2.824408 .99726-3.354421 1.101868-3.737983C1.248319-4.288917 1.694645-4.435367 1.980573-4.435367C2.357161-4.435367 2.719801-4.20523 2.84533-3.800747C2.956912-3.424159 2.963885-2.922042 2.963885-2.315318C2.963885-1.799253 2.963885-1.283188 2.873225-.843836C2.733748-.209215 2.259527-.055791 1.980573-.055791Z"></path>
+<path id="tz_libet_g2-50" d="M3.521793-1.26924H3.284682C3.263761-1.115816 3.194022-.704359 3.103362-.63462C3.047572-.592777 2.510585-.592777 2.412951-.592777H1.129763C1.862017-1.241345 2.106102-1.436613 2.524533-1.764384C3.040598-2.175841 3.521793-2.608219 3.521793-3.270735C3.521793-4.11457 2.782565-4.630635 1.889913-4.630635C1.025156-4.630635 .439352-4.02391 .439352-3.382316C.439352-3.02665 .739228-2.991781 .808966-2.991781C.976339-2.991781 1.17858-3.110336 1.17858-3.361395C1.17858-3.486924 1.129763-3.731009 .767123-3.731009C.983313-4.226152 1.457534-4.379577 1.785305-4.379577C2.48269-4.379577 2.84533-3.835616 2.84533-3.270735C2.84533-2.66401 2.412951-2.182814 2.189788-1.931756L.509091-.27198C.439352-.209215 .439352-.195268 .439352 0H3.312578L3.521793-1.26924Z"></path>
+<path id="tz_libet_g2-51" d="M1.903861-2.329265C2.447821-2.329265 2.838356-1.952677 2.838356-1.206476C2.838356-.341719 2.336239-.083686 1.931756-.083686C1.652802-.083686 1.039103-.160399 .746202-.571856C1.073973-.585803 1.150685-.81594 1.150685-.962391C1.150685-1.185554 .983313-1.345953 .767123-1.345953C.571856-1.345953 .376588-1.227397 .376588-.941469C.376588-.285928 1.101868 .139477 1.945704 .139477C2.915068 .139477 3.584558-.509091 3.584558-1.206476C3.584558-1.750436 3.138232-2.294396 2.371108-2.454795C3.103362-2.719801 3.368369-3.242839 3.368369-3.668244C3.368369-4.219178 2.733748-4.630635 1.959651-4.630635S.592777-4.254047 .592777-3.696139C.592777-3.459029 .746202-3.326526 .955417-3.326526C1.171606-3.326526 1.311083-3.486924 1.311083-3.682192C1.311083-3.884433 1.171606-4.030884 .955417-4.044832C1.199502-4.351681 1.680697-4.428394 1.93873-4.428394C2.252553-4.428394 2.691905-4.274969 2.691905-3.668244C2.691905-3.375342 2.594271-3.054545 2.412951-2.838356C2.182814-2.57335 1.987547-2.559402 1.638854-2.538481C1.464508-2.524533 1.45056-2.524533 1.415691-2.517559C1.401743-2.517559 1.345953-2.503611 1.345953-2.426899C1.345953-2.329265 1.408717-2.329265 1.527273-2.329265H1.903861Z"></path>
+<path id="tz_libet_g2-53" d="M1.080946-3.891407C1.436613-3.800747 1.645828-3.800747 1.75741-3.800747C2.677958-3.800747 3.221918-4.428394 3.221918-4.533001C3.221918-4.609714 3.173101-4.630635 3.138232-4.630635C3.124284-4.630635 3.110336-4.630635 3.082441-4.609714C2.915068-4.546949 2.545455-4.407472 2.02939-4.407472C1.834122-4.407472 1.464508-4.42142 1.011208-4.595766C.941469-4.630635 .927522-4.630635 .920548-4.630635C.829888-4.630635 .829888-4.553923 .829888-4.442341V-2.385056C.829888-2.266501 .829888-2.182814 .941469-2.182814C1.004234-2.182814 1.011208-2.196762 1.080946-2.280448C1.380822-2.66401 1.806227-2.719801 2.050311-2.719801C2.468742-2.719801 2.657036-2.385056 2.691905-2.329265C2.817435-2.099128 2.859278-1.834122 2.859278-1.429639C2.859278-1.220423 2.859278-.808966 2.650062-.502117C2.475716-.251059 2.175841-.083686 1.834122-.083686C1.380822-.083686 .913574-.334745 .739228-.795019C1.004234-.774097 1.136737-.948443 1.136737-1.136737C1.136737-1.436613 .878705-1.492403 .788045-1.492403C.774097-1.492403 .439352-1.492403 .439352-1.115816C.439352-.488169 1.011208 .139477 1.84807 .139477C2.740722 .139477 3.521793-.523039 3.521793-1.401743C3.521793-2.189788 2.922042-2.915068 2.057285-2.915068C1.750436-2.915068 1.387796-2.838356 1.080946-2.57335V-3.891407Z"></path>
+<path id="tz_libet_g2-69" d="M5.076961-1.834122H4.839851C4.658531-.781071 4.498132-.251059 3.20797-.251059H2.106102C1.778331-.251059 1.771357-.306849 1.771357-.523039V-2.336239H2.475716C3.180075-2.336239 3.284682-2.127024 3.284682-1.520299H3.521793V-3.403238H3.284682C3.284682-2.796513 3.180075-2.587298 2.475716-2.587298H1.771357V-4.212204C1.771357-4.428394 1.778331-4.484184 2.106102-4.484184H3.152179C4.29589-4.484184 4.498132-4.107597 4.623661-3.131258H4.860772L4.651557-4.735243H.390535V-4.484184H.557908C1.094894-4.484184 1.108842-4.414446 1.108842-4.170361V-.564882C1.108842-.327771 1.094894-.251059 .557908-.251059H.390535V0H4.763138L5.076961-1.834122Z"></path>
+<path id="tz_libet_g2-71" d="M5.195517-1.366874C5.195517-1.673724 5.265255-1.673724 5.732503-1.673724V-1.924782C5.683686-1.924782 5.174595-1.896887 4.832877-1.896887C4.463263-1.896887 3.93325-1.896887 3.57061-1.924782V-1.673724H3.835616C4.533001-1.673724 4.533001-1.583064 4.533001-1.352927V-.9066C4.533001-.753176 4.533001-.481196 4.135492-.285928C3.793773-.111582 3.403238-.111582 3.312578-.111582C2.524533-.111582 1.234371-.564882 1.234371-2.385056C1.234371-4.2401 2.559402-4.651557 3.249813-4.651557C3.926276-4.651557 4.763138-4.198257 4.944458-2.991781C4.958406-2.908095 5.021171-2.908095 5.069988-2.908095C5.195517-2.908095 5.195517-2.949938 5.195517-3.089415V-4.721295C5.195517-4.839851 5.195517-4.902615 5.097883-4.902615C5.069988-4.902615 5.035118-4.902615 4.979328-4.818929L4.609714-4.288917C4.267995-4.637609 3.772852-4.902615 3.159153-4.902615C1.708593-4.902615 .488169-3.779826 .488169-2.385056C.488169-1.004234 1.673724 .139477 3.180075 .139477C3.563636 .139477 4.337733 .069738 4.665504-.418431C4.78406-.237111 5.042092 0 5.111831 0C5.195517 0 5.195517-.076712 5.195517-.18132V-1.366874Z"></path>
+<path id="tz_libet_g2-97" d="M3.110336-1.868991C3.110336-2.238605 3.110336-2.503611 2.789539-2.761644C2.503611-2.998755 2.168867-3.110336 1.75741-3.110336C1.094894-3.110336 .627646-2.859278 .627646-2.433873C.627646-2.21071 .781071-2.092154 .962391-2.092154C1.150685-2.092154 1.290162-2.231631 1.290162-2.419925C1.290162-2.538481 1.234371-2.684932 1.046077-2.740722C1.297136-2.915068 1.701619-2.915068 1.743462-2.915068C2.133998-2.915068 2.559402-2.657036 2.559402-2.071233V-1.855044C2.175841-1.841096 1.715567-1.820174 1.206476-1.63188C.578829-1.401743 .383562-1.018182 .383562-.704359C.383562-.104608 1.108842 .069738 1.603985 .069738C2.161893 .069738 2.489664-.244085 2.636115-.516065C2.66401-.230137 2.852304 .034869 3.173101 .034869C3.187049 .034869 3.863512 .034869 3.863512-.627646V-1.011208H3.626401V-.63462C3.626401-.564882 3.626401-.230137 3.368369-.230137S3.110336-.557908 3.110336-.648568V-1.868991ZM2.559402-.983313C2.559402-.313823 1.973599-.125529 1.659776-.125529C1.30411-.125529 .969365-.36264 .969365-.704359C.969365-1.08792 1.30411-1.624907 2.559402-1.673724V-.983313Z"></path>
+<path id="tz_libet_g2-98" d="M1.387796-4.839851L.341719-4.763138V-4.51208C.81594-4.51208 .864757-4.456289 .864757-4.107597V0H1.101868L1.345953-.425405C1.610959-.076712 1.994521 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.357161 3.354421-3.075467 2.440847-3.075467C2.022416-3.075467 1.638854-2.908095 1.387796-2.657036V-4.839851ZM1.415691-2.336239C1.610959-2.657036 1.987547-2.880199 2.405978-2.880199C2.796513-2.880199 3.075467-2.657036 3.214944-2.447821C3.354421-2.245579 3.438107-1.973599 3.438107-1.513325C3.438107-1.352927 3.438107-.829888 3.152179-.502117C2.873225-.188294 2.531507-.125529 2.329265-.125529C1.771357-.125529 1.492403-.564882 1.415691-.711333V-2.336239Z"></path>
+<path id="tz_libet_g2-99" d="M2.712827-2.782565C2.587298-2.726775 2.517559-2.615193 2.517559-2.475716C2.517559-2.287422 2.650062-2.147945 2.84533-2.147945C3.033624-2.147945 3.180075-2.266501 3.180075-2.489664C3.180075-3.110336 2.21071-3.110336 2.015442-3.110336C.969365-3.110336 .320797-2.308344 .320797-1.506351C.320797-.627646 1.066999 .069738 1.980573 .069738C3.019676 .069738 3.263761-.753176 3.263761-.836862S3.173101-.920548 3.145205-.920548C3.054545-.920548 3.047572-.899626 3.012702-.801993C2.859278-.369614 2.489664-.153425 2.064259-.153425C1.583064-.153425 .955417-.509091 .955417-1.513325C.955417-2.399004 1.387796-2.887173 2.036364-2.887173C2.127024-2.887173 2.461768-2.887173 2.712827-2.782565Z"></path>
+<path id="tz_libet_g2-100" d="M2.48269-4.763138V-4.51208C2.949938-4.51208 3.005729-4.463263 3.005729-4.121544V-2.677958C2.747696-2.929016 2.412951-3.075467 2.02939-3.075467C1.101868-3.075467 .320797-2.378082 .320797-1.499377C.320797-.627646 1.060025 .069738 1.945704 .069738C2.517559 .069738 2.859278-.237111 2.977833-.36264V.069738L4.051806 0V-.251059C3.584558-.251059 3.528767-.299875 3.528767-.641594V-4.839851L2.48269-4.763138ZM2.977833-.732254C2.796513-.404483 2.440847-.125529 1.987547-.125529C1.597011-.125529 1.318057-.355666 1.17858-.557908C1.039103-.767123 .955417-1.046077 .955417-1.492403C.955417-1.652802 .955417-2.175841 1.241345-2.503611C1.520299-2.817435 1.862017-2.880199 2.064259-2.880199C2.399004-2.880199 2.698879-2.726775 2.894147-2.475716C2.977833-2.364134 2.977833-2.357161 2.977833-2.224658V-.732254Z"></path>
+<path id="tz_libet_g2-101" d="M3.068493-1.590037C3.214944-1.590037 3.263761-1.590037 3.263761-1.743462C3.263761-2.357161 2.922042-3.110336 1.882939-3.110336C.969365-3.110336 .27198-2.385056 .27198-1.527273C.27198-.641594 1.046077 .069738 1.973599 .069738C2.915068 .069738 3.263761-.683437 3.263761-.836862C3.263761-.864757 3.249813-.934496 3.145205-.934496C3.054545-.934496 3.040598-.892653 3.019676-.822914C2.803487-.258032 2.273474-.153425 2.022416-.153425C1.694645-.153425 1.380822-.299875 1.171606-.564882C.913574-.892653 .9066-1.318057 .9066-1.590037H3.068493ZM.913574-1.771357C.990286-2.75467 1.617933-2.915068 1.882939-2.915068C2.740722-2.915068 2.768618-1.945704 2.775592-1.771357H.913574Z"></path>
+<path id="tz_libet_g2-105" d="M1.471482-4.302864C1.471482-4.505106 1.30411-4.700374 1.066999-4.700374C.857783-4.700374 .669489-4.533001 .669489-4.302864C.669489-4.051806 .871731-3.898381 1.066999-3.898381C1.290162-3.898381 1.471482-4.072727 1.471482-4.302864ZM.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467L.411457-2.998755Z"></path>
+<path id="tz_libet_g2-108" d="M1.436613-4.839851L.390535-4.763138V-4.51208C.857783-4.51208 .913574-4.463263 .913574-4.121544V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.436613-.027895 1.694645-.020922 1.959651 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.550934V-4.839851Z"></path>
+<path id="tz_libet_g2-109" d="M5.732503-2.113076C5.732503-2.719801 5.432628-3.075467 4.686426-3.075467C4.135492-3.075467 3.758904-2.775592 3.57061-2.426899C3.431133-2.922042 3.054545-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-1.806227C3.591532-2.538481 4.170361-2.880199 4.630635-2.880199C5.118804-2.880199 5.181569-2.496638 5.181569-2.140971V-.550934C5.181569-.251059 5.111831-.251059 4.658531-.251059V0C4.672478 0 5.160648-.027895 5.453549-.027895C5.711582-.027895 6.192777-.006974 6.255542 0V-.251059C5.802242-.251059 5.732503-.251059 5.732503-.550934V-2.113076Z"></path>
+<path id="tz_libet_g2-110" d="M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z"></path>
+<path id="tz_libet_g2-111" d="M3.689166-1.48543C3.689166-2.357161 2.942964-3.110336 1.980573-3.110336S.27198-2.357161 .27198-1.48543C.27198-.620672 1.039103 .069738 1.980573 .069738S3.689166-.620672 3.689166-1.48543ZM1.980573-.153425C1.72254-.153425 1.345953-.237111 1.115816-.578829C.927522-.864757 .9066-1.227397 .9066-1.548194C.9066-1.84807 .913574-2.259527 1.157659-2.559402C1.332005-2.761644 1.624907-2.915068 1.980573-2.915068C2.39203-2.915068 2.684932-2.719801 2.838356-2.503611C3.033624-2.231631 3.054545-1.882939 3.054545-1.548194S3.033624-.843836 2.831382-.557908C2.643088-.292902 2.322291-.153425 1.980573-.153425Z"></path>
+<path id="tz_libet_g2-112" d="M1.93873 1.101868C1.48543 1.101868 1.415691 1.101868 1.415691 .801993V-.334745C1.45056-.299875 1.778331 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.364134 3.361395-3.075467 2.475716-3.075467C2.078207-3.075467 1.673724-2.929016 1.387796-2.650062V-3.075467L.341719-2.998755V-2.747696C.829888-2.747696 .864757-2.712827 .864757-2.419925V.801993C.864757 1.101868 .795019 1.101868 .341719 1.101868V1.352927C.355666 1.352927 .843836 1.325031 1.136737 1.325031C1.39477 1.325031 1.875965 1.345953 1.93873 1.352927V1.101868ZM1.415691-2.322291C1.624907-2.670984 2.02939-2.852304 2.399004-2.852304C2.984807-2.852304 3.438107-2.238605 3.438107-1.506351C3.438107-.711333 2.915068-.125529 2.322291-.125529C1.708593-.125529 1.436613-.662516 1.415691-.704359V-2.322291Z"></path>
+<path id="tz_libet_g2-114" d="M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z"></path>
+<path id="tz_libet_g2-115" d="M2.643088-2.929016C2.643088-3.047572 2.643088-3.110336 2.545455-3.110336C2.510585-3.110336 2.496638-3.110336 2.405978-3.02665C2.39203-3.019676 2.322291-2.956912 2.280448-2.922042C2.071233-3.068493 1.806227-3.110336 1.548194-3.110336C.550934-3.110336 .313823-2.587298 .313823-2.238605C.313823-2.015442 .411457-1.834122 .578829-1.694645C.843836-1.464508 1.108842-1.415691 1.54122-1.345953C1.889913-1.283188 2.454795-1.185554 2.454795-.718306C2.454795-.446326 2.266501-.125529 1.597011-.125529S.683437-.564882 .557908-1.039103C.536986-1.129763 .530012-1.157659 .432379-1.157659C.313823-1.157659 .313823-1.108842 .313823-.969365V-.111582C.313823 .006974 .313823 .069738 .411457 .069738C.474222 .069738 .606725-.076712 .746202-.230137C1.053051 .055791 1.429639 .069738 1.597011 .069738C2.503611 .069738 2.838356-.418431 2.838356-.913574C2.838356-1.17858 2.719801-1.387796 2.538481-1.555168C2.273474-1.799253 1.952677-1.855044 1.708593-1.896887C1.150685-1.994521 .697385-2.078207 .697385-2.447821C.697385-2.670984 .885679-2.942964 1.548194-2.942964C2.357161-2.942964 2.39203-2.378082 2.405978-2.175841C2.412951-2.099128 2.496638-2.099128 2.524533-2.099128C2.643088-2.099128 2.643088-2.147945 2.643088-2.280448V-2.929016Z"></path>
+<path id="tz_libet_g2-116" d="M1.401743-2.75467H2.489664V-3.005729H1.401743V-4.288917H1.164633C1.157659-3.66127 .871731-2.970859 .202242-2.949938V-2.75467H.850809V-.871731C.850809-.09066 1.436613 .069738 1.827148 .069738C2.294396 .069738 2.615193-.327771 2.615193-.878705V-1.262267H2.378082V-.885679C2.378082-.411457 2.154919-.153425 1.882939-.153425C1.401743-.153425 1.401743-.739228 1.401743-.864757V-2.75467Z"></path>
+<path id="tz_libet_g2-117" d="M2.517559-2.998755V-2.747696C2.984807-2.747696 3.040598-2.698879 3.040598-2.357161V-1.164633C3.040598-.550934 2.643088-.125529 2.113076-.125529C1.478456-.125529 1.45056-.425405 1.45056-.781071V-3.075467L.376588-2.998755V-2.747696C.899626-2.747696 .899626-2.726775 .899626-2.106102V-1.060025C.899626-.578829 .899626 .069738 2.064259 .069738C2.217684 .069738 2.726775 .069738 3.061519-.516065H3.068493V.069738L4.11457 0V-.251059C3.647323-.251059 3.591532-.299875 3.591532-.641594V-3.075467L2.517559-2.998755Z"></path>
+<path id="tz_libet_g2-118" d="M3.305604-2.322291C3.500872-2.747696 3.849564-2.75467 3.961146-2.75467V-3.005729C3.7868-2.991781 3.605479-2.977833 3.431133-2.977833C3.242839-2.977833 2.984807-2.984807 2.796513-3.005729V-2.75467C3.089415-2.740722 3.089415-2.510585 3.089415-2.489664C3.089415-2.454795 3.082441-2.385056 3.033624-2.287422L2.245579-.564882L1.380822-2.461768C1.380822-2.468742 1.338979-2.545455 1.338979-2.594271C1.338979-2.75467 1.57609-2.75467 1.694645-2.75467V-3.005729C1.680697-3.005729 1.185554-2.977833 .899626-2.977833C.690411-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.599751-2.75467 .683437-2.740722 .788045-2.503611L1.889913-.076712C1.924782 .006974 1.966625 .069738 2.085181 .069738C2.217684 .069738 2.245579 .006974 2.280448-.069738L3.305604-2.322291Z"></path>
+<path id="tz_libet_g2-120" d="M2.364134-1.562142C2.357161-1.569116 2.308344-1.624907 2.308344-1.63188C2.308344-1.652802 2.768618-2.147945 2.831382-2.21071C3.075467-2.48269 3.319552-2.747696 3.870486-2.75467V-3.005729C3.675218-2.991781 3.472976-2.977833 3.284682-2.977833C3.075467-2.977833 2.803487-2.984807 2.594271-3.005729V-2.75467C2.712827-2.733748 2.733748-2.657036 2.733748-2.594271C2.733748-2.580324 2.733748-2.475716 2.629141-2.357161L2.140971-1.806227L1.562142-2.468742C1.492403-2.545455 1.48543-2.580324 1.48543-2.608219C1.48543-2.712827 1.583064-2.75467 1.673724-2.75467V-3.005729C1.415691-2.984807 1.150685-2.977833 .892653-2.977833C.683437-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.536986-2.75467 .718306-2.75467 .899626-2.545455L1.771357-1.54122C1.778331-1.534247 1.827148-1.478456 1.827148-1.471482C1.827148-1.45056 1.30411-.878705 1.234371-.801993C.976339-.523039 .739228-.265006 .18132-.251059V0C.390535-.013948 .54396-.027895 .760149-.027895C.969365-.027895 1.248319-.020922 1.457534 0V-.251059C1.373848-.265006 1.318057-.313823 1.318057-.411457C1.318057-.54396 1.39477-.63462 1.506351-.753176L1.994521-1.290162L2.601245-.599751C2.733748-.4533 2.733748-.439352 2.733748-.397509C2.733748-.258032 2.57335-.251059 2.545455-.251059V0C2.608219-.006974 3.110336-.027895 3.333499-.027895S3.779826-.020922 4.002989 0V-.251059C3.535741-.251059 3.47995-.292902 3.319552-.474222L2.364134-1.562142Z"></path>
+<path id="tz_libet_g2-124" d="M7.824658-1.75741V-1.952677H.111582V-1.75741H7.824658Z"></path>
+<path id="tz_libet_g2-126" d="M3.124284-4.6934C2.922042-4.47721 2.719801-4.372603 2.524533-4.372603C2.343213-4.372603 2.133998-4.47721 2.078207-4.51208C1.827148-4.630635 1.680697-4.6934 1.527273-4.6934C1.241345-4.6934 1.136737-4.581818 .697385-4.135492L.836862-3.996015C1.039103-4.212204 1.241345-4.316812 1.436613-4.316812C1.617933-4.316812 1.827148-4.212204 1.882939-4.177335C2.133998-4.05878 2.280448-3.996015 2.433873-3.996015C2.719801-3.996015 2.824408-4.107597 3.263761-4.553923L3.124284-4.6934Z"></path>
+</defs>
+<g id="tz_libet_page1">
+<g stroke-miterlimit="10" transform="translate(166.932064,-26.251426)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<g fill="#000" stroke="#000">
+<path d="M-210.55013 0H37.23372" fill="none"></path>
+<g transform="translate(37.23372,0.0)">
+<path d="M2.59995 0L-1.55997 2.07996L0 0L-1.55997-2.07996" stroke="none"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(43.12596,-1.47223)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-116"></use>
+<use x="170.045408" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="173.587699" y="-26.251426" href="#tz_libet_g2-109"></use>
+<use x="180.132632" y="-26.251426" href="#tz_libet_g2-112"></use>
+<use x="184.747288" y="-26.251426" href="#tz_libet_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M-187.78827 3.98335V-3.98335" fill="none"></path>
+</g>
+<g transform="translate(-200.64795,-15.05919)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-45"></use>
+<use x="169.616459" y="-26.251426" href="#tz_libet_g2-53"></use>
+<use x="173.587699" y="-26.251426" href="#tz_libet_g2-53"></use>
+<use x="177.55894" y="-26.251426" href="#tz_libet_g2-48"></use>
+<use x="182.854195" y="-26.251426" href="#tz_libet_g2-109"></use>
+<use x="189.399127" y="-26.251426" href="#tz_libet_g2-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M-91.04869 3.98335V-3.98335" fill="none"></path>
+</g>
+<g transform="translate(-103.90837,-15.05919)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-45"></use>
+<use x="169.616459" y="-26.251426" href="#tz_libet_g2-50"></use>
+<use x="173.587699" y="-26.251426" href="#tz_libet_g2-48"></use>
+<use x="177.55894" y="-26.251426" href="#tz_libet_g2-48"></use>
+<use x="182.854195" y="-26.251426" href="#tz_libet_g2-109"></use>
+<use x="189.399127" y="-26.251426" href="#tz_libet_g2-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M0 3.98335V-3.98335" fill="none"></path>
+</g>
+<g transform="translate(-7.52632,-15.05919)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-48"></use>
+<use x="172.227319" y="-26.251426" href="#tz_libet_g2-109"></use>
+<use x="178.772252" y="-26.251426" href="#tz_libet_g2-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M-187.78827-42.67911V-9.81618" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,-187.78827,-12.29047)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="translate(-232.49509,-68.4959)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="166.932064" y="-42.19165" href="#tz_libet_g0-112"></use>
+<use x="172.18872" y="-42.19165" href="#tz_libet_g0-111"></use>
+<use x="176.702345" y="-42.19165" href="#tz_libet_g0-116"></use>
+<use x="180.225236" y="-42.19165" href="#tz_libet_g0-101"></use>
+<use x="184.356275" y="-42.19165" href="#tz_libet_g0-110"></use>
+<use x="189.365263" y="-42.19165" href="#tz_libet_g0-99"></use>
+<use x="193.383518" y="-42.19165" href="#tz_libet_g0-105"></use>
+<use x="195.915676" y="-42.19165" href="#tz_libet_g0-97"></use>
+<use x="200.30545" y="-42.19165" href="#tz_libet_g0-108"></use>
+<use x="205.865135" y="-42.19165" href="#tz_libet_g0-100"></use>
+<use x="210.874123" y="-42.19165" href="#tz_libet_g0-101"></use>
+<use x="218.032688" y="-42.19165" href="#tz_libet_g0-112"></use>
+<use x="223.041676" y="-42.19165" href="#tz_libet_g0-114"></use>
+<use x="226.769365" y="-42.19165" href="#tz_libet_g0-111"></use>
+<use x="231.28299" y="-42.19165" href="#tz_libet_g0-110"></use>
+<use x="236.044295" y="-42.19165" href="#tz_libet_g0-116"></use>
+<use x="239.567187" y="-42.19165" href="#tz_libet_g0-105"></use>
+<use x="242.099345" y="-42.19165" href="#tz_libet_g0-100"></use>
+<use x="247.046401" y="-42.19165" href="#tz_libet_g0-126"></use>
+<use x="247.108336" y="-42.19165" href="#tz_libet_g0-97"></use>
+<use x="251.49811" y="-42.19165" href="#tz_libet_g0-111"></use>
+<use x="179.214193" y="-34.221538" href="#tz_libet_g2-105"></use>
+<use x="181.469638" y="-34.221538" href="#tz_libet_g2-110"></use>
+<use x="185.01193" y="-34.221538" href="#tz_libet_g2-19"></use>
+<use x="185.86983" y="-34.221538" href="#tz_libet_g2-16"></use>
+<use x="188.125276" y="-34.221538" href="#tz_libet_g2-99"></use>
+<use x="191.667568" y="-34.221538" href="#tz_libet_g2-105"></use>
+<use x="193.923013" y="-34.221538" href="#tz_libet_g2-111"></use>
+<use x="200.578645" y="-34.221538" href="#tz_libet_g2-100"></use>
+<use x="204.978835" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="211.634467" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="215.605707" y="-34.221538" href="#tz_libet_g2-116"></use>
+<use x="218.71905" y="-34.221538" href="#tz_libet_g2-105"></use>
+<use x="220.974496" y="-34.221538" href="#tz_libet_g2-118"></use>
+<use x="225.160217" y="-34.221538" href="#tz_libet_g2-105"></use>
+<use x="227.415663" y="-34.221538" href="#tz_libet_g2-100"></use>
+<use x="231.815852" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="235.787093" y="-34.221538" href="#tz_libet_g2-100"></use>
+<use x="240.187282" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="184.838974" y="-26.251426" href="#tz_libet_g2-99"></use>
+<use x="188.381265" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="191.923557" y="-26.251426" href="#tz_libet_g2-114"></use>
+<use x="195.0369" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="198.579192" y="-26.251426" href="#tz_libet_g2-98"></use>
+<use x="202.979381" y="-26.251426" href="#tz_libet_g2-114"></use>
+<use x="206.092724" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="210.063965" y="-26.251426" href="#tz_libet_g2-108"></use>
+<use x="215.003802" y="-26.251426" href="#tz_libet_g2-40"></use>
+<use x="218.117145" y="-26.251426" href="#tz_libet_g2-69"></use>
+<use x="223.472094" y="-26.251426" href="#tz_libet_g2-69"></use>
+<use x="228.827042" y="-26.251426" href="#tz_libet_g2-71"></use>
+<use x="234.991457" y="-26.251426" href="#tz_libet_g2-41"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M-91.04869-42.67911V-9.81618" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,-91.04869,-12.29047)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="translate(-125.14954,-68.49591)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="178.995849" y="-42.19165" href="#tz_libet_g0-105"></use>
+<use x="181.528007" y="-42.19165" href="#tz_libet_g0-110"></use>
+<use x="186.536996" y="-42.19165" href="#tz_libet_g0-115"></use>
+<use x="190.109429" y="-42.19165" href="#tz_libet_g0-116"></use>
+<use x="193.63232" y="-42.19165" href="#tz_libet_g0-97"></use>
+<use x="198.022094" y="-42.19165" href="#tz_libet_g0-110"></use>
+<use x="202.7834" y="-42.19165" href="#tz_libet_g0-116"></use>
+<use x="206.306291" y="-42.19165" href="#tz_libet_g0-101"></use>
+<use x="213.464856" y="-42.19165" href="#tz_libet_g0-87"></use>
+<use x="175.046107" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="181.701739" y="-34.221538" href="#tz_libet_g2-112"></use>
+<use x="186.316395" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="189.858687" y="-34.221538" href="#tz_libet_g2-115"></use>
+<use x="193.014927" y="-34.221538" href="#tz_libet_g2-115"></use>
+<use x="196.171168" y="-34.221538" href="#tz_libet_g2-111"></use>
+<use x="200.142408" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="206.79804" y="-34.221538" href="#tz_libet_g2-114"></use>
+<use x="209.911383" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="213.453675" y="-34.221538" href="#tz_libet_g2-108"></use>
+<use x="215.709121" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="219.680361" y="-34.221538" href="#tz_libet_g2-116"></use>
+<use x="222.793705" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-112"></use>
+<use x="171.54672" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="175.089012" y="-26.251426" href="#tz_libet_g2-114"></use>
+<use x="178.202355" y="-26.251426" href="#tz_libet_g2-99"></use>
+<use x="181.744647" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="185.286939" y="-26.251426" href="#tz_libet_g2-98"></use>
+<use x="189.901595" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="193.443886" y="-26.251426" href="#tz_libet_g2-114"></use>
+<use x="199.241621" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="205.897253" y="-26.251426" href="#tz_libet_g2-105"></use>
+<use x="208.152699" y="-26.251426" href="#tz_libet_g2-110"></use>
+<use x="212.338406" y="-26.251426" href="#tz_libet_g2-116"></use>
+<use x="215.451749" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="218.994041" y="-26.251426" href="#tz_libet_g2-110"></use>
+<use x="223.39423" y="-26.251426" href="#tz_libet_g2-24"></use>
+<use x="223.394233" y="-26.251426" href="#tz_libet_g2-99"></use>
+<use x="226.936525" y="-26.251426" href="#tz_libet_g2-126"></use>
+<use x="226.936528" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="230.907768" y="-26.251426" href="#tz_libet_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M0-42.67911V-9.81618" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,0.0,-12.29047)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="translate(-26.15012,-60.49591)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="171.25457" y="-34.221538" href="#tz_libet_g0-109"></use>
+<use x="178.740381" y="-34.221538" href="#tz_libet_g0-111"></use>
+<use x="183.006324" y="-34.221538" href="#tz_libet_g0-118"></use>
+<use x="187.76763" y="-34.221538" href="#tz_libet_g0-105"></use>
+<use x="190.299788" y="-34.221538" href="#tz_libet_g0-109"></use>
+<use x="197.7856" y="-34.221538" href="#tz_libet_g0-101"></use>
+<use x="201.916639" y="-34.221538" href="#tz_libet_g0-110"></use>
+<use x="206.677944" y="-34.221538" href="#tz_libet_g0-116"></use>
+<use x="210.200836" y="-34.221538" href="#tz_libet_g0-111"></use>
+<use x="166.932064" y="-26.251426" href="#tz_libet_g2-13"></use>
+<use x="171.442949" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="174.985241" y="-26.251426" href="#tz_libet_g2-120"></use>
+<use x="179.170962" y="-26.251426" href="#tz_libet_g2-126"></use>
+<use x="179.170965" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="183.142206" y="-26.251426" href="#tz_libet_g2-111"></use>
+<use x="189.797838" y="-26.251426" href="#tz_libet_g2-100"></use>
+<use x="194.198027" y="-26.251426" href="#tz_libet_g2-111"></use>
+<use x="200.853659" y="-26.251426" href="#tz_libet_g2-112"></use>
+<use x="205.253848" y="-26.251426" href="#tz_libet_g2-117"></use>
+<use x="209.654037" y="-26.251426" href="#tz_libet_g2-108"></use>
+<use x="211.909483" y="-26.251426" href="#tz_libet_g2-115"></use>
+<use x="215.065724" y="-26.251426" href="#tz_libet_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M-187.78827 15.6491C-186.8883 17.44911-184.78827 18.6491-181.78827 18.6491H-145.41849C-142.41849 18.6491-140.31845 19.84908-139.41849 21.6491C-138.51852 19.84908-136.41849 18.6491-133.41849 18.6491H-97.04869C-94.04869 18.6491-91.94865 17.44911-91.04869 15.6491" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-196.70393,25.72607)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(166.932064,-26.251426)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="166.932064" y="-34.221538" href="#tz_libet_g1-25"></use>
+<use x="175.843136" y="-34.221538" href="#tz_libet_g2-51"></use>
+<use x="179.814376" y="-34.221538" href="#tz_libet_g2-53"></use>
+<use x="183.785616" y="-34.221538" href="#tz_libet_g2-48"></use>
+<use x="190.441248" y="-34.221538" href="#tz_libet_g2-109"></use>
+<use x="196.986181" y="-34.221538" href="#tz_libet_g2-115"></use>
+<use x="202.826813" y="-34.221538" href="#tz_libet_g2-124"></use>
+<use x="213.453679" y="-34.221538" href="#tz_libet_g2-111"></use>
+<use x="220.109311" y="-34.221538" href="#tz_libet_g2-99"></use>
+<use x="223.437121" y="-34.221538" href="#tz_libet_g2-19"></use>
+<use x="223.651606" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="227.193897" y="-34.221538" href="#tz_libet_g2-114"></use>
+<use x="230.307241" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="233.849532" y="-34.221538" href="#tz_libet_g2-98"></use>
+<use x="238.249722" y="-34.221538" href="#tz_libet_g2-114"></use>
+<use x="241.363065" y="-34.221538" href="#tz_libet_g2-111"></use>
+<use x="248.018697" y="-34.221538" href="#tz_libet_g2-34"></use>
+<use x="251.989937" y="-34.221538" href="#tz_libet_g2-99"></use>
+<use x="255.532229" y="-34.221538" href="#tz_libet_g2-111"></use>
+<use x="259.503469" y="-34.221538" href="#tz_libet_g2-109"></use>
+<use x="266.048402" y="-34.221538" href="#tz_libet_g2-101"></use>
+<use x="269.590694" y="-34.221538" href="#tz_libet_g2-24"></use>
+<use x="269.590697" y="-34.221538" href="#tz_libet_g2-99"></use>
+<use x="273.132988" y="-34.221538" href="#tz_libet_g2-97"></use>
+<use x="277.104229" y="-34.221538" href="#tz_libet_g2-34"></use>
+<use x="179.755558" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="183.726799" y="-26.251426" href="#tz_libet_g2-110"></use>
+<use x="187.912506" y="-26.251426" href="#tz_libet_g2-116"></use>
+<use x="191.025849" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="194.568141" y="-26.251426" href="#tz_libet_g2-115"></use>
+<use x="200.408773" y="-26.251426" href="#tz_libet_g2-100"></use>
+<use x="204.808962" y="-26.251426" href="#tz_libet_g2-111"></use>
+<use x="211.464594" y="-26.251426" href="#tz_libet_g2-114"></use>
+<use x="214.577937" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="218.120229" y="-26.251426" href="#tz_libet_g2-108"></use>
+<use x="220.375675" y="-26.251426" href="#tz_libet_g2-97"></use>
+<use x="224.346915" y="-26.251426" href="#tz_libet_g2-116"></use>
+<use x="227.460258" y="-26.251426" href="#tz_libet_g2-111"></use>
+<use x="234.11589" y="-26.251426" href="#tz_libet_g2-100"></use>
+<use x="238.51608" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="244.742763" y="-26.251426" href="#tz_libet_g2-100"></use>
+<use x="249.142952" y="-26.251426" href="#tz_libet_g2-101"></use>
+<use x="252.685244" y="-26.251426" href="#tz_libet_g2-99"></use>
+<use x="256.227536" y="-26.251426" href="#tz_libet_g2-105"></use>
+<use x="258.482981" y="-26.251426" href="#tz_libet_g2-100"></use>
+<use x="262.88317" y="-26.251426" href="#tz_libet_g2-105"></use>
+<use x="265.138616" y="-26.251426" href="#tz_libet_g2-114"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-libet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.2: A cronologia do experimento de Libet. O intervalo destacado é o que gerou a controvérsia — e, como o texto discute, ele admite mais de uma leitura.
+</figcaption>
+</figure>
+</div>
+<div class="experimento">
+<p><strong>Libet e o potencial de prontidão</strong> <span class="citation" data-cites="libet1983">(<a href="../../referencias.html#ref-libet1983" role="doc-biblioref">Libet et al., 1983</a>)</span></p>
+<p><strong>Desenho.</strong> Participantes com eletrodos de EEG deviam flexionar o pulso quando quisessem, sem planejar de antemão. Olhavam um ponto girando num mostrador tipo relógio e deviam relatar, depois, a posição do ponto no instante em que tomaram consciência da vontade de mover — o <strong>instante W</strong>. Três medidas eram comparadas: o início do <strong>potencial de prontidão</strong> no EEG, o instante W relatado e o movimento em si.</p>
+<p><strong>Resultado.</strong> O potencial de prontidão começava cerca de <strong>550 ms</strong> antes do movimento. O instante W era relatado cerca de <strong>200 ms</strong> antes do movimento. Ou seja: a atividade cerebral que precede a ação começava aproximadamente <strong>350 ms antes</strong> de a pessoa se dar conta de que decidira.</p>
+<p><strong>Interpretação original.</strong> Libet concluiu que o processo é iniciado inconscientemente — o cérebro “decide” antes de você saber. Ele preservou uma janela de liberdade: nos ~200 ms restantes, a consciência ainda poderia <strong>vetar</strong> o movimento, o que ficou conhecido como <em>free won’t</em>.</p>
+<p><strong>Limitações — e elas são decisivas.</strong> (1) A tarefa é bizarra: flexionar o pulso arbitrariamente, sem razão alguma, não se parece com nenhuma decisão que importe; generalizar disso para escolhas deliberadas é um salto enorme. (2) O instante W depende de introspecção cronometrada sobre um evento fugaz, exatamente o tipo de relato que Nisbett e Wilson mostraram ser pouco confiável (Cap. 1), e é sabidamente sensível ao método. (3) A crítica mais forte é teórica: Schurger e colegas mostraram que o potencial de prontidão pode não ser um “sinal de decisão” — modelando a atividade neural espontânea como flutuação que cruza um limiar, e alinhando os registros ao movimento <em>depois do fato</em>, obtém-se a curva do potencial de prontidão <strong>como artefato da média</strong>. Nessa leitura, a decisão de mover é tomada quando o ruído neural cruza o limiar, e não 350 ms antes <span class="citation" data-cites="schurger2012">(<a href="../../referencias.html#ref-schurger2012" role="doc-biblioref">Schurger; Sitt; Dehaene, 2012</a>)</span>. Trabalhos posteriores estenderam o achado de Libet a decisões mais complexas, com sinais preditivos aparecendo até segundos antes <span class="citation" data-cites="soon2008">(<a href="../../referencias.html#ref-soon2008" role="doc-biblioref">Soon et al., 2008</a>)</span>, mas com acurácia de previsão modesta — na casa dos 60%, não muito acima do acaso.</p>
+</div>
+</section>
+<section id="o-que-isso-realmente-decide" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-isso-realmente-decide">O que isso realmente decide</h3>
+<p>Aqui é preciso ser cuidadoso, porque a conclusão popular (“a ciência provou que o livre-arbítrio não existe”) é mais forte do que qualquer coisa que os dados sustentem.</p>
+<p>Primeiro, a questão de fundo <strong>antecede</strong> o experimento. Se o monismo é verdadeiro, então suas decisões já eram processos cerebrais antes de Libet ligar o EEG — e processos cerebrais já eram físicos. O experimento não descobriu o determinismo; no máximo ilustrou-o com uma cronometragem. E, com a releitura de Schurger, talvez nem isso.</p>
+<p>Segundo, e mais importante: <strong>qual noção de livre-arbítrio está em jogo?</strong> É aqui que a discussão empírica encontra seu limite conceitual. Se livre-arbítrio significa uma capacidade de iniciar cadeias causais fora das leis da física — uma alma empurrando neurônios —, então sim, a psicologia opera sob a premissa de que isso não existe, e opera assim desde que abandonou o dualismo. Mas a maior parte dos filósofos contemporâneos é <strong>compatibilista</strong>: sustenta que a liberdade que importa não é ausência de causas, e sim um tipo particular de causa. Uma ação é livre quando é produzida pelos seus próprios desejos, valores e deliberações, sem coerção externa — e não faz diferença que esses desejos sejam, eles próprios, processos cerebrais <span class="citation" data-cites="dennett1984">(<a href="../../referencias.html#ref-dennett1984" role="doc-biblioref">Dennett, 1984</a>)</span>. Nessa leitura, o experimento de Libet não é ameaça alguma: claro que sua decisão tem antecedentes cerebrais; ela seria <em>sua</em> de que outro modo?</p>
+<p>Daniel Wegner ofereceu a versão mais provocativa do lado oposto: a sensação de vontade consciente seria ela mesma uma construção, uma inferência que o sistema faz a partir da correlação entre pensamento e ação — não a leitura direta da causa, mas uma teoria sobre si mesmo, no espírito exato de Nisbett e Wilson <span class="citation" data-cites="wegner2002">(<a href="../../referencias.html#ref-wegner2002" role="doc-biblioref">Wegner, 2002</a>)</span>. Note que isso é uma afirmação sobre a <em>experiência</em> de decidir, não sobre a inexistência da decisão.</p>
+<div class="atencao">
+<p><strong>“Se tudo é causado, ninguém é responsável.”</strong></p>
+<p>Este é o salto que o capítulo pede para você não dar — e ele é normativo, não empírico. Nenhum experimento demonstra o que devemos fazer com a responsabilidade; essa é uma questão sobre para que serve responsabilizar.</p>
+<p>Vale registrar que a pergunta tem consequências mensuráveis: Vohs e Schooler relataram que enfraquecer a crença em livre-arbítrio aumentava a trapaça em laboratório <span class="citation" data-cites="vohs_schooler2008">(<a href="../../referencias.html#ref-vohs_schooler2008" role="doc-biblioref">Vohs; Schooler, 2008</a>)</span>. Seguindo a política deste manual, o achado vem com um alerta: ele é do período e do tipo de paradigma da psicologia social mais atingido pela crise de replicabilidade (Cap. 1), o efeito é debatido, e tentativas posteriores encontraram resultados bem mais fracos. Trate-o como hipótese interessante, não como fato estabelecido — e note que, mesmo se verdadeiro, ele diria algo sobre os efeitos da <em>crença</em>, não sobre a verdade da tese.</p>
+<p>Sistemas de responsabilização podem ser defendidos sem metafísica libertária: punir e recompensar alteram comportamento futuro, e essa é uma razão consequencialista que sobrevive ao determinismo intacta. O Vol 15 trata do assunto onde ele deixa de ser abstrato — na psicologia jurídica.</p>
+</div>
+</section>
+</section>
+<section id="o-padrão-comum" class="level2">
+<h2 class="anchored" data-anchor-id="o-padrão-comum">O padrão comum</h2>
+<p>Vale olhar as quatro questões lado a lado, porque elas falham do mesmo jeito.</p>
+<p>Em cada uma, a formulação popular é uma <strong>dicotomia</strong>: genes <em>ou</em> ambiente, mente <em>ou</em> corpo, consciência como tudo <em>ou</em> nada, livre-arbítrio <em>ou</em> determinismo. E, em cada uma, o progresso veio de rejeitar a dicotomia — não escolhendo um lado, mas mostrando que a pergunta continha um pressuposto falso. Genes e ambiente não são causas somáveis. Mente e corpo não são duas substâncias. A consciência não é um interruptor. E “livre” pode significar coisas diferentes, das quais só a mais exigente conflita com a física.</p>
+<p>Há também um padrão sobre os limites. Em cada questão existe uma parte que a evidência decide — a herdabilidade é mensurável, a lesão frontal muda o caráter, a visão cega dissocia processamento de experiência, o potencial de prontidão precede o relato — e uma parte que ela não decide, porque é conceitual: o que conta como “livre”, o que seria explicar a experiência, o que devemos fazer com a responsabilidade. Confundir as duas partes produz os dois erros simétricos do início: o cientificismo que anuncia ter resolvido filosofia com um EEG, e o obscurantismo que declara a ciência irrelevante porque o mistério persiste.</p>
+<p>O Vol 2 mostra como cada escola da psicologia respondeu a essas quatro perguntas — e como as respostas erradas ainda organizam boa parte do que se diz sobre a mente hoje.</p>
+<div class="callout-sintese">
+<ul>
+<li><strong>Natureza × cultura é uma falsa dicotomia.</strong> Genes e ambiente não são causas paralelas que se somam; interagem por interação G×A, correlação G–A, epigenética e realimentação do comportamento sobre o próprio contexto.</li>
+<li><strong>Herdabilidade é uma estatística de variância</strong>, relativa a uma população e a um ambiente. Não se aplica a indivíduos, não mede maleabilidade e <strong>não</strong> autoriza conclusões sobre diferenças entre grupos — a demonstração dos dois vasos de Lewontin é definitiva.</li>
+<li><strong>Todos os traços psicológicos são herdáveis</strong>, com média em torno de 49% em 14,5 milhões de pares de gêmeos; mas a arquitetura é poligênica, e a busca por genes candidatos de efeito grande (5-HTTLPR) fracassou de forma exemplar.</li>
+<li><strong>O dualismo perdeu por inutilidade explicativa</strong>, não por refutação. A psicologia opera sob monismo: processos mentais são o que o cérebro faz — o que implica causação nos dois sentidos, e é por isso que psicoterapia altera o cérebro.</li>
+<li><strong>Os problemas fáceis da consciência são mecanismos; o problema difícil é a experiência subjetiva.</strong> A ciência progride nos primeiros; quanto ao segundo, espaço de trabalho global e informação integrada disputam sem que a evidência decida.</li>
+<li><strong>Libet não provou que o livre-arbítrio não existe.</strong> A releitura de Schurger sugere que o potencial de prontidão pode ser artefato de média sobre ruído neural, e a tarefa não se parece com decisões reais.</li>
+<li><strong>A questão do livre-arbítrio é em boa parte conceitual.</strong> O compatibilismo sustenta que liberdade não é ausência de causas, e sob essa definição nada em Libet ameaça nada.</li>
+<li><strong>Em todas as quatro questões</strong>, é preciso saber onde a evidência decide e onde ela não decide. Os dois erros simétricos são resolver filosofia com um experimento e descartar a ciência porque o mistério persiste.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Herdabilidade</strong> (<span class="math inline">\(h^2\)</span>)</dt>
+<dd>
+Proporção da variância de um traço, numa população e num ambiente específicos, atribuível à variância genética. Estatística populacional; indefinida para indivíduos <span class="citation" data-cites="moore_shenk2017">(<a href="../../referencias.html#ref-moore_shenk2017" role="doc-biblioref">Moore; Shenk, 2017</a>)</span>.
+</dd>
+<dt><strong>Interação gene × ambiente</strong></dt>
+<dd>
+Situação em que o efeito do ambiente sobre um traço depende do genótipo (e vice-versa).
+</dd>
+<dt><strong>Correlação gene–ambiente</strong></dt>
+<dd>
+Situação em que o genótipo influencia a quais ambientes o indivíduo se expõe, ativa ou passivamente <span class="citation" data-cites="scarr_mccartney1983">(<a href="../../referencias.html#ref-scarr_mccartney1983" role="doc-biblioref">Scarr; McCartney, 1983</a>)</span>.
+</dd>
+<dt><strong>Epigenética</strong></dt>
+<dd>
+Alterações na expressão gênica, sem mudança na sequência de DNA, induzidas por fatores como o ambiente e o cuidado parental <span class="citation" data-cites="weaver2004">(<a href="../../referencias.html#ref-weaver2004" role="doc-biblioref">Weaver et al., 2004</a>)</span>.
+</dd>
+<dt><strong>Ambiente não compartilhado</strong></dt>
+<dd>
+Parcela da variação ambiental que difere entre irmãos criados na mesma família; responde por porção substancial da variância dos traços <span class="citation" data-cites="turkheimer2000">(<a href="../../referencias.html#ref-turkheimer2000" role="doc-biblioref">Turkheimer, 2000</a>)</span>.
+</dd>
+<dt><strong>Poligenia</strong></dt>
+<dd>
+Arquitetura em que um traço é influenciado por milhares de variantes genéticas de efeito individual minúsculo.
+</dd>
+<dt><strong>Dualismo de substância</strong></dt>
+<dd>
+Tese de que mente e matéria são substâncias de naturezas distintas <span class="citation" data-cites="descartes1641">(<a href="../../referencias.html#ref-descartes1641" role="doc-biblioref">Descartes, 1641</a>)</span>.
+</dd>
+<dt><strong>Monismo</strong></dt>
+<dd>
+Tese de que existe apenas um tipo de substância; processos mentais são processos cerebrais <span class="citation" data-cites="kandel1998">(<a href="../../referencias.html#ref-kandel1998" role="doc-biblioref">Kandel, 1998</a>)</span>.
+</dd>
+<dt><strong>Problemas fáceis da consciência</strong></dt>
+<dd>
+Explicar discriminação, integração, acesso, relato e controle — difíceis na prática, mas com forma de resposta conhecida <span class="citation" data-cites="chalmers1995">(<a href="../../referencias.html#ref-chalmers1995" role="doc-biblioref">Chalmers, 1995</a>)</span>.
+</dd>
+<dt><strong>Problema difícil da consciência</strong></dt>
+<dd>
+Explicar por que há experiência subjetiva acompanhando o processamento <span class="citation" data-cites="chalmers1995 nagel1974">(<a href="../../referencias.html#ref-chalmers1995" role="doc-biblioref">Chalmers, 1995</a>; <a href="../../referencias.html#ref-nagel1974" role="doc-biblioref">Nagel, 1974</a>)</span>.
+</dd>
+<dt><strong>Visão cega</strong> (<em>blindsight</em>)</dt>
+<dd>
+Capacidade de responder acima do acaso a estímulos visuais que o paciente relata não ver, após lesão de V1 <span class="citation" data-cites="weiskrantz1974">(<a href="../../referencias.html#ref-weiskrantz1974" role="doc-biblioref">Weiskrantz et al., 1974</a>)</span>.
+</dd>
+<dt><strong>Potencial de prontidão</strong></dt>
+<dd>
+Atividade cerebral que precede um movimento voluntário, começando centenas de milissegundos antes do relato consciente de intenção <span class="citation" data-cites="libet1983">(<a href="../../referencias.html#ref-libet1983" role="doc-biblioref">Libet et al., 1983</a>)</span>.
+</dd>
+<dt><strong>Compatibilismo</strong></dt>
+<dd>
+Posição segundo a qual livre-arbítrio e determinismo são compatíveis, porque liberdade é agir a partir dos próprios desejos e deliberações, não ausência de causas <span class="citation" data-cites="dennett1984">(<a href="../../referencias.html#ref-dennett1984" role="doc-biblioref">Dennett, 1984</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Defina herdabilidade com precisão e explique por que a frase “a inteligência de João é 60% genética” é malformada, e não apenas imprecisa.</p></li>
+<li><p><strong>(Recuperação.)</strong> Descreva a cronologia do experimento de Libet (potencial de prontidão, instante W, movimento) e explique como a releitura de Schurger reinterpreta exatamente os mesmos dados.</p></li>
+<li><p><strong>(Aplicação.)</strong> Um estudo relata que a herdabilidade do desempenho escolar é maior na Noruega do que em um país com desigualdade educacional extrema. Um jornalista conclui que “os genes importam mais para a educação dos noruegueses”. Explique por que a conclusão é errada e o que o dado de fato indica sobre os ambientes dos dois países.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Use os dois vasos de Lewontin para responder a esta afirmação: “Como a inteligência é altamente herdável dentro de cada grupo, a diferença média de escores entre dois grupos deve ser em boa parte genética.” Identifique o passo lógico exato em que o argumento falha.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> A história do 5-HTTLPR (Caspi 2003 → Risch 2009 → Border 2019) é um caso exemplar. Explique o que deu errado e conecte-o à crítica de Meehl às hipóteses frouxas (Cap. 1). Por que amostras maiores e pré-registro atacam justamente esse problema?</p></li>
+<li><p><strong>(Integração.)</strong> Um paciente com visão cega aponta corretamente para um objeto que afirma não ver. (a) Qual problema “fácil” da consciência esse desempenho ilustra? (b) Por que o caso torna o problema difícil mais nítido, em vez de resolvê-lo? (c) Como a teoria do espaço de trabalho global explicaria a dissociação, e que previsão diferente a teoria da informação integrada faria?</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-baars1988" class="csl-entry" role="listitem">
+BAARS, Bernard J. <strong>A Cognitive Theory of Consciousness</strong>. Cambridge: Cambridge University Press, 1988.
+</div>
+<div id="ref-border2019" class="csl-entry" role="listitem">
+BORDER, Richard <em>et al.</em> <a href="https://doi.org/10.1176/appi.ajp.2018.18070881">No support for historical candidate gene or candidate gene-by-interaction hypotheses for major depression across multiple large samples</a>. <strong>American Journal of Psychiatry</strong>, v. 176, n. 5, p. 376–387, 2019.
+</div>
+<div id="ref-bouchard1990" class="csl-entry" role="listitem">
+BOUCHARD, Thomas J. <em>et al.</em> <a href="https://doi.org/10.1126/science.2218526">Sources of human psychological differences: The <span>Minnesota</span> Study of Twins Reared Apart</a>. <strong>Science</strong>, v. 250, n. 4978, p. 223–228, 1990.
+</div>
+<div id="ref-caspi2003" class="csl-entry" role="listitem">
+CASPI, Avshalom <em>et al.</em> <a href="https://doi.org/10.1126/science.1083968">Influence of life stress on depression: Moderation by a polymorphism in the 5-<span>HTT</span> gene</a>. <strong>Science</strong>, v. 301, n. 5631, p. 386–389, 2003.
+</div>
+<div id="ref-chalmers1995" class="csl-entry" role="listitem">
+CHALMERS, David J. Facing up to the problem of consciousness. <strong>Journal of Consciousness Studies</strong>, v. 2, n. 3, p. 200–219, 1995.
+</div>
+<div id="ref-damasio1994" class="csl-entry" role="listitem">
+DAMASIO, Antonio R. <strong>Descartes’ Error: Emotion, Reason, and the Human Brain</strong>. New York: Putnam, 1994.
+</div>
+<div id="ref-dehaene2014" class="csl-entry" role="listitem">
+DEHAENE, Stanislas. <strong>Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts</strong>. New York: Viking, 2014.
+</div>
+<div id="ref-dennett1984" class="csl-entry" role="listitem">
+DENNETT, Daniel C. <strong>Elbow Room: The Varieties of Free Will Worth Wanting</strong>. Cambridge, MA: MIT Press, 1984.
+</div>
+<div id="ref-descartes1641" class="csl-entry" role="listitem">
+DESCARTES, René. <strong>Meditationes de prima philosophia</strong>. Paris: Michel Soly, 1641.
+</div>
+<div id="ref-harlow1868" class="csl-entry" role="listitem">
+HARLOW, John M. Recovery from the passage of an iron bar through the head. <strong>Publications of the Massachusetts Medical Society</strong>, v. 2, p. 327–347, 1868.
+</div>
+<div id="ref-kandel1998" class="csl-entry" role="listitem">
+KANDEL, Eric R. <a href="https://doi.org/10.1176/ajp.155.4.457">A new intellectual framework for psychiatry</a>. <strong>American Journal of Psychiatry</strong>, v. 155, n. 4, p. 457–469, 1998.
+</div>
+<div id="ref-lewontin1970" class="csl-entry" role="listitem">
+LEWONTIN, Richard C. <a href="https://doi.org/10.1080/00963402.1970.11457774">Race and intelligence</a>. <strong>Bulletin of the Atomic Scientists</strong>, v. 26, n. 3, p. 2–8, 1970.
+</div>
+<div id="ref-libet1983" class="csl-entry" role="listitem">
+LIBET, Benjamin <em>et al.</em> <a href="https://doi.org/10.1093/brain/106.3.623">Time of conscious intention to act in relation to onset of cerebral activity (readiness-potential): The unconscious initiation of a freely voluntary act</a>. <strong>Brain</strong>, v. 106, n. 3, p. 623–642, 1983.
+</div>
+<div id="ref-moore_shenk2017" class="csl-entry" role="listitem">
+MOORE, David S.; SHENK, David. <a href="https://doi.org/10.1002/wcs.1400">The heritability fallacy</a>. <strong>WIREs Cognitive Science</strong>, v. 8, n. 1-2, p. e1400, 2017.
+</div>
+<div id="ref-nagel1974" class="csl-entry" role="listitem">
+NAGEL, Thomas. <a href="https://doi.org/10.2307/2183914">What is it like to be a bat?</a> <strong>The Philosophical Review</strong>, v. 83, n. 4, p. 435–450, 1974.
+</div>
+<div id="ref-plomin2018" class="csl-entry" role="listitem">
+PLOMIN, Robert. <strong>Blueprint: How <span>DNA</span> Makes Us Who We Are</strong>. Cambridge, MA: MIT Press, 2018.
+</div>
+<div id="ref-polderman2015" class="csl-entry" role="listitem">
+POLDERMAN, Tinca J. C. <em>et al.</em> <a href="https://doi.org/10.1038/ng.3285">Meta-analysis of the heritability of human traits based on fifty years of twin studies</a>. <strong>Nature Genetics</strong>, v. 47, n. 7, p. 702–709, 2015.
+</div>
+<div id="ref-risch2009" class="csl-entry" role="listitem">
+RISCH, Neil <em>et al.</em> <a href="https://doi.org/10.1001/jama.2009.878">Interaction between the serotonin transporter gene (5-<span>HTTLPR</span>), stressful life events, and risk of depression: A meta-analysis</a>. <strong>JAMA</strong>, v. 301, n. 23, p. 2462–2471, 2009.
+</div>
+<div id="ref-scarr_mccartney1983" class="csl-entry" role="listitem">
+SCARR, Sandra; MCCARTNEY, Kathleen. <a href="https://doi.org/10.2307/1129703">How people make their own environments: A theory of genotype-environment effects</a>. <strong>Child Development</strong>, v. 54, n. 2, p. 424–435, 1983.
+</div>
+<div id="ref-schurger2012" class="csl-entry" role="listitem">
+SCHURGER, Aaron; SITT, Jacobo D.; DEHAENE, Stanislas. <a href="https://doi.org/10.1073/pnas.1210467109">An accumulator model for spontaneous neural activity prior to self-initiated movement</a>. <strong>Proceedings of the National Academy of Sciences</strong>, v. 109, n. 42, p. E2904–E2913, 2012.
+</div>
+<div id="ref-soon2008" class="csl-entry" role="listitem">
+SOON, Chun Siong <em>et al.</em> <a href="https://doi.org/10.1038/nn.2112">Unconscious determinants of free decisions in the human brain</a>. <strong>Nature Neuroscience</strong>, v. 11, n. 5, p. 543–545, 2008.
+</div>
+<div id="ref-tononi2004" class="csl-entry" role="listitem">
+TONONI, Giulio. <a href="https://doi.org/10.1186/1471-2202-5-42">An information integration theory of consciousness</a>. <strong>BMC Neuroscience</strong>, v. 5, p. 42, 2004.
+</div>
+<div id="ref-turkheimer2000" class="csl-entry" role="listitem">
+TURKHEIMER, Eric. <a href="https://doi.org/10.1111/1467-8721.00084">Three laws of behavior genetics and what they mean</a>. <strong>Current Directions in Psychological Science</strong>, v. 9, n. 5, p. 160–164, 2000.
+</div>
+<div id="ref-vohs_schooler2008" class="csl-entry" role="listitem">
+VOHS, Kathleen D.; SCHOOLER, Jonathan W. <a href="https://doi.org/10.1111/j.1467-9280.2008.02045.x">The value of believing in free will: Encouraging a belief in determinism increases cheating</a>. <strong>Psychological Science</strong>, v. 19, n. 1, p. 49–54, 2008.
+</div>
+<div id="ref-weaver2004" class="csl-entry" role="listitem">
+WEAVER, Ian C. G. <em>et al.</em> <a href="https://doi.org/10.1038/nn1276">Epigenetic programming by maternal behavior</a>. <strong>Nature Neuroscience</strong>, v. 7, n. 8, p. 847–854, 2004.
+</div>
+<div id="ref-wegner2002" class="csl-entry" role="listitem">
+WEGNER, Daniel M. <strong>The Illusion of Conscious Will</strong>. Cambridge, MA: MIT Press, 2002.
+</div>
+<div id="ref-weiskrantz1974" class="csl-entry" role="listitem">
+WEISKRANTZ, Lawrence <em>et al.</em> <a href="https://doi.org/10.1093/brain/97.1.709">Visual capacity in the hemianopic field following a restricted occipital ablation</a>. <strong>Brain</strong>, v. 97, n. 4, p. 709–728, 1974.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +2409,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
