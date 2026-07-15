@@ -1,0 +1,311 @@
+# 01. Introdução: definição, objeto de estudo, senso comum × ciência
+
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** psicologia como o estudo científico do comportamento e dos processos mentais, e explicar por que cada termo dessa definição carrega peso.
+- **Distinguir** a psicologia científica do senso comum psicológico, identificando por que a intuição parece confiável mesmo quando erra.
+- **Explicar** o viés retrospectivo e a razão pela qual "eu já sabia disso" não é evidência a favor de nada.
+- **Descrever** os três níveis de análise da psicologia e articular por que explicações em níveis diferentes são complementares, não concorrentes.
+- **Reconhecer** o ciclo empírico e o papel da falseabilidade na separação entre ciência e pseudociência.
+- **Avaliar criticamente** afirmações populares sobre a mente, incluindo mitos amplamente difundidos e a crise de replicabilidade da própria disciplina.
+:::
+
+Você já é psicólogo. Não no sentido profissional — no sentido de que passa o dia inteiro fazendo psicologia informal. Ao decidir que aquele colega está de mau humor e que é melhor pedir o favor amanhã, você formulou uma hipótese sobre um estado mental que não pode observar, previu um comportamento futuro a partir dela e ajustou sua ação. Ninguém atravessa a vida social sem uma teoria da mente alheia rodando o tempo todo, em segundo plano, sem esforço aparente.
+
+Essa competência é notável e é, ao mesmo tempo, o principal obstáculo deste manual. Porque ela produz a impressão de que a psicologia científica é uma versão pretensiosa de algo que todos já sabemos — que ela apenas confirma, com jargão e estatística, o que qualquer pessoa sensata diria de graça. Poucas ciências enfrentam esse problema. Ninguém acha que já entende de física de partículas por ter derrubado um copo. Mas todo mundo já teve medo, se lembrou de um rosto, aprendeu um hábito, se apaixonou — e conclui daí que entende medo, memória, aprendizagem e amor.
+
+Este capítulo defende a tese oposta: sua psicologia intuitiva é boa o bastante para navegar o cotidiano e ruim o bastante para errar sistematicamente quando o assunto exige precisão. E a diferença entre as duas — a informal e a científica — não é de vocabulário. É de **método**.
+
+## O que é psicologia?
+
+Comecemos pela definição de trabalho, que atravessará os quinze volumes deste manual:
+
+> **Psicologia** é o **estudo científico** do **comportamento** e dos **processos mentais**.
+
+É uma frase curta com três compromissos pesados. Vale desmontá-la peça por peça, porque cada uma delas foi objeto de disputa histórica — e a definição atual é o resultado provisório dessas brigas [@vandenbos2015].
+
+### Comportamento
+
+**Comportamento** é tudo o que um organismo faz e que pode ser observado e registrado por terceiros: apertar um botão, fugir, sorrir, escolher a caixa da esquerda, levar 340 milissegundos a mais para nomear uma cor. É a parte pública do objeto de estudo.
+
+A ênfase no observável não é um detalhe técnico — foi uma revolução. Quando John Watson publicou seu manifesto behaviorista em 1913, ele propôs que a psicologia abandonasse por completo a consciência como objeto e se tornasse "um ramo puramente objetivo e experimental das ciências naturais", cuja meta seria a previsão e o controle do comportamento [@watson1913]. A proposta era radical e, em parte, deu certo: forçou a disciplina a definir seus termos de modo que outra pessoa pudesse verificar. Em parte, custou caro: expulsou do laboratório perguntas que importavam.
+
+### Processos mentais
+
+**Processos mentais** são os eventos internos — percepções, memórias, pensamentos, emoções, motivações — que não podem ser observados diretamente, mas cujos efeitos podem ser medidos. Eles voltaram à definição porque a exclusão behaviorista se mostrou cara demais: é impossível explicar linguagem, resolução de problemas ou memória sem postular processos internos (o Vol 2 conta essa história por inteiro).
+
+A objeção óbvia é: se não dá para ver, como estudar? A resposta é que a psicologia faz o que outras ciências fazem com entidades não observáveis. Ninguém jamais viu um elétron; infere-se sua existência a partir de efeitos mensuráveis previstos por uma teoria. Do mesmo modo, ninguém vê uma memória de trabalho — mede-se o tempo de resposta, a taxa de erro, o padrão de interferência, a ativação cerebral, e infere-se a estrutura que melhor explica o conjunto.
+
+::: {.atencao}
+**"Se depende de inferência, então é só opinião."** Não. Há uma diferença entre inferência disciplinada e chute. A inferência científica se compromete de antemão com previsões que poderiam falhar, e falha publicamente quando os dados não vêm. A opinião não arrisca nada: ela se ajusta ao resultado depois que ele aparece. O que separa as duas não é o acesso direto ao objeto — é a exposição ao erro.
+:::
+
+Note também que a definição diz *organismo*, não *pessoa*. Boa parte do que sabemos sobre aprendizagem, memória e emoção veio de estudos com outras espécies. Isso não é um substituto de conveniência: é a aposta de que existem princípios gerais de funcionamento, e ela se sustenta na medida em que as generalizações se confirmam — e é corrigida quando não se confirmam.
+
+### Científico
+
+Este é o termo decisivo, e a razão de este manual existir na forma em que existe. "Científico" não descreve o assunto estudado, e sim o **procedimento** pelo qual as afirmações são produzidas e defendidas. Astrologia e astronomia falam dos mesmos objetos; não são a mesma coisa.
+
+Ser científico significa, minimamente: definir os termos de modo que outra pessoa possa medi-los da mesma forma; expor as afirmações a testes que poderiam refutá-las; tornar público o suficiente para que terceiros repitam o procedimento; e revisar a crença quando o resultado contraria a expectativa [@stanovich2019]. Nada disso garante acerto. Garante apenas que o erro tem como aparecer — o que, a longo prazo, é a única coisa que separa conhecimento de convicção.
+
+Historicamente, esse compromisso tem data. A psicologia existia como ramo da filosofia havia séculos, mas foi quando Wilhelm Wundt levou o método experimental para o estudo da experiência consciente, em Leipzig, que ela passou a se organizar como disciplina autônoma [@wundt1874]. William James, do outro lado do Atlântico, deu-lhe uma prosa e um programa que ainda se lê com proveito [@james1890]. O Vol 2 desenvolve essa história; por ora, retenha o ponto: a psicologia não se tornou ciência ao descobrir um objeto novo, e sim ao adotar um método diferente para um objeto antigo.
+
+## A ilusão do óbvio
+
+Se a psicologia científica só confirmasse o senso comum, ela seria um desperdício caro de dinheiro público. O problema com essa acusação é que ela é impossível de sustentar — e a demonstração mais elegante disso tem mais de setenta anos.
+
+::: {.experimento}
+**O soldado americano e a obviedade retroativa** [@lazarsfeld1949]
+
+Em 1949, o sociólogo Paul Lazarsfeld resenhou *The American Soldier*, um estudo monumental com centenas de milhares de militares na Segunda Guerra. Antes de apresentar os resultados, ele listou alguns achados para o leitor julgar:
+
+- Soldados com mais escolaridade apresentaram mais problemas de ajustamento que os menos escolarizados.
+- Soldados do Sul lidaram melhor com o clima quente das ilhas do Pacífico que os do Norte.
+- Soldados brancos estavam mais ansiosos por promoção que os negros.
+- Enquanto durou a guerra, os soldados estavam mais ansiosos para voltar para casa do que depois que ela terminou.
+
+Cada item soa evidente, e o leitor pode reconstruir a explicação de cada um sem esforço: a vida intelectual amolece; sulistas estão aclimatados; a discriminação reduziu expectativas; ninguém quer morrer.
+
+Lazarsfeld então revela: **todos os resultados listados são o inverso do que o estudo encontrou.** Os menos escolarizados tiveram mais problemas de ajustamento; nortistas e sulistas não diferiram; soldados negros mostraram mais ânsia por promoção; e a pressão para voltar para casa cresceu depois do fim da guerra.
+
+**Interpretação.** O ponto de Lazarsfeld não é que o senso comum erra sempre — é que ele explica com igual desenvoltura qualquer resultado e o seu oposto. Uma teoria que acomoda todos os desfechos possíveis não previu nenhum. Se toda afirmação e seu contrário parecem igualmente óbvios, então há algo errado com o critério de obviedade.
+
+**Limitações.** Trata-se de uma demonstração retórica em uma resenha, não de um experimento controlado — Lazarsfeld não mediu sistematicamente as previsões de ninguém. A demonstração rigorosa viria depois, no laboratório de Baruch Fischhoff.
+:::
+
+O que Lazarsfeld exibiu de forma anedótica, Fischhoff transformou em fenômeno mensurável. Em uma série de experimentos, ele mostrou que pessoas informadas do desfecho de um evento superestimam sistematicamente a probabilidade que teriam atribuído a ele *antes* de sabê-lo — e, mais perturbador, o efeito persiste mesmo quando elas são instruídas a ignorar o que já sabem [@fischhoff1975]. É o **viés retrospectivo** (*hindsight bias*): o conhecimento do resultado reorganiza silenciosamente a memória do que se acreditava antes.
+
+A consequência para este manual é direta. Quando você ler um achado nos próximos capítulos e sentir que já sabia, essa sensação **não é evidência** de que você sabia. O teste honesto é outro: comprometa-se com a previsão *antes* de virar a página. Faça isso algumas vezes e o placar do senso comum piora rapidamente.
+
+E há um problema mais fundo, que não se resolve prestando mais atenção. Nisbett e Wilson revisaram um conjunto de estudos em que as pessoas relatavam com confiança as razões de suas próprias escolhas — e os relatos, confrontados com as variáveis que de fato manipulavam o comportamento, estavam errados [@nisbett_wilson1977]. As pessoas não estavam mentindo. Elas não tinham acesso privilegiado aos processos que geraram sua conduta e, na ausência desse acesso, produziam explicações plausíveis. Introspecção não é uma janela para o mecanismo; é frequentemente uma teoria sobre si mesmo, construída depois do fato.
+
+::: {.experimento}
+**Um dólar vale mais que vinte** [@festinger_carlsmith1959]
+
+**Desenho.** Participantes executaram por uma hora tarefas deliberadamente tediosas (girar pinos em um tabuleiro, um quarto de volta por vez). Em seguida, o experimentador pedia um favor: dizer ao próximo participante, que aguardava, que a tarefa tinha sido interessante e divertida. Um grupo recebeu **US$ 1** para mentir; outro recebeu **US$ 20** (algo em torno de US$ 200 em valores atuais). Um grupo-controle não mentiu. Depois, todos avaliaram em particular o quanto haviam de fato gostado da tarefa.
+
+**Previsão do senso comum.** Quem recebeu mais deveria gostar mais — mais recompensa, mais reforço, mais simpatia pela atividade.
+
+**Resultado.** O oposto. Os participantes pagos com US$ 1 declararam ter gostado *mais* da tarefa que os pagos com US$ 20, cuja avaliação mal diferiu do controle.
+
+**Interpretação.** Festinger e Carlsmith explicaram o achado pela **dissonância cognitiva**: sustentar simultaneamente "a tarefa foi chata" e "eu disse a alguém que foi divertida" gera desconforto. Quem recebeu US$ 20 tinha justificativa externa suficiente — menti porque me pagaram bem —, e a dissonância evapora. Quem recebeu US$ 1 não tinha essa saída, e a via mais barata para reduzir o desconforto era ajustar a própria crença: talvez a tarefa não tenha sido tão ruim assim. A atitude mudou para acompanhar o comportamento, e não o contrário.
+
+**Limitações.** O estudo é de 1959, com amostra pequena, composta apenas por homens universitários de Stanford, e envolveu engano — hoje ele passaria por um comitê de ética com exigências consideráveis (Vol 3, Cap. 20). Sua interpretação foi disputada por décadas: teorias da autopercepção explicam o mesmo dado sem postular desconforto interno (Vol 12). E, como boa parte da psicologia social clássica, o paradigma é objeto de reexame sob os critérios de replicabilidade atuais. Nada disso apaga o essencial para este capítulo: a previsão intuitiva estava não apenas errada, mas invertida.
+:::
+
+Vale reter a estrutura dos dois casos, porque ela se repetirá no manual inteiro. Não é que a intuição erre por distração. É que ela erra **em direções sistemáticas e previsíveis** — o que a torna, ela própria, objeto de estudo científico. Tversky e Kahneman construíram um programa de pesquisa inteiro mapeando esses atalhos de julgamento e seus desvios característicos [@tversky_kahneman1974; @kahneman2011], tema do Cap. 47.
+
+::: {.na-pratica}
+**Por que o horóscopo parece falar de você**
+
+Em 1948, Bertram Forer aplicou um teste de personalidade a seus alunos e devolveu a cada um o que apresentou como seu perfil individual. Pediu que avaliassem, de 0 a 5, o quanto a descrição os retratava. A média foi **4,26** — quase perfeita.
+
+Todos haviam recebido exatamente o mesmo texto, montado por Forer a partir de um livro de astrologia de banca de jornal [@forer1949]. Ele continha frases como "você tem grande necessidade de que os outros gostem e o admirem" e "às vezes é extrovertido e sociável, às vezes introvertido e reservado".
+
+O **efeito Forer** (ou efeito Barnum) explica boa parte do sucesso de horóscopos, mapas astrais, leituras de mão e de vários testes de personalidade vendidos a empresas: afirmações suficientemente vagas, de conteúdo majoritariamente positivo e que abarcam os dois polos de cada traço, são aceitas como descrições precisas e pessoais por quase qualquer um. A validação não vem do instrumento — vem do leitor, que preenche as lacunas com a própria vida.
+
+Isso é diretamente útil. Diante de qualquer perfil, teste ou descrição de personalidade, faça a pergunta de Forer: **esta descrição poderia ser rejeitada por alguém?** Se a resposta for não — se ela serve para todo mundo —, ela não informa nada sobre você em particular. O Vol 11 aplica esse critério aos instrumentos de avaliação de personalidade que efetivamente passam no teste, e aos muitos que não passam.
+:::
+
+## Três níveis de análise
+
+Se a intuição não basta, o que a psicologia coloca no lugar? Não uma explicação única, mas um conjunto articulado de explicações em níveis diferentes — e entender essa arquitetura evita boa parte das confusões que atrapalham o público e, às vezes, os próprios pesquisadores.
+
+Considere uma pergunta simples: *por que essa pessoa está com medo?*
+
+Há pelo menos três respostas corretas e simultâneas. No **nível biológico**: um circuito envolvendo a amígdala detectou um sinal de ameaça e disparou uma cascata autonômica e hormonal. No **nível psicológico**: a pessoa avaliou a situação como perigosa e além de sua capacidade de enfrentamento, e experimenta isso como medo. No **nível sociocultural**: aquilo que ela aprendeu a temer, e o modo como lhe é permitido demonstrar medo, foram moldados pela cultura, pela família e pelo grupo. A @fig-niveis-analise organiza essa estrutura.
+
+::: {#fig-niveis-analise}
+```{.tikz}
+%%| filename: niveis-analise
+%%| alt: Diagrama com três caixas empilhadas verticalmente representando os níveis de análise em psicologia. De cima para baixo, a caixa verde "Sociocultural" (cultura, grupos, normas, relações), a caixa azul "Psicológico" (percepção, memória, emoção, aprendizagem) e a caixa vermelha "Biológico" (genes, neurônios, hormônios). Setas de duas pontas ligam cada nível ao adjacente, indicando influência recíproca. À direita, uma coluna de exemplos aplica os três níveis ao fenômeno do medo.
+\begin{tikzpicture}[
+  nivel/.style={draw, thick, rounded corners=4pt, minimum width=5.6cm, minimum height=1.4cm, align=center},
+  exemplo/.style={align=left, font=\small, text=manualgray},
+  seta/.style={<->, >=Stealth, thick, manualgray}
+]
+  \node[nivel, draw=manualgreen, fill=manualgreen!8] (soc) at (0,4.8)
+    {\textbf{Sociocultural}\\[2pt]{\small cultura, grupos, normas, relações}};
+  \node[nivel, draw=manualblue, fill=manualblue!8] (psi) at (0,2.4)
+    {\textbf{Psicológico}\\[2pt]{\small percepção, memória, emoção, aprendizagem}};
+  \node[nivel, draw=manualred, fill=manualred!8] (bio) at (0,0)
+    {\textbf{Biológico}\\[2pt]{\small genes, neurônios, hormônios}};
+
+  \draw[seta] (soc) -- (psi);
+  \draw[seta] (psi) -- (bio);
+
+  \node[font=\small\bfseries, text=manualgray, anchor=west] at (3.6,6.0)
+    {Exemplo: o medo};
+  \node[exemplo, anchor=west] at (3.6,4.8) {o que se aprende a temer\\e como se pode demonstrá-lo};
+  \node[exemplo, anchor=west] at (3.6,2.4) {avaliação da ameaça e\\a experiência subjetiva};
+  \node[exemplo, anchor=west] at (3.6,0)   {amígdala, adrenalina,\\resposta de sobressalto};
+\end{tikzpicture}
+```
+Os três níveis de análise da psicologia. As setas apontam nos dois sentidos: o nível biológico condiciona o psicológico, mas a experiência psicológica e o ambiente social também alteram o funcionamento biológico.
+:::
+
+Duas leituras dessa figura são decisivas, e ambas são frequentemente feitas errado.
+
+**As setas apontam nos dois sentidos.** É tentador imaginar uma hierarquia em que o biológico causa o psicológico, que por sua vez causa o social. A evidência não coopera. Estresse social crônico altera a regulação hormonal; aprender uma habilidade reorganiza o córtex; psicoterapia — que é conversa — modifica padrões mensuráveis de atividade cerebral. A causalidade circula nos dois sentidos, e o Vol 4 trata dessa via de mão dupla em detalhe.
+
+**Níveis diferentes não competem.** Dizer que o medo "é" atividade da amígdala e dizer que ele "é" a avaliação de uma ameaça não são afirmações rivais, do mesmo modo que descrever um romance pela tinta no papel não refuta descrevê-lo pelo enredo. Cada nível responde a uma pergunta diferente. Essa intuição foi formalizada em duas tradições que valem menção: Tinbergen mostrou que qualquer comportamento animal admite quatro perguntas independentes — mecanismo, desenvolvimento, função adaptativa e evolução — e que confundi-las gera pseudodebates [@tinbergen1963]; Marr propôs, para o estudo da visão, três níveis distintos de descrição — computacional, algorítmico e de implementação [@marr1982]. O erro que ambos combatiam é o mesmo: tomar a resposta a uma pergunta como refutação da resposta a outra.
+
+::: {.atencao}
+**O reducionismo apressado.** "O amor é só dopamina." "A depressão é só um desequilíbrio químico." Esse tipo de frase confunde *correlato* com *explicação completa*, e a palavra que faz o estrago é "só". Sim, há neuroquímica no amor e alterações neurobiológicas na depressão — e nenhuma das duas descrições captura por que *esta* pessoa se apaixonou por *aquela*, ou por que o quadro depressivo começou depois de um luto. A hipótese do desequilíbrio químico como explicação suficiente da depressão, em particular, é muito mais frágil do que sua difusão popular sugere (Vol 13, Cap. 79). Encontrar o substrato neural de um fenômeno é uma conquista real — e não dispensa os outros níveis.
+:::
+
+## Como a psicologia sabe o que sabe
+
+Distinguir psicologia de senso comum exige, por fim, olhar para o procedimento. A @fig-ciclo-empirico apresenta o ciclo empírico em sua forma mais simples — uma idealização, como toda figura de método, mas útil.
+
+::: {#fig-ciclo-empirico}
+```{.tikz}
+%%| filename: ciclo-empirico
+%%| alt: Diagrama circular do ciclo empírico com quatro etapas dispostas em losango, ligadas por setas curvas. No topo, "Teoria" (explicação geral); à direita, "Hipótese" (previsão testável e arriscada); embaixo, "Observação" (coleta sistemática de dados); à esquerda, em vermelho, "Avaliação" (a previsão se confirmou?). A seta que retorna da Avaliação para a Teoria é vermelha e traz o rótulo "revisão ou abandono", indicando que o ciclo é corretivo.
+\begin{tikzpicture}[
+  etapa/.style={draw, thick, rounded corners=4pt, minimum width=3.3cm, minimum height=1.3cm, align=center, font=\small},
+  fluxo/.style={->, >=Stealth, thick, manualblue}
+]
+  \node[etapa, draw=manualblue, fill=manualblue!8] (teoria) at (0,3.1)
+    {\textbf{Teoria}\\explicação geral};
+  \node[etapa, draw=manualblue, fill=manualblue!8] (hip) at (4.8,0)
+    {\textbf{Hipótese}\\previsão testável\\e arriscada};
+  \node[etapa, draw=manualblue, fill=manualblue!8] (obs) at (0,-3.1)
+    {\textbf{Observação}\\coleta sistemática\\de dados};
+  \node[etapa, draw=manualred, fill=manualred!8] (aval) at (-4.8,0)
+    {\textbf{Avaliação}\\a previsão se\\confirmou?};
+
+  \draw[fluxo] (teoria) to[bend left=22] (hip);
+  \draw[fluxo] (hip) to[bend left=22] (obs);
+  \draw[fluxo] (obs) to[bend left=22] (aval);
+  \draw[fluxo, manualred] (aval) to[bend left=22]
+    node[midway, above left, font=\small\itshape, text=manualred, align=center] {revisão\\ou abandono} (teoria);
+
+  \node[font=\itshape, text=manualgray, align=center] at (0,0) {ciclo\\empírico};
+\end{tikzpicture}
+```
+O ciclo empírico. O que faz dele ciência não é a coleta de dados, e sim a seta de retorno: a teoria está permanentemente sob risco de ser corrigida pelo que se observa.
+:::
+
+O passo que carrega o peso é a **hipótese arriscada**. Uma previsão só testa uma teoria se houver um resultado possível que a derrubaria. É a exigência de **falseabilidade**, que Popper propôs como critério de demarcação entre ciência e não-ciência [@popper1959]: teorias que explicam qualquer desfecho — como o senso comum de Lazarsfeld — não são fortes, são vazias. Uma teoria que proíbe muitos resultados diz muito sobre o mundo; uma que não proíbe nenhum não diz nada.
+
+Paul Meehl fez a esta disciplina uma crítica que ainda dói e que o leitor deve carregar para os capítulos seguintes: boa parte da psicologia se acostumou a testar hipóteses frouxas demais [@meehl1978]. Mostrar que um efeito existe e não é exatamente zero é uma previsão barata — quase sempre alguma diferença aparece se a amostra for grande o bastante. Teorias sérias arriscam mais: preveem a direção, o tamanho e as condições em que o efeito deve *desaparecer*. O Vol 3 desenvolve o método; o essencial aqui é o critério — **pergunte sempre o que derrubaria esta afirmação**. Se não houver resposta, o problema não é seu.
+
+### A honestidade sobre a própria disciplina
+
+Um manual que exigisse ceticismo do leitor e o dispensasse para si mesmo seria incoerente. Então: **a psicologia tem um problema de replicabilidade conhecido e documentado.**
+
+Em 2015, a Open Science Collaboration tentou replicar 100 estudos publicados em três das principais revistas de psicologia, com desenhos revisados pelos autores originais e amostras em geral maiores. Enquanto 97% dos estudos originais relatavam efeitos estatisticamente significativos, apenas cerca de 36% das replicações os obtiveram, e o tamanho médio do efeito caiu para aproximadamente metade do original [@opensciencecollaboration2015]. Um projeto posterior, restrito a experimentos de ciências sociais publicados na *Nature* e na *Science*, replicou cerca de 62% dos achados, também com efeitos menores [@camerer2018].
+
+Esses números foram e continuam sendo debatidos. Gilbert e colegas argumentaram que parte das falhas se deve a diferenças metodológicas entre original e replicação e a erro de amostragem, e que os dados seriam compatíveis com uma taxa de replicabilidade mais alta do que a leitura pessimista sugere [@gilbert2016] — resposta, por sua vez, contestada pelos autores originais. A controvérsia não está encerrada, e o Cap. 105 volta a ela com o cuidado que ela merece.
+
+Duas conclusões, porém, são seguras. A primeira: alguns resultados famosos, repetidos em livros-texto por décadas, não sobrevivem ao escrutínio — e este manual sinaliza isso onde ocorre, no lugar em que o achado aparece, não em uma nota de rodapé. A segunda, e mais importante: **quem descobriu o problema foi a própria psicologia**, com seus próprios métodos, e respondeu com pré-registro, replicações em larga escala, dados abertos e amostras maiores. Uma disciplina capaz de publicar que um terço de sua produção de ponta não replica está fazendo exatamente aquilo que a distingue do senso comum. A astrologia nunca publicou um relatório de replicação.
+
+::: {.atencao}
+**"Usamos apenas 10% do cérebro."**
+
+Talvez o mito mais resistente sobre a mente. Ele é falso em todos os sentidos em que se pode ser falso [@beyerstein1999; @lilienfeld2010]:
+
+- **Neuroimagem.** Não há regiões permanentemente silenciosas. Ao longo de um dia, praticamente todo o cérebro se ativa; mesmo em repouso o consumo metabólico é altíssimo.
+- **Evolução e metabolismo.** O cérebro é cerca de 2% da massa corporal e consome cerca de 20% da energia em repouso. Um órgão tão caro com 90% de capacidade ociosa seria um absurdo evolutivo.
+- **Lesões.** Se 90% fosse dispensável, a maioria das lesões cerebrais seria inócua. Não é o que a neurologia observa: dano a áreas muito pequenas produz déficits específicos e graves (Vol 15, Cap. 99).
+- **Neurônios sem uso morrem.** Circuitos sem função são podados ao longo do desenvolvimento (Vol 4, Cap. 28).
+
+Por que o mito sobrevive? Porque é reconfortante — sugere uma reserva enorme de potencial à espera de ser destravada — e porque sustenta um mercado inteiro de cursos e produtos que prometem o destravamento. Vale como exemplo geral: **a popularidade de uma afirmação sobre a mente não guarda relação com sua evidência.** O Cap. 5 dedica-se a esses mitos.
+:::
+
+### E quando o método é aplicado a uma pseudociência?
+
+Uma última demonstração fecha o argumento deste capítulo, porque mostra o método fazendo o que o senso comum não faz: correndo o risco de perder.
+
+::: {.experimento}
+**Um teste duplo-cego da astrologia** [@carlson1985]
+
+**Desenho.** Shawn Carlson montou um teste que os próprios astrólogos ajudaram a desenhar e aceitaram previamente como justo — detalhe crucial, porque elimina a acusação retroativa de que o teste era inadequado. Astrólogos indicados por organizações da área receberam o mapa astral de uma pessoa e três perfis de personalidade obtidos por um inventário psicométrico padrão (o CPI), um deles do sujeito real e dois de outras pessoas. A tarefa: escolher qual perfil correspondia ao mapa. Os astrólogos haviam concordado de antemão com o critério de sucesso.
+
+**Resultado.** A taxa de acerto ficou em torno de um terço — exatamente o esperado pelo acaso ao escolher entre três alternativas. Publicado na *Nature*, o estudo não encontrou desempenho acima do acaso.
+
+**Interpretação.** O que faz deste um bom experimento não é o resultado, e sim a estrutura: critério de sucesso definido *antes* da coleta, avaliadores cegos à hipótese e um desfecho possível — que os astrólogos acertassem — que teria constituído evidência genuína a favor da astrologia. A previsão era arriscada, e não sobreviveu.
+
+**Limitações.** É um único estudo, com número modesto de astrólogos, e aspectos de sua análise estatística foram criticados posteriormente. Ele não prova a impossibilidade lógica da astrologia — nenhum experimento faz isso com nenhuma teoria. Mostra algo mais modesto e mais útil: quando submetida ao mesmo procedimento a que a psicologia submete suas próprias afirmações, a alegação não se sustentou.
+:::
+
+Guarde o contraste. A psicologia publicou um relatório dizendo que boa parte de seus achados de ponta não replica. A astrologia, diante de um teste que ela mesma ajudou a desenhar e não passou, seguiu inalterada. **A diferença entre as duas nunca esteve no assunto. Está no que cada uma faz quando os dados contrariam a expectativa.**
+
+## O alcance e os limites do que vem a seguir
+
+Duas advertências antes de seguir, ambas retomadas ao longo do manual.
+
+**A psicologia é uma ciência de populações, não de oráculos.** Os achados dos próximos capítulos são, quase sempre, afirmações sobre médias, distribuições e probabilidades. Que um efeito seja robusto em milhares de pessoas não permite prever com segurança o que *você* fará amanhã. Isso não é fraqueza da disciplina — é a mesma relação que a epidemiologia tem com o paciente individual. Confundir os dois níveis é a origem de boa parte do mau uso da psicologia, dentro e fora da academia.
+
+**A base de evidências é enviesada, e você precisa saber disso desde o primeiro capítulo.** Henrich, Heine e Norenzayan mostraram que a esmagadora maioria dos participantes de pesquisa em psicologia vem de sociedades **WEIRD** — ocidentais, escolarizadas, industrializadas, ricas e democráticas —, um recorte que representa uma fração pequena e atípica da humanidade e que difere de outras populações em domínios que vão da percepção visual ao raciocínio moral [@henrich2010]. Como este manual é brasileiro, a advertência é dupla: transportar um resultado obtido com calouros norte-americanos para o Brasil é uma **hipótese**, não um dado. Onde houver evidência nacional, este manual a usa; onde não houver, ele diz que não há. O Cap. 103 trata do tema de frente.
+
+Vale fechar onde George Miller fechou, em 1969, seu discurso como presidente da Associação Americana de Psicologia. Ele argumentou que o maior serviço da psicologia à sociedade não seria aplicar seu conhecimento *sobre* as pessoas, mas **entregá-lo** a elas — *giving psychology away* —, porque compreender a si mesmo e aos outros muda o que as pessoas conseguem fazer com a própria vida [@miller1969]. Um manual aberto, em português, é uma tentativa modesta de fazer exatamente isso.
+
+O que vem a seguir, então, não é uma coleção de curiosidades sobre a mente. É o registro do que sobrou depois que um número muito grande de ideias plausíveis foi testado e não sobreviveu.
+
+::: {.callout-sintese}
+- **Psicologia é o estudo científico do comportamento e dos processos mentais.** "Comportamento" é o que se observa; "processos mentais" são eventos internos inferidos a partir de efeitos mensuráveis; "científico" descreve o procedimento, não o assunto.
+- **O senso comum psicológico é um mau guia porque explica tudo.** Lazarsfeld mostrou que resultados opostos parecem igualmente óbvios; Fischhoff demonstrou que o viés retrospectivo faz o conhecimento do desfecho reescrever a memória do que se esperava. "Eu já sabia" não é evidência.
+- **A introspecção não dá acesso ao mecanismo.** As pessoas relatam com confiança razões erradas para o próprio comportamento, e não estão mentindo — estão teorizando sobre si mesmas depois do fato.
+- **A intuição erra em direções sistemáticas.** Festinger e Carlsmith obtiveram o inverso da previsão do senso comum: quem foi pago US$ 1 para mentir passou a gostar mais da tarefa que quem foi pago US$ 20.
+- **A explicação psicológica opera em três níveis** — biológico, psicológico e sociocultural —, que se influenciam nos dois sentidos e respondem a perguntas diferentes. Níveis não competem; "é *só* química" confunde correlato com explicação.
+- **Falseabilidade é o critério.** Uma teoria que nenhum resultado poderia derrubar não é forte, é vazia. Diante de qualquer afirmação: *o que a refutaria?*
+- **A psicologia tem um problema de replicabilidade documentado** — e o fato de tê-lo documentado, com seus próprios métodos, é o que a separa da pseudociência. O contraste com a astrologia não está no objeto, mas na resposta ao dado contrário.
+- **Os achados são sobre populações, não sobre você**, e vêm majoritariamente de amostras WEIRD. Generalizar para o Brasil é hipótese a testar, não conclusão.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Comportamento**
+:   Tudo o que um organismo faz e que pode ser observado e registrado por terceiros.
+
+**Processos mentais**
+:   Eventos internos — percepções, memórias, pensamentos, emoções — não observáveis diretamente, mas inferidos a partir de efeitos mensuráveis.
+
+**Senso comum psicológico**
+:   Conjunto de intuições cotidianas sobre por que as pessoas agem como agem. Suficiente para a vida social, insuficiente como conhecimento, porque acomoda qualquer resultado.
+
+**Viés retrospectivo** (*hindsight bias*)
+:   Tendência a superestimar, depois de conhecer o desfecho, a probabilidade que se teria atribuído a ele antes. Persiste mesmo quando a pessoa é instruída a ignorá-lo [@fischhoff1975].
+
+**Dissonância cognitiva**
+:   Desconforto gerado por sustentar simultaneamente cognições incompatíveis; motiva mudança de crença ou de comportamento para reduzi-lo [@festinger_carlsmith1959].
+
+**Efeito Forer** (ou efeito Barnum)
+:   Tendência a aceitar como descrição pessoal precisa afirmações vagas e genéricas que se aplicariam a quase qualquer pessoa [@forer1949].
+
+**Níveis de análise**
+:   Os planos complementares — biológico, psicológico e sociocultural — em que um mesmo fenômeno pode ser explicado, com influência recíproca entre eles.
+
+**Reducionismo apressado**
+:   Erro de tomar a descrição em um nível (em geral o biológico) como explicação suficiente do fenômeno, descartando os demais. Detectável pela palavra "só".
+
+**Falseabilidade**
+:   Propriedade de uma afirmação que especifica de antemão quais resultados a refutariam; critério de demarcação entre ciência e não-ciência [@popper1959].
+
+**Hipótese arriscada**
+:   Previsão que proíbe resultados — quanto mais desfechos possíveis ela exclui, mais informativa é [@meehl1978].
+
+**Crise de replicabilidade**
+:   Constatação, a partir de esforços sistemáticos de replicação, de que parte relevante dos achados publicados não se reproduz, ou se reproduz com efeitos menores [@opensciencecollaboration2015].
+
+**WEIRD**
+:   Acrônimo para *Western, Educated, Industrialized, Rich, Democratic*; descreve o recorte atípico de população que domina as amostras de pesquisa em psicologia [@henrich2010].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Desmonte a definição "psicologia é o estudo científico do comportamento e dos processos mentais" em seus três componentes e explique o que cada um exclui. Por que "científico" é o termo que faz o trabalho pesado?
+
+2. **(Recuperação.)** Explique, com o experimento de Festinger e Carlsmith, por que uma recompensa *menor* produziu uma mudança de atitude *maior*. Qual era a previsão do senso comum e por que ela falhou?
+
+3. **(Aplicação.)** Um site afirma: "Pessoas que ouvem música clássica são mais inteligentes." Formule (a) o que precisaria ser observado para refutar a afirmação; (b) uma explicação alternativa para uma correlação genuína entre ouvir música clássica e obter escores altos que não envolva a música causar inteligência.
+
+4. **(Reflexão crítica.)** Lazarsfeld mostrou que resultados opostos parecem igualmente óbvios. Escolha uma afirmação que você considera evidente sobre comportamento humano — por exemplo, "quem sofre bullying na infância se torna um adulto mais retraído". Enuncie o seu oposto e construa a explicação de senso comum que tornaria *esse oposto* igualmente óbvio. O que esse exercício revela sobre o valor probatório da sensação de obviedade?
+
+5. **(Reflexão crítica.)** Um colega argumenta: "Se a psicologia falha em replicar um terço dos seus estudos de ponta, ela não é uma ciência confiável — mais vale confiar na intuição." Responda ao argumento. Sua resposta deve considerar como sabemos da taxa de falha, e o que a astrologia do estudo de Carlson fez em situação análoga.
+
+6. **(Integração.)** Uma pessoa desenvolve medo intenso de dirigir depois de um acidente. Construa uma explicação em cada um dos três níveis de análise da @fig-niveis-analise e, em seguida, aponte uma influência que vá "de cima para baixo" — do nível sociocultural ou psicológico sobre o biológico. Por que a frase "esse medo é só uma hiperatividade da amígdala" seria um caso de reducionismo apressado?

@@ -14,7 +14,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 0 / 105 concluídos · Fase 1: 0/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 1 / 105 concluídos · Fase 1: 1/21 · Fase 2: 0/35 · Fase 3: 0/49
 
 ---
 
@@ -23,7 +23,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 1 — O que é Psicologia
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 01 | Introdução: definição, objeto de estudo, senso comum × ciência | `capitulos/vol01-o-que-e-psicologia/cap-01-introducao.qmd` | 🔄 |
+| 01 | Introdução: definição, objeto de estudo, senso comum × ciência | `capitulos/vol01-o-que-e-psicologia/cap-01-introducao.qmd` | ✅ |
 | 02 | As grandes questões (natureza × cultura, mente–corpo, consciência, livre-arbítrio) | `capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd` | ⬜ |
 | 03 | Psicologia como ciência: o método científico aplicado ao comportamento | `capitulos/vol01-o-que-e-psicologia/cap-03-psicologia-como-ciencia.qmd` | ⬜ |
 | 04 | Áreas e campos de atuação do psicólogo | `capitulos/vol01-o-que-e-psicologia/cap-04-areas-atuacao.qmd` | ⬜ |
