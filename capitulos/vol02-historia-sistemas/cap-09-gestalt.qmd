@@ -1,5 +1,392 @@
 # 09. Gestalt
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o fenômeno phi e por que ele é uma refutação direta do elementismo, e não apenas uma curiosidade.
+- **Corrigir** a frase mais citada e mais deturpada da psicologia: o todo é **diferente** da soma das partes — não maior.
+- **Identificar** os princípios de organização perceptual e reconhecê-los em situações reais.
+- **Avaliar** o isomorfismo psicofísico como a aposta teórica que a Gestalt perdeu, e entender por que ela perdeu.
+- **Analisar** os experimentos de insight de Köhler, e o que a replicação com pombos fez com a interpretação original.
+- **Descrever** a teoria de campo de Lewin e justificar por que ele é o gestaltista de maior herança viva.
+- **Distinguir** psicologia da Gestalt de terapia gestalt — coisas diferentes, com um nome em comum.
+- **Julgar** por que uma escola que estava largamente certa foi, ainda assim, derrotada.
 :::
+
+O Cap. 8 fechou dizendo que o behaviorismo comprou clareza metodológica ao preço de declarar a experiência fora de escopo. Do outro lado do Atlântico, um grupo de alemães recusou esse contrato — e não por romantismo. Eles tinham um **dado** que nem o elementismo do Cap. 7 nem o behaviorismo do Cap. 8 conseguiam acomodar.
+
+O dado é irritantemente simples: acenda uma luz, apague; acenda outra luz ao lado, apague. Com o intervalo certo, você não vê duas luzes piscando. **Você vê uma luz se movendo.**
+
+Não há movimento. Não há nada, em ponto algum do estímulo, que se desloque. E ainda assim o movimento é visto — não inferido, não imaginado: **visto**, com a mesma qualidade perceptual de um movimento real. Onde, numa psicologia feita de elementos sensoriais, está o elemento correspondente a isso?
+
+Esse é o **fenômeno phi**, e a resposta a ele fundou uma escola.
+
+## Wertheimer, o trem e o taquistoscópio
+
+A história de origem é boa demais para ser inteiramente verdadeira, e provavelmente é: em 1910, Max Wertheimer viajava de trem para as férias quando lhe ocorreu o problema, desceu em Frankfurt, comprou um estroboscópio de brinquedo no quiosque da estação e começou a testar no quarto do hotel. Depois montou o experimento no laboratório de Frankfurt, com Wolfgang Köhler e Kurt Koffka — inicialmente como participantes [@wertheimer1912]. Os três seriam a Gestalt.
+
+O experimento é limpo. Duas linhas, apresentadas em sequência, com o intervalo entre elas variando. O que se vê depende **inteiramente** do intervalo:
+
+- Intervalo longo (mais de ~200 ms): duas linhas, uma depois da outra. Sucessão.
+- Intervalo curto (menos de ~30 ms): as duas linhas ao mesmo tempo. Simultaneidade.
+- Intervalo intermediário (~60 ms): **movimento**. Uma linha só, deslizando de um lugar ao outro.
+
+::: {#fig-phi}
+```{.tikz}
+%%| filename: phi
+%%| alt: Diagrama do fenômeno phi em três faixas horizontais, todas com exatamente o mesmo estímulo físico, que consiste em duas linhas apresentadas em sequência. Na primeira faixa, com intervalo longo de cerca de duzentos milissegundos, o observador relata ver duas linhas sucessivas, uma depois da outra. Na segunda faixa, com intervalo intermediário de cerca de sessenta milissegundos, o observador relata ver uma única linha em movimento, deslizando da posição da esquerda para a da direita. Na terceira faixa, com intervalo muito curto de menos de trinta milissegundos, o observador relata ver as duas linhas simultaneamente. Uma nota destaca que o estímulo é idêntico nos três casos, que apenas o intervalo muda, e que o movimento percebido na faixa intermediária não corresponde a nenhum elemento presente no estímulo, sendo portanto um problema para qualquer psicologia baseada em elementos.
+\begin{tikzpicture}[
+  lin/.style={very thick, manualblue},
+  rot/.style={font=\tiny\bfseries, text=manualgray, align=right, text width=2.1cm}
+]
+  % faixa 1
+  \node[rot] at (-4.4,2.4) {intervalo LONGO\\($>$ 200 ms)};
+  \draw[lin] (-1.9,1.9) -- (-1.9,2.9);
+  \draw[lin] (-0.5,1.9) -- (-0.5,2.9);
+  \node[font=\tiny, text=manualgray] at (-1.2,1.55) {estímulo};
+  \node[draw, thin, rounded corners=2pt, draw=manualgray!50, fill=manualgray!5,
+        font=\tiny, align=center, minimum width=4.6cm, minimum height=1.0cm] at (2.8,2.4)
+    {vê-se: \textbf{duas linhas, uma após a outra}\\{\tiny sucessão}};
+
+  \draw[manualgray!25] (-5.6,1.25) -- (5.6,1.25);
+
+  % faixa 2
+  \node[rot] at (-4.4,0.2) {intervalo MÉDIO\\($\approx$ 60 ms)};
+  \draw[lin] (-1.9,-0.3) -- (-1.9,0.7);
+  \draw[lin] (-0.5,-0.3) -- (-0.5,0.7);
+  \draw[->, >=Stealth, very thick, manualred] (-1.75,0.2) -- (-0.65,0.2);
+  \node[font=\tiny, text=manualgray] at (-1.2,-0.65) {estímulo \emph{idêntico}};
+  \node[draw, thick, rounded corners=2pt, draw=manualred, fill=manualred!8,
+        font=\tiny, align=center, minimum width=4.6cm, minimum height=1.0cm] at (2.8,0.2)
+    {vê-se: \textbf{uma linha em movimento}\\{\tiny o movimento é \emph{visto}, não inferido}};
+
+  \draw[manualgray!25] (-5.6,-1.05) -- (5.6,-1.05);
+
+  % faixa 3
+  \node[rot] at (-4.4,-2.0) {intervalo CURTO\\($<$ 30 ms)};
+  \draw[lin] (-1.9,-2.5) -- (-1.9,-1.5);
+  \draw[lin] (-0.5,-2.5) -- (-0.5,-1.5);
+  \node[font=\tiny, text=manualgray] at (-1.2,-2.85) {estímulo};
+  \node[draw, thin, rounded corners=2pt, draw=manualgray!50, fill=manualgray!5,
+        font=\tiny, align=center, minimum width=4.6cm, minimum height=1.0cm] at (2.8,-2.0)
+    {vê-se: \textbf{as duas linhas juntas}\\{\tiny simultaneidade}};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualred, fill=manualred!5,
+        minimum width=10.8cm, align=center, font=\tiny] at (0,-3.9)
+    {O estímulo é o \textbf{mesmo} nos três casos --- só o \emph{intervalo} muda.\\
+     O movimento da faixa do meio não corresponde a \textbf{nenhum elemento} do estímulo.\\
+     Uma psicologia feita de elementos sensoriais não tem onde colocá-lo.};
+\end{tikzpicture}
+```
+O fenômeno phi [@wertheimer1912]. O achado não é que se vê movimento — é que **a relação temporal entre os elementos**, e não os elementos, determina o que aparece. Mude só o intervalo e a experiência muda de natureza.
+:::
+
+Agora veja por que isso é uma bomba. Para Titchener, a experiência se decompõe em sensações elementares (Cap. 7). Mas as sensações elementares aqui são **exatamente as mesmas** nas três condições: duas linhas, em dois lugares, em dois momentos. O que muda é apenas a **relação** entre elas. E a experiência muda completamente.
+
+Conclusão de Wertheimer: a relação não é uma propriedade que se adiciona aos elementos depois. Ela é **primária**. Percebemos estruturas — *Gestalten* — e os "elementos" são o produto de uma análise posterior, que o perceptor jamais realiza. Você não vê pontos e depois monta uma face. Você vê uma face.
+
+::: {.atencao}
+**"O todo é maior que a soma das partes" — a Gestalt nunca disse isso.**
+
+Esta é provavelmente a frase mais citada da psicologia, e ela está errada de um jeito que inverte o sentido do que se quer dizer.
+
+Koffka escreveu: **o todo é *algo diferente* da soma das partes** (*etwas anderes als*, não *mehr als*) [@koffka1935]. E ele reclamou, em vida, da distorção — porque "maior" preserva exatamente o pressuposto que a Gestalt está atacando.
+
+Pense. "Maior que a soma" mantém a soma como base e sugere um bônus: partes + algo extra. É aritmética com um brinde. Ainda é elementismo — só que com um termo a mais na equação.
+
+"Diferente da soma" diz outra coisa: **a operação não é de soma**. As partes não existem, como partes com aquelas propriedades, antes do todo. Uma nota musical dentro de uma melodia não é a mesma coisa que a mesma frequência tocada sozinha — sua função, sua tensão, seu pertencimento vêm da estrutura. Transponha a melodia inteira para outro tom: **nenhuma** nota é a mesma, e a melodia é reconhecida imediatamente por qualquer um. O que se preserva não são os elementos; é a **relação** entre eles. Foi exatamente esse exemplo — a melodia transposta, de von Ehrenfels — que deu origem à ideia.
+
+Então: o todo não ganha um bônus. **O todo determina o que suas partes são.**
+:::
+
+## Os princípios de organização
+
+Se a percepção entrega estruturas, a pergunta empírica é: **quais** estruturas, e por quê? A resposta da Gestalt foi um conjunto de princípios de agrupamento, e eles são o legado mais visível e mais duradouro da escola.
+
+::: {#fig-gestalt-principios}
+```{.tikz}
+%%| filename: gestalt-principios
+%%| alt: Painel com seis princípios gestálticos de organização perceptual, cada um ilustrado. Primeiro, proximidade: um arranjo de pontos igualmente espaçados verticalmente mas agrupados em pares horizontais, de modo que se veem colunas de pares e não uma grade uniforme. Segundo, similaridade: uma grade de pontos em que uma coluna é feita de círculos preenchidos e as outras de círculos vazios, de modo que se veem colunas por semelhança de cor. Terceiro, fechamento: uma circunferência desenhada com falhas, com trechos faltando, que ainda assim é vista como um círculo completo. Quarto, boa continuação: duas linhas que se cruzam, vistas como duas linhas contínuas que se atravessam e não como quatro segmentos que se encontram num vértice. Quinto, destino comum: uma fileira de pontos em que alguns têm setas apontando para cima e outros para baixo, agrupados pelo sentido do movimento e não pela posição. Sexto, figura e fundo: uma forma escura sobre um retângulo claro, indicando que uma região é vista como objeto com contorno e a outra como fundo que continua atrás. Uma nota final indica que os princípios são descrições confiáveis do que se percebe e que a explicação de por que eles existem veio muito depois, das estatísticas do ambiente natural.
+\begin{tikzpicture}[
+  tit/.style={font=\scriptsize\bfseries, text=manualblue},
+  sub/.style={font=\tiny, text=manualgray, align=center, text width=3.6cm},
+  pt/.style={circle, draw=manualgray, thick, minimum size=4.5pt, inner sep=0pt},
+  ptf/.style={circle, draw=manualblue, fill=manualblue, minimum size=4.5pt, inner sep=0pt}
+]
+  % --- 1 proximidade
+  \node[tit] at (-4.2,3.6) {Proximidade};
+  \foreach \c in {0,1,2} {
+    \foreach \r in {0,1,2} {
+      \node[pt] at (-5.3+\c*1.05, 2.4+\r*0.42) {};
+      \node[pt] at (-5.05+\c*1.05, 2.4+\r*0.42) {};
+    }
+  }
+  \node[sub] at (-4.2,1.75) {itens próximos formam grupo: veem-se \emph{colunas de pares}};
+
+  % --- 2 similaridade
+  \node[tit] at (0,3.6) {Similaridade};
+  \foreach \c in {0,1,2,3} {
+    \foreach \r in {0,1,2} {
+      \ifnum\c=2
+        \node[ptf] at (-1.0+\c*0.66, 2.4+\r*0.42) {};
+      \else
+        \node[pt] at (-1.0+\c*0.66, 2.4+\r*0.42) {};
+      \fi
+    }
+  }
+  \node[sub] at (0,1.75) {itens semelhantes formam grupo: a coluna cheia se destaca};
+
+  % --- 3 fechamento
+  \node[tit] at (4.2,3.6) {Fechamento};
+  \foreach \a in {8,...,80} { \draw[manualgray, thick] (4.2,2.8)+(\a*4:0.62) -- +(\a*4+2.5:0.62); }
+  \draw[white, line width=2.2pt] (4.2,2.8)+(20:0.62) arc (20:55:0.62);
+  \draw[white, line width=2.2pt] (4.2,2.8)+(150:0.62) arc (150:190:0.62);
+  \draw[white, line width=2.2pt] (4.2,2.8)+(255:0.62) arc (255:295:0.62);
+  \node[sub] at (4.2,1.75) {lacunas são completadas: vê-se um círculo, não arcos};
+
+  \draw[manualgray!25] (-6.0,1.25) -- (6.0,1.25);
+
+  % --- 4 boa continuação
+  \node[tit] at (-4.2,0.75) {Boa continuação};
+  \draw[very thick, manualblue] (-5.3,-0.9) .. controls (-4.6,0.1) and (-3.8,0.3) .. (-3.1,-0.2);
+  \draw[very thick, manualred] (-5.3,-0.1) .. controls (-4.5,-0.6) and (-3.7,-0.9) .. (-3.1,-0.85);
+  \node[sub] at (-4.2,-1.35) {veem-se duas linhas que \emph{se cruzam}, não quatro segmentos};
+
+  % --- 5 destino comum
+  \node[tit] at (0,0.75) {Destino comum};
+  \foreach \c in {0,1,2,3,4,5} {
+    \node[pt] at (-1.3+\c*0.52,-0.4) {};
+  }
+  \foreach \c in {0,2,4} { \draw[->, >=Stealth, thick, manualblue] (-1.3+\c*0.52,-0.24) -- +(0,0.42); }
+  \foreach \c in {1,3,5} { \draw[->, >=Stealth, thick, manualred] (-1.3+\c*0.52,-0.56) -- +(0,-0.42); }
+  \node[sub] at (0,-1.35) {agrupa-se pelo \emph{movimento comum}, não pela posição};
+
+  % --- 6 figura-fundo
+  \node[tit] at (4.2,0.75) {Figura e fundo};
+  \fill[manualgray!12] (3.0,-0.95) rectangle (5.4,0.25);
+  \fill[manualblue!75] (3.75,-0.85) .. controls (3.4,-0.3) and (4.1,0.15) .. (4.2,0.1)
+                       .. controls (4.3,0.15) and (5.0,-0.3) .. (4.65,-0.85) -- cycle;
+  \node[sub] at (4.2,-1.35) {uma região vira \emph{objeto}; a outra continua \emph{atrás}};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!8,
+        minimum width=11.4cm, align=center, font=\tiny] at (0,-2.3)
+    {Os princípios são \textbf{descrições} confiáveis do que se percebe --- não explicações.\\
+     \emph{Por que} eles existem só teve resposta 90 anos depois: eles espelham as regularidades estatísticas do ambiente natural.};
+\end{tikzpicture}
+```
+Princípios gestálticos de agrupamento. Todos são reais e replicam; nenhum deles, sozinho, explica coisa alguma — é a distinção do Cap. 3 entre descrever e explicar, e a Gestalt levou décadas para admiti-la.
+:::
+
+Acima deles todos, a Gestalt punha a **lei da Prägnanz** (pregnância, ou "boa forma"): a organização percebida tende a ser a **mais simples, estável e regular** que o estímulo permite. Diante de ambiguidade, o sistema perceptual não sorteia — ele converge para a interpretação de melhor forma.
+
+Note a estrutura do argumento, porque ela reaparece em todo o Vol 5: **o estímulo é ambíguo, e a percepção não é**. Uma imagem na retina é compatível com infinitas cenas tridimensionais. Você vê uma. O sistema está fazendo trabalho — e é esse trabalho, e não o estímulo, que a Gestalt colocou no centro.
+
+Wertheimer viu que os princípios não valem só para a percepção: aplicou-os ao **pensamento**. Seu livro póstumo, *Productive Thinking* [@wertheimer1945], argumenta que resolver um problema de verdade é **reestruturá-lo** — ver a situação sob outra organização —, em vez de aplicar procedimentos decorados. Ele detestava o ensino por memorização, e o Cap. 46 é herdeiro direto dessa linha.
+
+::: {.na-pratica}
+**Você usa os princípios da Gestalt todo dia — provavelmente sem saber.**
+
+Nenhuma outra descoberta da psicologia entrou tão fundo na prática profissional alheia:
+
+- **Interfaces.** Todo guia de design — do Material Design às diretrizes da Apple — é, em sua seção de layout, Gestalt reescrita. Botões relacionados ficam próximos (proximidade). Itens da mesma classe têm a mesma cor (similaridade). Um cartão com sombra vira objeto sobre um fundo (figura-fundo). O espaço em branco não é desperdício: é o que produz o agrupamento.
+- **Formulários.** Se o rótulo está longe do campo e perto do campo anterior, as pessoas erram — e a culpa é da proximidade, não delas.
+- **Gráficos.** Cor por série é similaridade; linha contínua é boa continuação; legenda longe da linha força uma busca que o agrupamento resolveria.
+- **Marcas.** O panda da WWF é fechamento puro: metade do contorno não existe. A seta escondida na logo da FedEx é figura-fundo.
+- **Cinema e animação.** Toda imagem em movimento é phi industrializado. Um filme são fotos paradas; o movimento é seu.
+
+A lição prática é a lição teórica: **você não controla os elementos, você controla as relações**. Mudar o espaçamento sem mudar nenhum item muda o que a pessoa vê.
+:::
+
+## A aposta que a Gestalt perdeu: o isomorfismo
+
+Aqui é preciso ser honesto, porque a Gestalt costuma sair boa demais na fotografia.
+
+Wertheimer, Köhler e Koffka não queriam ser apenas descritores de fenômenos perceptuais. Queriam uma **explicação física**, e propuseram uma: o **isomorfismo psicofísico**. A tese, defendida sobretudo por Köhler, é que a organização da experiência corresponde estruturalmente à organização dos processos cerebrais — e, mais especificamente, que o cérebro opera por **campos elétricos contínuos** que se organizam por si mesmos, como uma bolha de sabão assume a forma de mínima energia. A Prägnanz seria, literalmente, física: o campo cortical assumindo sua configuração mais estável.
+
+Era uma teoria séria, ousada e testável — a virtude que o Cap. 5 exige. E ela **foi testada, e falhou**.
+
+Lashley e colegas inseriram folhas de ouro condutoras e agulhas no córtex visual de animais, o que deveria curto-circuitar qualquer campo elétrico e destruir a organização perceptual [@lashley1951]. Sperry e colaboradores fizeram testes semelhantes, com múltiplas inserções [@sperry1955]. A percepção **continuou funcionando**. Se a organização perceptual dependesse de campos contínuos, aquilo deveria ter produzido caos. Não produziu.
+
+Foi um golpe duro, e não apenas por um resultado negativo: a Gestalt ficou sem sua explicação. Sobraram os fenômenos — sólidos, replicáveis, importantes — e a lei da Prägnanz, que descreve muito bem e explica muito pouco. Dizer que se percebe a organização mais simples é ótimo, até você perguntar **simples segundo qual métrica**, e descobrir que a resposta é circular: a mais simples é a que se percebe.
+
+::: {.atencao}
+**A explicação chegou — noventa anos depois, e por outro caminho.**
+
+A pergunta que a Gestalt não conseguiu responder — *por que* estes princípios e não outros? — tem hoje uma resposta que a escola teria adorado, ainda que ela venha da estatística e não da física do córtex.
+
+A ideia: os princípios de agrupamento não são arbitrários nem "leis da forma". Eles **espelham regularidades do ambiente natural**. Num mundo de objetos opacos e coesos, elementos próximos e de orientação semelhante **de fato** tendem a pertencer ao mesmo objeto. Elementos que se movem juntos **de fato** costumam ser o mesmo objeto. O sistema perceptual não impõe boa forma ao mundo; ele foi calibrado — pela evolução e pela experiência — para apostar no que costuma ser verdade.
+
+E isso é mensurável. Geisler e colegas mediram estatísticas de contornos em fotografias de cenas naturais e mostraram que os agrupamentos previstos pela boa continuação correspondem às co-ocorrências reais de bordas no mundo [@geisler2001]. Elder e Goldberg fizeram o mesmo para proximidade e boa continuação, quantificando o poder preditivo de cada princípio a partir de imagens naturais [@elder_goldberg2002].
+
+A releitura contemporânea, resumida na revisão de centenário organizada por Wagemans e colegas [@wagemans2012], é que os princípios gestálticos são **inferência bayesiana** feita de véspera: prioris embutidos, sintonizados com a estrutura estatística do ambiente. A Prägnanz deixa de ser magia e vira aposta bem-informada.
+
+Note a ironia dupla. A Gestalt estava certa sobre os fenômenos e errada sobre o mecanismo. E o mecanismo verdadeiro — calibração ao ambiente — é uma explicação **funcional**, do tipo que o Cap. 7 atribuiu ao funcionalismo darwiniano, que era a tradição rival.
+:::
+
+## Köhler, os chimpanzés e a palavra "insight"
+
+Enquanto isso, num lugar improvável, Wolfgang Köhler produzia o segundo achado mais famoso da escola. Estava em Tenerife, nas Canárias, dirigindo uma estação de pesquisa com chimpanzés, quando a Primeira Guerra estourou e ele ficou preso lá por seis anos. Usou o tempo [@kohler1917].
+
+O alvo era Thorndike (Cap. 7). Os gatos de Thorndike escapavam das caixas-problema **gradualmente**: erravam menos a cada tentativa, numa curva suave, sem nenhum momento de compreensão. Daí a conclusão de que a aprendizagem é tentativa e erro cega, sem entendimento.
+
+Köhler suspeitava que o resultado era artefato do desenho. Nas caixas de Thorndike, a solução — um trinco escondido — era **invisível** ao animal. Não havia nada a compreender; só havia o que descobrir por acaso. E se todos os elementos do problema estivessem à vista?
+
+Ele então dava aos chimpanzés problemas visíveis. Banana pendurada no teto, caixas espalhadas pelo recinto. Banana fora da jaula, dois bambus curtos ao alcance — nenhum longo o bastante sozinho.
+
+Os relatos são vívidos. Sultan, o mais hábil, tenta alcançar, falha, desiste, senta. **Pausa** — olha em volta. E então, de repente, levanta, vai direto às caixas, empilha, sobe e pega. Sem gradualismo. Não há curva; há um antes e um depois. Com os bambus, depois de brincar com eles sem propósito, Sultan os encaixa um no outro e a solução vem inteira, de uma vez.
+
+Köhler chamou isso de ***Einsicht*** — insight —, e a interpretação é gestáltica: o animal não somou tentativas. Ele **reestruturou o campo**. As caixas deixaram de ser caixas e passaram a ser degraus; o que mudou não foi o mundo, foi a organização percebida. E as marcas do insight são características: solução súbita, transferível a problemas novos, executada de forma limpa e lembrada depois.
+
+::: {.experimento}
+**O pombo que teve um insight — e o que isso fez com a teoria** [@epstein1984]
+
+**O problema.** A interpretação de Köhler contém uma alegação forte: o insight seria **qualitativamente diferente** da aprendizagem por tentativa e erro — evidência de compreensão, não de história de reforço. Como testar isso?
+
+**A jogada de Epstein.** Robert Epstein, trabalhando no laboratório de Skinner, propôs uma resposta engenhosa: em vez de argumentar, **construir** um insight a partir de peças conhecidas, e ver se ele se parece com o de Sultan.
+
+**Desenho.** Pombos foram treinados, **separadamente**, em duas habilidades que nunca foram combinadas:
+
+1. Empurrar uma caixa em direção a um alvo — treinado sozinho, sem banana pendurada.
+2. Subir numa caixa (já posicionada) e bicar uma miniatura de banana suspensa — treinado sozinho, com a caixa fixa.
+
+Também aprenderam a **não** tentar voar até a banana (essa resposta foi extinta).
+
+**O teste.** Pela primeira vez, o pombo entra num recinto com a banana pendurada **fora de alcance** e a caixa longe dela. A combinação é inédita.
+
+**Resultado.** O pombo olha para a banana. Olha para a caixa. Fica parado — uma pausa de "confusão", descrita como notavelmente semelhante à dos chimpanzés. E então empurra a caixa **na direção da banana**, para debaixo dela, sobe e bica. Súbito, limpo, resolvido.
+
+**Interpretação — e ela corta nos dois sentidos.** Cada uma das habilidades tinha história de reforço; a **combinação**, não. O comportamento novo emergiu da recombinação de repertórios, e a topografia — pausa, súbita solução — é indistinguível daquilo que se chamou de insight em chimpanzés.
+
+Conclusão desconfortável para a Gestalt: **a fenomenologia do insight não prova compreensão especial**, porque um sistema com histórias parciais de reforço a produz. A súbita reorganização pode ser recombinação.
+
+Conclusão desconfortável para o behaviorismo, e ela é frequentemente esquecida: o que Epstein demonstrou é justamente que **repertórios se recombinam para gerar comportamento novo e adaptado**, o que exige algo mais interessante do que cadeias de estímulo-resposta. Ele explicou o insight, mas explicando-o mostrou que os organismos fazem exatamente o tipo de coisa que a Gestalt dizia que faziam.
+
+**Limitações.** O paralelo é de topografia, não de prova de identidade de mecanismo. E há um dado que a leitura crítica não pode ignorar: Köhler observou que seus chimpanzés **também** precisavam de experiência prévia — os que nunca tinham manipulado varas raramente resolviam o problema das varas. Ele mesmo registrou isso. A história prévia sempre esteve lá, dos dois lados.
+
+**O veredito atual.** Insight é hoje um fenômeno estudado com métodos próprios, com correlatos neurais e comportamentais razoavelmente estabelecidos (Cap. 46) — é real, e não é misticismo. Mas a fronteira entre "reestruturação" e "recombinação de repertório" nunca foi tão nítida quanto os dois lados desejavam.
+:::
+
+## Lewin: o gestaltista que mais deixou herdeiros
+
+Se a Gestalt sobrevive hoje fora da percepção, é sobretudo por causa de Kurt Lewin — que era do grupo de Berlim e fez a manobra mais audaciosa da escola: aplicar o pensamento gestáltico à **pessoa** e ao **grupo**.
+
+Sua equação é enganosamente simples:
+
+$$B = f(P, E)$$
+
+O comportamento é função da pessoa **e** do ambiente, considerados **conjuntamente**. Não é *P* mais *E*; é a interação inseparável dos dois — o **espaço vital** (*Lebensraum*): o campo psicológico em que a pessoa se encontra, com suas metas, barreiras e forças, tal como ela o percebe.
+
+A consequência prática é radical, e é a razão pela qual o Vol 12 existe. Se o comportamento é campo, então para mudar o comportamento **mude o campo**, não a pessoa. Uma pessoa "desmotivada" pode estar num campo com barreiras que ninguém mapeou. É o mesmo movimento anti-elementista de Wertheimer, deslocado da retina para a vida social — e é a raiz do erro fundamental de atribuição (Cap. 70), que consiste precisamente em explicar comportamento pela pessoa quando o campo é que está fazendo o trabalho.
+
+O que Lewin deixou:
+
+- **Psicologia social experimental.** Ele praticamente a inventou como disciplina experimental. Festinger (Cap. 71) foi seu aluno.
+- **Dinâmica de grupo.** O termo é dele. Com Lippitt e White, fez o estudo clássico comparando lideranças autocrática, democrática e *laissez-faire* em grupos de meninos, medindo agressão e produtividade — e notando que o grupo autocrático produzia enquanto o líder estava presente, e desmoronava quando ele saía [@lewin1939].
+- **Pesquisa-ação.** A tese de que se pode pesquisar e intervir ao mesmo tempo, e de que compreender um sistema exige tentar mudá-lo. Fundou o campo do desenvolvimento organizacional (Cap. 97).
+- **Efeito Zeigarnik.** Bluma Zeigarnik, sua aluna, partiu de uma observação de café: garçons lembravam pedidos em aberto e os esqueciam assim que a conta era paga. Testou, e encontrou melhor recordação de tarefas interrompidas do que de tarefas concluídas [@zeigarnik1927]. A explicação lewiniana é de campo: a tarefa inacabada é um sistema de tensão que permanece ativo. Justiça seja feita à evidência, porém: o efeito é pequeno e sensível ao procedimento, e as replicações são mistas — trate-o como plausível e frágil, não como lei.
+
+E há a frase que resume o programa, atribuída a ele com razão: **não há nada tão prático quanto uma boa teoria**.
+
+::: {.atencao}
+**Psicologia da Gestalt ≠ terapia gestalt.**
+
+São coisas diferentes. Uma partilha o nome com a outra, e a confusão é generalizada — inclusive em cursos de psicologia.
+
+**Psicologia da Gestalt**: escola experimental alemã, iniciada em 1912, sobre percepção, pensamento e organização. Wertheimer, Köhler, Koffka, Lewin. Laboratório, taquistoscópio, dados.
+
+**Terapia gestalt**: abordagem psicoterápica criada nos anos 1940–50 por Fritz e Laura Perls, com raízes na psicanálise, no existencialismo e no teatro. Foco no aqui-e-agora, na consciência da experiência imediata, em técnicas vivenciais (a "cadeira vazia"). Está no Cap. 89, junto com as terapias humanistas.
+
+A conexão é sobretudo **nominal e metafórica**: Perls tomou emprestada a linguagem da totalidade e da figura-fundo. Os psicólogos da Gestalt não gostaram. Köhler recusou qualquer associação, e Laura Perls, que era a formada em psicologia da dupla, reconheceu que o vínculo teórico era tênue.
+
+Isso não é um julgamento sobre a terapia gestalt, que se avalia por seus próprios méritos e sua própria evidência (Cap. 89). É um aviso: **encontrar "Gestalt" no índice não diz de qual das duas se trata**, e usar a reputação experimental de uma para dar lastro à outra é o erro que o Cap. 5 chama de contrabando de credibilidade.
+:::
+
+## Por que uma escola tão certa perdeu
+
+A Gestalt tinha razão em quase tudo o que dizia sobre percepção. Seus fenômenos replicam há um século. Seus princípios estão em todo software que você usa. Então por que "gestaltista" não é uma identidade profissional hoje, enquanto "analista do comportamento" e "cognitivista" são?
+
+Três razões, e nenhuma delas é científica.
+
+**A história.** A escola era alemã e judaica em 1933. Wertheimer, Koffka e Lewin eram judeus e saíram. Köhler não era, e fez o que quase ninguém fez: publicou no *Deutsche Allgemeine Zeitung*, em abril de 1933, um artigo defendendo colegas judeus e criticando o novo regime — tido como o último artigo abertamente antinazista publicado na Alemanha sob Hitler. Passou a noite seguinte com amigos esperando a Gestapo, que não veio. Resistiu mais dois anos, com estudantes fazendo saudação nazista em suas aulas e a polícia inspecionando seu laboratório, e emigrou em 1935. O laboratório de Berlim acabou.
+
+**A geografia acadêmica.** Chegaram aos Estados Unidos justo quando o behaviorismo reinava, e não obtiveram os cargos que sua estatura justificava. Köhler foi para o Swarthmore College; Koffka, para o Smith College. Boas instituições — mas de graduação, **sem programas de doutorado**. E aqui está o ponto estrutural, que o Cap. 7 já antecipou com Wundt: **escolas não se propagam por estarem certas; propagam-se formando alunos**. Sem doutorandos, não há discípulos; sem discípulos, não há escola. Lewin, que foi para o MIT e para Iowa e formou gente, é justamente aquele cuja linhagem sobreviveu — e a exceção prova a regra.
+
+**A teoria.** O isomorfismo caiu, e nada o substituiu. Uma escola que descreve maravilhosamente e explica mal fica vulnerável — o Cap. 3 é claro sobre a diferença. Os fenômenos foram adotados por todos; a moldura teórica, por ninguém.
+
+Mas note o que "perder" significa aqui, e é diferente do Cap. 7. O estruturalismo perdeu e **sumiu**. A Gestalt perdeu como instituição e **venceu como conteúdo**: seus achados foram absorvidos pela psicologia da percepção (Cap. 33), pela psicologia cognitiva (Cap. 46), pela psicologia social (Vol 12), pela neurociência da visão. A revolução cognitiva do Cap. 12 é, em vários sentidos, a Gestalt voltando com computador — a mesma tese de que a mente **organiza ativamente** a informação, agora com um vocabulário que o clima intelectual aceitava.
+
+Wertheimer não veria isso: morreu em 1943, no exílio, em Nova York, três semanas depois de terminar *Productive Thinking*.
+
+::: {.callout-sintese}
+- **O fenômeno phi** [@wertheimer1912] é o dado fundador: dois flashes estáticos, e vê-se movimento. Os elementos são idênticos nas três condições; só a **relação temporal** muda — e a experiência muda de natureza. Uma psicologia de elementos não tem onde pôr isso.
+- **A frase correta é "o todo é *diferente* da soma das partes"** [@koffka1935], não "maior". "Maior" preserva a soma e a trata como base; "diferente" nega que a operação seja soma. A melodia transposta muda todas as notas e continua a mesma melodia.
+- **Princípios de agrupamento**: proximidade, similaridade, fechamento, boa continuação, destino comum, figura-fundo — sob a lei da **Prägnanz**. Todos reais; nenhum explicativo por si.
+- **O isomorfismo psicofísico foi a aposta e ela caiu.** Köhler propôs campos elétricos corticais auto-organizados; Lashley [@lashley1951] e Sperry [@sperry1955] curto-circuitaram o córtex e a percepção continuou. Restaram os fenômenos sem a explicação.
+- **A explicação chegou pela estatística.** Os princípios espelham regularidades de cenas naturais [@geisler2001; @elder_goldberg2002]; a leitura atual os trata como prioris bayesianos calibrados ao ambiente [@wagemans2012]. Ironia: é uma explicação **funcional**, da tradição rival.
+- **Köhler e o insight** [@kohler1917]: com todos os elementos visíveis, chimpanzés resolvem de forma súbita, transferível e limpa — contra a tentativa e erro de Thorndike, cujas caixas escondiam a solução.
+- **Epstein replicou o insight com pombos** [@epstein1984] treinados separadamente em duas habilidades. A fenomenologia do insight não prova compreensão especial — mas explicá-la exigiu admitir recombinação criativa de repertórios, o que também não é confortável para o behaviorismo.
+- **Lewin** é o herdeiro vivo: $B = f(P, E)$, espaço vital, dinâmica de grupo, pesquisa-ação, estudos de liderança [@lewin1939], efeito Zeigarnik [@zeigarnik1927] (pequeno e de replicação instável). Para mudar comportamento, **mude o campo**.
+- **Psicologia da Gestalt ≠ terapia gestalt**: escola experimental alemã de 1912 × abordagem terapêutica de Perls dos anos 1940–50. Vínculo nominal e metafórico.
+- **Perdeu por história, não por ciência**: dispersão pelo nazismo, colégios sem doutorado (logo, sem discípulos), e uma teoria explicativa que caiu. Venceu como conteúdo: percepção, cognição, social, design.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+***Gestalt***
+:   Forma, configuração, estrutura: um todo organizado cujas propriedades não derivam da soma de partes independentes.
+
+**Fenômeno phi**
+:   Percepção de movimento a partir de estímulos estáticos apresentados em sucessão com intervalo adequado [@wertheimer1912].
+
+**Elementismo**
+:   Pressuposto de que a experiência se decompõe em elementos independentes que depois se combinam — o alvo comum da Gestalt no Cap. 7 e no Cap. 8.
+
+**Lei da Prägnanz**
+:   Princípio de que a organização percebida tende à forma mais simples, regular e estável compatível com o estímulo.
+
+**Proximidade** / **Similaridade** / **Fechamento** / **Boa continuação** / **Destino comum**
+:   Princípios de agrupamento: itens próximos, semelhantes, que completam contornos, que seguem trajetórias suaves ou que se movem juntos são percebidos como unidade.
+
+**Figura e fundo**
+:   Segregação perceptual em que uma região adquire contorno e forma (figura) e a outra segue indefinida atrás (fundo) [@rubin1915].
+
+**Isomorfismo psicofísico**
+:   Tese de Köhler de que a estrutura da experiência corresponde à estrutura de campos elétricos corticais — testada e refutada [@lashley1951; @sperry1955].
+
+***Einsicht*** (insight)
+:   Solução súbita por reestruturação do campo do problema, transferível a problemas análogos [@kohler1917].
+
+**Reestruturação**
+:   Mudança na organização percebida de um problema, que faz a solução aparecer sem tentativa e erro adicional [@wertheimer1945].
+
+**Espaço vital** (*Lebensraum*)
+:   Em Lewin, o campo psicológico total — pessoa, metas, barreiras e forças — tal como percebido, no qual o comportamento ocorre.
+
+**Teoria de campo**
+:   Abordagem de Lewin resumida em $B = f(P, E)$: o comportamento é função conjunta e inseparável da pessoa e do ambiente.
+
+**Efeito Zeigarnik**
+:   Melhor recordação de tarefas interrompidas do que de concluídas; explicado por tensão residual, com replicação instável [@zeigarnik1927].
+
+**Pesquisa-ação**
+:   Método de Lewin em que investigar e intervir são partes do mesmo ciclo, sob a tese de que se compreende um sistema tentando mudá-lo.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva o fenômeno phi nas três condições de intervalo e explique, passo a passo, por que ele é incompatível com o programa de Titchener.
+
+2. **(Recuperação.)** Corrija a frase "o todo é maior que a soma das partes" e explique por que a versão popular preserva justamente o erro que a Gestalt queria atacar. Use o exemplo da melodia transposta.
+
+3. **(Compreensão.)** Por que a refutação do isomorfismo por Lashley e Sperry foi mais grave para a Gestalt do que a perda de um experimento qualquer? O que a escola ficou sem?
+
+4. **(Aplicação.)** Um formulário tem baixa taxa de conclusão. Os rótulos estão à esquerda e distantes dos campos; os campos obrigatórios e opcionais têm a mesma aparência; o botão de enviar fica ao lado do de cancelar, idênticos. Diagnostique cada problema nomeando o princípio gestáltico violado e proponha a correção — sem acrescentar nenhum elemento novo à tela.
+
+5. **(Aplicação.)** Um gestor conclui que sua equipe é "desmotivada por natureza". Reformule o diagnóstico em termos lewinianos, usando $B = f(P, E)$, e proponha duas perguntas sobre o **campo** que ele não fez. Relacione com o erro fundamental de atribuição (Cap. 70).
+
+6. **(Reflexão crítica.)** Epstein produziu, com pombos, um comportamento indistinguível do insight de Sultan. Argumente que esse resultado (a) prejudica a Gestalt, e depois (b) prejudica o behaviorismo. Qual dos dois lados sai mais ferido, e por quê? O que exatamente ficaria provado se descobríssemos que Sultan também tinha história prévia com varas?
+
+7. **(Reflexão crítica.)** A Gestalt descreveu os fenômenos com precisão e errou o mecanismo. A explicação atual — prioris calibrados às estatísticas do ambiente — é de tipo funcional, e portanto vem da tradição que a Gestalt combatia. O que esse episódio sugere sobre a relação entre **descrever bem** e **explicar bem** em psicologia? É possível uma escola vencer permanentemente só com fenômenos?
+
+8. **(Integração.)** Argumenta-se aqui que a Gestalt perdeu por razões históricas e institucionais — dispersão pelo nazismo e ausência de programas de doutorado —, não científicas. Avalie: se isso for verdade, o que se segue sobre a ideia de que a ciência é um mercado em que as melhores ideias vencem? Ligue com o Cap. 7 (Wundt e a institucionalização) e com o Cap. 105 (ciência aberta).
