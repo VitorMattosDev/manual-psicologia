@@ -14,7 +14,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 4 / 105 concluídos · Fase 1: 4/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 5 / 105 concluídos · Fase 1: 5/21 · Fase 2: 0/35 · Fase 3: 0/49
 
 ---
 
@@ -27,7 +27,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 02 | As grandes questões (natureza × cultura, mente–corpo, consciência, livre-arbítrio) | `capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd` | ✅ |
 | 03 | Psicologia como ciência: o método científico aplicado ao comportamento | `capitulos/vol01-o-que-e-psicologia/cap-03-psicologia-como-ciencia.qmd` | ✅ |
 | 04 | Áreas e campos de atuação do psicólogo | `capitulos/vol01-o-que-e-psicologia/cap-04-areas-atuacao.qmd` | ✅ |
-| 05 | Mitos e concepções equivocadas sobre a psicologia | `capitulos/vol01-o-que-e-psicologia/cap-05-mitos.qmd` | ⬜ |
+| 05 | Mitos e concepções equivocadas sobre a psicologia | `capitulos/vol01-o-que-e-psicologia/cap-05-mitos.qmd` | ✅ |
 
 ### Vol 2 — História e Sistemas
 | Cap | Título | Arquivo | Status |

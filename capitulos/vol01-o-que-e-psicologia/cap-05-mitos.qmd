@@ -1,5 +1,257 @@
 # 05. Mitos e concepções equivocadas sobre a psicologia
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconhecer** a anatomia comum dos mitos psicológicos: grão de verdade, simplificação, interesse comercial e repetição.
+- **Avaliar** os mitos mais difundidos — estilos de aprendizagem, cérebro esquerdo × direito, efeito Mozart, subliminar, lua cheia, catarse — à luz da evidência.
+- **Explicar** por que a hipótese do *meshing* é o que torna os estilos de aprendizagem testáveis, e por que ela falha.
+- **Distinguir** instrumentos psicológicos com apoio empírico daqueles que sobrevivem por tradição e efeito Forer.
+- **Identificar** por que a mera repetição aumenta a sensação de verdade, e o que a evidência atual diz sobre corrigir crenças falsas.
+- **Aplicar** a checagem de método dos Caps. 1 e 3 a qualquer afirmação nova sobre a mente.
 :::
+
+Este volume abriu perguntando o que é psicologia e fecha mostrando o que não é. Não por gosto pela polêmica: porque a psicologia é, provavelmente, a ciência com a maior distância entre o que ela sabe e o que se diz que ela sabe. Física de partículas não tem um mercado de cursos prometendo destravar seu potencial quântico — bem, tem, e isso já diz algo. Mas a psicologia é ocupada por invasores em escala industrial.
+
+E há um custo. Lilienfeld argumentou que parte da desconfiança pública com a psicologia se alimenta justamente dessa fronteira mal vigiada: quando o que se vende em nome da disciplina não funciona, a decepção respinga na disciplina inteira [@lilienfeld2012]. Quem não distingue psicologia de pseudopsicologia acaba descartando as duas.
+
+Os capítulos anteriores deram as ferramentas. Este as usa.
+
+## A anatomia de um mito
+
+Mitos psicológicos não são mentiras aleatórias. Eles seguem uma receita, e reconhecê-la vale mais que decorar a lista de mitos — porque a lista muda e a receita não. A @fig-anatomia-mito mostra o ciclo.
+
+::: {#fig-anatomia-mito}
+```{.tikz}
+%%| filename: anatomia-mito
+%%| alt: Diagrama circular com cinco etapas que explicam como um mito psicológico se sustenta. A primeira etapa é um grão de verdade, isto é, um achado real porém limitado. A segunda é a simplificação, em que ressalvas e limites desaparecem. A terceira é o apelo, porque a versão simplificada é reconfortante ou útil. A quarta é o interesse comercial, quando cursos e produtos passam a vender o mito. A quinta é a repetição, que gera familiaridade. Uma seta fecha o ciclo da repetição de volta ao início, com o rótulo de que familiaridade é sentida como verdade, e uma observação indica que refutar a etapa inicial não interrompe o ciclo, porque ele não se sustenta na evidência.
+\begin{tikzpicture}[
+  et/.style={draw, thick, rounded corners=4pt, minimum width=3.2cm, minimum height=1.25cm,
+             align=center, font=\scriptsize},
+  f/.style={->, >=Stealth, thick, manualgray}
+]
+  \node[et, draw=manualgreen, fill=manualgreen!8] (a) at (0,3.2)
+    {\textbf{Grão de verdade}\\{\tiny um achado real,}\\{\tiny porém limitado}};
+  \node[et, draw=manualyellow, fill=manualyellow!8] (b) at (4.4,1.0)
+    {\textbf{Simplificação}\\{\tiny ressalvas e limites}\\{\tiny desaparecem}};
+  \node[et, draw=manualyellow, fill=manualyellow!8] (c) at (2.7,-2.6)
+    {\textbf{Apelo}\\{\tiny a versão simples é}\\{\tiny reconfortante ou útil}};
+  \node[et, draw=manualred, fill=manualred!8] (d) at (-2.7,-2.6)
+    {\textbf{Interesse comercial}\\{\tiny cursos e produtos}\\{\tiny passam a vendê-lo}};
+  \node[et, draw=manualred, fill=manualred!8] (e) at (-4.4,1.0)
+    {\textbf{Repetição}\\{\tiny todo mundo diz,}\\{\tiny logo parece óbvio}};
+
+  \draw[f] (a) to[bend left=14] (b);
+  \draw[f] (b) to[bend left=14] (c);
+  \draw[f] (c) to[bend left=14] (d);
+  \draw[f] (d) to[bend left=14] (e);
+  \draw[f, manualred] (e) to[bend left=14]
+    node[midway, right, font=\scriptsize\itshape, text=manualred, align=center, xshift=2pt]
+    {familiaridade\\é sentida\\como verdade} (a);
+
+  \node[font=\scriptsize, text=manualgray, align=center] at (0,0.2)
+    {refutar o \textbf{grão de verdade}\\não interrompe o ciclo:\\ele não se sustenta na evidência};
+\end{tikzpicture}
+```
+O ciclo de vida de um mito psicológico. Note a seta de retorno: o que sustenta o mito não é a evidência inicial, e sim a familiaridade produzida pela repetição — razão pela qual publicar a refutação raramente o mata.
+:::
+
+O elemento mais importante é o primeiro. **Mitos que dão certo quase sempre têm um grão de verdade.** É isso que os torna resistentes: quem os defende sempre pode apontar para algo real. Existe alguma lateralização cerebral. Pessoas têm preferências de estudo. Música afeta o estado de ânimo. O truque do mito é pegar esse grão e ampliá-lo até uma afirmação que a evidência não sustenta — e é nessa ampliação, não no grão, que a checagem deve incidir.
+
+## Seis mitos, seis lições de método
+
+### "Cada pessoa tem seu estilo de aprendizagem"
+
+Talvez o mito mais entranhado na educação. A ideia: cada aluno é visual, auditivo ou cinestésico, e aprende melhor quando o ensino corresponde ao seu estilo.
+
+Aqui é preciso separar duas afirmações que quase sempre vêm coladas. A primeira: **pessoas têm preferências** sobre como estudar. Isso é verdade e ninguém contesta. A segunda: **ensinar no estilo preferido melhora a aprendizagem**. É a **hipótese do *meshing*** — o encaixe entre método e estilo — e é ela, e só ela, que interessa.
+
+Pashler e colegas fizeram algo que vale como aula de método: em vez de apenas revisar a literatura, especificaram **que desenho seria necessário** para testar a hipótese. Não basta mostrar que visuais preferem figuras, nem que quem estuda do jeito que gosta aprende. É preciso um **desenho cruzado**: classificar as pessoas por estilo, distribuí-las **aleatoriamente** entre métodos de ensino, e testar todo mundo com a **mesma** prova. A hipótese do *meshing* prevê uma **interação**: visuais devem ir melhor com método visual do que com auditivo, *e* auditivos devem ir melhor com método auditivo do que com visual. Sem cruzamento, nada se prova.
+
+O resultado da revisão: apesar da enorme literatura sobre estilos, quase nenhum estudo tinha esse desenho — e, entre os poucos que tinham, a interação prevista **não apareceu**. Alguns encontraram o padrão oposto [@pashler2008].
+
+::: {#fig-meshing}
+```{.tikz}
+%%| filename: meshing
+%%| alt: Diagrama de um desenho cruzado para testar a hipótese do meshing dos estilos de aprendizagem. Uma tabela dois por dois cruza o estilo do aluno, visual ou auditivo, com o método de ensino, visual ou auditivo. A previsão da hipótese do meshing é que as duas células em que estilo e método coincidem, isto é, visual com visual e auditivo com auditivo, apresentem desempenho superior às duas células cruzadas. Essas duas células coincidentes aparecem destacadas em verde e as cruzadas em cinza. Uma nota abaixo indica que o resultado empírico é que essa interação não aparece, e que o desempenho depende do material e não do encaixe.
+\begin{tikzpicture}[
+  cel/.style={draw, thick, minimum width=3.1cm, minimum height=1.5cm, align=center, font=\scriptsize},
+  hd/.style={font=\scriptsize\bfseries, text=manualgray, align=center}
+]
+  \node[hd] at (2.0,2.15) {método de ensino};
+  \node[hd] at (0.6,1.35) {visual};
+  \node[hd] at (3.7,1.35) {auditivo};
+  \node[hd, rotate=90] at (-1.85,-0.6) {estilo do aluno};
+  \node[hd] at (-0.85,0.35) {visual};
+  \node[hd] at (-0.85,-1.55) {auditivo};
+
+  \node[cel, draw=manualgreen, fill=manualgreen!12] at (0.6,0.35)  {\textbf{encaixe}\\{\tiny desempenho}\\{\tiny previsto: alto}};
+  \node[cel, draw=manualgray,  fill=manualgray!6]   at (3.7,0.35)  {cruzado\\{\tiny previsto: baixo}};
+  \node[cel, draw=manualgray,  fill=manualgray!6]   at (0.6,-1.55) {cruzado\\{\tiny previsto: baixo}};
+  \node[cel, draw=manualgreen, fill=manualgreen!12] at (3.7,-1.55) {\textbf{encaixe}\\{\tiny desempenho}\\{\tiny previsto: alto}};
+
+  \node[font=\scriptsize, text=manualred, align=center, anchor=north] at (2.15,-2.75)
+    {A hipótese do \emph{meshing} prevê uma \textbf{interação}: as duas células de encaixe acima das cruzadas.\\
+     \textbf{Resultado:} a interação não aparece. O que importa é o material, não o encaixe com o aluno.};
+\end{tikzpicture}
+```
+O desenho cruzado exigido para testar a hipótese do *meshing*. A previsão é específica e arriscada — exatamente o que o Cap. 3 pede — e é isso que permite que ela falhe. Ela falhou.
+:::
+
+O que a evidência mostra é mais interessante que o mito: o método eficaz depende **do que se está ensinando**, não de quem aprende. Ensinar geografia exige mapas para todo mundo; ensinar pronúncia exige som para todo mundo. A lição é a do Cap. 3: uma hipótese vaga ("estilos importam") sobrevive a tudo; uma hipótese arriscada (a interação cruzada) pode morrer — e morreu.
+
+### "Sou do cérebro direito, ele é do esquerdo"
+
+O grão de verdade é real e sólido: há **lateralização**. A linguagem depende predominantemente do hemisfério esquerdo na maioria das pessoas; certos aspectos de processamento espacial e prosódia pendem para o direito. Isso é neurociência bem estabelecida (Vol 4).
+
+A ampliação é que não se sustenta: a ideia de que existem **pessoas** "de cérebro direito" — criativas, intuitivas, artísticas — e **pessoas** "de cérebro esquerdo" — lógicas, analíticas. Nielsen e colegas testaram a versão forte diretamente, analisando conectividade funcional em repouso de mais de mil participantes: se o mito fosse verdadeiro, deveria haver indivíduos com redes sistematicamente mais fortes num hemisfério. Não há. Existem redes lateralizadas — mas não **pessoas** lateralizadas [@nielsen2013].
+
+Note o padrão, idêntico ao anterior: o mito troca uma afirmação sobre **funções** por uma afirmação sobre **pessoas**. É a mesma troca ilegítima que o Cap. 2 identificou na herdabilidade — variância populacional virando característica individual.
+
+### "Ouvir Mozart deixa o bebê mais inteligente"
+
+A história é exemplar da distância entre um artigo e sua manchete.
+
+::: {.experimento}
+**O efeito Mozart, e o que ele de fato mostrou** [@rauscher1993]
+
+**Desenho.** Rauscher, Shaw e Ky testaram 36 universitários em tarefas de raciocínio espacial após três condições: dez minutos de uma sonata de Mozart, dez minutos de relaxamento guiado, ou silêncio.
+
+**Resultado.** Após Mozart, o desempenho **em tarefas espaciais** foi ligeiramente melhor. O efeito durou **cerca de 10 a 15 minutos** e desapareceu.
+
+**O que virou.** Um efeito pequeno, temporário, restrito a uma tarefa específica, em **universitários**, transformou-se em "Mozart aumenta a inteligência de bebês". O estado da Geórgia chegou a distribuir CDs de música clássica a recém-nascidos. Nada disso estava no artigo: não havia bebês, não havia inteligência geral, não havia efeito duradouro.
+
+**O veredito.** Pietschnig e colegas meta-analisaram a literatura e encontraram um efeito próximo de nulo — e, revelador, estudos de laboratórios afiliados aos proponentes originais mostravam efeitos maiores que os independentes, marca típica de viés [@pietschnig2010]. O pouco que resta é mais bem explicado por **excitação e humor**: qualquer estímulo agradável que deixe a pessoa mais alerta melhora um pouco o desempenho imediato. Não é Mozart; é estar acordado e de bom humor.
+
+**Limitações — inclusive do original.** 36 participantes, efeito pequeno, desfecho único. Pelos critérios do Cap. 3, é exatamente o tipo de estudo que não deveria sustentar política pública. Os autores originais, é justo dizer, nunca afirmaram o que a imprensa afirmou.
+:::
+
+### "Mensagens subliminares controlam o comportamento"
+
+Este é peculiar: o experimento fundador **nunca aconteceu**.
+
+Em 1957, o publicitário James Vicary anunciou ter inserido as mensagens "beba Coca-Cola" e "coma pipoca" em um filme, invisíveis à consciência, elevando as vendas em dois dígitos. O caso rodou o mundo e produziu pânico regulatório. Anos depois, Vicary admitiu que os dados eram fabricados — o estudo, como descrito, não fora realizado [@pratkanis1992].
+
+O grão de verdade: **priming subliminar existe** em laboratório. Estímulos apresentados abaixo do limiar de consciência podem influenciar julgamentos imediatos, de forma pequena e efêmera (Cap. 34). A ampliação — induzir alguém a comprar, votar ou agir contra sua vontade — não tem apoio, e as fitas de autoajuda subliminares testadas em condições controladas funcionam pela expectativa, não pelo conteúdo. É, aliás, um belo caso de placebo (Cap. 3): as pessoas melhoram naquilo que **acreditam** que a fita prometia, e não naquilo que ela de fato continha.
+
+### "Na lua cheia tudo fica mais agitado"
+
+Enfermeiros, professores e policiais juram. Rotton e Kelly meta-analisaram dezenas de estudos sobre internações psiquiátricas, homicídios, chamadas de emergência e crises — e não encontraram relação com as fases da lua [@rotton_kelly1985].
+
+Por que a crença é tão firme entre pessoas experientes e honestas? Porque este é um caso puro de **viés de confirmação** operando sobre a memória. Numa noite caótica de lua cheia, a coincidência é notada e lembrada. Numa noite caótica sem lua cheia, ninguém olha para o céu. E numa noite calma de lua cheia, não há o que registrar. A crença se alimenta de uma amostragem enviesada da própria experiência — e nenhuma quantidade de experiência a corrige, porque a experiência é justamente o que está enviesado.
+
+Guarde este ponto, porque ele generaliza: **"eu vejo isso há vinte anos" não é evidência**. É exatamente por isso que existe o Cap. 3.
+
+### "Descontar a raiva alivia"
+
+O mito da **catarse** é dos mais antigos e dos mais perigosos, porque orienta conduta.
+
+Bushman testou diretamente. Participantes irritados por um insulto foram distribuídos entre socar um saco de pancadas pensando na pessoa que os ofendeu, socar o saco como exercício físico, ou ficar sentados. Depois, mediu-se agressividade contra o ofensor. Resultado: quem **descontou** ficou **mais** agressivo, não menos. O grupo que não fez nada foi o menos agressivo [@bushman2002].
+
+A explicação é coerente com o Vol 7: descontar a raiva **ensaia** a agressão e mantém a atenção no agravo — é ruminação com esforço físico. A ideia de que a raiva é um fluido hidráulico que precisa ser liberado é metáfora, não mecanismo.
+
+::: {.na-pratica}
+**Instrumentos que sobrevivem por tradição**
+
+O mesmo problema aparece dentro da profissão, e ignorá-lo seria incoerente com o Cap. 3.
+
+**Técnicas projetivas.** O Rorschach e instrumentos afins são amplamente usados. Lilienfeld, Wood e Garb revisaram a evidência: a maioria dos escores carece de apoio empírico adequado para as inferências clínicas que se costuma fazer, ainda que um subconjunto pequeno tenha alguma validade para alvos específicos [@lilienfeld2000]. O risco é claro — quanto mais ambíguo o estímulo, mais o resultado reflete o intérprete. É a estrutura do efeito Forer (Cap. 1) com aparato técnico. No Brasil, é justamente para isso que serve o SATEPSI (Cap. 4): um instrumento só pode ser usado profissionalmente se apresentar evidências de validade e precisão.
+
+**MBTI.** O indicador de tipos de Myers-Briggs é provavelmente o teste de personalidade mais vendido do mundo corporativo. Também é o exemplo didático de problemas psicométricos: classifica em tipos dicotômicos traços que são **contínuos** — cortar uma distribuição contínua ao meio cria dois "tipos" que não existem —, e a estabilidade da classificação ao longo do tempo é baixa: parcela substancial das pessoas muda de tipo ao refazer o teste semanas depois [@pittenger1993]. Um instrumento que dá resultado diferente para a mesma pessoa não está medindo um tipo.
+
+**Polígrafo.** O "detector de mentiras" mede excitação fisiológica — não mentira. O National Research Council revisou toda a evidência e concluiu que o desempenho é melhor que o acaso, mas insuficiente para decisões individuais, com taxas de erro inaceitáveis em rastreamento de segurança [@nas2003]. Uma pessoa honesta e assustada e uma mentirosa calma produzem o mesmo traçado. No Brasil, o polígrafo não tem valor pericial reconhecido.
+
+O padrão comum: os três **parecem** funcionar. Produzem relatórios detalhados, geram conversas ricas, e quem os usa tem impressão vívida de acerto. Nenhum desses sinais é evidência — e é o Cap. 3 que explica por quê.
+:::
+
+## Por que os mitos não morrem
+
+Se todos esses foram refutados, alguns há décadas, por que seguem vivos?
+
+A resposta mais robusta é desconfortável: **a repetição produz sensação de verdade**. Uma afirmação ouvida muitas vezes é processada com mais fluência, e a mente interpreta essa facilidade como sinal de que é verdadeira. Familiaridade vira credibilidade — e o mecanismo opera independentemente do conteúdo, inclusive em quem sabe que a afirmação é falsa. É a seta de retorno da @fig-anatomia-mito.
+
+Há um agravante cruel para quem tenta corrigir: repetir o mito para negá-lo aumenta sua familiaridade. Lewandowsky e colegas revisaram a literatura sobre correção de desinformação e documentaram o **efeito de influência continuada** — informação falsa segue influenciando o raciocínio mesmo depois de a pessoa aceitar a correção [@lewandowsky2012]. A recomendação prática que emerge: **liderar com o fato, não com o mito**, e oferecer uma explicação alternativa que preencha o buraco causal deixado pela correção. Não basta dizer "é falso"; é preciso dizer o que é verdade no lugar.
+
+::: {.atencao}
+**Um mito sobre mitos: o efeito de tiro pela culatra.**
+
+Por anos circulou — inclusive em textos de divulgação científica — a ideia de que corrigir uma crença falsa a **fortalece**: o chamado *backfire effect*. A conclusão prática era desanimadora e virou senso comum entre comunicadores: não adianta corrigir, você só piora.
+
+Wood e Porter tentaram replicar o efeito em larga escala, com mais de 10.000 participantes e dezenas de temas politicamente sensíveis. Não o encontraram. Ao contrário: em geral, as pessoas **atualizavam** suas crenças na direção da evidência, ainda que de forma incompleta e resistente em temas identitários. O efeito de tiro pela culatra é, na melhor das hipóteses, raro e específico — não a regra [@wood_porter2019].
+
+A ironia fecha o volume com precisão. Um achado que dizia "as pessoas não mudam de ideia diante de fatos" era, ele próprio, um resultado frágil que se espalhou por ser marcante e contraintuitivo — a receita da @fig-anatomia-mito, aplicada à própria psicologia. E a correção é boa notícia: **corrigir funciona**, ainda que devagar. Este capítulo não seria escrito se não funcionasse.
+:::
+
+## A checagem, em cinco perguntas
+
+Este volume termina com uma ferramenta, não com uma lista. Diante de qualquer afirmação nova sobre a mente — inclusive as que este manual fizer:
+
+1. **Qual é a afirmação exata?** Separe o grão de verdade da ampliação. "Existe lateralização" e "existem pessoas de cérebro direito" não são a mesma frase.
+2. **O que a refutaria?** (Cap. 1.) Se nenhum resultado possível a derruba, não é uma afirmação empírica.
+3. **Comparado com o quê?** (Cap. 3.) Sem grupo de comparação, "as pessoas melhoram" não significa nada — regressão à média e remissão espontânea produzem o mesmo dado.
+4. **Quem mediu, como, e quem ganha com o resultado?** Estudo único ou meta-análise? Amostra de 36 universitários ou de milhares? O efeito é maior nos laboratórios de quem propôs a teoria?
+5. **A popularidade está fazendo o trabalho da evidência?** Se o principal argumento é que todo mundo sabe disso, você está diante da seta de retorno.
+
+Nenhuma dessas perguntas exige diploma. Todas exigem o hábito que os quatro capítulos anteriores tentaram construir.
+
+O Vol 2 volta ao começo — de onde vieram essas ideias, boas e ruins, e por que a psicologia demorou tanto para se tornar uma ciência. Várias das teorias que encontraremos lá estão erradas. Todas foram sustentadas por pessoas inteligentes, com boas razões, no seu tempo. Essa é a diferença entre uma teoria superada e um mito: a primeira foi testada e perdeu; o segundo nunca entrou em campo.
+
+::: {.callout-sintese}
+- **Mitos psicológicos têm anatomia comum**: grão de verdade → simplificação → apelo → interesse comercial → repetição. O que os sustenta é a familiaridade, não a evidência — por isso refutar o grão inicial não os mata.
+- **Estilos de aprendizagem**: preferências existem; o *meshing* não. O desenho cruzado necessário raramente foi feito, e quando foi, a interação prevista não apareceu. O método eficaz depende do material, não do aluno.
+- **Cérebro esquerdo × direito**: há redes lateralizadas, não pessoas lateralizadas. O mito troca uma afirmação sobre funções por uma sobre pessoas.
+- **Efeito Mozart**: efeito pequeno, de 10–15 minutos, em tarefa espacial, com universitários — virou "bebês mais inteligentes". Meta-análise: próximo de nulo, com efeitos maiores em laboratórios afiliados.
+- **Subliminar**: o estudo fundador de Vicary foi **fabricado**. *Priming* subliminar existe, é pequeno e efêmero; controle de comportamento não.
+- **Lua cheia**: meta-analisada, sem relação. A crença sobrevive por viés de confirmação — "eu vejo isso há vinte anos" não é evidência.
+- **Catarse**: descontar a raiva **aumenta** a agressividade; quem não fez nada ficou menos agressivo. A metáfora hidráulica não é mecanismo.
+- **Instrumentos frágeis existem dentro da profissão**: projetivos, MBTI (tipos dicotômicos para traços contínuos, baixa estabilidade) e polígrafo (mede excitação, não mentira).
+- **O efeito de tiro pela culatra é ele próprio um quase-mito**: em amostras grandes, as pessoas atualizam crenças diante de fatos. Corrigir funciona.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Grão de verdade**
+:   Achado real, porém limitado, que serve de âncora a um mito e o torna resistente à refutação.
+
+**Hipótese do *meshing***
+:   Afirmação de que a aprendizagem melhora quando o método de ensino corresponde ao estilo preferido do aluno; exige desenho cruzado para ser testada, e falha [@pashler2008].
+
+**Lateralização**
+:   Especialização relativa dos hemisférios cerebrais para certas funções — real, mas referente a funções, não a tipos de pessoa [@nielsen2013].
+
+**Efeito Mozart**
+:   Melhora pequena e transitória em tarefas espaciais após ouvir música, mais bem explicada por excitação e humor; próximo de nulo em meta-análise [@pietschnig2010].
+
+**Priming subliminar**
+:   Influência de estímulos apresentados abaixo do limiar de consciência sobre julgamentos imediatos; efeito pequeno e efêmero, distinto do controle de comportamento.
+
+**Viés de confirmação**
+:   Tendência a notar, buscar e lembrar evidências que confirmam a crença prévia, ignorando as que a contrariam — motor da crença na lua cheia.
+
+**Catarse**
+:   Ideia de que expressar a raiva a alivia; empiricamente, descontar aumenta a agressividade subsequente [@bushman2002].
+
+**Técnicas projetivas**
+:   Instrumentos baseados em estímulos ambíguos; a maioria dos escores carece de apoio empírico para as inferências clínicas usuais [@lilienfeld2000].
+
+**Efeito de influência continuada**
+:   Persistência do efeito de uma informação falsa sobre o raciocínio mesmo após a pessoa aceitar a correção [@lewandowsky2012].
+
+**Efeito de tiro pela culatra** (*backfire effect*)
+:   Suposto fortalecimento de uma crença falsa após correção; não replicado em amostras grandes [@wood_porter2019].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva a anatomia de um mito psicológico em suas cinco etapas e explique por que refutar o grão de verdade não costuma matá-lo.
+
+2. **(Recuperação.)** Qual é exatamente a hipótese do *meshing*, e que desenho experimental é necessário para testá-la? Por que mostrar que "alunos visuais preferem figuras" não serve como teste?
+
+3. **(Aplicação.)** Uma escola anuncia: "Aplicamos teste de estilos de aprendizagem e adaptamos o ensino ao perfil de cada aluno. 92% dos pais relatam melhora." Aponte (a) qual das duas afirmações sobre estilos está sendo assumida sem apoio; (b) que comparação está faltando; (c) dois fenômenos dos Caps. 1 e 3 que produziriam esses 92% mesmo se a adaptação fosse inerte.
+
+4. **(Reflexão crítica.)** Um enfermeiro com 20 anos de plantão afirma que a lua cheia agita o pronto-socorro, e diz que meta-análises não capturam o que ele viu. Responda ao argumento: por que a experiência direta e prolongada, no caso específico, é justamente o tipo de evidência menos confiável? O que teria de acontecer para que ele estivesse certo e os dados errados?
+
+5. **(Reflexão crítica.)** O efeito de tiro pela culatra foi amplamente divulgado e depois não replicou. Explique por que esse caso é, ao mesmo tempo, (a) um exemplo da anatomia de um mito, (b) uma vitória do método científico, e (c) uma razão para *não* concluir que "não dá para confiar em psicologia".
+
+6. **(Integração.)** Escolha um mito não discutido neste capítulo (por exemplo: "o álcool mata neurônios de forma irreversível a cada dose", "opostos se atraem", "crianças de hoje têm menos atenção por causa das telas"). Aplique a checagem de cinco perguntas e diga, honestamente, em quais delas você **não sabe** a resposta e que tipo de estudo precisaria buscar. (Sobre "opostos se atraem": a meta-análise de @montoya2008 é um bom ponto de partida — e o Cap. 73 trata do tema.)
