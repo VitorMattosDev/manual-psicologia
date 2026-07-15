@@ -1,0 +1,5 @@
+# 19. Estatística inferencial (fundamentos)
+
+::: {.em-construcao}
+🚧 Em construção.
+:::

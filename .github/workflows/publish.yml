@@ -1,0 +1,46 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      # O grafo mermaid do index.qmd trava o render do PDF em runner Ubuntu sem
+      # navegador. Precisa ser chrome-headless-shell — NÃO chromium. (CLAUDE.md §8.1)
+      - name: Install chrome-headless-shell
+        run: quarto install chrome-headless-shell
+
+      # tlmgr costuma não estar no PATH após o setup; localiza e usa o caminho completo.
+      # (CLAUDE.md §8.3)
+      - name: Install LaTeX packages for TikZ
+        run: |
+          TLMGR="$(command -v tlmgr || find "$HOME" /opt /usr/local -name tlmgr -type f 2>/dev/null | head -n 1)"
+          if [ -z "$TLMGR" ]; then
+            echo "::error::tlmgr não encontrado"
+            exit 1
+          fi
+          echo "tlmgr: $TLMGR"
+          "$TLMGR" install standalone pgf pgfplots dvisvgm xcolor amsmath amsfonts
+
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,28 @@
+/.quarto/
+**/*.quarto_ipynb
+
+# Saída do Quarto
+/_book/
+*_files/
+
+# Cache de figuras TikZ (regenerado no build)
+.tikz-cache/
+tikz-cache/
+
+# Artefatos LaTeX intermediários
+*.aux
+*.log
+*.dvi
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Kit de figuras (já descompactado em _extensions/)
+tikz.zip
+figuras-tikz-kit.zip
+
+# Sistema operacional / editor
+Thumbs.db
+.DS_Store
+.vscode/

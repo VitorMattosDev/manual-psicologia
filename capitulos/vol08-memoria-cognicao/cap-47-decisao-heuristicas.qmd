@@ -1,0 +1,5 @@
+# 47. Tomada de decisão e heurísticas (vieses cognitivos)
+
+::: {.em-construcao}
+🚧 Em construção.
+:::

@@ -1,0 +1,166 @@
+project:
+  type: book
+  output-dir: _book
+
+lang: pt
+
+book:
+  title: "Manual de Psicologia"
+  subtitle: "Da introdução científica às fronteiras da disciplina"
+  author: "Série Manuais de Ciências"
+  date: today
+  date-format: "YYYY"
+  language: pt
+  search: true
+  repo-url: https://github.com/VitorMattosDev/manual-psicologia
+  repo-branch: main
+  repo-actions: [edit, issue]
+  page-footer:
+    left: "Manual de Psicologia — série Manuais de Ciências"
+    right: "Feito com [Quarto](https://quarto.org)"
+  chapters:
+    - index.qmd
+    - part: "Fase 1 — Fundamentos, História e Métodos"
+      chapters:
+        - capitulos/vol01-o-que-e-psicologia/cap-01-introducao.qmd
+        - capitulos/vol01-o-que-e-psicologia/cap-02-grandes-questoes.qmd
+        - capitulos/vol01-o-que-e-psicologia/cap-03-psicologia-como-ciencia.qmd
+        - capitulos/vol01-o-que-e-psicologia/cap-04-areas-atuacao.qmd
+        - capitulos/vol01-o-que-e-psicologia/cap-05-mitos.qmd
+        - capitulos/vol02-historia-sistemas/cap-06-raizes-filosoficas.qmd
+        - capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.qmd
+        - capitulos/vol02-historia-sistemas/cap-08-behaviorismo.qmd
+        - capitulos/vol02-historia-sistemas/cap-09-gestalt.qmd
+        - capitulos/vol02-historia-sistemas/cap-10-psicanalise.qmd
+        - capitulos/vol02-historia-sistemas/cap-11-humanismo.qmd
+        - capitulos/vol02-historia-sistemas/cap-12-revolucao-cognitiva.qmd
+        - capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.qmd
+        - capitulos/vol03-metodos-estatistica/cap-14-metodo-experimental.qmd
+        - capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.qmd
+        - capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.qmd
+        - capitulos/vol03-metodos-estatistica/cap-17-amostragem.qmd
+        - capitulos/vol03-metodos-estatistica/cap-18-estatistica-descritiva.qmd
+        - capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.qmd
+        - capitulos/vol03-metodos-estatistica/cap-20-etica-pesquisa.qmd
+        - capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.qmd
+    - part: "Fase 2 — Processos Psicológicos Básicos"
+      chapters:
+        - capitulos/vol04-bases-biologicas/cap-22-neuronio.qmd
+        - capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.qmd
+        - capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd
+        - capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.qmd
+        - capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.qmd
+        - capitulos/vol04-bases-biologicas/cap-27-neuroimagem.qmd
+        - capitulos/vol04-bases-biologicas/cap-28-plasticidade.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-29-principios-sensacao.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-31-audicao.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd
+        - capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.qmd
+        - capitulos/vol06-consciencia/cap-35-natureza-consciencia.qmd
+        - capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd
+        - capitulos/vol06-consciencia/cap-37-sonhos.qmd
+        - capitulos/vol06-consciencia/cap-38-estados-alterados.qmd
+        - capitulos/vol07-aprendizagem/cap-39-condicionamento-classico.qmd
+        - capitulos/vol07-aprendizagem/cap-40-condicionamento-operante.qmd
+        - capitulos/vol07-aprendizagem/cap-41-aprendizagem-observacional.qmd
+        - capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd
+        - capitulos/vol08-memoria-cognicao/cap-43-modelos-memoria.qmd
+        - capitulos/vol08-memoria-cognicao/cap-44-codificacao-recuperacao.qmd
+        - capitulos/vol08-memoria-cognicao/cap-45-esquecimento-memoria-falsa.qmd
+        - capitulos/vol08-memoria-cognicao/cap-46-pensamento-problemas.qmd
+        - capitulos/vol08-memoria-cognicao/cap-47-decisao-heuristicas.qmd
+        - capitulos/vol08-memoria-cognicao/cap-48-linguagem.qmd
+        - capitulos/vol08-memoria-cognicao/cap-49-inteligencia-teorias.qmd
+        - capitulos/vol08-memoria-cognicao/cap-50-inteligencia-avaliacao.qmd
+        - capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd
+        - capitulos/vol09-motivacao-emocao/cap-52-motivacoes-basicas.qmd
+        - capitulos/vol09-motivacao-emocao/cap-53-motivacoes-sociais.qmd
+        - capitulos/vol09-motivacao-emocao/cap-54-teorias-emocao.qmd
+        - capitulos/vol09-motivacao-emocao/cap-55-expressao-regulacao.qmd
+        - capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd
+    - part: "Fase 3 — Diferenças, Sociedade e Aplicações"
+      chapters:
+        - capitulos/vol10-desenvolvimento/cap-57-conceitos-desenvolvimento.qmd
+        - capitulos/vol10-desenvolvimento/cap-58-pre-natal-infancia.qmd
+        - capitulos/vol10-desenvolvimento/cap-59-desenvolvimento-cognitivo.qmd
+        - capitulos/vol10-desenvolvimento/cap-60-desenvolvimento-social-emocional.qmd
+        - capitulos/vol10-desenvolvimento/cap-61-desenvolvimento-moral.qmd
+        - capitulos/vol10-desenvolvimento/cap-62-adolescencia.qmd
+        - capitulos/vol10-desenvolvimento/cap-63-adultez-envelhecimento.qmd
+        - capitulos/vol11-personalidade/cap-64-conceito-personalidade.qmd
+        - capitulos/vol11-personalidade/cap-65-psicodinamicas.qmd
+        - capitulos/vol11-personalidade/cap-66-humanistas.qmd
+        - capitulos/vol11-personalidade/cap-67-tracos-big-five.qmd
+        - capitulos/vol11-personalidade/cap-68-sociocognitivas.qmd
+        - capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.qmd
+        - capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd
+        - capitulos/vol12-psicologia-social/cap-71-atitudes-persuasao.qmd
+        - capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd
+        - capitulos/vol12-psicologia-social/cap-73-relacoes-atracao.qmd
+        - capitulos/vol12-psicologia-social/cap-74-pro-social-agressao.qmd
+        - capitulos/vol12-psicologia-social/cap-75-grupos-preconceito.qmd
+        - capitulos/vol13-psicopatologia/cap-76-normalidade-anormalidade.qmd
+        - capitulos/vol13-psicopatologia/cap-77-classificacao-dsm-cid.qmd
+        - capitulos/vol13-psicopatologia/cap-78-transtornos-ansiedade.qmd
+        - capitulos/vol13-psicopatologia/cap-79-transtornos-humor.qmd
+        - capitulos/vol13-psicopatologia/cap-80-trauma-estresse.qmd
+        - capitulos/vol13-psicopatologia/cap-81-toc-relacionados.qmd
+        - capitulos/vol13-psicopatologia/cap-82-esquizofrenia-psicoticos.qmd
+        - capitulos/vol13-psicopatologia/cap-83-transtornos-personalidade.qmd
+        - capitulos/vol13-psicopatologia/cap-84-transtornos-alimentares.qmd
+        - capitulos/vol13-psicopatologia/cap-85-neurodesenvolvimento.qmd
+        - capitulos/vol13-psicopatologia/cap-86-uso-substancias.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-87-fundamentos-intervencao.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-88-terapias-psicodinamicas.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-89-terapias-humanistas.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-90-terapia-comportamental.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-91-tcc.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-92-terapias-contextuais.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-93-terapias-sistemicas.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-94-psicofarmacos.qmd
+        - capitulos/vol14-tratamentos-terapias/cap-95-pratica-baseada-evidencias.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-96-psicologia-saude.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-97-organizacional-trabalho.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-98-escolar-educacional.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-99-neuropsicologia.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-100-psicologia-positiva.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-101-juridica-forense.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-102-esporte.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-104-psicologia-no-brasil.qmd
+        - capitulos/vol15-aplicada-fronteiras/cap-105-topicos-contemporaneos.qmd
+    - referencias.qmd
+
+bibliography: referencias.bib
+csl: abnt.csl
+
+filters:
+  - danmackinlay/tikz
+  - quarto
+
+tikz:
+  svg-engine: dvisvgm
+  cache: true
+
+format:
+  html:
+    theme: [cosmo, styles.css]
+    toc: true
+    toc-depth: 3
+    toc-title: "Nesta página"
+    number-sections: false
+    code-copy: true
+    fig-align: center
+    link-external-newwindow: true
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    number-sections: false
+    colorlinks: true
+    fig-align: center
+    include-in-header:
+      text: |
+        \usepackage{tikz}
+        \usetikzlibrary{calc,angles,quotes,arrows.meta,positioning,intersections,decorations.pathreplacing,decorations.markings,patterns,through,backgrounds}

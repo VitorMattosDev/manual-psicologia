@@ -1,0 +1,170 @@
+# Apresentação {.unnumbered}
+
+**Manual de Psicologia** é um livro-texto aberto, em português do Brasil, da série
+*Manuais de Ciências*. Ele percorre a psicologia **do básico ao avançado** e cobre a
+disciplina **como um todo** — dos fundamentos históricos e metodológicos aos processos
+psicológicos básicos, e destes às grandes áreas aplicadas.
+
+O manual foi escrito para um leitor que pode estar começando agora: nenhum capítulo
+pressupõe formação prévia em psicologia. Mas ele não para no elementar. Cada tema é
+levado até onde a evidência atual permite, incluindo as controvérsias que ainda não
+foram resolvidas — porque fingir que elas não existem seria uma má introdução à ciência.
+
+## A proposta
+
+A psicologia é uma **ciência empírica**. Essa frase parece banal, mas organiza tudo o
+que vem a seguir. Significa que as afirmações deste manual não valem por serem
+intuitivas, antigas ou repetidas com convicção: valem na medida em que sobrevivem a
+testes que poderiam tê-las derrubado.
+
+Três compromissos decorrem disso e atravessam todos os capítulos:
+
+**Distinguir senso comum de ciência.** Todo mundo já tem uma psicologia informal — uma
+coleção de intuições sobre por que as pessoas fazem o que fazem. Parte considerável
+dessas intuições está errada, e o manual mostra *como sabemos* que está.
+
+**Ancorar em evidência.** Afirmações empíricas relevantes vêm acompanhadas de sua fonte.
+Onde a evidência é forte, dizemos isso. Onde é frágil, contestada ou não replicou,
+dizemos isso também.
+
+**Apresentar teorias concorrentes com equilíbrio.** Em vários pontos da psicologia há
+mais de uma explicação viva para o mesmo fenômeno. O manual expõe as alternativas pelos
+seus melhores argumentos, em vez de eleger uma vencedora antecipada.
+
+A cada tema, o percurso é: **conceito → experimento → aplicação**. A teoria explica o
+fenômeno, o experimento mostra por que acreditamos nela, e a aplicação mostra o que
+muda no mundo por causa disso.
+
+::: {.atencao}
+Este manual é **educacional**. Ele não oferece diagnóstico, avaliação ou orientação
+clínica, e nada aqui substitui a consulta a um profissional qualificado. Os casos
+clínicos apresentados são ilustrativos — fictícios ou historicamente documentados — e
+servem para tornar conceitos concretos, não para que o leitor os aplique a si mesmo ou
+a terceiros.
+:::
+
+## Como o manual está organizado
+
+A obra tem **15 volumes**, agrupados em **3 fases**, com cerca de 105 capítulos.
+
+**Fase 1 — Fundamentos, História e Métodos.** O que a psicologia é, de onde veio e como
+ela produz conhecimento. É a fase que ensina a *ler* o resto do manual criticamente.
+
+**Fase 2 — Processos Psicológicos Básicos.** Os mecanismos gerais que operam em qualquer
+mente humana: bases biológicas, sensação e percepção, consciência, aprendizagem,
+memória e cognição, motivação e emoção.
+
+**Fase 3 — Diferenças, Sociedade e Aplicações.** Como as pessoas diferem entre si e ao
+longo da vida, como se comportam em grupo, o que acontece quando os processos se tornam
+sofrimento, e o que a psicologia faz no mundo.
+
+## Grafo de pré-requisitos
+
+O manual foi projetado para leitura linear, mas não exige. O diagrama abaixo mostra as
+dependências reais entre volumes: uma seta significa que o volume de destino fica
+consideravelmente mais claro depois do de origem.
+
+```{mermaid}
+%%| label: fig-prerequisitos
+%%| fig-cap: "Dependências entre os volumes do manual."
+flowchart TD
+  subgraph F1 ["FASE 1 — Fundamentos, História e Métodos"]
+    V1["Vol 1<br/>O que é Psicologia"]
+    V2["Vol 2<br/>História e Sistemas"]
+    V3["Vol 3<br/>Métodos e Estatística"]
+  end
+
+  subgraph F2 ["FASE 2 — Processos Psicológicos Básicos"]
+    V4["Vol 4<br/>Bases Biológicas"]
+    V5["Vol 5<br/>Sensação e Percepção"]
+    V6["Vol 6<br/>Consciência"]
+    V7["Vol 7<br/>Aprendizagem"]
+    V8["Vol 8<br/>Memória e Cognição"]
+    V9["Vol 9<br/>Motivação e Emoção"]
+  end
+
+  subgraph F3 ["FASE 3 — Diferenças, Sociedade e Aplicações"]
+    V10["Vol 10<br/>Desenvolvimento"]
+    V11["Vol 11<br/>Personalidade"]
+    V12["Vol 12<br/>Psicologia Social"]
+    V13["Vol 13<br/>Psicopatologia"]
+    V14["Vol 14<br/>Tratamentos e Terapias"]
+    V15["Vol 15<br/>Aplicada e Fronteiras"]
+  end
+
+  V1 --> V2
+  V1 --> V3
+  V2 --> V4
+  V3 --> V4
+  V3 --> V13
+  V4 --> V5
+  V4 --> V6
+  V4 --> V9
+  V5 --> V6
+  V5 --> V8
+  V7 --> V8
+  V4 --> V7
+  V8 --> V10
+  V8 --> V12
+  V9 --> V12
+  V9 --> V13
+  V10 --> V11
+  V11 --> V13
+  V12 --> V13
+  V13 --> V14
+  V14 --> V15
+  V10 --> V15
+  V12 --> V15
+
+  classDef fase1 fill:#eaf1f8,stroke:#2c5f8d,stroke-width:1px,color:#1a3a56;
+  classDef fase2 fill:#ecf5f0,stroke:#3d7a5d,stroke-width:1px,color:#224635;
+  classDef fase3 fill:#f2eef8,stroke:#6b4e8f,stroke-width:1px,color:#3d2c52;
+
+  class V1,V2,V3 fase1;
+  class V4,V5,V6,V7,V8,V9 fase2;
+  class V10,V11,V12,V13,V14,V15 fase3;
+```
+
+Duas leituras do grafo merecem destaque. O **Vol 3 (Métodos)** alimenta tanto as bases
+biológicas quanto a psicopatologia: sem entender o que é um bom estudo, não há como
+avaliar uma alegação sobre o cérebro nem sobre a eficácia de um tratamento. E o
+**Vol 4 (Bases Biológicas)** é o gargalo da Fase 2 — quase todo processo psicológico
+básico tem um substrato neural que o capítulo torna inteligível.
+
+## Convenções do texto
+
+Ao longo dos capítulos, cinco tipos de caixa recorrem:
+
+::: {.experimento}
+Descreve um estudo marcante: o desenho, o resultado, a interpretação e — sempre — as
+limitações. É aqui que a evidência aparece em sua forma bruta.
+:::
+
+::: {.estudo-caso}
+Traz uma vinheta clínica ou aplicada, fictícia ou historicamente documentada, para
+aterrar um conceito abstrato em uma situação concreta.
+:::
+
+::: {.base-neural}
+Faz a ponte entre o fenômeno psicológico e seu substrato biológico.
+:::
+
+::: {.na-pratica}
+Mostra a aplicação concreta do conceito no dia a dia, na clínica, no trabalho ou na
+educação.
+:::
+
+::: {.atencao}
+Sinaliza um erro comum, um mito desmontado ou uma distinção conceitual fina que costuma
+passar despercebida.
+:::
+
+Cada capítulo abre com **objetivos de aprendizagem** e fecha com **síntese**,
+**glossário** e **questões** — parte de recuperação factual, parte de reflexão crítica.
+
+## Sobre a obra
+
+O manual é open-source e foi produzido de forma autônoma com Claude Code, sob a série
+*Manuais de Ciências*. Correções, críticas e sugestões são bem-vindas no repositório.
+Como toda ciência viva, este texto é uma versão provisória — e melhora quando alguém
+aponta onde ele está errado.

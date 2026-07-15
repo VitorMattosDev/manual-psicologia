@@ -1,0 +1,209 @@
+/*-- scss:rules --*/
+
+/* =========================================================================
+   Manual de Psicologia — camada de regras SCSS
+   A primeira linha DEVE ser o marcador de camada (ver CLAUDE.md §8.4).
+   ========================================================================= */
+
+/* ---- Paleta ---- */
+:root {
+  --mp-azul: #2c5f8d;
+  --mp-azul-claro: #eaf1f8;
+  --mp-vermelho: #a63d40;
+  --mp-vermelho-claro: #faeeee;
+  --mp-verde: #3d7a5d;
+  --mp-verde-claro: #ecf5f0;
+  --mp-amarelo: #b8860b;
+  --mp-amarelo-claro: #fbf4e4;
+  --mp-roxo: #6b4e8f;
+  --mp-roxo-claro: #f2eef8;
+  --mp-cinza: #5a6570;
+  --mp-cinza-claro: #f2f4f6;
+}
+
+/* ---- Corpo do texto ---- */
+body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  color: var(--mp-azul);
+  font-weight: 600;
+}
+
+h2 {
+  border-bottom: 2px solid var(--mp-azul-claro);
+  padding-bottom: 0.3rem;
+  margin-top: 2.2rem;
+}
+
+/* =========================================================================
+   Caixas didáticas customizadas
+   ========================================================================= */
+
+.experimento,
+.estudo-caso,
+.base-neural,
+.na-pratica,
+.atencao {
+  border-radius: 6px;
+  padding: 1rem 1.2rem 0.8rem 1.2rem;
+  margin: 1.6rem 0;
+  border-left: 5px solid var(--mp-cinza);
+  background-color: var(--mp-cinza-claro);
+}
+
+.experimento > :last-child,
+.estudo-caso > :last-child,
+.base-neural > :last-child,
+.na-pratica > :last-child,
+.atencao > :last-child {
+  margin-bottom: 0;
+}
+
+/* Rótulo gerado automaticamente antes do conteúdo de cada caixa */
+.experimento::before,
+.estudo-caso::before,
+.base-neural::before,
+.na-pratica::before,
+.atencao::before {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* 🔬 Experimento Clássico */
+.experimento {
+  border-left-color: var(--mp-azul);
+  background-color: var(--mp-azul-claro);
+}
+.experimento::before {
+  content: "🔬 Experimento Clássico";
+  color: var(--mp-azul);
+}
+
+/* 📋 Estudo de Caso */
+.estudo-caso {
+  border-left-color: var(--mp-roxo);
+  background-color: var(--mp-roxo-claro);
+}
+.estudo-caso::before {
+  content: "📋 Estudo de Caso";
+  color: var(--mp-roxo);
+}
+
+/* 🧠 Base Neural */
+.base-neural {
+  border-left-color: var(--mp-vermelho);
+  background-color: var(--mp-vermelho-claro);
+}
+.base-neural::before {
+  content: "🧠 Base Neural";
+  color: var(--mp-vermelho);
+}
+
+/* 💡 Na Prática */
+.na-pratica {
+  border-left-color: var(--mp-verde);
+  background-color: var(--mp-verde-claro);
+}
+.na-pratica::before {
+  content: "💡 Na Prática";
+  color: var(--mp-verde);
+}
+
+/* ⚠️ Atenção */
+.atencao {
+  border-left-color: var(--mp-amarelo);
+  background-color: var(--mp-amarelo-claro);
+}
+.atencao::before {
+  content: "⚠️ Atenção";
+  color: var(--mp-amarelo);
+}
+
+/* =========================================================================
+   Callouts de abertura e fechamento de capítulo
+   ========================================================================= */
+
+.callout-objetivos,
+.callout-sintese {
+  border-radius: 6px;
+  padding: 1rem 1.2rem 0.8rem 1.2rem;
+  margin: 1.8rem 0;
+  border: 1px solid var(--mp-azul);
+  border-left: 5px solid var(--mp-azul);
+  background-color: var(--mp-azul-claro);
+}
+
+.callout-objetivos::before {
+  content: "🎯 Objetivos de aprendizagem";
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mp-azul);
+  margin-bottom: 0.5rem;
+}
+
+.callout-sintese {
+  border-color: var(--mp-verde);
+  border-left-color: var(--mp-verde);
+  background-color: var(--mp-verde-claro);
+}
+
+.callout-sintese::before {
+  content: "📌 Síntese do capítulo";
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mp-verde);
+  margin-bottom: 0.5rem;
+}
+
+.callout-objetivos > :last-child,
+.callout-sintese > :last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================================
+   Glossário e figuras
+   ========================================================================= */
+
+.glossario dt {
+  color: var(--mp-azul);
+  font-weight: 600;
+}
+
+.glossario dd {
+  margin-bottom: 0.6rem;
+}
+
+figure {
+  margin: 2rem auto;
+}
+
+figure svg {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.92rem;
+  color: var(--mp-cinza);
+  text-align: center;
+}
+
+/* Stub de capítulo em construção */
+.em-construcao {
+  color: var(--mp-cinza);
+  font-style: italic;
+}
