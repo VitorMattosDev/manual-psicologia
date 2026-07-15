@@ -27,16 +27,43 @@ jobs:
         run: quarto install chrome-headless-shell
 
       # tlmgr costuma não estar no PATH após o setup; localiza e usa o caminho completo.
-      # (CLAUDE.md §8.3)
-      - name: Install LaTeX packages for TikZ
+      # Atenção: os binários em TinyTeX/bin/<plataforma>/ são SYMLINKS, então um
+      # `find -type f` não os encontra — é preciso aceitar -type l. (CLAUDE.md §8.3)
+      - name: Locate TinyTeX and install LaTeX packages
         run: |
-          TLMGR="$(command -v tlmgr || find "$HOME" /opt /usr/local -name tlmgr -type f 2>/dev/null | head -n 1)"
+          TLMGR="$(command -v tlmgr || true)"
+          if [ -z "$TLMGR" ]; then
+            for c in "$HOME"/bin/tlmgr "$HOME"/.TinyTeX/bin/*/tlmgr \
+                     "$HOME"/.local/share/TinyTeX/bin/*/tlmgr /opt/TinyTeX/bin/*/tlmgr; do
+              if [ -x "$c" ]; then TLMGR="$c"; break; fi
+            done
+          fi
+          if [ -z "$TLMGR" ]; then
+            TLMGR="$(find "$HOME" /opt /usr/local -name tlmgr \( -type f -o -type l \) 2>/dev/null | head -n 1)"
+          fi
           if [ -z "$TLMGR" ]; then
             echo "::error::tlmgr não encontrado"
+            echo "--- diagnóstico ---"
+            ls -la "$HOME/bin" 2>/dev/null || echo "(sem ~/bin)"
+            ls -d "$HOME"/.TinyTeX/bin/* 2>/dev/null || echo "(sem ~/.TinyTeX)"
             exit 1
           fi
-          echo "tlmgr: $TLMGR"
+          echo "tlmgr encontrado: $TLMGR"
+          # O passo de render precisa de latex/dvisvgm no PATH, senão as figuras
+          # TikZ falham com "imgdata nil" — o sintoma classico do §8.3.
+          dirname "$TLMGR" >> "$GITHUB_PATH"
           "$TLMGR" install standalone pgf pgfplots dvisvgm xcolor amsmath amsfonts
+
+      # Falha cedo e com mensagem legivel se o PATH nao pegou (§8.3).
+      - name: Verify LaTeX toolchain on PATH
+        run: |
+          for b in latex dvisvgm; do
+            if ! command -v "$b" >/dev/null; then
+              echo "::error::$b nao esta no PATH — as figuras TikZ falhariam no render"
+              exit 1
+            fi
+            echo "$b: $(command -v "$b")"
+          done
 
       - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
