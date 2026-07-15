@@ -1,5 +1,352 @@
 # 02. As grandes questões (natureza × cultura, mente–corpo, consciência, livre-arbítrio)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que "natureza × cultura" é uma falsa dicotomia e substituí-la pela pergunta correta sobre interação.
+- **Definir** herdabilidade com precisão e identificar os três erros mais comuns em sua interpretação.
+- **Distinguir** dualismo de monismo e explicar por que a psicologia contemporânea opera sob pressupostos monistas sem que isso resolva o problema.
+- **Diferenciar** os problemas "fáceis" da consciência do **problema difícil**, e avaliar o que as teorias atuais de fato explicam.
+- **Descrever** o experimento de Libet, sua interpretação original e a releitura de Schurger, articulando o que ele realmente demonstra.
+- **Posicionar-se** de forma informada sobre compatibilismo, reconhecendo onde a evidência empírica ajuda e onde a questão permanece conceitual.
 :::
+
+O Cap. 1 defendeu que a psicologia se distingue do senso comum pelo método. Mas método serve para responder perguntas, e algumas perguntas são grandes o bastante para atravessar a disciplina inteira sem se deixar responder de vez. Este capítulo trata de quatro delas.
+
+São questões peculiares porque nenhuma é *puramente* empírica. Cada uma tem um núcleo conceitual — filosófico — que nenhum experimento resolve sozinho, e uma periferia empírica onde os dados mordem de verdade. A tentação é dupla e simétrica: tratar tudo como filosofia (e concluir que a ciência nada tem a dizer) ou tratar tudo como empiria (e imaginar que mais um experimento encerra o assunto). As duas tentações erram.
+
+O que este capítulo oferece não é uma resposta a cada questão, e sim algo mais útil: a capacidade de saber, em cada uma delas, **onde a evidência decide e onde ela não decide**. Essa fronteira é a parte que os capítulos seguintes vão pressupor.
+
+## Natureza × cultura
+
+### A pergunta errada
+
+Comecemos pelo veredito, porque ele economiza tempo: **a dicotomia natureza × cultura está morta**, e o que a matou não foi um argumento filosófico, foi a evidência.
+
+A pergunta "é genético ou aprendido?" pressupõe que as duas fontes sejam causas separadas e somáveis, como se cada característica humana tivesse uma fração vinda dos genes e outra do ambiente, disputando um total fixo. Nenhum organismo funciona assim. Um gene não faz nada fora de um ambiente; um ambiente não faz nada exceto sobre um organismo estruturado geneticamente. Perguntar qual dos dois causou um traço é como perguntar se a área de um retângulo se deve à largura ou à altura.
+
+A analogia é de Donald Hebb, e continua sendo a melhor correção disponível. Mas ela tem um limite que vale enunciar de imediato, porque é onde as pessoas erram na direção oposta: dizer que a pergunta "qual dos dois?" é malformada **não** significa que a genética comportamental não meça nada. Ela mede — só que outra coisa.
+
+### O que a herdabilidade realmente é
+
+**Herdabilidade** ($h^2$) é a proporção da **variância** de um traço, **numa população específica, num ambiente específico**, que é atribuível à variância genética entre os indivíduos dessa população.
+
+Cada elemento dessa definição faz trabalho, e ignorar qualquer um deles produz um erro grave:
+
+**É sobre variância, não sobre indivíduos.** Dizer que a altura tem $h^2 \approx 0{,}8$ não significa que 80% da sua altura veio dos genes e 20% da comida. Essa frase não tem sentido. Significa que, *entre* as pessoas daquela população, cerca de 80% das *diferenças* de altura acompanham diferenças genéticas. Herdabilidade é uma estatística de população; aplicada a um indivíduo, ela simplesmente não se define [@moore_shenk2017].
+
+**É relativa a uma população e a um ambiente.** Como é uma razão entre variâncias, o valor muda quando o ambiente muda — e muda de formas contraintuitivas. Se você equalizar perfeitamente a nutrição de todos, a variância ambiental cai, e a herdabilidade da altura *sobe*, sem que nenhum gene tenha mudado. Inversamente, num ambiente muito desigual, a herdabilidade *cai*. **Herdabilidade alta não significa "pouco afetado pelo ambiente"** — significa que, naquele ambiente, o ambiente variava pouco.
+
+**Não diz nada sobre maleabilidade.** A miopia é altamente herdável e se corrige com óculos. A fenilcetonúria é uma condição genética de herança simples cujo efeito devastador é neutralizado por uma dieta. Herdabilidade não é destino, e essa confusão é a mais politicamente perigosa da lista.
+
+**Não autoriza conclusões sobre diferenças entre grupos.** Este é o erro mais caro. Richard Lewontin ofereceu a imagem definitiva: pegue um punhado de sementes geneticamente variadas e divida-o em dois vasos. No vaso A, solo rico; no vaso B, solo pobre. *Dentro* de cada vaso, toda a variação de altura das plantas é genética — a herdabilidade é 1,0, porque o solo é idêntico para todas ali. E, no entanto, a diferença *entre* os vasos é 100% ambiental [@lewontin1970]. Herdabilidade dentro de grupos não licencia nenhuma inferência sobre a origem das diferenças entre grupos. O manual retorna a isso no Cap. 50, onde essa confusão tem história.
+
+::: {.atencao}
+**"Herdabilidade de 50% significa que metade do traço vem dos genes."**
+
+Não. Significa que metade da *variação observada naquela população, naquele ambiente* acompanha variação genética. As três palavras que quase sempre somem — variação, população, ambiente — são justamente as que sustentam o conceito.
+
+Um teste rápido para detectar o erro: se a frase sobre herdabilidade continuar fazendo sentido quando aplicada a **uma única pessoa**, ela está errada. Herdabilidade de um indivíduo não existe, do mesmo modo que não existe a taxa de natalidade de uma pessoa.
+:::
+
+### O que os dados mostram
+
+Com o conceito no lugar, os dados são notáveis. A maior síntese disponível reuniu praticamente todos os estudos de gêmeos publicados em cinquenta anos — mais de 14,5 milhões de pares de gêmeos, cobrindo 17.804 traços — e encontrou uma herdabilidade média em torno de **49%** para o conjunto dos traços humanos, com padrão de resultados amplamente compatível com um modelo aditivo simples [@polderman2015]. O Estudo de Minnesota com gêmeos criados separados, que tornou a área conhecida do grande público, já apontava nessa direção: gêmeos idênticos separados ao nascer e reencontrados na vida adulta se parecem substancialmente em traços psicológicos [@bouchard1990].
+
+Eric Turkheimer condensou o achado central da área em três "leis" que valem mais que muitos artigos [@turkheimer2000]. Primeira: **todos os traços comportamentais humanos são herdáveis** — não há traço psicológico com $h^2$ igual a zero. Segunda: **o efeito de crescer na mesma família é menor que o efeito dos genes**. Terceira, e a mais interessante: **uma porção substancial da variação não é explicada nem pelos genes nem pelas famílias** — o chamado ambiente não compartilhado, que inclui tudo aquilo que difere entre irmãos criados juntos, e provavelmente também ruído do desenvolvimento.
+
+::: {.experimento}
+**Gêmeos separados ao nascer** [@bouchard1990]
+
+**Desenho.** A partir de 1979, a equipe de Thomas Bouchard localizou e trouxe a Minnesota gêmeos monozigóticos (idênticos) e dizigóticos (fraternos) que haviam sido separados na primeira infância e criados em famílias diferentes. Cada par passou por cerca de 50 horas de avaliação: personalidade, interesses, atitudes, capacidade cognitiva, história médica. A lógica é elegante: gêmeos idênticos compartilham ~100% dos genes; se foram criados em ambientes distintos, a semelhança remanescente estima a contribuição genética.
+
+**Resultado.** As semelhanças foram maiores do que quase todos esperavam. Em capacidade cognitiva geral, a correlação entre idênticos criados separados ficou em torno de 0,70. Traços de personalidade, interesses ocupacionais e até atitudes sociais mostraram contribuição genética substancial. Criar-se em lares diferentes reduzia a semelhança bem menos do que a intuição previa.
+
+**Interpretação.** O estudo foi decisivo para enterrar o ambientalismo radical — a ideia de que a criança é uma folha em branco moldada pela criação. Nenhum traço psicológico se mostrou imune à genética.
+
+**Limitações.** E são sérias, o que raramente aparece nas reportagens. A amostra é pequena e **auto-selecionada**: os pares foram localizados em boa medida por publicidade, e gêmeos que se reencontram e aceitam 50 horas de teste podem ser justamente os mais parecidos. As "separações" nem sempre foram completas — vários pares tiveram contato antes da avaliação, e agências de adoção tendiam a colocar bebês em lares socioeconomicamente semelhantes, o que infla a estimativa genética ao reduzir a variação ambiental real. Além disso, as histórias de coincidências espantosas que popularizaram o estudo (os "gêmeos Jim") são **anedotas**, não dados: com centenas de variáveis comparadas, coincidências chamativas são estatisticamente esperadas — é o problema do atirador texano (Cap. 21). O achado central sobrevive a essas críticas, e foi confirmado por amostras muito maiores e mais limpas [@polderman2015]; as estimativas pontuais deste estudo específico, não necessariamente.
+:::
+
+### Como os dois lados de fato se encontram
+
+Se genes e ambiente não se somam, como interagem? A @fig-genes-ambiente organiza as quatro vias principais, todas com evidência independente.
+
+::: {#fig-genes-ambiente}
+```{.tikz}
+%%| filename: genes-ambiente
+%%| alt: Diagrama mostrando a interação entre genes e ambiente. À esquerda, uma caixa vermelha "Genes"; à direita, uma caixa verde "Ambiente"; ao centro, uma caixa azul "Fenótipo" (o traço observado). Setas partem de genes e ambiente para o fenótipo. Quatro vias de interação são rotuladas ao redor: interação gene-ambiente (o efeito do ambiente depende do genótipo), correlação gene-ambiente (o genótipo influencia a que ambientes a pessoa se expõe), epigenética (o ambiente altera a expressão dos genes) e uma seta de retorno do fenótipo para o ambiente, indicando que o comportamento modifica o próprio contexto.
+\begin{tikzpicture}[
+  cx/.style={draw, thick, rounded corners=4pt, minimum width=2.6cm, minimum height=1.1cm, align=center, font=\small\bfseries},
+  rot/.style={font=\scriptsize, text=manualgray, align=center},
+  f/.style={->, >=Stealth, thick}
+]
+  \node[cx, draw=manualred, fill=manualred!8] (g) at (-4.6,0) {Genes};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (a) at (4.6,0) {Ambiente};
+  \node[cx, draw=manualblue, fill=manualblue!8] (f) at (0,-2.6) {Fenótipo\\{\scriptsize\mdseries o traço observado}};
+
+  \draw[f, manualred] (g) -- (f);
+  \draw[f, manualgreen] (a) -- (f);
+
+  % interacao GxA
+  \draw[<->, >=Stealth, thick, manualgray] (g) -- (a);
+  \node[rot] at (0,0.42) {\textbf{interação G$\times$A}\\o efeito do ambiente\\depende do genótipo};
+
+  % correlacao rGA
+  \draw[f, manualgray] (g) to[bend left=32] node[rot, above, pos=0.5] {\textbf{correlação G--A}\\o genótipo influencia a\\que ambientes se expõe} (a);
+
+  % epigenetica
+  \draw[f, manualgray] (a) to[bend left=32] node[rot, below, pos=0.5] {\textbf{epigenética}\\o ambiente altera a\\expressão dos genes} (g);
+
+  % feedback do fenotipo
+  \draw[f, manualblue] (f) to[bend right=28] node[rot, right, pos=0.5, xshift=2pt] {o comportamento\\modifica o contexto} (a);
+\end{tikzpicture}
+```
+Genes e ambiente não são causas paralelas que se somam. Eles se determinam mutuamente por pelo menos quatro vias, e o próprio comportamento realimenta o ambiente que o produziu.
+:::
+
+A **correlação gene–ambiente** é a via mais subestimada. Scarr e McCartney mostraram que o genótipo não espera passivamente pelo ambiente: ele ajuda a selecioná-lo [@scarr_mccartney1983]. Uma criança com predisposição à leitura pede livros, é vista como leitora, ganha mais livros e escolhe amigos que leem — construindo ativamente o ambiente que depois "explicará" seu vocabulário. O que parece efeito puro do ambiente pode ser genótipo se expressando *através* da escolha de ambientes. Isso torna a separação estatística entre os dois muito mais escorregadia do que o modelo aditivo sugere.
+
+A **epigenética** fornece o mecanismo molecular da via inversa. No trabalho mais citado da área, Weaver e colegas mostraram que ratas que lambem e cuidam mais de seus filhotes produzem alterações duradouras na metilação do gene do receptor de glicocorticoides no hipocampo das crias, mudando por toda a vida a resposta ao estresse — e que o efeito podia ser revertido farmacologicamente [@weaver2004]. Cuidado materno, um evento inteiramente ambiental, reescreve a expressão gênica.
+
+::: {.atencao}
+**Cuidado com a epigenética de divulgação.** O achado de Weaver é sólido e importante, e virou combustível para afirmações muito além do que sustenta — sobretudo a ideia de que traumas dos avós estariam gravados no seu DNA. A herança epigenética **transgeracional** em humanos é, hoje, uma hipótese com evidência fraca e altamente disputada: os mecanismos de reprogramação entre gerações apagam a maior parte das marcas, e os estudos humanos disponíveis são observacionais e confundidos. "O ambiente regula a expressão gênica ao longo da vida" está bem estabelecido. "O sofrimento dos seus avós está no seu genoma" não está. O Vol 4 separa as duas afirmações com cuidado.
+:::
+
+### Uma lição de método que custou caro
+
+A **interação gene × ambiente** parecia o caminho mais promissor da psicologia dos anos 2000 — e a história do que aconteceu com ela é uma das mais instrutivas deste manual.
+
+Em 2003, Caspi e colegas relataram na *Science* um resultado belíssimo: um polimorfismo do gene transportador de serotonina (5-HTTLPR) moderava o efeito do estresse sobre a depressão. Portadores da variante curta que sofriam eventos estressantes deprimiam mais; sem estresse, não deprimiam mais que ninguém. Nem gene, nem ambiente — a interação [@caspi2003]. O artigo foi citado milhares de vezes e virou o exemplo canônico de como a nova genética resolveria a velha dicotomia.
+
+Não replicou. Uma meta-análise de 14 estudos não encontrou a interação [@risch2009]. E o golpe decisivo veio depois: Border e colegas testaram, em amostras muito grandes e com métodos pré-especificados, os 18 genes candidatos historicamente mais estudados em depressão — incluindo o 5-HTTLPR — e não encontraram apoio nem para os efeitos principais nem para as interações gene × ambiente. A conclusão dos autores é dura: a literatura de genes candidatos em depressão é, em larga medida, um artefato de amostras pequenas e flexibilidade analítica [@border2019].
+
+A lição não é que genes não importam para a depressão — importam, e a herdabilidade é substancial. É que **eles não importam através de um punhado de genes de efeito grande**. A arquitetura genética dos traços psicológicos é poligênica: milhares de variantes, cada uma com efeito minúsculo [@plomin2018]. E é aqui que o Cap. 1 volta: um campo inteiro passou quinze anos perseguindo efeitos que provavelmente nunca existiram, porque a hipótese era barata demais e as amostras, pequenas demais — exatamente o que Meehl havia diagnosticado. Guarde este caso: ele reaparecerá, com outros nomes, no Vol 13.
+
+## Mente e corpo
+
+### O problema
+
+Você decide levantar o braço, e o braço sobe. Descrito assim, parece trivial. Descrito com precisão, é desconcertante: um evento aparentemente imaterial — uma decisão, algo que não tem massa, carga ou localização — precede e aparentemente causa um evento inteiramente físico, a contração de fibras musculares. Como?
+
+Descartes deu a essa questão sua formulação moderna e sua resposta mais influente. Ele propôs o **dualismo de substância**: existem duas coisas de natureza radicalmente distinta, a matéria (*res extensa*, que ocupa espaço) e o pensamento (*res cogitans*, que não ocupa), interagindo de algum modo no corpo humano [@descartes1641]. Descartes chegou a apontar a glândula pineal como o ponto de encontro.
+
+O problema do dualismo nunca foi ser estranho — foi ser **inútil**. Se a mente não é física, como ela empurra um neurônio? Qualquer causação exige transferência de energia, e uma substância sem propriedades físicas não tem energia a transferir. Postular a interação não a explica; apenas nomeia o mistério. Foi essa objeção — feita já no século XVII pela princesa Elisabeth da Boêmia, em correspondência com o próprio Descartes — que a filosofia nunca conseguiu responder em nome dele.
+
+### A aposta monista
+
+A psicologia contemporânea opera sob **monismo**: existe um tipo de coisa, e processos mentais são o que o cérebro faz. Eric Kandel formulou essa premissa para a psiquiatria em termos que se tornaram padrão: todos os processos mentais derivam de operações do cérebro, e portanto qualquer alteração mental — inclusive a produzida por psicoterapia — é necessariamente uma alteração cerebral [@kandel1998].
+
+É importante entender o **status** dessa aposta. Ela não foi provada; foi adotada porque funciona. Cada década de neurociência estreita o espaço em que um dualista poderia operar: lesões específicas produzem déficits mentais específicos, substâncias específicas alteram estados mentais específicos, estimulação de regiões específicas evoca experiências específicas. Nada disso é uma refutação lógica do dualismo — é a acumulação de uma dívida explicativa que o dualismo não paga.
+
+::: {.estudo-caso}
+**Phineas Gage e a barra de ferro**
+
+Em 13 de setembro de 1848, em Cavendish, Vermont, uma explosão prematura lançou uma barra de ferro de pouco mais de um metro através do crânio do capataz ferroviário Phineas Gage. A barra entrou sob a bochecha esquerda, atravessou o lobo frontal e saiu pelo topo da cabeça, caindo a dezenas de metros. Gage não perdeu a consciência. Falou em poucos minutos, caminhou com ajuda e, meses depois, estava fisicamente recuperado: andava, falava, lembrava, tinha os sentidos intactos.
+
+Mas, segundo o relato de seu médico John Harlow, ele não era mais o mesmo. O homem antes descrito como responsável e comedido teria se tornado irregular, irreverente, incapaz de sustentar planos — "Gage já não era Gage" [@harlow1868].
+
+**O que o caso mostra.** Uma barra de ferro atravessando tecido cerebral alterou o caráter, o planejamento e a conduta social de uma pessoa. Não a memória, não a linguagem, não os sentidos: exatamente aquilo que a tradição atribuía à alma. Para o dualismo, isso é constrangedor de um modo particular — não porque prove que a mente é o cérebro, mas porque exige explicar por que uma substância imaterial precisa de um lobo frontal intacto para fazer planos. O caso ancorou a tese de Damásio de que emoção e razão não são adversárias, e que a lesão frontal compromete a decisão justamente ao desconectar o raciocínio dos marcadores afetivos [@damasio1994].
+
+**Um alerta que quase sempre falta.** O caso de Gage é o mais citado e o mais distorcido da neuropsicologia. O relato de Harlow é breve, retrospectivo, sem qualquer avaliação padronizada, e a versão popular — Gage como um bêbado violento e errante — não tem base documental. Há evidência de que ele se reorganizou consideravelmente: trabalhou por anos como condutor de diligência no Chile, função que exige planejamento, rotina e trato social. Este é um **estudo de caso único**, com todas as limitações do desenho (Cap. 15): não há controle, não há medida pré-lesão, e a reconstrução da lesão é inferida do crânio. Ele sugere hipóteses; não as testa. O Cap. 99 retoma Gage com a distância que ele merece.
+:::
+
+::: {.na-pratica}
+**A via de mão dupla, na clínica**
+
+Se mente e cérebro são o mesmo sistema descrito em dois níveis (Cap. 1), então a causação corre nos dois sentidos — e isso tem consequência prática imediata.
+
+Um medicamento altera a neuroquímica e muda a experiência: ninguém se surpreende. Mas o inverso também vale: a psicoterapia, que é literalmente conversa, produz mudanças mensuráveis de funcionamento cerebral. Isso não é misticismo nem "força do pensamento" — é a consequência trivial do monismo. Se toda experiência é um processo cerebral, então uma experiência que muda a pessoa **é** uma mudança cerebral. Uma terapia eficaz não poderia deixar o cérebro intocado, do mesmo modo que aprender a andar de bicicleta não deixa.
+
+O corolário prático, desenvolvido no Vol 14: dizer que um problema é "biológico" não implica que a solução deva ser farmacológica, e dizer que ele é "psicológico" não o torna menos real ou menos cerebral. A escolha do tratamento é uma questão empírica sobre o que funciona para aquele quadro — não uma dedução a partir do nível em que se descreveu o problema.
+:::
+
+## Consciência
+
+### O problema fácil e o problema difícil
+
+Aqui a psicologia encontra seu limite mais interessante, e a distinção que o organiza é de David Chalmers.
+
+Os **problemas fáceis** da consciência são: como o cérebro discrimina estímulos, integra informação, acessa estados internos, controla o comportamento, relata o que percebe, difere entre vigília e sono. São chamados "fáceis" não porque sejam simples — são endiabradamente difíceis — mas porque sabemos que tipo de resposta os resolveria: identificar o mecanismo. É ciência normal, e ela progride.
+
+O **problema difícil** é outro: por que qualquer um desses processos é **acompanhado de experiência subjetiva**? Por que processar comprimentos de onda de 700 nm não acontece "às escuras", como acontece num sensor, e sim vem com a vermelhidão do vermelho? [@chalmers1995]
+
+Thomas Nagel formulou a mesma intuição de forma mais memorável: por mais que você saiba sobre a ecolocalização de um morcego — anatomia, fisiologia, algoritmo completo —, você não saberá **como é ser** um morcego. Existe algo que é ser um morcego, e a descrição objetiva em terceira pessoa parece deixar exatamente isso de fora [@nagel1974].
+
+Nada disso é obscurantismo, e é importante ser justo com os dois lados. Uma tradição respeitável sustenta que o problema difícil é uma ilusão conceitual — que, uma vez explicados todos os problemas fáceis, não sobrará nada a explicar, e a sensação de que sobra é um artefato de como pensamos sobre nós mesmos. Outra tradição sustenta que ele é o problema real e que a ciência atual sequer sabe que forma teria a resposta. Este manual não decide a questão, porque ela não está decidida.
+
+### O que a ciência da consciência de fato faz
+
+Diante do impasse, a estratégia produtiva foi trocar de pergunta: em vez de explicar por que há experiência, mapear **o que difere no cérebro** quando um conteúdo é consciente e quando não é — os correlatos neurais da consciência.
+
+::: {.experimento}
+**Visão cega** [@weiskrantz1974]
+
+**Desenho.** Um paciente com lesão no córtex visual primário (V1) relatava não enxergar nada em parte do campo visual. Weiskrantz e colegas pediram que ele "adivinhasse" — apontasse, ou dissesse se um estímulo era uma linha horizontal ou vertical — em relação a estímulos apresentados justamente na região que ele afirmava não ver.
+
+**Resultado.** Ele acertava muito acima do acaso. Localizava alvos que dizia não perceber, discriminava orientações que dizia não ver. E permanecia genuinamente surpreso quando informado de seu desempenho: subjetivamente, estava chutando.
+
+**Interpretação.** A visão cega dissocia **processamento** de **experiência consciente**. A informação visual chega, é analisada e guia a ação — sem ser acompanhada de qualquer sensação de ver. Isso é exatamente o material do problema difícil, tornado empírico: aqui está um sistema fazendo os problemas fáceis (discriminar, guiar ação, responder) sem o acompanhamento subjetivo. Vias visuais secundárias, que contornam V1, sustentam o desempenho.
+
+**Limitações.** O fenômeno é raro, estudado em pouquíssimos pacientes, e sua interpretação é disputada: críticos argumentam que pode haver visão residual muito degradada — consciência fraca, não ausente — e que o critério de relato é sensível a como a pergunta é feita. A dissociação total entre processamento e experiência é mais difícil de estabelecer do que a versão popular sugere.
+:::
+
+Duas famílias de teoria dominam o campo, e vale expor os pontos fortes de cada uma. A **teoria do espaço de trabalho global**, de Baars e desenvolvida experimentalmente por Dehaene, propõe que a consciência é o que acontece quando uma informação é "transmitida" globalmente, tornando-se disponível a muitos sistemas ao mesmo tempo — memória, linguagem, decisão, ação. O inconsciente é local e paralelo; o consciente é global e serial [@baars1988; @dehaene2014]. Ela tem previsões testáveis e um bom histórico empírico. A **teoria da informação integrada**, de Tononi, faz a aposta oposta: a consciência não é um tipo de processamento, e sim uma propriedade intrínseca de qualquer sistema que integre informação de determinada maneira, quantificável por uma medida ($\Phi$) [@tononi2004]. Ela ataca o problema difícil de frente, ao preço de consequências que muitos consideram implausíveis — sistemas simples teriam algum grau de experiência.
+
+Vale ser explícito quanto ao estado da questão: **nenhuma das duas está estabelecida**, elas fazem previsões divergentes, e o campo trata a disputa como aberta. Este manual apresenta as duas porque a evidência atual não escolhe entre elas — e essa honestidade é o Cap. 35 em miniatura.
+
+## Livre-arbítrio
+
+### O experimento que virou manchete
+
+Se o monismo está certo e todo evento mental é um evento cerebral, e se eventos cerebrais seguem as leis da física, o que sobra da sensação de escolher? A questão era filosófica até 1983, quando Benjamin Libet a levou para o laboratório.
+
+::: {#fig-libet}
+```{.tikz}
+%%| filename: libet
+%%| alt: Linha do tempo do experimento de Libet, medida em milissegundos antes do movimento. Em aproximadamente menos 550 milissegundos aparece o início do potencial de prontidão, registrado no EEG. Em aproximadamente menos 200 milissegundos aparece o instante W, em que a pessoa relata ter tomado consciência da intenção de mover. No instante zero ocorre o movimento do pulso. Uma chave destaca o intervalo de cerca de 350 milissegundos entre o potencial de prontidão e a consciência da intenção, que é a base da interpretação de que o cérebro inicia a ação antes da decisão consciente.
+\begin{tikzpicture}[
+  ev/.style={->, >=Stealth, thick},
+  rot/.style={font=\scriptsize, align=center}
+]
+  % eixo do tempo
+  \draw[eixo, thick, black] (-7.4,0) -- (1.4,0);
+  \node[font=\scriptsize, text=manualgray] at (1.9,0) {tempo};
+
+  % marcas
+  \foreach \x/\lab in {-6.6/-550, -3.2/-200, 0/0} {
+    \draw[thick] (\x,0.14) -- (\x,-0.14);
+    \node[font=\scriptsize, text=manualgray] at (\x,-0.45) {\lab\,ms};
+  }
+
+  % eventos
+  \draw[ev, manualred] (-6.6,-1.5) -- (-6.6,-0.2);
+  \node[rot, text=manualred, anchor=north] at (-6.6,-1.55)
+    {\textbf{potencial de prontidão}\\início da atividade\\cerebral (EEG)};
+
+  \draw[ev, manualblue] (-3.2,-1.5) -- (-3.2,-0.2);
+  \node[rot, text=manualblue, anchor=north] at (-3.2,-1.55)
+    {\textbf{instante W}\\a pessoa relata\\perceber a intenção};
+
+  \draw[ev, manualgreen] (0,-1.5) -- (0,-0.2);
+  \node[rot, text=manualgreen, anchor=north] at (0,-1.55)
+    {\textbf{movimento}\\flexão do pulso};
+
+  % chave do intervalo critico
+  \draw[decorate, decoration={brace, amplitude=6pt}, manualgray, thick]
+    (-6.6,0.55) -- (-3.2,0.55);
+  \node[rot, text=manualgray, anchor=south] at (-4.9,0.78)
+    {$\approx$ 350 ms — o cérebro "começa"\\antes do relato de decidir};
+\end{tikzpicture}
+```
+A cronologia do experimento de Libet. O intervalo destacado é o que gerou a controvérsia — e, como o texto discute, ele admite mais de uma leitura.
+:::
+
+::: {.experimento}
+**Libet e o potencial de prontidão** [@libet1983]
+
+**Desenho.** Participantes com eletrodos de EEG deviam flexionar o pulso quando quisessem, sem planejar de antemão. Olhavam um ponto girando num mostrador tipo relógio e deviam relatar, depois, a posição do ponto no instante em que tomaram consciência da vontade de mover — o **instante W**. Três medidas eram comparadas: o início do **potencial de prontidão** no EEG, o instante W relatado e o movimento em si.
+
+**Resultado.** O potencial de prontidão começava cerca de **550 ms** antes do movimento. O instante W era relatado cerca de **200 ms** antes do movimento. Ou seja: a atividade cerebral que precede a ação começava aproximadamente **350 ms antes** de a pessoa se dar conta de que decidira.
+
+**Interpretação original.** Libet concluiu que o processo é iniciado inconscientemente — o cérebro "decide" antes de você saber. Ele preservou uma janela de liberdade: nos ~200 ms restantes, a consciência ainda poderia **vetar** o movimento, o que ficou conhecido como *free won't*.
+
+**Limitações — e elas são decisivas.** (1) A tarefa é bizarra: flexionar o pulso arbitrariamente, sem razão alguma, não se parece com nenhuma decisão que importe; generalizar disso para escolhas deliberadas é um salto enorme. (2) O instante W depende de introspecção cronometrada sobre um evento fugaz, exatamente o tipo de relato que Nisbett e Wilson mostraram ser pouco confiável (Cap. 1), e é sabidamente sensível ao método. (3) A crítica mais forte é teórica: Schurger e colegas mostraram que o potencial de prontidão pode não ser um "sinal de decisão" — modelando a atividade neural espontânea como flutuação que cruza um limiar, e alinhando os registros ao movimento *depois do fato*, obtém-se a curva do potencial de prontidão **como artefato da média**. Nessa leitura, a decisão de mover é tomada quando o ruído neural cruza o limiar, e não 350 ms antes [@schurger2012]. Trabalhos posteriores estenderam o achado de Libet a decisões mais complexas, com sinais preditivos aparecendo até segundos antes [@soon2008], mas com acurácia de previsão modesta — na casa dos 60%, não muito acima do acaso.
+:::
+
+### O que isso realmente decide
+
+Aqui é preciso ser cuidadoso, porque a conclusão popular ("a ciência provou que o livre-arbítrio não existe") é mais forte do que qualquer coisa que os dados sustentem.
+
+Primeiro, a questão de fundo **antecede** o experimento. Se o monismo é verdadeiro, então suas decisões já eram processos cerebrais antes de Libet ligar o EEG — e processos cerebrais já eram físicos. O experimento não descobriu o determinismo; no máximo ilustrou-o com uma cronometragem. E, com a releitura de Schurger, talvez nem isso.
+
+Segundo, e mais importante: **qual noção de livre-arbítrio está em jogo?** É aqui que a discussão empírica encontra seu limite conceitual. Se livre-arbítrio significa uma capacidade de iniciar cadeias causais fora das leis da física — uma alma empurrando neurônios —, então sim, a psicologia opera sob a premissa de que isso não existe, e opera assim desde que abandonou o dualismo. Mas a maior parte dos filósofos contemporâneos é **compatibilista**: sustenta que a liberdade que importa não é ausência de causas, e sim um tipo particular de causa. Uma ação é livre quando é produzida pelos seus próprios desejos, valores e deliberações, sem coerção externa — e não faz diferença que esses desejos sejam, eles próprios, processos cerebrais [@dennett1984]. Nessa leitura, o experimento de Libet não é ameaça alguma: claro que sua decisão tem antecedentes cerebrais; ela seria *sua* de que outro modo?
+
+Daniel Wegner ofereceu a versão mais provocativa do lado oposto: a sensação de vontade consciente seria ela mesma uma construção, uma inferência que o sistema faz a partir da correlação entre pensamento e ação — não a leitura direta da causa, mas uma teoria sobre si mesmo, no espírito exato de Nisbett e Wilson [@wegner2002]. Note que isso é uma afirmação sobre a *experiência* de decidir, não sobre a inexistência da decisão.
+
+::: {.atencao}
+**"Se tudo é causado, ninguém é responsável."**
+
+Este é o salto que o capítulo pede para você não dar — e ele é normativo, não empírico. Nenhum experimento demonstra o que devemos fazer com a responsabilidade; essa é uma questão sobre para que serve responsabilizar.
+
+Vale registrar que a pergunta tem consequências mensuráveis: Vohs e Schooler relataram que enfraquecer a crença em livre-arbítrio aumentava a trapaça em laboratório [@vohs_schooler2008]. Seguindo a política deste manual, o achado vem com um alerta: ele é do período e do tipo de paradigma da psicologia social mais atingido pela crise de replicabilidade (Cap. 1), o efeito é debatido, e tentativas posteriores encontraram resultados bem mais fracos. Trate-o como hipótese interessante, não como fato estabelecido — e note que, mesmo se verdadeiro, ele diria algo sobre os efeitos da *crença*, não sobre a verdade da tese.
+
+Sistemas de responsabilização podem ser defendidos sem metafísica libertária: punir e recompensar alteram comportamento futuro, e essa é uma razão consequencialista que sobrevive ao determinismo intacta. O Vol 15 trata do assunto onde ele deixa de ser abstrato — na psicologia jurídica.
+:::
+
+## O padrão comum
+
+Vale olhar as quatro questões lado a lado, porque elas falham do mesmo jeito.
+
+Em cada uma, a formulação popular é uma **dicotomia**: genes *ou* ambiente, mente *ou* corpo, consciência como tudo *ou* nada, livre-arbítrio *ou* determinismo. E, em cada uma, o progresso veio de rejeitar a dicotomia — não escolhendo um lado, mas mostrando que a pergunta continha um pressuposto falso. Genes e ambiente não são causas somáveis. Mente e corpo não são duas substâncias. A consciência não é um interruptor. E "livre" pode significar coisas diferentes, das quais só a mais exigente conflita com a física.
+
+Há também um padrão sobre os limites. Em cada questão existe uma parte que a evidência decide — a herdabilidade é mensurável, a lesão frontal muda o caráter, a visão cega dissocia processamento de experiência, o potencial de prontidão precede o relato — e uma parte que ela não decide, porque é conceitual: o que conta como "livre", o que seria explicar a experiência, o que devemos fazer com a responsabilidade. Confundir as duas partes produz os dois erros simétricos do início: o cientificismo que anuncia ter resolvido filosofia com um EEG, e o obscurantismo que declara a ciência irrelevante porque o mistério persiste.
+
+O Vol 2 mostra como cada escola da psicologia respondeu a essas quatro perguntas — e como as respostas erradas ainda organizam boa parte do que se diz sobre a mente hoje.
+
+::: {.callout-sintese}
+- **Natureza × cultura é uma falsa dicotomia.** Genes e ambiente não são causas paralelas que se somam; interagem por interação G×A, correlação G–A, epigenética e realimentação do comportamento sobre o próprio contexto.
+- **Herdabilidade é uma estatística de variância**, relativa a uma população e a um ambiente. Não se aplica a indivíduos, não mede maleabilidade e **não** autoriza conclusões sobre diferenças entre grupos — a demonstração dos dois vasos de Lewontin é definitiva.
+- **Todos os traços psicológicos são herdáveis**, com média em torno de 49% em 14,5 milhões de pares de gêmeos; mas a arquitetura é poligênica, e a busca por genes candidatos de efeito grande (5-HTTLPR) fracassou de forma exemplar.
+- **O dualismo perdeu por inutilidade explicativa**, não por refutação. A psicologia opera sob monismo: processos mentais são o que o cérebro faz — o que implica causação nos dois sentidos, e é por isso que psicoterapia altera o cérebro.
+- **Os problemas fáceis da consciência são mecanismos; o problema difícil é a experiência subjetiva.** A ciência progride nos primeiros; quanto ao segundo, espaço de trabalho global e informação integrada disputam sem que a evidência decida.
+- **Libet não provou que o livre-arbítrio não existe.** A releitura de Schurger sugere que o potencial de prontidão pode ser artefato de média sobre ruído neural, e a tarefa não se parece com decisões reais.
+- **A questão do livre-arbítrio é em boa parte conceitual.** O compatibilismo sustenta que liberdade não é ausência de causas, e sob essa definição nada em Libet ameaça nada.
+- **Em todas as quatro questões**, é preciso saber onde a evidência decide e onde ela não decide. Os dois erros simétricos são resolver filosofia com um experimento e descartar a ciência porque o mistério persiste.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Herdabilidade** ($h^2$)
+:   Proporção da variância de um traço, numa população e num ambiente específicos, atribuível à variância genética. Estatística populacional; indefinida para indivíduos [@moore_shenk2017].
+
+**Interação gene × ambiente**
+:   Situação em que o efeito do ambiente sobre um traço depende do genótipo (e vice-versa).
+
+**Correlação gene–ambiente**
+:   Situação em que o genótipo influencia a quais ambientes o indivíduo se expõe, ativa ou passivamente [@scarr_mccartney1983].
+
+**Epigenética**
+:   Alterações na expressão gênica, sem mudança na sequência de DNA, induzidas por fatores como o ambiente e o cuidado parental [@weaver2004].
+
+**Ambiente não compartilhado**
+:   Parcela da variação ambiental que difere entre irmãos criados na mesma família; responde por porção substancial da variância dos traços [@turkheimer2000].
+
+**Poligenia**
+:   Arquitetura em que um traço é influenciado por milhares de variantes genéticas de efeito individual minúsculo.
+
+**Dualismo de substância**
+:   Tese de que mente e matéria são substâncias de naturezas distintas [@descartes1641].
+
+**Monismo**
+:   Tese de que existe apenas um tipo de substância; processos mentais são processos cerebrais [@kandel1998].
+
+**Problemas fáceis da consciência**
+:   Explicar discriminação, integração, acesso, relato e controle — difíceis na prática, mas com forma de resposta conhecida [@chalmers1995].
+
+**Problema difícil da consciência**
+:   Explicar por que há experiência subjetiva acompanhando o processamento [@chalmers1995; @nagel1974].
+
+**Visão cega** (*blindsight*)
+:   Capacidade de responder acima do acaso a estímulos visuais que o paciente relata não ver, após lesão de V1 [@weiskrantz1974].
+
+**Potencial de prontidão**
+:   Atividade cerebral que precede um movimento voluntário, começando centenas de milissegundos antes do relato consciente de intenção [@libet1983].
+
+**Compatibilismo**
+:   Posição segundo a qual livre-arbítrio e determinismo são compatíveis, porque liberdade é agir a partir dos próprios desejos e deliberações, não ausência de causas [@dennett1984].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina herdabilidade com precisão e explique por que a frase "a inteligência de João é 60% genética" é malformada, e não apenas imprecisa.
+
+2. **(Recuperação.)** Descreva a cronologia do experimento de Libet (potencial de prontidão, instante W, movimento) e explique como a releitura de Schurger reinterpreta exatamente os mesmos dados.
+
+3. **(Aplicação.)** Um estudo relata que a herdabilidade do desempenho escolar é maior na Noruega do que em um país com desigualdade educacional extrema. Um jornalista conclui que "os genes importam mais para a educação dos noruegueses". Explique por que a conclusão é errada e o que o dado de fato indica sobre os ambientes dos dois países.
+
+4. **(Reflexão crítica.)** Use os dois vasos de Lewontin para responder a esta afirmação: "Como a inteligência é altamente herdável dentro de cada grupo, a diferença média de escores entre dois grupos deve ser em boa parte genética." Identifique o passo lógico exato em que o argumento falha.
+
+5. **(Reflexão crítica.)** A história do 5-HTTLPR (Caspi 2003 → Risch 2009 → Border 2019) é um caso exemplar. Explique o que deu errado e conecte-o à crítica de Meehl às hipóteses frouxas (Cap. 1). Por que amostras maiores e pré-registro atacam justamente esse problema?
+
+6. **(Integração.)** Um paciente com visão cega aponta corretamente para um objeto que afirma não ver. (a) Qual problema "fácil" da consciência esse desempenho ilustra? (b) Por que o caso torna o problema difícil mais nítido, em vez de resolvê-lo? (c) Como a teoria do espaço de trabalho global explicaria a dissociação, e que previsão diferente a teoria da informação integrada faria?
