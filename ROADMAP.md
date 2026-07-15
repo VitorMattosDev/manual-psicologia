@@ -14,7 +14,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 9 / 105 concluídos · Fase 1: 9/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 10 / 105 concluídos · Fase 1: 10/21 · Fase 2: 0/35 · Fase 3: 0/49
 
 ---
 
@@ -36,7 +36,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 07 | Estruturalismo e Funcionalismo (Wundt, Titchener, James) | `capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.qmd` | ✅ |
 | 08 | Behaviorismo (Watson, Skinner) | `capitulos/vol02-historia-sistemas/cap-08-behaviorismo.qmd` | ✅ |
 | 09 | Gestalt | `capitulos/vol02-historia-sistemas/cap-09-gestalt.qmd` | ✅ |
-| 10 | Psicanálise (Freud e desdobramentos) | `capitulos/vol02-historia-sistemas/cap-10-psicanalise.qmd` | ⬜ |
+| 10 | Psicanálise (Freud e desdobramentos) | `capitulos/vol02-historia-sistemas/cap-10-psicanalise.qmd` | ✅ |
 | 11 | Humanismo (Rogers, Maslow) | `capitulos/vol02-historia-sistemas/cap-11-humanismo.qmd` | ⬜ |
 | 12 | A revolução cognitiva | `capitulos/vol02-historia-sistemas/cap-12-revolucao-cognitiva.qmd` | ⬜ |
 | 13 | Perspectivas contemporâneas (evolucionista, sociocultural, neurociência) | `capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.qmd` | ⬜ |

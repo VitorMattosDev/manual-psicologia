@@ -1,5 +1,369 @@
 # 10. Psicanálise (Freud e desdobramentos)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Situar** a psicanálise em seu contexto clínico e explicar o problema real que Freud tentava resolver.
+- **Descrever** os modelos tópico e estrutural, os estágios psicossexuais e os mecanismos de defesa.
+- **Separar** três destinos distintos das ideias freudianas: as **absorvidas**, as **refutadas** e as **que nunca entraram em campo**.
+- **Avaliar** a crítica de Popper à psicanálise — e explicar por que ela é boa demais para ser suficiente, segundo Grünbaum.
+- **Analisar** o problema da repressão à luz da evidência sobre memória e trauma, e reconhecer o dano causado pelas terapias de memória recuperada.
+- **Explicar** por que a teoria do apego é o descendente psicanalítico mais bem-sucedido, e o que Bowlby teve de romper para consegui-lo.
+- **Distinguir** a eficácia da terapia psicodinâmica da verdade da teoria psicanalítica — duas perguntas que não se respondem juntas.
 :::
+
+Este é o capítulo mais difícil do volume, e a dificuldade é de calibragem.
+
+Há duas maneiras fáceis de escrevê-lo, e as duas são desonestas. A primeira é reverente: Freud como gênio fundador, o descobridor do inconsciente, cujas ideias explicam a alma humana. A segunda é debochada: Freud como charlatão vienense, obcecado por sexo, cuja obra é pseudociência que já devia ter ido para o lixo.
+
+Nenhuma das duas sobrevive ao contato com o material. Freud fez perguntas que ninguém fazia, sobre fenômenos reais que a psicologia acadêmica ignorava — e respondeu-as com um método que não podia distinguir uma resposta certa de uma errada. Algumas de suas intuições foram confirmadas de maneiras que ele não teria reconhecido. Outras foram refutadas de forma inequívoca. E outras seguem, um século depois, exatamente onde estavam: fora do alcance de qualquer teste.
+
+A tarefa deste capítulo é fazer **essa** separação. Não "Freud tinha razão?" — pergunta mal formulada, que não tem resposta. Mas: **em quê**, e como sabemos?
+
+## O problema que Freud tentou resolver
+
+Comece pelo consultório, não pela teoria, porque a teoria nasceu de um impasse clínico concreto.
+
+Sigmund Freud era neurologista, e um bom neurologista — publicou sobre afasia e sobre neuroanatomia, e passou um período com Charcot, em Paris, que mudou sua trajetória. Charcot trabalhava com **histeria**: pacientes, na maioria mulheres, com paralisias, cegueiras, anestesias e convulsões **sem lesão orgânica identificável**. E fazia algo perturbador: sob hipnose, os sintomas apareciam e desapareciam.
+
+Pare aqui e sinta o peso do problema, porque ele é genuíno e a psicologia da época não tinha o que dizer sobre ele. Uma paralisia que some sob hipnose não é fingimento — as pacientes não estavam mentindo — e não é uma lesão. Então o que é? A distribuição da anestesia, notou-se, seguia frequentemente o mapa **popular** do corpo ("a mão", como uma luva) e não a inervação anatômica real. Isso é uma pista extraordinária: o sintoma segue a **ideia** que a pessoa tem do corpo, não o corpo. Há alguma coisa produzindo o sintoma que **conhece o significado** e não a anatomia.
+
+Nenhuma psicologia disponível dava conta. Wundt media tempos de reação. Titchener catalogava sensações. Nada disso chega perto de uma mulher que não enxerga e cujos olhos funcionam.
+
+Com Josef Breuer, Freud publicou os *Estudos sobre a histeria* [@breuer_freud1895], e ali está a origem do método. O caso central é o de "Anna O.", paciente de Breuer, que descobriu algo notável: falando — recuperando sob hipnose a circunstância em que cada sintoma surgira, com a emoção associada —, os sintomas cediam. Ela chamou o procedimento, em inglês, de *talking cure*. A limpeza de chaminé, disse também.
+
+Dessa observação Freud tirou a hipótese fundadora: **o sintoma tem sentido**. Não é ruído nem defeito. É a expressão disfarçada de algo que não pode ser dito — e, portanto, algo que a pessoa não sabe que sabe.
+
+::: {.atencao}
+**Anna O. não foi curada. E o que ela se tornou é mais interessante que a lenda.**
+
+O caso é apresentado, em toda parte, como o triunfo fundador da *talking cure*. Não foi.
+
+Bertha Pappenheim — este era seu nome — **continuou doente** depois do tratamento de Breuer. Foi internada em um sanatório, teve recaídas, e por anos usou morfina. Breuer, no relato publicado, comprimiu essa história. O tratamento também terminou de forma abrupta e conturbada, e Breuer afastou-se do caso e, em boa medida, do próprio campo.
+
+O que quase nenhum manual conta é o resto da vida dela. Bertha Pappenheim recuperou-se — sem psicanálise —, tornou-se uma das figuras mais importantes do trabalho social alemão, fundou a Federação de Mulheres Judias, dirigiu um orfanato, combateu o tráfico de mulheres, traduziu Mary Wollstonecraft para o alemão e escreveu peças e contos. A Alemanha Ocidental pôs seu rosto num selo postal em 1954, na série de benfeitores da humanidade. Ela detestava a psicanálise pelo resto da vida.
+
+Duas lições. Primeira, sobre **evidência**: o caso fundador da psicanálise, apresentado como sucesso, não foi um sucesso — e isso não estava claro no relato publicado. Um estudo de caso é uma narrativa contada por quem tem interesse no desfecho (Cap. 15). Segunda, sobre **como se conta a história**: a mulher reduzida a "Anna O., a histérica" era uma das grandes reformadoras sociais de seu tempo, e foi a citação de sua doença, não de sua obra, que a tornou imortal.
+:::
+
+## O aparelho psíquico
+
+Freud construiu, ao longo de quarenta anos, dois modelos sucessivos — e a maior parte das apresentações populares os embaralha.
+
+O **modelo tópico** (1900) divide a mente por **acessibilidade à consciência**: o **consciente** (o que está em foco agora), o **pré-consciente** (o que não está, mas pode ser evocado — seu telefone, o nome da sua avó) e o **inconsciente** (o que **não pode** ser evocado, porque uma força ativa o mantém fora).
+
+Essa força tem um nome, e é o conceito mais importante e mais problemático do sistema: a **repressão**. Note o que ela implica. O inconsciente freudiano não é um depósito do que não coube. É o resultado de um **processo motivado**: certas coisas estão lá porque foram **expulsas**, e algo trabalha ativamente para mantê-las expulsas. Isso é uma afirmação empírica forte, e voltaremos a ela.
+
+O **modelo estrutural** (1923) reorganiza tudo por **função** [@freud1923]. O **id** é a fonte pulsional — impulsos, desejos, opera pelo princípio do prazer, é inteiramente inconsciente. O **ego** é a instância executiva, que negocia entre o id, a realidade e o superego; opera pelo princípio da realidade e é parcialmente inconsciente. O **superego** é a instância moral, internalizada a partir das figuras parentais e da cultura; julga, e também opera em boa parte fora da consciência.
+
+::: {#fig-aparelho-psiquico}
+```{.tikz}
+%%| filename: aparelho-psiquico
+%%| alt: Diagrama dos dois modelos freudianos do aparelho psíquico, dispostos lado a lado. À esquerda, o modelo tópico de 1900, mostrado como um iceberg: acima da linha d'água está o consciente, descrito como o que está em foco agora e como a menor parte; logo abaixo da superfície está o pré-consciente, descrito como o que pode ser evocado, por exemplo um número de telefone; e na parte submersa, muito maior, está o inconsciente, descrito como o que não pode ser evocado porque a repressão o mantém fora. Uma seta aponta para a repressão como uma força ativa que empurra conteúdos para baixo, com a nota de que este é o ponto crítico, pois o inconsciente freudiano não é o que não coube, e sim o que foi expulso. À direita, o modelo estrutural de 1923, mostrado como três regiões: o superego, instância moral internalizada dos pais e da cultura, que julga; o ego, instância executiva que negocia entre pulsão, realidade e moral, operando pelo princípio da realidade; e o id, fonte pulsional inteiramente inconsciente, operando pelo princípio do prazer. Uma nota final observa que os dois modelos são eixos diferentes, o primeiro de acessibilidade e o segundo de função, e que não se substituem nem se sobrepõem de forma limpa, sendo comum confundi-los.
+\begin{tikzpicture}
+  % ===== iceberg
+  \node[font=\scriptsize\bfseries, text=manualblue] at (-3.4,4.2) {MODELO TÓPICO (1900)};
+  \node[font=\tiny, text=manualgray] at (-3.4,3.85) {eixo: acessibilidade à consciência};
+
+  \fill[manualblue!8] (-6.4,0.55) rectangle (-0.4,-3.3);
+  \draw[thick, manualblue!40] (-6.4,0.55) -- (-0.4,0.55);
+  \node[font=\tiny, text=manualblue!70, anchor=west] at (-6.35,0.78) {linha d'água};
+
+  \fill[manualyellow!35, draw=manualgray, thick] (-3.4,3.15) -- (-4.5,0.55) -- (-2.3,0.55) -- cycle;
+  \fill[manualblue!25, draw=manualgray, thick] (-4.5,0.55) -- (-2.3,0.55) -- (-1.6,-0.9) -- (-5.2,-0.9) -- cycle;
+  \fill[manualblue!45, draw=manualgray, thick] (-5.2,-0.9) -- (-1.6,-0.9) -- (-2.6,-3.1) -- (-4.2,-3.1) -- cycle;
+
+  \node[font=\tiny\bfseries] at (-3.4,2.2) {CONSCIENTE};
+  \node[font=\tiny, align=center] at (-3.4,0.0) {\textbf{PRÉ-CONSCIENTE}\\{\tiny pode ser evocado}};
+  \node[font=\tiny, align=center, text=white] at (-3.4,-1.9) {\textbf{INCONSCIENTE}\\{\tiny \emph{não} pode ser evocado:}\\{\tiny algo o mantém fora}};
+
+  \draw[->, >=Stealth, very thick, manualred] (-1.15,0.95) -- (-1.15,-1.2);
+  \node[font=\tiny, text=manualred, anchor=west, align=left] at (-1.05,-0.1) {\textbf{repressão}\\{\tiny força \emph{ativa}}};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualred, fill=manualred!6,
+        font=\tiny, align=center, text width=5.4cm] at (-3.4,-4.15)
+    {\textbf{O ponto crítico:} o inconsciente freudiano não é\\o que ``não coube'' --- é o que foi \textbf{expulso}.};
+
+  \draw[manualgray!30, thick] (0.35,4.4) -- (0.35,-4.7);
+
+  % ===== estrutural
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (3.9,4.2) {MODELO ESTRUTURAL (1923)};
+  \node[font=\tiny, text=manualgray] at (3.9,3.85) {eixo: função};
+
+  \node[draw, very thick, draw=manualyellow, fill=manualyellow!12, rounded corners=4pt,
+        minimum width=5.2cm, minimum height=1.5cm, align=center, font=\tiny] at (3.9,2.35)
+    {\textbf{SUPEREGO}\\{internalizado dos pais e da cultura}\\{\emph{julga} --- e julga sem avisar}};
+  \node[draw, very thick, draw=manualgreen, fill=manualgreen!12, rounded corners=4pt,
+        minimum width=5.2cm, minimum height=1.5cm, align=center, font=\tiny] at (3.9,0.35)
+    {\textbf{EGO}\\{instância executiva; negocia pulsão,}\\{realidade e moral --- \emph{princípio da realidade}}};
+  \node[draw, very thick, draw=manualred, fill=manualred!12, rounded corners=4pt,
+        minimum width=5.2cm, minimum height=1.5cm, align=center, font=\tiny] at (3.9,-1.65)
+    {\textbf{ID}\\{fonte pulsional, \emph{inteiramente} inconsciente}\\{\emph{princípio do prazer}}};
+
+  \draw[<->, >=Stealth, thick, manualgray] (3.9,1.6) -- (3.9,1.1);
+  \draw[<->, >=Stealth, thick, manualgray] (3.9,-0.4) -- (3.9,-0.9);
+
+  \node[draw, thick, rounded corners=3pt, draw=manualgray, fill=manualgray!5,
+        font=\tiny, align=center, text width=5.4cm] at (3.9,-3.6)
+    {Os dois modelos são \textbf{eixos diferentes} --- acessibilidade e função. Não se substituem nem se sobrepõem de forma limpa. Confundi-los é o erro mais comum.};
+\end{tikzpicture}
+```
+Os dois modelos do aparelho psíquico. O iceberg é uma ilustração didática, não um desenho de Freud — e, como toda boa metáfora, sugere precisão onde não há.
+:::
+
+Sobre esse aparelho, Freud montou o resto: os **estágios psicossexuais** (oral, anal, fálico, latência, genital), a ideia de **fixação** em um estágio produzindo traços adultos, o **complexo de Édipo**, os **sonhos** como realização disfarçada de desejo — com **conteúdo manifesto** (o que se lembra) encobrindo **conteúdo latente** (o desejo real) [@freud1900] —, e os **mecanismos de defesa** que o ego usa para lidar com a ansiedade.
+
+## O balanço: três destinos
+
+Em vez de julgar "a psicanálise" em bloco — operação que não significa nada —, separe as afirmações. Elas tiveram destinos diferentes, e um manual sério precisa dizer qual foi qual.
+
+::: {#fig-freud-balanco}
+```{.tikz}
+%%| filename: freud-balanco
+%%| alt: Quadro em três colunas classificando as ideias freudianas por destino. A primeira coluna, em verde, reúne as ideias absorvidas ou vindicadas, com a ressalva de que foram vindicadas em forma que Freud não reconheceria: a existência de processamento inconsciente, hoje estabelecida como inconsciente cognitivo, porém mais burro e menos estratégico do que o de Freud; a ideia de que a experiência precoce importa, hoje ancorada na teoria do apego; a ideia de conflito e ambivalência, isto é, querer duas coisas incompatíveis ao mesmo tempo; os mecanismos de defesa, com apoio empírico parcial em estudos longitudinais; a transferência, isto é, aplicar a novos vínculos padrões de vínculos antigos, com apoio em cognição social; e a ideia de que sintomas têm função. A segunda coluna, em vermelho, reúne as ideias refutadas, isto é, testadas e derrotadas: os estágios psicossexuais e as fixações produzindo traços de caráter; os sonhos como realização disfarçada de desejo, com distinção entre conteúdo manifesto e latente; a repressão de trauma como mecanismo central, contrariada pelo fato de que o trauma costuma ser lembrado demais e não de menos; a inveja do pênis e a teoria freudiana da psicologia feminina; e a catarse como alívio da agressão. A terceira coluna, em cinza, reúne as ideias que nunca entraram em campo, por não gerarem previsão que pudesse falhar: a estrutura de id, ego e superego como entidades; a pulsão de morte; o simbolismo universal na interpretação; e o complexo de Édipo como universal humano. Uma faixa inferior adverte que a coluna do meio é a honrosa, porque uma ideia refutada foi testável e entrou em campo, ao passo que a terceira coluna não é elogio nem condenação, e sim a constatação de que essas ideias estão fora do alcance do método.
+\begin{tikzpicture}[
+  cab/.style={draw, very thick, rounded corners=3pt, minimum width=4.5cm, minimum height=1.1cm,
+              align=center, font=\scriptsize},
+  it/.style={draw, thin, rounded corners=2pt, minimum width=4.5cm, align=center,
+             font=\tiny, text width=4.3cm, inner sep=3pt}
+]
+  \node[cab, draw=manualgreen, fill=manualgreen!15] at (-5.0,0)
+    {\textbf{ABSORVIDAS}\\{\tiny ...em forma que ele não reconheceria}};
+  \node[cab, draw=manualred, fill=manualred!15] at (0,0)
+    {\textbf{REFUTADAS}\\{\tiny testadas --- e derrotadas}};
+  \node[cab, draw=manualgray, fill=manualgray!12] at (5.0,0)
+    {\textbf{NUNCA ENTRARAM EM CAMPO}\\{\tiny nenhuma previsão que possa falhar}};
+
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-1.05) {processamento \textbf{inconsciente} existe {\tiny(mas é mais burro e menos estratégico)}};
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-2.15) {a \textbf{experiência precoce} importa {\tiny(via teoria do apego)}};
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-3.15) {\textbf{conflito} e ambivalência {\tiny(querer duas coisas incompatíveis)}};
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-4.15) {\textbf{mecanismos de defesa} {\tiny(apoio parcial, longitudinal)}};
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-5.25) {\textbf{transferência} {\tiny(padrões antigos em vínculos novos)}};
+  \node[it, draw=manualgreen!60, fill=manualgreen!5] at (-5.0,-6.25) {sintomas têm \textbf{função}};
+
+  \node[it, draw=manualred!60, fill=manualred!5] at (0,-1.05) {\textbf{estágios psicossexuais} e fixações produzindo caráter};
+  \node[it, draw=manualred!60, fill=manualred!5] at (0,-2.15) {\textbf{sonho} = desejo disfarçado; manifesto × latente};
+  \node[it, draw=manualred!60, fill=manualred!5] at (0,-3.35) {\textbf{repressão} de trauma como mecanismo central {\tiny(o trauma é lembrado \emph{demais})}};
+  \node[it, draw=manualred!60, fill=manualred!5] at (0,-4.55) {\textbf{inveja do pênis} e a psicologia feminina freudiana};
+  \node[it, draw=manualred!60, fill=manualred!5] at (0,-5.55) {\textbf{catarse}: descontar alivia {\tiny(Cap. 5)}};
+
+  \node[it, draw=manualgray!60, fill=manualgray!4] at (5.0,-1.05) {\textbf{id, ego, superego} como entidades};
+  \node[it, draw=manualgray!60, fill=manualgray!4] at (5.0,-2.05) {\textbf{pulsão de morte}};
+  \node[it, draw=manualgray!60, fill=manualgray!4] at (5.0,-3.05) {\textbf{simbolismo universal} na interpretação};
+  \node[it, draw=manualgray!60, fill=manualgray!4] at (5.0,-4.15) {\textbf{Édipo} como universal humano};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!8,
+        minimum width=14.4cm, align=center, font=\tiny] at (0,-7.4)
+    {A coluna do meio é a \textbf{honrosa}: uma ideia refutada foi testável --- ela entrou em campo e perdeu (Cap. 5).\\
+     A terceira coluna não é elogio nem condenação: é a constatação de que aquilo está \textbf{fora do alcance do método}.};
+\end{tikzpicture}
+```
+Um balanço por afirmação, não por escola. Perguntar "Freud estava certo?" é perguntar mal; as ideias dele tiveram destinos distintos, e o interessante está justamente na diferença.
+:::
+
+### O inconsciente: vindicado, e irreconhecível
+
+A ideia de que boa parte do processamento mental ocorre fora da consciência é hoje **consenso completo**. Nisso Freud estava certo, e estava certo contra a psicologia de seu tempo — a de Wundt e Titchener, para quem psicologia **era** o estudo da consciência.
+
+Mas veja o que a psicologia encontrou quando foi olhar. Kihlstrom, revisando a evidência, chamou-o de **inconsciente cognitivo** [@kihlstrom1987]: memória implícita, aprendizagem procedural, percepção sem consciência, automaticidade, processamento de significado sem acesso. Tudo isso é real e mensurável — e o Cap. 44 é feito disso.
+
+E é **outro** inconsciente. Greenwald resumiu a diferença numa frase que virou padrão: o inconsciente cognitivo é surpreendentemente **"burro"** — capaz de análises muito mais simples do que a tradição psicanalítica supõe [@greenwald1992]. O inconsciente de Freud é um estrategista: censura, disfarça desejos, constrói sonhos simbólicos, negocia com o superego, produz lapsos que revelam justamente o que se queria esconder. É um agente sofisticado com uma agenda.
+
+O inconsciente que a evidência mostra é um **conjunto de processos rápidos, automáticos e limitados**. Ele reconhece sua língua materna sem esforço, e não trama contra você.
+
+Então: Freud acertou a **existência**, e errou a **natureza**. É um acerto real, e é menos do que se costuma creditar.
+
+### A repressão: o caso mais grave
+
+Aqui a evidência não é ambígua, e as consequências foram trágicas.
+
+A tese: experiências traumáticas seriam expulsas da consciência por um mecanismo defensivo, permaneceriam ativas no inconsciente produzindo sintomas, e a cura envolveria trazê-las de volta.
+
+O problema é que a evidência aponta na **direção contrária**. O achado central da literatura sobre trauma — e o Cap. 80 o desenvolve — é que o trauma tende a ser lembrado **demais**, não de menos. A marca do transtorno de estresse pós-traumático não é amnésia: são **intrusões**. Flashbacks, pesadelos, memórias que voltam sem serem chamadas e não se deixam esquecer. McNally, revisando sistematicamente essa literatura, concluiu que não há apoio empírico para a repressão robusta de trauma no sentido freudiano, e que os casos alegados admitem explicações mais simples: esquecimento comum, amnésia infantil, não pensar no assunto por anos, ou nunca ter codificado o evento como traumático na época [@mcnally2003].
+
+E o custo dessa hipótese foi altíssimo.
+
+::: {.atencao}
+**As guerras da memória: quando uma teoria não testada vira prática clínica.**
+
+Nos anos 1980 e 1990, o corolário terapêutico da repressão produziu uma catástrofe documentada. O raciocínio: se sintomas atuais (depressão, ansiedade, problemas alimentares) podem vir de trauma reprimido, e se a pessoa **não lembra** de trauma algum, isso não é evidência de que não houve — é o que a teoria **prevê**. Logo, é preciso recuperar a memória.
+
+E havia técnicas para isso: hipnose, imaginação guiada, interpretação de sonhos, pressão sustentada do terapeuta, grupos em que todos já haviam "recuperado" as suas.
+
+Toda a pesquisa do Cap. 45 diz que essas são, precisamente, **técnicas de implantação de memória falsa**. Loftus e colegas demonstraram em laboratório que memórias autobiográficas detalhadas e vívidas de eventos que **nunca aconteceram** podem ser criadas em uma parcela substancial de pessoas, com imaginação repetida e sugestão de fonte confiável [@loftus1993; @loftus_pickrell1995]. A pessoa não está mentindo — ela **lembra**, com emoção e detalhe. É esse o ponto assustador: confiança e vividez não distinguem memória verdadeira de falsa.
+
+O resultado foi famílias destruídas, condenações criminais depois anuladas, e um número desconhecido de pessoas que passaram anos convencidas de abusos que não ocorreram — além do dano paralelo, e igualmente grave, de lançar dúvida pública sobre relatos de abuso **reais**, que são comuns e em geral lembrados.
+
+A lição não é sobre Freud. É sobre a estrutura do erro — e é o Cap. 5 outra vez. **Uma hipótese que não pode ser falseada, quando entra na clínica, deixa de ser inofensiva.** "A ausência de memória é prova da repressão" é uma proposição imune a qualquer dado: lembrar confirma, não lembrar confirma. E foi aplicada em pessoas.
+
+**A ressalva honesta, que o campo levou tempo para acomodar.** Algo parecido com supressão motivada existe, em escala modesta e em laboratório: Anderson e Green mostraram, no paradigma pensar/não-pensar, que instruir alguém a não evocar um item aprendido prejudica sua evocação posterior [@anderson_green2001]. É um efeito real, replicado, e debatido. Mas note a distância: suprimir a evocação de palavras aprendidas numa tarefa não é o mesmo que apagar anos de abuso e depois recuperá-los intactos. A existência do primeiro não sustenta o segundo.
+:::
+
+### Os estágios psicossexuais e os sonhos: testados, perdidos
+
+Os estágios psicossexuais e a doutrina da fixação produzem previsões razoavelmente específicas: um desmame problemático deveria produzir traços "orais"; um treino esfincteriano rígido, o caráter "anal" — obstinado, avaro, ordeiro. Isso **foi** testado ao longo de décadas, e o resultado é essencialmente nulo: práticas de criação específicas nesses períodos não predizem os traços previstos. Curiosamente, um agrupamento de traços de ordem, obstinação e parcimônia até existe — mas é hoje bem descrito pela dimensão de **conscienciosidade** dos cinco grandes fatores (Cap. 67), sem qualquer necessidade de penicos.
+
+Os sonhos tiveram destino semelhante. Hobson e McCarley propuseram a **hipótese de ativação-síntese**: durante o sono REM, sinais aleatórios ascendem do tronco encefálico e o córtex faz o que sempre faz — constrói uma narrativa a partir de material fragmentário [@hobson_mccarley1977]. A bizarrice do sonho não é disfarce; é o resultado de sintetizar ruído. Nesse quadro, não há conteúdo latente escondido atrás do manifesto: **o manifesto é o conteúdo**. O Cap. 37 mostra que o debate seguiu bem além disso, e que os sonhos não são puro ruído — há continuidade com preocupações da vigília, e há funções emocionais plausíveis. Mas a estrutura freudiana específica — desejo reprimido, censura, disfarce simbólico — não recebeu apoio.
+
+### As defesas: a surpresa favorável
+
+E aqui vem a parte que costuma surpreender quem espera um capítulo demolidor.
+
+Os **mecanismos de defesa**, catalogados sobretudo por Anna Freud, são o pedaço da teoria com **melhor sustentação empírica**. Não todos, não como o pai os concebeu, e não com o aparato pulsional — mas o fenômeno básico, o de que as pessoas distorcem sistematicamente a realidade para manejar ansiedade, e o fazem de maneiras razoavelmente tipificáveis, sobrevive ao escrutínio.
+
+A melhor evidência vem de um lugar improvável: um estudo longitudinal de setenta anos. George Vaillant, no Estudo Grant de Harvard, acompanhou centenas de homens desde a juventude até a velhice e classificou suas defesas em níveis de maturidade — de **imaturas** (projeção, negação, agir impulsivamente) a **maduras** (sublimação, humor, altruísmo, antecipação). O achado: o nível de maturidade das defesas, avaliado na juventude, **prediz** desfechos décadas depois — saúde física, satisfação conjugal, sucesso no trabalho, bem-estar na velhice — com o padrão persistindo após controle para variáveis óbvias [@vaillant1992; @vaillant2000]. Cramer, revisando a literatura experimental e do desenvolvimento, chegou a conclusão convergente: as defesas podem ser medidas com confiabilidade aceitável, seguem uma sequência desenvolvimental ordenada, e têm valor preditivo [@cramer2000].
+
+Isso é ciência respeitável, e o mérito é psicanalítico. Note por que funcionou: as defesas são **observáveis** no comportamento e no discurso, podem ser codificadas por juízes independentes e cegos, e produzem previsões longitudinais que **poderiam falhar**. Quando a psicanálise se submete ao Cap. 3, ela tem coisas a dizer.
+
+## Popper, Grünbaum, e a crítica que é fácil demais
+
+A objeção-padrão é de Popper, e ele mesmo usou a psicanálise como seu exemplo principal: a teoria explica tudo, portanto não explica nada [@popper1963]. Um homem empurra uma criança na água para afogá-la: pulsão de morte. Outro se joga para salvá-la: sublimação. Nenhum comportamento possível é incompatível com a teoria — e essa aparente força total é, na verdade, a marca da fraqueza. Uma teoria que não proíbe nada não pode ser testada.
+
+O argumento é bom e todo estudante deveria conhecê-lo. Mas ele é **fácil demais**, e a crítica mais séria — a de Adolf Grünbaum, um filósofo da ciência que dedicou um livro inteiro ao tema — vai por outro lado, e é mais devastadora justamente por levar Freud mais a sério [@grunbaum1984].
+
+Grünbaum argumenta que Popper **erra o diagnóstico**. Freud fez, sim, afirmações testáveis — muitas —, e sabia disso. Havia até um argumento explícito para a validação, que Grünbaum batizou de **argumento da concordância** (*tally argument*): a interpretação analítica é verdadeira porque **funciona** — o paciente melhora, e só melhora quando a interpretação bate com a realidade psíquica dele. Se a interpretação fosse mera sugestão, não curaria.
+
+Grünbaum então demole isso com o Cap. 3 na mão. O argumento depende de duas premissas empíricas: (a) que a psicanálise cura, e (b) que só ela cura, porque só ela acessa as causas. As duas são **falsas** — outras terapias produzem melhora, e a melhora não valida a interpretação. Pior: Freud, ao afirmar que a melhora só ocorre pela interpretação correta, tornou-se refém do problema que mais o ameaçava — a **sugestão**. Se o paciente melhora porque acredita no analista, e se as "lembranças" que emergem no divã podem ser produto da própria expectativa do tratamento, então **os dados clínicos estão contaminados na origem**, e nenhuma quantidade de horas de divã pode descontaminá-los.
+
+A conclusão de Grünbaum é mais dura que a de Popper, e é a que este manual adota: o problema da psicanálise não é ser infalseável. É que **boa parte dela é falseável, foi testada, e perdeu** — e que a evidência clínica que ela invoca em sua defesa é, pelo desenho, incapaz de distinguir descoberta de sugestão. É exatamente a crítica que o Cap. 3 faz a qualquer prática que se valide pela própria satisfação de quem a pratica.
+
+::: {.na-pratica}
+**Os casos fundadores não sustentam o que se diz que sustentam.**
+
+A base empírica da psicanálise é um punhado de casos. Vale olhar para eles com o Cap. 15 na mão:
+
+- **Anna O.** (Bertha Pappenheim): não curada; o relato publicado omite. Ver o quadro acima.
+- **Pequeno Hans**, o caso do menino com fobia de cavalos, apresentado como confirmação do complexo de Édipo: Freud **encontrou a criança uma única vez**. Todo o material foi coletado e transmitido pelo **pai** — que era seguidor de Freud, conhecia a teoria, e conduzia as conversas com o filho fazendo perguntas sugestivas. Pelo padrão do Cap. 3, isso é um estudo sem cegamento em que o observador é um crente com acesso irrestrito à testemunha.
+- **Dora** (Ida Bauer): uma adolescente cujo pai a levou ao tratamento; ela relatava assédio por um amigo da família, cuja esposa era amante do pai. Freud interpretou sua repulsa como sintoma histérico e insistiu num desejo inconsciente pelo agressor. Ela abandonou o tratamento em onze semanas, e Freud registrou o abandono como ato de vingança. Uma leitura contemporânea é difícil de evitar: uma menina relatando abuso foi informada de que queria o abusador.
+- **Homem dos Lobos** (Sergei Pankejeff): o caso mais elaborado de Freud, tratado como sucesso terapêutico. Pankejeff viveu até os 92 anos, permaneceu em tratamento com analistas por décadas, e em entrevistas tardias afirmou que a análise não o ajudara e que a história da cena primária reconstruída por Freud lhe parecia improvável. Suas palavras registradas incluem a avaliação de que aquilo tudo era terrível.
+
+Nenhuma dessas observações refuta a psicanálise por si — casos ruins não provam teoria falsa. O que elas mostram é o **tipo de evidência** que a teoria tem: relatos retrospectivos, produzidos por um observador com investimento no resultado, sobre pacientes expostos à teoria durante a coleta. É a estrutura do Cap. 3 sobre o efeito do experimentador, com o volume no máximo.
+:::
+
+## Os desdobramentos, e o único que virou ciência
+
+O movimento se fragmentou cedo e ruidosamente.
+
+**Carl Jung** rompeu por rejeitar o primado sexual e propôs o **inconsciente coletivo** e os **arquétipos** — estruturas simbólicas herdadas e universais. Do ponto de vista empírico, isso está firmemente na terceira coluna da @fig-freud-balanco. Uma ideia junguiana, porém, atravessou: a distinção **introversão/extroversão**, que sobreviveu à psicometria, entrou nos cinco grandes fatores e é hoje uma das dimensões mais bem estabelecidas da personalidade (Cap. 67). A ironia é que o instrumento mais associado ao nome dele — o MBTI — é justamente aquele que o Cap. 5 usa como exemplo de falha psicométrica, por transformar traços contínuos em tipos.
+
+**Alfred Adler** rompeu antes, e sua psicologia individual pôs no centro o **sentimento de inferioridade**, a busca de superioridade e o **interesse social**. É a mais socialmente orientada e a menos pulsional das variantes, e antecipou temas que o Cap. 11 e o Cap. 68 desenvolvem. Sua tese mais popular — a de que a **ordem de nascimento** molda a personalidade — teve um destino instrutivo: em amostras pequenas, apareciam efeitos; em amostras grandes com desenho adequado, eles somem. Rohrer e colegas, com dezenas de milhares de participantes em três países, encontraram um efeito minúsculo e consistente sobre **inteligência psicométrica** (primogênitos ligeiramente acima) e **nenhum efeito** relevante sobre traços de personalidade [@rohrer2015]. É um belo caso do Cap. 5: a ideia é intuitiva, todo mundo tem um exemplo, e os dados dizem não.
+
+**Karen Horney** fez a crítica interna mais afiada. Contra a inveja do pênis, propôs — em parte com ironia deliberada — a **inveja do útero**, e observou que a psicologia feminina de Freud fora construída por um homem, a partir de pacientes mulheres, numa sociedade que as subordinava, e que "querer o que os homens têm" talvez tivesse menos a ver com anatomia e mais com **poder** [@horney1967]. Sua ênfase na **ansiedade básica** — a insegurança da criança num ambiente pouco confiável — está claramente na linhagem do que viria a ser a teoria do apego.
+
+**Erik Erikson** estendeu o desenvolvimento por toda a vida, com oito estágios psicossociais em vez de psicossexuais, e a ideia de **crise de identidade**. É influente, especialmente em desenvolvimento (Cap. 60) e adolescência (Cap. 62), e a evidência é parcial: a sequência descreve bem, a estrutura de estágios discretos e universais sustenta-se mal.
+
+E então há **John Bowlby**, e ele merece parágrafo próprio.
+
+::: {.experimento}
+**Bowlby: o psicanalista que trocou de método** [@bowlby1969]
+
+**O ponto de partida.** Bowlby era psicanalista formado, treinado na tradição kleiniana, e partiu de uma pergunta psicanalítica legítima: por que a separação precoce da mãe produz efeitos duradouros? Trabalhando com crianças institucionalizadas e delinquentes juvenis no pós-guerra, viu o fenômeno de perto.
+
+**A ruptura.** Ele podia ter respondido à maneira da casa: interpretando fantasias inconscientes da criança sobre o seio. Fez outra coisa — e foi por isso que sua obra sobreviveu. Foi buscar **etologia**: Lorenz e a impressão em gansos, Harlow e os macacos com mães de arame e de pano (Cap. 60). Foi buscar **teoria de sistemas de controle**. E, sobretudo, aceitou que a hipótese teria de ser testada em **comportamento observável de crianças reais**, codificado por observadores independentes.
+
+**O resultado.** Nasceu a proposta de que o apego é um **sistema comportamental** com função evolutiva — manter a proximidade do cuidador diante de perigo —, com base biológica, e não uma consequência secundária da alimentação. E, com Mary Ainsworth, veio o instrumento que fez a teoria virar ciência: a **Situação Estranha**, um procedimento padronizado de laboratório, com episódios fixos de separação e reunião, e classificação da criança por juízes treinados a partir de critérios explícitos [@ainsworth1978].
+
+**Por que isto é o divisor de águas.** Compare com o Pequeno Hans. Aqui há: procedimento padronizado, observadores independentes, categorias com confiabilidade medida, amostras, replicação em vários países, estudos longitudinais, e previsões que **poderiam falhar**. A teoria do apego é hoje uma das áreas mais produtivas da psicologia do desenvolvimento — e, tendo passado pelo teste, também acumulou correções: as classificações são menos estáveis do que se supunha, a previsão de desfechos adultos é modesta, e o peso do temperamento e do contexto cultural foi subestimado (Cap. 60).
+
+**O preço.** O establishment psicanalítico **rejeitou** Bowlby. Ele foi marginalizado na Sociedade Britânica de Psicanálise; Anna Freud e Melanie Klein, que concordavam em pouca coisa, concordaram nisso. A acusação era de que ele havia abandonado o mundo interno pela observação behaviorista, trocando a profundidade pela superfície.
+
+**A moral.** O descendente mais bem-sucedido da psicanálise é aquele que **abandonou o método psicanalítico** e manteve as perguntas. Isso deveria ser lido junto com o Cap. 3: as perguntas de Freud eram melhores do que seu método — e quando alguém as levou a um método melhor, elas renderam.
+:::
+
+## A terapia funciona? (E por que essa é outra pergunta)
+
+Um erro persistente, dos dois lados da polêmica, é tratar a eficácia terapêutica e a verdade da teoria como uma pergunta só. Não são, e mantê-las separadas é condição para pensar com clareza aqui.
+
+**Sobre a eficácia.** Há evidência de que a psicoterapia psicodinâmica produz benefício em vários quadros. Shedler reuniu meta-análises mostrando tamanhos de efeito comparáveis aos de terapias com melhor reputação empírica, e relatou o achado mais interessante: os ganhos **se mantêm e por vezes aumentam** depois do fim do tratamento [@shedler2010]. Leichsenring e Rabung relataram benefício de terapia psicodinâmica de longo prazo em transtornos complexos [@leichsenring2008]. Essas revisões foram contestadas — quanto à seleção de estudos, à qualidade dos comparadores e às condições de controle [@thombs2012] —, e a leitura prudente é: a terapia psicodinâmica **funciona melhor do que nada e, para vários quadros, comparavelmente a alternativas**, com base de evidência mais fina que a da TCC. Nem o triunfo que se anuncia, nem o vazio que se alega. O Cap. 88 e o Cap. 95 tratam disso com o cuidado que merece.
+
+**Sobre o que a eficácia prova da teoria.** Nada, ou quase. Este é o ponto de Grünbaum, e ele é decisivo: uma terapia pode funcionar por razões inteiramente distintas das que sua teoria alega. Boa parte do efeito de qualquer psicoterapia deve-se a **fatores comuns** — a aliança terapêutica, a expectativa de melhora, a experiência de ser ouvido com atenção por alguém que não julga, o encorajamento a encarar o que se evita. A sangria também "funcionava" para muitos pacientes; isso não validava a teoria dos humores. Melhorar não prova o mecanismo alegado — é o Cap. 3 outra vez, e é a razão pela qual estudos de desmantelamento existem.
+
+Westen ofereceu a formulação mais útil desse impasse, e ela vale como enunciado da posição do manual: o legado científico de Freud não são suas teorias específicas — quase todas superadas —, mas um conjunto de **proposições gerais** que a pesquisa contemporânea sustenta de forma independente: muito do processamento mental é inconsciente; processos mentais operam em paralelo e podem entrar em conflito; representações de figuras significativas da infância influenciam relações posteriores; e o desenvolvimento envolve regular impulsos e negociar interdependência [@westen1998]. A psicologia acadêmica, argumenta ele, muitas vezes rejeita Freud citando teorias que os próprios psicanalistas abandonaram há setenta anos — o que é criticar um Freud que também não existe, erro que o Cap. 7 já nos ensinou a reconhecer.
+
+## Por que Freud continua em toda parte
+
+Faça a conta e o resultado é estranho. A psicanálise perdeu quase todas as suas afirmações específicas testáveis. Ela **não está** nos departamentos de psicologia experimental. E é, ainda assim, provavelmente o corpo de ideias psicológicas mais conhecido do planeta.
+
+O motivo é que Freud venceu num terreno diferente daquele em que perdeu. Ele deu à cultura um **vocabulário** — inconsciente, ego, projeção, negação, ato falho, complexo, defesa, transferência —, e essas palavras hoje pertencem a todo mundo. Ele deu à literatura, ao cinema e à crítica de arte uma gramática de interpretação. E deu a milhões de pessoas uma proposta que nenhuma ciência oferece: a de que sua vida tem **sentido oculto**, e que ele pode ser descoberto.
+
+No Brasil, o quadro tem particularidade importante: a psicanálise tem presença muito maior na formação e na prática clínica do que em países anglófonos, e não é uma profissão regulamentada — o Cap. 4 já tratou disso, e o Cap. 104 volta. Isso torna a distinção deste capítulo mais urgente, não menos.
+
+O veredito defensável, então, tem três partes. Como **teoria científica da mente**, a psicanálise falhou: suas afirmações testáveis foram, em sua maioria, testadas e refutadas, e as que restam não são testáveis. Como **fonte de perguntas**, ela foi extraordinariamente fértil: inconsciente, conflito, defesa, transferência, o peso da infância — tudo isso é agenda viva, estudada com métodos que Freud não teria aceitado. Como **prática clínica**, ela ajuda pessoas, por razões que provavelmente não são as que ela alega.
+
+O Cap. 11 apresenta a reação de quem achava que tanto Freud quanto Skinner haviam entendido o ser humano de forma insultuosa — um como escravo de pulsões, outro como produto de contingências — e que faltava alguém para falar do que ambos deixaram de fora.
+
+::: {.callout-sintese}
+- **A pergunta certa não é "Freud estava certo?".** É: quais afirmações foram **absorvidas**, quais foram **refutadas** e quais **nunca entraram em campo**? Os três destinos existem, e o interessante está na diferença.
+- **O problema era real.** Sintomas histéricos sem lesão, que somem sob hipnose e seguem o mapa **popular** do corpo, não tinham explicação em nenhuma psicologia da época. Freud viu um fenômeno que os outros ignoravam.
+- **Anna O. não foi curada.** Bertha Pappenheim seguiu doente, recuperou-se depois sem psicanálise, tornou-se uma grande reformadora social alemã e detestava a psicanálise. O caso fundador é um relato editado por quem tinha interesse no desfecho.
+- **O inconsciente foi vindicado — e é outro.** O inconsciente cognitivo [@kihlstrom1987] é real e onipresente, mas "burro" [@greenwald1992]: rápido, automático, limitado. Não é o estrategista que censura, disfarça e trama.
+- **A repressão de trauma não tem apoio**; o trauma é lembrado **demais** (intrusões, flashbacks) [@mcnally2003]. O corolário clínico produziu dano real: as técnicas de "recuperação" são técnicas de **implantação** [@loftus1993; @loftus_pickrell1995]. Algo como supressão existe em laboratório [@anderson_green2001], em escala que não sustenta a tese clínica.
+- **Estágios psicossexuais e sonhos como desejo disfarçado**: testados, sem apoio. O caráter "anal" é conscienciosidade (Cap. 67); a bizarrice do sonho é síntese de sinal, não disfarce [@hobson_mccarley1977].
+- **As defesas são a surpresa favorável.** Vaillant, em setenta anos de estudo longitudinal, mostrou que a maturidade das defesas na juventude prediz saúde, trabalho e bem-estar décadas depois [@vaillant1992; @vaillant2000]; Cramer confirma mensurabilidade e sequência [@cramer2000]. Funcionou porque foi submetida ao Cap. 3.
+- **Popper é fácil demais; Grünbaum é pior.** O problema não é a infalseabilidade, e sim que boa parte da teoria **é falseável, foi testada e perdeu** — e que o dado clínico, pelo desenho, não distingue descoberta de **sugestão** [@grunbaum1984].
+- **Os casos fundadores não sustentam o que se alega**: Hans foi visto uma vez e relatado pelo pai discípulo; Dora abandonou; Pankejeff disse que não adiantou.
+- **Bowlby é o descendente vencedor porque trocou de método** [@bowlby1969]: etologia, observação padronizada, Situação Estranha [@ainsworth1978], juízes cegos, previsão que podia falhar. A psicanálise o rejeitou por isso.
+- **Ordem de nascimento** (Adler): efeito minúsculo em inteligência, **nulo** em personalidade, em amostras grandes [@rohrer2015].
+- **Eficácia ≠ verdade.** A terapia psicodinâmica tem apoio empírico razoável [@shedler2010; @leichsenring2008], contestado [@thombs2012] — e isso **não valida a teoria**: fatores comuns explicam muito. Sangria também "funcionava".
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Modelo tópico**
+:   Divisão da mente por acessibilidade: consciente, pré-consciente e inconsciente [@freud1900].
+
+**Modelo estrutural**
+:   Divisão por função: id (pulsional, princípio do prazer), ego (executivo, princípio da realidade) e superego (moral internalizada) [@freud1923].
+
+**Repressão**
+:   Expulsão ativa de conteúdos da consciência e sua manutenção fora dela; o conceito central da teoria e o de pior sustentação empírica [@mcnally2003].
+
+**Inconsciente cognitivo**
+:   Conjunto de processos mentais rápidos, automáticos e inacessíveis à consciência, demonstrados experimentalmente; distinto do inconsciente freudiano por ser muito menos sofisticado [@kihlstrom1987; @greenwald1992].
+
+**Mecanismos de defesa**
+:   Distorções sistemáticas da realidade que reduzem ansiedade, graduáveis em maturidade e preditivas de desfechos de longo prazo [@vaillant1992; @cramer2000].
+
+**Estágios psicossexuais**
+:   Sequência oral, anal, fálica, latência e genital, com **fixação** produzindo traços adultos; previsão testada e sem apoio.
+
+**Conteúdo manifesto** / **latente**
+:   O sonho tal como lembrado × o desejo que ele supostamente disfarça; distinção sem apoio empírico [@hobson_mccarley1977].
+
+**Transferência**
+:   Aplicação, a uma relação nova, de padrões formados em relações significativas anteriores; o conceito psicanalítico com melhor tradução em cognição social.
+
+**Argumento da concordância** (*tally argument*)
+:   Tese de que a interpretação analítica se valida por curar; demolida por depender de premissas empíricas falsas e por não excluir a sugestão [@grunbaum1984].
+
+**Sugestão**
+:   Influência do terapeuta sobre o material que o paciente produz — a contaminação que torna o dado clínico incapaz de arbitrar a teoria que o gerou.
+
+**Inconsciente coletivo** / **arquétipos**
+:   Em Jung, estruturas simbólicas herdadas e universais; sem estatuto testável.
+
+**Situação Estranha**
+:   Procedimento padronizado de separação e reunião que permitiu classificar padrões de apego por juízes treinados — o instrumento que transformou uma pergunta psicanalítica em programa científico [@ainsworth1978].
+
+**Fatores comuns**
+:   Elementos compartilhados por todas as psicoterapias (aliança, expectativa, escuta, encorajamento) que respondem por parte substancial de seu efeito, independentemente da teoria alegada.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique por que a distribuição "em luva" das anestesias histéricas era uma pista teórica importante, e por que nem o estruturalismo nem o behaviorismo tinham o que dizer sobre ela.
+
+2. **(Recuperação.)** Distinga o modelo tópico do modelo estrutural, indicando o eixo de cada um. Por que dizer que "o id é a parte submersa do iceberg" mistura os dois?
+
+3. **(Compreensão.)** Em que sentido preciso o inconsciente cognitivo vindica Freud, e em que sentido preciso o contradiz? Use a caracterização de @greenwald1992.
+
+4. **(Aplicação.)** Uma terapeuta afirma: "Minha paciente não lembra de nenhum abuso, o que é típico — a repressão é mais forte quanto mais grave o trauma. Vamos usar hipnose para recuperar." Aponte (a) por que a primeira frase é infalseável e o que isso significa na prática; (b) o que a pesquisa de @loftus1993 diz sobre o procedimento proposto; (c) por que a vividez e a emoção da memória que emergir não decidirão nada.
+
+5. **(Aplicação.)** Um analista argumenta: "A prova de que minha interpretação estava correta é que o paciente melhorou depois dela." Identifique o argumento (Grünbaum lhe deu nome), e liste três explicações alternativas para a melhora que esse raciocínio não exclui.
+
+6. **(Reflexão crítica.)** Este capítulo sustenta que a crítica de Popper é "fácil demais" e que a de Grünbaum é pior para a psicanálise. Reconstrua as duas e explique por que a segunda é mais grave — apesar de conceder mais a Freud.
+
+7. **(Reflexão crítica.)** O caso de Bowlby sugere que as perguntas de Freud eram melhores que seu método. Escolha **outra** ideia psicanalítica que ainda esteja na terceira coluna da @fig-freud-balanco e proponha, concretamente, o que seria preciso para tirá-la de lá: que observação, que procedimento, que resultado a refutaria.
+
+8. **(Integração.)** A terapia psicodinâmica tem evidência de eficácia, e a teoria psicanalítica está em boa parte refutada. Explique por que essas duas afirmações não se contradizem. Em seguida, discuta: se uma terapia funciona por fatores comuns e não pelo mecanismo que alega, isso é um problema **para o paciente**, **para o terapeuta**, ou **para a ciência**? Justifique — as três respostas são defensáveis, e a escolha revela o que você acha que uma teoria é para quê.
