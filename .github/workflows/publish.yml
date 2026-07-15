@@ -52,6 +52,9 @@ jobs:
           # O passo de render precisa de latex/dvisvgm no PATH, senão as figuras
           # TikZ falham com "imgdata nil" — o sintoma classico do §8.3.
           dirname "$TLMGR" >> "$GITHUB_PATH"
+          # O tlmgr do TinyTeX recem-instalado costuma estar defasado em relacao ao
+          # repositorio CTAN e recusa qualquer install ate se atualizar (exit 255).
+          "$TLMGR" update --self
           "$TLMGR" install standalone pgf pgfplots dvisvgm xcolor amsmath amsfonts
 
       # Falha cedo e com mensagem legivel se o PATH nao pegou (§8.3).

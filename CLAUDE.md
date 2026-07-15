@@ -298,9 +298,19 @@ Prepender o bin do TinyTeX ao PATH **antes** de qualquer render/preview:
 Instalação local:
 ```
 quarto install tinytex
+tlmgr update --self      # ver 8.3.1 — sem isso o install aborta
 tlmgr install standalone pgf pgfplots dvisvgm xcolor amsmath amsfonts
 ```
-Na CI: após instalar Quarto + TinyTeX, localizar `tlmgr` via `find` se não estiver no PATH, e rodar o mesmo `tlmgr install`. Este bootstrap deve rodar automaticamente na primeira sessão (está no `PROMPT-CLAUDE-CODE.md`).
+Na CI: após instalar Quarto + TinyTeX, localizar `tlmgr` se não estiver no PATH, e rodar o mesmo `tlmgr install`. Este bootstrap deve rodar automaticamente na primeira sessão (está no `PROMPT-CLAUDE-CODE.md`).
+
+#### 8.3.1 `tlmgr update --self` antes de qualquer `tlmgr install`
+O `tlmgr` que vem no TinyTeX recém-instalado costuma estar defasado em relação ao repositório CTAN e **recusa qualquer instalação** até se atualizar, com a mensagem `tlmgr itself needs to be updated` e **exit 255**. Sempre rodar `tlmgr update --self` antes do `install`. Vale local e na CI.
+
+#### 8.3.2 No Windows, `tlmgr` é `tlmgr.bat`
+`which tlmgr` / `command -v tlmgr` **não** encontram o binário mesmo com o PATH correto. Chamar `tlmgr.bat` explicitamente.
+
+#### 8.3.3 Os binários do TinyTeX são symlinks
+Em `TinyTeX/bin/<plataforma>/`, `tlmgr` e companhia são **symlinks**, não arquivos regulares. Um `find ... -name tlmgr -type f` retorna vazio e faz a CI abortar com "tlmgr não encontrado". Usar `\( -type f -o -type l \)`, ou testar caminhos conhecidos com `[ -x ... ]`. No Linux, o `quarto-actions/setup@v2` instala em `~/.TinyTeX/bin/x86_64-linux/`.
 
 ### 8.4 Marcador de camada SCSS no `styles.css`
 Com `styles.css` sob `theme:` no `_quarto.yml`, o Quarto ≥1.9 o trata como camada SCSS e **exige** a primeira linha:
