@@ -1,5 +1,344 @@
 # 06. Raízes filosóficas: da filosofia à ciência
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** racionalismo e empirismo, e reconhecer como cada um respondeu à pergunta sobre a origem do conhecimento.
+- **Explicar** por que o dualismo de Descartes foi ao mesmo tempo um avanço metodológico e um beco sem saída.
+- **Descrever** as leis da associação e o que elas tentavam ser: uma mecânica da mente.
+- **Reconstruir** por que a fisiologia do século XIX — e não a filosofia — forneceu o ingrediente que faltava: a medida.
+- **Analisar** a psicofísica de Fechner como a primeira demonstração de que o mental podia ser quantificado.
+- **Avaliar** a frenologia como caso exemplar de ideia parcialmente correta arruinada por método incorreto.
+- **Justificar** por que 1879 é uma data de conveniência, e o que ela de fato marca.
 :::
+
+O Vol 1 fechou dizendo que uma teoria superada e um mito não são a mesma coisa: a primeira foi testada e perdeu. Este volume é a história de quem entrou em campo. Começa, porém, com um período em que campo não havia — dois mil anos em que as perguntas da psicologia foram feitas com rigor considerável e sem qualquer meio de resolvê-las.
+
+Vale resistir à leitura confortável desse período. É tentador tratar a filosofia pré-científica como uma sala de espera, onde pensadores bem-intencionados especulavam até que alguém finalmente montasse um laboratório. Não foi isso. Os filósofos formularam as perguntas com uma precisão que ainda organiza a disciplina — as questões do Cap. 2 são deles, quase palavra por palavra. O que lhes faltava não era inteligência nem cuidado. Era um jeito de decidir quem estava certo.
+
+Este capítulo é sobre como esse jeito apareceu. E a resposta é menos elegante do que a lenda sugere: ele não veio da filosofia. Veio de fisiologistas medindo nervos de rã.
+
+## A pergunta herdada: de onde vem o conhecimento?
+
+Se há uma pergunta que a filosofia entregou à psicologia já embalada, é a **epistemológica**: o que sabemos, e como viemos a saber? Ela parece abstrata até você notar que é uma pergunta empírica disfarçada — e que a psicologia do desenvolvimento (Vol 10) passa o século seguinte tentando respondê-la com bebês.
+
+Duas respostas se enfrentaram.
+
+O **racionalismo** sustenta que o conhecimento fundamental é derivado da razão, e que a mente já traz estrutura antes de qualquer experiência. Platão é o caso puro: para ele, os sentidos entregam sombras, e o que conhecemos de verdade — as formas, as verdades matemáticas — a alma já possuía. Aprender é lembrar. É uma posição **nativista**: a estrutura vem de dentro.
+
+O **empirismo** responde que todo o conteúdo da mente entra pelos sentidos. Aristóteles, aluno de Platão e seu primeiro grande dissidente, virou o argumento do avesso: o conhecimento começa na observação do mundo, e a mente organiza o que os sentidos entregam. Foi ele, aliás, quem escreveu o primeiro tratado sistemático sobre a alma — o *De Anima* — e quem propôs as primeiras **leis da associação**, a que voltaremos.
+
+Essa divisão não é história antiga. Ela é a mesma do Cap. 2: natureza × cultura, com outra roupa. E ela reaparece, com nomes novos, em Chomsky contra Skinner (Cap. 12), em Piaget contra Vygotsky (Cap. 59), no debate sobre gramática universal (Cap. 48). A @fig-nativismo-empirismo situa os principais personagens no eixo — com o aviso de que o eixo é uma simplificação didática, e quase ninguém ocupa os extremos.
+
+::: {#fig-nativismo-empirismo}
+```{.tikz}
+%%| filename: nativismo-empirismo
+%%| alt: Eixo horizontal que vai do nativismo, à esquerda, ao empirismo, à direita, com filósofos posicionados ao longo dele. No extremo nativista está Platão, com a nota de que conhecer é lembrar. Próximo dele, Descartes, com ideias inatas e o dualismo. No centro está Kant, indicado como a síntese, em que a mente impõe categorias ao conteúdo que vem dos sentidos. Do lado empirista estão Aristóteles, com a mente organizando o que os sentidos entregam, depois Hume, com a mente como feixe de associações, e no extremo Locke, com a tabula rasa. Uma faixa inferior indica que o mesmo eixo reaparece depois como Chomsky contra Skinner, Piaget contra Vygotsky, e o debate natureza contra cultura do capítulo dois.
+\begin{tikzpicture}[
+  fi/.style={draw, thick, rounded corners=3pt, minimum width=2.5cm, minimum height=1.1cm,
+             align=center, font=\scriptsize}
+]
+  \draw[->, >=Stealth, very thick, manualgray] (-6.6,0) -- (6.6,0);
+  \node[font=\scriptsize\bfseries, text=manualblue] at (-6.4,0.45) {NATIVISMO};
+  \node[font=\tiny, text=manualgray, align=center] at (-6.4,-0.5) {a estrutura\\vem de dentro};
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (6.3,0.45) {EMPIRISMO};
+  \node[font=\tiny, text=manualgray, align=center] at (6.3,-0.5) {o conteúdo\\vem de fora};
+
+  \node[fi, draw=manualblue, fill=manualblue!8] (pla) at (-5.0,2.0)
+    {\textbf{Platão}\\{\tiny conhecer é lembrar}};
+  \node[fi, draw=manualblue, fill=manualblue!8] (des) at (-2.3,3.4)
+    {\textbf{Descartes}\\{\tiny ideias inatas}\\{\tiny + dualismo}};
+  \node[fi, draw=manualyellow, fill=manualyellow!10] (kan) at (0,2.0)
+    {\textbf{Kant}\\{\tiny a mente impõe}\\{\tiny categorias ao dado}};
+  \node[fi, draw=manualgreen, fill=manualgreen!8] (ari) at (2.3,3.4)
+    {\textbf{Aristóteles}\\{\tiny a mente organiza}\\{\tiny o que os sentidos dão}};
+  \node[fi, draw=manualgreen, fill=manualgreen!8] (hum) at (3.4,2.0)
+    {\textbf{Hume}\\{\tiny feixe de associações}};
+  \node[fi, draw=manualgreen, fill=manualgreen!8] (loc) at (5.6,0.9)
+    {\textbf{Locke}\\{\tiny \emph{tabula rasa}}};
+
+  \draw[thick, manualgray!60] (pla) -- (-5.0,0.15);
+  \draw[thick, manualgray!60] (des) -- (-2.3,0.15);
+  \draw[thick, manualgray!60] (kan) -- (0,0.15);
+  \draw[thick, manualgray!60] (ari) -- (2.3,0.15);
+  \draw[thick, manualgray!60] (hum) -- (3.4,0.15);
+  \draw[thick, manualgray!60] (loc) -- (5.6,0.15);
+
+  \node[draw, thick, rounded corners=3pt, draw=manualgray, fill=manualgray!5,
+        minimum width=12.4cm, align=center, font=\scriptsize] at (0,-1.9)
+    {\textbf{O mesmo eixo, com nomes novos:} Chomsky × Skinner (Cap. 12) · Piaget × Vygotsky (Cap. 59) · natureza × cultura (Cap. 2)};
+\end{tikzpicture}
+```
+O eixo nativismo–empirismo e seus ocupantes. A posição é aproximada e o eixo é didático: ninguém sério jamais defendeu que a mente não traz nada, e quase ninguém defendeu que a experiência não acrescenta nada.
+:::
+
+## Descartes: o avanço que virou armadilha
+
+René Descartes ocupa um lugar estranho nesta história. Ele é simultaneamente o autor da melhor ideia e do pior erro da psicologia pré-científica — e as duas coisas são a mesma ideia.
+
+O contexto importa. Descartes queria fundar o conhecimento em algo inabalável, e usou a dúvida como ferramenta: descartou tudo o que pudesse ser falso, até chegar ao único ponto que a dúvida não alcança — o fato de que, duvidando, ele pensa, e portanto existe [@descartes1641]. É um movimento notável, e é também o pecado original: **o método de Descartes é a introspecção**. Ele investiga a mente examinando a própria mente. Guarde isso, porque o Cap. 7 vai construir um laboratório inteiro sobre essa base, e o Cap. 8 vai demoli-lo.
+
+Do lado do avanço, Descartes fez três coisas que a psicologia herdou:
+
+**Tratou o corpo como máquina.** Para ele, o corpo — inclusive o dos animais, inclusive o nosso — é um sistema mecânico, explicável por princípios físicos, sem recurso a alma vegetativa ou espíritos vitais. Era uma aposta radical no século XVII, e é a aposta que o Vol 4 inteiro cobra.
+
+**Propôs o reflexo.** Descartes imaginou que um estímulo externo poderia provocar um movimento por uma via puramente mecânica, sem participação da vontade — o pé que se recolhe do fogo antes de você decidir recolhê-lo. Os detalhes estavam errados (ele imaginava fluidos correndo por tubos), mas a estrutura estava certa: **comportamento causado por estímulo, sem intervenção mental**. É a semente do arco reflexo (Cap. 23) e, por extensão, de todo o behaviorismo.
+
+**Formulou o problema mente–corpo em termos que exigem resposta.** Se a mente é imaterial e o corpo é máquina, como um afeta o outro? Descartes respondeu — a glândula pineal, ponto de encontro — e a resposta é constrangedoramente ruim. Mas a pergunta é boa, e é o Cap. 2.
+
+::: {.atencao}
+**O erro de Descartes não é ter errado a glândula.**
+
+É comum ridicularizar a pineal. O problema real é anterior e mais profundo: **um dualismo de substâncias torna a interação inexplicável em princípio**, não por falta de anatomia. Se a mente não tem massa, posição ou energia, não há como ela empurrar coisa alguma — em nenhuma glândula. Qualquer ponto de contato que se aponte apenas move o mistério de lugar.
+
+Damásio deu ao problema uma formulação mais interessante que a anatômica: o erro estaria em separar razão e emoção como se a segunda contaminasse a primeira. A evidência clínica — pacientes com lesão em córtex pré-frontal ventromedial que mantêm QI intacto e mesmo assim tomam decisões catastróficas na vida — sugere o contrário: sem sinalização emocional, a razão não decide, ela roda em círculos [@damasio1994]. A separação cartesiana não é só metafisicamente cara; é empiricamente falsa no ponto em que mais parecia óbvia.
+
+Ainda assim, faça justiça: **Descartes propôs uma hipótese testável e específica**, e ela foi testada e derrubada. Pelo critério do Cap. 5, isso o coloca do lado certo da linha.
+:::
+
+## Locke, Hume e a mecânica da associação
+
+O empirismo britânico tentou algo ambicioso: fazer pela mente o que Newton fizera pela matéria — encontrar poucas leis simples que explicassem tudo.
+
+John Locke deu o slogan. A mente ao nascer seria um papel em branco — a **tabula rasa** —, e todo o seu conteúdo viria da **sensação** (dados dos sentidos) e da **reflexão** (a mente observando suas próprias operações). Ideias complexas seriam compostas de ideias simples, como moléculas de átomos. A metáfora é química, e não é acidental: a **química mental** foi a ambição declarada dessa tradição.
+
+As leis da combinação — as **leis da associação** — Aristóteles já esboçara e os empiristas refinaram: ideias se ligam por **contiguidade** (ocorrem juntas no tempo ou no espaço), **semelhança** e **contraste**. David Hume acrescentou a peça que faltava e que a tornou perigosa: a **causalidade**.
+
+O argumento de Hume merece atenção porque é um dos raros casos de filosofia pura que a psicologia depois confirmou. Ele perguntou: o que exatamente você observa quando vê uma bola de bilhar acertar outra? Você observa a primeira se mover, o contato, e a segunda se mover. Você **não** observa a causação — não há nada nos dados sensoriais que corresponda ao "porque". A ideia de causa, concluiu, não vem do mundo; vem de nós. É um **hábito mental** produzido pela conjunção constante e repetida.
+
+Isso é dinamite dupla. Filosoficamente, corrói a indução — nada garante que o futuro se pareça com o passado, e o Cap. 3 vive com essa dívida até hoje. Psicologicamente, é uma **hipótese sobre o funcionamento da mente**, e uma hipótese que envelheceu extraordinariamente bem: a ideia de que a percepção de causa emerge de conjunção repetida entre eventos é, essencialmente, o condicionamento clássico (Cap. 39). Pavlov mediu, com salivação de cães, algo que Hume deduziu na poltrona.
+
+Immanuel Kant fechou o ciclo com a síntese que ainda organiza boa parte da psicologia cognitiva. Concedeu ao empirismo que todo o **conteúdo** vem da experiência — e negou que a mente seja passiva. Espaço, tempo e causalidade não seriam coisas que aprendemos do mundo, mas **formas que a mente impõe** a qualquer experiência possível: os óculos que não se pode tirar. Não percebemos a realidade; percebemos a realidade já processada pelo aparato.
+
+Se essa afirmação soa familiar, é porque ela é o Vol 5 inteiro. A Gestalt (Cap. 9) é kantiana declarada. O construtivismo perceptual (Cap. 33) é kantiano. A ideia de que a percepção é inferência, e não recepção, é kantiana. Kant, ironicamente, achava que a psicologia jamais poderia ser ciência — porque os fenômenos mentais não teriam extensão espacial e, portanto, não poderiam ser medidos nem matematizados.
+
+Foi um alemão chamado Fechner quem provou que ele estava errado. E o fez, segundo o próprio, numa manhã na cama.
+
+## O que faltava era a medida
+
+Aqui a história muda de gênero. Até agora, argumentos. A partir daqui, instrumentos.
+
+O século XIX europeu — sobretudo o alemão — produziu uma fisiologia experimental agressiva, bem financiada e institucionalmente sólida, com um compromisso explícito: **nada de forças vitais**. Tudo o que acontece no organismo deve ser explicável por física e química. Essa gente não estava tentando fundar a psicologia. Estava tentando expulsar a metafísica da biologia. Fundou a psicologia por acidente.
+
+**Bell e Magendie** estabeleceram, por volta de 1810–1820, que as raízes dorsais da medula carregam informação sensorial e as ventrais, motora. Parece detalhe anatômico. Não é: é a primeira demonstração de que **a função é separável e localizável no sistema nervoso**. Nervos não são um cabo genérico; são vias específicas.
+
+**Johannes Müller** generalizou isso na doutrina das **energias nervosas específicas**: a qualidade da sensação não depende do estímulo, mas do **nervo estimulado**. Pressione o olho e você vê luz — não porque haja luz, mas porque nervos ópticos, sejam lá como estimulados, produzem visão. A implicação é kantiana com bisturi: **estamos conscientes dos nossos nervos, não do mundo**. Toda a psicofísica e boa parte do Vol 5 saem daqui.
+
+**Hermann von Helmholtz** — aluno de Müller — fez então algo que seu próprio mestre considerava impossível.
+
+::: {.experimento}
+**Helmholtz mede a velocidade do impulso nervoso (1850)**
+
+**O problema.** Müller sustentava que a transmissão nervosa seria instantânea, ou tão rápida que jamais seria medida — velocidade da luz, algo assim. Sendo instantânea, seria também inacessível ao experimento, e a fronteira entre fisiologia e alma estaria preservada.
+
+**Desenho.** Helmholtz usou uma preparação de músculo e nervo de rã. Estimulou eletricamente o nervo em um ponto próximo do músculo e registrou o intervalo até a contração. Depois estimulou em um ponto mais distante e registrou de novo. A diferença entre os dois tempos, dividida pela diferença entre as duas distâncias, dá a velocidade.
+
+**Resultado.** Cerca de **27 metros por segundo**. Não a velocidade da luz — a velocidade de um carro na cidade. Helmholtz repetiu depois com humanos, pedindo que respondessem a um toque na coxa e no dedão do pé, e obteve a mesma ordem de grandeza.
+
+**Interpretação — e por que isso é enorme.** O impulso nervoso é um evento **físico**, com duração **mensurável**. Se a transmissão leva tempo, então processos do sistema nervoso ocorrem no tempo; e se ocorrem no tempo, podem ser cronometrados, decompostos, estudados. Kant dissera que o mental não pode ser medido porque não é espacial. Helmholtz respondeu que não precisa ser espacial: basta ser **temporal**.
+
+**Limitações.** A medida é do nervo periférico, não do pensamento. O salto de "impulsos levam tempo" para "pensamentos levam tempo mensurável" ainda precisaria de Donders — mas a porta estava aberta, e nunca mais fechou.
+:::
+
+**F. C. Donders** atravessou essa porta com uma ideia que ainda é usada em quase todo laboratório de cognição. Se um processo mental leva tempo, então **tarefas mais complexas devem levar mais tempo**, e a diferença revela a duração do processo extra. Meça o tempo de reação a um único estímulo com uma única resposta. Depois meça o tempo quando há dois estímulos e é preciso escolher entre duas respostas. A **diferença** entre os dois seria a duração do ato de escolher. É o **método subtrativo**, e a lógica dele — subtrair condições para isolar um componente — é a mesma que sustenta o desenho experimental do Cap. 14 e a neuroimagem funcional do Cap. 27, cento e cinquenta anos depois.
+
+**Ernst Weber** encontrou a primeira lei quantitativa do mental. Pedindo a pessoas que julgassem qual de dois pesos era mais pesado, descobriu que a diferença mínima detectável não é fixa — é **proporcional** ao peso original. Se você distingue 100 g de 102 g, não distinguirá 1.000 g de 1.002 g; precisará de 1.020 g. A fração é constante:
+
+$$\frac{\Delta I}{I} = k$$
+
+onde $I$ é a intensidade do estímulo, $\Delta I$ a diferença mínima perceptível e $k$ uma constante que depende da modalidade. É a **lei de Weber**, e ela é notável por um motivo específico: é uma equação, com um número dentro, sobre uma experiência subjetiva.
+
+**Gustav Fechner** viu o que Weber não vira — e o que ele viu foi, por sua conta, um insight matinal em 22 de outubro de 1850, data que ele passou a comemorar.
+
+::: {.experimento}
+**Fechner e a equação que mediu a mente** [@fechner1860]
+
+**O problema.** A sensação é privada. Ninguém pode entrar na sua cabeça e ler quanto de brilho você está experimentando. Kant concluíra daí que a psicologia jamais seria quantitativa. O obstáculo parece intransponível: como medir o que só o sujeito tem acesso?
+
+**A jogada.** Fechner percebeu que não é preciso medir a sensação diretamente. Basta usar a **diferença mínima perceptível** como unidade. Se cada incremento apenas notável conta como um mesmo passo subjetivo, e a lei de Weber diz que esses passos exigem incrementos físicos cada vez maiores, então é possível empilhar os passos e construir uma escala. Integrando a lei de Weber, chega-se a:
+
+$$S = k \log I$$
+
+A sensação cresce com o **logaritmo** da intensidade física. Dobrar o estímulo não dobra a sensação — e por isso uma vela acesa numa sala escura transforma o ambiente, enquanto uma vela acesa ao meio-dia não faz diferença alguma.
+
+**Os métodos.** Fechner não deixou apenas a equação: deixou os **procedimentos** para obter limiares — método dos limites, método dos estímulos constantes, método do ajustamento —, que seguem em uso e são detalhados no Cap. 29.
+
+**Por que isso é o marco real.** Pela primeira vez, uma relação entre o **físico** e o **mental** foi expressa numa equação, com constantes medidas, prevendo dados. A pergunta de Kant tinha resposta empírica, e a resposta era: sim, dá para medir. Wundt teria seu laboratório dezenove anos depois — mas o instrumento intelectual que o tornou pensável estava pronto em 1860.
+
+**Limitações.** A lei logarítmica não é universal: Stevens mostraria depois que uma **função de potência** ajusta melhor a maioria das modalidades, e que o expoente varia entre elas — a dor cresce mais que proporcionalmente, o brilho menos (Cap. 29). E há a ironia biográfica: Fechner era um místico convicto, e toda essa matemática foi construída para provar que mente e matéria são dois aspectos de uma mesma realidade. Ninguém lembra da metafísica. Todo mundo usa a equação.
+:::
+
+**Charles Darwin**, por fim, entrou por outra porta e mudou a mobília inteira. *A origem das espécies* [@darwin1859] fez três coisas que a psicologia não conseguiu desfazer. Estabeleceu **continuidade** entre humanos e outros animais — o que torna o estudo de ratos e pombos relevante para nós, e funda a psicologia comparada. Tornou a **variação individual** um dado central e não um ruído a ser descartado — Galton pega essa bola e dela nascem a psicometria e o Vol 11. E introduziu a pergunta **funcional**: para que serve isto? Não como funciona a mente, mas para que ela serve. Essa pergunta é o funcionalismo (Cap. 7), e Darwin a aplicou diretamente ao comportamento em *A expressão das emoções no homem e nos animais* [@darwin1872], que o Cap. 55 discute em detalhe.
+
+::: {#fig-cronologia-fisiologia}
+```{.tikz}
+%%| filename: cronologia-fisiologia
+%%| alt: Linha do tempo horizontal de 1810 a 1880 mostrando as contribuições que tornaram a psicologia mensurável. Em 1811 e 1822, Bell e Magendie mostram que as raízes sensoriais e motoras são separadas, indicando que a função é localizável. Em 1838, Müller propõe as energias nervosas específicas, segundo as quais a qualidade da sensação depende do nervo e não do estímulo. Em 1850, Helmholtz mede a velocidade do impulso nervoso em cerca de vinte e sete metros por segundo, mostrando que processos nervosos levam tempo mensurável. Em 1860, Fechner publica os Elementos de psicofísica, com a equação que relaciona sensação e intensidade física. Em 1859, Darwin publica A origem das espécies, estabelecendo continuidade entre espécies e a pergunta funcional. Em 1861, Broca localiza a produção da fala no lobo frontal esquerdo. Em 1868, Donders propõe o método subtrativo dos tempos de reação. A linha termina em 1879 com a fundação do laboratório de Wundt em Leipzig, marcada como consequência e não como origem.
+\begin{tikzpicture}[
+  ev/.style={draw, thick, rounded corners=3pt, align=center, font=\tiny,
+             minimum width=2.4cm, text width=2.3cm},
+  tk/.style={manualgray, thick}
+]
+  \draw[->, >=Stealth, very thick, manualgray] (-7.2,0) -- (7.4,0);
+  \foreach \x/\a in {-6.6/1811, -4.7/1838, -2.8/1850, -1.5/1859, -0.6/1860, 0.9/1861, 2.6/1868, 6.2/1879} {
+    \draw[tk] (\x,-0.16) -- (\x,0.16);
+    \node[font=\tiny, text=manualgray] at (\x,-0.42) {\a};
+  }
+
+  \node[ev, draw=manualblue, fill=manualblue!8] (a) at (-6.4,1.5)
+    {\textbf{Bell \& Magendie}\\{sensorial e motor são vias separadas}};
+  \node[ev, draw=manualblue, fill=manualblue!8] (b) at (-4.7,3.2)
+    {\textbf{Müller}\\{energias nervosas específicas}};
+  \node[ev, draw=manualgreen, fill=manualgreen!10] (c) at (-2.6,1.5)
+    {\textbf{Helmholtz}\\{o impulso leva tempo: 27 m/s}};
+  \node[ev, draw=manualyellow, fill=manualyellow!10] (d) at (-1.2,3.2)
+    {\textbf{Darwin}\\{continuidade e função}};
+  \node[ev, draw=manualgreen, fill=manualgreen!10] (e) at (1.3,1.5)
+    {\textbf{Fechner}\\{$S = k \log I$: o mental é mensurável}};
+  \node[ev, draw=manualblue, fill=manualblue!8] (f) at (1.6,3.2)
+    {\textbf{Broca}\\{localização feita com método}};
+  \node[ev, draw=manualgreen, fill=manualgreen!10] (g) at (4.1,3.2)
+    {\textbf{Donders}\\{método subtrativo}};
+  \node[ev, draw=manualred, fill=manualred!10, text width=2.5cm] (h) at (6.3,1.5)
+    {\textbf{Wundt, Leipzig}\\{o laboratório --- consequência, não origem}};
+
+  \draw[tk!60] (a) -- (-6.6,0.2);
+  \draw[tk!60] (b) -- (-4.7,0.2);
+  \draw[tk!60] (c) -- (-2.8,0.2);
+  \draw[tk!60] (d) -- (-1.5,0.2);
+  \draw[tk!60] (e) -- (-0.6,0.2);
+  \draw[tk!60] (f) -- (0.9,0.2);
+  \draw[tk!60] (g) -- (2.6,0.2);
+  \draw[tk!60] (h) -- (6.2,0.2);
+\end{tikzpicture}
+```
+Setenta anos de fisiologia, e o laboratório no fim. A leitura tradicional trata 1879 como o começo; a cronologia sugere o contrário — Wundt colheu o que Helmholtz, Fechner e Donders plantaram.
+:::
+
+## Frenologia: a ideia certa, o método errado
+
+Nenhum episódio desta história ensina mais sobre método do que a frenologia — e é por isso que ela merece mais que a nota de rodapé jocosa que costuma receber.
+
+Franz Joseph Gall era um anatomista sério, e sua tese central tinha três partes. Primeira: o cérebro é o órgão da mente. Segunda: a mente não é uma faculdade única, mas um conjunto de faculdades separadas. Terceira: cada faculdade tem uma **localização** no cérebro, e faculdades mais desenvolvidas ocupam mais volume.
+
+Pause aqui, porque o desconforto é o ponto: **as três primeiras partes estão essencialmente corretas**. O cérebro é o órgão da mente. Há especialização funcional. Há localização. Gall não estava sendo tolo — estava, em linhas gerais, antecipando a neuropsicologia (Cap. 99).
+
+O desastre está na quarta parte: a de que o volume de cada faculdade **empurra o crânio** e produz protuberâncias, de modo que apalpar a cabeça revelaria o caráter. Isso é anatomicamente falso — o crânio não acompanha o relevo cortical dessa forma — e sustentava um mapa de "órgãos" (a veneração, a destrutividade, o amor à prole) que jamais tivera validação.
+
+O que interessa é **como** Gall chegou às localizações, porque é aqui que a lição mora. Ele coletava casos: conhecia um sujeito com boa memória verbal e olhos protuberantes, e concluía que a memória verbal ficava atrás dos olhos. Depois procurava mais casos assim — e os encontrava.
+
+::: {.atencao}
+**Por que a frenologia era irrefutável — e a lição vale para hoje.**
+
+Reconheça o mecanismo: é o Cap. 5 inteiro em um só episódio.
+
+- **Grão de verdade:** localização cerebral existe. Isso deu à frenologia toda a sua resistência — sempre havia um caso real a apontar.
+- **Viés de confirmação:** Gall buscava casos confirmatórios e não contava os que falhavam. Uma pessoa generosa com a testa lisa não entrava na conta.
+- **Ausência de refutação possível:** o mapa era ajustável. Se a protuberância não batia com o caráter, invocava-se outro órgão compensando. Nada podia derrubá-lo — o critério do Cap. 1.
+- **Interesse comercial:** a frenologia virou indústria. Havia leitura de crânio para escolha de cônjuge e para seleção de empregados, e a doutrina foi usada para justificar hierarquias raciais — a primeira, e não a última, vez em que uma pseudopsicologia serviu de verniz científico para preconceito.
+
+Pierre Flourens fez o que Gall não fez: **testou**. Removeu regiões cerebrais de animais de forma sistemática e observou o efeito — e não encontrou os órgãos de Gall. O que encontrou (perdas graduais, alguma recuperação, efeitos que dependiam mais da quantidade removida que do local) o levou ao extremo oposto, a ação de massa, que também estava errado. Não importa. O que importa é o gesto: **manipular e observar**, em vez de coletar casos que agradam.
+
+A moral não é "cuidado com a frenologia". É: **uma ideia correta defendida por método ruim é indistinguível de uma ideia errada** — e é por isso que o método, e não a intuição, decide.
+:::
+
+A localização acabou vindo, poucas décadas depois, por caminho legítimo. Paul Broca examinou um paciente — Leborgne, conhecido como "Tan", pela única sílaba que conseguia pronunciar — que compreendia linguagem mas não a produzia. Na autópsia, uma lesão no giro frontal inferior esquerdo [@broca1861]. Carl Wernicke completou o quadro com o inverso: pacientes com lesão em região temporal posterior esquerda que **falavam** fluentemente, mas produziam frases sem sentido e não compreendiam o que ouviam [@wernicke1874].
+
+A diferença entre Broca e Gall não está na conclusão — ambos diziam que funções se localizam. Está no que cada um aceitaria como refutação. Broca tinha **dupla dissociação**: um padrão em que a lesão A prejudica a função 1 e poupa a 2, enquanto a lesão B faz o oposto. Esse é um resultado que **poderia não ter aparecido**, e é essa possibilidade de falha que separa neuropsicologia de leitura de crânio. O Cap. 99 usa a mesma lógica até hoje.
+
+::: {.na-pratica}
+**A frenologia não morreu; ela mudou de resolução.**
+
+É confortável achar que estamos imunes. Não estamos — o formato do erro sobrevive à tecnologia que o comete.
+
+**Neuroimagem mal interpretada.** "Encontramos a região do amor / da inveja / da decisão de compra." A estrutura do argumento é a de Gall: apontar um lugar e nomeá-lo com um conceito psicológico complexo. O problema técnico é conhecido como **inferência reversa**: saber que a tarefa X ativa a região R não autoriza concluir, ao ver R ativada, que a pessoa está fazendo X — a menos que R seja seletiva para X, o que quase nunca é o caso [@poldrack2006]. O Cap. 27 detalha.
+
+**Correlações impossíveis.** Vul e colegas mostraram que boa parte dos estudos de neuroimagem social relatava correlações entre ativação e medidas de personalidade altas demais para serem verdadeiras, dada a confiabilidade dos instrumentos — o resultado de selecionar os *voxels* que melhor correlacionam e depois relatar a correlação desses mesmos *voxels* [@vul2009]. É o viés de seleção de Gall, com estatística.
+
+**Neuromarketing e neuroeducação.** Onde há indústria, há frenologia. O prefixo "neuro-" aumenta a credibilidade percebida de uma explicação, mesmo quando a informação neural é irrelevante para o argumento — efeito documentado em leitores leigos e, em grau menor, em estudantes de neurociência [@weisberg2008].
+
+Nada disso desqualifica a neuroimagem, que é uma ferramenta poderosa. Desqualifica **um uso** dela: o de apontar o lugar e achar que apontar explica.
+:::
+
+## Então, por que 1879?
+
+Chegamos ao ponto de honestidade. A data que abre todo manual de psicologia é 1879, quando Wilhelm Wundt instalou seu laboratório em Leipzig. A pergunta certa não é se a data é verdadeira, mas o que ela pode significar.
+
+O que ela **não** significa: não foi o primeiro estudo experimental da mente — Fechner, Helmholtz, Donders e Weber já vinham fazendo isso há décadas. Não foi sequer o primeiro espaço de pesquisa psicológica; William James mantinha um espaço de demonstração em Harvard, e a disputa sobre quem foi primeiro é tão insolúvel quanto pouco interessante.
+
+O que ela significa, e isso é real: **institucionalização**. Wundt não fez apenas experimentos; fundou uma **disciplina**. Criou um laboratório dedicado exclusivamente ao estudo da mente, um periódico para publicar os resultados, um programa de doutorado que formou uma geração — e essa geração se espalhou pelo mundo montando laboratórios. Titchener levou uma versão para Cornell; Cattell e Hall levaram outras para os Estados Unidos e fundaram a APA. A psicologia passou a ter algo que a filosofia não tem: **um lugar, uma revista, um treinamento e um cargo**.
+
+É uma data de conveniência, e todo mundo que a usa sabe disso. Mas ela marca o momento em que estudar a mente experimentalmente deixou de ser uma coisa que alguns fisiologistas faziam no tempo livre e virou uma profissão.
+
+O Cap. 7 entra nesse laboratório. E o primeiro achado desagradável é que quase nada do que a lenda diz sobre Wundt — inclusive a parte em que ele funda o estruturalismo — é verdade.
+
+::: {.callout-sintese}
+- **A filosofia entregou as perguntas, não as respostas.** Racionalismo (Platão, Descartes) e empirismo (Aristóteles, Locke, Hume) disputaram a origem do conhecimento; Kant sintetizou: o conteúdo vem dos sentidos, a estrutura vem da mente. O eixo reaparece em todos os debates natureza × cultura posteriores.
+- **Descartes** legou três coisas boas — corpo como máquina, o reflexo, o problema mente–corpo bem posto — e uma ruim: o dualismo de substâncias, que torna a interação inexplicável em princípio, e a introspecção como método.
+- **Hume** deduziu na poltrona que a causalidade é hábito mental produzido por conjunção repetida. Pavlov mediria isso com cães setenta anos depois.
+- **A fisiologia forneceu o que faltava: a medida.** Bell e Magendie (vias separadas), Müller (energias nervosas específicas — percebemos nossos nervos, não o mundo), Helmholtz (o impulso leva 27 m/s, logo processos nervosos são temporais e mensuráveis), Donders (método subtrativo).
+- **Fechner** refutou Kant com uma equação: usando a diferença mínima perceptível como unidade, derivou $S = k \log I$ e provou que o mental é quantificável. Deixou também os métodos psicofísicos ainda em uso.
+- **Darwin** instalou três coisas permanentes: continuidade entre espécies, variação individual como dado, e a pergunta funcional ("para que serve?").
+- **Frenologia**: cérebro como órgão da mente, faculdades separadas e localização — tudo correto. Ruína por método: casos selecionados, viés de confirmação, irrefutabilidade e comércio. **Ideia certa com método ruim é indistinguível de ideia errada.**
+- **Broca e Wernicke** fizeram localização legítima porque tinham **dupla dissociação** — um resultado que poderia ter falhado.
+- **1879 é data de conveniência.** Não marca o primeiro experimento; marca a **institucionalização**: laboratório, periódico, doutorado, profissão.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Racionalismo**
+:   Posição segundo a qual o conhecimento fundamental deriva da razão e a mente traz estrutura prévia à experiência.
+
+**Empirismo**
+:   Posição segundo a qual todo o conteúdo da mente provém da experiência sensorial.
+
+***Tabula rasa***
+:   Metáfora de Locke para a mente ao nascer como papel em branco, preenchido por sensação e reflexão.
+
+**Leis da associação**
+:   Princípios (contiguidade, semelhança, contraste) pelos quais ideias simples se combinariam em ideias complexas — a "química mental" dos empiristas.
+
+**Dualismo interacionista**
+:   Tese cartesiana de que mente imaterial e corpo material são substâncias distintas que, ainda assim, se afetam mutuamente.
+
+**Energias nervosas específicas**
+:   Doutrina de Müller: a qualidade da sensação é determinada pelo nervo estimulado, não pelo estímulo — a base fisiológica do argumento kantiano.
+
+**Lei de Weber**
+:   A diferença mínima perceptível é uma fração constante da intensidade do estímulo: $\Delta I / I = k$.
+
+**Lei de Fechner**
+:   A sensação cresce com o logaritmo da intensidade física: $S = k \log I$ [@fechner1860].
+
+**Diferença mínima perceptível** (*jnd*)
+:   Menor diferença entre dois estímulos que é detectável de forma confiável; a unidade que permitiu a Fechner escalonar o subjetivo.
+
+**Método subtrativo**
+:   Procedimento de Donders: a duração de um processo mental é estimada pela diferença de tempo de reação entre duas tarefas que se distinguem apenas por esse processo.
+
+**Frenologia**
+:   Doutrina de Gall que inferia faculdades mentais a partir de protuberâncias cranianas; correta quanto à localização, falsa quanto ao crânio e viciada no método.
+
+**Dupla dissociação**
+:   Padrão em que a lesão A prejudica a função 1 e poupa a 2, enquanto a lesão B faz o inverso — evidência forte de que as funções dependem de sistemas separáveis [@broca1861; @wernicke1874].
+
+**Inferência reversa**
+:   Salto ilegítimo de "a região R está ativa" para "o processo X está ocorrendo", válido apenas se R for seletiva para X [@poldrack2006].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique a doutrina das energias nervosas específicas de Müller e mostre por que ela dá suporte fisiológico à tese kantiana de que não percebemos o mundo diretamente.
+
+2. **(Recuperação.)** Descreva o experimento de Helmholtz com o nervo de rã. Por que a medida de 27 m/s foi mais importante para a psicologia do que para a fisiologia?
+
+3. **(Compreensão.)** Kant argumentou que a psicologia jamais seria uma ciência porque fenômenos mentais não podem ser medidos. Reconstrua o argumento de Fechner contra essa tese: qual foi a jogada que permitiu escalonar a sensação sem medi-la diretamente?
+
+4. **(Aplicação.)** Uma manchete anuncia: "Cientistas descobrem a área cerebral do arrependimento — ela acende quando voluntários pensam em decisões passadas." Aponte (a) qual é a estrutura do argumento de Gall que está sendo repetida; (b) o que é inferência reversa e por que ela se aplica aqui; (c) que tipo de evidência transformaria essa manchete em uma afirmação defensável.
+
+5. **(Reflexão crítica.)** Gall estava certo em três de suas quatro teses centrais, e ainda assim a frenologia é considerada pseudociência, enquanto Broca é considerado fundador da neuropsicologia. Explique por que essa avaliação é justa — e o que ela implica sobre o valor de "estar certo" na ausência de método.
+
+6. **(Reflexão crítica.)** Hume argumentou que a causalidade não é observada, mas inferida a partir de conjunção constante. Se isso for verdade da mente humana em geral, que consequência tem para o Cap. 3 — isto é, para a nossa capacidade de identificar causas em pesquisa? Por que o experimento controlado é uma resposta parcial ao problema de Hume, e não uma solução?
+
+7. **(Integração.)** A data de 1879 é de conveniência. Se você tivesse de propor outra data para o "nascimento" da psicologia científica — 1850 (Helmholtz), 1859 (Darwin), 1860 (Fechner) ou 1861 (Broca) —, qual defenderia, e com que critério? Note que a escolha do critério (primeiro experimento? primeira lei quantitativa? primeira instituição?) já decide a resposta.
