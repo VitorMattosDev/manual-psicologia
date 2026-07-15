@@ -1,5 +1,250 @@
 # 04. Áreas e campos de atuação do psicólogo
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** psicólogo, psiquiatra e psicanalista quanto à formação, à regulamentação e ao que cada um pode fazer no Brasil.
+- **Descrever** o percurso de formação e o registro profissional no país, e o papel do sistema CFP/CRP.
+- **Mapear** os principais campos de atuação, reconhecendo que a maioria dos psicólogos brasileiros não trabalha em consultório particular.
+- **Explicar** o modelo cientista-profissional e por que a distância entre pesquisa e prática é um problema para a profissão.
+- **Identificar** os princípios centrais do Código de Ética profissional e a lógica da regulação da avaliação psicológica.
+- **Avaliar criticamente** a ideia de que basta "gostar de gente" ou "saber ouvir" para exercer a psicologia.
 :::
+
+Os três primeiros capítulos trataram do que a psicologia é, do que ela pergunta e de como ela responde. Este trata de quem faz isso, onde e sob quais regras — e começa pela confusão mais persistente do campo.
+
+Quando alguém diz "vou ao psicólogo", boa parte das pessoas imagina uma cena específica: um divã, um profissional silencioso, uma pessoa falando da infância. Essa imagem está errada em quase todos os detalhes, e o erro não é inocente: ele mistura três profissões distintas, ignora a maioria dos psicólogos brasileiros e confunde uma abordagem teórica particular com a disciplina inteira.
+
+## Três profissões que não se confundem
+
+A distinção mais importante deste capítulo — e a que mais falta na conversa pública — é entre **psicólogo**, **psiquiatra** e **psicanalista**. Elas não são variações do mesmo ofício.
+
+| | **Psicólogo** | **Psiquiatra** | **Psicanalista** |
+|---|---|---|---|
+| **Formação** | Graduação em Psicologia (5 anos) | Medicina + residência em Psiquiatria | Formação em instituição psicanalítica |
+| **É profissão regulamentada?** | Sim, desde 1962 | Sim (medicina) | **Não**, no Brasil |
+| **Conselho** | CFP/CRP | CFM/CRM | Não há conselho oficial |
+| **Prescreve medicamento?** | **Não** | Sim | Depende da formação de base |
+| **Faz psicoterapia?** | Sim | Pode, se formado para isso | Sim (psicanálise) |
+| **Aplica testes psicológicos?** | Sim (privativo) | Não | Não |
+
+Três pontos merecem destaque.
+
+**O psicólogo não prescreve medicamentos, e o psiquiatra é médico.** No Brasil, a prescrição é ato médico. Isso não estabelece hierarquia entre as profissões — estabelece competências diferentes, e é por isso que, em muitos quadros, o tratamento eficaz combina as duas (Vol 14).
+
+**"Psicanalista" não é profissão regulamentada no Brasil.** Não existe conselho, registro obrigatório nem exigência legal de formação específica para usar o título. Na prática, psicanalistas sérios se formam em instituições rigorosas, com análise pessoal e supervisão de anos — mas essa exigência é da instituição, não da lei. A consequência prática é direta: um psicólogo ou um médico responde a um conselho que pode puni-lo; alguém que se apresente apenas como "psicanalista" pode não responder a nenhum. Isso não é uma crítica à psicanálise, cuja história e cujos conceitos o Cap. 10 trata a sério. É uma informação que o leitor precisa ter ao escolher um profissional.
+
+**Psicanálise é uma abordagem, não sinônimo de psicologia.** É uma entre várias — e, no Brasil de hoje, longe de ser a mais praticada. Confundir a parte com o todo é como achar que "medicina" significa "cirurgia".
+
+::: {.atencao}
+**"Terapeuta" e "coach" não são títulos protegidos.**
+
+Aqui a informação vira proteção ao consumidor. "Psicólogo" é título privativo de quem tem graduação em Psicologia e registro ativo no CRP; usá-lo sem isso configura exercício ilegal da profissão. Já palavras como *terapeuta*, *terapeuta holístico*, *coach*, *analista comportamental* (fora do contexto profissional regulado), *hipnoterapeuta* e *constelador* **não são títulos protegidos por lei**. Qualquer pessoa pode adotá-los, com qualquer formação ou nenhuma.
+
+Isso importa por uma razão prática: quem não está em um conselho não está sujeito a código de ética fiscalizável, não pode ser cassado e não responde disciplinarmente por dano. Se algo der errado, não há a quem recorrer profissionalmente.
+
+Como verificar, e é simples: o registro de qualquer psicólogo pode ser consultado publicamente no site do CRP da região ou do CFP. Um profissional legítimo informa seu número de CRP sem hesitar — ele é obrigado a divulgá-lo em material profissional.
+:::
+
+## Formação e regulamentação no Brasil
+
+A profissão de psicólogo foi regulamentada pela **Lei nº 4.119, de 27 de agosto de 1962**, que criou os cursos de formação e definiu as funções privativas do psicólogo [@lei4119_1962]. É uma profissão relativamente jovem no país — mais nova que a maioria dos leitores imagina, e o Cap. 104 conta essa história por inteiro, incluindo o papel ambíguo da psicologia durante a ditadura militar.
+
+O percurso está na @fig-formacao.
+
+::: {#fig-formacao}
+```{.tikz}
+%%| filename: formacao-psicologo
+%%| alt: Linha do tempo horizontal do percurso de formação do psicólogo no Brasil. A primeira etapa é a graduação em Psicologia, com cerca de cinco anos, incluindo estágios supervisionados obrigatórios. A segunda é o registro no Conselho Regional de Psicologia, ponto a partir do qual o exercício profissional se torna legal e o profissional passa a responder ao código de ética. A terceira etapa, opcional e posterior, reúne caminhos de aprofundamento: especialização, residência multiprofissional, formação em abordagem terapêutica, e mestrado ou doutorado para pesquisa. Uma observação destaca que apenas o registro no CRP é obrigatório para exercer a profissão.
+\begin{tikzpicture}[
+  et/.style={draw, thick, rounded corners=4pt, minimum width=3.5cm, minimum height=1.5cm,
+             align=center, font=\scriptsize},
+  f/.style={->, >=Stealth, very thick, manualgray}
+]
+  % As quebras \\ ficam sempre no nivel superior do texto do no: dentro de um
+  % grupo aninhado ({\tiny ...\\...}) elas quebram o alinhamento do TikZ.
+  \node[et, draw=manualblue, fill=manualblue!8] (g) at (0,0)
+    {\textbf{Graduação}\\em Psicologia\\{\tiny $\approx$ 5 anos, com estágios}\\{\tiny supervisionados obrigatórios}};
+  \node[et, draw=manualred, fill=manualred!8] (r) at (4.8,0)
+    {\textbf{Registro no CRP}\\{\tiny a partir daqui o exercício}\\{\tiny é legal — e o profissional}\\{\tiny responde ao Código de Ética}};
+  \node[et, draw=manualgreen, fill=manualgreen!8] (e) at (9.6,0)
+    {\textbf{Aprofundamento}\\{\tiny especialização · residência}\\{\tiny formação em abordagem}\\{\tiny mestrado / doutorado}};
+
+  \draw[f] (g) -- (r);
+  \draw[f] (r) -- (e);
+
+  \node[font=\scriptsize\itshape, text=manualred, align=center, anchor=north] at (4.8,-1.1)
+    {obrigatório};
+  \node[font=\scriptsize\itshape, text=manualgreen, align=center, anchor=north] at (9.6,-1.1)
+    {opcional};
+
+  \node[font=\scriptsize, text=manualgray, align=center, anchor=north] at (4.8,-2.0)
+    {Só o registro no CRP é exigido por lei para exercer. Nenhuma \emph{abordagem} terapêutica\\
+     é obrigatória — e nenhuma delas, isoladamente, é "a" psicologia.};
+\end{tikzpicture}
+```
+O percurso de formação no Brasil. O ponto de virada legal é o registro no CRP: é ele que autoriza o exercício e submete o profissional à fiscalização.
+:::
+
+O **sistema CFP/CRP** — um Conselho Federal e os Conselhos Regionais — não é uma associação de classe que defende interesses dos psicólogos. É uma autarquia com poder de polícia: registra, fiscaliza e pode punir, inclusive cassando o direito de exercer. Ele existe para proteger o público, não a categoria, e essa distinção costuma passar despercebida.
+
+O **Código de Ética Profissional do Psicólogo** [@cfp2005] organiza a prática em torno de alguns princípios que vale conhecer mesmo sem pretender exercer:
+
+- **Sigilo profissional**, com exceções bem delimitadas (situações de risco à vida, determinação judicial). O sigilo é a regra; a exceção precisa ser justificada.
+- **Não discriminação** e respeito à dignidade — o que fundamenta, entre outras coisas, a vedação a práticas que proponham "reverter" a orientação sexual.
+- **Competência**: o psicólogo deve atuar apenas onde tem formação, e reconhecer os limites do que sabe.
+- **Responsabilidade sobre documentos**: laudos, pareceres e relatórios têm regras estritas de forma e fundamentação.
+- **Vedação a prometer resultados** ou a usar a profissão para induzir a crenças.
+
+A **avaliação psicológica** merece nota. Aplicar e interpretar testes psicológicos é atividade **privativa** do psicólogo, e os instrumentos passam por um sistema de qualificação — o SATEPSI — que avalia se um teste tem evidências de validade, precisão e normas adequadas antes de poder ser usado profissionalmente [@cfp2018]. É uma tentativa institucional de impedir exatamente o que o Cap. 1 mostrou com o efeito Forer: instrumentos que parecem funcionar porque o avaliado preenche as lacunas. Nem todo teste vendido por aí é aprovado; muitos dos mais populares no mercado corporativo não são — e o Vol 11 explica por quê.
+
+## Onde os psicólogos realmente trabalham
+
+O estereótipo é o consultório particular. A realidade brasileira é mais variada, e o campo se organiza por **contexto de atuação**, como mostra a @fig-areas.
+
+::: {#fig-areas}
+```{.tikz}
+%%| filename: areas-atuacao
+%%| alt: Diagrama radial dos campos de atuação da psicologia. No centro, um círculo azul com o rótulo Psicologia. Ao redor, seis áreas dispostas em círculo, cada uma com exemplos: Saúde (clínica, hospitalar, saúde pública e SUS, neuropsicologia); Trabalho (organizacional, seleção, saúde do trabalhador); Educação (escolar, orientação, dificuldades de aprendizagem); Justiça e segurança (jurídica, forense, sistema socioeducativo); Social e comunitária (CRAS e CREAS, políticas públicas, emergências); e Pesquisa e ensino (universidade, laboratório, docência). Uma nota indica que a atuação em políticas públicas, sobretudo no SUS e no SUAS, emprega parcela muito maior de psicólogos do que o estereótipo do consultório particular sugere.
+\begin{tikzpicture}[
+  ar/.style={draw, thick, rounded corners=4pt, minimum width=3.4cm, minimum height=1.5cm,
+             align=center, font=\scriptsize},
+  lk/.style={manualgray, thick}
+]
+  \node[circle, draw=manualblue, fill=manualblue!12, thick, minimum size=1.9cm,
+        align=center, font=\small\bfseries, text=manualblue] (c) at (0,0) {Psicologia};
+
+  % Idem: cada linha do subtitulo em seu proprio grupo, com \\ no nivel superior.
+  \node[ar, draw=manualred, fill=manualred!8] (s) at (-4.6,2.6)
+    {\textbf{Saúde}\\{\tiny clínica · hospitalar}\\{\tiny saúde pública (SUS)}\\{\tiny neuropsicologia}};
+  \node[ar, draw=manualgreen, fill=manualgreen!8] (t) at (0,3.4)
+    {\textbf{Trabalho}\\{\tiny organizacional · seleção}\\{\tiny saúde do trabalhador}};
+  \node[ar, draw=manualyellow, fill=manualyellow!8] (e) at (4.6,2.6)
+    {\textbf{Educação}\\{\tiny escolar · orientação}\\{\tiny dificuldades de}\\{\tiny aprendizagem}};
+  \node[ar, draw=manualgray, fill=manualgray!8] (j) at (-4.6,-2.6)
+    {\textbf{Justiça e segurança}\\{\tiny jurídica · forense}\\{\tiny sistema socioeducativo}};
+  \node[ar, draw=manualblue, fill=manualblue!8] (o) at (0,-3.4)
+    {\textbf{Social e comunitária}\\{\tiny CRAS/CREAS · políticas}\\{\tiny públicas · emergências}};
+  \node[ar, draw=manualred, fill=manualred!8] (p) at (4.6,-2.6)
+    {\textbf{Pesquisa e ensino}\\{\tiny universidade · laboratório}\\{\tiny docência}};
+
+  \foreach \n in {s,t,e,j,o,p} { \draw[lk] (c) -- (\n); }
+\end{tikzpicture}
+```
+Os grandes campos de atuação. O estereótipo do consultório particular cobre uma fração do que os psicólogos brasileiros de fato fazem — a atuação em políticas públicas, sobretudo no SUS e no SUAS, é parte central da profissão no país.
+:::
+
+Vale detalhar o que menos aparece.
+
+**Psicologia da saúde e atuação no SUS.** Psicólogos integram equipes de atenção básica, hospitais, CAPS (Centros de Atenção Psicossocial) e programas de saúde pública. É um campo em que a psicologia brasileira tem particularidade relevante: a Reforma Psiquiátrica deslocou o cuidado do modelo manicomial para a rede territorial, e a psicologia foi central nesse processo (Vol 13). Aqui o trabalho raramente se parece com psicoterapia individual semanal — envolve acolhimento, matriciamento, grupos, visita domiciliar, articulação de rede.
+
+**Psicologia social e comunitária.** Atuação em CRAS e CREAS, no Sistema Único de Assistência Social, em situações de violência, vulnerabilidade e emergências. É uma das marcas da psicologia brasileira, com tradição teórica própria — e um dos campos que mais emprega, ainda que raramente apareça nas séries de televisão.
+
+**Psicologia organizacional.** Muito além do estereótipo do "RH que aplica testes": desenho de trabalho, saúde ocupacional, avaliação de desempenho, ergonomia cognitiva. É também o campo mais exposto a pseudociência comercial — testes de tipologia sem validade, treinamentos motivacionais sem evidência (Vol 15, Cap. 97).
+
+**Neuropsicologia.** Avaliação e reabilitação de funções cognitivas após lesão, doença neurodegenerativa ou transtorno do neurodesenvolvimento. Exige formação específica e é uma das áreas mais técnicas (Cap. 99).
+
+**Pesquisa e ensino.** É de onde vem tudo o que os outros campos aplicam — e onde trabalha uma minoria. Vale registrar a assimetria: a maioria dos psicólogos consome conhecimento produzido por uma minoria, o que torna a formação em leitura crítica (Cap. 21) uma competência profissional, não um luxo acadêmico.
+
+::: {.na-pratica}
+**Como escolher um psicólogo (e o que perguntar)**
+
+Este manual não dá orientação clínica, mas informação sobre a profissão é outra coisa — e é justamente o que costuma faltar a quem procura ajuda pela primeira vez. Perguntas legítimas, que qualquer profissional sério responde sem se ofender:
+
+- **"Qual é o seu CRP?"** Deve ser informado sem hesitação, e pode ser conferido no site do conselho.
+- **"Qual abordagem você usa, e por quê?"** Não existe uma resposta certa, mas existe resposta honesta. Desconfie de quem diz que sua abordagem funciona para tudo e para todos.
+- **"Que evidência apoia esse tratamento para o meu caso?"** Para vários quadros existem tratamentos com eficácia bem documentada (Vol 14, Cap. 95). O profissional não precisa recitar meta-análises, mas deve saber se o que faz tem apoio empírico — e admitir quando não tem.
+- **"Você atende esse tipo de demanda?"** O Código de Ética exige atuar dentro da própria competência [@cfp2005]. Encaminhar não é fracasso; é o contrário disso.
+
+Sinais de alerta: promessa de cura, de resultado garantido ou de prazo fixo; diagnóstico dado em minutos, sobretudo pela internet; recusa a informar registro; venda de pacotes caros com urgência; e a alegação de que a abordagem "não pode ser testada cientificamente" — que, como o Cap. 1 mostrou, não é defesa, é confissão.
+:::
+
+## O modelo cientista-profissional e a distância que ele não fechou
+
+Em 1949, numa conferência em Boulder, no Colorado, a psicologia norte-americana definiu o modelo que moldaria a formação clínica no mundo: o **cientista-profissional**. A ideia é que o clínico deve ser formado tanto para consumir e produzir pesquisa quanto para atender — não um técnico que aplica receitas, mas alguém capaz de avaliar a evidência por trás do que faz [@raimy1950].
+
+O modelo é bonito e a realidade resistiu. Baker, McFall e Shoham fizeram um diagnóstico severo: boa parte da formação e da prática clínica permaneceu descolada da base científica, com programas ensinando abordagens sem apoio empírico e profissionais escolhendo técnicas por afinidade pessoal, tradição ou carisma do supervisor, e não por evidência [@baker2008]. A crítica é dura e foi contestada, mas o problema que ela aponta é real e não é exclusivamente americano.
+
+A resposta institucional foi a **prática baseada em evidências em psicologia**, definida pela APA como a integração de três componentes: a **melhor evidência disponível**, a **expertise clínica** do profissional e as **características, valores e preferências do paciente** [@apa2006].
+
+::: {.atencao}
+**Prática baseada em evidências não é "seguir manual".**
+
+A definição da APA tem três pernas, e as duas caricaturas opostas amputam uma delas.
+
+A primeira caricatura vem de fora: "psicologia baseada em evidências é aplicar protocolo, ignorando a singularidade da pessoa". Falso — expertise clínica e preferências do paciente estão *na definição*, não são concessões [@apa2006].
+
+A segunda vem de dentro: "cada caso é único, então a evidência não se aplica". Isso confunde os níveis do Cap. 1. Que os achados sejam sobre populações não os torna inúteis para indivíduos — torna-os a melhor aposta inicial disponível. Um médico não descarta a evidência sobre antibióticos porque cada paciente é único.
+
+O erro comum das duas é tratar "evidência" e "singularidade" como adversárias. A evidência informa a aposta; a clínica a ajusta ao caso; a preferência do paciente decide o que é aceitável para ele. O Vol 14, Cap. 95 desenvolve as três pernas.
+:::
+
+## O que a profissão não é
+
+Encerrando o volume que abriu perguntando o que é psicologia, vale dizer o que ela não é — porque as escolhas de carreira mais frustradas nascem daqui.
+
+**Não é "gostar de gente".** Gostar de gente é uma disposição, não uma competência. A profissão exige domínio de método, estatística, psicopatologia, ética e avaliação — e boa parte dela é feita de leitura difícil e trabalho técnico. O Cap. 3 inteiro é pré-requisito de qualquer prática responsável.
+
+**Não é "saber ouvir".** Escutar bem é necessário e está longe de ser suficiente. Amigos escutam; a diferença entre um amigo e um psicólogo é exatamente aquilo que este manual leva quinze volumes para ensinar.
+
+**Não é ler mentes.** Este manual mostrou no Cap. 1 que nem *você* tem acesso confiável às razões do próprio comportamento. A ideia de que um profissional "analisa" você numa conversa de festa é folclore — e um psicólogo que se comporte assim está violando a ética, não exibindo competência.
+
+**Não é apenas clínica.** É o ponto que o capítulo repetiu, e vale como conselho de carreira: quem descobre a psicologia pela imagem do consultório frequentemente descobre tarde que a área que combina consigo era outra.
+
+Uma parte da desconfiança pública com a psicologia, aliás, é merecida — e Lilienfeld argumentou que ela se alimenta justamente da fronteira mal vigiada entre a disciplina científica e o que se vende em seu nome [@lilienfeld2012]. É o assunto do Cap. 5, que fecha este volume desmontando os mitos que sobreviveram por nunca terem sido submetidos ao que o Cap. 3 descreveu.
+
+::: {.callout-sintese}
+- **Psicólogo, psiquiatra e psicanalista são profissões distintas.** Psicólogo: graduação em Psicologia, registro no CRP, não prescreve. Psiquiatra: médico, prescreve. Psicanalista: **não é profissão regulamentada no Brasil** — não há conselho nem exigência legal de formação.
+- **"Terapeuta" e "coach" não são títulos protegidos**; "psicólogo" é. Quem não está em conselho não responde a código de ética fiscalizável.
+- **A profissão foi regulamentada em 1962** pela Lei nº 4.119. O sistema CFP/CRP é autarquia com poder de fiscalizar e punir — existe para proteger o público, não a categoria.
+- **O registro no CRP é o único requisito legal** para exercer; nenhuma abordagem terapêutica é obrigatória, e nenhuma é sinônimo de psicologia.
+- **A avaliação psicológica é privativa do psicólogo**, e os testes passam pelo SATEPSI — barreira institucional contra instrumentos que "funcionam" pelo efeito Forer.
+- **A maioria dos psicólogos brasileiros não está em consultório particular**: SUS, SUAS, escolas, organizações, justiça e pesquisa concentram boa parte da profissão.
+- **O modelo cientista-profissional não fechou a distância entre pesquisa e prática.** A prática baseada em evidências integra três componentes — melhor evidência, expertise clínica e preferências do paciente —, e caricaturá-la como "seguir manual" é amputar dois deles.
+- **A profissão não é "gostar de gente", "saber ouvir" nem ler mentes** — e não é só clínica.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**CFP / CRP**
+:   Conselho Federal e Conselhos Regionais de Psicologia; autarquias que registram, fiscalizam e podem punir o exercício profissional [@cfp2005].
+
+**Lei nº 4.119/1962**
+:   Norma que regulamentou a profissão de psicólogo no Brasil e definiu suas funções privativas [@lei4119_1962].
+
+**Título privativo**
+:   Designação profissional cujo uso é restrito por lei a quem tem formação e registro — caso de "psicólogo", mas não de "terapeuta" ou "coach".
+
+**Avaliação psicológica**
+:   Processo, privativo do psicólogo, de uso de instrumentos e procedimentos para responder a uma demanda; regulada pelo CFP [@cfp2018].
+
+**SATEPSI**
+:   Sistema de Avaliação de Testes Psicológicos; qualifica os instrumentos que podem ser usados profissionalmente com base em evidências de validade e precisão [@cfp2018].
+
+**Modelo cientista-profissional**
+:   Modelo de formação, definido na conferência de Boulder (1949), segundo o qual o clínico deve ser formado tanto para a prática quanto para produzir e avaliar pesquisa [@raimy1950].
+
+**Prática baseada em evidências em psicologia**
+:   Integração da melhor evidência disponível, da expertise clínica e das características, valores e preferências do paciente [@apa2006].
+
+**CAPS**
+:   Centro de Atenção Psicossocial; serviço territorial da rede de saúde mental brasileira, herdeiro da Reforma Psiquiátrica.
+
+**CRAS / CREAS**
+:   Equipamentos do Sistema Único de Assistência Social em que atuam psicólogos, com foco em proteção social básica e especial.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Preencha, de memória, as diferenças entre psicólogo, psiquiatra e psicanalista quanto a: formação exigida, regulamentação legal, conselho profissional e prescrição de medicamentos.
+
+2. **(Recuperação.)** O que é o SATEPSI e qual problema ele tenta resolver? Conecte sua resposta ao efeito Forer (Cap. 1).
+
+3. **(Aplicação.)** Um anúncio diz: "Terapeuta holístico integrativo. Cura ansiedade em 5 sessões. Método exclusivo, comprovado por milhares de clientes satisfeitos." Identifique **quatro** problemas distintos nesse anúncio, usando o que os Caps. 1, 3 e 4 estabeleceram — pelo menos um deles de natureza regulatória e pelo menos um de natureza metodológica.
+
+4. **(Reflexão crítica.)** "Psicanalista" não é profissão regulamentada, e ainda assim muitos psicanalistas têm formação longa e rigorosa. Ao mesmo tempo, qualquer pessoa pode usar o título. Discuta: que problema a ausência de regulamentação cria para o público, e por que a existência de instituições sérias não o resolve sozinha?
+
+5. **(Reflexão crítica.)** Baker e colegas argumentaram que a prática clínica se descolou da ciência [@baker2008]. Um crítico responde: "Cada paciente é único; evidência de grupo não se aplica ao indivíduo." Avalie o argumento usando a distinção do Cap. 1 entre afirmações sobre populações e sobre indivíduos, e a definição de três componentes da APA.
+
+6. **(Integração.)** Uma estudante diz que quer cursar Psicologia porque "gosta de gente e sabe ouvir", e imagina trabalhar em consultório. Usando este capítulo: (a) que competências, além dessas disposições, a formação vai exigir dela? (b) que campos ela provavelmente não sabe que existem e podem combinar mais com seu perfil? (c) por que a formação em método (Cap. 3) importa mesmo para quem nunca pretende pesquisar?

@@ -270,6 +270,12 @@ Você (Claude Code) está **pré-aprovado** para, sem pausar por aprovação:
   Referenciar no texto via `@fig-nome`.
 - Estilos predefinidos: `curva, destaque, auxiliar, eixo, ponto, vetor`.
 - Cores: `manualblue, manualred, manualgreen, manualyellow, manualgray`.
+- **Bibliotecas disponíveis** (as do preâmbulo da extensão): `calc, angles, quotes, arrows.meta, positioning, intersections, decorations.pathreplacing, decorations.markings, patterns, through, backgrounds`. **Não** há `shapes.geometric` nem `fit` — usar apenas formas nativas (`rectangle`, `circle`, `ellipse`, `rounded corners`).
+- **Quebra de linha em nó: `\\` só no nível superior.** Dentro de um grupo aninhado — `{\tiny linha um\\linha dois}` — o `\\` quebra o alinhamento do TikZ e o build falha com `Undefined control sequence` em `\tikz@finish@orig`/`\pgfutil@next`, e o erro reportado é o enganoso `\begin{document} ended by \end{tikzpicture}`. Escrever cada linha em seu próprio grupo:
+  ```
+  ✗ {\textbf{Título}\\{\tiny linha um\\linha dois}}
+  ✓ {\textbf{Título}\\{\tiny linha um}\\{\tiny linha dois}}
+  ```
 - **Uso típico neste manual:** diagramas de neurônio/sinapse, mapas de estruturas cerebrais (esquemáticos), arcos reflexos, desenhos experimentais (grupos/condições), fluxogramas de processos (memória, condicionamento), curvas (curva do esquecimento de Ebbinghaus, funções psicofísicas), hierarquias (pirâmide de Maslow), modelos conceituais (Big Five, modelo ABC da TCC).
 
 ---
