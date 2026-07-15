@@ -1,5 +1,403 @@
 # 08. Behaviorismo (Watson, Skinner)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstruir** o argumento do manifesto de Watson e mostrar por que ele resolve o impasse deixado pelo Cap. 7.
+- **Avaliar** o caso do Pequeno Albert pelo que ele de fato demonstrou — e pelo que não demonstrou.
+- **Distinguir** behaviorismo **metodológico** de behaviorismo **radical**, e desmontar a acusação de que Skinner negava a existência de pensamentos e sentimentos.
+- **Explicar** a contingência de três termos e o princípio da seleção por consequências.
+- **Descrever** o experimento de aprendizagem latente e por que ele foi a primeira rachadura séria no programa.
+- **Identificar** os limites biológicos da aprendizagem revelados pelo desvio instintivo e pela aversão condicionada ao sabor.
+- **Julgar** a tese corrente de que "o behaviorismo foi refutado e morreu" — e substituí-la por um balanço defensável.
 :::
+
+O Cap. 7 terminou num impasse. O estruturalismo tinha um objeto — a consciência — e um método que não conseguia arbitrar suas próprias disputas. O funcionalismo tinha uma pergunta excelente e nenhum jeito de respondê-la que não recaísse, no fim, em perguntar às pessoas o que elas estavam sentindo.
+
+Havia duas saídas. Uma: melhorar o método até que ele alcançasse a consciência. Outra: **trocar o objeto**.
+
+John Watson escolheu a segunda, e o fez com a sutileza de um martelo. O resultado dominou a psicologia americana por quarenta anos, produziu as tecnologias comportamentais mais eficazes que a disciplina já gerou, e é hoje objeto do conjunto mais denso de mal-entendidos de todo este manual. Praticamente tudo o que se diz em tom de crítica sobre o behaviorismo — que ele negava a existência da mente, que foi derrubado por Chomsky, que morreu — é falso, meio-falso, ou verdadeiro apenas de uma das suas versões.
+
+Vamos separar as camadas.
+
+## O manifesto
+
+Em 1913, num artigo baseado numa palestra na Universidade Columbia, Watson escreveu o parágrafo mais citado da história da psicologia [@watson1913]. A tese: a psicologia, como o behaviorista a vê, é um ramo **puramente objetivo e experimental** das ciências naturais. Seu objetivo teórico é a **previsão e o controle** do comportamento. A introspecção não faz parte de seus métodos. E não há linha divisória entre o humano e o animal.
+
+Reconstrua o argumento, porque ele é melhor do que sua reputação:
+
+1. Uma ciência precisa de **dados públicos** — observáveis por qualquer um, em princípio.
+2. A consciência só é acessível ao próprio sujeito. Relatos sobre ela não podem ser verificados de fora.
+3. Como o Cap. 7 mostrou em Würzburg, quando esses relatos discordam **não há como decidir**.
+4. O comportamento, ao contrário, é público. Dois observadores veem o mesmo rato virar à esquerda.
+5. Logo: a psicologia deve ter como objeto o comportamento.
+
+O passo 5 é onde mora a jogada, e é preciso enxergá-la com clareza. Watson não está dizendo apenas "vamos estudar comportamento também". Está dizendo que a consciência **sai do escopo da ciência psicológica**. Não como estratégia temporária — como definição da disciplina.
+
+Foi um alívio, e é importante entender por quê. A psicologia estava paralisada em disputas insolúveis sobre imagens mentais. Watson ofereceu um programa em que se podia **trabalhar**: fazer experimentos, obter dados que todos podiam ver, acumular resultados, construir uma tecnologia. Em vinte anos, o behaviorismo tomou a psicologia americana quase inteira — não porque tivesse vencido um debate filosófico, mas porque **produzia**.
+
+::: {.atencao}
+**A frase dos doze bebês — e a metade que sempre é cortada.**
+
+Watson escreveu que, dada uma dúzia de crianças saudáveis e um mundo próprio para criá-las, poderia pegar qualquer uma ao acaso e treiná-la para se tornar qualquer tipo de especialista que ele selecionasse — médico, advogado, artista, mendigo, ladrão —, independentemente de talentos, tendências, capacidades ou raça de seus ancestrais.
+
+É a citação padrão para ilustrar o ambientalismo delirante do behaviorismo. E é honesta citá-la. Mas a frase **seguinte**, no mesmo parágrafo, quase nunca aparece: Watson acrescenta que está indo além dos seus fatos, e **admite** — e observa que os defensores do lado oposto vêm fazendo o mesmo há milhares de anos.
+
+Isso muda o que a passagem é. Não é uma afirmação empírica; é uma **provocação retórica**, explicitamente rotulada como tal pelo autor, contra o hereditarismo então dominante — que fazia afirmações igualmente infundadas, sem o pudor de admitir. O contexto de 1924 importa: era o auge do movimento eugênico nos Estados Unidos, com leis de esterilização compulsória em vigor. O ambientalismo de Watson era, entre outras coisas, uma posição política contra isso.
+
+Nada disso torna a tese verdadeira — o Cap. 2 e o Cap. 26 mostram o quanto ela erra. Mas citar metade de um parágrafo para ridicularizar um autor que explicitamente marcou o limite da própria afirmação é, pelo padrão do Cap. 5, mau jornalismo intelectual. **Critique a tese; não fabrique a arrogância.**
+:::
+
+## O Pequeno Albert: o que o estudo mostra e o que a lenda diz
+
+Nenhum estudo da psicologia é mais citado e menos lido.
+
+::: {.experimento}
+**Watson e Rayner, e o medo condicionado** [@watson_rayner1920]
+
+**A pergunta.** As emoções humanas complexas podem ser produtos de condicionamento? Watson sustentava que nascemos com poucas reações emocionais básicas e que todo o resto — inclusive os medos adultos — é aprendido por associação. Era hipótese central do programa, e não havia demonstração humana.
+
+**Desenho.** Um bebê de cerca de onze meses, chamado no artigo de "Albert B.". Primeiro, os autores verificaram que ele **não** temia um rato branco de laboratório — brincava com ele — nem coelhos, cães, algodão ou máscaras. Depois estabeleceram que um som alto (barra de aço golpeada atrás de sua cabeça) o assustava e o fazia chorar. Em seguida, passaram a produzir o som **no momento** em que ele tocava o rato. Repetiram o pareamento algumas vezes ao longo de duas sessões.
+
+**Resultado.** Diante do rato sozinho, Albert passou a chorar e a se afastar. Os autores relataram ainda alguma **generalização**: reação a um coelho, a um cão, a um casaco de pele e a uma máscara de Papai Noel.
+
+**O que isso demonstra, se demonstra.** Que uma resposta emocional pode, ao menos em princípio, ser condicionada em um ser humano, e que a resposta pode se estender a estímulos semelhantes. É a semente da terapia de exposição (Cap. 90) e do modelo comportamental das fobias (Cap. 78).
+
+**Limitações — e elas são graves.**
+
+- **N = 1.** Um único bebê. Nenhum grupo de controle. Nenhuma comparação.
+- **Medida subjetiva.** O desfecho é o julgamento dos próprios autores sobre o choro — que tinham forte investimento no resultado. Sem cegamento (Cap. 3), esse é exatamente o desenho vulnerável ao viés do experimentador.
+- **Resultado instável.** O registro indica que a resposta enfraquecia e precisou ser reforçada com novos pareamentos. A generalização foi irregular.
+- **Nunca replicado de forma limpa.** Tentativas posteriores tiveram resultados mistos. O estudo é famoso, não robusto.
+- **Ética.** Pelos padrões do Cap. 20, é indefensável: condicionar medo em um bebê, sem consentimento informado adequado, e — pior — **sem descondicionar**. Watson havia planejado remover o medo e não o fez; Albert deixou o hospital antes.
+
+**A lenda, e o que se sabe.** Circula que Albert teria crescido fóbico, ou enlouquecido. Não há qualquer evidência disso. Duas investigações históricas propuseram identidades diferentes: Beck e colegas argumentaram tratar-se de Douglas Merritte, criança com hidrocefalia que morreu aos seis anos [@beck2009]; Powell e colegas contestaram e propuseram William Albert Barger, que viveu até 2007 e, segundo familiares, era saudável — embora tivesse alguma aversão a animais [@powell2014]. A disputa segue aberta. Se Merritte for o caso certo, agrava-se o problema: o estudo teria sido feito com uma criança neurologicamente comprometida, descrita no artigo como saudável.
+
+**A leitura correta.** O Pequeno Albert é ao mesmo tempo um marco histórico e um estudo ruim. As duas coisas são verdade. Ele merece figurar nos manuais — como demonstração de plausibilidade e como aula sobre tudo o que o Cap. 3 exige e ele não tem.
+:::
+
+A carreira acadêmica de Watson terminou dois anos depois: a Johns Hopkins forçou sua demissão por causa do caso com Rosalie Rayner, sua assistente e coautora do estudo. Ele foi para a publicidade, onde teve enorme sucesso, e escreveu um livro popular sobre criação de filhos que recomendava aos pais nunca abraçar ou beijar os filhos, tratá-los com objetividade e apertar-lhes a mão pela manhã. O livro vendeu muito e o conselho era, sabemos hoje, ativamente danoso — o Cap. 60, sobre apego, é em boa medida a refutação empírica de Watson pai.
+
+## O interregno: Hull e Tolman
+
+Entre Watson e Skinner há trinta anos de **neobehaviorismo**, e um deles importa muito.
+
+Clark Hull tentou construir uma psicologia ao modo de Newton: postulados, teoremas, derivações formais. Introduziu **variáveis intervenientes** — construtos como hábito e impulso, não observados diretamente, mas definidos por equações que ligam entradas mensuráveis a saídas mensuráveis. Era rigoroso, ambicioso, e dominou os anos 1940. Envelheceu mal: o sistema era complexo demais, os parâmetros multiplicavam-se, e quase nada dele sobreviveu. Vale como lição sobre um erro que o Cap. 3 sinaliza: **precisão formal não é o mesmo que verdade empírica**. Dá para ser exato e estar errado.
+
+Edward Tolman é outra história. Ele se dizia behaviorista, e era — recusava introspecção, estudava ratos, media comportamento. Mas era um behaviorista **propositado**: sustentava que o comportamento tem direção e que os ratos aprendem **o que leva a quê**, não sequências de movimentos. Falava, sem constrangimento, em **mapas cognitivos** [@tolman1948]. Para o behaviorismo padrão, isso era contrabando. Tolman respondia que não estava perguntando o que o rato sente; estava propondo um construto para explicar dados que o modelo estímulo-resposta não explicava.
+
+E ele tinha os dados.
+
+::: {.experimento}
+**Aprendizagem latente: o rato que sabia e não mostrava** [@tolman_honzik1930]
+
+**A pergunta.** O reforço é necessário para que a **aprendizagem** ocorra, ou apenas para que ela **apareça** no comportamento? A teoria padrão não distinguia as duas coisas: sem reforço, sem aprendizagem.
+
+**Desenho.** Três grupos de ratos percorrem um labirinto complexo, uma tentativa por dia, por dezessete dias. Mede-se o número de erros (entradas em becos sem saída).
+
+- **Grupo R+**: encontra comida no final **todos** os dias.
+- **Grupo R−**: **nunca** encontra comida. Apenas é retirado do labirinto ao chegar.
+- **Grupo crítico**: nenhuma comida **até o décimo dia**. A partir do **décimo primeiro**, passa a encontrar comida.
+
+**Previsão da teoria padrão.** O grupo crítico, sem reforço nos dez primeiros dias, não aprendeu nada. Ao começar a receber comida no dia 11, deve iniciar sua curva de aprendizagem **do zero** — e levar mais dez dias para chegar onde o grupo R+ chegou.
+
+**Resultado.** Nos dez primeiros dias, o grupo crítico erra tanto quanto o grupo sem reforço. Aí a comida entra. E no dia **12** — uma única tentativa reforçada depois — seu desempenho **despenca até o nível do grupo que vinha sendo reforçado desde o início**. Em alguns registros, melhor.
+
+**Interpretação.** Uma tentativa não ensina um labirinto. Os ratos do grupo crítico **já sabiam** o labirinto: vinham construindo um mapa dele nos dez dias de vagar sem recompensa. O que faltava não era conhecimento — era **motivo** para usá-lo. O reforço não criou a aprendizagem; ele revelou uma aprendizagem que já estava lá, **latente**.
+
+**Por que isso é grave para o programa.** Estabelece a distinção entre **aprendizagem** e **desempenho**, e ela é letal para um sistema que define aprendizagem como mudança de comportamento. Se o rato aprendeu sem mudar de comportamento, então há **algo dentro dele** que mudou e que a medida comportamental não capturou. Tolman chamou isso de mapa cognitivo. Vinte e cinco anos antes da revolução cognitiva, o argumento dela já estava montado — e montado com ratos, dentro do próprio behaviorismo.
+
+**Limitações.** O efeito é real e replica, mas seu tamanho varia com o desenho, e a interpretação em termos de "mapa" foi contestada por décadas: é possível descrever o resultado sem falar em representação. A defesa mais forte do mapa veio muito depois, da neurociência — células de lugar no hipocampo que codificam posição no espaço [@okeefe_dostrovsky1971], achado que rendeu o Nobel de 2014 e deu a Tolman uma vindicação que ele não viveu para ver (Cap. 24).
+:::
+
+::: {#fig-aprendizagem-latente}
+```{.tikz}
+%%| filename: aprendizagem-latente
+%%| alt: Gráfico de linhas do experimento de aprendizagem latente de Tolman e Honzik. O eixo horizontal mostra os dias de treino, de um a dezessete, e o eixo vertical mostra o número de erros no labirinto, decrescente de cima para baixo. A curva do grupo sempre reforçado cai de forma gradual e constante ao longo dos dias até um patamar baixo. A curva do grupo nunca reforçado permanece alta durante todo o período, com queda pequena. A curva do grupo crítico acompanha a do grupo nunca reforçado, com muitos erros, até o dia dez, e então despenca abruptamente entre os dias onze e doze, quando a comida é introduzida, alcançando o mesmo patamar baixo do grupo sempre reforçado. Uma linha vertical tracejada marca o dia dez como o momento em que a comida é introduzida no grupo crítico, e uma anotação indica que uma única tentativa reforçada não ensina um labirinto, de modo que o rato já sabia e passou a ter motivo para mostrar.
+\begin{tikzpicture}[scale=1.0]
+  \draw[eixo, ->, >=Stealth] (0,0) -- (10.6,0) node[right, font=\tiny] {dias};
+  \draw[eixo, ->, >=Stealth] (0,0) -- (0,5.4) node[above, font=\tiny, align=center] {erros};
+  \foreach \x/\d in {0.6/1, 3.0/5, 5.4/9, 6.6/11, 9.6/17} {
+    \draw[manualgray] (\x,-0.1) -- (\x,0.1);
+    \node[font=\tiny, text=manualgray] at (\x,-0.35) {\d};
+  }
+  \node[font=\tiny, text=manualgray, rotate=90] at (-0.45,2.7) {mais erros $\rightarrow$};
+
+  \draw[dashed, thick, manualgray] (6.0,0) -- (6.0,5.0);
+  \node[font=\tiny, text=manualred, align=center] at (6.0,5.35) {comida entra\\(dia 11)};
+
+  % nunca reforçado
+  \draw[curva, manualgray, very thick]
+    (0.6,4.7) .. controls (2.5,4.4) and (5.0,4.2) .. (9.6,3.9);
+  \node[font=\tiny, text=manualgray, anchor=west] at (9.7,3.9) {R$-$ nunca};
+
+  % sempre reforçado
+  \draw[curva, manualgreen, very thick]
+    (0.6,4.6) .. controls (2.2,3.0) and (4.0,1.6) .. (9.6,1.0);
+  \node[font=\tiny, text=manualgreen, anchor=west] at (9.7,1.0) {R$+$ sempre};
+
+  % grupo crítico
+  \draw[curva, manualred, very thick]
+    (0.6,4.75) .. controls (2.5,4.5) and (4.4,4.3) .. (6.0,4.15);
+  \draw[curva, manualred, very thick] (6.0,4.15) .. controls (6.4,3.6) and (6.6,1.6) .. (7.0,1.05);
+  \draw[curva, manualred, very thick] (7.0,1.05) .. controls (8.0,0.95) and (8.6,0.9) .. (9.6,0.85);
+  \node[font=\tiny, text=manualred, anchor=west] at (9.7,0.6) {crítico};
+
+  \node[ponto, manualred] at (7.0,1.05) {};
+  \node[font=\tiny, text=manualred, align=left, anchor=west] at (7.2,2.6)
+    {uma \textbf{única} tentativa\\reforçada não ensina\\um labirinto};
+  \node[draw, thick, rounded corners=3pt, draw=manualred, fill=manualred!6,
+        font=\tiny, align=center] at (3.1,1.5)
+    {o rato \textbf{já sabia}:\\o reforço não criou a aprendizagem,\\deu \textbf{motivo} para mostrá-la};
+\end{tikzpicture}
+```
+Aprendizagem latente [@tolman_honzik1930], em forma esquemática. A queda vertical do grupo crítico após o dia 10 é o dado: ela é rápida demais para ser aprendizagem, e por isso força a distinção entre **aprender** e **desempenhar**.
+:::
+
+## Skinner e o behaviorismo radical
+
+Burrhus Frederic Skinner é o psicólogo mais influente e mais caluniado do século XX. Comece pelo mal-entendido central, porque sem ele nada do resto faz sentido.
+
+::: {.atencao}
+**Behaviorismo metodológico × behaviorismo radical: a distinção que quase todo mundo erra.**
+
+**Behaviorismo metodológico** (Watson): eventos privados — pensamentos, sentimentos — podem até existir, mas são **inacessíveis** à ciência. A psicologia deve ignorá-los. É uma posição sobre o **método**.
+
+**Behaviorismo radical** (Skinner): eventos privados **existem, são reais, e são objeto legítimo de estudo**. Uma dor de dente é tão real quanto um chute. A diferença é apenas que **um único observador tem acesso** a ela — o que cria dificuldades práticas, não uma barreira ontológica. E, crucialmente: pensar e sentir são eles próprios **comportamento**, sujeitos às mesmas leis do resto.
+
+Skinner escreveu isso em muitos lugares e com todas as letras [@skinner1953; @skinner1974]. Ele **não** negava a vida mental. Ele negava outra coisa, e a distinção é fina mas decisiva: negava que eventos privados sirvam como **causas iniciadoras** que explicam o comportamento.
+
+O argumento: dizer "ele bebeu porque estava ansioso" parece explicar. Mas como sabemos que ele estava ansioso? Em geral, porque ele bebeu, ou porque relatou ansiedade — e o relato é, ele próprio, comportamento a ser explicado. A "ansiedade" não é a causa; é **outro efeito** da mesma história de condicionamento e do mesmo ambiente atual. Apontá-la como causa interrompe a busca justamente onde ela deveria começar: nas variáveis de que ambos dependem.
+
+Note que este é o mesmo argumento de Molière contra o poder soporífero do ópio, e a mesma exigência do Cap. 3 contra explicações que renomeiam o fenômeno. Você pode discordar de Skinner — e boa parte da psicologia discorda —, mas discorde **disto**, não de uma posição que ele passou cinquenta anos negando ter.
+
+"Skinner achava que a mente não existe" é, portanto, falso. A frase correta é: **Skinner achava que a mente não explica**.
+:::
+
+Feita a distinção, o sistema fica claro. Skinner distinguiu comportamento **respondente** (eliciado por estímulo antecedente — o território de Pavlov, Cap. 39) de comportamento **operante**: emitido pelo organismo e **selecionado por suas consequências** (Cap. 40). É aqui que ele fez sua contribuição, e ela se organiza numa unidade de análise: a **contingência de três termos**.
+
+::: {#fig-tres-termos}
+```{.tikz}
+%%| filename: tres-termos
+%%| alt: Diagrama em duas partes. Na parte superior, a contingência de três termos é mostrada como três caixas em sequência ligadas por setas: o estímulo discriminativo, que sinaliza que a consequência está disponível e não força a resposta; a resposta, isto é, o comportamento emitido; e a consequência, que altera a probabilidade futura da resposta. Uma seta curva de realimentação vai da consequência de volta à resposta, com o rótulo de que a consequência seleciona a resposta e atua sobre o futuro, não sobre o passado. Na parte inferior, uma tabela dois por dois cruza o efeito sobre o comportamento, que aumenta ou diminui, com a operação realizada, que é acrescentar ou retirar um estímulo. As quatro células são: reforço positivo, quando se acrescenta algo e o comportamento aumenta; reforço negativo, quando se retira algo e o comportamento aumenta; punição positiva, quando se acrescenta algo e o comportamento diminui; e punição negativa, quando se retira algo e o comportamento diminui. Uma nota adverte que positivo e negativo significam acrescentar e retirar, e nunca bom e ruim.
+\begin{tikzpicture}[
+  tb/.style={draw, very thick, rounded corners=4pt, minimum width=3.0cm, minimum height=1.35cm,
+             align=center, font=\scriptsize},
+  cl/.style={draw, thin, minimum width=3.5cm, minimum height=1.2cm, align=center, font=\tiny}
+]
+  \node[tb, draw=manualblue, fill=manualblue!8] (a) at (-4.2,0)
+    {\textbf{A} --- Antecedente\\{\tiny estímulo discriminativo}\\{\tiny \emph{sinaliza}, não força}};
+  \node[tb, draw=manualgreen, fill=manualgreen!8] (b) at (0,0)
+    {\textbf{B} --- Comportamento\\{\tiny a resposta emitida}};
+  \node[tb, draw=manualyellow, fill=manualyellow!10] (c) at (4.2,0)
+    {\textbf{C} --- Consequência\\{\tiny altera a probabilidade}\\{\tiny \emph{futura} da resposta}};
+  \draw[->, >=Stealth, very thick, manualgray] (a) -- (b);
+  \draw[->, >=Stealth, very thick, manualgray] (b) -- (c);
+  \draw[->, >=Stealth, very thick, manualred] (c) to[bend left=40]
+    node[midway, above, font=\tiny, text=manualred, align=center] {seleciona} (b);
+  \node[font=\tiny, text=manualred, align=center] at (0,-1.6)
+    {a consequência age sobre o \textbf{futuro} da resposta, não sobre o passado};
+
+  \draw[manualgray!30, thick] (-6.2,-2.4) -- (6.2,-2.4);
+
+  \node[font=\tiny\bfseries, text=manualgray, align=center] at (0,-3.0) {a operação realizada};
+  \node[font=\tiny\bfseries, text=manualgray] at (-1.9,-3.5) {ACRESCENTAR ($+$)};
+  \node[font=\tiny\bfseries, text=manualgray] at (2.1,-3.5) {RETIRAR ($-$)};
+  \node[font=\tiny\bfseries, text=manualgray, rotate=90, align=center] at (-4.9,-5.0) {efeito no comportamento};
+  \node[font=\tiny\bfseries, text=manualgray, align=center] at (-3.9,-4.3) {AUMENTA};
+  \node[font=\tiny\bfseries, text=manualgray, align=center] at (-3.9,-5.7) {DIMINUI};
+
+  \node[cl, draw=manualgreen, fill=manualgreen!10] at (-1.9,-4.3)
+    {\textbf{Reforço positivo}\\{acrescenta algo $\rightarrow$ mais}};
+  \node[cl, draw=manualgreen, fill=manualgreen!10] at (2.1,-4.3)
+    {\textbf{Reforço negativo}\\{retira algo $\rightarrow$ mais}};
+  \node[cl, draw=manualred, fill=manualred!8] at (-1.9,-5.7)
+    {\textbf{Punição positiva}\\{acrescenta algo $\rightarrow$ menos}};
+  \node[cl, draw=manualred, fill=manualred!8] at (2.1,-5.7)
+    {\textbf{Punição negativa}\\{retira algo $\rightarrow$ menos}};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!8,
+        minimum width=11.0cm, align=center, font=\tiny] at (0,-6.8)
+    {\textbf{Atenção:} ``positivo'' e ``negativo'' significam \textbf{acrescentar} e \textbf{retirar} --- nunca ``bom'' e ``ruim''.\\Reforço negativo \emph{aumenta} comportamento. Não é punição.};
+\end{tikzpicture}
+```
+A contingência de três termos e a matriz das consequências. O erro mais comum da psicologia introdutória mora no quadro amarelo: reforço negativo **aumenta** o comportamento, porque reforço, por definição, é o que aumenta.
+:::
+
+A ideia grande de Skinner, porém, não é a caixa nem os esquemas de reforço — é o que ele chamou de **seleção por consequências** [@skinner1981]. O argumento é darwiniano e vale a pena vê-lo inteiro: assim como o ambiente seleciona, entre variações genéticas, as que sobrevivem, o ambiente seleciona, entre variações comportamentais emitidas, as que se repetem. O comportamento não é empurrado por dentro; é **esculpido por fora**, ao longo de uma história. E Skinner propôs três níveis operando no mesmo formato: a seleção natural (filogenética), o condicionamento operante (ontogenética) e a evolução das práticas culturais.
+
+É uma ideia unificadora e séria. O que é notável, e desconfortável para os críticos, é que ela pertence à mesma família explicativa que a psicologia evolucionista do Cap. 13 — que costuma se apresentar como o oposto do behaviorismo.
+
+## As rachaduras: quando a biologia entra pela janela
+
+O behaviorismo padrão trabalhava com dois pressupostos raramente enunciados. **Equipotencialidade**: qualquer estímulo pode ser associado a qualquer resposta com igual facilidade — as leis da aprendizagem são gerais, e o rato, o pombo e o humano são intercambiáveis. **Contiguidade**: o que forma a associação é a proximidade temporal entre os eventos.
+
+Os dois estão errados, e quem os derrubou não foram os cognitivistas. Foram os próprios pesquisadores de aprendizagem animal.
+
+**O desvio instintivo.** Keller e Marian Breland eram alunos de Skinner que largaram a academia para treinar animais comercialmente — e eram bons: treinaram milhares de animais de dezenas de espécies. Publicaram um artigo com o título mais elegante da história da psicologia, *The Misbehavior of Organisms*, trocadilho com o livro fundador de Skinner [@breland1961]. O relato: repetidamente, animais bem condicionados **regrediam** para padrões instintivos da espécie, atrapalhando a tarefa reforçada. Guaxinins treinados a depositar moedas num cofre começavam a esfregá-las uma na outra, como fazem com alimento, e não largavam — mesmo perdendo o reforço. Porcos treinados a carregar fichas de madeira começavam a fuçá-las no chão, e cada vez mais devagar, apesar da fome. O comportamento **derivava** na direção do repertório instintivo ligado à comida. As contingências não venciam a espécie.
+
+**A aversão condicionada ao sabor.** O golpe mais limpo veio de John Garcia.
+
+::: {.experimento}
+**Garcia e Koelling: nem tudo se associa a tudo** [@garcia_koelling1966]
+
+**A pergunta.** A equipotencialidade é verdadeira? Qualquer estímulo pode ser associado a qualquer consequência?
+
+**Desenho.** Ratos bebem água que é simultaneamente **saborosa** (sabor novo) e **"brilhante e barulhenta"** (a lambida aciona uma luz e um clique). O mesmo estímulo composto para todos. Em seguida, os grupos diferem na consequência:
+
+- Um grupo recebe **náusea** (irradiação ou cloreto de lítio), horas depois.
+- Outro grupo recebe um **choque** nas patas, imediato.
+
+Depois, testa-se qual componente o rato passou a evitar: o sabor, ou a luz-e-som?
+
+**Resultado.** Um cruzamento perfeito. Os ratos que passaram mal associaram a náusea ao **sabor** — e ignoraram luz e som. Os ratos que levaram choque associaram o choque à **luz e ao som** — e continuaram bebendo o sabor tranquilamente.
+
+**Interpretação — e são dois golpes, não um.**
+
+Primeiro, contra a **equipotencialidade**: as associações não são livres. Há uma **preparação** biológica que torna certos pareamentos fáceis e outros quase impossíveis. E ela faz sentido evolutivo evidente: no ambiente ancestral, comida ruim causa mal-estar interno, horas depois; predadores e perigos externos causam dor imediata. Um sistema que aprende "sabor → náusea" e "luz → dor" está calibrado para o mundo real. O rato não é uma tábula rasa com quatro patas.
+
+Segundo, e mais grave, contra a **contiguidade**: a associação sabor-náusea se forma com intervalos de **horas** entre os eventos, e frequentemente em **uma única tentativa**. Isso viola diretamente o princípio de que a aprendizagem requer proximidade temporal e repetição.
+
+**Recepção.** Os primeiros artigos de Garcia foram rejeitados. Um parecerista teria comentado que os achados eram tão prováveis quanto encontrar excremento de pássaro numa ampulheta. O resultado replicou, virou paradigma, e Garcia acabou recebendo os principais prêmios da APA.
+
+**Limitações e escopo.** O efeito é sólido e generaliza — inclusive para humanos: quem passou mal depois de um prato específico costuma desenvolver aversão duradoura a ele, mesmo **sabendo** que a culpa era de um vírus. É um belo exemplo de que o sistema não escuta razões. Isso não abole as leis gerais da aprendizagem; mostra que elas operam **dentro** de restrições da espécie.
+
+**Aplicação.** Vale registrar o uso mais bonito: aversão condicionada foi empregada em campo para proteger rebanhos, tratando carcaças com lítio de modo que coiotes adoecessem e passassem a evitar ovelhas — em vez de serem abatidos. E, na clínica, explica a aversão alimentar em pacientes sob quimioterapia, hoje manejada oferecendo-se um sabor novo e descartável ("bode expiatório") antes da sessão, para que a aversão se prenda a ele (Cap. 39).
+:::
+
+E há a rachadura que veio de dentro da própria teoria. Robert Rescorla mostrou que o pareamento não basta: o que importa é se o estímulo **prediz** a consequência, isto é, se há **contingência informativa** e não mera contiguidade. Um estímulo emparelhado com choque metade das vezes, num contexto em que o choque também ocorre sem ele, não condiciona nada — ele não informa. O título do artigo em que Rescorla resumiu a virada diz tudo: *Pavlovian conditioning: it's not what you think it is* [@rescorla1988]. O condicionamento não é a formação mecânica de um elo por proximidade; é o organismo **detectando relações preditivas** no ambiente. Isso é, sem eufemismo, uma teoria cognitiva do condicionamento — proposta por pesquisadores da tradição da aprendizagem, com ratos, e hoje padrão no Cap. 39.
+
+## Chomsky, e o que aconteceu de verdade
+
+A narrativa canônica: em 1959, Chomsky resenhou *Verbal Behavior* de Skinner, destruiu o behaviorismo e inaugurou a revolução cognitiva. É boa história e história ruim.
+
+Skinner publicara em 1957 uma tentativa de analisar a linguagem em termos operantes, classificando enunciados por sua função — mandos, tatos, ecoicos — em vez de por sua forma [@skinner1957]. Era um livro especulativo, e ele mesmo o apresentava como uma **interpretação**, não um relato de experimentos.
+
+A resenha de Chomsky [@chomsky1959] é um exercício de demolição retórica, e seus melhores argumentos são fortes de verdade. A **produtividade**: falantes produzem e compreendem sentenças inteiramente novas, que nunca foram reforçadas. A **pobreza do estímulo**: crianças adquirem regras gramaticais complexas a partir de dados fragmentários, com pouca correção explícita — e, quando corrigidas, ignoram. E a acusação mais afiada: termos como **estímulo**, **resposta** e **reforço**, definidos com precisão no laboratório, tornam-se metafóricos e vazios quando aplicados à conversa humana; usá-los ali é dar aparência de rigor a uma paráfrase.
+
+O que a narrativa omite:
+
+**Skinner nunca respondeu.** Não por derrota — ele disse que não lera a resenha inteira e que Chomsky não entendera o livro. Do ponto de vista da retórica pública, foi um erro estratégico enorme: o silêncio foi lido como incapacidade.
+
+**Alguém respondeu, dez anos depois.** MacCorquodale escreveu uma réplica detalhada mostrando que boa parte da resenha ataca posições que Skinner não sustenta — sobretudo o behaviorismo metodológico ao estilo Hull-Watson, com sua parafernália de estímulos e respostas, que Skinner explicitamente rejeitava [@maccorquodale1970]. A resenha, argumentou, acerta em alvos reais e erra o alvo declarado. Esse texto é muito menos lido que o de Chomsky, o que por si só ilustra como funciona a história das ideias.
+
+**A resenha não produziu dados.** Ela não relata experimento algum. Foi um argumento — brilhante, influente — e venceu num terreno onde o Cap. 3 diz que não se decide nada. O que de fato enfraqueceu o behaviorismo foram os dados: Tolman, Garcia, os Breland, Rescorla, Bandura (Cap. 41). A resenha ficou com o crédito.
+
+**E a pobreza do estímulo segue em disputa.** Não é uma questão encerrada: os modelos de linguagem estatísticos das últimas décadas reabriram a pergunta sobre quanta estrutura pode ser extraída de dados sem gramática inata (Cap. 48). O debate de 1959 está mais vivo do que o veredito sugere.
+
+## O balanço honesto
+
+::: {.na-pratica}
+**O behaviorismo não morreu. Ele está no seu consultório, na sua escola e no seu telefone.**
+
+Se a psicologia cognitiva "venceu", alguém esqueceu de avisar as aplicações:
+
+- **Análise do comportamento aplicada (ABA).** É a intervenção com maior base empírica para várias áreas do transtorno do espectro autista, sobretudo em comunicação e habilidades funcionais (Cap. 85) — e é também objeto de crítica ética séria por parte de pessoas autistas e de pesquisadores, quanto a objetivos de normalização e a métodos de intervenção intensiva. As duas coisas precisam ser ditas juntas.
+- **Terapia comportamental e exposição.** O tratamento de primeira linha para fobias, TOC e transtorno de pânico é exposição — behaviorismo puro, aplicado (Caps. 78, 81, 90). A parte "C" da TCC é famosa; a parte "B" é a que faz o trabalho pesado, e a evidência de que a ativação comportamental sozinha rivaliza com o pacote completo na depressão é robusta (Cap. 91).
+- **Economia de fichas, manejo de contingências.** O manejo de contingências é uma das intervenções mais eficazes que existem para transtorno por uso de substâncias (Cap. 86) — e uma das menos usadas, por razões que dizem mais sobre moralismo do que sobre evidência.
+- **Educação.** As máquinas de ensinar de Skinner falharam comercialmente e triunfaram conceitualmente: prática espaçada, resposta ativa, feedback imediato, passos pequenos com sucesso alto. Todo software adaptativo de ensino é neto delas.
+- **Treinamento animal.** Todo golfinho, cão-guia e cavalo treinado com clicker é uma demonstração diária de modelagem por aproximações sucessivas.
+- **Seu telefone.** Os esquemas de reforço de **razão variável** — os mais resistentes à extinção, descobertos com pombos [@ferster_skinner1957] — são o motor econômico das redes sociais e dos jogos de azar. Rolagem infinita é uma caixa de Skinner com design bonito. Skinner previu que a tecnologia comportamental seria usada; não previu que seria usada assim.
+
+O veredito defensável tem duas metades. Como **filosofia da psicologia**, o behaviorismo radical perdeu: a maioria dos pesquisadores acha que representações internas são indispensáveis e explicativas. Como **ciência da aprendizagem e tecnologia comportamental**, ele venceu tão completamente que virou invisível — ninguém chama de behaviorismo, chama de "o que funciona".
+:::
+
+::: {.atencao}
+**Dois mitos sobre Skinner que este manual não vai deixar passar.**
+
+**"Ele criou a filha numa caixa de Skinner, e ela enlouqueceu."** Falso em todas as partes. Skinner projetou um berço fechado e climatizado — o *air crib* — para a filha Deborah: um ambiente aquecido, com temperatura e umidade controladas, que dispensava cobertores pesados. Não era uma câmara experimental, não havia condicionamento, e a criança passava o dia fora dele como qualquer bebê. A confusão com a caixa operante foi alimentada por uma reportagem de revista, cujo título ele não escolheu, e depois amplificada por um livro popular [@benjamin1999]. Deborah Skinner Buzan cresceu saudável, tornou-se artista em Londres, e escreveu ela própria um artigo intitulado *I was not a lab rat* para desmentir a lenda de que teria enlouquecido, processado o pai ou se matado — nada disso aconteceu [@buzan2004].
+
+**"Behaviorismo é sinônimo de punição."** Precisamente ao contrário. Skinner passou a carreira argumentando **contra** a punição, com base empírica: ela suprime o comportamento temporariamente sem ensinar alternativa, gera fuga, esquiva e contra-agressão, e condiciona respostas emocionais ao punidor — que passa a ser evitado, destruindo justamente a relação de que se precisaria para ensinar. Sua tese, em *Walden Two* e em *Beyond Freedom and Dignity*, era que sociedades punitivas são ineficientes, e que o desenho de contingências positivas é tecnicamente superior. Pode-se achar essa visão ingênua ou autoritária — muita gente achou, e o Cap. 11 apresenta a reação humanista. Mas "Skinner defendia castigo" inverte o registro.
+
+Ambos os mitos seguem a receita do Cap. 5: grão de verdade (havia uma caixa; havia contingências), simplificação, apelo — e repetição.
+:::
+
+O behaviorismo fez à psicologia um favor que ela raramente reconhece: ensinou-a a **definir operacionalmente**, a medir, a exigir dado público, a desconfiar de explicações que só renomeiam o fenômeno. Essa herança está no Cap. 3, e portanto em tudo o que veio depois — inclusive nos cognitivistas que o enterraram.
+
+E cobrou um preço. Ao declarar a consciência fora de escopo, tornou invisíveis por quarenta anos fenômenos que existiam e importavam. A Gestalt, do outro lado do Atlântico, nunca aceitou esse contrato — e estava, em vários pontos, com a razão. É o Cap. 9.
+
+::: {.callout-sintese}
+- **O manifesto de Watson** [@watson1913] resolve o impasse do Cap. 7 trocando o objeto: se dados precisam ser públicos e a consciência não é pública, a psicologia deve estudar comportamento. Objetivo declarado: **previsão e controle**.
+- **A frase dos doze bebês** vem seguida, no original, da admissão explícita de que Watson estava indo além dos seus fatos. A tese é falsa; a arrogância atribuída é fabricada por citação truncada.
+- **Pequeno Albert** [@watson_rayner1920]: demonstra plausibilidade do medo condicionado e da generalização. É também N = 1, sem controle, sem cegamento, com resposta instável, nunca bem replicado, eticamente indefensável, e a identidade da criança segue em disputa [@beck2009; @powell2014].
+- **Tolman e a aprendizagem latente** [@tolman_honzik1930]: o grupo sem reforço iguala o grupo reforçado uma tentativa depois de a comida entrar. Uma tentativa não ensina um labirinto — logo o rato **já sabia**. Separa **aprendizagem** de **desempenho**, e exige algo dentro do organismo: o mapa cognitivo, vindicado depois pelas células de lugar.
+- **Behaviorismo radical ≠ metodológico.** Skinner afirmava que eventos privados **existem e são comportamento**; negava que sirvam de **causas iniciadoras**, por serem efeitos das mesmas variáveis que se quer explicar. "A mente não existe" é falso; "a mente não explica" é a tese.
+- **Contingência de três termos** (A–B–C) e **seleção por consequências** [@skinner1981]: o comportamento é esculpido pelo ambiente, em três níveis (filogenético, ontogenético, cultural) — argumento de forma darwiniana.
+- **A biologia derruba dois pressupostos.** Desvio instintivo [@breland1961]: o repertório da espécie vence a contingência. Garcia e Koelling [@garcia_koelling1966]: sabor liga-se a náusea (horas depois, uma tentativa) e luz-som liga-se a choque — adeus equipotencialidade **e** contiguidade.
+- **Rescorla** [@rescorla1988]: o que condiciona é **informação preditiva**, não pareamento. Uma teoria cognitiva do condicionamento, feita por pesquisadores de aprendizagem animal.
+- **Chomsky** [@chomsky1959] tem argumentos fortes (produtividade, pobreza do estímulo, esvaziamento dos termos técnicos), mas atacou em parte um alvo errado [@maccorquodale1970] e **não produziu dados**. Quem enfraqueceu o behaviorismo foram os experimentos.
+- **Balanço**: perdeu como filosofia; venceu como tecnologia — ABA, exposição, ativação comportamental, manejo de contingências, ensino programado, e os esquemas de razão variável que governam o seu telefone.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Behaviorismo metodológico**
+:   Posição de que eventos privados, existindo ou não, são inacessíveis à ciência e devem ser excluídos da psicologia [@watson1913].
+
+**Behaviorismo radical**
+:   Posição de Skinner de que eventos privados são reais e são comportamento, sujeitos às mesmas leis, mas não funcionam como causas iniciadoras [@skinner1953; @skinner1974].
+
+**Comportamento respondente**
+:   Comportamento eliciado por estímulo antecedente; o domínio do condicionamento clássico (Cap. 39).
+
+**Comportamento operante**
+:   Comportamento emitido e selecionado por suas consequências (Cap. 40).
+
+**Contingência de três termos**
+:   Unidade de análise A–B–C: antecedente (estímulo discriminativo) → comportamento → consequência.
+
+**Estímulo discriminativo**
+:   Antecedente que sinaliza a disponibilidade da consequência; ocasiona a resposta sem forçá-la.
+
+**Reforço** / **Punição**
+:   Consequência que aumenta / diminui a probabilidade futura da resposta. "Positivo" e "negativo" designam acrescentar e retirar — não bom e ruim.
+
+**Seleção por consequências**
+:   Princípio unificador de Skinner: ambiente seleciona comportamento como seleciona variantes genéticas, em três níveis — filogenético, ontogenético e cultural [@skinner1981].
+
+**Variável interveniente**
+:   Construto não observado, definido por sua ligação matemática entre entradas e saídas mensuráveis; central em Hull.
+
+**Aprendizagem latente**
+:   Aprendizagem que ocorre sem reforço e não aparece no desempenho até que haja motivo para exibi-la [@tolman_honzik1930].
+
+**Mapa cognitivo**
+:   Representação interna das relações espaciais do ambiente, proposta por Tolman [@tolman1948] e corroborada por células de lugar hipocampais [@okeefe_dostrovsky1971].
+
+**Equipotencialidade**
+:   Pressuposto — falso — de que quaisquer estímulos e respostas se associam com igual facilidade [@garcia_koelling1966].
+
+**Preparação biológica**
+:   Predisposição da espécie que torna certas associações fáceis e outras quase impossíveis de estabelecer.
+
+**Desvio instintivo**
+:   Deriva de um comportamento condicionado na direção de padrões instintivos da espécie, mesmo em prejuízo do reforço [@breland1961].
+
+**Aversão condicionada ao sabor**
+:   Associação entre sabor novo e mal-estar, formada em uma tentativa e com horas de intervalo — violação da contiguidade.
+
+**Contingência informativa**
+:   Grau em que o estímulo prediz a consequência; o que de fato produz condicionamento, em vez do mero pareamento [@rescorla1988].
+
+**Pobreza do estímulo**
+:   Argumento de que a entrada linguística é insuficiente para explicar a gramática adquirida, exigindo estrutura inata [@chomsky1959].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Reconstrua em cinco passos o argumento do manifesto de Watson, indicando em qual passo está a decisão de excluir a consciência do escopo da psicologia.
+
+2. **(Recuperação.)** Enuncie a diferença entre behaviorismo metodológico e radical. Em seguida, avalie a afirmação: "Skinner negava que pensamentos existissem". Corrija-a e explique qual tese ele de fato defendia.
+
+3. **(Compreensão.)** No experimento de Tolman e Honzik, por que a **velocidade** da queda do grupo crítico é o dado decisivo, e não o fato de ele ter melhorado? Que conclusão seria possível se a melhora tivesse levado dez dias?
+
+4. **(Aplicação.)** Classifique cada situação na matriz da @fig-tres-termos, identificando A, B e C: (a) uma criança faz birra no mercado e ganha o doce; (b) você toma analgésico e a dor passa; (c) o carro apita até você pôr o cinto; (d) um aluno é suspenso após brigar e volta a brigar na semana seguinte. Para (d), explique o resultado usando o que Skinner dizia sobre punição.
+
+5. **(Aplicação.)** Um paciente em quimioterapia desenvolveu aversão intensa ao arroz, que comeu antes de uma sessão, e **sabe perfeitamente** que o enjoo veio do medicamento. Explique por que saber não resolve, usando @garcia_koelling1966. Depois proponha a estratégia do "bode expiatório" e diga por que ela deveria funcionar.
+
+6. **(Reflexão crítica.)** Argumenta-se aqui que a resenha de Chomsky levou o crédito por uma derrota que os dados de Tolman, Garcia, Breland e Rescorla produziram. Defenda essa tese e depois a ataque: existe algum sentido em que um argumento conceitual, sem dados novos, **deve** ser capaz de derrubar um programa de pesquisa? Relacione com o Cap. 3.
+
+7. **(Reflexão crítica.)** Skinner propôs a seleção por consequências como princípio unificador em três níveis, e a psicologia evolucionista (Cap. 13) costuma se apresentar como antípoda do behaviorismo. Mostre em que sentido as duas abordagens compartilham a mesma forma de explicação — e onde de fato divergem.
+
+8. **(Integração.)** Os esquemas de razão variável foram descobertos com pombos e hoje estruturam o design de aplicativos. Analise um aplicativo que você usa identificando A, B e C, o esquema de reforço em operação, e por que ele é resistente à extinção. Em seguida, discuta: se a tecnologia comportamental funciona tão bem, que responsabilidade ética recai sobre quem a domina? (O Cap. 105 retoma.)
