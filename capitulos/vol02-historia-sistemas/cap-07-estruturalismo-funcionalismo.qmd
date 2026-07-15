@@ -1,5 +1,331 @@
 # 07. Estruturalismo e Funcionalismo (Wundt, Titchener, James)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** o que Wundt de fato fez em Leipzig, e distinguir isso da caricatura que circula nos manuais.
+- **Explicar** o que era a introspecção experimental wundtiana e por que ela não é "olhar para dentro e relatar".
+- **Analisar** o estruturalismo de Titchener como um programa de química mental, e identificar seu compromisso central.
+- **Reconstruir** a controvérsia do pensamento sem imagens e mostrar por que ela foi fatal — não por refutar o estruturalismo, mas por revelar que ele não podia ser refutado.
+- **Contrastar** a mente-elementos de Titchener com o fluxo da consciência de James, e explicar por que a diferença é metodológica antes de ser poética.
+- **Caracterizar** o funcionalismo pela pergunta que faz, e justificar a tese de que ele não foi derrotado — foi absorvido.
+- **Reconhecer** a contribuição de mulheres excluídas da história oficial da disciplina, e o que essa exclusão custou.
 :::
+
+O Cap. 6 terminou na porta do laboratório de Leipzig, avisando que quase nada do que se diz sobre Wundt é verdade. Vamos entrar.
+
+Este capítulo trata das duas primeiras escolas da psicologia científica e, com elas, do primeiro grande fracasso metodológico da disciplina. É uma história com uma moral que vale mais que os nomes: **um programa de pesquisa pode morrer não por estar errado, mas por ser incapaz de estar errado**. O estruturalismo não foi refutado. Ele descobriu, tarde demais, que não havia como saber se estava certo.
+
+## Wundt, e o Wundt que não existiu
+
+Comece pela versão que você provavelmente já ouviu: Wundt fundou a psicologia em 1879, criou a introspecção como método, achava que a mente era feita de elementos que se somam, e o behaviorismo depois varreu tudo isso. Dessa frase, **quase toda palavra é falsa**.
+
+A correção não é preciosismo de historiador. Blumenthal documentou o tamanho do estrago: a imagem corrente de Wundt no mundo anglófono foi construída sobretudo a partir de Titchener, seu aluno — que traduziu, selecionou e reformulou o mestre até produzir alguém consideravelmente mais parecido consigo mesmo [@blumenthal1975]. Boring, cuja *History of Experimental Psychology* formou gerações inteiras, herdou a leitura de Titchener e a canonizou [@boring1950]. O resultado é que a psicologia passou meio século criticando um Wundt que era, em boa medida, invenção de seu tradutor.
+
+O que Wundt realmente sustentava:
+
+**Sua psicologia era voluntarista, não estruturalista.** O nome que ele usava era *Voluntarismus*, e o conceito central era a **apercepção**: o processo ativo, atencional e volitivo pelo qual a mente organiza os conteúdos. Para Wundt, a mente não é um recipiente onde elementos se associam sozinhos — é um agente que sintetiza. Ele falava em **síntese criativa**: o composto mental tem propriedades que os elementos não têm. Isso é praticamente o oposto da química mental que lhe atribuem, e é, aliás, um antecedente direto da Gestalt (Cap. 9).
+
+**Sua introspecção era estreita e controlada.** O que se praticava em Leipzig não era reflexão sobre a própria vida interior. Era **auto-observação experimental** (*Selbstbeobachtung*): o observador — treinado, muitas vezes o próprio pesquisador ou um colega, com centenas de sessões de prática — recebia um estímulo controlado e fazia um julgamento simples e imediato. Isto é mais alto ou mais baixo? Isto é agradável? Quanto tempo levou? Danziger mostrou que a maioria das publicações do laboratório trata de **tempos de reação e julgamentos psicofísicos** — não de introspecções elaboradas [@danziger1980]. Wundt, na verdade, **desconfiava** de relatos introspectivos livres e os considerava fora do alcance do experimento.
+
+**Ele achava que os processos superiores não podiam ser estudados em laboratório.** Este é o ponto que a caricatura mais apaga. Para Wundt, o experimento alcança processos elementares — sensação, percepção, atenção, tempo de reação. Linguagem, pensamento, mito, moral e religião são produtos **coletivos e históricos**, e exigem outro método: análise comparativa de culturas, línguas e mitos. A isso ele dedicou dez volumes de *Völkerpsychologie* — mais páginas do que escreveu sobre o laboratório inteiro, e um corpo de trabalho que a psicologia anglófona ignorou quase por completo até a redescoberta da psicologia cultural (Cap. 13).
+
+::: {.atencao}
+**O experimento que Wundt considerava impossível já tinha sido feito.**
+
+Em 1885 — seis anos depois de Leipzig abrir —, Hermann Ebbinghaus publicou um estudo sobre memória, um dos "processos superiores" que Wundt declarara inacessível ao experimento. Ebbinghaus não tinha laboratório, verba ou assistentes. Tinha uma lista de sílabas sem sentido, um metrônomo e a si mesmo como único participante. Aprendeu e reaprendeu milhares de listas, registrando quanto tempo levava e quanto era poupado ao reaprender depois de intervalos variados [@ebbinghaus1885].
+
+O resultado foi a **curva do esquecimento** (Cap. 45) e a demonstração de que memória — significado, retenção, aprendizagem — se submete perfeitamente à medida. A restrição de Wundt não era uma verdade sobre a mente; era uma aposta sobre o alcance do método. E a aposta estava errada.
+
+A lição é geral e vale para qualquer autoridade, inclusive as deste manual: **afirmações sobre o que a ciência não pode fazer são elas próprias hipóteses**, e envelhecem mal.
+:::
+
+## Titchener e a química mental
+
+Edward Titchener foi para Leipzig, doutorou-se com Wundt, mudou-se para Cornell e passou o resto da vida construindo um sistema que apresentava como wundtiano e não era. A ele — não a Wundt — pertence o **estruturalismo**.
+
+A ambição era explícita e vinha da química, que era então a ciência de maior prestígio explicativo. A química tinha uma tabela periódica: elementos irredutíveis que, combinados, produzem tudo. Por que a mente não teria a sua? O programa de Titchener era, literalmente, encontrar a tabela periódica da consciência [@titchener1898].
+
+Três perguntas organizavam o trabalho:
+
+1. **O quê?** Quais são os elementos irredutíveis da experiência consciente?
+2. **Como?** Como eles se combinam?
+3. **Por quê?** A que condições fisiológicas correspondem?
+
+E os elementos, segundo ele, eram de três tipos: **sensações** (os componentes da percepção), **imagens** (os componentes das ideias) e **afetos** (os componentes da emoção). Cada um caracterizável por atributos como qualidade, intensidade, duração e clareza. Titchener chegou a catalogar cerca de **44.000 sensações elementares** — a maioria visual e auditiva.
+
+O método era a introspecção — mas uma introspecção com uma regra severa e contraintuitiva, que é a chave para entender tanto o sistema quanto sua ruína: a proibição do **erro de estímulo**.
+
+Se você olha para uma maçã sobre a mesa e relata "vejo uma maçã", você **falhou**. Você relatou o *objeto*, não a *experiência*. O relato correto seria algo como: uma mancha de vermelho de tal matiz, com tal saturação, tal extensão, tal luminosidade, adjacente a tal sombreado. A maçã é uma interpretação — significado importado, contrabandeado pela memória. O observador treinado deveria desmontar a experiência até chegar ao que está de fato dado antes de qualquer sentido.
+
+::: {.atencao}
+**Note o que essa regra faz — e é aqui que o sistema se condena.**
+
+Para relatar corretamente, é preciso ser **treinado**. Anos de treinamento, num laboratório específico, sob um supervisor específico. E o critério do que conta como relato correto é... o julgamento do supervisor.
+
+Isso significa que **o dado depende do treinamento**, e o treinamento depende da teoria. Se o meu observador treinado relata X e o seu relata não-X, não há terceiro lugar de onde decidir quem observou direito. Cada laboratório pode sempre alegar que o outro treinou mal.
+
+Compare com o Cap. 3: um dado científico precisa ser **público** e **replicável**. Você deve poder ir lá e olhar. A introspecção estrutural produz dados que **só existem dentro da cabeça de um observador certificado por uma escola**. É uma bomba-relógio metodológica — e ela explodiu.
+:::
+
+## A controvérsia do pensamento sem imagens
+
+A explosão veio de Würzburg, e é o episódio mais instrutivo do capítulo.
+
+::: {.experimento}
+**Existe pensamento sem imagem?** [@boring1950; @danziger1980]
+
+**O problema.** Oswald Külpe — também formado com Wundt — montou em Würzburg um laboratório que ousou o que Wundt proibia: usar auto-observação sobre **tarefas de pensamento**, e não apenas sobre sensações. Participantes treinados recebiam perguntas que exigiam julgamento ("esta afirmação é verdadeira?", "qual dessas duas coisas é maior?") e depois relatavam, com detalhe, tudo o que tinha se passado em sua consciência durante a tarefa.
+
+**A previsão estrutural.** Se todo conteúdo mental se decompõe em sensações, imagens e afetos, então todo pensamento deve ser feito **desses** materiais. Deve haver imagens — visuais, verbais, cinestésicas — em algum lugar do processo. Não há outro estoque de peças.
+
+**O resultado.** Os observadores de Würzburg relataram, repetidamente, algo que não cabia: chegavam à resposta e **não encontravam imagem alguma**. Havia consciência de estar buscando, de estar quase lá, de dúvida, de reconhecimento — sem qualquer conteúdo sensorial correspondente. Külpe chamou isso de **pensamento sem imagens** (*imageless thought*) e de *Bewusstseinslagen*, "atitudes de consciência": estados conscientes que não são feitos de nada.
+
+**A réplica de Titchener.** Ele mandou seus observadores de Cornell fazerem a mesma tarefa. Eles **encontraram** as imagens. Sempre. Titchener concluiu que os alemães estavam mal treinados e que suas introspecções eram grosseiras.
+
+**O impasse — e por que ele é fatal.** Dois laboratórios competentes, com observadores treinados e procedimentos publicados, obtiveram resultados **contraditórios** sobre a mesma questão. E não havia **nenhum experimento possível** que decidisse a disputa. Não se pode abrir a consciência de um observador de Würzburg e conferir se havia imagem lá. Cada lado só podia acusar o outro de treinar mal — e ambos o fizeram, por anos.
+
+**Interpretação.** O golpe não é "o estruturalismo estava errado". É pior: **não havia como descobrir**. O programa produziu uma questão empírica bem formulada e revelou-se estruturalmente incapaz de resolvê-la. Pelo critério do Cap. 1, o problema não é a resposta — é que nenhuma observação pública poderia arbitrar.
+
+**Limitações.** É preciso justiça histórica: a controvérsia não matou o estruturalismo sozinha, e alguns historiadores consideram esse relato arrumado demais. O declínio teve muitas causas — a morte de Titchener em 1927, o apelo do funcionalismo, a chegada do behaviorismo, a irrelevância prática do programa. Mas o impasse tornou visível uma fragilidade que já estava lá, e deu ao behaviorismo sua melhor munição.
+:::
+
+Watson, quinze anos depois, faria o argumento com a delicadeza que lhe era característica: se a introspecção não resolve suas próprias disputas, não é método científico — e se não é método científico, o objeto que só ela alcança não é objeto de ciência. O Cap. 8 discute a que preço essa conclusão foi comprada.
+
+## James e o fluxo da consciência
+
+Enquanto Cornell contava elementos, um americano em Harvard escrevia o livro mais influente — e mais divertido — da história da psicologia, argumentando que a coisa toda era um erro de categoria.
+
+William James publicou os *Principles of Psychology* em 1890, depois de doze anos de atraso contratual [@james1890]. Era médico de formação, filósofo por vocação, e detestava trabalho de laboratório — dizia que os alemães só conseguiam fazer aquilo porque tinham uma paciência que ele não possuía. O livro é um monumento: mil e quatrocentas páginas, e ainda hoje legível de um jeito que quase nenhum texto psicológico de 1890 é.
+
+Seu ataque ao estruturalismo é direto. A ideia de que a consciência é feita de elementos, disse James, não vem da observação da consciência — vem da **análise** da consciência. O analista encontra elementos porque foi procurar elementos. Mas ninguém, em momento algum, **tem** uma sensação elementar isolada. O que temos é outra coisa, e ele a batizou: a **corrente da consciência** (*stream of consciousness*).
+
+A metáfora é escolhida com precisão. Um rio não é feito de pedaços de rio. E a corrente tem, para James, cinco propriedades — cada uma delas incompatível com a tabela periódica de Titchener:
+
+- **É pessoal.** Todo pensamento pertence a alguém. Não existe pensamento solto; existe *meu* pensamento.
+- **É mutável.** Nenhum estado se repete idêntico. Ver a mesma paisagem duas vezes não produz a mesma experiência, porque a segunda vez tem a primeira dentro dela.
+- **É contínua.** Não há emendas. Mesmo interrompida pelo sono, a consciência se retoma com sentimento de posse e continuidade. Cortá-la em elementos é fazer com a mente o que se faz com um filme ao chamá-lo de pilha de fotogramas: verdadeiro sobre o material, falso sobre o fenômeno.
+- **É intencional.** É sempre consciência **de** algo, dirigida a objetos independentes dela.
+- **É seletiva.** E este é o ponto que carrega o resto do capítulo: a consciência **escolhe**. Ela atende a isto e ignora aquilo, o tempo todo, sem parar.
+
+Por que ela escolhe? Porque escolher **serve para alguma coisa**. E com essa pergunta — não com a metáfora do rio — nasce o funcionalismo.
+
+::: {#fig-estrutural-funcional}
+```{.tikz}
+%%| filename: estrutural-funcional
+%%| alt: Quadro comparativo em duas colunas entre estruturalismo e funcionalismo. Na coluna do estruturalismo, associada a Titchener e Cornell, a pergunta central é do que a consciência é feita, a metáfora é a química com uma tabela periódica da mente, o método é a introspecção treinada com proibição do erro de estímulo, a influência principal é a física e a química, o objeto de estudo é a mente adulta normal em laboratório, e o destino é a extinção porque suas disputas não podiam ser resolvidas. Na coluna do funcionalismo, associada a James, Dewey e Angell, a pergunta central é para que a consciência serve, a metáfora é a biologia com a mente como órgão adaptativo, o método é o pluralismo, isto é, qualquer método que funcione, a influência principal é Darwin, o objeto de estudo se estende a crianças, animais, transtornos e diferenças individuais, e o destino é a absorção, porque o funcionalismo virou o ar que a psicologia respira. Uma faixa inferior indica que a diferença decisiva não está nas respostas, e sim em que o funcionalismo aceitava evidência vinda de fora do relato introspectivo.
+\begin{tikzpicture}[
+  cab/.style={draw, thick, rounded corners=3pt, minimum width=5.4cm, minimum height=0.95cm,
+              align=center, font=\scriptsize},
+  cel/.style={draw, thin, minimum width=5.4cm, minimum height=1.15cm, align=center,
+              font=\tiny, text width=5.2cm},
+  rot/.style={font=\tiny\bfseries, text=manualgray, align=right, text width=1.9cm}
+]
+  \node[cab, draw=manualblue, fill=manualblue!12] at (0,0)
+    {\textbf{ESTRUTURALISMO}\\{\tiny Titchener · Cornell}};
+  \node[cab, draw=manualgreen, fill=manualgreen!12] at (6.0,0)
+    {\textbf{FUNCIONALISMO}\\{\tiny James · Dewey · Angell}};
+
+  \node[rot] at (-3.6,-1.05) {pergunta};
+  \node[cel, draw=manualblue!50, fill=manualblue!4] at (0,-1.05) {\emph{Do que} a consciência é feita?};
+  \node[cel, draw=manualgreen!50, fill=manualgreen!4] at (6.0,-1.05) {\emph{Para que} a consciência serve?};
+
+  \node[rot] at (-3.6,-2.3) {metáfora};
+  \node[cel, draw=manualblue!50, fill=manualblue!4] at (0,-2.3) {química: a tabela periódica da mente};
+  \node[cel, draw=manualgreen!50, fill=manualgreen!4] at (6.0,-2.3) {biologia: a mente como órgão adaptativo};
+
+  \node[rot] at (-3.6,-3.55) {método};
+  \node[cel, draw=manualblue!50, fill=manualblue!4] at (0,-3.55) {introspecção treinada; proibido o \emph{erro de estímulo}};
+  \node[cel, draw=manualgreen!50, fill=manualgreen!4] at (6.0,-3.55) {pluralismo: qualquer método que funcione};
+
+  \node[rot] at (-3.6,-4.8) {influência};
+  \node[cel, draw=manualblue!50, fill=manualblue!4] at (0,-4.8) {física e química};
+  \node[cel, draw=manualgreen!50, fill=manualgreen!4] at (6.0,-4.8) {Darwin};
+
+  \node[rot] at (-3.6,-6.05) {quem se estuda};
+  \node[cel, draw=manualblue!50, fill=manualblue!4] at (0,-6.05) {a mente adulta normal, em laboratório};
+  \node[cel, draw=manualgreen!50, fill=manualgreen!4] at (6.0,-6.05) {crianças, animais, transtornos, diferenças individuais};
+
+  \node[rot] at (-3.6,-7.3) {destino};
+  \node[cel, draw=manualred!60, fill=manualred!6] at (0,-7.3) {\textbf{extinção:} suas disputas não podiam ser decididas};
+  \node[cel, draw=manualgreen!60, fill=manualgreen!8] at (6.0,-7.3) {\textbf{absorção:} virou o ar que a psicologia respira};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualgray, fill=manualgray!5,
+        minimum width=11.6cm, align=center, font=\scriptsize] at (3.0,-8.7)
+    {A diferença decisiva não está nas respostas, e sim no fato de que\\o funcionalismo aceitava evidência \textbf{de fora} do relato introspectivo.};
+\end{tikzpicture}
+```
+Estruturalismo e funcionalismo lado a lado. Note a última linha: a pergunta funcional admite dados que a pergunta estrutural, por construção, não podia admitir — e é isso, mais que o mérito das teorias, que decidiu o desfecho.
+:::
+
+## Funcionalismo: a pergunta de Darwin aplicada à mente
+
+O funcionalismo nunca teve doutrina, manifesto ou chefe — o que é, ironicamente, muito funcionalista. Teve uma **pergunta**, tomada de empréstimo do Cap. 6: se a mente evoluiu, ela deve fazer alguma coisa. O quê?
+
+James dá o exemplo mais claro no seu capítulo sobre o **hábito**. Por que a mente automatiza? Porque a consciência é cara e limitada. O hábito libera atenção para o que é novo — e o novo é onde mora o perigo e a oportunidade. Nas palavras dele, o hábito é o "volante" da sociedade: mantém o sistema rodando enquanto a consciência cuida do que importa. Isso é uma explicação **funcional**, e é a estrutura de argumento que o Vol 8 usa quando fala em automaticidade e carga cognitiva.
+
+John Dewey deu ao movimento seu texto fundador, e o alvo escolhido é revelador: o **arco reflexo** [@dewey1896] — justamente a herança de Descartes (Cap. 6).
+
+O modelo padrão dizia: estímulo → sensação → resposta. A criança vê a chama, sente calor, retira a mão. Três etapas, em fila.
+
+Errado, disse Dewey, e por um motivo que não é detalhe. Isso não é um arco; é um **circuito**. A criança não recebe passivamente a chama: ela estava **olhando** — e olhar é uma ação. Ver a chama muda o que ela faz, e o que ela faz muda o que ela vê. O ato de retirar a mão altera a estimulação seguinte, que altera a ação seguinte. Não há começo nem fim; há um sistema em circuito fechado, e recortá-lo em estímulo e resposta é conveniência do analista, não articulação da natureza. Dewey fazia com o arco reflexo exatamente o que James fizera com a consciência: acusava os psicólogos de confundir sua análise com o fenômeno.
+
+::: {#fig-arco-circuito}
+```{.tikz}
+%%| filename: arco-circuito
+%%| alt: Comparação entre duas concepções do reflexo. Acima, o arco reflexo tradicional, mostrado como sequência linear de três caixas em fila: estímulo, depois sensação central, depois resposta, com setas apenas para a direita e o comentário de que o começo e o fim são fixos e o organismo é passivo. Abaixo, a concepção de Dewey, mostrada como circuito circular com quatro nós ligados em ciclo: agir, que produz estimulação, que produz ajuste do ato, que produz nova orientação do receptor, que realimenta o agir. Um comentário central indica que não há começo nem fim e que a resposta modifica o estímulo seguinte. Outro comentário indica que estímulo e resposta são recortes feitos pelo analista e não divisões da natureza.
+\begin{tikzpicture}[
+  bx/.style={draw, thick, rounded corners=3pt, minimum width=2.3cm, minimum height=0.95cm,
+             align=center, font=\scriptsize},
+  fl/.style={->, >=Stealth, thick}
+]
+  \node[font=\scriptsize\bfseries, text=manualred] at (-4.6,1.35) {O ARCO (tradicional)};
+  \node[bx, draw=manualgray, fill=manualgray!6] (s1) at (-3.0,0.4) {estímulo};
+  \node[bx, draw=manualgray, fill=manualgray!6] (s2) at (0,0.4) {sensação\\central};
+  \node[bx, draw=manualgray, fill=manualgray!6] (s3) at (3.0,0.4) {resposta};
+  \draw[fl, manualgray] (s1) -- (s2);
+  \draw[fl, manualgray] (s2) -- (s3);
+  \node[font=\tiny, text=manualred, align=left, anchor=west] at (4.4,0.4)
+    {começo e fim fixos;\\o organismo é passivo};
+
+  \draw[manualgray!30, thick] (-6.4,-0.9) -- (7.6,-0.9);
+
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (-4.6,-1.6) {O CIRCUITO (Dewey, 1896)};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (c1) at (0,-2.1) {\textbf{agir}\\{\tiny olhar, alcançar}};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (c2) at (3.2,-3.6) {\textbf{estimulação}\\{\tiny o que chega}};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (c3) at (0,-5.1) {\textbf{ajuste do ato}\\{\tiny recolher, aproximar}};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (c4) at (-3.2,-3.6) {\textbf{nova orientação}\\{\tiny do receptor}};
+  \draw[fl, manualgreen] (c1) to[bend left=22] (c2);
+  \draw[fl, manualgreen] (c2) to[bend left=22] (c3);
+  \draw[fl, manualgreen] (c3) to[bend left=22] (c4);
+  \draw[fl, manualgreen] (c4) to[bend left=22] (c1);
+  \node[font=\tiny, text=manualgreen, align=center] at (0,-3.6)
+    {não há começo nem fim:\\a resposta modifica\\o estímulo seguinte};
+  \node[font=\tiny, text=manualgray, align=left, anchor=west] at (4.9,-3.6)
+    {``estímulo'' e ``resposta''\\são recortes do\\\textbf{analista} --- não\\divisões da natureza};
+\end{tikzpicture}
+```
+O arco de Descartes e o circuito de Dewey. A crítica é a mesma que James dirigiu ao estruturalismo, aplicada ao comportamento: não confunda as juntas da sua análise com as juntas do fenômeno.
+:::
+
+James Rowland Angell, na Universidade de Chicago, deu ao movimento a formulação mais próxima de um programa que ele chegou a ter [@angell1907]. O funcionalismo, disse, estuda **operações mentais** e não conteúdos; estuda a mente como **mediadora** entre ambiente e necessidade do organismo; e não aceita separar mente de corpo. Note o que isso libera: se o que interessa é a função, então **qualquer coisa que revele função é dado**. Comportamento animal serve. O desempenho de crianças serve. Um paciente com lesão serve. Diferenças individuais servem. O relato introspectivo continua bem-vindo — mas deixa de ser o tribunal de última instância.
+
+É essa abertura que decide o jogo. Enquanto o estruturalismo estava trancado numa sala com um único instrumento que não resolvia suas próprias disputas, o funcionalismo tinha o mundo inteiro como laboratório.
+
+::: {.na-pratica}
+**O funcionalismo não perdeu — ele se dissolveu na disciplina.**
+
+Não há mais departamentos de funcionalismo, e é comum tratá-lo como escola extinta. Olhe de novo:
+
+- **Testes e psicometria.** Se o que importa é a função e as diferenças individuais são dado, medir capacidades faz sentido. Cattell trouxe a agenda de Galton para Columbia; o Vol 11 e o Cap. 50 são o resultado.
+- **Psicologia comparada.** Thorndike pôs gatos em caixas-problema e mediu quanto tempo levavam para escapar, sessão após sessão — nenhuma introspecção envolvida, porque não havia a quem perguntar [@thorndike1898]. Nascem a curva de aprendizagem, a lei do efeito e, por extensão, o Cap. 40.
+- **Psicologia aplicada.** Educacional, industrial, clínica: se a mente serve para adaptar o organismo ao ambiente, melhorar essa adaptação é parte legítima do ofício. Todo o Vol 15 é neto disso.
+- **Behaviorismo.** A ironia final: Watson foi formado em Chicago, dentro do funcionalismo. O behaviorismo é o funcionalismo levando sua própria abertura metodológica ao extremo — se comportamento é dado suficiente, por que ainda perguntar?
+- **Psicologia evolucionista.** A pergunta "para que serve?" volta com genética e teoria de jogos no Cap. 13.
+
+E a introspecção? Também não morreu — foi domesticada. Ericsson e Simon mostraram que **relatos verbais são dados legítimos sob condições específicas**: quando são concorrentes à tarefa (pensar em voz alta, não relembrar depois), quando descrevem o conteúdo da atenção e não a interpretação dele, e quando não se pede à pessoa que explique **por que** fez algo [@ericsson_simon1980]. Essa última ressalva é crucial e vem de um resultado que o Cap. 1 já apresentou: Nisbett e Wilson mostraram que as pessoas confabulam razões com serenidade, sem acesso real aos processos que determinaram sua escolha [@nisbett_wilson1977].
+
+O veredito maduro, portanto, não é "introspecção é lixo". É: **o relato do que você está experimentando agora é dado; o relato de por que você fez aquilo é teoria — e sua teoria sobre você não é privilegiada.**
+:::
+
+## As ausências: quem a história oficial apagou
+
+Nenhum relato honesto deste período pode omitir quem foi mantido fora dele.
+
+**Mary Whiton Calkins** cursou os seminários de James em Harvard e completou **todos** os requisitos do doutorado. A banca — que incluía James, Münsterberg e Royce — registrou que seu desempenho foi o melhor que já haviam examinado. Harvard recusou o diploma, porque a universidade não concedia títulos a mulheres. A oferta de um diploma pelo Radcliffe College, em substituição, ela recusou por princípio, e morreu sem o título.
+
+Isso não a impediu de fundar um laboratório em Wellesley, desenvolver a **técnica dos pares associados** — paradigma que se tornou padrão no estudo da memória e é usado até hoje (Cap. 44) [@calkins1894] — e tornar-se, em 1905, a **primeira mulher presidente da APA**. Harvard nunca reviu a decisão, inclusive depois de solicitações formais no século XX.
+
+**Margaret Floy Washburn** contornou o obstáculo indo para Cornell, onde se tornou a **primeira mulher a obter um doutorado em psicologia** nos Estados Unidos, em 1894 — orientada por Titchener. Seu livro *The Animal Mind* [@washburn1908] foi por décadas o texto de referência em psicologia comparada. Foi a segunda mulher presidente da APA e uma das poucas psicólogas eleitas para a Academia Nacional de Ciências. Titchener, que a orientou, não a admitia em sua sociedade científica — os *Experimentalists*, que ele fundou e da qual mulheres eram barradas.
+
+Scarborough e Furumoto documentaram esse padrão em toda a primeira geração: mulheres que fizeram trabalho de primeira linha e foram mantidas fora dos cargos, das sociedades e das histórias [@scarborough_furumoto1987].
+
+::: {.atencao}
+**Isto não é uma nota de rodapé moral. É um argumento sobre método.**
+
+Há uma leitura confortável — reconhecer a injustiça e seguir em frente. Ela perde o ponto científico.
+
+Uma disciplina que exclui sistematicamente um grupo de pessoas não sofre apenas dano ético: sofre **dano epistêmico**. Perde as perguntas que aquele grupo teria feito, as anomalias que teria notado, as objeções que teria levantado. A homogeneidade do corpo de pesquisadores reduz a variedade de hipóteses concorrentes — que é, segundo o Cap. 3, o principal mecanismo de correção que a ciência possui.
+
+O ponto retorna com força no Cap. 13 e no Cap. 103: quando Henrich e colegas mostraram que a base empírica da psicologia vinha de amostras WEIRD [@henrich2010], estavam descrevendo a mesma patologia em outra escala. **Quem pergunta determina o que se descobre.** Uma ciência feita por poucos, sobre poucos, tem pontos cegos que ela não pode enxergar por definição — porque não há ninguém na sala em posição de apontá-los.
+:::
+
+## O que ficou
+
+O estruturalismo deixou menos do que gostaria e mais do que se admite. Deixou o **rigor experimental** aplicado à experiência subjetiva, os primeiros laboratórios, a primeira geração de doutores, e a demonstração — negativa, mas valiosa — de que **um método incapaz de arbitrar suas próprias disputas não sustenta uma ciência**. Titchener errou de um jeito que ensinou.
+
+O funcionalismo deixou quase todo o resto: a pergunta darwiniana, o pluralismo metodológico, a legitimidade do estudo de animais, crianças e diferenças individuais, e a aplicação como parte do ofício. Deixou também o problema que o Cap. 8 vai atacar: uma pergunta boa não é um método. "Para que serve a consciência?" é ótima pergunta — e o funcionalismo não tinha como respondê-la sem, no fim, voltar a perguntar às pessoas o que elas estavam sentindo.
+
+Watson resolveu esse impasse do jeito mais radical possível: declarando que a pergunta não interessava.
+
+::: {.callout-sintese}
+- **O Wundt dos manuais é, em boa parte, invenção de Titchener** — traduzido, selecionado e reformulado, e depois canonizado por Boring. Wundt era **voluntarista**, falava em **apercepção** e **síntese criativa** (o todo tem propriedades que os elementos não têm), praticava auto-observação **estreita e controlada** (sobretudo tempos de reação e psicofísica), e dedicou dez volumes à *Völkerpsychologie*, por achar que processos superiores exigem método histórico-cultural.
+- **Ebbinghaus refutou essa restrição em 1885**, medindo memória com sílabas sem sentido. Afirmações sobre o que a ciência não pode fazer são hipóteses, e envelhecem mal.
+- **Titchener e o estruturalismo**: buscar a tabela periódica da consciência — sensações, imagens, afetos. Método: introspecção treinada, com proibição do **erro de estímulo** (relatar o objeto em vez da experiência).
+- **O defeito fatal era estrutural**: o dado dependia do treinamento, e o critério de bom treinamento era a própria escola. Dado que não é público não arbitra disputa.
+- **A controvérsia do pensamento sem imagens** provou isso: Würzburg não achava imagens no pensamento, Cornell achava sempre, e **nenhum experimento possível** decidia. O problema não foi a resposta errada; foi não haver como saber.
+- **James e a corrente da consciência**: pessoal, mutável, contínua, intencional e **seletiva**. Elementos são achados da análise, não do fenômeno. A seletividade abre a pergunta funcional.
+- **Funcionalismo**: a pergunta de Darwin aplicada à mente — *para que serve?*. Dewey mostrou que o reflexo é **circuito**, não arco. Angell abriu o método: qualquer evidência de função é dado.
+- **O funcionalismo venceu por absorção**: psicometria, psicologia comparada, aplicada, evolucionista — e o próprio behaviorismo, que nasceu dentro dele.
+- **A introspecção foi domesticada, não abolida**: relato concorrente do conteúdo da atenção é dado; explicação das próprias causas é confabulação.
+- **Calkins e Washburn** fizeram trabalho de primeira linha e foram barradas — e a exclusão é dano **epistêmico**, não só ético: reduz a variedade de hipóteses concorrentes de que a ciência depende.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Voluntarismo**
+:   Sistema de Wundt, centrado na organização ativa e volitiva dos conteúdos mentais — não confundir com o estruturalismo de Titchener [@blumenthal1975].
+
+**Apercepção**
+:   Em Wundt, o processo atencional ativo pelo qual conteúdos são trazidos ao foco claro da consciência e sintetizados.
+
+**Síntese criativa**
+:   Tese wundtiana de que o composto mental tem propriedades não presentes nos elementos — antecedente direto da Gestalt (Cap. 9).
+
+***Völkerpsychologie***
+:   Programa de Wundt para estudar processos superiores (linguagem, mito, moral) por método histórico-comparativo, por considerá-los inacessíveis ao experimento.
+
+**Auto-observação experimental** (*Selbstbeobachtung*)
+:   Julgamento simples e imediato sobre estímulo controlado, feito por observador treinado — o que de fato se praticava em Leipzig [@danziger1980].
+
+**Estruturalismo**
+:   Programa de Titchener: identificar os elementos irredutíveis da consciência (sensações, imagens, afetos), suas combinações e correlatos fisiológicos [@titchener1898].
+
+**Erro de estímulo**
+:   Falha introspectiva de relatar o objeto ("vejo uma maçã") em vez da experiência ("mancha vermelha de tal matiz e extensão").
+
+**Pensamento sem imagens**
+:   Estados conscientes relatados em Würzburg sem qualquer conteúdo sensorial — resultado incompatível com o estruturalismo e indecidível por experimento.
+
+**Corrente da consciência**
+:   Concepção de James: a consciência é pessoal, mutável, contínua, intencional e seletiva, e não se compõe de elementos [@james1890].
+
+**Funcionalismo**
+:   Abordagem que pergunta para que servem os processos mentais, tratando a mente como órgão adaptativo; sem doutrina fixa, definida pela pergunta [@angell1907].
+
+**Circuito reflexo**
+:   Crítica de Dewey ao arco reflexo: estímulo e resposta são recortes do analista, pois a ação modifica a estimulação seguinte em ciclo contínuo [@dewey1896].
+
+**Pares associados**
+:   Paradigma de memória criado por Calkins, em que se aprende a associar itens e se testa a evocação de um dado o outro [@calkins1894].
+
+**Análise de protocolo**
+:   Uso metodologicamente disciplinado de relatos verbais concorrentes à tarefa como dado sobre o conteúdo da atenção [@ericsson_simon1980].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Liste três afirmações correntes sobre Wundt que são falsas e diga, em cada caso, o que ele de fato sustentava.
+
+2. **(Recuperação.)** O que é o erro de estímulo, e por que a proibição dele era indispensável ao programa de Titchener?
+
+3. **(Compreensão.)** Explique por que a controvérsia do pensamento sem imagens foi mais devastadora do que uma refutação direta teria sido. Qual critério do Cap. 1 ela violou?
+
+4. **(Aplicação.)** Um pesquisador quer saber como as pessoas resolvem um problema de lógica. Considera três procedimentos: (a) pedir que pensem em voz alta durante a tarefa; (b) pedir, ao final, que expliquem por que escolheram a estratégia que usaram; (c) registrar tempo de resposta e movimentos oculares. Avalie cada um à luz de @ericsson_simon1980 e @nisbett_wilson1977. Qual gera dado, qual gera teoria do participante, e por quê?
+
+5. **(Reflexão crítica.)** James acusou o estruturalismo de encontrar elementos porque foi procurar elementos. Dewey acusou o arco reflexo de confundir o recorte do analista com a articulação da natureza. Mostre que é o mesmo argumento — e depois vire-o contra o próprio James: a "corrente" é uma descrição do fenômeno ou também uma metáfora importada?
+
+6. **(Reflexão crítica.)** Wundt afirmou que os processos superiores não podiam ser estudados experimentalmente, e Ebbinghaus o refutou fazendo. Existe hoje alguma afirmação análoga — algum fenômeno psicológico que se diz, com ar de consenso, inacessível ao experimento? Que forma teria uma refutação ao estilo de Ebbinghaus?
+
+7. **(Integração.)** Argumenta-se aqui que a exclusão de mulheres da psicologia inicial produziu dano epistêmico, e não apenas moral. Reconstrua o argumento em suas etapas, ligue-o ao problema das amostras WEIRD [@henrich2010], e considere a objeção: "a verdade científica independe de quem a descobre". Onde essa objeção acerta, e onde ela falha?

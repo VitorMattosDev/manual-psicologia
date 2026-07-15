@@ -14,7 +14,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 6 / 105 concluídos · Fase 1: 6/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 7 / 105 concluídos · Fase 1: 7/21 · Fase 2: 0/35 · Fase 3: 0/49
 
 ---
 
@@ -33,7 +33,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
 | 06 | Raízes filosóficas: da filosofia à ciência | `capitulos/vol02-historia-sistemas/cap-06-raizes-filosoficas.qmd` | ✅ |
-| 07 | Estruturalismo e Funcionalismo (Wundt, Titchener, James) | `capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.qmd` | ⬜ |
+| 07 | Estruturalismo e Funcionalismo (Wundt, Titchener, James) | `capitulos/vol02-historia-sistemas/cap-07-estruturalismo-funcionalismo.qmd` | ✅ |
 | 08 | Behaviorismo (Watson, Skinner) | `capitulos/vol02-historia-sistemas/cap-08-behaviorismo.qmd` | ⬜ |
 | 09 | Gestalt | `capitulos/vol02-historia-sistemas/cap-09-gestalt.qmd` | ⬜ |
 | 10 | Psicanálise (Freud e desdobramentos) | `capitulos/vol02-historia-sistemas/cap-10-psicanalise.qmd` | ⬜ |
