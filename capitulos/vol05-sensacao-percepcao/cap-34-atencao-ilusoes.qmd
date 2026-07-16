@@ -1,5 +1,193 @@
 # 34. Atenção, percepção e ilusões
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a atenção seletiva e comparar os modelos de seleção precoce e tardia.
+- **Descrever** a teoria da integração de características e o problema da ligação (binding).
+- **Interpretar** a cegueira por desatenção e a cegueira à mudança como evidências dos limites da atenção.
+- **Identificar** as redes cerebrais da atenção e distinguir orientação voluntária de captura involuntária.
+- **Analisar** ilusões visuais clássicas como subprodutos de mecanismos perceptuais normalmente adaptativos.
+- **Integrar** os temas do Vol 5, compreendendo a percepção como construção ativa guiada pela atenção.
 :::
+
+Este capítulo fecha o volume reunindo dois assuntos que, à primeira vista, parecem distintos — a atenção e as ilusões — mas que iluminam a mesma verdade. A **atenção** decide o que, de tudo que os sentidos captam, chega à percepção consciente: ela é o gargalo por onde passa uma fração ínfima do que está diante de nós. E as **ilusões** revelam, pelo erro, as regras que o cérebro usa para construir a percepção — como um truque de mágica expõe, ao falhar, os pressupostos da nossa mente. Juntos, os dois temas encerram a tese que percorreu todo o volume: **não percebemos o mundo, e sim uma construção do mundo** — seletiva, inferencial e, por isso mesmo, ocasionalmente enganada. Ver não é abrir uma janela; é pintar um quadro com os dados que a atenção deixou entrar.
+
+## Atenção seletiva: o gargalo da percepção
+
+A qualquer instante, os sentidos entregam muito mais informação do que o cérebro pode processar a fundo. A **atenção seletiva** é o mecanismo que privilegia parte dessa informação em detrimento do resto. O exemplo canônico é o **efeito coquetel** (*cocktail party*): numa festa barulhenta, você consegue seguir uma conversa e ignorar as demais — e, ainda assim, se alguém pronuncia seu nome do outro lado do salão, sua atenção salta para lá. Colin Cherry estudou isso com a **escuta dicótica**, apresentando mensagens diferentes a cada orelho e pedindo que a pessoa repetisse ("sombreasse") uma delas [@cherry1953]. Resultado: os participantes captavam quase nada da mensagem ignorada — nem o idioma trocado a meio caminho —, mas notavam o próprio nome. A atenção filtra fortemente, porém o canal ignorado não é totalmente descartado.
+
+Explicar *onde* fica esse filtro gerou uma sequência instrutiva de modelos concorrentes (@fig-atencao). Donald Broadbent propôs a **seleção precoce**: um filtro logo após os sentidos barra o canal irrelevante *antes* de seu significado ser analisado [@broadbent1958]. Mas se o significado nem é processado, como notaríamos o próprio nome? Anne Treisman corrigiu o modelo: o filtro não *bloqueia*, apenas **atenua** o canal irrelevante, que segue sendo processado de forma enfraquecida — o suficiente para que palavras muito salientes, como o nome, ainda "passem" [@treisman1964]. Já os Deutsch propuseram a **seleção tardia**: tudo seria processado até o significado, e a seleção ocorreria só na hora de decidir a que responder [@deutsch1963]. O consenso atual é flexível: a seleção pode ser precoce ou tardia conforme a demanda da tarefa — quando a tarefa atendida é difícil e consome muitos recursos, a filtragem é mais precoce; quando é fácil, sobra capacidade e mais do canal ignorado é processado.
+
+::: {#fig-atencao}
+```{.tikz}
+%%| filename: modelos-atencao
+%%| alt: Três diagramas em linha comparando modelos de atenção. Modelo de Broadbent (seleção precoce): entrada, depois um filtro que bloqueia, depois análise de significado. Modelo de Treisman (atenuação): o filtro atenua em vez de bloquear, deixando passar um sinal fraco. Modelo de Deutsch (seleção tardia): a entrada é toda analisada quanto ao significado e o filtro vem depois, junto à resposta.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize,
+  b/.style={rectangle, rounded corners, draw, thick, align=center, minimum height=0.75cm, text width=1.35cm}]
+  % Broadbent
+  \node[font=\footnotesize\bfseries, text=manualblue] at (0.2,2.5) {Seleção precoce (Broadbent)};
+  \node[b, draw=manualgray] (i1) at (-1.6,1.6) {entrada};
+  \node[b, draw=manualred, fill=manualred!10] (f1) at (0.1,1.6) {filtro\\bloqueia};
+  \node[b, draw=manualgreen, fill=manualgreen!10] (s1) at (1.8,1.6) {significado};
+  \draw[->] (i1) -- (f1); \draw[->] (f1) -- (s1);
+  % Treisman
+  \node[font=\footnotesize\bfseries, text=manualblue] at (0.2,0.5) {Atenuação (Treisman)};
+  \node[b, draw=manualgray] (i2) at (-1.6,-0.4) {entrada};
+  \node[b, draw=manualyellow!70!black, fill=manualyellow!15] (f2) at (0.1,-0.4) {filtro\\atenua};
+  \node[b, draw=manualgreen, fill=manualgreen!10] (s2) at (1.8,-0.4) {significado};
+  \draw[->] (i2) -- (f2); \draw[->, dashed] (f2) -- (s2) node[midway, above, font=\tiny] {fraco};
+  % Deutsch
+  \node[font=\footnotesize\bfseries, text=manualblue] at (0.2,-1.5) {Seleção tardia (Deutsch)};
+  \node[b, draw=manualgray] (i3) at (-1.6,-2.4) {entrada};
+  \node[b, draw=manualgreen, fill=manualgreen!10] (s3) at (0.1,-2.4) {significado};
+  \node[b, draw=manualred, fill=manualred!10] (f3) at (1.8,-2.4) {filtro\\+ resposta};
+  \draw[->] (i3) -- (s3); \draw[->] (s3) -- (f3);
+\end{tikzpicture}
+```
+Onde fica o filtro da atenção? Broadbent o coloca cedo (bloqueia antes do significado); Treisman o suaviza (atenua, deixando passar um sinal fraco); Deutsch o coloca tarde (após analisar o significado). O consenso atual: a posição varia com a dificuldade da tarefa.
+:::
+
+## Integrar características: a teoria de Treisman
+
+Se os neurônios visuais detectam características separadas — cor aqui, forma ali, movimento acolá (Cap. 30) —, como o cérebro sabe que *este* objeto é o quadrado *vermelho* e não o círculo vermelho ao lado? É o **problema da ligação** (*binding*), e a resposta de Anne Treisman é uma das teorias mais influentes da percepção.
+
+::: {.experimento}
+**Teoria da integração de características** [@treisman_gelade1980]
+
+**Desenho.** Treisman e Garry Gelade mediram o tempo de busca visual. Numa tarefa, o alvo diferia por uma **única** característica (um X verde entre X vermelhos); noutra, por uma **combinação** de características (um X verde entre X vermelhos e O verdes — só a *conjunção* de forma e cor identifica o alvo). Variaram o número de distratores.
+
+**Resultado.** Na busca por característica única, o alvo "salta aos olhos" (*pop-out*): o tempo quase não aumenta com mais distratores — a busca é *paralela*, tudo de uma vez. Na busca por conjunção, o tempo cresce em proporção ao número de itens — a busca é *serial*, item por item, como se a atenção precisasse visitar cada um.
+
+**Interpretação.** As características isoladas (cor, orientação) são detectadas automaticamente e em paralelo, por todo o campo, sem atenção. Mas *ligar* características num objeto — dizer que a cor e a forma pertencem ao mesmo item — exige **atenção focada**, aplicada a uma localização de cada vez. A atenção é a "cola" que une as características dispersas num objeto unificado. Sem ela, o cérebro pode até cometer **conjunções ilusórias**, combinando erradamente a cor de um item com a forma de outro.
+
+**Limitações.** A dicotomia estrita entre busca paralela e serial foi depois suavizada: muitas buscas ficam num continuum de eficiência, e modelos posteriores refinaram o papel da saliência. Ainda assim, a ideia central — que a atenção é necessária para integrar características — permanece robusta e influente.
+:::
+
+A atenção também tem um componente **espacial**: podemos deslocar o "foco" da atenção pelo campo visual sem mover os olhos, como um holofote interno. Michael Posner demonstrou-o com uma tarefa de dica: uma seta que aponta para onde um alvo *provavelmente* aparecerá acelera a resposta quando o alvo surge ali e a atrasa quando surge no lado oposto [@posner1980]. A atenção pode ser dirigida voluntariamente (por objetivos) ou capturada involuntariamente (por um flash, um movimento súbito) — distinção que retornará nas redes cerebrais adiante.
+
+## Os limites da atenção: cegueira por desatenção e à mudança
+
+Se a atenção é o gargalo da percepção, então aquilo a que *não* prestamos atenção pode simplesmente não ser visto — mesmo estando bem diante dos olhos. A demonstração mais famosa desse fato é também uma das mais citadas de toda a psicologia.
+
+::: {.experimento}
+**O gorila invisível** [@simons_chabris1999]
+
+**Desenho.** Daniel Simons e Christopher Chabris pediram a participantes que assistissem a um vídeo de pessoas passando uma bola de basquete e contassem quantos passes o time de camisa branca fazia — tarefa que exige atenção concentrada. No meio do vídeo, uma pessoa fantasiada de **gorila** entra em cena, bate no peito e sai, permanecendo visível por vários segundos.
+
+**Resultado.** Cerca de **metade** dos participantes, absortos na contagem, simplesmente *não vê o gorila* — e fica incrédula ao rever o vídeo. O fenômeno é a **cegueira por desatenção** (*inattentional blindness*): sem atenção, um objeto plenamente visível não chega à consciência [@mack_rock1998].
+
+**Interpretação.** A percepção consciente exige atenção; não há "visão de tudo" em segundo plano que registre o que ignoramos. Vemos o que atendemos, e o resto — por mais saliente que nos pareça em retrospecto — pode passar despercebido. É a refutação empírica definitiva da intuição de que "se estava na minha frente, eu teria visto".
+
+**Limitações.** A taxa de quem "não vê" varia com a carga da tarefa e a semelhança entre o objeto inesperado e os atendidos. Mas o efeito é robusto e replica-se em muitas variações, inclusive fora do laboratório.
+:::
+
+Um parente próximo é a **cegueira à mudança** (*change blindness*): mudanças até grandes numa cena passam despercebidas quando ocorrem durante uma interrupção (um piscar, um corte de câmera). Num experimento memorável, um pesquisador parava alguém na rua para pedir informação e, enquanto dois carregadores passavam entre os dois com uma porta, era *trocado por outra pessoa* — e boa parte dos transeuntes não notava a substituição [@simons_levin1998]. Esses fenômenos derrubam a ideia intuitiva de que mantemos na mente uma representação rica e detalhada da cena inteira. Na verdade, retemos muito menos do que supomos, e re-amostramos o mundo com os olhos conforme a necessidade — a estabilidade e a riqueza da experiência visual são, em boa parte, uma *ilusão* construída pelo cérebro.
+
+::: {.base-neural}
+**As redes da atenção no cérebro.** A atenção não é uma coisa só, e o cérebro reflete isso com sistemas distintos. Michael Posner e Steven Petersen descreveram redes atencionais parcialmente separáveis: uma rede de *orientação* (que desloca o foco no espaço, apoiada em áreas parietais), uma rede de *alerta* (que sustenta a prontidão) e uma rede *executiva* (que resolve conflito e controla, ligada ao córtex frontal e ao cíngulo) [@posner_petersen1990]. Trabalhos posteriores mapearam duas grandes redes fronto-parietais complementares: uma **dorsal**, que dirige a atenção *voluntariamente* segundo objetivos ("de cima para baixo"), e uma **ventral**, que a *recaptura* quando algo saliente e inesperado surge ("de baixo para cima") — a base neural da diferença entre buscar algo de propósito e ser fisgado por um movimento repentino [@corbetta_shulman2002]. A atenção, longe de um holofote único, é um conjunto de sistemas que cooperam.
+:::
+
+## Ilusões: o erro que revela a regra
+
+Se a percepção fosse uma cópia fiel do mundo, não haveria ilusões. Que elas existam — e que persistam mesmo quando *sabemos* que são ilusões — é a prova mais direta de que o cérebro constrói a percepção seguindo regras próprias. As **ilusões** não são falhas de um sistema ruim; são, em geral, os **subprodutos de mecanismos que costumam funcionar muito bem**. A ilusão de Müller-Lyer é o exemplo clássico (@fig-muller-lyer): duas linhas de igual comprimento parecem diferentes conforme as "aletas" nas pontas apontem para dentro ou para fora. Uma explicação influente liga isso à constância de tamanho (Cap. 33): as aletas funcionam como pistas de profundidade — como um canto de parede que se afasta ou se aproxima —, e o cérebro, "corrigindo" o tamanho pela distância inferida, distorce a linha. O mecanismo que nos dá um mundo estável nos engana quando aplicado fora de contexto.
+
+::: {#fig-muller-lyer}
+```{.tikz}
+%%| filename: muller-lyer
+%%| alt: A ilusão de Müller-Lyer. Dois segmentos de reta horizontais de exatamente o mesmo comprimento, um acima do outro. No segmento de cima, as pontas têm aletas apontando para fora (como pontas de seta abrindo), e ele parece mais longo. No de baixo, as aletas apontam para dentro (setas fechando), e ele parece mais curto. Uma nota indica que os dois têm o mesmo comprimento.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize, scale=1.0]
+  % linha de cima: aletas para fora (parece mais longa)
+  \draw[very thick, manualblue] (0,1.4) -- (5,1.4);
+  \draw[very thick, manualblue] (0,1.4) -- (-0.5,1.85);
+  \draw[very thick, manualblue] (0,1.4) -- (-0.5,0.95);
+  \draw[very thick, manualblue] (5,1.4) -- (5.5,1.85);
+  \draw[very thick, manualblue] (5,1.4) -- (5.5,0.95);
+  \node[text=manualgray] at (7.4,1.4) {parece mais longa};
+  % linha de baixo: aletas para dentro (parece mais curta)
+  \draw[very thick, manualred] (0,0) -- (5,0);
+  \draw[very thick, manualred] (0,0) -- (0.5,0.45);
+  \draw[very thick, manualred] (0,0) -- (0.5,-0.45);
+  \draw[very thick, manualred] (5,0) -- (4.5,0.45);
+  \draw[very thick, manualred] (5,0) -- (4.5,-0.45);
+  \node[text=manualgray] at (7.4,0) {parece mais curta};
+  % linhas guia verticais
+  \draw[dashed, manualgray] (0,-0.6) -- (0,2.0);
+  \draw[dashed, manualgray] (5,-0.6) -- (5,2.0);
+  \node[text=manualgreen!50!black, font=\scriptsize] at (2.5,-1.05) {os dois segmentos têm exatamente o mesmo comprimento};
+\end{tikzpicture}
+```
+A ilusão de Müller-Lyer. As duas linhas têm igual comprimento (as guias tracejadas confirmam), mas as aletas — pistas de profundidade "mal aplicadas" — fazem o cérebro corrigir o tamanho e distorcer a percepção. A ilusão persiste mesmo sabendo-se a verdade.
+:::
+
+Outras ilusões contam a mesma história por ângulos diferentes. Na ilusão de **Ponzo**, duas linhas iguais sobre trilhos convergentes parecem desiguais, porque a perspectiva sugere que a "mais ao fundo" deveria ser maior. Na **sala de Ames**, uma sala construída com ângulos distorcidos faz duas pessoas do mesmo tamanho parecerem gigante e anão, porque o cérebro assume que a sala é retangular (a hipótese mais provável) e ajusta os tamanhos das pessoas em vez de duvidar da sala. A **ilusão da lua** — a lua parece enorme no horizonte e pequena no alto, apesar de projetar sempre a mesma imagem — envolve pistas de distância dadas pela paisagem. E as **ilusões de contorno** de Kanizsa, em que vemos as bordas nítidas de um triângulo branco que não está desenhado, mostram o cérebro *criando* informação para completar a figura mais provável [@kanizsa1976] — parente do fechamento gestáltico do Cap. 33. Em todos os casos, a moral é a mesma: a ilusão expõe a *hipótese* que o cérebro estava usando o tempo todo.
+
+::: {.atencao}
+**A cultura molda até o que "vemos".** Seria tentador achar que as ilusões, por dependerem da fisiologia da visão, fossem universais. Não são inteiramente. A ilusão de Müller-Lyer, por exemplo, é *mais forte* em pessoas criadas em ambientes urbanos, cheios de linhas retas, cantos e edifícios — o chamado "mundo carpinteirado" —, e mais fraca ou ausente em pessoas de sociedades onde esses ângulos retos são raros. Isso reforça duas lições do manual. Primeira: a percepção é em parte *aprendida*, calibrada pela experiência com um tipo de ambiente (retomando a plasticidade do Cap. 28). Segunda: boa parte da pesquisa psicológica foi feita com amostras ocidentais e industrializadas, e generalizá-la para toda a humanidade exige cautela — o viés amostral que o Cap. 21 discutiu e que o Vol 15 (Cap. 103) retomará. Nem mesmo uma ilusão de ótica é tão "puramente ótica" quanto parece.
+:::
+
+## Fechando o volume: uma janela que é, na verdade, um quadro
+
+Vale reunir o Vol 5 numa imagem. Começamos com os princípios comuns a todos os sentidos — transdução, limiares, a percepção como decisão sob incerteza (Cap. 29). Percorremos a visão, com sua análise em características e suas duas correntes (Cap. 30); a audição, multissensorial a ponto de o que vemos mudar o que ouvimos (Cap. 31); os sentidos químicos, o tato, o equilíbrio e a dor — esta última, construída pelo cérebro (Cap. 32). Vimos a percepção organizar, aprofundar e estabilizar o mundo pelas leis da Gestalt e pelas constâncias (Cap. 33). E chegamos, aqui, à atenção que seleciona o que entra e às ilusões que expõem as regras da construção. O fio que costura tudo é uma só ideia, cada vez mais sustentada: **perceber é construir**. Os sentidos não abrem uma janela transparente para a realidade; entregam ao cérebro dados fragmentários e ambíguos, a partir dos quais ele pinta, com pinceladas de expectativa, atenção e conhecimento, o quadro estável e vívido que chamamos de "o mundo". Que esse quadro seja, quase sempre, tão fiel é o triunfo silencioso da percepção; que ocasionalmente falhe — numa ilusão, num gorila não visto — é o que nos deixa flagrar o pintor em ação. Com isso, o volume cumpre seu papel: mostrar que entre o mundo e a mente há um processo ativo, engenhoso e falível, e que estudá-lo é estudar como a própria realidade nos aparece.
+
+## Síntese
+
+::: {.callout-sintese}
+- A **atenção seletiva** é o gargalo da percepção. O **efeito coquetel** e a **escuta dicótica** mostram que filtramos fortemente, mas o canal ignorado não é totalmente descartado (notamos o próprio nome).
+- Os modelos de **seleção precoce** (Broadbent), **atenuação** (Treisman) e **seleção tardia** (Deutsch) disputaram onde fica o filtro; o consenso é que sua posição varia com a **dificuldade da tarefa**.
+- A **teoria da integração de características** mostra que características isoladas são detectadas em paralelo (pop-out), mas *ligá-las* num objeto exige **atenção focada** — a solução para o problema da ligação.
+- A **cegueira por desatenção** (o gorila invisível) e a **cegueira à mudança** provam que sem atenção não há percepção consciente, e que retemos muito menos da cena do que supomos.
+- As **redes atencionais** do cérebro incluem sistemas de orientação, alerta e controle executivo, e redes fronto-parietais **dorsal** (voluntária) e **ventral** (captura involuntária).
+- As **ilusões** são subprodutos de mecanismos normalmente adaptativos (constâncias, pistas de profundidade): revelam, pelo erro, as hipóteses que o cérebro usa. Algumas são moldadas pela **cultura**. A moral do volume: **perceber é construir**.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Atenção seletiva**
+:   Mecanismo que privilegia parte da informação sensorial para processamento aprofundado.
+
+**Efeito coquetel**
+:   Capacidade de seguir uma fala em meio a várias, notando ainda assim estímulos muito salientes, como o próprio nome [@cherry1953].
+
+**Seleção precoce / tardia**
+:   Modelos que situam o filtro atencional antes (Broadbent) ou depois (Deutsch) da análise do significado; Treisman propôs a atenuação intermediária [@broadbent1958; @treisman1964; @deutsch1963].
+
+**Problema da ligação (binding)**
+:   Questão de como o cérebro une características detectadas separadamente (cor, forma, movimento) num único objeto.
+
+**Teoria da integração de características**
+:   Teoria de que características isoladas são detectadas em paralelo, mas sua integração num objeto requer atenção focada [@treisman_gelade1980].
+
+**Cegueira por desatenção**
+:   Falha em perceber um objeto plenamente visível por estar a atenção ocupada em outra coisa [@simons_chabris1999; @mack_rock1998].
+
+**Cegueira à mudança**
+:   Falha em notar mudanças numa cena quando ocorrem durante uma interrupção visual [@simons_levin1998].
+
+**Redes atencionais**
+:   Sistemas cerebrais parcialmente separáveis de orientação, alerta e controle; incluem redes dorsal (voluntária) e ventral (involuntária) [@posner_petersen1990; @corbetta_shulman2002].
+
+**Ilusão perceptual**
+:   Percepção sistematicamente discrepante do estímulo físico, em geral por aplicação de mecanismos normalmente adaptativos fora de contexto.
+
+**Ilusão de Müller-Lyer**
+:   Linhas iguais que parecem desiguais devido a aletas que atuam como pistas de profundidade.
+
+**Contornos ilusórios (Kanizsa)**
+:   Bordas percebidas onde não há estímulo, pelo preenchimento da figura mais provável [@kanizsa1976].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique o efeito coquetel e o que a escuta dicótica revela sobre o quanto processamos do canal a que *não* prestamos atenção.
+
+2. **(Recuperação.)** Compare os modelos de seleção precoce, atenuação e tardia. Que evidência simples (envolvendo o próprio nome) é difícil de explicar pela seleção estritamente precoce?
+
+3. **(Aplicação.)** Numa busca visual, um alvo "salta aos olhos" quando difere por uma única cor, mas exige busca item a item quando é definido pela combinação de cor e forma. Explique com a teoria da integração de características.
+
+4. **(Reflexão crítica.)** Metade das pessoas não vê o gorila no vídeo dos passes. Que intuição cotidiana sobre a visão esse resultado refuta? Que implicações isso tem, por exemplo, para o valor de um testemunho ocular (ligando ao Cap. 45)?
+
+5. **(Aplicação.)** A ilusão de Müller-Lyer persiste mesmo depois de medirmos as linhas e sabermos que são iguais. Por que isso é esperado, se as ilusões resultam de mecanismos automáticos como a constância de tamanho?
+
+6. **(Integração.)** Este capítulo — e o volume — defende que "perceber é construir". Escolha dois fenômenos de capítulos diferentes do Vol 5 (por exemplo, a dor construída do Cap. 32 e as constâncias do Cap. 33) e explique como cada um sustenta essa tese.

@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 28 / 105 concluídos · Fase 1: 21/21 · Fase 2: 7/35 · Fase 3: 0/49
+**Progresso:** 34 / 105 concluídos · Fase 1: 21/21 · Fase 2: 13/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ — Fase 1 concluída; Vol 4 (Bases Biológicas) completo.** Próximo: Fase 2, Vol 5 (Sensação e Percepção).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ — Vol 5 (Sensação e Percepção) completo.** Próximo: Fase 2, Vol 6 (Consciência).
 
 ---
 
@@ -78,7 +78,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 31 | Audição | `capitulos/vol05-sensacao-percepcao/cap-31-audicao.qmd` | ✅ |
 | 32 | Outros sentidos (olfato, paladar, tato, propriocepção, dor) | `capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.qmd` | ✅ |
 | 33 | Organização perceptual (Gestalt, profundidade, constâncias) | `capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd` | ✅ |
-| 34 | Atenção, percepção e ilusões | `capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.qmd` | ⬜ |
+| 34 | Atenção, percepção e ilusões | `capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.qmd` | ✅ |
 
 ### Vol 6 — Consciência
 | Cap | Título | Arquivo | Status |
