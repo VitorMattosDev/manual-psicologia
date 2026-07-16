@@ -1,5 +1,145 @@
 # 37. Sonhos
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** o conteúdo típico dos sonhos e o que se sabe sobre quando e como sonhamos.
+- **Comparar** as principais teorias do sonhar: realização de desejos (Freud), ativação-síntese (Hobson), simulação de ameaça (Revonsuo) e consolidação da memória.
+- **Explicar** as bases neurais do sonhar — por que o sonho é bizarro, emocional e sem crítica.
+- **Analisar** o sonho lúcido como evidência de que se pode estar consciente de que se sonha.
+- **Avaliar** criticamente as teorias à luz da evidência, evitando tanto o excesso interpretativo quanto o reducionismo.
 :::
+
+De todos os fenômenos da mente, poucos fascinaram a humanidade tanto quanto os **sonhos**. Toda noite, ao entrar no sono REM, embarcamos numa experiência alucinatória vívida, cheia de emoção, quase sempre bizarra e, ao acordar, em geral esquecida. Durante milênios os sonhos foram lidos como mensagens dos deuses ou presságios do futuro; foi só no século XX que se tornaram objeto de teoria psicológica e, depois, de investigação neurocientífica. Este capítulo pergunta três coisas: *o que* sonhamos, *por que* sonhamos e *como* o cérebro produz o sonho. Veremos que não há ainda uma resposta única e consensual — o sonho continua uma fronteira —, mas que a ciência já substituiu muito misticismo por hipóteses testáveis, algumas das quais se sustentam melhor que outras.
+
+## O que sonhamos
+
+Graças ao despertar sistemático de dorminhocos em laboratório (Cap. 36), conhecemos hoje um retrato razoavelmente confiável do conteúdo dos sonhos. Sonhamos mais e mais vividamente no **sono REM**, embora relatos oníricos também ocorram, mais fragmentários, no NREM. O sonho típico não é o pesadelo dramático que às vezes lembramos: é uma narrativa relativamente mundana, protagonizada por nós mesmos, ambientada em cenários familiares, povoada de pessoas conhecidas e marcada por **emoção** — frequentemente negativa (ansiedade, medo, frustração). O levantamento sistemático de milhares de relatos por William Domhoff revelou regularidades notáveis: os temas se repetem entre pessoas e culturas, refletem em boa medida as **preocupações da vida desperta** (a chamada *hipótese da continuidade*) e mudam pouco ao longo da vida adulta [@domhoff2003].
+
+Ao mesmo tempo, o sonho tem uma "assinatura" cognitiva peculiar. É **bizarro**: cenas e personagens se transformam sem aviso, a lógica é frouxa, o impossível é aceito sem espanto. É **hiperemocional**. E é **acrítico**: raramente percebemos, dentro do sonho, que estamos sonhando, e quase nunca controlamos seu rumo. Somam-se a isso uma péssima **memória** onírica (esquecemos a maior parte quase imediatamente ao acordar) e uma vividez sensorial — sobretudo visual — comparável à da percepção real. Qualquer teoria satisfatória do sonhar precisa dar conta *desse* perfil específico, e não de um sonhar genérico.
+
+## Por que sonhamos? Teorias em disputa
+
+### A realização de desejos (Freud)
+
+A primeira grande teoria psicológica do sonho foi a de Sigmund Freud, em *A Interpretação dos Sonhos* [@freud1900]. Para Freud, o sonho é a **realização (disfarçada) de um desejo** inconsciente, em geral reprimido. Ele distinguiu o **conteúdo manifesto** — o sonho tal como o lembramos, a história aparente — do **conteúdo latente** — os desejos ocultos que o motivariam. Entre um e outro operaria o **trabalho do sonho** (*Traumarbeit*): mecanismos como a *condensação* (fundir várias ideias numa imagem) e o *deslocamento* (transferir a carga afetiva de um elemento importante para um trivial), que disfarçariam o desejo inaceitável para que o sono não fosse interrompido pela angústia. O sonho seria, assim, "a estrada real para o inconsciente".
+
+A teoria foi imensamente influente na cultura, mas hoje é vista com forte ceticismo científico. Seu problema central é a **infalseabilidade**: como qualquer sonho pode ser interpretado como o disfarce de qualquer desejo, não há observação capaz de refutá-la (o critério de demarcação do Cap. 3 e 21). Faltam também evidências independentes do "conteúdo latente", e a premissa de que todo sonho esconde um desejo reprimido não se sustenta diante do conteúdo tão frequentemente ansioso e desagradável dos sonhos. O valor histórico de Freud é inegável — foi ele quem colocou o sonho na agenda da psicologia —, mas sua explicação específica não passou no teste empírico.
+
+### A ativação-síntese (Hobson e McCarley)
+
+Em 1977, J. Allan Hobson e Robert McCarley propuseram uma alternativa de raiz neurofisiológica que virou o problema de cabeça para baixo [@hobson_mccarley1977]. Segundo a **hipótese da ativação-síntese**, o motor do sonho não é um desejo, mas a **ativação aleatória** gerada pelo tronco encefálico durante o REM. Sinais neurais mais ou menos caóticos (as ondas PGO) bombardeiam o córtex, que — fazendo o que sempre faz — tenta *sintetizar* uma narrativa coerente a partir desse ruído interno. O sonho seria, então, o esforço do córtex para dar sentido a uma tempestade de ativação sem estímulo externo. A bizarrice deixa de ser um disfarce astuto e passa a ser o esperado: a matéria-prima é aleatória, e a "história" é uma colcha de retalhos improvisada.
+
+A ativação-síntese explica bem várias características do sonho (a vividez, a incoerência, a torrente emocional) e ancorou o estudo do sonho na fisiologia. Numa reformulação posterior (o **modelo AIM** e a ideia de "protoconsciência"), Hobson passou a ver o sonhar não como puro ruído, mas como um estado funcional em que o cérebro *treina* e mantém seus modelos de mundo e de self [@hobson_pace-schott2002]. A crítica principal é que a versão original talvez tenha ido longe demais ao negar *qualquer* sentido ou conteúdo psicológico ao sonho — afinal, os sonhos refletem sim as preocupações da vida (a continuidade de Domhoff) e podem ocorrer mesmo fora do REM.
+
+::: {#fig-teorias-sonho}
+```{.tikz}
+%%| filename: teorias-sonho
+%%| alt: Dois diagramas contrastando teorias do sonho. Em cima, o modelo de Freud: um desejo inconsciente reprimido (conteúdo latente) passa pelo trabalho do sonho (condensação e deslocamento) e emerge como o conteúdo manifesto, o sonho lembrado. Embaixo, o modelo de ativação-síntese: o tronco encefálico gera ativação aleatória durante o REM, que sobe ao córtex, o qual sintetiza uma narrativa coerente, resultando no sonho.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize,
+  b/.style={rectangle, rounded corners, draw, thick, align=center, minimum height=0.85cm, text width=2.1cm}]
+  % ---- Freud (de baixo para cima do inconsciente ao manifesto) ----
+  \node[font=\footnotesize\bfseries, text=manualblue] at (2.1,2.9) {Realização de desejos (Freud)};
+  \node[b, draw=manualgray, fill=manualgray!8] (des) at (0,2) {desejo latente\\(reprimido)};
+  \node[b, draw=manualyellow!70!black, fill=manualyellow!15] (tra) at (2.6,2) {trabalho do sonho\\(condensa, desloca)};
+  \node[b, draw=manualblue, fill=manualblue!8] (man) at (5.2,2) {conteúdo manifesto\\(sonho lembrado)};
+  \draw[->] (des) -- (tra); \draw[->] (tra) -- (man);
+  % ---- Ativação-síntese ----
+  \node[font=\footnotesize\bfseries, text=manualred] at (2.1,0.55) {Ativação-síntese (Hobson)};
+  \node[b, draw=manualred, fill=manualred!8] (tro) at (0,-0.3) {tronco: ativação\\aleatória (REM)};
+  \node[b, draw=manualgray, fill=manualgray!8] (cor) at (2.6,-0.3) {córtex\\sintetiza};
+  \node[b, draw=manualblue, fill=manualblue!8] (nar) at (5.2,-0.3) {narrativa\\(sonho)};
+  \draw[->] (tro) -- (cor); \draw[->] (cor) -- (nar);
+\end{tikzpicture}
+```
+Duas explicações opostas para a *mesma* experiência. Para Freud, o sonho parte de um desejo e o disfarça (de baixo para cima, do sentido oculto ao manifesto). Para a ativação-síntese, o sonho parte de ruído neural e o organiza em história (do tronco ao córtex). Uma vê significado escondido; a outra, sentido construído *a posteriori*.
+:::
+
+### Simulação de ameaça e outras funções
+
+Uma terceira família de teorias pergunta pela **função adaptativa** do sonhar. A mais conhecida é a **teoria da simulação de ameaça**, de Antti Revonsuo: o sonho seria um "simulador virtual" no qual ensaiamos, em segurança, respostas a ameaças e perigos [@revonsuo2000]. A teoria explica bem por que tantos sonhos são ansiosos e cheios de perseguições, quedas e situações de risco — conteúdos que, num passado ancestral, teriam valor de treino para a sobrevivência. Variações mais recentes ampliam a ideia para a **simulação social**, em que ensaiaríamos interações e vínculos.
+
+Outra linha, ligada ao Cap. 36, associa o sonhar à **consolidação da memória**: sonhos poderiam ser o correlato subjetivo do reprocessamento de memórias durante o sono, o que ajudaria a integrar experiências e a resolver problemas emocionais ("dormir sobre um problema"). É preciso, porém, cautela: mostrar que a memória se consolida no sono não prova que *o sonhar* (a experiência) seja o mecanismo — pode ser um subproduto. Como se vê, as teorias funcionais são plausíveis e testáveis, mas ainda disputam qual — se alguma — captura a razão de ser do sonho.
+
+## A base neural: por que o sonho é como é
+
+A neuroimagem do sono REM oferece uma explicação notavelmente boa para o perfil psicológico do sonho. Durante o REM, o cérebro **não** está uniformemente ativo ou inativo: há um padrão característico [@maquet1996; @nir_tononi2010]. Ficam **muito ativas** as áreas visuais associativas (daí a vividez das imagens) e o **sistema límbico**, sobretudo a amígdala (daí a forte carga emocional). Fica, ao contrário, **desativado** o **córtex pré-frontal dorsolateral** — a região do juízo crítico, do planejamento e da memória de trabalho.
+
+::: {.base-neural}
+**A neurofisiologia explica cada esquisitice do sonho.** Cruze o padrão de ativação com o perfil do sonho e as peças se encaixam. A **desativação do pré-frontal dorsolateral** explica a falta de crítica (aceitamos o absurdo sem estranhar), a ausência de controle voluntário e a lógica frouxa. A **hiperativação límbica** (amígdala) explica a intensidade emocional. A **ativação das áreas visuais**, sem entrada dos olhos, explica as alucinações vívidas. A queda de certos neurotransmissores (a noradrenalina despenca no REM) explica a péssima memória onírica — não *codificamos* bem o que sonhamos. E a **atonia muscular** do REM (Cap. 36) explica por que não encenamos o sonho: o cérebro emite comandos motores que o tronco bloqueia antes de chegarem aos músculos. O sonho, em suma, é a experiência de um cérebro internamente ativado, emocional e visual, mas privado do seu censor racional.
+:::
+
+## O sonho lúcido: consciência dentro do sonho
+
+Em geral não sabemos que sonhamos — mas nem sempre. No **sonho lúcido**, a pessoa *toma consciência, dentro do sonho, de que está sonhando*, e por vezes chega a influenciar o enredo. Por décadas isso foi tratado como relato subjetivo não verificável. Stephen LaBerge encontrou uma engenhosa saída experimental.
+
+::: {.experimento}
+**Provando o sonho lúcido de dentro** [@laberge1981]
+
+**Desenho.** LaBerge partiu de um fato do Cap. 36: no REM o corpo está paralisado (atonia), *exceto* os músculos oculares, que se movem livremente. Combinou-se com sonhadores lúcidos treinados um **sinal ocular** predeterminado (por exemplo, olhar deliberadamente para a esquerda-direita-esquerda-direita) a ser executado *assim que* percebessem, dentro do sonho, que sonhavam. Registrava-se o EEG e o eletro-oculograma.
+
+**Resultado.** Durante períodos confirmados de sono REM, apareceram exatamente os padrões de movimento ocular combinados, no momento previsto. O sonhador, de dentro do sonho, conseguira enviar um sinal deliberado para o mundo desperto.
+
+**Interpretação.** O sonho lúcido é um estado real e verificável, não uma confabulação da vigília. Ele demonstra uma dissociação fascinante: um grau de **metaconsciência** (saber que se sonha) e de controle voluntário retorna — reativando parcialmente o córtex pré-frontal habitualmente desligado no REM —, sem que a pessoa acorde.
+
+**Limitações.** Poucos indivíduos sonham lúcido com facilidade, e o treino é trabalhoso. Ainda assim, a técnica abriu uma janela objetiva para estudar a consciência a partir de dentro do próprio sonho.
+:::
+
+O sonho lúcido conecta-se diretamente ao capítulo anterior sobre a natureza da consciência: mostra que o *nível* e o *conteúdo* da consciência (e a metaconsciência) podem se recombinar de modos inesperados, e que o córtex pré-frontal é peça-chave da consciência reflexiva. À parte a curiosidade científica, há aplicações emergentes — por exemplo, o uso do sonho lúcido no tratamento de **pesadelos recorrentes**, ensinando o sonhador a alterar o desfecho do pesadelo.
+
+::: {.atencao}
+**O sonho não prevê o futuro (e por que às vezes parece prever).** É comum a impressão de que um sonho "se realizou". A explicação não exige nada de sobrenatural, e ilustra vieses que veremos no Vol 8. Sonhamos muitíssimo (várias narrativas por noite, milhares por ano), sobre temas ligados às nossas preocupações reais; por pura probabilidade, *algum* sonho ocasionalmente vai coincidir com um evento futuro. A esses acertos damos enorme peso e os lembramos (viés de confirmação), enquanto os incontáveis sonhos que *não* se realizaram são esquecidos. Soma-se a reconstrução da memória: tendemos a "ajustar", depois do fato, a lembrança do sonho para que combine melhor com o ocorrido. Coincidência seletivamente lembrada não é premonição — é estatística mais psicologia da memória.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- Sonhamos sobretudo no **REM**, mas também no NREM. O sonho típico é narrativo, autocentrado, **emocional** (muitas vezes negativo), **bizarro** e **acrítico**, e reflete as preocupações da vigília (**hipótese da continuidade**).
+- **Freud**: o sonho realiza um desejo reprimido, disfarçado pelo *trabalho do sonho* (conteúdo latente → manifesto). Historicamente central, mas **infalseável** e sem apoio empírico.
+- **Ativação-síntese** (Hobson e McCarley): o sonho é a tentativa do córtex de dar sentido à **ativação aleatória** do tronco no REM; depois reformulada como "protoconsciência".
+- Teorias **funcionais**: **simulação de ameaça** (Revonsuo) e ligação à **consolidação da memória**; plausíveis e testáveis, mas ainda em disputa.
+- A **base neural** do REM explica o perfil do sonho: pré-frontal dorsolateral **desativado** (falta de crítica), sistema **límbico** e áreas **visuais** ativados (emoção e vividez), baixa noradrenalina (má memória onírica).
+- O **sonho lúcido**, verificado por sinais oculares (LaBerge), prova que a **metaconsciência** pode surgir dentro do sonho — e liga o tema à natureza da consciência.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Conteúdo manifesto / latente**
+:   Na teoria de Freud, o sonho tal como lembrado (manifesto) *versus* os desejos ocultos que o motivariam (latente) [@freud1900].
+
+**Trabalho do sonho**
+:   Mecanismos (condensação, deslocamento) que, para Freud, disfarçariam o desejo latente no sonho manifesto.
+
+**Hipótese da ativação-síntese**
+:   Teoria de que o sonho é a síntese cortical de uma ativação aleatória gerada pelo tronco encefálico no REM [@hobson_mccarley1977].
+
+**Teoria da simulação de ameaça**
+:   Proposta de que o sonhar é um simulador para ensaiar respostas a ameaças, com valor adaptativo [@revonsuo2000].
+
+**Hipótese da continuidade**
+:   Ideia, apoiada em levantamentos de conteúdo, de que os sonhos refletem as preocupações da vida desperta [@domhoff2003].
+
+**Sonho lúcido**
+:   Estado em que a pessoa se dá conta, dentro do sonho, de que está sonhando, podendo às vezes controlá-lo; verificado por sinais oculares [@laberge1981].
+
+**Metaconsciência**
+:   Consciência reflexiva dos próprios estados mentais — aqui, saber que se está sonhando.
+
+**Atonia do REM**
+:   Paralisia muscular do sono REM que impede a encenação do sonho (exceto os músculos oculares).
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva o perfil típico do sonho (conteúdo, emoção, bizarrice, crítica, memória). Que evidência empírica sustenta a "hipótese da continuidade"?
+
+2. **(Comparação.)** Contraste a teoria de Freud e a ativação-síntese: de onde parte o sonho em cada uma, e o que cada uma diz sobre a bizarrice?
+
+3. **(Reflexão crítica.)** Por que se diz que a teoria freudiana dos sonhos é "infalseável"? Ligue essa crítica ao critério de demarcação científica do Cap. 3.
+
+4. **(Aplicação.)** Use o padrão de ativação/desativação cerebral do REM para explicar *três* características do sonho (por exemplo: por que aceitamos o absurdo, por que é tão emocional, por que esquecemos).
+
+5. **(Interpretação.)** Como o experimento dos sinais oculares de LaBerge conseguiu transformar um relato subjetivo (o sonho lúcido) em evidência objetiva? Que suposição do Cap. 36 ele explora?
+
+6. **(Integração.)** Alguém afirma que "sonhou com um acidente e ele aconteceu". Explique, sem recorrer ao sobrenatural, por que tais coincidências ocorrem, usando os vieses de memória e de confirmação.
