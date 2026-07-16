@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -688,8 +737,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-método-correlacional" id="toc-o-método-correlacional" class="nav-link active" data-scroll-target="#o-método-correlacional">O método correlacional</a>
+  <ul class="collapse">
+  <li><a href="#por-que-a-correlação-não-basta" id="toc-por-que-a-correlação-não-basta" class="nav-link" data-scroll-target="#por-que-a-correlação-não-basta">Por que a correlação não basta</a></li>
+  </ul></li>
+  <li><a href="#quase-experimentos" id="toc-quase-experimentos" class="nav-link" data-scroll-target="#quase-experimentos">Quase-experimentos</a></li>
+  <li><a href="#observação-ver-sem-interferir" id="toc-observação-ver-sem-interferir" class="nav-link" data-scroll-target="#observação-ver-sem-interferir">Observação: ver sem interferir</a></li>
+  <li><a href="#levantamentos-surveys-e-autorrelato" id="toc-levantamentos-surveys-e-autorrelato" class="nav-link" data-scroll-target="#levantamentos-surveys-e-autorrelato">Levantamentos (surveys) e autorrelato</a></li>
+  <li><a href="#o-estudo-de-caso" id="toc-o-estudo-de-caso" class="nav-link" data-scroll-target="#o-estudo-de-caso">O estudo de caso</a></li>
+  <li><a href="#tempo-delineamentos-transversais-e-longitudinais" id="toc-tempo-delineamentos-transversais-e-longitudinais" class="nav-link" data-scroll-target="#tempo-delineamentos-transversais-e-longitudinais">Tempo: delineamentos transversais e longitudinais</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +778,740 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Justificar</strong> por que a psicologia precisa de métodos que não manipulam nada, apesar da superioridade causal do experimento.</li>
+<li><strong>Interpretar</strong> um coeficiente de correlação quanto a direção e força, e explicar por que correlação, sozinha, não estabelece causa.</li>
+<li><strong>Diagnosticar</strong> os dois obstáculos clássicos da inferência a partir de correlações — o problema da direcionalidade e o da terceira variável.</li>
+<li><strong>Comparar</strong> observação naturalística, levantamento (survey) e estudo de caso quanto ao que cada um vê bem e ao que cada um distorce.</li>
+<li><strong>Reconhecer</strong> vieses típicos de autorrelato — desejabilidade social, aquiescência, efeitos de formulação — e as defesas contra eles.</li>
+<li><strong>Avaliar</strong> delineamentos quase-experimentais, longitudinais e transversais, entendendo o que ganham e o que abrem mão em relação ao experimento verdadeiro.</li>
+</ul>
 </div>
+<p>O capítulo anterior terminou num limite: há variáveis que não se pode manipular, por impossibilidade ou por ética. Não se sorteia quem fumará por trinta anos, quem sofrerá um trauma, qual língua uma criança aprenderá primeiro. E, no entanto, é sobre exatamente essas variáveis — as que a vida distribui, não o pesquisador — que recaem muitas das perguntas mais importantes da psicologia. Este capítulo trata do que a ciência faz quando o experimento está fora de alcance.</p>
+<p>A tentação é enxergar esses métodos como o experimento “de segunda classe” — versões toleradas por falta de coisa melhor. É um erro em duas direções. Primeiro, porque para muitos objetivos eles não são inferiores: se a pergunta é <em>descrever</em> o que existe, <em>estimar</em> quão comum é algo, ou <em>gerar</em> hipóteses novas, a manipulação nem vem ao caso. Segundo, porque usá-los bem exige um rigor próprio — e interpretá-los mal, sobretudo saltar da correlação para a causa, é provavelmente o erro mais frequente na divulgação científica. Dominar estes métodos é, em boa parte, aprender a dizer com precisão o que eles <em>não</em> autorizam a concluir.</p>
+<section id="o-método-correlacional" class="level2">
+<h2 class="anchored" data-anchor-id="o-método-correlacional">O método correlacional</h2>
+<p>O experimento manipula uma variável e observa outra. O <strong>método correlacional</strong> não manipula nada: mede duas ou mais variáveis como elas ocorrem naturalmente e verifica se andam juntas. Mede-se, numa amostra, quantas horas cada pessoa dorme e seu nível de ansiedade; pergunta-se, depois, se sono e ansiedade covariam. Nenhuma pessoa foi designada a dormir mais ou menos — apenas se registrou o que já havia.</p>
+<p>O grau em que duas variáveis covariam é resumido por um número, o <strong>coeficiente de correlação</strong> (mais comumente o <em>r</em> de Pearson), que o Cap. 18 desenvolve em detalhe. Por ora bastam duas propriedades. A <strong>direção</strong>: uma correlação <strong>positiva</strong> significa que as duas variáveis sobem juntas (mais estudo, mais nota); uma correlação <strong>negativa</strong> significa que uma sobe enquanto a outra desce (mais estresse, menos sono). A <strong>força</strong>: o coeficiente vai de <span class="math inline">\(-1\)</span> a <span class="math inline">\(+1\)</span>; quanto mais perto dos extremos, mais firme a relação, e quanto mais perto de zero, mais frouxa. Um <em>r</em> de <span class="math inline">\(+0{,}9\)</span> é uma associação forte; um de <span class="math inline">\(+0{,}1\)</span>, quase nenhuma. O sinal indica o sentido; o valor absoluto indica a intensidade — e os dois são independentes: <span class="math inline">\(-0{,}8\)</span> representa uma relação <em>mais forte</em> que <span class="math inline">\(+0{,}3\)</span>.</p>
+<p>O modo mais honesto de visualizar uma correlação é o <strong>diagrama de dispersão</strong> (<em>scatterplot</em>): cada participante vira um ponto no plano, e a nuvem de pontos revela o padrão que um único número esconde. A <a href="#fig-tipos-correlacao" class="quarto-xref">Figura&nbsp;<span>15.1</span></a> mostra as três situações básicas.</p>
+<div id="fig-tipos-correlacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tipos-correlacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Três diagramas de dispersão lado a lado. À esquerda, &quot;positiva&quot;: os pontos sobem da esquerda inferior para a direita superior. No centro, &quot;nula&quot;: os pontos formam uma nuvem sem inclinação. À direita, &quot;negativa&quot;: os pontos descem da esquerda superior para a direita inferior. Cada painel tem eixos X e Y sem números." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="340.555836pt" height="109.552189pt" viewbox="-68.014948 -68.014946 340.555836 109.552189">
+<defs>
+<path id="tz_tipos_correlacao_g0-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_tipos_correlacao_g0-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_tipos_correlacao_g0-103" d="M1.936737-.762142C1.649813-.762142 1.524284-.762142 1.371856-.878705C1.23736-.995268 1.165629-1.147696 1.165629-1.327024S1.228394-1.596015 1.23736-1.604981C1.569116-1.43462 1.963636-1.371856 2.358157-1.371856C3.730012-1.371856 4.196264-2.116065 4.196264-2.698879C4.196264-3.066501 4.025903-3.362391 3.837609-3.550685C4.079701-3.676214 4.259029-3.694147 4.375592-3.71208C4.366625-3.676214 4.348692-3.622416 4.348692-3.532752C4.348692-3.29066 4.536986-3.129265 4.752179-3.129265C4.94944-3.129265 5.155666-3.272727 5.155666-3.541719C5.155666-3.774844 4.976339-4.088667 4.563885-4.088667C4.124533-4.088667 3.747945-3.873474 3.577584-3.747945C3.200996-3.972105 2.788543-4.034869 2.358157-4.034869C.986301-4.034869 .52005-3.29066 .52005-2.707846C.52005-2.214695 .824907-1.891905 .986301-1.75741C.798007-1.551183 .690411-1.246326 .690411-.977335C.690411-.591781 .878705-.286924 1.066999-.116563C.385554 .071731 .29589 .457285 .29589 .654545C.29589 1.192528 .91457 1.802242 2.645081 1.802242C4.214197 1.802242 5.003238 1.309091 5.003238 .627646C5.003238 .313823 4.886675-.242092 4.267995-.529016C3.747945-.762142 3.272727-.762142 2.385056-.762142H1.936737ZM2.358157-1.730511C1.551183-1.730511 1.551183-2.304359 1.551183-2.698879C1.551183-3.102366 1.551183-3.676214 2.358157-3.676214S3.165131-3.102366 3.165131-2.707846C3.165131-2.304359 3.165131-1.730511 2.358157-1.730511ZM2.887173 .125529C3.165131 .125529 4.20523 .125529 4.20523 .663512C4.20523 .950436 3.873474 1.443587 2.654047 1.443587C1.470486 1.443587 1.093898 .995268 1.093898 .645579C1.093898 .125529 1.667746 .125529 1.802242 .125529H2.887173Z"></path>
+<path id="tz_tipos_correlacao_g0-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_tipos_correlacao_g0-108" d="M2.071233-6.222665L.466252-6.150934V-5.711582C1.004234-5.711582 1.075965-5.711582 1.075965-5.361893V-.439352H.466252V0C1.075965-.026899 1.183562-.026899 1.569116-.026899C1.963636-.026899 2.196762-.017933 2.680946 0V-.439352H2.071233V-6.222665Z"></path>
+<path id="tz_tipos_correlacao_g0-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_tipos_correlacao_g0-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_tipos_correlacao_g0-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_tipos_correlacao_g0-115" d="M3.559651-3.801743C3.559651-3.963138 3.559651-4.061768 3.380324-4.061768C3.29066-4.061768 3.147198-3.990037 2.985803-3.900374C2.698879-4.025903 2.349191-4.061768 2.0533-4.061768C1.775342-4.061768 .349689-4.061768 .349689-2.878207C.349689-1.936737 1.524284-1.739477 1.838107-1.685679C2.57335-1.560149 3.165131-1.461519 3.165131-.950436C3.165131-.304857 2.322291-.304857 2.125031-.304857C1.667746-.304857 1.084932-.42142 .824907-1.246326C.780075-1.398755 .771108-1.425654 .582814-1.425654C.349689-1.425654 .349689-1.371856 .349689-1.156663V-.206227C.349689-.044832 .349689 .053798 .529016 .053798C.591781 .053798 .609714 .053798 .806974-.071731L1.049066-.224159C1.470486 .053798 1.945704 .053798 2.125031 .053798C2.394022 .053798 3.828643 .053798 3.828643-1.255293C3.828643-1.712578 3.568618-1.999502 3.407223-2.133998C3.003736-2.47472 2.716812-2.519552 2.008468-2.636115C1.578082-2.707846 1.0132-2.797509 1.0132-3.200996C1.0132-3.738979 1.847073-3.738979 2.044334-3.738979C3.048568-3.738979 3.084433-3.209963 3.102366-2.96787C3.111333-2.842341 3.236862-2.842341 3.326526-2.842341C3.550685-2.842341 3.559651-2.887173 3.559651-3.102366V-3.801743Z"></path>
+<path id="tz_tipos_correlacao_g0-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+<path id="tz_tipos_correlacao_g0-117" d="M3.380324-3.963138V-3.523786C3.918306-3.523786 3.990037-3.523786 3.990037-3.174097V-1.470486C3.990037-.753176 3.523786-.304857 2.833375-.304857S2.107098-.502117 2.107098-.977335V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-1.102864C1.058032-.125529 1.829141 .053798 2.698879 .053798C2.976837 .053798 3.58655 .053798 4.043836-.61868V.053798L5.648817 0V-.439352C5.110834-.439352 5.039103-.439352 5.039103-.789041V-4.034869L3.380324-3.963138Z"></path>
+<path id="tz_tipos_correlacao_g0-118" d="M4.689415-3.353425C4.752179-3.478954 4.779078-3.541719 5.34396-3.541719V-3.981071C5.092902-3.954172 4.868742-3.954172 4.617684-3.954172C4.357659-3.954172 4.070735-3.954172 3.81071-3.981071V-3.541719C4.061768-3.541719 4.142466-3.496887 4.223163-3.461021C4.214197-3.425156 4.214197-3.407223 4.169365-3.335492L3.0934-1.102864L1.918804-3.541719H2.385056V-3.981071C1.793275-3.963138 1.613948-3.954172 1.282192-3.954172C.959402-3.954172 .780075-3.954172 .251059-3.981071V-3.541719H.81594L2.420922-.206227C2.501619-.035866 2.57335 .044832 2.797509 .044832S3.0934-.035866 3.174097-.206227L4.689415-3.353425Z"></path>
+</defs>
+<g id="tz_tipos_correlacao_page1">
+<g stroke-miterlimit="10" transform="translate(-67.815698,17.223635)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M0 0H83.35826" fill="none"></path>
+<g transform="translate(83.35826,0.0)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M0 0V83.35826" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,0.0,83.35826)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M10.09157 14.22636C10.09157 15.08554 9.39508 15.78203 8.5359 15.78203C7.67673 15.78203 6.98024 15.08554 6.98024 14.22636C6.98024 13.36719 7.67673 12.6707 8.5359 12.6707C9.39508 12.6707 10.09157 13.36719 10.09157 14.22636ZM8.5359 14.22636" stroke="none"></path>
+</g>
+<g transform="translate(8.5359,14.22636)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M21.47249 25.60728C21.47249 26.46646 20.776 27.16295 19.91682 27.16295C19.05765 27.16295 18.36116 26.46646 18.36116 25.60728C18.36116 24.74811 19.05765 24.05162 19.91682 24.05162C20.776 24.05162 21.47249 24.74811 21.47249 25.60728ZM19.91682 25.60728" stroke="none"></path>
+</g>
+<g transform="translate(19.91682,25.60728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M30.0084 22.76227C30.0084 23.62144 29.31192 24.31793 28.45274 24.31793C27.59357 24.31793 26.89708 23.62144 26.89708 22.76227C26.89708 21.90309 27.59357 21.2066 28.45274 21.2066C29.31192 21.2066 30.0084 21.90309 30.0084 22.76227ZM28.45274 22.76227" stroke="none"></path>
+</g>
+<g transform="translate(28.45274,22.76227)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M38.54431 39.83366C38.54431 40.69284 37.84782 41.38933 36.98865 41.38933C36.12947 41.38933 35.43298 40.69284 35.43298 39.83366C35.43298 38.97449 36.12947 38.278 36.98865 38.278C37.84782 38.278 38.54431 38.97449 38.54431 39.83366ZM36.98865 39.83366" stroke="none"></path>
+</g>
+<g transform="translate(36.98865,39.83366)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M47.08022 42.67911C47.08022 43.53828 46.38373 44.23477 45.52455 44.23477S43.96889 43.53828 43.96889 42.67911C43.96889 41.81993 44.66537 41.12344 45.52455 41.12344S47.08022 41.81993 47.08022 42.67911ZM45.52455 42.67911" stroke="none"></path>
+</g>
+<g transform="translate(45.52455,42.67911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M55.61569 48.36957C55.61569 49.22874 54.9192 49.92523 54.06003 49.92523C53.20085 49.92523 52.50436 49.22874 52.50436 48.36957C52.50436 47.51039 53.20085 46.8139 54.06003 46.8139C54.9192 46.8139 55.61569 47.51039 55.61569 48.36957ZM54.06003 48.36957" stroke="none"></path>
+</g>
+<g transform="translate(54.06003,48.36957)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M64.15161 59.75093C64.15161 60.6101 63.45512 61.3066 62.59595 61.3066C61.73677 61.3066 61.04028 60.6101 61.04028 59.75093C61.04028 58.89175 61.73677 58.19527 62.59595 58.19527C63.45512 58.19527 64.15161 58.89175 64.15161 59.75093ZM62.59595 59.75093" stroke="none"></path>
+</g>
+<g transform="translate(62.59595,59.75093)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M72.68752 65.44139C72.68752 66.30057 71.99103 66.99706 71.13185 66.99706S69.57619 66.30057 69.57619 65.44139S70.27267 63.88573 71.13185 63.88573S72.68752 64.58221 72.68752 65.44139ZM71.13185 65.44139" stroke="none"></path>
+</g>
+<g transform="translate(71.13185,65.44139)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M78.37798 73.9773C78.37798 74.83647 77.68149 75.53296 76.82231 75.53296S75.26665 74.83647 75.26665 73.9773C75.26665 73.11812 75.96313 72.42163 76.82231 72.42163S78.37798 73.11812 78.37798 73.9773ZM76.82231 73.9773" stroke="none"></path>
+</g>
+<g transform="translate(76.82231,73.9773)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M32.85385 34.1432C32.85385 35.00238 32.15736 35.69887 31.29819 35.69887C30.43901 35.69887 29.74252 35.00238 29.74252 34.1432C29.74252 33.28403 30.43901 32.58754 31.29819 32.58754C32.15736 32.58754 32.85385 33.28403 32.85385 34.1432ZM31.29819 34.1432" stroke="none"></path>
+</g>
+<g transform="translate(31.29819,34.1432)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M58.46115 54.06003C58.46115 54.9192 57.76466 55.61569 56.90549 55.61569C56.04631 55.61569 55.34982 54.9192 55.34982 54.06003C55.34982 53.20085 56.04631 52.50436 56.90549 52.50436C57.76466 52.50436 58.46115 53.20085 58.46115 54.06003ZM56.90549 54.06003" stroke="none"></path>
+</g>
+<g transform="translate(56.90549,54.06003)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M15.78203 19.91682C15.78203 20.776 15.08554 21.47249 14.22636 21.47249C13.36719 21.47249 12.6707 20.776 12.6707 19.91682C12.6707 19.05765 13.36719 18.36116 14.22636 18.36116C15.08554 18.36116 15.78203 19.05765 15.78203 19.91682ZM14.22636 19.91682" stroke="none"></path>
+</g>
+<g transform="translate(14.22636,19.91682)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(24.67789,-19.32181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-67.815698" y="17.223635" href="#tz_tipos_correlacao_g0-112"></use>
+<use x="-61.626478" y="17.223635" href="#tz_tipos_correlacao_g0-111"></use>
+<use x="-56.321436" y="17.223635" href="#tz_tipos_correlacao_g0-115"></use>
+<use x="-52.136336" y="17.223635" href="#tz_tipos_correlacao_g0-105"></use>
+<use x="-49.189088" y="17.223635" href="#tz_tipos_correlacao_g0-116"></use>
+<use x="-45.062947" y="17.223635" href="#tz_tipos_correlacao_g0-105"></use>
+<use x="-42.115698" y="17.223635" href="#tz_tipos_correlacao_g0-118"></use>
+<use x="-37.105369" y="17.223635" href="#tz_tipos_correlacao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M128.03734 0H211.3956" fill="none"></path>
+<g transform="translate(211.3956,0.0)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M128.03734 0V83.35826" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,128.03734,83.35826)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M140.97392 51.21501C140.97392 52.07419 140.27744 52.77068 139.41826 52.77068S137.8626 52.07419 137.8626 51.21501S138.55908 49.65935 139.41826 49.65935S140.97392 50.35583 140.97392 51.21501ZM139.41826 51.21501" stroke="none"></path>
+</g>
+<g transform="translate(139.41826,51.21501)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M152.35527 17.07181C152.35527 17.93098 151.65878 18.62747 150.7996 18.62747C149.94043 18.62747 149.24394 17.93098 149.24394 17.07181C149.24394 16.21263 149.94043 15.51614 150.7996 15.51614C151.65878 15.51614 152.35527 16.21263 152.35527 17.07181ZM150.7996 17.07181" stroke="none"></path>
+</g>
+<g transform="translate(150.7996,17.07181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M163.7362 65.44139C163.7362 66.30057 163.03972 66.99706 162.18054 66.99706C161.32137 66.99706 160.62488 66.30057 160.62488 65.44139S161.32137 63.88573 162.18054 63.88573C163.03972 63.88573 163.7362 64.58221 163.7362 65.44139ZM162.18054 65.44139" stroke="none"></path>
+</g>
+<g transform="translate(162.18054,65.44139)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M172.27211 28.45274C172.27211 29.31192 171.57562 30.0084 170.71645 30.0084C169.85727 30.0084 169.16078 29.31192 169.16078 28.45274C169.16078 27.59357 169.85727 26.89708 170.71645 26.89708C171.57562 26.89708 172.27211 27.59357 172.27211 28.45274ZM170.71645 28.45274" stroke="none"></path>
+</g>
+<g transform="translate(170.71645,28.45274)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M180.80801 71.13185C180.80801 71.99103 180.11153 72.68752 179.25235 72.68752S177.69669 71.99103 177.69669 71.13185S178.39317 69.57619 179.25235 69.57619S180.80801 70.27267 180.80801 71.13185ZM179.25235 71.13185" stroke="none"></path>
+</g>
+<g transform="translate(179.25235,71.13185)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M189.34393 22.76227C189.34393 23.62144 188.64745 24.31793 187.78827 24.31793C186.9291 24.31793 186.2326 23.62144 186.2326 22.76227C186.2326 21.90309 186.9291 21.2066 187.78827 21.2066C188.64745 21.2066 189.34393 21.90309 189.34393 22.76227ZM187.78827 22.76227" stroke="none"></path>
+</g>
+<g transform="translate(187.78827,22.76227)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M197.87941 54.06003C197.87941 54.9192 197.18292 55.61569 196.32375 55.61569C195.46457 55.61569 194.76808 54.9192 194.76808 54.06003C194.76808 53.20085 195.46457 52.50436 196.32375 52.50436C197.18292 52.50436 197.87941 53.20085 197.87941 54.06003ZM196.32375 54.06003" stroke="none"></path>
+</g>
+<g transform="translate(196.32375,54.06003)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M203.5703 31.29819C203.5703 32.15736 202.87381 32.85385 202.01463 32.85385C201.15546 32.85385 200.45897 32.15736 200.45897 31.29819C200.45897 30.43901 201.15546 29.74252 202.01463 29.74252C202.87381 29.74252 203.5703 30.43901 203.5703 31.29819ZM202.01463 31.29819" stroke="none"></path>
+</g>
+<g transform="translate(202.01463,31.29819)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M158.04575 42.67911C158.04575 43.53828 157.34926 44.23477 156.49008 44.23477S154.93442 43.53828 154.93442 42.67911C154.93442 41.81993 155.6309 41.12344 156.49008 41.12344S158.04575 41.81993 158.04575 42.67911ZM156.49008 42.67911" stroke="none"></path>
+</g>
+<g transform="translate(156.49008,42.67911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M177.96257 14.22636C177.96257 15.08554 177.26608 15.78203 176.4069 15.78203C175.54773 15.78203 174.85124 15.08554 174.85124 14.22636C174.85124 13.36719 175.54773 12.6707 176.4069 12.6707C177.26608 12.6707 177.96257 13.36719 177.96257 14.22636ZM176.4069 14.22636" stroke="none"></path>
+</g>
+<g transform="translate(176.4069,14.22636)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M146.66481 68.2864C146.66481 69.14558 145.96832 69.84207 145.10915 69.84207C144.24997 69.84207 143.55348 69.14558 143.55348 68.2864C143.55348 67.42723 144.24997 66.73074 145.10915 66.73074C145.96832 66.73074 146.66481 67.42723 146.66481 68.2864ZM145.10915 68.2864" stroke="none"></path>
+</g>
+<g transform="translate(145.10915,68.2864)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M192.18895 62.59595C192.18895 63.45512 191.49246 64.15161 190.63329 64.15161C189.77411 64.15161 189.07762 63.45512 189.07762 62.59595C189.07762 61.73677 189.77411 61.04028 190.63329 61.04028C191.49246 61.04028 192.18895 61.73677 192.18895 62.59595ZM190.63329 62.59595" stroke="none"></path>
+</g>
+<g transform="translate(190.63329,62.59595)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(160.88014,-20.19681)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-67.815698" y="17.223635" href="#tz_tipos_correlacao_g0-110"></use>
+<use x="-62.215958" y="17.223635" href="#tz_tipos_correlacao_g0-117"></use>
+<use x="-56.321469" y="17.223635" href="#tz_tipos_correlacao_g0-108"></use>
+<use x="-53.374221" y="17.223635" href="#tz_tipos_correlacao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M256.07469 0H339.43295" fill="none"></path>
+<g transform="translate(339.43295,0.0)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#808080" stroke="#808080">
+<g stroke-width="0.4">
+<path d="M256.07469 0V83.35826" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,256.07469,83.35826)">
+<path d="M1.99997 0L-1.19998 1.59998L0 0L-1.19998-1.59998" stroke="none"></path>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M266.16626 73.9773C266.16626 74.83647 265.46977 75.53296 264.6106 75.53296C263.75142 75.53296 263.05493 74.83647 263.05493 73.9773C263.05493 73.11812 263.75142 72.42163 264.6106 72.42163C265.46977 72.42163 266.16626 73.11812 266.16626 73.9773ZM264.6106 73.9773" stroke="none"></path>
+</g>
+<g transform="translate(264.6106,73.9773)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M277.54718 65.44139C277.54718 66.30057 276.8507 66.99706 275.99152 66.99706S274.43585 66.30057 274.43585 65.44139S275.13234 63.88573 275.99152 63.88573S277.54718 64.58221 277.54718 65.44139ZM275.99152 65.44139" stroke="none"></path>
+</g>
+<g transform="translate(275.99152,65.44139)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M286.0831 68.2864C286.0831 69.14558 285.38661 69.84207 284.52744 69.84207C283.66826 69.84207 282.97177 69.14558 282.97177 68.2864C282.97177 67.42723 283.66826 66.73074 284.52744 66.73074C285.38661 66.73074 286.0831 67.42723 286.0831 68.2864ZM284.52744 68.2864" stroke="none"></path>
+</g>
+<g transform="translate(284.52744,68.2864)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M294.619 51.21501C294.619 52.07419 293.92252 52.77068 293.06334 52.77068S291.50768 52.07419 291.50768 51.21501S292.20416 49.65935 293.06334 49.65935S294.619 50.35583 294.619 51.21501ZM293.06334 51.21501" stroke="none"></path>
+</g>
+<g transform="translate(293.06334,51.21501)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M303.1549 45.52455C303.1549 46.38373 302.45842 47.08022 301.59924 47.08022C300.74007 47.08022 300.04358 46.38373 300.04358 45.52455S300.74007 43.96889 301.59924 43.96889C302.45842 43.96889 303.1549 44.66537 303.1549 45.52455ZM301.59924 45.52455" stroke="none"></path>
+</g>
+<g transform="translate(301.59924,45.52455)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M311.69038 39.83366C311.69038 40.69284 310.9939 41.38933 310.13472 41.38933S308.57906 40.69284 308.57906 39.83366C308.57906 38.97449 309.27554 38.278 310.13472 38.278S311.69038 38.97449 311.69038 39.83366ZM310.13472 39.83366" stroke="none"></path>
+</g>
+<g transform="translate(310.13472,39.83366)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M320.2263 28.45274C320.2263 29.31192 319.52982 30.0084 318.67064 30.0084S317.11497 29.31192 317.11497 28.45274C317.11497 27.59357 317.81146 26.89708 318.67064 26.89708S320.2263 27.59357 320.2263 28.45274ZM318.67064 28.45274" stroke="none"></path>
+</g>
+<g transform="translate(318.67064,28.45274)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M328.7622 19.91682C328.7622 20.776 328.06572 21.47249 327.20654 21.47249C326.34737 21.47249 325.65088 20.776 325.65088 19.91682C325.65088 19.05765 326.34737 18.36116 327.20654 18.36116C328.06572 18.36116 328.7622 19.05765 328.7622 19.91682ZM327.20654 19.91682" stroke="none"></path>
+</g>
+<g transform="translate(327.20654,19.91682)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M334.45267 14.22636C334.45267 15.08554 333.75618 15.78203 332.897 15.78203C332.03783 15.78203 331.34134 15.08554 331.34134 14.22636C331.34134 13.36719 332.03783 12.6707 332.897 12.6707C333.75618 12.6707 334.45267 13.36719 334.45267 14.22636ZM332.897 14.22636" stroke="none"></path>
+</g>
+<g transform="translate(332.897,14.22636)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M288.92854 56.90549C288.92854 57.76466 288.23206 58.46115 287.37288 58.46115S285.81721 57.76466 285.81721 56.90549C285.81721 56.04631 286.5137 55.34982 287.37288 55.34982S288.92854 56.04631 288.92854 56.90549ZM287.37288 56.90549" stroke="none"></path>
+</g>
+<g transform="translate(287.37288,56.90549)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M314.53584 31.29819C314.53584 32.15736 313.83936 32.85385 312.98018 32.85385S311.42451 32.15736 311.42451 31.29819C311.42451 30.43901 312.121 29.74252 312.98018 29.74252S314.53584 30.43901 314.53584 31.29819ZM312.98018 31.29819" stroke="none"></path>
+</g>
+<g transform="translate(312.98018,31.29819)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M271.85672 71.13185C271.85672 71.99103 271.16023 72.68752 270.30106 72.68752C269.44188 72.68752 268.74539 71.99103 268.74539 71.13185S269.44188 69.57619 270.30106 69.57619C271.16023 69.57619 271.85672 70.27267 271.85672 71.13185ZM270.30106 71.13185" stroke="none"></path>
+</g>
+<g transform="translate(270.30106,71.13185)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(279.44817,-19.32181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-67.815698,17.223635)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-67.815698" y="17.223635" href="#tz_tipos_correlacao_g0-110"></use>
+<use x="-61.92121" y="17.223635" href="#tz_tipos_correlacao_g0-101"></use>
+<use x="-57.052705" y="17.223635" href="#tz_tipos_correlacao_g0-103"></use>
+<use x="-51.747663" y="17.223635" href="#tz_tipos_correlacao_g0-97"></use>
+<use x="-46.589989" y="17.223635" href="#tz_tipos_correlacao_g0-116"></use>
+<use x="-42.463848" y="17.223635" href="#tz_tipos_correlacao_g0-105"></use>
+<use x="-39.5166" y="17.223635" href="#tz_tipos_correlacao_g0-118"></use>
+<use x="-34.506271" y="17.223635" href="#tz_tipos_correlacao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tipos-correlacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;15.1: Diagramas de dispersão para os três padrões básicos de correlação. A inclinação da nuvem indica a direção; sua largura (o quanto os pontos se afastam de uma linha) indica a força.
+</figcaption>
+</figure>
+</div>
+<section id="por-que-a-correlação-não-basta" class="level3">
+<h3 class="anchored" data-anchor-id="por-que-a-correlação-não-basta">Por que a correlação não basta</h3>
+<p>Suponha que se encontre uma correlação positiva robusta entre horas de sono e desempenho escolar: quem dorme mais tira notas melhores. A conclusão tentadora — “dormir mais melhora as notas” — pode estar certa, mas o dado, sozinho, não a sustenta, por duas razões independentes.</p>
+<p>O <strong>problema da direcionalidade</strong>: a correlação é simétrica, mas a causa não. Se A e B covariam, tanto pode ser que dormir bem melhore o desempenho quanto que ter bom desempenho (menos ansiedade, menos madrugadas de estudo desesperado) melhore o sono. O dado correlacional não distingue “A causa B” de “B causa A”. Foi por não resolver esse ponto que o Cap. 14 insistiu na <em>precedência temporal</em>.</p>
+<p>O <strong>problema da terceira variável</strong> (confusão): uma variável não medida pode causar as duas ao mesmo tempo, gerando a correlação sem que uma cause a outra. Renda familiar, por exemplo, pode produzir tanto mais sono (menos trabalho noturno, casa mais tranquila) quanto melhores notas (mais recursos de estudo). A correlação entre sono e nota seria então um reflexo da renda — real como associação, ilusória como relação causal direta.</p>
+<div class="atencao">
+<p><strong>Correlações absurdas e o alerta que elas dão.</strong> O número de afogamentos em piscinas correlaciona-se com o consumo de sorvete; vendas de óculos escuros, com casos de insolação. Ninguém conclui que sorvete afoga ou que óculos causam insolação — a terceira variável (o calor do verão) é óbvia. O perigo mora nos casos em que a terceira variável <em>não</em> é óbvia, e a história causal soa plausível. “Crianças que têm mais livros em casa leem melhor” — livros causam leitura, ou pais leitores e escolarizados causam ambos? A plausibilidade da narrativa não é evidência a seu favor. Regra prática: diante de qualquer manchete correlacional, invente <em>em voz alta</em> uma terceira variável candidata antes de aceitar a interpretação causal. Se você consegue, o jornalista deveria ter conseguido também.</p>
+</div>
+<p>Isso não torna a correlação inútil — longe disso. Ela <strong>prevê</strong> (saber a nota de leitura ajuda a estimar a de redação, mesmo sem causa entre elas); ela <strong>rastreia</strong> relações onde experimentar seria impossível ou imoral (a ligação entre tabagismo e câncer nunca foi estabelecida sorteando fumantes); e ela <strong>restringe</strong> hipóteses causais — a ausência de correlação, quando esperada, já refuta muita coisa. O erro nunca está em usar correlações; está em vesti-las de conclusões que só o experimento poderia dar.</p>
+</section>
+</section>
+<section id="quase-experimentos" class="level2">
+<h2 class="anchored" data-anchor-id="quase-experimentos">Quase-experimentos</h2>
+<p>Entre o experimento pleno e a pura correlação há um meio-termo: o <strong>quase-experimento</strong>. Ele compara grupos que recebem condições diferentes — como um experimento —, mas os participantes <strong>não</strong> foram distribuídos por sorteio; a “manipulação” foi feita pela natureza, por uma política pública, por uma catástrofe ou por escolha dos próprios sujeitos. Compara-se o desempenho de escolas que adotaram um novo currículo com o das que não adotaram; a saúde mental de uma cidade antes e depois de um desastre; o vocabulário de crianças bilíngues e monolíngues.</p>
+<p>O quase-experimento é mais forte que uma correlação simples, porque frequentemente há precedência temporal clara e comparação estruturada. Mas herda o calcanhar de aquiles de todo método sem sorteio: como os grupos não foram aleatorizados, podem diferir de saída em variáveis de confusão. As escolas que adotaram o currículo novo talvez já fossem mais bem geridas; quem se torna bilíngue talvez venha de famílias com mais recursos. Bons quase-experimentos investem pesado em descartar essas alternativas — medindo e ajustando estatisticamente variáveis, buscando grupos-controle o mais parecidos possível, explorando o momento exato de uma mudança. Ainda assim, a conclusão causal permanece um grau mais frágil que a de um experimento verdadeiro, e a honestidade exige dizê-lo.</p>
+</section>
+<section id="observação-ver-sem-interferir" class="level2">
+<h2 class="anchored" data-anchor-id="observação-ver-sem-interferir">Observação: ver sem interferir</h2>
+<p>Antes de medir ou manipular, é preciso descrever — e há fenômenos que só se revelam quando observados no ambiente em que ocorrem. A <strong>observação naturalística</strong> registra o comportamento em seu contexto natural, sem intervenção: primatas na floresta, crianças no parquinho, motoristas num cruzamento. Sua força é a <strong>validade ecológica</strong> — vê-se o comportamento real, não uma versão de laboratório —, e ela é insubstituível para gerar as primeiras descrições de um fenômeno e as hipóteses que outros métodos testarão.</p>
+<p>Dois problemas a assombram. O primeiro é a <strong>reatividade</strong>: pessoas (e alguns animais) se comportam diferente quando se sabem observadas. A defesa é a observação discreta, à distância, ou o tempo — deixar que os observados se habituem à presença do pesquisador até voltarem ao normal. O segundo é a subjetividade do registro: “agressivo”, “atento”, “afetuoso” são julgamentos, e dois observadores podem discordar. A solução é um <strong>sistema de codificação</strong> explícito, que define de antemão o que conta como cada categoria, somado à checagem da <strong>confiabilidade entre observadores</strong> (<em>inter-rater reliability</em>): dois codificadores independentes observam as mesmas cenas, e mede-se o quanto concordam. Alta concordância indica que o que se registra está no comportamento, não no olho de quem olha — o mesmo espírito do cegamento do Cap. 14. O Cap. 16 formaliza essa ideia de confiabilidade.</p>
+<p>Uma variante é a <strong>observação participante</strong>, em que o pesquisador se integra ao grupo estudado. Ela dá acesso a mundos que a observação externa não alcança — mas ao custo de maior reatividade, de possível perda de distância crítica e de dilemas éticos sobre o engano, aos quais o Cap. 20 retorna.</p>
+</section>
+<section id="levantamentos-surveys-e-autorrelato" class="level2">
+<h2 class="anchored" data-anchor-id="levantamentos-surveys-e-autorrelato">Levantamentos (surveys) e autorrelato</h2>
+<p>Grande parte do que a psicologia quer saber está dentro das pessoas — atitudes, crenças, emoções, hábitos — e o caminho mais direto para lá é perguntar. O <strong>levantamento</strong> (<em>survey</em>) coleta autorrelatos de muitas pessoas por questionário ou entrevista, permitindo descrever atitudes e comportamentos em larga escala e estimar sua frequência numa população. É o método por trás das pesquisas de opinião, dos inventários de personalidade (Vol 11) e de boa parte da epidemiologia psiquiátrica (Vol 13).</p>
+<p>Seu poder depende inteiramente de duas coisas: de <em>quem</em> respondeu e de <em>como</em> se perguntou. A primeira é a questão da amostragem — se os respondentes não representam a população de interesse, nenhum número é confiável, e o Cap. 17 trata disso por inteiro. A segunda é a questão dos vieses de resposta, e vale enumerá-los, porque são a fonte silenciosa de muito dado ruim:</p>
+<ul>
+<li><strong>Desejabilidade social:</strong> a tendência a responder o que soa aceitável em vez da verdade. Perguntas sobre uso de drogas, preconceito, higiene ou desempenho sexual atraem respostas embelezadas. Defesas: garantir anonimato, formular a pergunta sem julgamento, às vezes medir de forma indireta.</li>
+<li><strong>Aquiescência:</strong> a tendência a concordar com afirmações, seja qual for o conteúdo. Neutraliza-se alternando itens de sentido invertido, de modo que “concordar sempre” produza respostas contraditórias detectáveis.</li>
+<li><strong>Efeitos de formulação e ordem:</strong> pequenas mudanças no texto ou na sequência das perguntas alteram as respostas. “Proibir” e “não permitir” significam o mesmo, mas geram porcentagens diferentes de apoio; a ordem em que dois temas aparecem muda a avaliação de ambos <span class="citation" data-cites="schwarz1999">(<a href="../../referencias.html#ref-schwarz1999" role="doc-biblioref">Schwarz, 1999</a>)</span>. Não existe pergunta “neutra” — só perguntas cujos vieses o pesquisador conhece e controla.</li>
+</ul>
+<div class="na-pratica">
+<p><strong>Como farejar uma pesquisa mal-feita.</strong> Diante de uma manchete do tipo “70% dos brasileiros defendem X”, faça quatro perguntas antes de acreditar. <strong>Quem respondeu?</strong> Uma enquete de site ou de rede social não é amostra de nada além de quem clicou. <strong>Qual foi a pergunta, palavra por palavra?</strong> A formulação exata quase sempre inclina o resultado, e reportagens costumam omiti-la. <strong>Quem financiou?</strong> Uma pesquisa encomendada por parte interessada merece escrutínio redobrado — não porque o dado seja necessariamente falso, mas porque as escolhas de método tendem a favorecer quem paga. <strong>Qual a margem de erro e o tamanho da amostra?</strong> Sem esses números (Cap. 17 e 19), a porcentagem é decoração. Uma pesquisa que não informa essas quatro coisas não está escondendo detalhes técnicos — está escondendo o que a tornaria avaliável.</p>
+</div>
+</section>
+<section id="o-estudo-de-caso" class="level2">
+<h2 class="anchored" data-anchor-id="o-estudo-de-caso">O estudo de caso</h2>
+<p>No extremo oposto do levantamento — muitos indivíduos, pouca profundidade — está o <strong>estudo de caso</strong>: a investigação intensiva de um único indivíduo, grupo ou evento. Onde o survey sacrifica profundidade por alcance, o estudo de caso faz o contrário, esmiuçando um caso em riqueza que nenhum método de larga escala alcança. Ele é indispensável em três situações: quando o fenômeno é <strong>raro</strong> demais para se montar uma amostra (uma síndrome neurológica única), quando é <strong>eticamente impossível</strong> produzi-lo (privação extrema), e quando se está no início de uma investigação e é preciso <strong>gerar hipóteses</strong> antes de poder testá-las.</p>
+<p>Boa parte da neuropsicologia nasceu de casos únicos. O paciente H.M., que após uma cirurgia para epilepsia perdeu a capacidade de formar novas memórias declarativas mas manteve intactas a memória de curto prazo e a aprendizagem de habilidades, revelou que a memória não é uma faculdade única e localizou funções mnésicas no lobo temporal medial — uma descoberta que moldou o Vol 8 <span class="citation" data-cites="scoville_milner1957">(<a href="../../referencias.html#ref-scoville_milner1957" role="doc-biblioref">Scoville; Milner, 1957</a>)</span>. O caso de Genie, uma menina mantida em isolamento extremo até a adolescência, informou o debate sobre períodos críticos na aquisição da linguagem, ainda que cercado de complicações éticas graves <span class="citation" data-cites="curtiss1977">(<a href="../../referencias.html#ref-curtiss1977" role="doc-biblioref">Curtiss, 1977</a>)</span>.</p>
+<div class="estudo-caso">
+<p><strong>Phineas Gage e a barra de ferro</strong> <span class="citation" data-cites="harlow1868">(<a href="../../referencias.html#ref-harlow1868" role="doc-biblioref">Harlow, 1868</a>)</span></p>
+<p>Em 1848, uma explosão lançou uma barra de ferro através do crânio de Phineas Gage, um capataz de ferrovia, destruindo boa parte do lobo frontal. Ele sobreviveu, andou, falou e manteve memória e inteligência — mas, segundo o relato do médico John Harlow, sua personalidade mudou. O homem antes responsável e comedido tornou-se, por um tempo, impulsivo, irreverente e incapaz de sustentar planos. “Gage não era mais Gage”, teriam dito os que o conheciam.</p>
+<p><strong>O que o caso ensinou.</strong> Antes de Gage, a ideia de que funções psicológicas complexas — planejamento, autocontrole, adequação social — dependessem de regiões cerebrais específicas era especulativa. Um único paciente, ao ligar dano frontal a mudança de caráter, ancorou empiricamente a hipótese da localização dessas funções, tema central da neuropsicologia (Vol 15, Cap. 99) e da neurociência da emoção e da decisão (Vol 9).</p>
+<p><strong>Por que é <em>só</em> um estudo de caso.</strong> Muito do que se conta sobre Gage é reconstrução posterior, parte dela exagerada; os registros contemporâneos são escassos e por vezes contraditórios; e ele parece ter recuperado boa parte da funcionalidade social com o tempo — um detalhe frequentemente omitido. O caso <em>sugeriu</em> de forma poderosa uma hipótese que décadas de estudos com muitos pacientes vieram depois confirmar e refinar. Ele não a <em>provou</em>, e nenhum caso único poderia.</p>
+</div>
+<p>O estudo de caso paga por sua profundidade com duas fraquezas incontornáveis. Não permite <strong>generalização</strong>: um indivíduo pode ser atípico, e nada garante que o que vale para ele valha para outros. E não permite <strong>inferência causal</strong>: sem comparação nem controle, é impossível saber se a característica observada decorre do fator destacado ou de mil outras particularidades daquela história. Por isso o estudo de caso é, na economia da ciência, sobretudo um <strong>gerador</strong> de hipóteses — a faísca, não a prova. Confundir as duas coisas, tratar um caso vívido como evidência conclusiva, é um erro clássico, e a vivacidade da narrativa é justamente o que o torna sedutor.</p>
+</section>
+<section id="tempo-delineamentos-transversais-e-longitudinais" class="level2">
+<h2 class="anchored" data-anchor-id="tempo-delineamentos-transversais-e-longitudinais">Tempo: delineamentos transversais e longitudinais</h2>
+<p>Uma última distinção corta todos os métodos descritivos: como eles lidam com o tempo, questão central para o estudo do desenvolvimento (Vol 10). Um delineamento <strong>transversal</strong> (<em>cross-sectional</em>) compara, num único momento, grupos de idades diferentes — mede-se hoje pessoas de 20, 40 e 60 anos e comparam-se as memórias. É rápido e barato, mas confunde idade com <strong>geração</strong>: os de 60 anos diferem dos de 20 não só por serem mais velhos, mas por terem crescido em outra época (o <strong>efeito de coorte</strong>). Um delineamento <strong>longitudinal</strong> acompanha as <em>mesmas</em> pessoas ao longo de anos, isolando a mudança com a idade da diferença entre gerações. É muito mais informativo — e muito mais caro, lento e vulnerável à perda de participantes ao longo do tempo, que raramente é aleatória (quem abandona o estudo tende a diferir de quem fica). A escolha entre os dois é outra troca sem solução perfeita, e voltará no Vol 10.</p>
+<div class="callout-sintese">
+<ul>
+<li><strong>Métodos não-experimentais não são experimentos fracos:</strong> são as ferramentas certas para descrever, estimar frequências e gerar hipóteses — e a única opção quando manipular é impossível ou antiético.</li>
+<li><strong>O método correlacional</strong> mede variáveis como elas ocorrem e resume sua covariação num coeficiente entre <span class="math inline">\(-1\)</span> e <span class="math inline">\(+1\)</span>; o sinal dá a direção, o valor absoluto dá a força.</li>
+<li><strong>Correlação não estabelece causa</strong> por duas razões independentes: o problema da direcionalidade (A→B ou B→A?) e o da terceira variável (um fator não medido causa ambos). Ainda assim, correlações preveem, rastreiam e restringem hipóteses.</li>
+<li><strong>Quase-experimentos</strong> comparam grupos não formados por sorteio; são mais fortes que correlações simples, mas continuam expostos a confusões pré-existentes.</li>
+<li><strong>A observação naturalística</strong> tem alta validade ecológica, ameaçada pela reatividade e pela subjetividade do registro — combatidas com discrição, sistemas de codificação e confiabilidade entre observadores.</li>
+<li><strong>Levantamentos</strong> dependem inteiramente de quem responde (amostragem, Cap. 17) e de como se pergunta (desejabilidade social, aquiescência, efeitos de formulação e ordem).</li>
+<li><strong>O estudo de caso</strong> oferece profundidade única e é insubstituível para fenômenos raros, mas não generaliza nem prova causa: é gerador de hipóteses, não veredito.</li>
+<li><strong>Delineamentos transversais</strong> confundem idade com coorte; <strong>longitudinais</strong> separam as duas ao custo de tempo, dinheiro e perda seletiva de participantes.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Método correlacional</strong></dt>
+<dd>
+Estratégia que mede duas ou mais variáveis como ocorrem naturalmente, sem manipulação, e avalia sua covariação.
+</dd>
+<dt><strong>Coeficiente de correlação</strong></dt>
+<dd>
+Índice de <span class="math inline">\(-1\)</span> a <span class="math inline">\(+1\)</span> que resume a direção (sinal) e a força (valor absoluto) da associação linear entre duas variáveis.
+</dd>
+<dt><strong>Problema da direcionalidade</strong></dt>
+<dd>
+Impossibilidade de, a partir de uma correlação, decidir se A causa B ou B causa A.
+</dd>
+<dt><strong>Problema da terceira variável</strong></dt>
+<dd>
+Possibilidade de uma variável não medida causar as duas variáveis correlacionadas, gerando a associação sem relação causal direta entre elas.
+</dd>
+<dt><strong>Quase-experimento</strong></dt>
+<dd>
+Comparação entre grupos que recebem condições diferentes sem atribuição aleatória; sujeito a confusões pré-existentes.
+</dd>
+<dt><strong>Observação naturalística</strong></dt>
+<dd>
+Registro do comportamento em seu ambiente natural, sem intervenção; alta validade ecológica, ameaçada pela reatividade.
+</dd>
+<dt><strong>Reatividade</strong></dt>
+<dd>
+Alteração do comportamento pelo fato de o sujeito se saber observado.
+</dd>
+<dt><strong>Confiabilidade entre observadores</strong></dt>
+<dd>
+Grau de concordância entre codificadores independentes que registram o mesmo comportamento.
+</dd>
+<dt><strong>Levantamento (survey)</strong></dt>
+<dd>
+Coleta de autorrelatos de muitas pessoas por questionário ou entrevista.
+</dd>
+<dt><strong>Desejabilidade social</strong></dt>
+<dd>
+Viés de responder de modo socialmente aceitável em vez de verdadeiro.
+</dd>
+<dt><strong>Aquiescência</strong></dt>
+<dd>
+Tendência a concordar com afirmações independentemente do conteúdo.
+</dd>
+<dt><strong>Estudo de caso</strong></dt>
+<dd>
+Investigação intensiva de um único indivíduo, grupo ou evento; gera hipóteses, mas não generaliza nem estabelece causa.
+</dd>
+<dt><strong>Delineamento transversal / longitudinal</strong></dt>
+<dd>
+O primeiro compara grupos de idades diferentes num só momento (confunde idade e coorte); o segundo acompanha as mesmas pessoas ao longo do tempo.
+</dd>
+<dt><strong>Efeito de coorte</strong></dt>
+<dd>
+Diferença entre grupos etários atribuível à época em que nasceram, não à idade em si.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Uma correlação entre X e Y vale <span class="math inline">\(-0{,}7\)</span>; outra, entre W e Z, vale <span class="math inline">\(+0{,}4\)</span>. Qual relação é mais forte? O que o sinal negativo informa sobre a primeira? Explique por que sinal e força são independentes.</p></li>
+<li><p><strong>(Recuperação.)</strong> Defina o problema da direcionalidade e o da terceira variável e mostre, com um mesmo exemplo, como cada um bloqueia a conclusão causal de forma diferente.</p></li>
+<li><p><strong>(Aplicação.)</strong> Pesquisadores encontram que adolescentes que passam mais horas em redes sociais relatam mais sintomas depressivos. Ofereça três interpretações causais compatíveis com esse dado (uma para cada história possível) e diga que método do Cap. 14 seria necessário — e por que talvez seja inviável — para decidir entre elas.</p></li>
+<li><p><strong>(Aplicação.)</strong> Você precisa medir preconceito racial numa população. Aponte por que um questionário direto (“você tem preconceito?”) tende a falhar, nomeando o viés envolvido, e proponha uma estratégia de medição que o reduza.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> O caso de Phineas Gage é citado em quase todo livro-texto como prova de que o lobo frontal controla a personalidade. Avalie essa afirmação: o que o caso legitimamente estabeleceu, o que ele apenas sugeriu, e por que a distinção importa para não se cometer o erro clássico dos estudos de caso?</p></li>
+<li><p><strong>(Integração.)</strong> Um estudo transversal conclui que “a felicidade diminui dos 20 aos 60 anos”. Explique por que um efeito de coorte poderia produzir esse resultado mesmo que nenhum indivíduo fique menos feliz ao envelhecer, e descreva o delineamento que separaria as duas explicações.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-curtiss1977" class="csl-entry" role="listitem">
+CURTISS, Susan. <strong>Genie: A Psycholinguistic Study of a Modern-Day "Wild Child"</strong>. New York: Academic Press, 1977.
+</div>
+<div id="ref-harlow1868" class="csl-entry" role="listitem">
+HARLOW, John M. Recovery from the passage of an iron bar through the head. <strong>Publications of the Massachusetts Medical Society</strong>, v. 2, p. 327–347, 1868.
+</div>
+<div id="ref-schwarz1999" class="csl-entry" role="listitem">
+SCHWARZ, Norbert. Self-reports: How the questions shape the answers. <strong>American Psychologist</strong>, v. 54, n. 2, p. 93–105, 1999.
+</div>
+<div id="ref-scoville_milner1957" class="csl-entry" role="listitem">
+SCOVILLE, William B.; MILNER, Brenda. Loss of recent memory after bilateral hippocampal lesions. <strong>Journal of Neurology, Neurosurgery, and Psychiatry</strong>, v. 20, n. 1, p. 11–21, 1957.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1939,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-15-metodos-nao-experimentais.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

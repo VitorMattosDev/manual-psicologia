@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#população-amostra-e-o-vocabulário-da-inferência" id="toc-população-amostra-e-o-vocabulário-da-inferência" class="nav-link active" data-scroll-target="#população-amostra-e-o-vocabulário-da-inferência">População, amostra e o vocabulário da inferência</a></li>
+  <li><a href="#amostragem-probabilística-deixar-o-acaso-escolher" id="toc-amostragem-probabilística-deixar-o-acaso-escolher" class="nav-link" data-scroll-target="#amostragem-probabilística-deixar-o-acaso-escolher">Amostragem probabilística: deixar o acaso escolher</a></li>
+  <li><a href="#amostragem-não-probabilística-quando-o-acaso-não-decide" id="toc-amostragem-não-probabilística-quando-o-acaso-não-decide" class="nav-link" data-scroll-target="#amostragem-não-probabilística-quando-o-acaso-não-decide">Amostragem não-probabilística: quando o acaso não decide</a></li>
+  <li><a href="#as-duas-coisas-que-podem-dar-errado-erro-e-viés" id="toc-as-duas-coisas-que-podem-dar-errado-erro-e-viés" class="nav-link" data-scroll-target="#as-duas-coisas-que-podem-dar-errado-erro-e-viés">As duas coisas que podem dar errado: erro e viés</a></li>
+  <li><a href="#não-resposta-e-o-problema-weird" id="toc-não-resposta-e-o-problema-weird" class="nav-link" data-scroll-target="#não-resposta-e-o-problema-weird">Não-resposta e o problema WEIRD</a></li>
+  <li><a href="#quanto-é-suficiente-tamanho-de-amostra-e-poder" id="toc-quanto-é-suficiente-tamanho-de-amostra-e-poder" class="nav-link" data-scroll-target="#quanto-é-suficiente-tamanho-de-amostra-e-poder">Quanto é suficiente? Tamanho de amostra e poder</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-17-amostragem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,713 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Distinguir</strong> população de amostra e parâmetro de estatística, e explicar por que quase sempre se estuda a segunda para inferir a primeira.</li>
+<li><strong>Diferenciar</strong> amostragem probabilística de não-probabilística e reconhecer os principais tipos de cada uma.</li>
+<li><strong>Separar</strong> dois conceitos que quase todo mundo confunde — erro amostral e viés amostral — e explicar por que aumentar a amostra corrige apenas um deles.</li>
+<li><strong>Identificar</strong> o viés de seleção e o viés de não-resposta em pesquisas reais, incluindo fiascos históricos.</li>
+<li><strong>Explicar</strong> por que uma amostra pequena e aleatória vence uma amostra enorme e enviesada.</li>
+<li><strong>Relacionar</strong> tamanho de amostra, margem de erro e a representatividade limitada das amostras típicas da psicologia (o problema WEIRD).</li>
+</ul>
 </div>
+<p>Toda afirmação científica sobre “as pessoas” enfrenta um problema aritmético brutal: não se pode estudar todas as pessoas. Nenhum psicólogo mediu a memória de todos os seres humanos, nem a ansiedade de todos os brasileiros. O que se faz, sempre, é estudar um punhado e torcer para que o punhado revele algo sobre o todo. Esse salto — do punhado ao todo — é a <strong>amostragem</strong>, e ele é tão decisivo quanto invisível: um estudo com o delineamento mais elegante e a medida mais válida do mundo produz uma conclusão falsa se o punhado for o punhado errado.</p>
+<p>Este capítulo é sobre como escolher o punhado, e sobre por que a maneira de escolher importa mais do que o tamanho. A tese central desafia a intuição: <strong>um número grande não salva uma amostra ruim.</strong> Milhões de respostas colhidas do jeito errado dizem menos sobre a população do que algumas centenas colhidas do jeito certo. Entender por que isso é verdade é entender a diferença entre as duas coisas que podem dar errado ao amostrar.</p>
+<section id="população-amostra-e-o-vocabulário-da-inferência" class="level2">
+<h2 class="anchored" data-anchor-id="população-amostra-e-o-vocabulário-da-inferência">População, amostra e o vocabulário da inferência</h2>
+<p>A <strong>população</strong> é o conjunto completo de indivíduos sobre os quais se quer concluir algo: “os adultos brasileiros”, “as crianças com TDAH”, “os estudantes universitários”. A <strong>amostra</strong> é o subconjunto efetivamente estudado. A lógica inteira da pesquisa quantitativa consiste em medir a amostra para inferir a população.</p>
+<p>A esse duplo há um vocabulário correspondente que convém fixar desde já, porque ele reaparece em toda a estatística inferencial (Cap. 19). Um <strong>parâmetro</strong> é uma característica numérica da <em>população</em> — a verdadeira média de QI de todos os brasileiros, um número que existe mas quase nunca conhecemos. Uma <strong>estatística</strong> é a característica correspondente calculada na <em>amostra</em> — a média de QI dos 500 brasileiros que testamos, um número que conhecemos mas que é apenas uma estimativa do primeiro. Toda a inferência estatística é a arte de usar a estatística (que temos) para dizer algo confiável sobre o parâmetro (que queremos). A qualidade dessa ponte depende inteiramente de como a amostra foi obtida.</p>
+<p>O objetivo que orienta tudo é a <strong>representatividade</strong>: a amostra deve espelhar a população nas características que importam. Se 51% da população é composta de mulheres, uma amostra representativa terá em torno de 51% de mulheres; se a população mistura ricos e pobres, jovens e velhos, a amostra deve conter essa mistura em proporções parecidas. Uma amostra não-representativa deforma sistematicamente a imagem da população — e o pior é que essa deformação não se anuncia: os números saem limpos, com casas decimais e tudo, mentindo com aparência de precisão.</p>
+</section>
+<section id="amostragem-probabilística-deixar-o-acaso-escolher" class="level2">
+<h2 class="anchored" data-anchor-id="amostragem-probabilística-deixar-o-acaso-escolher">Amostragem probabilística: deixar o acaso escolher</h2>
+<p>A maneira mais segura de obter representatividade é, paradoxalmente, abrir mão de escolher. Na <strong>amostragem probabilística</strong>, cada membro da população tem uma probabilidade <em>conhecida e diferente de zero</em> de ser selecionado, e quem entra é decidido por sorteio, não por conveniência nem por julgamento. A virtude do sorteio é a mesma que o Cap. 14 celebrou na atribuição aleatória: ele não tem preferências, e por isso não introduz vieses sistemáticos. Há quatro modalidades principais.</p>
+<p>Na <strong>amostragem aleatória simples</strong>, sorteia-se cada indivíduo diretamente da população inteira, como quem tira nomes de um chapéu. É o ideal teórico — todo mundo com a mesma chance —, mas exige uma lista completa da população, coisa rara.</p>
+<p>Na <strong>amostragem sistemática</strong>, ordena-se a população e seleciona-se a cada <em>k</em>-ésimo indivíduo (a cada 20º nome de um cadastro, por exemplo), depois de um ponto de partida sorteado. É prática, mas perigosa se a lista tiver algum padrão periódico oculto que coincida com o intervalo.</p>
+<p>Na <strong>amostragem estratificada</strong>, divide-se a população em subgrupos relevantes (estratos) — faixas etárias, regiões, sexos — e sorteia-se dentro de cada um, em proporção ao seu tamanho. Ela <em>garante</em> que a mistura da população apareça na amostra, em vez de apenas confiar que o sorteio a produza, e por isso costuma ser mais precisa que a aleatória simples para o mesmo tamanho.</p>
+<p>Na <strong>amostragem por conglomerados</strong> (<em>cluster</em>), sorteiam-se grupos inteiros já existentes — escolas, bairros, municípios — e estudam-se todos (ou uma amostra) dos que caírem no sorteio. É a mais econômica quando a população está dispersa geograficamente, ao custo de alguma precisão, pois membros de um mesmo conglomerado tendem a se parecer.</p>
+<div class="na-pratica">
+<p><strong>O que significa “margem de erro de 2 pontos”.</strong> Quando uma pesquisa eleitoral séria diz “candidato X tem 40%, margem de erro de 2 pontos, 95% de confiança”, ela está fazendo uma afirmação probabilística honesta, só possível porque a amostra foi <em>probabilística</em>. A tradução: se a pesquisa fosse repetida muitas vezes, em cerca de 95% delas o intervalo de 38% a 42% conteria o verdadeiro apoio de X na população. A margem de erro quantifica o <strong>erro amostral</strong> (adiante) e encolhe conforme a amostra cresce — mas só existe, e só faz sentido, quando cada eleitor teve chance conhecida de ser sorteado. Uma “enquete” de site que recebeu um milhão de cliques não tem margem de erro calculável, por mais gente que a responda: sem sorteio, não há teoria que ligue o resultado à população. O número enorme é publicidade, não precisão.</p>
+</div>
+</section>
+<section id="amostragem-não-probabilística-quando-o-acaso-não-decide" class="level2">
+<h2 class="anchored" data-anchor-id="amostragem-não-probabilística-quando-o-acaso-não-decide">Amostragem não-probabilística: quando o acaso não decide</h2>
+<p>Na prática, a maior parte da pesquisa psicológica <em>não</em> usa amostragem probabilística — obtê-la é caro e muitas vezes inviável. Recorre-se então à <strong>amostragem não-probabilística</strong>, em que a seleção depende de acessibilidade ou julgamento, e a probabilidade de cada indivíduo entrar é desconhecida. Suas formas:</p>
+<ul>
+<li><strong>Amostragem por conveniência:</strong> estuda-se quem está à mão — tipicamente, os calouros de psicologia que precisam de créditos de participação. É de longe a mais comum, e a mais frágil: não há razão para supor que quem está à mão represente a população geral <span class="citation" data-cites="sears1986">(<a href="../../referencias.html#ref-sears1986" role="doc-biblioref">Sears, 1986</a>)</span>.</li>
+<li><strong>Amostragem por cotas:</strong> o pesquisador preenche cotas de subgrupos (tantos homens, tantas mulheres) sem sortear dentro delas — busca-se a mistura certa, mas por conveniência, não por sorteio. É a versão não-probabilística da estratificada.</li>
+<li><strong>Amostragem tipo bola de neve</strong> (<em>snowball</em>): cada participante indica outros. Indispensável para populações difíceis de alcançar (usuários de certas drogas, imigrantes indocumentados), mas enviesada por construção, já que amigos indicam amigos parecidos.</li>
+<li><strong>Amostragem por autosseleção</strong> (voluntária): as pessoas decidem participar por conta própria, respondendo a um anúncio ou a uma enquete aberta. Quem se voluntaria difere sistematicamente de quem não se voluntaria — em interesse pelo tema, em opinião, em traços de personalidade —, o que a torna especialmente traiçoeira.</li>
+</ul>
+<p>Isso não condena a amostragem não-probabilística ao lixo. Para muitos fins da psicologia experimental — testar se uma manipulação <em>causa</em> um efeito —, ela é aceitável, porque o interesse recai na <em>relação</em> entre variáveis, presumidamente geral, não na <em>frequência</em> de algo na população. Mas para <em>estimar</em> quão comum é um fenômeno (“que porcentagem de brasileiros sofre de insônia?”), ela é fatal. A distinção entre esses dois objetivos — entender uma relação versus estimar uma quantidade — decide se uma amostra de conveniência é tolerável ou desqualificadora.</p>
+</section>
+<section id="as-duas-coisas-que-podem-dar-errado-erro-e-viés" class="level2">
+<h2 class="anchored" data-anchor-id="as-duas-coisas-que-podem-dar-errado-erro-e-viés">As duas coisas que podem dar errado: erro e viés</h2>
+<p>Aqui está o conceito mais importante do capítulo, e o mais mal compreendido. Uma amostra pode errar sobre a população de duas maneiras radicalmente diferentes.</p>
+<p>O <strong>erro amostral</strong> é a flutuação aleatória inevitável de qualquer amostra: mesmo com sorteio perfeito, uma amostra dificilmente reproduz a população <em>exatamente</em>, por puro acaso. Uma amostra aleatória de 100 brasileiros pode sair com 54% de mulheres em vez de 51%, sem que nada tenha sido feito de errado. A característica salvadora do erro amostral é que ele é <strong>aleatório</strong> — ora para mais, ora para menos — e, por isso, <strong>encolhe conforme a amostra aumenta</strong>. Quanto mais gente, menos margem para o acaso desviar a estimativa. É esse erro que a margem de erro quantifica e que amostras maiores reduzem.</p>
+<p>O <strong>viés amostral</strong> (ou viés de seleção) é outra coisa inteiramente: um erro <strong>sistemático</strong> que empurra a estimativa sempre na mesma direção, porque o método de seleção favorece certos tipos de indivíduo. E aqui está o ponto que muda tudo: <strong>o viés não encolhe com o tamanho da amostra.</strong> Se o método exclui sistematicamente os pobres, incluir mais gente pelo mesmo método só acrescenta mais não-pobres — a estimativa fica igualmente torta, agora com falsa precisão. Aumentar uma amostra enviesada é aumentar o erro com mais confiança. A <a href="#fig-erro-vies" class="quarto-xref">Figura&nbsp;<span>17.1</span></a> contrasta os dois.</p>
+<div id="fig-erro-vies" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-erro-vies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Diagrama com uma população à esquerda e duas amostras à direita. A população é um círculo grande contendo pontos azuis e vermelhos em proporção equilibrada. Uma seta &quot;sorteio (probabilística)&quot; leva a uma amostra representativa, com a mesma proporção de azuis e vermelhos. Outra seta &quot;seleção enviesada&quot; leva a uma amostra distorcida, quase toda de pontos azuis, indicando sub-representação dos vermelhos." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="287.096259pt" height="192.630496pt" viewbox="-68.014948 -68.014949 287.096259 192.630496">
+<defs>
+<path id="tz_erro_vies_g0-97" d="M3.682192-2.057285C3.682192-2.629141 3.221918-3.159153 1.966625-3.159153C1.562142-3.159153 .585803-3.159153 .585803-2.468742C.585803-2.161893 .808966-1.980573 1.066999-1.980573C1.373848-1.980573 1.555168-2.196762 1.555168-2.461768C1.555168-2.615193 1.492403-2.719801 1.471482-2.740722C1.457534-2.761644 1.45056-2.775592 1.45056-2.789539C1.45056-2.824408 1.896887-2.838356 1.945704-2.838356C2.433873-2.838356 2.796513-2.643088 2.796513-2.050311V-1.862017C2.454795-1.862017 .285928-1.834122 .285928-.801993C.285928-.153425 1.053051 .041843 1.750436 .041843C2.489664 .041843 2.817435-.292902 2.93599-.474222C2.93599-.174346 3.124284 0 3.696139 0H4.107597C4.2401 0 4.351681 0 4.351681-.195268S4.247073-.390535 4.100623-.390535C3.682192-.390535 3.682192-.446326 3.682192-.606725V-2.057285ZM2.796513-.955417C2.796513-.808966 2.796513-.606725 2.524533-.439352C2.259527-.278954 1.931756-.278954 1.889913-.278954C1.499377-.278954 1.164633-.495143 1.164633-.808966C1.164633-1.380822 2.099128-1.569116 2.796513-1.590037V-.955417Z"></path>
+<path id="tz_erro_vies_g0-100" d="M2.84533-4.78406V-4.393524C3.256787-4.393524 3.312578-4.393524 3.312578-4.121544V-2.84533C2.880199-3.110336 2.489664-3.138232 2.259527-3.138232C1.011208-3.138232 .327771-2.426899 .327771-1.54122C.327771-.676463 .976339 .041843 2.168867 .041843C2.615193 .041843 2.984807-.097634 3.263761-.292902V.041843L4.616687 0V-.390535C4.20523-.390535 4.14944-.390535 4.14944-.662516V-4.839851L2.84533-4.78406ZM3.263761-.808966C3.103362-.578829 2.761644-.278954 2.252553-.278954C1.297136-.278954 1.297136-1.115816 1.297136-1.527273C1.297136-1.959651 1.297136-2.817435 2.343213-2.817435C2.929016-2.817435 3.242839-2.426899 3.263761-2.399004V-.808966Z"></path>
+<path id="tz_erro_vies_g0-101" d="M3.598506-1.45056C3.744956-1.45056 3.84259-1.45056 3.84259-1.659776C3.84259-1.862017 3.793773-2.385056 3.459029-2.726775C3.082441-3.103362 2.566376-3.159153 2.182814-3.159153C.892653-3.159153 .278954-2.39203 .278954-1.569116C.278954-.739228 .920548 .041843 2.30137 .041843C2.552428 .041843 2.956912 .013948 3.305604-.174346C3.717061-.390535 3.84259-.72528 3.84259-.795019C3.84259-.948443 3.689166-.948443 3.619427-.948443C3.493898-.948443 3.459029-.941469 3.403238-.829888C3.152179-.313823 2.517559-.313823 2.399004-.313823C1.297136-.313823 1.262267-1.129763 1.248319-1.45056H3.598506ZM1.248319-1.743462C1.255293-2.015442 1.290162-2.838356 2.189788-2.838356S3.138232-2.043337 3.152179-1.743462H1.248319Z"></path>
+<path id="tz_erro_vies_g0-105" d="M1.827148-4.274969C1.827148-4.609714 1.555168-4.846824 1.262267-4.846824C.927522-4.846824 .690411-4.574844 .690411-4.281943C.690411-3.947198 .962391-3.710087 1.255293-3.710087C1.590037-3.710087 1.827148-3.982067 1.827148-4.274969ZM.488169-3.082441V-2.691905C.885679-2.691905 .934496-2.691905 .934496-2.419925V-.390535H.467248V0C.481196 0 1.03213-.027895 1.345953-.027895C1.63188-.027895 1.910834-.020922 2.196762 0V-.390535H1.771357V-3.138232L.488169-3.082441Z"></path>
+<path id="tz_erro_vies_g0-109" d="M6.750685-2.099128C6.750685-2.970859 6.171856-3.138232 5.558157-3.138232C4.888667-3.138232 4.463263-2.824408 4.233126-2.48269C4.05878-3.089415 3.459029-3.138232 3.082441-3.138232C2.245579-3.138232 1.84807-2.650062 1.708593-2.412951V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.390535H.446326V0C.4533 0 1.018182-.027895 1.352927-.027895C1.694645-.027895 2.259527 0 2.266501 0V-.390535H1.799253V-1.736488C1.799253-2.559402 2.545455-2.817435 2.942964-2.817435C3.256787-2.817435 3.38929-2.66401 3.38929-2.147945V-.390535H2.922042V0C2.929016 0 3.493898-.027895 3.828643-.027895C4.170361-.027895 4.735243 0 4.742217 0V-.390535H4.274969V-1.736488C4.274969-2.559402 5.021171-2.817435 5.41868-2.817435C5.732503-2.817435 5.865006-2.66401 5.865006-2.147945V-.390535H5.397758V0C5.404732 0 5.969614-.027895 6.304359-.027895C6.646077-.027895 7.210959 0 7.217933 0V-.390535H6.750685V-2.099128Z"></path>
+<path id="tz_erro_vies_g0-110" d="M4.267995-2.099128C4.267995-2.956912 3.717061-3.138232 3.075467-3.138232C2.231631-3.138232 1.841096-2.636115 1.708593-2.412951V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.390535H.446326V0C.4533 0 1.018182-.027895 1.352927-.027895C1.694645-.027895 2.259527 0 2.266501 0V-.390535H1.799253V-1.736488C1.799253-2.545455 2.524533-2.817435 2.942964-2.817435C3.249813-2.817435 3.382316-2.657036 3.382316-2.154919V-.390535H2.915068V0C2.922042 0 3.486924-.027895 3.821669-.027895C4.163387-.027895 4.728269 0 4.735243 0V-.390535H4.267995V-2.099128Z"></path>
+<path id="tz_erro_vies_g0-111" d="M4.226152-1.520299C4.226152-2.350187 3.619427-3.159153 2.252553-3.159153C.871731-3.159153 .278954-2.343213 .278954-1.520299C.278954-.704359 .899626 .041843 2.252553 .041843C3.612453 .041843 4.226152-.711333 4.226152-1.520299ZM2.252553-.313823C1.248319-.313823 1.248319-1.004234 1.248319-1.603985C1.248319-2.161893 1.248319-2.838356 2.252553-2.838356S3.256787-2.161893 3.256787-1.603985C3.256787-1.004234 3.256787-.313823 2.252553-.313823Z"></path>
+<path id="tz_erro_vies_g0-112" d="M2.203736 .962391H1.736488V-.258032C1.910834-.139477 2.252553 .041843 2.740722 .041843C3.940224 .041843 4.672478-.63462 4.672478-1.555168C4.672478-2.399004 4.065753-3.138232 2.880199-3.138232C2.517559-3.138232 2.092154-3.068493 1.687671-2.817435V-3.138232L.383562-3.082441V-2.691905C.502117-2.691905 .641594-2.691905 .732254-2.677958C.850809-2.657036 .850809-2.580324 .850809-2.447821V.962391H.383562V1.352927C.390535 1.352927 .955417 1.325031 1.290162 1.325031C1.63188 1.325031 2.196762 1.352927 2.203736 1.352927V.962391ZM1.736488-2.231631C1.736488-2.364134 1.743462-2.371108 1.841096-2.461768C2.175841-2.75467 2.587298-2.782565 2.733748-2.782565C3.326526-2.782565 3.703113-2.308344 3.703113-1.555168C3.703113-.648568 3.180075-.278954 2.650062-.278954S1.820174-.655542 1.736488-.774097V-2.231631Z"></path>
+<path id="tz_erro_vies_g0-114" d="M1.687671-1.464508C1.687671-2.092154 1.973599-2.782565 2.601245-2.817435C2.594271-2.810461 2.503611-2.691905 2.503611-2.517559C2.503611-2.245579 2.698879-2.043337 2.977833-2.043337S3.452055-2.245579 3.452055-2.517559C3.452055-2.901121 3.061519-3.138232 2.629141-3.138232C2.127024-3.138232 1.792279-2.803487 1.603985-2.371108H1.597011V-3.138232L.383562-3.082441V-2.691905C.795019-2.691905 .850809-2.691905 .850809-2.419925V-.390535H.383562V0C.411457 0 .948443-.027895 1.276214-.027895C1.548194-.027895 2.224658 0 2.273474 0V-.390535H1.687671V-1.464508Z"></path>
+<path id="tz_erro_vies_g0-115" d="M3.012702-2.93599C3.012702-3.075467 3.012702-3.159153 2.84533-3.159153C2.796513-3.159153 2.775592-3.159153 2.66401-3.103362C2.650062-3.096389 2.559402-3.054545 2.531507-3.054545C2.524533-3.054545 2.510585-3.054545 2.48269-3.068493C2.196762-3.159153 1.903861-3.159153 1.75741-3.159153C1.555168-3.159153 1.129763-3.159153 .781071-2.970859C.383562-2.747696 .327771-2.385056 .327771-2.224658C.327771-1.471482 1.248319-1.332005 1.736488-1.255293C2.161893-1.192528 2.670984-1.115816 2.670984-.753176C2.670984-.278954 1.980573-.278954 1.8132-.278954C1.150685-.278954 .9066-.578829 .774097-.955417C.732254-1.073973 .72528-1.08792 .550934-1.08792C.348692-1.08792 .327771-1.066999 .327771-.864757V-.18132C.327771-.041843 .327771 .041843 .488169 .041843C.550934 .041843 .564882 .041843 .711333-.048817C.753176-.069738 .864757-.132503 .9066-.160399C1.26924 .041843 1.645828 .041843 1.806227 .041843C2.036364 .041843 3.235866 .041843 3.235866-.990286C3.235866-1.311083 3.068493-1.534247 2.908095-1.66675C2.580324-1.93873 2.280448-1.987547 1.701619-2.078207C1.30411-2.140971 .892653-2.203736 .892653-2.48269C.892653-2.873225 1.590037-2.873225 1.736488-2.873225C2.524533-2.873225 2.552428-2.552428 2.57335-2.385056C2.587298-2.245579 2.629141-2.231631 2.789539-2.231631C2.991781-2.231631 3.012702-2.252553 3.012702-2.454795V-2.93599Z"></path>
+<path id="tz_erro_vies_g0-116" d="M1.708593-2.705853H2.84533V-3.096389H1.708593V-4.428394H1.26924C1.262267-3.779826 .934496-3.047572 .195268-3.02665V-2.705853H.822914V-.843836C.822914-.153425 1.387796 .041843 1.994521 .041843C2.545455 .041843 2.991781-.278954 2.991781-.843836V-1.206476H2.552428V-.871731C2.552428-.390535 2.259527-.313823 2.12005-.313823C1.715567-.313823 1.708593-.655542 1.708593-.843836V-2.705853Z"></path>
+<path id="tz_erro_vies_g0-118" d="M3.996015-2.587298C4.044832-2.677958 4.051806-2.684932 4.198257-2.698879C4.281943-2.705853 4.456289-2.705853 4.505106-2.705853V-3.096389C4.288917-3.082441 4.142466-3.068493 3.919303-3.068493C3.710087-3.068493 3.438107-3.075467 3.228892-3.096389V-2.705853C3.410212-2.705853 3.452055-2.691905 3.535741-2.66401L2.601245-.829888L1.645828-2.705853H1.973599V-3.096389C1.673724-3.082441 1.366874-3.068493 1.066999-3.068493C.795019-3.068493 .523039-3.075467 .251059-3.096389V-2.705853H.704359L2.008468-.153425C2.099128 .027895 2.168867 .041843 2.378082 .041843S2.650062 .027895 2.747696-.153425L3.996015-2.587298Z"></path>
+<path id="tz_erro_vies_g1-24" d="M3.174097 .107597H2.125031V.546949C2.492653 .546949 3.003736 .609714 3.003736 .995268C3.003736 1.452553 1.95467 1.452553 1.596015 1.452553H1.23736V1.811208H1.766376C4.052802 1.811208 4.052802 1.219427 4.052802 .986301C4.052802 .52005 3.676214 .331756 3.174097 .242092V.107597Z"></path>
+<path id="tz_erro_vies_g1-80" d="M2.645081-2.680946H4.294894C5.577086-2.680946 6.644085-3.335492 6.644085-4.393524C6.644085-5.379826 5.738481-6.150934 4.20523-6.150934H.376588V-5.711582H1.344956V-.439352H.376588V0C.690411-.026899 1.622914-.026899 1.990535-.026899S3.299626-.026899 3.61345 0V-.439352H2.645081V-2.680946ZM3.864508-5.711582C5.236364-5.711582 5.236364-5.030137 5.236364-4.393524C5.236364-3.765878 5.236364-3.075467 3.855542-3.075467H2.591283V-5.711582H3.864508Z"></path>
+<path id="tz_erro_vies_g1-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_erro_vies_g1-99" d="M4.411457-1.0401C4.411457-1.183562 4.276961-1.183562 4.178331-1.183562C3.999004-1.183562 3.999004-1.174595 3.927273-1.0132C3.747945-.582814 3.344458-.331756 2.815442-.331756C1.542217-.331756 1.542217-1.622914 1.542217-2.026401C1.542217-2.564384 1.551183-3.676214 2.725778-3.676214C2.788543-3.676214 3.272727-3.667248 3.272727-3.622416C3.272727-3.61345 3.254795-3.58655 3.245828-3.577584C3.165131-3.478954 3.129265-3.335492 3.129265-3.209963C3.129265-2.842341 3.407223-2.627148 3.71208-2.627148C3.990037-2.627148 4.294894-2.815442 4.294894-3.218929C4.294894-4.061768 3.039601-4.061768 2.689913-4.061768C.968369-4.061768 .349689-2.96787 .349689-1.990535C.349689-.860772 1.156663 .053798 2.645081 .053798C2.976837 .053798 3.416189 0 3.792777-.233126C4.303861-.546949 4.411457-1.0132 4.411457-1.0401Z"></path>
+<path id="tz_erro_vies_g1-108" d="M2.071233-6.222665L.466252-6.150934V-5.711582C1.004234-5.711582 1.075965-5.711582 1.075965-5.361893V-.439352H.466252V0C1.075965-.026899 1.183562-.026899 1.569116-.026899C1.963636-.026899 2.196762-.017933 2.680946 0V-.439352H2.071233V-6.222665Z"></path>
+<path id="tz_erro_vies_g1-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_erro_vies_g1-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_erro_vies_g1-117" d="M3.380324-3.963138V-3.523786C3.918306-3.523786 3.990037-3.523786 3.990037-3.174097V-1.470486C3.990037-.753176 3.523786-.304857 2.833375-.304857S2.107098-.502117 2.107098-.977335V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-1.102864C1.058032-.125529 1.829141 .053798 2.698879 .053798C2.976837 .053798 3.58655 .053798 4.043836-.61868V.053798L5.648817 0V-.439352C5.110834-.439352 5.039103-.439352 5.039103-.789041V-4.034869L3.380324-3.963138Z"></path>
+<path id="tz_erro_vies_g1-126" d="M4.151432-6.222665C3.936239-5.989539 3.694147-5.890909 3.443088-5.890909C3.245828-5.890909 3.039601-5.944707 2.689913-6.070237C2.411955-6.177833 2.196762-6.222665 2.035367-6.222665C1.649813-6.222665 1.488418-6.052304 1.129763-5.693649C1.049066-5.603985 .932503-5.478456 .887671-5.433624L1.147696-5.182565C1.362889-5.415691 1.604981-5.514321 1.85604-5.514321C2.0533-5.514321 2.259527-5.460523 2.609215-5.334994C2.887173-5.227397 3.102366-5.182565 3.263761-5.182565C3.649315-5.182565 3.81071-5.352927 4.169365-5.711582C4.250062-5.801245 4.366625-5.926775 4.411457-5.971606L4.151432-6.222665Z"></path>
+<path id="tz_erro_vies_g2-24" d="M2.259527 .139477H1.708593V.481196C2.175841 .488169 2.350187 .662516 2.350187 .850809C2.350187 1.12279 1.987547 1.227397 1.311083 1.227397H1.060025V1.422665H1.401743C1.408717 1.422665 1.966625 1.422665 2.322291 1.345953C2.608219 1.283188 2.901121 1.164633 2.901121 .850809C2.901121 .571856 2.691905 .390535 2.259527 .320797V.139477Z"></path>
+<path id="tz_erro_vies_g2-97" d="M3.110336-1.868991C3.110336-2.238605 3.110336-2.503611 2.789539-2.761644C2.503611-2.998755 2.168867-3.110336 1.75741-3.110336C1.094894-3.110336 .627646-2.859278 .627646-2.433873C.627646-2.21071 .781071-2.092154 .962391-2.092154C1.150685-2.092154 1.290162-2.231631 1.290162-2.419925C1.290162-2.538481 1.234371-2.684932 1.046077-2.740722C1.297136-2.915068 1.701619-2.915068 1.743462-2.915068C2.133998-2.915068 2.559402-2.657036 2.559402-2.071233V-1.855044C2.175841-1.841096 1.715567-1.820174 1.206476-1.63188C.578829-1.401743 .383562-1.018182 .383562-.704359C.383562-.104608 1.108842 .069738 1.603985 .069738C2.161893 .069738 2.489664-.244085 2.636115-.516065C2.66401-.230137 2.852304 .034869 3.173101 .034869C3.187049 .034869 3.863512 .034869 3.863512-.627646V-1.011208H3.626401V-.63462C3.626401-.564882 3.626401-.230137 3.368369-.230137S3.110336-.557908 3.110336-.648568V-1.868991ZM2.559402-.983313C2.559402-.313823 1.973599-.125529 1.659776-.125529C1.30411-.125529 .969365-.36264 .969365-.704359C.969365-1.08792 1.30411-1.624907 2.559402-1.673724V-.983313Z"></path>
+<path id="tz_erro_vies_g2-99" d="M2.712827-2.782565C2.587298-2.726775 2.517559-2.615193 2.517559-2.475716C2.517559-2.287422 2.650062-2.147945 2.84533-2.147945C3.033624-2.147945 3.180075-2.266501 3.180075-2.489664C3.180075-3.110336 2.21071-3.110336 2.015442-3.110336C.969365-3.110336 .320797-2.308344 .320797-1.506351C.320797-.627646 1.066999 .069738 1.980573 .069738C3.019676 .069738 3.263761-.753176 3.263761-.836862S3.173101-.920548 3.145205-.920548C3.054545-.920548 3.047572-.899626 3.012702-.801993C2.859278-.369614 2.489664-.153425 2.064259-.153425C1.583064-.153425 .955417-.509091 .955417-1.513325C.955417-2.399004 1.387796-2.887173 2.036364-2.887173C2.127024-2.887173 2.461768-2.887173 2.712827-2.782565Z"></path>
+<path id="tz_erro_vies_g2-100" d="M2.48269-4.763138V-4.51208C2.949938-4.51208 3.005729-4.463263 3.005729-4.121544V-2.677958C2.747696-2.929016 2.412951-3.075467 2.02939-3.075467C1.101868-3.075467 .320797-2.378082 .320797-1.499377C.320797-.627646 1.060025 .069738 1.945704 .069738C2.517559 .069738 2.859278-.237111 2.977833-.36264V.069738L4.051806 0V-.251059C3.584558-.251059 3.528767-.299875 3.528767-.641594V-4.839851L2.48269-4.763138ZM2.977833-.732254C2.796513-.404483 2.440847-.125529 1.987547-.125529C1.597011-.125529 1.318057-.355666 1.17858-.557908C1.039103-.767123 .955417-1.046077 .955417-1.492403C.955417-1.652802 .955417-2.175841 1.241345-2.503611C1.520299-2.817435 1.862017-2.880199 2.064259-2.880199C2.399004-2.880199 2.698879-2.726775 2.894147-2.475716C2.977833-2.364134 2.977833-2.357161 2.977833-2.224658V-.732254Z"></path>
+<path id="tz_erro_vies_g2-101" d="M3.068493-1.590037C3.214944-1.590037 3.263761-1.590037 3.263761-1.743462C3.263761-2.357161 2.922042-3.110336 1.882939-3.110336C.969365-3.110336 .27198-2.385056 .27198-1.527273C.27198-.641594 1.046077 .069738 1.973599 .069738C2.915068 .069738 3.263761-.683437 3.263761-.836862C3.263761-.864757 3.249813-.934496 3.145205-.934496C3.054545-.934496 3.040598-.892653 3.019676-.822914C2.803487-.258032 2.273474-.153425 2.022416-.153425C1.694645-.153425 1.380822-.299875 1.171606-.564882C.913574-.892653 .9066-1.318057 .9066-1.590037H3.068493ZM.913574-1.771357C.990286-2.75467 1.617933-2.915068 1.882939-2.915068C2.740722-2.915068 2.768618-1.945704 2.775592-1.771357H.913574Z"></path>
+<path id="tz_erro_vies_g2-105" d="M1.471482-4.302864C1.471482-4.505106 1.30411-4.700374 1.066999-4.700374C.857783-4.700374 .669489-4.533001 .669489-4.302864C.669489-4.051806 .871731-3.898381 1.066999-3.898381C1.290162-3.898381 1.471482-4.072727 1.471482-4.302864ZM.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467L.411457-2.998755Z"></path>
+<path id="tz_erro_vies_g2-108" d="M1.436613-4.839851L.390535-4.763138V-4.51208C.857783-4.51208 .913574-4.463263 .913574-4.121544V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.436613-.027895 1.694645-.020922 1.959651 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.550934V-4.839851Z"></path>
+<path id="tz_erro_vies_g2-110" d="M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z"></path>
+<path id="tz_erro_vies_g2-111" d="M3.689166-1.48543C3.689166-2.357161 2.942964-3.110336 1.980573-3.110336S.27198-2.357161 .27198-1.48543C.27198-.620672 1.039103 .069738 1.980573 .069738S3.689166-.620672 3.689166-1.48543ZM1.980573-.153425C1.72254-.153425 1.345953-.237111 1.115816-.578829C.927522-.864757 .9066-1.227397 .9066-1.548194C.9066-1.84807 .913574-2.259527 1.157659-2.559402C1.332005-2.761644 1.624907-2.915068 1.980573-2.915068C2.39203-2.915068 2.684932-2.719801 2.838356-2.503611C3.033624-2.231631 3.054545-1.882939 3.054545-1.548194S3.033624-.843836 2.831382-.557908C2.643088-.292902 2.322291-.153425 1.980573-.153425Z"></path>
+<path id="tz_erro_vies_g2-114" d="M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z"></path>
+<path id="tz_erro_vies_g2-115" d="M2.643088-2.929016C2.643088-3.047572 2.643088-3.110336 2.545455-3.110336C2.510585-3.110336 2.496638-3.110336 2.405978-3.02665C2.39203-3.019676 2.322291-2.956912 2.280448-2.922042C2.071233-3.068493 1.806227-3.110336 1.548194-3.110336C.550934-3.110336 .313823-2.587298 .313823-2.238605C.313823-2.015442 .411457-1.834122 .578829-1.694645C.843836-1.464508 1.108842-1.415691 1.54122-1.345953C1.889913-1.283188 2.454795-1.185554 2.454795-.718306C2.454795-.446326 2.266501-.125529 1.597011-.125529S.683437-.564882 .557908-1.039103C.536986-1.129763 .530012-1.157659 .432379-1.157659C.313823-1.157659 .313823-1.108842 .313823-.969365V-.111582C.313823 .006974 .313823 .069738 .411457 .069738C.474222 .069738 .606725-.076712 .746202-.230137C1.053051 .055791 1.429639 .069738 1.597011 .069738C2.503611 .069738 2.838356-.418431 2.838356-.913574C2.838356-1.17858 2.719801-1.387796 2.538481-1.555168C2.273474-1.799253 1.952677-1.855044 1.708593-1.896887C1.150685-1.994521 .697385-2.078207 .697385-2.447821C.697385-2.670984 .885679-2.942964 1.548194-2.942964C2.357161-2.942964 2.39203-2.378082 2.405978-2.175841C2.412951-2.099128 2.496638-2.099128 2.524533-2.099128C2.643088-2.099128 2.643088-2.147945 2.643088-2.280448V-2.929016Z"></path>
+<path id="tz_erro_vies_g2-116" d="M1.401743-2.75467H2.489664V-3.005729H1.401743V-4.288917H1.164633C1.157659-3.66127 .871731-2.970859 .202242-2.949938V-2.75467H.850809V-.871731C.850809-.09066 1.436613 .069738 1.827148 .069738C2.294396 .069738 2.615193-.327771 2.615193-.878705V-1.262267H2.378082V-.885679C2.378082-.411457 2.154919-.153425 1.882939-.153425C1.401743-.153425 1.401743-.739228 1.401743-.864757V-2.75467Z"></path>
+<path id="tz_erro_vies_g2-118" d="M3.305604-2.322291C3.500872-2.747696 3.849564-2.75467 3.961146-2.75467V-3.005729C3.7868-2.991781 3.605479-2.977833 3.431133-2.977833C3.242839-2.977833 2.984807-2.984807 2.796513-3.005729V-2.75467C3.089415-2.740722 3.089415-2.510585 3.089415-2.489664C3.089415-2.454795 3.082441-2.385056 3.033624-2.287422L2.245579-.564882L1.380822-2.461768C1.380822-2.468742 1.338979-2.545455 1.338979-2.594271C1.338979-2.75467 1.57609-2.75467 1.694645-2.75467V-3.005729C1.680697-3.005729 1.185554-2.977833 .899626-2.977833C.690411-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.599751-2.75467 .683437-2.740722 .788045-2.503611L1.889913-.076712C1.924782 .006974 1.966625 .069738 2.085181 .069738C2.217684 .069738 2.245579 .006974 2.280448-.069738L3.305604-2.322291Z"></path>
+<path id="tz_erro_vies_g2-126" d="M3.124284-4.6934C2.922042-4.47721 2.719801-4.372603 2.524533-4.372603C2.343213-4.372603 2.133998-4.47721 2.078207-4.51208C1.827148-4.630635 1.680697-4.6934 1.527273-4.6934C1.241345-4.6934 1.136737-4.581818 .697385-4.135492L.836862-3.996015C1.039103-4.212204 1.241345-4.316812 1.436613-4.316812C1.617933-4.316812 1.827148-4.212204 1.882939-4.177335C2.133998-4.05878 2.280448-3.996015 2.433873-3.996015C2.719801-3.996015 2.824408-4.107597 3.263761-4.553923L3.124284-4.6934Z"></path>
+</defs>
+<g id="tz_erro_vies_page1">
+<g stroke-miterlimit="10" transform="translate(-10.92356,27.221893)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M56.90549 0C56.90549 31.42844 31.42844 56.90549 0 56.90549S-56.90549 31.42844-56.90549 0S-31.42844-56.90549 0-56.90549S56.90549-31.42844 56.90549 0ZM0 0" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-23.75244,66.0364)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-10.92356" y="27.221893" href="#tz_erro_vies_g1-80"></use>
+<use x="-3.973334" y="27.221893" href="#tz_erro_vies_g1-111"></use>
+<use x="1.331708" y="27.221893" href="#tz_erro_vies_g1-112"></use>
+<use x="7.226197" y="27.221893" href="#tz_erro_vies_g1-117"></use>
+<use x="13.120685" y="27.221893" href="#tz_erro_vies_g1-108"></use>
+<use x="16.067933" y="27.221893" href="#tz_erro_vies_g1-97"></use>
+<use x="21.225607" y="27.221893" href="#tz_erro_vies_g1-24"></use>
+<use x="21.22561" y="27.221893" href="#tz_erro_vies_g1-99"></use>
+<use x="25.867508" y="27.221893" href="#tz_erro_vies_g1-126"></use>
+<use x="25.941206" y="27.221893" href="#tz_erro_vies_g1-97"></use>
+<use x="31.09888" y="27.221893" href="#tz_erro_vies_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M-26.47276 17.07181C-26.47276 18.16533-27.35922 19.05179-28.45274 19.05179S-30.43272 18.16533-30.43272 17.07181S-29.54626 15.09183-28.45274 15.09183S-26.47276 15.97829-26.47276 17.07181ZM-28.45274 17.07181" stroke="none"></path>
+</g>
+<g transform="translate(-28.45274,17.07181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M-9.40094 31.29819C-9.40094 32.39171-10.2874 33.27817-11.38092 33.27817S-13.3609 32.39171-13.3609 31.29819S-12.47444 29.3182-11.38092 29.3182S-9.40094 30.20467-9.40094 31.29819ZM-11.38092 31.29819" stroke="none"></path>
+</g>
+<g transform="translate(-11.38092,31.29819)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M10.51588 22.76227C10.51588 23.85579 9.62943 24.74225 8.5359 24.74225C7.44238 24.74225 6.55592 23.85579 6.55592 22.76227S7.44238 20.78229 8.5359 20.78229C9.62943 20.78229 10.51588 21.66875 10.51588 22.76227ZM8.5359 22.76227" stroke="none"></path>
+</g>
+<g transform="translate(8.5359,22.76227)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M30.43272 14.22636C30.43272 15.31989 29.54626 16.20634 28.45274 16.20634S26.47276 15.31989 26.47276 14.22636C26.47276 13.13284 27.35922 12.24638 28.45274 12.24638S30.43272 13.13284 30.43272 14.22636ZM28.45274 14.22636" stroke="none"></path>
+</g>
+<g transform="translate(28.45274,14.22636)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M-29.3182-8.5359C-29.3182-7.44238-30.20467-6.55592-31.29819-6.55592S-33.27817-7.44238-33.27817-8.5359C-33.27817-9.62943-32.39171-10.51588-31.29819-10.51588S-29.3182-9.62943-29.3182-8.5359ZM-31.29819-8.5359" stroke="none"></path>
+</g>
+<g transform="translate(-31.29819,-8.5359)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M-12.24638-25.60728C-12.24638-24.51376-13.13284-23.6273-14.22636-23.6273C-15.31989-23.6273-16.20634-24.51376-16.20634-25.60728S-15.31989-27.58727-14.22636-27.58727C-13.13284-27.58727-12.24638-26.7008-12.24638-25.60728ZM-14.22636-25.60728" stroke="none"></path>
+</g>
+<g transform="translate(-14.22636,-25.60728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M7.67044-14.22636C7.67044-13.13284 6.78398-12.24638 5.69046-12.24638S3.71048-13.13284 3.71048-14.22636C3.71048-15.31989 4.59694-16.20634 5.69046-16.20634S7.67044-15.31989 7.67044-14.22636ZM5.69046-14.22636" stroke="none"></path>
+</g>
+<g transform="translate(5.69046,-14.22636)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M27.58727-19.91682C27.58727-18.8233 26.7008-17.93684 25.60728-17.93684S23.6273-18.8233 23.6273-19.91682C23.6273-21.01035 24.51376-21.8968 25.60728-21.8968S27.58727-21.01035 27.58727-19.91682ZM25.60728-19.91682" stroke="none"></path>
+</g>
+<g transform="translate(25.60728,-19.91682)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M-3.71048 2.84544C-3.71048 3.93896-4.59694 4.82542-5.69046 4.82542S-7.67044 3.93896-7.67044 2.84544S-6.78398 .86546-5.69046 .86546S-3.71048 1.75192-3.71048 2.84544ZM-5.69046 2.84544" stroke="none"></path>
+</g>
+<g transform="translate(-5.69046,2.84544)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M19.05179-2.84544C19.05179-1.75192 18.16533-.86546 17.07181-.86546S15.09183-1.75192 15.09183-2.84544S15.97829-4.82542 17.07181-4.82542S19.05179-3.93896 19.05179-2.84544ZM17.07181-2.84544" stroke="none"></path>
+</g>
+<g transform="translate(17.07181,-2.84544)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M36.12318-5.69046C36.12318-4.59694 35.23672-3.71048 34.1432-3.71048S32.16322-4.59694 32.16322-5.69046S33.04968-7.67044 34.1432-7.67044S36.12318-6.78398 36.12318-5.69046ZM34.1432-5.69046" stroke="none"></path>
+</g>
+<g transform="translate(34.1432,-5.69046)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M-20.78229 25.60728C-20.78229 26.7008-21.66875 27.58727-22.76227 27.58727S-24.74225 26.7008-24.74225 25.60728S-23.85579 23.6273-22.76227 23.6273S-20.78229 24.51376-20.78229 25.60728ZM-22.76227 25.60728" stroke="none"></path>
+</g>
+<g transform="translate(-22.76227,25.60728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M16.20634 34.1432C16.20634 35.23672 15.31989 36.12318 14.22636 36.12318C13.13284 36.12318 12.24638 35.23672 12.24638 34.1432S13.13284 32.16322 14.22636 32.16322C15.31989 32.16322 16.20634 33.04968 16.20634 34.1432ZM14.22636 34.1432" stroke="none"></path>
+</g>
+<g transform="translate(14.22636,34.1432)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M-35.00867 5.69046C-35.00867 6.78398-35.89513 7.67044-36.98865 7.67044S-38.96863 6.78398-38.96863 5.69046S-38.08217 3.71048-36.98865 3.71048S-35.00867 4.59694-35.00867 5.69046ZM-36.98865 5.69046" stroke="none"></path>
+</g>
+<g transform="translate(-36.98865,5.69046)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M1.97998-34.1432C1.97998-33.04968 1.09352-32.16322 0-32.16322S-1.97998-33.04968-1.97998-34.1432S-1.09352-36.12318 0-36.12318S1.97998-35.23672 1.97998-34.1432ZM0-34.1432" stroke="none"></path>
+</g>
+<g transform="translate(0.0,-34.1432)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M33.27817 28.45274C33.27817 29.54626 32.39171 30.43272 31.29819 30.43272S29.3182 29.54626 29.3182 28.45274S30.20467 26.47276 31.29819 26.47276S33.27817 27.35922 33.27817 28.45274ZM31.29819 28.45274" stroke="none"></path>
+</g>
+<g transform="translate(31.29819,28.45274)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M230.46739 45.52455C230.46739 62.81027 216.45493 76.82274 199.1692 76.82274C181.88348 76.82274 167.87102 62.81027 167.87102 45.52455S181.88348 14.22636 199.1692 14.22636C216.45493 14.22636 230.46739 28.23883 230.46739 45.52455ZM199.1692 45.52455" fill="none"></path>
+</g>
+</g>
+<g transform="translate(171.15726,79.81654)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="1.182759" y="19.25178" href="#tz_erro_vies_g0-97"></use>
+<use x="5.572534" y="19.25178" href="#tz_erro_vies_g0-109"></use>
+<use x="13.058345" y="19.25178" href="#tz_erro_vies_g0-111"></use>
+<use x="17.57197" y="19.25178" href="#tz_erro_vies_g0-115"></use>
+<use x="21.144403" y="19.25178" href="#tz_erro_vies_g0-116"></use>
+<use x="24.667295" y="19.25178" href="#tz_erro_vies_g0-114"></use>
+<use x="28.394984" y="19.25178" href="#tz_erro_vies_g0-97"></use>
+<use x="-10.92356" y="27.221893" href="#tz_erro_vies_g0-114"></use>
+<use x="-7.195871" y="27.221893" href="#tz_erro_vies_g0-101"></use>
+<use x="-3.064832" y="27.221893" href="#tz_erro_vies_g0-112"></use>
+<use x="1.944156" y="27.221893" href="#tz_erro_vies_g0-114"></use>
+<use x="5.671845" y="27.221893" href="#tz_erro_vies_g0-101"></use>
+<use x="9.802884" y="27.221893" href="#tz_erro_vies_g0-115"></use>
+<use x="13.375317" y="27.221893" href="#tz_erro_vies_g0-101"></use>
+<use x="17.506355" y="27.221893" href="#tz_erro_vies_g0-110"></use>
+<use x="22.267661" y="27.221893" href="#tz_erro_vies_g0-116"></use>
+<use x="25.790553" y="27.221893" href="#tz_erro_vies_g0-97"></use>
+<use x="30.180327" y="27.221893" href="#tz_erro_vies_g0-116"></use>
+<use x="33.703218" y="27.221893" href="#tz_erro_vies_g0-105"></use>
+<use x="36.235376" y="27.221893" href="#tz_erro_vies_g0-118"></use>
+<use x="40.501317" y="27.221893" href="#tz_erro_vies_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M189.76825 51.21501C189.76825 52.30853 188.88179 53.19499 187.78827 53.19499S185.80829 52.30853 185.80829 51.21501S186.69475 49.23503 187.78827 49.23503S189.76825 50.12149 189.76825 51.21501ZM187.78827 51.21501" stroke="none"></path>
+</g>
+<g transform="translate(187.78827,51.21501)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M206.83965 56.90549C206.83965 57.99901 205.95319 58.88547 204.85966 58.88547C203.76614 58.88547 202.87968 57.99901 202.87968 56.90549S203.76614 54.9255 204.85966 54.9255C205.95319 54.9255 206.83965 55.81197 206.83965 56.90549ZM204.85966 56.90549" stroke="none"></path>
+</g>
+<g transform="translate(204.85966,56.90549)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M195.45871 36.98865C195.45871 38.08217 194.57225 38.96863 193.47873 38.96863S191.49875 38.08217 191.49875 36.98865S192.38521 35.00867 193.47873 35.00867S195.45871 35.89513 195.45871 36.98865ZM193.47873 36.98865" stroke="none"></path>
+</g>
+<g transform="translate(193.47873,36.98865)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M212.5301 42.67911C212.5301 43.77263 211.64365 44.65909 210.55013 44.65909C209.4566 44.65909 208.57014 43.77263 208.57014 42.67911S209.4566 40.69913 210.55013 40.69913C211.64365 40.69913 212.5301 41.58559 212.5301 42.67911ZM210.55013 42.67911" stroke="none"></path>
+</g>
+<g transform="translate(210.55013,42.67911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M201.14919 48.36957C201.14919 49.46309 200.26273 50.34955 199.1692 50.34955C198.07568 50.34955 197.18922 49.46309 197.18922 48.36957S198.07568 46.38959 199.1692 46.38959C200.26273 46.38959 201.14919 47.27605 201.14919 48.36957ZM199.1692 48.36957" stroke="none"></path>
+</g>
+<g transform="translate(199.1692,48.36957)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M192.61327 39.83366C192.61327 40.92719 191.7268 41.81364 190.63329 41.81364C189.53976 41.81364 188.6533 40.92719 188.6533 39.83366C188.6533 38.74014 189.53976 37.85368 190.63329 37.85368C191.7268 37.85368 192.61327 38.74014 192.61327 39.83366ZM190.63329 39.83366" stroke="none"></path>
+</g>
+<g transform="translate(190.63329,39.83366)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M230.46739-45.52455C230.46739-28.23883 216.45493-14.22636 199.1692-14.22636C181.88348-14.22636 167.87102-28.23883 167.87102-45.52455S181.88348-76.82274 199.1692-76.82274C216.45493-76.82274 230.46739-62.81027 230.46739-45.52455ZM199.1692-45.52455" fill="none"></path>
+</g>
+</g>
+<g transform="translate(180.25967,-94.4259)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-7.885636" y="19.25178" href="#tz_erro_vies_g0-97"></use>
+<use x="-3.495862" y="19.25178" href="#tz_erro_vies_g0-109"></use>
+<use x="3.98995" y="19.25178" href="#tz_erro_vies_g0-111"></use>
+<use x="8.503575" y="19.25178" href="#tz_erro_vies_g0-115"></use>
+<use x="12.076008" y="19.25178" href="#tz_erro_vies_g0-116"></use>
+<use x="15.598899" y="19.25178" href="#tz_erro_vies_g0-114"></use>
+<use x="19.326588" y="19.25178" href="#tz_erro_vies_g0-97"></use>
+<use x="-10.92356" y="27.221893" href="#tz_erro_vies_g0-101"></use>
+<use x="-6.792521" y="27.221893" href="#tz_erro_vies_g0-110"></use>
+<use x="-2.031216" y="27.221893" href="#tz_erro_vies_g0-118"></use>
+<use x="2.730091" y="27.221893" href="#tz_erro_vies_g0-105"></use>
+<use x="5.262249" y="27.221893" href="#tz_erro_vies_g0-101"></use>
+<use x="9.393288" y="27.221893" href="#tz_erro_vies_g0-115"></use>
+<use x="12.965721" y="27.221893" href="#tz_erro_vies_g0-97"></use>
+<use x="17.355495" y="27.221893" href="#tz_erro_vies_g0-100"></use>
+<use x="22.364483" y="27.221893" href="#tz_erro_vies_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M189.76825-39.83366C189.76825-38.74014 188.88179-37.85368 187.78827-37.85368S185.80829-38.74014 185.80829-39.83366C185.80829-40.92719 186.69475-41.81364 187.78827-41.81364S189.76825-40.92719 189.76825-39.83366ZM187.78827-39.83366" stroke="none"></path>
+</g>
+<g transform="translate(187.78827,-39.83366)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M206.83965-34.1432C206.83965-33.04968 205.95319-32.16322 204.85966-32.16322C203.76614-32.16322 202.87968-33.04968 202.87968-34.1432S203.76614-36.12318 204.85966-36.12318C205.95319-36.12318 206.83965-35.23672 206.83965-34.1432ZM204.85966-34.1432" stroke="none"></path>
+</g>
+<g transform="translate(204.85966,-34.1432)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M195.45871-54.06003C195.45871-52.9665 194.57225-52.08005 193.47873-52.08005S191.49875-52.9665 191.49875-54.06003C191.49875-55.15355 192.38521-56.04001 193.47873-56.04001S195.45871-55.15355 195.45871-54.06003ZM193.47873-54.06003" stroke="none"></path>
+</g>
+<g transform="translate(193.47873,-54.06003)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M212.5301-48.36957C212.5301-47.27605 211.64365-46.38959 210.55013-46.38959C209.4566-46.38959 208.57014-47.27605 208.57014-48.36957S209.4566-50.34955 210.55013-50.34955C211.64365-50.34955 212.5301-49.46309 212.5301-48.36957ZM210.55013-48.36957" stroke="none"></path>
+</g>
+<g transform="translate(210.55013,-48.36957)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3">
+<g fill="#2780e3">
+<path d="M201.14919-42.67911C201.14919-41.58559 200.26273-40.69913 199.1692-40.69913C198.07568-40.69913 197.18922-41.58559 197.18922-42.67911S198.07568-44.65909 199.1692-44.65909C200.26273-44.65909 201.14919-43.77263 201.14919-42.67911ZM199.1692-42.67911" stroke="none"></path>
+</g>
+<g transform="translate(199.1692,-42.67911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M192.61327-56.90549C192.61327-55.81197 191.7268-54.9255 190.63329-54.9255C189.53976-54.9255 188.6533-55.81197 188.6533-56.90549S189.53976-58.88547 190.63329-58.88547C191.7268-58.88547 192.61327-57.99901 192.61327-56.90549ZM190.63329-56.90549" stroke="none"></path>
+</g>
+<g transform="translate(190.63329,-56.90549)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M56.90549 17.07181C95.74141 39.49367 123.02727 45.52455 163.74529 45.52455" fill="none"></path>
+<g transform="translate(161.271,45.52455)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(98.53036,43.43933)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-10.92356" y="27.221893" href="#tz_erro_vies_g2-115"></use>
+<use x="-7.767319" y="27.221893" href="#tz_erro_vies_g2-111"></use>
+<use x="-3.796079" y="27.221893" href="#tz_erro_vies_g2-114"></use>
+<use x="-.682736" y="27.221893" href="#tz_erro_vies_g2-116"></use>
+<use x="2.430607" y="27.221893" href="#tz_erro_vies_g2-101"></use>
+<use x="5.972899" y="27.221893" href="#tz_erro_vies_g2-105"></use>
+<use x="8.228345" y="27.221893" href="#tz_erro_vies_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M56.90549-17.07181C95.74141-39.49367 123.02727-45.52455 163.74529-45.52455" fill="none"></path>
+<g transform="translate(161.271,-45.52455)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(80.08514,-48.30042)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-10.92356,27.221893)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-10.92356" y="27.221893" href="#tz_erro_vies_g2-115"></use>
+<use x="-7.767319" y="27.221893" href="#tz_erro_vies_g2-101"></use>
+<use x="-4.225028" y="27.221893" href="#tz_erro_vies_g2-108"></use>
+<use x="-1.969582" y="27.221893" href="#tz_erro_vies_g2-101"></use>
+<use x="1.57271" y="27.221893" href="#tz_erro_vies_g2-24"></use>
+<use x="1.572713" y="27.221893" href="#tz_erro_vies_g2-99"></use>
+<use x="5.115005" y="27.221893" href="#tz_erro_vies_g2-126"></use>
+<use x="5.115007" y="27.221893" href="#tz_erro_vies_g2-97"></use>
+<use x="9.086248" y="27.221893" href="#tz_erro_vies_g2-111"></use>
+<use x="15.74188" y="27.221893" href="#tz_erro_vies_g2-101"></use>
+<use x="19.284172" y="27.221893" href="#tz_erro_vies_g2-110"></use>
+<use x="23.469879" y="27.221893" href="#tz_erro_vies_g2-118"></use>
+<use x="27.6556" y="27.221893" href="#tz_erro_vies_g2-105"></use>
+<use x="29.911046" y="27.221893" href="#tz_erro_vies_g2-101"></use>
+<use x="33.453338" y="27.221893" href="#tz_erro_vies_g2-115"></use>
+<use x="36.609578" y="27.221893" href="#tz_erro_vies_g2-97"></use>
+<use x="40.580819" y="27.221893" href="#tz_erro_vies_g2-100"></use>
+<use x="44.981008" y="27.221893" href="#tz_erro_vies_g2-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-erro-vies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;17.1: Erro versus viés. O sorteio produz uma amostra que espelha as proporções da população (erro apenas aleatório, que encolhe com o tamanho). A seleção enviesada sub-representa um subgrupo de forma sistemática — e mais indivíduos colhidos pelo mesmo método não corrigem a distorção.
+</figcaption>
+</figure>
+</div>
+<div class="estudo-caso">
+<p><strong>O erro de dez milhões de cartões</strong> <span class="citation" data-cites="squire1988">(<a href="../../referencias.html#ref-squire1988" role="doc-biblioref">Squire, 1988</a>)</span></p>
+<p>Em 1936, a revista <em>Literary Digest</em> conduziu a maior pesquisa eleitoral já feita nos Estados Unidos para prever a disputa entre Franklin Roosevelt e Alf Landon. Enviou cartões-resposta a <strong>dez milhões</strong> de pessoas e recebeu cerca de <strong>2,4 milhões</strong> de volta — uma amostra colossal, ordens de grandeza maior que qualquer pesquisa moderna. A previsão: vitória folgada de Landon, com 57%.</p>
+<p>Roosevelt venceu com 61% dos votos, uma das maiores margens da história. A <em>Literary Digest</em> errou por quase 20 pontos e fechou as portas pouco depois.</p>
+<p><strong>O que deu errado.</strong> Dois vieses, nenhum deles curável pelo tamanho. Primeiro, o <strong>viés de seleção</strong>: os endereços vieram de listas de proprietários de telefone e automóvel e de assinantes da revista — em plena Grande Depressão, um recorte de gente mais rica, que tendia a votar em Landon. Os eleitores mais pobres de Roosevelt simplesmente não estavam na lista. Segundo, o <strong>viés de não-resposta</strong>: só respondeu quem quis, e os apoiadores de Landon, mais motivados, devolveram os cartões em taxa maior. No mesmo ano, George Gallup previu corretamente a vitória de Roosevelt com uma amostra de poucos milhares — mas <em>representativa</em>.</p>
+<p><strong>A lição.</strong> É o experimento natural definitivo sobre erro versus viés. Dez milhões de respostas enviesadas perderam feio para alguns milhares bem amostrados. O tamanho da amostra não compra representatividade; só o método de seleção compra. Toda vez que alguém invocar o número de respondentes como prova de confiabilidade, lembre-se dos dez milhões de cartões.</p>
+</div>
+</section>
+<section id="não-resposta-e-o-problema-weird" class="level2">
+<h2 class="anchored" data-anchor-id="não-resposta-e-o-problema-weird">Não-resposta e o problema WEIRD</h2>
+<p>O caso da <em>Literary Digest</em> exibe uma segunda ameaça, hoje talvez a mais séria de todas: o <strong>viés de não-resposta</strong>. Mesmo uma amostra sorteada com perfeição vira uma amostra enviesada se as pessoas selecionadas <em>recusarem-se</em> a participar em proporções diferentes conforme suas características. Se os mais ocupados, os mais desconfiados ou os mais extremados respondem menos, a amostra final — por mais bem sorteada na origem — deixa de representar a população. Com taxas de resposta despencando nas pesquisas modernas (muita gente não atende, não abre, não clica), a não-resposta tornou-se o calcanhar de aquiles até das melhores pesquisas, e um bom relatório sempre informa quantos dos selecionados de fato participaram.</p>
+<p>Há, por fim, um viés de amostragem que atravessa a psicologia inteira e que o Cap. 1 já anunciou. A esmagadora maioria dos estudos publicados usa amostras de conveniência de sociedades <strong>WEIRD</strong> — <em>Western, Educated, Industrialized, Rich, Democratic</em> —, e boa parte delas de um subconjunto ainda mais estreito: estudantes universitários de psicologia <span class="citation" data-cites="henrich2010 sears1986">(<a href="../../referencias.html#ref-henrich2010" role="doc-biblioref">Henrich; Heine; Norenzayan, 2010</a>; <a href="../../referencias.html#ref-sears1986" role="doc-biblioref">Sears, 1986</a>)</span>. Esse recorte representa uma fração pequena e atípica da humanidade, e difere de outras populações em domínios que vão da percepção visual ao raciocínio moral. A consequência é dupla e séria: primeiro, muitas “leis gerais” da psicologia foram estabelecidas numa amostra que não representa a espécie; segundo, para um manual brasileiro, transportar um achado obtido com calouros norte-americanos ao contexto nacional é uma <em>hipótese a testar</em>, não um dado. Amostragem, portanto, não é só uma tecnicalidade de pesquisas de opinião — é uma questão de fundo sobre o alcance de tudo o que a disciplina afirma saber.</p>
+<div class="atencao">
+<p><strong>“Mas foram 50 mil pessoas!”</strong> O apelo ao tamanho da amostra é a falácia estatística mais popular do noticiário, e agora você tem o antídoto exato. Números grandes reduzem o <em>erro amostral</em> — a flutuação aleatória — e nada mais. Eles não tocam no <em>viés amostral</em>: se o método de coleta favorece sistematicamente um tipo de pessoa, cada novo respondente reforça a distorção em vez de diluí-la. Antes de se impressionar com “50 mil”, “100 mil” ou “um milhão”, faça a única pergunta que importa: <strong>como essas pessoas foram selecionadas?</strong> Se a resposta for “elas se voluntariaram”, “responderam a um anúncio” ou “clicaram no link”, o tamanho é irrelevante — você está diante de uma <em>Literary Digest</em> moderna, só que sem o desfecho didático de fechar as portas.</p>
+</div>
+</section>
+<section id="quanto-é-suficiente-tamanho-de-amostra-e-poder" class="level2">
+<h2 class="anchored" data-anchor-id="quanto-é-suficiente-tamanho-de-amostra-e-poder">Quanto é suficiente? Tamanho de amostra e poder</h2>
+<p>Se o tamanho não compra representatividade, para que ele serve? Serve para a <strong>precisão</strong> e para o <strong>poder</strong>. Precisão: quanto maior a amostra (bem colhida), menor a margem de erro em torno das estimativas — o intervalo se aperta. Poder: em um estudo que testa uma hipótese, o <strong>poder estatístico</strong> é a probabilidade de detectar um efeito que realmente existe, e ele cresce com o tamanho da amostra. Um estudo pequeno demais pode ter um efeito real bem debaixo do nariz e não conseguir “vê-lo”, concluindo erroneamente que não há nada — um problema tão comum e tão grave que merece o tratamento formal que receberá no Cap. 19.</p>
+<p>O tamanho necessário não é um número mágico universal; depende do tamanho do efeito que se quer detectar (efeitos menores exigem amostras maiores), da variabilidade dos dados e do grau de certeza desejado. O cálculo prévio desse número — a <strong>análise de poder</strong> — é hoje parte obrigatória de um bom projeto de pesquisa, e sua ausência é uma das razões pelas quais tantos estudos antigos não replicam (Cap. 21). Por ora, retenha a arquitetura do capítulo: o <strong>método</strong> de amostragem governa a <em>validade</em> (a amostra representa a população?); o <strong>tamanho</strong> da amostra governa a <em>precisão e o poder</em> (quão fina e quão sensível é a estimativa?). São dois eixos distintos, e um não substitui o outro.</p>
+<div class="callout-sintese">
+<ul>
+<li><strong>Estuda-se uma amostra para inferir uma população.</strong> Parâmetro é a característica (desconhecida) da população; estatística é sua estimativa (conhecida) na amostra. A ponte entre as duas depende de como a amostra foi obtida.</li>
+<li><strong>A amostragem probabilística</strong> (aleatória simples, sistemática, estratificada, por conglomerados) usa sorteio, dá a cada indivíduo chance conhecida de entrar e é a via segura para a representatividade — única que permite calcular margem de erro.</li>
+<li><strong>A amostragem não-probabilística</strong> (conveniência, cotas, bola de neve, autosseleção) depende de acesso ou julgamento; comum e aceitável para estudar <em>relações</em>, mas traiçoeira para <em>estimar frequências</em> na população.</li>
+<li><strong>Erro amostral</strong> é flutuação aleatória, encolhe com o tamanho da amostra e é quantificado pela margem de erro. <strong>Viés amostral</strong> é distorção sistemática e <strong>não</strong> encolhe com o tamanho — aumentar uma amostra enviesada só dá falsa confiança a um número torto.</li>
+<li><strong>O fiasco da <em>Literary Digest</em></strong> (1936) prova a assimetria: dez milhões de respostas enviesadas erraram feio; alguns milhares representativos acertaram. Tamanho não compra representatividade.</li>
+<li><strong>Viés de não-resposta e amostras WEIRD</strong> ameaçam até estudos bem delineados, e limitam o alcance do que a psicologia afirma — para o Brasil, generalizar é hipótese, não conclusão.</li>
+<li><strong>Método de amostragem governa a validade; tamanho governa precisão e poder.</strong> São eixos independentes; o poder estatístico e sua análise ficam para o Cap. 19.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>População</strong></dt>
+<dd>
+Conjunto completo de indivíduos sobre os quais se quer concluir algo.
+</dd>
+<dt><strong>Amostra</strong></dt>
+<dd>
+Subconjunto da população efetivamente estudado.
+</dd>
+<dt><strong>Parâmetro / Estatística</strong></dt>
+<dd>
+Característica numérica da população (parâmetro, geralmente desconhecida) e sua estimativa calculada na amostra (estatística).
+</dd>
+<dt><strong>Representatividade</strong></dt>
+<dd>
+Grau em que a amostra espelha a população nas características relevantes.
+</dd>
+<dt><strong>Amostragem probabilística</strong></dt>
+<dd>
+Seleção por sorteio, em que cada indivíduo tem probabilidade conhecida e não nula de entrar; inclui aleatória simples, sistemática, estratificada e por conglomerados.
+</dd>
+<dt><strong>Amostragem não-probabilística</strong></dt>
+<dd>
+Seleção por acessibilidade ou julgamento, com probabilidade de inclusão desconhecida; inclui conveniência, cotas, bola de neve e autosseleção.
+</dd>
+<dt><strong>Erro amostral</strong></dt>
+<dd>
+Flutuação aleatória entre amostra e população; diminui à medida que a amostra aumenta.
+</dd>
+<dt><strong>Viés amostral (de seleção)</strong></dt>
+<dd>
+Distorção sistemática da amostra causada pelo método de seleção; <strong>não</strong> diminui com o aumento da amostra.
+</dd>
+<dt><strong>Viés de não-resposta</strong></dt>
+<dd>
+Distorção causada por diferenças sistemáticas entre quem aceita e quem recusa participar.
+</dd>
+<dt><strong>Amostra WEIRD</strong></dt>
+<dd>
+Amostra oriunda de sociedades ocidentais, escolarizadas, industrializadas, ricas e democráticas; recorte atípico que domina a pesquisa psicológica <span class="citation" data-cites="henrich2010">(<a href="../../referencias.html#ref-henrich2010" role="doc-biblioref">Henrich; Heine; Norenzayan, 2010</a>)</span>.
+</dd>
+<dt><strong>Poder estatístico</strong></dt>
+<dd>
+Probabilidade de um estudo detectar um efeito que realmente existe; cresce com o tamanho da amostra (detalhado no Cap. 19).
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Defina população, amostra, parâmetro e estatística, e explique como os quatro se articulam na lógica da inferência.</p></li>
+<li><p><strong>(Recuperação.)</strong> Explique a diferença entre erro amostral e viés amostral. Por que só um dos dois diminui quando aumentamos o tamanho da amostra?</p></li>
+<li><p><strong>(Aplicação.)</strong> Você quer estimar a prevalência de ansiedade entre os estudantes de uma universidade com 30 mil alunos. Descreva como faria uma amostragem estratificada e explique que vantagem ela teria sobre pendurar um cartaz convidando voluntários a preencher um questionário online.</p></li>
+<li><p><strong>(Aplicação.)</strong> Uma reportagem afirma: “Enquete com 200 mil participantes mostra que 80% dos brasileiros apoiam a proposta.” Liste as perguntas que você faria antes de levar o número a sério e explique por que o “200 mil” não é, por si só, tranquilizador.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Explique por que o fiasco da <em>Literary Digest</em> de 1936 é um argumento contra a ideia de que “quanto maior a amostra, melhor”. Em que condição uma amostra de 2 milhões é pior que uma de 3 mil?</p></li>
+<li><p><strong>(Integração.)</strong> Um pesquisador conduz um experimento com atribuição aleatória impecável, mas todos os participantes são calouros de psicologia da própria universidade. Distinga o que esse estudo pode legitimamente concluir (relembre a diferença entre validade interna e externa do Cap. 16) e explique por que a amostra WEIRD limita uma dessas validades, mas não a outra.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-henrich2010" class="csl-entry" role="listitem">
+HENRICH, Joseph; HEINE, Steven J.; NORENZAYAN, Ara. <a href="https://doi.org/10.1017/S0140525X0999152X">The weirdest people in the world?</a> <strong>Behavioral and Brain Sciences</strong>, v. 33, n. 2-3, p. 61–83, 2010.
+</div>
+<div id="ref-sears1986" class="csl-entry" role="listitem">
+SEARS, David O. College sophomores in the laboratory: Influences of a narrow data base on social psychology’s view of human nature. <strong>Journal of Personality and Social Psychology</strong>, v. 51, n. 3, p. 515–530, 1986.
+</div>
+<div id="ref-squire1988" class="csl-entry" role="listitem">
+SQUIRE, Peverill. Why the 1936 Literary Digest poll failed. <strong>Public Opinion Quarterly</strong>, v. 52, n. 1, p. 125–133, 1988.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1880,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-17-amostragem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-17-amostragem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

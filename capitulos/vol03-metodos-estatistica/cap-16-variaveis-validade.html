@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -688,8 +737,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#variáveis-e-escalas-de-medida" id="toc-variáveis-e-escalas-de-medida" class="nav-link active" data-scroll-target="#variáveis-e-escalas-de-medida">Variáveis e escalas de medida</a></li>
+  <li><a href="#confiabilidade-a-medida-é-consistente" id="toc-confiabilidade-a-medida-é-consistente" class="nav-link" data-scroll-target="#confiabilidade-a-medida-é-consistente">Confiabilidade: a medida é consistente?</a></li>
+  <li><a href="#validade-a-medida-mede-o-que-diz-medir" id="toc-validade-a-medida-mede-o-que-diz-medir" class="nav-link" data-scroll-target="#validade-a-medida-mede-o-que-diz-medir">Validade: a medida mede o que diz medir?</a></li>
+  <li><a href="#a-relação-entre-as-duas-a-analogia-do-alvo" id="toc-a-relação-entre-as-duas-a-analogia-do-alvo" class="nav-link" data-scroll-target="#a-relação-entre-as-duas-a-analogia-do-alvo">A relação entre as duas: a analogia do alvo</a></li>
+  <li><a href="#quatro-validades-de-um-estudo-inteiro" id="toc-quatro-validades-de-um-estudo-inteiro" class="nav-link" data-scroll-target="#quatro-validades-de-um-estudo-inteiro">Quatro validades de um estudo inteiro</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +774,602 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Classificar</strong> variáveis segundo suas escalas de medida (nominal, ordinal, intervalar, de razão) e explicar por que a escala determina o que se pode fazer com os números.</li>
+<li><strong>Definir</strong> confiabilidade como consistência da medida e distinguir suas formas principais — teste-reteste, entre avaliadores, consistência interna.</li>
+<li><strong>Definir</strong> validade como a adequação das interpretações de uma medida e diferenciar validade de conteúdo, de critério e de construto.</li>
+<li><strong>Explicar</strong>, com a analogia do alvo, por que confiabilidade é necessária mas não suficiente para validade.</li>
+<li><strong>Distinguir</strong> os quatro tipos de validade de um estudo — de construto, interna, externa e de conclusão estatística — e as ameaças típicas a cada um.</li>
+<li><strong>Diagnosticar</strong> problemas de mensuração em pesquisas reais, separando “a medida é consistente?” de “a medida mede o que diz medir?”.</li>
+</ul>
 </div>
+<p>Os dois capítulos anteriores trataram de <em>como delinear</em> um estudo. Este trata de algo anterior e mais silencioso: a qualidade dos números que entram no estudo. Um experimento com atribuição aleatória impecável e uma amostra perfeita ainda produz lixo se a variável dependente for mal medida. A metodologia de coleta e a metodologia de mensuração são duas metades independentes do rigor, e negligenciar a segunda é um jeito elegante de chegar a conclusões erradas com toda a aparência de ciência.</p>
+<p>O problema é agudo em psicologia porque seus objetos — inteligência, ansiedade, atitude, bem-estar — não têm réguas prontas. Ninguém questiona como medir a altura de uma pessoa; medir sua “autoestima” exige inventar o instrumento e, depois, provar que ele funciona. Este capítulo é sobre esse duplo trabalho: transformar conceitos em números (variáveis e escalas) e demonstrar que os números merecem confiança (confiabilidade) e significam o que se afirma que significam (validade).</p>
+<section id="variáveis-e-escalas-de-medida" class="level2">
+<h2 class="anchored" data-anchor-id="variáveis-e-escalas-de-medida">Variáveis e escalas de medida</h2>
+<p>Uma <strong>variável</strong> é qualquer característica que assume valores diferentes entre indivíduos ou situações: idade, sexo, tempo de reação, nível de depressão. Medir é atribuir valores a essa característica segundo uma regra. Mas nem todos os valores são do mesmo tipo, e o tipo importa — porque ele decide quais operações matemáticas fazem sentido. A classificação clássica, proposta por Stevens, distingue quatro <strong>escalas de medida</strong> <span class="citation" data-cites="stevens1946">(<a href="../../referencias.html#ref-stevens1946" role="doc-biblioref">Stevens, 1946</a>)</span>.</p>
+<p>Uma escala <strong>nominal</strong> apenas nomeia categorias, sem ordem: cor dos olhos, diagnóstico, time de futebol. Os números eventualmente usados (1 = solteiro, 2 = casado) são rótulos, não quantidades — calcular a “média do estado civil” é um disparate. A única operação legítima é contar quantos caem em cada categoria.</p>
+<p>Uma escala <strong>ordinal</strong> ordena, mas sem intervalos iguais: a colocação num pódio (1º, 2º, 3º), uma resposta “discordo / neutro / concordo”, o estágio de um câncer. Sabe-se que 1º vem antes de 2º, mas não que a distância entre eles seja igual à distância entre 2º e 3º. Ordenar é permitido; somar e tirar médias, a rigor, não — embora a prática em psicologia frequentemente force essa regra, um ponto ao qual voltaremos.</p>
+<p>Uma escala <strong>intervalar</strong> tem intervalos iguais, mas o zero é arbitrário, não representa ausência. A temperatura em Celsius é o exemplo canônico: a diferença entre 20 e 30 graus é a mesma que entre 30 e 40, mas 0 °C não é “ausência de temperatura”, e não se pode dizer que 40 °C é “o dobro” de 20 °C. Somas e diferenças fazem sentido; razões, não.</p>
+<p>Uma escala <strong>de razão</strong> tem intervalos iguais e um zero absoluto que significa ausência real da grandeza: tempo de reação, número de erros, número de palavras lembradas. Aqui todas as operações valem — 400 ms é de fato o dobro de 200 ms. É a escala mais rica, e muitas das variáveis dependentes “duras” da psicologia experimental são de razão.</p>
+<div class="atencao">
+<p><strong>A guerra das médias de Likert.</strong> Uma escala do tipo “1 = discordo totalmente … 5 = concordo totalmente” é, a rigor, ordinal: nada garante que a distância psicológica entre “discordo” e “neutro” iguale a entre “neutro” e “concordo”. Tirar a média dessas respostas — prática universal na psicologia — é tecnicamente ilegítimo pela classificação de Stevens. Na prática, quase todo mundo o faz, tratando escalas de Likert <em>somadas</em> (vários itens juntos) como se fossem intervalares, e há evidência de que, com itens suficientes e distribuições razoáveis, as conclusões raramente se distorcem. O ponto para o leitor crítico não é proibir a média, e sim saber que ali há uma <em>suposição</em> sendo feita — e desconfiar quando uma conclusão delicada repousa inteiramente sobre a média de um único item ordinal.</p>
+</div>
+</section>
+<section id="confiabilidade-a-medida-é-consistente" class="level2">
+<h2 class="anchored" data-anchor-id="confiabilidade-a-medida-é-consistente">Confiabilidade: a medida é consistente?</h2>
+<p><strong>Confiabilidade</strong> é a consistência de uma medida: o grau em que ela produz o mesmo resultado sob condições que deveriam produzir o mesmo resultado. Uma balança que marca 62 kg, depois 68, depois 60 para a mesma pessoa em dez segundos é inútil — não porque esteja errada em média, mas porque é inconsistente. Confiabilidade é a pergunta “se eu medir de novo, obtenho o mesmo?”.</p>
+<p>A ideia é formalizada pela <strong>teoria clássica dos testes</strong>, cuja equação fundamental é simples e iluminadora:</p>
+<p><span class="math display">\[X = V + E\]</span></p>
+<p>O escore observado (<span class="math inline">\(X\)</span>) é a soma do escore verdadeiro (<span class="math inline">\(V\)</span>) — o valor real da característica — com um erro de medida (<span class="math inline">\(E\)</span>), aleatório, que ora infla, ora deprime a leitura. A confiabilidade é a proporção da variação nos escores observados que se deve à variação verdadeira, e não ao erro. Quanto menor o erro aleatório, mais confiável a medida. Há três formas principais de estimá-la, cada uma perguntando “consistente em relação a quê?”:</p>
+<ul>
+<li><strong>Confiabilidade teste-reteste:</strong> aplica-se a mesma medida às mesmas pessoas em dois momentos e verifica-se a correlação. Consistência ao longo do <strong>tempo</strong>. Apropriada para traços que se supõem estáveis (inteligência), problemática para estados que oscilam de propósito (humor).</li>
+<li><strong>Confiabilidade entre avaliadores</strong> (<em>inter-rater</em>): dois observadores independentes medem o mesmo fenômeno e verifica-se a concordância. Consistência entre <strong>observadores</strong> — a que apareceu na observação naturalística do Cap. 15.</li>
+<li><strong>Consistência interna:</strong> os itens que supostamente medem o mesmo construto concordam entre si? Se um inventário de ansiedade tem vinte itens, todos deveriam “puxar” na mesma direção. O índice mais usado é o <strong>alfa de Cronbach</strong> <span class="citation" data-cites="cronbach1951">(<a href="../../referencias.html#ref-cronbach1951" role="doc-biblioref">Cronbach, 1951</a>)</span>, que resume o quanto os itens se correlacionam entre si. Alfa alto indica que os itens medem uma coisa só — embora, como se verá, não diga <em>qual</em> coisa.</li>
+</ul>
+<p>Confiabilidade não é tudo ou nada: mede-se em grau, tipicamente numa escala de 0 a 1, e o patamar aceitável depende do uso — decisões clínicas sobre indivíduos exigem confiabilidade mais alta que médias de grupo em pesquisa.</p>
+</section>
+<section id="validade-a-medida-mede-o-que-diz-medir" class="level2">
+<h2 class="anchored" data-anchor-id="validade-a-medida-mede-o-que-diz-medir">Validade: a medida mede o que diz medir?</h2>
+<p>Uma medida pode ser perfeitamente consistente e ainda assim medir a coisa errada. <strong>Validade</strong> é a adequação das interpretações que se fazem a partir de uma medida — o grau em que ela de fato captura o construto pretendido, e não outro. Note a formulação cuidadosa: a validade rigorosamente não é propriedade do <em>instrumento</em>, mas da <em>interpretação</em> que se dá a seus escores num certo uso. Uma régua é válida para medir altura e inválida para medir inteligência; o mesmo teste pode ser válido para uma finalidade e inválido para outra. Há vários ângulos pelos quais se avalia a validade.</p>
+<p>A <strong>validade de conteúdo</strong> pergunta se a medida cobre todo o domínio do construto. Uma prova de matemática que só tivesse questões de adição teria baixa validade de conteúdo para “competência matemática” — deixa de fora frações, geometria, álgebra. Avalia-se sobretudo por julgamento de especialistas sobre a representatividade dos itens.</p>
+<p>A <strong>validade de critério</strong> pergunta se a medida se correlaciona com um critério externo relevante. Divide-se em duas: a <strong>validade preditiva</strong>, quando o critério está no futuro (um teste vocacional prevê o desempenho profissional anos depois?), e a <strong>validade concorrente</strong>, quando o critério é medido ao mesmo tempo (um novo teste rápido de depressão concorda com uma entrevista clínica extensa aplicada hoje?). É a face mais prática da validade: a medida <em>funciona</em> para o que se quer prever?</p>
+<p>A <strong>validade de construto</strong> é a mais profunda e engloba as demais: o grau em que a medida realmente capta o construto teórico abstrato que pretende captar <span class="citation" data-cites="cronbach_meehl1955">(<a href="../../referencias.html#ref-cronbach_meehl1955" role="doc-biblioref">Cronbach; Meehl, 1955</a>)</span>. Como construtos não são observáveis diretamente, ela se demonstra por acúmulo de evidências — inclusive por duas exigências complementares e elegantes, formuladas por Campbell e Fiske <span class="citation" data-cites="campbell_fiske1959">(<a href="../../referencias.html#ref-campbell_fiske1959" role="doc-biblioref">Campbell; Fiske, 1959</a>)</span>. A <strong>validade convergente</strong>: a medida deve correlacionar-se com outras medidas do <em>mesmo</em> construto (um novo teste de ansiedade deve concordar com testes de ansiedade já validados). A <strong>validade discriminante</strong>: a medida deve <em>não</em> se correlacionar demais com medidas de construtos <em>diferentes</em> (o teste de ansiedade não pode ser, na verdade, um teste de inteligência disfarçado). Um bom instrumento converge com seus pares e se separa dos estranhos.</p>
+<p>Há ainda a <strong>validade aparente</strong> (<em>face validity</em>): a medida <em>parece</em>, ao leigo, medir o que diz medir. É a mais fraca — parecer não é ser —, mas não é irrelevante: um teste com baixa validade aparente pode desmotivar respondentes ou gerar desconfiança, mesmo quando as outras validades são altas.</p>
+<div class="na-pratica">
+<p><strong>O termômetro emocional que só media o clima da sala.</strong> Imagine um aplicativo que promete medir “felicidade” pedindo, uma vez por dia, uma nota de 0 a 10. Ele pode ter ótima confiabilidade teste-reteste (as notas de uma pessoa são estáveis semana a semana) e ainda assim baixa validade: talvez esteja captando sobretudo o quanto fez sol naquele dia, ou o humor momentâneo no instante do toque, não o bem-estar duradouro que anuncia medir. Antes de confiar em qualquer instrumento — psicológico, educacional, de RH —, separe as duas perguntas: <em>ele é consistente?</em> (confiabilidade) e <em>ele mede o que promete?</em> (validade). Fornecedores adoram exibir a primeira, que é fácil de obter, e silenciar sobre a segunda, que é difícil e cara. A pergunta que desmascara é sempre a mesma: “com que critério externo os escores deste teste já foram comparados?”.</p>
+</div>
+</section>
+<section id="a-relação-entre-as-duas-a-analogia-do-alvo" class="level2">
+<h2 class="anchored" data-anchor-id="a-relação-entre-as-duas-a-analogia-do-alvo">A relação entre as duas: a analogia do alvo</h2>
+<p>Confiabilidade e validade não são independentes, e sua relação é assimétrica: <strong>confiabilidade é necessária, mas não suficiente, para validade.</strong> A imagem canônica é o alvo de dardos, na <a href="#fig-alvo-validade" class="quarto-xref">Figura&nbsp;<span>16.1</span></a>. Cada dardo é uma medição; o centro é o valor verdadeiro do construto.</p>
+<div id="fig-alvo-validade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-alvo-validade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Quatro alvos circulares dispostos em duas colunas e duas linhas, ilustrando combinações de confiabilidade e validade. Coluna esquerda, alta confiabilidade; coluna direita, baixa confiabilidade. Linha superior, baixa validade; linha inferior, alta validade. Alto e à esquerda (confiável, não válido): dardos agrupados mas longe do centro. Alto e à direita (nem confiável nem válido): dardos espalhados e descentrados. Embaixo à esquerda (confiável e válido): dardos agrupados no centro. Embaixo à direita (válido em média mas não confiável): dardos espalhados em torno do centro." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="256.9199pt" height="197.8961pt" viewbox="-68.014948 -68.014944 256.9199 197.8961">
+<defs>
+<path id="tz_alvo_validade_g0-12" d="M3.299626-4.025903V-3.981071H1.918804V-4.841843C1.918804-5.630884 2.618182-5.917808 3.380324-5.917808C3.478954-5.917808 3.756912-5.917808 4.016936-5.774346C3.855542-5.702615 3.658281-5.532254 3.658281-5.209465C3.658281-4.859776 3.90934-4.608717 4.259029-4.608717C4.590785-4.608717 4.859776-4.841843 4.859776-5.218431C4.859776-5.684682 4.465255-6.276463 3.452055-6.276463C2.286426-6.276463 .977335-5.917808 .977335-4.859776V-3.981071H.286924V-3.541719H.977335V-.439352H.367621V0C.977335-.026899 1.084932-.026899 1.470486-.026899C1.865006-.026899 2.098132-.017933 2.582316 0V-.439352H1.972603V-3.541719H3.658281C3.864508-3.541719 3.90934-3.541719 3.90934-3.227895V-.439352H3.299626V0C3.90934-.026899 4.016936-.026899 4.402491-.026899C4.797011-.026899 5.030137-.017933 5.514321 0V-.439352H4.904608V-4.070735L3.299626-4.025903Z"></path>
+<path id="tz_alvo_validade_g0-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_alvo_validade_g0-98" d="M1.972603-6.222665L.367621-6.150934V-5.711582C.905604-5.711582 .977335-5.711582 .977335-5.361893V0H1.43462L1.85604-.511083C2.142964-.224159 2.582316 .053798 3.218929 .053798C4.617684 .053798 5.532254-.789041 5.532254-1.990535C5.532254-3.200996 4.662516-4.034869 3.335492-4.034869C2.618182-4.034869 2.142964-3.730012 1.972603-3.604483V-6.222665ZM2.026401-3.102366C2.25056-3.38929 2.680946-3.676214 3.227895-3.676214C4.339726-3.676214 4.339726-2.600249 4.339726-2.008468C4.339726-1.63188 4.339726-1.165629 4.151432-.842839C3.855542-.340722 3.308593-.304857 3.129265-.304857C2.57335-.304857 2.214695-.645579 2.026401-.932503V-3.102366Z"></path>
+<path id="tz_alvo_validade_g0-99" d="M4.411457-1.0401C4.411457-1.183562 4.276961-1.183562 4.178331-1.183562C3.999004-1.183562 3.999004-1.174595 3.927273-1.0132C3.747945-.582814 3.344458-.331756 2.815442-.331756C1.542217-.331756 1.542217-1.622914 1.542217-2.026401C1.542217-2.564384 1.551183-3.676214 2.725778-3.676214C2.788543-3.676214 3.272727-3.667248 3.272727-3.622416C3.272727-3.61345 3.254795-3.58655 3.245828-3.577584C3.165131-3.478954 3.129265-3.335492 3.129265-3.209963C3.129265-2.842341 3.407223-2.627148 3.71208-2.627148C3.990037-2.627148 4.294894-2.815442 4.294894-3.218929C4.294894-4.061768 3.039601-4.061768 2.689913-4.061768C.968369-4.061768 .349689-2.96787 .349689-1.990535C.349689-.860772 1.156663 .053798 2.645081 .053798C2.976837 .053798 3.416189 0 3.792777-.233126C4.303861-.546949 4.411457-1.0132 4.411457-1.0401Z"></path>
+<path id="tz_alvo_validade_g0-100" d="M3.299626-6.150934V-5.711582C3.837609-5.711582 3.90934-5.711582 3.90934-5.361893V-3.631382C3.514819-3.918306 3.0934-4.034869 2.663014-4.034869C1.201494-4.034869 .349689-3.147198 .349689-1.990535C.349689-.798007 1.192528 .053798 2.555417 .053798C3.120299 .053798 3.568618-.161395 3.855542-.394521V.053798L5.514321 0V-.439352C4.976339-.439352 4.904608-.439352 4.904608-.789041V-6.222665L3.299626-6.150934ZM3.855542-.977335C3.658281-.663512 3.227895-.304857 2.654047-.304857C1.542217-.304857 1.542217-1.380822 1.542217-1.972603C1.542217-2.492653 1.551183-2.878207 1.784309-3.209963C2.017435-3.568618 2.447821-3.676214 2.761644-3.676214C3.209963-3.676214 3.577584-3.478954 3.855542-3.129265V-.977335Z"></path>
+<path id="tz_alvo_validade_g0-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_alvo_validade_g0-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_alvo_validade_g0-108" d="M2.071233-6.222665L.466252-6.150934V-5.711582C1.004234-5.711582 1.075965-5.711582 1.075965-5.361893V-.439352H.466252V0C1.075965-.026899 1.183562-.026899 1.569116-.026899C1.963636-.026899 2.196762-.017933 2.680946 0V-.439352H2.071233V-6.222665Z"></path>
+<path id="tz_alvo_validade_g0-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_alvo_validade_g0-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_alvo_validade_g0-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+<path id="tz_alvo_validade_g0-118" d="M4.689415-3.353425C4.752179-3.478954 4.779078-3.541719 5.34396-3.541719V-3.981071C5.092902-3.954172 4.868742-3.954172 4.617684-3.954172C4.357659-3.954172 4.070735-3.954172 3.81071-3.981071V-3.541719C4.061768-3.541719 4.142466-3.496887 4.223163-3.461021C4.214197-3.425156 4.214197-3.407223 4.169365-3.335492L3.0934-1.102864L1.918804-3.541719H2.385056V-3.981071C1.793275-3.963138 1.613948-3.954172 1.282192-3.954172C.959402-3.954172 .780075-3.954172 .251059-3.981071V-3.541719H.81594L2.420922-.206227C2.501619-.035866 2.57335 .044832 2.797509 .044832S3.0934-.035866 3.174097-.206227L4.689415-3.353425Z"></path>
+<path id="tz_alvo_validade_g0-120" d="M3.209963-2.196762L4.303861-3.371357C4.402491-3.478954 4.465255-3.541719 5.182565-3.541719V-3.981071C4.877709-3.954172 4.644583-3.954172 4.348692-3.954172C4.187298-3.954172 3.837609-3.954172 3.434122-3.981071V-3.541719C3.631382-3.541719 3.676214-3.505853 3.738979-3.443088L2.905106-2.537484L2.017435-3.541719H2.340224V-3.981071C1.802242-3.963138 1.569116-3.954172 1.264259-3.954172C1.084932-3.954172 .735243-3.954172 .277958-3.981071V-3.541719H.905604L2.331258-1.918804L1.120797-.609714C.959402-.439352 .645579-.439352 .233126-.439352V0C.537983-.026899 .771108-.026899 1.066999-.026899C1.228394-.026899 1.578082-.026899 1.981569 0V-.439352C1.847073-.439352 1.694645-.475218 1.694645-.537983C1.694645-.573848 1.748443-.627646 1.75741-.636613L2.636115-1.578082L3.631382-.439352H3.317559V0C3.882441-.017933 4.088667-.026899 4.384558-.026899C4.590785-.026899 4.92254-.026899 5.379826 0V-.439352H4.752179L3.209963-2.196762Z"></path>
+</defs>
+<g id="tz_alvo_validade_page1">
+<g stroke-miterlimit="10" transform="translate(-7.723038,97.159152)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M31.29819 113.81097C31.29819 131.0967 17.28572 145.10916 0 145.10916S-31.29819 131.0967-31.29819 113.81097C-31.29819 96.52525-17.28572 82.51279 0 82.51279S31.29819 96.52525 31.29819 113.81097ZM0 113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M19.91682 113.81097C19.91682 124.81087 10.9999 133.7278 0 133.7278S-19.91682 124.81087-19.91682 113.81097C-19.91682 102.81108-10.9999 93.89415 0 93.89415S19.91682 102.81108 19.91682 113.81097ZM0 113.81097" fill="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="0.8">
+<path d="M9.10507 113.81097C9.10507 118.83963 5.02866 122.91605 0 122.91605S-9.10507 118.83963-9.10507 113.81097C-9.10507 108.78232-5.02866 104.7059 0 104.7059S9.10507 108.78232 9.10507 113.81097ZM0 113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M1.42271 113.81097C1.42271 114.59673 .78575 115.23369 0 115.23369S-1.42271 114.59673-1.42271 113.81097C-1.42271 113.02522-.78575 112.38826 0 112.38826S1.42271 113.02522 1.42271 113.81097ZM0 113.81097" stroke="none"></path>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M19.47917 130.31361C19.47917 131.32906 18.65599 132.15224 17.64055 132.15224C16.6251 132.15224 15.80193 131.32906 15.80193 130.31361C15.80193 129.29817 16.6251 128.47499 17.64055 128.47499C18.65599 128.47499 19.47917 129.29817 19.47917 130.31361ZM17.64055 130.31361" stroke="none"></path>
+</g>
+<g transform="translate(17.64055,130.31361)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M21.75545 128.03734C21.75545 129.05278 20.93227 129.87596 19.91682 129.87596C18.90138 129.87596 18.0782 129.05278 18.0782 128.03734S18.90138 126.19872 19.91682 126.19872C20.93227 126.19872 21.75545 127.0219 21.75545 128.03734ZM19.91682 128.03734" stroke="none"></path>
+</g>
+<g transform="translate(19.91682,128.03734)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M17.48772 132.0207C17.48772 133.03615 16.66454 133.85933 15.6491 133.85933C14.63365 133.85933 13.81047 133.03615 13.81047 132.0207C13.81047 131.00526 14.63365 130.18208 15.6491 130.18208C16.66454 130.18208 17.48772 131.00526 17.48772 132.0207ZM15.6491 132.0207" stroke="none"></path>
+</g>
+<g transform="translate(15.6491,132.0207)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M20.61752 131.45152C20.61752 132.46696 19.79434 133.29015 18.7789 133.29015S16.94028 132.46696 16.94028 131.45152S17.76346 129.6129 18.7789 129.6129S20.61752 130.43608 20.61752 131.45152ZM18.7789 131.45152" stroke="none"></path>
+</g>
+<g transform="translate(18.7789,131.45152)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M18.91043 128.60652C18.91043 129.62196 18.08725 130.44514 17.07181 130.44514S15.23318 129.62196 15.23318 128.60652S16.05637 126.7679 17.07181 126.7679S18.91043 127.59108 18.91043 128.60652ZM17.07181 128.60652" stroke="none"></path>
+</g>
+<g transform="translate(17.07181,128.60652)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M179.25237 113.81097C179.25237 131.0967 165.2399 145.10916 147.95418 145.10916S116.65599 131.0967 116.65599 113.81097C116.65599 96.52525 130.66846 82.51279 147.95418 82.51279S179.25237 96.52525 179.25237 113.81097ZM147.95418 113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M167.871 113.81097C167.871 124.81087 158.95407 133.7278 147.95418 133.7278C136.95428 133.7278 128.03735 124.81087 128.03735 113.81097C128.03735 102.81108 136.95428 93.89415 147.95418 93.89415C158.95407 93.89415 167.871 102.81108 167.871 113.81097ZM147.95418 113.81097" fill="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="0.8">
+<path d="M157.05925 113.81097C157.05925 118.83963 152.98283 122.91605 147.95418 122.91605C142.92552 122.91605 138.8491 118.83963 138.8491 113.81097C138.8491 108.78232 142.92552 104.7059 147.95418 104.7059C152.98283 104.7059 157.05925 108.78232 157.05925 113.81097ZM147.95418 113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M149.37689 113.81097C149.37689 114.59673 148.73993 115.23369 147.95418 115.23369S146.53146 114.59673 146.53146 113.81097C146.53146 113.02522 147.16843 112.38826 147.95418 112.38826S149.37689 113.02522 149.37689 113.81097ZM147.95418 113.81097" stroke="none"></path>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M158.3287 136.57324C158.3287 137.58868 157.50552 138.41187 156.49008 138.41187S154.65146 137.58868 154.65146 136.57324S155.47464 134.73462 156.49008 134.73462S158.3287 135.5578 158.3287 136.57324ZM156.49008 136.57324" stroke="none"></path>
+</g>
+<g transform="translate(156.49008,136.57324)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M175.40009 119.50143C175.40009 120.51688 174.5769 121.34006 173.56146 121.34006S171.72284 120.51688 171.72284 119.50143C171.72284 118.486 172.54602 117.66281 173.56146 117.66281S175.40009 118.486 175.40009 119.50143ZM173.56146 119.50143" stroke="none"></path>
+</g>
+<g transform="translate(173.56146,119.50143)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M146.94736 128.03734C146.94736 129.05278 146.12418 129.87596 145.10873 129.87596C144.09329 129.87596 143.27011 129.05278 143.27011 128.03734S144.09329 126.19872 145.10873 126.19872C146.12418 126.19872 146.94736 127.0219 146.94736 128.03734ZM145.10873 128.03734" stroke="none"></path>
+</g>
+<g transform="translate(145.10873,128.03734)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M171.13235 133.7278C171.13235 134.74324 170.30917 135.56642 169.29373 135.56642S167.45511 134.74324 167.45511 133.7278S168.27829 131.88918 169.29373 131.88918S171.13235 132.71236 171.13235 133.7278ZM169.29373 133.7278" stroke="none"></path>
+</g>
+<g transform="translate(169.29373,133.7278)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M164.01917 110.96553C164.01917 111.98097 163.19598 112.80415 162.18054 112.80415S160.34192 111.98097 160.34192 110.96553S161.1651 109.1269 162.18054 109.1269S164.01917 109.95009 164.01917 110.96553ZM162.18054 110.96553" stroke="none"></path>
+</g>
+<g transform="translate(162.18054,110.96553)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M31.29819 0C31.29819 17.28572 17.28572 31.29819 0 31.29819S-31.29819 17.28572-31.29819 0S-17.28572-31.29819 0-31.29819S31.29819-17.28572 31.29819 0ZM0 0" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M19.91682 0C19.91682 10.9999 10.9999 19.91682 0 19.91682S-19.91682 10.9999-19.91682 0S-10.9999-19.91682 0-19.91682S19.91682-10.9999 19.91682 0ZM0 0" fill="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="0.8">
+<path d="M9.10507 0C9.10507 5.02866 5.02866 9.10507 0 9.10507S-9.10507 5.02866-9.10507 0S-5.02866-9.10507 0-9.10507S9.10507-5.02866 9.10507 0ZM0 0" fill="none"></path>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M1.42271 0C1.42271 .78575 .78575 1.42271 0 1.42271S-1.42271 .78575-1.42271 0S-.78575-1.42271 0-1.42271S1.42271-.78575 1.42271 0ZM0 0" stroke="none"></path>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M3.26134 1.70709C3.26134 2.72253 2.43816 3.54572 1.42271 3.54572C.40727 3.54572-.41591 2.72253-.41591 1.70709S.40727-.13153 1.42271-.13153C2.43816-.13153 3.26134 .69165 3.26134 1.70709ZM1.42271 1.70709" stroke="none"></path>
+</g>
+<g transform="translate(1.42271,1.70709)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M.13153 1.13791C.13153 2.15335-.69165 2.97653-1.70709 2.97653S-3.54572 2.15335-3.54572 1.13791S-2.72253-.70071-1.70709-.70071S.13153 .12247 .13153 1.13791ZM-1.70709 1.13791" stroke="none"></path>
+</g>
+<g transform="translate(-1.70709,1.13791)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M2.69217-1.42271C2.69217-.40727 1.86899 .41591 .85355 .41591C-.1619 .41591-.98508-.40727-.98508-1.42271C-.98508-2.43816-.1619-3.26134 .85355-3.26134C1.86899-3.26134 2.69217-2.43816 2.69217-1.42271ZM.85355-1.42271" stroke="none"></path>
+</g>
+<g transform="translate(0.85355,-1.42271)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M1.26945-.85355C1.26945 .1619 .44627 .98508-.56917 .98508S-2.40779 .1619-2.40779-.85355C-2.40779-1.86899-1.58461-2.69217-.56917-2.69217S1.26945-1.86899 1.26945-.85355ZM-.56917-.85355" stroke="none"></path>
+</g>
+<g transform="translate(-0.56917,-0.85355)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M3.83052-.28436C3.83052 .73108 3.00734 1.55426 1.9919 1.55426S.15327 .73108 .15327-.28436S.97646-2.12299 1.9919-2.12299S3.83052-1.2998 3.83052-.28436ZM1.9919-.28436" stroke="none"></path>
+</g>
+<g transform="translate(1.9919,-0.28436)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M179.25237 0C179.25237 17.28572 165.2399 31.29819 147.95418 31.29819S116.65599 17.28572 116.65599 0S130.66846-31.29819 147.95418-31.29819S179.25237-17.28572 179.25237 0ZM147.95418 0" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M167.871 0C167.871 10.9999 158.95407 19.91682 147.95418 19.91682C136.95428 19.91682 128.03735 10.9999 128.03735 0S136.95428-19.91682 147.95418-19.91682C158.95407-19.91682 167.871-10.9999 167.871 0ZM147.95418 0" fill="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="0.8">
+<path d="M157.05925 0C157.05925 5.02866 152.98283 9.10507 147.95418 9.10507C142.92552 9.10507 138.8491 5.02866 138.8491 0S142.92552-9.10507 147.95418-9.10507C152.98283-9.10507 157.05925-5.02866 157.05925 0ZM147.95418 0" fill="none"></path>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M149.37689 0C149.37689 .78575 148.73993 1.42271 147.95418 1.42271S146.53146 .78575 146.53146 0S147.16843-1.42271 147.95418-1.42271S149.37689-.78575 149.37689 0ZM147.95418 0" stroke="none"></path>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M165.4419 9.95863C165.4419 10.97408 164.61871 11.79726 163.60327 11.79726S161.76465 10.97408 161.76465 9.95863C161.76465 8.94319 162.58783 8.12001 163.60327 8.12001S165.4419 8.94319 165.4419 9.95863ZM163.60327 9.95863" stroke="none"></path>
+</g>
+<g transform="translate(163.60327,9.95863)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M135.56644 8.5359C135.56644 9.55135 134.74326 10.37453 133.72781 10.37453C132.71237 10.37453 131.88919 9.55135 131.88919 8.5359C131.88919 7.52046 132.71237 6.69728 133.72781 6.69728C134.74326 6.69728 135.56644 7.52046 135.56644 8.5359ZM133.72781 8.5359" stroke="none"></path>
+</g>
+<g transform="translate(133.72781,8.5359)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M152.63824-17.07181C152.63824-16.05637 151.81506-15.23318 150.79962-15.23318S148.961-16.05637 148.961-17.07181S149.78418-18.91043 150.79962-18.91043S152.63824-18.08725 152.63824-17.07181ZM150.79962-17.07181" stroke="none"></path>
+</g>
+<g transform="translate(150.79962,-17.07181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M139.83417-11.38092C139.83417-10.36548 139.01099-9.5423 137.99554-9.5423C136.9801-9.5423 136.15692-10.36548 136.15692-11.38092S136.9801-13.21954 137.99554-13.21954C139.01099-13.21954 139.83417-12.39636 139.83417-11.38092ZM137.99554-11.38092" stroke="none"></path>
+</g>
+<g transform="translate(137.99554,-11.38092)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b">
+<g fill="#d7433b">
+<path d="M161.17372 2.84544C161.17372 3.86089 160.35054 4.68407 159.3351 4.68407S157.49648 3.86089 157.49648 2.84544C157.49648 1.83 158.31966 1.00682 159.3351 1.00682S161.17372 1.83 161.17372 2.84544ZM159.3351 2.84544" stroke="none"></path>
+</g>
+<g transform="translate(159.3351,2.84544)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none"></g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-42.38031,156.21053)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-7.723038" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="-2.565363" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x=".381885" y="97.159152" href="#tz_alvo_validade_g0-116"></use>
+<use x="4.508026" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="13.202395" y="97.159152" href="#tz_alvo_validade_g0-99"></use>
+<use x="17.91799" y="97.159152" href="#tz_alvo_validade_g0-111"></use>
+<use x="23.223032" y="97.159152" href="#tz_alvo_validade_g0-110"></use>
+<use x="29.117521" y="97.159152" href="#tz_alvo_validade_g0-12"></use>
+<use x="35.012009" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="40.169683" y="97.159152" href="#tz_alvo_validade_g0-98"></use>
+<use x="46.064171" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="49.01142" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x="51.958668" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="54.905916" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="60.800405" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="65.958079" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="71.852567" y="97.159152" href="#tz_alvo_validade_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(101.87599,156.21053)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-7.723038" y="97.159152" href="#tz_alvo_validade_g0-98"></use>
+<use x="-1.828549" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="3.329125" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="6.276373" y="97.159152" href="#tz_alvo_validade_g0-120"></use>
+<use x="11.876151" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="20.57052" y="97.159152" href="#tz_alvo_validade_g0-99"></use>
+<use x="25.286116" y="97.159152" href="#tz_alvo_validade_g0-111"></use>
+<use x="30.591158" y="97.159152" href="#tz_alvo_validade_g0-110"></use>
+<use x="36.485646" y="97.159152" href="#tz_alvo_validade_g0-12"></use>
+<use x="42.380134" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="47.537808" y="97.159152" href="#tz_alvo_validade_g0-98"></use>
+<use x="53.432296" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="56.379545" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x="59.326793" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="62.274042" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="68.16853" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="73.326204" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="79.220692" y="97.159152" href="#tz_alvo_validade_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="matrix(0.0,1.0,-1.0,0.0,-50.93503,80.60136)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-7.723038" y="97.159152" href="#tz_alvo_validade_g0-98"></use>
+<use x="-1.828549" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="3.329125" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="6.276373" y="97.159152" href="#tz_alvo_validade_g0-120"></use>
+<use x="11.876151" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="20.57052" y="97.159152" href="#tz_alvo_validade_g0-118"></use>
+<use x="25.580849" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="30.738523" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x="33.685771" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="36.63302" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="42.527508" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="47.685182" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="53.57967" y="97.159152" href="#tz_alvo_validade_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="matrix(0.0,1.0,-1.0,0.0,-50.93503,-29.51173)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-7.723038,97.159152)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-7.723038" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="-2.565363" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x=".381885" y="97.159152" href="#tz_alvo_validade_g0-116"></use>
+<use x="4.508026" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="13.202395" y="97.159152" href="#tz_alvo_validade_g0-118"></use>
+<use x="18.212723" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="23.370397" y="97.159152" href="#tz_alvo_validade_g0-108"></use>
+<use x="26.317646" y="97.159152" href="#tz_alvo_validade_g0-105"></use>
+<use x="29.264894" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="35.159383" y="97.159152" href="#tz_alvo_validade_g0-97"></use>
+<use x="40.317057" y="97.159152" href="#tz_alvo_validade_g0-100"></use>
+<use x="46.211545" y="97.159152" href="#tz_alvo_validade_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alvo-validade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;16.1: Confiabilidade é o quanto os dardos se agrupam; validade é o quão perto do centro eles caem, em média. Note o quadrante superior esquerdo: uma medida pode ser altamente consistente e sistematicamente errada. Não existe o quadrante “válido e agrupado longe do centro” — por isso confiabilidade é pré-requisito, não garantia.
+</figcaption>
+</figure>
+</div>
+<p>Leia a figura com atenção ao caso perverso do canto superior esquerdo: dardos muito agrupados, mas longe do alvo. É a medida <strong>confiável e inválida</strong> — consistentíssima em medir a coisa errada. Uma balança descalibrada que sempre marca 3 kg a mais é assim: perfeitamente confiável, sistematicamente inválida. É o caso mais perigoso, porque a consistência dá uma falsa sensação de qualidade. Já o canto inferior direito — dardos espalhados em torno do centro — é <strong>válido em média, mas não confiável</strong>: acerta na média de muitas medições, mas cada medição isolada é ruim. A assimetria fica clara: sem agrupamento (confiabilidade), não há como acertar o centro de forma estável; mas agrupar não garante estar no centro. Por isso se diz que a confiabilidade impõe um <strong>teto</strong> à validade — uma medida cheia de erro aleatório não pode ser válida, mas eliminar o erro aleatório não conserta um erro <em>sistemático</em> de direção.</p>
+</section>
+<section id="quatro-validades-de-um-estudo-inteiro" class="level2">
+<h2 class="anchored" data-anchor-id="quatro-validades-de-um-estudo-inteiro">Quatro validades de um estudo inteiro</h2>
+<p>Até aqui “validade” designou a qualidade de uma <em>medida</em>. O termo tem um segundo uso, herdado de Campbell e Stanley e do Cap. 14: a qualidade das <em>inferências de um estudo como um todo</em> <span class="citation" data-cites="campbell_stanley1963 shadish2002">(<a href="../../referencias.html#ref-campbell_stanley1963" role="doc-biblioref">Campbell; Stanley, 1963</a>; <a href="../../referencias.html#ref-shadish2002" role="doc-biblioref">Shadish; Cook; Campbell, 2002</a>)</span>. São quatro tipos, e vale tê-los separados porque um estudo pode ser forte num e fraco noutro.</p>
+<p>A <strong>validade de construto</strong> (do estudo) pergunta se as operacionalizações — da causa e do efeito — de fato representam os construtos teóricos pretendidos. É a mensuração da seção anterior, elevada ao nível do delineamento: manipulei mesmo “estresse”, ou apenas “barulho”? Medi “agressão”, ou “disposição a apertar um botão”?</p>
+<p>A <strong>validade interna</strong> (Cap. 14) pergunta se foi a VI, e não uma confusão, que causou o efeito. É a validade da conclusão <em>causal</em>, dentro daquele estudo.</p>
+<p>A <strong>validade externa</strong> pergunta se o resultado se <strong>generaliza</strong> — para outras pessoas, outros lugares, outros tempos, outras operacionalizações. Um efeito robusto entre calouros norte-americanos num laboratório vale para trabalhadores brasileiros no cotidiano? A resposta nunca é automática; é ela própria uma hipótese (é o problema WEIRD do Cap. 1). Um caso especial muito citado é a <strong>validade ecológica</strong>: o grau em que as condições do estudo se assemelham às da vida real.</p>
+<p>A <strong>validade de conclusão estatística</strong> pergunta se as inferências sobre a existência e o tamanho da relação — extraídas dos testes estatísticos — estão corretas. Amostra pequena demais, pressupostos violados, uso indevido de testes: tudo isso a ameaça, e é o assunto dos Caps. 18 e 19.</p>
+<div class="atencao">
+<p><strong>A troca permanente entre validade interna e externa.</strong> As duas puxam em direções opostas, e é raro maximizar ambas. Para blindar a validade <em>interna</em>, o pesquisador aperta o controle: laboratório, tarefa padronizada, tudo mantido constante — e, ao fazê-lo, afasta a situação da vida real, arriscando a validade <em>externa</em>. Para ganhar validade <em>externa</em>, leva o estudo a campo, ao mundo bagunçado — e perde o controle que blinda a validade interna. Não há desenho que resolva o dilema de uma vez; resolve-se com <em>programas</em> de pesquisa, combinando estudos de laboratório rigorosos com estudos de campo realistas, cada um cobrindo a fraqueza do outro. Desconfie de quem apresenta um único estudo como palavra final: nenhum estudo isolado é forte nas quatro validades ao mesmo tempo.</p>
+</div>
+<div class="callout-sintese">
+<ul>
+<li><strong>A escala de medida</strong> — nominal, ordinal, intervalar, de razão — determina quais operações fazem sentido; tirar médias de dados nominais é absurdo, e de ordinais é uma suposição a ser justificada.</li>
+<li><strong>Confiabilidade é consistência:</strong> o grau em que a medida se repete. Formaliza-se por <span class="math inline">\(X = V + E\)</span> e estima-se por teste-reteste (tempo), entre avaliadores (observadores) e consistência interna (itens, via alfa de Cronbach).</li>
+<li><strong>Validade é adequação:</strong> o grau em que a interpretação dos escores capta o construto pretendido. Conteúdo (cobre o domínio?), critério (prediz algo externo? — preditiva e concorrente) e construto (capta o conceito? — com validade convergente e discriminante).</li>
+<li><strong>Confiabilidade é necessária, não suficiente, para validade.</strong> Uma medida pode ser consistentíssima e sistematicamente errada (dardos agrupados fora do alvo); a confiabilidade impõe um teto à validade, mas não a garante.</li>
+<li><strong>No nível do estudo inteiro, há quatro validades:</strong> de construto (as operacionalizações representam os construtos?), interna (foi a VI que causou?), externa (generaliza?) e de conclusão estatística (as inferências numéricas estão corretas?).</li>
+<li><strong>Validade interna e externa competem;</strong> nenhum estudo isolado é forte em todas. O conhecimento robusto vem de programas que combinam laboratório e campo.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Variável</strong></dt>
+<dd>
+Característica que assume valores diferentes entre indivíduos ou situações.
+</dd>
+<dt><strong>Escalas de medida</strong></dt>
+<dd>
+Níveis de mensuração — nominal (categorias), ordinal (ordem), intervalar (intervalos iguais, zero arbitrário) e de razão (zero absoluto) — que determinam as operações cabíveis <span class="citation" data-cites="stevens1946">(<a href="../../referencias.html#ref-stevens1946" role="doc-biblioref">Stevens, 1946</a>)</span>.
+</dd>
+<dt><strong>Confiabilidade</strong></dt>
+<dd>
+Consistência de uma medida; grau em que ela produz o mesmo resultado sob condições equivalentes.
+</dd>
+<dt><strong>Teoria clássica dos testes</strong></dt>
+<dd>
+Modelo segundo o qual o escore observado é a soma do escore verdadeiro e de um erro aleatório (<span class="math inline">\(X = V + E\)</span>).
+</dd>
+<dt><strong>Alfa de Cronbach</strong></dt>
+<dd>
+Índice de consistência interna que resume a correlação média entre os itens de um instrumento <span class="citation" data-cites="cronbach1951">(<a href="../../referencias.html#ref-cronbach1951" role="doc-biblioref">Cronbach, 1951</a>)</span>.
+</dd>
+<dt><strong>Validade</strong></dt>
+<dd>
+Adequação das interpretações feitas a partir dos escores de uma medida, para um uso específico.
+</dd>
+<dt><strong>Validade de conteúdo</strong></dt>
+<dd>
+Grau em que os itens cobrem representativamente o domínio do construto.
+</dd>
+<dt><strong>Validade de critério</strong></dt>
+<dd>
+Grau em que a medida se correlaciona com um critério externo relevante; preditiva (critério futuro) ou concorrente (critério simultâneo).
+</dd>
+<dt><strong>Validade de construto</strong></dt>
+<dd>
+Grau em que a medida capta o construto teórico pretendido; sustentada por validade convergente e discriminante <span class="citation" data-cites="cronbach_meehl1955 campbell_fiske1959">(<a href="../../referencias.html#ref-campbell_fiske1959" role="doc-biblioref">Campbell; Fiske, 1959</a>; <a href="../../referencias.html#ref-cronbach_meehl1955" role="doc-biblioref">Cronbach; Meehl, 1955</a>)</span>.
+</dd>
+<dt><strong>Validade interna / externa</strong></dt>
+<dd>
+A primeira, a solidez da conclusão causal dentro do estudo; a segunda, o grau em que o resultado se generaliza para além dele.
+</dd>
+<dt><strong>Validade ecológica</strong></dt>
+<dd>
+Grau em que as condições do estudo se assemelham às da vida real.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Classifique cada variável quanto à escala de medida: (a) número da camisa de um jogador; (b) posição de chegada numa corrida; (c) temperatura em graus Celsius; (d) número de palavras recordadas num teste de memória. Para quais faz sentido calcular uma média?</p></li>
+<li><p><strong>(Recuperação.)</strong> Explique a equação <span class="math inline">\(X = V + E\)</span> e use-a para definir o que significa uma medida “confiável”.</p></li>
+<li><p><strong>(Aplicação.)</strong> Um novo questionário de dez itens promete medir “resiliência”. Descreva uma evidência de confiabilidade e uma de cada tipo de validade (conteúdo, critério, construto) que você exigiria antes de adotá-lo. Qual seria a mais difícil de obter, e por quê?</p></li>
+<li><p><strong>(Aplicação.)</strong> Uma balança de banheiro sempre marca exatamente 2 kg a mais que o peso real. Localize essa balança em um dos quadrantes da <a href="#fig-alvo-validade" class="quarto-xref">Figura&nbsp;<span>16.1</span></a> e explique por que aumentar sua confiabilidade não corrigiria o problema.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Um fornecedor de testes de RH exibe orgulhosamente um alfa de Cronbach de 0,95 para seu instrumento de “potencial de liderança”. Por que esse número, sozinho, não deveria convencer ninguém a comprá-lo? Que pergunta você faria em seguida?</p></li>
+<li><p><strong>(Integração.)</strong> Um estudo de laboratório demonstra, com controle impecável, que uma manipulação aumenta a “cooperação” (medida por fichas doadas num jogo econômico). Avalie o estudo nas quatro validades: qual provavelmente é sua maior força e qual sua maior vulnerabilidade? Como um segundo estudo poderia cobrir essa fraqueza?</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-campbell_fiske1959" class="csl-entry" role="listitem">
+CAMPBELL, Donald T.; FISKE, Donald W. <a href="https://doi.org/10.1037/h0046016">Convergent and discriminant validation by the multitrait-multimethod matrix</a>. <strong>Psychological Bulletin</strong>, v. 56, n. 2, p. 81–105, 1959.
+</div>
+<div id="ref-campbell_stanley1963" class="csl-entry" role="listitem">
+CAMPBELL, Donald T.; STANLEY, Julian C. <strong>Experimental and Quasi-Experimental Designs for Research</strong>. Chicago: Rand McNally, 1963.
+</div>
+<div id="ref-cronbach1951" class="csl-entry" role="listitem">
+CRONBACH, Lee J. Coefficient alpha and the internal structure of tests. <strong>Psychometrika</strong>, v. 16, n. 3, p. 297–334, 1951.
+</div>
+<div id="ref-cronbach_meehl1955" class="csl-entry" role="listitem">
+CRONBACH, Lee J.; MEEHL, Paul E. Construct validity in psychological tests. <strong>Psychological Bulletin</strong>, v. 52, n. 4, p. 281–302, 1955.
+</div>
+<div id="ref-shadish2002" class="csl-entry" role="listitem">
+SHADISH, William R.; COOK, Thomas D.; CAMPBELL, Donald T. <strong>Experimental and Quasi-Experimental Designs for Generalized Causal Inference</strong>. Boston: Houghton Mifflin, 2002.
+</div>
+<div id="ref-stevens1946" class="csl-entry" role="listitem">
+STEVENS, Stanley S. On the theory of scales of measurement. <strong>Science</strong>, v. 103, n. 2684, p. 677–680, 1946.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1797,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
