@@ -1,5 +1,231 @@
 # 14. O método experimental
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Enunciar** as três condições que uma afirmação causal precisa satisfazer e explicar por que só o experimento consegue garantir a terceira.
+- **Identificar** os componentes de um experimento — variável independente, variável dependente, grupos, operacionalização — em qualquer estudo que encontrar.
+- **Explicar** por que a *atribuição aleatória* é o coração do método experimental e por que ela é diferente da amostragem aleatória.
+- **Reconhecer** ameaças à validade interna — variáveis de confusão, efeitos do experimentador, características de demanda — e as técnicas de controle que as neutralizam (grupo-controle, placebo, cegamento).
+- **Distinguir** delineamentos entre-sujeitos e intra-sujeitos, entender os efeitos de ordem e a função do contrabalanceamento.
+- **Avaliar criticamente** o alcance de um resultado experimental, separando a pergunta "o efeito é real aqui?" da pergunta "o efeito vale lá fora?".
 :::
+
+No Vol 2 vimos a psicologia conquistar um método. Este volume é sobre o que esse método efetivamente faz — e nenhuma peça dele é mais poderosa, nem mais mal compreendida, do que o experimento. Poderosa porque é a única ferramenta que a ciência tem para afirmar, com segurança, que uma coisa *causa* outra. Mal compreendida porque a palavra "experimento" é usada no cotidiano para qualquer tentativa ("vou experimentar acordar mais cedo"), quando no vocabulário científico ela designa uma estrutura muito específica, com regras que, se quebradas, invalidam a conclusão inteira.
+
+Este capítulo desmonta essa estrutura. A tese é simples e será repetida de várias formas: **experimentar não é observar com capricho — é intervir de um jeito que torna as explicações rivais impossíveis.** Tudo o que se segue é consequência disso.
+
+## O problema que só o experimento resolve
+
+Quase todo o conhecimento interessante em psicologia é causal. Não queremos apenas saber que crianças que leem mais têm vocabulário maior; queremos saber se ler *faz* o vocabulário crescer. Não basta observar que pessoas deprimidas dormem mal; a pergunta é se a insônia *provoca*, *resulta de*, ou apenas *acompanha* a depressão. Decisões práticas — que terapia oferecer, que método de ensino adotar, que política pública financiar — dependem de respostas causais, não de meras associações.
+
+E aqui está a dificuldade. Desde David Hume, sabe-se que a causalidade não é algo que se veja. Vemos uma bola bater na outra e a segunda se mover; a "força causal" que liga as duas não aparece em lugar nenhum — nós a inferimos [@hume1748]. O que os sentidos entregam é **sucessão** e **regularidade**: isto aconteceu, depois aquilo, e o padrão se repete. A causalidade é uma conclusão que a mente acrescenta, e acrescenta com generosidade excessiva, como o Cap. 1 mostrou.
+
+A metodologia moderna traduziu a intuição de Hume em três condições que uma afirmação da forma "X causa Y" precisa satisfazer [@shadish2002]:
+
+1. **Covariação.** X e Y variam juntos: quando X muda, Y tende a mudar. Sem isso não há nem candidato a relação.
+2. **Precedência temporal.** A causa vem antes do efeito. Se Y já estava lá antes de X, X não pode tê-lo causado.
+3. **Eliminação de explicações alternativas.** Nenhuma outra variável dá conta da covariação. Esta é a condição difícil — e é ela que separa o experimento de todos os outros métodos.
+
+As duas primeiras condições, um bom estudo observacional às vezes consegue. A terceira, quase nunca. Enquanto houver uma terceira variável plausível capaz de produzir a associação entre X e Y, a conclusão causal fica em aberto. O experimento é a única técnica que ataca a terceira condição de frente — não listando e medindo cada alternativa possível (tarefa infinita), mas construindo uma situação em que, por desenho, as alternativas ficam distribuídas igualmente entre as condições e portanto não podem explicar a diferença. Como isso é feito é o assunto da próxima seção.
+
+::: {.atencao}
+**Correlação não é causação — mas o slogan é preguiçoso.** Repetir a frase é fácil; o que importa é saber *por que*. Uma correlação entre X e Y é compatível com pelo menos quatro histórias: X causa Y; Y causa X (causalidade reversa); uma terceira variável Z causa ambos (confusão); ou a associação é um acaso amostral. O experimento não "prova" que X causa Y por magia — ele elimina, de uma vez, as três últimas possibilidades. Sempre que alguém saltar de uma associação para uma recomendação ("faça X para conseguir Y"), pergunte qual das quatro histórias foi descartada, e como.
+:::
+
+## Anatomia de um experimento
+
+Reduzido ao osso, um experimento tem quatro componentes.
+
+A **variável independente** (VI) é aquilo que o pesquisador **manipula** deliberadamente — o suposto fator causal. É "independente" porque seu valor é decidido pelo experimentador, não pela natureza do participante. A **variável dependente** (VD) é aquilo que se **mede** para ver se a manipulação surtiu efeito — o suposto efeito. Chama-se "dependente" porque, se a hipótese estiver certa, seu valor depende do da VI. A regra mnemônica é direta: a VI é a causa candidata, a VD é o efeito candidato.
+
+Toda VI tem pelo menos dois **níveis** ou **condições**, porque manipular significa comparar: um valor da variável contra outro. No caso mais simples, um nível é a **condição experimental** (recebe o tratamento) e o outro é a **condição de controle** (não recebe, ou recebe um comparador neutro). Sem um ponto de comparação, um resultado não diz nada: se um grupo que recebeu um remédio melhorou, isso é bom ou ruim? Depende do que teria acontecido *sem* o remédio — e é exatamente isso que o grupo-controle estima. A @fig-anatomia-experimento resume o fluxo.
+
+::: {#fig-anatomia-experimento}
+```{.tikz}
+%%| filename: anatomia-experimento
+%%| alt: Fluxograma da estrutura de um experimento. À esquerda, uma caixa cinza "Amostra de participantes". Dela parte uma seta rotulada "atribuição aleatória (sorteio)" que se divide em duas caixas: em azul, "Grupo experimental — recebe a VI"; em cinza, "Grupo-controle — não recebe a VI". De cada grupo sai uma seta para uma caixa "Mede-se a VD". As duas medidas convergem para uma caixa vermelha à direita, "Compara os grupos: a diferença é o efeito da VI".
+\begin{tikzpicture}[
+  cx/.style={draw, thick, rounded corners=3pt, align=center, font=\small, minimum height=1.1cm},
+  fluxo/.style={->, >=Stealth, thick, manualgray}
+]
+  \node[cx, draw=manualgray, fill=manualgray!10, minimum width=2.9cm] (amostra) at (0,0)
+    {\textbf{Amostra}\\de participantes};
+  \node[cx, draw=manualblue, fill=manualblue!8, minimum width=3.4cm] (exp) at (5.4,1.5)
+    {\textbf{Grupo experimental}\\recebe a VI};
+  \node[cx, draw=manualgray, fill=manualgray!8, minimum width=3.4cm] (ctrl) at (5.4,-1.5)
+    {\textbf{Grupo-controle}\\não recebe a VI};
+  \node[cx, draw=manualgray, fill=white, minimum width=2.2cm] (mede1) at (9.6,1.5) {mede a VD};
+  \node[cx, draw=manualgray, fill=white, minimum width=2.2cm] (mede2) at (9.6,-1.5) {mede a VD};
+  \node[cx, draw=manualred, fill=manualred!8, minimum width=3.1cm, text width=3cm] (comp) at (13.3,0)
+    {\textbf{Compara}\\a diferença é o\\efeito da VI};
+
+  \draw[fluxo] (amostra) to[out=60, in=180] node[midway, above, font=\scriptsize, align=center, text=manualgray] {sorteio} (exp);
+  \draw[fluxo] (amostra) to[out=-60, in=180] (ctrl);
+  \draw[fluxo] (exp) -- (mede1);
+  \draw[fluxo] (ctrl) -- (mede2);
+  \draw[fluxo, manualred] (mede1) to[out=0, in=90] (comp);
+  \draw[fluxo, manualred] (mede2) to[out=0, in=-90] (comp);
+\end{tikzpicture}
+```
+A estrutura lógica de um experimento simples. O sorteio torna os dois grupos equivalentes antes da manipulação; qualquer diferença final na VD só pode vir da VI.
+:::
+
+O quarto componente é menos óbvio e mais decisivo: como cada participante acaba em uma condição ou na outra. A resposta correta — atribuição aleatória — merece seção própria. Antes dela, um passo que costuma ser subestimado.
+
+### Operacionalização: do conceito ao número
+
+Uma VI e uma VD são, no papel da teoria, conceitos abstratos: "estresse", "atenção", "agressividade". Mas não se manipula nem se mede um conceito abstrato — manipula-se e mede-se um procedimento concreto. **Operacionalizar** é definir uma variável pelas operações específicas usadas para produzi-la ou registrá-la. "Estresse" vira "resolver aritmética mental sob pressão de tempo com um avaliador crítico observando"; "agressividade" vira "número de choques administrados", ou "intensidade do som direcionada a outra pessoa", ou "empurrões registrados no recreio".
+
+Essa tradução é onde muita coisa se ganha e se perde. Uma boa definição operacional é replicável (outro laboratório aplica o mesmo procedimento) e captura o conceito pretendido; uma ruim mede outra coisa com o nome certo. O Cap. 16 dedica-se inteiro a avaliar a qualidade dessas traduções — é o problema da **validade de construto**. Por ora, guarde o princípio: todo resultado empírico é sobre a *operacionalização*, e generalizá-lo para o *conceito* é sempre uma inferência adicional, nunca automática.
+
+::: {.na-pratica}
+**Lendo uma manchete com as ferramentas certas.** "Estudo mostra que videogame violento aumenta agressividade." Antes de aceitar ou rejeitar, faça três perguntas de anatomia. **Qual foi a VI e ela foi manipulada?** Se os pesquisadores apenas compararam quem *já joga* jogos violentos com quem não joga, não houve manipulação — é um estudo correlacional disfarçado, e o Cap. 15 explica por que isso muda tudo. **Como a VD foi operacionalizada?** "Agressividade" medida por quanto molho picante a pessoa serve a um estranho é uma coisa; agressão física real é outra. **Havia grupo-controle e os participantes foram distribuídos por sorteio?** Se sim, a manchete pode ter fundamento causal; se não, ela está afirmando mais do que os dados permitem. Essas três perguntas resolvem a maioria das dúvidas antes de você precisar do artigo inteiro.
+:::
+
+## A atribuição aleatória: o coração do método
+
+Suponha que se queira testar se um novo programa de tutoria melhora o desempenho escolar. Reúnem-se 200 alunos, metade recebe a tutoria, metade não, e ao fim comparam-se as notas. Se o grupo tutorado for melhor, o programa funcionou?
+
+Ainda não. Tudo depende de *como* os alunos foram parar em cada grupo. Se os 100 tutorados foram os que se voluntariaram, o grupo já era diferente antes de qualquer tutoria: quem se voluntaria para estudar mais tende a ser mais motivado, mais apoiado pela família, mais bem alimentado. Qualquer diferença de nota ao final confunde o efeito da tutoria com o efeito da motivação prévia. Essas diferenças pré-existentes entre os grupos são o pesadelo do método experimental, e têm nome: **variáveis de confusão** (ou confundidoras).
+
+A solução é de uma elegância que levou séculos para ser formulada com clareza, e deve-se sobretudo ao estatístico Ronald Fisher, que a sistematizou em experimentos agrícolas nos anos 1920 [@fisher1935]. Em vez de deixar que os participantes escolham, ou que o pesquisador os aloque segundo qualquer critério, **sorteia-se** cada participante para uma condição — cara vai para a tutoria, coroa fica no controle. Isso é a **atribuição aleatória** (*random assignment*).
+
+O que o sorteio faz é sutil e profundo. Ele não elimina as diferenças individuais — motivação, inteligência, apoio familiar continuam existindo. Ele **distribui essas diferenças igualmente**, em média, entre os dois grupos. Os alunos muito motivados se espalham mais ou menos meio a meio; os mal alimentados, idem; e o mesmo vale para *toda* variável de confusão imaginável, inclusive as que ninguém pensou em medir. É essa a força do método: a aleatorização controla até as confusões desconhecidas, porque não depende de identificá-las. Com grupos grandes o bastante, os dois grupos ficam equivalentes em tudo — **exceto** naquilo que o experimentador manipula. E então, se ao final eles diferem na VD, só resta uma explicação: a VI.
+
+::: {.experimento}
+**Pigmaleão na sala de aula** [@rosenthal_jacobson1968]
+
+**Desenho.** Robert Rosenthal e Lenore Jacobson aplicaram um teste a alunos de uma escola primária e informaram aos professores que ele identificava crianças prestes a "desabrochar" intelectualmente. Em seguida, entregaram a cada professor uma lista dos alunos supostamente promissores. O detalhe decisivo: os nomes da lista tinham sido **sorteados ao acaso**, sem qualquer relação com o teste. A única diferença entre os "prometidos" e os demais existia na cabeça dos professores.
+
+**Resultado.** Oito meses depois, as crianças sorteadas para a lista — sobretudo as mais novas — apresentaram ganhos de QI significativamente maiores que as colegas. A expectativa do professor, e nada mais, havia produzido uma diferença mensurável no desempenho.
+
+**Interpretação.** O efeito, apelidado de **profecia autorrealizável** ou *efeito Pigmaleão*, ilustra dois pontos deste capítulo ao mesmo tempo. Primeiro, o poder da manipulação: como o rótulo foi atribuído por sorteio, a diferença final não pode vir de talento prévio — os grupos eram equivalentes no início, por construção. Segundo, o próprio mecanismo estudado — expectativas que se transmitem em micromudanças de tratamento — é a razão pela qual, em outros experimentos, é preciso cegar quem aplica o procedimento (mais adiante neste capítulo).
+
+**Limitações.** O tamanho e a robustez do efeito Pigmaleão foram muito debatidos; réplicas encontram efeitos menores e concentrados em certas faixas, e a medida de QI usada foi criticada. O valor do estudo aqui é didático: ele exibe, em estado quase puro, o que a atribuição aleatória garante e por que expectativas contaminam resultados.
+:::
+
+::: {.atencao}
+**Atribuição aleatória ≠ amostragem aleatória.** São dois sorteios com funções opostas, e confundi-los é um dos erros mais comuns de quem está aprendendo métodos. A **amostragem aleatória** decide *quem entra no estudo* — sorteia participantes de uma população — e serve à **validade externa** (poder generalizar o resultado para essa população; ver Cap. 17). A **atribuição aleatória** decide, *entre os que já entraram*, *quem vai para cada condição* — e serve à **validade interna** (poder afirmar que foi a VI, e não uma confusão, que causou o efeito). Um experimento pode ter atribuição aleatória impecável e amostra péssima (100 calouros de psicologia sorteados entre duas condições): conclusão causal sólida, generalização frágil. O inverso também ocorre. As duas coisas resolvem problemas diferentes e nenhuma substitui a outra.
+:::
+
+## Ameaças à validade interna e como neutralizá-las
+
+Chama-se **validade interna** o grau em que um experimento sustenta a conclusão de que foi a VI que causou a variação na VD, dentro daquele estudo. Uma ameaça à validade interna é qualquer coisa que ofereça uma explicação rival para o resultado. A atribuição aleatória cuida das diferenças pré-existentes entre pessoas; sobram outras ameaças, e para cada uma há uma técnica de controle. Campbell e Stanley catalogaram esse repertório de forma tão influente que ele estrutura o campo até hoje [@campbell_stanley1963].
+
+**Variáveis de confusão em geral.** Uma confusão é qualquer variável que se altera *junto* com a VI e que também poderia afetar a VD. Se o grupo experimental é testado de manhã e o controle à tarde, "hora do dia" está confundida com a manipulação. A técnica geral é **manter constante** tudo o que não é a VI: mesma sala, mesmo horário, mesmas instruções, mesmo experimentador. O que não se pode manter constante, distribui-se por sorteio.
+
+**Efeitos do experimentador.** O pesquisador que sabe qual condição cada participante recebeu pode, sem perceber, tratá-los de modo diferente — um tom de voz mais caloroso, uma dica sutil, um registro enviesado de respostas ambíguas. Rosenthal demonstrou o fenômeno de forma constrangedora: estudantes que acreditavam manipular ratos "geneticamente brilhantes" obtiveram deles melhor desempenho em labirintos do que estudantes que criam manipular ratos "burros" — sendo que os ratos haviam sido distribuídos ao acaso e eram indistinguíveis [@rosenthal_fode1963]. Se a expectativa vaza até para roedores, imagine para pessoas.
+
+::: {.na-pratica}
+**Por que ensaios clínicos são duplo-cegos.** A defesa contra os efeitos do experimentador é o **cegamento**. Num estudo **simples-cego**, o participante não sabe se recebeu o tratamento ou o placebo — isso neutraliza a expectativa *dele*. Num estudo **duplo-cego**, nem o participante nem quem aplica e avalia sabem quem está em qual grupo — o que neutraliza também a expectativa do experimentador. É por isso que o teste de um novo antidepressivo (Vol 14) compara o fármaco a uma pílula idêntica sem princípio ativo, com a alocação guardada em código que só se abre ao final. Sem duplo-cego, é impossível separar o efeito da molécula do efeito de *acreditar* que se está sendo tratado — que é real e às vezes grande. Esse último é o **efeito placebo**, tema recorrente do Vol 14.
+:::
+
+**Características de demanda.** Participantes não são objetos passivos: eles tentam adivinhar a hipótese do estudo e, muitas vezes, cooperar com ela (ou sabotá-la). Martin Orne chamou de **características de demanda** as pistas que denunciam o que se espera do participante, levando-o a produzir o comportamento "certo" por conta própria [@orne1962]. O controle é combinar cegamento, disfarce da hipótese (histórias de fachada plausíveis) e, quando ético, grupos de controle que recebem toda a parafernália do experimento *menos* o ingrediente ativo, para que a mera saliência do procedimento não explique o efeito.
+
+::: {.experimento}
+**O cavalo que sabia contar** [@pfungst1911]
+
+**Desenho.** No início do século XX, o cavalo Hans, na Alemanha, aparentemente resolvia contas, batendo o casco o número certo de vezes. Uma comissão examinou o caso, e o psicólogo Oskar Pfungst conduziu testes sistemáticos: variou se quem fazia a pergunta *sabia* a resposta e se Hans conseguia *ver* o interrogador.
+
+**Resultado.** Hans acertava apenas quando quem perguntava conhecia a resposta **e** estava visível. Cego ao interrogador, ou diante de alguém que ignorava a resposta, o cavalo errava. Hans não fazia aritmética: lia posturas e microexpressões involuntárias de quem esperava que ele parasse de bater na hora certa.
+
+**Interpretação.** O "Clever Hans" é o estudo fundador de duas ideias deste capítulo: os efeitos do experimentador (o dono transmitia a resposta sem saber) e a necessidade de procedimentos cegos. A moral não é que o cavalo era fraude — é que, sem controle, *nós* somos os que projetamos capacidades onde há apenas nossa própria dica vazando. Toda pesquisa com humanos herda o problema de Hans.
+
+**Limitações.** É um estudo de caso único, e sobre um animal. Mas o mecanismo que revelou — comunicação involuntária de expectativas — mostrou-se geral e reaparece em toda a metodologia experimental subsequente.
+:::
+
+Outras ameaças que Campbell e Stanley destacam operam sobretudo em estudos com medições repetidas ao longo do tempo, e o grupo-controle sorteado neutraliza a maioria delas de uma vez: a **maturação** (participantes mudam sozinhos com o tempo — crescem, cansam, aprendem), a **história** (eventos externos ocorrem entre as medições), o **efeito de testagem** (fazer um teste altera o desempenho no seguinte) e a **regressão à média** (escores extremos tendem a se aproximar da média na remedição — um fenômeno estatístico, não causal, que será retomado no Cap. 18). O ponto comum: se essas forças agem igualmente no grupo experimental e no controle, elas não podem explicar a *diferença* entre eles. O grupo-controle é a linha de base contra a qual o efeito da VI se destaca.
+
+## Delineamentos: entre-sujeitos e intra-sujeitos
+
+Há duas maneiras básicas de organizar as condições de um experimento.
+
+Num delineamento **entre-sujeitos** (*between-subjects*), cada participante passa por uma única condição: um grupo recebe o tratamento, outro grupo recebe o controle, e comparam-se os grupos. Foi o que descrevemos até aqui. Sua virtude é que um participante nunca é contaminado por ter passado antes pela outra condição. Seu custo é que exige mais gente e que as diferenças individuais entram como ruído — os grupos são equivalentes *em média* graças ao sorteio, mas duas pessoas nunca são idênticas.
+
+Num delineamento **intra-sujeitos** (*within-subjects*, ou de medidas repetidas), cada participante passa por **todas** as condições e serve de controle de si mesmo. Como é a mesma pessoa nos dois níveis da VI, as diferenças individuais deixam de ser ruído: elas são mantidas constantes por construção. Isso torna o delineamento muito mais **sensível** — detecta efeitos menores com menos participantes. O tempo de reação a duas cores diferentes, por exemplo, mede-se melhor pedindo à mesma pessoa que responda às duas.
+
+Mas medidas repetidas introduzem uma ameaça própria: os **efeitos de ordem**. Se todos fazem a condição A antes da B, a diferença entre elas pode refletir prática, fadiga ou aborrecimento acumulados, não a VI. A defesa é o **contrabalanceamento**: variar a ordem entre os participantes (metade faz A→B, metade B→A), de modo que os efeitos de ordem se cancelem em média. Quando o próprio tratamento deixa marca permanente — aprender algo, sofrer um susto —, o delineamento intra-sujeitos fica inviável (não dá para "des-aprender" antes da segunda condição), e volta-se ao entre-sujeitos. Escolher entre os dois é uma decisão de engenharia que pesa sensibilidade contra contaminação.
+
+## Quando há mais de uma variável: delineamentos fatoriais
+
+O mundo raramente tem uma causa por vez, e o método experimental acompanha isso. Um **delineamento fatorial** manipula duas ou mais VIs simultaneamente, cruzando todos os seus níveis. Com duas VIs de dois níveis cada, obtêm-se quatro condições — um fatorial "2 × 2".
+
+O ganho não é só de eficiência. Um fatorial permite detectar uma **interação**: quando o efeito de uma VI *depende* do nível da outra. Cafeína pode melhorar o desempenho de quem dormiu bem e piorar o de quem está privado de sono; nesse caso, não existe um "efeito da cafeína" isolado — existe um efeito que muda de sinal conforme a segunda variável. Interações são frequentemente o achado mais interessante de um estudo, porque é nelas que mora a complexidade real: "depende" é uma resposta científica legítima, e o fatorial é a ferramenta que transforma o "depende" numa afirmação precisa e testável. Voltaremos a interações na estatística inferencial (Cap. 19).
+
+## Laboratório, campo e o limite do experimento
+
+O experimento clássico vive no laboratório, onde o controle é máximo. Mas controle tem preço: uma sala com iluminação uniforme, instruções padronizadas e uma tarefa artificial pode produzir um efeito que não sobrevive fora dali. Por isso existem **experimentos de campo**, que aplicam a mesma lógica — manipulação de uma VI, atribuição aleatória, grupo-controle — em ambientes naturais: uma escola, uma empresa, um aplicativo. Ganha-se realismo, perde-se controle sobre as mil variáveis que o mundo não deixa manter constantes. A tensão entre validade interna (favorecida pelo laboratório) e validade externa (favorecida pelo campo) é permanente e será o eixo do Cap. 16.
+
+Há, por fim, um limite honesto. Muitas variáveis de enorme interesse psicológico **não podem ser manipuladas** — por impossibilidade prática ou por barreira ética. Não se sorteia quem sofrerá abuso na infância, quem terá esquizofrenia, qual será o sexo ou a renda de alguém. Onde a manipulação é impossível, o experimento verdadeiro também é, e a ciência recorre a **quase-experimentos** (que comparam grupos não formados por sorteio) e a métodos correlacionais — mais fracos para inferência causal, e assunto do próximo capítulo. Reconhecer esse limite é parte do rigor: prometer uma conclusão causal a partir de um desenho que não a sustenta é o erro que este volume inteiro ensina a não cometer.
+
+::: {.callout-sintese}
+- **Toda afirmação causal exige três condições:** covariação, precedência temporal e eliminação de explicações alternativas. As duas primeiras um bom estudo observacional às vezes alcança; a terceira, em geral, só o experimento.
+- **Um experimento manipula uma variável independente (VI) e mede uma variável dependente (VD)**, comparando pelo menos duas condições — uma delas quase sempre um grupo-controle que fornece a linha de base.
+- **Operacionalizar** é traduzir um conceito abstrato nas operações concretas que o produzem ou medem; todo resultado é, a rigor, sobre a operacionalização, não sobre o conceito.
+- **A atribuição aleatória é o coração do método:** ela distribui igualmente entre os grupos todas as variáveis de confusão, inclusive as desconhecidas, tornando os grupos equivalentes exceto na VI. Não confundir com amostragem aleatória, que serve à generalização, não à inferência causal.
+- **Ameaças à validade interna** — confusões, efeitos do experimentador, características de demanda, maturação, história, testagem, regressão à média — são neutralizadas por controle: manter constante, cegar (simples e duplo-cego), usar placebo e grupo-controle sorteado.
+- **Delineamentos entre-sujeitos** evitam contaminação entre condições; **intra-sujeitos** ganham sensibilidade mas exigem contrabalanceamento contra efeitos de ordem.
+- **Delineamentos fatoriais** manipulam várias VIs e revelam interações, quando o efeito de uma variável depende do nível de outra.
+- **Validade interna e externa competem:** laboratório maximiza a primeira, campo favorece a segunda. E há variáveis que não se pode manipular — aí o experimento cede lugar aos métodos do Cap. 15.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Variável independente (VI)**
+:   Fator manipulado pelo pesquisador; a causa candidata. Tem sempre dois ou mais níveis.
+
+**Variável dependente (VD)**
+:   Fator medido para detectar o efeito da manipulação; o efeito candidato.
+
+**Operacionalização**
+:   Definição de uma variável pelas operações concretas usadas para produzi-la ou medi-la.
+
+**Grupo-controle**
+:   Condição que não recebe o tratamento (ou recebe um comparador neutro), fornecendo a linha de base contra a qual o efeito da VI é avaliado.
+
+**Atribuição aleatória** (*random assignment*)
+:   Sorteio que distribui os participantes já recrutados entre as condições, tornando os grupos equivalentes em média em todas as variáveis; base da validade interna [@fisher1935].
+
+**Variável de confusão**
+:   Variável que se altera junto com a VI e também poderia afetar a VD, oferecendo uma explicação rival para o resultado.
+
+**Validade interna**
+:   Grau em que um estudo sustenta que foi a VI, e não outra coisa, que causou a variação na VD.
+
+**Cegamento**
+:   Ocultação de quem está em qual condição: simples-cego (do participante), duplo-cego (também de quem aplica e avalia); defesa contra expectativas.
+
+**Efeito placebo**
+:   Mudança produzida pela expectativa de tratamento, na ausência de princípio ativo; motivo do grupo placebo.
+
+**Características de demanda**
+:   Pistas que revelam ao participante o comportamento esperado, levando-o a produzi-lo por conta própria [@orne1962].
+
+**Delineamento entre-sujeitos / intra-sujeitos**
+:   No primeiro, cada participante passa por uma condição; no segundo, por todas, servindo de controle de si mesmo, ao custo de efeitos de ordem.
+
+**Contrabalanceamento**
+:   Variação sistemática da ordem das condições entre participantes, para cancelar efeitos de ordem em delineamentos intra-sujeitos.
+
+**Delineamento fatorial**
+:   Manipulação simultânea de duas ou mais VIs, cruzando seus níveis; permite detectar interações.
+
+**Interação**
+:   Situação em que o efeito de uma VI depende do nível de outra.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie as três condições da inferência causal. Explique, com um exemplo próprio, por que a covariação sozinha não autoriza a conclusão de que X causa Y.
+
+2. **(Recuperação.)** Qual é a diferença de função entre atribuição aleatória e amostragem aleatória? Descreva um experimento que tenha uma excelente e a outra péssima, e diga o que se pode e o que não se pode concluir dele.
+
+3. **(Aplicação.)** Um pesquisador quer testar se ouvir música instrumental durante o estudo melhora a retenção. Desenhe o experimento: especifique a VI e seus níveis, a VD e sua operacionalização, o grupo-controle, e diga como você usaria a atribuição aleatória. Depois aponte uma variável de confusão que seu desenho precisa manter constante.
+
+4. **(Aplicação.)** Você lê que "pessoas que meditam relatam menos ansiedade". Proponha (a) uma versão *experimental* que sustentaria a conclusão causal de que meditar reduz ansiedade e (b) explique por que a versão original, como enunciada, não a sustenta.
+
+5. **(Reflexão crítica.)** Um estudo intra-sujeitos encontra que os participantes resolvem mais problemas na condição B do que na A, e conclui que a manipulação B é superior. Que ameaça específica dos delineamentos de medidas repetidas o desenho pode ter ignorado, e que técnica a teria neutralizado?
+
+6. **(Integração.)** Explique por que o caso do cavalo Hans e o experimento de Rosenthal com ratos levam à mesma recomendação metodológica. Que procedimento concreto os dois justificam, e por que ele é indispensável mesmo quando o experimentador está de boa-fé?
