@@ -1,5 +1,344 @@
 # 13. Perspectivas contemporâneas (evolucionista, sociocultural, neurociência)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que as perspectivas contemporâneas **não são escolas** — e por que confundi-las com escolas é o erro conceitual mais caro deste volume.
+- **Usar** as quatro questões de Tinbergen para separar perguntas que só *parecem* concorrentes.
+- **Reconstruir** a lógica da psicologia evolucionista e distinguir o **pensamento evolutivo** (indispensável) das **histórias adaptacionistas** (frequentemente não testadas).
+- **Avaliar** o problema WEIRD e explicar por que ele é uma falha de **amostragem**, não uma queixa ideológica.
+- **Aplicar** os níveis de Marr para mostrar por que a neurociência **não substitui** a psicologia.
+- **Identificar** os erros inferenciais que a neuroimagem tornou epidêmicos: inferência reversa, correlações infladas, comparações múltiplas.
+- **Distinguir** perspectivismo sobre **perguntas** de relativismo sobre **respostas** — e ver por que o primeiro é progresso e o segundo é abdicação.
 :::
+
+O Cap. 12 terminou com uma lista de ausências. A revolução cognitiva ganhou uma mente e a entregou sem emoção, sem corpo, sem cultura e sem cérebro. Este capítulo é o que aconteceu quando cada uma dessas peças voltou para cobrar.
+
+Mas ele precisa começar desfazendo uma expectativa. Você acaba de atravessar doze capítulos de brigas: Titchener contra James, Watson contra todo mundo, Gestalt contra elementarismo, Freud contra o laboratório, Rogers contra Skinner. É natural esperar que o capítulo final apresente as escolas atuais e diga qual venceu.
+
+Não há escolas atuais. E essa é a tese do capítulo.
+
+O que existe hoje são **perspectivas** — e a diferença não é de vocabulário. As escolas do Cap. 7 ao Cap. 11 disputavam a **mesma** pergunta e ofereciam respostas incompatíveis: se a consciência se decompõe em elementos, se estados internos existem, se o comportamento é determinado por pulsões ou por contingências. Duas delas não podiam estar certas ao mesmo tempo.
+
+As perspectivas contemporâneas, em larga medida, respondem a **perguntas diferentes sobre o mesmo fenômeno**. Perguntar se o medo de cobras é "realmente" a amígdala ou "realmente" uma adaptação evolutiva não é uma disputa científica: é um **erro de categoria**. As duas afirmações são verdadeiras, e são respostas a coisas distintas. Uma diz *como funciona*; a outra, *por que existe*.
+
+Isso soa óbvio quando enunciado. Não é: a história inteira deste volume é a de pessoas inteligentes cometendo exatamente esse erro.
+
+## A ferramenta que organiza tudo: as quatro questões
+
+O instrumento que evita a confusão não veio da psicologia. Veio da etologia, com Niko Tinbergen, que perguntou o que significa **explicar** um comportamento e respondeu que significa quatro coisas diferentes [@tinbergen1963].
+
+::: {#fig-tinbergen}
+```{.tikz}
+%%| filename: tinbergen
+%%| alt: Diagrama em grade de dois por dois apresentando as quatro questões de Tinbergen aplicadas ao medo de cobras. As colunas dividem causas proximais, que respondem como o comportamento funciona, de causas últimas, que respondem por que o comportamento existe. As linhas dividem o estado atual, uma visão estática, da mudança ao longo do tempo, uma visão dinâmica. O primeiro quadrante, mecanismo, é proximal e estático, e pergunta que estrutura produz o medo agora, respondendo com a via do tálamo à amígdala, a resposta autonômica e o congelamento. O segundo quadrante, função ou valor de sobrevivência, é último e estático, e pergunta para que serve, respondendo que evitar predadores peçonhentos aumentava a sobrevivência. O terceiro quadrante, ontogenia, é proximal e dinâmico, e pergunta como o medo se desenvolve no indivíduo, respondendo que não se nasce com o medo pronto, mas com facilidade preparada para adquiri-lo por condicionamento ou observação social. O quarto quadrante, filogenia, é último e dinâmico, e pergunta como o medo surgiu na linhagem, respondendo que ele é compartilhado com outros primatas e portanto anterior à espécie humana. Uma nota final adverte que as quatro questões não competem entre si, que responder uma não dispensa nem refuta as outras, e que quase toda falsa disputa entre perspectivas na psicologia consiste em duas pessoas respondendo a quadrantes diferentes e supondo que discordam.
+\begin{tikzpicture}[
+  cel/.style={draw, thick, rounded corners=3pt, align=left, text width=4.5cm, font=\tiny,
+              anchor=north west, minimum height=2.1cm}
+]
+  % ---- rótulos de coluna
+  \node[font=\scriptsize\bfseries, text=manualblue] at (-3.4,3.35) {CAUSAS PROXIMAIS};
+  \node[font=\tiny, text=manualblue] at (-3.4,3.0) {\emph{como} funciona?};
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (2.6,3.35) {CAUSAS ÚLTIMAS};
+  \node[font=\tiny, text=manualgreen] at (2.6,3.0) {\emph{por que} existe?};
+
+  % ---- rótulos de linha
+  \node[font=\tiny\bfseries, text=manualgray, rotate=90] at (-6.2,1.4) {ESTADO ATUAL};
+  \node[font=\tiny\bfseries, text=manualgray, rotate=90] at (-6.2,-1.3) {MUDANÇA NO TEMPO};
+
+  % ---- quadrantes
+  \node[cel, draw=manualblue, fill=manualblue!6] at (-5.9,2.5)
+    {\textbf{MECANISMO}\\{\tiny Que estrutura produz o medo \emph{agora}?}\\[3pt]Via rápida tálamo--amígdala; resposta autonômica; congelamento.};
+  \node[cel, draw=manualgreen, fill=manualgreen!6] at (0.1,2.5)
+    {\textbf{FUNÇÃO}\\{\tiny Para que serve? Que problema resolveu?}\\[3pt]Evitar predador peçonhento aumentava a sobrevivência.};
+  \node[cel, draw=manualblue, fill=manualblue!6] at (-5.9,-0.2)
+    {\textbf{ONTOGENIA}\\{\tiny Como se desenvolve no indivíduo?}\\[3pt]Não se nasce com o medo pronto: nasce-se \textbf{preparado} para adquiri-lo depressa, por condicionamento ou observação.};
+  \node[cel, draw=manualgreen, fill=manualgreen!6] at (0.1,-0.2)
+    {\textbf{FILOGENIA}\\{\tiny Como surgiu na linhagem?}\\[3pt]Compartilhado com outros primatas --- anterior à nossa espécie.};
+
+  % ---- nota
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!10,
+        align=left, font=\tiny, text width=11.4cm] at (-0.4,-3.5)
+    {\textbf{As quatro não competem.} Responder uma não dispensa nem refuta as outras.\\
+     Quase toda falsa disputa entre perspectivas é isto: duas pessoas respondendo a \textbf{quadrantes diferentes} e supondo que discordam.};
+\end{tikzpicture}
+```
+As quatro questões de Tinbergen, aplicadas ao medo de cobras. Guarde a grade: ela é o antídoto contra a maior parte das brigas deste capítulo — e contra várias do resto do manual.
+:::
+
+Note o que a grade faz com uma frase como "o medo é aprendido". Ela vira ambígua e, por isso, discutível sem fim. Aprendido no sentido de **ontogenia** — sim, a experiência participa. Aprendido no sentido de **filogenia** — não, a facilidade de adquiri-lo tem história evolutiva. As duas afirmações convivem. A disputa "inato *versus* aprendido" do Cap. 2 dissolve-se em boa parte aqui, e não por diplomacia: por distinção.
+
+## A perspectiva evolucionista
+
+A lógica é curta e forte. O cérebro é um órgão. Órgãos têm história evolutiva. A seleção natural moldou o coração para bombear e o pâncreas para regular glicose — e não há razão para supor que parou no pescoço. Se o comportamento afeta a sobrevivência e a reprodução, e se há variação hereditária no comportamento, então a seleção agiu sobre ele. Isso não é uma escola: é uma consequência de @darwin1859.
+
+Darwin sabia disso e disse. No fecho de *A origem das espécies*, previu que a psicologia se assentaria sobre um novo fundamento; e em 1872 escreveu um livro inteiro argumentando que as expressões emocionais humanas são herdadas e contínuas com as de outros animais [@darwin1872] — a tese que o Vol 9 retoma.
+
+A versão moderna é mais específica, e é dela que vêm as controvérsias. Tooby e Cosmides propuseram que a mente não é um processador de propósito geral, e sim um conjunto de **mecanismos de domínio específico**, cada um moldado para um problema adaptativo recorrente [@tooby_cosmides1992]. A metáfora é o canivete suíço: não uma lâmina que serve para tudo, mas muitas ferramentas especializadas. E esses mecanismos teriam sido moldados no **ambiente de adaptação evolutiva** — grosso modo, a vida de forrageadores do Pleistoceno —, não no mundo em que vivemos. Daí a formulação de efeito: temos cérebros da Idade da Pedra em crânios modernos.
+
+Observe que essa tese é forte o bastante para brigar com o Cap. 12. Se a mente é um manipulador de símbolos de propósito geral, o conteúdo não importa — as regras rodam sobre qualquer coisa. Se a mente é um canivete suíço, o conteúdo importa **decisivamente**: o mesmo problema lógico deve ser fácil ou difícil conforme o assunto. Isso é uma previsão. E foi testada.
+
+::: {.experimento}
+**A tarefa de seleção de Wason, e o que acontece quando ela fala de trapaça** [@cosmides1989]
+
+**A tarefa.** Quatro cartas sobre a mesa. Cada uma tem uma letra de um lado e um número do outro. Você vê: **E**, **K**, **4**, **7**. A regra: *se há uma vogal de um lado, então há um número par do outro*. Quais cartas você precisa virar — e apenas essas — para saber se a regra foi violada?
+
+**A resposta correta** é **E** e **7**. É a lógica do *modus tollens*: para refutar "se P então Q", procura-se P com não-Q. Virar o **4** não serve — a regra não diz nada sobre o que há atrás de números pares.
+
+**O resultado clássico.** Cerca de 10% a 25% das pessoas acertam. É um desastre. Universitários, treinados, falham numa aplicação elementar de lógica condicional.
+
+**A virada.** Agora a mesma estrutura, outro conteúdo. Você é o segurança de um bar. A regra: *se a pessoa está bebendo álcool, então tem mais de 18 anos*. As cartas mostram: **bebendo cerveja**, **bebendo refrigerante**, **25 anos**, **16 anos**. Quem você checa?
+
+**Resultado:** cerca de 65% a 75% acertam — "cerveja" e "16 anos". E note: é **exatamente o mesmo problema lógico**. Mesma estrutura formal, mesma resposta formal. Só mudou o assunto.
+
+**A interpretação de Cosmides.** Se a mente fosse um processador lógico de propósito geral, a diferença não deveria existir — a lógica é indiferente ao conteúdo. Mas se a mente contém um mecanismo especializado em **detectar trapaceiros** — quem colhe o benefício sem pagar o custo —, então a versão do contrato social ativa maquinaria dedicada, e a versão abstrata não. A previsão fina: o efeito deve depender da estrutura de **troca social**, não da mera familiaridade do conteúdo.
+
+**Por que isto é bom.** É o tipo de coisa que este manual passou treze capítulos elogiando: uma previsão específica, contraintuitiva, que **proíbe** um resultado, e que sobreviveu a tentativas de derrubá-la. O efeito do conteúdo é robusto e replicado.
+
+**Onde ainda se discute.** Que o conteúdo importa, ninguém contesta. **Por que** ele importa, sim: explicações rivais invocam relevância, familiaridade, ou raciocínio deôntico geral — a lógica de permissões e obrigações, que não precisa ser sobre trapaça. Distinguir "módulo de detecção de trapaceiros" de "facilidade com regras deônticas em geral" exige desenhos que separem as duas, e o debate segue aberto.
+:::
+
+O outro achado célebre é de David Buss, que mediu preferências de parceiro em 37 culturas, com mais de 10 mil pessoas [@buss1989]. Os resultados que ficaram famosos: homens valorizam mais atratividade física e juventude; mulheres valorizam mais recursos e ambição. A leitura evolucionista liga isso ao investimento parental assimétrico.
+
+Duas coisas que a divulgação quase sempre omite. Primeira: o achado **mais forte** do estudo não é a diferença — é a semelhança. Em quase toda cultura, os dois sexos puseram **bondade e inteligência** no topo, acima de tudo o que se discute. Segunda: os dados admitem outra leitura. Eagly e Wood reanalisaram o material e mostraram que as diferenças **variam com a desigualdade estrutural entre os sexos**: quanto mais igualitário o país, menores as diferenças [@eagly_wood1999]. A explicação alternativa — teoria dos papéis sociais — diz que as preferências refletem a divisão de trabalho e o acesso desigual a recursos, não adaptações. E isso é ciência boa: as duas hipóteses fazem previsões **diferentes** sobre o que acontece quando a estrutura muda.
+
+### As críticas, e elas são sérias
+
+**Nem todo traço é adaptação.** Gould e Lewontin cunharam a imagem que organizou a crítica: os **espandris** de San Marco, os triângulos entre arcos [@gould_lewontin1979]. São ricamente decorados e parecem projetados para aquilo — mas são um **subproduto** arquitetônico: quando se põem arcos sob uma cúpula, os espandris aparecem, queira-se ou não. Traços podem ser subprodutos, restrições de desenvolvimento, deriva, ou vestígios. Supor adaptação por padrão é o que eles chamaram de **programa panglossiano**: o hábito de perguntar sempre "para que isto serve?" e nunca "e se não servir para nada?".
+
+**Histórias que se ajustam a qualquer coisa.** É a crítica mais dura, e é a do Cap. 10 em roupa nova. Suponha que homens sejam mais agressivos: competição por parceiras, adaptativo. Suponha que fossem menos: paternidade cooperativa, adaptativo. Se a teoria acomoda os dois resultados com igual facilidade, ela não previu nada — e o Cap. 3 já disse o que isso significa. O rótulo dos críticos, tirado de Kipling, é **histórias de como foi** (*just-so stories*): narrativas adaptativas construídas depois de conhecer o resultado.
+
+**O passado não está disponível.** O ambiente de adaptação evolutiva é, em boa medida, uma **inferência** — não temos o registro comportamental do Pleistoceno. Uma hipótese ancorada num ambiente reconstruído a partir do que se quer explicar corre risco óbvio de circularidade.
+
+Em defesa do campo, e o manual deve fazê-la: ele não é homogêneo, e a caricatura é injusta. Confer e colegas distinguem explicitamente as hipóteses evolucionistas **testáveis e testadas** das especulações, e mostram várias que fizeram previsões arriscadas e sobreviveram [@confer2010]. E há uma dívida que o Cap. 8 já cobrou: os ratos de Garcia que aprendiam aversão a sabor em uma tentativa, mas não a luzes [@garcia_koelling1966], e os guaxinins de Breland que insistiam em lavar moedas [@breland1961], são anomalias **inexplicáveis** dentro do behaviorismo — e triviais na perspectiva evolucionista. O animal chega com preparação. Foi preciso a perspectiva evolucionista para que aqueles dados deixassem de ser bizarrices e virassem previsões.
+
+**O veredito**, então, precisa de uma distinção que a maioria das discussões não faz. O **pensamento evolutivo** — perguntar pela função e pela filogenia, tratar o cérebro como órgão com história — é indispensável e não é opcional: é o quadrante direito de Tinbergen, e ignorá-lo é mutilar a explicação. Já cada **história adaptacionista específica** é uma hipótese empírica comum, que vale exatamente o que valem seus testes. Aceitar a primeira não obriga a comprar as segundas.
+
+::: {.atencao}
+**"É evolutivo" não quer dizer "é bom", nem "é inevitável".**
+
+Duas confusões, ambas frequentes, ambas graves.
+
+A primeira é a **falácia naturalista**: derivar o que *deve ser* do que *é*. Suponha, hipoteticamente, que a agressão masculina tenha história adaptativa. Disso não decorre absolutamente nada sobre se ela é aceitável — assim como a história adaptativa da preferência por açúcar e gordura não torna a obesidade desejável, e a história evolutiva de vírus não torna a varíola boa. Descrição não é prescrição, e nenhuma quantidade de "é" produz um "deve".
+
+A segunda é o **determinismo genético**: supor que origem evolutiva implica imutabilidade. Não implica. A miopia é fortemente hereditária e se corrige com óculos. O medo de cobras é preparado e se extingue com terapia de exposição (Cap. 90). Herdabilidade é uma afirmação sobre **variância em uma população**, não sobre destino individual nem sobre maleabilidade — o Cap. 26 desmonta isso em detalhe.
+
+Ambas as confusões já serviram, historicamente, para vestir preconceito com jaleco. A perspectiva evolucionista não é responsável pelo mau uso que fazem dela; mas quem a usa tem responsabilidade de não cometê-lo.
+:::
+
+## A perspectiva sociocultural
+
+A tese oposta — e, de novo, só *parece* oposta — é que os processos psicológicos superiores não são propriedade de um indivíduo isolado. Eles são **sociais antes de serem individuais**.
+
+Lev Vygotsky formulou a versão forte: toda função psicológica superior aparece duas vezes, primeiro **entre** pessoas e depois **dentro** de uma [@vygotsky1978]. A criança não descobre sozinha como planejar; ela é planejada por um adulto — em voz alta, na interação — e depois **internaliza** o procedimento. A fala, que começa como comunicação com os outros, vira fala privada, e depois pensamento verbal. E a **zona de desenvolvimento proximal** é a distância entre o que a criança faz sozinha e o que faz com ajuda — que, para Vygotsky, é o que de fato indica desenvolvimento, porque o que se faz hoje acompanhado se fará amanhã sozinho.
+
+O ponto que interessa aqui não é a teoria do desenvolvimento (Cap. 59). É a afirmação metodológica embutida: se o pensamento é interação internalizada, então estudar a mente isolando o indivíduo do seu contexto **remove justamente o que se quer explicar**. É a acusação do Cap. 12 — a de Bruner — vinda de 1930.
+
+A psicologia cultural moderna deu a isso conteúdo empírico. Markus e Kitayama propuseram que culturas diferem no **construto de self**: um self *independente*, delimitado, cujos atributos são internos e estáveis, contra um self *interdependente*, definido por relações e papéis [@markus_kitayama1991]. E mostraram que a diferença não é decorativa — ela muda cognição, emoção e motivação. Nisbett e colegas foram além, argumentando que o próprio **sistema de pensamento** difere: analítico (objetos, categorias, regras) contra holístico (campo, relações, contradição tolerada) [@nisbett2001].
+
+Mas o argumento decisivo desta seção não é teórico. É de amostragem.
+
+::: {#fig-weird}
+```{.tikz}
+%%| filename: weird
+%%| alt: Gráfico de barras sobre o problema WEIRD, segundo Henrich e colegas de 2010. A primeira barra mostra de onde vêm as amostras da psicologia: noventa e seis por cento dos participantes vinham de sociedades ocidentais industrializadas, restando apenas quatro por cento para o resto do mundo. A segunda barra mostra onde vive a humanidade: essas mesmas sociedades ocidentais industrializadas abrigam apenas doze por cento da população mundial, enquanto os outros oitenta e oito por cento vivem fora delas. A comparação entre as duas barras evidencia a desproporção. Uma nota acrescenta que sessenta e oito por cento dos participantes vinham dos Estados Unidos, a maioria de turmas de graduação, e que um universitário americano tinha cerca de quatro mil vezes mais chance de ser sujeito de um experimento que uma pessoa escolhida ao acaso fora do Ocidente. A nota adverte ainda que, nos achados em que existem dados comparativos, como a ilusão de Müller-Lyer, a noção de justiça em jogos econômicos, o autoconceito e o raciocínio moral, os ocidentais não são o caso médio, e sim atípicos, de modo que a psicologia amostrou doze por cento da espécie e escreveu sobre o Homo sapiens.
+\begin{tikzpicture}
+  \node[font=\scriptsize\bfseries, text=manualred] at (1.9,2.65) {O PROBLEMA WEIRD (Henrich et al., 2010)};
+
+  % ---- barra 1: amostras
+  \node[font=\tiny, anchor=east, align=right, text width=2.7cm] at (-2.25,1.2)
+    {de onde vêm as \textbf{amostras} da psicologia};
+  \draw[thick, manualgray] (-2.0,0.85) rectangle (6.0,1.55);
+  \fill[manualred!55] (-2.0,0.85) rectangle (5.68,1.55);
+  \draw[thick, manualgray] (-2.0,0.85) rectangle (6.0,1.55);
+  \node[font=\tiny, text=white] at (1.8,1.2) {\textbf{96\%} --- sociedades ocidentais industrializadas};
+  \node[font=\tiny, text=manualgray, anchor=west] at (6.2,1.2) {4\%};
+
+  % ---- barra 2: população
+  \node[font=\tiny, anchor=east, align=right, text width=2.7cm] at (-2.25,-0.4)
+    {onde vive a \textbf{humanidade}};
+  \draw[thick, manualgray] (-2.0,-0.75) rectangle (6.0,-0.05);
+  \fill[manualblue!45] (-2.0,-0.75) rectangle (-1.04,-0.05);
+  \draw[thick, manualgray] (-2.0,-0.75) rectangle (6.0,-0.05);
+  \node[font=\tiny, text=manualblue, anchor=west] at (-0.85,-0.4)
+    {\textbf{12\%} nessas sociedades --- os outros \textbf{88\%} vivem fora delas};
+
+  % ---- nota
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!10,
+        align=left, font=\tiny, text width=11.2cm] at (1.9,-2.3)
+    {\textbf{68\%} dos participantes vinham dos EUA --- a maioria, de turmas de graduação. Um universitário americano tinha $\approx$ \textbf{4.000$\times$} mais chance de ser sujeito de um experimento que alguém escolhido ao acaso fora do Ocidente.\\[3pt]
+     \textbf{E o pior não é o tamanho do desvio, é a direção.} Onde há dados comparativos --- ilusão de Müller-Lyer, justiça em jogos econômicos, autoconceito, raciocínio moral --- os ocidentais não são o caso \emph{médio}: são \textbf{atípicos}.\\[3pt]
+     A psicologia amostrou 12\% da espécie e escreveu sobre \emph{Homo sapiens} (Caps. 17, 103).};
+\end{tikzpicture}
+```
+O problema WEIRD. Não é uma objeção moral ao campo: é o Cap. 17 aplicado ao próprio campo.
+:::
+
+Henrich, Heine e Norenzayan reuniram os números e o efeito foi devastador [@henrich2010]. As amostras da psicologia vinham, em 96% dos casos, de sociedades **WEIRD** — *Western, Educated, Industrialized, Rich, Democratic* —, que são cerca de 12% da humanidade. Dois terços vinham dos Estados Unidos, e a maior parte de turmas de graduação.
+
+Se a história parasse aí, seria só uma amostra ruim. O problema é o segundo achado, e ele é o que dá o golpe: nos fenômenos em que existem dados comparativos, os ocidentais frequentemente **não são o caso médio — são o extremo**. Forrageadores que quase não sucumbem à ilusão de Müller-Lyer. Populações que jogam jogos econômicos com noções de justiça muito diferentes das nossas. Variações grandes em autoconceito e raciocínio moral. A amostra mais estudada da espécie é, em vários fenômenos, a menos representativa dela.
+
+Perceba a estrutura do argumento, porque ela é o que o torna irrespondível. Isto **não** é uma reclamação política sobre diversidade. É o Cap. 17: generalizar de uma amostra para uma população exige que a amostra represente a população. A psicologia amostrou 12% da espécie — enviesados em várias direções conhecidas — e escreveu livros sobre a mente humana. Pelos próprios critérios do Cap. 3, boa parte das conclusões estava mal justificada. O erro não é de valores; é de inferência.
+
+E há a ironia que fecha o volume: Wundt escreveu dez volumes de *Völkerpsychologie* argumentando que os processos superiores só se estudam em seu contexto cultural e histórico, e ninguém leu (Cap. 7). Levou-se um século para redescobrir, com dados, o que o fundador dizia — depois de traduzi-lo mal e enterrá-lo.
+
+**As críticas à perspectiva sociocultural** também existem, e o manual não pode ser seletivo. A principal é o risco de **essencializar**: dizer "os japoneses pensam holisticamente" trata uma média como propriedade de pessoas, ignorando que a variação **dentro** de qualquer cultura costuma ser bem maior que a variação **entre** culturas — o mesmo erro estatístico que o Cap. 26 mostra em raça e QI. Além disso, a dicotomia Oriente–Ocidente é grosseira: agrega centenas de sociedades muito diferentes em dois rótulos. E parte dos achados culturais participou dos mesmos problemas de replicação do resto do campo (Cap. 105).
+
+## A perspectiva da neurociência
+
+É a perspectiva dominante hoje, e o motivo é em boa parte material: apareceu uma tecnologia que produz imagens coloridas do cérebro em funcionamento, e imagens coloridas atraem financiamento e capas de revista. Isso não desqualifica o campo — mas explica por que ele cresceu mais depressa do que sua epistemologia.
+
+Os avanços são reais e grandes. Kandel rastreou a aprendizagem até moléculas e sinapses numa lesma marinha, mostrando que a memória tem substrato físico identificável [@kandel1998]. O'Keefe e Dostrovsky encontraram neurônios que disparam quando o animal está num lugar específico — as células de lugar, um mapa cognitivo em tecido, e a vindicação póstuma de Tolman (Cap. 8) [@okeefe_dostrovsky1971]. Damásio mostrou, com pacientes de lesão pré-frontal, que emoção **não** é ruído que atrapalha a razão: sem ela, a decisão desmorona [@damasio1994] — o que derruba, com dados clínicos, tanto Platão quanto a metáfora do computador do Cap. 12.
+
+Mas a ferramenta conceitual mais importante desta seção é anterior à moda, e vem de novo do Cap. 12: os **três níveis de Marr** [@marr1982].
+
+Marr argumentou que qualquer sistema de processamento de informação exige três descrições distintas: o nível **computacional** (qual é o problema resolvido, e por quê), o **algorítmico** (que representações e que procedimento o resolvem) e o **de implementação** (em que substrato físico isso roda). E — o ponto decisivo — **nenhum reduz ao outro**. Você pode conhecer cada transistor de uma calculadora e não saber que ela faz adição; e pode entender adição perfeitamente sem saber o que é um transistor.
+
+Aplique à psicologia e o resultado é imediato: a neurociência é o **nível de implementação**. Ela não substitui a psicologia — ela responde a uma pergunta diferente sobre o mesmo sistema. É Tinbergen outra vez, em outro vocabulário.
+
+::: {.atencao}
+**Três erros que a neuroimagem tornou epidêmicos.**
+
+**1. Inferência reversa.** Encontrar que a ínsula ativa numa tarefa e concluir "logo, a tarefa envolve nojo" é logicamente inválido. A forma do erro: da premissa "nojo ⇒ ínsula ativa" não se segue "ínsula ativa ⇒ nojo" — é a afirmação do consequente, vestida de neurociência. Poldrack quantificou o estrago: a ínsula aparece em cerca de **um terço** de todos os estudos de imagem publicados, em tarefas de todo tipo [@poldrack2006]. Uma região que ativa em tudo não é diagnóstica de nada. A inferência só funcionaria se a região fosse **seletiva**, e quase nenhuma é.
+
+**2. Correlações impossíveis.** Vul e colegas examinaram estudos de neurociência social que relatavam correlações de 0,8 ou 0,9 entre ativação e traços de personalidade e notaram algo que ninguém havia notado: dada a confiabilidade das duas medidas, correlações desse tamanho são **matematicamente impossíveis** [@vul2009]. A explicação era o procedimento: selecionavam-se os *voxels* que mais correlacionavam com a medida e depois relatava-se a correlação **daqueles voxels** — isto é, mediu-se o ruído, escolheu-se o pico, e apresentou-se o pico como achado. É análise circular. O artigo circulou sob o título "correlações de vodu", e o campo mudou suas práticas por causa dele.
+
+**3. Comparações múltiplas.** Um cérebro tem dezenas de milhares de *voxels*, e testar cada um a $p < .05$ garante centenas de falsos positivos. Bennett e colegas demonstraram isso do jeito mais eloquente possível: puseram um **salmão morto** no scanner, pediram-lhe que julgasse a emoção de pessoas em fotografias, e — sem correção para comparações múltiplas — encontraram ativação cerebral estatisticamente significativa no peixe [@bennett2010]. O trabalho ganhou um Ig Nobel e fez mais pelo rigor estatístico do campo que uma década de advertências.
+
+E há o efeito sobre **você**: Weisberg e colegas mostraram que acrescentar informação neurocientífica **irrelevante** a uma explicação ruim faz leigos julgarem-na mais convincente [@weisberg2008]. "Porque o córtex pré-frontal está envolvido" não acrescenta nada — e persuade. É o Cap. 5 de novo: a aparência de ciência dura funciona como argumento quando não é um.
+:::
+
+O erro mais fundo, porém, não é estatístico — é conceitual. Dizer que o amor "é apenas dopamina" ou que a decisão "é apenas o córtex pré-frontal" não explica coisa alguma: troca o fenômeno pelo seu substrato e chama a troca de explicação. É como dizer que *Hamlet* é apenas tinta sobre papel. A afirmação é literalmente verdadeira em um nível, e não responde a nenhuma pergunta interessante em nenhum outro. Marr já tinha dito por quê.
+
+## As peças que voltaram
+
+Agora o Cap. 12 pode ser fechado. Cada ausência que ele listou virou um programa.
+
+**A emoção.** Damásio mostrou que ela é parte do processamento, não interferência. Lisa Barrett foi mais longe e propôs que emoções não são reações pré-programadas disparadas por circuitos dedicados, e sim **construções**: o cérebro categoriza sinais corporais à luz de conceitos aprendidos e da cultura [@barrett2017]. É uma tese controversa e produtiva — e o Vol 9 a examina.
+
+**O corpo.** A **cognição corporificada** nega que o corpo seja detalhe de implementação. Barsalou argumenta que conceitos não são símbolos abstratos e amodais, mas simulações sensório-motoras: entender "chutar" reativa parcialmente o sistema motor [@barsalou2008]. Clark e Chalmers foram ainda mais longe com a **mente estendida**: se um caderno cumpre, para Otto, o papel funcional que a memória biológica cumpre para você, por que a fronteira da mente pararia na pele [@clark_chalmers1998]?
+
+Aqui o manual precisa de honestidade: parte da literatura de corporificação — sobretudo os efeitos de *priming* mais chamativos — está entre a que **pior se replicou** na última década (Cap. 105). A tese conceitual permanece viva e séria; algumas de suas demonstrações favoritas, não.
+
+**O cérebro que prevê.** A moldura mais ambiciosa do momento inverte a metáfora do Cap. 12. Em vez de um sistema que recebe entrada e a processa para cima, o cérebro seria uma **máquina de previsão**: ele gera hipóteses sobre as causas de suas sensações e usa o *erro de previsão* para corrigi-las [@clark2013]. Perceber, nessa leitura, não é receber o mundo — é adivinhá-lo e checar. Uma alucinação controlada pela realidade.
+
+É elegante, unifica percepção, ação e aprendizagem, e conecta-se com Helmholtz (Cap. 6) e com a Gestalt (Cap. 9). E merece a advertência que este volume aprendeu a fazer: em sua forma mais forte, o *princípio da energia livre* explica praticamente qualquer comportamento de qualquer sistema — e o Cap. 10 nos ensinou o que dizer de uma teoria assim. Que ela seja matematicamente sofisticada não a isenta do critério do Cap. 3.
+
+**Os genes.** A genética do comportamento (Cap. 26) produziu o achado mais replicado e menos compreendido da área. A meta-análise de Polderman e colegas, sobre cinquenta anos de estudos de gêmeos e milhões de pares, encontrou herdabilidade **em praticamente todo traço psicológico** medido, com média em torno de 49% [@polderman2015] — a primeira das leis de Turkheimer [@turkheimer2000]. E, ao mesmo tempo, a busca por **genes específicos** fracassou de forma espetacular: a literatura de genes candidatos, incluindo o famoso achado de interação entre 5-HTTLPR e estresse [@caspi2003], não sobreviveu a testes bem powered [@risch2009; @border2019]. Traços são herdáveis; e são poligênicos ao ponto de nenhum gene isolado importar muito.
+
+E o ambiente escreve no genoma sem alterá-lo: Weaver e colegas mostraram que o cuidado materno em ratos altera a **expressão** de genes de resposta ao estresse, com efeito duradouro [@weaver2004]. A dicotomia do Cap. 2 não é resolvida por um empate diplomático entre 50% e 50%. Ela é **dissolvida**: a pergunta "quanto é genético e quanto é ambiental" é, para um indivíduo, tão malformada quanto perguntar quanto da área de um retângulo se deve à altura.
+
+## O balanço do volume
+
+Chegamos ao fim da história, e ela tem um padrão. Vale enunciá-lo, porque é o que este volume inteiro serve para ensinar.
+
+**Toda escola estava certa sobre alguma coisa e imperialista sobre todo o resto.** Wundt estava certo de que a experiência pode ser medida, e errado ao supor que a introspecção treinada resolveria a disputa. Watson estava certo de que dados precisam ser públicos, e errado ao concluir que o interior não existe. A Gestalt estava certa de que o todo tem propriedades que as partes não têm, e não conseguiu ir além da demonstração. Freud estava certo de que muito do que nos move é inacessível, e errado ao construir um sistema que nada podia refutar. Rogers estava certo sobre a relação, e errado ao chamá-la de suficiente. A revolução cognitiva estava certa de que se pode modelar o interior, e cega para tudo o que não coubesse no símbolo.
+
+O padrão é sempre o mesmo: **uma intuição verdadeira, declarada o todo, e morta pela declaração**. Nenhuma delas foi refutada por estar errada sobre seu próprio domínio. Todas foram derrubadas pelo que afirmaram fora dele.
+
+**O que sobreviveu não foram os sistemas — foram os métodos e os achados.** Ninguém hoje é estruturalista, behaviorista ou gestaltista. Mas todo mundo mede tempo de reação, usa grupo-controle, exige dado público, aplica reforço, invoca princípios de agrupamento perceptual e supõe processos inacessíveis à consciência. As escolas morreram; seus instrumentos e seus fatos estão em todos os laboratórios. É a lição do Cap. 7: vencer por absorção é vencer sem crédito — e é o único tipo de vitória que dura.
+
+**E hoje não há escolas: há níveis.** Isso é progresso, e é o que Tinbergen e Marr permitem enunciar com precisão. Mas — e este é o último aviso deste volume — **cuidado com o erro simétrico**.
+
+Dizer que as perspectivas são complementares **não** é dizer que toda posição é uma perspectiva legítima. Perspectivismo sobre **perguntas** é uma tese sobre a estrutura da explicação: o medo tem quatro respostas porque há quatro perguntas. Relativismo sobre **respostas** é outra coisa, e é falso. A pirâmide não é de Maslow (Cap. 11). Os doze bebês de Watson eram bravata (Cap. 8). Os *voxels* selecionados pelo pico inflam a correlação. A hierarquia de necessidades não se sustenta nos dados de 123 países. Essas não são perspectivas: são afirmações erradas, e sabemos disso porque alguém as testou.
+
+A diferença entre "há vários níveis de análise" e "tudo depende do ponto de vista" é a diferença entre este manual e o horóscopo. As perspectivas não competem porque respondem a perguntas diferentes — e, **dentro** de cada pergunta, a evidência ainda manda.
+
+O que nos deixa exatamente onde o Vol 3 precisa começar. Este volume mostrou repetidamente que a disputa entre ideias se resolve pelo método — Rogers gravando sessões, Sternberg medindo inclinações, Tay e Diener com 123 países, Vul recalculando correlações, Henrich contando de onde vinham as amostras. Em todos os casos, quem decidiu não foi a eloquência: foi o desenho. Resta então a pergunta que o manual vinha adiando, e que o Vol 3 responde: **como exatamente se produz uma evidência que possa decidir alguma coisa?**
+
+::: {.callout-sintese}
+- **Perspectivas não são escolas.** As escolas dos Caps. 7–11 disputavam a **mesma** pergunta com respostas incompatíveis. As perspectivas contemporâneas respondem a **perguntas diferentes** sobre o mesmo fenômeno. Perguntar se o medo é "realmente" amígdala ou "realmente" adaptação é **erro de categoria**.
+- **As quatro questões de Tinbergen** [@tinbergen1963] são o antídoto: mecanismo e ontogenia (causas **proximais** — como funciona) × função e filogenia (causas **últimas** — por que existe). Responder uma não dispensa as outras. "Inato *versus* aprendido" (Cap. 2) dissolve-se aqui por distinção, não por diplomacia.
+- **Evolucionista.** O cérebro é órgão com história [@darwin1859; @darwin1872]. Versão moderna: mecanismos de **domínio específico** moldados no ambiente ancestral [@tooby_cosmides1992]. Previsão testada e sobrevivente: o **conteúdo** muda o desempenho lógico — Wason abstrato ≈ 10–25% de acerto, versão de contrato social ≈ 65–75%, mesmo problema formal [@cosmides1989]. Explica Garcia e Breland (Cap. 8), que o behaviorismo não conseguia.
+- **Críticas sérias**: nem todo traço é adaptação — **espandris** [@gould_lewontin1979]; **histórias de como foi**, que acomodam qualquer resultado (é o Cap. 10 de novo); o ambiente ancestral é inferido do que se quer explicar. E há rivais empíricos: as diferenças de @buss1989 encolhem em países mais igualitários [@eagly_wood1999] — e o achado maior de Buss foi a **semelhança** (bondade e inteligência no topo, para ambos os sexos).
+- **Distinção-chave:** o **pensamento evolutivo** é indispensável; cada **história adaptacionista** vale o que valem seus testes. Aceitar o primeiro não obriga a comprar as segundas.
+- **"É evolutivo" ≠ "é bom"** (falácia naturalista) **≠ "é imutável"** (determinismo genético). Miopia é herdável e se corrige com óculos.
+- **Sociocultural.** Vygotsky: a função superior aparece primeiro **entre** pessoas, depois **dentro** de uma [@vygotsky1978] — logo, isolar o indivíduo remove o objeto. Self independente × interdependente [@markus_kitayama1991]; cognição analítica × holística [@nisbett2001].
+- **WEIRD é o argumento decisivo, e é de amostragem** [@henrich2010]: **96%** das amostras vinham de **12%** da humanidade; 68% dos EUA, sobretudo graduandos. E os ocidentais frequentemente **não são o caso médio — são o extremo**. Não é queixa ideológica: é o Cap. 17 aplicado ao próprio campo. Ironia: é a *Völkerpsychologie* de Wundt, um século depois (Cap. 7).
+- **Risco da perspectiva cultural**: **essencializar** — a variação **dentro** de culturas supera a variação **entre** elas.
+- **Neurociência.** Avanços reais [@kandel1998; @okeefe_dostrovsky1971; @damasio1994 — emoção é parte da decisão, não ruído]. Mas os **níveis de Marr** [@marr1982] fixam seu lugar: computacional / algorítmico / **implementação** — e nenhum reduz ao outro. A neurociência não substitui a psicologia; responde a outra pergunta.
+- **Três erros epidêmicos**: **inferência reversa** (a ínsula aparece em ~1/3 dos estudos — afirmar o consequente [@poldrack2006]); **correlações de vodu** (selecionar os *voxels* pelo pico e relatar o pico — análise circular [@vul2009]); **comparações múltiplas** (o **salmão morto** com ativação significativa [@bennett2010]). E neurociência irrelevante torna explicações ruins mais convincentes [@weisberg2008].
+- **As peças voltaram**: emoção [@barrett2017], corpo [@barsalou2008; @clark_chalmers1998] — com a ressalva de que parte dessa literatura replicou mal —, e o **cérebro preditivo** [@clark2013], elegante e sob suspeita de explicar demais.
+- **Genes**: quase todo traço é herdável [@polderman2015; @turkheimer2000] **e** nenhum gene isolado importa muito — a literatura de genes candidatos caiu [@risch2009; @border2019]. O ambiente regula expressão [@weaver2004]. A dicotomia do Cap. 2 não empata: **dissolve-se**.
+- **Balanço do volume:** toda escola esteve certa sobre algo e imperialista sobre o resto — **uma intuição verdadeira, declarada o todo, e morta pela declaração**. Sobreviveram os **métodos e achados**, não os sistemas.
+- **O último aviso:** perspectivismo sobre **perguntas** não é relativismo sobre **respostas**. A pirâmide continua não sendo de Maslow. Dentro de cada pergunta, a evidência manda — e é por isso que o Vol 3 existe.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Perspectiva** (× escola)
+:   Enquadramento que responde a um tipo de pergunta sobre um fenômeno; diferentemente das escolas, perspectivas não são mutuamente exclusivas.
+
+**As quatro questões de Tinbergen**
+:   Mecanismo, ontogenia, função e filogenia — as quatro explicações distintas que um comportamento admite [@tinbergen1963].
+
+**Causas proximais** / **causas últimas**
+:   Como o comportamento é produzido *agora* (mecanismo, desenvolvimento) × por que ele existe (valor adaptativo, história evolutiva).
+
+**Adaptação**
+:   Traço moldado pela seleção natural por ter resolvido um problema recorrente de sobrevivência ou reprodução.
+
+**Ambiente de adaptação evolutiva**
+:   Conjunto de pressões seletivas sob as quais um mecanismo teria evoluído; largamente **inferido**, o que limita o teste de hipóteses ancoradas nele.
+
+**Espandril**
+:   Subproduto arquitetônico sem função própria; metáfora de Gould e Lewontin para traços que não são adaptações [@gould_lewontin1979].
+
+**História de como foi** (*just-so story*)
+:   Narrativa adaptativa construída após conhecer o resultado, compatível com qualquer dado — e por isso sem valor preditivo.
+
+**Falácia naturalista**
+:   Derivar o que *deve ser* do que *é*; ter história evolutiva não torna nada desejável.
+
+**Zona de desenvolvimento proximal**
+:   Distância entre o que se realiza sozinho e o que se realiza com ajuda; para Vygotsky, o indicador real de desenvolvimento [@vygotsky1978].
+
+**Internalização**
+:   Passagem de uma função do plano **entre** pessoas para o plano **intra**pessoal.
+
+**Self independente** / **interdependente**
+:   Construtos de self centrados em atributos internos × em relações e papéis [@markus_kitayama1991].
+
+**WEIRD**
+:   *Western, Educated, Industrialized, Rich, Democratic* — origem de ~96% das amostras da psicologia e de ~12% da humanidade; frequentemente atípica, não média [@henrich2010].
+
+**Níveis de Marr**
+:   Computacional (qual problema), algorítmico (que representações e procedimento) e de implementação (que substrato); nenhum reduz ao outro [@marr1982].
+
+**Inferência reversa**
+:   Concluir o processo mental a partir da região ativada; inválida sem seletividade da região [@poldrack2006].
+
+**Análise circular** (*correlações de vodu*)
+:   Selecionar unidades pelo mesmo critério com que se estima o efeito, inflando-o [@vul2009].
+
+**Cognição corporificada**
+:   Tese de que o corpo e o sistema sensório-motor são constitutivos da cognição, não detalhe de implementação [@barsalou2008].
+
+**Mente estendida**
+:   Tese de que artefatos que cumprem o papel funcional de processos cognitivos são parte do sistema cognitivo [@clark_chalmers1998].
+
+**Processamento preditivo**
+:   Moldura em que o cérebro gera previsões sobre as causas de suas sensações e aprende com o erro de previsão [@clark2013].
+
+**Herdabilidade**
+:   Proporção da **variância** de um traço, **numa população**, atribuível à variação genética; não é uma afirmação sobre indivíduos nem sobre imutabilidade (Cap. 26).
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique por que "as perspectivas contemporâneas não são escolas" e dê um exemplo de disputa aparente que se dissolve ao se identificar que as partes respondem a quadrantes diferentes de Tinbergen.
+
+2. **(Recuperação.)** Descreva a tarefa de Wason nas versões abstrata e de contrato social. Qual é a previsão que o modelo de mente do Cap. 12 faz sobre a comparação, e por que o resultado é um problema para ele?
+
+3. **(Compreensão.)** O argumento WEIRD é apresentado no capítulo como um problema de **amostragem**, não de valores. Reconstrua-o nessa forma. Depois explique por que o segundo achado de @henrich2010 — que os ocidentais são atípicos, e não médios — é o que transforma um viés incômodo em uma ameaça à validade das conclusões.
+
+4. **(Aplicação.)** Uma manchete anuncia: "Cientistas descobrem a região cerebral do ciúme — a ínsula acende quando voluntários veem o parceiro com outra pessoa". Aponte (a) o erro de inferência reversa, usando o dado de @poldrack2006; (b) que informação adicional seria necessária para a conclusão ser válida; (c) por que, mesmo se tudo estivesse correto, dizer que "o ciúme é a ínsula" não explicaria o ciúme — use @marr1982.
+
+5. **(Aplicação.)** Um colega afirma: "a agressão masculina é evolutiva, então não adianta tentar reduzir a violência — é da natureza humana". A frase comete **duas** confusões distintas. Nomeie cada uma, explique por que cada uma é inválida, e mostre com um contraexemplo do capítulo.
+
+6. **(Reflexão crítica.)** Escolha um fenômeno psicológico (ciúme, insônia, procrastinação, vergonha) e escreva as **quatro** respostas de Tinbergen para ele. Depois avalie honestamente: qual dos quatro quadrantes você preencheu com uma **história de como foi** em vez de evidência? O que seria preciso para transformá-lo em hipótese testável?
+
+7. **(Reflexão crítica.)** O capítulo elogia o processamento preditivo e, em seguida, o suspeita de "explicar demais" — a mesma acusação feita a Freud no Cap. 10. Defenda a moldura preditiva contra essa acusação: que previsão arriscada ela faz, que resultado a refutaria? Se você não conseguir formular uma, discuta o que isso significa.
+
+8. **(Integração — o volume inteiro.)** O capítulo afirma que toda escola foi "uma intuição verdadeira, declarada o todo, e morta pela declaração". Percorra os Caps. 7 a 12 e identifique, para cada escola, (a) a intuição verdadeira e (b) a declaração excessiva que a matou. Depois vire a pergunta para o presente: **qual das perspectivas contemporâneas está, hoje, cometendo esse mesmo erro?** Defenda sua escolha com evidência — e note que a resposta honesta pode ser "ainda não dá para saber", caso em que você deve explicar por que a distância histórica ajuda.

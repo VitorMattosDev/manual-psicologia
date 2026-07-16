@@ -14,7 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 12 / 105 concluídos · Fase 1: 12/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 13 / 105 concluídos · Fase 1: 13/21 · Fase 2: 0/35 · Fase 3: 0/49
+
+> **Vol 1 ✅ · Vol 2 ✅** — Fase 1 segue no Vol 3 (Métodos de Pesquisa e Estatística).
 
 ---
 
@@ -39,7 +41,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 10 | Psicanálise (Freud e desdobramentos) | `capitulos/vol02-historia-sistemas/cap-10-psicanalise.qmd` | ✅ |
 | 11 | Humanismo (Rogers, Maslow) | `capitulos/vol02-historia-sistemas/cap-11-humanismo.qmd` | ✅ |
 | 12 | A revolução cognitiva | `capitulos/vol02-historia-sistemas/cap-12-revolucao-cognitiva.qmd` | ✅ |
-| 13 | Perspectivas contemporâneas (evolucionista, sociocultural, neurociência) | `capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.qmd` | ⬜ |
+| 13 | Perspectivas contemporâneas (evolucionista, sociocultural, neurociência) | `capitulos/vol02-historia-sistemas/cap-13-perspectivas-contemporaneas.qmd` | ✅ |
 
 ### Vol 3 — Métodos de Pesquisa e Estatística
 | Cap | Título | Arquivo | Status |
