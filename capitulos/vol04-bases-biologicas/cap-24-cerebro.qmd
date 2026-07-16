@@ -1,5 +1,260 @@
 # 24. O cérebro: estruturas e funções
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Situar** as grandes regiões do encéfalo — tronco, cerebelo, estruturas subcorticais e córtex — e relacionar cada uma a suas funções dominantes.
+- **Identificar** os quatro lobos do córtex cerebral e as áreas primárias e de associação de cada um.
+- **Explicar** a organização somatotópica dos córtices motor e somatossensorial (o "homúnculo").
+- **Descrever** o papel do sistema límbico — hipocampo, amígdala, hipotálamo, tálamo — na memória, na emoção e na regulação corporal.
+- **Analisar** as evidências históricas de localização de função (Gage, Broca, Wernicke, H.M., cérebro dividido) e o que cada uma permite e não permite concluir.
+- **Avaliar criticamente** o mito do "cérebro esquerdo × cérebro direito" e o localizacionismo ingênuo.
 :::
+
+Chegamos ao órgão que dá nome ao volume. Os capítulos anteriores subiram do neurônio à medula; este chega ao encéfalo, o teto do sistema nervoso e o objeto que, mais do que qualquer outro, tenta a psicologia a dizer "é aqui que a mente acontece". A tentação tem um fundo de verdade e uma armadilha. O fundo de verdade: danos a regiões específicas do cérebro produzem perdas específicas e previsíveis de função — o que só faz sentido se as funções tiverem *algum* endereço. A armadilha: concluir daí que cada capacidade mental mora num ponto único, como um órgão numa gaveta. Este capítulo caminha entre as duas, guiado por um princípio que a neurociência levou um século para calibrar: **as funções são localizadas, mas quase nunca em um único lugar** — elas emergem de redes distribuídas em que cada nó contribui com uma parte.
+
+O método que sustenta quase tudo o que se sabe sobre o cérebro humano tem uma história trágica: durante mais de um século, o que se aprendeu veio sobretudo de **lesões** — o que uma pessoa perde quando uma parte do cérebro é destruída por AVC, tumor, acidente ou cirurgia. A lógica é a da dissociação: se o dano a uma região X abole a função A mas preserva a função B, então A e B são, ao menos em parte, separáveis, e X participa de A. O Cap. 27 mostrará como a neuroimagem moderna complementou esse método sem substituí-lo. Por ora, muitas das descobertas fundadoras deste capítulo são, no fundo, relatos de perdas.
+
+## Um encéfalo em três andares
+
+Uma primeira aproximação, grosseira mas útil, organiza o encéfalo em três andares que também correspondem, em linhas gerais, a uma sequência de complexidade crescente: o tronco encefálico, na base; as estruturas subcorticais, no meio; e o córtex cerebral, por cima, recobrindo tudo.
+
+O **tronco encefálico** é a continuação da medula para dentro do crânio e cuida das funções que não podem parar: o **bulbo** regula batimento cardíaco e respiração; a **ponte** participa do sono e da transmissão entre cérebro e cerebelo; o **mesencéfalo** integra reflexos visuais e auditivos. Atravessando o tronco está a **formação reticular**, uma rede que controla o nível geral de alerta e vigília — lesioná-la produz coma. O tronco é o andar que menos "pensa" e mais mantém vivo; é também o mais antigo em termos evolutivos, compartilhado com répteis e peixes.
+
+Atrás do tronco fica o **cerebelo** ("pequeno cérebro"), uma estrutura enrugada que contém mais da metade de todos os neurônios do encéfalo. Sua fama é motora: coordenação, equilíbrio, timing e a suavização de movimentos aprendidos — daí o teste do bêbado, incapaz de tocar o nariz com o dedo, que revela intoxicação do cerebelo pelo álcool. Mas a pesquisa das últimas décadas mostrou que ele também participa de funções cognitivas e da aprendizagem de sequências, um lembrete de que os rótulos anatômicos simples raramente contam a história toda.
+
+A @fig-cerebro-lobos mostra a vista lateral do encéfalo, com o córtex dividido em lobos e o cerebelo e o tronco na parte posterior e inferior.
+
+::: {#fig-cerebro-lobos}
+```{.tikz}
+%%| filename: cerebro-lobos
+%%| alt: Vista lateral esquematizada do encéfalo humano, com o rosto voltado para a esquerda. A grande massa do córtex cerebral está dividida em quatro regiões coloridas rotuladas: lobo frontal na frente (azul), lobo parietal no topo posterior (verde), lobo occipital atrás (amarelo) e lobo temporal na parte inferior lateral (vermelho). Uma linha vertical marca o sulco central entre frontal e parietal. Abaixo e atrás, uma estrutura enrugada menor representa o cerebelo, e um prolongamento para baixo representa o tronco encefálico, que se continua na medula.
+\begin{tikzpicture}[scale=1.0]
+  % contorno geral do cortex (blob)
+  \begin{scope}
+    \clip (0,0) .. controls (-0.5,2.6) and (2,3.8) .. (4.2,3.5)
+          .. controls (6.3,3.2) and (7.2,1.8) .. (7.0,0.6)
+          .. controls (6.9,0.0) and (6.2,-0.2) .. (5.4,-0.2)
+          .. controls (3.5,-0.3) and (1.5,-0.4) .. (0.6,0.0)
+          .. controls (0.2,0.15) and (0.05,0.0) .. (0,0);
+    % frontal
+    \fill[manualblue!16] (-1,-1) rectangle (3.0,4);
+    % parietal
+    \fill[manualgreen!16] (3.0,1.6) rectangle (5.6,4);
+    % occipital
+    \fill[manualyellow!22] (5.6,0.4) rectangle (8,4);
+    % temporal
+    \fill[manualred!14] (2.4,-1) rectangle (6.0,1.6);
+  \end{scope}
+  % contorno
+  \draw[thick, manualgray] (0,0) .. controls (-0.5,2.6) and (2,3.8) .. (4.2,3.5)
+        .. controls (6.3,3.2) and (7.2,1.8) .. (7.0,0.6)
+        .. controls (6.9,0.0) and (6.2,-0.2) .. (5.4,-0.2)
+        .. controls (3.5,-0.3) and (1.5,-0.4) .. (0.6,0.0)
+        .. controls (0.2,0.15) and (0.05,0.0) .. (0,0);
+  % sulco central
+  \draw[thick, manualgray, dashed] (3.0,3.55) -- (3.4,1.4);
+  % rotulos dos lobos
+  \node[font=\small\bfseries, text=manualblue] at (1.3,1.6) {Frontal};
+  \node[font=\small\bfseries, text=manualgreen] at (4.3,2.8) {Parietal};
+  \node[font=\small\bfseries, text=manualyellow!60!black] at (6.6,2.4) {Occipital};
+  \node[font=\small\bfseries, text=manualred] at (4.1,0.6) {Temporal};
+  % cerebelo
+  \draw[thick, manualgray, fill=manualgray!15] (6.4,-0.3) ellipse (0.95 and 0.75);
+  \foreach \y in {-0.7,-0.45,-0.2,0.05,0.3}{
+    \draw[manualgray, thin] (5.55,\y) -- (7.25,\y);
+  }
+  \node[font=\footnotesize, text=manualgray] at (6.4,-1.35) {cerebelo};
+  % tronco encefalico
+  \draw[thick, manualgray, fill=manualgray!10] (5.3,-0.2) -- (5.05,-1.4) -- (5.75,-1.4) -- (5.6,-0.2) -- cycle;
+  \node[font=\footnotesize, text=manualgray, anchor=west] at (5.9,-1.15) {tronco};
+  \draw[manualgray, thick] (5.4,-1.4) -- (5.35,-1.9);
+  \node[font=\footnotesize, text=manualgray] at (5.4,-2.1) {medula};
+\end{tikzpicture}
+```
+Vista lateral do encéfalo (rosto à esquerda). Os quatro lobos do córtex, o cerebelo e o tronco. O sulco central (tracejado) separa o lobo frontal do parietal e marca a fronteira entre o córtex motor e o somatossensorial.
+:::
+
+## As estruturas subcorticais e o sistema límbico
+
+Entre o tronco e o córtex ficam estruturas que não se veem na vista lateral porque estão enterradas no centro do cérebro. Várias delas compõem o chamado **sistema límbico** — um conjunto funcionalmente relacionado (mais do que uma unidade anatômica precisa) que está no coração da emoção, da memória e da motivação.
+
+O **tálamo** é a grande estação de retransmissão sensorial: quase toda informação dos sentidos — exceto o olfato — passa por ele antes de chegar ao córtex. É o "porteiro" que distribui os sinais de entrada para as áreas corticais corretas. O **hipotálamo**, logo abaixo, é minúsculo e desproporcionalmente poderoso: regula fome, sede, temperatura, sono, comportamento sexual e a resposta ao estresse, e é a ponte entre o sistema nervoso e o endócrino — comanda a hipófise, tema do Cap. 25. O **hipocampo** é indispensável à formação de novas memórias de longo prazo, como o caso de H.M. tornaria dramaticamente claro (adiante). A **amígdala** é central no processamento do medo e das emoções, atribuindo valor de ameaça ou recompensa aos estímulos — o Vol 9 volta a ela. A @fig-limbico localiza essas estruturas.
+
+::: {#fig-limbico}
+```{.tikz}
+%%| filename: sistema-limbico
+%%| alt: Corte esquemático do cérebro mostrando as estruturas subcorticais do sistema límbico em posições relativas. No centro, o tálamo, representado como uma forma oval. Abaixo dele, o hipotálamo, menor. À frente e abaixo, a amígdala, uma forma arredondada. Atrás da amígdala, curvando-se, o hipocampo, em forma alongada. Cada estrutura tem um rótulo e uma nota curta de função: tálamo (retransmissão sensorial), hipotálamo (fome, sede, hormônios), amígdala (medo, emoção), hipocampo (memória nova).
+\begin{tikzpicture}[scale=1.0]
+  % contorno do cerebro (leve)
+  \draw[manualgray!45, thick] (0,0) ellipse (4.2 and 2.9);
+  % talamo
+  \draw[thick, manualblue, fill=manualblue!15] (0.3,0.6) ellipse (0.85 and 0.55);
+  \node[font=\footnotesize\bfseries, text=manualblue] at (0.3,0.6) {tálamo};
+  % hipotalamo
+  \draw[thick, manualgreen, fill=manualgreen!18] (0.1,-0.35) ellipse (0.55 and 0.32);
+  \node[font=\footnotesize\bfseries, text=manualgreen] at (0.1,-0.35) {hipotál.};
+  % amigdala
+  \draw[thick, manualred, fill=manualred!18] (-1.7,-0.7) circle (0.42);
+  \node[font=\footnotesize\bfseries, text=manualred] at (-1.7,-0.7) {amígd.};
+  % hipocampo
+  \draw[thick, manualyellow!70!black, fill=manualyellow!25]
+     (-1.5,-1.1) .. controls (-0.6,-1.6) and (0.4,-1.5) .. (1.1,-1.0)
+     .. controls (0.4,-1.25) and (-0.6,-1.3) .. (-1.5,-0.95) -- cycle;
+  \node[font=\footnotesize\bfseries, text=manualyellow!55!black] at (0.0,-1.55) {hipocampo};
+  % legendas de funcao
+  \node[font=\footnotesize, text=manualblue, anchor=west] at (2.5,1.7) {retransmissão sensorial};
+  \draw[manualblue, thin] (1.15,0.7) -- (2.45,1.65);
+  \node[font=\footnotesize, text=manualgreen, anchor=west] at (2.5,0.9) {fome, sede, hormônios};
+  \draw[manualgreen, thin] (0.6,-0.3) -- (2.45,0.85);
+  \node[font=\footnotesize, text=manualred, anchor=east] at (-2.7,0.9) {medo, emoção};
+  \draw[manualred, thin] (-2.05,-0.55) -- (-2.7,0.82);
+  \node[font=\footnotesize, text=manualyellow!55!black, anchor=east] at (-2.7,-1.6) {memória nova};
+  \draw[manualyellow!70!black, thin] (-1.4,-1.25) -- (-2.7,-1.6);
+\end{tikzpicture}
+```
+As principais estruturas subcorticais do sistema límbico e suas funções dominantes. Posições esquemáticas, não em escala anatômica exata.
+:::
+
+## O córtex cerebral: quatro lobos e um mapa do corpo
+
+Por cima de tudo está o **córtex cerebral**, a camada enrugada de poucos milímetros que abriga a maior parte do que chamamos de funções superiores — percepção, linguagem, raciocínio, planejamento. As dobras (giros) e fendas (sulcos) não são decoração: elas triplicam a área de superfície que cabe no crânio. O córtex divide-se em dois hemisférios e, em cada um, em quatro lobos, cada qual com uma área **primária** (dedicada a uma entrada ou saída específica) e vastas áreas de **associação** (que integram e interpretam).
+
+- O **lobo occipital**, atrás, abriga o córtex visual primário: é onde a visão começa a ser processada (Vol 5).
+- O **lobo temporal**, na lateral inferior, contém o córtex auditivo primário e áreas críticas para linguagem e memória.
+- O **lobo parietal**, no topo posterior, abriga o córtex somatossensorial primário — o tato, a temperatura, a posição do corpo — e integra o senso espacial.
+- O **lobo frontal**, na frente, contém o córtex motor primário e, à sua frente, o **córtex pré-frontal**, sede do planejamento, do juízo, do controle de impulsos e da personalidade — a última região a amadurecer, só por volta dos 25 anos (Vol 10).
+
+Duas faixas de córtex, uma de cada lado do sulco central, ilustram um princípio organizador elegante. O **córtex motor primário** (no frontal) e o **córtex somatossensorial primário** (no parietal) são organizados de forma **somatotópica**: cada parte do corpo tem uma região correspondente, e partes vizinhas do corpo são, em geral, vizinhas no córtex. Mais notável, o espaço cortical não é proporcional ao *tamanho* da parte do corpo, mas à sua *importância funcional*: mãos, lábios e língua ocupam áreas enormes; o tronco e as pernas, áreas pequenas. Se desenharmos um corpo com as proporções do mapa cortical, obtemos o grotesco **homúnculo** de mãos e boca gigantes, mapeado por Wilder Penfield estimulando o córtex de pacientes acordados durante neurocirurgias [@penfield1937].
+
+::: {.experimento}
+**O homúnculo de Penfield** [@penfield1937]
+
+**Desenho.** Operando pacientes com epilepsia sob anestesia local (o cérebro não dói, e o paciente permanece consciente), Wilder Penfield estimulava eletricamente pontos do córtex e perguntava o que sentiam, ou observava que movimento se produzia. Ponto a ponto, mapeou a correspondência entre regiões corticais e partes do corpo.
+
+**Resultado.** A estimulação do córtex somatossensorial produzia sensações localizadas em partes específicas do corpo; a do córtex motor, movimentos específicos. O mapa era ordenado (partes vizinhas do corpo, regiões vizinhas do córtex) e desproporcional (mão e face dominando a área).
+
+**Interpretação.** O achado deu base física à ideia de representação: o corpo está "desenhado" no córtex, e a resolução dessa representação segue a densidade de receptores e a finura do controle — daí a mão e os lábios ocuparem tanto espaço. É a base neural da acuidade tátil diferencial estudada na psicofísica (Vol 5).
+
+**Limitações.** O mapa é uma idealização: as fronteiras são menos nítidas e mais plásticas do que o desenho sugere (Cap. 28), e a estimulação elétrica de Penfield ativava também conexões vizinhas. O homúnculo é um retrato médio e estático de algo mais fluido.
+:::
+
+## Localização de função: o que as lesões ensinaram
+
+A pergunta que atravessa a história da neurociência é quanto de função está localizado. As respostas vieram, uma a uma, de casos clínicos que se tornaram clássicos — cada um uma dissociação natural que nenhum experimento ético poderia produzir de propósito.
+
+::: {.estudo-caso}
+**Phineas Gage e o lobo frontal** [@harlow1868]
+
+Em 1848, o operário ferroviário Phineas Gage sofreu um acidente extraordinário: uma barra de ferro de mais de um metro atravessou seu crânio, destruindo boa parte do lobo frontal esquerdo. Gage sobreviveu, andou, falou e manteve memória e inteligência aparentemente intactas — o que já era espantoso. Mas, segundo o relato de seu médico, John Harlow, sua **personalidade** mudou: o homem responsável e comedido teria se tornado impulsivo, profano, incapaz de sustentar planos — "já não era Gage".
+
+O caso é frequentemente contado com exagero (as fontes são escassas e parte da "mudança de personalidade" pode ter sido dramatizada, e há evidências de recuperação posterior). Mesmo assim, ele inaugurou uma ideia então herética: que o lobo frontal, longe de ser um tecido "silencioso", é o substrato do autocontrole, do julgamento e do planejamento — as funções que Antonio Damásio, mais de um século depois, ligaria à integração entre razão e emoção na tomada de decisão [@damasio1994]. Gage é o primeiro capítulo da neuropsicologia (Vol 15, Cap. 99).
+:::
+
+Se Gage sugeriu que o frontal governa a conduta, dois neurologistas do século XIX localizaram a linguagem com uma precisão que fundou o método. Paul Broca examinou um paciente que compreendia a fala mas só conseguia produzir uma sílaba ("tan"); na autópsia, encontrou uma lesão numa região específica do lobo frontal *esquerdo* [@broca1861]. Essa **área de Broca** é crítica para a *produção* da fala. Anos depois, Carl Wernicke descreveu o padrão inverso: pacientes que falavam fluentemente, mas produziam frases sem sentido e não compreendiam o que ouviam, com lesão numa região do lobo temporal esquerdo [@wernicke1874]. A **área de Wernicke** é crítica para a *compreensão*. As duas afasias, dissociadas, provaram que a linguagem não é uma faculdade única e indivisível, mas um sistema de componentes separáveis — e que, na maioria das pessoas, ele mora no hemisfério esquerdo.
+
+::: {.experimento}
+**H.M. e a fabricação de memórias** [@scoville_milner1957]
+
+**Desenho.** Em 1953, para tratar uma epilepsia incapacitante, o paciente Henry Molaison (conhecido por décadas apenas como H.M.) foi submetido à remoção cirúrgica de porções do lobo temporal medial dos dois lados, incluindo a maior parte do hipocampo. A cirurgia controlou as crises — e produziu um dos casos mais estudados da história da psicologia. Brenda Milner e colaboradores o acompanharam por décadas.
+
+**Resultado.** H.M. ficou incapaz de formar **novas** memórias episódicas de longo prazo (amnésia anterógrada): podia conversar normalmente, mas esquecia a conversa minutos depois, e nunca reconheceu Milner apesar de décadas de encontros. Entretanto, sua memória de fatos antigos (anteriores à cirurgia), sua inteligência, sua linguagem e sua memória de curto prazo estavam preservadas. Mais revelador: ele *aprendia* novas habilidades motoras (como desenhar diante de um espelho) e melhorava a cada dia — sem nunca se lembrar de ter praticado.
+
+**Interpretação.** O caso dissociou memória de curto e de longo prazo, e memória *declarativa* (de fatos e eventos, dependente do hipocampo) de memória *procedural* (de habilidades, independente dele). Provou que o hipocampo é necessário para *formar* memórias declarativas novas, mas não é onde elas ficam *armazenadas* em definitivo. Fundou a neurociência da memória, tema do Vol 8.
+
+**Limitações.** É um caso único, com lesão cirúrgica imprecisa pelos padrões atuais e que atingiu mais estruturas do que se supôs no início. Generalizações a partir de N = 1 exigem cautela — mas a convergência com estudos posteriores em animais e humanos confirmou o essencial.
+:::
+
+## Dois hemisférios, um cérebro: lateralização
+
+Broca e Wernicke já indicavam que os hemisférios não são idênticos: a linguagem é, na maioria das pessoas, lateralizada à esquerda. O quanto os dois lados diferem, e o que acontece quando são separados, foi respondido por uma série de experimentos que rendeu o Nobel.
+
+::: {.experimento}
+**O cérebro dividido** [@sperry1968; @gazzaniga1967]
+
+**Desenho.** Para tratar epilepsia grave, alguns pacientes tiveram o **corpo caloso** — o feixe de milhões de fibras que conecta os dois hemisférios — seccionado cirurgicamente. Roger Sperry e Michael Gazzaniga estudaram esses pacientes "de cérebro dividido" aproveitando um fato da anatomia visual: o que aparece no campo visual esquerdo é processado pelo hemisfério direito, e vice-versa. Apresentando estímulos brevemente a apenas um campo visual, podiam "falar" com um hemisfério de cada vez.
+
+**Resultado.** Quando uma imagem era mostrada ao campo visual direito (hemisfério esquerdo, verbal), o paciente a nomeava sem dificuldade. Quando era mostrada ao campo visual esquerdo (hemisfério direito, não verbal), o paciente dizia não ter visto nada — mas a mão esquerda (comandada pelo hemisfério direito) conseguia apontar ou pegar o objeto correspondente. Um hemisfério sabia o que o outro ignorava.
+
+**Interpretação.** O experimento revelou que os hemisférios têm especializações (o esquerdo, dominante para a linguagem falada; o direito, superior em certas tarefas espaciais e de reconhecimento) e que, separados, podem processar informação de forma independente. Mais filosoficamente perturbador: sugeriu que a unidade da consciência que experimentamos depende da comunicação entre os hemisférios — o Vol 6 retoma o ponto.
+
+**Limitações.** Os pacientes tinham epilepsia grave e cérebros já atípicos antes da cirurgia; são poucos casos; e, na vida cotidiana, eles se comportam de modo notavelmente normal, usando estratégias de compensação. As especializações são *relativas e estatísticas*, não absolutas.
+:::
+
+O achado do cérebro dividido é também a origem do mito mais difundido sobre o cérebro — e sua correção.
+
+::: {.atencao}
+**"Sou uma pessoa do cérebro direito (criativa), não do esquerdo (lógica)."** Este é um dos mitos neurocientíficos mais resistentes, e é uma distorção grosseira dos achados reais. É verdade que há *lateralização*: certas funções dependem mais de um hemisfério (linguagem, à esquerda; certos aspectos espaciais e emocionais, à direita). Mas isso não significa que as pessoas usem predominantemente um hemisfério, nem que "tipos criativos" tenham um lado mais ativo. Um estudo de neuroimagem com mais de mil cérebros não encontrou evidência de que indivíduos tenham uma rede lateralizada dominante que os torne "cérebro-esquerdo" ou "cérebro-direito" [@nielsen2013]. Qualquer tarefa minimamente complexa — inclusive as criativas — recruta os dois hemisférios, que trabalham juntos através do corpo caloso. A dicotomia de personalidade é folclore vendável, não neurociência.
+:::
+
+## O princípio que fecha o capítulo: localizado, mas distribuído
+
+Vale reunir as evidências numa conclusão só, porque é ela que separa a neurociência da frenologia — aquela pseudociência do século XIX que atribuía cada traço de caráter a uma protuberância do crânio. Os casos deste capítulo mostram que as funções *têm* endereços: destruir a área de Broca prejudica a produção da fala; remover o hipocampo abole a formação de memórias novas. Isso é localização real, e é o que a frenologia acertou em princípio e errou em todos os detalhes.
+
+Mas os mesmos casos mostram que nenhuma função complexa mora inteira em um ponto. A linguagem depende de Broca *e* Wernicke *e* das fibras que os ligam *e* de áreas motoras e auditivas. A memória de H.M. envolvia o hipocampo para *formar*, mas o córtex para *armazenar*. Karl Lashley, tentando localizar o "traço de memória" em ratos, concluiu que ele não estava em nenhum ponto único, mas distribuído — o princípio da **ação de massa** [@lashley1929], hoje refinado: as funções emergem de **redes**, e o que se localiza é a contribuição de cada nó, não a função inteira. Localização e distribuição não se excluem; a neurociência madura afirma as duas ao mesmo tempo. Guardar esse equilíbrio é a melhor defesa contra as duas tolices simétricas: a de que "tudo está em toda parte" e a de que "cada coisa tem seu pontinho".
+
+## Síntese
+
+::: {.callout-sintese}
+- **O encéfalo organiza-se em andares:** o tronco (bulbo, ponte, mesencéfalo, formação reticular) mantém as funções vitais e o alerta; o cerebelo coordena movimento, equilíbrio e aprendizagem motora; as estruturas subcorticais e o córtex cuidam da emoção, da memória e das funções superiores.
+- **O sistema límbico** reúne o tálamo (retransmissão sensorial), o hipotálamo (fome, sede, hormônios, estresse — ponte com o endócrino), o hipocampo (formação de memórias novas) e a amígdala (medo e emoção).
+- **O córtex tem quatro lobos:** occipital (visão), temporal (audição, linguagem, memória), parietal (tato, espaço) e frontal (movimento, planejamento, personalidade, via córtex pré-frontal).
+- **Os córtices motor e somatossensorial são somatotópicos:** o corpo está mapeado neles, com espaço proporcional à importância funcional, não ao tamanho — o homúnculo de Penfield.
+- **As lesões clássicas fundaram a localização de função:** Gage (frontal e conduta), Broca (produção da fala, frontal esquerdo), Wernicke (compreensão, temporal esquerdo), H.M. (hipocampo e formação de memória declarativa).
+- **Os hemisférios são lateralizados** (linguagem à esquerda; certos aspectos espaciais à direita), como o cérebro dividido de Sperry e Gazzaniga revelou — mas o mito "cérebro-esquerdo × cérebro-direito" de personalidade é falso: tarefas complexas recrutam os dois lados.
+- **O princípio unificador: as funções são localizadas, mas distribuídas em redes.** O que tem endereço é a contribuição de cada nó, não a função inteira. Nem frenologia, nem "tudo em toda parte".
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Tronco encefálico**
+:   Base do encéfalo (bulbo, ponte, mesencéfalo) que regula funções vitais como respiração e batimento cardíaco; contém a formação reticular, que controla o alerta.
+
+**Cerebelo**
+:   Estrutura posterior responsável por coordenação, equilíbrio, timing e aprendizagem motora, com participação também cognitiva.
+
+**Sistema límbico**
+:   Conjunto de estruturas subcorticais (tálamo, hipotálamo, hipocampo, amígdala) associadas à emoção, memória e regulação corporal.
+
+**Tálamo**
+:   Estação de retransmissão que distribui a informação sensorial (exceto o olfato) para as áreas corticais.
+
+**Hipotálamo**
+:   Estrutura reguladora de fome, sede, temperatura, sexo e estresse; ponte entre os sistemas nervoso e endócrino.
+
+**Hipocampo**
+:   Estrutura essencial para a formação de novas memórias declarativas de longo prazo.
+
+**Amígdala**
+:   Estrutura central no processamento do medo e na atribuição de valor emocional aos estímulos.
+
+**Córtex cerebral**
+:   Camada externa enrugada do cérebro, sede das funções superiores; dividida em dois hemisférios e quatro lobos, com áreas primárias e de associação.
+
+**Organização somatotópica**
+:   Mapeamento ordenado do corpo sobre os córtices motor e somatossensorial, com espaço proporcional à importância funcional (o homúnculo) [@penfield1937].
+
+**Área de Broca / Área de Wernicke**
+:   Regiões do hemisfério esquerdo críticas, respectivamente, para a produção (Broca, frontal) e a compreensão (Wernicke, temporal) da linguagem [@broca1861; @wernicke1874].
+
+**Lateralização**
+:   Especialização relativa de cada hemisfério para certas funções; revelada de forma dramática nos pacientes de cérebro dividido [@sperry1968].
+
+**Ação de massa**
+:   Princípio de Lashley segundo o qual funções complexas dependem de amplas áreas corticais em vez de um único ponto; base moderna da visão de redes distribuídas [@lashley1929].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie os quatro lobos do córtex e a função primária de cada um. Onde fica o córtex pré-frontal e por que ele é associado à personalidade e ao autocontrole?
+
+2. **(Recuperação.)** Explique o que é a organização somatotópica e por que a mão ocupa uma área cortical maior que a coxa, apesar de ser menor. O que isso revela sobre a lógica do córtex?
+
+3. **(Aplicação.)** Um paciente sofre um AVC e passa a falar fluentemente, mas produz frases sem sentido e não compreende o que lhe dizem. Qual região foi provavelmente afetada, e em qual hemisfério? Como esse quadro difere do de um paciente com lesão na área de Broca?
+
+4. **(Reflexão crítica.)** O caso de H.M. é frequentemente resumido como "ele perdeu a memória". Explique por que esse resumo é impreciso, detalhando o que H.M. perdeu, o que preservou e o que ainda conseguia aprender. Que distinções sobre a memória o caso permitiu estabelecer?
+
+5. **(Reflexão crítica.)** Um curso de "desenvolvimento pessoal" promete "ativar seu cérebro direito" para libertar a criatividade. Com base no experimento do cérebro dividido e no estudo de Nielsen, explique o que há de verdadeiro no conceito de lateralização e onde exatamente a promessa distorce a ciência.
+
+6. **(Integração.)** O capítulo conclui que as funções são "localizadas, mas distribuídas". Usando os casos de Broca, Wernicke e H.M., mostre em que sentido cada um demonstra localização e em que sentido nenhum deles autoriza dizer que uma faculdade mental inteira mora em um único ponto. Como esse princípio distingue a neurociência da frenologia?
