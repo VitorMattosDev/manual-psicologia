@@ -51,7 +51,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 16 | Variáveis, validade e confiabilidade | `capitulos/vol03-metodos-estatistica/cap-16-variaveis-validade.qmd` | ✅ |
 | 17 | Amostragem | `capitulos/vol03-metodos-estatistica/cap-17-amostragem.qmd` | ✅ |
 | 18 | Estatística descritiva | `capitulos/vol03-metodos-estatistica/cap-18-estatistica-descritiva.qmd` | ✅ |
-| 19 | Estatística inferencial (fundamentos) | `capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.qmd` | ⬜ |
+| 19 | Estatística inferencial (fundamentos) | `capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.qmd` | ✅ |
 | 20 | Ética em pesquisa (comitês, consentimento, TCLE) | `capitulos/vol03-metodos-estatistica/cap-20-etica-pesquisa.qmd` | ⬜ |
 | 21 | Leitura crítica de artigos científicos | `capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.qmd` | ⬜ |
 

@@ -1,5 +1,186 @@
 # 19. Estatística inferencial (fundamentos)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o problema da inferência — passar da amostra à população — e o papel da distribuição amostral e do erro-padrão.
+- **Descrever** a lógica do teste de hipótese nula, formulando $H_0$ e $H_1$ e entendendo o que um teste efetivamente decide.
+- **Definir** corretamente o valor-p, evitando as interpretações erradas mais comuns.
+- **Distinguir** erro Tipo I de erro Tipo II e relacioná-los ao nível de significância e ao poder estatístico.
+- **Separar** significância estatística de tamanho de efeito, entendendo por que um resultado pode ser "significativo" e trivial, ou "não significativo" e importante.
+- **Interpretar** um intervalo de confiança e reconhecer por que ele costuma ser mais informativo que um valor-p isolado.
 :::
+
+O capítulo anterior descreveu dados que temos em mãos. Este dá o salto que define a estatística: da amostra que medimos para a população que não podemos medir. Encontramos, numa amostra, que o grupo que recebeu certo tratamento teve média mais alta que o controle. A pergunta que decide tudo é: essa diferença reflete um efeito *real* na população, ou é apenas o acaso da amostragem — a flutuação que o Cap. 17 chamou de erro amostral? A **estatística inferencial** é o aparato para responder a isso de forma disciplinada, quantificando o quanto o acaso, sozinho, poderia ter produzido o que vimos.
+
+Poucos temas da metodologia são tão usados e tão mal compreendidos. O valor-p, que este capítulo desmonta com cuidado, é provavelmente o número mais citado e mais interpretado erroneamente de toda a ciência — inclusive por cientistas. Dominar sua lógica *e seus limites* não é preciosismo técnico: é a diferença entre ler a literatura psicológica com discernimento e engolir conclusões que os próprios dados não sustentam. E, como a crise de replicabilidade do Cap. 1 deixou claro, o mau uso dessas ferramentas está na raiz de boa parte do que a disciplina hoje precisa corrigir.
+
+## Da amostra à população: a distribuição amostral
+
+A ponte entre amostra e população é uma ideia genial e contraintuitiva: a **distribuição amostral**. Imagine repetir um estudo não uma, mas milhares de vezes — sorteando, a cada vez, uma nova amostra da mesma população e calculando a média de cada uma. Essas médias amostrais não seriam todas iguais; elas variariam em torno da verdadeira média populacional, formando, elas próprias, uma distribuição. Essa é a distribuição amostral da média: a distribuição dos resultados que o acaso produziria se o estudo fosse refeito indefinidamente.
+
+Dois fatos sobre ela sustentam toda a inferência. O primeiro é o **teorema central do limite**: para amostras suficientemente grandes, a distribuição amostral da média tem forma *normal* — a curva do Cap. 18 —, *ainda que a variável original não seja normal*. É por isso que a distribuição normal é onipresente na estatística: não porque tudo na natureza seja normal, mas porque as *médias de amostras* tendem a sê-lo. O segundo é o **erro-padrão**: o desvio-padrão dessa distribuição amostral, que mede quanto as médias amostrais tipicamente flutuam em torno da verdadeira. O erro-padrão encolhe conforme a amostra cresce — amostras maiores dão médias mais estáveis, mais próximas do alvo. Ele é a régua com que se julga se uma diferença observada é grande ou pequena *na escala do acaso*.
+
+## A lógica do teste de hipótese nula
+
+Sobre essa base, a psicologia construiu — herdando de Fisher [@fisher1925] e de Neyman e Pearson [@neyman_pearson1933], em uma fusão que nenhum deles endossaria por inteiro — um ritual de decisão chamado **teste de significância da hipótese nula** (em inglês, NHST). Sua lógica é a da prova por contradição, e vale segui-la passo a passo, porque é ela que gera os "p < 0,05" onipresentes.
+
+Formulam-se duas hipóteses. A **hipótese nula** ($H_0$) afirma que *não há efeito*: o tratamento não funciona, a diferença entre os grupos é zero na população, a correlação é nula. A **hipótese alternativa** ($H_1$) afirma que *há* efeito. A estratégia — herança direta da falseabilidade de Popper (Cap. 1) — é indireta e um pouco torta: em vez de tentar provar $H_1$, tenta-se *refutar* $H_0$. Pergunta-se: **se a hipótese nula fosse verdadeira — se não houvesse efeito nenhum —, quão provável seria obter um resultado tão extremo quanto o que observamos, só por acaso?**
+
+Essa probabilidade é o **valor-p**. Se ela for muito baixa, o resultado observado seria surpreendente demais sob a hipótese nula; conclui-se que a nula é implausível e a "rejeitamos", declarando o resultado **estatisticamente significativo**. Se a probabilidade não for baixa, o acaso é uma explicação viável, e "não rejeitamos" a nula. O limiar convencional que separa os dois casos é o **nível de significância** ($\alpha$), fixado por tradição em 0,05 — mas essa fronteira, é preciso dizer, é uma convenção arbitrária, não uma lei da natureza. Nada de mágico acontece entre p = 0,049 e p = 0,051.
+
+::: {.atencao}
+**O que o valor-p *não* é.** Aqui moram os erros mais graves e mais comuns da ciência, e vale gravá-los pela negativa [@cohen1994; @wasserstein_lazar2016]:
+
+- O valor-p **não** é a probabilidade de a hipótese nula ser verdadeira. Ele é calculado *supondo* a nula verdadeira — é P(dados | $H_0$), não P($H_0$ | dados). Inverter os dois é como confundir "a probabilidade de estar molhado se choveu" com "a probabilidade de ter chovido se você está molhado".
+- O valor-p **não** é a probabilidade de o resultado ter sido "por acaso".
+- Um p **não** significativo **não** prova que não há efeito — pode apenas significar que o estudo não teve poder para detectá-lo. *Ausência de evidência não é evidência de ausência.*
+- O valor-p **não** mede o tamanho nem a importância do efeito. Um p minúsculo pode acompanhar um efeito trivial, se a amostra for grande.
+- "p < 0,05" **não** significa 95% de chance de o resultado se replicar.
+
+Se você sair deste capítulo sabendo apenas o que o valor-p não é, já lerá a literatura melhor que muita gente que a produz.
+:::
+
+## Dois jeitos de errar: os erros Tipo I e Tipo II
+
+Como toda decisão sob incerteza, o teste de hipótese pode errar de duas maneiras, e distingui-las é essencial. A realidade tem dois estados (o efeito existe ou não) e a decisão tem dois resultados (rejeitar ou não a nula), o que gera a matriz de quatro células da @fig-erros-tipo.
+
+::: {#fig-erros-tipo}
+```{.tikz}
+%%| filename: erros-tipo
+%%| alt: Matriz dois por dois. As colunas representam a realidade: à esquerda "H0 verdadeira (não há efeito)", à direita "H0 falsa (há efeito)". As linhas representam a decisão: em cima "Rejeitar H0", embaixo "Não rejeitar H0". A célula superior esquerda, em vermelho, é o Erro Tipo I (alfa, falso positivo). A célula superior direita, em verde, é a decisão correta (poder, 1 menos beta). A célula inferior esquerda, em verde, é a decisão correta. A célula inferior direita, em vermelho, é o Erro Tipo II (beta, falso negativo).
+\begin{tikzpicture}[
+  cel/.style={draw=manualgray, thick, minimum width=4.6cm, minimum height=2.1cm, align=center, font=\small, text width=4.3cm}
+]
+  % cabeçalhos de coluna
+  \node[font=\small\bfseries, align=center, text width=4.6cm] at (2.5,2.7) {Realidade:\\$H_0$ verdadeira\\(não há efeito)};
+  \node[font=\small\bfseries, align=center, text width=4.6cm] at (7.3,2.7) {Realidade:\\$H_0$ falsa\\(há efeito)};
+  % cabeçalhos de linha
+  \node[font=\small\bfseries, align=center, text width=2.4cm, rotate=90] at (-0.6,1.15) {Rejeitar $H_0$};
+  \node[font=\small\bfseries, align=center, text width=2.4cm, rotate=90] at (-0.6,-1.15) {Não rejeitar $H_0$};
+  % células
+  \node[cel, fill=manualred!12] at (2.5,1.15) {\textbf{Erro Tipo I} ($\alpha$)\\\emph{falso positivo}\\``achar'' efeito que não existe};
+  \node[cel, fill=manualgreen!12] at (7.3,1.15) {\textbf{Decisão correta}\\\emph{poder} ($1-\beta$)\\detectar efeito real};
+  \node[cel, fill=manualgreen!12] at (2.5,-1.15) {\textbf{Decisão correta}\\não achar efeito inexistente};
+  \node[cel, fill=manualred!12] at (7.3,-1.15) {\textbf{Erro Tipo II} ($\beta$)\\\emph{falso negativo}\\não ver efeito que existe};
+\end{tikzpicture}
+```
+As quatro consequências possíveis de um teste de hipótese. O nível de significância $\alpha$ controla a taxa de erro Tipo I; o poder ($1-\beta$) é a capacidade de detectar um efeito que de fato existe.
+:::
+
+O **erro Tipo I** (falso positivo) é rejeitar a nula quando ela é verdadeira — declarar um efeito que não existe. Sua probabilidade é exatamente o $\alpha$ que escolhemos: ao adotar 0,05, aceitamos correr 5% de risco de gritar "eureca" diante do nada. O **erro Tipo II** (falso negativo), de probabilidade $\beta$, é *não* rejeitar a nula quando ela é falsa — deixar passar um efeito real. Os dois se contrapõem: baixar $\alpha$ para evitar falsos positivos torna o teste mais exigente e, portanto, mais propenso a falsos negativos. A escolha de onde colocar o limiar é, no fundo, um juízo sobre qual erro custa mais caro — e em muitos contextos aplicados (um alarme médico, um teste de segurança) a resposta convencional de 0,05 não é a melhor.
+
+## Poder estatístico
+
+O complemento do erro Tipo II é a estrela subestimada da inferência: o **poder estatístico** ($1 - \beta$) é a probabilidade de o estudo detectar um efeito que realmente existe. Um estudo com poder de 0,80 tem 80% de chance de "enxergar" um efeito real do tamanho esperado — e, portanto, 20% de chance de perdê-lo. A @fig-poder mostra o jogo entre as duas distribuições em disputa.
+
+::: {#fig-poder}
+```{.tikz}
+%%| filename: poder
+%%| alt: Duas curvas normais sobrepostas no mesmo eixo. À esquerda, a distribuição sob a hipótese nula, centrada em zero. À direita, a distribuição sob a hipótese alternativa, centrada num valor positivo (o efeito real). Uma linha vertical marca o valor crítico. À direita do valor crítico, sob a curva da nula, uma pequena área vermelha é alfa (erro Tipo I). À esquerda do valor crítico, sob a curva alternativa, uma área cinza é beta (erro Tipo II). À direita do valor crítico, sob a curva alternativa, uma área verde é o poder.
+\begin{tikzpicture}
+\begin{axis}[
+  width=13cm, height=6cm,
+  axis lines=left, xtick=\empty, ytick=\empty,
+  xmin=-4, xmax=7, ymin=0, ymax=0.46, clip=false, samples=140
+]
+  % beta (H1 à esquerda do corte)
+  \addplot[draw=none, fill=manualgray!35, domain=-1:1.7] {1/sqrt(2*pi)*exp(-(x-3)^2/2)} \closedcycle;
+  % poder (H1 à direita do corte)
+  \addplot[draw=none, fill=manualgreen!35, domain=1.7:7] {1/sqrt(2*pi)*exp(-(x-3)^2/2)} \closedcycle;
+  % alfa (H0 à direita do corte)
+  \addplot[draw=none, fill=manualred!45, domain=1.7:5] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  % curvas
+  \addplot[manualblue, very thick, domain=-4:4] {1/sqrt(2*pi)*exp(-x^2/2)};
+  \addplot[manualgreen!60!black, very thick, domain=-1:7] {1/sqrt(2*pi)*exp(-(x-3)^2/2)};
+  % linha do valor crítico
+  \draw[manualgray, thick, dashed] (axis cs:1.7,0) -- (axis cs:1.7,0.44);
+  \node[font=\scriptsize, text=manualgray] at (axis cs:1.7,0.455) {valor crítico};
+  % rótulos das curvas
+  \node[font=\scriptsize, text=manualblue] at (axis cs:-1.2,0.36) {$H_0$};
+  \node[font=\scriptsize, text=manualgreen!60!black] at (axis cs:4.3,0.36) {$H_1$};
+  \node[font=\scriptsize, text=manualgreen!60!black] at (axis cs:2.9,0.12) {poder};
+  \node[font=\scriptsize, text=manualgray] at (axis cs:1.15,0.05) {$\beta$};
+  \node[font=\scriptsize, text=manualred] at (axis cs:2.15,0.03) {$\alpha$};
+\end{tikzpicture}
+```
+O poder de um teste. Afastar as curvas (efeito maior), estreitá-las (amostra maior, menos erro-padrão) ou mover o corte aumenta a área verde. A tensão é permanente: reduzir $\alpha$ (mover o corte para a direita) engorda $\beta$.
+:::
+
+Três fatores aumentam o poder: um **efeito maior** (curvas mais separadas), uma **amostra maior** (curvas mais estreitas, porque o erro-padrão cai) e um $\alpha$ **menos exigente** (que, porém, aumenta o risco Tipo I). O que torna o poder tão importante é sua negligência histórica: durante décadas, a psicologia rodou estudos com poder baixíssimo — amostras pequenas demais para detectar os efeitos que buscava —, o que produz duas patologias. Estudos subdimensionados *perdem* efeitos reais (erro Tipo II em profusão) e, pior, quando por acaso "acham" algo, tendem a *superestimar* grosseiramente o tamanho do efeito. Calcular o poder *antes* de coletar dados — a **análise de poder** — e dimensionar a amostra conforme ele deixou de ser refinamento e virou requisito básico, e sua ausência é uma das causas estruturais da crise de replicabilidade (Cap. 21).
+
+## Significância não é tamanho: o tamanho de efeito
+
+Eis a distinção que mais protege o leitor de conclusões infladas. **Significância estatística** responde apenas "o efeito é distinguível de zero?". Ela **não** responde "o efeito é grande?" nem "o efeito importa?". E, como o poder cresce com a amostra, um estudo grande o bastante torna *significativa* qualquer diferença, por minúscula e irrelevante que seja. Com um milhão de participantes, uma diferença de 0,1 ponto de QI entre dois grupos pode sair com p < 0,001 — estatisticamente significativa e praticamente nula.
+
+Por isso a estatística madura reporta, ao lado do valor-p, o **tamanho de efeito**: uma medida da *magnitude* da diferença ou da associação, independente do tamanho da amostra. O **d de Cohen**, por exemplo, expressa a diferença entre dois grupos em unidades de desvio-padrão (um d de 0,2 é pequeno; 0,5, médio; 0,8, grande) — usando exatamente a régua do desvio-padrão do Cap. 18. O próprio *r* de correlação é um tamanho de efeito. A pergunta científica completa tem duas partes, e o valor-p só responde à primeira: *o efeito existe?* (significância) e *quão grande ele é?* (tamanho de efeito). Um resultado sem tamanho de efeito é meia resposta [@cohen1992].
+
+::: {.na-pratica}
+**Lendo "estatisticamente significativo" no jornal.** A palavra "significativo" na ciência não quer dizer "importante" — quer dizer, tecnicamente, "provavelmente não é zero". Quando uma manchete anuncia que um remédio, um método de ensino ou um suplemento teve efeito "significativo", faça duas perguntas antes de se animar. **Qual o tamanho do efeito?** Um antidepressivo pode superar o placebo de forma estatisticamente significativa e, ainda assim, por uma margem clínica pequena. **Qual o tamanho da amostra?** Amostras enormes fabricam significância a partir de efeitos triviais. A tradução honesta de "significativo" para o português cotidiano não é "grande" nem "relevante" — é apenas "detectável". Guardar essa equivalência desarma boa parte do sensacionalismo científico.
+:::
+
+## Intervalos de confiança: uma alternativa mais informativa
+
+Uma resposta parcial a todas essas armadilhas é relatar, em vez de (ou além de) um valor-p, um **intervalo de confiança**. Em vez de uma decisão binária "significativo ou não", o intervalo de confiança oferece uma *faixa de valores plausíveis* para o parâmetro na população. Um intervalo de confiança de 95% para a diferença entre dois tratamentos, digamos de "2 a 8 pontos", comunica de uma vez três coisas que o valor-p esconde: uma estimativa do tamanho do efeito (em torno de 5), a incerteza em torno dela (a largura da faixa) e o teste de significância (se o intervalo não inclui o zero, o resultado é significativo a 0,05).
+
+A interpretação correta exige o mesmo cuidado do valor-p: um intervalo de 95% *não* significa "há 95% de probabilidade de o valor verdadeiro estar nesta faixa". Significa que o *procedimento* de construir tais intervalos captura o valor verdadeiro em 95% das amostras hipotéticas — a confiança está no método ao longo de muitas repetições, não neste intervalo específico. Ainda assim, por exibir magnitude e incerteza em vez de esconder ambas atrás de um "p < 0,05", o intervalo de confiança é hoje amplamente recomendado como o relato mais informativo, e a tendência das boas revistas é exigi-lo.
+
+Uma palavra final sobre o zoológico de testes que o leitor encontrará — *teste t*, *ANOVA*, *qui-quadrado*, *regressão*. Eles diferem no tipo de dado e de comparação (duas médias, várias médias, frequências em categorias, relações entre variáveis contínuas), mas todos compartilham a *mesma lógica* deste capítulo: comparar o resultado observado com o que o acaso produziria sob a hipótese nula, e traduzir essa comparação num valor-p. Aprender a lógica, e não decorar os testes, é o que permite ler qualquer um deles — e o que o Cap. 21 põe em prática diante de artigos reais.
+
+::: {.callout-sintese}
+- **A inferência salta da amostra à população** apoiando-se na distribuição amostral — a distribuição dos resultados que o acaso produziria em repetições do estudo —, cuja forma é normal (teorema central do limite) e cuja largura é o erro-padrão, que encolhe com amostras maiores.
+- **O teste de hipótese nula** tenta refutar $H_0$ ("não há efeito") perguntando quão improvável seria o dado observado se $H_0$ fosse verdadeira; essa probabilidade é o **valor-p**.
+- **O valor-p é sistematicamente mal interpretado.** Ele *não* é a probabilidade de $H_0$ ser verdadeira, nem a chance de o resultado ser acaso, nem uma medida de tamanho ou importância; e p não significativo não prova ausência de efeito.
+- **Há dois erros:** Tipo I (falso positivo, probabilidade $\alpha$) e Tipo II (falso negativo, probabilidade $\beta$); reduzir um tende a aumentar o outro.
+- **Poder ($1-\beta$)** é a chance de detectar um efeito real; cresce com efeito maior, amostra maior e $\alpha$ mais frouxo. Estudos com pouco poder perdem efeitos reais e superestimam os que "acham".
+- **Significância ≠ magnitude.** Amostras grandes tornam significativos efeitos triviais; por isso reporta-se o **tamanho de efeito** (d de Cohen, *r*) ao lado do valor-p.
+- **O intervalo de confiança** é mais informativo que o valor-p isolado: exibe estimativa, incerteza e teste de uma só vez — embora sua interpretação correta também seja sutil.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Distribuição amostral**
+:   Distribuição dos valores de uma estatística (como a média) através de infinitas amostras hipotéticas da mesma população.
+
+**Teorema central do limite**
+:   Princípio de que a distribuição amostral da média tende à forma normal em amostras grandes, mesmo que a variável original não seja normal.
+
+**Erro-padrão**
+:   Desvio-padrão da distribuição amostral; mede a flutuação típica de uma estatística amostral; diminui com o tamanho da amostra.
+
+**Hipótese nula ($H_0$) / alternativa ($H_1$)**
+:   $H_0$ afirma ausência de efeito; $H_1$, presença. O teste tenta refutar $H_0$.
+
+**Valor-p**
+:   Probabilidade de obter um resultado tão ou mais extremo que o observado, *supondo* a hipótese nula verdadeira.
+
+**Nível de significância ($\alpha$)**
+:   Limiar (convencionalmente 0,05) abaixo do qual se rejeita $H_0$; também a probabilidade de erro Tipo I.
+
+**Erro Tipo I / Tipo II**
+:   Falso positivo (rejeitar $H_0$ verdadeira, prob. $\alpha$) e falso negativo (não rejeitar $H_0$ falsa, prob. $\beta$).
+
+**Poder estatístico**
+:   Probabilidade ($1-\beta$) de detectar um efeito que de fato existe.
+
+**Tamanho de efeito**
+:   Medida da magnitude de um efeito, independente do tamanho da amostra (ex.: d de Cohen, *r*).
+
+**Intervalo de confiança**
+:   Faixa de valores plausíveis para um parâmetro populacional, com um nível de confiança associado (ex.: 95%) ligado ao procedimento, não ao intervalo específico.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie a hipótese nula e a alternativa para um estudo que testa se uma nova terapia reduz sintomas de ansiedade. Explique por que o teste tenta refutar a nula em vez de provar a alternativa diretamente.
+
+2. **(Recuperação.)** Dê a definição correta de valor-p e aponte, entre as interpretações erradas listadas no capítulo, aquela que você acha mais tentadora — explicando por que ela é falsa.
+
+3. **(Aplicação.)** Um estudo com 40 participantes não encontra diferença significativa entre dois métodos de estudo (p = 0,20). Um jornalista escreve: "Pesquisa prova que os métodos são equivalentes." Corrija a manchete, usando os conceitos de erro Tipo II e poder.
+
+4. **(Aplicação.)** Um estudo com 50 mil pessoas encontra que dormir com meia hora a mais se associa a um ganho de 0,3 ponto num teste de memória de 0 a 100, com p < 0,001. Explique como o resultado pode ser altamente significativo e, ainda assim, praticamente irrelevante. Que estatística faltou para avaliar a importância?
+
+5. **(Reflexão crítica.)** Explique a afirmação "reduzir a taxa de falsos positivos aumenta a taxa de falsos negativos" usando a @fig-poder. Em que tipo de decisão aplicada valeria a pena aceitar mais erros Tipo I para reduzir erros Tipo II?
+
+6. **(Integração.)** Ligando este capítulo ao Cap. 17 e ao Cap. 1: explique por que a combinação de amostras pequenas (baixo poder) com a busca por "p < 0,05" ajuda a entender a crise de replicabilidade. Por que um campo cheio de estudos com pouco poder tende a publicar muitos achados que não se sustentam?
