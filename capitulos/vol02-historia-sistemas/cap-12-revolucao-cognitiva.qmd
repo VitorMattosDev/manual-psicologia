@@ -1,5 +1,356 @@
 # 12. A revolução cognitiva
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o movimento decisivo que resolveu o impasse dos Caps. 7 e 8: manter a regra de Watson e abandonar sua ontologia.
+- **Identificar** as três importações externas — teoria da informação, cibernética e computabilidade — que tornaram a mente falável de novo.
+- **Descrever** o modelo de filtro de Broadbent e mostrar por que ele foi produtivo **porque** estava errado.
+- **Avaliar** o número mágico sete e explicar por que o próprio Miller não acreditava nele.
+- **Reconstruir** a lógica dos tempos de reação como janela para processos internos, e sua dívida com Donders.
+- **Julgar** criticamente a narrativa da "revolução" — e reconhecer que ela é, ela própria, uma história contada pelos vencedores.
+- **Antecipar** o que a revolução deixou de fora, e por que isso produziu o Cap. 13.
 :::
+
+O Cap. 11 terminou com um problema que ficou pendurado desde o Cap. 8. Watson tinha um argumento bom: dados científicos precisam ser públicos, a consciência não é pública, logo a psicologia deve estudar comportamento. Nenhum humanista o refutou — Rogers respondeu com melhor prática, não com melhor lógica.
+
+E, no entanto, algo estava obviamente errado. Você **pensa**. Você planeja o dia, entende esta frase, lembra de onde estacionou. Tolman já tinha mostrado, com ratos, que sem algo dentro do organismo os dados não fecham (Cap. 8). Uma ciência da mente que não pode falar de memória é uma ciência que desistiu do seu assunto.
+
+A saída apareceu nos anos 1950, e ela é elegante o bastante para merecer uma frase própria. **A revolução cognitiva aceitou a regra de Watson e rejeitou a conclusão de Watson.** Os dados continuam sendo públicos — comportamento, tempo, erro, escolha. Mas eles deixam de ser o **objeto** e passam a ser **evidência** sobre o objeto, que é o processamento interno. Você não pergunta à pessoa o que se passa nela: você **infere**, a partir do que ela faz, sob condições que você manipula.
+
+Isso não é introspecção com nome novo. É o oposto: é a caixa-preta sendo modelada **de fora**, com o rigor de Watson e a ambição de Wundt.
+
+::: {#fig-caixa-preta}
+```{.tikz}
+%%| filename: caixa-preta
+%%| alt: Diagrama em três faixas comparando três posições sobre a mente. Na primeira faixa, o estruturalismo é mostrado como uma caixa aberta observada por dentro, com uma seta de introspecção partindo de dentro da própria caixa, e a crítica de que o dado é privado, de modo que quando dois laboratórios discordam nada decide. Na segunda faixa, o behaviorismo é mostrado como uma caixa preta lacrada, com uma seta de estímulo entrando e uma seta de resposta saindo, e um carimbo de proibido sobre a caixa, com a nota de que o dado é público, o que é a virtude, mas a caixa está fora de escopo, o que é o custo. Na terceira faixa, o cognitivismo é mostrado como uma caixa cujo interior é modelado com quatro sub-etapas ligadas em sequência: codificação, armazenamento, recuperação e decisão, com estímulo entrando e resposta saindo. Setas tracejadas partem das medidas externas de tempo de reação, padrão de erros e escolhas, apontando para dentro da caixa, indicando que o conteúdo é inferido e não observado. Uma nota final destaca que o cognitivismo manteve a regra de Watson, segundo a qual o dado deve ser público, e rejeitou a ontologia de Watson, segundo a qual não haveria nada dentro a modelar, e que os dados deixam de ser o objeto e passam a ser evidência sobre o objeto.
+\begin{tikzpicture}[
+  cx/.style={draw, very thick, minimum width=3.6cm, minimum height=1.6cm, align=center, font=\tiny},
+  fl/.style={->, >=Stealth, thick},
+  rot/.style={font=\scriptsize\bfseries, align=left, text width=2.3cm}
+]
+  % ---- estruturalismo
+  \node[rot, text=manualblue] at (-5.6,2.5) {ESTRUTURALISMO};
+  \node[cx, draw=manualblue, fill=manualblue!6] (e) at (-1.2,2.5) {experiência\\{\tiny observada \emph{por dentro}}};
+  \draw[fl, manualblue] (-1.2,3.5) to[bend right=45] node[midway, above, font=\tiny, text=manualblue] {introspecção} (0.9,2.9);
+  \node[font=\tiny, text=manualred, align=left, anchor=west, text width=4.3cm] at (1.7,2.5)
+    {dado \textbf{privado}: quando dois laboratórios discordam, nada decide (Cap. 7)};
+
+  \draw[manualgray!25] (-7.0,1.4) -- (6.6,1.4);
+
+  % ---- behaviorismo
+  \node[rot, text=manualgray] at (-5.6,0.3) {BEHAVIORISMO};
+  \node[cx, draw=manualgray, fill=manualgray!75] (b) at (-1.2,0.3) {};
+  \node[font=\tiny, text=white] at (-1.2,0.3) {caixa-preta};
+  \draw[fl, manualgray] (-3.4,0.3) -- (b.west) node[midway, above, font=\tiny] {S};
+  \draw[fl, manualgray] (b.east) -- (1.0,0.3) node[midway, above, font=\tiny] {R};
+  \node[draw, very thick, draw=manualred, fill=white, rotate=14, font=\tiny\bfseries,
+        text=manualred] at (-1.2,0.3) {FORA DE ESCOPO};
+  \node[font=\tiny, align=left, anchor=west, text width=4.3cm] at (1.7,0.3)
+    {\textcolor{manualgreen}{dado \textbf{público} --- a virtude};\\\textcolor{manualred}{a caixa é proibida --- o custo}};
+
+  \draw[manualgray!25] (-7.0,-0.9) -- (6.6,-0.9);
+
+  % ---- cognitivismo
+  \node[rot, text=manualgreen] at (-5.6,-2.1) {COGNITIVISMO};
+  \draw[very thick, draw=manualgreen, fill=manualgreen!5] (-3.0,-2.9) rectangle (0.6,-1.3);
+  \foreach \x/\n in {-2.6/cod., -1.7/arm., -0.8/recup., 0.1/decis.} {
+    \node[draw, thin, draw=manualgreen, fill=manualgreen!18, minimum width=0.8cm,
+          minimum height=0.7cm, font=\tiny] at (\x+0.1,-2.1) {\n};
+  }
+  \foreach \x in {-2.15,-1.25,-0.35} { \draw[->, >=Stealth, manualgreen] (\x,-2.1) -- (\x+0.35,-2.1); }
+  \draw[fl, manualgray] (-4.3,-2.1) -- (-3.05,-2.1) node[midway, above, font=\tiny] {S};
+  \draw[fl, manualgray] (0.65,-2.1) -- (1.5,-2.1) node[midway, above, font=\tiny] {R};
+
+  \node[draw, thick, rounded corners=2pt, draw=manualred, fill=manualred!6, font=\tiny,
+        align=center, text width=2.5cm] at (-1.2,-4.1)
+    {tempo de reação\\padrão de erros\\escolhas};
+  \draw[->, >=Stealth, thick, manualred, dashed] (-1.2,-3.55) -- (-1.2,-2.95);
+  \node[font=\tiny, text=manualred, anchor=west] at (-1.05,-3.3) {\emph{infere}};
+
+  \node[font=\tiny, align=left, anchor=west, text width=4.3cm] at (1.7,-2.1)
+    {o interior é \textbf{modelado} --- mas \textbf{inferido de fora}, nunca relatado};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!8,
+        minimum width=13.2cm, align=center, font=\tiny] at (-0.2,-5.3)
+    {\textbf{A jogada:} manter a \emph{regra} de Watson (o dado é público) e rejeitar a \emph{ontologia} de Watson (não há nada a modelar).\\
+     O comportamento deixa de ser o \textbf{objeto} e passa a ser \textbf{evidência} sobre o objeto.};
+\end{tikzpicture}
+```
+Três posições sobre a caixa. A do meio é a de Watson; a de baixo é a que o Cap. 8 tornou possível ao insistir que dados sejam públicos — e depois proibiu.
+:::
+
+## O que veio de fora
+
+Um detalhe que a narrativa heroica costuma esconder: **quase nada disso foi inventado por psicólogos**. As ferramentas conceituais chegaram de fora, produzidas em boa parte por engenheiros e matemáticos durante e depois da guerra, e a psicologia as importou.
+
+**Teoria da informação.** Claude Shannon, nos laboratórios da Bell, resolveu um problema de telefonia e criou, de passagem, uma das ideias mais férteis do século: **informação é uma quantidade mensurável** [@shannon1948]. Mede-se em **bits**, define-se pela redução de incerteza, e um canal tem **capacidade** — um limite de quanta informação transmite por unidade de tempo.
+
+Para a psicologia, isso foi dinamite conceitual. Se a informação é quantificável, então é possível perguntar, com números: quanta informação uma pessoa transmite? Qual é a capacidade do canal humano? Onde está o gargalo? Note o que aconteceu: falar do interior deixou de ser metafísica e virou **engenharia**. Pode-se medir sem abrir.
+
+**Cibernética.** Norbert Wiener e colegas mostraram que máquinas com **retroalimentação** exibem comportamento dirigido a metas [@wiener1948]. Um míssil que persegue um alvo, um termostato que mantém a temperatura: são sistemas que **corrigem o erro entre o estado atual e um estado desejado**. Isso resolve um problema antigo e embaraçoso: como falar de **propósito** sem falar de alma? A resposta é o *loop* de feedback. Propósito vira mecanismo.
+
+Miller, Galanter e Pribram levaram isso para a psicologia com a unidade **TOTE** — *Test–Operate–Test–Exit*: testa-se a discrepância, opera-se para reduzi-la, testa-se de novo, e sai-se quando não há mais discrepância [@miller1960]. Era uma alternativa explícita ao reflexo e ao arco S–R, e o eco de Dewey (Cap. 7) é audível: de novo, um circuito no lugar de uma linha.
+
+**Computabilidade.** Alan Turing definiu, ainda nos anos 1930, o que é computar: manipular símbolos segundo regras [@turing1936]. E depois formulou a pergunta que segue viva [@turing1950]: se uma máquina exibisse comportamento indistinguível do humano numa conversa, com que fundamento se negaria que pensa?
+
+Daqui saiu a **metáfora do computador**, e ela é o eixo do capítulo. A tese não é a caricatura de que o cérebro é feito de chips. É mais sutil e mais poderosa, e vale enunciá-la devagar: um computador é um sistema **físico** que, ainda assim, é mais bem descrito em termos de **símbolos, representações e regras**. Ninguém explica um programa de xadrez falando de voltagens. E ninguém precisa invocar alma alguma para dizer que ele "avalia posições".
+
+Se isso é coerente para uma máquina, é coerente para um cérebro. Estados internos com conteúdo, manipulados por regras, num sistema material. **A objeção dualista de Descartes (Cap. 6) e a proibição de Watson (Cap. 8) caem ao mesmo tempo** — e caem porque um matemático inglês definiu o que é um algoritmo.
+
+**E a guerra.** Vale o registro material: o que forçou a mão foi a demanda aplicada. Operadores de radar tinham de detectar sinais fracos por horas — e falhavam de maneiras sistemáticas. Pilotos confundiam controles idênticos e destruíam aviões. A psicologia foi chamada a resolver esses problemas, e nenhum deles admitia resposta em termos de estímulo e resposta. Era preciso modelar **atenção**, **carga**, **vigilância**, **memória de trabalho** — o que o operador faz com a informação entre a tela e a mão. Donald Broadbent veio dessa tradição, e não é coincidência que o primeiro modelo cognitivo sério tenha saído dela.
+
+## Broadbent, e o modelo que foi útil por estar errado
+
+::: {.experimento}
+**Do coquetel ao filtro** [@cherry1953; @broadbent1958]
+
+**O fenômeno.** Colin Cherry batizou-o de **problema do coquetel**: numa festa barulhenta, você acompanha uma conversa e ignora dezenas de outras. Como? E — a parte interessante — se alguém, do outro lado da sala, disser seu nome, você escuta. Como você ouviu, se não estava ouvindo?
+
+**Desenho.** Cherry criou a **escuta dicótica**: fones que entregam mensagens **diferentes** a cada ouvido. Pede-se ao participante que **sombreie** a mensagem de um ouvido — repita em voz alta, palavra por palavra, o que ouve à direita — e ignore a esquerda.
+
+**Resultado.** O sombreamento funciona bem. E o canal ignorado fica notavelmente vazio: o participante não sabe dizer o que foi dito, não nota se a língua mudou, não percebe fala reversa. Mas **nota** propriedades físicas: se a voz muda de masculina para feminina, se vira um tom puro.
+
+**O modelo de Broadbent.** Ele propôs a primeira arquitetura de processamento de informação da psicologia, com caixas e setas: os canais entram em paralelo num **armazenamento sensorial** breve; um **filtro seletivo** deixa passar **um** canal, escolhido por propriedades **físicas** (localização, altura da voz); e só o que passa alcança o processamento de significado e a memória, que têm capacidade limitada.
+
+A metáfora é a de um gargalo — e a lógica é a de Shannon: há um canal, há capacidade, há um ponto onde a informação é descartada.
+
+**Por que isto é um marco.** É a primeira vez que alguém desenha um modelo **mecanicista e testável** do que acontece dentro. As caixas fazem previsões: se o filtro é físico e vem **antes** do significado, então **nada** do canal ignorado pode ser processado semanticamente. Isso proíbe. Isso pode falhar.
+
+**E falhou.** Moray mostrou que o **próprio nome** do participante, no canal ignorado, é detectado em cerca de um terço das vezes [@moray1959]. Isso é fatal para o modelo tal como enunciado: para reconhecer seu nome, é preciso ter **analisado o significado** do canal que supostamente foi barrado antes de qualquer análise de significado. O gargalo não pode estar onde Broadbent o pôs.
+
+Anne Treisman propôs a correção que ficou: o filtro não **bloqueia**, ele **atenua** [@treisman1964]. O canal ignorado passa, fraco. E itens com limiar baixo — seu nome, a palavra "fogo", o que você está esperando ouvir — disparam mesmo com sinal fraco. Isso explica os dois lados do dado: em geral o canal ignorado não é notado, mas às vezes é.
+
+**A moral, e ela é a lição de método do capítulo.** O modelo de Broadbent está errado, e é um dos modelos mais importantes já produzidos pela psicologia. Ele foi **produtivo justamente por ser específico o bastante para falhar** — e sua falha era **informativa**: dizia *onde* estava o erro e o que seria preciso mudar. Compare com o Cap. 10: uma teoria que explica qualquer resultado não pode ser corrigida, porque nada nela jamais aponta para o defeito. Estar errado de forma precisa é um serviço prestado à ciência.
+:::
+
+::: {#fig-filtro}
+```{.tikz}
+%%| filename: filtro
+%%| alt: Diagrama em duas faixas sobre modelos de atenção seletiva. Na faixa superior, o modelo de filtro de Broadbent de 1958: dois canais, o ouvido esquerdo e o direito, entram num armazenamento sensorial breve; em seguida um filtro seletivo deixa passar apenas um canal, escolhido por propriedades físicas como localização e altura da voz, enquanto o outro canal é inteiramente bloqueado; só o canal que passa chega à análise de significado e à memória, que têm capacidade limitada. Uma anotação indica a previsão do modelo: nada do canal ignorado pode ser analisado quanto ao significado. Uma marca de refutação aponta o resultado de Moray, de 1959, segundo o qual o próprio nome do participante é detectado no canal ignorado em cerca de um terço das vezes, o que exigiria análise de significado num canal supostamente já bloqueado. Na faixa inferior, o modelo de atenuação de Treisman, de 1964: o filtro não bloqueia, apenas atenua; o canal não atendido passa enfraquecido; e itens de limiar baixo, como o próprio nome ou a palavra fogo, disparam mesmo com sinal fraco, o que explica por que em geral o canal ignorado não é notado, mas às vezes é.
+\begin{tikzpicture}[
+  bx/.style={draw, thick, rounded corners=2pt, minimum width=1.9cm, minimum height=0.95cm,
+             align=center, font=\tiny},
+  fl/.style={->, >=Stealth, thick, manualgray}
+]
+  % ---- Broadbent
+  \node[font=\scriptsize\bfseries, text=manualblue, anchor=west] at (-6.6,2.9) {BROADBENT (1958): o filtro \emph{bloqueia}};
+  \node[font=\tiny, anchor=east] at (-5.4,2.15) {ouvido E};
+  \node[font=\tiny, anchor=east] at (-5.4,1.25) {ouvido D};
+  \node[bx, draw=manualgray, fill=manualgray!6] (as) at (-4.0,1.7) {armaz.\\sensorial};
+  \draw[fl] (-5.35,2.15) -- (-5.0,1.9);
+  \draw[fl] (-5.35,1.25) -- (-5.0,1.5);
+  \node[bx, draw=manualred, fill=manualred!10] (fi) at (-1.3,1.7) {\textbf{FILTRO}\\{\tiny físico}};
+  \draw[fl] (as) -- (fi);
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (sg) at (1.7,1.7) {análise de\\significado};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (me) at (4.3,1.7) {memória\\{\tiny cap. limitada}};
+  \draw[fl] (fi) -- (sg);
+  \draw[fl] (sg) -- (me);
+  \draw[very thick, manualred] (-0.35,1.15) -- (0.15,0.65);
+  \draw[very thick, manualred] (-0.35,0.65) -- (0.15,1.15);
+  \node[font=\tiny, text=manualred, anchor=west] at (0.3,0.9) {canal ignorado: bloqueado \emph{antes} do significado};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualred, fill=manualred!6,
+        align=left, font=\tiny, text width=5.0cm, anchor=west] at (5.4,0.6)
+    {\textbf{Refutado} --- Moray (1959):\\o \emph{próprio nome} passa em $\approx 1/3$ das vezes.\\Para reconhecê-lo, foi preciso analisar o significado do canal supostamente barrado.};
+
+  \draw[manualgray!30] (-7.0,-0.35) -- (10.6,-0.35);
+
+  % ---- Treisman
+  \node[font=\scriptsize\bfseries, text=manualgreen, anchor=west] at (-6.6,-0.95) {TREISMAN (1964): o filtro \emph{atenua}};
+  \node[font=\tiny, anchor=east] at (-5.4,-1.6) {atendido};
+  \node[font=\tiny, anchor=east] at (-5.4,-2.5) {ignorado};
+  \node[bx, draw=manualyellow, fill=manualyellow!12] (at) at (-2.6,-2.05) {\textbf{ATENUADOR}};
+  \draw[fl] (-5.35,-1.6) -- (-3.6,-1.85);
+  \draw[manualgray!45, thin, ->, >=Stealth] (-5.35,-2.5) -- (-3.6,-2.25);
+  \draw[fl, very thick] (at) -- (0.0,-1.75) node[right, font=\tiny] {forte};
+  \draw[->, >=Stealth, thin, manualgray!45] (at) -- (0.0,-2.35) node[right, font=\tiny, text=manualgray] {fraco --- mas \emph{passa}};
+  \node[bx, draw=manualgreen, fill=manualgreen!8] (le) at (2.9,-2.05) {léxico\\{\tiny limiares}};
+  \draw[fl] (1.6,-1.75) -- (le);
+  \draw[->, >=Stealth, thin, manualgray!45] (1.6,-2.35) -- (le);
+  \node[draw, thick, rounded corners=3pt, draw=manualgreen, fill=manualgreen!6,
+        align=left, font=\tiny, text width=5.0cm, anchor=west] at (5.4,-2.05)
+    {Itens de \textbf{limiar baixo} --- o próprio nome, ``fogo'', o que se espera ouvir --- disparam mesmo com sinal fraco.\\Explica os \emph{dois} lados do dado.};
+\end{tikzpicture}
+```
+Broadbent e Treisman. O modelo de cima está errado, e é um dos mais importantes já feitos — porque errou de um jeito que dizia onde consertar.
+:::
+
+## 1956, e o número que perseguiu George Miller
+
+A data simbólica da revolução é 11 de setembro de 1956, no simpósio sobre teoria da informação no MIT. Miller, que estava lá, contou depois que saiu convencido de que assistira ao nascimento de alguma coisa [@miller2003]. Naquele encontro:
+
+- **Newell e Simon** apresentaram o **Logic Theorist**, um programa que demonstrava teoremas de lógica — e não por força bruta: usando **heurísticas**, atalhos que às vezes falham. Era um sistema que fazia algo que se chamaria de pensar em qualquer ser humano.
+- **Chomsky** apresentou o argumento de que a linguagem não pode ser descrita por modelos de estados finitos, e precisa de regras de outra ordem — o que viraria *Syntactic Structures* [@chomsky1957].
+- **Miller** apresentou o **número mágico sete**.
+
+Newell e Simon merecem mais crédito do que costumam receber num manual de psicologia. Eles propuseram a **hipótese do sistema de símbolos físicos**: um sistema físico que manipula símbolos tem os meios necessários e suficientes para a ação inteligente [@newell_simon1976]. É a tese mais forte que a revolução produziu, e uma das mais contestadas — o Cap. 13 e o Cap. 46 voltam a ela. E, notavelmente, eles trouxeram de volta o relato verbal como **dado**, na forma disciplinada da análise de protocolo [@newell_simon1972] — o que o Cap. 7 já anunciou. Simon ganharia o Nobel de Economia por **racionalidade limitada**, a tese de que decidimos com recursos finitos, buscando o suficiente e não o ótimo — que o Cap. 47 desenvolve.
+
+Quanto ao número sete:
+
+::: {.atencao}
+**Miller não acreditava no sete. Ele estava fazendo uma piada — e ela foi levada a sério por setenta anos.**
+
+O artigo é famoso por seu título e por sua primeira frase, em que Miller diz estar sendo perseguido por um inteiro [@miller1956]. É irônico do começo ao fim, e o argumento real é outro, mais interessante que o número.
+
+Miller notou que dois tipos de tarefa distintos convergiam para uma faixa parecida. Em **julgamento absoluto** unidimensional — identificar quantos tons diferentes você distingue com rótulos —, as pessoas transmitem cerca de 2,5 bits, algo em torno de sete categorias. Em **amplitude de memória imediata** — quantos itens você repete de cabeça —, também algo em torno de sete.
+
+E aí vem a parte que importa. Miller observou que essas duas coisas **não podem ser o mesmo limite**, porque a memória imediata não é limitada por **bits**, e sim por **itens**. A prova: você repete sete dígitos, e também repete sete **palavras** — que carregam muito mais informação cada. Se o limite fosse informacional, a lista de palavras seria muito mais curta.
+
+Logo, o gargalo da memória é medido em **unidades**, não em quantidade de informação. E daí decorre o conceito que é o legado verdadeiro do artigo: o ***chunk***, ou bloco. Reagrupar a informação em unidades maiores e significativas aumenta o quanto se retém, **sem** violar limite algum. A sequência 1–9–8–8–2–0–2–5 são oito dígitos; "1988" e "2025" são dois blocos. O limite é o mesmo; o que mudou foi a unidade.
+
+Isso é o oposto de uma lei sobre o número sete. É uma afirmação sobre **recodificação** — e é por isso que quem sabe muito de um assunto lembra mais dele: não tem memória maior, tem blocos melhores (Cap. 43).
+
+O número, aliás, não sobreviveu. Cowan revisou os estudos que controlam para agrupamento e ensaio — os truques que inflam a contagem — e concluiu que a capacidade "pura" da memória de trabalho gira em torno de **quatro** [@cowan2001]. E depende do material, da tarefa e da pessoa. O sete era, como Miller suspeitava, coincidência.
+:::
+
+## Como se estuda o invisível: o tempo diz
+
+Falta a peça metodológica, e ela é o que separa este capítulo do Cap. 7 — porque, sem ela, "modelar o interior" seria só uma promessa.
+
+A resposta é velha conhecida: **Donders**, do Cap. 6. Se processos mentais ocorrem no tempo, então processos diferentes levam tempos diferentes, e a **diferença** entre condições revela o processo. Cento e vinte anos depois, essa ideia voltou como o instrumento central de um campo inteiro.
+
+O exemplo mais limpo é de Saul Sternberg [@sternberg1966]. Pergunta: quando você procura algo na memória, como procura? Três hipóteses concorrentes, e cada uma faz uma previsão **diferente e específica** sobre o tempo:
+
+**O desenho.** Apresenta-se uma lista curta — de um a seis dígitos. Depois, um dígito-sonda. A pessoa responde, o mais rápido possível: estava na lista? Mede-se o tempo.
+
+**As previsões.**
+
+- **Busca em paralelo** (tudo ao mesmo tempo): o tamanho da lista não deveria importar. Linha **plana**.
+- **Busca serial autoterminada** (item por item, parando ao achar): nos ensaios "sim", em média se percorre metade da lista antes de achar; nos "não", percorre-se tudo. Previsão: a inclinação dos "não" deve ser o **dobro** da dos "sim".
+- **Busca serial exaustiva** (item por item, e percorre tudo mesmo depois de achar): mesma inclinação nos dois casos, e as retas devem ser **paralelas**.
+
+**O resultado.** O tempo cresce linearmente com o tamanho da lista, cerca de 38 milissegundos por item — e as retas de "sim" e "não" são **paralelas**. Busca serial exaustiva.
+
+Pare e admire o que acabou de acontecer. Ninguém perguntou a ninguém o que se passava em sua cabeça. Ninguém abriu crânio nenhum. E, ainda assim, chegou-se a uma conclusão específica e contraintuitiva sobre a **arquitetura** de um processo mental — inclusive à conclusão estranha de que o sistema continua procurando **depois de já ter encontrado**, o que nenhuma pessoa razoável relataria de si.
+
+Esse é o método. É Watson satisfeito — só comportamento público, cronômetro e condição manipulada — e é Wundt satisfeito: a conclusão é sobre a mente. É a síntese que o Cap. 7 não conseguiu e o Cap. 8 proibiu.
+
+(E, como tudo neste volume: a interpretação de Sternberg foi depois contestada, e modelos de acumulação de evidência explicam os mesmos dados sem estágios discretos — Cap. 43. O achado permanece; a leitura amadureceu.)
+
+## Foi mesmo uma revolução?
+
+Aqui o manual precisa fazer com este capítulo o que fez com Wundt no Cap. 7 e com Chomsky no Cap. 8: desconfiar da história oficial. Porque a narrativa da revolução cognitiva foi escrita pelos vencedores — e vários deles ainda estavam vivos para escrevê-la.
+
+A versão canônica é kuhniana: havia um paradigma dominante (o behaviorismo), acumularam-se anomalias, veio a crise, e um novo paradigma o substituiu. É uma bela história e tem, no mínimo, três problemas.
+
+**O behaviorismo nunca foi um paradigma único.** Havia Watson, Hull, Tolman, Skinner e Guthrie, discordando entre si sobre quase tudo — inclusive sobre a questão central de haver ou não estados internos. Tolman, lembre-se, era behaviorista e falava em mapas cognitivos (Cap. 8). Um campo em que os "membros" divergem sobre seu compromisso definidor não é um paradigma no sentido de Kuhn.
+
+**A cognição nunca desapareceu.** Bartlett, na Inglaterra, estudava esquemas e reconstrução na memória nos anos 1930 (Cap. 43). Piaget vinha modelando estruturas cognitivas desde os anos 1920 (Cap. 59). A tradição da percepção jamais parou. Fora dos Estados Unidos, a hegemonia behaviorista foi consideravelmente menor do que a narrativa sugere.
+
+**A mudança foi gradual.** Leahey argumentou que não houve revolução alguma, e sim uma evolução contínua dentro de um compromisso comum — o de fazer psicologia experimental com dados públicos — em que mudaram os modelos e a linguagem, e não os fundamentos [@leahey1992]. O que se chama de revolução seria, em boa parte, uma narrativa retrospectiva construída para dar identidade e legitimidade a um campo novo.
+
+E note o argumento mais forte a favor de Leahey, que este capítulo já enunciou sem alarde: **a revolução cognitiva manteve a regra de Watson**. Ela não voltou à introspecção. Não repudiou o experimento nem o dado público. Ela aceitou o critério do behaviorismo e o usou para fazer o que o behaviorismo proibia — o que é menos uma revolução do que uma **herança bem investida**.
+
+::: {.na-pratica}
+**O fundador que se arrependeu.**
+
+Ulric Neisser publicou em 1967 o livro que deu nome ao campo — *Cognitive Psychology* — e o organizou, reunindo pela primeira vez percepção, atenção, memória e pensamento sob uma moldura única [@neisser1967]. Ele era, por qualquer critério, o pai da coisa.
+
+Nove anos depois, publicou *Cognition and Reality*, e o livro é um ataque frontal ao que havia fundado [@neisser1976]. Os argumentos:
+
+- **Validade ecológica.** O campo estudava tarefas artificiais — sílabas sem sentido, listas de dígitos, luzes piscando — em laboratórios sem contexto, e concluía sobre a mente humana. Neisser observou que a psicologia cognitiva tinha pouquíssimo a dizer sobre a memória tal como as pessoas a usam: lembrar de um rosto, de uma conversa, da própria vida.
+- **O organismo não é passivo.** A metáfora do processamento de informação trata a mente como um duto por onde a entrada passa e é transformada. Mas perceber é **explorar**: você move os olhos, vira a cabeça, age no mundo — e isso muda o que chega. (É Dewey de novo, Cap. 7; e é Gibson, cujo trabalho ecológico influenciou Neisser diretamente.)
+- **A metáfora do computador cobra um preço.** Ela permitiu falar de estados internos; e, ao fazê-lo, sugeriu que a mente é um manipulador de símbolos descontextualizado — sem corpo, sem cultura, sem emoção, sem história.
+
+O gesto de Neisser é raro, e vale mais como exemplo do que a maioria dos achados deste capítulo: **ele criticou publicamente a própria criação e mudou de posição diante de argumentos**. É o que o Cap. 3 pede e o Cap. 5 mostrou ser raríssimo. Neisser passou o resto da carreira estudando memória em contexto real — inclusive um estudo célebre sobre memórias flash do desastre da Challenger, que mostra o quanto essas lembranças vívidas e confiantes estão erradas (Cap. 45).
+
+O campo o ouviu pela metade. A pesquisa cognitiva de laboratório continuou dominante — e a agenda ecológica virou uma tradição paralela, que hoje volta com força no Cap. 13.
+:::
+
+## O que ficou de fora
+
+A revolução cognitiva ganhou uma mente, e ela veio com peças faltando.
+
+Jerome Bruner — que estava lá desde o começo, e fundou com Miller o Centro de Estudos Cognitivos em Harvard — fez a acusação mais dura, e ela é de dentro [@bruner1990]. A revolução, disse, começou como uma revolta sobre **significado**: a pergunta era como as pessoas constroem sentido, interpretam o mundo, negociam realidades. E foi **sequestrada**. Trocou-se significado por **informação**, construção de sentido por **processamento**, e o resultado foi tecnicamente impecável e humanamente vazio. A cognição virou computação; e computação, notou ele, é indiferente ao conteúdo — é exatamente o que a torna poderosa, e o que a torna cega para o que Bruner queria explicar.
+
+Some-se a isso o que a metáfora, por construção, deixou fora:
+
+- **A emoção.** Um computador não sente, e por décadas a psicologia cognitiva tratou a emoção como ruído que interfere no processamento — em vez de como parte do processamento. O Vol 9 é a correção.
+- **O corpo.** O símbolo é abstrato; roda em qualquer *hardware*. Isso é a tese da **realizabilidade múltipla**, e ela é elegante — e sugere que o corpo é um detalhe de implementação. A cognição corporificada (Cap. 13) discorda.
+- **A cultura.** O programa é o mesmo em Tóquio e em São Paulo. Voltaremos a Wundt, e à *Völkerpsychologie* que ninguém leu (Cap. 7), no Cap. 13 e no Cap. 103.
+- **O cérebro.** Ironia deliciosa: a primeira psicologia cognitiva era **deliberadamente agnóstica** quanto ao cérebro. Se o que importa é o algoritmo, o *hardware* é irrelevante — é o argumento dos níveis de Marr [@marr1982]. A neurociência cognitiva, que hoje domina, é uma reação a essa indiferença.
+
+E houve a segunda onda, que atacou a arquitetura por dentro. O **conexionismo** de Rumelhart e McClelland propôs que a cognição pode emergir de redes de unidades simples com pesos ajustáveis, **sem** regras explícitas nem símbolos discretos [@rumelhart1986]. Muito do debate dos anos 1980 girou em torno disso, e a discussão nunca foi encerrada — apenas transferida de endereço: as redes neurais profundas de hoje são as netas diretas daquele programa, e a pergunta de se um sistema que aprende estatísticas de um corpus gigantesco precisa de regras simbólicas para produzir linguagem é, literalmente, a pergunta de 1959 entre Chomsky e Skinner, com mais dados (Cap. 48; Cap. 105).
+
+O Cap. 13 apresenta o que veio depois — e o padrão vai parecer familiar. Cada perspectiva contemporânea é, em boa medida, uma peça que a revolução cognitiva deixou de fora voltando para cobrar.
+
+::: {.callout-sintese}
+- **A jogada central**: manter a **regra** de Watson (dados públicos) e rejeitar sua **ontologia** (nada dentro a modelar). O comportamento deixa de ser o objeto e vira **evidência** sobre processamento interno, inferido de fora — não relatado.
+- **As ferramentas vieram de fora da psicologia**: teoria da informação [@shannon1948] deu **bits** e **capacidade de canal** (falar do interior virou engenharia); cibernética [@wiener1948; @miller1960] deu **propósito sem alma**, via *feedback*; computabilidade [@turing1936; @turing1950] deu a tese decisiva — um sistema **físico** pode ser corretamente descrito em termos de **símbolos e regras**, o que derruba Descartes e Watson de uma vez.
+- **A guerra forçou a mão**: radar, cabines, vigilância — problemas aplicados que exigiam modelar o operador por dentro.
+- **Broadbent** [@broadbent1958] fez o primeiro modelo mecanicista testável, a partir da escuta dicótica [@cherry1953]. Foi **refutado** por Moray [@moray1959] — o próprio nome passa no canal ignorado — e corrigido por Treisman [@treisman1964]: o filtro **atenua**, não bloqueia. **Errar de forma precisa é um serviço**: a falha dizia onde consertar.
+- **Miller estava sendo irônico sobre o sete** [@miller1956]. O argumento real: memória imediata é limitada por **itens**, não por bits (sete dígitos ≈ sete palavras). Legado verdadeiro: o ***chunk*** e a recodificação. A capacidade "pura" é ≈ **quatro** [@cowan2001].
+- **Newell e Simon**: Logic Theorist, heurísticas, **hipótese do sistema de símbolos físicos** [@newell_simon1976], análise de protocolo, racionalidade limitada.
+- **O método é Donders de volta** (Cap. 6): Sternberg [@sternberg1966] distinguiu buscas paralela, serial autoterminada e serial exaustiva pelas **inclinações** dos tempos de reação — retas paralelas ⇒ **exaustiva**. Conclusão sobre arquitetura mental sem perguntar a ninguém.
+- **A "revolução" é uma narrativa dos vencedores** [@leahey1992]: o behaviorismo nunca foi paradigma único (Tolman!), a cognição nunca sumiu (Bartlett, Piaget, percepção), a mudança foi gradual — e o cognitivismo **manteve** o critério behaviorista, o que o torna mais herança que ruptura.
+- **Neisser fundou o campo** [@neisser1967] **e depois o atacou** [@neisser1976]: validade ecológica, organismo ativo, e o preço da metáfora do computador. Mudar de ideia publicamente é o comportamento mais científico deste volume.
+- **Ficou de fora**: significado (a acusação de Bruner [@bruner1990] — trocou-se sentido por informação), emoção, corpo, cultura e cérebro. Cada ausência produz uma perspectiva do Cap. 13.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Metáfora do computador**
+:   Tese de que a mente é um sistema físico corretamente descrito em termos de símbolos, representações e regras — não a afirmação de que o cérebro é feito de chips.
+
+**Bit** / **capacidade de canal**
+:   Unidade de informação (redução de incerteza) e limite de transmissão de um canal por unidade de tempo [@shannon1948].
+
+**Retroalimentação** (*feedback*)
+:   Uso do erro entre estado atual e estado desejado para corrigir a ação; permite descrever propósito mecanicamente [@wiener1948].
+
+**TOTE**
+:   Unidade *Test–Operate–Test–Exit*, alternativa cibernética ao arco reflexo [@miller1960].
+
+**Processamento de informação**
+:   Abordagem que modela a cognição como uma sequência de operações sobre representações, com capacidade e tempo limitados.
+
+**Escuta dicótica**
+:   Procedimento em que mensagens diferentes chegam a cada ouvido e se pede o sombreamento de uma delas [@cherry1953].
+
+**Modelo de filtro**
+:   Proposta de Broadbent de um gargalo seletivo, baseado em propriedades físicas, anterior à análise de significado [@broadbent1958].
+
+**Modelo de atenuação**
+:   Correção de Treisman: o canal não atendido é enfraquecido, não bloqueado, e itens de limiar baixo o atravessam [@treisman1964].
+
+***Chunk*** (bloco)
+:   Unidade significativa de recodificação; aumenta o quanto se retém sem aumentar a capacidade [@miller1956].
+
+**Hipótese do sistema de símbolos físicos**
+:   Tese de que manipular símbolos é necessário e suficiente para a ação inteligente [@newell_simon1976].
+
+**Racionalidade limitada**
+:   Tese de Simon de que se decide com recursos finitos, buscando o satisfatório e não o ótimo (Cap. 47).
+
+**Método subtrativo / fatores aditivos**
+:   Inferência da arquitetura de processos a partir de diferenças e inclinações de tempo de reação entre condições [@sternberg1966].
+
+**Validade ecológica**
+:   Grau em que os achados de laboratório se aplicam ao comportamento em contexto real; a crítica central de @neisser1976.
+
+**Realizabilidade múltipla**
+:   Tese de que o mesmo processo cognitivo pode ser implementado em substratos físicos diferentes — o que torna o corpo, em princípio, detalhe de implementação.
+
+**Conexionismo**
+:   Abordagem em que a cognição emerge de redes de unidades simples com pesos ajustáveis, sem regras nem símbolos explícitos [@rumelhart1986].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie, em uma frase, o que a revolução cognitiva manteve de Watson e o que rejeitou. Por que essa distinção impede que ela seja lida como um retorno à introspecção?
+
+2. **(Recuperação.)** Explique por que a tese de Turing — de que computar é manipular símbolos por regras — dissolve simultaneamente o problema de Descartes e a proibição de Watson.
+
+3. **(Compreensão.)** Descreva a previsão que o modelo de filtro faz e o resultado de @moray1959 que a derruba. Depois explique a afirmação do capítulo: "o modelo foi produtivo **porque** estava errado". Compare com o que o Cap. 10 diz sobre teorias que explicam tudo.
+
+4. **(Aplicação.)** Você quer saber se o reconhecimento de palavras escritas passa pela forma sonora ou vai direto do visual ao significado. Desenhe um experimento no espírito de Sternberg: qual é a manipulação, qual é a medida, e que **padrão de tempos** cada hipótese prevê? O ponto do exercício é a previsão diferencial — se as duas hipóteses preveem a mesma coisa, o desenho não serve.
+
+5. **(Aplicação.)** Um colega afirma: "a memória de trabalho guarda sete itens, é uma lei". Corrija-o em três pontos: o que Miller de fato argumentou, o que é um *chunk*, e o que @cowan2001 mostrou.
+
+6. **(Reflexão crítica.)** Reconstrua o argumento de @leahey1992 de que não houve revolução. Depois defenda a posição contrária: que critério de "revolução" tornaria a mudança dos anos 1950 uma? Note que a discussão depende inteiramente da definição escolhida — e diga qual você adota e por quê.
+
+7. **(Reflexão crítica.)** Neisser fundou o campo e o atacou nove anos depois. Avalie: isso desqualifica a psicologia cognitiva, ou é evidência a favor dela? Ligue com o Cap. 3 e com o comportamento dos autores estudados nos Caps. 7, 8 e 10 diante de críticas.
+
+8. **(Integração.)** Bruner acusou a revolução de trocar **significado** por **informação**. Escolha um fenômeno psicológico que lhe interesse (ler um poema, entender uma piada, decidir sair de um emprego) e mostre concretamente o que se ganha e o que se perde ao descrevê-lo em termos de processamento de informação. Depois pergunte: a perda é reparável dentro da metáfora, ou exige sair dela?
