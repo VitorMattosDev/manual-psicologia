@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 13 / 105 concluídos · Fase 1: 13/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 21 / 105 concluídos · Fase 1: 21/21 · Fase 2: 0/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅** — Fase 1 segue no Vol 3 (Métodos de Pesquisa e Estatística).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ — Fase 1 concluída.** Próximo: Fase 2, Vol 4 (Bases Biológicas do Comportamento).
 
 ---
 
@@ -53,7 +53,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 18 | Estatística descritiva | `capitulos/vol03-metodos-estatistica/cap-18-estatistica-descritiva.qmd` | ✅ |
 | 19 | Estatística inferencial (fundamentos) | `capitulos/vol03-metodos-estatistica/cap-19-estatistica-inferencial.qmd` | ✅ |
 | 20 | Ética em pesquisa (comitês, consentimento, TCLE) | `capitulos/vol03-metodos-estatistica/cap-20-etica-pesquisa.qmd` | ✅ |
-| 21 | Leitura crítica de artigos científicos | `capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.qmd` | ⬜ |
+| 21 | Leitura crítica de artigos científicos | `capitulos/vol03-metodos-estatistica/cap-21-leitura-critica.qmd` | ✅ |
 
 ---
 

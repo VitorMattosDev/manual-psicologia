@@ -1,5 +1,149 @@
 # 21. Leitura crítica de artigos científicos
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Identificar** a estrutura de um artigo científico (IMRD) e ler suas seções de forma estratégica, não linear.
+- **Interrogar** cada seção com as perguntas críticas certas, mobilizando tudo o que os Caps. 14 a 20 ensinaram.
+- **Avaliar** o que a revisão por pares garante e o que ela não garante, e distinguir fontes primárias, secundárias e predatórias.
+- **Explicar** o viés de publicação, o *p-hacking* e as demais práticas questionáveis que distorcem a literatura.
+- **Situar** a crise de replicabilidade e as respostas da ciência aberta — pré-registro, dados abertos, replicações, meta-análise.
+- **Traduzir** uma notícia científica sensacionalista de volta ao que o estudo de fato mostrou.
 :::
+
+Este é o capítulo para o qual todo o Vol 3 trabalhou. Método experimental, delineamentos, validade, amostragem, estatística descritiva e inferencial, ética — cada peça foi apresentada, no fundo, para capacitar uma única habilidade prática: **pegar um artigo científico, ou uma notícia sobre um, e julgar por conta própria o quanto ele merece crédito.** É a habilidade que separa quem consome ciência de quem é consumido por ela, e ela não se terceiriza: nem o prestígio da revista, nem o diploma do autor, nem a confiança do jornalista substituem a leitura crítica do leitor.
+
+A boa notícia é que essa habilidade é, em grande medida, um conjunto de perguntas — as mesmas que este volume vem ensinando — feitas na ordem certa e nos lugares certos. A má notícia é que ela precisa ser exercida também sobre a *própria* literatura científica, que, como o Cap. 1 confessou, tem problemas sérios e documentados. Ler criticamente não é confiar cegamente na ciência publicada; é aplicar a ela o mesmo ceticismo metódico que ela ensina a aplicar a tudo o mais. Este capítulo dá o mapa.
+
+## A anatomia de um artigo
+
+Um artigo científico empírico segue, com poucas variações, uma estrutura padrão conhecida pela sigla **IMRD** — Introdução, Métodos, Resultados, Discussão —, precedida por um **resumo** (*abstract*) e seguida das **referências**. Cada seção responde a uma pergunta diferente, e conhecer essa divisão é o primeiro passo para ler com eficiência. A @fig-anatomia-artigo mostra a estrutura, a pergunta de cada parte e — decisivo — a ordem em que convém lê-las, que *não* é a ordem em que aparecem.
+
+::: {#fig-anatomia-artigo}
+```{.tikz}
+%%| filename: anatomia-artigo
+%%| alt: Diagrama vertical das seções de um artigo científico. De cima para baixo: Resumo (o que fizeram e acharam, em síntese); Introdução (qual a pergunta e a hipótese); Métodos (como fizeram — amostra, delineamento, medidas); Resultados (o que os dados mostraram); Discussão (o que significa e quais os limites); Referências. À direita, números de 1 a 5 indicam uma ordem de leitura estratégica: começar pelo Resumo, depois Métodos, depois Resultados, depois Discussão, e por último a Introdução completa.
+\begin{tikzpicture}[
+  sec/.style={draw, thick, rounded corners=3pt, minimum width=6.8cm, minimum height=1.15cm, align=center, font=\small},
+  ordem/.style={circle, draw=manualred, thick, fill=manualred!10, font=\scriptsize\bfseries, text=manualred, inner sep=1.6pt}
+]
+  \node[sec, draw=manualblue, fill=manualblue!12] (res) at (0,5) {\textbf{Resumo} \; {\scriptsize— síntese de tudo}};
+  \node[sec, draw=manualgray, fill=manualgray!8] (intro) at (0,3.6) {\textbf{Introdução} \; {\scriptsize— qual a pergunta e a hipótese?}};
+  \node[sec, draw=manualgreen, fill=manualgreen!10] (met) at (0,2.2) {\textbf{Métodos} \; {\scriptsize— como fizeram?}};
+  \node[sec, draw=manualgreen, fill=manualgreen!10] (result) at (0,0.8) {\textbf{Resultados} \; {\scriptsize— o que os dados mostraram?}};
+  \node[sec, draw=manualgray, fill=manualgray!8] (disc) at (0,-0.6) {\textbf{Discussão} \; {\scriptsize— o que significa? quais os limites?}};
+  \node[sec, draw=manualgray, fill=white] (ref) at (0,-2.0) {\textbf{Referências}};
+
+  \node[ordem] at (3.9,5) {1};
+  \node[ordem] at (3.9,3.6) {5};
+  \node[ordem] at (3.9,2.2) {2};
+  \node[ordem] at (3.9,0.8) {3};
+  \node[ordem] at (3.9,-0.6) {4};
+
+  \node[font=\scriptsize\itshape, text=manualred, align=center] at (5.9,2.2) {ordem de\\leitura\\crítica};
+\end{tikzpicture}
+```
+As seções de um artigo (IMRD) e uma ordem de leitura estratégica. Lê-se o resumo para situar-se, depois os *métodos* e os *resultados* — o coração factual do estudo — antes da discussão, para formar juízo próprio antes de ouvir o dos autores.
+:::
+
+A razão de não ler linearmente é sutil e importante. A **introdução** e a **discussão** são as seções onde os autores *argumentam* — apresentam sua hipótese sob a melhor luz e interpretam seus achados com o otimismo natural de quem os produziu. Os **métodos** e os **resultados** são onde estão os *fatos* — o que foi realmente feito e o que os dados realmente mostraram. Um leitor crítico forma seu próprio juízo sobre os fatos *antes* de se expor à interpretação dos autores, para não ser conduzido por ela. Por isso a ordem recomendada mergulha nos métodos e resultados logo após o resumo, e deixa a introdução completa e a discussão para o fim — quando já se tem opinião própria para confrontar com a deles.
+
+## As perguntas críticas, seção por seção
+
+Ler criticamente é interrogar cada seção com as ferramentas dos capítulos anteriores. Eis o roteiro.
+
+**No resumo**, pergunte: qual é a afirmação principal, e ela é causal ou associativa? Guarde a resposta — a discussão frequentemente exagera para causa o que os métodos só permitiam como correlação.
+
+**Nos métodos** — a seção mais importante e a que os leigos mais pulam — concentram-se quase todas as perguntas do volume. *Quem foram os participantes* e como foram amostrados (Cap. 17)? Uma amostra de conveniência de 30 calouros permite que generalização? *Houve manipulação e atribuição aleatória* (Cap. 14), ou é um estudo correlacional cuja linguagem causal será indevida (Cap. 15)? *Como as variáveis foram operacionalizadas e medidas* (Cap. 16) — a medida de "felicidade", "agressão" ou "aprendizado" é válida e confiável? *Houve grupo-controle e cegamento*? *O tamanho da amostra foi justificado* por uma análise de poder (Cap. 19)? É nos métodos que um estudo se salva ou se condena; se eles forem fracos ou omissos, nenhum resultado brilhante os redime.
+
+**Nos resultados**, pergunte além do "deu significativo?". Qual o *tamanho de efeito*, não apenas o valor-p (Cap. 19)? Há *intervalos de confiança*, e quão largos são? Os *gráficos* têm eixos honestos (Cap. 18)? O número de participantes que *terminou* o estudo bate com o que começou, ou houve perdas que podem ter enviesado o resultado? Quantas comparações foram feitas — muitos testes aumentam a chance de um "significativo" por acaso?
+
+**Na discussão**, o leitor crítico faz a pergunta da vigilância: *as conclusões são proporcionais aos dados?* Os autores afirmam causa a partir de correlação? Generalizam de uma amostra estreita para "as pessoas"? Reconhecem as limitações — e as que reconhecem são as reais, ou apenas as inofensivas? Uma boa discussão é sóbria sobre o alcance do próprio achado; uma discussão que promete mais do que os métodos entregam é o sinal de alerta mais comum da literatura.
+
+::: {.na-pratica}
+**Um checklist de bolso para qualquer estudo.** Diante de um artigo — ou de uma reportagem sobre ele —, dez perguntas resolvem 90% do julgamento: (1) É experimento ou correlação? (2) A conclusão é causal ou associativa, e isso combina com o desenho? (3) Quem foi a amostra, e representa quem a manchete diz? (4) Qual o tamanho da amostra? (5) Houve grupo-controle e sorteio? (6) As medidas são válidas e confiáveis? (7) Qual o *tamanho* do efeito, não só o p? (8) O estudo foi replicado, ou é achado único? (9) Quem financiou, e há conflito de interesse? (10) A fonte é o artigo original ou o release de imprensa? Nenhuma dessas perguntas exige formação estatística avançada — todas foram ensinadas neste volume, e juntas constituem a alfabetização científica que ele visava.
+:::
+
+## O que a revisão por pares garante — e o que não garante
+
+Antes de publicar, um artigo passa pela **revisão por pares** (*peer review*): outros cientistas da área avaliam o manuscrito e recomendam aceitar, revisar ou rejeitar. É um filtro valioso e um selo de que o trabalho foi escrutinado por especialistas. Mas é fácil superestimá-lo, e o leitor crítico precisa saber exatamente o que ele *não* garante. A revisão por pares não refaz o experimento; os revisores em geral não têm acesso aos dados brutos e confiam no que os autores relatam. Ela não detecta fraude bem-feita, não garante que o resultado vá *replicar*, e não é imune a modismos, prestígio e vieses dos próprios revisores. Um artigo revisado por pares é um ponto de partida confiável, não uma verdade certificada — e a prova disso é que muitos estudos revisados por pares, publicados nas melhores revistas, não sobreviveram às tentativas de replicação (Cap. 1).
+
+Distinga também os tipos de fonte. Uma **fonte primária** é o artigo original que relata o estudo — o que se deve buscar. Uma **fonte secundária** (livro-texto, revisão, reportagem) resume o primário e pode simplificar ou distorcer. E há as **revistas predatórias**: publicações que cobram para publicar qualquer coisa, sem revisão real, imitando periódicos legítimos. Estar "publicado numa revista científica" deixou de ser, por si só, garantia de qualquer coisa; é preciso saber em *qual*.
+
+## Por que a literatura está enviesada: viés de publicação e p-hacking
+
+Aqui o capítulo faz a curva que o distingue de um simples guia de leitura, e retoma a honestidade do Cap. 1. Mesmo que cada estudo individual fosse conduzido com competência, o *conjunto* da literatura publicada estaria sistematicamente distorcido — por dois mecanismos que todo leitor precisa conhecer.
+
+O **viés de publicação** (ou problema da gaveta) decorre de um fato simples: estudos com resultados significativos são publicados; estudos que não encontram efeito (resultados "nulos") tendem a ficar na gaveta, rejeitados por revistas ou nem submetidos [@rosenthal1979]. A consequência é grave. Se vinte laboratórios testam um efeito que *não existe*, o acaso fará com que cerca de um deles obtenha "p < 0,05" (é a taxa de erro Tipo I do Cap. 19). Publica-se esse um; os dezenove que corretamente nada acharam somem. A literatura passa a exibir um efeito que a totalidade das evidências negaria. O leitor vê o pico da montanha e nunca a base submersa de resultados nulos que a sustentaria — ou derrubaria.
+
+O segundo mecanismo é o **p-hacking**, ou uso dos "graus de liberdade do pesquisador" [@simmons2011]. Durante a análise, o cientista toma dezenas de pequenas decisões — quais participantes excluir, quais variáveis controlar, quando parar de coletar dados, qual de várias medidas reportar. Cada decisão é individualmente defensável, mas, tomadas *depois* de ver os dados e escolhidas para favorecer a significância, elas fabricam "p < 0,05" a partir de ruído. Simmons e colegas demonstraram que essa flexibilidade, mesmo sem má-fé, permite "provar" praticamente qualquer hipótese. Some-se a isso o **HARKing** (*Hypothesizing After the Results are Known*) — inventar a hipótese depois de ver o resultado e apresentá-la como se fosse prévia — e temos um conjunto de **práticas de pesquisa questionáveis** que, segundo levantamentos, foram por muito tempo surpreendentemente comuns [@john2012]. Nada disso é fraude escancarada; é a zona cinzenta que corrói a confiabilidade da literatura por dentro.
+
+::: {.atencao}
+**Por que tantos "efeitos" evaporam.** A combinação de viés de publicação, p-hacking e estudos com baixo poder (Cap. 19) explica um padrão que o leitor verá repetidamente: um achado surpreendente é publicado com fanfarra, replicado a custo, e encolhe ou desaparece. Foi o argumento provocador de Ioannidis, num dos artigos mais citados da metodologia, de que "a maioria dos achados publicados é falsa" em campos com efeitos pequenos, muita flexibilidade analítica e forte pressão por novidade [@ioannidis2005]. A lição prática para o leitor não é o cinismo — "nada presta" —, mas a calibragem: **um único estudo, por mais chamativo, é evidência fraca.** A pergunta que protege é sempre "isto foi replicado por grupos independentes?". Confiança se deposita em achados robustos e replicados, não em manchetes.
+:::
+
+## A resposta: ciência aberta
+
+Seria desonesto terminar no diagnóstico, porque a psicologia não ficou parada — e o modo como ela reagiu é, ele próprio, uma lição de método. Do reconhecimento da crise nasceu o movimento da **ciência aberta**, um conjunto de reformas que atacam diretamente os mecanismos descritos [@munafo2017].
+
+O **pré-registro** é a reforma central: o pesquisador deposita publicamente, *antes* de coletar os dados, suas hipóteses e seu plano de análise. Isso torna impossível o HARKing e drasticamente mais difícil o p-hacking, porque separa o que foi previsto do que foi descoberto por acaso. Uma versão mais forte, os **relatórios registrados** (*registered reports*), submete à revista o plano *antes* dos resultados, e a decisão de publicar é tomada com base na qualidade da pergunta e do método — não do resultado, o que remove pela raiz o viés de publicação. Somam-se a isso a **partilha de dados e materiais** (para que outros verifiquem e reanalisem), as **replicações em larga escala** (como a do Cap. 1) e a **meta-análise**: técnicas de síntese que combinam estatisticamente muitos estudos sobre a mesma questão, pesando-os e, criticamente, testando a presença de viés de publicação. Uma meta-análise bem-feita é hoje a evidência mais forte disponível sobre uma pergunta — mais do que qualquer estudo isolado —, e aprender a valorizá-la acima de achados individuais é a última peça da leitura crítica.
+
+O fecho conecta-se ao Cap. 1 e encerra o volume. Que a psicologia tenha *diagnosticado seus próprios males com seus próprios métodos* e respondido com transparência e reforma não é sinal de fragilidade da disciplina — é a demonstração mais eloquente de que ela é uma ciência. Ler criticamente um artigo, no fim, é participar dessa mesma cultura: levar a sério a evidência, desconfiar de si mesmo, e mudar de ideia diante do dado. É o que este volume inteiro tentou ensinar, e é o que os quatorze volumes seguintes vão exigir a cada página.
+
+::: {.callout-sintese}
+- **Um artigo empírico segue a estrutura IMRD** (Introdução, Métodos, Resultados, Discussão), com resumo e referências; convém lê-lo *não* linearmente — resumo, métodos e resultados antes da discussão —, para formar juízo próprio antes da interpretação dos autores.
+- **A leitura crítica é um roteiro de perguntas** dos Caps. 14 a 20: quem foi amostrado, houve sorteio e controle, as medidas são válidas, qual o tamanho de efeito, as conclusões são proporcionais aos dados.
+- **A revisão por pares** filtra, mas não refaz o estudo, não pega fraude nem garante replicação; distinga fontes primárias de secundárias e desconfie de revistas predatórias.
+- **A literatura publicada é enviesada** por dois mecanismos: o **viés de publicação** (resultados nulos ficam na gaveta) e o **p-hacking** e práticas afins (flexibilidade analítica que fabrica significância), agravados por baixo poder.
+- **Um estudo isolado é evidência fraca.** A pergunta protetora é sempre "isto foi replicado por grupos independentes?".
+- **A ciência aberta responde à crise:** pré-registro e relatórios registrados (contra HARKing e viés de publicação), dados abertos, replicações em larga escala e meta-análise (a síntese mais forte disponível).
+- **A autocorreção da psicologia é prova de que ela é ciência** — e ler criticamente é participar dessa cultura de ceticismo metódico.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**IMRD**
+:   Estrutura padrão de um artigo empírico: Introdução, Métodos, Resultados, Discussão.
+
+**Revisão por pares (peer review)**
+:   Avaliação de um manuscrito por especialistas antes da publicação; filtra qualidade, mas não refaz o estudo nem garante replicação.
+
+**Fonte primária / secundária**
+:   O artigo original que relata o estudo (primária) versus resumos e interpretações posteriores (secundária).
+
+**Viés de publicação (problema da gaveta)**
+:   Distorção da literatura causada pela publicação preferencial de resultados significativos e pelo arquivamento dos nulos [@rosenthal1979].
+
+**P-hacking**
+:   Exploração da flexibilidade analítica ("graus de liberdade do pesquisador") para obter significância estatística a partir de ruído [@simmons2011].
+
+**HARKing**
+:   Formular a hipótese depois de conhecer os resultados e apresentá-la como se fosse prévia.
+
+**Práticas de pesquisa questionáveis**
+:   Conjunto de condutas na zona cinzenta (p-hacking, HARKing, relato seletivo) que corroem a confiabilidade da literatura [@john2012].
+
+**Pré-registro**
+:   Depósito público de hipóteses e plano de análise antes da coleta de dados, que impede o HARKing e dificulta o p-hacking.
+
+**Relatório registrado (registered report)**
+:   Formato em que o plano de estudo é revisado e aceito antes dos resultados, removendo o viés de publicação.
+
+**Meta-análise**
+:   Técnica de síntese que combina estatisticamente muitos estudos sobre a mesma questão; a forma mais forte de evidência, capaz de testar viés de publicação.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie as quatro seções da estrutura IMRD e a pergunta que cada uma responde. Por que se recomenda ler os métodos e resultados antes da discussão?
+
+2. **(Recuperação.)** Explique o viés de publicação com o exemplo dos vinte laboratórios testando um efeito inexistente. Por que ele distorce a literatura mesmo quando cada estudo é honesto?
+
+3. **(Aplicação.)** Uma manchete anuncia: "Novo estudo revela que suplemento X melhora a memória." Aplique cinco perguntas do checklist de bolso e diga que informações você buscaria no artigo original antes de dar crédito.
+
+4. **(Aplicação.)** Um pesquisador coletou dados, não achou o efeito previsto, mas notou que ele aparecia se excluísse os participantes mais velhos e usasse só uma das três medidas. Ele publica esse resultado como confirmação de sua hipótese. Nomeie as práticas questionáveis envolvidas e explique como o pré-registro as teria impedido.
+
+5. **(Reflexão crítica.)** "Se a revisão por pares aprovou, o estudo está correto." Critique essa afirmação, listando ao menos três coisas que o *peer review* não garante.
+
+6. **(Integração.)** Ligando este capítulo ao Cap. 1 e ao Cap. 19: explique por que a combinação de baixo poder estatístico, viés de publicação e p-hacking ajuda a entender a crise de replicabilidade — e por que a resposta da ciência aberta (pré-registro, replicação, meta-análise) é, ela mesma, uma aplicação do método científico à própria ciência.
