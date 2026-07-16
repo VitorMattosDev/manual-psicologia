@@ -1,5 +1,193 @@
 # 15. Métodos não-experimentais (correlacional, observacional, survey, estudo de caso)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Justificar** por que a psicologia precisa de métodos que não manipulam nada, apesar da superioridade causal do experimento.
+- **Interpretar** um coeficiente de correlação quanto a direção e força, e explicar por que correlação, sozinha, não estabelece causa.
+- **Diagnosticar** os dois obstáculos clássicos da inferência a partir de correlações — o problema da direcionalidade e o da terceira variável.
+- **Comparar** observação naturalística, levantamento (survey) e estudo de caso quanto ao que cada um vê bem e ao que cada um distorce.
+- **Reconhecer** vieses típicos de autorrelato — desejabilidade social, aquiescência, efeitos de formulação — e as defesas contra eles.
+- **Avaliar** delineamentos quase-experimentais, longitudinais e transversais, entendendo o que ganham e o que abrem mão em relação ao experimento verdadeiro.
 :::
+
+O capítulo anterior terminou num limite: há variáveis que não se pode manipular, por impossibilidade ou por ética. Não se sorteia quem fumará por trinta anos, quem sofrerá um trauma, qual língua uma criança aprenderá primeiro. E, no entanto, é sobre exatamente essas variáveis — as que a vida distribui, não o pesquisador — que recaem muitas das perguntas mais importantes da psicologia. Este capítulo trata do que a ciência faz quando o experimento está fora de alcance.
+
+A tentação é enxergar esses métodos como o experimento "de segunda classe" — versões toleradas por falta de coisa melhor. É um erro em duas direções. Primeiro, porque para muitos objetivos eles não são inferiores: se a pergunta é *descrever* o que existe, *estimar* quão comum é algo, ou *gerar* hipóteses novas, a manipulação nem vem ao caso. Segundo, porque usá-los bem exige um rigor próprio — e interpretá-los mal, sobretudo saltar da correlação para a causa, é provavelmente o erro mais frequente na divulgação científica. Dominar estes métodos é, em boa parte, aprender a dizer com precisão o que eles *não* autorizam a concluir.
+
+## O método correlacional
+
+O experimento manipula uma variável e observa outra. O **método correlacional** não manipula nada: mede duas ou mais variáveis como elas ocorrem naturalmente e verifica se andam juntas. Mede-se, numa amostra, quantas horas cada pessoa dorme e seu nível de ansiedade; pergunta-se, depois, se sono e ansiedade covariam. Nenhuma pessoa foi designada a dormir mais ou menos — apenas se registrou o que já havia.
+
+O grau em que duas variáveis covariam é resumido por um número, o **coeficiente de correlação** (mais comumente o *r* de Pearson), que o Cap. 18 desenvolve em detalhe. Por ora bastam duas propriedades. A **direção**: uma correlação **positiva** significa que as duas variáveis sobem juntas (mais estudo, mais nota); uma correlação **negativa** significa que uma sobe enquanto a outra desce (mais estresse, menos sono). A **força**: o coeficiente vai de $-1$ a $+1$; quanto mais perto dos extremos, mais firme a relação, e quanto mais perto de zero, mais frouxa. Um *r* de $+0{,}9$ é uma associação forte; um de $+0{,}1$, quase nenhuma. O sinal indica o sentido; o valor absoluto indica a intensidade — e os dois são independentes: $-0{,}8$ representa uma relação *mais forte* que $+0{,}3$.
+
+O modo mais honesto de visualizar uma correlação é o **diagrama de dispersão** (*scatterplot*): cada participante vira um ponto no plano, e a nuvem de pontos revela o padrão que um único número esconde. A @fig-tipos-correlacao mostra as três situações básicas.
+
+::: {#fig-tipos-correlacao}
+```{.tikz}
+%%| filename: tipos-correlacao
+%%| alt: Três diagramas de dispersão lado a lado. À esquerda, "positiva": os pontos sobem da esquerda inferior para a direita superior. No centro, "nula": os pontos formam uma nuvem sem inclinação. À direita, "negativa": os pontos descem da esquerda superior para a direita inferior. Cada painel tem eixos X e Y sem números.
+\begin{tikzpicture}[ponto/.style={fill=manualblue, circle, inner sep=1.1pt}]
+  % --- Painel 1: positiva ---
+  \begin{scope}[shift={(0,0)}]
+    \draw[eixo] (0,0) -- (3,0);
+    \draw[eixo] (0,0) -- (0,3);
+    \foreach \x/\y in {0.3/0.5, 0.7/0.9, 1.0/0.8, 1.3/1.4, 1.6/1.5, 1.9/1.7, 2.2/2.1, 2.5/2.3, 2.7/2.6, 1.1/1.2, 2.0/1.9, 0.5/0.7}
+      \node[ponto] at (\x,\y) {};
+    \node[font=\small\bfseries, text=manualgreen] at (1.5,-0.6) {positiva};
+  \end{scope}
+  % --- Painel 2: nula ---
+  \begin{scope}[shift={(4.5,0)}]
+    \draw[eixo] (0,0) -- (3,0);
+    \draw[eixo] (0,0) -- (0,3);
+    \foreach \x/\y in {0.4/1.8, 0.8/0.6, 1.2/2.3, 1.5/1.0, 1.8/2.5, 2.1/0.8, 2.4/1.9, 2.6/1.1, 1.0/1.5, 1.7/0.5, 0.6/2.4, 2.2/2.2}
+      \node[ponto] at (\x,\y) {};
+    \node[font=\small\bfseries, text=manualgray] at (1.5,-0.6) {nula};
+  \end{scope}
+  % --- Painel 3: negativa ---
+  \begin{scope}[shift={(9,0)}]
+    \draw[eixo] (0,0) -- (3,0);
+    \draw[eixo] (0,0) -- (0,3);
+    \foreach \x/\y in {0.3/2.6, 0.7/2.3, 1.0/2.4, 1.3/1.8, 1.6/1.6, 1.9/1.4, 2.2/1.0, 2.5/0.7, 2.7/0.5, 1.1/2.0, 2.0/1.1, 0.5/2.5}
+      \node[ponto] at (\x,\y) {};
+    \node[font=\small\bfseries, text=manualred] at (1.5,-0.6) {negativa};
+  \end{scope}
+\end{tikzpicture}
+```
+Diagramas de dispersão para os três padrões básicos de correlação. A inclinação da nuvem indica a direção; sua largura (o quanto os pontos se afastam de uma linha) indica a força.
+:::
+
+### Por que a correlação não basta
+
+Suponha que se encontre uma correlação positiva robusta entre horas de sono e desempenho escolar: quem dorme mais tira notas melhores. A conclusão tentadora — "dormir mais melhora as notas" — pode estar certa, mas o dado, sozinho, não a sustenta, por duas razões independentes.
+
+O **problema da direcionalidade**: a correlação é simétrica, mas a causa não. Se A e B covariam, tanto pode ser que dormir bem melhore o desempenho quanto que ter bom desempenho (menos ansiedade, menos madrugadas de estudo desesperado) melhore o sono. O dado correlacional não distingue "A causa B" de "B causa A". Foi por não resolver esse ponto que o Cap. 14 insistiu na *precedência temporal*.
+
+O **problema da terceira variável** (confusão): uma variável não medida pode causar as duas ao mesmo tempo, gerando a correlação sem que uma cause a outra. Renda familiar, por exemplo, pode produzir tanto mais sono (menos trabalho noturno, casa mais tranquila) quanto melhores notas (mais recursos de estudo). A correlação entre sono e nota seria então um reflexo da renda — real como associação, ilusória como relação causal direta.
+
+::: {.atencao}
+**Correlações absurdas e o alerta que elas dão.** O número de afogamentos em piscinas correlaciona-se com o consumo de sorvete; vendas de óculos escuros, com casos de insolação. Ninguém conclui que sorvete afoga ou que óculos causam insolação — a terceira variável (o calor do verão) é óbvia. O perigo mora nos casos em que a terceira variável *não* é óbvia, e a história causal soa plausível. "Crianças que têm mais livros em casa leem melhor" — livros causam leitura, ou pais leitores e escolarizados causam ambos? A plausibilidade da narrativa não é evidência a seu favor. Regra prática: diante de qualquer manchete correlacional, invente *em voz alta* uma terceira variável candidata antes de aceitar a interpretação causal. Se você consegue, o jornalista deveria ter conseguido também.
+:::
+
+Isso não torna a correlação inútil — longe disso. Ela **prevê** (saber a nota de leitura ajuda a estimar a de redação, mesmo sem causa entre elas); ela **rastreia** relações onde experimentar seria impossível ou imoral (a ligação entre tabagismo e câncer nunca foi estabelecida sorteando fumantes); e ela **restringe** hipóteses causais — a ausência de correlação, quando esperada, já refuta muita coisa. O erro nunca está em usar correlações; está em vesti-las de conclusões que só o experimento poderia dar.
+
+## Quase-experimentos
+
+Entre o experimento pleno e a pura correlação há um meio-termo: o **quase-experimento**. Ele compara grupos que recebem condições diferentes — como um experimento —, mas os participantes **não** foram distribuídos por sorteio; a "manipulação" foi feita pela natureza, por uma política pública, por uma catástrofe ou por escolha dos próprios sujeitos. Compara-se o desempenho de escolas que adotaram um novo currículo com o das que não adotaram; a saúde mental de uma cidade antes e depois de um desastre; o vocabulário de crianças bilíngues e monolíngues.
+
+O quase-experimento é mais forte que uma correlação simples, porque frequentemente há precedência temporal clara e comparação estruturada. Mas herda o calcanhar de aquiles de todo método sem sorteio: como os grupos não foram aleatorizados, podem diferir de saída em variáveis de confusão. As escolas que adotaram o currículo novo talvez já fossem mais bem geridas; quem se torna bilíngue talvez venha de famílias com mais recursos. Bons quase-experimentos investem pesado em descartar essas alternativas — medindo e ajustando estatisticamente variáveis, buscando grupos-controle o mais parecidos possível, explorando o momento exato de uma mudança. Ainda assim, a conclusão causal permanece um grau mais frágil que a de um experimento verdadeiro, e a honestidade exige dizê-lo.
+
+## Observação: ver sem interferir
+
+Antes de medir ou manipular, é preciso descrever — e há fenômenos que só se revelam quando observados no ambiente em que ocorrem. A **observação naturalística** registra o comportamento em seu contexto natural, sem intervenção: primatas na floresta, crianças no parquinho, motoristas num cruzamento. Sua força é a **validade ecológica** — vê-se o comportamento real, não uma versão de laboratório —, e ela é insubstituível para gerar as primeiras descrições de um fenômeno e as hipóteses que outros métodos testarão.
+
+Dois problemas a assombram. O primeiro é a **reatividade**: pessoas (e alguns animais) se comportam diferente quando se sabem observadas. A defesa é a observação discreta, à distância, ou o tempo — deixar que os observados se habituem à presença do pesquisador até voltarem ao normal. O segundo é a subjetividade do registro: "agressivo", "atento", "afetuoso" são julgamentos, e dois observadores podem discordar. A solução é um **sistema de codificação** explícito, que define de antemão o que conta como cada categoria, somado à checagem da **confiabilidade entre observadores** (*inter-rater reliability*): dois codificadores independentes observam as mesmas cenas, e mede-se o quanto concordam. Alta concordância indica que o que se registra está no comportamento, não no olho de quem olha — o mesmo espírito do cegamento do Cap. 14. O Cap. 16 formaliza essa ideia de confiabilidade.
+
+Uma variante é a **observação participante**, em que o pesquisador se integra ao grupo estudado. Ela dá acesso a mundos que a observação externa não alcança — mas ao custo de maior reatividade, de possível perda de distância crítica e de dilemas éticos sobre o engano, aos quais o Cap. 20 retorna.
+
+## Levantamentos (surveys) e autorrelato
+
+Grande parte do que a psicologia quer saber está dentro das pessoas — atitudes, crenças, emoções, hábitos — e o caminho mais direto para lá é perguntar. O **levantamento** (*survey*) coleta autorrelatos de muitas pessoas por questionário ou entrevista, permitindo descrever atitudes e comportamentos em larga escala e estimar sua frequência numa população. É o método por trás das pesquisas de opinião, dos inventários de personalidade (Vol 11) e de boa parte da epidemiologia psiquiátrica (Vol 13).
+
+Seu poder depende inteiramente de duas coisas: de *quem* respondeu e de *como* se perguntou. A primeira é a questão da amostragem — se os respondentes não representam a população de interesse, nenhum número é confiável, e o Cap. 17 trata disso por inteiro. A segunda é a questão dos vieses de resposta, e vale enumerá-los, porque são a fonte silenciosa de muito dado ruim:
+
+- **Desejabilidade social:** a tendência a responder o que soa aceitável em vez da verdade. Perguntas sobre uso de drogas, preconceito, higiene ou desempenho sexual atraem respostas embelezadas. Defesas: garantir anonimato, formular a pergunta sem julgamento, às vezes medir de forma indireta.
+- **Aquiescência:** a tendência a concordar com afirmações, seja qual for o conteúdo. Neutraliza-se alternando itens de sentido invertido, de modo que "concordar sempre" produza respostas contraditórias detectáveis.
+- **Efeitos de formulação e ordem:** pequenas mudanças no texto ou na sequência das perguntas alteram as respostas. "Proibir" e "não permitir" significam o mesmo, mas geram porcentagens diferentes de apoio; a ordem em que dois temas aparecem muda a avaliação de ambos [@schwarz1999]. Não existe pergunta "neutra" — só perguntas cujos vieses o pesquisador conhece e controla.
+
+::: {.na-pratica}
+**Como farejar uma pesquisa mal-feita.** Diante de uma manchete do tipo "70% dos brasileiros defendem X", faça quatro perguntas antes de acreditar. **Quem respondeu?** Uma enquete de site ou de rede social não é amostra de nada além de quem clicou. **Qual foi a pergunta, palavra por palavra?** A formulação exata quase sempre inclina o resultado, e reportagens costumam omiti-la. **Quem financiou?** Uma pesquisa encomendada por parte interessada merece escrutínio redobrado — não porque o dado seja necessariamente falso, mas porque as escolhas de método tendem a favorecer quem paga. **Qual a margem de erro e o tamanho da amostra?** Sem esses números (Cap. 17 e 19), a porcentagem é decoração. Uma pesquisa que não informa essas quatro coisas não está escondendo detalhes técnicos — está escondendo o que a tornaria avaliável.
+:::
+
+## O estudo de caso
+
+No extremo oposto do levantamento — muitos indivíduos, pouca profundidade — está o **estudo de caso**: a investigação intensiva de um único indivíduo, grupo ou evento. Onde o survey sacrifica profundidade por alcance, o estudo de caso faz o contrário, esmiuçando um caso em riqueza que nenhum método de larga escala alcança. Ele é indispensável em três situações: quando o fenômeno é **raro** demais para se montar uma amostra (uma síndrome neurológica única), quando é **eticamente impossível** produzi-lo (privação extrema), e quando se está no início de uma investigação e é preciso **gerar hipóteses** antes de poder testá-las.
+
+Boa parte da neuropsicologia nasceu de casos únicos. O paciente H.M., que após uma cirurgia para epilepsia perdeu a capacidade de formar novas memórias declarativas mas manteve intactas a memória de curto prazo e a aprendizagem de habilidades, revelou que a memória não é uma faculdade única e localizou funções mnésicas no lobo temporal medial — uma descoberta que moldou o Vol 8 [@scoville_milner1957]. O caso de Genie, uma menina mantida em isolamento extremo até a adolescência, informou o debate sobre períodos críticos na aquisição da linguagem, ainda que cercado de complicações éticas graves [@curtiss1977].
+
+::: {.estudo-caso}
+**Phineas Gage e a barra de ferro** [@harlow1868]
+
+Em 1848, uma explosão lançou uma barra de ferro através do crânio de Phineas Gage, um capataz de ferrovia, destruindo boa parte do lobo frontal. Ele sobreviveu, andou, falou e manteve memória e inteligência — mas, segundo o relato do médico John Harlow, sua personalidade mudou. O homem antes responsável e comedido tornou-se, por um tempo, impulsivo, irreverente e incapaz de sustentar planos. "Gage não era mais Gage", teriam dito os que o conheciam.
+
+**O que o caso ensinou.** Antes de Gage, a ideia de que funções psicológicas complexas — planejamento, autocontrole, adequação social — dependessem de regiões cerebrais específicas era especulativa. Um único paciente, ao ligar dano frontal a mudança de caráter, ancorou empiricamente a hipótese da localização dessas funções, tema central da neuropsicologia (Vol 15, Cap. 99) e da neurociência da emoção e da decisão (Vol 9).
+
+**Por que é *só* um estudo de caso.** Muito do que se conta sobre Gage é reconstrução posterior, parte dela exagerada; os registros contemporâneos são escassos e por vezes contraditórios; e ele parece ter recuperado boa parte da funcionalidade social com o tempo — um detalhe frequentemente omitido. O caso *sugeriu* de forma poderosa uma hipótese que décadas de estudos com muitos pacientes vieram depois confirmar e refinar. Ele não a *provou*, e nenhum caso único poderia.
+:::
+
+O estudo de caso paga por sua profundidade com duas fraquezas incontornáveis. Não permite **generalização**: um indivíduo pode ser atípico, e nada garante que o que vale para ele valha para outros. E não permite **inferência causal**: sem comparação nem controle, é impossível saber se a característica observada decorre do fator destacado ou de mil outras particularidades daquela história. Por isso o estudo de caso é, na economia da ciência, sobretudo um **gerador** de hipóteses — a faísca, não a prova. Confundir as duas coisas, tratar um caso vívido como evidência conclusiva, é um erro clássico, e a vivacidade da narrativa é justamente o que o torna sedutor.
+
+## Tempo: delineamentos transversais e longitudinais
+
+Uma última distinção corta todos os métodos descritivos: como eles lidam com o tempo, questão central para o estudo do desenvolvimento (Vol 10). Um delineamento **transversal** (*cross-sectional*) compara, num único momento, grupos de idades diferentes — mede-se hoje pessoas de 20, 40 e 60 anos e comparam-se as memórias. É rápido e barato, mas confunde idade com **geração**: os de 60 anos diferem dos de 20 não só por serem mais velhos, mas por terem crescido em outra época (o **efeito de coorte**). Um delineamento **longitudinal** acompanha as *mesmas* pessoas ao longo de anos, isolando a mudança com a idade da diferença entre gerações. É muito mais informativo — e muito mais caro, lento e vulnerável à perda de participantes ao longo do tempo, que raramente é aleatória (quem abandona o estudo tende a diferir de quem fica). A escolha entre os dois é outra troca sem solução perfeita, e voltará no Vol 10.
+
+::: {.callout-sintese}
+- **Métodos não-experimentais não são experimentos fracos:** são as ferramentas certas para descrever, estimar frequências e gerar hipóteses — e a única opção quando manipular é impossível ou antiético.
+- **O método correlacional** mede variáveis como elas ocorrem e resume sua covariação num coeficiente entre $-1$ e $+1$; o sinal dá a direção, o valor absoluto dá a força.
+- **Correlação não estabelece causa** por duas razões independentes: o problema da direcionalidade (A→B ou B→A?) e o da terceira variável (um fator não medido causa ambos). Ainda assim, correlações preveem, rastreiam e restringem hipóteses.
+- **Quase-experimentos** comparam grupos não formados por sorteio; são mais fortes que correlações simples, mas continuam expostos a confusões pré-existentes.
+- **A observação naturalística** tem alta validade ecológica, ameaçada pela reatividade e pela subjetividade do registro — combatidas com discrição, sistemas de codificação e confiabilidade entre observadores.
+- **Levantamentos** dependem inteiramente de quem responde (amostragem, Cap. 17) e de como se pergunta (desejabilidade social, aquiescência, efeitos de formulação e ordem).
+- **O estudo de caso** oferece profundidade única e é insubstituível para fenômenos raros, mas não generaliza nem prova causa: é gerador de hipóteses, não veredito.
+- **Delineamentos transversais** confundem idade com coorte; **longitudinais** separam as duas ao custo de tempo, dinheiro e perda seletiva de participantes.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Método correlacional**
+:   Estratégia que mede duas ou mais variáveis como ocorrem naturalmente, sem manipulação, e avalia sua covariação.
+
+**Coeficiente de correlação**
+:   Índice de $-1$ a $+1$ que resume a direção (sinal) e a força (valor absoluto) da associação linear entre duas variáveis.
+
+**Problema da direcionalidade**
+:   Impossibilidade de, a partir de uma correlação, decidir se A causa B ou B causa A.
+
+**Problema da terceira variável**
+:   Possibilidade de uma variável não medida causar as duas variáveis correlacionadas, gerando a associação sem relação causal direta entre elas.
+
+**Quase-experimento**
+:   Comparação entre grupos que recebem condições diferentes sem atribuição aleatória; sujeito a confusões pré-existentes.
+
+**Observação naturalística**
+:   Registro do comportamento em seu ambiente natural, sem intervenção; alta validade ecológica, ameaçada pela reatividade.
+
+**Reatividade**
+:   Alteração do comportamento pelo fato de o sujeito se saber observado.
+
+**Confiabilidade entre observadores**
+:   Grau de concordância entre codificadores independentes que registram o mesmo comportamento.
+
+**Levantamento (survey)**
+:   Coleta de autorrelatos de muitas pessoas por questionário ou entrevista.
+
+**Desejabilidade social**
+:   Viés de responder de modo socialmente aceitável em vez de verdadeiro.
+
+**Aquiescência**
+:   Tendência a concordar com afirmações independentemente do conteúdo.
+
+**Estudo de caso**
+:   Investigação intensiva de um único indivíduo, grupo ou evento; gera hipóteses, mas não generaliza nem estabelece causa.
+
+**Delineamento transversal / longitudinal**
+:   O primeiro compara grupos de idades diferentes num só momento (confunde idade e coorte); o segundo acompanha as mesmas pessoas ao longo do tempo.
+
+**Efeito de coorte**
+:   Diferença entre grupos etários atribuível à época em que nasceram, não à idade em si.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Uma correlação entre X e Y vale $-0{,}7$; outra, entre W e Z, vale $+0{,}4$. Qual relação é mais forte? O que o sinal negativo informa sobre a primeira? Explique por que sinal e força são independentes.
+
+2. **(Recuperação.)** Defina o problema da direcionalidade e o da terceira variável e mostre, com um mesmo exemplo, como cada um bloqueia a conclusão causal de forma diferente.
+
+3. **(Aplicação.)** Pesquisadores encontram que adolescentes que passam mais horas em redes sociais relatam mais sintomas depressivos. Ofereça três interpretações causais compatíveis com esse dado (uma para cada história possível) e diga que método do Cap. 14 seria necessário — e por que talvez seja inviável — para decidir entre elas.
+
+4. **(Aplicação.)** Você precisa medir preconceito racial numa população. Aponte por que um questionário direto ("você tem preconceito?") tende a falhar, nomeando o viés envolvido, e proponha uma estratégia de medição que o reduza.
+
+5. **(Reflexão crítica.)** O caso de Phineas Gage é citado em quase todo livro-texto como prova de que o lobo frontal controla a personalidade. Avalie essa afirmação: o que o caso legitimamente estabeleceu, o que ele apenas sugeriu, e por que a distinção importa para não se cometer o erro clássico dos estudos de caso?
+
+6. **(Integração.)** Um estudo transversal conclui que "a felicidade diminui dos 20 aos 60 anos". Explique por que um efeito de coorte poderia produzir esse resultado mesmo que nenhum indivíduo fique menos feliz ao envelhecer, e descreva o delineamento que separaria as duas explicações.
