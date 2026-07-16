@@ -1,5 +1,182 @@
 # 17. Amostragem
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** população de amostra e parâmetro de estatística, e explicar por que quase sempre se estuda a segunda para inferir a primeira.
+- **Diferenciar** amostragem probabilística de não-probabilística e reconhecer os principais tipos de cada uma.
+- **Separar** dois conceitos que quase todo mundo confunde — erro amostral e viés amostral — e explicar por que aumentar a amostra corrige apenas um deles.
+- **Identificar** o viés de seleção e o viés de não-resposta em pesquisas reais, incluindo fiascos históricos.
+- **Explicar** por que uma amostra pequena e aleatória vence uma amostra enorme e enviesada.
+- **Relacionar** tamanho de amostra, margem de erro e a representatividade limitada das amostras típicas da psicologia (o problema WEIRD).
 :::
+
+Toda afirmação científica sobre "as pessoas" enfrenta um problema aritmético brutal: não se pode estudar todas as pessoas. Nenhum psicólogo mediu a memória de todos os seres humanos, nem a ansiedade de todos os brasileiros. O que se faz, sempre, é estudar um punhado e torcer para que o punhado revele algo sobre o todo. Esse salto — do punhado ao todo — é a **amostragem**, e ele é tão decisivo quanto invisível: um estudo com o delineamento mais elegante e a medida mais válida do mundo produz uma conclusão falsa se o punhado for o punhado errado.
+
+Este capítulo é sobre como escolher o punhado, e sobre por que a maneira de escolher importa mais do que o tamanho. A tese central desafia a intuição: **um número grande não salva uma amostra ruim.** Milhões de respostas colhidas do jeito errado dizem menos sobre a população do que algumas centenas colhidas do jeito certo. Entender por que isso é verdade é entender a diferença entre as duas coisas que podem dar errado ao amostrar.
+
+## População, amostra e o vocabulário da inferência
+
+A **população** é o conjunto completo de indivíduos sobre os quais se quer concluir algo: "os adultos brasileiros", "as crianças com TDAH", "os estudantes universitários". A **amostra** é o subconjunto efetivamente estudado. A lógica inteira da pesquisa quantitativa consiste em medir a amostra para inferir a população.
+
+A esse duplo há um vocabulário correspondente que convém fixar desde já, porque ele reaparece em toda a estatística inferencial (Cap. 19). Um **parâmetro** é uma característica numérica da *população* — a verdadeira média de QI de todos os brasileiros, um número que existe mas quase nunca conhecemos. Uma **estatística** é a característica correspondente calculada na *amostra* — a média de QI dos 500 brasileiros que testamos, um número que conhecemos mas que é apenas uma estimativa do primeiro. Toda a inferência estatística é a arte de usar a estatística (que temos) para dizer algo confiável sobre o parâmetro (que queremos). A qualidade dessa ponte depende inteiramente de como a amostra foi obtida.
+
+O objetivo que orienta tudo é a **representatividade**: a amostra deve espelhar a população nas características que importam. Se 51% da população é composta de mulheres, uma amostra representativa terá em torno de 51% de mulheres; se a população mistura ricos e pobres, jovens e velhos, a amostra deve conter essa mistura em proporções parecidas. Uma amostra não-representativa deforma sistematicamente a imagem da população — e o pior é que essa deformação não se anuncia: os números saem limpos, com casas decimais e tudo, mentindo com aparência de precisão.
+
+## Amostragem probabilística: deixar o acaso escolher
+
+A maneira mais segura de obter representatividade é, paradoxalmente, abrir mão de escolher. Na **amostragem probabilística**, cada membro da população tem uma probabilidade *conhecida e diferente de zero* de ser selecionado, e quem entra é decidido por sorteio, não por conveniência nem por julgamento. A virtude do sorteio é a mesma que o Cap. 14 celebrou na atribuição aleatória: ele não tem preferências, e por isso não introduz vieses sistemáticos. Há quatro modalidades principais.
+
+Na **amostragem aleatória simples**, sorteia-se cada indivíduo diretamente da população inteira, como quem tira nomes de um chapéu. É o ideal teórico — todo mundo com a mesma chance —, mas exige uma lista completa da população, coisa rara.
+
+Na **amostragem sistemática**, ordena-se a população e seleciona-se a cada *k*-ésimo indivíduo (a cada 20º nome de um cadastro, por exemplo), depois de um ponto de partida sorteado. É prática, mas perigosa se a lista tiver algum padrão periódico oculto que coincida com o intervalo.
+
+Na **amostragem estratificada**, divide-se a população em subgrupos relevantes (estratos) — faixas etárias, regiões, sexos — e sorteia-se dentro de cada um, em proporção ao seu tamanho. Ela *garante* que a mistura da população apareça na amostra, em vez de apenas confiar que o sorteio a produza, e por isso costuma ser mais precisa que a aleatória simples para o mesmo tamanho.
+
+Na **amostragem por conglomerados** (*cluster*), sorteiam-se grupos inteiros já existentes — escolas, bairros, municípios — e estudam-se todos (ou uma amostra) dos que caírem no sorteio. É a mais econômica quando a população está dispersa geograficamente, ao custo de alguma precisão, pois membros de um mesmo conglomerado tendem a se parecer.
+
+::: {.na-pratica}
+**O que significa "margem de erro de 2 pontos".** Quando uma pesquisa eleitoral séria diz "candidato X tem 40%, margem de erro de 2 pontos, 95% de confiança", ela está fazendo uma afirmação probabilística honesta, só possível porque a amostra foi *probabilística*. A tradução: se a pesquisa fosse repetida muitas vezes, em cerca de 95% delas o intervalo de 38% a 42% conteria o verdadeiro apoio de X na população. A margem de erro quantifica o **erro amostral** (adiante) e encolhe conforme a amostra cresce — mas só existe, e só faz sentido, quando cada eleitor teve chance conhecida de ser sorteado. Uma "enquete" de site que recebeu um milhão de cliques não tem margem de erro calculável, por mais gente que a responda: sem sorteio, não há teoria que ligue o resultado à população. O número enorme é publicidade, não precisão.
+:::
+
+## Amostragem não-probabilística: quando o acaso não decide
+
+Na prática, a maior parte da pesquisa psicológica *não* usa amostragem probabilística — obtê-la é caro e muitas vezes inviável. Recorre-se então à **amostragem não-probabilística**, em que a seleção depende de acessibilidade ou julgamento, e a probabilidade de cada indivíduo entrar é desconhecida. Suas formas:
+
+- **Amostragem por conveniência:** estuda-se quem está à mão — tipicamente, os calouros de psicologia que precisam de créditos de participação. É de longe a mais comum, e a mais frágil: não há razão para supor que quem está à mão represente a população geral [@sears1986].
+- **Amostragem por cotas:** o pesquisador preenche cotas de subgrupos (tantos homens, tantas mulheres) sem sortear dentro delas — busca-se a mistura certa, mas por conveniência, não por sorteio. É a versão não-probabilística da estratificada.
+- **Amostragem tipo bola de neve** (*snowball*): cada participante indica outros. Indispensável para populações difíceis de alcançar (usuários de certas drogas, imigrantes indocumentados), mas enviesada por construção, já que amigos indicam amigos parecidos.
+- **Amostragem por autosseleção** (voluntária): as pessoas decidem participar por conta própria, respondendo a um anúncio ou a uma enquete aberta. Quem se voluntaria difere sistematicamente de quem não se voluntaria — em interesse pelo tema, em opinião, em traços de personalidade —, o que a torna especialmente traiçoeira.
+
+Isso não condena a amostragem não-probabilística ao lixo. Para muitos fins da psicologia experimental — testar se uma manipulação *causa* um efeito —, ela é aceitável, porque o interesse recai na *relação* entre variáveis, presumidamente geral, não na *frequência* de algo na população. Mas para *estimar* quão comum é um fenômeno ("que porcentagem de brasileiros sofre de insônia?"), ela é fatal. A distinção entre esses dois objetivos — entender uma relação versus estimar uma quantidade — decide se uma amostra de conveniência é tolerável ou desqualificadora.
+
+## As duas coisas que podem dar errado: erro e viés
+
+Aqui está o conceito mais importante do capítulo, e o mais mal compreendido. Uma amostra pode errar sobre a população de duas maneiras radicalmente diferentes.
+
+O **erro amostral** é a flutuação aleatória inevitável de qualquer amostra: mesmo com sorteio perfeito, uma amostra dificilmente reproduz a população *exatamente*, por puro acaso. Uma amostra aleatória de 100 brasileiros pode sair com 54% de mulheres em vez de 51%, sem que nada tenha sido feito de errado. A característica salvadora do erro amostral é que ele é **aleatório** — ora para mais, ora para menos — e, por isso, **encolhe conforme a amostra aumenta**. Quanto mais gente, menos margem para o acaso desviar a estimativa. É esse erro que a margem de erro quantifica e que amostras maiores reduzem.
+
+O **viés amostral** (ou viés de seleção) é outra coisa inteiramente: um erro **sistemático** que empurra a estimativa sempre na mesma direção, porque o método de seleção favorece certos tipos de indivíduo. E aqui está o ponto que muda tudo: **o viés não encolhe com o tamanho da amostra.** Se o método exclui sistematicamente os pobres, incluir mais gente pelo mesmo método só acrescenta mais não-pobres — a estimativa fica igualmente torta, agora com falsa precisão. Aumentar uma amostra enviesada é aumentar o erro com mais confiança. A @fig-erro-vies contrasta os dois.
+
+::: {#fig-erro-vies}
+```{.tikz}
+%%| filename: erro-vies
+%%| alt: Diagrama com uma população à esquerda e duas amostras à direita. A população é um círculo grande contendo pontos azuis e vermelhos em proporção equilibrada. Uma seta "sorteio (probabilística)" leva a uma amostra representativa, com a mesma proporção de azuis e vermelhos. Outra seta "seleção enviesada" leva a uma amostra distorcida, quase toda de pontos azuis, indicando sub-representação dos vermelhos.
+\begin{tikzpicture}[
+  az/.style={fill=manualblue, circle, inner sep=1.4pt},
+  vm/.style={fill=manualred, circle, inner sep=1.4pt},
+  seta/.style={->, >=Stealth, thick}
+]
+  % População
+  \draw[thick, manualgray] (0,0) circle (2);
+  \node[font=\small\bfseries, text=manualgray] at (0,2.4) {População};
+  \foreach \x/\y/\t in {-1/0.6/az, -0.4/1.1/vm, 0.3/0.8/az, 1/0.5/vm, -1.1/-0.3/az, -0.5/-0.9/vm, 0.2/-0.5/az, 0.9/-0.7/vm, -0.2/0.1/az, 0.6/-0.1/vm, 1.2/-0.2/az, -0.8/0.9/vm, 0.5/1.2/az, -1.3/0.2/vm, 0.0/-1.2/az, 1.1/1/vm}
+    \node[\t] at (\x,\y) {};
+
+  % Amostra representativa
+  \draw[thick, manualgreen] (7,1.6) circle (1.1);
+  \node[font=\scriptsize\bfseries, text=manualgreen, align=center] at (7,3) {amostra\\representativa};
+  \foreach \x/\y/\t in {6.6/1.8/az, 7.2/2/vm, 6.8/1.3/az, 7.4/1.5/vm, 7/1.7/az, 6.7/1.4/vm}
+    \node[\t] at (\x,\y) {};
+
+  % Amostra enviesada
+  \draw[thick, manualred] (7,-1.6) circle (1.1);
+  \node[font=\scriptsize\bfseries, text=manualred, align=center] at (7,-3.1) {amostra\\enviesada};
+  \foreach \x/\y/\t in {6.6/-1.4/az, 7.2/-1.2/az, 6.8/-1.9/az, 7.4/-1.7/az, 7/-1.5/az, 6.7/-2/vm}
+    \node[\t] at (\x,\y) {};
+
+  \draw[seta, manualgreen] (2,0.6) to[out=30, in=180] node[midway, above, font=\scriptsize, text=manualgreen] {sorteio} (5.9,1.6);
+  \draw[seta, manualred] (2,-0.6) to[out=-30, in=180] node[midway, below, font=\scriptsize, text=manualred] {seleção enviesada} (5.9,-1.6);
+\end{tikzpicture}
+```
+Erro versus viés. O sorteio produz uma amostra que espelha as proporções da população (erro apenas aleatório, que encolhe com o tamanho). A seleção enviesada sub-representa um subgrupo de forma sistemática — e mais indivíduos colhidos pelo mesmo método não corrigem a distorção.
+:::
+
+::: {.estudo-caso}
+**O erro de dez milhões de cartões** [@squire1988]
+
+Em 1936, a revista *Literary Digest* conduziu a maior pesquisa eleitoral já feita nos Estados Unidos para prever a disputa entre Franklin Roosevelt e Alf Landon. Enviou cartões-resposta a **dez milhões** de pessoas e recebeu cerca de **2,4 milhões** de volta — uma amostra colossal, ordens de grandeza maior que qualquer pesquisa moderna. A previsão: vitória folgada de Landon, com 57%.
+
+Roosevelt venceu com 61% dos votos, uma das maiores margens da história. A *Literary Digest* errou por quase 20 pontos e fechou as portas pouco depois.
+
+**O que deu errado.** Dois vieses, nenhum deles curável pelo tamanho. Primeiro, o **viés de seleção**: os endereços vieram de listas de proprietários de telefone e automóvel e de assinantes da revista — em plena Grande Depressão, um recorte de gente mais rica, que tendia a votar em Landon. Os eleitores mais pobres de Roosevelt simplesmente não estavam na lista. Segundo, o **viés de não-resposta**: só respondeu quem quis, e os apoiadores de Landon, mais motivados, devolveram os cartões em taxa maior. No mesmo ano, George Gallup previu corretamente a vitória de Roosevelt com uma amostra de poucos milhares — mas *representativa*.
+
+**A lição.** É o experimento natural definitivo sobre erro versus viés. Dez milhões de respostas enviesadas perderam feio para alguns milhares bem amostrados. O tamanho da amostra não compra representatividade; só o método de seleção compra. Toda vez que alguém invocar o número de respondentes como prova de confiabilidade, lembre-se dos dez milhões de cartões.
+:::
+
+## Não-resposta e o problema WEIRD
+
+O caso da *Literary Digest* exibe uma segunda ameaça, hoje talvez a mais séria de todas: o **viés de não-resposta**. Mesmo uma amostra sorteada com perfeição vira uma amostra enviesada se as pessoas selecionadas *recusarem-se* a participar em proporções diferentes conforme suas características. Se os mais ocupados, os mais desconfiados ou os mais extremados respondem menos, a amostra final — por mais bem sorteada na origem — deixa de representar a população. Com taxas de resposta despencando nas pesquisas modernas (muita gente não atende, não abre, não clica), a não-resposta tornou-se o calcanhar de aquiles até das melhores pesquisas, e um bom relatório sempre informa quantos dos selecionados de fato participaram.
+
+Há, por fim, um viés de amostragem que atravessa a psicologia inteira e que o Cap. 1 já anunciou. A esmagadora maioria dos estudos publicados usa amostras de conveniência de sociedades **WEIRD** — *Western, Educated, Industrialized, Rich, Democratic* —, e boa parte delas de um subconjunto ainda mais estreito: estudantes universitários de psicologia [@henrich2010; @sears1986]. Esse recorte representa uma fração pequena e atípica da humanidade, e difere de outras populações em domínios que vão da percepção visual ao raciocínio moral. A consequência é dupla e séria: primeiro, muitas "leis gerais" da psicologia foram estabelecidas numa amostra que não representa a espécie; segundo, para um manual brasileiro, transportar um achado obtido com calouros norte-americanos ao contexto nacional é uma *hipótese a testar*, não um dado. Amostragem, portanto, não é só uma tecnicalidade de pesquisas de opinião — é uma questão de fundo sobre o alcance de tudo o que a disciplina afirma saber.
+
+::: {.atencao}
+**"Mas foram 50 mil pessoas!"** O apelo ao tamanho da amostra é a falácia estatística mais popular do noticiário, e agora você tem o antídoto exato. Números grandes reduzem o *erro amostral* — a flutuação aleatória — e nada mais. Eles não tocam no *viés amostral*: se o método de coleta favorece sistematicamente um tipo de pessoa, cada novo respondente reforça a distorção em vez de diluí-la. Antes de se impressionar com "50 mil", "100 mil" ou "um milhão", faça a única pergunta que importa: **como essas pessoas foram selecionadas?** Se a resposta for "elas se voluntariaram", "responderam a um anúncio" ou "clicaram no link", o tamanho é irrelevante — você está diante de uma *Literary Digest* moderna, só que sem o desfecho didático de fechar as portas.
+:::
+
+## Quanto é suficiente? Tamanho de amostra e poder
+
+Se o tamanho não compra representatividade, para que ele serve? Serve para a **precisão** e para o **poder**. Precisão: quanto maior a amostra (bem colhida), menor a margem de erro em torno das estimativas — o intervalo se aperta. Poder: em um estudo que testa uma hipótese, o **poder estatístico** é a probabilidade de detectar um efeito que realmente existe, e ele cresce com o tamanho da amostra. Um estudo pequeno demais pode ter um efeito real bem debaixo do nariz e não conseguir "vê-lo", concluindo erroneamente que não há nada — um problema tão comum e tão grave que merece o tratamento formal que receberá no Cap. 19.
+
+O tamanho necessário não é um número mágico universal; depende do tamanho do efeito que se quer detectar (efeitos menores exigem amostras maiores), da variabilidade dos dados e do grau de certeza desejado. O cálculo prévio desse número — a **análise de poder** — é hoje parte obrigatória de um bom projeto de pesquisa, e sua ausência é uma das razões pelas quais tantos estudos antigos não replicam (Cap. 21). Por ora, retenha a arquitetura do capítulo: o **método** de amostragem governa a *validade* (a amostra representa a população?); o **tamanho** da amostra governa a *precisão e o poder* (quão fina e quão sensível é a estimativa?). São dois eixos distintos, e um não substitui o outro.
+
+::: {.callout-sintese}
+- **Estuda-se uma amostra para inferir uma população.** Parâmetro é a característica (desconhecida) da população; estatística é sua estimativa (conhecida) na amostra. A ponte entre as duas depende de como a amostra foi obtida.
+- **A amostragem probabilística** (aleatória simples, sistemática, estratificada, por conglomerados) usa sorteio, dá a cada indivíduo chance conhecida de entrar e é a via segura para a representatividade — única que permite calcular margem de erro.
+- **A amostragem não-probabilística** (conveniência, cotas, bola de neve, autosseleção) depende de acesso ou julgamento; comum e aceitável para estudar *relações*, mas traiçoeira para *estimar frequências* na população.
+- **Erro amostral** é flutuação aleatória, encolhe com o tamanho da amostra e é quantificado pela margem de erro. **Viés amostral** é distorção sistemática e **não** encolhe com o tamanho — aumentar uma amostra enviesada só dá falsa confiança a um número torto.
+- **O fiasco da *Literary Digest*** (1936) prova a assimetria: dez milhões de respostas enviesadas erraram feio; alguns milhares representativos acertaram. Tamanho não compra representatividade.
+- **Viés de não-resposta e amostras WEIRD** ameaçam até estudos bem delineados, e limitam o alcance do que a psicologia afirma — para o Brasil, generalizar é hipótese, não conclusão.
+- **Método de amostragem governa a validade; tamanho governa precisão e poder.** São eixos independentes; o poder estatístico e sua análise ficam para o Cap. 19.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**População**
+:   Conjunto completo de indivíduos sobre os quais se quer concluir algo.
+
+**Amostra**
+:   Subconjunto da população efetivamente estudado.
+
+**Parâmetro / Estatística**
+:   Característica numérica da população (parâmetro, geralmente desconhecida) e sua estimativa calculada na amostra (estatística).
+
+**Representatividade**
+:   Grau em que a amostra espelha a população nas características relevantes.
+
+**Amostragem probabilística**
+:   Seleção por sorteio, em que cada indivíduo tem probabilidade conhecida e não nula de entrar; inclui aleatória simples, sistemática, estratificada e por conglomerados.
+
+**Amostragem não-probabilística**
+:   Seleção por acessibilidade ou julgamento, com probabilidade de inclusão desconhecida; inclui conveniência, cotas, bola de neve e autosseleção.
+
+**Erro amostral**
+:   Flutuação aleatória entre amostra e população; diminui à medida que a amostra aumenta.
+
+**Viés amostral (de seleção)**
+:   Distorção sistemática da amostra causada pelo método de seleção; **não** diminui com o aumento da amostra.
+
+**Viés de não-resposta**
+:   Distorção causada por diferenças sistemáticas entre quem aceita e quem recusa participar.
+
+**Amostra WEIRD**
+:   Amostra oriunda de sociedades ocidentais, escolarizadas, industrializadas, ricas e democráticas; recorte atípico que domina a pesquisa psicológica [@henrich2010].
+
+**Poder estatístico**
+:   Probabilidade de um estudo detectar um efeito que realmente existe; cresce com o tamanho da amostra (detalhado no Cap. 19).
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina população, amostra, parâmetro e estatística, e explique como os quatro se articulam na lógica da inferência.
+
+2. **(Recuperação.)** Explique a diferença entre erro amostral e viés amostral. Por que só um dos dois diminui quando aumentamos o tamanho da amostra?
+
+3. **(Aplicação.)** Você quer estimar a prevalência de ansiedade entre os estudantes de uma universidade com 30 mil alunos. Descreva como faria uma amostragem estratificada e explique que vantagem ela teria sobre pendurar um cartaz convidando voluntários a preencher um questionário online.
+
+4. **(Aplicação.)** Uma reportagem afirma: "Enquete com 200 mil participantes mostra que 80% dos brasileiros apoiam a proposta." Liste as perguntas que você faria antes de levar o número a sério e explique por que o "200 mil" não é, por si só, tranquilizador.
+
+5. **(Reflexão crítica.)** Explique por que o fiasco da *Literary Digest* de 1936 é um argumento contra a ideia de que "quanto maior a amostra, melhor". Em que condição uma amostra de 2 milhões é pior que uma de 3 mil?
+
+6. **(Integração.)** Um pesquisador conduz um experimento com atribuição aleatória impecável, mas todos os participantes são calouros de psicologia da própria universidade. Distinga o que esse estudo pode legitimamente concluir (relembre a diferença entre validade interna e externa do Cap. 16) e explique por que a amostra WEIRD limita uma dessas validades, mas não a outra.
