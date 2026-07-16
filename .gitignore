@@ -5,6 +5,11 @@
 /_book/
 *_files/
 
+# Artefatos de render de arquivo único (não vão para _book/)
+/site_libs/
+/index.html
+/capitulos/**/*.html
+
 # Cache de figuras TikZ (regenerado no build)
 .tikz-cache/
 tikz-cache/

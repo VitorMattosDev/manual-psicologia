@@ -102,6 +102,7 @@ O complemento do erro Tipo II é a estrela subestimada da inferência: o **poder
   \node[font=\scriptsize, text=manualgreen!60!black] at (axis cs:2.9,0.12) {poder};
   \node[font=\scriptsize, text=manualgray] at (axis cs:1.15,0.05) {$\beta$};
   \node[font=\scriptsize, text=manualred] at (axis cs:2.15,0.03) {$\alpha$};
+\end{axis}
 \end{tikzpicture}
 ```
 O poder de um teste. Afastar as curvas (efeito maior), estreitá-las (amostra maior, menos erro-padrão) ou mover o corte aumenta a área verde. A tensão é permanente: reduzir $\alpha$ (mover o corte para a direita) engorda $\beta$.
