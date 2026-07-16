@@ -1,5 +1,164 @@
 # 36. Sono e ritmos circadianos
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** o ritmo circadiano e o papel do núcleo supraquiasmático, da luz e da melatonina em sincronizá-lo.
+- **Identificar** os estágios do sono (NREM 1–3 e REM) por seus padrões de EEG e características fisiológicas.
+- **Traçar** a arquitetura de uma noite de sono num hipnograma e explicar como os ciclos se transformam ao longo dela.
+- **Avaliar** as principais funções do sono: consolidação da memória, restauração e limpeza metabólica.
+- **Analisar** os efeitos da privação de sono sobre cognição, humor e saúde.
+- **Reconhecer** os principais transtornos do sono e boas práticas de higiene do sono.
 :::
+
+Passamos cerca de um terço da vida dormindo — um estado em que ficamos vulneráveis, imóveis e desligados do mundo. Que a evolução tenha preservado algo tão custoso em praticamente todos os animais é a pista mais forte de que o sono não é um mero "apagar", e sim um processo ativo e vital. Este capítulo estuda o sono sob dois ângulos complementares. Primeiro, o **relógio** que decide *quando* dormimos: o ritmo circadiano que organiza a fisiologia num ciclo de aproximadamente 24 horas. Depois, a **estrutura** do próprio sono — seus estágios, medidos objetivamente pelo eletroencefalograma — e as funções que hoje se atribuem a ele, da consolidação da memória à faxina metabólica do cérebro. Ao longo do caminho veremos que dormir bem não é luxo: é uma necessidade biológica cuja falta cobra um preço cognitivo e de saúde mensurável.
+
+## O relógio biológico: ritmos circadianos
+
+Quase todos os processos do corpo — temperatura, hormônios, atenção, sono — oscilam num ciclo de cerca de 24 horas, o **ritmo circadiano** (do latim *circa diem*, "cerca de um dia"). Esse ritmo é **endógeno**: persiste mesmo sem pistas externas. Experimentos clássicos em que voluntários viveram semanas isolados de qualquer relógio ou luz natural mostraram que o corpo continua a alternar sono e vigília num ciclo próprio, "de forma livre" (*free-running*), que na maioria das pessoas roda um pouco *acima* de 24 horas [@czeisler1999]. Como o dia real tem exatamente 24 horas, o relógio precisa ser ajustado diariamente por sinais ambientais — os **zeitgebers** ("doadores de tempo", em alemão), sendo a **luz** o mais poderoso.
+
+O maestro desse relógio é o **núcleo supraquiasmático** (NSQ), um pequeno aglomerado de neurônios no hipotálamo, logo acima do quiasma óptico. Que o NSQ seja o marca-passo central ficou demonstrado por experimentos elegantes: lesioná-lo abole os ritmos circadianos, e transplantar tecido do NSQ de um animal doador para um animal sem relógio *restaura* o ritmo — com o período característico do **doador**, prova de que a informação temporal está no próprio tecido [@ralph1990]. O NSQ recebe informação de luz diretamente da retina (por uma via especializada) e, à noite, ordena à glândula pineal que secrete **melatonina**, o hormônio que sinaliza "escuridão" ao corpo e favorece o sono. A luz — especialmente a de comprimento azulado, abundante no dia e nas telas — suprime a melatonina; daí telas à noite atrasarem o sono. Desalinhar o relógio interno do tempo externo produz o **jet lag** (após voos transmeridionais) e o desgaste de quem faz turnos noturnos, associado a piora cognitiva e a riscos de saúde a longo prazo.
+
+::: {.base-neural}
+**Dois processos regulam o sono.** O modelo influente de Alexander Borbély descreve o sono como produto de dois processos que se somam [@borbely1982]. O **processo C** (circadiano) é o sinal do relógio do NSQ, que empurra para a vigília durante o dia e para o sono à noite, independentemente de há quanto tempo se está acordado. O **processo S** (homeostático) é a **pressão de sono** que se acumula quanto mais tempo ficamos despertos — associada ao acúmulo de adenosina no cérebro — e se dissipa ao dormir. (A cafeína, aliás, age bloqueando os receptores de adenosina, mascarando temporariamente essa pressão.) A hora em que sentimos sono resulta da interação dos dois: por isso podemos "furar" o sono numa noite virada e sentir uma paradoxal recuperação de ânimo pela manhã, quando o processo C sobe mesmo com o processo S alto.
+:::
+
+## Os estágios do sono
+
+O sono não é um estado único e homogêneo. A descoberta que fundou a ciência moderna do sono veio quando Eugene Aserinsky e Nathaniel Kleitman notaram, monitorando dorminhocos, períodos em que os olhos se moviam rapidamente sob as pálpebras.
+
+::: {.experimento}
+**A descoberta do sono REM** [@aserinsky_kleitman1953]
+
+**Desenho.** Aserinsky e Kleitman registraram, ao longo de noites inteiras, os movimentos oculares e a atividade cerebral (EEG) de pessoas dormindo. Quando observavam surtos de **movimentos oculares rápidos** (REM, *rapid eye movements*), despertavam a pessoa e perguntavam o que se passava.
+
+**Resultado.** Os períodos de REM recorriam ciclicamente pela noite e vinham acompanhados de EEG paradoxalmente *ativo*, parecido com o da vigília. E, ao serem despertadas durante o REM, as pessoas relatavam **sonhos vívidos** na grande maioria das vezes — muito mais do que quando despertadas fora do REM.
+
+**Interpretação.** O sono tem uma organização interna: alterna fases distintas, e uma delas (o REM) associa-se fortemente ao sonhar. Estava aberto o caminho para mapear objetivamente a arquitetura do sono e, com William Dement, descrever seus ciclos [@dement_kleitman1957].
+
+**Limitações.** Sonhos também ocorrem fora do REM (Cap. 37), então a equação "REM = sonho" é uma simplificação. Ainda assim, a descoberta transformou o sono de mistério em objeto mensurável.
+:::
+
+A classificação atual divide o sono em **NREM** (sem movimentos oculares rápidos), subdividido em três estágios de profundidade crescente, e o **REM**:
+
+- **N1** (adormecer): transição breve entre vigília e sono; o EEG perde o ritmo alfa da vigília relaxada. Podem ocorrer os solavancos e a sensação de cair (mioclonias hípnicas).
+- **N2**: sono leve consolidado, marcado por padrões de EEG característicos — os **fusos do sono** (surtos rápidos, ligados à consolidação da memória) e os **complexos K**. Ocupa a maior parte da noite.
+- **N3** (sono de ondas lentas ou profundo): dominado por ondas **delta**, lentas e amplas. É o sono mais reparador e mais difícil de despertar; predomina no início da noite e associa-se à restauração física e à liberação de hormônio do crescimento.
+- **REM**: EEG rápido e dessincronizado (parecido com a vigília), movimentos oculares rápidos, sonhos vívidos e **atonia muscular** — uma paralisia protetora que impede o corpo de "encenar" o sonho. Por combinar cérebro ativo e corpo paralisado, o REM é também chamado de **sono paradoxal**.
+
+## A arquitetura de uma noite
+
+Ao longo da noite, esses estágios se sucedem em **ciclos** de aproximadamente 90 minutos, tipicamente quatro a seis por noite. Mas os ciclos não são iguais: sua composição muda sistematicamente do começo ao fim (@fig-hipnograma). No início da noite, predomina o **N3** profundo; as primeiras horas concentram o sono de ondas lentas. À medida que a noite avança, o N3 mingua e os episódios de **REM** se alongam — o REM mais longo e mais rico em sonhos ocorre perto do amanhecer, razão pela qual costumamos acordar em meio a um sonho. Esse arranjo tem consequências práticas: quem dorme pouco sacrifica sobretudo o REM do fim da noite, e quem acorda no meio de um ciclo profundo sente a **inércia do sono** — aquele torpor grogue dos despertares abruptos.
+
+::: {#fig-hipnograma}
+```{.tikz}
+%%| filename: hipnograma
+%%| alt: Um hipnograma esquemático de uma noite de sono. O eixo horizontal marca as horas de sono, de zero a cerca de cinco ciclos. O eixo vertical marca os estágios, de cima para baixo: vigília, REM, N1, N2, N3. A linha desce rapidamente ao N3 no início da noite e depois oscila para cima; ao longo da noite, os trechos de N3 encolhem e os trechos de REM (destacados) ficam cada vez mais longos, sobretudo perto do fim.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, xscale=1.55, yscale=0.85]
+  % eixos
+  \draw[->, thick] (0,0) -- (5.4,0) node[right, font=\tiny] {horas};
+  \draw[->, thick] (0,0) -- (0,5.2);
+  % níveis (y): Vigília=5, REM=4, N1=3, N2=2, N3=1
+  \foreach \y/\lab in {5/Vigília, 4/REM, 3/N1, 2/N2, 1/N3}{
+    \node[left, font=\tiny, text=manualgray] at (0,\y) {\lab};
+    \draw[manualgray!30, dashed] (0,\y) -- (5.2,\y);
+  }
+  % marcas de hora
+  \foreach \x in {1,2,3,4,5}{ \node[below, font=\tiny, text=manualgray] at (\x,0) {\x}; }
+  % linha do hipnograma (segmentos)
+  \draw[very thick, manualblue]
+    (0,5) -- (0.15,5) -- (0.15,3) -- (0.3,3) -- (0.3,2) -- (0.55,2) -- (0.55,1) -- (1.0,1)
+    -- (1.0,2) -- (1.2,2) -- (1.2,4) -- (1.45,4)
+    -- (1.45,2) -- (1.7,2) -- (1.7,1) -- (2.05,1)
+    -- (2.05,2) -- (2.25,2) -- (2.25,4) -- (2.7,4)
+    -- (2.7,2) -- (2.95,2) -- (2.95,1) -- (3.15,1)
+    -- (3.15,2) -- (3.35,2) -- (3.35,4) -- (3.95,4)
+    -- (3.95,2) -- (4.2,2)
+    -- (4.2,4) -- (5.0,4)
+    -- (5.0,5);
+  % destaque dos episódios REM
+  \foreach \a/\b in {1.2/1.45, 2.25/2.7, 3.35/3.95, 4.2/5.0}{
+    \draw[very thick, manualred] (\a,4) -- (\b,4);
+  }
+  \node[font=\tiny, text=manualred] at (4.6,4.35) {REM alonga};
+  \node[font=\tiny, text=manualgreen!50!black] at (0.9,0.6) {N3 predomina no início};
+\end{tikzpicture}
+```
+Hipnograma esquemático de uma noite. O sono desce rápido ao N3 profundo no início; ao longo da noite, o N3 rareia e os episódios de REM (vermelho) se alongam, sendo o último — perto do despertar — o mais longo. Um ciclo completo dura cerca de 90 minutos.
+:::
+
+## Para que serve dormir?
+
+Nenhuma teoria única esgota as funções do sono; provavelmente ele serve a várias ao mesmo tempo. Três linhas de evidência se destacam.
+
+A primeira é a **consolidação da memória**. Dormir depois de aprender melhora a retenção de forma mensurável, e não por mera passagem do tempo: o sono *reprocessa* ativamente o que foi aprendido [@diekelmann_born2010; @rasch_born2013]. Durante o sono de ondas lentas, o hipocampo parece "reproduzir" (*replay*) os padrões de atividade do aprendizado recente, transferindo-os gradualmente para o córtex — um mecanismo que retomaremos ao estudar a memória (Vol 8). O sono profundo favorece a memória declarativa (fatos), e o REM parece contribuir para memórias procedimentais e emocionais. Robert Stickgold e Matthew Walker documentaram ganhos de desempenho em tarefas motoras e perceptuais *após* uma noite de sono, ausentes num intervalo igual de vigília [@walker2017].
+
+A segunda é a **restauração e a limpeza metabólica**. O sono está ligado à reparação tecidual e ao equilíbrio energético, mas uma descoberta recente acrescentou um mecanismo notável: durante o sono, o espaço entre as células do cérebro se expande e o fluxo de líquido cefalorraquidiano aumenta, arrastando resíduos metabólicos — inclusive proteínas ligadas a doenças neurodegenerativas — num sistema apelidado de **glinfático** [@xie2013]. Dormir, nessa visão, é em parte uma faxina que só pode ocorrer com o "escritório" fechado. A terceira linha, evolutiva, nota que o sono também **conserva energia** e mantém o animal seguro e inativo nas horas de maior risco — o que ajuda a explicar por que espécies diferentes dormem quantidades tão variadas.
+
+## Quando o sono falta ou falha
+
+A **privação de sono** — aguda ou crônica — degrada quase tudo o que a mente faz. Poucas noites mal dormidas já pioram a atenção sustentada (com "microssonos" involuntários), a memória de trabalho, o humor, o autocontrole e o tempo de reação; dirigir sonolento rivaliza com dirigir alcoolizado em risco de acidente. A curto prazo, a privação eleva a irritabilidade e a reatividade emocional (a amígdala fica mais reativa e menos regulada pelo córtex pré-frontal). A longo prazo, o sono insuficiente crônico associa-se a maior risco de obesidade, diabetes, hipertensão, imunidade reduzida e transtornos de humor — sublinhando que o sono é um pilar da saúde, não um tempo "perdido".
+
+Entre os **transtornos do sono**, os mais comuns e importantes incluem: a **insônia** (dificuldade crônica de iniciar ou manter o sono, com prejuízo diurno); a **apneia obstrutiva do sono** (colapsos repetidos das vias aéreas que fragmentam o sono e reduzem a oxigenação, muitas vezes sem que a pessoa perceba, deixando sonolência diurna e riscos cardiovasculares); a **narcolepsia** (sonolência diurna irresistível e intrusões de fenômenos do REM na vigília, como a **cataplexia** — perda súbita do tônus muscular desencadeada por emoção —, ligada à perda de neurônios de orexina/hipocretina); e as **parassonias**, comportamentos anormais durante o sono, como o sonambulismo e os terrores noturnos (que surgem no N3 profundo) ou o transtorno comportamental do REM (em que falha a atonia protetora e a pessoa "encena" os sonhos).
+
+::: {.na-pratica}
+**Higiene do sono: o que a ciência recomenda.** Boa parte das dificuldades comuns com o sono responde a hábitos, sem necessidade de medicação. As recomendações apoiadas em evidência decorrem diretamente do que vimos: (1) **horários regulares** de deitar e levantar, inclusive nos fins de semana, ancoram o processo circadiano (C); (2) **luz natural pela manhã** e **penumbra à noite** — evitando telas brilhantes na última hora — mantêm o relógio e a melatonina alinhados; (3) **evitar cafeína à tarde/noite** impede que ela bloqueie a pressão de sono (processo S) na hora errada; (4) o álcool, embora pareça relaxar, **fragmenta o sono e suprime o REM**; (5) manter o quarto **escuro, silencioso e fresco** e reservá-lo ao sono fortalece a associação cama–dormir. Para a insônia crônica, a **terapia cognitivo-comportamental para insônia (TCC-I)** é hoje o tratamento de primeira linha, mais eficaz a longo prazo do que hipnóticos.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- O **ritmo circadiano** é um ciclo endógeno de ~24 h, regido pelo **núcleo supraquiasmático** e sincronizado por *zeitgebers*, sobretudo a **luz**, que controla a **melatonina**. O sono resulta da interação do processo **circadiano (C)** com a **pressão homeostática (S)**.
+- Aserinsky e Kleitman descobriram o **sono REM**, associado a sonhos vívidos. O sono alterna **NREM** (N1, N2 com fusos, N3 de ondas lentas) e **REM** (paradoxal: cérebro ativo, corpo em atonia).
+- Uma noite compõe-se de **ciclos de ~90 min**: o **N3** predomina no início; o **REM** se alonga em direção ao amanhecer (ver o hipnograma).
+- O sono serve, entre outras funções, à **consolidação da memória** (replay hipocampal), à **restauração** e à **limpeza glinfática** de resíduos metabólicos.
+- A **privação de sono** degrada atenção, memória, humor e autocontrole, e o déficit crônico eleva riscos de saúde. Transtornos importantes: **insônia**, **apneia**, **narcolepsia** e **parassonias**. A **TCC-I** é a primeira linha para insônia.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Ritmo circadiano**
+:   Ciclo biológico endógeno de aproximadamente 24 horas que organiza sono, temperatura e hormônios.
+
+**Núcleo supraquiasmático (NSQ)**
+:   Marca-passo circadiano do hipotálamo, sincronizado pela luz via retina [@ralph1990].
+
+**Zeitgeber**
+:   Sinal ambiental que ajusta o relógio interno ao tempo externo; a luz é o principal.
+
+**Melatonina**
+:   Hormônio secretado pela pineal no escuro, que sinaliza a noite e favorece o sono.
+
+**Processos C e S**
+:   No modelo de Borbély, o impulso circadiano (C) e a pressão homeostática de sono (S), cuja soma determina a propensão ao sono [@borbely1982].
+
+**Sono NREM / REM**
+:   NREM: estágios N1–N3 de profundidade crescente (N3 = ondas lentas). REM: sono paradoxal, com EEG ativo, sonhos vívidos e atonia muscular [@aserinsky_kleitman1953].
+
+**Hipnograma**
+:   Gráfico dos estágios do sono ao longo da noite, mostrando os ciclos de ~90 min.
+
+**Sistema glinfático**
+:   Fluxo aumentado de líquido no cérebro durante o sono, que remove resíduos metabólicos [@xie2013].
+
+**Consolidação da memória**
+:   Estabilização e reprocessamento de memórias durante o sono, com *replay* dos padrões do aprendizado [@diekelmann_born2010].
+
+**Apneia / narcolepsia / parassonias**
+:   Principais transtornos do sono: obstrução respiratória; sonolência com intrusões de REM (cataplexia); e comportamentos anormais durante o sono.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que é um *zeitgeber*? Explique o papel da luz, do NSQ e da melatonina na sincronização do ritmo circadiano.
+
+2. **(Recuperação.)** Descreva os estágios do sono e o que distingue o REM ("paradoxal") do sono de ondas lentas (N3).
+
+3. **(Aplicação.)** Usando o modelo de dois processos (C e S), explique por que virar a noite estudando e depois sentir um "segundo fôlego" pela manhã não significa que você está descansado.
+
+4. **(Interpretação.)** Observando o hipnograma (@fig-hipnograma), explique por que quem corta as últimas horas de sono perde sobretudo REM, e que consequência isso pode ter.
+
+5. **(Reflexão crítica.)** "Dormir é tempo perdido; quem dorme menos, produz mais." Avalie essa ideia à luz das funções do sono e dos efeitos da privação.
+
+6. **(Aplicação.)** Um colega dorme mal há meses. Que recomendações de higiene do sono, e por quê, você sugeriria — e por que a TCC-I é preferível a depender de hipnóticos a longo prazo?
