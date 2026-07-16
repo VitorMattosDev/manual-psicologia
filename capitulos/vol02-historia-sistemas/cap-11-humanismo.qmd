@@ -1,5 +1,352 @@
 # 11. Humanismo (Rogers, Maslow)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que o humanismo se chamou "terceira força" e contra o que exatamente se definiu.
+- **Descrever** o modelo de Rogers: tendência atualizante, autoconceito, condições de valor e incongruência.
+- **Enunciar** a hipótese das condições necessárias e suficientes, e avaliá-la à luz da evidência atual.
+- **Reconhecer** que Rogers foi um dos pesquisadores mais rigorosos de sua geração — e por que isso importa para julgar sua escola.
+- **Desmontar** a pirâmide de Maslow: quem a desenhou, e o que a evidência diz sobre a hierarquia.
+- **Avaliar** o movimento da autoestima como o custo empírico do humanismo mal aplicado.
+- **Identificar** os programas contemporâneos — teoria da autodeterminação, entrevista motivacional, psicologia positiva — que herdaram a agenda humanista com método.
 :::
+
+O Cap. 10 terminou com dois retratos do ser humano. No de Freud, você é uma criatura empurrada por pulsões que não conhece, gerindo conflitos que não escolheu, e o melhor que a análise promete é trocar a miséria neurótica pela infelicidade comum. No de Skinner, você é o produto de uma história de contingências; a liberdade que sente é a ignorância das variáveis que o controlam.
+
+Nos anos 1950, um grupo de psicólogos americanos olhou para essas duas opções e disse: **falta alguém**.
+
+O argumento não era apenas de gosto. Era metodológico, e vale enunciá-lo antes de qualquer julgamento. A psicanálise construíra sua imagem do humano a partir de **pessoas doentes** — pacientes vienenses em sofrimento. O behaviorismo construíra a sua a partir de **ratos e pombos** em caixas. Nenhuma das duas jamais estudou, de propósito, uma pessoa **saudável, funcionando bem, crescendo**. Se você quer saber o que a espécie pode ser, perguntou Maslow, por que estudar apenas os seus fracassos e os seus roedores?
+
+A isso os fundadores chamaram **terceira força**. E este capítulo tem uma tese que talvez surpreenda: o humanismo é, ao mesmo tempo, a escola que **mais influenciou** a prática psicológica no mundo e a que **pior sustentou empiricamente suas afirmações centrais** — e a razão dessa combinação estranha diz algo importante sobre a diferença entre uma agenda e uma teoria.
+
+## O compromisso comum
+
+O humanismo não teve uma teoria unificada, mas teve um conjunto de compromissos, e eles se opõem ponto a ponto às duas forças anteriores:
+
+- **A experiência subjetiva é o dado primário.** Para entender alguém, é preciso entender o mundo como **ele** o vê — o campo fenomenológico. Não é o mesmo que o mundo objetivo, e é o que determina o comportamento. (A dívida com Lewin é evidente, e o Cap. 9 já a antecipou.)
+- **Pessoas têm agência.** Escolhem, e são responsáveis. Contra o determinismo pulsional e o determinismo ambiental.
+- **A pessoa é um todo.** Não se divide em instâncias nem em respostas condicionadas.
+- **Há uma tendência ao crescimento.** Dada condição adequada, o organismo tende a se desenvolver na direção de suas potencialidades.
+- **Estude a saúde, não só a doença.** E estude o presente e o futuro — o projeto —, não apenas o passado.
+
+O pano de fundo filosófico é o **existencialismo** europeu, trazido para a psicologia americana sobretudo por Rollo May: a angústia como parte da condição humana e não como sintoma, a liberdade como fardo, a construção de sentido como tarefa. Viktor Frankl, sobrevivente de campos de concentração, deu à ideia sua formulação mais dura em *Em busca de sentido* [@frankl1946]: pode-se tirar tudo de um ser humano, exceto a escolha de sua atitude diante das circunstâncias. É uma afirmação sobre a qual voltaremos com desconforto no fim do capítulo.
+
+## Rogers: e a surpresa de quem ele era
+
+Comece pela surpresa, porque ela reorganiza tudo o que se costuma pensar sobre esta escola.
+
+Carl Rogers é lembrado como o psicólogo da empatia, do acolhimento, da aceitação — a figura mais "mole" da história da disciplina, aquela que o estudante de método tende a olhar de lado. Este manual precisa registrar o oposto: **Rogers foi um dos pesquisadores mais rigorosos e mais inovadores de sua geração**, e fez pela pesquisa em psicoterapia mais do que qualquer psicanalista jamais fez.
+
+Considere o que ele efetivamente fez:
+
+**Gravou as sessões.** Parece trivial. Não era. Nos anos 1940, o que acontecia na sala de terapia era conhecido apenas pelo relato do terapeuta — exatamente o problema do Cap. 10. Rogers foi dos primeiros a gravar e transcrever sessões inteiras e publicá-las, para que **qualquer um** pudesse examinar o que fora dito. Ele transformou o processo terapêutico em **dado público**. É o critério de Watson (Cap. 8) aplicado ao divã, por um humanista.
+
+**Mediu o resultado.** Adotou a técnica **Q-sort**: o cliente ordena um conjunto de afirmações sobre si conforme o quanto o descrevem, e depois conforme o quanto descreveriam a pessoa que gostaria de ser. A correlação entre os dois ordenamentos dá um índice numérico da discrepância **eu real – eu ideal** —, que se pode acompanhar ao longo do tratamento e comparar com grupos-controle. Rogers previu que a terapia bem-sucedida reduziria essa discrepância, e testou.
+
+**Formulou uma hipótese que podia falhar.** É o que veremos a seguir.
+
+**Foi reconhecido pela ala dura.** Presidiu a APA e recebeu, em 1956, o primeiro Prêmio de Contribuição Científica Distinta da associação — no mesmo ano, e pela mesma instituição, que premiaria trabalho experimental convencional.
+
+Guarde isso: **quem fundou a pesquisa empírica em psicoterapia foi o humanista**, não os cientistas que zombavam dele. E o Cap. 10 já nos ensinou a moral: o que salva uma ideia não é o quanto ela é dura, é o quanto ela se expõe.
+
+### O modelo
+
+O sistema de Rogers gira em torno de uma tensão [@rogers1951].
+
+Todo organismo tem, segundo ele, uma **tendência atualizante**: um impulso básico de manter-se e desenvolver-se na direção de suas potencialidades. E a criança traz um **processo de valoração organísmica** — uma bússola direta: isto me faz bem, aquilo não.
+
+Mas a criança também precisa desesperadamente de **consideração positiva** dos outros. E aí surge o problema. Quando o afeto vem com cláusulas — *eu te amo se você for calmo, se tirar boas notas, se não sentir raiva* —, a criança aprende **condições de valor**: as regras sobre o que precisa ser para merecer amor.
+
+E então acontece a distorção central. Para preservar o vínculo, ela começa a **negar ou distorcer** as experiências que não cabem nas condições de valor. A raiva que sente não pode ser sentida, então não é sentida — ou é sentida como outra coisa. Vai se formando um **autoconceito** feito não do que ela é, mas do que precisa ser. E a distância entre o autoconceito e a experiência real do organismo é a **incongruência** — que é, para Rogers, a fonte do sofrimento psicológico. Não um conflito entre id e superego: um conflito entre **quem você é** e **quem você aprendeu que precisa ser para ser aceito**.
+
+::: {#fig-rogers-incongruencia}
+```{.tikz}
+%%| filename: rogers-incongruencia
+%%| alt: Diagrama em dois painéis comparando incongruência e congruência no modelo de Rogers. No painel da esquerda, rotulado incongruência, dois círculos se sobrepõem apenas ligeiramente. Um círculo representa a experiência organísmica, isto é, o que de fato se sente e se vive; o outro representa o autoconceito, isto é, quem se aprendeu que é preciso ser. A pequena região de sobreposição é rotulada como a área em que se pode ser quem se é. A região da experiência que fica fora do autoconceito é marcada como experiência negada ou distorcida, porque não cabe nas condições de valor, e é indicada como fonte de sofrimento e ansiedade. No painel da direita, rotulado congruência, os mesmos dois círculos se sobrepõem quase totalmente, com o comentário de que a terapia não muda a pessoa, e sim as condições, de modo que a experiência volta a ser admitida no autoconceito. Entre os dois painéis, uma seta indica que a passagem se dá pelas três condições propostas por Rogers: consideração positiva incondicional, empatia e congruência do terapeuta, com a nota de que a consideração positiva incondicional é a retirada das condições de valor.
+\begin{tikzpicture}
+  % ---- painel esquerdo: incongruência
+  \node[font=\scriptsize\bfseries, text=manualred] at (-4.0,3.3) {INCONGRUÊNCIA};
+  \begin{scope}
+    \fill[manualgreen!18, draw=manualgreen, very thick] (-5.0,0.9) circle (1.75);
+    \fill[manualblue!18, draw=manualblue, very thick] (-3.0,0.9) circle (1.75);
+    \fill[manualyellow!35, draw=manualgray, thick] (-4.0,0.9) circle (0.55);
+  \end{scope}
+  \node[font=\tiny, text=manualgreen, align=center] at (-5.75,1.9) {\textbf{experiência}\\\textbf{organísmica}\\{\tiny o que de fato se sente}};
+  \node[font=\tiny, text=manualblue, align=center] at (-2.25,1.9) {\textbf{autoconceito}\\{\tiny quem se aprendeu}\\{\tiny que é preciso ser}};
+  \node[font=\tiny, align=center] at (-4.0,0.9) {\tiny pode\\\tiny ser};
+  \node[font=\tiny, text=manualred, align=center] at (-5.55,-0.35) {\tiny negada ou};
+  \node[font=\tiny, text=manualred, align=center] at (-5.55,-0.6) {\tiny distorcida};
+  \node[draw, thick, rounded corners=3pt, draw=manualred, fill=manualred!6,
+        font=\tiny, align=center, text width=4.4cm] at (-4.0,-1.9)
+    {A experiência que não cabe nas \textbf{condições de valor} é negada.\\Essa distância é a fonte do sofrimento.};
+
+  % ---- seta central
+  \draw[->, >=Stealth, very thick, manualgray] (-0.85,0.9) -- (0.85,0.9);
+  \node[draw, thick, rounded corners=3pt, draw=manualgreen, fill=manualgreen!8,
+        font=\tiny, align=center, text width=2.6cm] at (0,-1.4)
+    {\textbf{as três condições}\\consideração positiva \emph{incondicional}\\empatia\\congruência};
+  \node[font=\tiny, text=manualgray, align=center, text width=2.5cm] at (0,2.5)
+    {incondicional = \textbf{retirar} as condições de valor};
+
+  % ---- painel direito: congruência
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (4.0,3.3) {CONGRUÊNCIA};
+  \begin{scope}
+    \fill[manualgreen!18, draw=manualgreen, very thick] (3.7,0.9) circle (1.75);
+    \fill[manualblue!18, draw=manualblue, very thick] (4.3,0.9) circle (1.75);
+    \fill[manualyellow!35, draw=manualgray, thick] (4.0,0.9) circle (1.45);
+  \end{scope}
+  \node[font=\tiny, text=manualgreen, align=center] at (2.15,2.6) {experiência};
+  \node[font=\tiny, text=manualblue, align=center] at (5.85,2.6) {autoconceito};
+  \node[font=\tiny, align=center] at (4.0,0.9) {\tiny pode ser\\\tiny quem é};
+  \node[draw, thick, rounded corners=3pt, draw=manualgreen, fill=manualgreen!6,
+        font=\tiny, align=center, text width=4.4cm] at (4.0,-1.9)
+    {A terapia não muda a pessoa:\\muda as \textbf{condições}. A experiência volta a ser admitida.};
+\end{tikzpicture}
+```
+O modelo de Rogers. Note a inversão em relação ao Cap. 10: aqui o problema não é o conteúdo reprimido a ser descoberto pelo especialista, é a **condição** que tornou o conteúdo inadmissível — e o remédio é remover a condição, não interpretar o conteúdo.
+:::
+
+Daí decorre toda a terapia centrada na pessoa. Se o problema são as condições de valor, o tratamento é uma relação **sem** condições de valor. O terapeuta não interpreta, não aconselha, não dirige — porque fazer isso seria pôr-se como o especialista que sabe mais sobre você do que você, o que é exatamente a estrutura que produziu o problema. O terapeuta **acompanha**. E note a radicalidade política disso em 1951: Rogers está retirando a autoridade do médico e devolvendo-a ao cliente — palavra que ele escolheu deliberadamente contra "paciente".
+
+### A hipótese que podia falhar
+
+Em 1957, Rogers publicou um artigo cujo título é uma aposta [@rogers1957]: as condições **necessárias e suficientes** para a mudança terapêutica de personalidade. E enumerou seis, das quais três se tornaram canônicas como atitudes do terapeuta:
+
+1. **Congruência** (autenticidade): o terapeuta é genuíno na relação, não representa um papel.
+2. **Consideração positiva incondicional**: aceita o cliente sem condições — o que não significa aprovar tudo, significa não condicionar a aceitação.
+3. **Empatia acurada**: compreende o mundo interno do cliente **e** consegue comunicar essa compreensão.
+
+Veja o tamanho da aposta, e por que ela merece respeito. **Necessárias**: sem elas, não há mudança — nenhuma terapia deveria funcionar sem elas. **Suficientes**: com elas, há mudança — nenhuma técnica adicional é precisa. Isso é uma previsão arriscada, do tipo que o Cap. 3 exige e que o Cap. 10 não encontrou em Freud. Ela **proíbe** coisas. Ela pode falhar.
+
+E falhou — parcialmente. O veredito atual é interessante justamente por não ser limpo:
+
+**A parte que se sustentou.** As atitudes rogerianas predizem resultado, de forma modesta e confiável. A meta-análise de Elliott e colegas encontrou associação consistente entre empatia e desfecho, com tamanho de efeito pequeno a médio, robusto entre abordagens teóricas [@elliott2018]. A aliança terapêutica — parente próxima — é um dos preditores mais replicados de toda a pesquisa em psicoterapia [@fluckiger2018]. E a literatura de **fatores comuns**, que o Cap. 10 já invocou, é em larga medida uma vindicação da ênfase de Rogers: a relação faz trabalho pesado, em toda terapia, independentemente do que a teoria diga estar fazendo.
+
+**A parte que caiu.** *Suficientes*, não são. Para fobia específica, TOC ou pânico, uma relação excelente sem exposição produz um cliente que se sente bem compreendido e continua com pânico (Caps. 78, 90). Técnicas específicas acrescentam, e em alguns quadros acrescentam muito. *Necessárias*, também não, na forma forte: há tratamentos eficazes — inclusive computadorizados, sem terapeuta algum — que produzem mudança sem que ninguém seja empático com ninguém.
+
+**O problema de método que a torna difícil de avaliar.** E aqui é preciso ser rigoroso, porque a evidência favorável é mais fraca do que parece. Boa parte dos dados vem de **correlações**: clientes que melhoram avaliam seus terapeutas como mais empáticos. Isso é exatamente o desenho que o Cap. 15 nos ensina a desconfiar — a direção causal é indeterminada, e há um caminho óbvio na direção inversa: quem está melhorando gosta mais do terapeuta. Separar "a empatia causou a melhora" de "a melhora causou a percepção de empatia" exige desenhos que a literatura só recentemente começou a produzir.
+
+O veredito justo, então: **Rogers estava mais certo do que a psicologia experimental admitiu por décadas, e menos certo do que ele afirmou**. Uma posição desconfortável, e provavelmente a correta.
+
+## Maslow, e a pirâmide que ele nunca desenhou
+
+Se você conhece uma única figura da psicologia, é esta. E quase tudo o que você sabe sobre ela está errado.
+
+::: {.atencao}
+**A pirâmide não é de Maslow.**
+
+Maslow propôs, num artigo de 1943, uma teoria da motivação com necessidades organizadas por **potência relativa**: fisiológicas, segurança, pertencimento e amor, estima, e **autorrealização** no topo [@maslow1943]. A ideia geral: necessidades mais básicas, quando insatisfeitas, dominam o organismo, e as superiores só emergem quando as inferiores estão razoavelmente atendidas.
+
+Ele **nunca desenhou uma pirâmide**. Não há pirâmide em nenhum de seus escritos.
+
+Bridgman, Cummings e Ballard rastrearam a origem do desenho e do que ele fez com a teoria [@bridgman2019]. A pirâmide aparece na literatura de **gestão** nos anos 1960 — em textos de consultoria e de comportamento organizacional —, e de lá se espalhou para os manuais de psicologia. Foi um artefato de negócios, não de ciência.
+
+E o desenho **modifica a teoria**, o que é o ponto sério. Uma pirâmide comunica: (a) níveis **discretos**, um terminando onde o outro começa; (b) ordem **estrita** — não se sobe sem completar o andar de baixo; (c) o topo é **pequeno**, logo raro e elitista; (d) uma vez no topo, **chegou-se**.
+
+Maslow afirmou o contrário de tudo isso. Escreveu explicitamente que as necessidades **se sobrepõem**, que a maioria das pessoas está parcialmente satisfeita e parcialmente insatisfeita em **todas** ao mesmo tempo, que a ordem admite exceções, e que a satisfação não é tudo-ou-nada — deu inclusive porcentagens hipotéticas para ilustrar a gradação. E, no fim da vida, reformulou a autorrealização em termos de **autotranscendência**, deslocando o foco de si para algo além de si.
+
+A moral é do Cap. 5, e é quase perfeita: um **grão de verdade** (necessidades importam e têm alguma ordem de urgência), **simplificado** num desenho memorável, **apelativo**, **comercialmente útil** — e **repetido** até que a repetição virasse verdade. A pirâmide de Maslow é, ela própria, um mito psicológico. Sobre Maslow.
+:::
+
+::: {#fig-piramide-mito}
+```{.tikz}
+%%| filename: piramide-mito
+%%| alt: Comparação entre a pirâmide de Maslow popular e o que Maslow de fato escreveu. À esquerda, a pirâmide tradicional em cinco faixas empilhadas, da base ao topo: necessidades fisiológicas, segurança, pertencimento e amor, estima e autorrealização, com um carimbo indicando que Maslow nunca desenhou isto e que o desenho surgiu na literatura de gestão nos anos 1960. Uma lista aponta o que a forma piramidal comunica de errado: que os níveis são discretos, que a ordem é estrita e não se sobe sem completar o andar de baixo, que o topo é pequeno e portanto raro, e que uma vez no topo se chegou ao fim. À direita, uma representação alternativa em barras horizontais parcialmente preenchidas, mostrando que segundo o próprio Maslow todas as necessidades estão parcialmente satisfeitas ao mesmo tempo, em graus diferentes, com sobreposição e sem ordem estrita, e que a autorrealização é um processo contínuo e não um destino. Uma nota final registra o veredito empírico: as necessidades são universais e predizem bem-estar, mas a ordem hierárquica não se sustenta, pois as pessoas obtêm pertencimento e estima mesmo com necessidades básicas insatisfeitas.
+\begin{tikzpicture}
+  % ---------- pirâmide
+  \node[font=\scriptsize\bfseries, text=manualred] at (-4.0,3.9) {A PIRÂMIDE POPULAR};
+  \fill[manualblue!30, draw=manualgray, thick] (-6.4,-1.4) -- (-1.6,-1.4) -- (-2.28,-0.4) -- (-5.72,-0.4) -- cycle;
+  \fill[manualblue!40, draw=manualgray, thick] (-5.72,-0.4) -- (-2.28,-0.4) -- (-2.96,0.6) -- (-5.04,0.6) -- cycle;
+  \fill[manualblue!50, draw=manualgray, thick] (-5.04,0.6) -- (-2.96,0.6) -- (-3.64,1.6) -- (-4.36,1.6) -- cycle;
+  \fill[manualblue!60, draw=manualgray, thick] (-4.36,1.6) -- (-3.64,1.6) -- (-4.0,2.15) -- cycle;
+  \node[font=\tiny] at (-4.0,-0.95) {fisiológicas};
+  \node[font=\tiny] at (-4.0,0.05) {segurança};
+  \node[font=\tiny] at (-4.0,1.05) {pertencimento};
+  \node[font=\tiny, text=white] at (-4.0,1.78) {estima};
+  \node[font=\tiny, text=manualred, anchor=west] at (-3.4,2.15) {autorrealização};
+
+  \node[draw, very thick, draw=manualred, fill=white, rotate=12,
+        font=\tiny\bfseries, text=manualred, align=center] at (-4.2,0.7)
+    {MASLOW NUNCA\\DESENHOU ISTO};
+  \node[font=\tiny, text=manualgray, align=left, text width=4.6cm] at (-4.0,-2.75)
+    {A forma comunica, e tudo é falso:\\
+     $\bullet$ níveis \textbf{discretos};\\
+     $\bullet$ ordem \textbf{estrita} --- não se sobe sem completar;\\
+     $\bullet$ topo \textbf{pequeno} $\Rightarrow$ raro, elitista;\\
+     $\bullet$ chegar ao topo é \textbf{chegar}.};
+
+  \draw[manualgray!30, thick] (-0.35,4.1) -- (-0.35,-4.3);
+
+  % ---------- barras
+  \node[font=\scriptsize\bfseries, text=manualgreen] at (3.6,3.9) {O QUE MASLOW ESCREVEU};
+  \foreach \y/\n/\p in {2.15/fisiológicas/0.85, 1.35/segurança/0.7, 0.55/pertencimento/0.5, -0.25/estima/0.4, -1.05/autorrealização/0.15} {
+    \draw[thick, manualgray] (1.4,\y-0.22) rectangle (6.4,\y+0.22);
+    \fill[manualgreen!40] (1.4,\y-0.22) rectangle ({1.4+5.0*\p},\y+0.22);
+    \node[font=\tiny, anchor=west] at (1.5,\y) {\n};
+  }
+  \node[font=\tiny, text=manualgray, align=center, text width=5.2cm] at (3.9,-2.2)
+    {Todas parcialmente satisfeitas \textbf{ao mesmo tempo}, em graus diferentes. Sobreposição, sem ordem estrita. A autorrealização é \textbf{processo}, não destino.};
+
+  \node[draw, thick, rounded corners=3pt, draw=manualyellow, fill=manualyellow!10,
+        minimum width=13.0cm, align=center, font=\tiny] at (0,-3.7)
+    {\textbf{Veredito empírico} (Tay \& Diener, 2011): as necessidades são \textbf{universais} e predizem bem-estar --- mas a \textbf{ordem} não se sustenta.\\
+     Pessoas obtêm pertencimento e estima \emph{enquanto} necessidades básicas seguem insatisfeitas. O andar de baixo não trava o de cima.};
+\end{tikzpicture}
+```
+A pirâmide e o texto. A diferença entre as duas colunas é, integralmente, obra de ilustradores.
+:::
+
+E a teoria, sob a pirâmide, resiste? Em parte.
+
+Wahba e Bridwell revisaram a evidência disponível já em 1976 e encontraram pouco apoio para a **hierarquia**: a classificação em cinco níveis não emergia dos dados, e a previsão de que a satisfação de um nível ativa o seguinte não se confirmava [@wahba_bridwell1976].
+
+O teste mais informativo veio muito depois, e é elegante. Tay e Diener analisaram dados de mais de 60 mil pessoas em **123 países**, medindo satisfação de necessidades ao estilo Maslow e bem-estar [@tay_diener2011]. Dois achados, e eles cortam em direções opostas:
+
+- **A favor de Maslow:** as necessidades são **universais**. Em toda parte, satisfazê-las prediz bem-estar, e os tipos de necessidade se replicam entre culturas muito diferentes. Isso não era garantido, e é um resultado forte.
+- **Contra Maslow:** a **ordem não é necessária**. As pessoas relatam pertencimento e estima satisfeitos **enquanto** necessidades básicas seguem insatisfeitas — e ganham bem-estar com isso. Não se espera a base ficar pronta. Além disso, os efeitos são em boa parte **independentes**: cada necessidade contribui, mais ou menos por conta própria.
+
+Ou seja: Maslow acertou o **catálogo** e errou a **arquitetura**. As necessidades existem, importam e são humanas. A escada não.
+
+::: {.atencao}
+**Como Maslow estudou os autorrealizados: um caso didático de amostra selecionada.**
+
+Vale examinar o método, porque ele é instrutivo — e porque o próprio Maslow foi mais honesto sobre suas limitações do que seus divulgadores.
+
+Ele queria descrever a saúde psicológica plena. Para isso, precisava de exemplares. Como os obteve? **Escolheu pessoas que admirava** — figuras históricas e conhecidos: Lincoln, Jefferson, Einstein, Eleanor Roosevelt, Jane Addams, entre outros. Depois estudou suas biografias e descreveu suas características comuns: percepção realista, autonomia, espontaneidade, experiências culminantes, senso de humor não hostil, foco em problemas fora de si.
+
+Encontre os problemas — o Cap. 3 e o Cap. 17 já os deram:
+
+- **Seleção pelo critério.** Os casos foram escolhidos por preencherem a definição informal de autorrealização do próprio Maslow. Descrever seus traços em comum e apresentá-los como as características da autorrealização é circular: o resultado estava embutido na seleção.
+- **Amostra minúscula e enviesada.** Poucas dezenas de pessoas, majoritariamente brancas, ocidentais, de classe alta, em boa parte homens, e várias já mortas — biografadas, não entrevistadas.
+- **Sem cegamento, sem comparação.** Maslow avaliava, sabendo quem era quem, gente que ele admirava. Não havia grupo de pessoas comuns para contraste.
+- **Construto sem critério independente.** Não há como alguém **falhar** em ser autorrealizado por medida externa. Sem isso, a categoria não pode ser testada.
+
+Em defesa dele: Maslow **sabia** e disse. Descreveu o trabalho como exploratório, admitiu a informalidade do procedimento, e apresentou os resultados como hipóteses a serem testadas por outros. O que aconteceu foi que os manuais adotaram as hipóteses como achados, e ninguém fez o teste.
+
+É a lição do Cap. 5 na direção incomum: às vezes o autor é honesto sobre seus limites e é **a divulgação** que fabrica a certeza. Compare com a frase dos doze bebês de Watson (Cap. 8) — mesmo padrão, sinal invertido.
+:::
+
+## O preço: quando o humanismo virou produto
+
+Nenhuma escola sofreu tanto com seus próprios seguidores. E, diferentemente dos casos anteriores, aqui houve dano mensurável.
+
+::: {.na-pratica}
+**O movimento da autoestima: a maior falha aplicada da psicologia recente.**
+
+Nos anos 1970 e 1980, uma versão diluída da tese humanista tomou a educação e a política pública americanas — e depois o mundo, inclusive o Brasil. O raciocínio: se as pessoas florescem quando se aceitam, então **elevar a autoestima** deve produzir melhor desempenho escolar, menos violência, menos gravidez adolescente, menos drogas. A Califórnia chegou a criar uma força-tarefa estatal para promover autoestima, com orçamento público, sob a premissa de que ela seria uma "vacina social".
+
+Programas escolares inteiros foram redesenhados: elogio incondicional, prêmios para todos, remoção de comparações e de fracasso, exercícios diários de afirmação.
+
+Em 2003, a APS encomendou a revisão definitiva. Baumeister, Campbell, Krueger e Vohs examinaram toda a literatura disponível [@baumeister2003]. Os achados:
+
+- **Autoestima alta correlaciona-se com desempenho escolar** — mas os estudos longitudinais indicam que a **direção causal é a inversa**: ir bem na escola eleva a autoestima, não o contrário. Aumentar a autoestima não melhora as notas; em alguns estudos, o elogio não contingente **piora** o desempenho.
+- **Autoestima não previne** uso de substâncias, gravidez precoce ou delinquência, em grau relevante.
+- **A relação com a agressão é o oposto do previsto.** A tese popular dizia que agressores atacam por se sentirem mal consigo. A evidência aponta para autoestima **alta e instável** — narcisismo, egotismo ameaçado: quem agride costuma ter uma visão inflada de si e reagir com violência a quem a contradiz. Programas para elevar a autoestima de agressores podem, no limite, piorar o problema.
+- **Os benefícios reais são modestos e sobretudo internos**: as pessoas com autoestima alta sentem-se melhor e são mais persistentes. Isso vale algo — e não é o que fora prometido.
+
+O que sobreviveu, com evidência, é diferente e mais fino: elogio **contingente ao esforço e à estratégia**, feedback específico, e a construção de competência real — que então produz autoestima como **subproduto**. A ordem causal importa.
+
+**Note a ironia, e ela é exata.** Rogers não disse "elogie todo mundo o tempo todo". Consideração positiva incondicional é dirigida à **pessoa**, não ao **desempenho** — e é compatível com dizer que o trabalho está ruim. O movimento da autoestima confundiu aceitar a pessoa com aprovar o produto, o que é precisamente a distinção que Rogers passou a vida fazendo. A escola foi refutada por uma caricatura de si mesma.
+:::
+
+Houve também o **movimento do potencial humano**: grupos de encontro, maratonas de fim de semana, Esalen, autenticidade a qualquer preço. Rogers participou e acreditou. E aqui há um dado que o entusiasmo raramente menciona: Lieberman, Yalom e Miles estudaram sistematicamente grupos de encontro com participantes universitários e mediram os resultados, incluindo **danos** — algo que quase ninguém media na época [@lieberman1973]. Encontraram benefícios em parte dos participantes, e encontraram **baixas**: uma minoria substancial saiu psicologicamente pior, com casos graves, e o risco associava-se a líderes de estilo agressivo e confrontador. Foi um dos primeiros estudos a documentar que **intervenção psicológica pode fazer mal** — princípio que o Cap. 95 trata como central e que a psicologia demorou vergonhosamente a incorporar.
+
+E há a crítica que Frankl merece, apesar da grandeza do livro. A tese de que sempre resta a escolha da atitude é nobre no campo e cruel fora dele: aplicada sem cuidado, ela desliza para a culpabilização da vítima — quem não superou, não escolheu direito. O mesmo vale para "autorrealização" quando se pergunta a quem ela está disponível. Uma teoria que trata a realização pessoal como tarefa individual tende a ficar cega para o fato de que oportunidade, renda, racismo e violência não são obstáculos de atitude. A psicologia humanista nasceu num país próspero, no auge de sua prosperidade, entre pessoas com opções — e a marca disso está no produto. O Cap. 103 volta ao ponto: a própria noção de um self autônomo que se realiza é, em boa parte, um valor cultural específico, não um universal.
+
+## O que venceu: a agenda, com método
+
+Então o humanismo fracassou? Não — e o padrão é o mesmo do Cap. 9. Ele perdeu como teoria e venceu como **agenda**, e venceu justamente onde alguém pegou suas perguntas e as submeteu ao Cap. 3.
+
+**Teoria da autodeterminação.** É a vitória mais completa, e quase ninguém a chama de humanista. Deci e Ryan propuseram que há três necessidades psicológicas básicas — **autonomia, competência e vínculo** — e que satisfazê-las produz motivação intrínseca, desempenho e bem-estar [@deci_ryan2000]. Reconheça a tese: é Maslow e Rogers, quase palavra por palavra. A diferença é o método — centenas de experimentos, medidas validadas, previsões arriscadas, replicação transcultural. Está entre os programas de pesquisa mais produtivos da psicologia atual, e sustenta o Cap. 51. O achado mais famoso é do tipo que a teoria proíbe e a intuição não previa: **recompensar alguém por algo que já gosta de fazer reduz o interesse** quando a recompensa é percebida como controle — o efeito de subjustificação, que o Cap. 51 detalha e que nenhum behaviorista teria previsto.
+
+**Entrevista motivacional.** Miller e Rollnick criaram um método para trabalhar com ambivalência — em dependência química, adesão a tratamento, mudança de hábito — cujos princípios são declaradamente rogerianos: empatia, não confronto, evocar as razões da própria pessoa em vez de fornecê-las, e uma regra explícita de que a resistência é sinal de que o terapeuta empurrou [@miller_rollnick2013]. E tem base de evidência sólida, com dezenas de ensaios controlados. É Rogers com manual, protocolo de adesão e ensaio randomizado — e funciona (Cap. 86).
+
+**Psicologia positiva.** Seligman lançou o campo com uma agenda explicitamente maslowiana: estudar o que faz a vida valer a pena, e não só o que a estraga [@seligman2000]. Ele foi também explícito sobre o divórcio: a diferença em relação ao humanismo seria o **compromisso com o método** — medida, experimento, ensaio controlado. O Cap. 100 mostra que o campo, ele próprio, teve seus problemas de replicação, e não escapa da crítica cultural. Mas a linhagem é inequívoca.
+
+**A clínica inteira.** As três condições de Rogers são hoje ensinadas como habilidades básicas a **todo** terapeuta, de qualquer orientação. Ninguém se apresenta como rogeriano; todo mundo faz o que ele disse. É o destino do Cap. 7 mais uma vez — vencer por absorção é vencer sem crédito.
+
+O balanço final é quase simétrico ao do Cap. 10. Freud tinha perguntas ótimas e método ruim; suas ideias renderam quando Bowlby trocou de método. Maslow e Rogers tinham perguntas ótimas e construtos vagos; suas ideias renderam quando Deci, Ryan e Miller trocaram de método. **Duas vezes, a mesma lição** — e ela é do Cap. 3: perguntas não são teorias, e nenhuma boa intenção substitui um desenho que possa dar errado.
+
+O Cap. 12 apresenta a força que estava crescendo ao mesmo tempo em que essa discussão acontecia, e que resolveria o impasse do Cap. 8 de um jeito que nem Watson nem Rogers previram: falando de processos internos **sem** pedir a ninguém que os relate.
+
+::: {.callout-sintese}
+- **A terceira força se define por oposição**: contra a psicanálise (imagem do humano tirada de pessoas doentes) e contra o behaviorismo (tirada de ratos em caixas). Nenhuma das duas estudara de propósito alguém **saudável e em crescimento**.
+- **Compromissos**: experiência subjetiva como dado primário, agência, holismo, tendência ao crescimento, foco na saúde e no futuro.
+- **Rogers foi rigoroso, e isso é decisivo.** Gravou e publicou sessões (tornando o processo terapêutico **dado público**), mediu resultado com Q-sort (discrepância eu real–eu ideal), formulou hipótese arriscada, presidiu a APA e recebeu seu prêmio científico. **Quem fundou a pesquisa em psicoterapia foi o humanista.**
+- **O modelo**: tendência atualizante + necessidade de consideração positiva → **condições de valor** → negação da experiência que não cabe → **incongruência** entre autoconceito e experiência = sofrimento. Cura: remover a condição, não interpretar o conteúdo.
+- **As três condições** [@rogers1957] — congruência, consideração positiva incondicional, empatia — foram propostas como **necessárias e suficientes**. Veredito: predizem resultado de forma modesta e replicável [@elliott2018; @fluckiger2018] e a literatura de fatores comuns as vindica em parte; mas **não são suficientes** (fobia exige exposição) nem **necessárias** na forma forte. E a evidência é sobretudo correlacional — quem melhora acha o terapeuta mais empático.
+- **A pirâmide não é de Maslow** — surgiu na literatura de gestão nos anos 1960 [@bridgman2019] e distorce a teoria, sugerindo níveis discretos, ordem estrita e um topo alcançável. Maslow escreveu o contrário: sobreposição, satisfação parcial simultânea, exceções.
+- **Veredito empírico da hierarquia** [@tay_diener2011; @wahba_bridwell1976]: as necessidades são **universais** e predizem bem-estar (a favor), mas a **ordem não é necessária** e os efeitos são amplamente independentes (contra). Catálogo certo, arquitetura errada.
+- **O método de Maslow com autorrealizados** é circular: seleção pelo próprio critério, amostra minúscula e enviesada, sem cegamento nem comparação. Ele admitiu; a divulgação, não.
+- **O movimento da autoestima falhou** [@baumeister2003]: a causalidade vai do desempenho para a autoestima, não o inverso; ela não previne delinquência nem drogas; e a agressão associa-se a autoestima **alta e instável**. E é uma caricatura de Rogers — aceitar a **pessoa** nunca significou aprovar o **produto**.
+- **Intervenção pode fazer mal**: grupos de encontro produziram baixas psicológicas documentadas [@lieberman1973], associadas a líderes confrontadores.
+- **A agenda venceu com método**: teoria da autodeterminação [@deci_ryan2000], entrevista motivacional [@miller_rollnick2013], psicologia positiva [@seligman2000], e as condições rogerianas ensinadas a todo clínico. **A mesma lição do Cap. 10: as perguntas eram melhores que o método, e renderam quando alguém trocou o método.**
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Terceira força**
+:   Autodesignação do humanismo como alternativa à psicanálise e ao behaviorismo, recusando o determinismo de ambos.
+
+**Campo fenomenológico**
+:   O mundo tal como a pessoa o experimenta; para o humanismo, o determinante do comportamento — não o mundo objetivo.
+
+**Tendência atualizante**
+:   Impulso básico do organismo a manter-se e desenvolver suas potencialidades, dada condição adequada [@rogers1951].
+
+**Processo de valoração organísmica**
+:   Avaliação direta e não mediada do que faz bem ao organismo, anterior às condições de valor.
+
+**Condições de valor**
+:   Regras aprendidas sobre o que é preciso ser para receber consideração positiva; a origem da distorção da experiência.
+
+**Autoconceito**
+:   Configuração organizada de percepções sobre si; formado, em parte, pelo que é admissível segundo as condições de valor.
+
+**Incongruência**
+:   Discrepância entre a experiência do organismo e o autoconceito — a fonte do sofrimento psicológico em Rogers.
+
+**Consideração positiva incondicional**
+:   Aceitação da pessoa sem condições; dirigida a quem ela é, não a seu desempenho — e compatível com avaliar negativamente o que ela faz.
+
+**Empatia acurada**
+:   Compreensão do mundo interno do outro **e** comunicação bem-sucedida dessa compreensão.
+
+**Congruência** (terapeuta)
+:   Autenticidade do terapeuta na relação; ausência de fachada profissional.
+
+**Hierarquia de necessidades**
+:   Proposta de Maslow de necessidades ordenadas por potência relativa, das fisiológicas à autorrealização [@maslow1943]; o catálogo tem apoio, a ordem não [@tay_diener2011].
+
+**Autorrealização**
+:   Realização das potencialidades próprias; construto sem critério independente de medida, o que o mantém fora do teste.
+
+**Fatores comuns**
+:   Ingredientes compartilhados por todas as psicoterapias — aliança, expectativa, escuta — que respondem por parte substancial do efeito.
+
+**Teoria da autodeterminação**
+:   Programa de Deci e Ryan sobre três necessidades básicas — autonomia, competência e vínculo — que operacionalizou a tese humanista e a tornou testável [@deci_ryan2000].
+
+**Entrevista motivacional**
+:   Método baseado em princípios rogerianos para trabalhar ambivalência, com evidência de eficácia em ensaios controlados [@miller_rollnick2013].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique o argumento metodológico — não o moral — com que os humanistas atacaram a psicanálise e o behaviorismo. De que amostras cada uma dessas escolas tirou sua imagem do ser humano?
+
+2. **(Recuperação.)** Descreva a cadeia que leva das condições de valor à incongruência. Por que, no modelo de Rogers, o terapeuta **não** deve interpretar?
+
+3. **(Compreensão.)** A hipótese de 1957 afirma condições "necessárias e suficientes". Explique o que cada palavra proíbe e mostre, com um exemplo clínico, qual das duas caiu de forma mais clara.
+
+4. **(Aplicação.)** Uma escola adota o programa: todo aluno recebe elogio diário, medalhas de participação para todos, e nenhuma comparação de desempenho. A diretora justifica citando Rogers. Aponte (a) por que a citação é indevida, distinguindo aceitação da pessoa de aprovação do produto; (b) o que @baumeister2003 prevê sobre o resultado; (c) que versão do programa teria apoio empírico.
+
+5. **(Aplicação.)** Um gestor afirma que não adianta falar em propósito com sua equipe enquanto os salários forem baixos, "porque, segundo Maslow, primeiro vêm as necessidades básicas". Avalie o argumento usando @tay_diener2011. O salário importa? A conclusão dele se sustenta?
+
+6. **(Reflexão crítica.)** Maslow selecionou pessoas que admirava, descreveu seus traços e chamou o resultado de "características da autorrealização". Explique por que isso é circular. Depois proponha um desenho que **poderia** testar a existência de um padrão de funcionamento psicológico pleno — e diga honestamente qual seria o problema mais difícil desse desenho.
+
+7. **(Reflexão crítica.)** A evidência sobre empatia e desfecho é majoritariamente correlacional, e há um caminho causal reverso plausível. Proponha um estudo que ajude a separar as duas direções, e discuta por que a randomização, aqui, é eticamente e praticamente complicada.
+
+8. **(Integração.)** Este capítulo e o Cap. 10 terminam com a mesma moral: as perguntas eram melhores que o método, e renderam quando alguém trocou o método (Bowlby; Deci e Ryan). Formule essa lição como um princípio geral e depois teste-o contra um contraexemplo possível: existe alguma área da psicologia em que uma **boa pergunta com método frouxo** produziu conhecimento duradouro? Se não existir, o que isso diz sobre o valor de escolas e sistemas — o tema deste volume inteiro?
