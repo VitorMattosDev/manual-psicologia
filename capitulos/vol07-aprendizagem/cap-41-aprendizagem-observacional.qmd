@@ -1,5 +1,142 @@
 # 41. Aprendizagem observacional (Bandura)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** aprendizagem observacional (ou modelação) e situá-la como ponte entre o behaviorismo e o cognitivismo.
+- **Descrever** o experimento do boneco Bobo e o que ele demonstrou sobre a aprendizagem da agressão.
+- **Enumerar** e explicar os quatro processos da modelação (atenção, retenção, reprodução, motivação).
+- **Distinguir** aprender um comportamento de executá-lo, à luz do reforço vicário e do papel da expectativa.
+- **Explicar** o conceito de autoeficácia e a reciprocidade tripartite da teoria social cognitiva.
+- **Avaliar** as bases neurais candidatas (neurônios-espelho) e as controvérsias sobre mídia e agressão.
 :::
+
+Os dois capítulos anteriores descreveram a aprendizagem como algo que acontece *ao* organismo por experiência direta: o cão que salivou porque *ele* foi condicionado, o rato que pressionou a barra porque *ele* foi reforçado. Mas boa parte do que sabemos nunca foi ensaiada na própria pele. Aprendemos a dar um nó, a temer uma vizinhança, a operar um aplicativo ou a nos comportar num funeral **observando os outros** — sem que uma única resposta nossa tenha sido reforçada de antemão. Esta é a **aprendizagem observacional**, ou **modelação**: adquirir comportamentos, emoções e atitudes ao observar o que os outros fazem e o que lhes acontece. Seu grande teórico, **Albert Bandura** (1925–2021), mostrou que ela não cabe no esquema estímulo–resposta puro: entre o modelo e o imitador há uma mente que *atende, codifica, guarda e decide*. Com isso, Bandura ajudou a abrir o behaviorismo à cognição, fundando a **teoria social cognitiva**.
+
+## O boneco Bobo
+
+::: {.experimento}
+🔬 **O experimento do boneco Bobo (Bandura, Ross e Ross, 1961).** Crianças de uma pré-escola foram divididas em grupos. Umas assistiram a um adulto interagir de modo **agressivo** com um grande boneco inflável ("Bobo"): socava-o, chutava-o, sentava sobre ele, atacava-o com um martelo de brinquedo e proferia frases distintas ("chuta ele!", "bate no nariz!"). Outras viram um adulto **não agressivo**, que brincava calmamente e ignorava o boneco; um terceiro grupo não viu modelo algum. Em seguida, cada criança foi levada — depois de uma leve frustração — a uma sala com o boneco Bobo e vários brinquedos, e observada [@bandura_ross1961]. O resultado foi nítido: as crianças que tinham visto o modelo agressivo reproduziram suas agressões **físicas e verbais**, muitas vezes imitando gestos e falas específicas que jamais teriam inventado sozinhas. As dos outros grupos foram muito menos agressivas. Mais: **meninos** imitaram mais a agressão física, sobretudo de modelos do mesmo sexo — sinal de que a modelação já opera filtrada por normas e identificação.
+:::
+
+O que o boneco Bobo demonstrou foi revolucionário para a época: comportamentos **novos** e complexos podem ser adquiridos por **pura observação**, sem que o observador jamais seja reforçado — contrariando a tese de que toda aprendizagem exige reforço direto do próprio comportamento. A criança aprendeu a sequência agressiva simplesmente vendo-a. Numa variação posterior, Bandura acrescentou a peça que faltava para entender *quando* o aprendido é executado. Crianças que viram o modelo agressivo ser **recompensado** depois imitaram-no mais; as que o viram ser **punido**, menos. Mas eis o achado decisivo: quando, ao final, ofereceu-se um incentivo a *todas* as crianças para reproduzir o que tinham visto, **todas** o fizeram igualmente bem — inclusive as que haviam observado a punição [@bandura1965]. Ou seja: todas *aprenderam* a agressão; o que a consequência observada regulou foi apenas se ela seria *executada* espontaneamente.
+
+## Aprender não é executar: o reforço vicário
+
+Aqui está uma das distinções mais importantes de toda a psicologia da aprendizagem — e a que separa Bandura do behaviorismo radical. **Aprender** um comportamento (adquirir a capacidade de produzi-lo) é diferente de **executá-lo** (de fato emiti-lo). O reforço, para Bandura, não é necessário para a *aquisição*; ele influencia sobretudo o *desempenho*. E não precisa nem sequer ser direto: basta o **reforço vicário** — ver *outro* ser recompensado — para aumentar nossa disposição a imitá-lo, assim como a **punição vicária** — vê-lo punido — a reduz. Aprendemos com as consequências alheias, poupando-nos de sofrer as nossas. Observamos que quem estuda passa, que quem se arrisca se fere, que quem fura a fila é repreendido — e ajustamos nosso comportamento sem ter passado por nada disso.
+
+Isso resolve um enigma que o condicionamento puro não explicava. Se só aprendêssemos pelas consequências das *nossas* ações, cada geração teria de redescobrir tudo por tentativa e erro, muitas vezes com custos fatais. A aprendizagem observacional é o atalho que torna possível a **transmissão cultural**: a linguagem, os costumes, as técnicas, os valores passam de pessoa a pessoa, de geração a geração, por modelação. É, em larga medida, o mecanismo que faz de nós uma espécie cultural.
+
+## Os quatro processos da modelação
+
+Nem toda observação leva à aprendizagem, e nem todo aprendido é executado. Bandura especificou **quatro processos** que precisam se encadear para que a modelação ocorra (@fig-modelacao) — e note-se que os dois primeiros são puramente cognitivos, o que já denuncia o abandono da "caixa-preta" behaviorista.
+
+::: {#fig-modelacao}
+```{.tikz}
+%%| filename: processos-modelacao
+%%| alt: Fluxograma horizontal com quatro caixas ligadas por setas, partindo do modelo e chegando à imitação. As caixas são atenção, retenção, reprodução e motivação. Abaixo de cada caixa há uma breve descrição do processo.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, node distance=0.3cm]
+  \tikzset{proc/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, minimum width=2.0cm, minimum height=0.7cm, align=center, font=\footnotesize\bfseries}}
+  \node[align=center, font=\footnotesize\bfseries, text=manualgray] (mod) at (-1.3,0) {Modelo\\observado};
+  \node[proc] (a) at (1.2,0) {Atenção};
+  \node[proc] (r) at (3.9,0) {Retenção};
+  \node[proc] (p) at (6.6,0) {Reprodução};
+  \node[proc] (m) at (9.3,0) {Motivação};
+  \node[align=center, font=\footnotesize\bfseries, text=manualgreen!50!black] (im) at (11.6,0) {Imitação};
+  \draw[->, thick] (mod) -- (a);
+  \draw[->, thick] (a) -- (r);
+  \draw[->, thick] (r) -- (p);
+  \draw[->, thick] (p) -- (m);
+  \draw[->, thick, manualgreen] (m) -- (im);
+  \node[align=center, font=\tiny, text=manualgray] at (1.2,-0.9) {notar o\\comportamento};
+  \node[align=center, font=\tiny, text=manualgray] at (3.9,-0.9) {codificar e\\guardar na memória};
+  \node[align=center, font=\tiny, text=manualgray] at (6.6,-0.9) {ter a capacidade\\de reproduzi-lo};
+  \node[align=center, font=\tiny, text=manualgray] at (9.3,-0.9) {ter razão para\\executá-lo};
+\end{tikzpicture}
+```
+Os quatro processos da aprendizagem observacional. Só há imitação se o observador **atende** ao modelo, **retém** o observado, é **capaz de reproduzi-lo** e está **motivado** a fazê-lo. Uma falha em qualquer elo interrompe a cadeia.
+:::
+
+1. **Atenção.** É preciso, antes de tudo, *notar* o comportamento. Prestamos mais atenção a modelos que nos parecem competentes, prestigiados, atraentes ou semelhantes a nós — o que explica o poder de celebridades e de pares na modelação.
+2. **Retenção.** O observado precisa ser **codificado e guardado** na memória (em imagens e palavras) para ser recuperado depois — muitas vezes muito depois da observação. Sem retenção, não há o que reproduzir.
+3. **Reprodução.** É preciso ser fisicamente **capaz** de converter a representação em ação. Posso observar mil vezes um salto olímpico e reter cada detalhe: sem a capacidade motora, não o reproduzo.
+4. **Motivação.** Por fim, é preciso ter uma **razão** para executar o que se aprendeu. Aqui entram o reforço direto, o **vicário** e a autorrecompensa. Foi esse o elo que, no estudo do Bobo, separou o *aprender* do *fazer*.
+
+A cadeia é sequencial: uma falha em qualquer elo interrompe a modelação. Isso tem valor prático imediato — um professor ou treinador que queira ensinar por demonstração precisa garantir os quatro: capturar a atenção, favorecer a memorização (repetição, verbalização), respeitar a capacidade do aprendiz e fornecer motivação.
+
+## Da modelação à teoria social cognitiva
+
+Bandura expandiu esses achados numa teoria abrangente do funcionamento humano, a **teoria social cognitiva** [@bandura1977]. Dois conceitos merecem destaque.
+
+O primeiro é o **determinismo recíproco**: o comportamento, os fatores pessoais (cognições, crenças, emoções) e o ambiente influenciam-se **mutuamente**, num triângulo de causação bidirecional. Não somos meros produtos do ambiente (como no behaviorismo radical), nem agentes puros indiferentes ao contexto: escolhemos e transformamos os ambientes que, por sua vez, nos moldam. Essa **agência** — a capacidade de influenciar deliberadamente a própria vida — é o coração da visão de Bandura.
+
+O segundo, e talvez seu legado mais influente, é a **autoeficácia**: a crença de uma pessoa em sua própria capacidade de executar as ações necessárias para alcançar um resultado. Não se trata de autoestima genérica, mas da confiança específica em *dar conta* de determinada tarefa. A autoeficácia percebida prediz, de forma robusta, quanto esforço as pessoas investem, quanta persistência mostram diante de obstáculos e como se recuperam de fracassos — em domínios que vão do desempenho escolar à saúde, do esporte à recuperação de fobias. E ela própria se constrói, em boa parte, por **observação**: ver alguém semelhante a nós ter sucesso ("se ele consegue, eu também posso") é uma das fontes mais potentes de autoeficácia — de novo a modelação, agora operando sobre as crenças.
+
+::: {.na-pratica}
+**Modelação na educação, na clínica e na saúde.** A aprendizagem observacional é uma ferramenta de intervenção deliberada, não apenas um fenômeno espontâneo:
+
+- **Clínica.** No tratamento de fobias, a **modelação participante** — ver um modelo interagir com o objeto temido (uma cobra, uma agulha) sem sofrer dano, e depois fazê-lo com apoio — reduz o medo e aumenta a autoeficácia, muitas vezes com eficácia comparável à exposição direta.
+- **Educação.** Demonstrar (e "pensar em voz alta" ao resolver um problema) fornece um modelo cognitivo que o aluno pode reter e reproduzir; modelos *de pares* que superam dificuldades são especialmente motivadores.
+- **Saúde e mídia.** O **entretenimento-educação** — telenovelas e programas que mostram personagens adotando comportamentos saudáveis (vacinar, alfabetizar-se, planejar a família) e sendo recompensados por isso — usa a modelação em escala populacional, com efeitos mensuráveis. É a autoeficácia e o reforço vicário postos a serviço da saúde pública.
+:::
+
+## Bases neurais e a controvérsia da mídia
+
+::: {.base-neural}
+**Neurônios-espelho: um substrato candidato.** Nos anos 1990, Giacomo Rizzolatti e colegas, registrando neurônios individuais no córtex pré-motor de macacos, descobriram células que disparavam tanto quando o animal *executava* uma ação (pegar um amendoim) quanto quando *via* outro executá-la — os **neurônios-espelho** [@rizzolatti1996]. Eles "espelham" no próprio sistema motor a ação observada, oferecendo um mecanismo plausível para a correspondência entre ver e fazer que a modelação exige, e um candidato às bases da imitação e talvez da empatia. Convém, porém, cautela: a existência e o papel de um "sistema espelho" no ser humano, e sobretudo as alegações grandiosas de que ele explicaria linguagem, cultura e autismo, permanecem debatidos. Vale ainda notar que a imitação é precoce e robusta: recém-nascidos já reproduzem expressões faciais de um adulto (como pôr a língua para fora), sugerindo alguma base inata para o mapear-se no outro [@meltzoff1977].
+:::
+
+Nenhuma aplicação da aprendizagem observacional gerou mais debate público do que a **influência da mídia violenta**. A lógica do boneco Bobo — crianças imitam agressão modelada — alimentou décadas de preocupação com televisão, cinema e, mais recentemente, videogames. O que diz a evidência, sem alarmismo nem negação? Estudos experimentais e longitudinais encontram, de fato, uma **associação** entre exposição intensa a violência na mídia e aumentos (em geral **pequenos**) na agressividade, plausivelmente mediados por modelação, dessensibilização e ativação de esquemas agressivos. Mas o efeito é modesto, um entre muitos fatores (temperamento, família, pares, contexto social pesam mais), e a passagem da agressão *medida em laboratório* para a violência *real e grave* é tudo menos direta. A honestidade científica pede reconhecer o efeito **e** suas dimensões reais — nem transformar videogames em causa única da violência, nem negar que os modelos a que nos expomos moldam, em alguma medida, o que nos parece possível e aceitável fazer.
+
+## Síntese
+
+::: {.callout-sintese}
+- A **aprendizagem observacional** (modelação) adquire comportamentos, emoções e atitudes observando os outros — sem exigir reforço direto do observador. É o mecanismo central da **transmissão cultural**.
+- O **boneco Bobo** (Bandura, Ross e Ross) mostrou que crianças reproduzem agressões novas apenas por observá-las. A variação com consequências revelou a distinção crucial: **aprender ≠ executar**.
+- O **reforço vicário** (e a punição vicária) regula o *desempenho*: ver outro ser recompensado (ou punido) aumenta (ou reduz) nossa disposição a imitá-lo.
+- A modelação exige quatro processos encadeados: **atenção, retenção, reprodução e motivação**. Os dois primeiros são cognitivos — daí a ruptura com o behaviorismo puro.
+- A **teoria social cognitiva** de Bandura acrescenta o **determinismo recíproco** (pessoa ↔ comportamento ↔ ambiente) e a **autoeficácia**, crença na própria capacidade que prediz esforço e persistência e se constrói por observação.
+- Os **neurônios-espelho** são um substrato candidato (com cautela). Sobre **mídia e agressão**, há um efeito real, porém **pequeno**, entre muitos fatores.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Aprendizagem observacional (modelação)**
+:   Adquirir comportamentos, emoções ou atitudes observando um modelo, sem reforço direto do observador.
+
+**Reforço / punição vicário**
+:   Ver outra pessoa ser recompensada (ou punida), o que aumenta (ou reduz) a probabilidade de imitá-la.
+
+**Aprender × executar**
+:   Distinção de Bandura: adquirir a capacidade de um comportamento não implica emiti-lo; a consequência regula sobretudo o desempenho [@bandura1965].
+
+**Quatro processos da modelação**
+:   Atenção, retenção, reprodução e motivação — elos que precisam se encadear para haver imitação.
+
+**Teoria social cognitiva**
+:   Teoria de Bandura que integra aprendizagem, cognição e ambiente, enfatizando a agência humana [@bandura1977].
+
+**Determinismo recíproco**
+:   Influência mútua e contínua entre comportamento, fatores pessoais e ambiente.
+
+**Autoeficácia**
+:   Crença na própria capacidade de executar as ações necessárias a um resultado; prediz esforço e persistência.
+
+**Neurônios-espelho**
+:   Neurônios que disparam tanto ao executar quanto ao observar uma ação; substrato candidato da imitação [@rizzolatti1996].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva o experimento do boneco Bobo e explique por que ele desafiou a tese de que a aprendizagem exige reforço direto.
+
+2. **(Conceitual.)** Explique a distinção entre *aprender* e *executar* usando a variação do estudo em que o modelo era recompensado ou punido. O que a fase de incentivo final revelou?
+
+3. **(Aplicação.)** Você quer que um funcionário aprenda um procedimento por demonstração. Percorra os **quatro processos** e diga o que faria para garantir cada um.
+
+4. **(Conceitual.)** O que é **autoeficácia** e por que ver alguém semelhante a nós ter sucesso a fortalece? Ligue à ideia de reforço vicário.
+
+5. **(Reflexão crítica.)** Avalie a afirmação "videogames violentos causam violência". O que a evidência sustenta, e quais ressalvas de tamanho de efeito e causalidade você faria?
+
+6. **(Integração.)** Como o **determinismo recíproco** difere da visão behaviorista de que o ambiente determina o comportamento? Dê um exemplo em que a pessoa molda o ambiente que, por sua vez, a molda.
