@@ -66,7 +66,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 23 | O sistema nervoso (central e periférico) | `capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.qmd` | ✅ |
 | 24 | O cérebro: estruturas e funções | `capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd` | ✅ |
 | 25 | Sistema endócrino e hormônios | `capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.qmd` | ✅ |
-| 26 | Genética do comportamento | `capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.qmd` | ⬜ |
+| 26 | Genética do comportamento | `capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.qmd` | ✅ |
 | 27 | Métodos de estudo do cérebro (neuroimagem) | `capitulos/vol04-bases-biologicas/cap-27-neuroimagem.qmd` | ⬜ |
 | 28 | Plasticidade neural | `capitulos/vol04-bases-biologicas/cap-28-plasticidade.qmd` | ⬜ |
 

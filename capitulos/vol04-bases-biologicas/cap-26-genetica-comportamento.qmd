@@ -1,5 +1,203 @@
 # 26. Genética do comportamento
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reformular** a pergunta "natureza ou cultura?" nos termos corretos, entendendo por que ela é mal colocada.
+- **Definir** hereditariedade (*heritability*) com precisão e enunciar as três armadilhas que quase todo mundo comete ao interpretá-la.
+- **Explicar** a lógica dos estudos de gêmeos e de adoção e o que autoriza (e não autoriza) concluir.
+- **Descrever** as "três leis da genética do comportamento" de Turkheimer e o problema da hereditariedade que "some".
+- **Distinguir** interação de correlação gene-ambiente e situar a epigenética como via pela qual o ambiente regula os genes.
+- **Avaliar criticamente** o determinismo genético, a falácia de atribuir diferenças entre grupos à genética e o marketing dos testes de DNA comportamentais.
 :::
+
+O Cap. 2 apresentou "natureza versus cultura" como uma das grandes questões da psicologia e prometeu que o volume das bases biológicas voltaria a ela com as ferramentas certas. Chegou a hora. A genética do comportamento é o campo que transformou uma disputa filosófica milenar — nascemos ou nos tornamos? — em um programa de pesquisa empírico, com métodos, números e controvérsias próprias. E a primeira coisa que esse campo ensina é que a pergunta original está errada.
+
+Perguntar se um comportamento se deve "à genética ou ao ambiente" é como perguntar se a área de um retângulo se deve ao comprimento ou à largura. A resposta — ambos, sempre, inseparavelmente — não é um desvio diplomático; é literalmente o único modo de a pergunta fazer sentido. Nenhum gene se expressa fora de um ambiente; nenhum ambiente atua sobre um organismo sem genes. O que a genética do comportamento estuda não é a causa de um traço em *um indivíduo* — nisso natureza e cultura são inseparáveis —, mas a origem das **diferenças** entre indivíduos em uma população. Essa mudança de foco, do indivíduo para a variação, é a chave de todo o capítulo, e a fonte de todos os mal-entendidos quando ignorada.
+
+## Genes, um lembrete mínimo
+
+Um estrato de vocabulário, o suficiente para o que segue. O **DNA** é a molécula que carrega a informação hereditária, organizada em **genes** — trechos que codificam a fabricação de proteínas. Cada gene pode ter variantes, os **alelos**, e é a diferença de alelos entre pessoas que gera parte da variação que observamos. O **genótipo** é a dotação genética de um indivíduo; o **fenótipo** é a característica observável — altura, cor dos olhos, temperamento, escore num teste. A relação entre genótipo e fenótipo quase nunca é de um gene para um traço: os traços comportamentais são **poligênicos** (dependem de milhares de genes, cada um com efeito minúsculo) e sempre filtrados pelo ambiente. A imagem do "gene da inteligência" ou do "gene da depressão" é, salvo raras exceções médicas, uma ficção.
+
+## Hereditariedade: a palavra mais mal-entendida da psicologia
+
+O conceito central do campo é a **hereditariedade** (*heritability*, símbolo $h^2$): a proporção da **variância** de um traço, *em uma população específica e em um ambiente específico*, que pode ser atribuída à variação genética entre os indivíduos dessa população. Um $h^2$ de 0,50 para a altura significa que metade das *diferenças* de altura naquele grupo, naquele contexto, está associada a diferenças genéticas. Três advertências precisam vir coladas a essa definição, porque sem elas ela vira uma fábrica de erros [@moore_shenk2017].
+
+**Primeira: hereditariedade é sobre variância populacional, não sobre indivíduos.** Dizer que a altura tem $h^2 = 0{,}80$ *não* significa que 80% da *sua* altura vem dos genes e 20% da comida. A afirmação não se aplica a você; aplica-se à distribuição das diferenças no grupo. A altura de um indivíduo é 100% genética e 100% ambiental ao mesmo tempo, porque as duas coisas são inseparáveis na construção de um corpo. Confundir a estatística populacional com uma receita individual é o erro mais comum e mais consequente.
+
+**Segunda: hereditariedade depende do ambiente e pode mudar.** Como $h^2$ é uma razão entre variâncias, ela sobe quando o ambiente é uniforme e desce quando o ambiente varia muito. Se todos comerem igualmente bem, as diferenças de altura restantes serão sobretudo genéticas ($h^2$ alto); se houver muita desigualdade nutricional, o ambiente responderá por mais da variação ($h^2$ baixo). A hereditariedade não é uma constante da natureza do traço; é uma medida local, datada, que muda com as condições. Um mesmo traço pode ter $h^2$ diferente no Brasil e na Suécia, hoje e há um século.
+
+**Terceira: hereditariedade alta não significa imutável, nem "genético" no sentido de destino.** Este é o erro mais perigoso. A visão (miopia) é altamente hereditária — e se corrige com óculos, um dispositivo ambiental. A fenilcetonúria é uma doença genética de causa única — e se controla removendo um aminoácido da dieta. Alta hereditariedade nada diz sobre a *modificabilidade* de um traço por intervenção. O gene não é o destino; é uma aposta que o ambiente pode confirmar ou desmentir.
+
+::: {.atencao}
+**A falácia da hereditariedade.** As três advertências acima se condensam num único diagnóstico: tratar $h^2$ como se dissesse "quanto de um traço, em uma pessoa, é causado por genes". Ela não diz isso — não pode dizer, por construção. Sempre que ler "traço X é 60% genético", traduza mentalmente para: "em tal população e tal ambiente, 60% das *diferenças* observadas em X se associaram a diferenças genéticas — o que pode mudar em outro contexto e nada afirma sobre indivíduos ou sobre a possibilidade de intervir". A frase fica menos vendável e muito mais verdadeira.
+:::
+
+## Como se mede: gêmeos e adoção
+
+Se não se pode manipular os genes de pessoas nem designá-las ao acaso a famílias — os experimentos que o Vol 3 chamaria de ideais são aqui impossíveis e antiéticos —, como estimar $h^2$? A genética do comportamento explora dois "experimentos naturais".
+
+O **estudo de gêmeos** compara gêmeos **monozigóticos** (idênticos, que compartilham ~100% dos genes) com **dizigóticos** (fraternos, ~50%, como irmãos comuns). Ambos os tipos, criados juntos, compartilham em larga medida o mesmo ambiente familiar. Logo, se os idênticos se parecem mais entre si, num traço, do que os fraternos, a diferença de semelhança aponta para a contribuição genética. O **estudo de adoção** faz o corte complementar: crianças adotadas compartilham genes com os pais biológicos (que não as criaram) e ambiente com os pais adotivos (com quem não têm genes em comum), permitindo separar as duas influências. A @fig-gemeos ilustra a lógica.
+
+::: {#fig-gemeos}
+```{.tikz}
+%%| filename: logica-gemeos
+%%| alt: Diagrama comparando dois pares de gêmeos. À esquerda, um par de gêmeos monozigóticos (idênticos), com um rótulo indicando que compartilham cem por cento dos genes; entre eles, uma barra de alta semelhança. À direita, um par de gêmeos dizigóticos (fraternos), rotulado como compartilhando cinquenta por cento dos genes; entre eles, uma barra de semelhança menor. Uma legenda abaixo indica que, se ambos os pares compartilham o mesmo ambiente familiar, a maior semelhança dos idênticos aponta para a influência genética.
+\begin{tikzpicture}[scale=1.0,
+  pess/.style={circle, draw, thick, minimum size=0.9cm},
+  bar/.style={rounded corners=2pt}
+]
+  % monozigoticos
+  \node[pess, draw=manualblue, fill=manualblue!18] (a1) at (0,2.2) {};
+  \node[pess, draw=manualblue, fill=manualblue!18] (a2) at (1.6,2.2) {};
+  \node[font=\small\bfseries, text=manualblue] at (0.8,3.2) {Monozigóticos};
+  \node[font=\footnotesize, text=manualgray] at (0.8,2.85) {(idênticos)};
+  \node[font=\footnotesize, text=manualblue] at (0.8,1.5) {$\approx$100\% dos genes};
+  \draw[bar, fill=manualgreen!55, draw=manualgreen] (0.0,0.7) rectangle (1.6,1.15);
+  \node[font=\footnotesize, text=manualgreen!50!black] at (0.8,0.45) {semelhança alta};
+
+  % dizigoticos
+  \node[pess, draw=manualred, fill=manualred!14] (b1) at (5,2.2) {};
+  \node[pess, draw=manualred, fill=manualred!14] (b2) at (6.6,2.2) {};
+  \node[font=\small\bfseries, text=manualred] at (5.8,3.2) {Dizigóticos};
+  \node[font=\footnotesize, text=manualgray] at (5.8,2.85) {(fraternos)};
+  \node[font=\footnotesize, text=manualred] at (5.8,1.5) {$\approx$50\% dos genes};
+  \draw[bar, fill=manualgreen!30, draw=manualgreen] (5.0,0.7) rectangle (5.9,1.15);
+  \node[font=\footnotesize, text=manualgreen!50!black] at (5.8,0.45) {semelhança menor};
+
+  % conclusao
+  \node[draw=manualgray, thick, rounded corners=3pt, fill=manualgray!8,
+        text width=11.2cm, align=center, font=\footnotesize] at (3.3,-0.9)
+    {Mesmo ambiente familiar nos dois pares $\Rightarrow$ a semelhança \emph{extra} dos idênticos
+     é atribuída aos genes que só eles compartilham a mais.};
+\end{tikzpicture}
+```
+A lógica do estudo de gêmeos. A estimativa de hereditariedade nasce da diferença de semelhança entre pares idênticos e fraternos criados no mesmo tipo de ambiente.
+:::
+
+::: {.experimento}
+**Gêmeos idênticos criados separados: o estudo de Minnesota** [@bouchard1990]
+
+**Desenho.** A partir de 1979, Thomas Bouchard e colegas localizaram e avaliaram intensivamente gêmeos monozigóticos que haviam sido **separados na infância** e criados em famílias diferentes — o desenho mais forte disponível, porque separa genes idênticos de ambientes distintos. Ao longo de anos, testaram personalidade, inteligência, interesses e atitudes.
+
+**Resultado.** Gêmeos idênticos criados à parte revelaram-se notavelmente semelhantes em muitos traços — inteligência, temperamento, até certas idiossincrasias —, com correlações que, para vários traços psicológicos, ficaram em torno de estimativas de hereditariedade de 0,50. As histórias de coincidências espantosas (hábitos, gostos, nomes de filhos) tornaram-se célebres.
+
+**Interpretação.** O estudo forneceu algumas das estimativas mais robustas de que praticamente todo traço psicológico tem contribuição genética substancial — e, ao mesmo tempo, de que ela raramente ultrapassa a metade da variância, deixando a outra metade para o ambiente e o acaso.
+
+**Limitações.** Gêmeos separados são raros e nem sempre foram criados em ambientes tão diferentes assim (agências de adoção tendiam a colocá-los em famílias parecidas); as coincidências anedóticas sofrem viés de seleção e de confirmação; e semelhança não revela *quais* genes nem *como* agem. O estudo mede a magnitude da influência genética, não seu mecanismo.
+:::
+
+## As três leis — e a hereditariedade que some
+
+Décadas de estudos de gêmeos e adoção produziram um padrão tão consistente que Eric Turkheimer o resumiu em **três leis da genética do comportamento** [@turkheimer2000]: (1) todos os traços comportamentais humanos são hereditáveis; (2) o efeito de ser criado na mesma família é menor do que o efeito dos genes; (3) uma porção substancial da variação dos traços comportamentais complexos não é explicada nem pelos genes nem pelas famílias. A grande meta-análise de Polderman e colegas, reunindo cinquenta anos de estudos de gêmeos e milhões de pares, confirmou o quadro: a hereditariedade média dos traços humanos gira em torno de 49% [@polderman2015].
+
+A terceira lei é a mais desconfortável e a mais instrutiva. Se genes e família não explicam tudo, o que explica o resto? A resposta — o **ambiente não compartilhado** — inclui tudo o que torna irmãos criados juntos diferentes: experiências idiossincráticas, acasos do desenvolvimento, doenças, amizades, a ordem de nascimento, e uma dose genuína de aleatoriedade biológica. Um achado que surpreende o senso comum: o "ambiente familiar compartilhado" — a renda dos pais, o estilo de criação, os livros em casa —, embora importe, explica *menos* da variação em muitos traços adultos do que se supunha. Não porque a criação não importe, mas porque ela afeta cada filho de um modo diferente, entrando na conta do não compartilhado.
+
+Há ainda o enigma da **hereditariedade que some** (*missing heritability*). Quando a tecnologia permitiu vasculhar o genoma inteiro em busca dos genes responsáveis pela hereditariedade que os estudos de gêmeos previam, os genes encontrados explicavam apenas uma fração dela. A variação está lá (os gêmeos não mentem), mas dispersa por milhares de variantes de efeito ínfimo, difíceis de detectar individualmente. Isso selou o fim da era do "gene candidato" — a busca por *o* gene de um traço — e inaugurou a abordagem **poligênica**, que soma milhares de efeitos minúsculos, tema retomado adiante.
+
+## Genes e ambiente não se somam: eles se enredam
+
+Falar de "porcentagens" de genes e ambiente sugere que os dois se somam como ingredientes independentes. Não se somam — interagem e se correlacionam, de modos que a estatística simples esconde.
+
+A **interação gene-ambiente** ocorre quando o efeito de um gene depende do ambiente (ou vice-versa): o mesmo alelo produz resultados diferentes conforme o contexto. O estudo mais famoso — e mais cauteloso de contar — é o de Caspi e colegas, que relataram que uma variante do gene transportador de serotonina (5-HTTLPR) tornava as pessoas mais vulneráveis à depressão *apenas quando* expostas a muitos eventos estressantes de vida [@caspi2003]. O gene não causava depressão sozinho; o estresse não a causava igualmente em todos; o risco emergia da *combinação*. Foi um achado sedutor e influente — e uma lição de humildade.
+
+::: {.atencao}
+**Um achado célebre que não replicou.** O estudo de Caspi virou um dos mais citados da psiquiatria e o modelo de toda uma indústria de pesquisas de "gene candidato × ambiente". Mas, quando testado em amostras grandes, o efeito evaporou: uma meta-análise não encontrou suporte para a interação [@risch2009], e uma reanálise posterior, com dezenas de milhares de pessoas, não sustentou nem esse nem praticamente nenhum dos "genes candidatos" históricos da depressão [@border2019]. A moral não é que a interação gene-ambiente não exista — quase certamente existe —, mas que estudos pequenos, testando um gene de cada vez com muita liberdade analítica, produziram uma literatura inteira de resultados falsos (o problema dos "graus de liberdade do pesquisador" do Vol 3). É a crise de replicabilidade do Vol 1 encenada na genética.
+:::
+
+A **correlação gene-ambiente** é ainda mais sutil: genes e ambientes não são independentes porque os genes *influenciam a quais ambientes a pessoa é exposta*. Sandra Scarr e Kathleen McCartney distinguiram três formas [@scarr_mccartney1983]. Na **passiva**, os pais transmitem genes *e* constroem o ambiente correlacionado a eles (pais com aptidão musical passam genes e enchem a casa de instrumentos). Na **evocativa**, a criança evoca reações do ambiente por suas disposições (um bebê sorridente colhe mais afeto). Na **ativa**, a pessoa *busca* ambientes afins ao seu genótipo (a criança de temperamento curioso procura livros e desafios). O efeito é que a "influência genética" medida inclui, embutida, a construção ativa do próprio ambiente — o que borra de vez a fronteira entre natureza e cultura.
+
+## Epigenética: o ambiente que regula o gene
+
+Se a correlação gene-ambiente mostra genes moldando ambientes, a **epigenética** mostra a via inversa: ambientes regulando genes. O DNA não muda, mas moléculas que se ligam a ele podem ligar ou desligar a expressão de genes — e algumas dessas marcas respondem à experiência.
+
+::: {.experimento}
+**Cuidado materno e a regulação de genes em ratos** [@weaver2004]
+
+**Desenho.** Michael Meaney, Ian Weaver e colegas estudaram ratas que diferem no cuidado com os filhotes: umas lambem e cuidam intensamente, outras pouco. Compararam a resposta ao estresse dos filhotes na vida adulta e examinaram, no hipocampo, a marca epigenética (metilação) sobre um gene ligado à regulação do cortisol.
+
+**Resultado.** Filhotes de mães cuidadosas tornaram-se adultos menos reativos ao estresse, com o gene do receptor de cortisol menos "silenciado" (menos metilado) — e, portanto, mais capazes de desligar a resposta ao estresse. O efeito era causado pelo cuidado, não herdado: filhotes de mães pouco cuidadosas, quando adotados por mães cuidadosas, adquiriam o padrão das adotivas.
+
+**Interpretação.** O comportamento materno deixava uma marca *química* sobre o DNA que ajustava, para a vida toda, a fisiologia do estresse da prole. É uma demonstração de como o ambiente precoce se "inscreve" na regulação dos genes — uma ponte molecular entre experiência e biologia que ecoa o eixo HPA do Cap. 25.
+
+**Limitações.** Trata-se de ratos; a generalização da epigenética comportamental para humanos é muito mais incerta e frequentemente exagerada na divulgação. Alegações sobre "herança epigenética transgeracional de traumas" em humanos, em particular, são fracas em evidência e devem ser tratadas com ceticismo. O achado em ratos é sólido; suas extrapolações populares, não.
+:::
+
+## Da era dos genes candidatos aos escores poligênicos
+
+O fracasso dos genes candidatos e o enigma da hereditariedade que some convergiram para uma nova abordagem. Os **estudos de associação de genoma completo** (GWAS) varrem o genoma de centenas de milhares de pessoas em busca de variantes associadas a um traço, e somam seus milhares de efeitos ínfimos num **escore poligênico** — uma estimativa, para cada indivíduo, do risco ou propensão genética agregada. Robert Plomin defende que esses escores representam uma revolução, permitindo, pela primeira vez, previsão a partir do DNA no nível individual [@plomin2018; @plomin_vonstumm2018]. É uma virada real: para traços como altura e desempenho escolar, os escores já explicam parcelas não triviais da variância.
+
+Mas os limites são igualmente reais, e o exagero é fácil. Os escores poligênicos são preditores *probabilísticos e fracos* no indivíduo — dizem sobre distribuições, não sobre destinos. Pior, eles são calculados quase inteiramente em populações de ascendência europeia e *perdem validade* quando aplicados a outras ancestralidades, um problema de equidade que o Vol 1 anteciparia sob o rótulo WEIRD. E um escore que "prevê" anos de escolaridade capta, em parte, correlação gene-ambiente (os efeitos passivos e ativos de Scarr e McCartney), não uma via causal limpa dos genes ao diploma.
+
+::: {.na-pratica}
+**O que um teste de DNA de banca não pode dizer.** Empresas vendem testes genéticos "direto ao consumidor" que prometem revelar seu "potencial atlético", seu "perfil de personalidade", o "talento" da criança ou a dieta ideal para seu genoma. Com o que este capítulo estabeleceu, dá para desarmar a promessa: (1) traços comportamentais são poligênicos e de efeito minúsculo por gene, então um teste que olha poucas variantes não prevê quase nada; (2) hereditariedade não é destino nem receita individual; (3) escores poligênicos sérios são probabilísticos, fracos no indivíduo e enviesados por ancestralidade. A regra prática: quanto mais específica e otimista a promessa ("descubra o talento do seu filho"), menos ciência há por trás. O uso legítimo de escores poligênicos, hoje, é de pesquisa e, em medicina, para *risco* de doenças específicas — não para rotular pessoas.
+:::
+
+## O erro que mais custa caro: diferenças dentro e entre grupos
+
+Resta a confusão de consequências sociais mais graves, e ela merece encerrar o capítulo. Hereditariedade é uma medida *dentro* de uma população. Ela **não** autoriza nenhuma conclusão sobre a origem das diferenças *entre* grupos (por exemplo, entre grupos raciais ou nacionais em escores de teste). Richard Lewontin ofereceu a analogia que fixou o ponto [@lewontin1970]: pegue um saco de sementes geneticamente variadas e plante metade em solo rico e metade em solo pobre. *Dentro* de cada vaso, as diferenças de altura entre plantas serão altamente hereditárias (mesmo solo, variação genética). *Entre* os vasos, porém, a diferença média de altura será inteiramente ambiental (o solo), apesar de a hereditariedade dentro de cada grupo ser altíssima. Alta hereditariedade intragrupo é perfeitamente compatível com diferença intergrupo de causa 100% ambiental.
+
+Transportar uma estimativa de hereditariedade obtida dentro de um grupo para "explicar" a diferença média entre grupos é, portanto, um erro lógico — não uma questão de mais dados, mas de raciocínio inválido. Historicamente, esse erro foi usado para dar verniz científico a preconceitos, e é por isso que ele não é uma tecnicidade estatística, mas um ponto ético. O Vol 8 (Caps. 49–50) retoma o tema no terreno minado da inteligência; aqui basta a inoculação: **quem usa hereditariedade para explicar diferenças entre grupos está cometendo a falácia de Lewontin, com ou sem má-fé.**
+
+## Síntese
+
+::: {.callout-sintese}
+- **"Natureza ou cultura" é a pergunta errada.** Em um indivíduo, genes e ambiente são inseparáveis. A genética do comportamento estuda a origem das *diferenças* entre indivíduos, não a causa de um traço em uma pessoa.
+- **Hereditariedade ($h^2$) é a fração da variância de um traço, numa população e num ambiente dados, associada à variação genética.** Ela não se aplica a indivíduos, muda com o ambiente e não implica imutabilidade (miopia é hereditária e se corrige com óculos).
+- **Estudos de gêmeos e de adoção** estimam $h^2$ comparando semelhanças entre idênticos e fraternos, ou entre pais biológicos e adotivos. O estudo de Minnesota (gêmeos separados) revelou influência genética substancial — em torno de metade da variância — em quase todos os traços.
+- **As três leis de Turkheimer:** todos os traços são hereditáveis; a família compartilhada importa menos que os genes; e uma parcela grande da variação vem do ambiente **não compartilhado** e do acaso. A hereditariedade "some" quando buscada gene a gene, porque é poligênica.
+- **Genes e ambiente se enredam:** por **interação** (o efeito de um depende do outro — como no célebre e não replicado estudo de Caspi) e por **correlação** (os genes influenciam a que ambientes a pessoa é exposta — passiva, evocativa, ativa). A **epigenética** mostra o ambiente regulando a expressão dos genes (cuidado materno em ratos).
+- **Escores poligênicos** somam milhares de efeitos ínfimos e permitem previsão fraca e probabilística no indivíduo — enviesada por ancestralidade e não puramente causal. Testes de DNA comportamentais "de banca" prometem muito além do que a ciência entrega.
+- **A falácia de Lewontin:** hereditariedade dentro de um grupo nada diz sobre a origem das diferenças *entre* grupos. Usá-la assim é erro lógico, não falta de dados.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Genótipo / Fenótipo**
+:   A dotação genética de um indivíduo (genótipo) versus a característica observável que dela resulta em interação com o ambiente (fenótipo).
+
+**Poligênico**
+:   Traço influenciado por muitos genes, cada um de efeito minúsculo — o padrão de quase todos os traços comportamentais.
+
+**Hereditariedade ($h^2$)**
+:   Proporção da variância de um traço, numa população e ambiente específicos, atribuível à variação genética entre indivíduos.
+
+**Falácia da hereditariedade**
+:   Erro de interpretar $h^2$ como o quanto de um traço, num indivíduo, é causado por genes, ou como sinal de imutabilidade [@moore_shenk2017].
+
+**Estudo de gêmeos / de adoção**
+:   Desenhos que estimam $h^2$ comparando gêmeos idênticos e fraternos, ou parentes biológicos e adotivos, para separar genes de ambiente.
+
+**Ambiente não compartilhado**
+:   Conjunto de influências que tornam diferentes os indivíduos criados na mesma família; responde por boa parte da variação (terceira lei de Turkheimer) [@turkheimer2000].
+
+**Interação gene-ambiente**
+:   Situação em que o efeito de um gene sobre um traço depende do ambiente (ou vice-versa).
+
+**Correlação gene-ambiente**
+:   Associação entre genótipo e ambiente porque os genes influenciam os ambientes a que a pessoa é exposta; passiva, evocativa ou ativa [@scarr_mccartney1983].
+
+**Epigenética**
+:   Regulação da expressão dos genes por marcas químicas (como a metilação) que respondem à experiência, sem alterar a sequência do DNA [@weaver2004].
+
+**Escore poligênico**
+:   Estimativa individual, somando milhares de variantes de pequeno efeito de um GWAS, da propensão genética a um traço; preditor fraco e probabilístico [@plomin2018].
+
+**Falácia de Lewontin**
+:   Erro de usar a hereditariedade medida *dentro* de grupos para explicar diferenças *entre* grupos [@lewontin1970].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique por que a frase "minha altura é 70% genética" está errada, mesmo que a hereditariedade da altura seja 0,70. O que a estatística de fato descreve?
+
+2. **(Recuperação.)** Descreva a lógica do estudo de gêmeos: por que comparar idênticos com fraternos permite estimar a influência genética? O que o desenho de "gêmeos criados separados" acrescenta?
+
+3. **(Aplicação.)** Um traço tem hereditariedade estimada em 0,60 num país com forte desigualdade social e 0,80 num país igualitário. Usando a definição de $h^2$ como razão de variâncias, explique por que a mesma característica pode ter hereditariedade diferente nos dois lugares.
+
+4. **(Reflexão crítica.)** O estudo de Caspi (2003) foi um dos mais citados da psiquiatria, mas não replicou. Que características de desenho — sugeridas pelo capítulo e pelo Vol 3 — ajudam a explicar por que estudos de "gene candidato × ambiente" produziram tantos falsos positivos?
+
+5. **(Reflexão crítica.)** Distinga as três formas de correlação gene-ambiente (passiva, evocativa, ativa) com um exemplo próprio de cada uma. Por que a existência dessas correlações torna enganoso somar "porcentagem de genes" e "porcentagem de ambiente" como se fossem independentes?
+
+6. **(Integração.)** Usando a analogia das sementes de Lewontin, explique a um colega por que a alta hereditariedade de um traço *dentro* de dois grupos não permite concluir nada sobre a causa da diferença *entre* eles. Por que esse ponto é ético, e não apenas técnico?
