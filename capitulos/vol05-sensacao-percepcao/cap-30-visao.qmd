@@ -1,5 +1,194 @@
 # 30. Visão
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** as propriedades físicas da luz (comprimento de onda, intensidade, pureza) e a que dimensão perceptual cada uma corresponde.
+- **Traçar** o caminho da luz no olho e explicar como cada estrutura contribui para formar a imagem na retina.
+- **Comparar** bastonetes e cones quanto a função, distribuição e papel na visão em diferentes níveis de luz.
+- **Explicar** as teorias tricromática e do processo oponente e por que ambas, em estágios diferentes, são necessárias.
+- **Mapear** as vias visuais do olho ao córtex, incluindo os detectores de características e as duas correntes (o "quê" e o "onde/como").
+- **Interpretar** casos como cegueira cortical (blindsight) e agnosia visual como evidências de que "ver" é composto de processos dissociáveis.
 :::
+
+Dos sentidos humanos, a visão é o mais dominante: cerca de um quarto do córtex participa do processamento visual, e quando a informação visual conflita com a de outros sentidos, costuma vencer. Este capítulo aplica os princípios gerais do Cap. 29 ao caso concreto do olho — o sentido de que mais dependemos e o mais bem estudado. Veremos a cadeia completa: da luz que entra pela córnea aos neurônios do córtex que respondem a bordas e movimentos, até o ponto em que "ver uma coisa" e "saber o que ela é" se revelam operações separadas, que a lesão cerebral pode dissociar. A visão parece imediata e sem esforço; é, na verdade, uma das construções mais elaboradas do cérebro.
+
+## A luz como estímulo
+
+O estímulo da visão é uma faixa estreita do espectro eletromagnético — a **luz visível**, entre cerca de 400 e 700 nanômetros de comprimento de onda. Três propriedades físicas da luz mapeiam-se em três dimensões da experiência. O **comprimento de onda** determina a **matiz** (a cor percebida: ondas curtas tendem ao azul, longas ao vermelho). A **intensidade** (amplitude) determina o **brilho**. E a **pureza** — o quão concentrada a luz é em torno de um único comprimento de onda — determina a **saturação** (o quão "viva" ou "lavada" a cor parece). Vale reter, desde já, que "cor" não é uma propriedade da luz: a luz tem comprimentos de onda; a cor é a experiência que o cérebro constrói a partir deles. Uma pétala não é vermelha no escuro — ela apenas reflete ondas longas que, na presença de luz e de um sistema visual, produzem a experiência do vermelho.
+
+## O olho: formando a imagem
+
+A luz atravessa uma sequência de estruturas antes de virar sinal neural (@fig-olho). Primeiro, a **córnea**, a membrana transparente e curva que faz a maior parte do foco. Depois, a **pupila**, o orifício cuja abertura é regulada pela **íris** (o anel colorido): ela se contrai na luz forte e dilata no escuro, controlando quanta luz entra. Em seguida, o **cristalino**, uma lente que ajusta o foco fino por **acomodação** — mudando de curvatura para focar objetos próximos ou distantes. Quando o globo ocular é longo ou curto demais, a imagem se forma antes ou depois da retina, produzindo miopia e hipermetropia — corrigidas por lentes que reposicionam o foco.
+
+::: {#fig-olho}
+```{.tikz}
+%%| filename: olho-esquema
+%%| alt: Corte horizontal esquemático do olho humano visto de cima. À esquerda, entrando a luz, aparecem em sequência: a córnea (curva externa), a pupila e a íris, o cristalino (lente oval). O interior é o humor vítreo. Na parede posterior, curva, está a retina; um ponto central marca a fóvea e, logo abaixo, o ponto cego, de onde parte o nervo óptico para a direita.
+\begin{tikzpicture}[>=Stealth, scale=1.0, font=\footnotesize]
+  % globo ocular
+  \draw[thick, manualgray, fill=manualblue!4] (0,0) circle (2.4);
+  % cornea (bulge frontal a esquerda)
+  \draw[very thick, manualblue] (-2.1,1.1) arc (120:240:1.27);
+  \node[text=manualblue] at (-3.4,1.7) {córnea};
+  \draw[->, manualgray] (-3.2,1.5) -- (-2.4,0.9);
+  % iris/pupila
+  \draw[very thick, manualred] (-1.75,0.75) -- (-1.55,0.35);
+  \draw[very thick, manualred] (-1.75,-0.75) -- (-1.55,-0.35);
+  \node[text=manualred] at (-3.2,-1.5) {íris / pupila};
+  \draw[->, manualgray] (-2.6,-1.3) -- (-1.7,-0.55);
+  % cristalino
+  \draw[very thick, manualgreen, fill=manualgreen!12] (-1.3,0) ellipse (0.34 and 0.85);
+  \node[text=manualgreen] at (-1.3,-1.9) {cristalino};
+  \draw[->, manualgray] (-1.3,-1.65) -- (-1.3,-0.9);
+  % retina (parede posterior)
+  \draw[very thick, manualred!70!black] (1.7,1.7) arc (45:-45:2.4);
+  \node[text=manualred!70!black] at (3.3,1.3) {retina};
+  % fovea
+  \fill[manualblue] (2.4,0.1) circle (1.6pt);
+  \node[text=manualblue] at (3.2,0.35) {fóvea};
+  % ponto cego + nervo optico
+  \fill[manualgray] (2.15,-0.75) circle (1.6pt);
+  \node[text=manualgray, align=left] at (3.6,-0.85) {ponto cego};
+  \draw[very thick, manualyellow!70!black] (2.15,-0.75) .. controls (3.2,-1.3) .. (3.8,-1.9) node[right, text=manualyellow!60!black] {nervo óptico};
+  % raios de luz entrando
+  \draw[->, manualyellow!70!black, thick] (-4.2,0.5) -- (-2.3,0.25);
+  \draw[->, manualyellow!70!black, thick] (-4.2,-0.5) -- (-2.3,-0.25);
+\end{tikzpicture}
+```
+O olho em corte. A luz é focada pela córnea e pelo cristalino sobre a retina, no fundo do olho. A fóvea é a região de máxima acuidade; o ponto cego, onde o nervo óptico deixa o olho, não tem receptores.
+:::
+
+No fundo do olho está a **retina**, um tecido de várias camadas onde acontece a transdução. É útil notar um detalhe contraintuitivo: a retina é "de trás para frente" — a luz precisa atravessar camadas de neurônios antes de chegar aos fotorreceptores no fundo. E há um **ponto cego**: o lugar onde o nervo óptico sai do olho não tem receptores, de modo que existe um buraco no campo visual de cada olho que normalmente não notamos — o cérebro o "preenche" com o entorno, um primeiro indício de quão ativamente ele constrói o que vemos.
+
+## Bastonetes e cones: dois sistemas de visão
+
+Os fotorreceptores vêm em dois tipos, com uma bela divisão de trabalho. Os **cones**, concentrados na **fóvea** (o centro da retina), respondem à cor e fornecem a máxima acuidade, mas exigem bastante luz — são os receptores da visão diurna. Os **bastonetes**, espalhados pela periferia da retina, são muito mais sensíveis e funcionam com pouquíssima luz, porém não distinguem cor e têm baixa resolução — são os receptores da visão noturna. Essa dupla arquitetura explica várias experiências cotidianas: à noite tudo parece acinzentado (só os bastonetes operam, e eles não veem cor); e uma estrela fraca desaparece se você a fita diretamente — a imagem cai na fóvea, cheia de cones insensíveis à luz fraca — mas reaparece se você olha ligeiramente de lado, jogando-a sobre os bastonetes da periferia.
+
+A transdução ocorre em **fotopigmentos**: moléculas que mudam de forma ao absorver luz, disparando a cascata que gera o sinal neural. É a decomposição desses pigmentos que, ao entrarmos num cinema escuro, nos deixa cegos por um momento e depois vai devolvendo a visão à medida que os bastonetes se **adaptam ao escuro** — um processo que leva vários minutos e ilustra, no nível químico, a adaptação sensorial do Cap. 29.
+
+## As cores: duas teorias que se complementam
+
+Como poucos tipos de cone produzem milhões de cores percebidas? A resposta ocupou os maiores nomes da fisiologia do século XIX e terminou não com uma teoria vencedora, mas com duas — cada uma correta em seu estágio.
+
+A **teoria tricromática** (ou de Young-Helmholtz), proposta por Thomas Young e desenvolvida por Hermann von Helmholtz, sustenta que existem três tipos de cone, sensíveis preferencialmente a comprimentos de onda curtos (azul), médios (verde) e longos (vermelho) [@young1802; @helmholtz1867]. Qualquer cor resulta da razão de ativação entre os três — como uma tela que compõe tudo a partir de três subpixels. A teoria previu, décadas antes de qualquer confirmação, que haveria exatamente três fotopigmentos — o que a biologia molecular acabou por confirmar. Ela também explica a forma mais comum de **daltonismo**: a ausência ou alteração de um tipo de cone (em geral o do verde ou do vermelho, num gene ligado ao cromossomo X, por isso muito mais frequente em homens) colapsa a distinção entre certas cores.
+
+::: {#fig-cor-dois-estagios}
+```{.tikz}
+%%| filename: cor-dois-estagios
+%%| alt: Diagrama em dois estágios ligados por setas. À esquerda, o estágio dos receptores: três círculos rotulados cone C (curto/azul), cone M (médio/verde) e cone L (longo/vermelho). Setas levam ao estágio oponente à direita: três barras com pares antagônicos vermelho-verde, azul-amarelo e preto-branco. O rótulo geral indica que a informação dos três cones é recodificada em canais oponentes antes de seguir ao cérebro.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  \node[font=\small\bfseries, text=manualgray] at (0,3.1) {Estágio 1: cones (tricromático)};
+  \node[circle, draw, thick, draw=manualblue, fill=manualblue!15, minimum size=0.85cm] (c) at (0,2) {C};
+  \node[circle, draw, thick, draw=manualgreen, fill=manualgreen!15, minimum size=0.85cm] (m) at (0,0.9) {M};
+  \node[circle, draw, thick, draw=manualred, fill=manualred!15, minimum size=0.85cm] (l) at (0,-0.2) {L};
+  \node[font=\small\bfseries, text=manualgray] at (6.3,3.1) {Estágio 2: canais oponentes};
+  \node[rectangle, rounded corners, draw, thick, minimum width=3.3cm, minimum height=0.7cm] (rg) at (6.3,2) {vermelho $\;\leftrightarrow\;$ verde};
+  \node[rectangle, rounded corners, draw, thick, minimum width=3.3cm, minimum height=0.7cm] (by) at (6.3,0.9) {azul $\;\leftrightarrow\;$ amarelo};
+  \node[rectangle, rounded corners, draw, thick, minimum width=3.3cm, minimum height=0.7cm] (bw) at (6.3,-0.2) {preto $\;\leftrightarrow\;$ branco};
+  \draw[->, manualgray] (c) -- (rg);
+  \draw[->, manualgray] (m) -- (rg);
+  \draw[->, manualgray] (l) -- (by);
+  \draw[->, manualgray] (m) -- (by);
+  \draw[->, manualgray] (c) -- (bw);
+  \draw[->, manualgray] (l) -- (bw);
+\end{tikzpicture}
+```
+As duas teorias da cor operam em estágios sucessivos. Os três tipos de cone (tricromático) alimentam, mais adiante, canais oponentes que codificam pares antagônicos. As teorias não competem: descrevem etapas diferentes do mesmo processamento.
+:::
+
+A teoria tricromática, porém, não explicava dois fatos teimosos: por que nunca vemos um "vermelho-esverdeado" ou um "azul-amarelado", e por que fitar um quadrado vermelho e depois olhar uma parede branca produz uma **pós-imagem** verde. Ewald Hering respondeu com a **teoria do processo oponente**: a cor é codificada por três pares antagônicos — vermelho *versus* verde, azul *versus* amarelo, preto *versus* branco —, de modo que ativar um polo inibe o outro [@hering1878]. Um canal não pode sinalizar vermelho e verde ao mesmo tempo (daí a ausência do "vermelho-esverdeado"); e a fadiga do polo "vermelho" deixa o "verde" temporariamente dominante ao olharmos o branco (daí a pós-imagem). Por décadas as duas teorias pareceram rivais, até que Leo Hurvich e Dorothea Jameson mostraram que ambas estão certas — **em estágios diferentes** [@hurvich_jameson1957]. Nos receptores, a visão é tricromática (três cones); nas células seguintes da retina e adiante, os sinais dos cones são recombinados em canais oponentes (@fig-cor-dois-estagios). É um dos exemplos mais elegantes, em toda a psicologia, de duas teorias "concorrentes" que se revelaram etapas complementares de um mesmo mecanismo.
+
+## Do olho ao cérebro: detectores e duas correntes
+
+Os axônios das células ganglionares da retina formam o **nervo óptico**, que leva o sinal — via uma estação no tálamo, o núcleo geniculado lateral — ao **córtex visual primário** (V1), no lobo occipital (Cap. 24). E é aqui que a neurociência da visão deu um de seus maiores saltos.
+
+::: {.experimento}
+**Hubel, Wiesel e os detectores de características** [@hubel_wiesel1962]
+
+**Desenho.** David Hubel e Torsten Wiesel inseriram microeletrodos em neurônios isolados do córtex visual de gatos e mediram a que exatamente cada célula respondia, projetando pontos, barras e bordas em várias posições e orientações na tela diante do animal.
+
+**Resultado.** Descobriram que os neurônios de V1 não respondem a "luz" em geral, mas a *características específicas*: uma dada célula dispara intensamente para uma barra numa orientação particular (digamos, inclinada a 45°) e ignora as demais; outra responde a bordas em movimento numa direção; outra, a um ângulo. São **detectores de características** — cada neurônio é sintonizado para um traço elementar da imagem.
+
+**Interpretação.** A percepção visual começa decompondo a cena em elementos simples (bordas, orientações, movimentos), que estágios posteriores recombinam em formas e objetos. A visão é *análise antes de síntese*. O achado rendeu o Nobel e fundou a ideia, hoje central, de que o córtex processa a informação de modo hierárquico — princípio que inspirou diretamente as redes neurais artificiais de visão computacional (Vol 15, Cap. 105).
+
+**Limitações.** O modelo puramente hierárquico e ascendente ("de baixo para cima") captura os primeiros estágios, mas subestima o peso das conexões de retorno e das expectativas ("de cima para baixo"), que o Cap. 33 mostrará serem decisivas. Ver não é só montar bordas: é montá-las guiado pelo que se espera ver.
+:::
+
+A partir de V1, o processamento se divide em **duas grandes correntes** [@ungerleider_mishkin1982]. A **via ventral** ("o quê"), que segue para o lobo temporal, especializa-se em *reconhecer* objetos, rostos e cores — responde à pergunta "o que é isto?". A **via dorsal** ("onde/como"), rumo ao lobo parietal, especializa-se na *localização* e na *ação guiada visualmente* — "onde está e como pego?" [@goodale_milner1992]. A dissociação é real, não apenas teórica: há pacientes que, por lesão na via ventral, não conseguem *reconhecer* a fenda de uma caixa de correio, mas *inserem* nela uma carta com a orientação correta (a via dorsal, intacta, guia a mão); e o padrão inverso também ocorre. "Ver para saber" e "ver para agir" são funções separáveis do cérebro.
+
+::: {.estudo-caso}
+**Quando o olho vê e a mente não reconhece.** O caso mais célebre de dissociação visual é o do "homem que confundiu a mulher com um chapéu", descrito pelo neurologista Oliver Sacks [@sacks1985]. O paciente, um músico culto, tinha os olhos perfeitos, mas uma lesão na via ventral lhe causara **agnosia visual**: enxergava formas, cores e detalhes, porém não conseguia *integrá-los num objeto reconhecível*. Diante de uma luva, descrevia "uma superfície contínua dobrada sobre si mesma" com "cinco bolsas" — e não conseguia dizer que era uma luva até calçá-la. Ao fim de uma consulta, tentou pegar a própria cabeça para pôr no lugar do chapéu, confundindo a esposa com o objeto. O caso ilustra, de forma dramática, a tese deste capítulo: "ver" não é um ato único, mas uma cadeia de operações — e a sensação pode estar intacta enquanto o reconhecimento, que é percepção, falha.
+:::
+
+::: {.base-neural}
+**Blindsight: ver sem saber que se vê.** Uma dissociação ainda mais desconcertante aparece na **visão cega** (*blindsight*). Pacientes com lesão no córtex visual primário (V1) relatam-se *cegos* numa parte do campo visual — não têm nenhuma experiência consciente de ver ali. E, no entanto, quando solicitados a "adivinhar" a posição ou a orientação de um objeto apresentado nessa região, acertam muito acima do acaso [@weiskrantz1974]. A informação visual chega ao cérebro por vias secundárias que contornam V1 e guia o comportamento, mas *sem gerar experiência consciente*. O blindsight mostra que boa parte do processamento visual é inconsciente, e que a consciência visual depende de circuitos específicos (o córtex visual primário entre eles) — um tema que o Vol 6 retomará ao tratar da natureza da consciência.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A luz visível tem três propriedades físicas — **comprimento de onda, intensidade e pureza** — que correspondem a três dimensões perceptuais: **matiz, brilho e saturação**. A cor não está na luz; é construída pelo cérebro.
+- No **olho**, córnea e cristalino focam a luz (por **acomodação**) sobre a **retina**; a **fóvea** dá acuidade máxima e o **ponto cego** não tem receptores.
+- **Cones** (fóvea, visão diurna, cor, alta acuidade, precisam de luz) e **bastonetes** (periferia, visão noturna, sem cor, altíssima sensibilidade) dividem o trabalho da visão.
+- A cor é explicada por **duas teorias em estágios sucessivos**: a **tricromática** (três cones) nos receptores e a do **processo oponente** (pares vermelho-verde, azul-amarelo, preto-branco) adiante — o que explica pós-imagens e a ausência de cores como "vermelho-esverdeado".
+- **Hubel e Wiesel** mostraram que os neurônios de V1 são **detectores de características** (bordas, orientações, movimento): a visão analisa antes de sintetizar, de forma hierárquica.
+- A partir de V1, a **via ventral** ("o quê") reconhece objetos e a **via dorsal** ("onde/como") localiza e guia a ação. Casos de **agnosia visual** e **blindsight** provam que ver, reconhecer e ter consciência do que se vê são processos dissociáveis.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Acomodação**
+:   Ajuste da curvatura do cristalino para focar objetos a distâncias diferentes.
+
+**Retina**
+:   Tecido no fundo do olho onde ocorre a transdução da luz em sinais neurais.
+
+**Fóvea**
+:   Região central da retina, densa em cones, responsável pela máxima acuidade visual.
+
+**Ponto cego**
+:   Local de saída do nervo óptico, sem fotorreceptores; produz uma lacuna no campo visual que o cérebro preenche.
+
+**Cones**
+:   Fotorreceptores da fóvea, responsáveis pela cor e pela alta acuidade; exigem boa iluminação (visão diurna).
+
+**Bastonetes**
+:   Fotorreceptores periféricos, muito sensíveis à luz fraca, sem visão de cor (visão noturna).
+
+**Teoria tricromática (Young-Helmholtz)**
+:   Explica a visão de cor por três tipos de cone sensíveis a ondas curtas, médias e longas [@young1802; @helmholtz1867].
+
+**Teoria do processo oponente**
+:   Explica a cor por três pares antagônicos (vermelho-verde, azul-amarelo, preto-branco); dá conta das pós-imagens [@hering1878; @hurvich_jameson1957].
+
+**Detector de características**
+:   Neurônio cortical sintonizado para um traço elementar da imagem (uma orientação, uma borda, um movimento) [@hubel_wiesel1962].
+
+**Via ventral ("o quê")**
+:   Corrente visual rumo ao lobo temporal, especializada no reconhecimento de objetos e rostos [@ungerleider_mishkin1982].
+
+**Via dorsal ("onde/como")**
+:   Corrente visual rumo ao lobo parietal, especializada em localização espacial e ação guiada pela visão [@goodale_milner1992].
+
+**Agnosia visual**
+:   Incapacidade de reconhecer objetos apesar de visão sensorial intacta, por lesão na via ventral [@sacks1985].
+
+**Visão cega (blindsight)**
+:   Capacidade de responder a estímulos visuais sem experiência consciente de vê-los, após lesão em V1 [@weiskrantz1974].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Relacione cada propriedade física da luz (comprimento de onda, intensidade, pureza) à dimensão perceptual correspondente. Por que se diz que "a cor não está na luz"?
+
+2. **(Recuperação.)** Compare cones e bastonetes quanto a localização, sensibilidade à luz e visão de cor. Use essa comparação para explicar por que uma estrela fraca some quando a fitamos diretamente.
+
+3. **(Aplicação.)** Você fita por trinta segundos um adesivo verde-limão e depois desvia o olhar para uma folha branca, vendo uma mancha avermelhada. Explique o fenômeno com a teoria do processo oponente.
+
+4. **(Aplicação/Integração.)** Duas teorias da cor pareceram rivais por décadas e hoje são vistas como complementares. Explique em que estágio cada uma opera e relacione isso à ideia, vista no Cap. 29, de que a ciência frequentemente refina modelos em vez de descartá-los.
+
+5. **(Reflexão crítica.)** Um paciente afirma-se cego numa metade do campo visual, mas acerta a posição de objetos ali quando é forçado a "adivinhar" (blindsight). O que esse caso sugere sobre a relação entre processamento visual e consciência?
+
+6. **(Integração.)** Os detectores de características de Hubel e Wiesel inspiraram as redes neurais de visão computacional. Com base na ideia de processamento hierárquico ("análise antes de síntese"), explique por que decompor a imagem em bordas simples é um bom ponto de partida para reconhecer objetos complexos.
