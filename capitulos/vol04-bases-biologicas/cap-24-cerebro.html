@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#um-encéfalo-em-três-andares" id="toc-um-encéfalo-em-três-andares" class="nav-link active" data-scroll-target="#um-encéfalo-em-três-andares">Um encéfalo em três andares</a></li>
+  <li><a href="#as-estruturas-subcorticais-e-o-sistema-límbico" id="toc-as-estruturas-subcorticais-e-o-sistema-límbico" class="nav-link" data-scroll-target="#as-estruturas-subcorticais-e-o-sistema-límbico">As estruturas subcorticais e o sistema límbico</a></li>
+  <li><a href="#o-córtex-cerebral-quatro-lobos-e-um-mapa-do-corpo" id="toc-o-córtex-cerebral-quatro-lobos-e-um-mapa-do-corpo" class="nav-link" data-scroll-target="#o-córtex-cerebral-quatro-lobos-e-um-mapa-do-corpo">O córtex cerebral: quatro lobos e um mapa do corpo</a></li>
+  <li><a href="#localização-de-função-o-que-as-lesões-ensinaram" id="toc-localização-de-função-o-que-as-lesões-ensinaram" class="nav-link" data-scroll-target="#localização-de-função-o-que-as-lesões-ensinaram">Localização de função: o que as lesões ensinaram</a></li>
+  <li><a href="#dois-hemisférios-um-cérebro-lateralização" id="toc-dois-hemisférios-um-cérebro-lateralização" class="nav-link" data-scroll-target="#dois-hemisférios-um-cérebro-lateralização">Dois hemisférios, um cérebro: lateralização</a></li>
+  <li><a href="#o-princípio-que-fecha-o-capítulo-localizado-mas-distribuído" id="toc-o-princípio-que-fecha-o-capítulo-localizado-mas-distribuído" class="nav-link" data-scroll-target="#o-princípio-que-fecha-o-capítulo-localizado-mas-distribuído">O princípio que fecha o capítulo: localizado, mas distribuído</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +747,730 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Situar</strong> as grandes regiões do encéfalo — tronco, cerebelo, estruturas subcorticais e córtex — e relacionar cada uma a suas funções dominantes.</li>
+<li><strong>Identificar</strong> os quatro lobos do córtex cerebral e as áreas primárias e de associação de cada um.</li>
+<li><strong>Explicar</strong> a organização somatotópica dos córtices motor e somatossensorial (o “homúnculo”).</li>
+<li><strong>Descrever</strong> o papel do sistema límbico — hipocampo, amígdala, hipotálamo, tálamo — na memória, na emoção e na regulação corporal.</li>
+<li><strong>Analisar</strong> as evidências históricas de localização de função (Gage, Broca, Wernicke, H.M., cérebro dividido) e o que cada uma permite e não permite concluir.</li>
+<li><strong>Avaliar criticamente</strong> o mito do “cérebro esquerdo × cérebro direito” e o localizacionismo ingênuo.</li>
+</ul>
 </div>
+<p>Chegamos ao órgão que dá nome ao volume. Os capítulos anteriores subiram do neurônio à medula; este chega ao encéfalo, o teto do sistema nervoso e o objeto que, mais do que qualquer outro, tenta a psicologia a dizer “é aqui que a mente acontece”. A tentação tem um fundo de verdade e uma armadilha. O fundo de verdade: danos a regiões específicas do cérebro produzem perdas específicas e previsíveis de função — o que só faz sentido se as funções tiverem <em>algum</em> endereço. A armadilha: concluir daí que cada capacidade mental mora num ponto único, como um órgão numa gaveta. Este capítulo caminha entre as duas, guiado por um princípio que a neurociência levou um século para calibrar: <strong>as funções são localizadas, mas quase nunca em um único lugar</strong> — elas emergem de redes distribuídas em que cada nó contribui com uma parte.</p>
+<p>O método que sustenta quase tudo o que se sabe sobre o cérebro humano tem uma história trágica: durante mais de um século, o que se aprendeu veio sobretudo de <strong>lesões</strong> — o que uma pessoa perde quando uma parte do cérebro é destruída por AVC, tumor, acidente ou cirurgia. A lógica é a da dissociação: se o dano a uma região X abole a função A mas preserva a função B, então A e B são, ao menos em parte, separáveis, e X participa de A. O Cap. 27 mostrará como a neuroimagem moderna complementou esse método sem substituí-lo. Por ora, muitas das descobertas fundadoras deste capítulo são, no fundo, relatos de perdas.</p>
+<section id="um-encéfalo-em-três-andares" class="level2">
+<h2 class="anchored" data-anchor-id="um-encéfalo-em-três-andares">Um encéfalo em três andares</h2>
+<p>Uma primeira aproximação, grosseira mas útil, organiza o encéfalo em três andares que também correspondem, em linhas gerais, a uma sequência de complexidade crescente: o tronco encefálico, na base; as estruturas subcorticais, no meio; e o córtex cerebral, por cima, recobrindo tudo.</p>
+<p>O <strong>tronco encefálico</strong> é a continuação da medula para dentro do crânio e cuida das funções que não podem parar: o <strong>bulbo</strong> regula batimento cardíaco e respiração; a <strong>ponte</strong> participa do sono e da transmissão entre cérebro e cerebelo; o <strong>mesencéfalo</strong> integra reflexos visuais e auditivos. Atravessando o tronco está a <strong>formação reticular</strong>, uma rede que controla o nível geral de alerta e vigília — lesioná-la produz coma. O tronco é o andar que menos “pensa” e mais mantém vivo; é também o mais antigo em termos evolutivos, compartilhado com répteis e peixes.</p>
+<p>Atrás do tronco fica o <strong>cerebelo</strong> (“pequeno cérebro”), uma estrutura enrugada que contém mais da metade de todos os neurônios do encéfalo. Sua fama é motora: coordenação, equilíbrio, timing e a suavização de movimentos aprendidos — daí o teste do bêbado, incapaz de tocar o nariz com o dedo, que revela intoxicação do cerebelo pelo álcool. Mas a pesquisa das últimas décadas mostrou que ele também participa de funções cognitivas e da aprendizagem de sequências, um lembrete de que os rótulos anatômicos simples raramente contam a história toda.</p>
+<p>A <a href="#fig-cerebro-lobos" class="quarto-xref">Figura&nbsp;<span>24.1</span></a> mostra a vista lateral do encéfalo, com o córtex dividido em lobos e o cerebelo e o tronco na parte posterior e inferior.</p>
+<div id="fig-cerebro-lobos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cerebro-lobos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Vista lateral esquematizada do encéfalo humano, com o rosto voltado para a esquerda. A grande massa do córtex cerebral está dividida em quatro regiões coloridas rotuladas: lobo frontal na frente (azul), lobo parietal no topo posterior (verde), lobo occipital atrás (amarelo) e lobo temporal na parte inferior lateral (vermelho). Uma linha vertical marca o sulco central entre frontal e parietal. Abaixo e atrás, uma estrutura enrugada menor representa o cerebelo, e um prolongamento para baixo representa o tronco encefálico, que se continua na medula." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="225.689524pt" height="173.73068pt" viewbox="-68.014948 -68.014947 225.689524 173.73068">
+<defs>
+<path id="tz_cerebro_lobos_g0-97" d="M3.347447-2.375093C3.347447-3.156164 2.590286-3.55467 1.865006-3.55467C1.203487-3.55467 .613699-3.299626 .613699-2.773599C.613699-2.534496 .781071-2.391034 .988294-2.391034C1.211457-2.391034 1.362889-2.550436 1.362889-2.765629C1.362889-2.956912 1.243337-3.092403 1.067995-3.132254C1.362889-3.331507 1.793275-3.331507 1.849066-3.331507C2.295392-3.331507 2.741719-3.020672 2.741719-2.367123V-2.12005C2.279452-2.096139 1.745455-2.072229 1.187547-1.841096C.486177-1.538232 .350685-1.075965 .350685-.812951C.350685-.127522 1.155666 .079701 1.705604 .079701C2.287422 .079701 2.646077-.247073 2.82142-.565878C2.86127-.263014 3.068493 .039851 3.419178 .039851C3.498879 .039851 4.176339 .00797 4.176339-.71731V-1.155666H3.929265V-.71731C3.929265-.390535 3.809714-.263014 3.642341-.263014C3.347447-.263014 3.347447-.629639 3.347447-.71731V-2.375093ZM2.741719-1.123786C2.741719-.350685 2.088169-.143462 1.769365-.143462C1.354919-.143462 1.004234-.422416 1.004234-.804981C1.004234-1.331009 1.498381-1.872976 2.741719-1.912827V-1.123786Z"></path>
+<path id="tz_cerebro_lobos_g0-98" d="M1.466501-5.531258L.278954-5.443587V-5.180573C.820922-5.180573 .884682-5.124782 .884682-4.734247V0H1.131756L1.41868-.494147C1.609963-.223163 1.984558 .079701 2.526526 .079701C3.53873 .079701 4.415442-.70137 4.415442-1.721544C4.415442-2.725778 3.594521-3.514819 2.622167-3.514819C1.992528-3.514819 1.601993-3.172105 1.466501-3.028643V-5.531258ZM1.490411-2.518555C1.490411-2.669988 1.490411-2.685928 1.609963-2.82939C1.841096-3.124284 2.215691-3.291656 2.574346-3.291656C2.988792-3.291656 3.299626-3.044583 3.459029-2.805479C3.594521-2.590286 3.706102-2.311333 3.706102-1.729514C3.706102-1.546202 3.706102-.980324 3.419178-.605729C3.132254-.247073 2.757659-.143462 2.494645-.143462C2.11208-.143462 1.793275-.342715 1.586052-.653549C1.490411-.804981 1.490411-.812951 1.490411-.964384V-2.518555Z"></path>
+<path id="tz_cerebro_lobos_g0-99" d="M2.933001-3.164134C2.709838-3.092403 2.677958-2.909091 2.677958-2.81345C2.677958-2.598257 2.82939-2.438854 3.052553-2.438854C3.259776-2.438854 3.427148-2.582316 3.427148-2.82142C3.427148-3.315567 2.885181-3.55467 2.13599-3.55467C1.028144-3.55467 .278954-2.669988 .278954-1.721544C.278954-.70934 1.107846 .079701 2.11208 .079701C3.235866 .079701 3.514819-.860772 3.514819-.956413S3.411208-1.052055 3.387298-1.052055C3.331507-1.052055 3.291656-1.044085 3.267746-.964384C3.211955-.797011 2.988792-.167372 2.191781-.167372C1.697634-.167372 .988294-.549938 .988294-1.729514C.988294-2.87721 1.578082-3.307597 2.1599-3.307597C2.231631-3.307597 2.654047-3.307597 2.933001-3.164134Z"></path>
+<path id="tz_cerebro_lobos_g0-100" d="M2.622167-5.443587V-5.180573C3.164134-5.180573 3.227895-5.124782 3.227895-4.734247V-3.052553C2.948941-3.355417 2.574346-3.514819 2.1599-3.514819C1.163636-3.514819 .278954-2.741719 .278954-1.713574C.278954-.73325 1.075965 .079701 2.080199 .079701C2.550436 .079701 2.940971-.143462 3.203985-.422416V.079701L4.415442 0V-.263014C3.873474-.263014 3.809714-.318804 3.809714-.70934V-5.531258L2.622167-5.443587ZM3.203985-.988294C3.203985-.844832 3.203985-.812951 3.084433-.653549C2.86127-.334745 2.494645-.143462 2.12005-.143462C1.753425-.143462 1.43462-.334745 1.243337-.629639C1.028144-.940473 .988294-1.331009 .988294-1.705604C.988294-2.16787 1.060025-2.494645 1.243337-2.773599C1.43462-3.068493 1.793275-3.291656 2.199751-3.291656C2.582316-3.291656 2.964882-3.100374 3.203985-2.685928V-.988294Z"></path>
+<path id="tz_cerebro_lobos_g0-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_cerebro_lobos_g0-108" d="M1.522291-5.531258L.334745-5.443587V-5.180573C.876712-5.180573 .940473-5.124782 .940473-4.734247V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.227397-.02391C1.3868-.02391 1.817186-.02391 2.12802 0V-.263014C1.617933-.263014 1.522291-.263014 1.522291-.621669V-5.531258Z"></path>
+<path id="tz_cerebro_lobos_g0-109" d="M6.224658-2.414944C6.224658-3.060523 5.945704-3.514819 5.076961-3.514819C4.343711-3.514819 3.977086-3.012702 3.849564-2.781569C3.706102-3.355417 3.251806-3.514819 2.733748-3.514819C1.960648-3.514819 1.594022-2.964882 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.16787-3.291656 2.669988-3.291656C3.188045-3.291656 3.275716-2.885181 3.275716-2.446824V-.621669C3.275716-.263014 3.180075-.263014 2.669988-.263014V0C3.012702-.02391 3.363387-.02391 3.57858-.02391C3.809714-.02391 4.144458-.02391 4.487173 0V-.263014C3.977086-.263014 3.881445-.263014 3.881445-.621669V-2.064259C3.881445-2.901121 4.511083-3.291656 5.0132-3.291656C5.531258-3.291656 5.618929-2.885181 5.618929-2.446824V-.621669C5.618929-.263014 5.523288-.263014 5.0132-.263014V0C5.355915-.02391 5.7066-.02391 5.921793-.02391C6.152927-.02391 6.487671-.02391 6.830386 0V-.263014C6.320299-.263014 6.224658-.263014 6.224658-.621669V-2.414944Z"></path>
+<path id="tz_cerebro_lobos_g0-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_cerebro_lobos_g0-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_cerebro_lobos_g0-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_cerebro_lobos_g0-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_cerebro_lobos_g0-117" d="M2.662017-3.427148V-3.164134C3.203985-3.164134 3.267746-3.108344 3.267746-2.717808V-1.331009C3.267746-.645579 2.8533-.143462 2.255542-.143462C1.570112-.143462 1.538232-.486177 1.538232-.884682V-3.514819L.326775-3.427148V-3.164134C.932503-3.164134 .932503-3.140224 .932503-2.430884V-1.235367C.932503-.661519 .932503 .079701 2.207721 .079701C2.956912 .079701 3.243836-.494147 3.283686-.565878H3.291656V.079701L4.479203 0V-.263014C3.937235-.263014 3.873474-.318804 3.873474-.70934V-3.514819L2.662017-3.427148Z"></path>
+<path id="tz_cerebro_lobos_g1-70" d="M5.944707-6.097136H.376588V-5.657783H1.344956V-.439352H.376588V0C.690411-.026899 1.667746-.026899 2.044334-.026899C2.465753-.026899 3.48792-.026899 3.855542 0V-.439352H2.645081V-2.833375H3.129265C3.999004-2.833375 4.079701-2.447821 4.079701-1.784309H4.536986V-4.321793H4.079701C4.079701-3.658281 3.999004-3.272727 3.129265-3.272727H2.645081V-5.657783H3.963138C5.406725-5.657783 5.630884-4.985305 5.76538-3.918306H6.222665L5.944707-6.097136Z"></path>
+<path id="tz_cerebro_lobos_g1-79" d="M7.370361-3.039601C7.370361-4.913574 6.106102-6.258531 3.981071-6.258531C1.847073-6.258531 .591781-4.904608 .591781-3.039601C.591781-1.228394 1.838107 .107597 3.981071 .107597S7.370361-1.219427 7.370361-3.039601ZM3.981071-.304857C3.425156-.304857 2.788543-.546949 2.402989-1.183562C2.035367-1.793275 1.999502-2.582316 1.999502-3.174097C1.999502-3.972105 2.080199-4.644583 2.519552-5.218431C2.752677-5.514321 3.263761-5.872976 3.981071-5.872976C4.572852-5.872976 5.137733-5.630884 5.487422-5.155666C5.926775-4.572852 5.96264-3.801743 5.96264-3.174097C5.96264-2.37609 5.881943-1.802242 5.603985-1.255293C5.272229-.636613 4.635616-.304857 3.981071-.304857Z"></path>
+<path id="tz_cerebro_lobos_g1-80" d="M2.645081-2.680946H4.294894C5.577086-2.680946 6.644085-3.335492 6.644085-4.393524C6.644085-5.379826 5.738481-6.150934 4.20523-6.150934H.376588V-5.711582H1.344956V-.439352H.376588V0C.690411-.026899 1.622914-.026899 1.990535-.026899S3.299626-.026899 3.61345 0V-.439352H2.645081V-2.680946ZM3.864508-5.711582C5.236364-5.711582 5.236364-5.030137 5.236364-4.393524C5.236364-3.765878 5.236364-3.075467 3.855542-3.075467H2.591283V-5.711582H3.864508Z"></path>
+<path id="tz_cerebro_lobos_g1-84" d="M6.787547-6.043337H.582814L.385554-3.864508H.842839C.932503-4.859776 1.0132-5.603985 2.331258-5.603985H3.039601V-.439352H1.667746V0C2.062267-.026899 3.227895-.026899 3.694147-.026899S5.317061-.026899 5.711582 0V-.439352H4.339726V-5.603985H5.04807C6.366127-5.603985 6.437858-4.841843 6.527522-3.864508H6.984807L6.787547-6.043337Z"></path>
+<path id="tz_cerebro_lobos_g1-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_cerebro_lobos_g1-99" d="M4.411457-1.0401C4.411457-1.183562 4.276961-1.183562 4.178331-1.183562C3.999004-1.183562 3.999004-1.174595 3.927273-1.0132C3.747945-.582814 3.344458-.331756 2.815442-.331756C1.542217-.331756 1.542217-1.622914 1.542217-2.026401C1.542217-2.564384 1.551183-3.676214 2.725778-3.676214C2.788543-3.676214 3.272727-3.667248 3.272727-3.622416C3.272727-3.61345 3.254795-3.58655 3.245828-3.577584C3.165131-3.478954 3.129265-3.335492 3.129265-3.209963C3.129265-2.842341 3.407223-2.627148 3.71208-2.627148C3.990037-2.627148 4.294894-2.815442 4.294894-3.218929C4.294894-4.061768 3.039601-4.061768 2.689913-4.061768C.968369-4.061768 .349689-2.96787 .349689-1.990535C.349689-.860772 1.156663 .053798 2.645081 .053798C2.976837 .053798 3.416189 0 3.792777-.233126C4.303861-.546949 4.411457-1.0132 4.411457-1.0401Z"></path>
+<path id="tz_cerebro_lobos_g1-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_cerebro_lobos_g1-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_cerebro_lobos_g1-108" d="M2.071233-6.222665L.466252-6.150934V-5.711582C1.004234-5.711582 1.075965-5.711582 1.075965-5.361893V-.439352H.466252V0C1.075965-.026899 1.183562-.026899 1.569116-.026899C1.963636-.026899 2.196762-.017933 2.680946 0V-.439352H2.071233V-6.222665Z"></path>
+<path id="tz_cerebro_lobos_g1-109" d="M7.989041-2.734745C7.989041-3.792777 7.352428-4.034869 6.563387-4.034869C5.630884-4.034869 5.173599-3.469988 5.003238-3.19203C4.805978-3.999004 4.016936-4.034869 3.622416-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.272727 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.999004-3.496887 3.999004-2.815442V-.439352H3.38929V0C4.052802-.026899 4.160399-.026899 4.519054-.026899C4.886675-.026899 4.976339-.026899 5.657783 0V-.439352H5.04807V-2.27746C5.04807-3.272727 5.872976-3.676214 6.410959-3.676214C6.751681-3.676214 6.939975-3.496887 6.939975-2.815442V-.439352H6.330262V0C6.993773-.026899 7.10137-.026899 7.460025-.026899C7.827646-.026899 7.91731-.026899 8.598755 0V-.439352H7.989041V-2.734745Z"></path>
+<path id="tz_cerebro_lobos_g1-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_cerebro_lobos_g1-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_cerebro_lobos_g1-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_cerebro_lobos_g1-114" d="M1.972603-1.95467C1.972603-2.609215 2.214695-3.649315 3.084433-3.676214C2.985803-3.577584 2.940971-3.425156 2.940971-3.281694C2.940971-2.887173 3.254795-2.707846 3.505853-2.707846C3.792777-2.707846 4.079701-2.905106 4.079701-3.281694C4.079701-3.738979 3.61345-4.034869 3.084433-4.034869C2.456787-4.034869 2.071233-3.577584 1.873973-3.057534H1.865006V-4.034869L.367621-3.963138V-3.523786C.905604-3.523786 .977335-3.523786 .977335-3.174097V-.439352H.367621V0C1.031133-.026899 1.084932-.026899 1.515318-.026899C1.739477-.026899 2.259527-.026899 2.734745 0V-.439352H1.972603V-1.95467Z"></path>
+<path id="tz_cerebro_lobos_g1-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+</defs>
+<g id="tz_cerebro_lobos_page1">
+<g stroke-miterlimit="10" transform="translate(-53.443234,40.100113)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<clippath id="tz_cerebro_lobos_pgfcp1">
+<path d="M0 0C-14.22636 73.9773 56.90549 108.1205 119.50143 99.5846C179.25237 91.04869 204.85966 51.21501 199.1692 17.07181C196.32375 0 176.40692-5.69046 153.64464-5.69046C99.5846-8.5359 42.67911-11.38092 17.07181 0C5.69046 4.26773 1.42271 0 0 0"></path> </clippath>
+<g clip-path="url(#tz_cerebro_lobos_pgfcp1)">
+<g fill="#ddebfb" stroke="#ddebfb">
+<path d="M-28.45274-28.45274V113.81097H85.35823V-28.45274ZM85.35823 113.81097" stroke="none"></path>
+</g>
+<g fill="#e1f4da" stroke="#e1f4da">
+<path d="M85.35823 45.52455V113.81097H159.33553V45.52455ZM159.33553 113.81097" stroke="none"></path>
+</g>
+<g fill="#ffe1cc" stroke="#ffe1cc">
+<path d="M159.33553 11.38092V113.81097H227.62195V11.38092ZM227.62195 113.81097" stroke="none"></path>
+</g>
+<g fill="#fae5e4" stroke="#fae5e4">
+<path d="M68.2864-28.45274V45.52455H170.71646V-28.45274ZM170.71646 45.52455" stroke="none"></path>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M0 0C-14.22636 73.9773 56.90549 108.1205 119.50143 99.5846C179.25237 91.04869 204.85966 51.21501 199.1692 17.07181C196.32375 0 176.40692-5.69046 153.64464-5.69046C99.5846-8.5359 42.67911-11.38092 17.07181 0C5.69046 4.26773 1.42271 0 0 0" fill="none"></path>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M85.35823 101.00732L96.73915 39.83366" fill="none"></path>
+</g>
+</g>
+</g>
+<g transform="translate(20.27812,42.39955)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g1-70"></use>
+<use x="-47.659461" y="40.100113" href="#tz_cerebro_lobos_g1-114"></use>
+<use x="-43.282836" y="40.100113" href="#tz_cerebro_lobos_g1-111"></use>
+<use x="-37.977794" y="40.100113" href="#tz_cerebro_lobos_g1-110"></use>
+<use x="-32.378053" y="40.100113" href="#tz_cerebro_lobos_g1-116"></use>
+<use x="-28.251912" y="40.100113" href="#tz_cerebro_lobos_g1-97"></use>
+<use x="-23.094238" y="40.100113" href="#tz_cerebro_lobos_g1-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(104.01274,76.54276)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g1-80"></use>
+<use x="-46.493008" y="40.100113" href="#tz_cerebro_lobos_g1-97"></use>
+<use x="-41.335334" y="40.100113" href="#tz_cerebro_lobos_g1-114"></use>
+<use x="-36.958708" y="40.100113" href="#tz_cerebro_lobos_g1-105"></use>
+<use x="-34.01146" y="40.100113" href="#tz_cerebro_lobos_g1-101"></use>
+<use x="-29.142955" y="40.100113" href="#tz_cerebro_lobos_g1-116"></use>
+<use x="-25.016814" y="40.100113" href="#tz_cerebro_lobos_g1-97"></use>
+<use x="-19.85914" y="40.100113" href="#tz_cerebro_lobos_g1-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(167.00002,66.0364)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#99460e">
+<g stroke="none">
+<g fill="#99460e">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g1-79"></use>
+<use x="-45.473229" y="40.100113" href="#tz_cerebro_lobos_g1-99"></use>
+<use x="-40.757634" y="40.100113" href="#tz_cerebro_lobos_g1-99"></use>
+<use x="-36.042038" y="40.100113" href="#tz_cerebro_lobos_g1-105"></use>
+<use x="-33.094789" y="40.100113" href="#tz_cerebro_lobos_g1-112"></use>
+<use x="-27.200301" y="40.100113" href="#tz_cerebro_lobos_g1-105"></use>
+<use x="-24.253053" y="40.100113" href="#tz_cerebro_lobos_g1-116"></use>
+<use x="-20.126912" y="40.100113" href="#tz_cerebro_lobos_g1-97"></use>
+<use x="-14.969238" y="40.100113" href="#tz_cerebro_lobos_g1-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(94.48239,14.82181)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g1-84"></use>
+<use x="-46.946872" y="40.100113" href="#tz_cerebro_lobos_g1-101"></use>
+<use x="-42.078367" y="40.100113" href="#tz_cerebro_lobos_g1-109"></use>
+<use x="-33.236631" y="40.100113" href="#tz_cerebro_lobos_g1-112"></use>
+<use x="-27.04741" y="40.100113" href="#tz_cerebro_lobos_g1-111"></use>
+<use x="-21.742368" y="40.100113" href="#tz_cerebro_lobos_g1-114"></use>
+<use x="-17.365743" y="40.100113" href="#tz_cerebro_lobos_g1-97"></use>
+<use x="-12.208069" y="40.100113" href="#tz_cerebro_lobos_g1-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<g fill="#e9ebec">
+<path d="M209.1274-8.5359C209.1274 3.24976 197.02583 12.80365 182.09738 12.80365S155.06737 3.24976 155.06737-8.5359S167.16893-29.87546 182.09738-29.87546S209.1274-20.32156 209.1274-8.5359ZM182.09738-8.5359"></path>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M157.91281-19.91682H206.28238" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M157.91281-12.80363H206.28238" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M157.91281-5.69046H206.28238" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M157.91281 1.42271H206.28238" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M157.91281 8.5359H206.28238" fill="none"></path>
+</g>
+</g>
+<g transform="translate(167.10065,-41.18915)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g0-99"></use>
+<use x="-49.679516" y="40.100113" href="#tz_cerebro_lobos_g0-101"></use>
+<use x="-45.915798" y="40.100113" href="#tz_cerebro_lobos_g0-114"></use>
+<use x="-42.615628" y="40.100113" href="#tz_cerebro_lobos_g0-101"></use>
+<use x="-38.85191" y="40.100113" href="#tz_cerebro_lobos_g0-98"></use>
+<use x="-33.91203" y="40.100113" href="#tz_cerebro_lobos_g0-101"></use>
+<use x="-30.148312" y="40.100113" href="#tz_cerebro_lobos_g0-108"></use>
+<use x="-27.795988" y="40.100113" href="#tz_cerebro_lobos_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<g fill="#f1f2f2">
+<path d="M150.79962-5.69046L143.68643-39.83366H163.60327L159.33553-5.69046Z"></path>
+</g>
+</g>
+</g>
+<g transform="translate(171.40398,-35.18079)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g0-116"></use>
+<use x="-50.149981" y="40.100113" href="#tz_cerebro_lobos_g0-114"></use>
+<use x="-46.849811" y="40.100113" href="#tz_cerebro_lobos_g0-111"></use>
+<use x="-42.615628" y="40.100113" href="#tz_cerebro_lobos_g0-110"></use>
+<use x="-37.91098" y="40.100113" href="#tz_cerebro_lobos_g0-99"></use>
+<use x="-34.147262" y="40.100113" href="#tz_cerebro_lobos_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M153.64464-39.83366L152.22235-54.06003" fill="none"></path>
+</g>
+</g>
+<g transform="translate(140.18611,-62.5287)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-53.443234,40.100113)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-53.443234" y="40.100113" href="#tz_cerebro_lobos_g0-109"></use>
+<use x="-46.386263" y="40.100113" href="#tz_cerebro_lobos_g0-101"></use>
+<use x="-42.622545" y="40.100113" href="#tz_cerebro_lobos_g0-100"></use>
+<use x="-37.917897" y="40.100113" href="#tz_cerebro_lobos_g0-117"></use>
+<use x="-33.213249" y="40.100113" href="#tz_cerebro_lobos_g0-108"></use>
+<use x="-30.860926" y="40.100113" href="#tz_cerebro_lobos_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cerebro-lobos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;24.1: Vista lateral do encéfalo (rosto à esquerda). Os quatro lobos do córtex, o cerebelo e o tronco. O sulco central (tracejado) separa o lobo frontal do parietal e marca a fronteira entre o córtex motor e o somatossensorial.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="as-estruturas-subcorticais-e-o-sistema-límbico" class="level2">
+<h2 class="anchored" data-anchor-id="as-estruturas-subcorticais-e-o-sistema-límbico">As estruturas subcorticais e o sistema límbico</h2>
+<p>Entre o tronco e o córtex ficam estruturas que não se veem na vista lateral porque estão enterradas no centro do cérebro. Várias delas compõem o chamado <strong>sistema límbico</strong> — um conjunto funcionalmente relacionado (mais do que uma unidade anatômica precisa) que está no coração da emoção, da memória e da motivação.</p>
+<p>O <strong>tálamo</strong> é a grande estação de retransmissão sensorial: quase toda informação dos sentidos — exceto o olfato — passa por ele antes de chegar ao córtex. É o “porteiro” que distribui os sinais de entrada para as áreas corticais corretas. O <strong>hipotálamo</strong>, logo abaixo, é minúsculo e desproporcionalmente poderoso: regula fome, sede, temperatura, sono, comportamento sexual e a resposta ao estresse, e é a ponte entre o sistema nervoso e o endócrino — comanda a hipófise, tema do Cap. 25. O <strong>hipocampo</strong> é indispensável à formação de novas memórias de longo prazo, como o caso de H.M. tornaria dramaticamente claro (adiante). A <strong>amígdala</strong> é central no processamento do medo e das emoções, atribuindo valor de ameaça ou recompensa aos estímulos — o Vol 9 volta a ela. A <a href="#fig-limbico" class="quarto-xref">Figura&nbsp;<span>24.2</span></a> localiza essas estruturas.</p>
+<div id="fig-limbico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-limbico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Corte esquemático do cérebro mostrando as estruturas subcorticais do sistema límbico em posições relativas. No centro, o tálamo, representado como uma forma oval. Abaixo dele, o hipotálamo, menor. À frente e abaixo, a amígdala, uma forma arredondada. Atrás da amígdala, curvando-se, o hipocampo, em forma alongada. Cada estrutura tem um rótulo e uma nota curta de função: tálamo (retransmissão sensorial), hipotálamo (fome, sede, hormônios), amígdala (medo, emoção), hipocampo (memória nova)." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="298.243248pt" height="165.206007pt" viewbox="-68.014948 -68.014947 298.243248 165.206007">
+<defs>
+<path id="tz_sistema_limbico_g0-16" d="M1.920797-3.594521L.494147-3.53076V-3.116314C.940473-3.116314 .996264-3.116314 .996264-2.81345V-.414446H.470237V0C.932503-.02391 1.020174-.02391 1.44259-.02391C1.769365-.02391 2.000498-.02391 2.391034 0V-.414446H1.920797V-3.594521Z"></path>
+<path id="tz_sistema_limbico_g0-19" d="M3.57858-4.646575C3.650311-4.686426 3.889415-4.798007 3.889415-5.076961C3.889415-5.324035 3.666252-5.610959 3.379328-5.610959C3.235866-5.610959 3.116314-5.539228 3.012702-5.427646L2.024408-4.383562L2.279452-4.024907L3.57858-4.646575Z"></path>
+<path id="tz_sistema_limbico_g0-46" d="M1.992528-.637609C1.992528-.988294 1.705604-1.275218 1.354919-1.275218S.71731-.988294 .71731-.637609S1.004234 0 1.354919 0S1.992528-.286924 1.992528-.637609Z"></path>
+<path id="tz_sistema_limbico_g0-97" d="M4.000996-2.359153C4.000996-3.076463 3.427148-3.626401 2.12802-3.626401C1.737484-3.626401 .597758-3.626401 .597758-2.83736C.597758-2.486675 .868742-2.295392 1.131756-2.295392C1.45056-2.295392 1.673724-2.526526 1.673724-2.82939C1.673724-3.084433 1.514321-3.227895 1.506351-3.235866C1.570112-3.251806 1.801245-3.291656 2.11208-3.291656C2.749689-3.291656 3.028643-2.940971 3.028643-2.367123V-2.13599C1.833126-2.12802 .278954-1.865006 .278954-.892653C.278954-.215193 1.044085 .055791 1.912827 .055791C2.733748 .055791 3.076463-.382565 3.180075-.541968C3.180075-.302864 3.267746 0 4.040847 0H4.463263C4.614695 0 4.734247 0 4.734247-.207223S4.606725-.414446 4.495143-.414446C4.000996-.414446 4.000996-.494147 4.000996-.67746V-2.359153ZM3.028643-1.091905C3.028643-.278954 2.072229-.278954 2.040349-.278954C1.625903-.278954 1.251308-.526027 1.251308-.908593C1.251308-1.466501 1.992528-1.809215 3.028643-1.833126V-1.091905Z"></path>
+<path id="tz_sistema_limbico_g0-99" d="M4.056787-.916563C4.056787-1.060025 3.929265-1.060025 3.833624-1.060025C3.682192-1.060025 3.658281-1.060025 3.602491-.916563C3.379328-.390535 2.84533-.318804 2.590286-.318804C1.40274-.318804 1.40274-1.458531 1.40274-1.801245C1.40274-2.279452 1.42665-3.251806 2.494645-3.251806C2.550436-3.251806 2.996762-3.235866 2.996762-3.203985C2.996762-3.196015 2.988792-3.180075 2.964882-3.156164C2.901121-3.060523 2.86924-2.940971 2.86924-2.82939C2.86924-2.510585 3.116314-2.295392 3.403238-2.295392C3.706102-2.295392 3.945205-2.502615 3.945205-2.83736C3.945205-3.626401 2.789539-3.626401 2.462765-3.626401C.932503-3.626401 .326775-2.669988 .326775-1.769365C.326775-.781071 1.044085 .055791 2.430884 .055791C2.789539 .055791 3.188045-.00797 3.514819-.207223C3.937235-.470237 4.056787-.868742 4.056787-.916563Z"></path>
+<path id="tz_sistema_limbico_g0-100" d="M3.076463-5.467497V-5.053051C3.5467-5.053051 3.602491-5.053051 3.602491-4.742217V-3.251806C3.172105-3.5467 2.757659-3.594521 2.462765-3.594521C1.115816-3.594521 .326775-2.797509 .326775-1.769365C.326775-.72528 1.099875 .055791 2.367123 .055791C2.948941 .055791 3.347447-.175342 3.55467-.334745V.055791L5.053051 0V-.414446C4.582814-.414446 4.527024-.414446 4.527024-.72528V-5.531258L3.076463-5.467497ZM3.55467-.884682C3.180075-.358655 2.709838-.278954 2.438854-.278954C1.40274-.278954 1.40274-1.267248 1.40274-1.745455C1.40274-2.247572 1.40274-3.259776 2.542466-3.259776C2.909091-3.259776 3.283686-3.108344 3.55467-2.765629V-.884682Z"></path>
+<path id="tz_sistema_limbico_g0-103" d="M1.785305-.6934C1.546202-.6934 1.39477-.6934 1.275218-.797011C1.195517-.876712 1.091905-.996264 1.091905-1.187547C1.091905-1.267248 1.115816-1.354919 1.155666-1.41071C1.482441-1.251308 1.872976-1.211457 2.16787-1.211457C3.459029-1.211457 3.849564-1.912827 3.849564-2.399004C3.849564-2.82939 3.57858-3.108344 3.53076-3.148194C3.745953-3.259776 3.905355-3.283686 4.016936-3.299626C3.993026-3.251806 3.985056-3.172105 3.985056-3.132254C3.985056-2.909091 4.144458-2.749689 4.359651-2.749689S4.742217-2.909091 4.742217-3.132254C4.742217-3.371357 4.558904-3.650311 4.184309-3.650311C3.873474-3.650311 3.514819-3.52279 3.283686-3.339477C2.996762-3.498879 2.669988-3.594521 2.16787-3.594521C.876712-3.594521 .486177-2.893151 .486177-2.406974C.486177-1.944707 .757161-1.705604 .900623-1.578082C.74122-1.3868 .637609-1.131756 .637609-.868742C.637609-.581818 .757161-.302864 .964384-.103611C.629639-.01594 .270984 .207223 .270984 .589788C.270984 1.012204 .74122 1.609963 2.438854 1.609963C3.945205 1.609963 4.606725 1.131756 4.606725 .565878C4.606725-.207223 4.008966-.454296 3.841594-.518057C3.411208-.6934 2.925031-.6934 2.199751-.6934H1.785305ZM2.16787-1.554172C1.41071-1.554172 1.41071-2.080199 1.41071-2.399004C1.41071-2.733748 1.41071-3.251806 2.16787-3.251806S2.925031-2.725778 2.925031-2.406974C2.925031-2.072229 2.925031-1.554172 2.16787-1.554172ZM2.662017 .135492C2.901121 .135492 3.865504 .135492 3.865504 .589788C3.865504 .860772 3.53076 1.267248 2.438854 1.267248C1.3868 1.267248 1.012204 .884682 1.012204 .581818C1.012204 .135492 1.530262 .135492 1.649813 .135492H2.662017Z"></path>
+<path id="tz_sistema_limbico_g0-104" d="M4.654545-2.414944C4.654545-3.387298 4.048817-3.594521 3.339477-3.594521C2.502615-3.594521 2.064259-3.108344 1.896887-2.86127V-5.531258L.446326-5.467497V-5.053051C.916563-5.053051 .972354-5.053051 .972354-4.742217V-.414446H.446326V0C.876712-.02391 1.155666-.02391 1.458531-.02391C1.769365-.02391 2.040349-.02391 2.470735 0V-.414446H1.944707V-2.016438C1.944707-2.901121 2.709838-3.259776 3.219925-3.259776C3.498879-3.259776 3.682192-3.124284 3.682192-2.502615V-.414446H3.156164V0C3.58655-.02391 3.865504-.02391 4.168369-.02391C4.479203-.02391 4.750187-.02391 5.180573 0V-.414446H4.654545V-2.414944Z"></path>
+<path id="tz_sistema_limbico_g0-105" d="M1.992528-4.901619C1.992528-5.244334 1.713574-5.539228 1.354919-5.539228C1.012204-5.539228 .71731-5.268244 .71731-4.901619S1.012204-4.26401 1.354919-4.26401C1.713574-4.26401 1.992528-4.558904 1.992528-4.901619ZM.494147-3.53076V-3.116314C.940473-3.116314 .996264-3.116314 .996264-2.81345V-.414446H.470237V0C.932503-.02391 1.020174-.02391 1.44259-.02391C1.769365-.02391 2.000498-.02391 2.391034 0V-.414446H1.920797V-3.594521L.494147-3.53076Z"></path>
+<path id="tz_sistema_limbico_g0-108" d="M1.920797-5.531258L.470237-5.467497V-5.053051C.940473-5.053051 .996264-5.053051 .996264-4.742217V-.414446H.470237V0C.932503-.02391 1.012204-.02391 1.458531-.02391S1.984558-.02391 2.446824 0V-.414446H1.920797V-5.531258Z"></path>
+<path id="tz_sistema_limbico_g0-109" d="M7.364384-2.414944C7.364384-3.371357 6.782565-3.594521 6.049315-3.594521C5.212453-3.594521 4.774097-3.108344 4.606725-2.86127C4.415442-3.482939 3.881445-3.594521 3.339477-3.594521C2.375093-3.594521 1.944707-2.956912 1.849066-2.781569H1.841096V-3.594521L.446326-3.53076V-3.116314C.916563-3.116314 .972354-3.116314 .972354-2.805479V-.414446H.446326V0C.876712-.02391 1.155666-.02391 1.458531-.02391C1.769365-.02391 2.040349-.02391 2.470735 0V-.414446H1.944707V-2.016438C1.944707-2.901121 2.709838-3.259776 3.219925-3.259776C3.498879-3.259776 3.682192-3.124284 3.682192-2.502615V-.414446H3.156164V0C3.58655-.02391 3.865504-.02391 4.168369-.02391C4.479203-.02391 4.750187-.02391 5.180573 0V-.414446H4.654545V-2.016438C4.654545-2.901121 5.419676-3.259776 5.929763-3.259776C6.208717-3.259776 6.39203-3.124284 6.39203-2.502615V-.414446H5.866002V0C6.296389-.02391 6.575342-.02391 6.878207-.02391C7.189041-.02391 7.460025-.02391 7.890411 0V-.414446H7.364384V-2.414944Z"></path>
+<path id="tz_sistema_limbico_g0-111" d="M4.606725-1.737484C4.606725-2.741719 3.897385-3.626401 2.438854-3.626401C.972354-3.626401 .270984-2.733748 .270984-1.737484C.270984-.789041 .972354 .055791 2.438854 .055791C3.921295 .055791 4.606725-.797011 4.606725-1.737484ZM2.438854-.318804C1.346949-.318804 1.346949-1.139726 1.346949-1.833126C1.346949-2.486675 1.346949-3.291656 2.438854-3.291656S3.53076-2.478705 3.53076-1.833126C3.53076-1.139726 3.53076-.318804 2.438854-.318804Z"></path>
+<path id="tz_sistema_limbico_g0-112" d="M2.391034 1.131756H1.865006V-.294894C2.279452 .00797 2.669988 .055791 2.948941 .055791C4.25604 .055791 5.092902-.70137 5.092902-1.777335C5.092902-2.773599 4.383562-3.594521 3.100374-3.594521C2.646077-3.594521 2.199751-3.474969 1.817186-3.219925V-3.594521L.366625-3.53076V-3.116314C.518057-3.116314 .661519-3.116314 .757161-3.092403C.892653-3.068493 .892653-2.980822 .892653-2.82939V1.131756H.366625V1.546202C.797011 1.522291 1.075965 1.522291 1.378829 1.522291C1.689664 1.522291 1.960648 1.522291 2.391034 1.546202V1.131756ZM1.865006-2.725778C2.000498-2.893151 2.399004-3.219925 2.964882-3.219925C3.594521-3.219925 4.016936-2.685928 4.016936-1.777335C4.016936-.70934 3.451059-.278954 2.86924-.278954C2.510585-.278954 2.12802-.454296 1.865006-.844832V-2.725778Z"></path>
+<path id="tz_sistema_limbico_g0-116" d="M1.841096-3.124284H3.084433V-3.53873H1.841096V-5.061021H1.39477C1.3868-4.27198 .980324-3.474969 .183313-3.459029V-3.124284H.868742V-.980324C.868742-.159402 1.514321 .055791 2.191781 .055791C2.797509 .055791 3.243836-.350685 3.243836-.980324V-1.3868H2.797509V-.996264C2.797509-.446326 2.494645-.318804 2.311333-.318804C1.849066-.318804 1.841096-.74122 1.841096-.956413V-3.124284Z"></path>
+<path id="tz_sistema_limbico_g1-19" d="M3.156164-4.98132C3.243836-5.045081 3.315567-5.116812 3.315567-5.244334C3.315567-5.427646 3.148194-5.563138 3.004732-5.563138C2.972852-5.563138 2.86127-5.563138 2.757659-5.435616L1.737484-4.224159L1.904857-4.040847L3.156164-4.98132Z"></path>
+<path id="tz_sistema_limbico_g1-24" d="M2.414944 .167372H1.809215V.557908C2.351183 .565878 2.518555 .797011 2.518555 .980324C2.518555 1.251308 2.207721 1.41071 1.370859 1.41071H1.099875V1.633873H1.474471C1.578082 1.633873 2.12802 1.625903 2.478705 1.546202C2.797509 1.474471 3.124284 1.338979 3.124284 .980324C3.124284 .557908 2.677958 .430386 2.414944 .382565V.167372Z"></path>
+<path id="tz_sistema_limbico_g1-44" d="M1.490411-.119552C1.490411 .119552 1.490411 .773101 .884682 1.338979C.860772 1.362889 .836862 1.378829 .836862 1.42665C.836862 1.498381 .908593 1.546202 .948443 1.546202C1.052055 1.546202 1.713574 .924533 1.713574-.03188C1.713574-.470237 1.554172-.884682 1.171606-.884682C.908593-.884682 .73325-.67746 .73325-.446326C.73325-.207223 .900623 0 1.179577 0C1.354919 0 1.466501-.095641 1.490411-.119552Z"></path>
+<path id="tz_sistema_limbico_g1-94" d="M2.11208-5.531258L.980324-4.463263L1.139726-4.27198L2.11208-5.061021L3.084433-4.27198L3.243836-4.455293L2.11208-5.531258Z"></path>
+<path id="tz_sistema_limbico_g1-97" d="M3.347447-2.375093C3.347447-3.156164 2.590286-3.55467 1.865006-3.55467C1.203487-3.55467 .613699-3.299626 .613699-2.773599C.613699-2.534496 .781071-2.391034 .988294-2.391034C1.211457-2.391034 1.362889-2.550436 1.362889-2.765629C1.362889-2.956912 1.243337-3.092403 1.067995-3.132254C1.362889-3.331507 1.793275-3.331507 1.849066-3.331507C2.295392-3.331507 2.741719-3.020672 2.741719-2.367123V-2.12005C2.279452-2.096139 1.745455-2.072229 1.187547-1.841096C.486177-1.538232 .350685-1.075965 .350685-.812951C.350685-.127522 1.155666 .079701 1.705604 .079701C2.287422 .079701 2.646077-.247073 2.82142-.565878C2.86127-.263014 3.068493 .039851 3.419178 .039851C3.498879 .039851 4.176339 .00797 4.176339-.71731V-1.155666H3.929265V-.71731C3.929265-.390535 3.809714-.263014 3.642341-.263014C3.347447-.263014 3.347447-.629639 3.347447-.71731V-2.375093ZM2.741719-1.123786C2.741719-.350685 2.088169-.143462 1.769365-.143462C1.354919-.143462 1.004234-.422416 1.004234-.804981C1.004234-1.331009 1.498381-1.872976 2.741719-1.912827V-1.123786Z"></path>
+<path id="tz_sistema_limbico_g1-99" d="M2.933001-3.164134C2.709838-3.092403 2.677958-2.909091 2.677958-2.81345C2.677958-2.598257 2.82939-2.438854 3.052553-2.438854C3.259776-2.438854 3.427148-2.582316 3.427148-2.82142C3.427148-3.315567 2.885181-3.55467 2.13599-3.55467C1.028144-3.55467 .278954-2.669988 .278954-1.721544C.278954-.70934 1.107846 .079701 2.11208 .079701C3.235866 .079701 3.514819-.860772 3.514819-.956413S3.411208-1.052055 3.387298-1.052055C3.331507-1.052055 3.291656-1.044085 3.267746-.964384C3.211955-.797011 2.988792-.167372 2.191781-.167372C1.697634-.167372 .988294-.549938 .988294-1.729514C.988294-2.87721 1.578082-3.307597 2.1599-3.307597C2.231631-3.307597 2.654047-3.307597 2.933001-3.164134Z"></path>
+<path id="tz_sistema_limbico_g1-100" d="M2.622167-5.443587V-5.180573C3.164134-5.180573 3.227895-5.124782 3.227895-4.734247V-3.052553C2.948941-3.355417 2.574346-3.514819 2.1599-3.514819C1.163636-3.514819 .278954-2.741719 .278954-1.713574C.278954-.73325 1.075965 .079701 2.080199 .079701C2.550436 .079701 2.940971-.143462 3.203985-.422416V.079701L4.415442 0V-.263014C3.873474-.263014 3.809714-.318804 3.809714-.70934V-5.531258L2.622167-5.443587ZM3.203985-.988294C3.203985-.844832 3.203985-.812951 3.084433-.653549C2.86127-.334745 2.494645-.143462 2.12005-.143462C1.753425-.143462 1.43462-.334745 1.243337-.629639C1.028144-.940473 .988294-1.331009 .988294-1.705604C.988294-2.16787 1.060025-2.494645 1.243337-2.773599C1.43462-3.068493 1.793275-3.291656 2.199751-3.291656C2.582316-3.291656 2.964882-3.100374 3.203985-2.685928V-.988294Z"></path>
+<path id="tz_sistema_limbico_g1-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_sistema_limbico_g1-102" d="M1.522291-3.172105H2.478705V-3.435118H1.498381V-4.335741C1.498381-5.029141 1.888917-5.387796 2.239601-5.387796C2.367123-5.387796 2.438854-5.355915 2.470735-5.347945C2.327273-5.276214 2.287422-5.140722 2.287422-5.037111C2.287422-4.829888 2.438854-4.678456 2.646077-4.678456C2.86127-4.678456 3.004732-4.829888 3.004732-5.037111C3.004732-5.379826 2.669988-5.610959 2.247572-5.610959C1.649813-5.610959 .940473-5.180573 .940473-4.327771V-3.435118H.286924V-3.172105H.940473V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.083935-.02391 1.275218-.02391C1.745455-.02391 1.761395-.02391 2.279452 0V-.263014H2.12005C1.538232-.263014 1.522291-.350685 1.522291-.637609V-3.172105Z"></path>
+<path id="tz_sistema_limbico_g1-104" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C2.032379-3.514819 1.665753-3.068493 1.522291-2.81345H1.514321V-5.531258L.326775-5.443587V-5.180573C.868742-5.180573 .932503-5.124782 .932503-4.734247V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_sistema_limbico_g1-105" d="M1.554172-4.909589C1.554172-5.140722 1.370859-5.355915 1.107846-5.355915C.876712-5.355915 .669489-5.172603 .669489-4.917559C.669489-4.638605 .900623-4.471233 1.107846-4.471233C1.3868-4.471233 1.554172-4.702366 1.554172-4.909589ZM.358655-3.427148V-3.164134C.868742-3.164134 .940473-3.116314 .940473-2.725778V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.211457-.02391C1.315068-.02391 1.793275-.02391 2.072229 0V-.263014C1.554172-.263014 1.522291-.302864 1.522291-.613699V-3.514819L.358655-3.427148Z"></path>
+<path id="tz_sistema_limbico_g1-108" d="M1.522291-5.531258L.334745-5.443587V-5.180573C.876712-5.180573 .940473-5.124782 .940473-4.734247V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.227397-.02391C1.3868-.02391 1.817186-.02391 2.12802 0V-.263014C1.617933-.263014 1.522291-.263014 1.522291-.621669V-5.531258Z"></path>
+<path id="tz_sistema_limbico_g1-109" d="M6.224658-2.414944C6.224658-3.060523 5.945704-3.514819 5.076961-3.514819C4.343711-3.514819 3.977086-3.012702 3.849564-2.781569C3.706102-3.355417 3.251806-3.514819 2.733748-3.514819C1.960648-3.514819 1.594022-2.964882 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.16787-3.291656 2.669988-3.291656C3.188045-3.291656 3.275716-2.885181 3.275716-2.446824V-.621669C3.275716-.263014 3.180075-.263014 2.669988-.263014V0C3.012702-.02391 3.363387-.02391 3.57858-.02391C3.809714-.02391 4.144458-.02391 4.487173 0V-.263014C3.977086-.263014 3.881445-.263014 3.881445-.621669V-2.064259C3.881445-2.901121 4.511083-3.291656 5.0132-3.291656C5.531258-3.291656 5.618929-2.885181 5.618929-2.446824V-.621669C5.618929-.263014 5.523288-.263014 5.0132-.263014V0C5.355915-.02391 5.7066-.02391 5.921793-.02391C6.152927-.02391 6.487671-.02391 6.830386 0V-.263014C6.320299-.263014 6.224658-.263014 6.224658-.621669V-2.414944Z"></path>
+<path id="tz_sistema_limbico_g1-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_sistema_limbico_g1-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_sistema_limbico_g1-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_sistema_limbico_g1-115" d="M2.83736-3.347447C2.83736-3.474969 2.83736-3.55467 2.733748-3.55467C2.693898-3.55467 2.669988-3.55467 2.542466-3.427148C2.526526-3.419178 2.454795-3.347447 2.430884-3.347447C2.422914-3.347447 2.406974-3.347447 2.359153-3.379328C2.231631-3.466999 2.000498-3.55467 1.641843-3.55467C.526027-3.55467 .278954-2.948941 .278954-2.566376C.278954-2.16787 .573848-1.936737 .597758-1.912827C.916563-1.673724 1.099875-1.641843 1.633873-1.546202C2.008468-1.474471 2.622167-1.362889 2.622167-.820922C2.622167-.510087 2.414944-.143462 1.681694-.143462C.876712-.143462 .645579-.765131 .541968-1.187547C.510087-1.291158 .502117-1.331009 .406476-1.331009C.278954-1.331009 .278954-1.267248 .278954-1.115816V-.127522C.278954 0 .278954 .079701 .382565 .079701C.430386 .079701 .438356 .071731 .581818-.079701C.621669-.119552 .70934-.223163 .749191-.263014C1.107846 .063761 1.482441 .079701 1.689664 .079701C2.701868 .079701 3.052553-.502117 3.052553-1.028144C3.052553-1.41071 2.82142-1.968618 1.872976-2.14396C1.809215-2.1599 1.362889-2.239601 1.331009-2.239601C1.083935-2.295392 .70934-2.462765 .70934-2.781569C.70934-3.020672 .884682-3.355417 1.641843-3.355417C2.534496-3.355417 2.574346-2.701868 2.590286-2.478705C2.598257-2.414944 2.654047-2.391034 2.709838-2.391034C2.83736-2.391034 2.83736-2.446824 2.83736-2.598257V-3.347447Z"></path>
+<path id="tz_sistema_limbico_g1-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_sistema_limbico_g1-118" d="M3.53076-2.614197C3.722042-3.060523 3.993026-3.164134 4.28792-3.172105V-3.435118C4.008966-3.411208 3.993026-3.411208 3.666252-3.411208C3.594521-3.411208 3.219925-3.411208 2.972852-3.435118V-3.172105C3.251806-3.156164 3.323537-2.980822 3.323537-2.84533C3.323537-2.765629 3.307597-2.725778 3.275716-2.654047L2.414944-.645579L1.474471-2.805479C1.42665-2.909091 1.42665-2.956912 1.42665-2.972852C1.42665-3.172105 1.713574-3.172105 1.849066-3.172105V-3.435118C1.506351-3.411208 1.131756-3.411208 .980324-3.411208C.812951-3.411208 .430386-3.411208 .175342-3.435118V-3.172105C.661519-3.172105 .70137-3.124284 .820922-2.8533L2.016438-.095641C2.072229 .02391 2.12005 .079701 2.231631 .079701S2.399004 .01594 2.438854-.079701L3.53076-2.614197Z"></path>
+<path id="tz_sistema_limbico_g1-126" d="M3.355417-5.347945C3.028643-4.98929 2.781569-4.98929 2.693898-4.98929C2.510585-4.98929 2.343213-5.068991 2.15193-5.172603C1.936737-5.276214 1.793275-5.347945 1.609963-5.347945C1.299128-5.347945 1.139726-5.180573 .70934-4.710336L.868742-4.558904C1.195517-4.917559 1.44259-4.917559 1.530262-4.917559C1.713574-4.917559 1.880946-4.837858 2.072229-4.734247C2.287422-4.630635 2.430884-4.558904 2.614197-4.558904C2.925031-4.558904 3.084433-4.726276 3.514819-5.196513L3.355417-5.347945Z"></path>
+</defs>
+<g id="tz_sistema_limbico_page1">
+<g stroke-miterlimit="10" transform="translate(67.582245,14.588056)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#bdc1c5" stroke="#bdc1c5">
+<g stroke-width="0.8">
+<path d="M119.50143 0C119.50143 45.57112 65.99966 82.51277 0 82.51277S-119.50143 45.57112-119.50143 0S-65.99966-82.51277 0-82.51277S119.50143-45.57112 119.50143 0ZM0 0" fill="none"></path>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#2780e3" stroke="#2780e3">
+<g fill="#dfecfb">
+<path d="M32.7209 17.07181C32.7209 25.71466 21.89307 32.7209 8.5359 32.7209C-4.82126 32.7209-15.6491 25.71466-15.6491 17.07181S-4.82126 1.42271 8.5359 1.42271C21.89307 1.42271 32.7209 8.42896 32.7209 17.07181ZM8.5359 17.07181"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-6.0281,14.29404)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g0-116"></use>
+<use x="71.311348" y="14.588056" href="#tz_sistema_limbico_g0-19"></use>
+<use x="71.379148" y="14.588056" href="#tz_sistema_limbico_g0-97"></use>
+<use x="76.125282" y="14.588056" href="#tz_sistema_limbico_g0-108"></use>
+<use x="78.837356" y="14.588056" href="#tz_sistema_limbico_g0-97"></use>
+<use x="83.583489" y="14.588056" href="#tz_sistema_limbico_g0-109"></use>
+<use x="91.719711" y="14.588056" href="#tz_sistema_limbico_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#ddf2d6">
+<path d="M18.49454-9.95863C18.49454-4.92998 11.4883-.85356 2.84544-.85356C-5.79741-.85356-12.80365-4.92998-12.80365-9.95863C-12.80365-14.98729-5.79741-19.0637 2.84544-19.0637C11.4883-19.0637 18.49454-14.98729 18.49454-9.95863ZM2.84544-9.95863"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-13.55608,-11.95863)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g0-104"></use>
+<use x="73.006393" y="14.588056" href="#tz_sistema_limbico_g0-105"></use>
+<use x="75.718467" y="14.588056" href="#tz_sistema_limbico_g0-112"></use>
+<use x="81.41383" y="14.588056" href="#tz_sistema_limbico_g0-111"></use>
+<use x="86.295563" y="14.588056" href="#tz_sistema_limbico_g0-116"></use>
+<use x="90.024666" y="14.588056" href="#tz_sistema_limbico_g0-19"></use>
+<use x="90.092466" y="14.588056" href="#tz_sistema_limbico_g0-97"></use>
+<use x="94.8386" y="14.588056" href="#tz_sistema_limbico_g0-108"></use>
+<use x="97.550674" y="14.588056" href="#tz_sistema_limbico_g0-46"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#d7433b" stroke="#d7433b">
+<g fill="#f8dedc">
+<path d="M-36.41948-19.91682C-36.41948-13.3169-41.76964-7.96674-48.36957-7.96674S-60.31966-13.3169-60.31966-19.91682C-60.31966-26.51675-54.9695-31.86691-48.36957-31.86691S-36.41948-26.51675-36.41948-19.91682ZM-48.36957-19.91682"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-62.7294,-21.91682)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g0-97"></use>
+<use x="72.328378" y="14.588056" href="#tz_sistema_limbico_g0-109"></use>
+<use x="79.37977" y="14.588056" href="#tz_sistema_limbico_g0-19"></use>
+<use x="80.4646" y="14.588056" href="#tz_sistema_limbico_g0-16"></use>
+<use x="83.176674" y="14.588056" href="#tz_sistema_limbico_g0-103"></use>
+<use x="88.058407" y="14.588056" href="#tz_sistema_limbico_g0-100"></use>
+<use x="93.482555" y="14.588056" href="#tz_sistema_limbico_g0-46"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#b35210" stroke="#b35210">
+<g fill="#ffddc6">
+<path d="M-42.67911-31.29819C-17.07181-45.52455 11.38092-42.67911 31.29819-28.45274C11.38092-35.56592-17.07181-36.98865-42.67911-27.03001Z"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-23.47937,-46.10184)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#8c400d">
+<g stroke="none">
+<g fill="#8c400d">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g0-104"></use>
+<use x="73.006393" y="14.588056" href="#tz_sistema_limbico_g0-105"></use>
+<use x="75.718467" y="14.588056" href="#tz_sistema_limbico_g0-112"></use>
+<use x="81.41383" y="14.588056" href="#tz_sistema_limbico_g0-111"></use>
+<use x="86.566778" y="14.588056" href="#tz_sistema_limbico_g0-99"></use>
+<use x="90.906096" y="14.588056" href="#tz_sistema_limbico_g0-97"></use>
+<use x="95.652229" y="14.588056" href="#tz_sistema_limbico_g0-109"></use>
+<use x="103.788451" y="14.588056" href="#tz_sistema_limbico_g0-112"></use>
+<use x="109.483814" y="14.588056" href="#tz_sistema_limbico_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(74.66483,45.5918)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g1-114"></use>
+<use x="70.882415" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="74.646133" y="14.588056" href="#tz_sistema_limbico_g1-116"></use>
+<use x="77.939386" y="14.588056" href="#tz_sistema_limbico_g1-114"></use>
+<use x="81.239556" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+<use x="85.473739" y="14.588056" href="#tz_sistema_limbico_g1-110"></use>
+<use x="90.178387" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="93.51869" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="100.575661" y="14.588056" href="#tz_sistema_limbico_g1-105"></use>
+<use x="102.927985" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="106.268288" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="109.608591" y="14.588056" href="#tz_sistema_limbico_g1-126"></use>
+<use x="109.608591" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+<use x="113.842773" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="120.899745" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="124.240048" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="128.003766" y="14.588056" href="#tz_sistema_limbico_g1-110"></use>
+<use x="132.708413" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="136.048716" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="140.282899" y="14.588056" href="#tz_sistema_limbico_g1-114"></use>
+<use x="143.583069" y="14.588056" href="#tz_sistema_limbico_g1-105"></use>
+<use x="145.935393" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+<use x="150.169576" y="14.588056" href="#tz_sistema_limbico_g1-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="0.4">
+<path d="M32.72047 19.91682L69.70912 46.94684" fill="none"></path>
+</g>
+</g>
+<g transform="translate(74.66483,23.60728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g1-102"></use>
+<use x="70.169801" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="74.403984" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="81.460955" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="85.224673" y="14.588056" href="#tz_sistema_limbico_g1-44"></use>
+<use x="90.399786" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+<use x="93.740088" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="97.503807" y="14.588056" href="#tz_sistema_limbico_g1-100"></use>
+<use x="102.208454" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="105.972172" y="14.588056" href="#tz_sistema_limbico_g1-44"></use>
+<use x="111.147285" y="14.588056" href="#tz_sistema_limbico_g1-104"></use>
+<use x="115.851932" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="120.086115" y="14.588056" href="#tz_sistema_limbico_g1-114"></use>
+<use x="123.386285" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="130.443257" y="14.588056" href="#tz_sistema_limbico_g1-94"></use>
+<use x="130.443257" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="134.677439" y="14.588056" href="#tz_sistema_limbico_g1-110"></use>
+<use x="139.382087" y="14.588056" href="#tz_sistema_limbico_g1-105"></use>
+<use x="141.734411" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="145.968594" y="14.588056" href="#tz_sistema_limbico_g1-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g stroke-width="0.4">
+<path d="M17.07181-8.5359L69.70912 24.185" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-132.7727,23.60728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="74.639216" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="78.402934" y="14.588056" href="#tz_sistema_limbico_g1-100"></use>
+<use x="83.107582" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="87.341765" y="14.588056" href="#tz_sistema_limbico_g1-44"></use>
+<use x="92.516877" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="96.280595" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="103.337567" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="107.571749" y="14.588056" href="#tz_sistema_limbico_g1-24"></use>
+<use x="107.571749" y="14.588056" href="#tz_sistema_limbico_g1-99"></use>
+<use x="111.335467" y="14.588056" href="#tz_sistema_limbico_g1-126"></use>
+<use x="111.335467" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+<use x="115.56965" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.4">
+<path d="M-58.3282-15.6491L-76.82231 23.33145" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-132.3074,-48.30232)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(67.582245,14.588056)scale(-1,-1)">
+<g fill="#8c400d">
+<g stroke="none">
+<g fill="#8c400d">
+<use x="67.582245" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="74.639216" y="14.588056" href="#tz_sistema_limbico_g1-101"></use>
+<use x="78.402934" y="14.588056" href="#tz_sistema_limbico_g1-109"></use>
+<use x="85.459906" y="14.588056" href="#tz_sistema_limbico_g1-19"></use>
+<use x="85.459906" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="89.694088" y="14.588056" href="#tz_sistema_limbico_g1-114"></use>
+<use x="92.994259" y="14.588056" href="#tz_sistema_limbico_g1-105"></use>
+<use x="95.346582" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+<use x="102.403554" y="14.588056" href="#tz_sistema_limbico_g1-110"></use>
+<use x="107.108201" y="14.588056" href="#tz_sistema_limbico_g1-111"></use>
+<use x="111.107152" y="14.588056" href="#tz_sistema_limbico_g1-118"></use>
+<use x="115.106102" y="14.588056" href="#tz_sistema_limbico_g1-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#b35210" stroke="#b35210">
+<g stroke-width="0.4">
+<path d="M-39.83366-35.56592L-76.82231-45.52455" fill="none"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-limbico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;24.2: As principais estruturas subcorticais do sistema límbico e suas funções dominantes. Posições esquemáticas, não em escala anatômica exata.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="o-córtex-cerebral-quatro-lobos-e-um-mapa-do-corpo" class="level2">
+<h2 class="anchored" data-anchor-id="o-córtex-cerebral-quatro-lobos-e-um-mapa-do-corpo">O córtex cerebral: quatro lobos e um mapa do corpo</h2>
+<p>Por cima de tudo está o <strong>córtex cerebral</strong>, a camada enrugada de poucos milímetros que abriga a maior parte do que chamamos de funções superiores — percepção, linguagem, raciocínio, planejamento. As dobras (giros) e fendas (sulcos) não são decoração: elas triplicam a área de superfície que cabe no crânio. O córtex divide-se em dois hemisférios e, em cada um, em quatro lobos, cada qual com uma área <strong>primária</strong> (dedicada a uma entrada ou saída específica) e vastas áreas de <strong>associação</strong> (que integram e interpretam).</p>
+<ul>
+<li>O <strong>lobo occipital</strong>, atrás, abriga o córtex visual primário: é onde a visão começa a ser processada (Vol 5).</li>
+<li>O <strong>lobo temporal</strong>, na lateral inferior, contém o córtex auditivo primário e áreas críticas para linguagem e memória.</li>
+<li>O <strong>lobo parietal</strong>, no topo posterior, abriga o córtex somatossensorial primário — o tato, a temperatura, a posição do corpo — e integra o senso espacial.</li>
+<li>O <strong>lobo frontal</strong>, na frente, contém o córtex motor primário e, à sua frente, o <strong>córtex pré-frontal</strong>, sede do planejamento, do juízo, do controle de impulsos e da personalidade — a última região a amadurecer, só por volta dos 25 anos (Vol 10).</li>
+</ul>
+<p>Duas faixas de córtex, uma de cada lado do sulco central, ilustram um princípio organizador elegante. O <strong>córtex motor primário</strong> (no frontal) e o <strong>córtex somatossensorial primário</strong> (no parietal) são organizados de forma <strong>somatotópica</strong>: cada parte do corpo tem uma região correspondente, e partes vizinhas do corpo são, em geral, vizinhas no córtex. Mais notável, o espaço cortical não é proporcional ao <em>tamanho</em> da parte do corpo, mas à sua <em>importância funcional</em>: mãos, lábios e língua ocupam áreas enormes; o tronco e as pernas, áreas pequenas. Se desenharmos um corpo com as proporções do mapa cortical, obtemos o grotesco <strong>homúnculo</strong> de mãos e boca gigantes, mapeado por Wilder Penfield estimulando o córtex de pacientes acordados durante neurocirurgias <span class="citation" data-cites="penfield1937">(<a href="../../referencias.html#ref-penfield1937" role="doc-biblioref">Penfield; Boldrey, 1937</a>)</span>.</p>
+<div class="experimento">
+<p><strong>O homúnculo de Penfield</strong> <span class="citation" data-cites="penfield1937">(<a href="../../referencias.html#ref-penfield1937" role="doc-biblioref">Penfield; Boldrey, 1937</a>)</span></p>
+<p><strong>Desenho.</strong> Operando pacientes com epilepsia sob anestesia local (o cérebro não dói, e o paciente permanece consciente), Wilder Penfield estimulava eletricamente pontos do córtex e perguntava o que sentiam, ou observava que movimento se produzia. Ponto a ponto, mapeou a correspondência entre regiões corticais e partes do corpo.</p>
+<p><strong>Resultado.</strong> A estimulação do córtex somatossensorial produzia sensações localizadas em partes específicas do corpo; a do córtex motor, movimentos específicos. O mapa era ordenado (partes vizinhas do corpo, regiões vizinhas do córtex) e desproporcional (mão e face dominando a área).</p>
+<p><strong>Interpretação.</strong> O achado deu base física à ideia de representação: o corpo está “desenhado” no córtex, e a resolução dessa representação segue a densidade de receptores e a finura do controle — daí a mão e os lábios ocuparem tanto espaço. É a base neural da acuidade tátil diferencial estudada na psicofísica (Vol 5).</p>
+<p><strong>Limitações.</strong> O mapa é uma idealização: as fronteiras são menos nítidas e mais plásticas do que o desenho sugere (Cap. 28), e a estimulação elétrica de Penfield ativava também conexões vizinhas. O homúnculo é um retrato médio e estático de algo mais fluido.</p>
+</div>
+</section>
+<section id="localização-de-função-o-que-as-lesões-ensinaram" class="level2">
+<h2 class="anchored" data-anchor-id="localização-de-função-o-que-as-lesões-ensinaram">Localização de função: o que as lesões ensinaram</h2>
+<p>A pergunta que atravessa a história da neurociência é quanto de função está localizado. As respostas vieram, uma a uma, de casos clínicos que se tornaram clássicos — cada um uma dissociação natural que nenhum experimento ético poderia produzir de propósito.</p>
+<div class="estudo-caso">
+<p><strong>Phineas Gage e o lobo frontal</strong> <span class="citation" data-cites="harlow1868">(<a href="../../referencias.html#ref-harlow1868" role="doc-biblioref">Harlow, 1868</a>)</span></p>
+<p>Em 1848, o operário ferroviário Phineas Gage sofreu um acidente extraordinário: uma barra de ferro de mais de um metro atravessou seu crânio, destruindo boa parte do lobo frontal esquerdo. Gage sobreviveu, andou, falou e manteve memória e inteligência aparentemente intactas — o que já era espantoso. Mas, segundo o relato de seu médico, John Harlow, sua <strong>personalidade</strong> mudou: o homem responsável e comedido teria se tornado impulsivo, profano, incapaz de sustentar planos — “já não era Gage”.</p>
+<p>O caso é frequentemente contado com exagero (as fontes são escassas e parte da “mudança de personalidade” pode ter sido dramatizada, e há evidências de recuperação posterior). Mesmo assim, ele inaugurou uma ideia então herética: que o lobo frontal, longe de ser um tecido “silencioso”, é o substrato do autocontrole, do julgamento e do planejamento — as funções que Antonio Damásio, mais de um século depois, ligaria à integração entre razão e emoção na tomada de decisão <span class="citation" data-cites="damasio1994">(<a href="../../referencias.html#ref-damasio1994" role="doc-biblioref">Damasio, 1994</a>)</span>. Gage é o primeiro capítulo da neuropsicologia (Vol 15, Cap. 99).</p>
+</div>
+<p>Se Gage sugeriu que o frontal governa a conduta, dois neurologistas do século XIX localizaram a linguagem com uma precisão que fundou o método. Paul Broca examinou um paciente que compreendia a fala mas só conseguia produzir uma sílaba (“tan”); na autópsia, encontrou uma lesão numa região específica do lobo frontal <em>esquerdo</em> <span class="citation" data-cites="broca1861">(<a href="../../referencias.html#ref-broca1861" role="doc-biblioref">Broca, 1861</a>)</span>. Essa <strong>área de Broca</strong> é crítica para a <em>produção</em> da fala. Anos depois, Carl Wernicke descreveu o padrão inverso: pacientes que falavam fluentemente, mas produziam frases sem sentido e não compreendiam o que ouviam, com lesão numa região do lobo temporal esquerdo <span class="citation" data-cites="wernicke1874">(<a href="../../referencias.html#ref-wernicke1874" role="doc-biblioref">Wernicke, 1874</a>)</span>. A <strong>área de Wernicke</strong> é crítica para a <em>compreensão</em>. As duas afasias, dissociadas, provaram que a linguagem não é uma faculdade única e indivisível, mas um sistema de componentes separáveis — e que, na maioria das pessoas, ele mora no hemisfério esquerdo.</p>
+<div class="experimento">
+<p><strong>H.M. e a fabricação de memórias</strong> <span class="citation" data-cites="scoville_milner1957">(<a href="../../referencias.html#ref-scoville_milner1957" role="doc-biblioref">Scoville; Milner, 1957</a>)</span></p>
+<p><strong>Desenho.</strong> Em 1953, para tratar uma epilepsia incapacitante, o paciente Henry Molaison (conhecido por décadas apenas como H.M.) foi submetido à remoção cirúrgica de porções do lobo temporal medial dos dois lados, incluindo a maior parte do hipocampo. A cirurgia controlou as crises — e produziu um dos casos mais estudados da história da psicologia. Brenda Milner e colaboradores o acompanharam por décadas.</p>
+<p><strong>Resultado.</strong> H.M. ficou incapaz de formar <strong>novas</strong> memórias episódicas de longo prazo (amnésia anterógrada): podia conversar normalmente, mas esquecia a conversa minutos depois, e nunca reconheceu Milner apesar de décadas de encontros. Entretanto, sua memória de fatos antigos (anteriores à cirurgia), sua inteligência, sua linguagem e sua memória de curto prazo estavam preservadas. Mais revelador: ele <em>aprendia</em> novas habilidades motoras (como desenhar diante de um espelho) e melhorava a cada dia — sem nunca se lembrar de ter praticado.</p>
+<p><strong>Interpretação.</strong> O caso dissociou memória de curto e de longo prazo, e memória <em>declarativa</em> (de fatos e eventos, dependente do hipocampo) de memória <em>procedural</em> (de habilidades, independente dele). Provou que o hipocampo é necessário para <em>formar</em> memórias declarativas novas, mas não é onde elas ficam <em>armazenadas</em> em definitivo. Fundou a neurociência da memória, tema do Vol 8.</p>
+<p><strong>Limitações.</strong> É um caso único, com lesão cirúrgica imprecisa pelos padrões atuais e que atingiu mais estruturas do que se supôs no início. Generalizações a partir de N = 1 exigem cautela — mas a convergência com estudos posteriores em animais e humanos confirmou o essencial.</p>
+</div>
+</section>
+<section id="dois-hemisférios-um-cérebro-lateralização" class="level2">
+<h2 class="anchored" data-anchor-id="dois-hemisférios-um-cérebro-lateralização">Dois hemisférios, um cérebro: lateralização</h2>
+<p>Broca e Wernicke já indicavam que os hemisférios não são idênticos: a linguagem é, na maioria das pessoas, lateralizada à esquerda. O quanto os dois lados diferem, e o que acontece quando são separados, foi respondido por uma série de experimentos que rendeu o Nobel.</p>
+<div class="experimento">
+<p><strong>O cérebro dividido</strong> <span class="citation" data-cites="sperry1968 gazzaniga1967">(<a href="../../referencias.html#ref-gazzaniga1967" role="doc-biblioref">Gazzaniga, 1967</a>; <a href="../../referencias.html#ref-sperry1968" role="doc-biblioref">Sperry, 1968</a>)</span></p>
+<p><strong>Desenho.</strong> Para tratar epilepsia grave, alguns pacientes tiveram o <strong>corpo caloso</strong> — o feixe de milhões de fibras que conecta os dois hemisférios — seccionado cirurgicamente. Roger Sperry e Michael Gazzaniga estudaram esses pacientes “de cérebro dividido” aproveitando um fato da anatomia visual: o que aparece no campo visual esquerdo é processado pelo hemisfério direito, e vice-versa. Apresentando estímulos brevemente a apenas um campo visual, podiam “falar” com um hemisfério de cada vez.</p>
+<p><strong>Resultado.</strong> Quando uma imagem era mostrada ao campo visual direito (hemisfério esquerdo, verbal), o paciente a nomeava sem dificuldade. Quando era mostrada ao campo visual esquerdo (hemisfério direito, não verbal), o paciente dizia não ter visto nada — mas a mão esquerda (comandada pelo hemisfério direito) conseguia apontar ou pegar o objeto correspondente. Um hemisfério sabia o que o outro ignorava.</p>
+<p><strong>Interpretação.</strong> O experimento revelou que os hemisférios têm especializações (o esquerdo, dominante para a linguagem falada; o direito, superior em certas tarefas espaciais e de reconhecimento) e que, separados, podem processar informação de forma independente. Mais filosoficamente perturbador: sugeriu que a unidade da consciência que experimentamos depende da comunicação entre os hemisférios — o Vol 6 retoma o ponto.</p>
+<p><strong>Limitações.</strong> Os pacientes tinham epilepsia grave e cérebros já atípicos antes da cirurgia; são poucos casos; e, na vida cotidiana, eles se comportam de modo notavelmente normal, usando estratégias de compensação. As especializações são <em>relativas e estatísticas</em>, não absolutas.</p>
+</div>
+<p>O achado do cérebro dividido é também a origem do mito mais difundido sobre o cérebro — e sua correção.</p>
+<div class="atencao">
+<p><strong>“Sou uma pessoa do cérebro direito (criativa), não do esquerdo (lógica).”</strong> Este é um dos mitos neurocientíficos mais resistentes, e é uma distorção grosseira dos achados reais. É verdade que há <em>lateralização</em>: certas funções dependem mais de um hemisfério (linguagem, à esquerda; certos aspectos espaciais e emocionais, à direita). Mas isso não significa que as pessoas usem predominantemente um hemisfério, nem que “tipos criativos” tenham um lado mais ativo. Um estudo de neuroimagem com mais de mil cérebros não encontrou evidência de que indivíduos tenham uma rede lateralizada dominante que os torne “cérebro-esquerdo” ou “cérebro-direito” <span class="citation" data-cites="nielsen2013">(<a href="../../referencias.html#ref-nielsen2013" role="doc-biblioref">Nielsen et al., 2013</a>)</span>. Qualquer tarefa minimamente complexa — inclusive as criativas — recruta os dois hemisférios, que trabalham juntos através do corpo caloso. A dicotomia de personalidade é folclore vendável, não neurociência.</p>
+</div>
+</section>
+<section id="o-princípio-que-fecha-o-capítulo-localizado-mas-distribuído" class="level2">
+<h2 class="anchored" data-anchor-id="o-princípio-que-fecha-o-capítulo-localizado-mas-distribuído">O princípio que fecha o capítulo: localizado, mas distribuído</h2>
+<p>Vale reunir as evidências numa conclusão só, porque é ela que separa a neurociência da frenologia — aquela pseudociência do século XIX que atribuía cada traço de caráter a uma protuberância do crânio. Os casos deste capítulo mostram que as funções <em>têm</em> endereços: destruir a área de Broca prejudica a produção da fala; remover o hipocampo abole a formação de memórias novas. Isso é localização real, e é o que a frenologia acertou em princípio e errou em todos os detalhes.</p>
+<p>Mas os mesmos casos mostram que nenhuma função complexa mora inteira em um ponto. A linguagem depende de Broca <em>e</em> Wernicke <em>e</em> das fibras que os ligam <em>e</em> de áreas motoras e auditivas. A memória de H.M. envolvia o hipocampo para <em>formar</em>, mas o córtex para <em>armazenar</em>. Karl Lashley, tentando localizar o “traço de memória” em ratos, concluiu que ele não estava em nenhum ponto único, mas distribuído — o princípio da <strong>ação de massa</strong> <span class="citation" data-cites="lashley1929">(<a href="../../referencias.html#ref-lashley1929" role="doc-biblioref">Lashley, 1929</a>)</span>, hoje refinado: as funções emergem de <strong>redes</strong>, e o que se localiza é a contribuição de cada nó, não a função inteira. Localização e distribuição não se excluem; a neurociência madura afirma as duas ao mesmo tempo. Guardar esse equilíbrio é a melhor defesa contra as duas tolices simétricas: a de que “tudo está em toda parte” e a de que “cada coisa tem seu pontinho”.</p>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li><strong>O encéfalo organiza-se em andares:</strong> o tronco (bulbo, ponte, mesencéfalo, formação reticular) mantém as funções vitais e o alerta; o cerebelo coordena movimento, equilíbrio e aprendizagem motora; as estruturas subcorticais e o córtex cuidam da emoção, da memória e das funções superiores.</li>
+<li><strong>O sistema límbico</strong> reúne o tálamo (retransmissão sensorial), o hipotálamo (fome, sede, hormônios, estresse — ponte com o endócrino), o hipocampo (formação de memórias novas) e a amígdala (medo e emoção).</li>
+<li><strong>O córtex tem quatro lobos:</strong> occipital (visão), temporal (audição, linguagem, memória), parietal (tato, espaço) e frontal (movimento, planejamento, personalidade, via córtex pré-frontal).</li>
+<li><strong>Os córtices motor e somatossensorial são somatotópicos:</strong> o corpo está mapeado neles, com espaço proporcional à importância funcional, não ao tamanho — o homúnculo de Penfield.</li>
+<li><strong>As lesões clássicas fundaram a localização de função:</strong> Gage (frontal e conduta), Broca (produção da fala, frontal esquerdo), Wernicke (compreensão, temporal esquerdo), H.M. (hipocampo e formação de memória declarativa).</li>
+<li><strong>Os hemisférios são lateralizados</strong> (linguagem à esquerda; certos aspectos espaciais à direita), como o cérebro dividido de Sperry e Gazzaniga revelou — mas o mito “cérebro-esquerdo × cérebro-direito” de personalidade é falso: tarefas complexas recrutam os dois lados.</li>
+<li><strong>O princípio unificador: as funções são localizadas, mas distribuídas em redes.</strong> O que tem endereço é a contribuição de cada nó, não a função inteira. Nem frenologia, nem “tudo em toda parte”.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Tronco encefálico</strong></dt>
+<dd>
+Base do encéfalo (bulbo, ponte, mesencéfalo) que regula funções vitais como respiração e batimento cardíaco; contém a formação reticular, que controla o alerta.
+</dd>
+<dt><strong>Cerebelo</strong></dt>
+<dd>
+Estrutura posterior responsável por coordenação, equilíbrio, timing e aprendizagem motora, com participação também cognitiva.
+</dd>
+<dt><strong>Sistema límbico</strong></dt>
+<dd>
+Conjunto de estruturas subcorticais (tálamo, hipotálamo, hipocampo, amígdala) associadas à emoção, memória e regulação corporal.
+</dd>
+<dt><strong>Tálamo</strong></dt>
+<dd>
+Estação de retransmissão que distribui a informação sensorial (exceto o olfato) para as áreas corticais.
+</dd>
+<dt><strong>Hipotálamo</strong></dt>
+<dd>
+Estrutura reguladora de fome, sede, temperatura, sexo e estresse; ponte entre os sistemas nervoso e endócrino.
+</dd>
+<dt><strong>Hipocampo</strong></dt>
+<dd>
+Estrutura essencial para a formação de novas memórias declarativas de longo prazo.
+</dd>
+<dt><strong>Amígdala</strong></dt>
+<dd>
+Estrutura central no processamento do medo e na atribuição de valor emocional aos estímulos.
+</dd>
+<dt><strong>Córtex cerebral</strong></dt>
+<dd>
+Camada externa enrugada do cérebro, sede das funções superiores; dividida em dois hemisférios e quatro lobos, com áreas primárias e de associação.
+</dd>
+<dt><strong>Organização somatotópica</strong></dt>
+<dd>
+Mapeamento ordenado do corpo sobre os córtices motor e somatossensorial, com espaço proporcional à importância funcional (o homúnculo) <span class="citation" data-cites="penfield1937">(<a href="../../referencias.html#ref-penfield1937" role="doc-biblioref">Penfield; Boldrey, 1937</a>)</span>.
+</dd>
+<dt><strong>Área de Broca / Área de Wernicke</strong></dt>
+<dd>
+Regiões do hemisfério esquerdo críticas, respectivamente, para a produção (Broca, frontal) e a compreensão (Wernicke, temporal) da linguagem <span class="citation" data-cites="broca1861 wernicke1874">(<a href="../../referencias.html#ref-broca1861" role="doc-biblioref">Broca, 1861</a>; <a href="../../referencias.html#ref-wernicke1874" role="doc-biblioref">Wernicke, 1874</a>)</span>.
+</dd>
+<dt><strong>Lateralização</strong></dt>
+<dd>
+Especialização relativa de cada hemisfério para certas funções; revelada de forma dramática nos pacientes de cérebro dividido <span class="citation" data-cites="sperry1968">(<a href="../../referencias.html#ref-sperry1968" role="doc-biblioref">Sperry, 1968</a>)</span>.
+</dd>
+<dt><strong>Ação de massa</strong></dt>
+<dd>
+Princípio de Lashley segundo o qual funções complexas dependem de amplas áreas corticais em vez de um único ponto; base moderna da visão de redes distribuídas <span class="citation" data-cites="lashley1929">(<a href="../../referencias.html#ref-lashley1929" role="doc-biblioref">Lashley, 1929</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Nomeie os quatro lobos do córtex e a função primária de cada um. Onde fica o córtex pré-frontal e por que ele é associado à personalidade e ao autocontrole?</p></li>
+<li><p><strong>(Recuperação.)</strong> Explique o que é a organização somatotópica e por que a mão ocupa uma área cortical maior que a coxa, apesar de ser menor. O que isso revela sobre a lógica do córtex?</p></li>
+<li><p><strong>(Aplicação.)</strong> Um paciente sofre um AVC e passa a falar fluentemente, mas produz frases sem sentido e não compreende o que lhe dizem. Qual região foi provavelmente afetada, e em qual hemisfério? Como esse quadro difere do de um paciente com lesão na área de Broca?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> O caso de H.M. é frequentemente resumido como “ele perdeu a memória”. Explique por que esse resumo é impreciso, detalhando o que H.M. perdeu, o que preservou e o que ainda conseguia aprender. Que distinções sobre a memória o caso permitiu estabelecer?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Um curso de “desenvolvimento pessoal” promete “ativar seu cérebro direito” para libertar a criatividade. Com base no experimento do cérebro dividido e no estudo de Nielsen, explique o que há de verdadeiro no conceito de lateralização e onde exatamente a promessa distorce a ciência.</p></li>
+<li><p><strong>(Integração.)</strong> O capítulo conclui que as funções são “localizadas, mas distribuídas”. Usando os casos de Broca, Wernicke e H.M., mostre em que sentido cada um demonstra localização e em que sentido nenhum deles autoriza dizer que uma faculdade mental inteira mora em um único ponto. Como esse princípio distingue a neurociência da frenologia?</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-broca1861" class="csl-entry" role="listitem">
+BROCA, Paul. Remarques sur le si<span>è</span>ge de la facult<span>é</span> du langage articul<span>é</span>, suivies d’une observation d’aph<span>é</span>mie. <strong>Bulletins de la Soci<span class="nocase">é</span>t<span class="nocase">é</span> Anatomique de Paris</strong>, v. 6, p. 330–357, 1861.
+</div>
+<div id="ref-damasio1994" class="csl-entry" role="listitem">
+DAMASIO, Antonio R. <strong>Descartes’ Error: Emotion, Reason, and the Human Brain</strong>. New York: Putnam, 1994.
+</div>
+<div id="ref-gazzaniga1967" class="csl-entry" role="listitem">
+GAZZANIGA, Michael S. <a href="https://doi.org/10.1038/scientificamerican0867-24">The split brain in man</a>. <strong>Scientific American</strong>, v. 217, n. 2, p. 24–29, 1967.
+</div>
+<div id="ref-harlow1868" class="csl-entry" role="listitem">
+HARLOW, John M. Recovery from the passage of an iron bar through the head. <strong>Publications of the Massachusetts Medical Society</strong>, v. 2, p. 327–347, 1868.
+</div>
+<div id="ref-lashley1929" class="csl-entry" role="listitem">
+LASHLEY, Karl S. <strong>Brain Mechanisms and Intelligence: A Quantitative Study of Injuries to the Brain</strong>. Chicago: University of Chicago Press, 1929.
+</div>
+<div id="ref-nielsen2013" class="csl-entry" role="listitem">
+NIELSEN, Jared A. <em>et al.</em> <a href="https://doi.org/10.1371/journal.pone.0071275">An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging</a>. <strong>PLoS ONE</strong>, v. 8, n. 8, p. e71275, 2013.
+</div>
+<div id="ref-penfield1937" class="csl-entry" role="listitem">
+PENFIELD, Wilder; BOLDREY, Edwin. <a href="https://doi.org/10.1093/brain/60.4.389">Somatic motor and sensory representation in the cerebral cortex of man as studied by electrical stimulation</a>. <strong>Brain</strong>, v. 60, n. 4, p. 389–443, 1937.
+</div>
+<div id="ref-scoville_milner1957" class="csl-entry" role="listitem">
+SCOVILLE, William B.; MILNER, Brenda. Loss of recent memory after bilateral hippocampal lesions. <strong>Journal of Neurology, Neurosurgery, and Psychiatry</strong>, v. 20, n. 1, p. 11–21, 1957.
+</div>
+<div id="ref-sperry1968" class="csl-entry" role="listitem">
+SPERRY, Roger W. <a href="https://doi.org/10.1037/h0026839">Hemisphere deconnection and unity in conscious awareness</a>. <strong>American Psychologist</strong>, v. 23, n. 10, p. 723–733, 1968.
+</div>
+<div id="ref-wernicke1874" class="csl-entry" role="listitem">
+WERNICKE, Carl. <strong>Der aphasische Symptomencomplex: Eine psychologische Studie auf anatomischer Basis</strong>. Breslau: Max Cohn und Weigert, 1874.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1898,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
