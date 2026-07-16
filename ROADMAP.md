@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 38 / 105 concluídos · Fase 1: 21/21 · Fase 2: 17/35 · Fase 3: 0/49
+**Progresso:** 42 / 105 concluídos · Fase 1: 21/21 · Fase 2: 21/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ — Vol 6 (Consciência) completo.** Próximo: Fase 2, Vol 7 (Aprendizagem).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ — Vol 7 (Aprendizagem) completo.** Próximo: Fase 2, Vol 8 (Memória e Cognição).
 
 ---
 
@@ -91,10 +91,10 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 7 — Aprendizagem
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 39 | Condicionamento clássico (Pavlov) | `capitulos/vol07-aprendizagem/cap-39-condicionamento-classico.qmd` | ⬜ |
-| 40 | Condicionamento operante (Skinner) | `capitulos/vol07-aprendizagem/cap-40-condicionamento-operante.qmd` | ⬜ |
-| 41 | Aprendizagem observacional (Bandura) | `capitulos/vol07-aprendizagem/cap-41-aprendizagem-observacional.qmd` | ⬜ |
-| 42 | Cognição e aprendizagem | `capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd` | ⬜ |
+| 39 | Condicionamento clássico (Pavlov) | `capitulos/vol07-aprendizagem/cap-39-condicionamento-classico.qmd` | ✅ |
+| 40 | Condicionamento operante (Skinner) | `capitulos/vol07-aprendizagem/cap-40-condicionamento-operante.qmd` | ✅ |
+| 41 | Aprendizagem observacional (Bandura) | `capitulos/vol07-aprendizagem/cap-41-aprendizagem-observacional.qmd` | ✅ |
+| 42 | Cognição e aprendizagem | `capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd` | ✅ |
 
 ### Vol 8 — Memória e Cognição
 | Cap | Título | Arquivo | Status |

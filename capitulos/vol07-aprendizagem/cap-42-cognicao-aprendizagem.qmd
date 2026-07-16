@@ -1,5 +1,118 @@
 # 42. Cognição e aprendizagem
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que a aprendizagem latente e os mapas cognitivos de Tolman desafiaram o behaviorismo radical.
+- **Descrever** a aprendizagem por insight de Köhler e o que ela sugere sobre reestruturação cognitiva.
+- **Definir** desamparo aprendido e ligar o conceito à explicação da depressão e ao estilo atribucional.
+- **Distinguir** motivação intrínseca de extrínseca e explicar o efeito de supercompensação (o custo de recompensar o que já é prazeroso).
+- **Aplicar** princípios da ciência da aprendizagem — prática distribuída, efeito de teste, dificuldades desejáveis — para estudar melhor.
+- **Sintetizar** as contribuições e os limites das abordagens comportamental e cognitiva da aprendizagem.
 :::
+
+Os capítulos anteriores mostraram, cada um a seu modo, que a "caixa-preta" behaviorista não se sustentava: já em Rescorla o organismo *previa*; em Tolman e Bandura, ele *representava* e *decidia*. Este capítulo encerra o volume abrindo por completo a caixa. A tese central é que, entre o estímulo e a resposta, entre o comportamento e a consequência, existe um **organismo que pensa** — que forma expectativas, constrói representações internas do mundo, tem insights e é movido por motivos que nem sempre se reduzem a recompensas externas. Não se trata de negar o condicionamento, mas de reconhecer que ele opera *através* de uma mente. Ao final, traduzimos essa ciência da aprendizagem em conselhos práticos de estudo — pois entender como se aprende deveria mudar como aprendemos.
+
+## O rato que tinha um mapa: Tolman
+
+O golpe mais elegante contra o behaviorismo radical veio de dentro do próprio laboratório de labirintos, das mãos de **Edward Tolman**. Se a aprendizagem fosse só o fortalecimento de respostas por reforço, então sem reforço não deveria haver aprendizagem. Tolman mostrou que não é assim.
+
+::: {.experimento}
+🔬 **Aprendizagem latente (Tolman e Honzik, 1930).** Três grupos de ratos percorreram um labirinto complexo por vários dias. O grupo 1 encontrava **comida** ao chegar ao fim (reforço a cada tentativa) e, como esperado, reduzia rápido seus erros. O grupo 2 **nunca** era recompensado e melhorava pouco. O grupo 3 era o crucial: passava os primeiros dez dias **sem** recompensa (como o grupo 2), mas a partir do 11º dia passava a encontrar comida. Se a aprendizagem dependesse do reforço, esse grupo deveria começar então a aprender lentamente, do zero. Não foi o que ocorreu: no dia *seguinte* à introdução da recompensa, o grupo 3 despencou para o nível de erros do grupo 1 — como se soubesse o labirinto o tempo todo [@tolman_honzik1930]. A conclusão de Tolman: durante os dez dias "sem aprender", os ratos haviam de fato aprendido o traçado — uma **aprendizagem latente**, adquirida sem reforço e sem manifestação comportamental, que só se *expressou* quando surgiu um motivo para tal.
+:::
+
+A aprendizagem latente reforça a lição do Cap. 41 (aprender ≠ executar) e acrescenta a peça teórica de Tolman: o rato constrói um **mapa cognitivo**, uma representação interna do layout espacial do ambiente, e não apenas uma cadeia de respostas motoras encadeadas [@tolman1948]. A prova disso vem dos experimentos de atalho: bloqueado o caminho habitual, o rato escolhe, entre rotas novas, aquela que aponta *na direção* do objetivo — algo impossível se ele tivesse aprendido só "vire à esquerda, depois à direita". Ele tem um mapa, não um roteiro. Décadas depois, a neurociência daria substrato a Tolman: o hipocampo contém **células de lugar** que disparam em pontos específicos do espaço, um mapa cognitivo literalmente inscrito no cérebro (tema que reencontraremos na memória, Cap. 43).
+
+## O macaco que teve uma ideia: Köhler e o insight
+
+Se Tolman atacou o reforço, **Wolfgang Köhler**, da tradição da Gestalt (Cap. 9), atacou o *gradualismo* — a ideia de Thorndike de que toda aprendizagem é lenta, por tentativa e erro. Estudando chimpanzés durante a Primeira Guerra, Köhler apresentou-lhes problemas cuja solução exigia combinar meios: uma banana pendurada alto demais para o alcance, com caixotes espalhados pela jaula, ou fora das grades, com dois bastões encaixáveis por perto. Os chimpanzés não convergiam para a solução por aproximações graduais. Passavam um tempo aparentemente parados, "estudando" a situação — e então, subitamente, agiam de forma **certeira e completa**: empilhavam os caixotes, ou encaixavam os bastões para formar uma vara mais longa, resolvendo o problema de uma vez [@kohler1917]. Köhler chamou isso de **insight**: uma reestruturação súbita da percepção do problema, um "clique" em que os elementos se reorganizam numa configuração que revela a solução. Uma vez alcançado, o insight transfere-se de imediato a problemas análogos — diferentemente do que se esperaria de uma resposta lentamente reforçada. O insight sugere que ao menos parte da aprendizagem envolve **manipular representações internas** do problema, não apenas emitir e reforçar respostas.
+
+## Quando aprendemos que nada adianta: desamparo
+
+Nem toda aprendizagem cognitiva é benigna. Uma das mais consequentes é aprender que **nossos atos não têm efeito** — e desistir de agir.
+
+::: {.experimento}
+🔬 **Desamparo aprendido (Seligman e Maier, 1967).** Cães foram expostos a choques. Um grupo podia interrompê-los executando uma resposta; outro recebia exatamente os mesmos choques, mas de forma **incontrolável** — nada que fizesse os fazia cessar. Numa segunda fase, todos foram postos numa caixa de onde bastava saltar uma barreira baixa para escapar do choque. Os cães do primeiro grupo aprendiam a saltar depressa. Os que haviam sofrido choques *incontroláveis*, porém, em grande parte **nem tentavam**: ficavam passivos, suportando o choque que agora era perfeitamente evitável [@seligman_maier1967]. Haviam aprendido, na fase anterior, que suas respostas eram **irrelevantes** — e transferiam essa expectativa de impotência para a nova situação. Seligman chamou o fenômeno de **desamparo aprendido**.
+:::
+
+O desamparo aprendido tornou-se um influente **modelo da depressão**: a exposição a eventos incontroláveis pode gerar passividade, desânimo e a crença generalizada de que agir não adianta. Refinamentos posteriores (que discutiremos no Cap. 79) enfatizaram o **estilo atribucional**: não é só a incontrolabilidade objetiva, mas *como* a pessoa a explica — atribuir os fracassos a causas internas ("a culpa é minha"), estáveis ("será sempre assim") e globais ("estraga tudo na minha vida") é o padrão que mais predispõe ao desamparo e à depressão. Note-se que, anos depois, o próprio Seligman inverteria o sinal do programa, ajudando a fundar a **psicologia positiva** (Cap. 100) e o estudo do *otimismo aprendido* — a impotência aprendida tem uma contrapartida na esperança que também se aprende.
+
+## O motivo por dentro: intrínseco e extrínseco
+
+Toda a tradição do reforço supõe que o comportamento é movido por consequências **externas**. Mas muito do que fazemos — brincar, ler por prazer, explorar, criar — parece movido de dentro, pela própria atividade. A **motivação intrínseca** é fazer algo por ser inerentemente interessante ou satisfatório; a **motivação extrínseca**, fazê-lo por uma recompensa ou pressão externa (nota, dinheiro, evitar punição). A distinção teria pouca graça se as duas apenas se somassem. O achado surpreendente é que, às vezes, elas se **subtraem**.
+
+::: {.atencao}
+**O custo oculto da recompensa (efeito de supercompensação).** Uma intuição difundida — e a base de muitos sistemas de incentivo — é que recompensar um comportamento sempre o fortalece. Experimentos de motivação mostram que nem sempre. Quando se passa a **recompensar externamente** uma atividade que a pessoa já fazia por prazer, a motivação *intrínseca* pode **diminuir**: retirada a recompensa, ela faz menos do que antes de ser recompensada. É o **efeito de supercompensação** (*overjustification*): a recompensa externa "explica demais" a ação, e a pessoa passa a atribuí-la ao prêmio ("faço isto pela recompensa"), erodindo o interesse original. O estudo clássico deu a crianças que gostavam de desenhar uma recompensa prometida por desenhar; depois, elas desenhavam espontaneamente *menos* do que crianças não recompensadas. A **teoria da autodeterminação** de Deci e Ryan explica o mecanismo: recompensas percebidas como *controladoras* minam a sensação de **autonomia**, enfraquecendo a motivação intrínseca; recompensas percebidas como *informativas* (que reconhecem competência) tendem a não fazer esse estrago [@deci_ryan2000]. A lição prática é fina: incentivos externos são úteis para tarefas enfadonhas ou para dar partida a um hábito, mas usá-los sobre o que já é intrinsecamente gratificante pode sair caro.
+:::
+
+## O que a ciência da aprendizagem diz sobre estudar
+
+Encerremos com a aplicação mais imediata deste volume à sua vida: **como aprender melhor**. Há aqui um dos maiores descompassos da educação — o que as pessoas *sentem* que funciona (e por isso praticam) muitas vezes é o oposto do que os experimentos mostram funcionar.
+
+- **Prática distribuída, não amontoada.** Estudar em sessões espaçadas ao longo do tempo produz retenção muito maior do que a mesma quantidade de estudo concentrada de uma vez (a "virada" antes da prova). O amontoamento (*cramming*) dá bom desempenho *imediato* — o que o torna enganosamente atraente —, mas péssima retenção a longo prazo. Distribuir o estudo é a recomendação mais robusta de toda a área.
+- **Efeito de teste (prática de recuperação).** *Testar-se* — tentar recuperar a informação da memória (com flashcards, questões, explicando sem olhar) — consolida a aprendizagem muito mais do que reler passivamente. Reler cria uma **fluência ilusória**: o texto parece familiar e conclui-se, erradamente, que se sabe. Recuperar ativamente, ainda que custe mais e produza erros, fortalece a memória de modo duradouro. É por isso que estudar *não* é sobretudo pôr informação *para dentro*, mas exercitar tirá-la *para fora*.
+- **Dificuldades desejáveis.** Os dois pontos acima são casos de um princípio geral: condições de estudo que tornam a aprendizagem *mais difícil e lenta no momento* — espaçar, testar-se, intercalar tópicos, variar o contexto — costumam produzir aprendizagem *mais forte e transferível* a longo prazo. Aquilo que parece atrapalhar frequentemente ajuda; aquilo que dá sensação de facilidade (reler, sublinhar, manter tudo agrupado) frequentemente ilude.
+
+::: {.na-pratica}
+**Um protocolo de estudo baseado em evidência.** Traduzindo o acima em prática: (1) **espace** as revisões, retomando o material em intervalos crescentes em vez de tudo de uma vez; (2) **teste-se** com frequência — feche o livro e tente recuperar, use questões e flashcards, explique o conteúdo a si mesmo ou a outra pessoa; (3) **intercale** temas afins em vez de esgotar um antes de passar ao próximo; (4) desconfie da **sensação de facilidade** — se está confortável demais, provavelmente é fluência ilusória, não aprendizagem; (5) apoie-se na **motivação intrínseca** sempre que possível, conectando o que estuda a interesses e objetivos próprios, e reservando incentivos externos para o que ainda não engancha. Cada item deste protocolo é a aplicação direta de um achado deste capítulo.
+:::
+
+## Fechando o volume
+
+O Vol 7 percorreu a aprendizagem do reflexo ao pensamento. Começamos com a associação entre estímulos (condicionamento clássico, Cap. 39), passamos à associação entre comportamento e consequência (operante, Cap. 40), abrimos espaço para o social ao introduzir a modelação (Cap. 41) e, agora, completamos o arco reconhecendo o organismo cognitivo — que representa, tem insights, aprende a impotência ou a esperança, e é movido por motivos internos além dos externos. O fio condutor é uma reconciliação: o condicionamento é real e poderoso, mas opera *dentro* de limites biológicos (Garcia, Breland) e *através* de processos cognitivos (Tolman, Köhler, Bandura). Aprender, no ser humano, é ao mesmo tempo associar e compreender. Esse organismo que representa e recupera informação é, precisamente, o tema do próximo volume: a **memória e a cognição**.
+
+## Síntese
+
+::: {.callout-sintese}
+- A **aprendizagem latente** (Tolman e Honzik) mostra que se aprende **sem reforço** e sem manifestação imediata: o reforço afeta o desempenho, não a aquisição. O rato constrói um **mapa cognitivo**, não uma cadeia de respostas.
+- A **aprendizagem por insight** (Köhler) revela reestruturação súbita e completa do problema, contra o gradualismo por tentativa e erro; sugere manipulação de representações internas.
+- O **desamparo aprendido** (Seligman e Maier) — aprender que os atos não têm efeito — gera passividade e é um modelo influente da **depressão**, refinado pelo **estilo atribucional**.
+- **Motivação intrínseca** (pela própria atividade) e **extrínseca** (por recompensa externa) podem se subtrair: o **efeito de supercompensação** mostra que recompensar o já prazeroso pode minar o interesse, por corroer a **autonomia** (Deci e Ryan).
+- A ciência da aprendizagem recomenda **prática distribuída**, **efeito de teste** (recuperação ativa) e **dificuldades desejáveis** — e alerta contra a **fluência ilusória** de reler.
+- O volume reconcilia condicionamento e cognição: aprender é associar **e** compreender, dentro de limites biológicos e através de processos mentais.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Aprendizagem latente**
+:   Aprendizagem que ocorre sem reforço e sem se manifestar no comportamento, até haver motivo para expressá-la [@tolman_honzik1930].
+
+**Mapa cognitivo**
+:   Representação interna da estrutura (p. ex., espacial) do ambiente, permitindo atalhos e flexibilidade [@tolman1948].
+
+**Insight**
+:   Reestruturação súbita da percepção de um problema que revela a solução de forma completa e transferível [@kohler1917].
+
+**Desamparo aprendido**
+:   Passividade que resulta de aprender que as próprias respostas não controlam os eventos; modelo da depressão [@seligman_maier1967].
+
+**Estilo atribucional**
+:   Padrão habitual de explicar eventos (interno/estável/global ou não), que modula a vulnerabilidade ao desamparo.
+
+**Motivação intrínseca / extrínseca**
+:   Agir pela satisfação inerente à atividade / por recompensa ou pressão externa.
+
+**Efeito de supercompensação (overjustification)**
+:   Queda da motivação intrínseca quando se passa a recompensar externamente uma atividade já prazerosa [@deci_ryan2000].
+
+**Prática de recuperação (efeito de teste)**
+:   Testar-se (recuperar da memória) consolida a aprendizagem mais que a releitura passiva.
+
+**Dificuldades desejáveis**
+:   Condições de estudo mais difíceis no momento (espaçar, testar-se, intercalar) que fortalecem a aprendizagem a longo prazo.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique como o grupo 3 do experimento de Tolman e Honzik demonstra a aprendizagem latente. Que ideia teórica (o mapa cognitivo) Tolman propôs a partir disso?
+
+2. **(Comparação.)** Contraste a aprendizagem por **insight** de Köhler com a aprendizagem por **tentativa e erro** de Thorndike (Cap. 40). Que evidência distingue uma da outra?
+
+3. **(Aplicação.)** Como o modelo do **desamparo aprendido** ajuda a entender a passividade em situações de adversidade crônica? Que papel o estilo atribucional desempenha?
+
+4. **(Reflexão crítica.)** Uma escola decide pagar os alunos por cada livro lido. Usando o **efeito de supercompensação** e a teoria da autodeterminação, discuta um risco desse plano e quando ele poderia, ainda assim, valer a pena.
+
+5. **(Aplicação.)** Você tem duas semanas para uma prova. Monte um plano de estudo que aplique **prática distribuída**, **efeito de teste** e ao menos uma outra **dificuldade desejável**, explicando por que cada escolha supera reler o material.
+
+6. **(Integração.)** Ao longo do volume, o condicionamento revelou-se limitado pela biologia (Garcia, Breland) e pela cognição (Tolman, Köhler, Bandura). Escreva um parágrafo que reconcilie as abordagens comportamental e cognitiva da aprendizagem.
