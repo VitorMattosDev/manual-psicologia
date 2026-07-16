@@ -63,7 +63,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
 | 22 | O neurônio e a comunicação neural | `capitulos/vol04-bases-biologicas/cap-22-neuronio.qmd` | ✅ |
-| 23 | O sistema nervoso (central e periférico) | `capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.qmd` | ⬜ |
+| 23 | O sistema nervoso (central e periférico) | `capitulos/vol04-bases-biologicas/cap-23-sistema-nervoso.qmd` | ✅ |
 | 24 | O cérebro: estruturas e funções | `capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd` | ⬜ |
 | 25 | Sistema endócrino e hormônios | `capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.qmd` | ⬜ |
 | 26 | Genética do comportamento | `capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.qmd` | ⬜ |

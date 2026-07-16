@@ -1,5 +1,214 @@
 # 23. O sistema nervoso (central e periférico)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Mapear** a organização do sistema nervoso em suas grandes divisões — central e periférico, somático e autônomo, simpático e parassimpático — e situar cada uma por sua função.
+- **Explicar** o arco reflexo e por que ele demonstra que o sistema nervoso processa informação mesmo sem o cérebro.
+- **Descrever** a lei de Bell-Magendie e o que ela estabelece sobre o sentido do fluxo da informação.
+- **Contrastar** as ações simpática e parassimpática e relacioná-las às respostas de estresse e recuperação.
+- **Definir** homeostase e a resposta de "luta ou fuga", ancorando-as na obra de Walter Cannon.
+- **Avaliar criticamente** a leitura popular do sistema autônomo como sede das emoções e o uso do "detector de mentiras".
 :::
+
+O capítulo anterior parou no neurônio isolado e em como dois neurônios conversam. Mas nenhuma célula, sozinha, coordena um susto, uma digestão ou o gesto de recuar a mão do fogo. Esses feitos exigem que bilhões de neurônios estejam **organizados** — arranjados em vias, núcleos e sistemas com divisões de trabalho definidas. Este capítulo apresenta essa arquitetura do ponto de vista funcional: não um atlas anatômico a decorar, mas um mapa de quem faz o quê, e por que a divisão importa para o comportamento.
+
+A tese organizadora é simples: o sistema nervoso é um sistema de **entrada, integração e saída**. Ele recolhe informação do mundo e do próprio corpo (entrada), decide o que fazer com ela (integração) e comanda músculos e glândulas (saída). Toda a complexidade que segue é elaboração dessas três funções. O cérebro receberá um capítulo próprio (Cap. 24); aqui interessa como ele se conecta ao resto do corpo — e o quanto o corpo faz sem esperar por ele.
+
+## O plano geral: um mapa de divisões
+
+O sistema nervoso divide-se primeiro em dois grandes territórios. O **sistema nervoso central** (SNC) é o encéfalo mais a medula espinhal — o centro de processamento, protegido por osso (crânio e coluna) e por membranas. O **sistema nervoso periférico** (SNP) é tudo o mais: a rede de nervos que liga o SNC a cada músculo, órgão e receptor sensorial. A @fig-arvore-sn organiza as subdivisões.
+
+::: {#fig-arvore-sn}
+```{.tikz}
+%%| filename: arvore-sn
+%%| alt: Diagrama em árvore hierárquica da organização do sistema nervoso. No topo, "Sistema nervoso" ramifica-se em dois: "Central (encéfalo e medula)" à esquerda e "Periférico" à direita. O Periférico ramifica-se em "Somático (movimento voluntário, sentidos)" e "Autônomo (órgãos internos)". O Autônomo ramifica-se por sua vez em "Simpático (mobiliza: luta ou fuga)" e "Parassimpático (conserva: repouso e digestão)".
+\begin{tikzpicture}[
+  no/.style={draw, thick, rounded corners=3pt, align=center, font=\small, minimum height=0.95cm, inner sep=4pt},
+  raiz/.style={no, draw=manualgray, fill=manualgray!12},
+  cnt/.style={no, draw=manualblue, fill=manualblue!10},
+  som/.style={no, draw=manualgreen, fill=manualgreen!10},
+  aut/.style={no, draw=manualred, fill=manualred!10},
+  lig/.style={thick, manualgray}
+]
+  \node[raiz] (sn) at (0,5) {Sistema nervoso};
+  \node[cnt] (snc) at (-4,3.5) {\textbf{Central}\\encéfalo e medula};
+  \node[cnt] (snp) at (4,3.5) {\textbf{Periférico}\\nervos do corpo};
+  \node[som] (som) at (1.2,1.7) {\textbf{Somático}\\movimento voluntário\\e sentidos};
+  \node[aut] (aut) at (6.4,1.7) {\textbf{Autônomo}\\órgãos internos};
+  \node[aut] (sim) at (4.2,-0.4) {\textbf{Simpático}\\mobiliza\\(luta ou fuga)};
+  \node[aut] (par) at (8.4,-0.4) {\textbf{Parassimpático}\\conserva\\(repouso, digestão)};
+
+  \draw[lig] (sn) -- (snc);
+  \draw[lig] (sn) -- (snp);
+  \draw[lig] (snp) -- (som);
+  \draw[lig] (snp) -- (aut);
+  \draw[lig] (aut) -- (sim);
+  \draw[lig] (aut) -- (par);
+\end{tikzpicture}
+```
+A organização do sistema nervoso. As divisões não são compartimentos estanques — elas cooperam o tempo todo —, mas cada uma tem uma competência dominante que vale conhecer.
+:::
+
+Dentro do periférico, uma segunda divisão separa o **sistema nervoso somático**, que carrega a informação dos sentidos para dentro e comanda os músculos esqueléticos do movimento voluntário, do **sistema nervoso autônomo**, que regula os órgãos internos — coração, pulmões, vísceras, glândulas — em larga medida sem controle consciente. É o autônomo que acelera o coração num susto e franze o estômago numa véspera de prova, sem que se possa pará-lo à vontade como se para um braço.
+
+O sistema autônomo, por fim, subdivide-se em dois ramos de ações em geral opostas, tema central deste capítulo: o **simpático**, que mobiliza o corpo para o esforço e a emergência, e o **parassimpático**, que o acalma e o repõe. A convivência tensa entre esses dois ramos é a base fisiológica de boa parte do que os volumes seguintes chamarão de emoção, estresse e ansiedade.
+
+## A medula e o arco reflexo: processamento sem cérebro
+
+Antes de subir ao encéfalo, vale reparar em quanto a medula espinhal faz sozinha. Ela não é um mero cabo que transmite mensagens para cima e para baixo: é, ela própria, um centro de processamento. A prova mais limpa disso é o **reflexo**.
+
+Quando a mão toca algo escaldante, ela recua antes que a dor seja sentida. A ordem dos eventos é reveladora: o recuo acontece *primeiro*, e a consciência da dor vem depois. Isso porque o circuito que comanda o recuo — o **arco reflexo** — se fecha na própria medula, sem esperar pelo cérebro. A @fig-arco-reflexo mostra o percurso.
+
+::: {#fig-arco-reflexo}
+```{.tikz}
+%%| filename: arco-reflexo
+%%| alt: Esquema do arco reflexo de retirada. À esquerda, uma mão toca uma fonte de calor. Um neurônio sensorial (aferente, em azul) leva o sinal da pele até a medula espinhal, representada como uma estrutura central ovalada. Dentro da medula, um interneurônio conecta ao neurônio motor (eferente, em vermelho), que sai da medula e comanda o músculo do braço a se contrair, retirando a mão. Uma seta tracejada, para cima, indica que o sinal também sobe para o cérebro, mas depois. Rótulos identificam aferente, interneurônio e eferente.
+\begin{tikzpicture}[scale=1.0]
+  % medula
+  \draw[manualgray, thick, fill=manualgray!10] (5,-1) ellipse (0.85 and 1.8);
+  \draw[manualgray, thick, fill=manualgray!22] (5,-1) ellipse (0.4 and 1.1);
+  \node[font=\small, text=manualgray] at (5,-3.1) {medula};
+  % receptor / mao (esquematica)
+  \draw[manualgray, thick, fill=manualgray!8, rounded corners=2pt] (-0.55,0.15) rectangle (0.3,0.75);
+  \foreach \x in {-0.4,-0.2,0.0,0.15}{
+    \draw[manualgray, thick] (\x,0.75) -- (\x,1.05);
+  }
+  \draw[manualred!70, thick] (-0.35,1.3) -- (0.0,1.62) -- (0.35,1.3);
+  \node[font=\footnotesize, text=manualred] at (0,1.9) {calor};
+  \node[font=\footnotesize, text=manualgray] at (-0.15,-0.15) {pele};
+  % aferente
+  \draw[->, >=Stealth, manualblue, very thick] (0.5,0.5) .. controls (2.5,0.95) .. (4.3,-0.2);
+  \node[font=\footnotesize, text=manualblue] at (2.3,1.25) {aferente (sensorial)};
+  % interneuronio
+  \node[circle, draw=manualgreen, fill=manualgreen!20, minimum size=0.35cm] at (5,-1) {};
+  \node[font=\footnotesize, text=manualgreen] at (5.0,0.05) {interneurônio};
+  % eferente
+  \draw[->, >=Stealth, manualred, very thick] (4.3,-1.6) .. controls (2.5,-2.4) .. (0.5,-1.75);
+  \node[font=\footnotesize, text=manualred] at (2.3,-2.6) {eferente (motor)};
+  % musculo
+  \draw[manualred, thick, fill=manualred!12, rounded corners=4pt] (-0.9,-2.1) rectangle (0.3,-1.5);
+  \node[font=\footnotesize, text=manualred] at (-0.3,-2.4) {músculo};
+  % sobe para o cerebro
+  \draw[->, >=Stealth, manualgray, thick, dashed] (5,0.85) -- (5,2.1);
+  \node[font=\footnotesize, text=manualgray, align=center] at (5,2.55) {ao cérebro\\(depois)};
+\end{tikzpicture}
+```
+O arco reflexo de retirada. O sinal entra pela raiz sensorial, é processado na medula e sai pela raiz motora — um circuito local que produz a ação antes de o cérebro sequer registrar a dor. A dor consciente é um relatório que chega tarde.
+:::
+
+O arco tem uma direção fixa, e essa direção foi uma descoberta. No início do século XIX, François Magendie e Charles Bell estabeleceram, de forma independente, que as raízes nervosas que entram na medula pela parte de trás (dorsal) carregam informação sensorial *para dentro*, enquanto as que saem pela frente (ventral) carregam comandos motores *para fora* [@magendie1822]. É a **lei de Bell-Magendie**: o fluxo é segregado por via — entrada e saída não se misturam no mesmo canal. Antes dela, não se sabia sequer que os nervos tinham sentido; depois, tornou-se possível pensar o sistema nervoso como um circuito com portas de entrada e de saída distintas.
+
+::: {.experimento}
+**A ação integradora do sistema nervoso** [@sherrington1906]
+
+**Desenho.** Charles Sherrington, no final do século XIX e início do XX, estudou reflexos em animais cuja medula fora cirurgicamente separada do cérebro (preparações "espinhais"). Ao estimular a pele e registrar as contrações musculares, ele mapeou como a medula, sozinha, coordena movimentos.
+
+**Resultado.** Sherrington mostrou que os reflexos não são respostas isoladas e mecânicas: quando um músculo flexor é ativado para retirar um membro, o músculo extensor oposto é simultaneamente *inibido* — a chamada **inervação recíproca**. A medula não apenas dispara respostas; ela as coordena, combinando excitação e inibição para produzir um movimento coerente.
+
+**Interpretação.** Foi Sherrington quem cunhou o termo *sinapse* e demonstrou que a integração — somar sinais excitatórios e inibitórios, tema do Cap. 22 — é a operação fundamental do sistema nervoso, presente já no nível da medula. O comportamento coordenado não exige, em muitos casos, um comando central: emerge da arquitetura local dos circuitos. Rendeu-lhe o Nobel de 1932.
+
+**Limitações.** As preparações espinhais são um modelo simplificado; a maioria dos comportamentos reais envolve modulação descendente do encéfalo, que pode facilitar ou suprimir reflexos. Sherrington estudou o esqueleto do sistema, não seu funcionamento íntegro.
+:::
+
+A lição psicológica do reflexo é dupla. Por um lado, ele mostra que "processar informação" não é sinônimo de "pensar conscientemente" — a medula processa, decide e age sem consciência alguma. Por outro, ele dá o modelo mais simples de arco entrada-integração-saída, que o resto do sistema nervoso complica, mas não abandona.
+
+## O sistema autônomo: acelerador e freio
+
+Se o reflexo mostra o sistema nervoso agindo sobre os músculos, o sistema autônomo mostra-o agindo sobre as vísceras — e é aqui que a biologia toca mais de perto a emoção. Seus dois ramos funcionam como o acelerador e o freio de um carro, e raramente estão ambos no fundo ao mesmo tempo.
+
+O ramo **simpático** prepara o corpo para gastar energia diante de um desafio: dilata as pupilas, acelera o coração, aumenta a respiração, desvia sangue das vísceras para os músculos, libera glicose, inibe a digestão e a salivação (daí a "boca seca" do nervosismo). É a resposta de emergência. O ramo **parassimpático** faz o oposto: desacelera o coração, contrai as pupilas, estimula a digestão e a salivação, promove a recuperação e o armazenamento de energia. É o modo de repouso. A @tbl-autonomo resume o contraste.
+
+| Órgão / função | Simpático (mobiliza) | Parassimpático (conserva) |
+|---|---|---|
+| Coração | Acelera | Desacelera |
+| Pupilas | Dilata | Contrai |
+| Brônquios | Dilata (mais ar) | Contrai |
+| Digestão | Inibe | Estimula |
+| Salivação | Reduz (boca seca) | Aumenta |
+| Glândulas suprarrenais | Liberam adrenalina | — |
+| Efeito global | Prepara para agir | Repõe e restaura |
+
+: As ações opostas dos ramos simpático e parassimpático do sistema nervoso autônomo. {#tbl-autonomo}
+
+::: {.atencao}
+**O simpático não é "o lado emocional" nem o parassimpático "o lado racional".** É tentador mapear os dois ramos em uma dicotomia moral — agitação versus calma, corpo versus razão. Mas ambos são igualmente automáticos e igualmente corporais; nenhum é o "sentimento" e o outro o "pensamento". Além disso, eles não são um interruptor de liga-desliga: operam em equilíbrio dinâmico e contínuo, e certas situações ativam os dois ao mesmo tempo (o desmaio diante de sangue, por exemplo, combina ativação simpática seguida de uma queda parassimpática brusca). A dicotomia é uma primeira aproximação útil, não uma lei.
+:::
+
+## Homeostase e a resposta de luta ou fuga
+
+O que o sistema autônomo persegue, em última análise, é a **homeostase**: a manutenção do meio interno do corpo dentro de faixas estreitas e viáveis — temperatura, glicemia, pressão, equilíbrio de fluidos. O conceito e o nome vêm de Walter Cannon, que o descreveu como a "sabedoria do corpo": um conjunto de mecanismos automáticos que corrigem desvios, como um termostato que liga o aquecedor quando esfria e o desliga quando esquenta [@cannon1932]. Fome, sede e sono, temas do Vol 9, são em boa parte sinais de desvios homeostáticos pedindo correção.
+
+Foi também Cannon quem descreveu a resposta que ficou conhecida como **luta ou fuga** (*fight or flight*): diante de uma ameaça, o simpático dispara em bloco, inundando o corpo de adrenalina e preparando-o para enfrentar ou escapar [@cannon1929]. Essa reação foi decisiva para a sobrevivência ancestral — mobilizar o corpo em segundos diante de um predador. O problema, retomado no Vol 9 (Cap. 56), é que o mesmo sistema dispara diante de ameaças modernas que não se resolvem correndo nem lutando — uma dívida, uma reunião, uma mensagem não respondida. A resposta que salvava vidas na savana, cronicamente ativada por estressores que não têm desfecho físico, torna-se ela própria fonte de adoecimento.
+
+::: {.base-neural}
+**Além de lutar ou fugir: congelar, e cuidar.** A dicotomia de Cannon, embora fundamental, foi complementada. Muitos animais, diante de uma ameaça inescapável, não lutam nem fogem: **congelam** (*freeze*) — imobilidade tensa que reduz a chance de ser detectado e organiza a próxima ação. E Shelley Taylor e colegas argumentaram que o padrão "luta ou fuga" foi mapeado sobretudo em machos; sob estresse, um repertório alternativo de **cuidar e apaziguar** (*tend and befriend*) — proteger a prole e buscar aliança social — seria evolutivamente vantajoso e mais frequente em contextos de vínculo, associado à ação da ocitocina [@taylor2000]. A resposta ao estresse é, assim, um leque de estratégias, não um único botão de pânico.
+:::
+
+::: {.na-pratica}
+**Por que o "detector de mentiras" mede a coisa errada.** O polígrafo registra sinais do sistema nervoso autônomo — frequência cardíaca, respiração, condutância da pele (suor) — sob a premissa de que mentir provoca ativação simpática detectável. O problema é conceitual, não técnico: o polígrafo mede *excitação autônoma*, e a excitação autônoma tem muitas causas além da mentira. Um inocente aterrorizado por estar sendo interrogado por um crime que não cometeu ativa o simpático tanto quanto um culpado; um mentiroso sereno pode não ativá-lo. Por isso, uma revisão abrangente das evidências concluiu que a validade do polígrafo para detectar mentiras é fraca e insuficiente para decisões de alto risco [@nas2003]. É um caso exemplar de erro de inferência: confundir um correlato fisiológico (excitação) com o fenômeno psicológico de interesse (engano). O Vol 15 (Cap. 101) retoma o tema na psicologia forense.
+:::
+
+## Como as divisões cooperam: um exemplo integrado
+
+Convém fechar juntando as peças em uma cena. Você atravessa a rua distraído e um carro buzina perto. Em frações de segundo: receptores auditivos e visuais (entrada, via somática sensorial) disparam; a informação sobe pela medula ao encéfalo, que avalia a ameaça; um comando desce e o simpático mobiliza o corpo — coração dispara, pupilas dilatam, músculos tensionam (autônomo); ao mesmo tempo, o sistema somático motor comanda o salto para trás (saída voluntária, mas quase reflexa). Passado o susto, com o carro adiante, o parassimpático assume: o coração desacelera, a respiração se acalma, a digestão retoma. Nenhuma dessas divisões agiu sozinha; o comportamento adaptativo foi a orquestração de todas em menos de um segundo. É isso que "sistema" nomeia — não peças isoladas, mas peças acopladas.
+
+## Síntese
+
+::: {.callout-sintese}
+- **O sistema nervoso organiza-se em divisões com competências distintas.** Central (encéfalo e medula) versus periférico; dentro do periférico, somático (movimento voluntário e sentidos) versus autônomo (órgãos internos); dentro do autônomo, simpático versus parassimpático.
+- **O sistema nervoso é entrada, integração e saída.** O arco reflexo é o modelo mínimo dessa estrutura, e mostra que processar informação não exige consciência: a medula decide e age antes de o cérebro registrar a dor.
+- **A lei de Bell-Magendie** estabelece que a informação sensorial entra pelas raízes dorsais e os comandos motores saem pelas ventrais — entrada e saída em canais separados.
+- **Sherrington mostrou que a integração — combinar excitação e inibição — é a operação básica** do sistema nervoso, presente já na medula, com a inervação recíproca de músculos opostos.
+- **Os dois ramos autônomos agem em oposição:** o simpático mobiliza (luta ou fuga, adrenalina, coração acelerado), o parassimpático conserva (repouso, digestão, recuperação). Não são "emoção versus razão"; ambos são automáticos e corporais.
+- **A homeostase é a meta reguladora** — manter o meio interno estável —, e a resposta de luta ou fuga de Cannon é adaptativa em emergências físicas, mas torna-se nociva quando cronicamente disparada por estressores modernos. O repertório inclui ainda congelar e cuidar-apaziguar.
+- **O polígrafo mede excitação autônoma, não mentira** — um erro clássico de confundir correlato fisiológico com fenômeno psicológico.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sistema nervoso central (SNC)**
+:   O encéfalo e a medula espinhal; o centro de integração e processamento.
+
+**Sistema nervoso periférico (SNP)**
+:   A rede de nervos que conecta o SNC ao resto do corpo, dividida em somático e autônomo.
+
+**Sistema nervoso somático**
+:   Ramo do periférico que conduz a informação sensorial e comanda os músculos esqueléticos do movimento voluntário.
+
+**Sistema nervoso autônomo**
+:   Ramo do periférico que regula os órgãos internos e glândulas, em larga medida sem controle consciente; subdivide-se em simpático e parassimpático.
+
+**Simpático / Parassimpático**
+:   Os dois ramos autônomos de ação oposta: o simpático mobiliza o corpo para o esforço (luta ou fuga); o parassimpático o acalma e o repõe (repouso e digestão).
+
+**Arco reflexo**
+:   Circuito neural que produz uma resposta automática a um estímulo, fechando-se na medula sem intervenção do cérebro.
+
+**Lei de Bell-Magendie**
+:   Princípio de que as raízes dorsais da medula conduzem informação sensorial (aferente) e as ventrais, comandos motores (eferente) [@magendie1822].
+
+**Inervação recíproca**
+:   Coordenação, descrita por Sherrington, em que a ativação de um músculo é acompanhada da inibição de seu antagonista [@sherrington1906].
+
+**Homeostase**
+:   Manutenção automática do meio interno do corpo dentro de faixas viáveis; a "sabedoria do corpo" de Cannon [@cannon1932].
+
+**Luta ou fuga**
+:   Resposta de mobilização simpática em bloco diante de uma ameaça, descrita por Cannon [@cannon1929].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Desenhe a árvore de divisões do sistema nervoso a partir da memória (central/periférico, somático/autônomo, simpático/parassimpático) e escreva ao lado de cada ramo terminal a sua função dominante.
+
+2. **(Recuperação.)** Explique o arco reflexo de retirada nomeando o neurônio aferente, o interneurônio e o neurônio eferente. Por que o recuo da mão acontece antes da sensação de dor?
+
+3. **(Aplicação.)** Uma pessoa vai fazer uma prova importante: coração acelerado, boca seca, mãos suando, estômago embrulhado. Classifique cada sinal como ação do simpático ou do parassimpático e explique a lógica evolutiva por trás dessa resposta a uma ameaça que não é física.
+
+4. **(Reflexão crítica.)** Um tribunal pretende usar o resultado de um polígrafo como prova. Com base no que o capítulo diz sobre o que o aparelho mede, construa o argumento de que um resultado "positivo" não distingue um culpado de um inocente assustado.
+
+5. **(Integração.)** Sherrington mostrou que a medula coordena excitação e inibição sem o cérebro. Relacione isso ao princípio, visto no Cap. 22, de que o neurônio soma sinais excitatórios e inibitórios antes de disparar. Em que sentido a inervação recíproca é esse mesmo princípio operando em escala de circuito?
+
+6. **(Reflexão crítica.)** A resposta de luta ou fuga foi selecionada porque salvava vidas. Explique por que uma adaptação vantajosa em um ambiente (a savana ancestral) pode se tornar fonte de adoecimento em outro (a vida moderna). Que outros repertórios de resposta ao estresse o capítulo menciona além de lutar e fugir?
