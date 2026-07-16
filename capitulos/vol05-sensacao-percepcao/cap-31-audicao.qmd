@@ -1,5 +1,183 @@
 # 31. Audição
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Relacionar** as propriedades físicas do som (frequência, amplitude, complexidade) às dimensões perceptuais de altura, intensidade sonora e timbre.
+- **Traçar** o caminho do som pela orelha externa, média e interna até a transdução nas células ciliadas.
+- **Comparar** as teorias da posição (place) e da frequência para a percepção da altura e explicar como se complementam.
+- **Explicar** como localizamos a fonte de um som usando as diferenças entre as duas orelhas.
+- **Distinguir** perda auditiva condutiva de neurossensorial e entender o princípio do implante coclear.
+- **Interpretar** o efeito McGurk como evidência de que a audição é multissensorial e construtiva.
 :::
+
+Se a visão nos orienta no espaço, a audição nos liga às pessoas. É pelo som que a linguagem falada acontece, que a música nos move e que percebemos, no escuro ou às nossas costas, o que os olhos não alcançam. Este capítulo segue a mesma lógica do anterior — do estímulo físico à transdução, e desta à interpretação —, mas revela um órgão de engenharia surpreendente: um sistema capaz de converter variações minúsculas de pressão do ar em movimentos de células microscópicas, e destas num mundo de vozes e melodias. E, como no caso da visão, terminaremos vendo que "ouvir" não é um registro passivo: o que escutamos é ativamente construído, a ponto de o que vemos poder mudar o que ouvimos.
+
+## O som como estímulo
+
+O som é uma **onda de pressão** que se propaga por um meio — em geral o ar —, uma sucessão de compressões e rarefações das moléculas. Três de suas propriedades físicas mapeiam-se em três dimensões da experiência. A **frequência** — quantas ondas passam por segundo, medida em hertz (Hz) — determina a **altura** (*pitch*): frequências altas soam agudas, baixas soam graves. A **amplitude** — a intensidade da compressão — determina a **intensidade sonora** (*loudness*), medida em **decibéis** (dB), uma escala logarítmica, fiel à lei de Fechner do Cap. 29. E a **complexidade** — a mistura de frequências que compõe o som — determina o **timbre**, a qualidade que distingue um violino de um piano tocando a mesma nota. O ouvido humano jovem capta de cerca de 20 Hz a 20.000 Hz; envelhecer e a exposição a ruído corroem primeiro as frequências altas.
+
+## A orelha: da onda de ar ao movimento de células
+
+Ouvir exige resolver um problema físico delicado: transformar vibrações do ar — um meio "leve" — em vibrações de um fluido, dentro da orelha interna, um meio "pesado" que resistiria a essas ondas fracas. A orelha resolve isso em três estágios (@fig-orelha).
+
+::: {#fig-orelha}
+```{.tikz}
+%%| filename: orelha-esquema
+%%| alt: Esquema horizontal da orelha em três regiões. À esquerda, a orelha externa: o pavilhão (uma curva) e o canal auditivo levando ao tímpano (uma linha vertical). No centro, a orelha média com três ossículos pequenos (martelo, bigorna, estribo) ligados em cadeia do tímpano à janela oval. À direita, a orelha interna: a cóclea, desenhada como uma espiral, de onde parte o nervo auditivo. Chaves inferiores separam as três regiões: externa, média e interna.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize, scale=1.0]
+  % orelha externa: pavilhao e canal
+  \draw[very thick, manualblue] (-0.2,1.1) .. controls (-1.2,0.9) and (-1.1,-0.9) .. (-0.2,-1.1);
+  \node[text=manualblue] at (-1.2,1.4) {pavilhão};
+  \draw[thick, manualgray, fill=manualgray!6] (-0.2,0.35) rectangle (2.4,-0.35);
+  \node[text=manualgray] at (1.1,-0.75) {canal auditivo};
+  % timpano
+  \draw[very thick, manualred] (2.4,0.55) -- (2.4,-0.55);
+  \node[text=manualred, align=center] at (2.6,1.05) {tímpano};
+  % ossiculos (media)
+  \fill[manualgreen] (2.9,0.25) circle (2pt);
+  \fill[manualgreen] (3.4,0.45) circle (2pt);
+  \fill[manualgreen] (3.9,0.2) circle (2pt);
+  \draw[thick, manualgreen] (2.4,0.15) -- (2.9,0.25) -- (3.4,0.45) -- (3.9,0.2) -- (4.35,0.1);
+  \node[text=manualgreen, align=center] at (3.4,1.15) {ossículos\\{\scriptsize martelo · bigorna · estribo}};
+  % janela oval
+  \draw[very thick, manualred!70!black] (4.35,0.4) -- (4.35,-0.2);
+  \node[text=manualred!70!black, align=center] at (4.7,-0.8) {janela\\oval};
+  % coclea (espiral)
+  \draw[very thick, manualblue!70!black] plot[domain=0:930, samples=140, variable=\t]
+    ({5.9 + (0.012*\t)*cos(\t)}, {0 + (0.012*\t)*sin(\t)});
+  \node[text=manualblue!70!black] at (6.6,1.15) {cóclea};
+  % nervo auditivo
+  \draw[very thick, manualyellow!70!black] (7.1,-0.3) .. controls (7.8,-0.9) .. (8.4,-1.2) node[right, text=manualyellow!60!black] {nervo auditivo};
+  % chaves das regioes
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, manualblue] (-1.3,-1.5) -- (2.4,-1.5) node[midway, below=4pt] {externa};
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, manualgreen] (2.5,-1.5) -- (4.35,-1.5) node[midway, below=4pt] {média};
+  \draw[decorate, decoration={brace, mirror, amplitude=4pt}, manualblue!70!black] (4.45,-1.5) -- (7.5,-1.5) node[midway, below=4pt] {interna};
+\end{tikzpicture}
+```
+O caminho do som. A onda é captada pelo pavilhão, faz vibrar o tímpano, é amplificada pela cadeia de ossículos e transferida ao fluido da cóclea, onde as células ciliadas realizam a transdução. O nervo auditivo leva o sinal ao cérebro.
+:::
+
+Na **orelha externa**, o **pavilhão** capta as ondas e as canaliza pelo canal auditivo até o **tímpano**, uma membrana que vibra ao ritmo do som. Na **orelha média**, três ossículos minúsculos — **martelo, bigorna e estribo**, os menores ossos do corpo — formam uma alavanca que amplifica a vibração e a transmite à **janela oval**, resolvendo o problema de casar o ar com o fluido interno. Na **orelha interna** está a **cóclea**, um tubo espiralado cheio de líquido. Dentro dela, sobre a **membrana basilar**, ficam as **células ciliadas**: quando a onda percorre o fluido, a membrana ondula, os cílios dessas células se dobram, e é esse dobrar mecânico que abre canais e dispara o sinal neural. Aqui está a transdução da audição — uma das mais delicadas do corpo, o que explica sua fragilidade: ruído intenso literalmente destrói células ciliadas, que **não se regeneram** em humanos.
+
+## Como o cérebro sabe a altura de um som
+
+A cóclea não apenas transduz: ela *analisa a frequência*. E como faz isso foi objeto de outra disputa clássica entre teorias que hoje sabemos complementares.
+
+A **teoria da posição** (*place theory*), que remonta a Helmholtz, propõe que diferentes frequências fazem vibrar ao máximo diferentes *lugares* ao longo da membrana basilar. Georg von Békésy confirmou-a diretamente ao observar, na cóclea, uma **onda viajante** cujo pico se desloca conforme a frequência: sons agudos fazem pico perto da base (junto à janela oval), e sons graves, perto do ápice [@bekesy1960]. Assim, *qual* neurônio dispara codifica a frequência — um mapa de tons no espaço, a **tonotopia** (@fig-tonotopia). O achado rendeu a Békésy o Nobel e é a base de funcionamento do implante coclear.
+
+::: {#fig-tonotopia}
+```{.tikz}
+%%| filename: tonotopia-coclea
+%%| alt: Diagrama de uma cóclea "desenrolada" mostrada como uma faixa horizontal que afina da esquerda (base) para a direita (ápice). Uma onda desenhada sobre a faixa tem seu pico deslocando-se: sons agudos fazem pico na base, à esquerda; sons graves, no ápice, à direita. Rótulos indicam base = altas frequências (agudos) e ápice = baixas frequências (graves).
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  % membrana basilar "desenrolada"
+  \draw[thick, manualgray, fill=manualblue!5] (0,0.5) -- (10,0.25) -- (10,-0.25) -- (0,-0.5) -- cycle;
+  \node[text=manualgray, font=\small\bfseries] at (0.9,1.2) {base};
+  \node[text=manualgray, font=\small\bfseries] at (9.2,1.2) {ápice};
+  % onda viajante
+  \draw[very thick, manualred, domain=0:10, samples=200] plot (\x, {0.9*sin(180*\x)*exp(-((\x-2)^2)/2.2)});
+  \node[text=manualred] at (2,-1.15) {pico agudo};
+  \draw[very thick, manualblue, domain=0:10, samples=200] plot (\x, {0.7*sin(140*\x)*exp(-((\x-8)^2)/2.2)});
+  \node[text=manualblue] at (8,-1.15) {pico grave};
+  \node[align=center, font=\scriptsize, text=manualgray] at (0.9,-1.6) {altas frequências};
+  \node[align=center, font=\scriptsize, text=manualgray] at (9.2,-1.6) {baixas frequências};
+\end{tikzpicture}
+```
+Tonotopia. A cóclea "desenrolada". A onda viajante faz pico em posições diferentes conforme a frequência — agudos perto da base, graves perto do ápice —, de modo que *o lugar* que vibra codifica a altura do som.
+:::
+
+Mas a teoria da posição falha para as frequências mais baixas, cujos picos ficam mal definidos. Para elas vale a **teoria da frequência** (ou temporal): os neurônios auditivos disparam *sincronizados* com os ciclos da onda sonora, de modo que a *taxa* de disparo codifica a frequência. Há um limite físico — um neurônio isolado não dispara mais de cerca de 1.000 vezes por segundo —, contornado pelo **princípio da salva** (*volley principle*) de Wever e Bray: grupos de neurônios se revezam, cada um disparando em ciclos alternados, e a soma acompanha frequências mais altas do que qualquer célula sozinha [@wever_bray1930]. A síntese é limpa: **frequências baixas** são codificadas pela taxa temporal de disparo, **altas** pela posição na membrana, e a faixa intermediária por ambas. Mais uma vez, duas teorias rivais tornaram-se etapas complementares de um só sistema.
+
+## Localizar o som no espaço
+
+Com dois olhos lado a lado, o cérebro estima profundidade; com duas orelhas, estima *direção*. Um som vindo da direita chega à orelha direita um instante **antes** e um pouco **mais forte** do que à esquerda (a cabeça faz sombra acústica). O cérebro usa essas **diferenças interaurais de tempo e de intensidade** para localizar a fonte com notável precisão. O sistema tem um ponto fraco revelador: sons vindos exatamente de frente, de trás ou de cima chegam iguais às duas orelhas — daí a tendência a virar a cabeça para desfazer a ambiguidade, criando de propósito uma diferença entre os lados.
+
+## Quando a audição falha — e como se repara
+
+A perda auditiva vem em dois tipos, com prognósticos distintos. A **perda condutiva** resulta de problemas na condução mecânica do som pela orelha externa ou média (cera, perfuração do tímpano, rigidez dos ossículos); costuma ser tratável, inclusive por aparelhos que amplificam o som. A **perda neurossensorial** decorre de dano às células ciliadas ou ao nervo auditivo — em geral por ruído, ototóxicos ou idade — e, como as células ciliadas não se regeneram, é permanente. É justamente para ela que o **implante coclear** representa uma das próteses sensoriais mais bem-sucedidas da medicina: um dispositivo que capta o som, decompõe-no em frequências e **estimula eletricamente o nervo auditivo diretamente**, respeitando o mapa tonotópico da cóclea — ou seja, aplicando na prática a teoria da posição de Békésy. Ele não "conserta" a orelha; substitui a transdução perdida, entregando ao nervo um código que o cérebro aprende a interpretar como som.
+
+## Ouvir com os olhos: o efeito McGurk
+
+A audição parece o mais "direto" dos sentidos — o som entra e o ouvimos. Um experimento simples e perturbador mostra que não é assim: o que vemos pode reescrever o que ouvimos.
+
+::: {.experimento}
+**O efeito McGurk** [@mcgurk_macdonald1976]
+
+**Desenho.** Harry McGurk e John MacDonald montaram um vídeo em que o *áudio* de uma pessoa dizendo repetidamente a sílaba "ba" era dublado sobre a *imagem* dos lábios da mesma pessoa articulando "ga". Pediram aos participantes que relatassem o que ouviam, olhando para a tela.
+
+**Resultado.** A maioria não ouvia nem "ba" (o som real) nem "ga" (a imagem), mas uma terceira sílaba, "da" — uma *fusão* das duas fontes. E o mais impressionante: o efeito é praticamente incontrolável. Mesmo sabendo do truque, ao olhar para os lábios ouve-se "da"; ao fechar os olhos, volta-se a ouvir o "ba" real. A visão modifica literalmente a percepção auditiva.
+
+**Interpretação.** A percepção da fala é **multissensorial**: o cérebro integra automaticamente a informação dos lábios com a do som para decidir o que foi dito. Isso é adaptativo — em ambientes ruidosos, ler lábios melhora muito a compreensão. Mas revela que "ouvir" não é registrar um sinal acústico puro: é uma inferência que combina sentidos, exatamente como a percepção visual do Cap. 30 combina pistas.
+
+**Limitações.** A força do efeito varia com a língua, a cultura e a idade, e é mais fraca em falantes de alguns idiomas — o que sugere que o peso relativo dado a cada sentido é, em parte, aprendido. Ainda assim, sua robustez geral fez dele uma das demonstrações mais citadas da natureza construtiva da percepção.
+:::
+
+::: {.na-pratica}
+**Proteger uma audição que não se regenera.** A lição prática mais importante deste capítulo decorre de um fato biológico: as células ciliadas humanas, uma vez destruídas, não voltam. Isso torna a perda auditiva induzida por ruído inteiramente *prevenível* e inteiramente *irreversível* — a pior combinação possível. Exposição repetida a sons intensos (shows, fones em volume alto, ferramentas, ambientes industriais) mata células ciliadas de forma cumulativa e silenciosa, começando pelas frequências altas. Zumbido persistente após um evento barulhento é um sinal de alarme, não um incômodo passageiro. As recomendações de saúde auditiva — limitar volume e tempo de exposição, usar protetores em ambientes ruidosos, dar pausas de silêncio ao ouvido — não são conselhos triviais: são a única defesa de um sistema que não tem conserto. E o implante coclear, por notável que seja, restaura uma audição elétrica aproximada, não a original.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- O som é uma **onda de pressão**; sua **frequência** determina a **altura**, a **amplitude** a **intensidade sonora** (em decibéis, escala logarítmica) e a **complexidade** o **timbre**.
+- A **orelha externa** capta e canaliza o som; a **média** o amplifica pelos ossículos (martelo, bigorna, estribo); a **interna** (cóclea) faz a transdução nas **células ciliadas** sobre a membrana basilar.
+- A altura é codificada de dois modos complementares: pela **posição** que vibra na membrana basilar (tonotopia, teoria da posição, para frequências altas) e pela **taxa temporal** de disparo (teoria da frequência e princípio da salva, para as baixas).
+- Localizamos sons pelas **diferenças interaurais de tempo e de intensidade** entre as duas orelhas.
+- A perda **condutiva** (orelha externa/média) costuma ser tratável; a **neurossensorial** (células ciliadas, nervo) é permanente, pois as células ciliadas não se regeneram — daí a importância do **implante coclear** e da prevenção do ruído.
+- O **efeito McGurk** (ver "ga" e ouvir "ba" faz perceber "da") mostra que a audição é **multissensorial e construtiva**: o que vemos altera o que ouvimos.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Altura (pitch)**
+:   Dimensão perceptual (agudo/grave) correspondente à frequência do som.
+
+**Intensidade sonora (loudness)**
+:   Dimensão perceptual (forte/fraco) correspondente à amplitude do som; medida em decibéis.
+
+**Timbre**
+:   Qualidade que distingue sons de mesma altura e intensidade, correspondente à complexidade (mistura de frequências).
+
+**Tímpano**
+:   Membrana da orelha que vibra com as ondas sonoras, iniciando a transmissão mecânica.
+
+**Ossículos**
+:   Martelo, bigorna e estribo; ossos da orelha média que amplificam a vibração e a transmitem à janela oval.
+
+**Cóclea**
+:   Estrutura espiralada e cheia de líquido da orelha interna, onde ocorre a transdução auditiva.
+
+**Membrana basilar**
+:   Estrutura da cóclea que sustenta as células ciliadas e vibra de forma diferente conforme a frequência.
+
+**Células ciliadas**
+:   Receptores auditivos cujos cílios, ao se dobrarem com a onda no fluido, disparam o sinal neural; não se regeneram.
+
+**Teoria da posição (place)**
+:   Explica a altura pela posição da membrana basilar que mais vibra (tonotopia); vale sobretudo para frequências altas [@bekesy1960].
+
+**Teoria da frequência / princípio da salva**
+:   Explica a altura pela taxa de disparo sincronizado dos neurônios, com grupos se revezando; vale para frequências baixas [@wever_bray1930].
+
+**Diferenças interaurais**
+:   Diferenças de tempo e de intensidade do som entre as duas orelhas, usadas para localizar a fonte.
+
+**Efeito McGurk**
+:   Alteração da percepção da fala pela visão dos lábios, evidência da natureza multissensorial da audição [@mcgurk_macdonald1976].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Relacione frequência, amplitude e complexidade do som às dimensões de altura, intensidade sonora e timbre. Por que a escala de decibéis é logarítmica?
+
+2. **(Recuperação.)** Descreva o percurso de uma onda sonora pela orelha externa, média e interna até a transdução. Que problema físico os ossículos ajudam a resolver?
+
+3. **(Aplicação/Integração.)** Explique como as teorias da posição e da frequência se complementam para cobrir toda a faixa audível. Relacione essa complementaridade ao caso análogo das duas teorias da cor (Cap. 30).
+
+4. **(Aplicação.)** Uma pessoa tem dificuldade de localizar um alarme que soa exatamente atrás dela e vira a cabeça para os lados. Explique, com as diferenças interaurais, por que virar a cabeça ajuda.
+
+5. **(Reflexão crítica.)** Por que a perda auditiva por ruído é ao mesmo tempo totalmente prevenível e totalmente irreversível? O que essa combinação implica para as recomendações de saúde auditiva?
+
+6. **(Integração.)** O efeito McGurk mostra que a visão altera a audição. Relacione esse achado à tese, recorrente neste volume, de que a percepção é uma inferência construtiva e não um registro passivo — e explique por que integrar lábios e som seria adaptativo.
