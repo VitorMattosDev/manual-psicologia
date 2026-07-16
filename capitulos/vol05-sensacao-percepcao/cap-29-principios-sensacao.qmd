@@ -1,5 +1,180 @@
 # 29. Princípios de sensação (psicofísica, limiares)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** sensação de percepção e explicar por que a fronteira entre elas é conceitual, não anatômica.
+- **Explicar** o princípio da transdução sensorial como o elo comum a todos os sentidos.
+- **Definir** limiar absoluto e limiar diferencial (DIP) e relacioná-los à ideia de que a percepção é probabilística, não um interruptor de tudo-ou-nada.
+- **Enunciar** a lei de Weber e a lei de Fechner e distinguir ambas da lei de potência de Stevens.
+- **Descrever** a teoria de detecção de sinal e por que ela separa sensibilidade de critério de decisão.
+- **Avaliar criticamente** as alegações sobre percepção subliminar, distinguindo o efeito real e modesto do mito da "mensagem oculta que controla".
 :::
+
+O Vol 4 fechou com um cérebro que a experiência esculpe. Mas por onde a experiência *entra*? Toda a riqueza do mundo mental — a cor do céu, o cheiro do café, a dor de um corte, a voz de quem amamos — chega ao cérebro por um punhado de células especializadas que convertem energia física em impulsos nervosos. Este volume trata desse encontro entre o mundo e a mente, e este capítulo estabelece os princípios que valem para *todos* os sentidos, antes de os capítulos seguintes examinarem cada um em detalhe. A pergunta de fundo é antiga e desconcertante: como é que vibrações do ar, ondas de luz e moléculas dispersas se tornam a experiência unificada e colorida de estar num mundo?
+
+A resposta começa com uma distinção. **Sensação** é o processo pelo qual receptores captam energia do ambiente e a transformam em sinais neurais; **percepção** é o processo pelo qual o cérebro organiza e interpreta esses sinais, atribuindo-lhes significado. Ver manchas de luz e cor é sensação; reconhecer nelas o rosto de um amigo é percepção. A distinção é didática e útil, mas convém dizer desde já que ela não corresponde a uma fronteira nítida no cérebro: o processamento sensorial já é, desde os primeiros estágios, moldado por expectativas e contexto (Cap. 33). Sensação e percepção são as duas pontas de um contínuo que vai do receptor ao significado.
+
+## Transdução: o elo comum dos sentidos
+
+Por mais diferentes que sejam olho, ouvido, nariz, língua e pele, todos resolvem o mesmo problema básico. Cada sentido possui **receptores sensoriais** — células afinadas para um tipo específico de energia — que realizam a **transdução**: a conversão de uma forma de energia física (luz, ondas de pressão, energia mecânica, química) no sinal eletroquímico universal do sistema nervoso, o potencial de ação (Cap. 22). O olho transduz luz; o ouvido, vibração; a língua e o nariz, moléculas; a pele, pressão e temperatura. A partir daí, tudo é o mesmo alfabeto de disparos neurais. Uma consequência filosófica notável decorre disso: o cérebro nunca "toca" o mundo diretamente — ele só recebe padrões de impulsos e, a partir deles, constrói a experiência. A @fig-transducao resume a cadeia comum a todos os sentidos.
+
+::: {#fig-transducao}
+```{.tikz}
+%%| filename: cadeia-transducao
+%%| alt: Fluxograma horizontal com cinco caixas ligadas por setas. Da esquerda para a direita: "Estímulo físico (luz, som, moléculas, pressão)", "Receptor sensorial", "Transdução: energia vira impulso nervoso", "Vias neurais até o córtex", "Percepção: organização e interpretação". Sob as três primeiras caixas há a chave "SENSAÇAO"; sob a última, a chave "PERCEPCAO".
+\begin{tikzpicture}[
+  box/.style={rectangle, rounded corners, draw, thick, align=center, minimum height=1.1cm, text width=2.4cm, font=\footnotesize},
+  >=Stealth
+]
+  \node[box, draw=manualgray, fill=manualgray!8] (est) at (0,0) {Estímulo físico\\{\scriptsize luz, som, molécula}};
+  \node[box, draw=manualblue, fill=manualblue!10] (rec) at (3.2,0) {Receptor sensorial};
+  \node[box, draw=manualblue, fill=manualblue!10] (tra) at (6.4,0) {Transdução\\{\scriptsize energia $\to$ impulso}};
+  \node[box, draw=manualgreen, fill=manualgreen!10] (via) at (9.6,0) {Vias até o córtex};
+  \node[box, draw=manualred, fill=manualred!10] (per) at (12.8,0) {Percepção\\{\scriptsize interpretação}};
+  \draw[->, thick] (est) -- (rec);
+  \draw[->, thick] (rec) -- (tra);
+  \draw[->, thick] (tra) -- (via);
+  \draw[->, thick] (via) -- (per);
+  \draw[decorate, decoration={brace, amplitude=6pt, mirror}, manualblue] (-1.25,-0.85) -- (7.75,-0.85);
+  \node[font=\footnotesize\bfseries, text=manualblue] at (3.2,-1.4) {SENSAÇÃO};
+  \draw[decorate, decoration={brace, amplitude=6pt, mirror}, manualred] (11.25,-0.85) -- (14.05,-0.85);
+  \node[font=\footnotesize\bfseries, text=manualred] at (12.7,-1.4) {PERCEPÇÃO};
+\end{tikzpicture}
+```
+A cadeia comum a todos os sentidos. O estímulo físico é transduzido por receptores em impulsos nervosos que viajam ao córtex, onde são interpretados. A sensação capta; a percepção significa.
+:::
+
+Um detalhe importante: os receptores não codificam o mundo inteiro, mas apenas a faixa de energia à qual são sensíveis. O olho humano só enxerga uma estreita janela do espectro eletromagnético; o ouvido só capta certas frequências. O que chamamos de realidade perceptual é, em boa medida, um recorte definido pela biologia dos nossos receptores — um tema que o Cap. 34 levará às últimas consequências.
+
+## Psicofísica: medir a ponte entre estímulo e sensação
+
+Se a sensação liga um mundo físico mensurável a uma experiência subjetiva, então é possível estudar essa ligação com números: variar o estímulo de forma controlada e medir como a sensação responde. Esse é o programa da **psicofísica**, fundada por Gustav Fechner em 1860 — e, como vimos no Cap. 7, o marco que tornou a mente mensurável e ajudou a converter a psicologia em ciência [@fechner1860]. A psicofísica é a mais antiga área quantitativa da psicologia, e seus conceitos-chave são os limiares.
+
+O **limiar absoluto** é a intensidade mínima de um estímulo que um observador detecta em 50% das apresentações. Note o "50%": não existe um ponto fixo abaixo do qual não se vê nada e acima do qual se vê tudo. A detecção é **probabilística** — perto do limiar, o mesmo estímulo é às vezes percebido, às vezes não, e a curva que relaciona intensidade e probabilidade de detecção sobe de forma gradual (a *função psicométrica*), não em degrau. Por convenção, define-se o limiar no ponto de 50%. Os limiares absolutos humanos são impressionantemente baixos: em condições ideais, enxergamos a chama de uma vela a dezenas de quilômetros numa noite escura e escutamos o tique-taque de um relógio a poucos metros no silêncio.
+
+O **limiar diferencial**, ou **diferença apenas perceptível** (DIP; em inglês, *just noticeable difference*, JND), é a menor diferença entre dois estímulos que se consegue detectar. E aqui aparece a primeira grande regularidade quantitativa da psicologia.
+
+::: {#fig-weber-fechner}
+```{.tikz}
+%%| filename: lei-fechner
+%%| alt: Gráfico de eixos cartesianos. O eixo horizontal é rotulado "intensidade do estímulo" e o eixo vertical "intensidade da sensação". Uma curva logarítmica sobe rapidamente no início e depois se achata, ilustrando que a sensação cresce cada vez menos a cada aumento igual do estímulo. Chaves sob o eixo mostram que incrementos iguais de sensação exigem aumentos cada vez maiores de estímulo.
+\begin{tikzpicture}[>=Stealth, scale=1.0]
+  \draw[->, thick] (0,0) -- (9.5,0) node[right, font=\footnotesize] {estímulo};
+  \draw[->, thick] (0,0) -- (0,5.3) node[above, font=\footnotesize] {sensação};
+  \draw[very thick, manualblue, domain=0.35:9, samples=120] plot (\x, {1.9*ln(\x+0.6)+0.7});
+  \node[text=manualblue, font=\footnotesize] at (6.6,4.8) {$S = k\,\log I$ (Fechner)};
+  \foreach \s in {1.6,2.6,3.6} {
+    \draw[dashed, manualgray] (0,\s) -- (9,\s);
+  }
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, manualred] (0.55,-0.2) -- (1.6,-0.2);
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, manualred] (1.6,-0.2) -- (4.1,-0.2);
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, manualred] (4.1,-0.2) -- (8.9,-0.2);
+  \node[text=manualred, font=\scriptsize, align=center] at (4.7,-0.75) {saltos de estímulo cada vez maiores para o mesmo ganho de sensação};
+\end{tikzpicture}
+```
+A lei de Fechner. A sensação cresce com o *logaritmo* da intensidade do estímulo: aumentos iguais de sensação exigem aumentos proporcionalmente cada vez maiores de estímulo. É por isso que acender uma segunda vela num quarto escuro muda muito, mas acender a centésima quase não se nota.
+:::
+
+A **lei de Weber**, formulada por Ernst Heinrich Weber ainda antes da psicofísica de Fechner, afirma que a DIP é uma *fração constante* do estímulo original, não um valor absoluto [@weber1834]. Se você segura um peso de 100 g e precisa acrescentar 5 g para notar a diferença, então segurando 200 g precisará de 10 g, e com 1.000 g precisará de 50 g — sempre os mesmos 5%. Essa fração (a *constante de Weber*) varia por sentido, mas a proporcionalidade é notavelmente geral. Fechner tomou a lei de Weber como ponto de partida e, supondo que cada DIP representa um incremento subjetivo constante, derivou a **lei de Fechner**: a intensidade da sensação cresce com o *logaritmo* da intensidade do estímulo [@fechner1860]. A consequência é a compressão ilustrada na @fig-weber-fechner e explica uma porção de fenômenos cotidianos — de por que a diferença entre R\$ 10 e R\$ 20 pesa mais que entre R\$ 1.010 e R\$ 1.020, até por que os controles de volume e brilho dos aparelhos são projetados em escala logarítmica.
+
+A lei de Fechner reinou por quase um século, mas não é a palavra final. Nos anos 1950, S. S. Stevens mostrou que, para muitas modalidades, a relação é melhor descrita por uma **lei de potência** do que por um logaritmo: a sensação é proporcional ao estímulo elevado a um expoente característico de cada sentido [@stevens1957]. O detalhe importa: o expoente pode ser menor que 1 (compressão, como no brilho — dobrar a luz não dobra a claridade percebida) ou *maior* que 1 (expansão, como no choque elétrico — pequenos aumentos de corrente disparam sensações desproporcionais, o que faz todo sentido para um sinal de perigo). A lei de Fechner só captura o caso comprimido; a de Stevens abrange os dois. O ponto pedagógico é que temos aqui **teorias concorrentes**, cada uma boa para uma faixa de fenômenos — um bom exemplo de como a ciência refina, e não simplesmente descarta, modelos anteriores.
+
+## Detecção de sinal: por que sensibilidade não é tudo
+
+A noção de limiar sugere um observador passivo: o estímulo passa ou não passa de uma barreira fixa. Mas detectar algo fraco — o bip de um monitor, um vulto na neblina, uma sombra numa radiografia — não é só uma questão de sensibilidade dos receptores; é também uma **decisão** tomada em meio à incerteza e ao ruído. Essa percepção reformulou a psicofísica.
+
+::: {.experimento}
+**Teoria de detecção de sinal** [@greenswets1966]
+
+**O problema.** Um radiologista examina uma mamografia à procura de um tumor incipiente. O sinal (o tumor) é fraco e se confunde com o "ruído" de fundo do tecido normal. Detectar não é ler um mostrador: é julgar se o borrão que se vê é sinal ou apenas ruído. A **teoria de detecção de sinal** (TDS) modela exatamente essa situação, e sua tese central é que a resposta depende de *dois* fatores independentes.
+
+**Os dois fatores.** O primeiro é a **sensibilidade** (formalmente, $d'$): quão bem o observador distingue os estados "sinal presente" de "sinal ausente" — depende dos receptores, da atenção, da qualidade do sinal. O segundo é o **critério de decisão** ($\beta$): o quão "disposto a dizer sim" o observador está, que depende de expectativas e de custos e benefícios. Cruzando resposta e realidade, surgem quatro desfechos: *acerto* (dizer sim quando há sinal), *alarme falso* (sim sem sinal), *omissão* (não quando havia sinal) e *rejeição correta* (não sem sinal).
+
+**Por que isso importa.** Um radiologista que teme deixar passar um tumor adota um critério frouxo: detecta quase todos os tumores (poucas omissões), mas ao custo de muitos alarmes falsos. Outro, cauteloso com biópsias desnecessárias, adota critério rígido: menos alarmes falsos, porém mais omissões. Os dois podem ter *exatamente a mesma sensibilidade* e ainda assim se comportar de modo oposto — porque diferem no critério, não na visão. A TDS separou essas duas coisas que a noção de limiar confundia.
+
+**Alcance.** A TDS transcendeu a psicofísica e virou ferramenta geral: é usada para avaliar testemunhas oculares (Cap. 45), triagem médica, controle de qualidade, detecção de mentiras e sistemas de alarme. Sempre que uma decisão sob incerteza troca omissões por alarmes falsos, a TDS oferece a linguagem para analisá-la.
+:::
+
+A lição da TDS ecoa por todo o volume: o que percebemos não é uma leitura neutra do mundo, mas o resultado de um sistema que pesa evidência sensorial contra expectativas e consequências.
+
+## Adaptação sensorial: os sentidos informam mudança
+
+Nossos sentidos não são medidores absolutos; são detectores de *mudança*. A **adaptação sensorial** é a redução da resposta a um estímulo constante: o cheiro forte ao entrar numa padaria some em minutos, a roupa deixa de ser sentida na pele, a água da piscina "esquenta" depois do mergulho inicial. Longe de ser uma falha, a adaptação é adaptativa (no sentido evolutivo): informação nova — uma mudança no ambiente — é quase sempre mais útil que a repetição do que já está lá. Por isso o sistema visual usa um truque para não adaptar ao que mais importa: os olhos executam micromovimentos involuntários constantes (*micro-sacadas*) que "atualizam" a imagem na retina. Em experimentos que estabilizam artificialmente uma imagem sobre a retina, anulando esses movimentos, a imagem literalmente *desaparece* da consciência em segundos — prova cabal de que percebemos mudança, não estado.
+
+## Percepção subliminar: o mito e o efeito real
+
+Se existe um limiar de detecção consciente, o que acontece com estímulos *abaixo* dele? A ideia de que mensagens **subliminares** — apresentadas rápido ou fraco demais para serem notadas — poderiam controlar nosso comportamento é um dos mitos mais persistentes da cultura popular, e merece uma correção cuidadosa.
+
+::: {.atencao}
+**"Mensagens subliminares controlam você" — o que é verdade e o que é lenda.** O mito nasceu de uma fraude: em 1957, o publicitário James Vicary alegou ter aumentado as vendas de pipoca e refrigerante num cinema inserindo os flashes "coma pipoca" e "beba Coca-Cola" imperceptíveis na tela — números que ele mais tarde *admitiu ter inventado*. Décadas de fitas de "áudio subliminar" para emagrecer, parar de fumar ou elevar a autoestima seguiram essa trilha, e testes controlados não encontraram os efeitos prometidos: seu único benefício mensurável é o placebo da expectativa [@pratkanis1992]. **Porém** — e aqui está a nuance — a percepção subliminar *existe* num sentido restrito e bem documentado. Estímulos abaixo do limiar consciente podem produzir *priming*: ver a palavra "pão" rápido demais para relatá-la ainda acelera o reconhecimento posterior de "manteiga" [@greenwald1992]. O efeito é **real, mas pequeno, fugaz e incapaz de instalar motivações novas**. A distinção é essencial: influenciar de leve um julgamento momentâneo é uma coisa; "controlar o comportamento" ou "reprogramar a mente" é outra, e para esta segunda não há evidência. O subliminar empurra um pouco quem já ia naquela direção; não cria o desejo do zero.
+:::
+
+::: {.na-pratica}
+**Por que projetos e produtos respeitam os limiares.** Os princípios psicofísicos são engenharia disfarçada de curiosidade. Como a percepção é logarítmica (Fechner/Stevens), botões de volume, brilho de telas e potência sonora de aparelhos são calibrados em escala logarítmica (o decibel é justamente isso) — do contrário, metade do curso do controle seria inútil. Como vale a lei de Weber, um alerta sonoro precisa ser proporcionalmente mais alto que o ruído ambiente para ser notado, e é por isso que sirenes variam de tom. Como existe adaptação, alarmes importantes pulsam ou mudam em vez de tocar continuamente, para não "sumirem" da percepção. E como a detecção é uma decisão com critério (TDS), sistemas de triagem médica e de segurança são ajustados deliberadamente para trocar mais alarmes falsos por menos omissões quando o custo de deixar passar é alto. Entender limiares é entender por que o mundo projetado à nossa volta tem a forma que tem.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Sensação** é captar energia e transduzi-la em sinais neurais; **percepção** é organizá-los e interpretá-los. A fronteira é didática, não uma linha nítida no cérebro.
+- **Transdução** é o princípio comum a todos os sentidos: receptores especializados convertem luz, som, moléculas e pressão no mesmo alfabeto de impulsos nervosos. O cérebro nunca toca o mundo diretamente.
+- A detecção é **probabilística**: o **limiar absoluto** é a intensidade detectada em 50% das vezes; o **limiar diferencial (DIP)** é a menor diferença perceptível.
+- A **lei de Weber** diz que a DIP é uma fração constante do estímulo; a **lei de Fechner** deriva daí que a sensação cresce com o *logaritmo* do estímulo; a **lei de potência de Stevens** generaliza, admitindo compressão *ou* expansão conforme o sentido.
+- A **teoria de detecção de sinal** separa **sensibilidade** ($d'$) de **critério de decisão** ($\beta$): dois observadores igualmente sensíveis podem responder de modo oposto por adotarem critérios diferentes. Percepção é decisão sob incerteza.
+- A **adaptação sensorial** faz os sentidos informarem *mudança*, não estado constante. E a **percepção subliminar** é real mas modesta (priming fraco e fugaz) — muito longe do mito do controle mental.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sensação**
+:   Processo de captação de energia ambiental por receptores e sua transdução em sinais neurais.
+
+**Percepção**
+:   Processo de organização e interpretação dos sinais sensoriais, atribuindo-lhes significado.
+
+**Transdução**
+:   Conversão de uma forma de energia física (luz, som, química, mecânica) no sinal eletroquímico do sistema nervoso.
+
+**Receptor sensorial**
+:   Célula especializada em detectar um tipo específico de energia e iniciar a transdução.
+
+**Limiar absoluto**
+:   Intensidade mínima de um estímulo detectada em 50% das apresentações.
+
+**Limiar diferencial (DIP)**
+:   Menor diferença entre dois estímulos que se consegue detectar; também *diferença apenas perceptível* [@weber1834].
+
+**Lei de Weber**
+:   A DIP é uma fração constante do estímulo original, não um valor absoluto [@weber1834].
+
+**Lei de Fechner**
+:   A intensidade da sensação cresce com o logaritmo da intensidade do estímulo [@fechner1860].
+
+**Lei de potência de Stevens**
+:   A sensação é proporcional ao estímulo elevado a um expoente próprio de cada modalidade, admitindo compressão ou expansão [@stevens1957].
+
+**Teoria de detecção de sinal (TDS)**
+:   Modelo que descreve a detecção como decisão sob ruído, separando sensibilidade ($d'$) e critério ($\beta$) [@greenswets1966].
+
+**Adaptação sensorial**
+:   Redução da resposta sensorial a um estímulo constante, fazendo os sentidos sinalizarem mudança.
+
+**Percepção subliminar**
+:   Processamento de estímulos abaixo do limiar consciente; produz priming fraco, não controle do comportamento [@pratkanis1992].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique a diferença entre sensação e percepção usando um exemplo próprio. Por que dizemos que essa fronteira é conceitual, e não uma divisão anatômica nítida?
+
+2. **(Recuperação.)** O que significa dizer que o limiar absoluto é definido no ponto de 50%? O que isso revela sobre a natureza da detecção perto do limiar?
+
+3. **(Aplicação.)** Um som ambiente está alto e a constante de Weber para intensidade sonora exige um aumento de certa porcentagem para ser notado. Explique, com a lei de Weber, por que um alarme perfeitamente audível numa biblioteca silenciosa pode passar despercebido numa fábrica barulhenta.
+
+4. **(Aplicação.)** Um radiologista e um colega têm a mesma acuidade visual e a mesma formação, mas um detecta mais tumores e também gera mais biópsias desnecessárias. Usando a teoria de detecção de sinal, explique como os dois podem diferir sem que nenhum "veja melhor" que o outro.
+
+5. **(Reflexão crítica.)** Um produto anuncia um áudio com "mensagens subliminares que reprogramam sua mente para o sucesso". Com base na distinção entre o efeito real de priming e o mito do controle, o que você diria a um amigo tentado a comprá-lo?
+
+6. **(Integração.)** A adaptação sensorial "apaga" o que é constante e destaca o que muda. Relacione esse princípio ao conceito de que os sentidos evoluíram para resolver problemas adaptativos (Vol 2, Cap. 13). Por que sinalizar mudança seria mais vantajoso, na história evolutiva, do que sinalizar estado?

@@ -73,7 +73,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 5 — Sensação e Percepção
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 29 | Princípios de sensação (psicofísica, limiares) | `capitulos/vol05-sensacao-percepcao/cap-29-principios-sensacao.qmd` | ⬜ |
+| 29 | Princípios de sensação (psicofísica, limiares) | `capitulos/vol05-sensacao-percepcao/cap-29-principios-sensacao.qmd` | ✅ |
 | 30 | Visão | `capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd` | ⬜ |
 | 31 | Audição | `capitulos/vol05-sensacao-percepcao/cap-31-audicao.qmd` | ⬜ |
 | 32 | Outros sentidos (olfato, paladar, tato, propriocepção, dor) | `capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.qmd` | ⬜ |
