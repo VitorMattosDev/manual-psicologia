@@ -1,5 +1,181 @@
 # 27. Métodos de estudo do cérebro (neuroimagem)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o problema de inferência central da neurociência: como ir da atividade cerebral observada à função mental.
+- **Comparar** os principais métodos — lesão, estimulação, registro elétrico e imagem estrutural e funcional — quanto ao que medem e ao que permitem concluir.
+- **Situar** cada método no trade-off entre resolução espacial e temporal.
+- **Distinguir** métodos correlacionais (que mostram associação) de métodos causais (que manipulam) no estudo do cérebro.
+- **Identificar** a falácia da inferência reversa e por que "a região X acendeu" não prova que "X é a sede de Y".
+- **Avaliar criticamente** o poder de persuasão indevido das imagens cerebrais e os problemas de replicabilidade da neuroimagem.
 :::
+
+Os capítulos anteriores afirmaram muitas coisas sobre o cérebro com considerável segurança: que o hipocampo forma memórias, que a amígdala processa medo, que a linguagem é lateralizada. É justo perguntar, no espírito do Vol 3: *como se sabe disso?* Este capítulo é sobre os métodos que produziram esse conhecimento — e, tão importante quanto, sobre os limites de cada um. Porque a neuroimagem, mais do que qualquer outra técnica da psicologia, combina um poder real de descoberta com um poder igualmente real de iludir. Aprender a lê-la criticamente é uma das defesas mais úteis que este manual pode oferecer contra a má ciência que chega ao leitor todos os dias em forma de manchete: "cientistas descobrem a região do cérebro responsável por...".
+
+O problema de fundo é de inferência. O que os métodos medem — uma perda após uma lesão, uma onda elétrica no couro cabeludo, um aumento de fluxo sanguíneo numa região — não é a função mental em si, mas um *correlato* dela. Passar do correlato à função exige um raciocínio que pode ser sólido ou capcioso, e a diferença entre os dois é o assunto central aqui. É o mesmo problema que o Vol 3 chamou de validade: a medida corresponde de fato ao construto que se quer estudar?
+
+## O método mais antigo: lesão
+
+O modo mais antigo de descobrir a função de uma parte do cérebro é observar o que se perde quando ela é destruída. Todo o Cap. 24 — Gage, Broca, Wernicke, H.M. — repousa sobre o **método da lesão**. Sua força lógica é única entre os métodos clássicos: ele é **causal**. Se destruir a região X abole a função A, então X é *necessária* para A — uma conclusão que nenhum estudo puramente correlacional pode dar. É a mesma lógica da manipulação experimental do Vol 3, exceto que a "manipulação" foi feita pela natureza (um AVC, um tumor, um acidente).
+
+Suas limitações são igualmente claras. As lesões naturais são "sujas": não respeitam fronteiras anatômicas, variam de pessoa para pessoa e frequentemente atingem mais de uma estrutura. São raras e não se pode escolhê-las. E há uma armadilha inferencial fina: que X seja *necessária* para A não significa que X seja o *lugar* de A — remover o cabo de força apaga a televisão, mas a imagem não "morava" no cabo. Por isso o método da lesão fundou a neurociência, mas não podia bastar. Faltava poder olhar o cérebro *em funcionamento*, sem esperar por um dano.
+
+## Estimular em vez de destruir
+
+Se destruir informa, ativar também informa — e de modo reversível. Penfield já estimulava o córtex com eletrodos durante cirurgias (Cap. 24). A versão moderna e não invasiva é a **estimulação magnética transcraniana** (EMT, ou TMS): um pulso magnético aplicado sobre o couro cabeludo induz corrente numa região cortical, excitando-a ou, aplicado em série, perturbando-a temporariamente. Essa perturbação funciona como uma "lesão virtual" — momentânea e reversível: se interferir na região X atrapalha a tarefa A durante os segundos do pulso, tem-se evidência *causal* de que X participa de A, sem dano permanente e em pessoas saudáveis. A EMT recuperou, assim, a força causal do método da lesão sem seu custo, embora só alcance regiões corticais próximas da superfície.
+
+## Registrar a atividade elétrica: EEG e ERP
+
+Os neurônios se comunicam por sinais elétricos (Cap. 22); o somatório dessa atividade pode ser captado. Hans Berger, em 1929, mostrou que eletrodos no couro cabeludo registram oscilações elétricas rítmicas do cérebro — o **eletroencefalograma** (EEG) [@berger1929]. O EEG mede a atividade de grandes populações de neurônios e revela, por exemplo, os estágios do sono (Vol 6) e ritmos associados a diferentes estados. Uma variante poderosa é o **potencial relacionado a evento** (PRE, ou ERP): promediando o EEG ao longo de muitas repetições de um estímulo, extrai-se a resposta elétrica média a esse evento, com precisão de milissegundos.
+
+A grande virtude do EEG/ERP é a **resolução temporal**: ele acompanha o decurso do pensamento quase em tempo real, distinguindo processos separados por milissegundos. Sua fraqueza é a **resolução espacial**: como o sinal atravessa crânio e couro cabeludo e se espalha, é difícil dizer *de onde* exatamente ele vem. O EEG sabe *quando*, mas é ruim em dizer *onde*.
+
+## Ver a estrutura e ver a função
+
+Uma segunda família de métodos produz imagens. Convém separar duas perguntas que elas respondem: *como o cérebro é* (estrutura) e *o que o cérebro faz* (função).
+
+A **imagem estrutural** fotografa a anatomia. A tomografia computadorizada (TC) usa raios X; a **ressonância magnética** (RM, ou MRI) usa campos magnéticos e ondas de rádio para produzir imagens anatômicas de alta resolução, sem radiação. Elas mostram tumores, atrofias, lesões — a forma do órgão, congelada.
+
+A **imagem funcional** tenta flagrar o cérebro *em ação*, mapeando onde há mais atividade durante uma tarefa. A técnica dominante é a **ressonância magnética funcional** (RMf, ou fMRI), que não mede a atividade neural diretamente, e sim um substituto: o **sinal BOLD** (*blood-oxygen-level-dependent*), que detecta variações locais na oxigenação do sangue [@ogawa1990]. A premissa é que regiões mais ativas consomem mais oxigênio e recebem, em resposta, mais fluxo sanguíneo — de modo que o sinal BOLD é um *proxy* hemodinâmico, indireto e lento, da atividade dos neurônios. Essa mediação é a fonte tanto do poder quanto das fragilidades da RMf, como veremos.
+
+A RMf inverte o trade-off do EEG: tem boa resolução **espacial** (localiza a atividade em milímetros) mas má resolução **temporal** (a resposta do fluxo sanguíneo leva segundos, muito depois dos neurônios que a provocaram). Sabe *onde*, mas é ruim em dizer *quando*. A @fig-resolucao organiza os métodos nesse plano de dois eixos.
+
+::: {#fig-resolucao}
+```{.tikz}
+%%| filename: resolucao-metodos
+%%| alt: Gráfico de dispersão com dois eixos. O eixo horizontal representa a resolução temporal, de pior (à esquerda) a melhor (à direita); o eixo vertical representa a resolução espacial, de pior (embaixo) a melhor (em cima). Quatro métodos estão posicionados como caixas. EEG e ERP ficam no canto inferior direito (ótima resolução temporal, fraca espacial). A ressonância funcional (fMRI) fica no canto superior esquerdo (ótima resolução espacial, fraca temporal). A lesão e a estimulação (TMS) aparecem destacadas como métodos causais. Uma seta diagonal indica que nenhum método reúne o melhor dos dois eixos ao mesmo tempo.
+\begin{tikzpicture}[scale=1.0,
+  met/.style={draw, thick, rounded corners=3pt, align=center, font=\footnotesize, inner sep=3pt}
+]
+  % eixos
+  \draw[->, >=Stealth, thick] (0,0) -- (9.2,0) node[right, font=\small] {resolução temporal};
+  \draw[->, >=Stealth, thick] (0,0) -- (0,6.4) node[above, font=\small] {resolução espacial};
+  \node[font=\footnotesize, text=manualgray] at (0.9,-0.35) {pior};
+  \node[font=\footnotesize, text=manualgray] at (8.0,-0.35) {melhor};
+  \node[font=\footnotesize, text=manualgray, rotate=90] at (-0.35,0.9) {pior};
+  \node[font=\footnotesize, text=manualgray, rotate=90] at (-0.35,5.6) {melhor};
+
+  % metodos
+  \node[met, draw=manualblue, fill=manualblue!12] at (2.0,5.0) {fMRI\\{\tiny (BOLD)}};
+  \node[met, draw=manualblue, fill=manualblue!12] at (1.5,3.4) {PET};
+  \node[met, draw=manualred, fill=manualred!12] at (7.5,1.5) {EEG / ERP};
+  \node[met, draw=manualgreen, fill=manualgreen!14] at (5.0,4.3) {TMS\\{\tiny (causal)}};
+  \node[met, draw=manualyellow!70!black, fill=manualyellow!20] at (3.3,2.2) {lesão\\{\tiny (causal)}};
+
+  % seta do trade-off
+  \draw[<->, >=Stealth, thick, manualgray, dashed] (7.8,4.9) -- (2.4,1.2);
+  \node[font=\footnotesize\itshape, text=manualgray] at (6.6,3.6) {nenhum método};
+  \node[font=\footnotesize\itshape, text=manualgray] at (6.6,3.25) {tem os dois};
+\end{tikzpicture}
+```
+Os métodos no plano resolução espacial × temporal. A RMf sabe *onde* mas não *quando*; o EEG sabe *quando* mas não *onde*. Lesão e EMT (TMS) destacam-se por serem **causais**, não apenas correlacionais. A escolha do método é a escolha de um compromisso.
+:::
+
+Uma leitura importante da figura: os eixos horizontais e verticais medem *precisão*, mas a distinção mais consequente é outra, transversal. Lesão e EMT **manipulam** o cérebro e por isso sustentam conclusões causais; EEG e RMf apenas **observam** e por isso, sozinhos, sustentam apenas correlações. Essa é exatamente a diferença que o Vol 3 traçou entre método experimental e correlacional — e ela reaparece aqui com todas as suas consequências.
+
+## A lógica (e a armadilha) da RMf
+
+Como a RMf transforma manchas coloridas em conclusões sobre a mente? Pela **subtração**. Não se pode ler "atividade da leitura" diretamente; compara-se uma condição (ler palavras) com uma condição de controle (olhar letras embaralhadas) e subtrai-se uma da outra, na esperança de isolar a atividade específica da tarefa de interesse. As "regiões que acendem" nas imagens são, quase sempre, o resultado dessa subtração — diferenças estatísticas entre condições, não fotografias literais de um cérebro "ligando". Já aqui mora um risco: a conclusão depende inteiramente de a condição-controle ter sido bem escolhida, um ponto de desenho tão delicado quanto a escolha de um grupo-controle em qualquer experimento.
+
+O erro mais comum na interpretação de RMf, porém, tem nome próprio.
+
+::: {.atencao}
+**A inferência reversa.** Um estudo mostra que a tarefa A ativa a região X. A manchete conclui: "como a região X acendeu, e X está associada à emoção, a tarefa A é emocional". Esse raciocínio — de "a tarefa ativou X" para "logo a tarefa envolve a função de X" — é a **falácia da inferência reversa** [@poldrack2006]. Ela é inválida porque uma mesma região participa de *muitas* funções: a ínsula "acende" em nojo, dor, empatia, consciência corporal e dezenas de outras condições. Que ela se ative não permite deduzir *qual* dessas funções está em jogo, assim como o fato de uma rua estar cheia não diz se há um jogo, um show ou um protesto. A inferência reversa só é legítima se a região for bastante seletiva para a função — o que raramente ocorre. É a versão neurocientífica de confundir correlação com causa, e ela infesta a divulgação: quase todo "o cérebro apaixonado acende na área da recompensa" comete essa falácia.
+:::
+
+## O feitiço das imagens do cérebro
+
+Há uma razão para as imagens cerebrais persuadirem tanto — e ela é psicológica, não científica. Uma bela mancha colorida sobre um cérebro parece uma evidência física e direta, quase uma fotografia da mente, quando na verdade é o produto de muitas etapas de estatística e escolhas de análise. Esse poder de convencimento foi ele próprio medido.
+
+::: {.experimento}
+**O poder de persuasão indevido das imagens** [@weisberg2008; @mccabe2008]
+
+**Desenho.** Deena Weisberg e colegas apresentaram a participantes explicações psicológicas de fenômenos, algumas boas e outras logicamente ruins (circulares). Metade das explicações vinha acompanhada de uma referência neurocientífica *irrelevante* — jargão sobre "circuitos cerebrais" que nada acrescentava ao argumento.
+
+**Resultado.** A presença da neurociência inútil fez as pessoas — sobretudo as menos treinadas — julgarem as explicações *ruins* como mais satisfatórias. O jargão neural funcionou como um selo de credibilidade que desativava o senso crítico. Estudos correlatos sugeriram efeito semelhante para a mera presença de uma imagem de cérebro (embora esse achado específico seja mais frágil e tenha tido replicações mistas).
+
+**Interpretação.** A neurociência exerce um "feitiço sedutor": a menção do cérebro empresta autoridade a afirmações que não a mereceriam. É um viés de julgamento com consequências práticas — em tribunais, na publicidade, na educação —, onde a linguagem cerebral pode fazer passar por ciência sólida o que é especulação.
+
+**Limitações.** A magnitude do efeito e sua robustez foram debatidas, com replicações que ora confirmam, ora atenuam. Mesmo assim, o alerta prático permanece: desconfie do acréscimo de credibilidade que uma imagem ou um termo neural traz a uma afirmação.
+:::
+
+E o problema não é só de recepção; é também de produção. A própria neuroimagem passou por seu ajuste de contas com a replicabilidade, no mesmo movimento que sacudiu a psicologia inteira (Vol 1).
+
+::: {.experimento}
+**Correlações impossíveis e um salmão morto** [@vul2009; @bennett2010]
+
+**Desenho e achados.** Dois episódios expuseram fragilidades estatísticas da RMf. No primeiro, Edward Vul e colegas notaram que muitos estudos de neurociência social relatavam correlações entre ativação cerebral e traços psicológicos altas demais para serem possíveis, dada a baixa confiabilidade das medidas — as chamadas "correlações vodu", infladas por um erro de análise circular (selecionar os voxels pela própria correlação e depois reportá-la) [@vul2009]. No segundo, Craig Bennett e colegas passaram um **salmão morto** por um scanner de RMf enquanto lhe "mostravam" fotos de pessoas em situações emocionais, e — sem a correção estatística adequada para múltiplas comparações — encontraram "ativação" significativa no cérebro do peixe [@bennett2010]. O salmão estava, é claro, morto.
+
+**Interpretação.** O salmão é uma demonstração deliberadamente absurda de um problema real: com dezenas de milhares de voxels testados, alguns cruzarão o limiar de significância por puro acaso se não houver correção — exatamente o problema das comparações múltiplas do Vol 3. Ambos os episódios forçaram o campo a adotar padrões estatísticos mais rigorosos.
+
+**Interpretação para o leitor.** Nem toda "área que acende" num artigo é um achado real; parte é ruído mal corrigido. A neuroimagem é uma ferramenta poderosa *quando* bem feita — e o "quando" carrega muito peso.
+:::
+
+## A lição de método, e o uso legítimo
+
+Nada disso é um convite ao niilismo. A neuroimagem produziu conhecimento genuíno e insubstituível — do mapeamento pré-cirúrgico de funções ao estudo das redes cerebrais em repouso. A lição é de calibragem: os métodos diferem no que podem provar, e o leitor crítico pergunta sempre três coisas. **Primeira:** o método é causal (lesão, EMT) ou apenas correlacional (EEG, RMf)? **Segunda:** a conclusão comete inferência reversa — deduz uma função privada a partir de uma ativação que é compartilhada por muitas funções? **Terceira:** o achado foi estatisticamente bem tratado e replicado, ou é uma mancha isolada num único estudo pequeno? Com essas três perguntas, boa parte da má neurociência de manchete se desfaz sozinha.
+
+::: {.na-pratica}
+**Neuromarketing, "detector cerebral de mentiras" e o cérebro nas manchetes.** As três perguntas acima são um kit de defesa cotidiano. O *neuromarketing* promete ler o desejo do consumidor no scanner: comete inferência reversa (a ativação da "recompensa" não prova intenção de compra) e vende como certeza o que é correlação fraca. Os "detectores de mentiras por RMf" prometem flagrar o engano no cérebro: além da inferência reversa, ignoram que a mentira não tem uma assinatura cerebral única e confiável — repetindo, em tecnologia nova, o erro do polígrafo (Cap. 23). E o jornalismo de "seu cérebro apaixonado" transforma subtrações estatísticas em fotografias da alma. Em todos os casos, a mesma correção: uma imagem do cérebro é uma medida indireta, correlacional e estatisticamente delicada — não uma janela transparente para a mente. O Vol 15 (Cap. 105) retoma esses usos na fronteira entre ciência e mercado.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **O problema central é de inferência:** os métodos medem correlatos da função mental (uma perda, uma onda, um fluxo sanguíneo), não a função em si. Ir do correlato à função exige raciocínio que pode ser válido ou falacioso.
+- **O método da lesão é causal** — mostra que uma região é necessária a uma função —, mas as lesões naturais são raras, imprecisas e não escolhíveis. A **EMT (TMS)** recupera a força causal de forma reversível e não invasiva, como uma "lesão virtual".
+- **EEG/ERP têm ótima resolução temporal** (milissegundos) e má resolução espacial; a **RMf** tem ótima resolução espacial (milímetros) e má temporal. Nenhum método reúne os dois: escolher um método é aceitar um compromisso.
+- **A RMf mede o sinal BOLD**, um proxy indireto e lento (hemodinâmico) da atividade neural, e trabalha por **subtração** entre condições — sensível à escolha do controle.
+- **A inferência reversa é a falácia central:** de "a tarefa ativou a região X" não se deduz "logo a tarefa envolve a função de X", porque a maioria das regiões participa de muitas funções.
+- **Imagens cerebrais persuadem além do que deveriam** (o "feitiço sedutor"), e a RMf teve seus próprios problemas de replicabilidade — correlações "vodu" e o salmão morto ilustram o risco das comparações múltiplas mal corrigidas.
+- **Três perguntas defendem o leitor:** o método é causal ou correlacional? Há inferência reversa? O achado foi bem tratado estatisticamente e replicado?
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Método da lesão**
+:   Inferência da função de uma região a partir do que se perde quando ela é danificada; causal, porém impreciso e dependente de danos naturais.
+
+**Estimulação magnética transcraniana (EMT / TMS)**
+:   Técnica que perturba temporariamente uma região cortical por um pulso magnético, funcionando como "lesão virtual" reversível para testar causalidade.
+
+**Eletroencefalograma (EEG) / Potencial relacionado a evento (ERP)**
+:   Registro da atividade elétrica de populações neuronais pelo couro cabeludo; excelente resolução temporal, fraca resolução espacial [@berger1929].
+
+**Imagem estrutural (TC, RM)**
+:   Técnicas que fotografam a anatomia do cérebro (forma, lesões, atrofias), sem informar sobre atividade.
+
+**Ressonância magnética funcional (RMf / fMRI)**
+:   Técnica que mapeia a atividade cerebral pelo sinal BOLD; boa resolução espacial, fraca temporal.
+
+**Sinal BOLD**
+:   Variação local na oxigenação do sangue usada como proxy indireto e lento da atividade neural na RMf [@ogawa1990].
+
+**Subtração**
+:   Lógica da RMf de comparar uma condição experimental a um controle e isolar a diferença de ativação; sensível à escolha do controle.
+
+**Inferência reversa**
+:   Falácia de deduzir a função mental envolvida a partir da ativação de uma região que, na verdade, participa de muitas funções [@poldrack2006].
+
+**Resolução espacial / temporal**
+:   Precisão de um método em localizar *onde* (espacial) e em determinar *quando* (temporal) a atividade ocorre; os métodos trocam uma pela outra.
+
+**Correlações vodu**
+:   Correlações cérebro-comportamento infladas por análise circular, sinalizadas como problema estatístico da neurociência social [@vul2009].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique o trade-off entre resolução espacial e temporal comparando EEG e RMf. Que pergunta cada um responde bem — "onde" ou "quando"?
+
+2. **(Recuperação.)** Por que o método da lesão e a EMT são considerados causais, enquanto o EEG e a RMf, sozinhos, são apenas correlacionais? Relacione com a distinção do Vol 3 entre método experimental e correlacional.
+
+3. **(Aplicação.)** Uma manchete diz: "Estudo de ressonância revela que a área do prazer se ativa quando pessoas usam redes sociais — prova de que elas viciam como drogas." Aponte onde está a inferência reversa e o que a conclusão assume sem justificar.
+
+4. **(Reflexão crítica.)** O experimento do salmão morto é uma piada com um propósito sério. Que problema estatístico ele demonstra, e como ele se conecta à questão das comparações múltiplas discutida no Vol 3? Por que ele forçou mudanças na prática da neuroimagem?
+
+5. **(Reflexão crítica.)** Weisberg mostrou que jargão neurocientífico irrelevante torna explicações ruins mais convincentes. Por que uma imagem de cérebro exerce esse poder de persuasão? Como isso pode ser explorado em tribunais, publicidade e jornalismo?
+
+6. **(Integração.)** Escolha uma afirmação dos capítulos anteriores (por exemplo, "o hipocampo é necessário para formar memórias novas") e explique qual método a sustenta e por que ele é adequado. Depois, formule uma versão da afirmação que *não* seria justificada só por RMf, e explique a diferença.
