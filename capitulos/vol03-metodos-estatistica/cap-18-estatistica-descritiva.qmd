@@ -1,5 +1,189 @@
 # 18. Estatística descritiva
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Organizar** um conjunto de dados em distribuição de frequências e ler um histograma.
+- **Calcular e escolher** a medida de tendência central adequada — média, mediana ou moda — segundo a forma da distribuição.
+- **Interpretar** medidas de dispersão, sobretudo o desvio-padrão, e explicar por que a variabilidade importa tanto quanto a média.
+- **Descrever** a distribuição normal, a regra empírica 68–95–99,7 e o escore-padrão (z) como linguagem comum de comparação.
+- **Interpretar** um coeficiente de correlação com cautela, reconhecendo linearidade, restrição de amplitude, valores extremos e o valor de sempre olhar o gráfico.
+- **Detectar** gráficos e resumos enganosos, distinguindo descrição honesta de manipulação visual.
 :::
+
+Colhida a amostra e medidas as variáveis, o pesquisador se vê diante de uma pilha de números — centenas ou milhares deles — que, crus, não dizem nada. A **estatística descritiva** é o conjunto de ferramentas para *resumir* essa pilha: reduzir muitos números a poucos que capturam o essencial, e transformar colunas de dados em imagens que o olho entende. É a metade da estatística que apenas organiza o que se tem em mãos; a outra metade, que salta da amostra para a população, é a inferência do Cap. 19.
+
+O resumo tem um custo, e convém dizê-lo de saída: **todo resumo descarta informação.** A média de uma turma esconde quem tirou zero e quem tirou dez; um único número nunca conta a história inteira. A arte da estatística descritiva é escolher os resumos que preservam o que importa e descartam apenas o ruído — e reconhecer quando o resumo está mentindo por omissão. Este capítulo ensina os resumos essenciais e, com igual ênfase, quando cada um engana.
+
+## Distribuições de frequência
+
+O primeiro passo diante de muitos dados é ordená-los numa **distribuição de frequências**: uma contagem de quantas vezes cada valor (ou faixa de valores) aparece. Notas de uma prova, por exemplo, podem ser agrupadas em faixas — quantos alunos entre 0 e 2, entre 2 e 4, e assim por diante. Representada graficamente, essa contagem vira um **histograma**: barras cuja altura é a frequência de cada faixa. O histograma revela de relance a **forma** dos dados — onde eles se concentram, quão espalhados estão, se há simetria ou uma cauda longa de um lado — que nenhuma tabela comunica tão bem. Olhar a forma da distribuição *antes* de calcular qualquer resumo é o hábito que separa quem entende os dados de quem apenas os processa.
+
+Duas perguntas organizam toda descrição de uma distribuição. Onde está o **centro** dela? E quão **espalhados** estão os valores em torno desse centro? A primeira é respondida pelas medidas de tendência central; a segunda, pelas medidas de dispersão. As duas juntas — um centro e um espalhamento — já descrevem razoavelmente a maioria dos conjuntos de dados.
+
+## Tendência central: média, mediana e moda
+
+Há três formas de responder "onde está o centro", e a escolha entre elas não é indiferente.
+
+A **média** (aritmética) é a soma dos valores dividida pela quantidade deles — o "ponto de equilíbrio" da distribuição. É a medida mais usada e a que alimenta quase toda a estatística inferencial, porque usa toda a informação disponível. Seu calcanhar de aquiles é justamente esse: por levar em conta cada valor, ela é **sensível a valores extremos** (*outliers*). Um único bilionário numa sala de cem pessoas desloca a "renda média" para um valor que não descreve ninguém ali dentro.
+
+A **mediana** é o valor central quando os dados são ordenados: metade fica abaixo, metade acima. Ela ignora a magnitude dos extremos — só conta a posição —, o que a torna **robusta**: o bilionário entra na conta como "mais um acima", e a mediana mal se move. Por isso indicadores de renda, preço de imóveis e tempo de reação (todos com caudas longas) são reportados por mediana, não por média.
+
+A **moda** é o valor mais frequente. É a única aplicável a dados nominais (qual o diagnóstico mais comum? qual o candidato mais votado?) e a que aponta o "pico" de uma distribuição, mas costuma ser a menos informativa para dados quantitativos.
+
+A relação entre média e mediana é, ela própria, informativa: revela a **assimetria** da distribuição. Numa distribuição simétrica, média e mediana coincidem. Numa distribuição **assimétrica** — com uma cauda longa para um lado —, a média é puxada na direção da cauda, enquanto a mediana resiste. A @fig-assimetria mostra o caso de uma cauda à direita, típico de variáveis como renda ou tempo de resposta.
+
+::: {#fig-assimetria}
+```{.tikz}
+%%| filename: assimetria
+%%| alt: Curva de uma distribuição assimétrica à direita, com pico à esquerda e uma cauda longa que se estende para a direita. Três linhas verticais tracejadas marcam, da esquerda para a direita, a moda (no pico), a mediana (um pouco à direita) e a média (mais à direita ainda, puxada pela cauda), ilustrando que na assimetria positiva moda < mediana < média.
+\begin{tikzpicture}
+  % eixo
+  \draw[eixo] (0,0) -- (11,0) node[right, font=\small, text=manualgray] {valor};
+  % curva assimétrica à direita
+  \draw[curva] (0.3,0) .. controls (2,3.6) and (2.6,3.6) .. (3.3,2.2)
+                       .. controls (4.2,0.6) and (6.5,0.2) .. (10.5,0.05);
+  % linhas verticais: moda, mediana, media
+  \draw[destaque, dashed] (2.75,0) -- (2.75,3.3) node[above, font=\scriptsize, text=manualred] {moda};
+  \draw[manualgreen, thick, dashed] (3.55,0) -- (3.55,2.9) node[above, font=\scriptsize, text=manualgreen] {mediana};
+  \draw[manualgray, thick, dashed] (4.5,0) -- (4.5,2.3) node[above, font=\scriptsize, text=manualgray] {média};
+\end{tikzpicture}
+```
+Numa distribuição assimétrica à direita, a cauda longa puxa a média para longe do pico, enquanto a mediana permanece mais próxima da maioria dos dados. Reportar a média de uma variável assim pode superestimar o "típico".
+:::
+
+::: {.na-pratica}
+**"O salário médio da empresa é R$ 8.000."** Quando um número desses aparece, a primeira pergunta é: *média ou mediana?* Se o dono ganha R$ 500 mil e os outros noventa funcionários ganham R$ 3.000, a **média** dos salários passa dos R$ 8.000 — e não descreve a experiência de quase ninguém. A **mediana** seria R$ 3.000, retrato fiel do trabalhador típico. Distribuições de renda são quase sempre assimétricas à direita, e é por isso que estatísticas oficiais sérias reportam a renda *mediana*. Sempre que lidar com dinheiro, tempo, ou qualquer coisa com poucos valores muito altos, desconfie da média e procure a mediana: a diferença entre as duas mede exatamente o quanto os extremos estão distorcendo o retrato.
+:::
+
+## Dispersão: a variabilidade importa
+
+Duas turmas podem ter exatamente a mesma média — 6,0 — e serem completamente diferentes: numa, todo mundo tirou perto de 6; na outra, metade tirou 2 e metade tirou 10. A média não distingue as duas; a **dispersão**, sim. Descrever o centro sem descrever o espalhamento é contar metade da história, e frequentemente a metade menos interessante.
+
+A medida mais simples é a **amplitude** (*range*): a diferença entre o maior e o menor valor. É intuitiva, mas frágil — depende só dos dois extremos e ignora todo o resto. A medida central da estatística é o **desvio-padrão** (*standard deviation*), que responde à pergunta "em média, quão longe os valores estão da média?". Calcula-se a distância de cada valor à média, elevam-se essas distâncias ao quadrado (para que positivos e negativos não se cancelem), tira-se a média delas — obtendo a **variância** — e extrai-se a raiz quadrada, para voltar à unidade original. O resultado, o desvio-padrão, é a unidade natural de "espalhamento": pequeno quando os dados se apinham em torno da média, grande quando se dispersam.
+
+O desvio-padrão é a moeda corrente da variabilidade em psicologia, e vale internalizá-lo como uma quantidade concreta, não uma fórmula. Um desvio-padrão de 15 pontos numa escala de QI significa que uma diferença de 15 pontos entre duas pessoas é uma diferença "de um desvio" — comum. Uma de 45 pontos é "de três desvios" — rara. Toda a estatística inferencial do próximo capítulo, e a noção de tamanho de efeito, são construídas sobre essa unidade. Para distribuições assimétricas, existe também a **amplitude interquartílica** (a distância entre o percentil 25 e o 75), a companheira robusta da mediana, imune aos extremos do mesmo modo que ela.
+
+## A distribuição normal e o escore-padrão
+
+Muitas variáveis, quando medidas em grandes amostras, distribuem-se numa forma característica de sino: simétrica, com a maioria dos valores perto do centro e frequências que caem suavemente para os dois lados. É a **distribuição normal** (ou curva de Gauss). Altura, QI, erro de medida, e — crucialmente para o Cap. 19 — as médias de amostras repetidas tendem a essa forma. Sua importância teórica é enorme, e voltará como pilar da inferência.
+
+A distribuição normal tem uma propriedade que a torna uma régua universal. Uma vez conhecidos a média e o desvio-padrão, sabe-se *exatamente* que proporção dos dados cai em cada faixa. É a **regra empírica 68–95–99,7**: cerca de 68% dos valores caem a até um desvio-padrão da média; cerca de 95%, a até dois; cerca de 99,7%, a até três. A @fig-curva-normal a representa.
+
+::: {#fig-curva-normal}
+```{.tikz}
+%%| filename: curva-normal
+%%| alt: Curva normal em forma de sino, simétrica em torno da média (mu). O eixo horizontal está marcado em desvios-padrão, de menos três a mais três sigma. Faixas sombreadas indicam as proporções da regra empírica: cerca de 68 por cento dos dados entre menos um e mais um sigma, cerca de 95 por cento entre menos dois e mais dois sigma, e cerca de 99,7 por cento entre menos três e mais três sigma.
+\begin{tikzpicture}
+\begin{axis}[
+  width=13cm, height=6.2cm,
+  axis lines=left,
+  xtick={-3,-2,-1,0,1,2,3},
+  xticklabels={$-3\sigma$,$-2\sigma$,$-1\sigma$,$\mu$,$+1\sigma$,$+2\sigma$,$+3\sigma$},
+  ytick=\empty,
+  xmin=-4, xmax=4, ymin=0, ymax=0.45,
+  clip=false, samples=120,
+  tick style={manualgray}, x tick label style={font=\small}
+]
+  \addplot[draw=none, fill=manualblue!45, domain=-1:1] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  \addplot[draw=none, fill=manualblue!22, domain=-2:-1] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  \addplot[draw=none, fill=manualblue!22, domain=1:2] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  \addplot[draw=none, fill=manualblue!10, domain=-3:-2] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  \addplot[draw=none, fill=manualblue!10, domain=2:3] {1/sqrt(2*pi)*exp(-x^2/2)} \closedcycle;
+  \addplot[manualblue, very thick, domain=-4:4] {1/sqrt(2*pi)*exp(-x^2/2)};
+  \node[font=\small, text=white] at (axis cs:0,0.13) {68\%};
+  \node[font=\scriptsize, text=manualblue] at (axis cs:-1.5,0.30) {95\%};
+  \node[font=\scriptsize, text=manualblue] at (axis cs:0,0.42) {99,7\%};
+\end{axis}
+\end{tikzpicture}
+```
+A distribuição normal e a regra empírica. Conhecidos a média ($\mu$) e o desvio-padrão ($\sigma$), a proporção de dados em cada faixa fica determinada — a base para transformar qualquer valor num escore comparável.
+:::
+
+Daí nasce a ferramenta mais prática da estatística descritiva: o **escore-padrão** ou **escore z**. Ele converte qualquer valor no número de desvios-padrão que o separa da média: $z = (X - \bar{x}) / s$. Um z de $+2$ significa "dois desvios acima da média"; um z de $-1{,}5$, "um e meio abaixo". A mágica é que o escore z apaga as unidades originais e cria uma linguagem comum: um z permite comparar coisas incomparáveis. Alguém que tirou z = $+1{,}8$ na prova de matemática e z = $+0{,}4$ na de redação foi, *relativamente à turma*, muito melhor em matemática — ainda que as notas brutas estivessem em escalas diferentes. É assim que se comparam desempenhos em testes distintos, e é a ponte direta para os cálculos de probabilidade do Cap. 19.
+
+## O coeficiente de correlação, com cautela
+
+O Cap. 15 introduziu a correlação como conceito; aqui a retomamos como *estatística*. O **coeficiente de correlação de Pearson** (*r*) resume, num número de $-1$ a $+1$, a força e a direção da associação **linear** entre duas variáveis quantitativas. O sinal dá a direção; o valor absoluto, a força; e o zero indica ausência de relação *linear*. Uma medida derivada e útil é o **coeficiente de determinação** ($r^2$): elevando *r* ao quadrado, obtém-se a proporção da variação de uma variável que é *estatisticamente explicada* pela outra. Um *r* de 0,5 parece meio caminho, mas $r^2 = 0{,}25$ revela que apenas um quarto da variação está compartilhado — a intuição sobre a "força" de uma correlação costuma ser generosa demais, e o $r^2$ a corrige.
+
+O *r* é poderoso e, por isso mesmo, perigoso quando reportado sem o gráfico. Quatro armadilhas merecem atenção permanente:
+
+- **Ele só enxerga relações lineares.** Duas variáveis podem ter uma relação forte, porém curva (em U, por exemplo — a ansiedade e o desempenho, que sobem juntos até um ponto e depois divergem), e o *r* dará perto de zero, sugerindo falsamente que "não há relação". Ausência de correlação linear não é ausência de relação.
+- **Valores extremos o distorcem.** Um único ponto atípico pode inflar um *r* que seria nulo, ou anular um que seria forte. Correlações calculadas sobre poucos dados são especialmente vulneráveis.
+- **A restrição de amplitude o encolhe.** Se a amostra cobre apenas uma faixa estreita de uma das variáveis (mede-se a relação entre QI e desempenho *só* entre gênios), a correlação observada subestima a que existiria na população inteira.
+- **Ele não é causa.** Vale repetir o mantra do Cap. 15: nenhum valor de *r*, por mais alto, estabelece que uma variável causa a outra.
+
+::: {.atencao}
+**Sempre olhe o gráfico: o quarteto de Anscombe.** Em 1973, o estatístico Francis Anscombe construiu quatro conjuntos de dados que compartilham *quase todos* os resumos numéricos — a mesma média em x e em y, a mesma variância, o mesmo coeficiente de correlação (≈ 0,82), a mesma reta de ajuste — e que, no entanto, são visualmente irreconhecíveis entre si [@anscombe1973]. Um é uma relação linear limpa; outro, uma curva perfeita que o *r* não vê; outro é linear exceto por um único ponto extremo que sozinho cria a correlação; o quarto é uma coluna vertical de pontos com um outlier que fabrica a associação inteira. A lição é definitiva e cabe numa frase: **os resumos numéricos podem ser idênticos enquanto os dados são opostos.** Nunca confie numa média, num desvio-padrão ou num *r* sem antes ter visto a distribuição ou o diagrama de dispersão que os gerou.
+:::
+
+## Regressão à média
+
+Um fenômeno estatístico prometido no Cap. 14 encontra aqui seu lugar. A **regressão à média** é a tendência de que valores extremos, ao serem medidos de novo, se aproximem da média — não por nenhuma força causal, mas por pura estatística. Quando um desempenho depende em parte de habilidade estável e em parte de sorte momentânea, quem obteve um resultado extremo provavelmente teve *também* uma dose extrema de sorte (boa ou má), que não se repete na medição seguinte. Os piores alunos de uma prova tendem a melhorar na próxima, e os melhores, a piorar, mesmo sem nada ter mudado.
+
+O fenômeno, descrito por Francis Galton no século XIX [@galton1886], é uma fábrica de ilusões causais. Um treinador grita com os pilotos que voaram mal e observa que eles melhoram — e conclui que gritar funciona; elogia os que voaram bem e os vê piorar — e conclui que elogiar estraga. Ambas as conclusões podem ser puro artefato da regressão à média: os que estavam nos extremos regrediriam de qualquer jeito. É uma das razões pelas quais tratamentos sem grupo-controle enganam: pacientes procuram ajuda quando estão no pior momento (um extremo), e a melhora subsequente, que ocorreria em parte espontaneamente, é creditada ao tratamento. Só o grupo-controle sorteado (Cap. 14) separa o efeito real da regressão inevitável.
+
+## Descrever sem enganar
+
+A estatística descritiva também é uma linguagem visual, e como toda linguagem pode ser usada para esclarecer ou para manipular [@huff1954]. Os truques são conhecidos e vale reconhecê-los: um eixo vertical que não começa no zero transforma uma diferença minúscula numa montanha; escalas quebradas ou distorcidas exageram tendências; um gráfico de área que dobra largura *e* altura para representar o dobro de um valor quadruplica a mancha visual; escolher a média quando a mediana conta outra história, ou vice-versa, inclina a conclusão sem mentir em nenhum número isolado. Nenhum desses truques envolve dados falsos — todos envolvem *descrições* escolhidas para induzir uma leitura. A defesa do leitor crítico é olhar sempre para os eixos, perguntar qual medida de centro foi usada e por quê, e lembrar que a forma de apresentar dados é uma decisão, nunca uma neutralidade.
+
+::: {.callout-sintese}
+- **A estatística descritiva resume dados**, e todo resumo descarta informação; a habilidade está em preservar o essencial. Comece sempre pela forma da distribuição (histograma).
+- **Tendência central:** a média usa toda a informação mas é sensível a extremos; a mediana é robusta e adequada a distribuições assimétricas; a moda é a única para dados nominais. Média ≠ mediana revela assimetria.
+- **Dispersão:** o desvio-padrão mede a distância típica dos valores à média e é a unidade natural de variabilidade; a amplitude interquartílica é sua versão robusta. Mesma média não significa mesma distribuição.
+- **A distribuição normal** obedece à regra 68–95–99,7; o escore z converte qualquer valor em desvios-padrão, criando uma linguagem comum que permite comparar medidas de escalas diferentes.
+- **O coeficiente *r*** resume a associação *linear*; $r^2$ dá a proporção de variação compartilhada. Cuidado com não-linearidade, valores extremos, restrição de amplitude — e nunca com causa. O quarteto de Anscombe prova que resumos idênticos podem esconder dados opostos: veja o gráfico.
+- **A regressão à média** faz valores extremos se aproximarem do centro na remedição, fabricando ilusões causais que só um grupo-controle desfaz.
+- **Gráficos enganam sem dados falsos:** eixos truncados, escalas distorcidas e escolha interessada da medida de centro. Olhe sempre os eixos.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Distribuição de frequências**
+:   Contagem de quantas vezes cada valor ou faixa ocorre num conjunto de dados; visualizada no histograma.
+
+**Média**
+:   Soma dos valores dividida por seu número; usa toda a informação, mas é sensível a valores extremos.
+
+**Mediana**
+:   Valor central dos dados ordenados; robusta a extremos, adequada a distribuições assimétricas.
+
+**Moda**
+:   Valor mais frequente; única medida de centro aplicável a dados nominais.
+
+**Assimetria**
+:   Falta de simetria de uma distribuição; numa cauda à direita, a média supera a mediana.
+
+**Amplitude / Amplitude interquartílica**
+:   Diferença entre máximo e mínimo (frágil); e distância entre os percentis 25 e 75 (robusta).
+
+**Variância / Desvio-padrão**
+:   Média dos quadrados dos desvios em relação à média (variância) e sua raiz quadrada (desvio-padrão); medida típica de dispersão.
+
+**Distribuição normal**
+:   Distribuição simétrica em forma de sino que obedece à regra empírica 68–95–99,7.
+
+**Escore-padrão (z)**
+:   Número de desvios-padrão que separa um valor da média; $z = (X-\bar{x})/s$; permite comparar medidas de escalas diferentes.
+
+**Coeficiente de correlação (r) / determinação (r²)**
+:   *r* resume a força e a direção da associação linear ($-1$ a $+1$); $r^2$ dá a proporção de variação compartilhada.
+
+**Regressão à média**
+:   Tendência de valores extremos se aproximarem da média na remedição, por acaso estatístico, não por causa [@galton1886].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique quando a mediana é preferível à média como medida de centro, e dê um exemplo de variável para a qual essa escolha muda substancialmente o retrato dos dados.
+
+2. **(Recuperação.)** Duas turmas têm média 6,0. A turma A tem desvio-padrão 0,5; a B, desvio-padrão 3,0. Descreva em palavras como são as notas de cada turma e explique por que a média sozinha não as distinguiria.
+
+3. **(Aplicação.)** Numa escala de QI com média 100 e desvio-padrão 15, use a regra 68–95–99,7 para dizer aproximadamente que proporção de pessoas tem QI entre 85 e 115, e que proporção tem acima de 130. Calcule o escore z de alguém com QI 130.
+
+4. **(Aplicação.)** Um estudo reporta $r = 0{,}6$ entre horas de sono e concentração. Calcule o $r^2$ e explique, em palavras, o que ele revela que o *r* sozinho poderia superestimar na sua intuição.
+
+5. **(Reflexão crítica.)** Uma clínica anuncia: "80% dos pacientes que chegaram com sintomas graves melhoraram após nosso tratamento." Explique como a regressão à média poderia produzir esse resultado mesmo que o tratamento fosse inerte, e diga que elemento de desenho (do Cap. 14) faltou para que a afirmação fosse convincente.
+
+6. **(Integração.)** O quarteto de Anscombe mostra quatro conjuntos com o mesmo *r* ≈ 0,82 e a mesma reta, porém formas radicalmente distintas. Explique, ligando este capítulo ao Cap. 16, por que confiar apenas em resumos numéricos é um erro tanto de estatística descritiva quanto de validade — e qual hábito simples o evita.
