@@ -77,7 +77,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 30 | Visão | `capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd` | ✅ |
 | 31 | Audição | `capitulos/vol05-sensacao-percepcao/cap-31-audicao.qmd` | ✅ |
 | 32 | Outros sentidos (olfato, paladar, tato, propriocepção, dor) | `capitulos/vol05-sensacao-percepcao/cap-32-outros-sentidos.qmd` | ✅ |
-| 33 | Organização perceptual (Gestalt, profundidade, constâncias) | `capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd` | ⬜ |
+| 33 | Organização perceptual (Gestalt, profundidade, constâncias) | `capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd` | ✅ |
 | 34 | Atenção, percepção e ilusões | `capitulos/vol05-sensacao-percepcao/cap-34-atencao-ilusoes.qmd` | ⬜ |
 
 ### Vol 6 — Consciência

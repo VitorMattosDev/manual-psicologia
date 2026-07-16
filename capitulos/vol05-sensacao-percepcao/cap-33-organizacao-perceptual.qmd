@@ -1,5 +1,197 @@
 # 33. Organização perceptual (Gestalt, profundidade, constâncias)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** processamento ascendente (bottom-up) de descendente (top-down) e explicar por que a percepção usa os dois.
+- **Enunciar** os princípios de organização perceptual da Gestalt (figura-fundo e leis de agrupamento) e o princípio da pregnância.
+- **Classificar** as pistas de profundidade em binoculares e monoculares e explicar como o cérebro reconstrói a terceira dimensão.
+- **Explicar** as constâncias perceptuais (de tamanho, forma e claridade) e por que são indispensáveis a uma percepção estável.
+- **Descrever** o experimento do abismo visual e o que ele revela sobre o desenvolvimento da percepção de profundidade.
+- **Contrastar** as visões construtivista e ecológica da percepção, avaliando o que cada uma acerta.
 :::
+
+Os capítulos anteriores levaram o sinal do receptor ao córtex. Mas uma retina cheia de manchas de luz ainda não é *ver um mundo*: é preciso organizar essas manchas em objetos, separá-los do fundo, situá-los em profundidade e mantê-los estáveis apesar de a imagem na retina mudar a cada passo. Este capítulo trata dessa passagem — da sensação à percepção propriamente dita — e defende a tese central de todo o volume: **a percepção é uma construção ativa e inteligente**, não uma cópia do mundo. O cérebro não recebe uma cena pronta; ele resolve, a cada instante e sem que percebamos, um problema de reconstrução de enorme dificuldade — e o faz tão bem que a dificuldade nos é invisível.
+
+## Dois sentidos de mão dupla: ascendente e descendente
+
+A percepção combina dois fluxos de informação. O **processamento ascendente** (*bottom-up*) parte dos dados sensoriais brutos — as bordas, as cores, os contrastes detectados na retina e em V1 (Cap. 30) — e vai montando formas cada vez mais complexas. O **processamento descendente** (*top-down*) vai no sentido inverso: usa conhecimento prévio, expectativas e contexto para *interpretar* os dados, muitas vezes preenchendo o que falta. Ler uma palavra com uma letra borrada, entender uma frase abafada num ambiente ruidoso, reconhecer um amigo de relance: em todos esses casos, o que você sabe completa o que os sentidos apenas insinuam. A percepção normal é o encontro constante desses dois sentidos — e é o processamento descendente que torna a percepção, ao mesmo tempo, tão poderosa e tão sujeita a ilusões (Cap. 34): o cérebro vê, em parte, o que espera ver.
+
+## A Gestalt: o todo antes das partes
+
+No início do século XX, os psicólogos da Gestalt (Cap. 9) fizeram uma descoberta que continua no centro da percepção: o todo é diferente da soma das partes. Ao ver quatro pontos, você não vê "quatro pontos", mas um quadrado; ao ouvir uma sequência de notas, ouve uma melodia, que sobrevive à mudança de tom. O cérebro **organiza** automaticamente os elementos sensoriais em conjuntos coerentes, segundo princípios que Max Wertheimer e colegas catalogaram [@wertheimer1923; @koffka1935] e que a pesquisa moderna confirmou e refinou [@wagemans2012].
+
+A organização mais básica é a **figura-fundo**: diante de qualquer cena, separamos um objeto (a *figura*) do resto (o *fundo*). Essa segmentação é tão fundamental — e tão ativa — que, em imagens ambíguas como o clássico vaso de Rubin (em que os mesmos contornos podem ser um vaso ou dois rostos de perfil), a percepção *alterna* entre as duas leituras sem que a imagem mude: prova de que a organização é imposta pela mente, não dada pelo estímulo. Sobre esse pano de fundo operam as **leis de agrupamento**, ilustradas na @fig-gestalt: tendemos a agrupar elementos **próximos** (proximidade), **semelhantes** (similaridade), alinhados numa trajetória suave (**continuidade**), e a **fechar** contornos incompletos (fechamento), vendo um triângulo onde há apenas três cantos sugeridos. Tudo isso serve a um princípio geral, o da **pregnância** (*Prägnanz*): percebemos a organização mais simples, estável e regular que os dados permitem.
+
+::: {#fig-gestalt}
+```{.tikz}
+%%| filename: gestalt-agrupamento
+%%| alt: Três painéis lado a lado ilustrando leis da Gestalt. Painel 1 (proximidade): pontos dispostos em três pares de colunas próximas, que se veem como três grupos verticais. Painel 2 (similaridade): uma grade de pontos em que colunas alternam entre preenchidos e vazios, vistos como colunas por cor. Painel 3 (fechamento): três formas em canto ("Pac-Man") posicionadas de modo a sugerir um triângulo branco que não está desenhado.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  % Painel 1: proximidade
+  \begin{scope}[shift={(0,0)}]
+    \foreach \c in {0,1,2} {
+      \foreach \r in {0,1,2,3} {
+        \fill[manualblue] ({\c*0.75 + (\c>0? \c*0.35 : 0)},{-\r*0.5}) circle (3.2pt);
+      }
+    }
+    \node[align=center, text=manualgray] at (1.4,-2.3) {proximidade};
+  \end{scope}
+  % Painel 2: similaridade
+  \begin{scope}[shift={(4.6,0)}]
+    \foreach \c in {0,1,2,3} {
+      \foreach \r in {0,1,2,3} {
+        \ifodd\c
+          \fill[manualred] ({\c*0.55},{-\r*0.5}) circle (3.2pt);
+        \else
+          \draw[manualred, thick] ({\c*0.55},{-\r*0.5}) circle (3pt);
+        \fi
+      }
+    }
+    \node[align=center, text=manualgray] at (0.85,-2.3) {similaridade};
+  \end{scope}
+  % Painel 3: fechamento
+  \begin{scope}[shift={(8.4,-0.4)}]
+    \fill[manualgreen] (0,0) circle (0.42) ;
+    \fill[white] (0,0) -- (0.42,0.24) arc (30:-90:0.42) -- cycle;
+    \begin{scope}[shift={(2.2,0)}]
+      \fill[manualgreen] (0,0) circle (0.42);
+      \fill[white] (0,0) -- (-0.42,0.24) arc (150:270:0.42) -- cycle;
+    \end{scope}
+    \begin{scope}[shift={(1.1,1.9)}]
+      \fill[manualgreen] (0,0) circle (0.42);
+      \fill[white] (0,0) -- (-0.36,-0.21) arc (210:330:0.42) -- cycle;
+    \end{scope}
+    \node[align=center, text=manualgray] at (1.1,-1.4) {fechamento};
+  \end{scope}
+\end{tikzpicture}
+```
+Leis de agrupamento da Gestalt. Agrupamos por proximidade (colunas próximas viram grupos), por similaridade (colunas por cor) e por fechamento (três cantos sugerem um triângulo que não está desenhado). O cérebro impõe organização aos dados.
+:::
+
+## A terceira dimensão: pistas de profundidade
+
+A imagem na retina é bidimensional; o mundo, não. Reconstruir a profundidade a partir de uma projeção plana é um dos feitos mais impressionantes da percepção, e o cérebro o realiza combinando dois conjuntos de pistas.
+
+As **pistas binoculares** dependem de termos dois olhos. A principal é a **disparidade retiniana**: como os olhos ficam a alguns centímetros um do outro, cada um recebe uma imagem ligeiramente diferente, e o cérebro usa o grau dessa diferença para calcular a distância (quanto mais perto o objeto, maior a disparidade) — é o princípio dos filmes e óculos 3D. A **convergência**, pista secundária, usa o quanto os olhos giram para dentro ao fixar algo próximo. As **pistas monoculares**, disponíveis com um olho só, são as que os pintores dominam há séculos (@fig-profundidade): objetos mais distantes projetam imagens **menores** (tamanho relativo), linhas paralelas parecem convergir ao longe (**perspectiva linear**), objetos que **encobrem** outros parecem mais próximos (interposição), a textura fica mais fina e densa com a distância (**gradiente de textura**), e, quando nos movemos, objetos próximos parecem passar mais rápido que os distantes (**paralaxe de movimento**). Somadas, essas pistas bastam para uma reconstrução tão convincente que uma tela plana pode nos dar a ilusão vívida de espaço.
+
+::: {#fig-profundidade}
+```{.tikz}
+%%| filename: pistas-profundidade
+%%| alt: Cena esquemática ilustrando pistas monoculares de profundidade. Dois trilhos convergem de baixo (largos, próximos) para um ponto de fuga no alto (perspectiva linear). Ao longo deles, retângulos representando postes ficam cada vez menores rumo ao topo (tamanho relativo). Perto da base, um retângulo encobre parcialmente outro (interposição). Uma linha de horizonte cruza o alto da figura.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  % horizonte e ponto de fuga
+  \draw[manualgray, thin] (-0.3,4) -- (7.3,4);
+  \node[text=manualgray] at (6.3,4.25) {horizonte};
+  \coordinate (vp) at (3.5,4);
+  % trilhos (perspectiva linear)
+  \draw[very thick, manualblue] (0.6,0) -- (vp);
+  \draw[very thick, manualblue] (6.4,0) -- (vp);
+  % dormentes decrescentes
+  \foreach \y/\half in {0.3/2.7, 1.3/1.95, 2.2/1.3, 2.9/0.82, 3.4/0.5} {
+    \draw[manualblue!60, thick] ({3.5-\half},\y) -- ({3.5+\half},\y);
+  }
+  % postes de tamanho decrescente (tamanho relativo)
+  \fill[manualgreen!70!black] (0.2,0.2) rectangle (0.6,1.7);
+  \fill[manualgreen!70!black] (5.9,1.5) rectangle (6.2,2.6);
+  \fill[manualgreen!70!black] (4.7,2.6) rectangle (4.9,3.35);
+  % interposicao (base)
+  \fill[manualred!75, draw=black] (1.4,0.2) rectangle (2.3,1.5);
+  \fill[manualyellow, draw=black] (2.0,0.1) rectangle (2.9,1.2);
+  \node[text=manualred, font=\scriptsize] at (1.85,1.75) {interposição};
+  \node[text=manualgreen!50!black, font=\scriptsize] at (0.4,1.95) {tamanho relativo};
+  \node[text=manualblue, font=\scriptsize] at (3.5,0.9) {perspectiva linear};
+\end{tikzpicture}
+```
+Pistas monoculares de profundidade numa cena plana. Trilhos que convergem (perspectiva linear), postes que encolhem ao longe (tamanho relativo) e formas que encobrem outras (interposição) bastam para o cérebro reconstruir a distância com um só olho.
+:::
+
+Quando começamos a perceber profundidade? A resposta veio de um experimento tão engenhoso quanto célebre.
+
+::: {.experimento}
+**O abismo visual** [@gibson_walk1960]
+
+**Desenho.** Eleanor Gibson e Richard Walk construíram uma plataforma coberta por vidro resistente: de um lado, um padrão xadrez logo sob o vidro (o lado "raso"); do outro, o mesmo padrão vários palmos abaixo, criando a *aparência* de um precipício (o lado "fundo"), embora o vidro tornasse tudo seguro. Colocavam bebês que já engatinhavam no centro e chamavam a mãe do lado do abismo.
+
+**Resultado.** A maioria dos bebês engatinhava alegremente pelo lado raso, mas *recusava-se* a avançar sobre o "abismo", mesmo com a mãe chamando — alguns choravam, outros davam meia-volta. Filhotes de várias espécies, testados assim que andavam, evitavam o lado fundo desde o primeiro dia.
+
+**Interpretação.** A percepção de profundidade está presente muito cedo — nos humanos, já quando o bebê começa a engatinhar —, e nos animais que dependem dela para sobreviver, praticamente ao nascer. Isso sugere uma base largamente inata, embora a experiência de locomoção a refine (bebês tornam-se mais cautelosos após semanas engatinhando).
+
+**Limitações.** Como os bebês testados já engatinhavam, não se pode excluir totalmente o papel do aprendizado precoce; e o método mede o *medo* da altura, não apenas a percepção dela — um bebê pode perceber o abismo sem temê-lo, ou vice-versa. Ainda assim, o abismo visual continua um marco no estudo da percepção infantil.
+:::
+
+## Constâncias: um mundo estável apesar de sensações que mudam
+
+Se a percepção seguisse fielmente a imagem retiniana, o mundo seria um caos: uma pessoa que se afasta encolheria, uma porta que se abre viraria um trapézio, o papel deste texto pareceria cinza na penumbra e branco ofuscante ao sol. Nada disso acontece, graças às **constâncias perceptuais** — a capacidade de perceber os objetos como estáveis apesar das variações da estimulação sensorial. Pela **constância de tamanho**, sabemos que a pessoa que se afasta continua do mesmo tamanho, embora sua imagem diminua; pela **constância de forma**, a porta segue retangular, embora sua projeção mude; pela **constância de claridade (e de cor)**, o papel permanece branco e a maçã vermelha sob luzes muito diferentes, porque o cérebro leva em conta a iluminação. As constâncias são um triunfo do processamento descendente: o cérebro corrige a imagem bruta usando seu conhecimento sobre distância, ângulo e luz — e, como veremos no próximo capítulo, é justamente quando esses mecanismos de correção são "enganados" que surgem muitas das ilusões visuais.
+
+## Duas visões da percepção: construir ou captar?
+
+Como o cérebro chega a uma percepção tão rica e acertada? Há duas grandes respostas, e vale apresentá-las de forma equilibrada. A visão **construtivista**, dominante e alinhada a tudo que vimos até aqui, sustenta que a percepção é uma *inferência*: a partir de dados sensoriais ambíguos e incompletos, o cérebro constrói a "melhor hipótese" sobre o que há no mundo, usando conhecimento prévio. Modelos computacionais dessa tradição, como o de reconhecimento de objetos por componentes simples (*geons*) de Biederman, mostram como formas complexas podem ser reconhecidas a partir de um pequeno vocabulário de volumes elementares [@biederman1987].
+
+A visão **ecológica**, proposta por James Gibson, discorda da ênfase na inferência. Para Gibson, o ambiente é tão rico em informação — sobretudo quando o observador se *move* — que a percepção seria em boa medida **direta**: o fluxo óptico e os gradientes já *especificam* a estrutura do mundo, sem necessidade de tanta reconstrução interna [@gibson1979]. A verdade, hoje, é vista como uma síntese: Gibson tinha razão ao insistir na riqueza da informação disponível e no papel do movimento, e ao criticar experimentos com estímulos empobrecidos e estáticos; mas o construtivismo tem razão ao mostrar que, quando a informação é ambígua — e ela frequentemente é —, o cérebro *precisa* preencher lacunas com conhecimento, como as constâncias e as ilusões deixam claro. Não é preciso escolher um vencedor: a percepção capta um mundo estruturado *e* o reconstrói ativamente.
+
+::: {.na-pratica}
+**A percepção como princípio de design.** Os mecanismos deste capítulo são a base, muitas vezes invisível, do design visual. As leis da Gestalt orientam interfaces e sinalização: elementos relacionados são postos próximos (proximidade), botões de mesma função recebem a mesma cor (similaridade), e um bom layout respeita a figura-fundo para que o essencial "salte" do resto. As pistas de profundidade dão a ilusão de relevo em telas planas — sombras e sobreposições que fazem um botão parecer "clicável". As constâncias explicam por que ajustamos automaticamente cores sob iluminações diferentes, um problema central para fotografia, telas e impressão. E o processamento descendente ensina o projetista a trabalhar *com* as expectativas do usuário: uma interface que viola convenções aprendidas (um ícone de lixeira que salva o arquivo) confunde, porque o cérebro percebe o que espera. Entender como organizamos o que vemos é entender como tornar o que se vê compreensível.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A percepção combina processamento **ascendente** (dos dados sensoriais para cima) e **descendente** (do conhecimento e das expectativas para baixo); o segundo torna a percepção poderosa e, ao mesmo tempo, sujeita a ilusões.
+- A **Gestalt** mostrou que o cérebro organiza os elementos em todos: separa **figura e fundo** e agrupa por **proximidade, similaridade, continuidade e fechamento**, buscando a organização mais simples (**pregnância**).
+- A profundidade é reconstruída por **pistas binoculares** (disparidade retiniana, convergência) e **monoculares** (tamanho relativo, perspectiva linear, interposição, gradiente de textura, paralaxe de movimento).
+- O **abismo visual** de Gibson e Walk indica que a percepção de profundidade surge muito cedo, com forte base inata refinada pela experiência.
+- As **constâncias** (de tamanho, forma e claridade) mantêm o mundo estável apesar de a imagem retiniana mudar — um triunfo do processamento descendente que corrige a imagem bruta.
+- As visões **construtivista** (percepção como inferência) e **ecológica** (percepção como captação direta de um ambiente rico) hoje se sintetizam: o cérebro capta um mundo estruturado *e* o reconstrói ativamente.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Processamento ascendente (bottom-up)**
+:   Construção da percepção a partir dos dados sensoriais brutos rumo a formas complexas.
+
+**Processamento descendente (top-down)**
+:   Uso de conhecimento, contexto e expectativas para interpretar e completar os dados sensoriais.
+
+**Figura-fundo**
+:   Organização perceptual que separa um objeto (figura) do restante da cena (fundo).
+
+**Leis de agrupamento**
+:   Princípios da Gestalt (proximidade, similaridade, continuidade, fechamento) pelos quais elementos são reunidos em conjuntos [@wertheimer1923].
+
+**Pregnância (Prägnanz)**
+:   Tendência a perceber a organização mais simples, regular e estável possível [@koffka1935].
+
+**Pistas binoculares**
+:   Informações de profundidade que dependem dos dois olhos, como a disparidade retiniana e a convergência.
+
+**Disparidade retiniana**
+:   Diferença entre as imagens dos dois olhos, usada pelo cérebro para estimar distância.
+
+**Pistas monoculares**
+:   Informações de profundidade disponíveis com um olho só (tamanho relativo, perspectiva linear, interposição, gradiente de textura, paralaxe de movimento).
+
+**Constâncias perceptuais**
+:   Percepção de objetos como estáveis em tamanho, forma e claridade apesar das mudanças na imagem retiniana.
+
+**Abismo visual**
+:   Aparato que testa a percepção de profundidade em bebês e animais jovens [@gibson_walk1960].
+
+**Percepção direta (ecológica)**
+:   Tese de Gibson de que o ambiente, sobretudo com o movimento, especifica a percepção sem grande inferência interna [@gibson1979].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie processamento ascendente e descendente. Dê um exemplo cotidiano em que o conhecimento prévio (descendente) completa uma informação sensorial incompleta.
+
+2. **(Recuperação.)** Explique a organização figura-fundo e por que imagens ambíguas, como o vaso de Rubin, mostram que a organização perceptual é imposta pela mente.
+
+3. **(Aplicação.)** Você olha uma fotografia de uma estrada reta e "vê" a profundidade, embora a imagem seja plana. Identifique ao menos três pistas monoculares que produzem esse efeito.
+
+4. **(Aplicação.)** Um amigo que se afasta projeta uma imagem cada vez menor na sua retina, mas você não o percebe encolhendo. Qual constância explica isso e como o processamento descendente a torna possível?
+
+5. **(Reflexão crítica.)** O experimento do abismo visual é frequentemente usado para afirmar que a percepção de profundidade é inata. Que limitações do método convém lembrar antes de tirar essa conclusão de forma categórica?
+
+6. **(Integração.)** Contraste as visões construtivista e ecológica da percepção. Em vez de escolher uma, explique o que cada uma acerta e como a percepção pode ser, ao mesmo tempo, captação de um mundo rico e reconstrução ativa.
