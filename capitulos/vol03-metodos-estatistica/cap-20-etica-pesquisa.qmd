@@ -1,5 +1,163 @@
 # 20. Ética em pesquisa (comitês, consentimento, TCLE)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstituir** as origens históricas da ética em pesquisa, dos crimes que a tornaram necessária aos códigos que dela resultaram.
+- **Enunciar** os três princípios do Relatório Belmont — respeito às pessoas, beneficência e justiça — e ligá-los às suas aplicações concretas.
+- **Explicar** o consentimento livre e esclarecido e o que um TCLE precisa conter.
+- **Avaliar** o uso do engano em psicologia, as condições que o justificam e o papel do *debriefing*.
+- **Descrever** o funcionamento do sistema brasileiro de revisão ética (CEP/CONEP) e sua função de proteção.
+- **Discutir** estudos clássicos eticamente controversos e os princípios da experimentação com animais.
 :::
+
+Até aqui este volume tratou de como produzir conhecimento *válido*. Este capítulo trata de um limite que se impõe *antes* da validade: nem tudo que produziria bom conhecimento pode ser feito. A ética em pesquisa não é um apêndice burocrático ao método — é uma restrição de fundo sobre o que é permitido fazer a seres humanos e animais em nome da ciência, e ela nasceu, como quase toda regra de proteção, da constatação horrorizada do que acontece na sua ausência.
+
+Convém dizer de saída por que o tema entra num manual de métodos, e não apenas num de deontologia profissional. Porque as duas coisas — o que é metodologicamente desejável e o que é eticamente permitido — frequentemente entram em conflito. O experimento mais limpo para estudar trauma seria traumatizar pessoas sob controle; o melhor teste de uma privação seria impô-la. A história deste capítulo é, em boa parte, a história de pesquisadores que fizeram esse cálculo errado, e das barreiras que a sociedade ergueu para que não se repita. Entender essas barreiras é parte de entender o método, porque elas moldam o que a psicologia pode e não pode investigar.
+
+## Como a ética em pesquisa nasceu: dos crimes aos códigos
+
+Nenhum dos grandes códigos de ética em pesquisa foi escrito preventivamente. Todos foram respostas a atrocidades já cometidas.
+
+O primeiro deles, o **Código de Nuremberg** (1947), surgiu do julgamento de médicos nazistas que haviam conduzido experimentos atrozes em prisioneiros de campos de concentração — imersão em água gelada, infecções deliberadas, mutilações — sem qualquer consentimento e com resultados frequentemente fatais. O tribunal, ao condená-los, formulou dez princípios, e o primeiro deles é a pedra fundamental de tudo o que se seguiu: *"o consentimento voluntário do sujeito humano é absolutamente essencial"* [@nuremberg1947]. Pela primeira vez, afirmava-se que nenhum benefício científico justifica experimentar em alguém contra sua vontade. A Associação Médica Mundial desdobrou esses princípios na **Declaração de Helsinque** (1964), até hoje o principal referencial internacional para pesquisa clínica.
+
+Poderia parecer que atrocidades assim pertenciam a regimes totalitários distantes. Não pertenciam. O **Estudo de Tuskegee**, conduzido pelo serviço público de saúde dos *Estados Unidos* entre 1932 e 1972, acompanhou centenas de homens negros pobres com sífilis para observar a evolução natural da doença — e deliberadamente **não os tratou**, nem mesmo depois de a penicilina se tornar cura padrão nos anos 1940. Os participantes foram enganados sobre seu diagnóstico e mantidos sem tratamento por quatro décadas, muitos morrendo ou transmitindo a doença a esposas e filhos, para que o estudo prosseguisse [@brandt1978]. Quando a imprensa revelou o caso, em 1972, o escândalo forçou os Estados Unidos a criar uma comissão nacional, cujo produto foi o documento que estrutura a ética em pesquisa até hoje.
+
+## Os três princípios do Relatório Belmont
+
+O **Relatório Belmont** (1979) destilou a ética em pesquisa com humanos em três princípios, e sua elegância está em cobrir todo o terreno com apenas três ideias, cada uma com uma aplicação prática direta [@belmont1979]. A @fig-belmont mostra a arquitetura.
+
+::: {#fig-belmont}
+```{.tikz}
+%%| filename: belmont
+%%| alt: Diagrama de três linhas ligando princípios a aplicações. Primeira linha: "Respeito às pessoas" (autonomia) liga-se por seta a "Consentimento livre e esclarecido". Segunda linha: "Beneficência" (maximizar benefícios, minimizar danos) liga-se a "Análise de risco e benefício". Terceira linha: "Justiça" (distribuição equitativa) liga-se a "Seleção justa dos participantes".
+\begin{tikzpicture}[
+  princ/.style={draw, thick, rounded corners=4pt, minimum width=4.6cm, minimum height=1.5cm, align=center, font=\small},
+  aplic/.style={draw, thick, rounded corners=4pt, minimum width=5cm, minimum height=1.5cm, align=center, font=\small, fill=white},
+  seta/.style={->, >=Stealth, thick, manualgray}
+]
+  \node[princ, draw=manualblue, fill=manualblue!10] (p1) at (0,4)
+    {\textbf{Respeito às pessoas}\\{\scriptsize autonomia; proteção dos vulneráveis}};
+  \node[princ, draw=manualgreen, fill=manualgreen!10] (p2) at (0,2)
+    {\textbf{Beneficência}\\{\scriptsize maximizar benefícios,}\\{\scriptsize minimizar danos}};
+  \node[princ, draw=manualred, fill=manualred!10] (p3) at (0,0)
+    {\textbf{Justiça}\\{\scriptsize distribuição equitativa}\\{\scriptsize de riscos e benefícios}};
+
+  \node[aplic, draw=manualblue] (a1) at (8,4) {Consentimento livre\\e esclarecido (TCLE)};
+  \node[aplic, draw=manualgreen] (a2) at (8,2) {Análise de\\risco{-}benefício};
+  \node[aplic, draw=manualred] (a3) at (8,0) {Seleção justa\\dos participantes};
+
+  \draw[seta] (p1) -- (a1);
+  \draw[seta] (p2) -- (a2);
+  \draw[seta] (p3) -- (a3);
+
+  \node[font=\scriptsize\itshape, text=manualgray] at (4,4.55) {princípio};
+  \node[font=\scriptsize\itshape, text=manualgray] at (4,-0.55) {aplicação};
+\end{tikzpicture}
+```
+Os três princípios do Relatório Belmont e suas aplicações práticas. Cada exigência concreta da ética em pesquisa deriva de um dos três.
+:::
+
+O **respeito às pessoas** afirma que indivíduos são agentes autônomos, capazes de decidir sobre a própria participação, e que aqueles com autonomia reduzida — crianças, pessoas com transtornos graves, presos — merecem proteção *adicional*. Sua aplicação direta é o consentimento informado. A **beneficência** obriga o pesquisador a maximizar benefícios e minimizar danos, pesando um contra o outro: um estudo só se justifica se o conhecimento esperado compensar os riscos impostos, e riscos desnecessários são inaceitáveis mesmo quando o participante consente. Sua aplicação é a análise de risco-benefício. A **justiça** exige que os ônus e os frutos da pesquisa sejam distribuídos de forma equitativa — que não se recrutem sistematicamente os pobres e vulneráveis para correr riscos cujos benefícios irão para outros, exatamente o que Tuskegee fez. Sua aplicação é a seleção justa dos participantes.
+
+## Consentimento livre e esclarecido e o TCLE
+
+O primeiro princípio se materializa no documento central da pesquisa com humanos: o **Termo de Consentimento Livre e Esclarecido** (TCLE). Consentir de verdade exige três condições, e a sigla brasileira as nomeia bem. O consentimento deve ser **livre** — voluntário, sem coerção nem indução indevida (uma recompensa alta demais a ponto de anular a liberdade de recusa é problemática) — e o participante deve poder **desistir a qualquer momento, sem prejuízo**. Deve ser **esclarecido** — baseado em informação compreensível sobre objetivos, procedimentos, riscos, benefícios e destino dos dados. E pressupõe **capacidade** de decidir; quando ela falta (crianças, incapazes), obtém-se o consentimento de um responsável e, sempre que possível, o *assentimento* do próprio participante.
+
+Um bom TCLE, portanto, informa em linguagem acessível: o que o estudo investiga, o que exatamente o participante fará, quanto tempo levará, que riscos e desconfortos pode haver, que benefícios (para ele ou para a sociedade), como sua privacidade será protegida, que ele pode sair quando quiser, e a quem recorrer em caso de dúvida ou dano. Não é um formulário de isenção de responsabilidade que blinda o pesquisador — é um instrumento de proteção do participante, e a diferença de espírito é tudo.
+
+::: {.na-pratica}
+**Você foi convidado a participar de uma pesquisa. O que checar.** Antes de assinar qualquer TCLE — de um estudo universitário, de um teste de aplicativo, de uma pesquisa clínica —, verifique se o documento responde com clareza a seis perguntas: (1) *Qual é o objetivo?* (2) *O que vou fazer, e por quanto tempo?* (3) *Que riscos ou desconfortos corro?* (4) *Meus dados ficam anônimos ou identificados, e quem terá acesso?* (5) *Posso desistir depois, e como?* (6) *Este estudo foi aprovado por um comitê de ética, e qual?* Um estudo sério responde às seis sem hesitar e informa o número de aprovação no comitê. A ausência dessas respostas — ou pressa em obter sua assinatura — é um sinal de alerta legítimo. Consentir é um direito seu, não uma formalidade a despachar.
+:::
+
+## O caso especial do engano
+
+A psicologia enfrenta um dilema que a medicina raramente conhece: muitos fenômenos sociais e cognitivos **desaparecem quando o participante sabe o que está sendo estudado** — é o problema das características de demanda do Cap. 14. Um estudo sobre conformidade não funciona se o participante souber que é isso que se mede. Por isso a psicologia, sob condições estritas, admite o **engano** (*deception*): omitir ou disfarçar o verdadeiro propósito do estudo.
+
+O engano está em tensão direta com o consentimento *esclarecido* — como consentir plenamente sobre algo que lhe foi ocultado? — e por isso é cercado de exigências. Ele só se justifica quando: o valor científico é alto e não há alternativa sem engano; os riscos ao participante são mínimos; e, crucialmente, há **debriefing** ao final — uma revelação completa, assim que possível, do verdadeiro objetivo, das razões do engano e da oportunidade de retirar os próprios dados. Enganos que envolvam risco significativo, ou que o participante recusaria se soubesse, não são permitidos por nenhum ganho científico. O engano é uma exceção regulada, não uma ferramenta livre.
+
+::: {.estudo-caso}
+**Milgram, Zimbardo e o Pequeno Albert: três limites**
+
+Três estudos clássicos, hoje impossíveis de aprovar sem profundas modificações, delimitam por contraste o que a ética passou a exigir.
+
+**A obediência de Milgram** [@milgram1963]. Participantes eram instruídos a aplicar choques crescentes a outra pessoa (um ator, sem choque real) sempre que ela errasse, e muitos obedeceram até níveis aparentemente letais, sob a pressão de um experimentador. O achado sobre obediência é um marco (Vol 12, Cap. 72), mas o custo foi alto: os participantes passaram por estresse extremo, suando, tremendo, alguns em crise — submetidos a um sofrimento psicológico agudo que hoje um comitê exigiria minimizar. O engano era central, e o debriefing, tema de disputa.
+
+**A prisão de Stanford** [@haney_zimbardo1973]. Estudantes designados por sorteio a papéis de "guardas" e "prisioneiros" num porão simulado; o estudo, previsto para duas semanas, foi interrompido em seis dias diante da brutalidade dos "guardas" e do colapso emocional dos "prisioneiros". Além das graves questões éticas — ausência de proteção contra dano, papel duplo do pesquisador como investigador e "diretor da prisão" —, o estudo é hoje também criticado em seus próprios méritos metodológicos, o que reforça a lição: o descuido ético e o descuido metodológico costumam andar juntos.
+
+**O Pequeno Albert** [@watson_rayner1920]. Watson e Rayner condicionaram medo em um bebê, associando um rato branco a um ruído assustador (Vol 7, Cap. 39). A criança nunca foi descondicionada, e não houve qualquer proteção a um participante que não podia consentir — a violação mais elementar do respeito às pessoas.
+
+**A lição comum.** Nenhum desses estudos foi conduzido por monstros; foram cientistas de seu tempo, num período sem as barreiras que hoje existem — barreiras que existem *por causa* de estudos como esses. Eles são ensinados não para condenar indivíduos, mas para tornar visível o que a revisão ética protege.
+:::
+
+## O sistema de revisão ética
+
+O que impede, hoje, que boas intenções derrapem? A resposta institucional é a **revisão prévia e independente**: nenhum pesquisador julga sozinho a ética do próprio estudo. Nos Estados Unidos, essa função cabe aos *Institutional Review Boards* (IRB). No Brasil, existe o sistema **CEP/CONEP**, estabelecido pela Resolução 466/2012 do Conselho Nacional de Saúde [@cns466_2012]. Todo projeto de pesquisa com seres humanos deve ser submetido a um **Comitê de Ética em Pesquisa** (CEP) — colegiado ligado a uma instituição, que avalia riscos, benefícios, o TCLE e a metodologia sob a ótica da proteção do participante. Projetos em áreas especialmente sensíveis sobem à **Comissão Nacional de Ética em Pesquisa** (CONEP), instância nacional. A submissão é feita pela plataforma eletrônica nacional, e a coleta de dados **não pode começar** antes da aprovação.
+
+A lógica do sistema é a mesma do cegamento e do grupo-controle: proteger contra o viés de quem tem interesse no resultado. Um pesquisador entusiasmado com sua hipótese é o pior juiz da segurança do próprio experimento — não por má-fé, mas porque o entusiasmo distorce a avaliação de risco. A revisão externa, como a replicação, é a admissão institucional de que a boa-fé individual não basta.
+
+::: {.atencao}
+**Ética não é o mesmo que aprovação do comitê.** Passar pelo CEP é condição necessária, não suficiente, de conduta ética. Um estudo pode ser formalmente aprovado e ainda envolver escolhas eticamente questionáveis que o pesquisador precisa julgar por conta própria: como tratar um achado inesperado que afeta a saúde de um participante, o que fazer com dados de quem desistiu, como comunicar resultados sem estigmatizar o grupo estudado. Igualmente, a integridade científica — não fabricar nem falsificar dados, não plagiar, relatar honestamente limitações e conflitos de interesse — é uma dimensão ética que nenhum comitê fiscaliza item a item e que o Cap. 21 e o Cap. 105 retomam sob a ótica da confiança na ciência. A aprovação é um piso, não um teto.
+:::
+
+## Ética na pesquisa com animais
+
+Boa parte do que a psicologia sabe sobre aprendizagem, memória, emoção e cérebro (Vols 4 a 9) veio de pesquisa com animais, e ela levanta suas próprias questões éticas, já que os animais não podem consentir. O consenso contemporâneo se organiza em torno dos **três Rs**, formulados por Russell e Burch [@russell_burch1959]: **Substituição** (*Replacement*) — usar métodos alternativos (culturas celulares, modelos computacionais) sempre que possível; **Redução** (*Reduction*) — usar o menor número de animais que responda à pergunta, o que se conecta diretamente à análise de poder do Cap. 19; e **Refinamento** (*Refinement*) — minimizar dor e sofrimento e melhorar as condições de vida. No Brasil, a pesquisa com animais é regulada por legislação própria e por comissões de ética específicas (CEUAs). O princípio de fundo é o mesmo que rege a pesquisa com humanos: o valor do conhecimento não anula o dever de minimizar o sofrimento imposto para obtê-lo.
+
+::: {.callout-sintese}
+- **A ética em pesquisa nasceu de atrocidades:** o Código de Nuremberg (1947) do julgamento de médicos nazistas; a Declaração de Helsinque (1964) como referencial clínico; o Relatório Belmont (1979) do escândalo de Tuskegee.
+- **O Relatório Belmont** assenta a ética em três princípios: **respeito às pessoas** (→ consentimento informado), **beneficência** (→ análise de risco-benefício) e **justiça** (→ seleção equitativa dos participantes).
+- **O consentimento livre e esclarecido**, formalizado no TCLE, exige voluntariedade (livre, com direito de desistir), informação compreensível (esclarecido) e capacidade de decidir; é instrumento de proteção do participante, não de isenção do pesquisador.
+- **O engano** é admitido em psicologia sob condições estritas — alto valor científico, risco mínimo, ausência de alternativa e *debriefing* completo ao final — porque muitos fenômenos somem quando o participante conhece a hipótese.
+- **Estudos clássicos** (Milgram, prisão de Stanford, Pequeno Albert) mostram, por contraste, o que a revisão ética passou a exigir; descuido ético e descuido metodológico costumam coincidir.
+- **A revisão ética independente** (IRB; no Brasil, o sistema CEP/CONEP, Resolução 466/2012) avalia todo projeto *antes* da coleta, pela mesma lógica antiviés do cegamento: quem tem interesse no resultado é mau juiz do próprio risco.
+- **A pesquisa com animais** rege-se pelos três Rs — substituição, redução e refinamento — e por comissões próprias.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Código de Nuremberg**
+:   Conjunto de dez princípios (1947), decorrente do julgamento de médicos nazistas, que estabeleceu o consentimento voluntário como essencial [@nuremberg1947].
+
+**Relatório Belmont**
+:   Documento (1979) que fundou a ética em pesquisa com humanos em três princípios: respeito às pessoas, beneficência e justiça [@belmont1979].
+
+**Respeito às pessoas**
+:   Princípio do reconhecimento da autonomia e da proteção adicional a indivíduos vulneráveis; aplica-se no consentimento informado.
+
+**Beneficência**
+:   Princípio de maximizar benefícios e minimizar danos; aplica-se na análise de risco-benefício.
+
+**Justiça**
+:   Princípio da distribuição equitativa de ônus e frutos da pesquisa; aplica-se na seleção justa dos participantes.
+
+**Consentimento livre e esclarecido (TCLE)**
+:   Acordo voluntário, informado e revogável de participar de um estudo, dado por quem tem capacidade de decidir.
+
+**Engano (deception)**
+:   Omissão ou disfarce do propósito do estudo; admissível sob condições estritas e sempre seguido de *debriefing*.
+
+**Debriefing**
+:   Revelação completa, ao final, do verdadeiro objetivo e das razões de eventual engano, com oportunidade de retirar os dados.
+
+**CEP / CONEP**
+:   Sistema brasileiro de revisão ética: Comitês de Ética em Pesquisa institucionais e a Comissão Nacional, que aprovam projetos antes da coleta [@cns466_2012].
+
+**Três Rs**
+:   Princípios da pesquisa com animais — substituição, redução e refinamento [@russell_burch1959].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Associe cada princípio do Relatório Belmont à sua aplicação prática e explique, com o caso de Tuskegee, qual princípio foi violado de forma mais flagrante.
+
+2. **(Recuperação.)** Quais são as três condições que tornam um consentimento genuinamente "livre e esclarecido"? Dê um exemplo de situação em que cada uma poderia ser comprometida.
+
+3. **(Aplicação.)** Você quer estudar se as pessoas trapaceiam mais quando estão sob pressão de tempo, mas revelar o objetivo destruiria o comportamento espontâneo. Justifique o uso de engano nesse caso segundo os critérios do capítulo e descreva o *debriefing* que você conduziria.
+
+4. **(Aplicação.)** Redija, em linguagem acessível, os seis itens que o TCLE do estudo da questão anterior precisaria conter para respeitar o participante.
+
+5. **(Reflexão crítica.)** O estudo da prisão de Stanford é criticado tanto por razões éticas quanto metodológicas. Explique por que os dois tipos de falha tendem a andar juntos, e o que a revisão prévia por um comitê poderia ter evitado.
+
+6. **(Integração.)** A aprovação por um comitê de ética é "condição necessária, mas não suficiente" para uma conduta ética. Explique essa afirmação ligando-a à integridade científica (não fabricar dados, relatar limitações) que o Cap. 21 discutirá, e argumente por que a ética da pesquisa não termina no carimbo do CEP.
