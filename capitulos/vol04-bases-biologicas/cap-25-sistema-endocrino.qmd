@@ -1,5 +1,189 @@
 # 25. Sistema endócrino e hormônios
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Contrastar** os dois sistemas de comunicação do corpo — nervoso e endócrino — em velocidade, alcance e duração de efeito.
+- **Definir** hormônio e explicar como uma glândula influencia o comportamento à distância, pela corrente sanguínea.
+- **Descrever** o eixo hipotálamo-hipófise como a ponte entre o cérebro e o sistema endócrino, e a hipófise como "glândula-mestra".
+- **Explicar** o eixo HPA e o papel do cortisol na resposta ao estresse, distinguindo estresse agudo adaptativo de estresse crônico nocivo.
+- **Analisar** a relação entre hormônios sexuais e comportamento, distinguindo efeitos organizacionais de ativacionais e evitando o determinismo hormonal.
+- **Avaliar criticamente** afirmações populares como "testosterona causa agressão" e "ocitocina é o hormônio do amor".
 :::
+
+O capítulo anterior terminou no hipotálamo, a estrutura minúscula que chamamos de ponte entre o cérebro e o corpo. Este capítulo atravessa essa ponte. Até aqui, a comunicação no organismo foi elétrica e química, mas sempre *local*: um neurônio fala com o vizinho através de uma fenda de milionésimos de milímetro. Existe, porém, um segundo sistema de comunicação, mais antigo e mais lento, que não usa fios: o **sistema endócrino**, que despeja mensageiros químicos — os **hormônios** — diretamente na corrente sanguínea, de onde alcançam todo o corpo. Se o sistema nervoso é o correio expresso com endereço, o endócrino é o rádio: transmite para todos, e só respondem os que têm o receptor sintonizado.
+
+Essa diferença de arquitetura tem consequências psicológicas profundas. Estados que duram — um humor que se arrasta por dias, o estresse de um semestre inteiro, as transformações da puberdade, o vínculo com um filho — são regidos, em boa parte, por hormônios, não por impulsos nervosos. O sistema nervoso é bom para o instantâneo; o endócrino, para o prolongado. Entender o comportamento humano exige os dois.
+
+## Dois sistemas, uma coordenação
+
+Convém começar pelo contraste, resumido na @tbl-nervoso-endocrino. O sistema nervoso conduz sinais elétricos por vias dedicadas, em milissegundos, com efeitos breves e precisos: tira a mão do fogo *agora*. O sistema endócrino libera hormônios que viajam pelo sangue, levando de segundos a horas para agir, com efeitos que podem durar de minutos a anos: prepara o corpo para a puberdade *ao longo de meses*.
+
+| Característica | Sistema nervoso | Sistema endócrino |
+|---|---|---|
+| Mensageiro | Neurotransmissor (na fenda) | Hormônio (no sangue) |
+| Via | Neurônios, vias dedicadas | Corrente sanguínea (difusa) |
+| Velocidade | Milissegundos | Segundos a horas |
+| Alcance | Preciso (célula-alvo específica) | Amplo (todo o corpo; só respondem células com receptor) |
+| Duração do efeito | Breve | De minutos a anos |
+| Bom para | Ação rápida e localizada | Estados prolongados e coordenação global |
+
+: Comparação entre os sistemas nervoso e endócrino. Os dois não competem: cooperam, e o hipotálamo é o ponto onde se acoplam. {#tbl-nervoso-endocrino}
+
+Os dois sistemas não são independentes. O ponto de acoplamento é o **hipotálamo**, que traduz sinais neurais em comandos hormonais ao controlar a **hipófise** (ou pituitária), uma glândula do tamanho de uma ervilha pendurada logo abaixo dele. A hipófise é chamada de **glândula-mestra** porque seus hormônios comandam, por sua vez, outras glândulas — tireoide, suprarrenais, gônadas. Mas o título é enganoso: quem comanda a mestra é o hipotálamo, e portanto o cérebro. A hierarquia real é cérebro → hipotálamo → hipófise → glândulas-alvo. Essa cadeia é o que permite que uma percepção puramente psicológica — ver uma ameaça, receber uma má notícia — desencadeie uma cascata hormonal por todo o corpo.
+
+## As glândulas e seus hormônios
+
+O corpo tem várias glândulas endócrinas, cada uma secretando hormônios com alvos e efeitos característicos. Vale conhecer as principais pelo que fazem ao comportamento e à experiência:
+
+- A **tireoide** regula o metabolismo geral; seu excesso acelera o corpo e a mente (ansiedade, insônia, taquicardia), sua falta os desacelera (fadiga, lentidão, humor deprimido) — daí distúrbios da tireoide serem por vezes confundidos com transtornos psiquiátricos.
+- As **glândulas suprarrenais** (adrenais), sobre os rins, secretam **adrenalina** e **noradrenalina** (a rápida resposta de emergência do Cap. 23) e o **cortisol**, o hormônio central do estresse prolongado, tema da próxima seção.
+- O **pâncreas** secreta **insulina**, que regula a glicose no sangue — e, portanto, a energia disponível para o cérebro, o maior consumidor de glicose do corpo.
+- As **gônadas** (testículos e ovários) produzem os hormônios sexuais — **testosterona**, **estrogênio**, **progesterona** —, que moldam o desenvolvimento e modulam o comportamento sexual e social.
+- A **glândula pineal** secreta **melatonina**, que sinaliza o escuro e regula o ciclo sono-vigília — a ponte química entre o relógio biológico e a noite (Vol 6, Cap. 36).
+
+O nascimento da endocrinologia, aliás, tem uma data e um experimento de uma elegância que ainda impressiona — e que ilustra o método causal do Vol 3 aplicado ao corpo.
+
+::: {.experimento}
+**Os galos de Berthold** [@berthold1849]
+
+**Desenho.** Em 1849, o fisiologista Arnold Berthold trabalhou com galos jovens em três condições. No grupo 1, castrou os animais (removeu os testículos). No grupo 2, castrou-os e depois **reimplantou** os testículos em outra parte do corpo, sem reconectar nervo algum. O grupo 3 permaneceu intacto (controle).
+
+**Resultado.** Os galos castrados (grupo 1) perderam os traços masculinos: a crista murchou, cessaram o canto e o comportamento de corte e briga. Os galos com testículos reimplantados (grupo 2) mantiveram todos esses traços — apesar de os órgãos não terem qualquer conexão nervosa com o resto do corpo.
+
+**Interpretação.** Como o efeito se preservou sem nervos, a mensagem tinha de viajar de outro modo: por uma substância liberada pelos testículos na corrente sanguínea. Berthold havia demonstrado, sem saber nomeá-la, a ação de um hormônio (a testosterona) sobre o comportamento. É a experiência fundadora da endocrinologia — e um modelo de inferência causal: manipular (remover/reimplantar), observar o efeito, isolar a via (não neural).
+
+**Limitações.** Poucos animais, medidas comportamentais informais para os padrões atuais, e a natureza química do "sinal" só seria isolada quase um século depois. O desenho, porém, era logicamente impecável.
+:::
+
+## O eixo do estresse: HPA e cortisol
+
+De todos os circuitos endócrinos, o mais importante para a psicologia é o que responde ao estresse: o **eixo HPA** (hipotálamo-hipófise-adrenal). Ele funciona como uma cascata em três degraus. Diante de um estressor, o hipotálamo libera um hormônio que estimula a hipófise; a hipófise libera outro (o ACTH) que viaja pelo sangue até as suprarrenais; as suprarrenais liberam **cortisol**. O cortisol mobiliza energia (eleva a glicose), suprime funções não urgentes (digestão, reprodução, parte da resposta imune) e prepara o corpo para lidar com a ameaça de forma sustentada — onde a adrenalina age em segundos, o cortisol age em minutos e persiste por horas. A @fig-eixo-hpa mostra a cascata e sua alça de retorno.
+
+::: {#fig-eixo-hpa}
+```{.tikz}
+%%| filename: eixo-hpa
+%%| alt: Diagrama vertical do eixo HPA em três degraus ligados por setas para baixo. No topo, o hipotálamo (recebe o sinal de estresse do cérebro) libera CRH, que desce para a hipófise. A hipófise libera ACTH, que desce pela corrente sanguínea até as glândulas suprarrenais. As suprarrenais liberam cortisol, que age no corpo (mobiliza energia, suprime funções não urgentes). Uma seta curva vermelha tracejada sobe do cortisol de volta ao hipotálamo e à hipófise, rotulada retroalimentação negativa, indicando que o cortisol freia sua própria produção.
+\begin{tikzpicture}[scale=1.0,
+  gl/.style={draw, thick, rounded corners=4pt, align=center, font=\small, minimum width=3.6cm, minimum height=1.0cm},
+  seta/.style={->, >=Stealth, very thick, manualblue}
+]
+  \node[gl, draw=manualblue, fill=manualblue!10] (hip) at (0,4.4) {\textbf{Hipotálamo}\\{\footnotesize libera CRH}};
+  \node[gl, draw=manualblue, fill=manualblue!10] (pit) at (0,2.4) {\textbf{Hipófise}\\{\footnotesize libera ACTH}};
+  \node[gl, draw=manualblue, fill=manualblue!10] (adr) at (0,0.4) {\textbf{Suprarrenais}\\{\footnotesize liberam cortisol}};
+  \node[gl, draw=manualred, fill=manualred!10, minimum width=4.6cm] (corpo) at (0,-1.8)
+     {\textbf{Cortisol age no corpo}\\{\footnotesize mobiliza energia; suprime digestão,}\\{\footnotesize reprodução e parte da imunidade}};
+
+  \draw[seta] (hip) -- (pit);
+  \draw[seta] (pit) -- (adr);
+  \draw[seta] (adr) -- (corpo);
+
+  % sinal de estresse
+  \node[font=\footnotesize, text=manualgray, align=center, anchor=west] at (2.3,4.4) {sinal de estresse\\(do cérebro)};
+  \draw[->, >=Stealth, thick, manualgray] (2.25,4.4) -- (hip.east);
+
+  % retroalimentacao negativa
+  \draw[->, >=Stealth, very thick, manualred, dashed]
+     (corpo.west) .. controls (-4.2,-1.0) and (-4.2,3.2) .. (hip.west);
+  \node[font=\footnotesize, text=manualred, align=center, rotate=90] at (-4.0,1.3) {retroalimentação negativa};
+\end{tikzpicture}
+```
+O eixo HPA. O cortisol não só responde ao estresse: ele freia sua própria produção por retroalimentação negativa (seta vermelha), como um termostato. O estresse crônico desregula essa alça, e é aí que o sistema, feito para proteger, passa a adoecer.
+:::
+
+Esse desenho — uma cascata com freio automático — foi antecipado pela obra de Hans Selye, que descreveu a **síndrome de adaptação geral**: uma resposta corporal em três fases (alarme, resistência, exaustão) que se desenrola independentemente da natureza do estressor, seja ele frio, infecção ou aflição psicológica [@selye1936]. A intuição de Selye — a de que o corpo tem uma resposta *inespecífica* ao estresse — organizou décadas de pesquisa e deu à palavra "estresse" seu sentido científico moderno.
+
+O ponto psicológico decisivo está na diferença entre o agudo e o crônico. O eixo HPA é uma maravilha adaptativa quando o estressor é breve: mobiliza recursos, resolve, e o cortisol freia a si mesmo pela retroalimentação negativa. O problema é quando o estressor não acaba — e a vida moderna é fértil em estressores sem desfecho físico. Aí o cortisol permanece elevado, a alça de retorno se desregula, e o que protegia passa a corroer.
+
+::: {.base-neural}
+**Cortisol e o hipocampo: quando o estresse corrói a memória.** O hipocampo, estrutura da memória (Cap. 24), é densamente povoado de receptores de cortisol — o que faz dele um sensor do estresse e, ao mesmo tempo, uma vítima. Bruce McEwen cunhou o conceito de **carga alostática** para descrever o custo cumulativo de anos de ativação da resposta ao estresse sobre o corpo e o cérebro [@mcewen1998]. Em animais e humanos, a exposição prolongada a cortisol elevado associa-se a atrofia de dendritos no hipocampo e a prejuízos de memória. Robert Sapolsky sintetizou essa literatura numa imagem que virou título de livro: as zebras não têm úlcera porque seu estresse é agudo e termina quando o leão desiste; o sofrimento humano vem de ligar cronicamente um sistema desenhado para emergências curtas [@sapolsky2004]. O Vol 9 (Cap. 56) desenvolve as consequências para a saúde.
+:::
+
+## Hormônios sexuais e comportamento: cuidado com o determinismo
+
+Poucos temas atraem tanto folclore quanto o dos hormônios sexuais. A ciência aqui exige duas distinções que o senso comum ignora, e ambas desarmam o determinismo hormonal fácil.
+
+A primeira é entre efeitos **organizacionais** e **ativacionais**. Efeitos organizacionais ocorrem em janelas críticas do desenvolvimento (pré-natal, puberdade): os hormônios *constroem* estruturas corporais e neurais de forma duradoura, quase permanente. Efeitos ativacionais ocorrem ao longo da vida: os hormônios *modulam* temporariamente o funcionamento de estruturas já formadas, e seus efeitos vão e vêm com os níveis circulantes. Confundir os dois leva a erros grosseiros — atribuir a uma flutuação passageira o que é fruto do desenvolvimento, ou vice-versa.
+
+A segunda é entre **correlação e causa unidirecional**. O caso da testosterona é exemplar.
+
+::: {.atencao}
+**"Testosterona causa agressão."** A frase inverte e simplifica uma relação que é bidirecional e altamente dependente do contexto. Primeiro, a associação entre testosterona e agressão em humanos é modesta e inconsistente — muito mais fraca do que a cultura popular sugere. Segundo, e crucial: a causalidade corre nos *dois* sentidos. Competir e, sobretudo, *vencer* eleva a testosterona; o comportamento altera o hormônio tanto quanto o hormônio altera o comportamento. Terceiro, os efeitos dependem do contexto social: a testosterona parece ligada mais à busca de *status* e à resposta a desafios do que à agressão bruta — em certos contextos, ela promove comportamento pró-social e generoso, quando é isso que sustenta o status. Reduzir tudo a "hormônio da agressividade" é o determinismo biológico que o Vol 1 alertou a evitar: confunde um correlato modesto e recíproco com uma causa simples e unidirecional.
+:::
+
+O mesmo cuidado vale para o hormônio da moda oposta — o do vínculo.
+
+::: {.experimento}
+**Ocitocina e confiança** [@kosfeld2005]
+
+**Desenho.** Michael Kosfeld e colegas administraram **ocitocina** (por spray nasal) ou placebo a participantes que depois jogaram um "jogo da confiança": um investidor decide quanto dinheiro entregar a um administrador, sabendo que a quantia será multiplicada, mas que o administrador pode ficar com tudo. Quanto se entrega mede o quanto se confia.
+
+**Resultado.** Os participantes que receberam ocitocina transferiram mais dinheiro — confiaram mais — do que os que receberam placebo. O efeito não se devia a um humor geral mais positivo nem a maior disposição a arriscar em geral (num jogo contra um sorteio, sem parceiro humano, a ocitocina não aumentou o risco assumido): parecia específico da confiança *interpessoal*.
+
+**Interpretação.** A ocitocina, já conhecida por seu papel no parto, na amamentação e no vínculo mãe-filho em mamíferos, mostrou-se moduladora do comportamento social humano — daí o apelido de "hormônio do amor" ou "da confiança".
+
+**Limitações.** Este é um caso instrutivo sobre replicabilidade (Vol 1). Estudos posteriores e meta-análises encontraram efeitos bem menores e inconsistentes; parte da literatura sobre ocitocina intranasal em humanos é contestada, com preocupações sobre tamanhos de amostra pequenos e resultados que não se sustentam. Além disso, a ocitocina não é universalmente "pró-social": em alguns contextos aumenta o favorecimento do próprio grupo e a hostilidade a estranhos. O "hormônio do amor" é, na melhor das hipóteses, um modulador social dependente de contexto — não uma poção de afeto.
+:::
+
+::: {.na-pratica}
+**Por que ler o rótulo dos "hormônios da felicidade".** A internet transborda de listas dos "quatro hormônios da felicidade" — dopamina, serotonina, ocitocina, endorfina — com receitas para "aumentá-los". Duas confusões se acumulam aí. A primeira, já vista no Cap. 22, é tratar neurotransmissores (dopamina, serotonina agem em sinapses) como se fossem hormônios circulantes — categorias que se sobrepõem, mas não são a mesma coisa. A segunda é o determinismo: supor que o bem-estar seja o nível de uma substância a ser turbinado, e não o resultado de circuitos, contexto, relações e sentido. Nada disso significa que hormônios não importem — importam muito. Significa que "aumente sua ocitocina" é tão vago e tão pouco acionável quanto "seja mais feliz". A psicologia do bem-estar (Vol 15, Cap. 100) tem coisas mais precisas a dizer.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **O corpo tem dois sistemas de comunicação.** O nervoso é rápido, preciso e breve (neurotransmissores em fendas); o endócrino é mais lento, difuso e duradouro (hormônios no sangue). Estados prolongados — humor, estresse, puberdade, vínculo — são largamente endócrinos.
+- **Hormônios são mensageiros químicos** lançados na corrente sanguínea; só afetam células com o receptor correspondente. O acoplamento entre os dois sistemas se dá no **hipotálamo**, que comanda a **hipófise** (glândula-mestra), que comanda as demais glândulas.
+- **Berthold fundou a endocrinologia** mostrando que testículos reimplantados, sem nervos, ainda mantinham o comportamento masculino de galos — a mensagem viajava pelo sangue.
+- **O eixo HPA (hipotálamo-hipófise-adrenal) e o cortisol** regem a resposta ao estresse. Agudo, o sistema é adaptativo e se autorregula por retroalimentação negativa; crônico, desregula-se e adoece — atrofiando inclusive o hipocampo (carga alostática de McEwen; as zebras de Sapolsky).
+- **Hormônios sexuais têm efeitos organizacionais** (constroem estruturas em janelas do desenvolvimento) **e ativacionais** (modulam temporariamente ao longo da vida) — distinção que o senso comum ignora.
+- **Cuidado com o determinismo hormonal:** "testosterona causa agressão" inverte uma relação modesta, recíproca e dependente de contexto (vencer eleva a testosterona); "ocitocina é o hormônio do amor" ignora efeitos pequenos, inconsistentes e nem sempre pró-sociais.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sistema endócrino**
+:   Conjunto de glândulas que secretam hormônios na corrente sanguínea, comunicando-se com o corpo de forma lenta, difusa e duradoura.
+
+**Hormônio**
+:   Mensageiro químico liberado por uma glândula no sangue, que afeta apenas células portadoras do receptor correspondente.
+
+**Hipófise (pituitária)**
+:   Glândula-mestra que, sob comando do hipotálamo, secreta hormônios que controlam outras glândulas.
+
+**Eixo HPA**
+:   Cascata hipotálamo → hipófise → suprarrenais que rege a resposta ao estresse, culminando na liberação de cortisol.
+
+**Cortisol**
+:   Hormônio das suprarrenais que mobiliza energia e sustenta a resposta ao estresse; nocivo quando cronicamente elevado.
+
+**Retroalimentação negativa**
+:   Mecanismo em que o produto de uma cascata (o cortisol) freia sua própria produção, estabilizando o sistema como um termostato.
+
+**Síndrome de adaptação geral**
+:   Resposta corporal inespecífica ao estresse em três fases (alarme, resistência, exaustão), descrita por Selye [@selye1936].
+
+**Carga alostática**
+:   Custo cumulativo, sobre corpo e cérebro, da ativação crônica da resposta ao estresse [@mcewen1998].
+
+**Efeitos organizacionais / ativacionais**
+:   Efeitos hormonais que constroem estruturas de forma duradoura em janelas do desenvolvimento (organizacionais) versus os que modulam temporariamente estruturas já formadas (ativacionais).
+
+**Ocitocina**
+:   Hormônio ligado ao parto, à amamentação e ao vínculo social; modulador da confiança em certos contextos, com efeitos menores e menos universais do que a fama sugere [@kosfeld2005].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Compare os sistemas nervoso e endócrino em velocidade, alcance e duração de efeito. Dê um exemplo de comportamento regido principalmente por cada um.
+
+2. **(Recuperação.)** Descreva a cascata do eixo HPA, do hipotálamo ao cortisol. O que faz a retroalimentação negativa, e por que ela é comparada a um termostato?
+
+3. **(Aplicação.)** Uma pessoa passa seis meses sob forte pressão no trabalho, sem folga. Com base no conceito de carga alostática e no contraste agudo/crônico, explique por que uma resposta ao estresse que seria protetora acaba prejudicando a saúde e a memória.
+
+4. **(Reflexão crítica.)** O experimento de Berthold é considerado o marco fundador da endocrinologia. Explique por que o grupo com testículos reimplantados (sem conexão nervosa) foi a peça decisiva da prova. Que conclusão teria sido impossível tirar sem ele?
+
+5. **(Reflexão crítica.)** Um artigo de revista afirma: "Homens agressivos têm testosterona alta — o hormônio da violência." Aponte pelo menos três problemas científicos nessa frase, usando o que o capítulo diz sobre a força da associação, a direção da causalidade e o papel do contexto.
+
+6. **(Integração.)** O caso da ocitocina de Kosfeld foi um resultado célebre que a replicação posterior enfraqueceu. Relacione isso à crise de replicabilidade discutida no Vol 1. Por que "hormônio do amor" é um rótulo que a evidência atual não sustenta?
