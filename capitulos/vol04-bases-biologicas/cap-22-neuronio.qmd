@@ -1,5 +1,315 @@
 # 22. O neurônio e a comunicação neural
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Justificar** por que a psicologia científica precisa descer ao nível celular, e o que se perde e o que se ganha ao fazê-lo.
+- **Descrever** as partes do neurônio e a divisão de trabalho entre dendritos, corpo celular, axônio e terminais.
+- **Explicar** o potencial de repouso, o potencial de ação e a lei do tudo-ou-nada em termos de fluxo de íons através da membrana.
+- **Reconstruir** a sequência da transmissão sináptica química, do impulso pré-sináptico ao efeito pós-sináptico, e distinguir potenciais excitatórios de inibitórios.
+- **Relacionar** os principais neurotransmissores a funções comportamentais, evitando a armadilha do "um neurotransmissor, uma emoção".
+- **Analisar criticamente** como drogas psicoativas e psicofármacos agem sobre pontos específicos da sinapse — e por que isso não valida a tese do "desequilíbrio químico".
 :::
+
+O Vol 1 definiu a psicologia em três níveis de análise e prometeu que o nível biológico não é rival dos outros, mas seu substrato. Este volume cumpre a promessa, e cumpre-a de baixo para cima: começa na menor unidade que ainda faz algo reconhecivelmente psicológico. Um único neurônio não sente medo nem lembra de um rosto. Mas nenhum medo e nenhuma lembrança acontecem sem que multidões de neurônios troquem sinais segundo regras que este capítulo descreve. Entender essas regras é a diferença entre repetir que "tudo está no cérebro" — uma frase vazia — e saber *como* está.
+
+A aposta deste capítulo é que a comunicação neural, apesar de sua reputação de complexidade, obedece a poucos princípios claros. Uma vez compreendidos, eles reaparecem em quase todos os fenômenos dos volumes seguintes: a aprendizagem (Vol 7) é mudança sináptica; a ação dos psicofármacos (Vol 14) é interferência química na sinapse; a percepção (Vol 5) é o disparo ordenado de neurônios sensoriais. Convém, portanto, pagá-los agora com cuidado.
+
+## Por que descer ao neurônio
+
+Há uma objeção legítima antes de começar: se a psicologia estuda comportamento e processos mentais, por que estudar células? A resposta não é que o nível celular *substitua* o psicológico — o Vol 1 já desarmou o reducionismo apressado —, mas que ele impõe **restrições** que nenhuma teoria psicológica séria pode ignorar. O tempo mínimo de uma reação, o limite da memória de trabalho, a existência de períodos refratários, o fato de que o cérebro consome cerca de 20% da energia do corpo em repouso: tudo isso são fatos sobre neurônios que constrangem o que a mente pode fazer.
+
+A história da disciplina oferece o argumento mais forte. Durante o século XIX, discutia-se se o tecido nervoso era uma rede contínua — um retículo em que tudo se fundia — ou um agregado de células individuais e separadas. A questão parecia anatômica; era, na verdade, sobre a possibilidade mesma de uma ciência do cérebro. Santiago Ramón y Cajal, usando o método de coloração desenvolvido por seu rival Camillo Golgi, mostrou que os neurônios são unidades distintas, que se comunicam por contato e não por continuidade [@cajal1899]. Essa **doutrina do neurônio** — o cérebro é feito de células discretas — é o que torna possível falar em circuitos, em conexões que se formam e se desfazem, em aprendizagem como mudança de conexão. Sem células separadas, não há o que reconectar.
+
+::: {.atencao}
+**O cérebro não é só neurônio.** A ênfase histórica no neurônio ofuscou por décadas as **células gliais** — astrócitos, oligodendrócitos, micróglia —, que são tão numerosas quanto os neurônios e longe de meras "cimento" de sustentação. Elas regulam o ambiente químico, formam a bainha de mielina, participam da resposta imune do cérebro e modulam a própria transmissão sináptica [@allen_barres2009]. Quando este capítulo, por economia, fala como se só houvesse neurônios, leia "neurônios e a glia que os sustenta e regula".
+:::
+
+## Anatomia funcional do neurônio
+
+O neurônio é uma célula especializada em uma tarefa: receber sinais, integrá-los e, se a soma ultrapassar um limite, transmitir um sinal adiante. Sua forma segue essa função. A @fig-neuronio identifica as partes.
+
+::: {#fig-neuronio}
+```{.tikz}
+%%| filename: neuronio
+%%| alt: Esquema de um neurônio visto da esquerda para a direita. À esquerda, ramificações finas (dendritos) convergem para um corpo celular arredondado contendo o núcleo. Do corpo parte um prolongamento longo (o axônio), envolvido por segmentos de bainha de mielina separados por intervalos (nós de Ranvier). À direita, o axônio se ramifica em terminais que terminam em botões sinápticos. Setas indicam o sentido do fluxo do sinal, dos dendritos para os terminais.
+\begin{tikzpicture}[scale=1.0]
+  % corpo celular
+  \node[circle, draw=manualblue, thick, fill=manualblue!10, minimum size=1.4cm] (soma) at (0,0) {};
+  \node[circle, draw=manualblue, fill=manualblue!30, minimum size=0.5cm] at (0,0) {};
+  % dendritos
+  \foreach \a in {120,150,180,210,240}{
+    \draw[manualblue, thick] (soma.center) ++(\a:0.7) -- ++(\a:1.1)
+      -- ++(\a+18:0.6);
+    \draw[manualblue, thick] (soma.center) ++(\a:0.7) -- ++(\a:1.1)
+      -- ++(\a-18:0.6);
+  }
+  % axônio
+  \draw[manualblue, very thick] (soma.east) -- (7.3,0);
+  % mielina
+  \foreach \x in {2.0,3.4,4.8}{
+    \node[draw=manualyellow, thick, fill=manualyellow!25, rounded corners=3pt,
+          minimum width=1.05cm, minimum height=0.42cm] at (\x,0) {};
+  }
+  % terminais
+  \foreach \a in {25,0,-25}{
+    \draw[manualblue, thick] (7.3,0) -- ++(\a:0.8);
+    \node[circle, fill=manualred!60, minimum size=0.22cm] at ($(7.3,0)+(\a:0.8)$) {};
+  }
+  % rótulos
+  \node[font=\small, text=manualblue] at (-1.9,1.5) {dendritos};
+  \node[font=\small, text=manualblue] at (0,-1.3) {corpo celular};
+  \node[font=\footnotesize, text=manualgray] at (0,-1.72) {(núcleo)};
+  \node[font=\small, text=manualyellow!60!black] at (3.4,0.95) {bainha de mielina};
+  \node[font=\footnotesize, text=manualgray] at (4.15,-0.7) {nó de Ranvier};
+  \node[font=\small, text=manualred] at (8.4,0.9) {terminais};
+  \node[font=\footnotesize, text=manualred] at (8.4,0.55) {(botões sinápticos)};
+  % sentido
+  \draw[->, >=Stealth, thick, manualgreen] (-2.6,-2.3) -- (7.5,-2.3)
+    node[midway, below, font=\small, text=manualgreen] {sentido do sinal};
+\end{tikzpicture}
+```
+Anatomia funcional do neurônio. Os dendritos recebem; o corpo celular integra; o axônio conduz; os terminais transmitem. A bainha de mielina, interrompida nos nós de Ranvier, acelera a condução.
+:::
+
+Os **dendritos** são as ramificações que recebem sinais de outros neurônios — uma única célula pode ter milhares de pontos de contato. O **corpo celular** (ou soma) contém o núcleo e a maquinaria metabólica, e é onde os sinais recebidos são somados. O **axônio** é o prolongamento único e às vezes longuíssimo — os que vão da medula ao pé têm quase um metro — que conduz o sinal de saída. Seus **terminais** fazem contato com as células seguintes.
+
+Muitos axônios são revestidos pela **bainha de mielina**, uma camada gordurosa produzida por células gliais que funciona como o isolamento de um fio. Ela não é contínua: interrompe-se em intervalos regulares, os **nós de Ranvier**. Como o sinal elétrico "salta" de nó em nó — a chamada condução saltatória —, a mielina acelera enormemente a transmissão, de cerca de 1 m/s em fibras nuas a mais de 100 m/s em fibras mielinizadas. A importância dessa camada fica evidente em sua falha: na esclerose múltipla, o sistema imune ataca a mielina, e a lentidão e o embaralhamento dos sinais produzem os sintomas motores e sensoriais da doença.
+
+## O sinal elétrico: potencial de repouso e potencial de ação
+
+O sinal que percorre o axônio é elétrico, e sua base é a distribuição desigual de íons entre o interior e o exterior da célula. Compreender isso exige três fatos sobre a membrana neuronal.
+
+**Primeiro:** a membrana separa dois meios com composições iônicas diferentes. Fora, predomina o sódio ($\mathrm{Na^+}$); dentro, o potássio ($\mathrm{K^+}$) e grandes ânions orgânicos. **Segundo:** a membrana é seletivamente permeável — deixa passar alguns íons por canais específicos e barra outros — e mantém ativamente essa desigualdade por meio de bombas que gastam energia, notadamente a bomba de sódio-potássio, que expulsa $\mathrm{Na^+}$ e importa $\mathrm{K^+}$. **Terceiro:** o resultado é que, em repouso, o interior da célula é eletricamente negativo em relação ao exterior — cerca de $-70$ milivolts. Essa diferença é o **potencial de repouso**: uma célula que não está disparando não está inerte, e sim mantendo, à custa de energia, uma tensão pronta para ser usada.
+
+Quando um sinal suficientemente forte chega ao início do axônio, ocorre o **potencial de ação**: canais de sódio se abrem, $\mathrm{Na^+}$ entra em avalanche, e o potencial interno salta de $-70$ mV para cerca de $+40$ mV em menos de um milissegundo. Em seguida, canais de potássio se abrem, $\mathrm{K^+}$ sai, e a membrana volta ao repouso, com um breve período de rebaixamento. A @fig-potencial-acao mostra esse curso.
+
+::: {#fig-potencial-acao}
+```{.tikz}
+%%| filename: potencial-acao
+%%| alt: Gráfico do potencial de ação. O eixo horizontal é o tempo em milissegundos, o eixo vertical é o potencial de membrana em milivolts, de menos setenta a mais quarenta. A curva parte do potencial de repouso em menos setenta, sobe suavemente até um limiar tracejado em menos cinquenta e cinco, então dispara verticalmente até mais quarenta (despolarização), volta a cair abaixo do repouso (repolarização e hiperpolarização) e retorna gradualmente ao repouso. Uma linha tracejada horizontal marca o limiar.
+\begin{tikzpicture}[scale=1.0]
+  \begin{axis}[
+    width=11cm, height=7cm,
+    xlabel={tempo (ms)}, ylabel={potencial de membrana (mV)},
+    xmin=0, xmax=6, ymin=-90, ymax=55,
+    axis lines=left,
+    xtick={0,1,2,3,4,5,6},
+    ytick={-70,-55,0,40},
+    yticklabels={$-70$,$-55$,$0$,$+40$},
+    every axis plot/.append style={very thick},
+    tick label style={font=\small},
+    label style={font=\small},
+  ]
+    % limiar
+    \addplot[dashed, manualgray, thick, domain=0:6] {-55};
+    \node[font=\footnotesize, text=manualgray, anchor=west] at (axis cs:4.2,-50) {limiar};
+    % repouso
+    \addplot[dashed, manualgray, domain=0:6] {-70};
+    \node[font=\footnotesize, text=manualgray, anchor=west] at (axis cs:0.05,-76) {repouso};
+    % curva do potencial de acao
+    \addplot[manualred, smooth] coordinates {
+      (0,-70) (0.6,-68) (1.0,-60) (1.3,-55)
+      (1.5,-30) (1.7,10) (1.9,40) (2.1,25)
+      (2.4,-20) (2.7,-60) (3.0,-78) (3.4,-80)
+      (4.0,-76) (5.0,-71) (6,-70)
+    };
+    \node[font=\small, text=manualred, anchor=south] at (axis cs:1.9,42) {despolarização};
+    \node[font=\small, text=manualblue, anchor=west] at (axis cs:2.7,-30) {repolarização};
+    \node[font=\footnotesize, text=manualgray, anchor=north] at (axis cs:3.4,-82) {hiperpolarização};
+  \end{axis}
+\end{tikzpicture}
+```
+O potencial de ação. Enquanto o estímulo não atinge o limiar (cerca de $-55$ mV), nada dispara; atingido o limiar, o potencial dispara sempre com a mesma amplitude. Depois vem a repolarização e um breve período refratário.
+:::
+
+Dois princípios saem dessa curva, e ambos têm consequências psicológicas diretas.
+
+O primeiro é a **lei do tudo-ou-nada**: ou o estímulo atinge o limiar (cerca de $-55$ mV) e o potencial de ação dispara com amplitude plena, ou não atinge e nada acontece. Não há potencial de ação "fraco" ou "forte". Isso levanta uma pergunta imediata: se todos os impulsos são iguais, como o sistema nervoso codifica a diferença entre um cochicho e um grito, entre um toque leve e uma dor intensa? A resposta é a **frequência**: um estímulo intenso não produz impulsos maiores, e sim mais impulsos por segundo, e recruta mais neurônios. A intensidade é escrita no ritmo, não na amplitude — princípio que reaparece na psicofísica da sensação (Vol 5).
+
+O segundo é o **período refratário**: logo após disparar, o neurônio fica incapaz de disparar de novo por um breve intervalo. Isso impõe um teto à frequência de disparo e garante que o impulso viaje em um único sentido pelo axônio, sem voltar. É uma restrição de hardware com efeitos no software: há um limite físico para a rapidez com que qualquer sinal neural pode ser repetido.
+
+::: {.experimento}
+**Como se mede um impulso: o axônio gigante da lula** [@hodgkin_huxley1952]
+
+**Desenho.** Nos anos 1940 e 1950, Alan Hodgkin e Andrew Huxley aproveitaram uma peculiaridade anatômica — a lula possui um axônio excepcionalmente grosso, de até 1 mm de diâmetro, que controla o jato de fuga — para inserir um eletrodo *dentro* de uma fibra nervosa e registrar diretamente a voltagem através da membrana durante um impulso.
+
+**Resultado.** Eles mediram o curso temporal do potencial de ação com precisão inédita e, mais ainda, formularam um modelo matemático das correntes de sódio e potássio que reproduzia a curva medida. O modelo previa a velocidade de condução do impulso a partir de propriedades da membrana — e acertou.
+
+**Interpretação.** O trabalho transformou o potencial de ação de uma metáfora vaga ("impulso nervoso") em um fenômeno físico quantificado e previsível, rendendo o Nobel de 1963. É um dos casos mais limpos, em toda a biologia, de um modelo teórico que prevê medições futuras — exatamente o tipo de hipótese arriscada que o Vol 1 elogiou.
+
+**Limitações.** O axônio da lula é uma fibra motora simples e nua; a dinâmica em neurônios mielinizados de mamíferos, com dezenas de tipos de canais, é bem mais complexa. O modelo capturou o essencial, não todos os detalhes.
+:::
+
+## A sinapse: comunicação química entre neurônios
+
+O potencial de ação chega ao fim do axônio — e aí encontra um problema. Cajal mostrou que os neurônios não se tocam: há uma fenda entre o terminal de um e a membrana do seguinte, a **fenda sináptica**, de milionésimos de milímetro. O sinal elétrico não atravessa esse vão diretamente. A ligação, na esmagadora maioria das sinapses, é **química**.
+
+Que a transmissão pudesse ser química, e não elétrica, foi uma descoberta que precisou vencer resistência, e a demonstração é uma pequena obra-prima de engenho experimental.
+
+::: {.experimento}
+**O sonho de Otto Loewi e o coração de rã** [@loewi1921]
+
+**Desenho.** Otto Loewi relatou ter concebido o experimento em sonho, acordado de madrugada para anotá-lo e voltado a dormir — para descobrir de manhã que não conseguia ler a própria letra. Na noite seguinte, teve o sonho de novo e, desta vez, foi direto ao laboratório. O experimento: manter dois corações de rã em solução salina; estimular o nervo vago do primeiro, que desacelera o coração; então transferir o líquido que banhava esse primeiro coração para o segundo.
+
+**Resultado.** O segundo coração, sem ter tido seu nervo estimulado, também desacelerou. Algo liberado pela estimulação do primeiro — uma substância química, que Loewi chamou de *Vagusstoff* e depois se identificou como acetilcolina — havia carregado a mensagem.
+
+**Interpretação.** A prova era decisiva porque o efeito viajou no *líquido*, não em um fio: a comunicação entre nervo e órgão era mediada por uma molécula. Foi a primeira evidência direta de neurotransmissão química, e valeu a Loewi o Nobel de 1936, dividido com Henry Dale.
+
+**Limitações.** O experimento demonstrou transmissão química em uma sinapse periférica específica (nervo-coração). Sinapses elétricas verdadeiras existem, embora sejam minoria; e a generalização para todo o sistema nervoso central só se consolidou décadas depois.
+:::
+
+A sequência completa da transmissão sináptica química, esquematizada na @fig-sinapse, tem cinco passos:
+
+1. O potencial de ação chega ao terminal pré-sináptico.
+2. Isso abre canais de cálcio; a entrada de $\mathrm{Ca^{2+}}$ faz **vesículas** cheias de neurotransmissor se fundirem com a membrana e despejarem seu conteúdo na fenda.
+3. As moléculas de neurotransmissor atravessam a fenda e se ligam a **receptores** na membrana pós-sináptica, como chaves em fechaduras.
+4. Essa ligação abre ou fecha canais iônicos na célula seguinte, alterando seu potencial — para mais perto do limiar (efeito **excitatório**) ou para mais longe dele (efeito **inibitório**).
+5. O neurotransmissor é removido da fenda — por **recaptação** de volta ao terminal, por degradação enzimática ou por difusão —, encerrando o sinal.
+
+::: {#fig-sinapse}
+```{.tikz}
+%%| filename: sinapse
+%%| alt: Esquema ampliado de uma sinapse química. À esquerda, o terminal pré-sináptico contém vesículas circulares cheias de pontos (neurotransmissores); uma vesícula está fundida à membrana liberando seu conteúdo na fenda sináptica, o espaço entre as duas células. À direita, a membrana pós-sináptica exibe receptores em forma de encaixe onde as moléculas de neurotransmissor se ligam. Uma seta curva retorna moléculas ao terminal pré-sináptico, representando a recaptação. Setas indicam o sentido do sinal.
+\begin{tikzpicture}[scale=1.0]
+  % terminal pre-sinaptico
+  \draw[manualblue, thick, fill=manualblue!8] (0,0) .. controls (0,2.2) and (3,2.2) .. (3,0.4)
+     -- (3,0.4) -- (0,0.4) -- cycle;
+  \node[font=\small, text=manualblue] at (1.3,1.9) {terminal pré-sináptico};
+  % vesiculas
+  \foreach \p in {(0.8,1.1),(1.6,1.35),(1.1,0.8)}{
+    \node[circle, draw=manualred, fill=manualred!12, minimum size=0.5cm] at \p {};
+    \fill[manualred] \p ++(0.07,0.05) circle (0.03);
+    \fill[manualred] \p ++(-0.06,0.04) circle (0.03);
+    \fill[manualred] \p ++(0.02,-0.07) circle (0.03);
+  }
+  % vesicula fundida liberando
+  \node[circle, draw=manualred, fill=manualred!12, minimum size=0.45cm] at (2.4,0.55) {};
+  \foreach \d in {-25,0,25}{
+    \fill[manualred] ($(2.4,0.3)+(\d-90:0.35)$) circle (0.035);
+    \fill[manualred] ($(2.4,0.2)+(\d-90:0.6)$) circle (0.035);
+  }
+  % fenda
+  \draw[<->, manualgray, thick] (3.9,0.15) -- (3.9,-0.35)
+     node[midway, right, font=\footnotesize, text=manualgray] {fenda};
+  % membrana pos-sinaptica
+  \draw[manualgreen, thick, fill=manualgreen!8] (0.2,-0.5) rectangle (5.2,-1.4);
+  \node[font=\small, text=manualgreen] at (2.7,-1.75) {membrana pós-sináptica};
+  % receptores
+  \foreach \x in {1.4,2.4,3.4,4.4}{
+    \draw[manualgreen, thick, fill=white] (\x-0.18,-0.5) -- (\x-0.1,-0.15)
+       -- (\x+0.1,-0.15) -- (\x+0.18,-0.5) -- cycle;
+  }
+  \node[font=\footnotesize, text=manualgreen, anchor=west] at (4.65,-0.2) {receptores};
+  % recaptacao
+  \draw[->, >=Stealth, manualgray, thick] (3.3,-0.05) .. controls (3.6,0.9) .. (2.9,0.35);
+  \node[font=\footnotesize, text=manualgray] at (4.2,0.75) {recaptação};
+\end{tikzpicture}
+```
+A sinapse química. O impulso elétrico é traduzido em sinal químico (liberação de neurotransmissor) e, do outro lado da fenda, de volta em sinal elétrico (mudança de potencial). Cada etapa é um ponto onde drogas podem interferir.
+:::
+
+Um ponto conceitual importante: um único potencial pós-sináptico quase nunca basta para fazer o neurônio seguinte disparar. Cada célula recebe milhares de sinais, uns empurrando em direção ao limiar (excitatórios), outros afastando dele (inibitórios). O corpo celular faz a **soma** algébrica desses sinais no tempo e no espaço, e só dispara se o saldo cruzar o limiar. O neurônio, portanto, não é um mero repetidor: é uma unidade de decisão que integra evidências convergentes. Essa aritmética distribuída, multiplicada por bilhões de células, é o que sustenta toda a computação do cérebro.
+
+## Neurotransmissores: mensageiros com muitos papéis
+
+As moléculas que cruzam a fenda são de dezenas de tipos, cada uma com receptores próprios e distribuição própria pelo sistema nervoso. Alguns dos mais relevantes para o comportamento estão na @tbl-neurotransmissores. Convém memorizar as associações gerais — mas com uma ressalva, que vem logo depois, sobre o quanto elas simplificam.
+
+| Neurotransmissor | Papéis principais | Associações comportamentais |
+|---|---|---|
+| **Acetilcolina** (ACh) | Contração muscular; atenção e memória | Alvo na doença de Alzheimer; curare e toxina botulínica a bloqueiam |
+| **Dopamina** | Movimento; motivação, recompensa, aprendizado por reforço | Parkinson (falta na via motora); implicada em adicção e psicose |
+| **Serotonina** | Humor, sono, apetite, saciedade | Alvo dos antidepressivos ISRS; regulação afetiva |
+| **Noradrenalina** | Vigília, atenção, resposta ao estresse | Alerta, "luta ou fuga"; regulação do humor |
+| **Glutamato** | Principal neurotransmissor **excitatório** do SNC | Aprendizagem e memória (plasticidade); excitotoxicidade |
+| **GABA** | Principal neurotransmissor **inibitório** do SNC | Alvo de ansiolíticos e álcool; reduz a excitabilidade |
+| **Endorfinas** | Analgesia; prazer | Moduladas por opioides; "barato do corredor" |
+
+: Principais neurotransmissores e suas associações comportamentais. As colunas resumem tendências gerais, não correspondências de um-para-um. {#tbl-neurotransmissores}
+
+::: {.atencao}
+**"Serotonina é o hormônio da felicidade; dopamina é o do prazer."** Essa é a versão de banca de jornal da neurociência, e está errada em vários sentidos. Primeiro, um mesmo neurotransmissor faz coisas diferentes conforme *onde* age e *qual receptor* ativa: a dopamina regula tanto o movimento (sua falta causa Parkinson) quanto o aprendizado por recompensa. Segundo, nenhum comportamento complexo corresponde a uma única molécula — humor, prazer e motivação envolvem sistemas inteiros interagindo. Terceiro, e mais importante: mesmo a ideia de que a depressão seja um "déficit de serotonina" — a base da propaganda de uma geração de antidepressivos — carece de sustentação empírica direta, como uma revisão ampla das evidências concluiu [@moncrieff2023]. O Vol 13 retoma isso; por ora, retenha: **a função está no circuito, não na substância isolada.**
+:::
+
+::: {.base-neural}
+**A dopamina não sinaliza prazer, e sim previsão.** Um dos achados mais elegantes da neurociência do comportamento refinou a associação ingênua "dopamina = recompensa". Registrando de neurônios dopaminérgicos em macacos, Wolfram Schultz mostrou que eles não disparam simplesmente quando o animal recebe uma recompensa: disparam quando a recompensa é **melhor do que o esperado**, ficam em silêncio quando ela é exatamente como previsto, e *reduzem* o disparo quando é pior que o esperado [@schultz1997]. O sinal dopaminérgico codifica **erro de previsão de recompensa** — a diferença entre o esperado e o obtido. Essa descoberta unificou a neurociência com as teorias de aprendizagem por reforço (Vol 7) e é a base biológica de por que surpresas agradáveis ensinam mais do que recompensas previsíveis.
+:::
+
+## Onde as drogas agem
+
+O mapa da sinapse é, ao mesmo tempo, o mapa de como praticamente toda substância psicoativa e todo psicofármaco funcionam. Nenhuma droga "entra na mente" diretamente; todas agem em pontos específicos da transmissão química. Duas categorias organizam quase tudo:
+
+- Um **agonista** aumenta o efeito de um neurotransmissor — imitando a molécula no receptor, aumentando sua liberação, ou impedindo sua remoção da fenda.
+- Um **antagonista** reduz o efeito — bloqueando o receptor ou impedindo a liberação.
+
+Exemplos tornam o esquema concreto. Os **ISRS** (inibidores seletivos da recaptação de serotonina), como a fluoxetina, bloqueiam a recaptação da serotonina, deixando-a mais tempo na fenda — são, nesse sentido, agonistas indiretos. A **cocaína** faz algo parecido com a dopamina, bloqueando sua recaptação e prolongando seu efeito nas vias de recompensa. Os **benzodiazepínicos** (ansiolíticos) potencializam o GABA, o freio inibitório do cérebro, o que explica seu efeito calmante. A **toxina botulínica** (Botox) bloqueia a liberação de acetilcolina na junção neuromuscular, paralisando o músculo. O **curare**, usado em flechas por povos amazônicos, bloqueia os receptores de acetilcolina no músculo, causando paralisia. A @fig-sinapse mostra, portanto, não só como neurônios conversam, mas onde essa conversa pode ser grampeada.
+
+::: {.na-pratica}
+**Por que um remédio psiquiátrico demora semanas para agir.** Se os ISRS aumentam a serotonina na fenda em horas, por que o alívio da depressão costuma levar de duas a quatro semanas? Esse descompasso é uma das evidências mais fortes contra a tese simplista do "desequilíbrio químico": se bastasse elevar a serotonina, o efeito seria rápido. A demora sugere que o que importa não é o nível imediato do neurotransmissor, mas as **adaptações lentas** que ele desencadeia — mudanças na sensibilidade dos receptores, na expressão de genes, na plasticidade sináptica (Cap. 28). O remédio abre uma janela; a mudança terapêutica acontece na reorganização que se segue. Isso também ajuda a entender por que interromper a medicação por conta própria, sentindo-se melhor após alguns dias, costuma ser precoce — o Vol 14 trata do assunto com o cuidado clínico devido.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **A doutrina do neurônio** — o cérebro é feito de células discretas que se comunicam por contato, não uma rede contínua — é o que torna possível uma ciência dos circuitos e da aprendizagem. Neurônios não agem sozinhos: a glia os sustenta e regula.
+- **O neurônio tem uma divisão de trabalho:** dendritos recebem, o corpo celular integra e soma, o axônio conduz, os terminais transmitem. A mielina, com seus nós de Ranvier, acelera a condução.
+- **O sinal elétrico é o potencial de ação**, uma inversão rápida da voltagem da membrana causada pelo fluxo de sódio e potássio. Ele obedece à **lei do tudo-ou-nada**: dispara com amplitude fixa ou não dispara. A intensidade do estímulo é codificada na **frequência**, não na amplitude.
+- **A comunicação entre neurônios é química.** Na sinapse, o impulso elétrico libera neurotransmissores que atravessam a fenda, ligam-se a receptores e alteram o potencial da célula seguinte — para mais perto (excitatório) ou mais longe (inibitório) do limiar. O neurônio soma milhares desses sinais antes de decidir disparar.
+- **Cada neurotransmissor tem múltiplos papéis** conforme o circuito e o receptor. Slogans como "serotonina = felicidade" e a tese do "desequilíbrio químico" da depressão não se sustentam: a função está no circuito, não na molécula isolada.
+- **A dopamina sinaliza erro de previsão de recompensa**, não prazer puro — a base biológica da aprendizagem por reforço.
+- **Drogas e psicofármacos agem em pontos específicos da sinapse**, como agonistas (aumentam o efeito) ou antagonistas (reduzem). O mapa da sinapse é o mapa da psicofarmacologia.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Neurônio**
+:   Célula especializada em receber, integrar e transmitir sinais; unidade básica do sistema nervoso.
+
+**Doutrina do neurônio**
+:   Princípio de que o sistema nervoso é composto de células individuais e distintas que se comunicam por contato, não uma rede contínua [@cajal1899].
+
+**Glia**
+:   Células não neuronais do sistema nervoso que sustentam, isolam, nutrem e regulam os neurônios e a transmissão sináptica.
+
+**Bainha de mielina**
+:   Revestimento gorduroso e segmentado do axônio, produzido pela glia, que acelera a condução do impulso por meio da condução saltatória entre os nós de Ranvier.
+
+**Potencial de repouso**
+:   Diferença de voltagem (cerca de $-70$ mV) mantida ativamente através da membrana do neurônio em repouso.
+
+**Potencial de ação**
+:   Inversão rápida e transitória da voltagem da membrana que propaga o sinal pelo axônio, gerada pelo fluxo de sódio e potássio.
+
+**Lei do tudo-ou-nada**
+:   Princípio de que o potencial de ação dispara com amplitude fixa uma vez atingido o limiar, ou não dispara; a intensidade do estímulo é codificada na frequência.
+
+**Período refratário**
+:   Breve intervalo após um potencial de ação em que o neurônio não pode disparar de novo, garantindo o sentido único e limitando a frequência.
+
+**Sinapse**
+:   Ponto de comunicação entre dois neurônios, composto pelo terminal pré-sináptico, a fenda e a membrana pós-sináptica.
+
+**Neurotransmissor**
+:   Molécula liberada na fenda sináptica que se liga a receptores da célula seguinte, produzindo efeito excitatório ou inibitório.
+
+**Recaptação**
+:   Reabsorção do neurotransmissor de volta ao terminal pré-sináptico, um dos mecanismos que encerram o sinal e alvo comum de fármacos.
+
+**Agonista / Antagonista**
+:   Substância que aumenta (agonista) ou reduz (antagonista) o efeito de um neurotransmissor sobre a célula pós-sináptica.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva o percurso de um sinal desde os dendritos de um neurônio até os receptores do neurônio seguinte, nomeando cada estrutura e cada evento (potencial de ação, liberação de neurotransmissor, ligação ao receptor). Em que ponto o sinal deixa de ser elétrico e passa a ser químico?
+
+2. **(Recuperação.)** Explique a lei do tudo-ou-nada. Se todos os potenciais de ação têm a mesma amplitude, como o sistema nervoso distingue um estímulo fraco de um forte?
+
+3. **(Aplicação.)** Uma pessoa toma um medicamento que bloqueia a recaptação de serotonina. Usando o esquema agonista/antagonista, explique se o efeito líquido é de aumentar ou reduzir a atividade serotonérgica na fenda, e por quê.
+
+4. **(Reflexão crítica.)** Um anúncio afirma que um suplemento "reequilibra a dopamina e traz de volta o prazer de viver". Com base no que o capítulo diz sobre os múltiplos papéis da dopamina e sobre o achado de Schultz, aponte pelo menos duas imprecisões científicas na frase.
+
+5. **(Integração.)** O experimento de Loewi mostrou que a comunicação entre nervo e coração é química, não elétrica. Por que essa distinção — contato químico versus continuidade elétrica — é pré-condição para a ideia, desenvolvida no Cap. 28, de que a aprendizagem é a modificação de sinapses?
+
+6. **(Reflexão crítica.)** Os antidepressivos ISRS aumentam a serotonina na fenda em horas, mas o alívio clínico costuma levar semanas. Que problema esse descompasso cria para a tese de que a depressão é simplesmente um "déficit de serotonina"? Que explicação alternativa o capítulo sugere?
