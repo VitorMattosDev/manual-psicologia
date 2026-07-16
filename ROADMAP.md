@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 21 / 105 concluídos · Fase 1: 21/21 · Fase 2: 0/35 · Fase 3: 0/49
+**Progresso:** 28 / 105 concluídos · Fase 1: 21/21 · Fase 2: 7/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ — Fase 1 concluída.** Próximo: Fase 2, Vol 4 (Bases Biológicas do Comportamento).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ — Fase 1 concluída; Vol 4 (Bases Biológicas) completo.** Próximo: Fase 2, Vol 5 (Sensação e Percepção).
 
 ---
 
@@ -67,8 +67,8 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 24 | O cérebro: estruturas e funções | `capitulos/vol04-bases-biologicas/cap-24-cerebro.qmd` | ✅ |
 | 25 | Sistema endócrino e hormônios | `capitulos/vol04-bases-biologicas/cap-25-sistema-endocrino.qmd` | ✅ |
 | 26 | Genética do comportamento | `capitulos/vol04-bases-biologicas/cap-26-genetica-comportamento.qmd` | ✅ |
-| 27 | Métodos de estudo do cérebro (neuroimagem) | `capitulos/vol04-bases-biologicas/cap-27-neuroimagem.qmd` | ⬜ |
-| 28 | Plasticidade neural | `capitulos/vol04-bases-biologicas/cap-28-plasticidade.qmd` | ⬜ |
+| 27 | Métodos de estudo do cérebro (neuroimagem) | `capitulos/vol04-bases-biologicas/cap-27-neuroimagem.qmd` | ✅ |
+| 28 | Plasticidade neural | `capitulos/vol04-bases-biologicas/cap-28-plasticidade.qmd` | ✅ |
 
 ### Vol 5 — Sensação e Percepção
 | Cap | Título | Arquivo | Status |

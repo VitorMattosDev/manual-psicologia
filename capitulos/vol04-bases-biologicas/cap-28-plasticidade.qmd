@@ -1,5 +1,177 @@
 # 28. Plasticidade neural
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** plasticidade neural e explicar por que ela é a ponte entre a biologia e a aprendizagem.
+- **Enunciar** a regra de Hebb e relacioná-la ao mecanismo celular da potenciação de longa duração (LTP).
+- **Descrever** a plasticidade dependente de experiência — reorganização de mapas corticais, ambientes enriquecidos, mudanças estruturais em humanos.
+- **Explicar** o conceito de período crítico (ou sensível) e suas evidências, do sistema visual à linguagem.
+- **Analisar criticamente** os limites da plasticidade adulta e os exageros do marketing de "neuroplasticidade" e "treino cerebral".
+- **Integrar** os temas do Vol 4, entendendo o cérebro como um órgão que a experiência esculpe dentro de restrições biológicas.
 :::
+
+Este capítulo fecha o volume das bases biológicas, e o faz voltando à promessa que abriu o Vol 1: a de que os níveis de análise se influenciam nos *dois* sentidos. Até aqui, o volume descreveu sobretudo como a biologia condiciona o comportamento — como neurônios, circuitos, hormônios e genes moldam o que a mente faz. Agora o vetor se inverte. A **plasticidade neural** é a capacidade do cérebro de se modificar em resposta à experiência — e é a prova biológica de que a experiência psicológica *reescreve o substrato físico*. Aprender uma língua, praticar um instrumento, superar um trauma, recuperar-se de um AVC: cada um desses processos deixa uma marca material no cérebro. O órgão que estudamos não é um dispositivo fixo que a experiência apenas usa; é um dispositivo que a experiência continuamente refaz.
+
+Essa ideia tem consequências que atravessam todo o manual. Se a aprendizagem (Vol 7) é real, ela tem de ter um mecanismo físico — e a plasticidade é esse mecanismo. Se a psicoterapia (Vol 14) funciona, ela precisa mudar algo no cérebro — e muda. Se a reabilitação após uma lesão é possível, é porque o tecido poupado pode assumir funções perdidas. A plasticidade é, nesse sentido, o conceito que impede que "tudo está no cérebro" signifique "tudo está fixado no cérebro". Mas — e este capítulo insiste tanto na promessa quanto no limite — plasticidade não é mágica: ela opera dentro de restrições, diminui com a idade e virou, nas mãos do marketing, uma das palavras mais exageradas da divulgação científica.
+
+## Neurônios que disparam juntos: a regra de Hebb
+
+O ponto de partida teórico é uma frase de 1949 que se tornou o lema da neurociência da aprendizagem. Donald Hebb propôs que, quando um neurônio participa repetidamente de disparar outro, a conexão entre eles se fortalece [@hebb1949]. A formulação popular — "*neurons that fire together wire together*", neurônios que disparam juntos se conectam — é uma simplificação, mas capta o essencial: a experiência, ao fazer certos neurônios se ativarem em conjunto, **fortalece as sinapses** entre eles, de modo que a ativação futura de um tende a evocar a do outro. A aprendizagem, nessa visão, é a modificação seletiva de pesos sinápticos. É a ideia que o Cap. 22 antecipou ao dizer que "a aprendizagem é mudança sináptica", e é a base das redes neurais artificiais que hoje sustentam a inteligência artificial (Vol 15, Cap. 105).
+
+A @fig-hebb ilustra a ideia em dois momentos: antes, uma conexão fraca; depois da ativação coincidente repetida, uma conexão fortalecida.
+
+::: {#fig-hebb}
+```{.tikz}
+%%| filename: regra-hebb
+%%| alt: Diagrama em dois painéis lado a lado ilustrando a regra de Hebb. No painel esquerdo, rotulado "antes", dois neurônios (A e B) estão ligados por uma sinapse representada por uma seta fina, indicando conexão fraca. No painel direito, rotulado "depois da coativação repetida", os mesmos dois neurônios estão ligados por uma seta grossa, indicando conexão fortalecida. Entre os painéis, uma seta larga com o rótulo "disparam juntos, repetidamente" indica a transformação.
+\begin{tikzpicture}[scale=1.0,
+  neur/.style={circle, draw, thick, minimum size=0.9cm, font=\small}
+]
+  % painel antes
+  \node[neur, draw=manualblue, fill=manualblue!15] (a1) at (0,0) {A};
+  \node[neur, draw=manualred, fill=manualred!12] (b1) at (2.4,0) {B};
+  \draw[->, >=Stealth, thin, manualgray] (a1) -- (b1);
+  \node[font=\footnotesize, text=manualgray] at (1.2,-1.0) {conexão fraca};
+  \node[font=\small\bfseries, text=manualgray] at (1.2,1.2) {antes};
+
+  % seta de transformacao
+  \draw[-{Stealth[length=4mm]}, line width=3pt, manualgreen] (3.6,0) -- (5.2,0);
+  \node[font=\footnotesize, text=manualgreen!50!black, align=center] at (4.4,0.85) {disparam juntos,};
+  \node[font=\footnotesize, text=manualgreen!50!black, align=center] at (4.4,0.55) {repetidamente};
+
+  % painel depois
+  \node[neur, draw=manualblue, fill=manualblue!15] (a2) at (6.4,0) {A};
+  \node[neur, draw=manualred, fill=manualred!12] (b2) at (8.8,0) {B};
+  \draw[->, >=Stealth, line width=2.2pt, manualgreen] (a2) -- (b2);
+  \node[font=\footnotesize, text=manualgray] at (7.6,-1.0) {conexão fortalecida};
+  \node[font=\small\bfseries, text=manualgray] at (7.6,1.2) {depois};
+\end{tikzpicture}
+```
+A regra de Hebb. A ativação coincidente e repetida de dois neurônios fortalece a sinapse entre eles — o traço físico da aprendizagem.
+:::
+
+A regra de Hebb foi, por décadas, uma hipótese sem mecanismo. O mecanismo veio nos anos 1970.
+
+::: {.base-neural}
+**LTP: a sinapse que aprende.** Em 1973, Timothy Bliss e Terje Lømo descobriram, no hipocampo, que uma rajada breve e intensa de estimulação numa via deixava suas sinapses *fortalecidas* por horas, dias ou mais — um aumento duradouro na eficiência da transmissão que chamaram de **potenciação de longa duração** (LTP, de *long-term potentiation*) [@blisslomo1973]. A LTP é o candidato mais forte a substrato celular da memória: ela é hebbiana (depende da atividade coincidente de pré e pós-sináptico), ocorre justamente no hipocampo (a estrutura que o caso H.M. mostrou ser essencial à formação de memórias, Cap. 24) e envolve o glutamato, o principal neurotransmissor excitatório (Cap. 22). Décadas de pesquisa ligaram a LTP à aprendizagem em animais: bloquear os receptores envolvidos impede tanto a LTP quanto a formação de certas memórias. Não é o quadro completo da memória — mas é a demonstração de que a "mudança sináptica" de Hebb é um fenômeno físico real e mensurável.
+:::
+
+## O cérebro esculpido pela experiência
+
+Se as sinapses mudam com o uso, então o cérebro inteiro deve trazer a marca da história de quem o carrega. Três linhas de evidência, de ratos a taxistas, confirmam essa previsão em escalas crescentes.
+
+A primeira veio de **ambientes enriquecidos**. A partir dos anos 1960, Mark Rosenzweig e colegas criaram ratos em duas condições: uns em gaiolas sozinhas e sem estímulos, outros em gaiolas coletivas cheias de rodas, túneis e objetos que mudavam. Os ratos do ambiente enriquecido desenvolveram córtex mais espesso, neurônios com mais ramificações dendríticas e mais sinapses [@rosenzweig1962]. A experiência não só alterava o comportamento — alterava a *anatomia* do cérebro, de forma mensurável. Foi a primeira demonstração forte de que o ambiente esculpe o tecido nervoso.
+
+A segunda linha mostrou que os **mapas corticais** — como o homúnculo somatossensorial do Cap. 24 — não são fixos, mas se reorganizam conforme o uso. Michael Merzenich e outros mostraram que, se a mão de um macaco perde um dedo, a área cortical antes dedicada a ele é gradualmente "reaproveitada" pelos dedos vizinhos; e que treinar intensamente um dedo *expande* sua representação cortical. O mapa do corpo no cérebro é redesenhado pela experiência ao longo de toda a vida. Isso explica, entre outras coisas, por que músicos de corda têm representação cortical ampliada dos dedos da mão que digita as notas.
+
+A terceira, e mais impactante para o público, levou a questão ao cérebro humano adulto.
+
+::: {.experimento}
+**O hipocampo dos taxistas de Londres** [@maguire2000]
+
+**Desenho.** Para obter licença, os taxistas de Londres precisam decorar o labirinto de milhares de ruas da cidade — o célebre exame chamado "The Knowledge", que leva anos de estudo. Eleanor Maguire e colegas usaram ressonância magnética estrutural para comparar o cérebro de taxistas experientes com o de pessoas comuns, focando o hipocampo, estrutura ligada à memória espacial.
+
+**Resultado.** Os taxistas tinham a porção **posterior** do hipocampo maior que os controles, e o tamanho correlacionava-se com os anos de profissão: quanto mais tempo dirigindo, maior a estrutura. Estudos de acompanhamento reforçaram a interpretação causal, mostrando que o crescimento acompanhava a aprovação no exame — quem estudava e passava exibia a mudança; quem desistia, não.
+
+**Interpretação.** O uso intensivo da memória espacial estava associado à expansão física da região cerebral que a sustenta, no cérebro *adulto*. Foi uma das demonstrações mais citadas de plasticidade estrutural dependente de experiência em humanos.
+
+**Limitações.** O desenho original é correlacional (taxistas escolheram a profissão; podem diferir de saída), embora os estudos longitudinais posteriores fortaleçam a leitura causal. A amostra é pequena e específica. E há um custo aparente: a expansão posterior vinha acompanhada de desempenho pior em outras tarefas de memória — a plasticidade tem contrapartidas, não é ganho puro.
+:::
+
+Experimentos controlados confirmaram o princípio de forma prospectiva: pessoas designadas a aprender malabarismo ao longo de meses desenvolveram aumento mensurável de massa cinzenta em áreas visuais e motoras — que *regrediu* quando pararam de praticar [@draganski2004]. A plasticidade não é só construção; é também uso ou perda.
+
+## Períodos críticos: quando a janela se fecha
+
+A plasticidade não é uniforme ao longo da vida. Há janelas de desenvolvimento — os **períodos críticos** (ou, mais suavemente, **sensíveis**) — em que o cérebro é excepcionalmente moldável por certos tipos de experiência, e fora das quais a mesma experiência tem efeito muito menor. A demonstração clássica rendeu o Nobel.
+
+::: {.experimento}
+**Hubel, Wiesel e a janela da visão** [@hubel_wiesel1970]
+
+**Desenho.** David Hubel e Torsten Wiesel costuraram temporariamente fechada uma das pálpebras de gatinhos, privando um olho de estímulo visual durante diferentes períodos do desenvolvimento, e depois examinaram como o córtex visual respondia a cada olho.
+
+**Resultado.** Se a privação ocorresse durante uma janela crítica no início da vida, o córtex deixava permanentemente de responder ao olho privado — o animal ficava funcionalmente cego daquele olho, embora o olho em si estivesse intacto. As conexões corticais tinham sido "capturadas" pelo olho ativo. A mesma privação num animal adulto não produzia esse efeito: a janela já havia se fechado.
+
+**Interpretação.** O desenvolvimento normal do sistema visual *depende* de experiência visual dentro de um período crítico; sem ela, os circuitos não se formam corretamente, e o déficit se torna irreversível. Foi a prova mais limpa de que a experiência é necessária para esculpir o cérebro em janelas de tempo específicas.
+
+**Limitações.** O período crítico da visão é particularmente rígido; muitas outras capacidades têm períodos "sensíveis" mais brandos, em que a aprendizagem tardia é mais difícil, porém não impossível. Generalizar a rigidez do sistema visual para toda a cognição seria um erro.
+:::
+
+O caso humano mais dramático é o da **linguagem**. Crianças adquirem a língua materna sem esforço e sem instrução formal; adultos, mesmo dedicados, raramente alcançam a fluência nativa de um segundo idioma, sobretudo na pronúncia. E os raríssimos e trágicos casos de crianças privadas de linguagem na infância — como o de "Genie", isolada até a adolescência [@curtiss1977] — sugerem que, passada a janela sensível, a aquisição plena da gramática se torna muito difícil. O Vol 8 (Cap. 48) e o Vol 10 retomam o tema; aqui ele serve para fixar que a plasticidade tem um calendário, e que "nunca é tarde para aprender" é, biologicamente, uma meia-verdade generosa.
+
+## Reabilitação e o lado sombrio da plasticidade
+
+A plasticidade é a base biológica da esperança na reabilitação: após um AVC, tecido cerebral poupado pode, com treino intensivo, assumir parte da função perdida. Terapias como a **terapia por contenção induzida** — restringir o membro sadio para forçar o uso do membro afetado — exploram deliberadamente a reorganização cortical dependente de uso. A recuperação nunca é garantida nem completa, mas ela existe precisamente porque o cérebro adulto retém plasticidade.
+
+O mesmo mecanismo, porém, tem um lado sombrio: nem toda mudança plástica é benéfica. A reorganização cortical após a amputação de um membro pode gerar o **membro fantasma** — a sensação vívida, às vezes dolorosa, de um membro que já não existe —, quando a área cortical "órfã" é invadida por representações vizinhas. A dor crônica envolve sensibilização plástica de circuitos de dor que "aprendem" a doer. E parte do que torna os transtornos de ansiedade e o vício tão persistentes é uma plasticidade *mal-adaptativa*: circuitos que se fortaleceram na direção errada. A plasticidade, em suma, é moralmente neutra — ela grava o que for praticado, útil ou nocivo.
+
+::: {.atencao}
+**"O cérebro é infinitamente plástico" — e outros exageros.** A palavra "neuroplasticidade" virou selo de venda para uma indústria de jogos de "treino cerebral" e cursos de autoajuda que prometem reprogramar o cérebro. Três correções. **Primeira:** plasticidade não é ilimitada — ela diminui com a idade, é restringida pela arquitetura genética e pelos períodos críticos, e tem contrapartidas (o hipocampo dos taxistas cresceu à custa de outra função). **Segunda:** treinar uma tarefa melhora *aquela tarefa*, com pouca transferência para outras. Um grande estudo com dezenas de milhares de participantes concluiu que os jogos de treino cognitivo melhoram o desempenho *nos próprios jogos*, mas não em habilidades cognitivas gerais nem no cotidiano — falha a chamada "transferência ampla" [@owen2010]. **Terceira:** a plasticidade genuína que muda o cérebro é a da prática significativa e sustentada (aprender de fato uma língua, um instrumento, uma habilidade) — não a de um aplicativo por dez minutos ao dia. A plasticidade é real e importante; "reprograme seu cérebro em 21 dias" é o mito dos "10% do cérebro" (Vol 1) em roupa nova.
+:::
+
+::: {.na-pratica}
+**A promessa realista da plasticidade.** Desarmar o exagero não é motivo para desânimo — ao contrário, o que a plasticidade *de fato* garante é mais útil do que a versão mágica. Ela sustenta expectativas realistas: (1) habilidades melhoram com prática deliberada e sustentada, e a melhora tem base física — você está literalmente remodelando circuitos; (2) a especificidade importa — para melhorar em algo, pratique *aquilo*, não um proxy que promete transferência milagrosa; (3) a reabilitação após lesões faz sentido e vale o esforço, porque o cérebro poupado pode se reorganizar; (4) manter-se cognitiva, física e socialmente ativo ao longo da vida favorece a saúde cerebral no envelhecimento (Vol 10). A plasticidade não promete um cérebro sem limites; promete que o esforço dirigido deixa marcas reais — o que já é bastante.
+:::
+
+## Fechando o volume: um cérebro que a experiência esculpe
+
+Vale reunir o Vol 4 numa imagem só, porque a plasticidade a torna possível. Começamos no neurônio e em como ele dispara e conversa (Cap. 22); subimos à organização em sistemas (Cap. 23) e ao cérebro com suas estruturas localizadas em redes (Cap. 24); vimos o corpo modular o cérebro por hormônios (Cap. 25) e a herança predispor sem determinar (Cap. 26); aprendemos a interrogar criticamente os métodos que produzem esse conhecimento (Cap. 27). A plasticidade costura tudo: ela é o mecanismo pelo qual a experiência — o nível psicológico e o sociocultural do Vol 1 — volta a agir sobre o nível biológico, fechando o circuito de mão dupla que o manual prometeu desde a primeira página. O cérebro não é o destino escrito nos genes nem a tábula rasa da experiência pura; é o registro vivo, e continuamente reescrito, do encontro entre os dois. Com isso, o volume das bases biológicas cumpre seu papel: não reduzir a mente ao cérebro, mas mostrar o cérebro como o órgão onde a mente acontece — e que a mente, por sua vez, ajuda a moldar.
+
+## Síntese
+
+::: {.callout-sintese}
+- **A plasticidade neural é a capacidade do cérebro de se modificar com a experiência** — a base biológica da aprendizagem e a prova de que o nível psicológico reescreve o nível biológico (o circuito de mão dupla do Vol 1).
+- **A regra de Hebb** ("neurônios que disparam juntos se conectam") propõe que a experiência fortalece sinapses específicas; a **potenciação de longa duração (LTP)** no hipocampo é seu mecanismo celular e o principal candidato a substrato da memória.
+- **A experiência esculpe o cérebro** de forma mensurável: ambientes enriquecidos engrossam o córtex de ratos; mapas corticais se reorganizam com o uso; o hipocampo dos taxistas de Londres e a massa cinzenta de quem aprende malabarismo crescem — e regridem sem prática.
+- **Há períodos críticos (ou sensíveis):** janelas de plasticidade máxima. Hubel e Wiesel mostraram que privar um olho de visão na janela crítica causa cegueira cortical irreversível; a aquisição plena da linguagem também depende de uma janela na infância.
+- **A plasticidade sustenta a reabilitação** (o cérebro poupado assume funções), mas tem um lado mal-adaptativo: membro fantasma, dor crônica, a persistência de ansiedade e vício. Ela grava o que for praticado, para o bem ou para o mal.
+- **Cuidado com o exagero:** a plasticidade não é ilimitada, diminui com a idade e tem contrapartidas. O "treino cerebral" melhora os próprios jogos, mas não transfere para a cognição geral. A promessa realista — prática deliberada deixa marcas físicas reais — é mais útil que a mágica.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Plasticidade neural**
+:   Capacidade do cérebro de modificar sua estrutura e função em resposta à experiência, à aprendizagem e à lesão.
+
+**Regra de Hebb**
+:   Princípio de que a conexão entre dois neurônios se fortalece quando eles são ativados de forma coincidente; base da aprendizagem sináptica [@hebb1949].
+
+**Potenciação de longa duração (LTP)**
+:   Fortalecimento duradouro da transmissão sináptica após estimulação intensa; principal candidato a mecanismo celular da memória [@blisslomo1973].
+
+**Plasticidade dependente de experiência**
+:   Modificação do cérebro em função da atividade e do uso, como a reorganização de mapas corticais e o espessamento cortical em ambientes enriquecidos [@rosenzweig1962].
+
+**Mapa cortical**
+:   Representação organizada (como o homúnculo) de uma função ou parte do corpo no córtex, que se redesenha conforme o uso.
+
+**Período crítico / sensível**
+:   Janela do desenvolvimento em que o cérebro é excepcionalmente moldável por certa experiência; fora dela, o mesmo estímulo tem efeito menor ou nulo [@hubel_wiesel1970].
+
+**Terapia por contenção induzida**
+:   Reabilitação que restringe o membro sadio para forçar o uso do afetado, explorando a reorganização cortical dependente de uso.
+
+**Membro fantasma**
+:   Sensação persistente de um membro amputado, associada à reorganização plástica do córtex somatossensorial.
+
+**Plasticidade mal-adaptativa**
+:   Mudança plástica que produz efeitos nocivos, como dor crônica ou a consolidação de circuitos de ansiedade e vício.
+
+**Transferência ampla**
+:   Hipótese (em geral não confirmada para jogos de treino cognitivo) de que treinar uma tarefa melhora habilidades cognitivas gerais e não treinadas [@owen2010].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie a regra de Hebb e explique como a LTP a realiza no nível celular. Por que faz sentido que a LTP tenha sido descoberta justamente no hipocampo?
+
+2. **(Recuperação.)** Descreva o experimento dos taxistas de Londres. Que aspecto do resultado sugere uma relação causal entre o uso da memória espacial e o tamanho do hipocampo, e que limitação do desenho original convém lembrar?
+
+3. **(Aplicação.)** Um adulto quer aprender um segundo idioma com pronúncia perfeitamente nativa. Com base no conceito de período sensível, explique por que isso é mais difícil para ele do que seria para uma criança — e por que "difícil" não é o mesmo que "impossível".
+
+4. **(Reflexão crítica.)** Um aplicativo promete "aumentar seu QI e sua memória" com dez minutos de jogos por dia. Usando o estudo de Owen e o conceito de transferência ampla, explique o que esse tipo de treino de fato melhora e o que ele provavelmente não melhora.
+
+5. **(Reflexão crítica.)** A plasticidade é frequentemente apresentada como boa notícia. Dê dois exemplos, do capítulo, em que a mesma capacidade plástica produz efeitos indesejáveis. O que esses casos revelam sobre a neutralidade do mecanismo?
+
+6. **(Integração.)** Este capítulo afirma que a plasticidade "fecha o circuito de mão dupla" entre os níveis de análise do Vol 1. Explique essa afirmação usando um exemplo concreto — por exemplo, como a psicoterapia (nível psicológico) ou o ambiente (nível sociocultural) poderia produzir mudanças mensuráveis no cérebro (nível biológico).
