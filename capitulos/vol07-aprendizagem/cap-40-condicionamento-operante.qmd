@@ -1,5 +1,174 @@
 # 40. Condicionamento operante (Skinner)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** o condicionamento operante do clássico e enunciar a lei do efeito de Thorndike.
+- **Diferenciar** reforço e punição, e cada um em suas variantes positiva e negativa, sem confundir "positivo/negativo" com "bom/mau".
+- **Explicar** modelagem, reforçadores primários e secundários, e o controle de estímulos (estímulo discriminativo).
+- **Comparar** os quatro esquemas de reforço e prever seus padrões de resposta e resistência à extinção.
+- **Avaliar** criticamente a punição como técnica e propor alternativas baseadas em reforço.
+- **Reconhecer** os limites biológicos e cognitivos do condicionamento operante (deriva instintiva, aprendizagem latente).
 :::
+
+No capítulo anterior, o organismo era essencialmente *reativo*: um estímulo evocava uma resposta, e a aprendizagem consistia em transferir esse poder a um novo sinal. Mas boa parte do comportamento não é assim eliciada — é **emitida**. O animal explora, tenta, age sobre o mundo, e o mundo responde. Quando a ação produz consequências agradáveis, ela se repete; quando produz consequências ruins, ela recua. Este é o **condicionamento operante**: aprender pela relação entre um **comportamento** e suas **consequências**. Se o condicionamento clássico explica como respostas involuntárias vêm a ser disparadas por novos sinais, o operante explica como comportamentos voluntários são esculpidos por seus resultados — e é, provavelmente, o mecanismo mais poderoso de moldagem de conduta que a psicologia descreveu.
+
+## Da lei do efeito à caixa de Skinner
+
+O ponto de partida é anterior a Skinner. **Edward Thorndike**, no fim do século XIX, colocou gatos famintos em "caixas-problema" das quais só escapavam (alcançando comida do lado de fora) ao executar certa ação — puxar um cordão, pressionar uma alavanca. Cronometrando as fugas ao longo de tentativas sucessivas, Thorndike observou que os gatos não tinham súbitos "insights": o tempo de fuga caía **gradualmente**, por tentativa e erro. As ações que davam certo eram, aos poucos, "gravadas"; as que não davam, abandonadas. Dessa curva ele extraiu a **lei do efeito** [@thorndike1898]: respostas seguidas de consequências satisfatórias tendem a se repetir; respostas seguidas de consequências desagradáveis tendem a desaparecer. Simples, e fundamental.
+
+**Burrhus Frederic Skinner** (1904–1990) retomou essa lei e a converteu num programa experimental de precisão notável (Cap. 8). Sua ferramenta, a **câmara de condicionamento operante** — a célebre "caixa de Skinner" —, permitia que um animal (rato ou pombo) emitisse livremente uma resposta (pressionar uma barra, bicar um disco) e recebesse consequências programadas (uma bolinha de comida, um choque), tudo registrado automaticamente ao longo do tempo. Skinner rejeitava explicações mentalistas: para ele, bastava mapear como as **consequências** controlam a **taxa** de resposta [@skinner1938; @skinner1953]. Introduziu também um conceito-chave, o **reforço**: um reforçador é, por definição funcional, qualquer consequência que *aumente* a probabilidade do comportamento que a produziu.
+
+## Os quatro quadrantes: reforço e punição
+
+Aqui reside a distinção que mais gera confusão entre estudantes — e que, uma vez compreendida, organiza todo o campo. Consequências podem **aumentar** ou **diminuir** um comportamento, e podem fazê-lo **adicionando** ou **retirando** algo. Cruzando as duas dimensões, obtêm-se quatro operações (@fig-quadrantes).
+
+::: {#fig-quadrantes}
+```{.tikz}
+%%| filename: quadrantes-operante
+%%| alt: Tabela de dois por dois do condicionamento operante. As colunas são adicionar um estímulo e retirar um estímulo. As linhas são aumenta e diminui o comportamento. Reforço positivo é adicionar algo agradável e aumenta o comportamento. Reforço negativo é retirar algo aversivo e aumenta o comportamento. Punição positiva é adicionar algo aversivo e diminui o comportamento. Punição negativa é retirar algo agradável e diminui o comportamento.
+\begin{tikzpicture}[font=\scriptsize]
+  % cabeçalhos de coluna
+  \node[font=\footnotesize\bfseries, align=center] at (2.3,3.1) {ADICIONA\\estímulo ($+$)};
+  \node[font=\footnotesize\bfseries, align=center] at (6.3,3.1) {RETIRA\\estímulo ($-$)};
+  % células
+  \node[rectangle, rounded corners, draw=manualgreen, fill=manualgreen!10, minimum width=3.5cm, minimum height=1.6cm, align=center] (rp) at (2.3,1.6) {\textbf{Reforço positivo}\\{\tiny (comportamento aumenta)}\\{\footnotesize dar um elogio,}\\{\footnotesize comida, dinheiro}};
+  \node[rectangle, rounded corners, draw=manualgreen, fill=manualgreen!10, minimum width=3.5cm, minimum height=1.6cm, align=center] (rn) at (6.3,1.6) {\textbf{Reforço negativo}\\{\tiny (comportamento aumenta)}\\{\footnotesize cessar uma dor,}\\{\footnotesize um barulho, uma cobrança}};
+  \node[rectangle, rounded corners, draw=manualred, fill=manualred!10, minimum width=3.5cm, minimum height=1.6cm, align=center] (pp) at (2.3,-0.2) {\textbf{Punição positiva}\\{\tiny (comportamento diminui)}\\{\footnotesize aplicar um choque,}\\{\footnotesize uma repreensão}};
+  \node[rectangle, rounded corners, draw=manualred, fill=manualred!10, minimum width=3.5cm, minimum height=1.6cm, align=center] (pn) at (6.3,-0.2) {\textbf{Punição negativa}\\{\tiny (comportamento diminui)}\\{\footnotesize retirar um privilégio,}\\{\footnotesize o celular, o recreio}};
+\end{tikzpicture}
+```
+Os quatro quadrantes do condicionamento operante. **Reforço** (verde) sempre *aumenta* o comportamento; **punição** (vermelho) sempre o *diminui*. **Positivo** significa *adicionar* um estímulo; **negativo**, *retirar* um estímulo — não têm valor moral.
+:::
+
+O erro mais comum é ler "positivo" como "bom" e "negativo" como "ruim". Não. **Positivo** significa *acrescentar* um estímulo ao ambiente; **negativo**, *remover* um estímulo. E **reforço** sempre aumenta o comportamento; **punição** sempre o diminui. Combinando:
+
+- **Reforço positivo**: adiciona-se algo agradável e o comportamento aumenta. Elogiar uma criança que arrumou o quarto; pagar por um trabalho.
+- **Reforço negativo**: retira-se algo aversivo e o comportamento aumenta. Tomar um analgésico *remove* a dor de cabeça — e a ação de tomar o remédio se fortalece. Apertar o cinto *cessa* o bipe irritante do carro. Cuidado: reforço negativo **não** é punição; ele *reforça* (aumenta) o comportamento que faz o desconforto cessar.
+- **Punição positiva**: adiciona-se algo aversivo e o comportamento diminui. Uma multa, uma repreensão, um choque.
+- **Punição negativa**: retira-se algo agradável e o comportamento diminui. Tirar o celular do adolescente, suspender um privilégio, o "tempo de castigo" (*time-out*).
+
+O reforço negativo, por reforçar a **esquiva** e a **fuga**, é o motor de muitos comportamentos persistentes e clinicamente importantes — inclusive a manutenção de fobias (evitar o objeto temido alivia a ansiedade, o que reforça a evitação) e de compulsões (o ritual do TOC reduz o desconforto, reforçando o ritual). Voltaremos a isso no Cap. 78 e no Cap. 90.
+
+## Modelando comportamentos novos
+
+Um reforçador só age sobre um comportamento que *já ocorreu*. Como, então, instalar um comportamento complexo que o animal nunca emite espontaneamente — um pombo que dá voltas ou joga pingue-pongue? A resposta de Skinner foi a **modelagem** (*shaping*): reforçar **aproximações sucessivas** do comportamento-alvo. Reforça-se primeiro qualquer movimento na direção certa; depois, só movimentos mais próximos; e assim, passo a passo, o critério vai se estreitando até que só o desempenho final seja reforçado. A modelagem é como a aprendizagem constrói repertórios inteiramente novos — do bebê que aprende a falar (dos balbucios aos fonemas às palavras) ao cirurgião que aperfeiçoa um gesto — e é a técnica central de qualquer adestramento e de boa parte da educação.
+
+Nem todo reforçador nasce igual. Os **reforçadores primários** satisfazem necessidades biológicas diretas — comida, água, calor, sexo — e não precisam ser aprendidos. Os **reforçadores secundários** (ou condicionados) adquirem seu poder por associação com os primários: o dinheiro, as notas, as fichas, o elogio nada valem em si, mas foram emparelhados com coisas que valem. É condicionamento clássico a serviço do operante. A **economia de fichas** (*token economy*), usada em escolas, clínicas e instituições, explora justamente isso: fichas trocáveis por recompensas reais reforçam de imediato os comportamentos desejados.
+
+::: {.na-pratica}
+**O estímulo discriminativo: comportamento sob controle do contexto.** O comportamento operante raramente ocorre a qualquer hora — ele é sinalizado. Um **estímulo discriminativo** (E^D^) é uma pista que indica que o reforço está disponível *agora*. O pombo aprende a bicar o disco só quando a luz está acesa (E^D^), pois só então bicar produz comida. No cotidiano, o telefone tocando sinaliza que atender será reforçado; a placa "aberto" sinaliza que entrar na loja compensa; o semáforo verde sinaliza que avançar é seguro. Aprender *quando* um comportamento compensa — o **controle de estímulos** — é tão importante quanto aprender *qual* comportamento compensa. É por isso que agimos de modos diferentes na biblioteca e no estádio: contextos distintos sinalizam contingências distintas.
+:::
+
+## Esquemas de reforço
+
+Na vida real, o reforço raramente segue *cada* resposta. Skinner e Charles Ferster catalogaram sistematicamente os **esquemas de reforço** — as regras que determinam *quando* uma resposta é reforçada — e descobriram que cada esquema gera um padrão de comportamento característico e altamente previsível [@ferster_skinner1957]. O reforço **contínuo** (toda resposta reforçada) produz aprendizagem rápida, mas também extinção rápida quando cessa. Os esquemas **intermitentes** (parciais) aprendem mais devagar, porém geram comportamento muito mais **resistente à extinção** — o chamado *efeito do reforço parcial*. Há quatro tipos básicos, cruzando **razão** (conta respostas) *versus* **intervalo** (conta tempo) e **fixo** *versus* **variável** (@fig-esquemas):
+
+::: {#fig-esquemas}
+```{.tikz}
+%%| filename: esquemas-reforco
+%%| alt: Quatro curvas cumulativas de resposta ao longo do tempo, uma para cada esquema de reforço. Razão variável tem a inclinação mais alta e constante. Razão fixa tem inclinação alta com pequenas pausas após cada reforço. Intervalo variável tem inclinação moderada e estável. Intervalo fixo tem o padrão em festão, com pausas seguidas de aceleração.
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[->, thick] (0,0) -- (5.6,0) node[right, font=\tiny] {tempo};
+  \draw[->, thick] (0,0) -- (0,4.2) node[above, font=\tiny, align=center] {respostas\\acumuladas};
+  % Razão variável: mais íngreme, reta
+  \draw[very thick, manualred] (0,0) -- (4.2,3.9);
+  \node[text=manualred, font=\tiny\bfseries] at (4.6,3.8) {RV};
+  % Razão fixa: íngreme com degraus (pausas)
+  \draw[very thick, manualblue] (0,0) -- (1.0,1.0) -- (1.3,1.0) -- (2.3,2.0) -- (2.6,2.0) -- (3.6,3.0) -- (3.9,3.0);
+  \node[text=manualblue, font=\tiny\bfseries] at (4.3,3.0) {RF};
+  % Intervalo variável: moderado, reto
+  \draw[very thick, manualgreen] (0,0) -- (4.8,2.2);
+  \node[text=manualgreen!50!black, font=\tiny\bfseries] at (5.1,2.2) {IV};
+  % Intervalo fixo: festão
+  \draw[very thick, manualyellow!70!black] (0,0) .. controls (0.8,0.1) and (1.0,0.9) .. (1.2,1.0)
+      .. controls (1.8,1.05) and (2.0,1.5) .. (2.4,1.6)
+      .. controls (3.0,1.65) and (3.2,2.0) .. (3.6,2.1)
+      .. controls (4.2,2.15) and (4.4,2.5) .. (4.8,2.6);
+  \node[text=manualyellow!50!black, font=\tiny\bfseries] at (5.1,2.6) {IF};
+\end{tikzpicture}
+```
+Padrões típicos de resposta (curvas cumulativas) por esquema. A **razão variável** (RV) gera a taxa mais alta e constante; a **razão fixa** (RF), taxas altas com breve pausa pós-reforço; o **intervalo variável** (IV), taxa moderada e estável; o **intervalo fixo** (IF), o padrão "em festão" (pausa seguida de aceleração perto do momento do reforço).
+:::
+
+- **Razão fixa (RF)**: reforço após um número fixo de respostas (p. ex., a cada 10 peças montadas). Taxa alta, com pausa após cada reforço.
+- **Razão variável (RV)**: reforço após um número *variável* e imprevisível de respostas. Gera a taxa mais alta e persistente, e a maior resistência à extinção — é o esquema das **máquinas caça-níqueis** e de boa parte do jogo de azar. Como nunca se sabe qual resposta será a premiada, não se para nunca.
+- **Intervalo fixo (IF)**: reforço da primeira resposta após um intervalo fixo de tempo (p. ex., checar o forno que assa em 30 min). Produz o padrão "em festão": pouca resposta logo após o reforço, aceleração conforme o momento se aproxima. É o comportamento do estudante que só estuda às vésperas da prova periódica.
+- **Intervalo variável (IV)**: reforço da primeira resposta após um intervalo *variável*. Taxa moderada, estável e resistente — como checar o e-mail ou as redes, cujas novidades chegam em momentos imprevisíveis.
+
+A lição prática é poderosa: **a imprevisibilidade prende**. Os esquemas de razão e intervalo *variáveis* — cujo reforço nunca se sabe quando virá — produzem os comportamentos mais persistentes e mais difíceis de extinguir. Não é por acaso que o desenho de caça-níqueis, jogos e redes sociais converge para o esquema de razão variável.
+
+## O problema da punição
+
+Se o reforço aumenta comportamento e a punição o diminui, por que os psicólogos comportamentais preferem, quase sempre, o reforço? Porque a punição — sobretudo a punição positiva severa — tem custos e limitações bem documentados. Ela **suprime**, mas não **ensina**: diz ao organismo o que *não* fazer, sem indicar o que fazer no lugar, de modo que o comportamento indesejado tende a ressurgir na ausência do punidor (ou a migrar para onde ele não vê). Gera **medo e agressão**, frequentemente condicionados ao próprio punidor (por condicionamento clássico), corroendo a relação. Ensina **por modelação** que a agressão é um modo aceitável de resolver conflitos (tema do Cap. 41). E é reforço negativo *para quem pune* — punir "funciona" no curtíssimo prazo, o que reforça o hábito de punir, mesmo quando é contraproducente a longo prazo.
+
+Isso não significa que a punição jamais tenha lugar, mas que, quando usada, deve ser imediata, consistente, proporcional, acompanhada de explicação e — crucialmente — **combinada com o reforço da alternativa desejada**. Na maioria dos casos, uma estratégia baseada em reforçar o comportamento incompatível desejado (e, quando necessário, extinguir ou aplicar punição negativa branda, como o *time-out*) é mais eficaz e menos danosa.
+
+## Os limites do condicionamento operante
+
+Como no capítulo anterior, a biologia e a cognição impõem fronteiras ao alcance do princípio.
+
+::: {.experimento}
+🔬 **A deriva instintiva (Breland e Breland).** Keller e Marian Breland, ex-alunos de Skinner, montaram um negócio de adestramento animal para shows e propagandas — e toparam com um fenômeno que os intrigou. Ao tentar ensinar um guaxinim a depositar moedas numa caixa (por reforço), o animal, com a prática, passava a *esfregar* as moedas uma na outra em vez de soltá-las, como se as "lavasse" — exatamente o comportamento instintivo de manipular alimento da espécie. Porcos treinados a carregar moedas passavam a fuçá-las no chão. Os Breland chamaram isso de **deriva instintiva**: comportamentos condicionados tendem a "derivar" na direção de padrões de ação fixos, instintivos, da espécie, sobrepondo-se ao que o reforço tenta instalar [@breland1961]. A conclusão, em seu artigo de título irônico ("A má conduta dos organismos"), foi que o condicionamento opera *dentro* de limites biológicos, não sobre um organismo infinitamente maleável — o mesmo recado do efeito Garcia, agora do lado operante.
+:::
+
+Há ainda o limite **cognitivo**, que abre o Cap. 42: a aprendizagem pode ocorrer *sem* reforço aparente e *sem* mudança imediata de comportamento — como na **aprendizagem latente** de Tolman, em que ratos que exploravam um labirinto sem recompensa demonstravam, ao serem depois recompensados, que haviam aprendido o traçado o tempo todo, mas sem exibi-lo [@tolman_honzik1930]. Isso sugere que, entre o comportamento e a consequência, existe um organismo que *processa informação* — expectativas, mapas, representações — e não apenas uma caixa que associa. É a fenda por onde a revolução cognitiva (Cap. 12) entrou na psicologia da aprendizagem.
+
+## Síntese
+
+::: {.callout-sintese}
+- O **condicionamento operante** é a aprendizagem pela relação entre um **comportamento** e suas **consequências**. Sua raiz é a **lei do efeito** de Thorndike; sua formalização, o programa de Skinner e a "caixa de Skinner".
+- **Reforço** aumenta o comportamento; **punição** o diminui. **Positivo** = adicionar um estímulo; **negativo** = retirar um estímulo. Daí os quatro quadrantes — não confundir "negativo" com "punição".
+- **Modelagem** instala comportamentos novos por aproximações sucessivas. Reforçadores **primários** (biológicos) e **secundários** (aprendidos, como dinheiro). O **estímulo discriminativo** sinaliza quando o reforço está disponível.
+- Os quatro **esquemas de reforço** (razão/intervalo × fixo/variável) geram padrões previsíveis. Os **variáveis** produzem as taxas mais altas e a maior resistência à extinção — a base do jogo e das redes.
+- A **punição** suprime sem ensinar, gera medo e agressão e reforça quem pune; o reforço da alternativa desejada costuma ser preferível.
+- Há **limites**: a **deriva instintiva** (Breland) e a **aprendizagem latente** (Tolman) mostram que o condicionamento opera dentro de fronteiras biológicas e cognitivas.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Condicionamento operante**
+:   Aprendizagem pela relação entre um comportamento e suas consequências.
+
+**Lei do efeito**
+:   Respostas seguidas de consequências satisfatórias tendem a se repetir; as seguidas de desagradáveis, a desaparecer [@thorndike1898].
+
+**Reforço / punição**
+:   Consequência que aumenta (reforço) ou diminui (punição) a probabilidade do comportamento que a produziu.
+
+**Positivo / negativo**
+:   Adicionar (positivo) ou retirar (negativo) um estímulo — descrição da operação, sem valor moral.
+
+**Reforço negativo**
+:   Retirar um estímulo aversivo, o que *aumenta* o comportamento de fuga ou esquiva (não é punição).
+
+**Modelagem (shaping)**
+:   Instalar um comportamento novo reforçando aproximações sucessivas do alvo.
+
+**Reforçador primário / secundário**
+:   Que satisfaz necessidade biológica direta / que ganhou poder por associação (dinheiro, elogio, fichas).
+
+**Estímulo discriminativo (E^D^)**
+:   Pista que sinaliza que o reforço está disponível para determinado comportamento; base do controle de estímulos.
+
+**Esquemas de reforço**
+:   Regras de *quando* reforçar (razão/intervalo × fixo/variável), cada uma com padrão de resposta próprio [@ferster_skinner1957].
+
+**Deriva instintiva**
+:   Tendência de comportamentos condicionados a derivar para padrões instintivos da espécie, limitando o condicionamento [@breland1961].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Classifique cada situação nos quatro quadrantes: (a) colocar cinto para o bipe parar; (b) ganhar um bônus por meta batida; (c) perder o fim de semana livre por chegar atrasado; (d) levar uma multa por excesso de velocidade.
+
+2. **(Conceitual.)** Por que reforço negativo **não** é punição? Dê um exemplo em que a mesma remoção de estímulo reforça um comportamento em vez de puni-lo.
+
+3. **(Aplicação.)** Você quer ensinar um cão a rolar. Descreva um plano de **modelagem** por aproximações sucessivas.
+
+4. **(Reflexão crítica.)** Por que o esquema de **razão variável** produz os comportamentos mais resistentes à extinção? Ligue sua resposta ao design de caça-níqueis e de redes sociais.
+
+5. **(Avaliação.)** Liste três problemas da punição positiva severa e proponha uma alternativa baseada em reforço para reduzir um comportamento indesejado numa sala de aula.
+
+6. **(Integração.)** A **deriva instintiva** e a **aprendizagem latente** apontam limites do condicionamento operante em direções diferentes — uma biológica, outra cognitiva. Explique cada uma e o que ela revela.
