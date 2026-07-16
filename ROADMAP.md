@@ -83,7 +83,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 6 — Consciência
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 35 | A natureza da consciência | `capitulos/vol06-consciencia/cap-35-natureza-consciencia.qmd` | ⬜ |
+| 35 | A natureza da consciência | `capitulos/vol06-consciencia/cap-35-natureza-consciencia.qmd` | ✅ |
 | 36 | Sono e ritmos circadianos | `capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd` | ⬜ |
 | 37 | Sonhos | `capitulos/vol06-consciencia/cap-37-sonhos.qmd` | ⬜ |
 | 38 | Estados alterados (hipnose, meditação, substâncias psicoativas) | `capitulos/vol06-consciencia/cap-38-estados-alterados.qmd` | ⬜ |

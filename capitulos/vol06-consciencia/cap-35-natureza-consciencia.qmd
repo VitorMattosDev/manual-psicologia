@@ -1,5 +1,154 @@
 # 35. A natureza da consciência
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** consciência e distinguir seus dois eixos: o nível (vigília) e o conteúdo (aquilo de que se está consciente).
+- **Formular** o "problema difícil" da consciência e diferenciá-lo dos problemas "fáceis".
+- **Comparar** as principais teorias científicas — espaço de trabalho global e informação integrada.
+- **Interpretar** evidências de processamento inconsciente (visão cega, priming) e o que revelam sobre os limites da consciência.
+- **Analisar** os experimentos de Libet e o cérebro dividido quanto às suas implicações para a unidade do "eu" e o livre-arbítrio.
+- **Reconhecer** os correlatos neurais da consciência e as questões éticas dos transtornos da consciência.
 :::
+
+Abrimos aqui o Vol 6, dedicado ao mais íntimo e mais elusivo dos objetos da psicologia: a **consciência**. O volume anterior mostrou que perceber é construir; agora perguntamos *quem* é o espectador desse quadro — e como a ciência pode estudar algo tão privado quanto a experiência de estar vivo e desperto. A consciência é, ao mesmo tempo, o que há de mais óbvio (nada é mais evidente para você do que o fato de estar consciente agora) e o que há de mais difícil de explicar (como um punhado de neurônios produz a sensação de vermelho, de dor, de você?). Este capítulo mapeia o terreno: define o problema, apresenta as teorias que disputam explicá-lo e reúne as evidências — muitas vindas de casos extremos, como cérebros lesionados ou divididos — que transformaram a consciência de tema filosófico em programa de pesquisa empírico.
+
+## O que é consciência? Dois eixos
+
+Poucas palavras da psicologia carregam tantos sentidos quanto "consciência". Convém separar dois eixos independentes. O primeiro é o **nível** de consciência — o quão desperto e alerta se está —, que varia num contínuo do coma ao sono, à sonolência e à vigília plena. O segundo é o **conteúdo** da consciência — aquilo *de que* se está consciente num dado momento: esta frase, uma coceira no pé, uma lembrança que aflora. Os dois eixos são dissociáveis: no sonho, o nível é baixo (dormimos) mas há conteúdo vívido; sob anestesia, ambos desaparecem. Definiremos **consciência** como a experiência subjetiva imediata — de sensações, pensamentos e do próprio self — de que dispomos quando despertos (e, de outro modo, quando sonhamos).
+
+Uma distinção filosófica influente, de Ned Block, refina o segundo eixo [@block1995]. A **consciência de acesso** é a informação disponível para guiar o raciocínio, a fala e a ação — o que você pode relatar e usar. A **consciência fenomenal** é o *sentir* em si, o caráter qualitativo da experiência: a vermelhidão do vermelho, a dolorosidade da dor. Esses caracteres subjetivos são os **qualia**. A distinção importa porque a ciência mede bem o acesso (pelo relato e pelo comportamento) mas tropeça no fenomenal — e é justamente aí que mora a dificuldade maior.
+
+## O problema difícil
+
+O filósofo David Chalmers cristalizou essa dificuldade separando os problemas "fáceis" do **problema difícil** da consciência [@chalmers1995]. Os problemas *fáceis* — que de fáceis só têm o nome — são os mecanismos funcionais: como o cérebro discrimina estímulos, integra informação, controla o comportamento, produz relatos verbais. São difíceis na prática, mas em princípio abordáveis pela neurociência: descreve-se um mecanismo e pronto. O problema *difícil* é outro: **por que** todo esse processamento é acompanhado de experiência subjetiva? Por que não somos "zumbis" — sistemas que processam informação e se comportam de modo idêntico, mas sem que haja nada que seja *como* ser eles por dentro? Explicar a função não parece explicar o sentir.
+
+Thomas Nagel formulara a mesma intuição num ensaio célebre: existe algo que é *como ser* um morcego — a experiência de perceber o mundo por ecolocalização —, e nenhuma descrição física completa do cérebro do morcego parece capturar esse ponto de vista subjetivo [@nagel1974]. O problema difícil não tem solução consensual, e as posições variam do fisicalismo (a experiência *é* processo físico, ainda que não saibamos explicar como) ao dualismo de propriedades (a experiência é uma propriedade irredutível). A boa notícia para a psicologia é que não é preciso resolver o problema difícil para fazer ciência da consciência: pode-se investigar rigorosamente *quais* processos cerebrais acompanham *quais* experiências — os correlatos neurais — deixando em aberto a questão metafísica última.
+
+::: {.atencao}
+**"Consciência" não é uma coisa só.** No uso cotidiano, "consciência" mistura pelo menos quatro sentidos que a psicologia mantém separados: (1) estar **desperto** (nível), (2) estar **ciente** de algo específico (conteúdo/acesso), (3) o **sentir** subjetivo (fenomenal, qualia) e (4) a **autoconsciência** — reconhecer-se como um self, refletir sobre os próprios estados. São coisas distintas: um recém-nascido é desperto e senciente sem plena autoconsciência; um sonâmbulo age sem consciência de acesso. Confundir esses sentidos gera pseudodebates. Ao ler "consciência", pergunte sempre: em qual dos sentidos?
+:::
+
+## Teorias científicas da consciência
+
+Se não podemos resolver o problema difícil, podemos ao menos construir teorias que digam *quando* e *por que* um processo se torna consciente. Duas dominam o cenário atual (@fig-teorias-consciencia).
+
+A **teoria do espaço de trabalho global** (*global workspace*), de Bernard Baars e desenvolvida em versão neural por Stanislas Dehaene, compara a mente a um teatro [@baars1988; @dehaene2014]. Inúmeros processos especializados operam em paralelo, inconscientes, nos "bastidores". A consciência é o **palco iluminado**: um espaço de trabalho de capacidade limitada onde uma informação é "transmitida" (*broadcast*) globalmente para todo o sistema, tornando-se disponível à memória, à linguagem, ao planejamento e ao relato. Tornar-se consciente, nessa visão, é ganhar acesso a esse palanque de difusão — o que Dehaene associa a uma "ignição" súbita e ampla de redes fronto-parietais quando o estímulo cruza um limiar. A teoria explica bem a consciência de *acesso* e por que sua capacidade é tão restrita (só um ator ocupa o centro do palco de cada vez).
+
+A **teoria da informação integrada** (IIT), de Giulio Tononi, ataca o problema por outro ângulo [@tononi2004]. Ela parte não do cérebro, mas de propriedades que toda experiência tem: cada experiência é ao mesmo tempo **integrada** (você vive uma cena única, não cor e forma separadas) e **diferenciada** (é uma entre um vasto repertório de experiências possíveis). A IIT propõe que a consciência *é* a informação integrada de um sistema, quantificada por uma medida chamada Φ (fi): quanto mais um sistema gera informação como um todo irredutível às suas partes, mais consciente ele é. A teoria faz previsões contraintuitivas — o cerebelo, com seus bilhões de neurônios, contribuiria pouco para a consciência por ter conectividade pouco integrada — e é matematicamente ambiciosa, mas criticada por ser difícil de testar e por implicar que sistemas simples teriam um mínimo de experiência. As duas teorias não são necessariamente rivais totais: uma foca no *acesso e difusão*, a outra na *integração*; ambas buscam o que Francis Crick e Christof Koch chamaram de **correlatos neurais da consciência** — o conjunto mínimo de eventos neurais suficiente para uma experiência específica [@crick_koch1990].
+
+::: {#fig-teorias-consciencia}
+```{.tikz}
+%%| filename: teorias-consciencia
+%%| alt: Dois painéis. À esquerda, a teoria do espaço de trabalho global, representada como vários módulos inconscientes em volta de um palco central iluminado; um dos módulos tem seu conteúdo transmitido (broadcast) para todos os outros, tornando-se consciente. À direita, a teoria da informação integrada, representada por um conjunto de nós muito interligados formando um todo integrado, com o símbolo Phi indicando a medida de integração.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  % ---- Painel esquerdo: espaço de trabalho global ----
+  \node[font=\footnotesize\bfseries, text=manualblue] at (0,3.1) {Espaço de trabalho global};
+  \node[circle, draw=manualyellow!70!black, fill=manualyellow!20, thick, minimum size=1.3cm, align=center] (pal) at (0,1.1) {palco\\(broadcast)};
+  \foreach \a/\lab in {90/percepção, 162/memória, 234/linguagem, 306/emoção, 18/ação}{
+    \node[circle, draw=manualgray, minimum size=0.7cm, font=\tiny] (m\a) at (\a:2.1) {\lab};
+    \draw[->, manualgray] (pal) -- (m\a);
+  }
+  % ---- Painel direito: informação integrada ----
+  \node[font=\footnotesize\bfseries, text=manualred] at (7,3.1) {Informação integrada (Φ)};
+  \foreach \i/\x/\y in {1/6.1/2.0, 2/7.1/2.3, 3/7.9/1.7, 4/6.3/1.0, 5/7.3/0.8, 6/8.0/0.6}{
+    \node[circle, draw=manualred, fill=manualred!10, minimum size=0.45cm] (n\i) at (\x,\y) {};
+  }
+  \foreach \a/\b in {1/2,1/4,2/3,2/5,3/5,3/6,4/5,5/6,2/4,1/5}{
+    \draw[manualred!60] (n\a) -- (n\b);
+  }
+  \node[font=\Large, text=manualred] at (7.1,-0.1) {$\Phi$};
+  \node[font=\tiny, text=manualgray, align=center] at (7.1,-0.7) {todo irredutível\\às partes};
+\end{tikzpicture}
+```
+Duas grandes teorias. À esquerda, o espaço de trabalho global: a consciência é o "palco" que difunde uma informação a todos os módulos, tornando-a acessível ao relato e à ação. À direita, a informação integrada: a consciência é a informação que o sistema gera como um todo unificado e irredutível, medida por Φ.
+:::
+
+## O inconsciente cognitivo: quanto acontece sem consciência
+
+Uma das descobertas centrais da psicologia moderna é que a maior parte do processamento mental é **inconsciente** — não no sentido freudiano de desejos reprimidos (Cap. 10), mas no sentido cognitivo de operações rápidas, automáticas e inacessíveis à introspecção. A percepção, a memória, a linguagem e a tomada de decisão apoiam-se em vastos processos que jamais chegam ao palco. A demonstração mais impressionante vem da neuropsicologia.
+
+::: {.experimento}
+**Visão cega (blindsight)** [@weiskrantz1974]
+
+**Desenho.** Pacientes com lesão no córtex visual primário (V1) ficam clinicamente cegos na parte correspondente do campo visual: relatam não ver *nada* ali. Lawrence Weiskrantz e colegas pediram a um desses pacientes que "adivinhasse" — por puro palpite — a localização ou a orientação de estímulos apresentados na região cega.
+
+**Resultado.** O paciente insistia que não via nada e que estava só chutando. Ainda assim, seus "palpites" acertavam muito acima do acaso: apontava a posição do estímulo, distinguia a direção de um movimento, chegava a alcançar objetos com a mão. Havia **percepção sem experiência consciente** de ver.
+
+**Interpretação.** Vias visuais que contornam V1 (via o colículo superior e outras rotas) processam a informação e guiam o comportamento, mas não bastam para gerar a experiência consciente de ver — que parece depender de V1 e do córtex associativo. A visão cega dissocia empiricamente o *processar* do *ter experiência*, oferecendo um contraste natural para caçar os correlatos neurais da consciência.
+
+**Limitações.** É um fenômeno raro, estudado em poucos pacientes, e a "consciência residual" (uma vaga sensação sem qualidade visual) é debatida. Ainda assim, é uma das evidências mais fortes de dissociação entre função e experiência.
+:::
+
+Em pessoas sem lesão, o mesmo ponto aparece no **priming subliminar**: uma palavra apresentada rápido demais para ser vista conscientemente ainda assim influencia a resposta seguinte (facilita reconhecer uma palavra relacionada), mostrando que o significado foi processado sem consciência. A lição é humilde e importante: a consciência é a ponta de um iceberg cognitivo. Ela não faz a maior parte do trabalho mental — faz um trabalho *especial* (integrar, difundir, permitir controle flexível e relato), mas repousa sobre um oceano de processamento que não sentimos acontecer.
+
+## A unidade e a autoria do self em xeque
+
+Se a consciência parece um "eu" único e no comando, dois conjuntos de achados abalam essa intuição.
+
+O primeiro é o **cérebro dividido**. Para tratar epilepsia grave, alguns pacientes tiveram o corpo caloso — o feixe que une os hemisférios — seccionado. Roger Sperry e Michael Gazzaniga mostraram que, depois disso, os dois hemisférios podem operar como duas mentes parcialmente independentes [@sperry1968; @gazzaniga2005]. Como o hemisfério esquerdo controla a fala e recebe o campo visual direito (e vice-versa), é possível mostrar uma imagem só ao hemisfério direito (mudo): o paciente diz não ter visto nada, mas sua mão esquerda seleciona o objeto correspondente. Mais revelador ainda: quando o hemisfério direito é levado a agir (por exemplo, a rir ou a apontar), o hemisfério esquerdo, que não sabe o porquê, *inventa* uma explicação plausível e a relata com convicção. Gazzaniga chamou esse mecanismo de **intérprete**: uma parte da mente que fabrica narrativas coerentes para justificar comportamentos cujas causas reais ela ignora — sugerindo que boa parte da nossa sensação de "razões" para o que fazemos é reconstrução *post hoc*.
+
+O segundo é o experimento de Benjamin Libet sobre o **timing da decisão** [@libet1983]. Pediu-se a participantes que movessem o pulso quando quisessem e anotassem, num relógio veloz, o instante em que sentiram a *vontade* consciente de mover. Libet registrava simultaneamente o **potencial de prontidão**, uma atividade cerebral que precede o movimento. O achado perturbador: a atividade cerebral preparatória começava várias centenas de milissegundos *antes* do momento em que a pessoa relatava ter *decidido* mover. A intenção consciente parecia chegar *depois* de o cérebro já ter iniciado o processo — o que muitos leram como ameaça ao livre-arbítrio (o tema das grandes questões do Cap. 2). As interpretações, porém, são muito disputadas: talvez a consciência exerça um "veto" tardio (poder de *não* agir), talvez o potencial de prontidão seja apenas ruído de fundo que às vezes cruza um limiar, talvez medir o instante subjetivo da "vontade" seja intrinsecamente impreciso. O experimento não *prova* que o livre-arbítrio é ilusão, mas destrona a imagem ingênua de um "eu" consciente que origina cada ato do nada.
+
+::: {.na-pratica}
+**Detectar consciência em quem não pode relatá-la.** Nem sempre a ausência de resposta significa ausência de consciência — e isso tem enorme peso clínico e ético. Pacientes em estado vegetativo (hoje chamado de "vigília sem responsividade") abrem os olhos mas não dão sinais de percepção. Adrian Owen e colegas pediram a uma dessas pacientes, dentro de um aparelho de ressonância funcional, que *imaginasse* jogar tênis ou caminhar pela própria casa. Espantosamente, o cérebro dela ativou exatamente as áreas motoras e espaciais esperadas — de forma indistinguível de voluntários saudáveis —, indicando que ela *compreendia os comandos e cooperava*, mesmo sem qualquer movimento [@owen2006]. Achados assim, ligados à escala de gravidade dos transtornos da consciência [@laureys2005], mostram que a neuroimagem pode flagrar consciência "encoberta" onde o exame de cabeceira não alcança — com implicações diretas para decisões sobre cuidado, dor e fim de vida.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A **consciência** tem dois eixos independentes: **nível** (do coma à vigília) e **conteúdo** (aquilo de que se está consciente). Block distingue ainda consciência de **acesso** (usável, relatável) da **fenomenal** (o sentir, os *qualia*).
+- O **problema difícil** (Chalmers) é explicar *por que* há experiência subjetiva, e não apenas função. Nagel: há algo que é "como ser" um organismo, aparentemente não capturado pela descrição física.
+- Duas grandes teorias: o **espaço de trabalho global** (Baars, Dehaene) — a consciência difunde a informação a todo o sistema — e a **informação integrada** (Tononi) — a consciência é a informação que o sistema gera como um todo unificado (Φ).
+- O **inconsciente cognitivo** é vasto: a **visão cega** e o **priming subliminar** mostram processamento sem experiência. A consciência é a ponta do iceberg mental.
+- O **cérebro dividido** (o "intérprete" que fabula razões) e o experimento de **Libet** desafiam a unidade e a autoria do self, e reacendem o debate sobre o livre-arbítrio.
+- A **neuroimagem** pode detectar consciência encoberta em pacientes sem resposta comportamental, com forte peso ético.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Consciência**
+:   Experiência subjetiva imediata de sensações, pensamentos e do self; tem um eixo de **nível** (vigília) e um de **conteúdo**.
+
+**Qualia**
+:   Os caracteres qualitativos e subjetivos da experiência (a vermelhidão do vermelho, a dolorosidade da dor).
+
+**Consciência de acesso / fenomenal**
+:   Distinção de Block: a informação disponível para raciocínio, fala e ação (acesso) *versus* o sentir em si (fenomenal) [@block1995].
+
+**Problema difícil**
+:   A questão de por que o processamento cerebral é acompanhado de experiência subjetiva, distinta dos problemas "fáceis" (funcionais) [@chalmers1995].
+
+**Espaço de trabalho global**
+:   Teoria de que a consciência é a difusão global de uma informação a múltiplos sistemas especializados [@baars1988; @dehaene2014].
+
+**Informação integrada (Φ)**
+:   Teoria de que a consciência é a informação que um sistema gera como um todo irredutível às suas partes [@tononi2004].
+
+**Correlatos neurais da consciência**
+:   O conjunto mínimo de eventos neurais suficiente para uma experiência consciente específica [@crick_koch1990].
+
+**Visão cega (blindsight)**
+:   Capacidade de responder a estímulos visuais sem experiência consciente de vê-los, após lesão em V1 [@weiskrantz1974].
+
+**Cérebro dividido**
+:   Condição, após secção do corpo caloso, em que os hemisférios operam com relativa independência; revela o "intérprete" que fabula razões [@sperry1968; @gazzaniga2005].
+
+**Potencial de prontidão**
+:   Atividade cerebral preparatória que precede um movimento voluntário, central ao experimento de Libet sobre o *timing* da decisão [@libet1983].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Distinga os dois eixos da consciência (nível e conteúdo) e dê um exemplo de estado em que eles se dissociam.
+
+2. **(Compreensão.)** Explique com suas palavras o problema difícil da consciência. Por que resolver todos os problemas "fáceis" ainda o deixaria em aberto?
+
+3. **(Comparação.)** Contraste a teoria do espaço de trabalho global e a teoria da informação integrada: o que cada uma toma como a essência da consciência?
+
+4. **(Aplicação.)** Um paciente com visão cega diz não ver nada, mas acerta a posição de objetos "no palpite". Que dissociação teórica esse caso ilustra, e por que ela interessa à busca dos correlatos neurais?
+
+5. **(Reflexão crítica.)** O "intérprete" do cérebro dividido inventa razões para atos cujas causas ignora. Que consequência isso tem para a confiança que depositamos nas explicações que damos para o nosso próprio comportamento?
+
+6. **(Integração.)** O experimento de Libet é frequentemente citado contra o livre-arbítrio (Cap. 2). Apresente uma interpretação a favor e uma contra essa conclusão, avaliando os limites metodológicos do estudo.
