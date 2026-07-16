@@ -1,5 +1,154 @@
 # 38. Estados alterados (hipnose, meditação, substâncias psicoativas)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** estado alterado de consciência e situá-lo em relação à vigília comum.
+- **Explicar** a hipnose e comparar as teorias da dissociação e sociocognitiva, distinguindo o que ela pode e não pode fazer.
+- **Distinguir** os tipos de meditação e resumir seus efeitos, apoiados em evidência, sobre atenção, estresse e o cérebro.
+- **Classificar** as substâncias psicoativas por seu efeito e descrever como agem na sinapse.
+- **Diferenciar** tolerância, dependência e adição, e descrever o circuito cerebral de recompensa.
+- **Avaliar** criticamente alegações exageradas sobre hipnose, meditação e drogas, separando evidência de mito.
 :::
+
+Encerramos o volume da consciência explorando maneiras de *alterá-la* deliberadamente. Um **estado alterado de consciência** é um padrão de experiência que difere de forma marcante da vigília desperta comum — na atenção, na percepção do tempo, no senso de self, na sugestibilidade ou no conteúdo mental. Já vimos dois estados alterados naturais: o sono e o sonho. Aqui tratamos de três vias pelas quais os seres humanos, em todas as culturas e épocas, modificam a própria consciência: a **hipnose**, a **meditação** e as **substâncias psicoativas**. As três despertam tanto fascínio quanto exagero, e por isso pedem o olhar da ciência — que, como veremos, desinfla alguns mitos populares e, ao mesmo tempo, confirma efeitos reais e por vezes clinicamente úteis.
+
+## Hipnose
+
+A **hipnose** é um estado (ou procedimento) em que, por meio de sugestão, uma pessoa experimenta alterações na percepção, na memória, na ação voluntária ou na sensação. A prática moderna descende do médico Franz Mesmer, no século XVIII, cujo "magnetismo animal" foi desmascarado por uma comissão real (que incluía Benjamin Franklin) como efeito de sugestão, não de fluido magnético — um episódio fundador da psicologia experimental. Hoje, a indução típica envolve relaxamento, foco atencional estreito e sugestões graduais. Nem todos respondem igualmente: a **suscetibilidade hipnótica** é um traço estável, medível por escalas padronizadas, em que as pessoas variam de pouco a altamente hipnotizáveis.
+
+O que a hipnose *realmente* faz é objeto de duas grandes teorias. A **teoria da dissociação**, de Ernest Hilgard, sustenta que a hipnose produz uma divisão genuína na consciência: parte do fluxo mental opera fora da percepção consciente. Hilgard descreveu um **"observador oculto"** — uma parte da mente que registraria a experiência (por exemplo, a dor) mesmo enquanto a pessoa hipnotizada relata não senti-la [@hilgard1973]. A **teoria sociocognitiva**, de Nicholas Spanos e Irving Kirsch, nega que exista um estado especial: para ela, o comportamento hipnótico resulta de expectativas, motivação, imaginação e do papel social de "estar hipnotizado" — a pessoa faz e sente aquilo que acredita ser esperado, sem que isso seja fingimento consciente [@kirsch_lynn1995]. O debate não está encerrado; a neuroimagem mostra que sugestões hipnóticas produzem, sim, mudanças reais na atividade cerebral (por exemplo, sugerir que uma cena colorida é cinza altera áreas visuais de cor), o que favorece a ideia de efeitos genuínos, sem necessariamente exigir um "estado" à parte.
+
+::: {.na-pratica}
+**Para que a hipnose serve — e para que não serve.** A aplicação mais bem sustentada por evidência é a **analgesia hipnótica**: a hipnose reduz de forma mensurável a dor em procedimentos médicos, queimaduras e partos, com metanálises confirmando o efeito [@montgomery2000]. É útil também como coadjuvante em ansiedade e em alguns hábitos. Por outro lado, a cultura popular atribui-lhe poderes que ela **não** tem. Ela *não* confere força sobre-humana, *não* obriga ninguém a agir contra valores profundos e — ponto crucial — *não* "recupera" memórias fielmente. Ao contrário: a hipnose **aumenta a confiança** no que é lembrado sem aumentar a exatidão, e pode facilitar a criação de **memórias falsas** (tema do Cap. 45). Por isso, depoimentos obtidos sob hipnose são considerados não confiáveis e restritos ou proibidos em muitos sistemas judiciais.
+:::
+
+## Meditação
+
+A **meditação** reúne práticas de treino mental, muitas de origem contemplativa milenar, hoje estudadas cientificamente e frequentemente destacadas de seu contexto religioso. É útil distinguir dois grandes tipos. Na **atenção focada**, sustenta-se a atenção num objeto único (a respiração, um som, uma imagem), retornando gentilmente a ele sempre que a mente divaga — um treino de concentração e de metacognição. No **monitoramento aberto**, em vez de fixar um objeto, observa-se o fluxo de experiências (pensamentos, sensações, emoções) à medida que surgem, sem se prender a nenhum — cultivando uma consciência receptiva e não reativa. A **atenção plena** (*mindfulness*), popularizada na clínica por Jon Kabat-Zinn no programa de redução de estresse baseado em *mindfulness* (MBSR), combina elementos dos dois e é definida como prestar atenção, de propósito e sem julgamento, ao momento presente [@kabat_zinn2003].
+
+O que a evidência mostra? Aqui convém equilíbrio, evitando tanto o descarte cético quanto o entusiasmo acrítico. Revisões sistemáticas rigorosas — a mais citada é a metanálise de Madhav Goyal e colegas — encontram efeitos **pequenos a moderados, porém reais**, dos programas de meditação sobre **ansiedade, depressão e dor**, comparáveis aos de outras intervenções ativas, mas *não* uma panaceia superior a tudo [@goyal2014]. Há também evidência de ganhos em atenção sustentada e regulação emocional com a prática regular. No cérebro, a meditação associa-se a mudanças na **rede de modo padrão** (*default mode network*) — o conjunto de regiões ativo quando a mente vagueia e "conversa consigo mesma"; meditadores experientes mostram menor atividade e maior controle dessa rede, o correlato plausível da menor ruminação e do senso de "quietude mental" [@brewer2011]. A moral: a meditação é uma ferramenta psicológica útil e apoiada por dados, desde que apresentada com suas dimensões reais, e não como cura milagrosa.
+
+## Substâncias psicoativas
+
+As **substâncias psicoativas** (ou drogas psicoativas) alteram a consciência ao interferir na neurotransmissão. Recuperando o Cap. 22, elas o fazem por poucos mecanismos básicos na sinapse (@fig-drogas-sinapse): um **agonista** imita ou potencializa um neurotransmissor (ativando seus receptores); um **antagonista** o bloqueia (ocupando os receptores sem ativá-los); e um **inibidor de recaptação** impede a remoção do neurotransmissor da fenda, prolongando seu efeito. Compreender esses mecanismos desmistifica os efeitos de cada droga: eles não são mágicos, são farmacológicos.
+
+::: {#fig-drogas-sinapse}
+```{.tikz}
+%%| filename: drogas-sinapse
+%%| alt: Três painéis esquemáticos de uma sinapse mostrando como as drogas agem. No primeiro, um agonista, representado por uma molécula que se encaixa no receptor pós-sináptico e o ativa. No segundo, um antagonista, uma molécula que ocupa o receptor mas não o ativa, bloqueando-o. No terceiro, um inibidor de recaptação, que bloqueia o transportador que reabsorve o neurotransmissor, deixando-o acumulado na fenda sináptica.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  % estilos
+  \tikzset{term/.style={rectangle, rounded corners, draw=manualgray, fill=manualgray!8, minimum width=1.7cm, minimum height=0.5cm}}
+  \tikzset{postm/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, minimum width=1.7cm, minimum height=0.5cm}}
+  \foreach \x/\tit/\col in {0/Agonista/manualgreen, 4.2/Antagonista/manualred, 8.4/{Inibe recaptação}/manualyellow!70!black}{
+    \node[font=\footnotesize\bfseries, text=\col] at (\x+0.85,2.5) {\tit};
+    \node[term] (pre\x) at (\x+0.85,1.9) {pré};
+    \node[postm] (pos\x) at (\x+0.85,-0.3) {pós};
+    % receptor (fenda)
+    \draw[thick, manualblue] (\x+0.55,0.0) -- (\x+0.55,0.28) -- (\x+0.95,0.28) -- (\x+0.95,0.0);
+  }
+  % Agonista: molécula ativa o receptor
+  \fill[manualgreen] (0.75,0.42) circle (0.11);
+  \draw[->, manualgreen, thick] (0.75,0.9) -- (0.75,0.55);
+  \node[font=\tiny, text=manualgreen!50!black, align=center] at (0.85,-1.0) {ativa\\o receptor};
+  % Antagonista: bloqueia
+  \fill[manualred] (4.95,0.42) circle (0.11);
+  \node[font=\tiny, text=manualred] at (5.5,0.55) {✗};
+  \node[font=\tiny, text=manualred, align=center] at (5.05,-1.0) {ocupa, não\\ativa (bloqueia)};
+  % Recaptação: transportador bloqueado, NT acumulado
+  \foreach \dx in {-0.25,0.05,0.35}{ \fill[manualyellow!80!black] (9.25+\dx,0.75) circle (0.09); }
+  \draw[manualred, thick] (9.25,1.25) -- (9.55,1.55);
+  \draw[manualred, thick] (9.55,1.25) -- (9.25,1.55);
+  \node[font=\tiny, text=manualyellow!50!black, align=center] at (9.25,-1.0) {NT acumula\\na fenda};
+\end{tikzpicture}
+```
+Como as drogas psicoativas agem na sinapse. Um **agonista** ativa o receptor (imita o neurotransmissor); um **antagonista** ocupa o receptor sem ativá-lo (bloqueia); um **inibidor de recaptação** impede a reabsorção do neurotransmissor, que se acumula na fenda e prolonga o efeito. Muitos fármacos e drogas combinam esses mecanismos.
+:::
+
+### Categorias por efeito
+
+Costuma-se classificar as drogas psicoativas por seu efeito predominante sobre o sistema nervoso:
+
+- **Depressores** reduzem a atividade do sistema nervoso central. Incluem o **álcool** (que potencializa o GABA, inibitório, e reduz o glutamato — daí desinibição, lentidão, prejuízo motor e, em excesso, depressão respiratória), os **benzodiazepínicos** (ansiolíticos que também agem no GABA) e os **opioides** (heroína, morfina, oxicodona), que ativam receptores opioides, aliviando dor e produzindo euforia, com alto risco de dependência e de overdose por depressão respiratória.
+- **Estimulantes** aumentam a atividade do sistema nervoso. A **cafeína** (bloqueia a adenosina — Cap. 36) é o psicoativo mais consumido do mundo. A **nicotina** ativa receptores colinérgicos e é fortemente aditiva. **Cocaína** e **anfetaminas** elevam a dopamina e a noradrenalina (bloqueando recaptação e/ou promovendo liberação), produzindo euforia, energia e alerta, seguidos de "queda" e forte potencial aditivo.
+- **Alucinógenos** (ou psicodélicos) alteram profundamente a percepção, o pensamento e o senso de self. O **LSD** e a **psilocibina** agem sobretudo em receptores de serotonina (5-HT2A); a **cannabis** age nos receptores canabinoides (afetando percepção, humor e apetite) e ocupa uma categoria mista.
+
+::: {.atencao}
+**"Natural" não significa seguro; legal não significa inofensivo.** Duas confusões comuns merecem correção. Primeira: a origem "natural" de uma substância nada diz sobre sua segurança — a nicotina do tabaco e os opioides da papoula são naturais e perigosíssimos. Segunda: o **status legal** de uma droga reflete história, cultura e política tanto quanto farmacologia, e nem sempre acompanha o **dano real**. Análises que ordenam as drogas por dano (a si e a terceiros) costumam colocar o **álcool** e o **tabaco** — ambos legais — entre os mais nocivos em termos populacionais, à frente de várias substâncias ilícitas [@nutt2010]. Isso não é um convite ao uso de nada, e sim um alerta contra julgar risco pela etiqueta de legalidade ou pela palavra "natural".
+:::
+
+### Tolerância, dependência e adição
+
+O uso repetido de muitas substâncias leva a três fenômenos que convém não confundir. A **tolerância** é a necessidade de doses crescentes para obter o mesmo efeito, à medida que o corpo se adapta (por exemplo, regulando para baixo os receptores). A **dependência física** manifesta-se pela **síndrome de abstinência** — sintomas desagradáveis (às vezes perigosos) quando se interrompe o uso, sinal de que a fisiologia se reorganizou em torno da droga. A **adição** (ou transtorno por uso de substância, tema do Cap. 86) é o padrão compulsivo de busca e uso apesar de consequências negativas — um problema de comportamento e de circuitos de recompensa, que pode existir mesmo sem grande dependência física (e vice-versa).
+
+::: {.base-neural}
+**O sequestro do circuito de recompensa.** No coração da adição está a **via dopaminérgica mesolímbica**, que liga a área tegmental ventral ao **núcleo accumbens** e ao córtex pré-frontal. Esse circuito evoluiu para nos motivar por recompensas naturais — comida, água, sexo, vínculo social — sinalizando "isto vale a pena, repita". A pista clássica veio de James Olds e Peter Milner: ratos que podiam autoestimular eletricamente essa região o faziam incansavelmente, ignorando comida, revelando um sistema de recompensa potente [@olds_milner1954]. Praticamente todas as drogas aditivas **elevam a dopamina** no accumbens, de forma mais intensa e confiável que as recompensas naturais — em essência, "sequestrando" o circuito. Com o uso crônico, o sistema se adapta: a recompensa natural perde o brilho, a tolerância se instala e o córtex pré-frontal (autocontrole) fica comprometido, de modo que a busca pela droga se torna compulsiva e cada vez menos prazerosa. É por isso que a neurociência contemporânea entende a adição como uma **doença crônica do cérebro**, não como simples falta de força de vontade [@volkow2016] — enquadramento que reduz estigma e orienta o tratamento.
+:::
+
+### O renascimento da pesquisa com psicodélicos
+
+Depois de décadas de proibição e estagnação científica, ressurgiu — sob rigor metodológico — a pesquisa clínica com **psicodélicos**. Ensaios controlados recentes indicam que a **psilocibina**, administrada em poucas sessões cuidadosamente supervisionadas e combinadas com apoio psicológico, pode produzir reduções substanciais e duradouras de ansiedade e depressão, inclusive em pacientes com câncer avançado [@griffiths2016]. Os resultados são promissores, mas exigem cautela: são estudos ainda relativamente pequenos, com desafios metodológicos (é difícil "cegar" um psicodélico), e o uso é seguro apenas em contexto clínico controlado — muito distante do uso recreativo ou automedicado. É um exemplo instrutivo de como a ciência pode reabrir, com método, questões antes bloqueadas por tabu, sem cair no entusiasmo ingênuo.
+
+## Fechando o volume
+
+Com os estados alterados, encerra-se o Vol 6. Percorremos a consciência da sua natureza e teorias (Cap. 35), pelo relógio e pela arquitetura do sono (Cap. 36), pela experiência onírica (Cap. 37) e, agora, pelas vias — psicológicas e farmacológicas — de alterá-la deliberadamente. O fio comum é que a consciência, longe de um dado fixo e único, é um **processo** que varia em nível e conteúdo, que se divide, se suspende, se distorce e se treina. Estudá-la cientificamente exige método e ceticismo — desmontar os mitos (do "poder" da hipnose ao "milagre" da meditação, das drogas "naturais logo seguras") — sem perder de vista os fenômenos reais e por vezes úteis que restam quando o exagero é retirado. A consciência segue sendo a grande fronteira da psicologia; este volume ofereceu o mapa de onde a ciência já pisou firme.
+
+## Síntese
+
+::: {.callout-sintese}
+- Um **estado alterado de consciência** difere marcadamente da vigília comum. A **hipnose** usa sugestão; a **suscetibilidade** varia entre pessoas. Duas teorias disputam explicá-la: a **dissociação** (Hilgard, "observador oculto") e a **sociocognitiva** (Spanos, Kirsch).
+- A hipnose tem uso real na **analgesia**, mas *não* dá poderes especiais nem recupera memórias com fidelidade — pode inclusive fabricar **memórias falsas**.
+- A **meditação** divide-se em **atenção focada** e **monitoramento aberto**; a *mindfulness* combina ambas. A evidência mostra efeitos **pequenos a moderados, reais** sobre ansiedade, depressão e dor, e mudanças na **rede de modo padrão**.
+- As **substâncias psicoativas** agem na sinapse como **agonistas**, **antagonistas** ou **inibidores de recaptação**. Classificam-se em **depressores**, **estimulantes** e **alucinógenos** (a cannabis é mista).
+- **Tolerância**, **dependência física** (abstinência) e **adição** são distintas. A adição envolve o "sequestro" da **via dopaminérgica mesolímbica** (núcleo accumbens) e é entendida como doença crônica do cérebro.
+- Nem "natural" nem "legal" equivalem a "seguro": álcool e tabaco estão entre as drogas de maior dano. A pesquisa clínica com **psicodélicos** ressurge, promissora, mas exige cautela e contexto controlado.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Estado alterado de consciência**
+:   Padrão de experiência que difere marcadamente da vigília desperta comum (na atenção, percepção, self ou sugestibilidade).
+
+**Hipnose**
+:   Procedimento/estado em que a sugestão altera percepção, memória ou ação voluntária; a suscetibilidade varia entre pessoas.
+
+**Teoria da dissociação / sociocognitiva**
+:   Explicações rivais da hipnose: uma divisão real da consciência (Hilgard) [@hilgard1973] *versus* expectativa e papel social (Kirsch, Spanos) [@kirsch_lynn1995].
+
+**Atenção focada / monitoramento aberto**
+:   Os dois grandes tipos de meditação: concentrar-se num objeto único *versus* observar o fluxo da experiência sem se prender a ele.
+
+**Mindfulness**
+:   Prestar atenção ao momento presente, de propósito e sem julgamento; base de programas como o MBSR [@kabat_zinn2003].
+
+**Rede de modo padrão**
+:   Conjunto de regiões ativo na mente errante e na autorreferência; modulado pela meditação [@brewer2011].
+
+**Agonista / antagonista / inibidor de recaptação**
+:   Mecanismos sinápticos das drogas: ativar receptores, bloqueá-los ou impedir a reabsorção do neurotransmissor.
+
+**Depressores / estimulantes / alucinógenos**
+:   Categorias de psicoativos por efeito: reduzir a atividade do SNC, aumentá-la ou distorcer percepção e cognição.
+
+**Tolerância / dependência / adição**
+:   Necessidade de doses maiores; síndrome de abstinência ao cessar; e padrão compulsivo de uso apesar do dano [@volkow2016].
+
+**Via dopaminérgica mesolímbica**
+:   Circuito de recompensa (área tegmental ventral → núcleo accumbens) "sequestrado" pelas drogas aditivas [@olds_milner1954].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina "estado alterado de consciência" e classifique como tal o sono, a hipnose e a intoxicação por uma droga, justificando.
+
+2. **(Comparação.)** Contraste a teoria da dissociação e a sociocognitiva da hipnose. Que tipo de evidência ajudaria a decidir entre elas?
+
+3. **(Reflexão crítica.)** Por que depoimentos obtidos sob hipnose são considerados não confiáveis? Ligue sua resposta à relação entre confiança e exatidão da memória (Cap. 45).
+
+4. **(Aplicação.)** Uma reportagem afirma que "a meditação cura a depressão". Como você reformularia essa manchete para refletir a evidência (por exemplo, de Goyal et al.) com mais precisão?
+
+5. **(Aplicação.)** Explique, usando os mecanismos sinápticos da @fig-drogas-sinapse, como um estimulante que bloqueia a recaptação de dopamina produz seus efeitos — e por que o uso crônico leva à tolerância.
+
+6. **(Integração.)** Por que a neurociência descreve a adição como uma "doença crônica do cérebro" e não como falta de força de vontade? Que papel tem a via dopaminérgica mesolímbica nessa explicação, e que consequências isso traz para o tratamento (antecipando o Cap. 86)?

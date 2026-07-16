@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 34 / 105 concluídos · Fase 1: 21/21 · Fase 2: 13/35 · Fase 3: 0/49
+**Progresso:** 38 / 105 concluídos · Fase 1: 21/21 · Fase 2: 17/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ — Vol 5 (Sensação e Percepção) completo.** Próximo: Fase 2, Vol 6 (Consciência).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ — Vol 6 (Consciência) completo.** Próximo: Fase 2, Vol 7 (Aprendizagem).
 
 ---
 
@@ -86,7 +86,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 35 | A natureza da consciência | `capitulos/vol06-consciencia/cap-35-natureza-consciencia.qmd` | ✅ |
 | 36 | Sono e ritmos circadianos | `capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd` | ✅ |
 | 37 | Sonhos | `capitulos/vol06-consciencia/cap-37-sonhos.qmd` | ✅ |
-| 38 | Estados alterados (hipnose, meditação, substâncias psicoativas) | `capitulos/vol06-consciencia/cap-38-estados-alterados.qmd` | ⬜ |
+| 38 | Estados alterados (hipnose, meditação, substâncias psicoativas) | `capitulos/vol06-consciencia/cap-38-estados-alterados.qmd` | ✅ |
 
 ### Vol 7 — Aprendizagem
 | Cap | Título | Arquivo | Status |
