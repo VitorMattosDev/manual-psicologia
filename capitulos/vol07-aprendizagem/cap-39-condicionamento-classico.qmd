@@ -1,5 +1,159 @@
 # 39. Condicionamento clássico (Pavlov)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** aprendizagem e distinguir aprendizagem associativa de outras formas de mudança comportamental.
+- **Identificar** os quatro elementos do condicionamento clássico (EI, RI, EC, RC) em exemplos concretos.
+- **Descrever** os fenômenos de aquisição, extinção, recuperação espontânea, generalização e discriminação.
+- **Explicar** por que a contingência (e não a mera contiguidade) é o que torna um estímulo um sinal, à luz de Rescorla e do modelo Rescorla–Wagner.
+- **Aplicar** o condicionamento clássico a fenômenos reais: medos, aversões a sabor, respostas imunes, publicidade e tolerância a drogas.
+- **Avaliar** os limites biológicos do condicionamento (preparação, aversão a sabor) e o que eles revelam sobre a aprendizagem.
 :::
+
+Abrimos o volume da **aprendizagem** com o mais elementar dos mecanismos pelos quais a experiência remodela o comportamento. Um cão saliva ao ouvir passos; uma criança sente o estômago revirar ao entrar no consultório do dentista; um só gole de uma bebida que certa vez causou enjoo pode se tornar repugnante por anos. Em todos esses casos, algo que antes era neutro passou a evocar uma reação — porque foi *associado* a outra coisa. Este é o território do **condicionamento clássico**, o primeiro grande paradigma experimental da psicologia da aprendizagem e o ponto de partida do movimento behaviorista que estudamos no Cap. 8. Aqui o examinamos por dentro: seus mecanismos, suas leis e — importante — seus limites.
+
+## O que é aprendizagem
+
+Antes de Pavlov, convém definir o objeto do volume inteiro. **Aprendizagem** é uma mudança relativamente duradoura no comportamento (ou no potencial de comportamento) que resulta da **experiência**. Essa definição exclui deliberadamente três coisas. Exclui as mudanças por **maturação** (uma criança anda porque o sistema nervoso amadurece, não porque "aprendeu" a andar no sentido estrito). Exclui as mudanças **temporárias** por fadiga, doença ou drogas. E exclui os comportamentos **inatos** — reflexos e padrões de ação fixos que não dependem de experiência prévia. O que resta é o vasto domínio das modificações que a vida imprime no organismo: e a forma mais básica dessas modificações é a **aprendizagem associativa**, o aprender que dois eventos andam juntos. O condicionamento clássico é a associação entre dois *estímulos*; o operante (Cap. 40), a associação entre um comportamento e sua *consequência*.
+
+## A descoberta de Pavlov
+
+A história é célebre e, como toda boa história de ciência, começa por acaso. **Ivan Pavlov** (1849–1936), fisiologista russo laureado com o Nobel por seus estudos sobre a digestão, media a saliva de cães ao lhes oferecer comida. Notou um estorvo: os cães começavam a salivar *antes* de a comida chegar — ao ver o assistente, ao ouvir seus passos. Onde um fisiologista menos atento veria mero ruído experimental, Pavlov reconheceu um fenômeno psicológico digno de estudo, que chamou de "secreções psíquicas". Nas décadas seguintes, transformou-o num programa de pesquisa rigoroso e quantitativo [@pavlov1927].
+
+O arranjo é simples e elegante. A comida na boca do cão provoca salivação de modo automático, sem qualquer aprendizado: a comida é um **estímulo incondicionado (EI)** e a salivação que ela evoca é a **resposta incondicionada (RI)** — "incondicionado" porque não depende de nenhuma condição prévia, é um reflexo dado. Pavlov então passou a tocar um som (uma campainha, um metrônomo) imediatamente antes de apresentar a comida, repetidas vezes. De início, o som era um **estímulo neutro**: não provocava salivação. Mas após vários emparelhamentos som→comida, algo mudou. O cão passou a salivar ao ouvir *apenas o som*, antes de qualquer comida. O som havia se tornado um **estímulo condicionado (EC)**, e a salivação a ele — agora aprendida — uma **resposta condicionada (RC)** (@fig-pavlov).
+
+::: {#fig-pavlov}
+```{.tikz}
+%%| filename: pavlov-esquema
+%%| alt: Diagrama em três fases do condicionamento clássico. Na fase antes do condicionamento, a comida (estímulo incondicionado) leva à salivação (resposta incondicionada), enquanto o som (estímulo neutro) leva a nenhuma salivação. Durante o condicionamento, o som seguido da comida leva à salivação. Depois do condicionamento, o som sozinho, agora estímulo condicionado, leva à salivação, agora resposta condicionada.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, node distance=0.4cm]
+  \tikzset{cx/.style={rectangle, rounded corners, draw=manualgray, fill=manualgray!8, minimum width=1.5cm, minimum height=0.55cm, align=center}}
+  \tikzset{res/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, minimum width=1.6cm, minimum height=0.55cm, align=center}}
+  % Fase 1
+  \node[font=\footnotesize\bfseries] at (2,4.3) {Antes};
+  \node[cx] (ei1) at (0.9,3.7) {Comida\\{\tiny (EI)}};
+  \node[res] (ri1) at (3.2,3.7) {Saliva\\{\tiny (RI)}};
+  \draw[->] (ei1) -- (ri1);
+  \node[cx] (en1) at (0.9,2.7) {Som\\{\tiny (neutro)}};
+  \node[align=center, font=\tiny, text=manualgray] (nada1) at (3.2,2.7) {sem\\salivação};
+  \draw[->, dashed, manualgray] (en1) -- (nada1);
+  % Fase 2
+  \node[font=\footnotesize\bfseries] at (2,1.7) {Durante o condicionamento};
+  \node[cx] (en2) at (0.5,1.0) {Som\\{\tiny (neutro)}};
+  \node[cx] (ei2) at (2.1,1.0) {Comida\\{\tiny (EI)}};
+  \node[res] (ri2) at (3.9,1.0) {Saliva\\{\tiny (RI)}};
+  \draw[->] (en2) -- (ei2);
+  \draw[->] (ei2) -- (ri2);
+  \node[font=\tiny, text=manualgray] at (1.3,1.55) {(emparelhados, várias vezes)};
+  % Fase 3
+  \node[font=\footnotesize\bfseries] at (2,-0.0) {Depois};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (ec3) at (0.9,-0.7) {Som\\{\tiny (EC)}};
+  \node[res, draw=manualgreen, fill=manualgreen!8] (rc3) at (3.2,-0.7) {Saliva\\{\tiny (RC)}};
+  \draw[->, manualgreen, thick] (ec3) -- (rc3);
+\end{tikzpicture}
+```
+O paradigma de Pavlov. **Antes:** a comida (EI) evoca salivação (RI); o som é neutro. **Durante:** o som precede repetidamente a comida. **Depois:** o som, agora estímulo condicionado (EC), evoca sozinho a salivação, agora resposta condicionada (RC).
+:::
+
+Note que a RC costuma ser semelhante — mas não idêntica — à RI: ambas são salivação, porém a resposta condicionada é em geral mais fraca. O ponto essencial é que um estímulo antes inerte adquiriu, pela **associação**, o poder de disparar uma resposta. Aí está o cerne do condicionamento clássico: aprender que um estímulo *sinaliza* outro.
+
+## As leis do condicionamento
+
+Pavlov e seus sucessores mapearam um conjunto de regularidades — verdadeiras "leis" — que valem para as mais diversas espécies e respostas.
+
+**Aquisição.** A fase de aprendizagem, em que os emparelhamentos EC→EI fortalecem gradualmente a RC. A aquisição é mais eficiente quando o EC precede o EI por um intervalo curto (em geral cerca de meio segundo, embora varie com a resposta) — o chamado **condicionamento de traço** ou **retardado**. Apresentar o EC *depois* do EI (**condicionamento retroativo**) quase não funciona: faz sentido, pois um sinal só é útil se *antecipa* o evento.
+
+**Extinção e recuperação espontânea.** Se, após o condicionamento, o EC passar a ser apresentado repetidamente *sem* o EI, a RC enfraquece e por fim desaparece: é a **extinção**. Seria tentador concluir que a associação foi apagada — mas não foi. Pavlov mostrou que, após um intervalo de repouso, o EC volta a evocar a RC, ainda que mais fraca: a **recuperação espontânea**. Isso revela algo profundo, que reencontraremos na terapia (Cap. 90): a extinção não destrói a aprendizagem original, apenas a inibe com uma *nova* aprendizagem ("o EC agora não anuncia mais o EI"). A associação antiga permanece latente, pronta a ressurgir.
+
+**Generalização e discriminação.** Depois de condicionado a um som de 1000 Hz, o cão também salivará — em grau menor — a sons de 900 ou 1100 Hz: é a **generalização de estímulo**, a tendência de responder a estímulos semelhantes ao EC. Seu oposto é a **discriminação**: se apenas o tom de 1000 Hz for seguido de comida, e os demais nunca, o cão aprende a responder só ao tom correto. Generalização e discriminação são as duas faces de um mesmo mecanismo adaptativo — generalizar o suficiente para não recomeçar do zero a cada variação, discriminar o suficiente para não desperdiçar respostas.
+
+::: {.experimento}
+🔬 **O Pequeno Albert.** Em 1920, John Watson e Rosalie Rayner levaram o condicionamento clássico ao território das emoções humanas — de um modo que a ética de pesquisa de hoje (Cap. 20) jamais permitiria. O sujeito era um bebê de cerca de onze meses, "Albert B.", que inicialmente não temia um rato branco de laboratório (estímulo neutro). Os pesquisadores passaram a bater uma barra de aço com um martelo (EI) — um estrondo que naturalmente assustava e fazia o bebê chorar (RI) — toda vez que Albert tocava o rato. Após poucos emparelhamentos, a mera visão do rato passou a provocar choro e esquiva (RC): uma **fobia condicionada** em laboratório [@watson_rayner1920]. Mais: o medo **generalizou-se** a outros objetos peludos e brancos — um coelho, um cão, um casaco de pele, até uma máscara de Papai Noel. O estudo, metodologicamente frágil e eticamente indefensável (Albert deixou o hospital sem que o medo fosse extinto), tornou-se ainda assim um marco: demonstrou que medos humanos podem ser *aprendidos* por associação, fundamento da compreensão comportamental das fobias e de seu tratamento por exposição.
+:::
+
+## Não é o que você pensa: contiguidade *versus* contingência
+
+Por décadas, entendeu-se o condicionamento como simples **contiguidade**: bastaria que dois estímulos ocorressem juntos, próximos no tempo, para que se associassem. Robert Rescorla mostrou que essa visão está errada — ou, no título provocativo de seu artigo, que o condicionamento pavloviano "não é o que você pensa que é" [@rescorla1988]. O que importa não é a mera co-ocorrência, mas a **contingência**: o quanto o EC efetivamente *prediz* o EI.
+
+O experimento decisivo compara dois grupos. Em ambos, o EC é emparelhado com o EI o mesmo número de vezes (mesma contiguidade). Mas para o segundo grupo o EI também ocorre, com igual frequência, *na ausência* do EC. Resultado: o primeiro grupo desenvolve forte RC; o segundo, quase nenhuma. Por quê? Porque no segundo grupo o EC **não informa nada** — o EI é igualmente provável com ou sem ele. O organismo não está registrando passivamente coincidências; está, em termos funcionais, computando se o EC é um bom *sinal*. O condicionamento é, nesse sentido, uma forma de detecção de regularidades preditivas — uma proto-inferência sobre a estrutura causal do mundo.
+
+Essa mudança de perspectiva foi formalizada no **modelo Rescorla–Wagner** [@rescorla_wagner1972], talvez o modelo mais influente da história da aprendizagem. Sua ideia central é que a aprendizagem é movida pela **surpresa**: um EC só ganha força associativa na medida em que o EI que ele acompanha é *inesperado*. Quando o EI já é plenamente previsto (por aquele ou por outros estímulos presentes), não há surpresa e não há mais o que aprender. O modelo prevê elegantemente o **bloqueio**: se um estímulo A já prediz sozinho o EI, e depois se acrescenta um estímulo B (apresentando AB→EI), o animal **não** aprende sobre B — porque A já explicava tudo, B não trouxe informação nova. A aprendizagem, longe de registrar toda coincidência, ignora o redundante. Esse princípio do erro de predição, note-se, tornou-se a ponte entre a psicologia da aprendizagem e a neurociência: os disparos de dopamina do Cap. 38 codificam precisamente esse "erro de predição de recompensa", e o mesmo princípio está no coração da aprendizagem por reforço em inteligência artificial.
+
+## Os limites biológicos: nem tudo se associa igual
+
+O behaviorismo clássico presumia que *qualquer* estímulo neutro poderia ser associado a *qualquer* EI com igual facilidade — a chamada **equipotencialidade**. A biologia disse não.
+
+::: {.experimento}
+🔬 **A aversão condicionada ao sabor (Garcia).** John Garcia e Robert Koelling expuseram ratos a uma água "saborosa, brilhante e barulhenta" (com gosto adocicado e acompanhada de luz e som) e depois lhes aplicaram um de dois males: náusea (induzida por radiação ou droga) ou um choque nas patas. O resultado contrariou a equipotencialidade [@garcia_koelling1966]. Os ratos que passaram mal associaram a doença ao **sabor**, mas não à luz e ao som; os que levaram choque associaram-no à **luz e ao som**, mas não ao sabor. Cada EI "escolheu" o EC biologicamente pertinente: a doença interna liga-se ao que se ingere, a dor externa ao que se vê e ouve. Além disso, a aversão ao sabor formou-se em um **único** emparelhamento e mesmo com **horas** de intervalo entre o sabor e a náusea — violando duas "leis" que se julgavam universais (necessidade de repetição e de contiguidade estreita).
+:::
+
+A aversão condicionada ao sabor (também chamada de **efeito Garcia**) revela que a aprendizagem é **biologicamente preparada**: a evolução predispôs cada espécie a formar certas associações com facilidade — justamente as que tinham valor de sobrevivência. Um animal que aprendesse a evitar, após uma só intoxicação e por longo atraso, o alimento que o adoeceu levaria clara vantagem. A **preparação** de Martin Seligman generaliza a ideia: fobias humanas incidem desproporcionalmente sobre perigos ancestrais — cobras, aranhas, alturas, espaços fechados — e muito raramente sobre perigos modernos igualmente letais, como tomadas elétricas ou automóveis. Aprendemos os medos que nossos ancestrais precisaram aprender.
+
+::: {.na-pratica}
+**O condicionamento clássico no cotidiano.** Longe do laboratório, o condicionamento pavloviano molda boa parte de nossas reações automáticas:
+
+- **Publicidade** emparelha produtos (EC) com imagens que já evocam sentimentos positivos — beleza, felicidade, status (EI) — para que a marca passe a evocar afeto (RC). É condicionamento avaliativo puro.
+- **Aversões alimentares** explicam por que um prato que uma vez precedeu um enjoo (mesmo que a causa real tenha sido outra) pode tornar-se intragável — o efeito Garcia na vida real. Pacientes em quimioterapia frequentemente desenvolvem aversão a alimentos consumidos antes das sessões.
+- **Respostas imunológicas** podem ser condicionadas: emparelhando um sabor (EC) com uma droga imunossupressora (EI), o sabor sozinho passa a suprimir o sistema imune — um dos achados que fundaram a psiconeuroimunologia.
+- **Tolerância a drogas** tem um componente condicionado: o ambiente onde alguém costuma usar uma droga (EC) passa a disparar respostas corporais compensatórias que a antecipam. Fora desse ambiente, sem a resposta preparatória, a mesma dose pode ser fatal — parte da explicação de certas overdoses "inexplicáveis" em usuários experientes.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Aprendizagem** é a mudança duradoura no comportamento devida à experiência — não à maturação, à fadiga ou ao instinto. O condicionamento clássico é a aprendizagem de uma associação entre **dois estímulos**.
+- **Pavlov** identificou quatro elementos: **EI** e **RI** (reflexo dado) e, pelo emparelhamento, **EC** e **RC** (a resposta aprendida). O EC passa a *sinalizar* o EI.
+- Leis: **aquisição** (EC antes do EI), **extinção** (EC sem EI enfraquece a RC), **recuperação espontânea** (a associação não é apagada, só inibida), **generalização** e **discriminação**.
+- O **Pequeno Albert** mostrou que medos humanos são condicionáveis; o estudo é um marco histórico e um alerta ético.
+- O que condiciona não é a **contiguidade**, mas a **contingência**: o EC precisa *predizer* o EI (Rescorla). O modelo **Rescorla–Wagner** explica a aprendizagem pela **surpresa** (erro de predição) e prevê o **bloqueio**.
+- A aprendizagem tem **limites biológicos**: a **aversão ao sabor** (Garcia) forma-se em uma tentativa e a longo atraso, e cada EI se associa ao EC biologicamente pertinente. A **preparação** explica a distribuição das fobias.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Aprendizagem**
+:   Mudança relativamente duradoura no comportamento (ou em seu potencial) resultante da experiência.
+
+**Condicionamento clássico**
+:   Aprendizagem de uma associação entre dois estímulos, em que um estímulo neutro passa a evocar uma resposta.
+
+**EI / RI**
+:   Estímulo incondicionado (evoca resposta sem aprendizado) e resposta incondicionada (o reflexo que ele evoca).
+
+**EC / RC**
+:   Estímulo condicionado (antes neutro, tornou-se sinal do EI) e resposta condicionada (a resposta aprendida ao EC).
+
+**Aquisição / extinção / recuperação espontânea**
+:   Fortalecimento da RC pelos emparelhamentos; enfraquecimento quando o EC ocorre sem o EI; reaparecimento da RC após repouso.
+
+**Generalização / discriminação**
+:   Responder a estímulos semelhantes ao EC; aprender a responder apenas ao EC específico.
+
+**Contingência**
+:   Grau em que o EC prediz o EI; o verdadeiro motor do condicionamento, mais que a mera contiguidade [@rescorla1988].
+
+**Modelo Rescorla–Wagner**
+:   Modelo em que a aprendizagem é proporcional à surpresa (erro de predição); prevê o bloqueio [@rescorla_wagner1972].
+
+**Aversão condicionada ao sabor (efeito Garcia)**
+:   Associação rápida e duradoura entre um sabor e uma náusea posterior, exemplo de preparação biológica [@garcia_koelling1966].
+
+**Preparação**
+:   Predisposição evolutiva a formar certas associações com facilidade (p. ex., fobias de perigos ancestrais).
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Identifique EI, RI, EC e RC nesta situação: uma pessoa sente náusea (reação) ao entrar num restaurante onde já teve uma intoxicação alimentar.
+
+2. **(Conceitual.)** Por que a recuperação espontânea prova que a extinção não "apaga" a aprendizagem original? Que implicação isso tem para quem trata uma fobia por exposição?
+
+3. **(Reflexão crítica.)** Explique, com o experimento de contingência de Rescorla, por que dois grupos com a *mesma* contiguidade EC–EI podem aprender coisas muito diferentes.
+
+4. **(Aplicação.)** Use o conceito de **bloqueio** do modelo Rescorla–Wagner para prever o que um animal aprenderá (ou não) sobre um novo estímulo acrescentado a um preditor já confiável.
+
+5. **(Integração.)** Os achados de Garcia contrariaram duas "leis" do condicionamento. Quais? E o que a aversão ao sabor revela sobre a suposição behaviorista de equipotencialidade?
+
+6. **(Aplicação.)** Como o componente **condicionado** da tolerância a drogas ajuda a explicar overdoses de usuários experientes em ambientes incomuns? Ligue sua resposta à noção de respostas compensatórias antecipatórias.
