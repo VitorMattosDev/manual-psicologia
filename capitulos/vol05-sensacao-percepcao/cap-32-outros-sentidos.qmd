@@ -1,5 +1,158 @@
 # 32. Outros sentidos (olfato, paladar, tato, propriocepção, dor)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que olfato e paladar são chamados de sentidos químicos e como se combinam para produzir o sabor.
+- **Descrever** a rota anatômica singular do olfato e sua ligação privilegiada com memória e emoção.
+- **Identificar** os diferentes receptores da pele e relacioná-los ao sentido do tato e à sensibilidade variável do corpo.
+- **Distinguir** propriocepção, cinestesia e sentido vestibular, e explicar seu papel no equilíbrio e no movimento.
+- **Explicar** a teoria do controle da comporta da dor e por que a dor é uma construção do cérebro, não uma simples leitura de dano.
+- **Interpretar** o membro fantasma, o efeito placebo e a insensibilidade congênita à dor como evidências dessa natureza construtiva.
 :::
+
+A visão e a audição costumam roubar a cena, mas os demais sentidos são tudo menos secundários. É o olfato que nos avisa de um vazamento de gás e reabre, sem aviso, uma lembrança de infância; é o paladar que protege contra alimentos estragados; é o tato que permite a cirurgia, o carinho e a leitura em braile; é a propriocepção que nos deixa andar no escuro sem cair; e é a dor — o mais incompreendido dos sentidos — que nos mantém vivos ao sinalizar o dano. Este capítulo completa o inventário sensorial e, ao chegar à dor, alcança talvez a demonstração mais forte de todo o volume de que perceber é *construir*: a mesma lesão pode doer muito ou nada, conforme o que o cérebro faz com o sinal.
+
+## Os sentidos químicos: olfato e paladar
+
+O **olfato** e o **paladar** respondem a moléculas — por isso são os **sentidos químicos**, os mais antigos na história evolutiva. No olfato, moléculas voláteis no ar dissolvem-se no muco da parte alta do nariz e ativam **receptores olfativos**. A descoberta de como funcionam rendeu o Nobel de 2004 a Linda Buck e Richard Axel, que identificaram uma enorme família de genes — cerca de mil — codificando receptores olfativos, cada um sintonizado para certas moléculas [@buck_axel1991]. Não há "receptores de café" ou "de rosa": cada odor ativa uma *combinação* de receptores, e é o padrão dessa combinação que o cérebro lê como um cheiro específico — um código combinatório que permite discriminar dezenas de milhares de odores com um repertório limitado de receptores.
+
+O olfato tem uma peculiaridade anatômica de consequências psicológicas profundas. Todos os outros sentidos passam primeiro pelo tálamo, a "estação retransmissora" do Cap. 24, antes de chegar ao córtex. O olfato, não: ele projeta-se **diretamente** para estruturas do sistema límbico — a amígdala e o hipocampo — ligadas à emoção e à memória (@fig-olfato-rota). Essa é a base neural do fenômeno que a literatura eternizou como "efeito Proust": um cheiro pode evocar uma lembrança antiga com uma vividez emocional que nenhuma foto iguala. A via curta e direta ao circuito da emoção e da memória explica por que os odores são gatilhos mnemônicos tão poderosos e por que a perda do olfato (anosmia) costuma vir acompanhada de embotamento afetivo.
+
+::: {#fig-olfato-rota}
+```{.tikz}
+%%| filename: olfato-rota
+%%| alt: Diagrama comparando duas rotas. Em cima, "outros sentidos" passam por uma caixa "tálamo" antes de chegar ao "córtex". Embaixo, o "olfato" vai por uma seta direta às estruturas "amígdala e hipocampo (sistema límbico)", contornando o tálamo, com o rótulo "emoção e memória".
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  box/.style={rectangle, rounded corners, draw, thick, align=center, minimum height=0.9cm, text width=2.6cm}]
+  \node[box, draw=manualblue, fill=manualblue!8] (out) at (0,1.4) {Visão, audição,\\paladar, tato};
+  \node[box, draw=manualgray, fill=manualgray!8] (tal) at (4.2,1.4) {Tálamo};
+  \node[box, draw=manualgreen, fill=manualgreen!8] (cor) at (8.4,1.4) {Córtex sensorial};
+  \draw[->, thick] (out) -- (tal);
+  \draw[->, thick] (tal) -- (cor);
+  \node[box, draw=manualred, fill=manualred!8] (olf) at (0,-0.8) {Olfato};
+  \node[box, draw=manualred!70!black, fill=manualred!12] (lim) at (5.4,-0.8) {Amígdala e hipocampo\\{\scriptsize sistema límbico}};
+  \draw[->, very thick, manualred] (olf) -- (lim) node[midway, above, font=\scriptsize, text=manualred] {rota direta};
+  \node[font=\scriptsize, text=manualred!70!black] at (5.4,-1.7) {emoção e memória};
+\end{tikzpicture}
+```
+A rota privilegiada do olfato. Todos os sentidos passam pelo tálamo antes do córtex; o olfato projeta-se direto ao sistema límbico, o que explica seu vínculo íntimo com a memória e a emoção.
+:::
+
+O **paladar** opera na língua, cujas papilas abrigam os **botões gustativos**, com receptores para cinco qualidades básicas: **doce, salgado, azedo, amargo e umami** (o gosto "saboroso" do glutamato, confirmado como básico apenas recentemente) [@chandrashekar2006]. Cada gosto tem um sentido adaptativo transparente: doce sinaliza energia, salgado sinaliza minerais, umami sinaliza proteína, enquanto azedo e amargo advertem contra o estragado e o tóxico — daí a aversão infantil, protetora, ao amargo. É importante desfazer um mito escolar: **não existe "mapa da língua"** com zonas fixas para cada gosto; todos os gostos são detectáveis em toda a língua. E o que chamamos de **sabor** de um alimento não é paladar puro: é a combinação de gosto, olfato (pela via retronasal, dos fundos da boca ao nariz), textura e temperatura. Por isso, de nariz tampado ou resfriados, "perdemos o gosto" da comida — na verdade, perdemos o *olfato* que compõe a maior parte do sabor.
+
+## O tato e os sentidos da pele
+
+A pele é o maior órgão sensorial do corpo e abriga não um, mas vários tipos de receptores, especializados em **pressão, vibração, temperatura (calor e frio) e dor**. O que sentimos como o "tato" é a síntese cerebral desses canais distintos. A sensibilidade tátil é muito desigual pelo corpo, e isso reflete diretamente o **homúnculo somatossensorial** do Cap. 24: regiões com muitos receptores e grande representação cortical — lábios, ponta dos dedos, língua — têm resolução finíssima, ao passo que costas e coxas são grosseiras. Uma medida clássica dessa resolução é o **limiar de dois pontos**: a menor distância a que duas picadas simultâneas ainda são sentidas como duas, e não como uma — questão de milímetros na ponta do dedo, mas de centímetros nas costas. É essa alta densidade de receptores nas pontas dos dedos que torna possível a leitura em braile.
+
+## Onde estou e para onde vou: propriocepção e equilíbrio
+
+Feche os olhos e toque o nariz com o dedo: você consegue, embora não esteja vendo nem a mão nem o rosto. Isso é a **propriocepção** — o sentido, muitas vezes esquecido, da posição do corpo no espaço —, informada por receptores nos músculos, tendões e articulações. Sua versão em movimento é a **cinestesia**: a percepção do movimento dos próprios membros. Sem esses sentidos, cada gesto exigiria vigilância visual constante; com eles, andamos, digitamos e nos vestimos no "piloto automático". Os raros pacientes que os perdem descrevem ter de *olhar* para cada membro para movê-lo, como se o corpo tivesse deixado de lhes pertencer.
+
+Complementando-os, o **sentido vestibular**, alojado nos **canais semicirculares** da orelha interna (junto à cóclea do Cap. 31), informa a posição e a aceleração da cabeça, sendo a base do **equilíbrio**. Cheios de fluido, esses canais detectam a rotação da cabeça pelo deslocamento do líquido sobre células ciliadas. O enjoo de movimento (cinetose) nasce, em grande parte, de um *conflito* entre o que o sistema vestibular sente e o que os olhos veem — por exemplo, ler no carro em movimento: o corpo sente a aceleração, mas os olhos, fixos na página, não a confirmam.
+
+## A dor: um sentido que o cérebro constrói
+
+A dor parece o mais simples dos sentidos — lesão gera dor, ponto. É o oposto. A dor é o exemplo mais claro de todo o volume de que a percepção é uma construção ativa, e não uma leitura fiel do corpo. A detecção do dano tem nome próprio — **nocicepção**, a ativação de receptores para estímulos potencialmente lesivos —, mas a *dor sentida* pode ser muito maior, muito menor ou totalmente descolada da nocicepção. Soldados feridos em combate relatam pouca dor; atletas só percebem uma lesão após a partida; e há dores intensas sem qualquer dano tecidual. A teoria que rompeu com a visão simplista foi proposta em 1965.
+
+::: {.experimento}
+**A teoria do controle da comporta** [@melzack_wall1965]
+
+**O problema.** A visão tradicional imaginava a dor como um cabo direto: um receptor de dor envia o sinal, o cérebro o recebe, dói — proporcional ao dano. Mas isso não explicava por que esfregar uma batida alivia, por que a atenção e a emoção mudam tanto a dor, nem as dores sem lesão. Ronald Melzack e Patrick Wall propuseram um mecanismo intermediário.
+
+**A ideia.** Na medula espinhal há uma espécie de "comporta" que regula quanto sinal de dor sobe ao cérebro. As **fibras finas** que carregam a nocicepção *abrem* a comporta; as **fibras grossas** do tato *fecham*-na — por isso esfregar o local (ativando o tato) reduz a dor. E, crucialmente, há **sinais que descem do cérebro** — ligados a atenção, expectativa, emoção — que também abrem ou fecham a comporta (@fig-comporta). A dor sentida é o resultado desse jogo, não uma leitura direta do dano.
+
+**Impacto.** A teoria do controle da comporta reorientou toda a ciência da dor. Explicou o alívio pela massagem e pela estimulação elétrica (TENS), o papel da distração e do humor, e abriu caminho para tratar a dor crônica como um fenômeno do sistema nervoso, e não apenas do local que dói. Foi refinada depois pelo próprio Melzack na ideia de **neuromatriz** — uma rede cerebral que *gera* a experiência de dor, capaz de funcionar mesmo sem entrada periférica [@melzack1999].
+
+**Limitações.** Os detalhes anatômicos exatos da "comporta" seguem em debate, e o modelo original simplifica a neuroquímica hoje conhecida. Mas sua tese central — que a dor é modulada, e não meramente transmitida — está entre as mais bem estabelecidas da neurociência.
+:::
+
+::: {#fig-comporta}
+```{.tikz}
+%%| filename: controle-comporta
+%%| alt: Diagrama do controle da comporta da dor na medula espinhal. Fibras finas (nocicepção) tendem a abrir a comporta; fibras grossas (tato) tendem a fechá-la; sinais descendentes do cérebro (atenção, emoção, expectativa) também modulam a comporta. Da comporta parte uma seta ao cérebro, rotulada dor sentida, cuja intensidade depende de quanto a comporta está aberta.
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+  \node[rectangle, rounded corners, draw, very thick, draw=manualgray, fill=manualyellow!12, minimum width=2.4cm, minimum height=1.2cm] (gate) at (5,0) {comporta\\{\scriptsize (medula)}};
+  \node[rectangle, rounded corners, draw, thick, draw=manualred, fill=manualred!8, text width=2.2cm, align=center] (fina) at (0,1.1) {fibras finas\\{\scriptsize nocicepção}};
+  \node[rectangle, rounded corners, draw, thick, draw=manualblue, fill=manualblue!8, text width=2.2cm, align=center] (grossa) at (0,-1.1) {fibras grossas\\{\scriptsize tato}};
+  \node[rectangle, rounded corners, draw, thick, draw=manualgreen, fill=manualgreen!8, text width=2.6cm, align=center] (cerebro) at (5,2.6) {cérebro\\{\scriptsize atenção · emoção · expectativa}};
+  \node[rectangle, rounded corners, draw, thick, draw=manualred!70!black, fill=manualred!12, text width=2.2cm, align=center] (dor) at (9.6,0) {dor sentida};
+  \draw[->, very thick, manualred] (fina) -- (gate) node[midway, above, font=\scriptsize, text=manualred] {abre};
+  \draw[->, very thick, manualblue] (grossa) -- (gate) node[midway, below, font=\scriptsize, text=manualblue] {fecha};
+  \draw[<->, very thick, manualgreen] (cerebro) -- (gate) node[midway, right, font=\scriptsize, text=manualgreen!50!black] {modula};
+  \draw[->, very thick, manualred!70!black] (gate) -- (dor);
+\end{tikzpicture}
+```
+O controle da comporta. A dor que se sente resulta de um balanço: as fibras finas da nocicepção abrem a comporta; as fibras grossas do tato a fecham; e sinais que descem do cérebro (atenção, emoção, expectativa) a modulam. A dor é regulada, não apenas transmitida.
+:::
+
+Três fenômenos confirmam, de forma quase espetacular, que a dor é obra do cérebro. O primeiro é o **membro fantasma**: pessoas amputadas frequentemente sentem — às vezes com dor intensa — o membro que já não existe [@ramachandran1998]. Se a dor fosse mera leitura do corpo, um membro ausente não poderia doer; ela dói porque a representação cerebral do membro persiste e continua a gerar a experiência (o que retoma a plasticidade mal-adaptativa do Cap. 28). O segundo é o **efeito placebo**: uma pílula inerte, ou uma expectativa de alívio, reduz a dor de forma real e mensurável, ativando os sistemas de analgesia do próprio cérebro — os sinais descendentes da teoria da comporta em ação (o Vol 14 retomará o placebo em terapias). O terceiro, pelo avesso, é a **insensibilidade congênita à dor**: raras pessoas nascem sem sentir dor e, longe de afortunadas, costumam morrer jovens, cheias de lesões não percebidas — prova de que a dor, por mais indesejada, é um sistema de alarme indispensável à vida.
+
+::: {.na-pratica}
+**Tratar a dor crônica tratando o cérebro.** Se a dor é construída, e não apenas transmitida, então tratá-la exige mais que agir sobre o local que dói — sobretudo na **dor crônica**, aquela que persiste depois de o dano ter cicatrizado. Nesses casos, a "comporta" e a neuromatriz ficaram sensibilizadas: o sistema de dor "aprendeu" a doer, uma plasticidade mal-adaptativa. Isso fundamenta abordagens que parecem indiretas mas funcionam: a estimulação elétrica nervosa (TENS) e a massagem recrutam as fibras grossas do tato para fechar a comporta; a distração, o relaxamento e a terapia cognitivo-comportamental (Vol 14) agem pelos sinais descendentes, reduzindo a atenção e a ameaça associadas à dor; e a educação do próprio paciente sobre o funcionamento da dor já diminui o sofrimento, ao reduzir o medo que a amplifica. Levar a dor a sério como fenômeno do sistema nervoso não é dizer que ela "está na cabeça" no sentido de ser imaginária — a dor é sempre real —, mas reconhecer *onde* ela é de fato produzida, e portanto onde pode ser modulada.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Olfato e paladar são sentidos químicos.** O olfato usa um código combinatório de cerca de mil tipos de receptor e tem uma rota **direta ao sistema límbico**, o que explica seu vínculo íntimo com memória e emoção.
+- O **paladar** tem cinco gostos básicos (doce, salgado, azedo, amargo, umami), cada um com valor adaptativo; não há "mapa da língua". O **sabor** é a combinação de gosto, olfato retronasal, textura e temperatura — daí perdermos o gosto quando o nariz está tapado.
+- A **pele** tem receptores para pressão, vibração, temperatura e dor; a sensibilidade tátil varia pelo corpo conforme a densidade de receptores e a representação no **homúnculo**.
+- **Propriocepção** (posição do corpo), **cinestesia** (movimento dos membros) e o **sentido vestibular** (equilíbrio, canais semicirculares) informam o corpo no espaço; conflitos entre visão e vestíbulo causam enjoo de movimento.
+- A **dor** não é leitura direta do dano: a **nocicepção** detecta a lesão, mas a **teoria do controle da comporta** mostra que fibras táteis e sinais descendentes do cérebro modulam quanto se sente.
+- **Membro fantasma, efeito placebo e insensibilidade congênita à dor** confirmam que a dor é construída pelo cérebro — e que, apesar de indesejada, é um alarme indispensável.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sentidos químicos**
+:   Olfato e paladar, que respondem a moléculas.
+
+**Receptores olfativos**
+:   Grande família de receptores (cerca de mil tipos) que codificam odores de forma combinatória [@buck_axel1991].
+
+**Gostos básicos**
+:   Doce, salgado, azedo, amargo e umami; qualidades detectadas pelos botões gustativos [@chandrashekar2006].
+
+**Sabor**
+:   Experiência combinada de gosto, olfato retronasal, textura e temperatura de um alimento.
+
+**Limiar de dois pontos**
+:   Menor distância a que dois toques simultâneos ainda são sentidos como dois; mede a resolução tátil.
+
+**Propriocepção**
+:   Sentido da posição do corpo e dos membros no espaço, informado por receptores em músculos e articulações.
+
+**Cinestesia**
+:   Percepção do movimento dos próprios membros.
+
+**Sentido vestibular**
+:   Sentido do equilíbrio e da posição da cabeça, baseado nos canais semicirculares da orelha interna.
+
+**Nocicepção**
+:   Detecção de estímulos potencialmente lesivos por receptores especializados; distinta da dor sentida.
+
+**Teoria do controle da comporta**
+:   Modelo segundo o qual a dor é modulada na medula por fibras táteis e por sinais descendentes do cérebro [@melzack_wall1965].
+
+**Membro fantasma**
+:   Sensação (às vezes dolorosa) de um membro amputado, gerada pela representação cerebral persistente [@ramachandran1998].
+
+**Efeito placebo**
+:   Alívio real da dor produzido pela expectativa, ativando sistemas analgésicos do próprio cérebro.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Por que olfato e paladar são chamados de sentidos químicos? Explique o "código combinatório" pelo qual o olfato distingue tantos odores com um repertório limitado de receptores.
+
+2. **(Recuperação.)** O olfato tem uma rota anatômica diferente da dos outros sentidos. Descreva-a e explique como ela dá conta do vínculo entre cheiros, memória e emoção.
+
+3. **(Aplicação.)** Um resfriado forte faz a comida "perder o gosto". Usando a distinção entre gosto e sabor, explique o que de fato foi perdido.
+
+4. **(Aplicação.)** Alguém sente enjoo ao ler no banco de trás de um carro em movimento. Explique o fenômeno com base no conflito entre o sentido vestibular e a visão.
+
+5. **(Reflexão crítica.)** "Se dói, é porque há dano; se não há dano, não pode doer." Refute essa afirmação usando a teoria do controle da comporta e o caso do membro fantasma.
+
+6. **(Integração.)** A dor crônica é descrita como uma "plasticidade mal-adaptativa" em que o sistema de dor "aprendeu a doer". Relacione essa ideia ao Cap. 28 e explique por que tratamentos que agem sobre atenção e expectativa (não sobre o local da dor) podem funcionar.
