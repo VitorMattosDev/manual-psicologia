@@ -1,5 +1,187 @@
 # 16. Variáveis, validade e confiabilidade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Classificar** variáveis segundo suas escalas de medida (nominal, ordinal, intervalar, de razão) e explicar por que a escala determina o que se pode fazer com os números.
+- **Definir** confiabilidade como consistência da medida e distinguir suas formas principais — teste-reteste, entre avaliadores, consistência interna.
+- **Definir** validade como a adequação das interpretações de uma medida e diferenciar validade de conteúdo, de critério e de construto.
+- **Explicar**, com a analogia do alvo, por que confiabilidade é necessária mas não suficiente para validade.
+- **Distinguir** os quatro tipos de validade de um estudo — de construto, interna, externa e de conclusão estatística — e as ameaças típicas a cada um.
+- **Diagnosticar** problemas de mensuração em pesquisas reais, separando "a medida é consistente?" de "a medida mede o que diz medir?".
 :::
+
+Os dois capítulos anteriores trataram de *como delinear* um estudo. Este trata de algo anterior e mais silencioso: a qualidade dos números que entram no estudo. Um experimento com atribuição aleatória impecável e uma amostra perfeita ainda produz lixo se a variável dependente for mal medida. A metodologia de coleta e a metodologia de mensuração são duas metades independentes do rigor, e negligenciar a segunda é um jeito elegante de chegar a conclusões erradas com toda a aparência de ciência.
+
+O problema é agudo em psicologia porque seus objetos — inteligência, ansiedade, atitude, bem-estar — não têm réguas prontas. Ninguém questiona como medir a altura de uma pessoa; medir sua "autoestima" exige inventar o instrumento e, depois, provar que ele funciona. Este capítulo é sobre esse duplo trabalho: transformar conceitos em números (variáveis e escalas) e demonstrar que os números merecem confiança (confiabilidade) e significam o que se afirma que significam (validade).
+
+## Variáveis e escalas de medida
+
+Uma **variável** é qualquer característica que assume valores diferentes entre indivíduos ou situações: idade, sexo, tempo de reação, nível de depressão. Medir é atribuir valores a essa característica segundo uma regra. Mas nem todos os valores são do mesmo tipo, e o tipo importa — porque ele decide quais operações matemáticas fazem sentido. A classificação clássica, proposta por Stevens, distingue quatro **escalas de medida** [@stevens1946].
+
+Uma escala **nominal** apenas nomeia categorias, sem ordem: cor dos olhos, diagnóstico, time de futebol. Os números eventualmente usados (1 = solteiro, 2 = casado) são rótulos, não quantidades — calcular a "média do estado civil" é um disparate. A única operação legítima é contar quantos caem em cada categoria.
+
+Uma escala **ordinal** ordena, mas sem intervalos iguais: a colocação num pódio (1º, 2º, 3º), uma resposta "discordo / neutro / concordo", o estágio de um câncer. Sabe-se que 1º vem antes de 2º, mas não que a distância entre eles seja igual à distância entre 2º e 3º. Ordenar é permitido; somar e tirar médias, a rigor, não — embora a prática em psicologia frequentemente force essa regra, um ponto ao qual voltaremos.
+
+Uma escala **intervalar** tem intervalos iguais, mas o zero é arbitrário, não representa ausência. A temperatura em Celsius é o exemplo canônico: a diferença entre 20 e 30 graus é a mesma que entre 30 e 40, mas 0 °C não é "ausência de temperatura", e não se pode dizer que 40 °C é "o dobro" de 20 °C. Somas e diferenças fazem sentido; razões, não.
+
+Uma escala **de razão** tem intervalos iguais e um zero absoluto que significa ausência real da grandeza: tempo de reação, número de erros, número de palavras lembradas. Aqui todas as operações valem — 400 ms é de fato o dobro de 200 ms. É a escala mais rica, e muitas das variáveis dependentes "duras" da psicologia experimental são de razão.
+
+::: {.atencao}
+**A guerra das médias de Likert.** Uma escala do tipo "1 = discordo totalmente ... 5 = concordo totalmente" é, a rigor, ordinal: nada garante que a distância psicológica entre "discordo" e "neutro" iguale a entre "neutro" e "concordo". Tirar a média dessas respostas — prática universal na psicologia — é tecnicamente ilegítimo pela classificação de Stevens. Na prática, quase todo mundo o faz, tratando escalas de Likert *somadas* (vários itens juntos) como se fossem intervalares, e há evidência de que, com itens suficientes e distribuições razoáveis, as conclusões raramente se distorcem. O ponto para o leitor crítico não é proibir a média, e sim saber que ali há uma *suposição* sendo feita — e desconfiar quando uma conclusão delicada repousa inteiramente sobre a média de um único item ordinal.
+:::
+
+## Confiabilidade: a medida é consistente?
+
+**Confiabilidade** é a consistência de uma medida: o grau em que ela produz o mesmo resultado sob condições que deveriam produzir o mesmo resultado. Uma balança que marca 62 kg, depois 68, depois 60 para a mesma pessoa em dez segundos é inútil — não porque esteja errada em média, mas porque é inconsistente. Confiabilidade é a pergunta "se eu medir de novo, obtenho o mesmo?".
+
+A ideia é formalizada pela **teoria clássica dos testes**, cuja equação fundamental é simples e iluminadora:
+
+$$X = V + E$$
+
+O escore observado ($X$) é a soma do escore verdadeiro ($V$) — o valor real da característica — com um erro de medida ($E$), aleatório, que ora infla, ora deprime a leitura. A confiabilidade é a proporção da variação nos escores observados que se deve à variação verdadeira, e não ao erro. Quanto menor o erro aleatório, mais confiável a medida. Há três formas principais de estimá-la, cada uma perguntando "consistente em relação a quê?":
+
+- **Confiabilidade teste-reteste:** aplica-se a mesma medida às mesmas pessoas em dois momentos e verifica-se a correlação. Consistência ao longo do **tempo**. Apropriada para traços que se supõem estáveis (inteligência), problemática para estados que oscilam de propósito (humor).
+- **Confiabilidade entre avaliadores** (*inter-rater*): dois observadores independentes medem o mesmo fenômeno e verifica-se a concordância. Consistência entre **observadores** — a que apareceu na observação naturalística do Cap. 15.
+- **Consistência interna:** os itens que supostamente medem o mesmo construto concordam entre si? Se um inventário de ansiedade tem vinte itens, todos deveriam "puxar" na mesma direção. O índice mais usado é o **alfa de Cronbach** [@cronbach1951], que resume o quanto os itens se correlacionam entre si. Alfa alto indica que os itens medem uma coisa só — embora, como se verá, não diga *qual* coisa.
+
+Confiabilidade não é tudo ou nada: mede-se em grau, tipicamente numa escala de 0 a 1, e o patamar aceitável depende do uso — decisões clínicas sobre indivíduos exigem confiabilidade mais alta que médias de grupo em pesquisa.
+
+## Validade: a medida mede o que diz medir?
+
+Uma medida pode ser perfeitamente consistente e ainda assim medir a coisa errada. **Validade** é a adequação das interpretações que se fazem a partir de uma medida — o grau em que ela de fato captura o construto pretendido, e não outro. Note a formulação cuidadosa: a validade rigorosamente não é propriedade do *instrumento*, mas da *interpretação* que se dá a seus escores num certo uso. Uma régua é válida para medir altura e inválida para medir inteligência; o mesmo teste pode ser válido para uma finalidade e inválido para outra. Há vários ângulos pelos quais se avalia a validade.
+
+A **validade de conteúdo** pergunta se a medida cobre todo o domínio do construto. Uma prova de matemática que só tivesse questões de adição teria baixa validade de conteúdo para "competência matemática" — deixa de fora frações, geometria, álgebra. Avalia-se sobretudo por julgamento de especialistas sobre a representatividade dos itens.
+
+A **validade de critério** pergunta se a medida se correlaciona com um critério externo relevante. Divide-se em duas: a **validade preditiva**, quando o critério está no futuro (um teste vocacional prevê o desempenho profissional anos depois?), e a **validade concorrente**, quando o critério é medido ao mesmo tempo (um novo teste rápido de depressão concorda com uma entrevista clínica extensa aplicada hoje?). É a face mais prática da validade: a medida *funciona* para o que se quer prever?
+
+A **validade de construto** é a mais profunda e engloba as demais: o grau em que a medida realmente capta o construto teórico abstrato que pretende captar [@cronbach_meehl1955]. Como construtos não são observáveis diretamente, ela se demonstra por acúmulo de evidências — inclusive por duas exigências complementares e elegantes, formuladas por Campbell e Fiske [@campbell_fiske1959]. A **validade convergente**: a medida deve correlacionar-se com outras medidas do *mesmo* construto (um novo teste de ansiedade deve concordar com testes de ansiedade já validados). A **validade discriminante**: a medida deve *não* se correlacionar demais com medidas de construtos *diferentes* (o teste de ansiedade não pode ser, na verdade, um teste de inteligência disfarçado). Um bom instrumento converge com seus pares e se separa dos estranhos.
+
+Há ainda a **validade aparente** (*face validity*): a medida *parece*, ao leigo, medir o que diz medir. É a mais fraca — parecer não é ser —, mas não é irrelevante: um teste com baixa validade aparente pode desmotivar respondentes ou gerar desconfiança, mesmo quando as outras validades são altas.
+
+::: {.na-pratica}
+**O termômetro emocional que só media o clima da sala.** Imagine um aplicativo que promete medir "felicidade" pedindo, uma vez por dia, uma nota de 0 a 10. Ele pode ter ótima confiabilidade teste-reteste (as notas de uma pessoa são estáveis semana a semana) e ainda assim baixa validade: talvez esteja captando sobretudo o quanto fez sol naquele dia, ou o humor momentâneo no instante do toque, não o bem-estar duradouro que anuncia medir. Antes de confiar em qualquer instrumento — psicológico, educacional, de RH —, separe as duas perguntas: *ele é consistente?* (confiabilidade) e *ele mede o que promete?* (validade). Fornecedores adoram exibir a primeira, que é fácil de obter, e silenciar sobre a segunda, que é difícil e cara. A pergunta que desmascara é sempre a mesma: "com que critério externo os escores deste teste já foram comparados?".
+:::
+
+## A relação entre as duas: a analogia do alvo
+
+Confiabilidade e validade não são independentes, e sua relação é assimétrica: **confiabilidade é necessária, mas não suficiente, para validade.** A imagem canônica é o alvo de dardos, na @fig-alvo-validade. Cada dardo é uma medição; o centro é o valor verdadeiro do construto.
+
+::: {#fig-alvo-validade}
+```{.tikz}
+%%| filename: alvo-validade
+%%| alt: Quatro alvos circulares dispostos em duas colunas e duas linhas, ilustrando combinações de confiabilidade e validade. Coluna esquerda, alta confiabilidade; coluna direita, baixa confiabilidade. Linha superior, baixa validade; linha inferior, alta validade. Alto e à esquerda (confiável, não válido): dardos agrupados mas longe do centro. Alto e à direita (nem confiável nem válido): dardos espalhados e descentrados. Embaixo à esquerda (confiável e válido): dardos agrupados no centro. Embaixo à direita (válido em média mas não confiável): dardos espalhados em torno do centro.
+\begin{tikzpicture}[dardo/.style={fill=manualred, circle, inner sep=1.3pt}]
+  \def\alvo{
+    \draw[manualgray, thick] (0,0) circle (1.1);
+    \draw[manualgray] (0,0) circle (0.7);
+    \draw[manualblue, thick] (0,0) circle (0.32);
+    \fill[manualblue] (0,0) circle (0.05);
+  }
+  % Superior esquerdo: confiável, não válido (agrupado fora do centro)
+  \begin{scope}[shift={(0,4)}]
+    \alvo
+    \foreach \x/\y in {0.62/0.58, 0.7/0.5, 0.55/0.64, 0.66/0.62, 0.6/0.52} \node[dardo] at (\x,\y) {};
+  \end{scope}
+  % Superior direito: nem confiável nem válido (espalhado e fora)
+  \begin{scope}[shift={(5.2,4)}]
+    \alvo
+    \foreach \x/\y in {0.3/0.8, 0.9/0.2, -0.1/0.5, 0.75/0.7, 0.5/-0.1} \node[dardo] at (\x,\y) {};
+  \end{scope}
+  % Inferior esquerdo: confiável e válido (agrupado no centro)
+  \begin{scope}[shift={(0,0)}]
+    \alvo
+    \foreach \x/\y in {0.05/0.06, -0.06/0.04, 0.03/-0.05, -0.02/-0.03, 0.07/-0.01} \node[dardo] at (\x,\y) {};
+  \end{scope}
+  % Inferior direito: válido em média, não confiável (espalhado em torno do centro)
+  \begin{scope}[shift={(5.2,0)}]
+    \alvo
+    \foreach \x/\y in {0.55/0.35, -0.5/0.3, 0.1/-0.6, -0.35/-0.4, 0.4/0.1} \node[dardo] at (\x,\y) {};
+  \end{scope}
+  % Rótulos de coluna e linha
+  \node[font=\small\bfseries, text=manualblue] at (0,5.6) {alta confiabilidade};
+  \node[font=\small\bfseries, text=manualblue] at (5.2,5.6) {baixa confiabilidade};
+  \node[font=\small\bfseries, text=manualgray, rotate=90] at (-1.9,4) {baixa validade};
+  \node[font=\small\bfseries, text=manualgray, rotate=90] at (-1.9,0) {alta validade};
+\end{tikzpicture}
+```
+Confiabilidade é o quanto os dardos se agrupam; validade é o quão perto do centro eles caem, em média. Note o quadrante superior esquerdo: uma medida pode ser altamente consistente e sistematicamente errada. Não existe o quadrante "válido e agrupado longe do centro" — por isso confiabilidade é pré-requisito, não garantia.
+:::
+
+Leia a figura com atenção ao caso perverso do canto superior esquerdo: dardos muito agrupados, mas longe do alvo. É a medida **confiável e inválida** — consistentíssima em medir a coisa errada. Uma balança descalibrada que sempre marca 3 kg a mais é assim: perfeitamente confiável, sistematicamente inválida. É o caso mais perigoso, porque a consistência dá uma falsa sensação de qualidade. Já o canto inferior direito — dardos espalhados em torno do centro — é **válido em média, mas não confiável**: acerta na média de muitas medições, mas cada medição isolada é ruim. A assimetria fica clara: sem agrupamento (confiabilidade), não há como acertar o centro de forma estável; mas agrupar não garante estar no centro. Por isso se diz que a confiabilidade impõe um **teto** à validade — uma medida cheia de erro aleatório não pode ser válida, mas eliminar o erro aleatório não conserta um erro *sistemático* de direção.
+
+## Quatro validades de um estudo inteiro
+
+Até aqui "validade" designou a qualidade de uma *medida*. O termo tem um segundo uso, herdado de Campbell e Stanley e do Cap. 14: a qualidade das *inferências de um estudo como um todo* [@campbell_stanley1963; @shadish2002]. São quatro tipos, e vale tê-los separados porque um estudo pode ser forte num e fraco noutro.
+
+A **validade de construto** (do estudo) pergunta se as operacionalizações — da causa e do efeito — de fato representam os construtos teóricos pretendidos. É a mensuração da seção anterior, elevada ao nível do delineamento: manipulei mesmo "estresse", ou apenas "barulho"? Medi "agressão", ou "disposição a apertar um botão"?
+
+A **validade interna** (Cap. 14) pergunta se foi a VI, e não uma confusão, que causou o efeito. É a validade da conclusão *causal*, dentro daquele estudo.
+
+A **validade externa** pergunta se o resultado se **generaliza** — para outras pessoas, outros lugares, outros tempos, outras operacionalizações. Um efeito robusto entre calouros norte-americanos num laboratório vale para trabalhadores brasileiros no cotidiano? A resposta nunca é automática; é ela própria uma hipótese (é o problema WEIRD do Cap. 1). Um caso especial muito citado é a **validade ecológica**: o grau em que as condições do estudo se assemelham às da vida real.
+
+A **validade de conclusão estatística** pergunta se as inferências sobre a existência e o tamanho da relação — extraídas dos testes estatísticos — estão corretas. Amostra pequena demais, pressupostos violados, uso indevido de testes: tudo isso a ameaça, e é o assunto dos Caps. 18 e 19.
+
+::: {.atencao}
+**A troca permanente entre validade interna e externa.** As duas puxam em direções opostas, e é raro maximizar ambas. Para blindar a validade *interna*, o pesquisador aperta o controle: laboratório, tarefa padronizada, tudo mantido constante — e, ao fazê-lo, afasta a situação da vida real, arriscando a validade *externa*. Para ganhar validade *externa*, leva o estudo a campo, ao mundo bagunçado — e perde o controle que blinda a validade interna. Não há desenho que resolva o dilema de uma vez; resolve-se com *programas* de pesquisa, combinando estudos de laboratório rigorosos com estudos de campo realistas, cada um cobrindo a fraqueza do outro. Desconfie de quem apresenta um único estudo como palavra final: nenhum estudo isolado é forte nas quatro validades ao mesmo tempo.
+:::
+
+::: {.callout-sintese}
+- **A escala de medida** — nominal, ordinal, intervalar, de razão — determina quais operações fazem sentido; tirar médias de dados nominais é absurdo, e de ordinais é uma suposição a ser justificada.
+- **Confiabilidade é consistência:** o grau em que a medida se repete. Formaliza-se por $X = V + E$ e estima-se por teste-reteste (tempo), entre avaliadores (observadores) e consistência interna (itens, via alfa de Cronbach).
+- **Validade é adequação:** o grau em que a interpretação dos escores capta o construto pretendido. Conteúdo (cobre o domínio?), critério (prediz algo externo? — preditiva e concorrente) e construto (capta o conceito? — com validade convergente e discriminante).
+- **Confiabilidade é necessária, não suficiente, para validade.** Uma medida pode ser consistentíssima e sistematicamente errada (dardos agrupados fora do alvo); a confiabilidade impõe um teto à validade, mas não a garante.
+- **No nível do estudo inteiro, há quatro validades:** de construto (as operacionalizações representam os construtos?), interna (foi a VI que causou?), externa (generaliza?) e de conclusão estatística (as inferências numéricas estão corretas?).
+- **Validade interna e externa competem;** nenhum estudo isolado é forte em todas. O conhecimento robusto vem de programas que combinam laboratório e campo.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Variável**
+:   Característica que assume valores diferentes entre indivíduos ou situações.
+
+**Escalas de medida**
+:   Níveis de mensuração — nominal (categorias), ordinal (ordem), intervalar (intervalos iguais, zero arbitrário) e de razão (zero absoluto) — que determinam as operações cabíveis [@stevens1946].
+
+**Confiabilidade**
+:   Consistência de uma medida; grau em que ela produz o mesmo resultado sob condições equivalentes.
+
+**Teoria clássica dos testes**
+:   Modelo segundo o qual o escore observado é a soma do escore verdadeiro e de um erro aleatório ($X = V + E$).
+
+**Alfa de Cronbach**
+:   Índice de consistência interna que resume a correlação média entre os itens de um instrumento [@cronbach1951].
+
+**Validade**
+:   Adequação das interpretações feitas a partir dos escores de uma medida, para um uso específico.
+
+**Validade de conteúdo**
+:   Grau em que os itens cobrem representativamente o domínio do construto.
+
+**Validade de critério**
+:   Grau em que a medida se correlaciona com um critério externo relevante; preditiva (critério futuro) ou concorrente (critério simultâneo).
+
+**Validade de construto**
+:   Grau em que a medida capta o construto teórico pretendido; sustentada por validade convergente e discriminante [@cronbach_meehl1955; @campbell_fiske1959].
+
+**Validade interna / externa**
+:   A primeira, a solidez da conclusão causal dentro do estudo; a segunda, o grau em que o resultado se generaliza para além dele.
+
+**Validade ecológica**
+:   Grau em que as condições do estudo se assemelham às da vida real.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Classifique cada variável quanto à escala de medida: (a) número da camisa de um jogador; (b) posição de chegada numa corrida; (c) temperatura em graus Celsius; (d) número de palavras recordadas num teste de memória. Para quais faz sentido calcular uma média?
+
+2. **(Recuperação.)** Explique a equação $X = V + E$ e use-a para definir o que significa uma medida "confiável".
+
+3. **(Aplicação.)** Um novo questionário de dez itens promete medir "resiliência". Descreva uma evidência de confiabilidade e uma de cada tipo de validade (conteúdo, critério, construto) que você exigiria antes de adotá-lo. Qual seria a mais difícil de obter, e por quê?
+
+4. **(Aplicação.)** Uma balança de banheiro sempre marca exatamente 2 kg a mais que o peso real. Localize essa balança em um dos quadrantes da @fig-alvo-validade e explique por que aumentar sua confiabilidade não corrigiria o problema.
+
+5. **(Reflexão crítica.)** Um fornecedor de testes de RH exibe orgulhosamente um alfa de Cronbach de 0,95 para seu instrumento de "potencial de liderança". Por que esse número, sozinho, não deveria convencer ninguém a comprá-lo? Que pergunta você faria em seguida?
+
+6. **(Integração.)** Um estudo de laboratório demonstra, com controle impecável, que uma manipulação aumenta a "cooperação" (medida por fichas doadas num jogo econômico). Avalie o estudo nas quatro validades: qual provavelmente é sua maior força e qual sua maior vulnerabilidade? Como um segundo estudo poderia cobrir essa fraqueza?
