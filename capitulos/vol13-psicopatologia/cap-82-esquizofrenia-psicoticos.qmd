@@ -1,5 +1,163 @@
 # 82. Esquizofrenia e transtornos psicóticos
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** psicose e descrever os sintomas positivos, negativos e cognitivos da esquizofrenia.
+- **Distinguir** a esquizofrenia de outros transtornos psicóticos e desfazer o mito de que ela é "dupla personalidade".
+- **Explicar** o peso da genética por meio dos dados de risco familiar de Gottesman.
+- **Integrar** a hipótese do neurodesenvolvimento, a hipótese dopaminérgica e os fatores ambientais.
+- **Analisar** o papel da emoção expressa familiar no curso do transtorno.
+- **Descrever** o tratamento combinado (antipsicóticos e intervenções psicossociais) e seus limites.
 :::
+
+A esquizofrenia é, provavelmente, o transtorno mental mais grave e mais mal compreendido pelo público. Ela afeta cerca de uma em cada cem pessoas ao longo da vida, em todas as culturas, e costuma surgir no fim da adolescência ou início da vida adulta — justamente quando a pessoa começaria a construir autonomia. É também o quadro em torno do qual mais se acumulam mitos, estigma e medo. Este capítulo apresenta o que a ciência de fato sabe sobre a esquizofrenia — muito mais do que o senso comum imagina, e ainda assim menos do que gostaríamos — e usa-a como o caso exemplar da integração biopsicossocial: nenhum transtorno mostra tão claramente que genes, cérebro, desenvolvimento e ambiente se combinam.
+
+## O que é psicose
+
+**Psicose** é uma perda de contato com a realidade — não um transtorno específico, mas uma característica que aparece em vários quadros. Seus sinais cardinais são as **alucinações** (percepções sem estímulo externo correspondente) e os **delírios** (crenças falsas, firmemente sustentadas, resistentes à evidência). A esquizofrenia é o transtorno psicótico prototípico, mas a psicose ocorre também na mania grave, na depressão psicótica, no uso de substâncias e em condições neurológicas.
+
+## Os três domínios de sintomas da esquizofrenia
+
+Os sintomas da esquizofrenia organizam-se em três grandes domínios (@fig-dominios-esq), e essa distinção tem consequências para o prognóstico e o tratamento.
+
+**Sintomas positivos** são acréscimos à experiência normal — algo que está presente e não deveria. Incluem **alucinações** (as auditivas, sobretudo vozes que comentam ou dão ordens, são as mais características), **delírios** (persecutórios, de grandeza, de referência — sentir que a TV fala com você —, de controle), **pensamento e fala desorganizados** (associações frouxas, descarrilamento) e **comportamento desorganizado**. Respondem relativamente bem aos medicamentos.
+
+**Sintomas negativos** são ausências ou reduções de funções normais — algo que deveria estar presente e falta. Incluem **embotamento afetivo** (redução da expressão emocional), **alogia** (empobrecimento da fala), **avolição** (falta de iniciativa e motivação), **anedonia** e **retraimento social**. São menos visíveis e mais estigmatizados como "preguiça", predizem pior funcionamento a longo prazo e **respondem pouco** aos medicamentos atuais — uma das maiores lacunas terapêuticas do campo.
+
+**Sintomas cognitivos** — déficits de atenção, memória de trabalho e funções executivas — costumam anteceder o primeiro episódio e são fortes preditores da capacidade de trabalhar e viver de forma independente.
+
+::: {#fig-dominios-esq}
+```{.tikz}
+%%| filename: dominios-esquizofrenia
+%%| alt: Três colunas lado a lado, cada uma um domínio de sintomas da esquizofrenia. À esquerda, coluna vermelha "Sintomas positivos (acréscimos)" listando alucinações, delírios, fala e comportamento desorganizados, com a nota respondem bem aos antipsicóticos. Ao centro, coluna azul "Sintomas negativos (reduções)" listando embotamento afetivo, avolição, alogia, anedonia, retraimento, com a nota respondem pouco. À direita, coluna cinza "Sintomas cognitivos" listando atenção, memória de trabalho, funções executivas, com a nota preveem o funcionamento.
+\begin{tikzpicture}[font=\small,
+  col/.style={draw, thick, rounded corners=4pt, align=center, minimum width=3.7cm, minimum height=3.7cm, anchor=north}]
+  \node[col, draw=manualred, fill=manualred!6, text=manualred] (pos) at (-4.2,0)
+    {\textbf{Positivos}\\{\scriptsize(acréscimos)}\\[4pt]
+     {\footnotesize alucinações}\\{\footnotesize delírios}\\{\footnotesize fala desorganizada}\\{\footnotesize comport. desorganizado}\\[4pt]
+     {\scriptsize\itshape respondem bem}\\{\scriptsize\itshape aos antipsicóticos}};
+  \node[col, draw=manualblue, fill=manualblue!6, text=manualblue] (neg) at (0,0)
+    {\textbf{Negativos}\\{\scriptsize(reduções)}\\[4pt]
+     {\footnotesize embotamento afetivo}\\{\footnotesize avolição}\\{\footnotesize alogia}\\{\footnotesize anedonia, retraimento}\\[4pt]
+     {\scriptsize\itshape respondem pouco}};
+  \node[col, draw=manualgray, fill=manualgray!8] (cog) at (4.2,0)
+    {\textbf{Cognitivos}\\{\scriptsize(déficits)}\\[4pt]
+     {\footnotesize atenção}\\{\footnotesize memória de trabalho}\\{\footnotesize funções executivas}\\[4pt]
+     {\scriptsize\itshape preveem o}\\{\scriptsize\itshape funcionamento}};
+\end{tikzpicture}
+```
+Os três domínios de sintomas da esquizofrenia. A distinção importa: os positivos respondem melhor ao tratamento medicamentoso; os negativos e cognitivos, que mais comprometem a vida a longo prazo, permanecem um desafio terapêutico.
+:::
+
+O diagnóstico exige sinais por pelo menos **seis meses**, com um mês de sintomas ativos, e prejuízo funcional. Quadros aparentados incluem o **transtorno esquizofreniforme** (mesmos sintomas, 1 a 6 meses), o **transtorno esquizoafetivo** (esquizofrenia somada a episódios de humor), o **transtorno psicótico breve** e o **transtorno delirante** (delírios sem os demais sintomas).
+
+::: {.atencao}
+⚠️ **Esquizofrenia NÃO é "dupla personalidade".** O uso popular de "esquizofrênico" para descrever alguém contraditório ou de "duas caras" é um erro que confunde esquizofrenia com o transtorno dissociativo de identidade — dois quadros completamente diferentes. Esquizofrenia é uma fragmentação do pensamento, da percepção e do afeto, não uma multiplicação de personalidades. E, ao contrário do estereótipo, **a maioria das pessoas com esquizofrenia não é violenta**: elas têm risco muito maior de serem vítimas de violência e de negligência do que de cometê-la, e o risco atribuível à população é pequeno (Cap. 76). O estigma, alimentado por filmes e manchetes, é uma barreira ao tratamento tão real quanto os sintomas.
+:::
+
+## A causa: o caso mais forte de genética na psicopatologia
+
+A esquizofrenia tem uma das mais altas herdabilidades de toda a psiquiatria — estimativas de estudos com gêmeos giram em torno de **80%** [@sullivan2003]. A evidência mais didática vem da compilação de Irving Gottesman: o risco de desenvolver esquizofrenia ao longo da vida cresce de forma ordenada com o **grau de parentesco genético** com alguém afetado (@fig-risco-esq) [@gottesman1991]. Na população geral o risco é de cerca de 1%; sobe para ~9% em irmãos, ~13% em filhos de um genitor afetado, ~17% em gêmeos dizigóticos e chega a cerca de **48% em gêmeos monozigóticos**.
+
+::: {#fig-risco-esq}
+```{.tikz}
+%%| filename: risco-genetico-esquizofrenia
+%%| alt: Gráfico de barras horizontais do risco de esquizofrenia ao longo da vida conforme o grau de parentesco com uma pessoa afetada. As barras, do menor para o maior risco: população geral cerca de 1 por cento; primo em primeiro grau cerca de 2 por cento; sobrinho cerca de 4 por cento; irmão cerca de 9 por cento; filho de um genitor afetado cerca de 13 por cento; gêmeo dizigótico cerca de 17 por cento; filho de dois genitores afetados cerca de 46 por cento; gêmeo monozigótico cerca de 48 por cento. As barras crescem com a proximidade genética, mas mesmo em gêmeos idênticos o risco fica abaixo de 50 por cento.
+\begin{tikzpicture}[font=\small]
+  \def\bl{0}
+  \foreach \lbl/\val/\y [count=\i] in {
+      {População geral}/1/0,
+      {Primo (1º grau)}/2/1,
+      {Sobrinho(a)}/4/2,
+      {Irmão(ã)}/9/3,
+      {Filho (1 genitor)}/13/4,
+      {Gêmeo dizigótico}/17/5,
+      {Filho (2 genitores)}/46/6,
+      {Gêmeo monozigótico}/48/7}{
+    \fill[manualblue!70] (0,\y*0.72) rectangle (\val*0.13,\y*0.72+0.48);
+    \node[anchor=east, font=\scriptsize] at (-0.15,\y*0.72+0.24) {\lbl};
+    \node[anchor=west, font=\scriptsize, text=manualblue] at (\val*0.13+0.1,\y*0.72+0.24) {\val\%};
+  }
+  \draw[->, >=Stealth, thick, manualgray] (0,-0.15) -- (7.3,-0.15) node[right, font=\scriptsize] {risco ao longo da vida};
+  \foreach \x in {0,10,20,30,40,50}{
+    \draw[manualgray] (\x*0.13,-0.2) -- (\x*0.13,-0.1);
+    \node[below, font=\scriptsize, text=manualgray] at (\x*0.13,-0.2) {\x};
+  }
+\end{tikzpicture}
+```
+Risco de esquizofrenia ao longo da vida por grau de parentesco [@gottesman1991]. O risco cresce com a proximidade genética — mas mesmo em gêmeos monozigóticos, que compartilham 100% dos genes, ele fica **abaixo de 50%**, prova de que a genética predispõe sem determinar e de que o ambiente é decisivo.
+:::
+
+O dado mais importante dessa figura é o teto: **mesmo gêmeos idênticos discordam mais da metade das vezes**. Genes idênticos, destinos diferentes. Isso encerra qualquer determinismo genético e obriga o modelo diátese-estresse: os genes criam a vulnerabilidade; o ambiente decide se ela se expressa.
+
+## Neurodesenvolvimento, dopamina e ambiente
+
+A explicação hoje dominante é a **hipótese do neurodesenvolvimento**: a esquizofrenia começaria como uma alteração sutil na formação do cérebro muito antes dos primeiros sintomas, decorrente da interação de genes de risco com **insultos precoces** — infecções maternas na gestação, complicações obstétricas, desnutrição pré-natal — que só se manifestaria clinicamente na adolescência, quando a intensa "poda" sináptica normal (Cap. 28) revelaria a fragilidade dos circuitos [@kahn2015; @tandon2008]. Achados cerebrais compatíveis incluem ventrículos aumentados, redução de matéria cinzenta e hipofrontalidade.
+
+No plano dos neurotransmissores, a clássica **hipótese dopaminérgica** propôs que os sintomas positivos resultariam de **excesso de atividade dopaminérgica** em vias mesolímbicas. A evidência a favor é forte — anfetaminas (que aumentam dopamina) podem induzir psicose, e todos os antipsicóticos bloqueiam receptores dopaminérgicos D2 —, mas a versão simples é insuficiente: a formulação atual distingue **hiperdopaminergia subcortical** (ligada aos sintomas positivos) de **hipodopaminergia pré-frontal** (ligada aos negativos e cognitivos), e envolve também o sistema **glutamatérgico** (os anestésicos que bloqueiam receptores NMDA, como a cetamina, reproduzem sintomas positivos *e* negativos) [@howes2009].
+
+Sobre a vulnerabilidade neurodesenvolvimental agem **fatores ambientais** de risco bem replicados: crescer em ambiente **urbano**, a experiência de **migração** e adversidade social, e o uso de **cannabis** — sobretudo na adolescência e de alta potência —, associado a maior risco de psicose, ainda que a direção causal seja parcialmente debatida (quem é vulnerável pode também usar mais) [@vanos2010; @marconi2016]. É a diátese-estresse do Cap. 76 em sua forma mais completa: vulnerabilidade neurodesenvolvimental de base genética, ativada por estressores sociais e biológicos.
+
+## O ambiente familiar e o curso do transtorno
+
+Um dos achados psicossociais mais robustos diz respeito não à *causa*, mas ao *curso*. A **emoção expressa (EE)** — um padrão de comunicação familiar marcado por criticismo, hostilidade e superenvolvimento emocional — prediz fortemente a **recaída** de pessoas com esquizofrenia: uma metanálise clássica mostrou que quem retorna a lares com alta EE recai muito mais do que quem vive em lares de baixa EE [@butzlaff_hooley1998]. Isso **não** significa culpar as famílias — conviver com o transtorno é extenuante, e a alta EE é muitas vezes uma reação ao adoecimento —, mas indica um alvo de intervenção poderoso: programas psicoeducativos que reduzem a EE diminuem recaídas. É o modelo diátese-estresse aplicado ao dia a dia: o ambiente emocional é um dos estressores que decidem quando a vulnerabilidade se reacende.
+
+## O tratamento
+
+O tratamento da esquizofrenia é necessariamente **combinado**. Os **antipsicóticos** (Cap. 94) são a base: os de primeira geração ("típicos") controlam bem os sintomas positivos, mas causam efeitos motores importantes; os de segunda geração ("atípicos") têm outro perfil de efeitos (metabólicos), sem clara superioridade global de eficácia [@leucht2013]. Para casos resistentes, a **clozapina** é o mais eficaz, apesar de exigir monitoramento por um efeito hematológico raro e grave. Nenhum deles, porém, resolve bem os sintomas negativos e cognitivos, nem "cura" — daí a indispensabilidade das **intervenções psicossociais**: intervenção familiar (reduzir a EE), treino de habilidades sociais, emprego apoiado, remediação cognitiva e a **terapia cognitivo-comportamental para psicose** (TCCp), que ajuda a pessoa a lidar com delírios e alucinações e reduz o sofrimento associado [@wykes2011].
+
+::: {.na-pratica}
+💡 **Intervenção precoce muda o prognóstico.** Um dos avanços mais promissores é a constatação de que a **duração da psicose não tratada** — o tempo entre o início dos sintomas e o começo do tratamento — prediz um pior desfecho. Programas de **intervenção precoce**, que combinam medicação em dose baixa, apoio familiar, acompanhamento psicossocial e retorno rápido a estudos ou trabalho já no primeiro episódio, melhoram a recuperação em comparação com o cuidado usual. A mensagem prática, contra o estigma que atrasa a busca de ajuda: quanto mais cedo se trata o primeiro episódio psicótico, melhor o prognóstico. E o prognóstico é mais variado do que o pessimismo popular sugere — uma parcela significativa das pessoas alcança recuperação funcional substancial.
+:::
+
+::: {.callout-sintese}
+- **Psicose** é a perda de contato com a realidade (alucinações, delírios); a **esquizofrenia** é seu transtorno prototípico (~1% ao longo da vida).
+- Sintomas em três domínios: **positivos** (alucinações, delírios, desorganização — respondem à medicação), **negativos** (embotamento, avolição — respondem pouco e predizem o prognóstico) e **cognitivos**.
+- Não é "dupla personalidade", e a maioria das pessoas afetadas **não é violenta** — é mais vítima do que autora de violência.
+- A **genética** é decisiva (herdabilidade ~80%): o risco cresce com o parentesco [@gottesman1991; @sullivan2003], mas gêmeos idênticos discordam >50% — nada de determinismo.
+- Explicação integrada: **hipótese do neurodesenvolvimento** [@kahn2015], **dopamina** (com glutamato) [@howes2009] e ambiente (urbanicidade, migração, cannabis) [@vanos2010; @marconi2016].
+- A **emoção expressa** familiar prediz recaída [@butzlaff_hooley1998]; o tratamento combina **antipsicóticos** [@leucht2013] com **intervenções psicossociais** e TCCp [@wykes2011]; a intervenção precoce melhora o desfecho.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicose**
+:   Perda de contato com a realidade, marcada por alucinações e/ou delírios; ocorre em vários transtornos.
+
+**Alucinação / delírio**
+:   Percepção sem estímulo externo (alucinação); crença falsa, firme e resistente à evidência (delírio).
+
+**Sintomas positivos**
+:   Acréscimos à experiência normal (alucinações, delírios, desorganização), que respondem melhor aos antipsicóticos.
+
+**Sintomas negativos**
+:   Reduções de funções normais (embotamento afetivo, avolição, alogia, anedonia), que predizem o prognóstico e respondem pouco ao tratamento.
+
+**Hipótese do neurodesenvolvimento**
+:   Proposta de que a esquizofrenia origina-se de alterações precoces na formação do cérebro, manifestando-se anos depois [@kahn2015].
+
+**Hipótese dopaminérgica**
+:   Proposta de que sintomas positivos derivam de excesso de dopamina subcortical; refinada para incluir déficit pré-frontal e glutamato [@howes2009].
+
+**Emoção expressa (EE)**
+:   Padrão familiar de criticismo, hostilidade e superenvolvimento que prediz recaída [@butzlaff_hooley1998].
+
+**Clozapina**
+:   Antipsicótico mais eficaz nos casos resistentes, com necessidade de monitoramento por risco hematológico.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie sintomas positivos, negativos e cognitivos da esquizofrenia, dando um exemplo de cada. Por que os negativos são clinicamente tão importantes apesar de menos chamativos?
+
+2. **(Conceitual.)** Desfaça dois mitos sobre a esquizofrenia usando o que o capítulo apresenta: o de "dupla personalidade" e o da periculosidade.
+
+3. **(Análise.)** Os dados de Gottesman mostram risco de ~48% em gêmeos monozigóticos. Explique por que esse número, ao mesmo tempo, comprova o peso da genética e refuta o determinismo genético.
+
+4. **(Integração.)** Combine a hipótese do neurodesenvolvimento, um fator ambiental (à sua escolha) e o modelo diátese-estresse para explicar por que a esquizofrenia costuma se manifestar no fim da adolescência, e não na infância.
+
+5. **(Aplicação.)** A emoção expressa prediz recaída. Descreva uma intervenção familiar que reduza a EE e explique por que isso não equivale a "culpar a família".
+
+6. **(Reflexão crítica.)** A hipótese dopaminérgica simples ("esquizofrenia é excesso de dopamina") explica por que os antipsicóticos ajudam, mas é insuficiente. Aponte duas evidências que a complicam e diga como a versão atual as acomoda.
