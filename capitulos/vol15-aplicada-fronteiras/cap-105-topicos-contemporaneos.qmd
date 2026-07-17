@@ -1,5 +1,142 @@
 # 105. Tópicos contemporâneos e fronteiras (ciberpsicologia, IA, replicabilidade, ciência aberta)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a crise de replicabilidade e as práticas de pesquisa que a produziram.
+- **Descrever** as reformas da **ciência aberta** (pré-registro, dados abertos, replicações).
+- **Analisar** o campo da **ciberpsicologia**: efeitos da internet e das redes sobre o comportamento e a saúde mental.
+- **Avaliar criticamente** o papel emergente da **inteligência artificial** na psicologia.
+- **Reconhecer** outras fronteiras da disciplina e seus desafios éticos.
+- **Sintetizar** o percurso do manual e o que significa a psicologia como ciência.
 :::
+
+Chegamos ao capítulo final. Depois de percorrer a psicologia do neurônio ao consultório, da percepção à cultura, cabe olhar para onde a disciplina está **agora** e para onde caminha — não com futurologia, mas examinando as transformações que já a atravessam. Este capítulo trata de quatro fronteiras: a **crise de replicabilidade** que abalou a psicologia na última década, o movimento de **ciência aberta** que respondeu a ela, a **ciberpsicologia** do mundo conectado e a irrupção da **inteligência artificial**. E encerra, com o manual, refletindo sobre o que aprendemos ao tratar a mente como objeto de ciência.
+
+## A crise de replicabilidade
+
+O capítulo 3 definiu a **replicabilidade** — a capacidade de um resultado se repetir em novos estudos — como pilar da ciência. Na década de 2010, a psicologia descobriu, dolorosamente, que muitos de seus achados clássicos **não se replicavam**. Foi a **crise de replicabilidade**, e ela começou com um choque.
+
+Em 2011, um psicólogo respeitado publicou, numa revista de primeira linha e usando métodos estatísticos convencionais, "evidências" de **precognição** — de que pessoas conseguiriam prever eventos futuros aleatórios [@bem2011]. O resultado era absurdo, mas os métodos eram os *usuais*. A lição foi devastadora: se os procedimentos-padrão da área podiam "provar" o impossível, quanto do resto da literatura era confiável? A resposta veio de um esforço coletivo sem precedentes.
+
+::: {.experimento}
+🔬 **Estudo Clássico — o Projeto de Reprodutibilidade** [@osc2015]
+
+**Desenho.** A *Open Science Collaboration*, envolvendo centenas de pesquisadores, tentou **replicar 100 estudos** publicados em três das principais revistas de psicologia, seguindo os métodos originais com amostras em geral maiores.
+
+**Resultado.** Enquanto 97% dos estudos originais relatavam efeitos estatisticamente significativos, apenas cerca de **36%** das replicações os reproduziram — e, quando reproduzidos, os efeitos eram tipicamente **metade** do tamanho original.
+
+**Interpretação.** Uma parcela substancial da literatura publicada era frágil ou superestimada. Não por fraude (embora casos existam), mas por práticas metodológicas sistematicamente enviesadas em favor de resultados positivos.
+
+**Limitações.** "Falha em replicar" não prova que o efeito original é falso — diferenças de contexto, amostra e procedimento contribuem. E as taxas variam entre subáreas. Mas o padrão geral era inequívoco e forçou uma reforma profunda.
+:::
+
+O que causou a crise? Um conjunto de **práticas questionáveis de pesquisa** — não fraude, mas hábitos tolerados que inflavam falsos positivos [@simmons2011]:
+
+- **p-hacking**: analisar os dados de muitas maneiras e relatar só a que "deu significativa" (Cap. 19).
+- **HARKing** (*Hypothesizing After the Results are Known*): formular a hipótese *depois* de ver os dados e apresentá-la como se fosse prévia.
+- **Viés de publicação**: revistas publicam resultados positivos e novos, engavetando os nulos (o "problema da gaveta"), o que distorce a literatura inteira.
+- **Baixo poder estatístico**: amostras pequenas demais, que produzem resultados instáveis (agravadas pelo problema WEIRD, Cap. 103).
+
+## A resposta: ciência aberta
+
+A crise gerou uma reação construtiva e vigorosa — o movimento da **ciência aberta** (*open science*), que propõe reformar as práticas para tornar a pesquisa mais transparente e confiável [@munafo2017] (@fig-ciencia-aberta):
+
+- **Pré-registro**: declarar publicamente as hipóteses e o plano de análise **antes** de coletar os dados, o que impede o p-hacking e o HARKing (não se pode "prever" o que já se decidiu de antemão).
+- **Registered Reports** (relatórios registrados): as revistas avaliam e aceitam o estudo com base no *método*, antes de conhecer os resultados — publicando-o independentemente de dar positivo ou nulo, o que ataca o viés de publicação.
+- **Dados e materiais abertos**: disponibilizar dados brutos e código para que outros verifiquem e reanalisem.
+- **Valorização da replicação**: financiar e publicar estudos que testam achados anteriores, antes desprestigiados por não serem "novos".
+- **Amostras maiores e colaborações multissítio** para elevar o poder estatístico e a generalização.
+
+Longe de ser sinal de fracasso, essa autocorreção é a ciência funcionando **como deve**: expondo os próprios erros e reformando-se. A psicologia saiu da crise como uma ciência mais **rigorosa e humilde** — e serviu de exemplo para outras disciplinas que enfrentam problemas semelhantes.
+
+::: {#fig-ciencia-aberta}
+```{.tikz}
+%%| filename: ciencia-aberta
+%%| alt: Comparação de dois fluxos de pesquisa. Fluxo tradicional: coletar dados, analisar livremente, publicar só o positivo. Fluxo de ciência aberta: pré-registrar hipótese e plano, coletar, analisar conforme o plano, publicar independentemente do resultado.
+\begin{tikzpicture}[font=\scriptsize, node distance=4mm,
+  trad/.style={draw, rounded corners, fill=manualred!12, align=center, minimum height=8mm, text width=20mm, inner sep=2pt},
+  aberta/.style={draw, rounded corners, fill=manualgreen!15, align=center, minimum height=8mm, text width=20mm, inner sep=2pt}]
+  \node[font=\bfseries, text=manualred!70!black] at (0,1.0) {Tradicional};
+  \node[trad] (t1) at (0,0) {Coletar\\dados};
+  \node[trad, right=5mm of t1] (t2) {Analisar de\\vários modos};
+  \node[trad, right=5mm of t2] (t3) {Publicar só\\o positivo};
+  \draw[-{Latex}] (t1)--(t2); \draw[-{Latex}] (t2)--(t3);
+
+  \node[font=\bfseries, text=manualgreen!55!black] at (0,-2.0) {Ciência aberta};
+  \node[aberta] (a1) at (0,-3.0) {Pré-registrar\\hipótese e plano};
+  \node[aberta, right=5mm of a1] (a2) {Coletar e\\analisar (plano)};
+  \node[aberta, right=5mm of a2] (a3) {Publicar\\(dê o que der)};
+  \draw[-{Latex}] (a1)--(a2); \draw[-{Latex}] (a2)--(a3);
+\end{tikzpicture}
+```
+Do fluxo tradicional (vulnerável ao p-hacking e ao viés de publicação) ao fluxo da ciência aberta [@munafo2017]: o pré-registro fixa hipótese e análise antes dos dados, e a publicação independe do resultado.
+:::
+
+## Ciberpsicologia: a mente conectada
+
+A vida humana migrou, em parte, para as telas — e a **ciberpsicologia** estuda como a internet, as redes sociais, os jogos e os ambientes digitais afetam o comportamento e o psiquismo. É um campo jovem e de achados ainda em disputa, o que exige justamente o rigor discutido acima.
+
+O tema mais debatido é o efeito das **redes sociais sobre a saúde mental**, sobretudo de adolescentes. Alguns pesquisadores associam o uso intenso de mídias sociais a aumentos em ansiedade, depressão e problemas de imagem corporal, apontando para a comparação social, o *cyberbullying* e a privação de sono [@twenge2018]. Outros mostram que, na média, a associação entre tempo de tela e bem-estar é **pequena** — comparável a efeitos triviais — e que causalidade e magnitude estão longe de resolvidas [@orben2019]. A síntese prudente reconhece que o efeito **depende de quem, de como e de quê**: não é o "tempo de tela" bruto que importa, mas o tipo de uso (ativo × passivo), o conteúdo e a vulnerabilidade prévia. Outros temas do campo incluem o uso **problemático** de internet e jogos (a CID-11 reconhece o "transtorno por uso de jogos"), a formação de identidade e relações on-line, e os efeitos das câmaras de eco e da desinformação sobre a cognição social (Cap. 70).
+
+## Inteligência artificial e psicologia
+
+A ascensão da **inteligência artificial** — em especial dos grandes modelos de linguagem — abre uma fronteira de mão dupla. De um lado, a IA é **ferramenta** para a psicologia: acelera análises, permite estudar linguagem e comportamento em larga escala (a "ciência de dados psicológica"), e alimenta a **psiquiatria computacional**, que modela transtornos como alterações de processos de aprendizagem e decisão. De outro, a IA torna-se **objeto e agente**: surgem *chatbots* que oferecem suporte emocional e intervenções de saúde mental, prometendo acesso ampliado a quem não alcança um profissional.
+
+::: {.atencao}
+⚠️ **A terapia por IA: promessa e perigo.** *Chatbots* de saúde mental podem ampliar o acesso e oferecer apoio de baixo custo — mas levantam riscos sérios que a psicologia precisa examinar com rigor, não com deslumbre nem com pânico. Uma IA não tem responsabilidade profissional nem vínculo terapêutico genuíno; pode dar respostas inadequadas ou perigosas em situações de crise (como risco de suicídio); coleta dados sensíveis de saúde, com riscos de privacidade; e pode aprofundar desigualdades ou substituir, por economia, o cuidado humano onde ele seria necessário. A **aliança terapêutica** — o fator comum que mais consistentemente prediz resultado (Cap. 95) — repousa numa relação entre pessoas. A questão não é "a IA vai substituir o psicólogo?", mas "como usá-la de modo seguro, ético e baseado em evidências, e onde ela **não** deve substituir o humano?". Regular esse território com base em pesquisa, e não em marketing, é uma tarefa urgente da profissão.
+:::
+
+## Outras fronteiras e o fecho do manual
+
+Muitas outras fronteiras poderiam ser citadas: os avanços da **neurociência** (interfaces cérebro-máquina, otimização e edição genética, neuroética), a **genômica comportamental** e seus dilemas, a psicologia diante das **mudanças climáticas** (o "ecoluto" e a ansiedade climática) e a saúde mental global. Todas compartilham um traço: exigem que a psicologia una **rigor científico** e **responsabilidade ética** — as duas bússolas que este manual procurou manter apontadas do primeiro ao último capítulo.
+
+E aqui ele se encerra. Começamos, no Cap. 1, distinguindo o senso comum da ciência e perguntando se a psicologia poderia mesmo ser uma ciência. Cento e cinco capítulos depois, a resposta está dada — não como um dogma, mas como um **método**. Vimos a mente medida na psicofísica e mapeada no cérebro; vimos o comportamento moldado pelo condicionamento e a memória revelada falível; vimos o desenvolvimento, a personalidade, o laço social, o sofrimento e seu tratamento. Vimos, sobretudo, uma ciência que **erra e se corrige** — que enfrentou sua própria crise de replicabilidade de frente e saiu mais forte. Se há uma lição que atravessa o manual inteiro, é esta: estudar a mente humana com seriedade significa unir a **curiosidade** que faz boas perguntas, o **rigor** que exige boas evidências e a **humildade** de saber que toda resposta é provisória. A psicologia não é um conjunto de verdades prontas sobre quem somos; é o esforço contínuo, disciplinado e sempre inacabado de compreendê-lo. E esse esforço — como esperamos ter mostrado — é uma das aventuras intelectuais mais fascinantes que existem.
+
+::: {.callout-sintese}
+- A **crise de replicabilidade** [@osc2015]: cerca de 36% dos estudos replicaram, revelando a fragilidade de parte da literatura — deflagrada por um "achado" de precognição obtido com métodos-padrão [@bem2011].
+- As causas foram **práticas questionáveis**: p-hacking, HARKing, viés de publicação e baixo poder [@simmons2011].
+- A **ciência aberta** [@munafo2017] respondeu com **pré-registro**, *registered reports*, dados abertos e valorização da replicação — a ciência se autocorrigindo.
+- A **ciberpsicologia** debate os efeitos das redes sobre a saúde mental: reais, mas em geral **pequenos** e dependentes do tipo de uso [@twenge2018; @orben2019].
+- A **inteligência artificial** é ferramenta e agente; a terapia por *chatbot* traz promessa de acesso e riscos éticos sérios — a aliança terapêutica é humana.
+- O manual encerra afirmando a psicologia como **método**, não dogma: curiosidade, rigor e humildade diante de uma mente que só se compreende provisoriamente.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Crise de replicabilidade**
+:   Constatação de que muitos achados publicados em psicologia não se reproduzem em novos estudos [@osc2015].
+
+**p-hacking**
+:   Explorar múltiplas análises e relatar apenas as que atingem significância, inflando falsos positivos.
+
+**HARKing**
+:   Formular a hipótese após conhecer os resultados e apresentá-la como se fosse prévia.
+
+**Pré-registro**
+:   Declaração pública de hipóteses e plano de análise antes da coleta de dados, coibindo o p-hacking e o HARKing.
+
+**Ciência aberta**
+:   Conjunto de práticas (pré-registro, dados abertos, replicação) que tornam a pesquisa mais transparente e confiável [@munafo2017].
+
+**Ciberpsicologia**
+:   Campo que estuda os efeitos da internet, das redes sociais e dos ambientes digitais sobre o comportamento e o psiquismo.
+
+**Psiquiatria computacional**
+:   Abordagem que modela transtornos mentais como alterações de processos de aprendizagem e decisão.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que revelou o Projeto de Reprodutibilidade de 2015? Por que o "estudo da precognição" foi tão perturbador?
+
+2. **(Conceitual.)** Explique p-hacking, HARKing e viés de publicação. Como cada um infla a taxa de falsos positivos na literatura?
+
+3. **(Conceitual.)** Como o pré-registro e os *registered reports* atacam essas práticas? Por que a autocorreção é sinal de saúde, e não de fracasso, da ciência?
+
+4. **(Reflexão crítica.)** As redes sociais fazem mal à saúde mental dos adolescentes? Discuta por que a resposta honesta é "depende" e o que os dados sustentam.
+
+5. **(Reflexão crítica.)** Quais são as promessas e os perigos da terapia por inteligência artificial? Por que a aliança terapêutica é um argumento central nesse debate?
+
+6. **(Integração / síntese do manual.)** Retomando o Cap. 1: em que sentido a psicologia é uma ciência? Como a crise de replicabilidade e a ciência aberta ilustram a resposta que este manual defendeu?
