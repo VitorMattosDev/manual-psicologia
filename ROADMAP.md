@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 95 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 39/49
+**Progresso:** 105 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 49/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅ · Vol 13 ✅ · Vol 14 ✅** Próximo: Fase 3, Vol 15 (Psicologia Aplicada e Fronteiras).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅ · Vol 13 ✅ · Vol 14 ✅ · Vol 15 ✅** 🎉 **Manual completo — 105 capítulos.**
 
 ---
 
@@ -184,13 +184,13 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 15 — Psicologia Aplicada e Fronteiras
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 96 | Psicologia da saúde | `capitulos/vol15-aplicada-fronteiras/cap-96-psicologia-saude.qmd` | ⬜ |
-| 97 | Psicologia organizacional e do trabalho | `capitulos/vol15-aplicada-fronteiras/cap-97-organizacional-trabalho.qmd` | ⬜ |
-| 98 | Psicologia escolar e educacional | `capitulos/vol15-aplicada-fronteiras/cap-98-escolar-educacional.qmd` | ⬜ |
-| 99 | Neuropsicologia | `capitulos/vol15-aplicada-fronteiras/cap-99-neuropsicologia.qmd` | ⬜ |
-| 100 | Psicologia positiva | `capitulos/vol15-aplicada-fronteiras/cap-100-psicologia-positiva.qmd` | ⬜ |
-| 101 | Psicologia jurídica e forense | `capitulos/vol15-aplicada-fronteiras/cap-101-juridica-forense.qmd` | ⬜ |
-| 102 | Psicologia do esporte | `capitulos/vol15-aplicada-fronteiras/cap-102-esporte.qmd` | ⬜ |
-| 103 | Psicologia, cultura e diversidade (transcultural) | `capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd` | ⬜ |
-| 104 | A psicologia no Brasil (história, profissão, CFP/CRP, ética) | `capitulos/vol15-aplicada-fronteiras/cap-104-psicologia-no-brasil.qmd` | ⬜ |
-| 105 | Tópicos contemporâneos e fronteiras (ciberpsicologia, IA, replicabilidade, ciência aberta) | `capitulos/vol15-aplicada-fronteiras/cap-105-topicos-contemporaneos.qmd` | ⬜ |
+| 96 | Psicologia da saúde | `capitulos/vol15-aplicada-fronteiras/cap-96-psicologia-saude.qmd` | ✅ |
+| 97 | Psicologia organizacional e do trabalho | `capitulos/vol15-aplicada-fronteiras/cap-97-organizacional-trabalho.qmd` | ✅ |
+| 98 | Psicologia escolar e educacional | `capitulos/vol15-aplicada-fronteiras/cap-98-escolar-educacional.qmd` | ✅ |
+| 99 | Neuropsicologia | `capitulos/vol15-aplicada-fronteiras/cap-99-neuropsicologia.qmd` | ✅ |
+| 100 | Psicologia positiva | `capitulos/vol15-aplicada-fronteiras/cap-100-psicologia-positiva.qmd` | ✅ |
+| 101 | Psicologia jurídica e forense | `capitulos/vol15-aplicada-fronteiras/cap-101-juridica-forense.qmd` | ✅ |
+| 102 | Psicologia do esporte | `capitulos/vol15-aplicada-fronteiras/cap-102-esporte.qmd` | ✅ |
+| 103 | Psicologia, cultura e diversidade (transcultural) | `capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd` | ✅ |
+| 104 | A psicologia no Brasil (história, profissão, CFP/CRP, ética) | `capitulos/vol15-aplicada-fronteiras/cap-104-psicologia-no-brasil.qmd` | ✅ |
+| 105 | Tópicos contemporâneos e fronteiras (ciberpsicologia, IA, replicabilidade, ciência aberta) | `capitulos/vol15-aplicada-fronteiras/cap-105-topicos-contemporaneos.qmd` | ✅ |
