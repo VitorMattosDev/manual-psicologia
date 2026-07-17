@@ -1,5 +1,136 @@
 # 89. Terapias humanistas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a premissa humanista: a tendência à autorrealização e a pessoa como agente do próprio crescimento.
+- **Descrever** a Abordagem Centrada na Pessoa de Rogers e suas três atitudes terapêuticas (empatia, aceitação, congruência).
+- **Compreender** o conceito de incongruência entre self e experiência como fonte do sofrimento.
+- **Diferenciar** a Gestalt-terapia, a logoterapia e a terapia focada na emoção dentro da família humanista.
+- **Avaliar** a evidência de eficácia das terapias humanistas e as críticas que recebem.
+- **Reconhecer** a influência humanista sobre a prática de todas as psicoterapias.
 :::
+
+Se as terapias psicodinâmicas olham para o passado e o inconsciente, as **humanistas** olham para o presente, a consciência e o potencial. Surgidas nos anos 1940-60 como a "terceira força" da psicologia (Cap. 11) — alternativa ao determinismo tanto da psicanálise quanto do behaviorismo —, elas partem de uma aposta otimista: o ser humano tende naturalmente ao crescimento, e a função da terapia é remover os obstáculos a essa tendência, não consertar um mecanismo avariado. Deslocam o foco da técnica para a **relação** e da patologia para o **potencial**, e é a essa tradição que devemos boa parte do que hoje sabemos sobre a relação terapêutica (Cap. 87).
+
+## A premissa: a tendência à autorrealização
+
+O núcleo do humanismo terapêutico é a crença numa **tendência à autorrealização** (ou atualização): uma força inata que impele o organismo a desenvolver-se, a tornar-se plenamente o que pode ser, dadas as condições adequadas. A metáfora recorrente é botânica: como a planta cresce em direção à luz se lhe dermos solo, água e sol, a pessoa cresce em direção à sua realização se o ambiente lhe oferecer as condições relacionais certas. O terapeuta não é um técnico que aplica procedimentos sobre um objeto passivo, nem um especialista que decifra o paciente; é um **facilitador** que cultiva o solo em que o crescimento, já latente, pode acontecer.
+
+Disso decorre uma inversão de autoridade que define a abordagem: **o paciente é o especialista em si mesmo**. Rogers passou a chamá-lo de **cliente**, e não de paciente, para marcar que não se trata de alguém doente a ser curado por um saber externo, mas de uma pessoa capaz de encontrar suas próprias respostas quando encontra as condições para tanto. A terapia é **não diretiva** ou centrada no cliente: o terapeuta não interpreta, não aconselha, não conduz — acompanha.
+
+## A Abordagem Centrada na Pessoa
+
+Carl Rogers deu a essa tradição sua formulação mais influente e testável (Cap. 87). Segundo ele, três **atitudes** do terapeuta são as condições que promovem a mudança:
+
+- **Empatia.** Compreender o mundo do cliente a partir de dentro, "como se" fosse o próprio terapeuta a vivê-lo — sem perder o "como se". Não é concordar nem sentir pena; é acompanhar com precisão a experiência do outro e comunicar essa compreensão.
+- **Consideração positiva incondicional** (aceitação). Acolher o cliente sem julgamento e sem condições — valorizá-lo independentemente do que traz, sem exigir que seja diferente para merecer aceitação.
+- **Congruência** (autenticidade). O terapeuta é genuíno, transparente, não se esconde atrás de um papel; o que sente, o que mostra e o que é coincidem na relação.
+
+A técnica característica é o **reflexo empático**: o terapeuta devolve ao cliente, em suas palavras, o sentido e o sentimento do que este expressou — não como um eco mecânico, mas como um espelho que ajuda o cliente a se ouvir e a aprofundar sua própria experiência.
+
+## Incongruência: a origem humanista do sofrimento
+
+Por que sofremos, na leitura de Rogers? Pela **incongruência** entre o **self** (a imagem que a pessoa tem de si, moldada pelas expectativas alheias) e a **experiência** organísmica real (o que ela de fato sente e vive). Esse descompasso nasce das **condições de valor**: desde cedo, aprendemos que só somos amados e aceitos *se* correspondermos a certas expectativas ("se você for forte", "se você não sentir raiva", "se for bem-sucedido"). Para preservar o amor, passamos a negar ou distorcer experiências que ameaçam a autoimagem — e é essa negação que gera ansiedade e sofrimento (@fig-congruencia).
+
+A terapia reverte o processo. Ao oferecer **aceitação incondicional** — o oposto exato das condições de valor —, ela permite que o cliente reintegre à consciência as experiências antes negadas, reduzindo a incongruência e reaproximando o self da experiência. O crescimento não é ensinado; é liberado quando o ambiente deixa de exigir a distorção.
+
+::: {#fig-congruencia}
+```{.tikz}
+%%| filename: congruencia-rogers
+%%| alt: Dois pares de círculos. À esquerda, sob o rótulo "Incongruência (sofrimento)", dois círculos — "Self (autoimagem)" e "Experiência real" — pouco sobrepostos, com a região não compartilhada marcada como "negado/distorcido". À direita, sob o rótulo "Congruência (após terapia)", os mesmos dois círculos amplamente sobrepostos, indicando maior integração entre autoimagem e experiência.
+\begin{tikzpicture}[font=\small]
+  % incongruencia
+  \begin{scope}
+    \fill[manualblue!25, opacity=0.7] (-0.75,0) circle (1.25);
+    \fill[manualgreen!25, opacity=0.7] (0.75,0) circle (1.25);
+    \node[font=\scriptsize, text=manualblue!70!black] at (-1.15,0) {Self};
+    \node[font=\scriptsize, text=manualgreen!60!black] at (1.15,0) {Experiência};
+    \node[font=\scriptsize\itshape, text=manualred] at (0,-1.7) {área negada};
+    \node[font=\scriptsize\bfseries] at (0,1.9) {Incongruência};
+    \node[font=\scriptsize\itshape, text=manualgray] at (0,2.4) {sofrimento};
+  \end{scope}
+  % congruencia
+  \begin{scope}[xshift=6cm]
+    \fill[manualblue!25, opacity=0.7] (-0.35,0) circle (1.25);
+    \fill[manualgreen!25, opacity=0.7] (0.35,0) circle (1.25);
+    \node[font=\scriptsize, text=manualblue!70!black] at (-1.05,0) {Self};
+    \node[font=\scriptsize, text=manualgreen!60!black] at (1.05,0) {Exper.};
+    \node[font=\scriptsize\bfseries] at (0,1.9) {Congruência};
+    \node[font=\scriptsize\itshape, text=manualgray] at (0,2.4) {após terapia};
+  \end{scope}
+  \draw[->, >=Stealth, very thick, manualgray] (2.4,0)--(3.6,0);
+\end{tikzpicture}
+```
+A teoria de Rogers do sofrimento. Na **incongruência**, o self (autoimagem construída sob condições de valor) e a experiência real se sobrepõem pouco; o que não cabe na autoimagem é negado ou distorcido, gerando ansiedade. A aceitação incondicional da terapia permite reintegrar a experiência, aumentando a **congruência**.
+:::
+
+## Outras vozes da família humanista
+
+O humanismo terapêutico não se reduz a Rogers. Três outras abordagens compõem a família:
+
+**Gestalt-terapia**, de Fritz Perls (não confundir com a psicologia da Gestalt do Cap. 9, embora inspirada nela). Enfatiza o **aqui-e-agora**, a consciência (*awareness*) plena da experiência presente e a integração das partes cindidas do self. Sua técnica mais conhecida é a **cadeira vazia**: o cliente dialoga com uma parte de si, com uma pessoa ausente ou com um sentimento, "sentado" numa cadeira à sua frente, dando voz e forma ao que estava congelado — um recurso poderoso para trabalhar assuntos inacabados e conflitos internos.
+
+**Logoterapia**, de Viktor Frankl, sobrevivente dos campos de concentração nazistas e autor de *Em Busca de Sentido* [@frankl1946]. Sua tese: a força motivacional primária do ser humano é a **vontade de sentido**, e grande parte do sofrimento contemporâneo é um "vazio existencial", a falta de propósito. A terapia ajuda a pessoa a encontrar sentido — no trabalho, no amor, ou na atitude diante do sofrimento inevitável. É a raiz das terapias existenciais.
+
+**Terapia focada na emoção** (EFT), de Leslie Greenberg e colaboradores, é a herdeira contemporânea e mais pesquisada da tradição. Combina a base relacional rogeriana com um trabalho **ativo e sistemático sobre as emoções**: acessar, aprofundar, transformar emoções mal-adaptativas em adaptativas. É, em boa medida, a ponte pela qual o humanismo entrou na era das terapias baseadas em evidência [@elliott2013].
+
+::: {.na-pratica}
+💡 **A cadeira vazia na prática.** Uma cliente carrega raiva e mágoa de um pai já falecido, com quem nunca pôde "acertar as contas". Em vez de apenas *falar sobre* isso, o terapeuta coloca uma cadeira vazia à frente dela e a convida a imaginar o pai ali sentado e a dizer-lhe, diretamente, o que nunca disse. À medida que fala — e depois, trocando de cadeira, "responde" no lugar do pai —, emoções antes bloqueadas emergem e se organizam. O que era um assunto congelado no passado torna-se uma experiência viva no presente, onde pode finalmente ser processada. A técnica não "traz o pai de volta"; ela permite que a cliente complete, dentro de si, um processo emocional que ficara suspenso.
+:::
+
+## A evidência e as críticas
+
+Por muito tempo, as terapias humanistas foram vistas como "boas de intenção, fracas de prova" — em parte porque seus proponentes desconfiavam da mensuração e do reducionismo dos ensaios controlados. Esse quadro mudou. Meta-análises das **psicoterapias humanistas-experienciais** — sobretudo a EFT — mostram tamanhos de efeito substanciais e estáveis, comparáveis aos de outras abordagens para vários quadros, com evidência particularmente boa para depressão e dificuldades relacionais [@elliott2013]. A herança mais bem estabelecida, no entanto, é indireta: foi Rogers quem demonstrou que a **relação terapêutica** — empatia, aceitação, autenticidade — prediz o resultado em *todas* as terapias (Cap. 87), um dos achados mais replicados da área [@rogers1957].
+
+::: {.atencao}
+⚠️ **Otimismo não é ingenuidade — e "não diretivo" não é "passivo".** Duas críticas recorrentes ao humanismo merecem resposta cuidadosa. A primeira: a aposta na bondade e no crescimento natural seria ingênua diante da psicopatologia grave, do trauma e da destrutividade humana. É uma advertência legítima — a abordagem centrada na pessoa, sozinha, pode ser insuficiente para quadros graves (psicose, risco de suicídio), que exigem estrutura e, muitas vezes, outras intervenções. A segunda: "não diretivo" soaria como "não fazer nada". Engano. Empatia acurada e congruência sustentadas são um trabalho ativo e exigente; e abordagens como a Gestalt e a EFT são, na verdade, bastante **diretivas quanto ao processo** (propõem tarefas, conduzem experimentos emocionais), ainda que não digam ao cliente *o que* concluir.
+:::
+
+::: {.callout-sintese}
+- As terapias humanistas partem da **tendência à autorrealização**: a pessoa cresce se o ambiente relacional oferece as condições certas; o terapeuta é facilitador, e o cliente, especialista em si mesmo.
+- A **Abordagem Centrada na Pessoa** de Rogers propõe três atitudes — **empatia, consideração positiva incondicional e congruência** — e a técnica do **reflexo empático**.
+- O sofrimento nasce da **incongruência** entre self e experiência, produzida por **condições de valor**; a aceitação incondicional reintegra o que fora negado.
+- A família inclui a **Gestalt-terapia** (aqui-e-agora, cadeira vazia), a **logoterapia** de Frankl (vontade de sentido) [@frankl1946] e a **terapia focada na emoção** (EFT), sua herdeira mais pesquisada.
+- A evidência sustenta a eficácia das terapias humanistas-experienciais, sobretudo a EFT [@elliott2013]; a maior herança é a demonstração de que a **relação** prediz resultado em todas as terapias [@rogers1957].
+- Críticas legítimas: possível insuficiência em quadros graves e o mal-entendido de que "não diretivo" seria passivo — Gestalt e EFT são diretivas quanto ao **processo**.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Tendência à autorrealização**
+:   Força inata que impele o organismo ao crescimento e à realização de seu potencial, dadas condições adequadas.
+
+**Abordagem Centrada na Pessoa**
+:   Terapia não diretiva de Rogers, baseada em três atitudes do terapeuta (empatia, aceitação, congruência) e na confiança na capacidade de autodireção do cliente.
+
+**Consideração positiva incondicional**
+:   Aceitação do cliente sem julgamento e sem condições; antídoto terapêutico das condições de valor.
+
+**Congruência**
+:   Autenticidade e transparência do terapeuta na relação; coincidência entre o que sente, mostra e é.
+
+**Incongruência**
+:   Descompasso entre o self (autoimagem) e a experiência real, produzido por condições de valor; fonte humanista do sofrimento.
+
+**Cadeira vazia**
+:   Técnica gestáltica em que o cliente dialoga com uma parte de si, pessoa ausente ou sentimento, dando forma e voz ao que estava bloqueado.
+
+**Logoterapia**
+:   Terapia existencial de Frankl centrada na vontade de sentido e no enfrentamento do vazio existencial [@frankl1946].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie e defina as três atitudes terapêuticas de Rogers. Por que ele preferia "cliente" a "paciente"?
+
+2. **(Conceitual.)** Explique, com a teoria de Rogers, como as condições de valor levam à incongruência e ao sofrimento — e como a aceitação incondicional reverte esse processo.
+
+3. **(Aplicação.)** Descreva a técnica da cadeira vazia e explique, com o exemplo do capítulo, por que "encenar" o diálogo pode ser mais transformador do que apenas falar sobre o problema.
+
+4. **(Integração.)** Frankl afirma que a busca de sentido é a motivação primária. Relacione essa tese com o conceito de vazio existencial e com os achados sobre propósito e bem-estar (Cap. 100).
+
+5. **(Reflexão crítica.)** Responda à crítica de que o humanismo seria "ingênuo" diante da psicopatologia grave. Em que casos a abordagem centrada na pessoa, sozinha, pode ser insuficiente?
+
+6. **(Reflexão crítica.)** Por que dizer que a terapia "não diretiva" é "passiva" é um mal-entendido? Distinga ser diretivo quanto ao *conteúdo* de ser diretivo quanto ao *processo*.
