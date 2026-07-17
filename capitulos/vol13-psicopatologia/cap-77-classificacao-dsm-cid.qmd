@@ -1,5 +1,150 @@
 # 77. Sistemas de classificação (DSM-5-TR e CID-11)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** para que serve um sistema de classificação diagnóstica e o que se ganha e se perde ao adotar um.
+- **Descrever** a virada do DSM-III (1980) e por que ela foi uma revolução da **fidedignidade** — e não necessariamente da validade.
+- **Comparar** o DSM-5-TR e a CID-11 quanto à origem, à estrutura, ao alcance e ao uso no Brasil.
+- **Distinguir** fidedignidade de validade diagnóstica e interpretar o coeficiente kappa.
+- **Analisar** as principais críticas aos manuais: reificação, inflação diagnóstica, comorbidade, influência da indústria e viés cultural.
+- **Situar** as alternativas dimensionais (RDoC, HiTOP) como resposta aos limites do modelo categórico.
 :::
+
+O capítulo anterior mostrou que a fronteira entre normal e patológico é uma decisão, não um dado bruto. Este capítulo trata de como essa decisão foi **codificada**: os manuais que dizem, com critérios explícitos, o que conta como cada transtorno. Sem eles, dois clínicos diante da mesma pessoa poderiam chegar a diagnósticos incompatíveis, e a pesquisa seria impossível — quem estuda "depressão" precisa saber que fala do mesmo fenômeno que o colega do outro país. Os manuais são, ao mesmo tempo, uma conquista intelectual notável e o alvo das críticas mais duras da psicopatologia. Entender os dois lados é indispensável para usar o diagnóstico com competência e ceticismo.
+
+## Para que classificar
+
+Classificar não é um capricho burocrático. Um bom sistema diagnóstico cumpre funções concretas: cria uma **linguagem comum** entre profissionais; permite a **pesquisa** (só se estuda o que se pode delimitar); orienta a escolha do **tratamento** e a estimativa do **prognóstico** (o curso provável); e organiza a **epidemiologia**, as políticas públicas e o financiamento da saúde. A contrapartida é que todo sistema de classificação **cria as coisas que nomeia** aos olhos de quem o usa — e é aí que moram os riscos que veremos ao fim.
+
+## A revolução do DSM-III
+
+O *Manual Diagnóstico e Estatístico de Transtornos Mentais* (DSM), publicado pela Associação Psiquiátrica Americana, teve uma história em duas eras. As duas primeiras edições (DSM-I, 1952; DSM-II, 1968) eram breves, de inspiração **psicanalítica**, e definiam os quadros em prosa vaga, cheia de termos teóricos como "reação neurótica". O resultado era desastroso para a fidedignidade: estudos comparando diagnósticos dados por psiquiatras diferentes à mesma pessoa encontravam concordância baixa, e um célebre estudo transatlântico mostrou que "esquizofrenia" era diagnosticada muito mais em Nova York do que em Londres — não porque os pacientes diferissem, mas porque os critérios eram elásticos [@kendell1971].
+
+A virada veio com o **DSM-III**, de 1980, conduzido por Robert Spitzer [@decker2013]. Ele fez três movimentos decisivos:
+
+- **Critérios operacionais explícitos.** Cada transtorno passou a ser definido por uma lista de sintomas, um número mínimo deles e um tempo de duração — regras que qualquer clínico treinado aplica da mesma forma.
+- **Postura ateórica.** O manual descreve *o quê* (os sintomas observáveis) e se abstém de dizer *por quê* (a causa), justamente para que profissionais de escolas teóricas rivais pudessem usá-lo.
+- **Sistema descritivo e categórico**, herdeiro da tradição de Kraepelin (Cap. 76).
+
+O efeito sobre a **fidedignidade** foi real e mensurável, e o DSM-III se tornou o modelo de todos os manuais seguintes: DSM-IV (1994), DSM-5 (2013) e a revisão de texto **DSM-5-TR** (2022), hoje vigente [@apa2022dsm5tr]. A @fig-timeline-dsm resume a trajetória.
+
+::: {#fig-timeline-dsm}
+```{.tikz}
+%%| filename: timeline-dsm
+%%| alt: Linha do tempo horizontal das edições dos manuais diagnósticos. Uma seta aponta para a direita representando o tempo. Marcos acima da linha: DSM-I em 1952 e DSM-II em 1968, na era psicodinâmica de definições vagas e baixa fidedignidade; DSM-III em 1980, destacado em azul como a revolução da fidedignidade com critérios operacionais e postura ateórica; DSM-IV em 1994, DSM-5 em 2013 e DSM-5-TR em 2022. Abaixo da linha, em verde, dois marcos da CID da OMS: CID-10 em 1992 e CID-11 em 2019.
+\begin{tikzpicture}[font=\small]
+  \draw[->, >=Stealth, very thick, manualgray] (-0.4,0) -- (12,0) node[right, font=\scriptsize] {tempo};
+  \foreach \x/\ano/\lbl/\cor in {
+      0/1952/DSM-I/manualgray, 1.9/1968/DSM-II/manualgray,
+      4.2/1980/DSM-III/manualblue, 7.0/1994/DSM-IV/manualgray,
+      9.2/2013/DSM-5/manualgray, 10.9/2022/{DSM-5-TR}/manualgray}{
+    \draw[thick, \cor] (\x,0) -- (\x,0.35);
+    \node[above, font=\scriptsize, text=\cor] at (\x,0.4) {\ano};
+    \node[above, font=\scriptsize\bfseries, text=\cor] at (\x,0.75) {\lbl};
+  }
+  \node[text=manualblue, font=\scriptsize, align=center, anchor=south] at (4.2,1.55)
+    {revolução da\\fidedignidade};
+  \draw[manualblue, ->, >=Stealth] (4.2,1.5) -- (4.2,1.05);
+  \foreach \x/\ano/\lbl in {5.6/1992/CID-10, 10.0/2019/CID-11}{
+    \draw[thick, manualgreen] (\x,0) -- (\x,-0.35);
+    \node[below, font=\scriptsize, text=manualgreen] at (\x,-0.4) {\ano};
+    \node[below, font=\scriptsize\bfseries, text=manualgreen] at (\x,-0.75) {\lbl};
+  }
+  \node[text=manualgray, font=\scriptsize, anchor=west] at (-0.4,-1.5) {DSM (acima): Assoc. Psiquiátrica Americana \quad CID (abaixo): OMS};
+\end{tikzpicture}
+```
+Evolução dos manuais. O DSM-III (1980) marca a passagem das definições psicodinâmicas vagas para os critérios operacionais explícitos. A CID, da OMS, corre em paralelo e é o sistema oficial no Brasil.
+:::
+
+## Duas atualizações estruturais recentes
+
+O DSM-5 abandonou dois legados do DSM-III que vale conhecer. Primeiro, aposentou o **sistema multiaxial** (que separava transtornos clínicos, de personalidade, condições médicas e funcionamento em "eixos"), integrando tudo num único registro. Segundo, passou a incorporar **medidas dimensionais** e especificadores de gravidade, um aceno à crítica dimensional do Cap. 76, ainda que a espinha dorsal permaneça categórica. A revisão **DSM-5-TR** (2022) atualizou textos, códigos e critérios à luz de nova evidência e acrescentou uma entrada nova (o luto prolongado), sem reformar a estrutura.
+
+## A CID-11: o sistema global
+
+Paralelamente ao DSM existe a **Classificação Internacional de Doenças (CID)**, mantida pela Organização Mundial da Saúde. Ela cobre *todas* as doenças, não só as mentais, e é o sistema **oficial de registro no Brasil** — é o código CID que aparece em atestados, guias do SUS e estatísticas de saúde. A versão vigente é a **CID-11**, aprovada em 2019 [@who2019cid11]. Diferenças importantes em relação ao DSM:
+
+- **Alcance e governança.** A CID é global, multilíngue, gratuita e produzida por um organismo de saúde pública mundial; o DSM é norte-americano e comercial.
+- **Estilo dos critérios.** Onde o DSM fixa listas rígidas e contagens de sintomas, a CID-11 oferece **descrições prototípicas** e diretrizes clínicas mais flexíveis, deixando mais espaço ao julgamento profissional — uma escolha que privilegia a aplicabilidade global sobre a padronização estrita.
+- **Algumas categorias divergem.** A CID-11 criou entradas ausentes do DSM, como o **transtorno de estresse pós-traumático complexo** (Cap. 80) e o **transtorno do jogo** (*gaming disorder*), e organiza os transtornos de personalidade de forma **inteiramente dimensional** (Cap. 83).
+
+Houve um esforço deliberado de **harmonização** entre os dois sistemas, e eles concordam na maioria dos grandes quadros. Este manual segue a prática de referenciar **ambos** — DSM-5-TR pela precisão de critérios que domina a pesquisa, CID-11 por ser o sistema oficial brasileiro e de alcance mundial.
+
+## Fidedignidade não é validade
+
+Aqui está a distinção conceitual mais importante do capítulo, e a que separa quem entende de diagnóstico de quem apenas o usa.
+
+**Fidedignidade** (*reliability*) é a **concordância**: clínicos diferentes chegam ao mesmo diagnóstico para a mesma pessoa? Mede-se pelo coeficiente **kappa** (κ), que corrige a concordância pelo acaso — κ = 1 é acordo perfeito, κ = 0 é o esperado por sorte. O DSM-III elevou a fidedignidade de muitos diagnósticos, mas o ganho não foi uniforme: nas *field trials* do próprio DSM-5, alguns transtornos alcançaram fidedignidade boa (κ elevado), enquanto outros — inclusive o transtorno depressivo maior — ficaram em faixas apenas modestas [@regier2013]. Concordar não é fácil nem mesmo com critérios explícitos.
+
+**Validade** (*validity*) é a pergunta mais dura: a categoria diagnóstica **corta a natureza em suas juntas**? Ela corresponde a uma entidade real, com causa, curso, resposta a tratamento e marcadores biológicos distintos dos de outras categorias? Robins e Guze propuseram, já em 1970, critérios para validar um diagnóstico psiquiátrico (descrição clínica, estudos laboratoriais, delimitação de outros quadros, seguimento e história familiar) [@robins_guze1970] — e o desconforto persistente da psicopatologia é que muitas categorias têm boa fidedignidade e **validade incerta**. A grande lição: **um diagnóstico pode ser confiável e ainda assim não ser verdadeiro.** Dois clínicos podem concordar perfeitamente em aplicar um rótulo que talvez não recorte nenhuma entidade natural.
+
+::: {.atencao}
+⚠️ **O diagnóstico não é a explicação.** Um erro lógico frequente, inclusive entre profissionais, é a **reificação**: tratar o rótulo como se fosse a causa. "Por que ela evita multidões? Porque tem transtorno de pânico. Como sabemos que tem transtorno de pânico? Porque evita multidões e tem crises." O raciocínio é circular: o diagnóstico *resume* um padrão de sinais e sintomas; ele não os *explica*. Confundir o nome com a coisa dá a ilusão de compreensão e pode encerrar prematuramente a busca pelas causas reais (biológicas, psicológicas, sociais) do sofrimento daquela pessoa.
+:::
+
+## As críticas — e por que importam
+
+Nenhum objeto da psicologia recebe tantas críticas quanto os manuais, e as mais sérias vêm de dentro da própria psiquiatria.
+
+**Inflação diagnóstica e medicalização.** Allen Frances, que presidiu a força-tarefa do DSM-IV, tornou-se um crítico veemente do DSM-5, alertando que a cada revisão os limiares se afrouxam e novas categorias transformam variações da experiência humana em transtornos a tratar — com risco de sobrediagnóstico e sobremedicação [@frances2013]. É a preocupação prática do Cap. 76 (traçar a linha larga demais) elevada à escala de saúde pública.
+
+**Comorbidade e o problema categórico.** Como vimos, ter vários diagnósticos ao mesmo tempo é a regra. Isso sugere que as categorias não são as entidades naturais e separadas que aparentam ser, e que talvez estejamos fatiando artificialmente um espaço contínuo de sofrimento — o argumento central da abordagem dimensional.
+
+**Influência da indústria.** Uma parcela relevante dos membros dos painéis do DSM teve vínculos financeiros com a indústria farmacêutica, o que levanta preocupação — não necessariamente de má-fé, mas de conflito de interesse — sobre a expansão de categorias que ampliam mercados de medicamentos [@cosgrove2006].
+
+**Viés cultural.** Apesar dos avanços da entrevista de formulação cultural (Cap. 76), os manuais nasceram e amadureceram em contexto ocidental, e a validade de suas categorias fora dele nem sempre está estabelecida.
+
+Foi em resposta a esses limites que surgiram, como vimos no Cap. 76, alternativas como o **RDoC** [@insel2010] — que propõe estudar sistemas psicobiológicos atravessando os diagnósticos — e o **HiTOP**, que reorganiza a psicopatologia em dimensões hierárquicas. Nenhuma substituiu o DSM/CID na clínica; ambas empurram o campo para além da caixa categórica.
+
+::: {.na-pratica}
+💡 **Como um leitor crítico deve usar um diagnóstico.** O diagnóstico é uma ferramenta poderosa e imperfeita — trate-o como tal. Ele é útil para orientar a comunicação, a pesquisa e a escolha inicial de tratamento; é perigoso quando vira identidade, profecia ou explicação circular. Três hábitos protegem: (1) lembrar que o rótulo *descreve*, não *explica*; (2) desconfiar de limiares que transformam sofrimento comum em doença sem ganho claro para a pessoa; (3) exigir que, por trás do rótulo, se construa uma **formulação** individual — a história daquela pessoa nos três níveis (biológico, psicológico, social) —, que é o que de fato orienta o cuidado. Os próximos capítulos apresentam as categorias; use-as com esse duplo movimento de aceitação e ceticismo.
+:::
+
+::: {.callout-sintese}
+- Classificar cria linguagem comum, viabiliza pesquisa, orienta tratamento e prognóstico — ao custo de "criar" as entidades que nomeia.
+- O **DSM-III** (1980) foi a virada: critérios operacionais explícitos, postura ateórica e modelo categórico elevaram a **fidedignidade**; o vigente é o **DSM-5-TR** (2022) [@apa2022dsm5tr; @decker2013].
+- A **CID-11** (OMS, 2019) é global, gratuita, mais prototípica que o DSM e o sistema **oficial no Brasil**; os dois foram harmonizados [@who2019cid11].
+- **Fidedignidade ≠ validade**: kappa mede concordância (e nem sempre é alto, mesmo no DSM-5); validade pergunta se a categoria recorta uma entidade real — e muitas têm validade incerta [@regier2013; @robins_guze1970].
+- **Reificação** é tomar o rótulo por explicação; o diagnóstico resume sintomas, não os causa.
+- Críticas centrais: inflação diagnóstica e medicalização [@frances2013], comorbidade, conflito de interesse [@cosgrove2006] e viés cultural; RDoC e HiTOP são as respostas dimensionais.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**DSM-5-TR**
+:   *Manual Diagnóstico e Estatístico de Transtornos Mentais*, 5ª edição, revisão de texto (2022), da Associação Psiquiátrica Americana; categórico e baseado em critérios operacionais [@apa2022dsm5tr].
+
+**CID-11**
+:   *Classificação Internacional de Doenças*, 11ª revisão (OMS, 2019); sistema global e oficial no Brasil, de estilo prototípico [@who2019cid11].
+
+**Critérios operacionais**
+:   Definição de cada transtorno por sintomas específicos, número mínimo e duração, aplicáveis de forma padronizada; introduzidos pelo DSM-III.
+
+**Fidedignidade (kappa)**
+:   Grau de concordância entre avaliadores sobre um diagnóstico, corrigido pelo acaso [@regier2013].
+
+**Validade diagnóstica**
+:   Grau em que uma categoria corresponde a uma entidade real, com causa, curso e resposta a tratamento próprios [@robins_guze1970].
+
+**Reificação**
+:   Erro de tratar um rótulo diagnóstico como se fosse a causa dos sintomas que ele apenas resume.
+
+**Inflação diagnóstica**
+:   Tendência de as revisões dos manuais afrouxarem limiares e criarem categorias, medicalizando variações da experiência comum [@frances2013].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Liste três funções de um sistema de classificação diagnóstica e explique o custo geral de adotar qualquer um deles.
+
+2. **(Conceitual.)** Quais foram as três mudanças introduzidas pelo DSM-III e por que elas melhoraram a fidedignidade? Por que a postura "ateórica" foi uma decisão estratégica?
+
+3. **(Análise.)** Explique a diferença entre fidedignidade e validade com um exemplo próprio. Por que é possível dois clínicos concordarem perfeitamente (alta fidedignidade) sobre um diagnóstico que talvez não seja válido?
+
+4. **(Comparação.)** Compare DSM-5-TR e CID-11 em origem, estilo dos critérios e uso no Brasil. Por que faz sentido, num manual brasileiro, referenciar os dois?
+
+5. **(Reflexão crítica.)** O que é reificação em diagnóstico? Construa um exemplo de raciocínio circular com um transtorno à sua escolha e explique por que ele dá uma falsa sensação de entendimento.
+
+6. **(Integração.)** Allen Frances alerta para a inflação diagnóstica; o RDoC e o HiTOP propõem sair da caixa categórica. Relacione as duas críticas com o debate categórico × dimensional do Cap. 76 e proponha uma vantagem e um risco de o campo migrar para um modelo dimensional.

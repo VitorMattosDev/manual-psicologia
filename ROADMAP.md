@@ -157,7 +157,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
 | 76 | Normalidade e anormalidade | `capitulos/vol13-psicopatologia/cap-76-normalidade-anormalidade.qmd` | ✅ |
-| 77 | Sistemas de classificação (DSM-5-TR e CID-11) | `capitulos/vol13-psicopatologia/cap-77-classificacao-dsm-cid.qmd` | ⬜ |
+| 77 | Sistemas de classificação (DSM-5-TR e CID-11) | `capitulos/vol13-psicopatologia/cap-77-classificacao-dsm-cid.qmd` | ✅ |
 | 78 | Transtornos de ansiedade | `capitulos/vol13-psicopatologia/cap-78-transtornos-ansiedade.qmd` | ⬜ |
 | 79 | Transtornos do humor (depressivos e bipolares) | `capitulos/vol13-psicopatologia/cap-79-transtornos-humor.qmd` | ⬜ |
 | 80 | Transtornos relacionados a trauma e estresse | `capitulos/vol13-psicopatologia/cap-80-trauma-estresse.qmd` | ⬜ |
