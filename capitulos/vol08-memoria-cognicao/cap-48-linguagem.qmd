@@ -1,5 +1,122 @@
 # 48. Linguagem
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Caracterizar** a linguagem por suas propriedades de projeto (arbitrariedade, produtividade, deslocamento).
+- **Descrever** os níveis estruturais da linguagem: fonemas, morfemas, sintaxe, semântica e pragmática.
+- **Resumir** as etapas típicas da aquisição da linguagem na infância.
+- **Contrastar** as explicações behaviorista (Skinner) e nativista (Chomsky) da aquisição, e o argumento do período crítico.
+- **Avaliar** a hipótese da relatividade linguística (Whorf) à luz da evidência.
+- **Discutir** criticamente as tentativas de ensinar linguagem a outras espécies.
 :::
+
+A linguagem é, para muitos, a faculdade cognitiva mais distintamente humana — o sistema que permite converter pensamentos em sons (ou gestos, ou sinais gráficos) e, no outro, reconstruí-los. Com um estoque finito de sons e regras, produzimos e compreendemos um número **infinito** de frases, muitas jamais ditas antes (como esta). É por meio dela que a cultura se transmite (Cap. 41), que a memória semântica se estrutura (Cap. 43) e que boa parte do pensamento se organiza. Este capítulo examina o que é a linguagem, como a adquirimos, o intenso debate sobre a origem dessa capacidade e a fascinante questão de se a língua que falamos molda o modo como pensamos.
+
+## O que é linguagem
+
+Nem todo sistema de comunicação é uma linguagem. O que distingue a linguagem humana são algumas **propriedades de projeto**. A **arbitrariedade**: não há relação natural entre o som de uma palavra e seu significado ("cão", *dog*, *chien* designam o mesmo animal) — a ligação é convencional. A **produtividade** (ou **generatividade**): a partir de elementos e regras finitos, geramos e entendemos infinitas mensagens novas — é a marca mais impressionante, pois nenhum falante decorou as frases que diz. E o **deslocamento**: podemos falar do que está ausente no tempo e no espaço — do passado, do futuro, do hipotético, do inexistente. Um alarme de macaco sinaliza um predador *presente*; nenhuma outra espécie, ao que se sabe, discute o jantar de amanhã ou um dragão imaginário.
+
+## Os níveis da linguagem
+
+A linguagem organiza-se em níveis hierárquicos, dos sons ao uso (@fig-niveis-linguagem). Compreendê-los é ver como um punhado de sons vira significado.
+
+::: {#fig-niveis-linguagem}
+```{.tikz}
+%%| filename: niveis-linguagem
+%%| alt: Escada de cinco níveis da linguagem, do mais elementar ao mais amplo. Na base, fonemas, as menores unidades de som. Acima, morfemas, as menores unidades de significado. Depois, sintaxe, as regras de combinação em frases. Depois, semântica, o significado. No topo, pragmática, o uso no contexto.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \tikzset{lv/.style={rectangle, rounded corners, align=center, minimum height=0.75cm, inner sep=4pt}}
+  \node[lv, draw=manualgray, fill=manualgray!8, minimum width=4.2cm] (f) at (0,0) {\textbf{Fonemas} — menores unidades de som\\{\tiny /p/, /a/, /t/ — sem significado próprio}};
+  \node[lv, draw=manualblue, fill=manualblue!8, minimum width=5.0cm] (m) at (0.4,1.05) {\textbf{Morfemas} — menores unidades de significado\\{\tiny ``gato'', ``-s'', ``re-'' }};
+  \node[lv, draw=manualblue, fill=manualblue!10, minimum width=5.8cm] (s) at (0.8,2.1) {\textbf{Sintaxe} — regras de combinação em frases\\{\tiny ``o gato caça o rato'' $\neq$ ``o rato caça o gato''}};
+  \node[lv, draw=manualgreen, fill=manualgreen!8, minimum width=6.6cm] (se) at (1.2,3.15) {\textbf{Semântica} — o significado das palavras e frases};
+  \node[lv, draw=manualgreen, fill=manualgreen!12, minimum width=7.4cm] (p) at (1.6,4.2) {\textbf{Pragmática} — o uso da linguagem no contexto social};
+\end{tikzpicture}
+```
+Os níveis da linguagem, do som ao uso. **Fonemas** (sons) combinam-se em **morfemas** (unidades de significado), regidos pela **sintaxe** (gramática) em frases, que carregam **semântica** (significado) e são usadas segundo a **pragmática** (contexto).
+:::
+
+Os **fonemas** são as menores unidades sonoras que distinguem significados (o /p/ e o /b/ separam "pata" de "bata"); cada língua usa um subconjunto dos sons possíveis. Os **morfemas** são as menores unidades portadoras de significado — palavras inteiras ("gato") ou partes ("-s" de plural, "re-" de repetição). A **sintaxe** é o conjunto de regras que combina palavras em frases; é o que faz "o gato caça o rato" significar algo diferente de "o rato caça o gato", com as mesmas palavras. A **semântica** trata do significado; e a **pragmática**, de como usamos a linguagem no contexto — por que "você pode me passar o sal?" é um pedido, não uma pergunta sobre sua capacidade física. Dominar uma língua é dominar todos esses níveis, quase sempre sem consciência das regras que seguimos.
+
+## Como a linguagem se desenvolve
+
+A aquisição da linguagem segue uma sequência notavelmente **universal** e veloz, em qualquer cultura e língua. Nos primeiros meses, o bebê **arrulha** (vogais) e depois **balbucia** (*babbling*): sílabas repetidas ("ba-ba-ba") que, curiosamente, incluem a princípio sons de *todas* as línguas — o bebê é um "cidadão fonético do mundo" que, por volta dos 10–12 meses, se especializa nos sons de sua língua e perde a sensibilidade aos demais. Por volta de **1 ano** surgem as **primeiras palavras**; segue-se a fase de **uma palavra** (holófrases, em que "au" pode significar muita coisa). Perto dos **2 anos** explode o vocabulário e aparece a **fala telegráfica** — combinações de duas palavras com o essencial e sem elementos gramaticais ("quer água", "cadê papai"). Daí em diante, a gramática se complexifica rápido. Um sinal revelador de que a criança **aprende regras**, e não apenas imita, é a **regularização excessiva** (*overregularization*): ela diz "fazi" e "sabo" — formas que *nunca ouviu* dos adultos — por aplicar a regra geral (adicionar a terminação regular) a verbos irregulares. O erro é a prova de que há uma regra ativa.
+
+## O grande debate: Skinner × Chomsky
+
+Como uma criança adquire, em poucos anos e sem instrução formal, um sistema de tamanha complexidade? A resposta dividiu a psicologia e ajudou a desencadear a revolução cognitiva (Cap. 12).
+
+B. F. Skinner ofereceu a resposta **behaviorista**: a linguagem é comportamento verbal, aprendido como qualquer outro, por **condicionamento operante** (Cap. 40) — imitação, reforço (os pais aprovam as expressões corretas) e modelagem [@skinner1957]. Noam Chomsky respondeu com uma crítica devastadora, um marco na história da disciplina [@chomsky1959]. Seus argumentos: (1) o **estímulo é pobre** — a fala que a criança ouve é fragmentária e cheia de erros, e ainda assim ela extrai a gramática (o "argumento da pobreza do estímulo"); (2) crianças produzem frases **novas** e cometem erros **sistemáticos** (como "fazi") que nunca foram reforçados nem ouvidos; (3) a aquisição é **rápida e uniforme** demais para depender de reforço caso a caso; (4) há uma **gramática universal** subjacente a todas as línguas. Chomsky postulou que nascemos com um **dispositivo de aquisição da linguagem** (LAD) — uma predisposição inata que contém os princípios comuns a toda língua humana, restando ao ambiente apenas "ajustar os parâmetros" da língua específica.
+
+::: {.atencao}
+**Nem tabula rasa, nem só instinto.** O debate Skinner–Chomsky costuma ser contado como vitória total do nativismo — mas a síntese contemporânea é mais equilibrada. Chomsky tem razão em que a mente humana traz predisposições poderosas e específicas para a linguagem: nenhuma outra espécie a adquire assim, e a universalidade e a rapidez pedem alguma base inata. Mas o behaviorismo estrito também não estava de todo errado quanto ao papel do **ambiente e da interação**: crianças privadas de input linguístico não desenvolvem linguagem, e a qualidade e a quantidade da fala dirigida à criança influenciam o ritmo do desenvolvimento. Abordagens interacionistas e conexionistas mostram, ainda, que redes que aprendem por estatística do input captam mais estrutura do que Chomsky supunha possível "só com aprendizagem". A visão atual: a linguagem emerge da **interação** entre uma mente biologicamente preparada e um ambiente linguístico rico — nem tabula rasa, nem puro instinto pré-programado.
+:::
+
+Uma evidência a favor de bases biológicas é a existência de um **período crítico** (ou sensível) para a aquisição: há uma janela, na infância, em que aprender a primeira língua é fácil e completo, e após a qual se torna difícil e imperfeito. Sustentam-no os casos trágicos de crianças gravemente privadas de linguagem na infância — que, resgatadas já mais velhas, adquirem vocabulário mas nunca dominam plenamente a gramática — e o fato de que aprender um segundo idioma na idade adulta raramente alcança a fluência nativa, sobretudo na pronúncia [@lenneberg1967]. A capacidade de linguagem parece ter seu momento biológico.
+
+## Linguagem e pensamento
+
+A língua que falamos molda o modo como pensamos? A **hipótese da relatividade linguística**, associada a Benjamin Lee Whorf, afirma que a estrutura da língua influencia a cognição e a percepção de seus falantes [@whorf1956]. Sua versão **forte** — o **determinismo** linguístico, segundo o qual a língua *aprisiona* o pensamento e o que não se pode dizer não se pode pensar — foi rejeitada: pensamos sem palavras (bebês e outros animais resolvem problemas), e conceitos ausentes de uma língua podem ser aprendidos por seus falantes. Mas a versão **fraca** — a língua *influencia* tendências de pensamento, atenção e memória — recebe apoio empírico crescente. Exemplos: línguas que dividem o espectro de cores em fronteiras diferentes afetam a rapidez de *discriminação* de matizes próximos; línguas que marcam obrigatoriamente o gênero, a direção (usando pontos cardeais em vez de "esquerda/direita") ou o tempo verbal orientam a atenção dos falantes para esses aspectos. A conclusão madura: a língua não **determina** o pensamento, mas o **inclina** — funciona como um conjunto de hábitos atencionais que tornam certas distinções mais salientes e disponíveis.
+
+## Linguagem em outras espécies
+
+::: {.experimento}
+🔬 **Podem os grandes primatas aprender linguagem?** Como o aparelho vocal dos primatas não produz fala, pesquisadores tentaram ensinar-lhes línguas de sinais ou símbolos visuais. A chimpanzé **Washoe** aprendeu centenas de sinais; o bonobo **Kanzi** passou a usar um teclado de símbolos (lexigramas) e a responder a pedidos falados, tendo aparentemente adquirido parte disso por observação, não por treino direto. Esses animais claramente **usam símbolos arbitrários** para pedir e nomear — um feito notável, que borra a fronteira antes tida como absoluta. Mas a interpretação exige rigor, e o balanço da evidência é sóbrio: o vocabulário deles é pequeno frente ao de uma criança; e, sobretudo, faltam sinais claros de **sintaxe produtiva** — a capacidade de combinar símbolos por regras para gerar significados novos e ilimitados, o coração da linguagem humana. Suas produções são majoritariamente pedidos concretos, raramente comentários deslocados sobre o ausente. A conclusão prudente: outras espécies têm capacidades simbólicas reais e mais ricas do que se pensava, mas a **linguagem plena**, com sua gramática generativa, permanece, até onde a evidência mostra, distintivamente humana.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A linguagem distingue-se por **arbitrariedade**, **produtividade** (infinitas frases de elementos finitos) e **deslocamento** (falar do ausente).
+- Organiza-se em níveis: **fonemas** (som) → **morfemas** (significado mínimo) → **sintaxe** (gramática) → **semântica** (significado) → **pragmática** (uso).
+- A aquisição é universal e rápida: arrulho, **balbucio**, primeiras palavras (~1 ano), fala **telegráfica** (~2 anos). A **regularização excessiva** ("fazi") prova que a criança aprende regras.
+- **Skinner** explicou a linguagem por condicionamento; **Chomsky** refutou (pobreza do estímulo, gramática universal, LAD). A síntese atual é **interacionista**. Um **período crítico** apoia bases biológicas.
+- A **relatividade linguística** (Whorf) é falsa na versão forte (determinismo) mas sustentável na fraca: a língua **inclina**, não aprisiona, o pensamento.
+- Grandes primatas (Washoe, Kanzi) usam símbolos, mas sem **sintaxe produtiva** plena; a linguagem generativa parece distintamente humana.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Produtividade (generatividade)**
+:   Capacidade de gerar e entender infinitas frases novas a partir de elementos e regras finitos.
+
+**Deslocamento**
+:   Capacidade de a linguagem referir-se ao ausente no tempo e no espaço.
+
+**Fonema / morfema**
+:   Menor unidade de som que distingue significado / menor unidade portadora de significado.
+
+**Sintaxe / semântica / pragmática**
+:   Regras de combinação em frases / significado / uso da linguagem no contexto.
+
+**Fala telegráfica**
+:   Combinações de duas palavras com o essencial, típicas por volta dos 2 anos.
+
+**Regularização excessiva**
+:   Aplicar regras gramaticais gerais a formas irregulares ("fazi"); indício de aprendizagem de regras.
+
+**Dispositivo de aquisição da linguagem (LAD)**
+:   Predisposição inata, proposta por Chomsky, contendo os princípios da gramática universal [@chomsky1959].
+
+**Período crítico**
+:   Janela de desenvolvimento em que a aquisição da linguagem ocorre com facilidade e completude [@lenneberg1967].
+
+**Relatividade linguística**
+:   Hipótese de que a língua influencia o pensamento; sustentável na versão fraca (influência), não na forte (determinismo) [@whorf1956].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique **produtividade** e **deslocamento** e por que distinguem a linguagem humana de alarmes animais.
+
+2. **(Conceitual.)** Ordene do menor ao maior: morfema, fonema, frase. Dê um exemplo de como a mesma sequência de palavras muda de sentido pela sintaxe.
+
+3. **(Análise.)** Por que a **regularização excessiva** ("sabo", "fazi") é um argumento contra a explicação puramente imitativa da linguagem?
+
+4. **(Reflexão crítica.)** Resuma o argumento da **pobreza do estímulo**. Em que sentido a síntese interacionista concede algo tanto a Chomsky quanto a Skinner?
+
+5. **(Avaliação.)** Diferencie as versões forte e fraca da relatividade linguística. Que tipo de evidência (por exemplo, cores ou direção) apoia a versão fraca?
+
+6. **(Integração.)** Washoe e Kanzi usam símbolos. Por que, ainda assim, os cientistas hesitam em dizer que dominam "linguagem"? Qual é a propriedade crítica em falta?
