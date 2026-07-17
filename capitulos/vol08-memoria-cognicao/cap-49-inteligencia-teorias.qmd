@@ -1,5 +1,120 @@
 # 49. Inteligência: teorias
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o fator geral *g* de Spearman e a evidência da análise fatorial que o sustenta.
+- **Contrastar** as visões de inteligência única e de inteligências múltiplas.
+- **Distinguir** inteligência fluida de cristalizada e situá-las no modelo hierárquico (CHC).
+- **Descrever** as teorias de Gardner (inteligências múltiplas) e de Sternberg (triárquica), com suas críticas.
+- **Avaliar** o conceito de inteligência emocional.
+- **Relacionar**, com cautela, a inteligência a correlatos neurais.
 :::
+
+Poucos conceitos da psicologia são ao mesmo tempo tão intuitivos e tão disputados quanto a **inteligência**. Todos reconhecemos que pessoas diferem na capacidade de aprender, raciocinar e resolver problemas — mas o que exatamente é essa capacidade, se é uma ou muitas, e como medi-la, dividem os psicólogos há mais de um século. Uma definição de trabalho, próxima do consenso possível: inteligência é a capacidade de **aprender com a experiência, raciocinar bem, resolver problemas e lidar eficazmente com o ambiente**. Este capítulo trata das **teorias** sobre sua estrutura — quantas inteligências há e como se organizam; o próximo (Cap. 50) trata da sua **medida** e das controvérsias, muitas vezes acaloradas, que a cercam.
+
+## O fator *g* de Spearman
+
+A pedra fundadora foi lançada por Charles Spearman no início do século XX. Ele notou um fato empírico robusto, o **"manifold positivo"**: pessoas que se saem bem num tipo de teste mental tendem a se sair bem em *todos* os outros — desempenhos em tarefas verbais, espaciais, numéricas e de raciocínio correlacionam-se **positivamente** entre si. Usando a **análise fatorial** (técnica estatística que ele ajudou a criar, capaz de identificar dimensões comuns por trás de muitas medidas correlacionadas), Spearman propôs que sob todas essas habilidades específicas existe um **fator geral de inteligência**, o **fator *g*** [@spearman1904]. Cada tarefa mediria uma combinação de *g* (a capacidade cognitiva geral) e de um fator específico *s* (próprio daquela tarefa). O *g* é, até hoje, um dos achados mais replicados da psicologia — e o mais controverso, pois trata a inteligência como algo fundamentalmente **unitário**.
+
+## Uma inteligência ou muitas?
+
+A tese de um fator único enfrentou desde cedo a intuição de que a inteligência tem "tipos". Louis Thurstone, reanalisando dados semelhantes, argumentou que ela se decompõe melhor em cerca de sete **habilidades mentais primárias** relativamente independentes (compreensão verbal, fluência verbal, aptidão numérica, visualização espacial, memória, velocidade perceptual, raciocínio). O debate Spearman × Thurstone — um *g* dominante *versus* múltiplas aptidões — atravessa todo o campo. A síntese moderna, que examinaremos adiante, reconcilia os dois numa hierarquia.
+
+Uma distinção especialmente útil veio de Raymond Cattell, que dividiu a inteligência em duas grandes formas [@cattell1963]. A **inteligência fluida** (*Gf*) é a capacidade de raciocinar, ver padrões e resolver problemas **novos**, independente de conhecimento prévio — a "matéria-prima" cognitiva. A **inteligência cristalizada** (*Gc*) é o conhecimento e as habilidades **acumulados** ao longo da vida — vocabulário, fatos, expertise. A distinção tem uma assinatura desenvolvimental marcante (Cap. 63): a inteligência **fluida** tende a atingir o pico no início da vida adulta e a **declinar** gradualmente com a idade, ao passo que a **cristalizada** se mantém ou **cresce** até tarde. É por isso que jovens brilham em quebra-cabeças abstratos e velozes, enquanto o conhecimento e o julgamento maduros se acumulam com os anos.
+
+::: {#fig-hierarquia-g}
+```{.tikz}
+%%| filename: hierarquia-inteligencia
+%%| alt: Diagrama hierárquico da inteligência em três estratos. No topo, o fator geral g. No estrato do meio, várias habilidades amplas como inteligência fluida, inteligência cristalizada, memória e velocidade de processamento. Na base, habilidades específicas ligadas a cada habilidade ampla.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \tikzset{n/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, align=center, minimum height=0.6cm, inner sep=3pt}}
+  \tikzset{sp/.style={circle, draw=manualgray, fill=manualgray!8, minimum size=0.3cm, inner sep=1pt}}
+  \node[n, draw=manualgreen, fill=manualgreen!12, font=\bfseries] (g) at (5,3.4) {$g$ — inteligência geral};
+  \node[n] (gf) at (1.2,1.8) {fluida\\{\tiny (Gf)}};
+  \node[n] (gc) at (3.7,1.8) {cristalizada\\{\tiny (Gc)}};
+  \node[n] (gm) at (6.2,1.8) {memória};
+  \node[n] (gs) at (8.6,1.8) {velocidade};
+  \foreach \x in {gf,gc,gm,gs} \draw[->] (g) -- (\x);
+  \foreach \x/\dx in {gf/1.2,gc/3.7,gm/6.2,gs/8.6}{
+    \node[sp] at (\dx-0.45,0.5) {}; \node[sp] at (\dx,0.5) {}; \node[sp] at (\dx+0.45,0.5) {};
+    \draw[-, manualgray] (\x) -- (\dx-0.45,0.68);
+    \draw[-, manualgray] (\x) -- (\dx,0.68);
+    \draw[-, manualgray] (\x) -- (\dx+0.45,0.68);
+  }
+  \node[font=\tiny, text=manualgray] at (10.3,0.5) {habilidades\\específicas};
+\end{tikzpicture}
+```
+O modelo hierárquico (tipo CHC / três estratos de Carroll). No topo, o fator geral **_g_**; abaixo, **habilidades amplas** (fluida, cristalizada, memória, velocidade); na base, habilidades **específicas**. O modelo reconcilia Spearman (o *g* no ápice) e Thurstone (as múltiplas aptidões).
+:::
+
+Essa síntese ganhou forma no **modelo dos três estratos** de John Carroll e, hoje, na teoria **CHC** (Cattell–Horn–Carroll), que baseia boa parte dos testes modernos [@carroll1993]. Ela é **hierárquica** (@fig-hierarquia-g): no ápice, o *g*; num estrato intermediário, cerca de oito a dez **habilidades amplas** (fluida, cristalizada, memória de curto prazo, velocidade de processamento, entre outras); e, na base, dezenas de habilidades **específicas**. O modelo acomoda a evidência dos dois lados: existe um fator geral (Spearman) *e* existem aptidões distinguíveis (Thurstone), organizados em níveis.
+
+## Ampliando o conceito: Gardner e Sternberg
+
+Insatisfeitos com uma inteligência definida por testes acadêmicos, alguns teóricos propuseram concepções mais amplas.
+
+Howard Gardner formulou a **teoria das inteligências múltiplas**, segundo a qual não há uma inteligência, mas várias, relativamente **independentes** [@gardner1983]. Sua lista clássica inclui as inteligências **linguística**, **lógico-matemática** (as duas que os testes tradicionais medem), **espacial**, **musical**, **corporal-cinestésica**, **interpessoal**, **intrapessoal** e, acrescentada depois, **naturalista**. Gardner apoiou-se em critérios como a existência de prodígios e *savants* em domínios isolados, e em perdas seletivas por lesão cerebral. A teoria teve enorme influência na educação, por valorizar talentos além do verbal e do matemático. Mas recebe **críticas** sérias: falta-lhe validação empírica robusta (as "inteligências" propostas correlacionam-se entre si, o que reintroduz o *g*); muitas parecem ser antes **talentos** ou **habilidades** do que inteligências; e o construto é difícil de medir de modo independente. É popular e generosa, porém cientificamente contestada.
+
+Robert Sternberg propôs a **teoria triárquica**, que distingue três aspectos [@sternberg1985]. A inteligência **analítica** é a acadêmica, medida pelos testes tradicionais (analisar, comparar, avaliar). A inteligência **criativa** é a capacidade de gerar ideias novas e lidar com situações inéditas. E a inteligência **prática** é o "saber-fazer" do cotidiano — o **conhecimento tácito** que permite navegar problemas reais, mal definidos, e que os testes de QI captam mal (o "esperto de rua" *versus* o "bom de prova"). O apelo de Sternberg é lembrar que o sucesso na vida depende de mais do que a inteligência analítica; a crítica é que as inteligências prática e criativa são difíceis de medir com confiabilidade e podem se sobrepor ao *g* e a traços de personalidade.
+
+## A inteligência emocional
+
+Um construto que ganhou grande popularidade é a **inteligência emocional** (IE): a capacidade de **perceber, compreender, usar e regular emoções** — as próprias e as dos outros. Proposta academicamente por Peter Salovey e John Mayer como um conjunto de habilidades mensuráveis [@salovey_mayer1990], foi depois popularizada (e inflada) na cultura como suposto preditor de sucesso superior ao QI. O balanço científico pede, de novo, equilíbrio. A IE, quando medida como **habilidade** (testes de desempenho em tarefas emocionais), é um construto válido e prediz aspectos do funcionamento social e do bem-estar acima do *g* e da personalidade — modestamente. Mas as alegações populares de que "a IE importa mais que o QI" para o sucesso não se sustentam, e muitas medidas de IE por autorrelato confundem-se com traços de personalidade já conhecidos (como amabilidade e estabilidade emocional, Cap. 67). É um conceito real e útil, desde que dimensionado com sobriedade.
+
+::: {.base-neural}
+**O cérebro e a inteligência.** Existe um substrato neural do *g*? A pesquisa encontra correlações — todas **modestas** e a serem lidas com cautela. O **volume cerebral** total correlaciona-se fracamente com o QI (em torno de r ≈ 0,3–0,4), longe de ser determinante. Mais promissoras que o tamanho bruto são medidas de **eficiência**: a integridade da substância branca (a qualidade das conexões), a velocidade de condução neural e a eficiência do metabolismo cerebral. A hipótese da **eficiência neural** sugere que cérebros mais inteligentes não "trabalham mais", e sim de forma mais econômica em tarefas cognitivas. A teoria **P-FIT** (parieto-frontal integration theory) localiza a inteligência não numa região única, mas na **integração** eficiente de uma rede fronto-parietal. A mensagem é dupla: há correlatos biológicos reais, mas a inteligência é uma propriedade de **redes** distribuídas e de sua eficiência, não um "órgão" nem um simples efeito de tamanho — e nenhum desses achados justifica leituras deterministas.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Spearman** identificou o fator geral **_g_** pelo "manifold positivo" (todos os testes mentais correlacionam-se) via **análise fatorial**: a inteligência teria um núcleo unitário.
+- **Thurstone** defendeu múltiplas **habilidades primárias**; **Cattell** distinguiu inteligência **fluida** (raciocínio novo, declina com a idade) de **cristalizada** (conhecimento acumulado, mantém-se).
+- O modelo **hierárquico CHC** (Carroll) reconcilia tudo: *g* no ápice, habilidades **amplas** no meio, **específicas** na base.
+- **Gardner** (inteligências múltiplas) e **Sternberg** (triárquica: analítica, criativa, prática) ampliam o conceito para além do acadêmico — populares, mas criticados por fraca validação e dificuldade de medida.
+- A **inteligência emocional** (Salovey e Mayer) é um construto válido e modesto quando medido como habilidade; as alegações populares ("importa mais que o QI") são exageradas.
+- Correlatos neurais existem (volume, **eficiência** da substância branca, rede fronto-parietal — P-FIT), porém **modestos**: a inteligência é propriedade de redes eficientes.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Fator *g* (inteligência geral)**
+:   Fator comum a todos os testes mentais, inferido do fato de que seus desempenhos se correlacionam [@spearman1904].
+
+**Análise fatorial**
+:   Técnica estatística que identifica dimensões comuns por trás de muitas medidas correlacionadas.
+
+**Inteligência fluida / cristalizada**
+:   Raciocinar sobre o novo (declina com a idade) / conhecimento acumulado (mantém-se ou cresce) [@cattell1963].
+
+**Modelo CHC (três estratos)**
+:   Modelo hierárquico com *g* no topo, habilidades amplas no meio e específicas na base [@carroll1993].
+
+**Inteligências múltiplas**
+:   Teoria de Gardner de várias inteligências independentes (linguística, espacial, musical...); popular mas contestada [@gardner1983].
+
+**Teoria triárquica**
+:   Teoria de Sternberg com inteligências analítica, criativa e prática [@sternberg1985].
+
+**Conhecimento tácito**
+:   Saber-fazer prático do cotidiano, componente da inteligência prática, pouco captado pelos testes.
+
+**Inteligência emocional**
+:   Capacidade de perceber, compreender, usar e regular emoções [@salovey_mayer1990].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que é o fator *g* e qual observação empírica (o "manifold positivo") levou Spearman a propô-lo?
+
+2. **(Conceitual.)** Diferencie inteligência fluida de cristalizada e descreva como cada uma muda ao longo da vida adulta.
+
+3. **(Integração.)** Explique como o modelo hierárquico (CHC) reconcilia as posições de Spearman e Thurstone.
+
+4. **(Reflexão crítica.)** Apresente uma força e uma crítica da teoria das inteligências múltiplas de Gardner. Por que a correlação entre as "inteligências" é um problema para ela?
+
+5. **(Aplicação.)** Dê um exemplo de alguém com alta inteligência **prática** e baixa **analítica** (ou vice-versa). O que a teoria triárquica de Sternberg diz que os testes de QI deixam escapar?
+
+6. **(Avaliação.)** Por que os achados sobre "cérebro e inteligência" (volume, eficiência, P-FIT) devem ser lidos com cautela? O que significa dizer que a inteligência é propriedade de "redes"?
