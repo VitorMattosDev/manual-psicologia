@@ -1,5 +1,92 @@
 # 53. Motivações sociais (realização, pertencimento)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** motivações sociais de motivações biológicas básicas e situá-las na teoria da motivação.
+- **Explicar** a necessidade de realização (*nAch*) e seus determinantes, incluindo medo do fracasso e busca do sucesso.
+- **Descrever** a hipótese da necessidade de pertencimento e sua base evolutiva.
+- **Analisar** a evidência de que a exclusão social ativa circuitos de dor e prejudica o funcionamento.
+- **Aplicar** o conceito de mentalidade (*mindset*) e de metas ao desempenho e à motivação de crescimento.
 :::
+
+Fome, sede e sexo (Cap. 52) são motivações que compartilhamos com quase todos os animais. Mas o ser humano é uma espécie intensamente **social**, e boa parte de nosso comportamento é movida por motivações que não têm base homeostática direta: o desejo de **realizar**, de **pertencer**, de ser **reconhecido**, de ter **poder** ou de **ajudar**. São as **motivações sociais** — aprendidas e moldadas pela cultura, mas enraizadas, muitas delas, em pressões evolutivas tão antigas quanto a fome. Este capítulo foca nas duas mais estudadas: a necessidade de **realização** e a necessidade de **pertencimento**.
+
+## A necessidade de realização
+
+Henry Murray, nos anos 1930, catalogou dezenas de "necessidades psicogênicas" humanas [@murray1938] e criou um instrumento para medi-las: o **Teste de Apercepção Temática (TAT)**, no qual a pessoa inventa histórias sobre imagens ambíguas, e o pesquisador infere motivos a partir dos temas recorrentes — um teste **projetivo** (Cap. 69). Entre essas necessidades, uma recebeu atenção especial de David McClelland e John Atkinson: a **necessidade de realização** (*need for achievement*, ou **nAch**) — o desejo de atingir padrões de excelência, superar obstáculos e fazer as coisas bem e rápido [@mcclelland1961].
+
+Pessoas com alta necessidade de realização não buscam sucesso fácil nem risco temerário: preferem **desafios de dificuldade intermediária**, em que o resultado depende do próprio esforço e habilidade, e valorizam *feedback* concreto sobre seu desempenho. Atkinson formalizou isso mostrando que a motivação para uma tarefa resulta de uma **tensão entre dois motivos** [@atkinson1957]: a **esperança de sucesso** e o **medo do fracasso**. Quando predomina a busca do sucesso, a pessoa escolhe desafios moderados (onde a superação é possível e significativa); quando predomina o medo do fracasso, ela tende a evitar riscos — escolhendo tarefas fáceis demais (sucesso garantido, mas sem mérito) ou difíceis demais (o fracasso "não conta", pois ninguém conseguiria). Esse padrão em U tem valor prático imediato para quem desenha metas.
+
+::: {.na-pratica}
+**A zona de desafio ótimo.** A pesquisa sobre realização converge com a lei de Yerkes-Dodson (Cap. 51) e com a teoria da autodeterminação numa recomendação clara: metas que motivam de verdade são **específicas, desafiadoras e alcançáveis** — nem tão fáceis que não engajam, nem tão difíceis que desencorajam. Para educadores e gestores: divida grandes objetivos em submetas de dificuldade crescente; ofereça *feedback* concreto e frequente (que alimenta a percepção de competência); e diferencie a pessoa com medo do fracasso — que precisa de segurança psicológica e de valorização do esforço, não da comparação — da pessoa orientada ao sucesso, que floresce com desafios ambiciosos. A motivação de realização não é um traço fixo: ambientes a moldam.
+:::
+
+## O pertencimento como necessidade fundamental
+
+Se há uma motivação social candidata a **necessidade fundamental** — no sentido forte de algo que todos os humanos buscam e cuja privação faz mal —, é o **pertencimento**. Roy Baumeister e Mark Leary reuniram um vasto corpo de evidências na **hipótese da necessidade de pertencer** (*need to belong*) [@baumeister_leary1995]: os seres humanos têm uma motivação penetrante e básica de formar e manter **relacionamentos interpessoais duradouros, positivos e significativos**. A tese tem base evolutiva: durante quase toda a história da espécie, ser excluído do grupo significava perder proteção, alimento e parceiros — isto é, morrer. A seleção natural (Cap. 13) teria, então, esculpido em nós um sistema motivacional que nos faz **buscar laços e sofrer com a exclusão**.
+
+A evidência a favor é ampla. Formamos vínculos com facilidade e resistimos a rompê-los mesmo quando são custosos; a maior parte de nossas emoções — alegria, ciúme, solidão, orgulho — gira em torno de relações; e a falta de laços sociais é um dos mais fortes preditores de infelicidade, adoecimento e mortalidade, com efeito comparável ao de fatores de risco físicos clássicos. O pertencimento, além disso, é a necessidade que Maslow situou no centro de sua pirâmide (Cap. 51) e que a teoria da autodeterminação inclui como uma das três necessidades básicas (*relatedness*).
+
+::: {.experimento}
+🔬 **A dor de ser excluído.** Se o pertencimento é uma necessidade evolutivamente antiga, sua frustração deveria doer — talvez literalmente. Naomi Eisenberger e colegas testaram isso com o paradigma **Cyberball**: dentro de um scanner de fMRI (Cap. 27), o participante joga uma partida virtual de "passa a bola" com dois outros jogadores (na verdade, controlados pelo computador). A certa altura, os dois param de passar a bola ao participante, **excluindo-o**. O resultado foi notável: a exclusão social ativou o **córtex cingulado anterior dorsal** — a mesma região envolvida no componente aflitivo da **dor física** [@eisenberger2003]. **Interpretação:** a "dor social" da rejeição não é só uma metáfora; o cérebro processa a ameaça ao vínculo social recrutando parte do circuito da dor física, coerente com a ideia de que o pertencimento é uma necessidade tão vital que o organismo o sinaliza com um alarme antigo e poderoso. **Limitação e debate:** a interpretação de "sobreposição" foi questionada — as ativações não são idênticas e o cingulado tem muitas funções —, mas o achado central, de que a exclusão é uma ameaça que o cérebro trata como séria, é robusto e replicado.
+:::
+
+A exclusão social não só dói: ela **prejudica o funcionamento**. Estudos mostram que pessoas levadas a se sentir socialmente rejeitadas exibem pior autorregulação, mais comportamento autodestrutivo e desempenho cognitivo reduzido em tarefas exigentes — como se a ameaça ao pertencimento consumisse recursos mentais, ecoando o mecanismo da ameaça do estereótipo (Cap. 50). A solidão crônica, por sua vez, é hoje reconhecida como um problema de saúde pública.
+
+## Mentalidade e metas
+
+Como as pessoas interpretam suas capacidades molda profundamente sua motivação de realização. Carol Dweck distinguiu duas **mentalidades** (*mindsets*) sobre a inteligência e o talento [@dweck2006]: a **mentalidade fixa**, que vê a capacidade como um traço inato e imutável ("ou você tem, ou não tem"), e a **mentalidade de crescimento**, que a vê como algo que se desenvolve com esforço, estratégia e aprendizado. As consequências motivacionais divergem: quem tem mentalidade fixa tende a evitar desafios (para não expor a "falta de talento") e a desistir diante do fracasso, interpretado como veredito sobre si; quem tem mentalidade de crescimento **busca** desafios e vê o fracasso como informação e etapa do aprendizado — persistindo mais.
+
+::: {.atencao}
+**Mindset: entusiasmo e cautela.** A ideia de mentalidade de crescimento tornou-se enormemente popular na educação — e, com isso, frequentemente **exagerada e distorcida** ("basta acreditar que consegue"). O rigor exige duas ressalvas. Primeiro: os efeitos de intervenções de mentalidade sobre o desempenho, embora reais, costumam ser **modestos** e concentram-se em estudantes em desvantagem; grandes revisões e replicações mostraram efeitos menores que os do entusiasmo inicial. Segundo: mentalidade de crescimento **não** significa que todos podem tudo com esforço, nem que o talento e o contexto não importam — significa que a capacidade é *mais maleável* do que a mentalidade fixa supõe. Elogiar cegamente o esforço, ignorando estratégias eficazes e condições reais de aprendizagem, é uma caricatura da teoria, não sua aplicação correta.
+:::
+
+As motivações sociais que este capítulo percorreu — realizar, pertencer, crescer — não operam isoladas das emoções: o orgulho da conquista, a alegria do vínculo, a dor da exclusão, a ansiedade do fracasso. Motivação e emoção são faces do mesmo sistema que nos move. É às **emoções**, e às teorias que tentam explicá-las, que os próximos capítulos se dedicam.
+
+## Síntese
+
+::: {.callout-sintese}
+- As **motivações sociais** (realização, pertencimento, poder) são aprendidas e culturais, mas muitas têm raízes evolutivas; não são homeostáticas.
+- A **necessidade de realização** (nAch), medida pelo TAT (Murray, McClelland), leva a preferir desafios de dificuldade **intermediária** com *feedback* concreto.
+- Atkinson explicou a escolha de risco pela tensão entre **esperança de sucesso** e **medo do fracasso**.
+- A **necessidade de pertencer** (Baumeister e Leary) é uma motivação fundamental de base evolutiva; a falta de laços prediz adoecimento e mortalidade.
+- A **exclusão social** ativa parte do circuito da **dor física** (Eisenberger, Cyberball) e prejudica autorregulação e cognição.
+- A **mentalidade de crescimento** (Dweck) favorece a persistência, mas seus efeitos são **modestos** e frequentemente exagerados na divulgação.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Motivações sociais**
+:   Motivos aprendidos e culturalmente moldados (realização, pertencimento, poder), sem base homeostática direta.
+
+**Necessidade de realização (nAch)**
+:   Desejo de atingir padrões de excelência e superar desafios [@mcclelland1961].
+
+**TAT (Teste de Apercepção Temática)**
+:   Teste projetivo que infere motivos a partir de histórias criadas sobre imagens ambíguas [@murray1938].
+
+**Necessidade de pertencer**
+:   Motivação fundamental de formar e manter laços interpessoais positivos e duradouros [@baumeister_leary1995].
+
+**Dor social**
+:   Aflição da exclusão, que recruta regiões cerebrais do componente afetivo da dor física [@eisenberger2003].
+
+**Mentalidade (fixa / de crescimento)**
+:   Crença de que a capacidade é imutável (fixa) *versus* desenvolvível com esforço e estratégia (crescimento) [@dweck2006].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Por que uma pessoa com alta necessidade de realização prefere desafios de dificuldade intermediária, e não os mais fáceis ou os mais difíceis?
+
+2. **(Conceitual.)** Segundo Atkinson, como o medo do fracasso altera a escolha de tarefas? Contraste com a busca do sucesso.
+
+3. **(Análise.)** Que argumento evolutivo sustenta a hipótese da necessidade de pertencer? Como o estudo Cyberball a apoia?
+
+4. **(Aplicação.)** Um gestor quer aumentar o engajamento da equipe. Combine o conceito de desafio ótimo e a necessidade de pertencimento em duas recomendações concretas.
+
+5. **(Reflexão crítica.)** A mentalidade de crescimento é muito divulgada. Que distorção comum dessa ideia o rigor científico recomenda evitar?
+
+6. **(Avaliação.)** "A exclusão social é apenas um desconforto passageiro, sem consequências reais." Avalie essa afirmação com base na evidência do capítulo.
