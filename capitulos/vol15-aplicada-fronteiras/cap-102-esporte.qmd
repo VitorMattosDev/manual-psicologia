@@ -1,5 +1,116 @@
 # 102. Psicologia do esporte
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a relação entre ativação (*arousal*), ansiedade e desempenho, incluindo a lei de Yerkes-Dodson.
+- **Descrever** as principais habilidades psicológicas treináveis: visualização, fixação de metas, autofala e rotinas.
+- **Compreender** o fenômeno de "engasgar" sob pressão (*choking*) e suas causas.
+- **Reconhecer** o papel da motivação, da coesão de equipe e do fluxo no rendimento.
+- **Analisar** a relação entre exercício físico e saúde mental.
+- **Situar** a psicologia do esporte no contexto brasileiro.
 :::
+
+Do consultório ao campo de jogo: a **psicologia do esporte e do exercício** aplica o conhecimento psicológico ao desempenho esportivo e à atividade física. Ela tem duas vocações complementares: ajudar atletas a **render** o máximo de que são capazes (a face do alto rendimento) e usar o exercício para promover **bem-estar e saúde mental** na população geral. Reúne, aplicados ao movimento e à competição, temas que percorremos ao longo do manual — motivação e emoção (Vol 9), atenção (Vol 5), aprendizagem de habilidades (Vol 7), fluxo (Cap. 100) e estresse (Cap. 56).
+
+## Ativação, ansiedade e desempenho
+
+A pergunta fundadora do campo é antiga: como o estado emocional afeta o desempenho? Um princípio clássico é a **lei de Yerkes-Dodson** [@yerkes_dodson1908], que descreve uma relação em **U invertido** entre ativação (*arousal*) e desempenho (@fig-yerkes-dodson): ativação baixa demais leva à apatia e desempenho fraco; ativação alta demais gera tensão que também o degrada; há um **nível ótimo intermediário**. A lei acrescenta uma nuance importante: esse ótimo é **mais baixo** para tarefas complexas e finas (um arremesso de dardos, uma tacada de golfe) e **mais alto** para tarefas simples e de força (um levantamento de peso).
+
+::: {#fig-yerkes-dodson}
+```{.tikz}
+%%| filename: yerkes-dodson
+%%| alt: Gráfico de curva em U invertido. Eixo horizontal Ativação, eixo vertical Desempenho. A curva sobe, atinge um pico central (Zona ótima) e desce. À esquerda, apatia; à direita, ansiedade.
+\begin{tikzpicture}[font=\small]
+  \draw[eixo, -{Latex}] (0,0) -- (6.2,0) node[right] {\scriptsize Ativação (\emph{arousal})};
+  \draw[eixo, -{Latex}] (0,0) -- (0,4.4) node[above] {\scriptsize Desempenho};
+  \draw[curva, manualblue, thick] plot[smooth, domain=0.3:5.7, samples=60]
+    (\x, {3.6*exp(-((\x-3)^2)/2.2)});
+  \draw[dashed, manualgray] (3,0) -- (3,3.6);
+  \fill[ponto, manualred] (3,3.6) circle (2pt);
+  \node[align=center, font=\scriptsize] at (3,4.05) {Zona ótima};
+  \node[align=center, font=\scriptsize, text=manualgray] at (0.95,0.55) {apatia};
+  \node[align=center, font=\scriptsize, text=manualgray] at (5.2,0.55) {ansiedade};
+\end{tikzpicture}
+```
+A lei de Yerkes-Dodson [@yerkes_dodson1908]: desempenho e ativação relacionam-se em U invertido. O ponto ótimo é mais baixo para tarefas complexas e mais alto para tarefas simples.
+:::
+
+Modelos posteriores refinaram esse quadro. A **teoria da ansiedade multidimensional** distingue a ansiedade **cognitiva** (preocupação, pensamentos negativos) da **somática** (sintomas corporais: coração acelerado, tensão), que afetam o desempenho de modos diferentes. E a noção de **zona individual de funcionamento ótimo** (IZOF), de Hanin, lembra que o nível ideal de ativação **varia de atleta para atleta**: alguns rendem melhor calmos, outros "ligados". Não há uma receita única — daí a necessidade de individualizar o preparo psicológico.
+
+## Habilidades psicológicas treináveis
+
+A grande promessa aplicada do campo é que o desempenho psicológico, como o físico, pode ser **treinado**. As técnicas com melhor evidência incluem:
+
+- **Visualização / prática mental** (*imagery*): ensaiar mentalmente uma habilidade ou situação. A prática mental sozinha melhora o desempenho — menos que a física, mas de modo real —, e combinada a ela é mais eficaz que qualquer uma isolada [@feltz_landers1983]. O ensaio mental ativa vias motoras e prepara a execução.
+- **Fixação de metas**: as mesmas metas específicas e desafiadoras da psicologia do trabalho (Cap. 97) [@locke_latham2002] valem no esporte, com destaque para metas de **processo** (executar bem o gesto) sobre metas apenas de **resultado** (vencer), que dependem do adversário e geram ansiedade.
+- **Autofala** (*self-talk*): o diálogo interno. Substituir a autofala negativa ("vou errar") por instrucional ("olho na bola") melhora foco e desempenho.
+- **Rotinas pré-desempenho e controle de ativação**: sequências fixas antes de uma ação (o quique da bola antes do saque) que estabilizam a atenção; e técnicas de respiração e relaxamento para regular a ativação à zona ótima.
+
+::: {.na-pratica}
+💡 **Treinar a mente é treinar, não "dom".** O talento psicológico do atleta — concentrar-se, manter a calma, recuperar-se de um erro — costuma ser visto como traço fixo ("ele tem sangue-frio"). A psicologia do esporte mostra que essas são **habilidades**, adquiridas com prática deliberada como qualquer gesto técnico. Programas estruturados de **treinamento de habilidades psicológicas** — que combinam fixação de metas, visualização, autofala e controle de ativação — produzem ganhos mensuráveis. O preparo psicológico deixou de ser recurso de emergência ("chamar o psicólogo quando o atleta trava") para tornar-se parte rotineira da periodização do treino.
+:::
+
+## Engasgar sob pressão: o *choking*
+
+Por que atletas de elite, capazes de executar milhares de vezes um gesto, falham justamente no momento decisivo? O fenômeno de **"engasgar"** (*choking under pressure*) é uma degradação aguda do desempenho sob pressão, e não mero nervosismo. A explicação mais sustentada é a da **auto-focalização**: sob pressão, o atleta volta a atenção para o passo a passo de uma habilidade que já é **automática** (Cap. 42), e esse monitoramento consciente **desorganiza** a execução fluida — como quem, ao pensar em cada movimento, tropeça ao descer uma escada [@beilock2001]. A implicação prática é contraintuitiva: sob pressão, o atleta deve *desligar* o controle analítico e confiar no automatismo (foco em uma pista externa, um ritmo, uma palavra-chave), em vez de "pensar demais". É o oposto do que se faz ao *aprender* a habilidade.
+
+## Motivação, coesão e fluxo
+
+O rendimento sustentado depende de **motivação**. A teoria da autodeterminação (Cap. 51) [@deci_ryan2000] aplica-se diretamente: atletas movidos por motivação **intrínseca** (amor ao esporte) e por metas de **maestria** (superar-se) persistem mais e sofrem menos *burnout* do que os movidos só por recompensa externa ou por comparação com rivais. Em esportes coletivos, a **coesão de equipe** — tanto a de tarefa (unidade em torno do objetivo) quanto a social (laços entre os membros) — associa-se a melhor desempenho, numa relação de mão dupla (coesão gera vitória e vitória gera coesão). E o estado de rendimento máximo descrito por atletas — "estar na zona" — é precisamente o **fluxo** de Csikszentmihalyi (Cap. 100) [@csikszentmihalyi1990]: absorção total no equilíbrio entre desafio e habilidade, quando tudo "flui" sem esforço consciente.
+
+## Exercício e saúde mental
+
+A segunda vocação do campo desloca o foco do atleta de elite para todos nós. A evidência de que o **exercício físico melhora a saúde mental** é hoje robusta: a atividade física regular reduz sintomas de depressão e ansiedade, com efeito comparável, em quadros leves a moderados, ao de tratamentos convencionais, e melhora humor, sono, autoestima e cognição [@schuch2016]. Os mecanismos são múltiplos — neuroquímicos (endorfinas, neurotrofinas como o BDNF, ligado à plasticidade, Cap. 28), psicológicos (sensação de domínio, distração, autoeficácia) e sociais (convívio). Isso faz do exercício uma ferramenta valiosa de **promoção de saúde e prevenção** — barata, acessível e de amplos benefícios —, embora não substitua o tratamento em quadros graves.
+
+## A psicologia do esporte no Brasil
+
+País de forte cultura esportiva, o Brasil viu a psicologia do esporte crescer e profissionalizar-se, com atuação em clubes, seleções, centros de treinamento olímpico e, cada vez mais, no esporte de base e escolar. Os desafios incluem consolidar a presença do psicólogo nas comissões técnicas (superando a visão de recurso emergencial), cuidar da **saúde mental de atletas** — tema que ganhou visibilidade com relatos públicos de depressão, ansiedade e pressão em esportistas de elite —, atender às transições de carreira (a aposentadoria precoce do atleta) e usar o esporte como instrumento de **desenvolvimento e inclusão social**, especialmente entre jovens em situação de vulnerabilidade. Une-se, assim, o alto rendimento à dimensão de saúde e cidadania.
+
+::: {.callout-sintese}
+- A **lei de Yerkes-Dodson** [@yerkes_dodson1908] descreve o U invertido entre ativação e desempenho; o ótimo varia com a tarefa e com o atleta (IZOF).
+- Habilidades psicológicas são **treináveis**: **visualização** [@feltz_landers1983], **fixação de metas** de processo [@locke_latham2002], **autofala** e rotinas.
+- **Engasgar** (*choking*) [@beilock2001] resulta do monitoramento consciente de habilidades automáticas; a solução é confiar no automatismo.
+- Motivação **intrínseca** [@deci_ryan2000], **coesão** de equipe e **fluxo** [@csikszentmihalyi1990] sustentam o rendimento.
+- O **exercício físico** reduz depressão e ansiedade [@schuch2016] por vias neuroquímicas, psicológicas e sociais.
+- No Brasil, o campo cresce, com foco crescente na **saúde mental de atletas** e no esporte como inclusão social.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Lei de Yerkes-Dodson**
+:   Relação em U invertido entre ativação e desempenho, com ótimo dependente da complexidade da tarefa [@yerkes_dodson1908].
+
+**Zona individual de funcionamento ótimo (IZOF)**
+:   Faixa de ativação em que um dado atleta rende melhor, variável entre indivíduos.
+
+**Visualização (*imagery*)**
+:   Ensaio mental de uma habilidade ou situação, que melhora o desempenho, sobretudo combinado à prática física.
+
+**Autofala (*self-talk*)**
+:   Diálogo interno do atleta; a autofala instrucional e positiva melhora foco e desempenho.
+
+**Choking (engasgar)**
+:   Degradação aguda do desempenho sob pressão, atribuída ao monitoramento consciente de habilidades automáticas.
+
+**Coesão de equipe**
+:   Grau de união de um grupo em torno da tarefa e nos laços sociais, associado ao desempenho coletivo.
+
+**Fluxo (*flow*)**
+:   Estado de absorção e rendimento máximo ("estar na zona"), pelo equilíbrio entre desafio e habilidade.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique a lei de Yerkes-Dodson. Por que o nível ótimo de ativação difere entre uma tacada de golfe e um levantamento de peso?
+
+2. **(Conceitual.)** Como a visualização melhora o desempenho mesmo sem movimento físico? Por que combiná-la à prática real é mais eficaz?
+
+3. **(Conceitual.)** Por que metas de processo tendem a ser melhores que metas de resultado para o atleta?
+
+4. **(Reflexão crítica.)** Explique o *choking* pela hipótese da auto-focalização. Por que a solução — "não pensar" — é o oposto do que se faz ao aprender a habilidade?
+
+5. **(Integração.)** Relacione o estado de "estar na zona" com o conceito de fluxo (Cap. 100) e com a motivação intrínseca (Cap. 51).
+
+6. **(Reflexão crítica.)** Que evidência sustenta o exercício como ferramenta de saúde mental? Por que ele não substitui o tratamento em quadros graves?
