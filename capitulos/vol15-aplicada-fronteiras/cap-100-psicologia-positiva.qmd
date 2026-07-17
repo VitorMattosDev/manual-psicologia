@@ -1,5 +1,114 @@
 # 100. Psicologia positiva
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a proposta da psicologia positiva e por que ela surgiu como reação ao foco no adoecimento.
+- **Distinguir** o bem-estar **hedônico** do **eudaimônico** e conhecer o modelo PERMA.
+- **Descrever** o conceito de **fluxo** (*flow*) e as condições que o produzem.
+- **Reconhecer** as forças de caráter e as intervenções positivas com evidência.
+- **Avaliar criticamente** os limites, controvérsias e vieses do campo.
+- **Situar** o bem-estar em perspectiva cultural e no contexto brasileiro.
 :::
+
+Chegamos ao capítulo 100 com uma mudança de tom. Boa parte deste manual — e da psicologia como profissão — dedicou-se ao sofrimento: transtornos, estresse, trauma, disfunção. É uma ênfase compreensível e necessária, mas parcial. A **psicologia positiva**, movimento formalizado por Martin Seligman e Mihaly Csikszentmihalyi na virada do milênio, propôs corrigir esse desequilíbrio: estudar com o mesmo rigor científico não apenas o que faz a vida **suportável**, mas o que a faz **valer a pena** — as emoções positivas, o engajamento, as relações, o sentido, as virtudes, o florescimento humano [@seligman2000].
+
+## De onde veio: a metade que faltava
+
+A psicologia positiva não é autoajuda nem "pensamento positivo". É, por definição de seus fundadores, o **estudo científico do funcionamento humano ótimo** e das condições que o promovem. Seu argumento fundador é histórico: após a Segunda Guerra, a psicologia organizou-se em torno de um modelo de doença — financiada para tratar transtornos, tornou-se muito boa nisso, mas quase esqueceu de estudar o que faz pessoas comuns prosperarem [@seligman2000]. Curar a doença e construir o bem-estar são projetos distintos; a ausência de sofrimento não é o mesmo que a presença de florescimento.
+
+Há uma ironia biográfica reveladora: Seligman construíra sua carreira estudando o **desamparo aprendido** (Cap. 51) — como organismos, expostos a eventos incontroláveis, aprendem a desistir. A psicologia positiva pode ser lida como o outro lado dessa moeda: o estudo de como se aprende o **otimismo**, a resiliência e a esperança.
+
+## O que é bem-estar? Hedônico, eudaimônico e PERMA
+
+Definir o objeto — o bem-estar — exige uma distinção filosófica antiga. A tradição **hedônica** entende bem-estar como **felicidade subjetiva**: sentir mais prazer e emoções positivas, menos afeto negativo, e avaliar a própria vida como satisfatória — o chamado *bem-estar subjetivo* [@diener1984]. A tradição **eudaimônica** (de Aristóteles) recusa reduzir a boa vida ao prazer: bem-estar é **realizar o próprio potencial**, viver com sentido, autonomia, crescimento e propósito — sentir-se bem *fazendo o que é digno de ser feito*, não apenas sentir-se bem.
+
+Seligman integrou essas vertentes no modelo **PERMA** [@seligman2011], que decompõe o florescimento em cinco elementos: **P**ositive emotion (emoção positiva), **E**ngagement (engajamento), **R**elationships (relações positivas), **M**eaning (sentido) e **A**ccomplishment (realização). O modelo é influente por ser mensurável e por lembrar que a felicidade momentânea (emoção positiva) é apenas *um* dos ingredientes — relações e sentido pesam tanto quanto.
+
+## Fluxo: o engajamento absoluto
+
+Um dos conceitos mais fecundos do campo é o **fluxo** (*flow*), descrito por Csikszentmihalyi [@csikszentmihalyi1990]: o estado de absorção completa numa atividade, em que a atenção se concentra, o senso de tempo se distorce e a autoconsciência desaparece — o músico, o atleta, o programador "na zona". O fluxo surge de um **equilíbrio** preciso entre o **desafio** da tarefa e a **habilidade** de quem a executa (@fig-fluxo): desafio alto demais para a habilidade gera **ansiedade**; habilidade alta demais para o desafio gera **tédio**; o fluxo mora no canal entre os dois. Atividades que produzem fluxo — e não o consumo passivo — estão entre as maiores fontes de engajamento (o "E" do PERMA) e de satisfação duradoura.
+
+::: {#fig-fluxo}
+```{.tikz}
+%%| filename: fluxo-canal
+%%| alt: Gráfico com eixo horizontal Habilidade e eixo vertical Desafio. Uma faixa diagonal central rotulada Fluxo separa a região superior esquerda (Ansiedade) da inferior direita (Tédio).
+\begin{tikzpicture}[font=\small, scale=1.0]
+  \draw[eixo, -{Latex}] (0,0) -- (5.4,0) node[right] {\scriptsize Habilidade};
+  \draw[eixo, -{Latex}] (0,0) -- (0,5.0) node[above] {\scriptsize Desafio};
+  \fill[manualgreen!25] (0,0) -- (0,1.1) -- (4.2,5.0) -- (5.0,5.0) -- (5.0,4.6) -- (1.1,0) -- cycle;
+  \node[rotate=45, text=manualgreen!55!black, font=\bfseries\small] at (2.7,2.6) {Fluxo};
+  \node[align=center, text=manualred!75!black, font=\small] at (1.15,4.0) {Ansiedade};
+  \node[align=center, text=manualblue!70!black, font=\small] at (4.0,1.0) {Tédio};
+\end{tikzpicture}
+```
+O modelo do fluxo [@csikszentmihalyi1990]: o estado ótimo de engajamento ocorre quando desafio e habilidade se equilibram em nível alto. Desequilíbrios geram ansiedade (desafio > habilidade) ou tédio (habilidade > desafio).
+:::
+
+## Forças de caráter e intervenções positivas
+
+Se a psicologia clínica tem um manual de transtornos (o DSM), a psicologia positiva quis um "anti-DSM": uma classificação do que há de melhor nas pessoas. Peterson e Seligman propuseram a taxonomia **VIA de forças e virtudes de caráter** — 24 forças (como bondade, curiosidade, gratidão, perseverança, esperança) agrupadas em seis virtudes universais [@peterson_seligman2004]. A ideia prática é identificar as **forças-assinatura** de cada um e usá-las mais deliberadamente.
+
+Dessa base nasceram as **intervenções positivas** — exercícios breves, testados em ensaios controlados, que buscam elevar o bem-estar. As mais estudadas incluem registrar **três coisas boas** do dia, escrever uma **carta de gratidão**, praticar atos de bondade e usar as forças-assinatura de novas maneiras. Meta-análises indicam que tais intervenções produzem aumentos **reais, porém modestos**, no bem-estar e reduções na depressão [@sin_lyubomirsky2009] — efeito genuíno, longe da euforia que a divulgação por vezes sugere. Uma base teórica é a **teoria de ampliar-e-construir** de Barbara Fredrickson [@fredrickson2001]: emoções positivas ampliam o repertório de pensamento e ação e, ao longo do tempo, constroem recursos duradouros (vínculos, resiliência, conhecimento).
+
+## Críticas e limites
+
+A psicologia positiva atraiu tanto entusiasmo quanto crítica — e leva-las a sério faz parte de estudá-la com rigor.
+
+::: {.atencao}
+⚠️ **Os riscos do "positivo".** Três críticas merecem atenção. Primeira, a **tirania da positividade**: transformar felicidade em dever pode gerar culpa em quem sofre e deslegitimar emoções negativas, que são adaptativas e necessárias — a tristeza, o medo e a raiva têm funções (Cap. 54). Segunda, o **viés individualista e cultural**: grande parte da pesquisa nasceu em contextos ocidentais, individualistas e de classe média (amostras *WEIRD*, Cap. 103), e nem sempre se generaliza; noções de bem-estar variam entre culturas. Terceira, o risco de **despolitização**: enfatizar a mudança interior ("seja resiliente, seja grato") pode desviar a atenção de causas **estruturais** do mal-estar — pobreza, desigualdade, condições de trabalho —, responsabilizando o indivíduo por um sofrimento de origem social. Além disso, parte dos primeiros estudos sofreu com a crise de replicabilidade (Cap. 105), e várias promessas iniciais tiveram de ser redimensionadas.
+:::
+
+Um conceito que tempera o otimismo ingênuo é a **adaptação hedônica** (a "esteira hedônica"): a tendência de retornar, após eventos bons ou ruins, a um nível de felicidade relativamente estável [@brickman1978]. Ganhar na loteria ou sofrer um acidente altera o bem-estar menos e por menos tempo do que se imagina — o que sugere que a felicidade depende menos das circunstâncias e mais de processos e relações que se cultivam.
+
+## Bem-estar, cultura e Brasil
+
+A psicologia positiva contemporânea reconhece que o florescimento tem **cor cultural**. Em culturas coletivistas, o bem-estar tende a ancorar-se mais na harmonia das relações e no pertencimento do que na realização individual; conceitos de outras tradições enriquecem o mapa. No Brasil, o campo dialoga com temas próprios — a valorização dos vínculos, da afetividade, da religiosidade e da comunidade como fontes de sentido — e com o desafio de não importar acriticamente um modelo formulado alhures. Bem aplicada, sem virar imperativo de felicidade nem álibi para ignorar a desigualdade, a psicologia positiva oferece uma correção valiosa de rota: lembrar que a psicologia é a ciência da mente **inteira**, e que promover o que há de melhor no humano é tão legítimo quanto tratar o que nele adoece.
+
+::: {.callout-sintese}
+- A **psicologia positiva** [@seligman2000] estuda cientificamente o funcionamento humano ótimo, corrigindo o foco exclusivo no adoecimento.
+- Bem-estar **hedônico** (prazer, satisfação — bem-estar subjetivo [@diener1984]) × **eudaimônico** (sentido, realização de potencial); o modelo **PERMA** [@seligman2011] integra cinco elementos.
+- O **fluxo** [@csikszentmihalyi1990] é a absorção que surge do equilíbrio entre desafio e habilidade.
+- **Forças de caráter** (VIA) [@peterson_seligman2004] e **intervenções positivas** produzem ganhos reais, porém **modestos** [@sin_lyubomirsky2009]; emoções positivas "ampliam-e-constroem" recursos [@fredrickson2001].
+- Críticas: **tirania da positividade**, viés **cultural/WEIRD**, risco de **despolitizar** o mal-estar; a **adaptação hedônica** [@brickman1978] limita o peso das circunstâncias.
+- O florescimento é **culturalmente moldado**; no Brasil, ancora-se fortemente em vínculos, afeto e comunidade.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicologia positiva**
+:   Estudo científico do funcionamento humano ótimo e das condições que promovem o florescimento [@seligman2000].
+
+**Bem-estar subjetivo (hedônico)**
+:   Felicidade avaliada como alto afeto positivo, baixo afeto negativo e satisfação com a vida [@diener1984].
+
+**Bem-estar eudaimônico**
+:   Bem-estar entendido como sentido, propósito, autonomia e realização do próprio potencial.
+
+**PERMA**
+:   Modelo do florescimento com cinco elementos: emoção positiva, engajamento, relações, sentido e realização [@seligman2011].
+
+**Fluxo (*flow*)**
+:   Estado de absorção completa numa atividade, produzido pelo equilíbrio entre desafio e habilidade [@csikszentmihalyi1990].
+
+**Forças de caráter**
+:   Traços positivos valorizados (bondade, gratidão, perseverança…) organizados na taxonomia VIA [@peterson_seligman2004].
+
+**Adaptação hedônica**
+:   Tendência a retornar a um nível estável de felicidade após eventos positivos ou negativos [@brickman1978].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Que crítica à psicologia tradicional motivou a psicologia positiva? Por que "ausência de doença" não é o mesmo que "florescimento"?
+
+2. **(Conceitual.)** Distinga bem-estar hedônico e eudaimônico. Como o modelo PERMA tenta integrá-los?
+
+3. **(Conceitual.)** Explique o fluxo e o papel do equilíbrio desafio–habilidade. O que gera ansiedade e o que gera tédio, segundo o modelo?
+
+4. **(Reflexão crítica.)** O que é a "tirania da positividade" e por que emoções negativas não devem ser suprimidas? Como a psicologia positiva pode, mal usada, despolitizar o sofrimento?
+
+5. **(Integração.)** Meta-análises mostram que intervenções positivas funcionam "de modo modesto". Relacione isso com a adaptação hedônica e com a crise de replicabilidade (Cap. 105).
+
+6. **(Reflexão crítica.)** Por que o conceito de bem-estar pode variar entre culturas? Que fontes de sentido são especialmente valorizadas no contexto brasileiro?
