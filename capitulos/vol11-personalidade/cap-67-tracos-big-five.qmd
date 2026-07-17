@@ -1,5 +1,134 @@
 # 67. Teorias dos traços (Big Five / CGF)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** traço de personalidade e explicar a hipótese lexical.
+- **Reconstituir** o caminho histórico de Allport a Cattell e Eysenck.
+- **Descrever** os Cinco Grandes Fatores (Big Five/CGF) e suas facetas típicas.
+- **Resumir** a evidência de validade do modelo: consenso entre observadores, estabilidade, universalidade cultural, herdabilidade e poder preditivo.
+- **Discutir** as bases biológicas propostas para os traços (Eysenck e além).
+- **Ponderar** as críticas: modelos alternativos (HEXACO), caráter descritivo e limites do nível dos traços.
 :::
+
+Pergunte a qualquer pessoa como é um amigo, e ela responderá com traços: "generoso, ansioso, teimoso, curioso". As teorias dos traços levam esse instinto descritivo a sério e o transformam em ciência quantitativa: se as pessoas diferem umas das outras de formas consistentes, a tarefa é descobrir **quais são as dimensões básicas** dessa variação — o equivalente psicológico das coordenadas de um mapa — e medir cada indivíduo nelas. Diferentemente das famílias anteriores, a abordagem dos traços não nasceu de uma teoria da mente, mas de um programa **empírico e psicométrico**: coletar descrições, correlacioná-las e deixar a estrutura emergir dos dados via **análise fatorial** (Cap. 49). O resultado mais consensual da história da psicologia da personalidade é o modelo dos **Cinco Grandes Fatores** — *Big Five*, ou **CGF** na literatura brasileira. Este capítulo conta como se chegou a ele, o que o sustenta e o que ainda se discute.
+
+## O que é um traço — e a hipótese lexical
+
+Um **traço** é uma dimensão contínua de diferenças individuais em padrões típicos de comportamento, emoção e pensamento — não um "tipo" que se tem ou não se tem. Traços são **disposições**: descrevem tendências médias agregadas em muitas situações, e é no agregado que revelam sua consistência (Cap. 68 discutirá o quanto situações importam caso a caso).
+
+Por onde começar o inventário das dimensões? Allport e Odbert tiveram a ideia fundadora, a **hipótese lexical**: se uma diferença individual é importante na vida social, as línguas naturais terão criado palavras para ela; logo, o dicionário é um censo das características humanas relevantes. Do dicionário de inglês, extraíram cerca de **18 mil termos** descritores de pessoas, dos quais ~4.500 designavam traços estáveis [@allport_odbert1936]. O problema virou outro: como reduzir milhares de adjetivos a dimensões básicas?
+
+## De Cattell a Eysenck: a redução fatorial
+
+Raymond Cattell atacou a redução com a ferramenta que ajudou a desenvolver: a análise fatorial. Agrupando sinônimos e correlacionando avaliações, chegou a **16 fatores primários** de personalidade, que originaram o questionário 16PF [@cattell1946]. Hans Eysenck, no extremo oposto da parcimônia, defendeu pouquíssimas **superdimensões** biológicas: **extroversão** (E), **neuroticismo** (N) e, mais tarde, **psicoticismo** (P) [@eysenck1967]. O cruzamento de E e N reconstitui, curiosamente, os quatro temperamentos hipocráticos (@fig-eysenck): o melancólico (introvertido instável), o colérico (extrovertido instável), o fleumático (introvertido estável) e o sanguíneo (extrovertido estável) — a mais antiga tipologia da história reaparecendo como quadrantes de duas dimensões contínuas.
+
+::: {#fig-eysenck}
+```{.tikz}
+%%| filename: dimensoes-eysenck
+%%| alt: Plano cartesiano com duas dimensões: eixo horizontal de introversão a extroversão, eixo vertical de estabilidade emocional a instabilidade (neuroticismo). Nos quatro quadrantes, os temperamentos clássicos: melancólico no quadrante introvertido-instável, com descritores ansioso e pessimista; colérico no extrovertido-instável, com descritores impulsivo e agressivo; fleumático no introvertido-estável, com descritores calmo e ponderado; sanguíneo no extrovertido-estável, com descritores sociável e animado.
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[->, thick] (-3.9,0) -- (3.9,0) node[right, font=\tiny, align=left] {extroversão};
+  \node[font=\tiny, left] at (-3.9,0) {introversão};
+  \draw[->, thick] (0,-3.1) -- (0,3.1) node[above, font=\tiny] {instabilidade (N alto)};
+  \node[font=\tiny, below] at (0,-3.1) {estabilidade (N baixo)};
+  \node[text=manualblue!70!black, align=center] at (-2.1,1.7) {\textbf{Melancólico}\\{\tiny ansioso, rígido,}\\{\tiny pessimista, quieto}};
+  \node[text=manualred!80!black, align=center] at (2.1,1.7) {\textbf{Colérico}\\{\tiny suscetível, impulsivo,}\\{\tiny ativo, agressivo}};
+  \node[text=manualgreen!60!black, align=center] at (-2.1,-1.7) {\textbf{Fleumático}\\{\tiny calmo, ponderado,}\\{\tiny confiável, contido}};
+  \node[text=manualyellow!50!black, align=center] at (2.1,-1.7) {\textbf{Sanguíneo}\\{\tiny sociável, animado,}\\{\tiny despreocupado, líder}};
+\end{tikzpicture}
+```
+As duas superdimensões de Eysenck (extroversão × neuroticismo) e os quatro temperamentos clássicos como quadrantes [@eysenck1967].
+:::
+
+Eysenck deu ao campo algo mais duradouro que o número de fatores: um programa de **explicação biológica**. Propôs que introvertidos possuem **ativação cortical de base** (via sistema reticular, Cap. 24) cronicamente mais alta — por isso evitam estimulação adicional que os extrovertidos, sub-ativados, procuram —, e que o neuroticismo reflete reatividade límbica. Os detalhes não sobreviveram intactos (a evidência favorece mais diferenças de **reatividade** a estímulos do que de ativação de base), mas o princípio — traços têm substrato neurobiológico e herdável — está hoje solidamente estabelecido [@polderman2015].
+
+## Os Cinco Grandes Fatores (CGF)
+
+Entre os anos 1960 e 1980, análises fatoriais independentes dos descritores lexicais e de questionários convergiram teimosamente para **cinco fatores** — nem os 16 de Cattell, nem os 3 de Eysenck [@goldberg1990; @mccrae_costa1987]. O acrônimo em inglês é OCEAN:
+
+| Fator | Polo alto | Polo baixo | Facetas típicas |
+|---|---|---|---|
+| **Abertura à experiência** (O) | curioso, imaginativo, estético, aberto a ideias | convencional, pragmático, rotineiro | fantasia, estética, sentimentos, ideias, valores |
+| **Conscienciosidade** (C) | organizado, disciplinado, confiável, orientado a metas | displicente, impulsivo, desorganizado | ordem, autodisciplina, senso de dever, competência |
+| **Extroversão** (E) | sociável, assertivo, ativo, entusiasmado | reservado, quieto, independente | gregarismo, assertividade, busca de excitação, emoções positivas |
+| **Amabilidade** (A) | cooperativo, empático, confiante, altruísta | competitivo, cético, duro | confiança, franqueza, altruísmo, modéstia, complacência |
+| **Neuroticismo** (N) | ansioso, instável, vulnerável ao estresse | calmo, resiliente, seguro | ansiedade, hostilidade, depressão, vulnerabilidade |
+
+Cada fator é um **contínuo** (a maioria das pessoas fica perto do meio) e se desdobra em **facetas** mais específicas — o nível em que instrumentos como o NEO-PI-R medem [@costa_mccrae1992]. Os cinco fatores são praticamente independentes entre si: conhecer a extroversão de alguém não diz nada sobre sua conscienciosidade — e é essa independência que faz deles um sistema de coordenadas eficiente.
+
+### Por que levar o modelo a sério
+
+A força do CGF não está na elegância, mas na **convergência de evidências**:
+
+- **Consenso entre observadores.** Autorrelato, cônjuges, amigos e colegas concordam substancialmente ao avaliar os cinco fatores de uma pessoa [@mccrae_costa1987] — os traços não são ficções do autorrelato.
+- **Estabilidade temporal.** Alta consistência de ordem ao longo de décadas, com as mudanças normativas de nível médio já vistas (princípio da maturidade) [@roberts_delvecchio2000; @roberts_mroczek2008].
+- **Generalidade cultural.** A estrutura de cinco fatores reaparece, com boa (não perfeita) fidelidade, em traduções e em dezenas de culturas [@mccrae_terracciano2005] — embora estudos lexicais nativos por vezes recuperem estruturas um pouco diferentes, e a advertência WEIRD permaneça [@henrich2010].
+- **Herdabilidade e substrato.** Todos os cinco mostram herdabilidade em torno de 40–50% [@polderman2015; @bouchard1990], com correlatos neurobiológicos em investigação.
+- **Poder preditivo.** Conscienciosidade prediz desempenho acadêmico e ocupacional, saúde e longevidade; neuroticismo prediz psicopatologia internalizante e insatisfação conjugal; abertura, escolhas vocacionais e atitudes; e assim por diante [@roberts2007; @ozer_benet2006].
+
+::: {.base-neural}
+🧠 **Traços no cérebro.** A neurociência da personalidade procura os substratos das dimensões. O quadro atual, ainda em construção, associa o **neuroticismo** à reatividade de circuitos de ameaça (amígdala e conectividade com o córtex pré-frontal — Cap. 24) e à sensibilidade ao estresse; a **extroversão**, à sensibilidade de circuitos dopaminérgicos de recompensa (Cap. 24) — extrovertidos mostram respostas mais fortes a sinais de recompensa; a **conscienciosidade**, à função executiva pré-frontal; a **abertura**, à flexibilidade cognitiva e ao funcionamento da rede de modo padrão. São correlações modestas e nenhum "centro do traço" existe — o que se herda são vieses difusos de reatividade e regulação de sistemas neurais, que o desenvolvimento converte em estilos estáveis [@eysenck1967; @polderman2015].
+:::
+
+## Críticas e alternativas
+
+**Quantos fatores, afinal?** A convergência no cinco não é unânime. O modelo **HEXACO** sustenta que estudos lexicais em várias línguas recuperam **seis** fatores — acrescentando **Honestidade-Humildade** (sinceridade, justiça, modéstia versus manipulação e ganância), que no CGF fica espremido dentro da amabilidade [@ashton_lee2007]. O sexto fator ganhou tração especialmente na pesquisa sobre comportamento ético e sua ausência é uma das críticas técnicas mais sérias ao Big Five. No sentido oposto, há propostas de **dois metafatores** (estabilidade e plasticidade) acima dos cinco — a estrutura é hierárquica, e o número "certo" depende do nível de resolução desejado.
+
+**Descrição não é explicação.** A crítica clássica: dizer que Maria vai a festas porque é extrovertida, quando "extrovertida" foi inferido de ela ir a festas, é circular. Os defensores respondem que o modelo é, antes de tudo, uma **taxonomia** — como a tabela periódica antes da física atômica: organizar o domínio é pré-condição para explicá-lo, e os programas explicativos (genética, neurociência, teoria evolutiva dos traços) trabalham sobre a taxonomia. A crítica permanece saudável: um perfil CGF **descreve** uma pessoa; não revela seus processos, metas ou história (níveis 2 e 3 de McAdams, Cap. 64).
+
+**O que fica de fora.** Traços amplos sacrificam o particular: dois indivíduos com perfis idênticos podem viver vidas radicalmente diferentes. Medidas de traço também capturam mal a **variabilidade intraindividual** — o quanto cada pessoa flutua de situação a situação —, que é justamente o foco da próxima família teórica (Cap. 68).
+
+::: {.atencao}
+⚠️ **Big Five ≠ MBTI.** O modelo científico dominante dos traços é frequentemente confundido com a tipologia mais popular do mundo corporativo, o MBTI (inspirado em Jung, Cap. 65). As diferenças são fatais para o segundo: o MBTI força **tipos dicotômicos** sobre dimensões que são contínuas e unimodais (a maioria das pessoas está perto do meio — dividir em "E ou I" é como dividir a humanidade em "altos e baixos"); sua confiabilidade teste-reteste é fraca (boa parte das pessoas muda de "tipo" em semanas); e seu poder preditivo é baixo [@pittenger1993]. O CGF mede as mesmas regiões do espaço de personalidade — extroversão, abertura etc. — de forma contínua, confiável e validada. O sucesso comercial do MBTI deve mais ao efeito Barnum (Cap. 69) e ao apelo de rótulos identitários do que à psicometria.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Traço**: dimensão contínua de diferenças individuais em padrões típicos de comportamento, emoção e pensamento; consistência aparece no **agregado**.
+- **Hipótese lexical** [@allport_odbert1936]: as diferenças importantes estão codificadas no léxico → análise fatorial dos descritores. Cattell propôs 16 fatores [@cattell1946]; Eysenck, 2–3 superdimensões com base biológica [@eysenck1967].
+- **CGF/Big Five** (OCEAN): Abertura, Conscienciosidade, Extroversão, Amabilidade, Neuroticismo — fatores contínuos, quase independentes, com facetas [@goldberg1990; @costa_mccrae1992].
+- Sustentação: acordo entre observadores [@mccrae_costa1987], estabilidade [@roberts_delvecchio2000], generalidade cultural [@mccrae_terracciano2005], herdabilidade ~40–50% [@polderman2015], predição de desfechos [@roberts2007; @ozer_benet2006].
+- Críticas: **HEXACO** e o sexto fator Honestidade-Humildade [@ashton_lee2007]; taxonomia ≠ explicação; traços não capturam processos, metas nem variabilidade situacional.
+- **MBTI**: tipologia sem sustentação psicométrica [@pittenger1993] — não confundir com o modelo científico dos traços.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Traço de personalidade**
+:   Dimensão contínua e relativamente estável de diferenças individuais em padrões de comportamento, emoção e pensamento.
+
+**Hipótese lexical**
+:   Ideia de que as diferenças individuais socialmente importantes estão codificadas como palavras nas línguas naturais [@allport_odbert1936].
+
+**Análise fatorial**
+:   Técnica estatística que identifica dimensões latentes a partir dos padrões de correlação entre muitas medidas (Cap. 49).
+
+**Cinco Grandes Fatores (CGF / Big Five)**
+:   Abertura, Conscienciosidade, Extroversão, Amabilidade e Neuroticismo — a taxonomia dimensional mais consensual da personalidade [@goldberg1990].
+
+**Faceta**
+:   Subdimensão específica de um fator (ex.: assertividade e gregarismo dentro da extroversão) [@costa_mccrae1992].
+
+**HEXACO**
+:   Modelo alternativo de seis fatores que acrescenta Honestidade-Humildade aos cinco [@ashton_lee2007].
+
+**Neuroticismo**
+:   Dimensão de propensão a afeto negativo e vulnerabilidade ao estresse; um dos maiores fatores gerais de risco para psicopatologia.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie a hipótese lexical e descreva, em três etapas, o caminho dela até o modelo de cinco fatores.
+
+2. **(Conceitual.)** Por que a consistência dos traços aparece melhor em **agregados** de comportamento do que em atos isolados? Conecte com a lei dos grandes números (Cap. 18).
+
+3. **(Análise.)** Monte o perfil CGF provável (alto/médio/baixo em cada fator) de: (a) um pesquisador recluso e meticuloso que publica ideias heterodoxas; (b) uma vendedora carismática, desorganizada e imperturbável. Justifique fator a fator.
+
+4. **(Avaliação.)** "Dizer que alguém falta a prazos porque tem baixa conscienciosidade é circular." Apresente a defesa taxonômica contra essa crítica e diga o que o modelo ainda **deve** além da taxonomia.
+
+5. **(Avaliação.)** Seu departamento de RH quer adotar o MBTI para formar equipes. Escreva o parecer técnico em cinco linhas, com a alternativa que você recomendaria [@pittenger1993].
+
+6. **(Síntese.)** O fator Honestidade-Humildade do HEXACO prediz comportamento ético melhor que o CGF [@ashton_lee2007]. O que esse episódio ilustra sobre a relação entre a escolha da taxonomia e o que uma ciência consegue enxergar?
