@@ -1,5 +1,137 @@
 # 94. Tratamentos biomédicos (psicofármacos)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Situar** os tratamentos biomédicos no cuidado em saúde mental e distinguir seu modo de ação do das psicoterapias.
+- **Identificar** as principais classes de psicofármacos (antidepressivos, ansiolíticos, estabilizadores do humor, antipsicóticos, estimulantes) e seus usos.
+- **Explicar** o mecanismo dos ISRS na sinapse e avaliar criticamente a "hipótese das monoaminas".
+- **Interpretar** a evidência de eficácia e o debate sobre o tamanho dos efeitos (Kirsch, Cipriani, Leucht).
+- **Reconhecer** outros tratamentos biológicos (ECT, EMT) e a promessa e cautela dos psicodélicos.
+- **Discutir** a combinação de fármaco e psicoterapia, a adesão e as questões éticas envolvidas.
 :::
+
+Nem toda intervenção em saúde mental é psicológica. Desde os anos 1950, os **psicofármacos** transformaram a psiquiatria e a vida de milhões de pessoas — esvaziaram os antigos manicômios, tornaram tratáveis quadros antes devastadores e passaram a integrar, ao lado da psicoterapia, o cuidado de muitos transtornos. Este capítulo — mais próximo da medicina do que qualquer outro do volume — apresenta as classes de medicamentos, seus mecanismos e a evidência de sua eficácia, com o equilíbrio que o tema exige: nem o entusiasmo que reduz todo sofrimento a "desequilíbrio químico", nem o ceticismo que descarta tratamentos que salvam vidas.
+
+::: {.atencao}
+⚠️ **Este capítulo é educacional. Prescrever é ato médico.** O manejo de psicofármacos — indicação, dose, ajustes, interações, retirada — é competência exclusiva do **médico** (psiquiatra ou clínico), e a prescrição no Brasil é ato médico regulamentado. Nada aqui orienta automedicação ou mudança de tratamento: começar, trocar ou **interromper** um psicofármaco por conta própria pode ser perigoso (a suspensão abrupta de vários deles causa sintomas graves). O objetivo é a **alfabetização científica**: entender o que essas substâncias fazem, o que a evidência mostra e como se articulam com a psicoterapia — para que o leitor seja um paciente ou cidadão mais informado, não seu próprio prescritor.
+:::
+
+## O lugar do tratamento biomédico
+
+Os tratamentos biomédicos agem sobre o **substrato biológico** do comportamento (Vol 4) — sobretudo a neurotransmissão (Cap. 22) —, e não pela relação ou pela aprendizagem. Isso não os opõe à psicoterapia: as duas abordagens atuam em níveis diferentes de um mesmo fenômeno, e frequentemente se **combinam**. Convém, de saída, dissolver uma falsa dicotomia herdada do problema mente-corpo (Cap. 2): dizer que a depressão "é biológica" (responde a remédio) ou "é psicológica" (responde a terapia) é um falso dilema. A experiência psicológica **é** um processo cerebral; a psicoterapia, aliás, também **muda o cérebro** (Cap. 28). Fármaco e terapia são duas portas de entrada para o mesmo sistema.
+
+## As grandes classes de psicofármacos
+
+**Antidepressivos.** Usados na depressão (Cap. 79), mas também em transtornos de ansiedade, TOC, TEPT e outros. A classe mais prescrita é a dos **inibidores seletivos da recaptação de serotonina** (ISRS — fluoxetina, sertralina, escitalopram), que suplantou as gerações anteriores não por serem mais eficazes, mas por serem **mais seguros e mais bem tolerados**. Antecederam-nos os **antidepressivos tricíclicos** (eficazes, porém com mais efeitos colaterais e perigosos em superdosagem) e os **inibidores da monoaminoxidase** (IMAO, com restrições dietéticas importantes). Uma característica crucial: os antidepressivos levam **semanas** para fazer efeito — o que já sinaliza que sua ação não se resume ao aumento imediato de neurotransmissores (ver adiante).
+
+**Ansiolíticos.** Os **benzodiazepínicos** (diazepam, clonazepam, alprazolam) potencializam o GABA, o principal neurotransmissor inibitório, produzindo alívio **rápido** da ansiedade. Justamente por isso são de uso delicado: geram **tolerância e dependência** e têm indicação preferencialmente de curto prazo. Para o tratamento **de manutenção** da ansiedade, os antidepressivos (ISRS) são, hoje, a primeira escolha farmacológica — um contrassenso aparente (um "antidepressivo" para ansiedade) que se explica pela sobreposição neurobiológica dos dois quadros.
+
+**Estabilizadores do humor.** Usados no transtorno bipolar (Cap. 79). O **lítio**, descoberto por acaso nos anos 1940, permanece um dos tratamentos mais eficazes da psiquiatria: reduz episódios de mania e, notavelmente, o **risco de suicídio** [@geddes2004]. Exige monitoramento sanguíneo por ter janela terapêutica estreita. Alguns **anticonvulsivantes** e antipsicóticos também têm efeito estabilizador.
+
+**Antipsicóticos** (neurolépticos). Usados na esquizofrenia e em outros quadros psicóticos (Cap. 82), agem sobretudo bloqueando receptores de **dopamina**. Os de **primeira geração** (típicos, como o haloperidol) controlam sintomas positivos, mas causam efeitos motores (parkinsonismo, discinesia tardia). Os de **segunda geração** (atípicos, como risperidona, olanzapina, clozapina) têm perfil de efeitos diferente — menos motores, mas risco metabólico (ganho de peso, diabetes). A clozapina é a mais eficaz para casos resistentes, ao custo de exigir monitoramento hematológico.
+
+**Estimulantes.** No TDAH (Cap. 85), o **metilfenidato** e as anfetaminas — paradoxalmente, estimulantes — melhoram a atenção e reduzem a impulsividade ao potencializar dopamina e noradrenalina nos circuitos pré-frontais. Estão entre os tratamentos mais eficazes da psiquiatria para seu alvo.
+
+## Como agem: a sinapse e a hipótese das monoaminas
+
+A maioria dos psicofármacos age na **sinapse** (Cap. 22), modulando a disponibilidade de neurotransmissores. Os ISRS ilustram bem: normalmente, após liberar serotonina na fenda sináptica, o neurônio pré-sináptico a **recapta** de volta por um transportador. O ISRS **bloqueia esse transportador**, deixando mais serotonina disponível para atuar sobre o neurônio pós-sináptico (@fig-sinapse-isrs).
+
+::: {#fig-sinapse-isrs}
+```{.tikz}
+%%| filename: sinapse-isrs
+%%| alt: Esquema de uma sinapse. À esquerda, o terminal pré-sináptico libera pontos (moléculas de serotonina) na fenda sináptica. À direita, a membrana pós-sináptica com receptores. No terminal pré-sináptico, um transportador de recaptação é mostrado bloqueado por um símbolo com a legenda "ISRS bloqueia a recaptação", de modo que mais serotonina permanece na fenda atuando sobre os receptores.
+\begin{tikzpicture}[font=\small]
+  % terminal pre-sinaptico
+  \draw[thick, fill=manualblue!8, rounded corners=6pt] (-3.4,-1.6) rectangle (-0.6,1.6);
+  \node[font=\scriptsize, text=manualblue!70!black, align=center] at (-2,1.9) {terminal\\pré-sináptico};
+  % membrana pos
+  \draw[thick, fill=manualgreen!8, rounded corners=6pt] (0.9,-1.6) rectangle (3.4,1.6);
+  \node[font=\scriptsize, text=manualgreen!60!black, align=center] at (2.15,1.9) {membrana\\pós-sináptica};
+  % fenda com serotonina
+  \foreach \x/\y in {-0.2/0.9, 0.1/0.2, -0.1/-0.5, 0.3/-1.0, 0/1.3} \fill[manualred] (\x,\y) circle (1.6pt);
+  \node[font=\scriptsize, text=manualred] at (0.1,-1.5) {serotonina};
+  % receptores
+  \foreach \y in {0.9,0.2,-0.5} \draw[thick, manualgreen!60!black] (0.9,\y)++(0,0.12) -- ++(0.28,0) -- ++(0,-0.24) -- ++(-0.28,0);
+  % transportador bloqueado
+  \draw[thick, manualgray] (-0.6,-0.2) rectangle (-0.35,0.4);
+  \node[manualred, font=\bfseries] at (-0.47,0.1) {$\times$};
+  \draw[->,>=Stealth, manualgray] (-1.4,-1.1) node[below,font=\scriptsize,align=center]{ISRS bloqueia\\a recaptação} to[bend left=15] (-0.5,-0.25);
+\end{tikzpicture}
+```
+Mecanismo de um ISRS. Normalmente a serotonina liberada na fenda é recaptada de volta pelo transportador pré-sináptico. O ISRS **bloqueia** esse transportador (×), aumentando a serotonina disponível na fenda. O efeito bioquímico é imediato — mas a melhora clínica leva semanas, o que a simples "reposição de serotonina" não explica.
+:::
+
+Esse mecanismo alimentou a **hipótese das monoaminas** (ou do "desequilíbrio químico"): a depressão resultaria de uma **falta** de serotonina (e/ou noradrenalina), corrigida pelos antidepressivos. A hipótese foi enormemente influente — e é, hoje, considerada **insuficiente** e em boa parte incorreta como explicação da depressão.
+
+::: {.atencao}
+⚠️ **O mito do "desequilíbrio químico".** A ideia de que a depressão é causada por "falta de serotonina" foi por décadas repetida como fato — inclusive em campanhas de marketing farmacêutico. A evidência não a sustenta. Uma revisão-guarda-chuva ampla concluiu que **não há suporte consistente** para a tese de que a depressão seja causada por baixa serotonina [@moncrieff2022]. Vários fatos já contrariavam a hipótese: os fármacos elevam a serotonina em horas, mas a melhora leva **semanas**; substâncias que *reduzem* serotonina não deprimem pessoas saudáveis de forma consistente. O provável é que os antidepressivos ajam por vias mais complexas e a jusante — neuroplasticidade, neurogênese, modulação de circuitos —, não por "repor" um neurotransmissor em falta. **Atenção ao que isso significa e ao que não significa:** que a explicação do "desequilíbrio" seja falsa **não** quer dizer que os antidepressivos não funcionem (a eficácia é uma questão empírica separada, ver adiante), nem que a depressão "não seja biológica". Significa apenas que o *slogan* era uma simplificação sem base — e que reduzir a depressão a um único neurotransmissor sempre foi ciência ruim.
+:::
+
+## A evidência: eficácia real, tamanho debatido
+
+Os psicofármacos funcionam — mas *quanto* eles funcionam, e para quem, é objeto de um debate científico legítimo e importante.
+
+Para os **antidepressivos**, uma meta-análise influente de Kirsch, incluindo dados não publicados obtidos por vias regulatórias, concluiu que a diferença em relação ao **placebo**, embora real, era **modesta** na depressão leve a moderada, tornando-se clinicamente mais relevante apenas na depressão **grave** [@kirsch2008]. Do outro lado do debate, a maior rede de ensaios já reunida — mais de 500 estudos, por Cipriani e colaboradores — confirmou que **todos** os antidepressivos testados foram **superiores ao placebo**, ainda que com efeitos de magnitude variada e, em média, moderada [@cipriani2018]. A síntese razoável: os antidepressivos são eficazes, sobretudo nos quadros mais graves; o efeito médio é real, porém menor do que o marketing sugeria, e boa parte da resposta em quadros leves é atribuível ao placebo. O grande estudo naturalístico STAR\*D mostrou, ainda, que **muitos pacientes não respondem** ao primeiro fármaco e precisam de sucessivas tentativas, com remissão longe de garantida [@rush2006].
+
+Para os **antipsicóticos**, a evidência de eficácia contra os sintomas positivos da psicose é robusta; as meta-análises mostram que os de segunda geração **não são globalmente superiores** aos de primeira (com exceções, como a clozapina), diferindo sobretudo no **perfil de efeitos colaterais** [@leucht2009]. Para o **lítio**, a evidência de prevenção de recaídas e de redução de suicídio no transtorno bipolar é das mais sólidas da psicofarmacologia [@geddes2004].
+
+## Além dos fármacos: ECT, EMT e psicodélicos
+
+Nem todo tratamento biológico é medicamentoso. A **eletroconvulsoterapia** (ECT) — aplicação controlada de corrente para induzir uma breve convulsão, sob anestesia — carrega um estigma histórico pesado (as imagens brutais do passado), mas, na forma moderna, é **segura e altamente eficaz** para a depressão grave, resistente ou com risco iminente de suicídio, e para a catatonia [@uk_ect2003]. Seu principal efeito adverso são déficits de memória, em geral transitórios. A **estimulação magnética transcraniana** (EMT/rTMS) — campos magnéticos aplicados ao couro cabeludo, sem anestesia nem convulsão — é uma opção não invasiva para depressão resistente. E há uma fronteira em rápida expansão: a pesquisa com **psicodélicos** (psilocibina, MDMA, cetamina/escetamina) em contextos assistidos vem mostrando resultados promissores para depressão resistente e TEPT — com a cautela de que o campo é jovem, os estudos têm desafios metodológicos sérios (o cegamento é quase impossível) e o entusiasmo corre à frente da evidência.
+
+## Combinar, aderir, retirar
+
+Fármaco *ou* terapia? Para muitos quadros, a resposta é **ambos**. A combinação de psicofármaco e psicoterapia supera, para vários transtornos (depressão moderada a grave, entre outros), cada abordagem isolada — cada uma cobrindo o que a outra não alcança: o fármaco alivia sintomas que travam o engajamento; a terapia ensina habilidades que **previnem a recaída** após a retirada do remédio (Cap. 91) [@hollon2005]. Dois problemas práticos merecem destaque. A **adesão**: muitos pacientes interrompem a medicação cedo — por efeitos colaterais, por se sentirem melhores, ou por estigma —, o que eleva a recaída. E a **retirada**: a suspensão de antidepressivos e, sobretudo, de benzodiazepínicos pode provocar **sintomas de descontinuação** significativos, e deve ser gradual e supervisionada — outra razão para que a decisão seja sempre médica.
+
+::: {.na-pratica}
+💡 **"Tomar remédio é fraqueza" — desmontando o estigma.** Uma barreira frequente ao tratamento é a ideia de que usar psicofármaco seria "muleta", "fraqueza de caráter" ou "solução fácil". Ninguém diz isso de quem toma insulina para o diabetes ou anti-hipertensivo para a pressão. O sofrimento psíquico grave tem, como qualquer condição de saúde, um substrato biológico real, e tratá-lo por vias biológicas quando indicado é cuidado, não fraqueza. Isso convive com duas verdades igualmente importantes: o fármaco **não é obrigatório nem sempre suficiente** (para muitos quadros leves a moderados, a psicoterapia sozinha basta ou é preferível), e a decisão é **individual e médica**, ponderando benefícios, efeitos colaterais e preferências da pessoa. Combater o estigma não é empurrar remédio; é permitir que a escolha seja feita com informação, e não com culpa.
+:::
+
+::: {.callout-sintese}
+- Os tratamentos biomédicos agem sobre o **substrato biológico** (neurotransmissão), complementando — não excluindo — a psicoterapia; "biológico × psicológico" é falso dilema.
+- Classes principais: **antidepressivos** (ISRS de primeira linha, também para ansiedade), **ansiolíticos** (benzodiazepínicos, de curto prazo por causa da dependência), **estabilizadores** (lítio) [@geddes2004], **antipsicóticos** (bloqueio dopaminérgico) [@leucht2009] e **estimulantes** (TDAH).
+- Os **ISRS** bloqueiam a recaptação de serotonina; o efeito é imediato, mas a melhora leva semanas — a **hipótese das monoaminas / "desequilíbrio químico" não se sustenta** [@moncrieff2022], sem que isso negue a eficácia dos fármacos.
+- A eficácia é **real, mas de tamanho debatido**: modesta na depressão leve, maior na grave [@kirsch2008]; a maior rede de ensaios confirma superioridade sobre placebo [@cipriani2018]; muitos não respondem ao primeiro fármaco [@rush2006].
+- Outros tratamentos: **ECT** (segura e eficaz na depressão grave/resistente) [@uk_ect2003], **EMT** e a fronteira promissora, porém incipiente, dos **psicodélicos**.
+- Fármaco + psicoterapia frequentemente supera cada um isolado [@hollon2005]; **adesão** e **retirada gradual supervisionada** são cruciais, e o **estigma** é barreira ao cuidado.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicofármaco**
+:   Substância que age sobre o sistema nervoso para tratar transtornos mentais, modulando sobretudo a neurotransmissão.
+
+**ISRS**
+:   Inibidor seletivo da recaptação de serotonina; antidepressivo de primeira linha, mais seguro que as gerações anteriores.
+
+**Benzodiazepínico**
+:   Ansiolítico que potencializa o GABA, de ação rápida, com risco de tolerância e dependência; uso preferencialmente de curto prazo.
+
+**Estabilizador do humor**
+:   Fármaco que previne episódios do transtorno bipolar; o lítio reduz recaídas e o risco de suicídio [@geddes2004].
+
+**Antipsicótico**
+:   Fármaco que bloqueia receptores de dopamina, usado na psicose; de primeira geração (efeitos motores) e segunda (risco metabólico).
+
+**Hipótese das monoaminas**
+:   Tese de que a depressão decorre de falta de serotonina/noradrenalina; hoje considerada insuficiente e sem suporte consistente [@moncrieff2022].
+
+**Eletroconvulsoterapia (ECT)**
+:   Indução controlada de convulsão sob anestesia; segura e eficaz na depressão grave, resistente ou com risco de suicídio [@uk_ect2003].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie as cinco grandes classes de psicofármacos e associe cada uma a um quadro para o qual é indicada.
+
+2. **(Conceitual.)** Explique como um ISRS age na sinapse. Por que o fato de a melhora levar semanas contraria a versão simples da hipótese das monoaminas?
+
+3. **(Reflexão crítica.)** O "desequilíbrio químico" foi desmentido. Explique por que isso **não** implica que os antidepressivos sejam ineficazes nem que a depressão "não seja biológica".
+
+4. **(Reflexão crítica.)** Contraste as conclusões de Kirsch e de Cipriani sobre os antidepressivos. Como conciliar "efeito modesto" e "superiores ao placebo" numa síntese honesta?
+
+5. **(Integração.)** Para muitos quadros, fármaco + psicoterapia supera cada um isolado. Explique por quê, ligando o alívio de sintomas à prevenção de recaída (Cap. 91).
+
+6. **(Aplicação.)** Um amigo quer parar o antidepressivo por conta própria porque "já está bem". Que riscos você apontaria, e por que a decisão deve ser médica?
