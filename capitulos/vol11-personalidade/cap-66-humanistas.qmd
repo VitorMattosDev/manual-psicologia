@@ -1,5 +1,127 @@
 # 66. Teorias humanistas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a teoria da personalidade de Rogers: tendência à realização, autoconceito e congruência.
+- **Descrever** o papel da consideração positiva incondicional e das condições de valor.
+- **Situar** a autorrealização de Maslow como teoria da personalidade saudável.
+- **Analisar** o eu real × eu ideal e suas consequências para o ajustamento.
+- **Avaliar criticamente** as forças, os limites empíricos e o legado do humanismo (incluindo a psicologia positiva).
 :::
+
+Se a família psicodinâmica vê a personalidade como campo de batalha, a família **humanista** a vê como projeto de crescimento. Apresentada historicamente no Cap. 11 como a "terceira força" — contra o determinismo pulsional da psicanálise e o ambientalismo do behaviorismo —, ela retorna aqui pelo ângulo da personalidade: o que faz de cada pessoa quem ela é, para Rogers e Maslow, não é o conflito reprimido nem o histórico de reforços, mas o modo como a **tendência inata ao crescimento** encontra (ou não) condições para se expressar, e o **autoconceito** que se forma nesse caminho. É uma teoria centrada na experiência subjetiva — em como a pessoa **se vê** — e seu vocabulário (autoestima, autenticidade, aceitação, realização pessoal) tornou-se o dialeto psicológico do cotidiano. Justamente por isso, exige o crivo científico com cuidado redobrado.
+
+## Rogers: a personalidade como autoconceito em construção
+
+### Tendência à realização e o organismo
+
+Carl Rogers parte de um postulado único: todo organismo possui uma **tendência à realização** (*actualizing tendency*) — uma inclinação intrínseca a manter-se, desenvolver-se e ampliar suas potencialidades [@rogers1951]. No ser humano, essa tendência inclui crescer em autonomia, competência e riqueza de experiência. A pessoa saudável funciona como um **organismo integrado**: confia na sua **avaliação organísmica** — o senso direto, sentido no corpo, do que a nutre ou a diminui — e usa a experiência como bússola.
+
+### O autoconceito e as condições de valor
+
+O desenvolvimento, porém, introduz um segundo sistema: o **autoconceito** (*self*) — a imagem organizada que a pessoa tem de si ("sou capaz", "sou tímida", "sou alguém que não se irrita"). O autoconceito nasce nas relações: a criança precisa da **consideração positiva** dos outros — afeto, aceitação, reconhecimento. E aqui está o nó da teoria: quando o afeto vem **condicionado** ("gosto de você *se* você for forte / obediente / o melhor"), a criança internaliza **condições de valor** — critérios externos do que ela precisa ser para merecer amor. Para preservar o afeto, passa a admitir no autoconceito apenas o que satisfaz as condições, e a **distorcer ou negar** as experiências organísmicas que as violam (a raiva de quem "não pode" sentir raiva; o cansaço de quem "tem que" ser incansável).
+
+O resultado é a **incongruência**: um descompasso entre a experiência real do organismo e o autoconceito (@fig-congruencia). Quanto maior a incongruência, mais energia se gasta em defesa (distorção, negação — Rogers reconhecia o parentesco com as defesas freudianas), mais rígida e ansiosa a personalidade. A **congruência** — abertura à experiência, autoconceito flexível que acolhe o que se vive — define o polo saudável: a **pessoa em pleno funcionamento**, aberta à experiência, presente no aqui-e-agora, confiante no organismo, criativa [@rogers1961].
+
+::: {#fig-congruencia}
+```{.tikz}
+%%| filename: congruencia-rogers
+%%| alt: Dois pares de círculos. À esquerda, incongruência: dois círculos, um representando o autoconceito e outro a experiência do organismo, com pequena área de sobreposição; a região exclusiva do autoconceito é marcada como distorção e negação, e a ansiedade é anotada abaixo. À direita, congruência: os dois círculos quase totalmente sobrepostos, indicando autoconceito que acolhe a experiência, anotado como pessoa em pleno funcionamento.
+\begin{tikzpicture}[font=\scriptsize]
+  % incongruência
+  \draw[manualblue, thick, fill=manualblue!12] (-4.6,0) circle (1.25);
+  \draw[manualred, thick, fill=manualred!12, fill opacity=0.7] (-2.9,0) circle (1.25);
+  \node[text=manualblue!70!black, align=center] at (-5.1,0.2) {\textbf{auto-}\\\textbf{conceito}};
+  \node[text=manualred!80!black, align=center] at (-2.4,0.2) {\textbf{experiência}\\{\tiny do organismo}};
+  \node[font=\tiny, align=center] at (-3.75,-1.8) {\textbf{INCONGRUÊNCIA}\\{\tiny distorção e negação → ansiedade, rigidez}};
+  % congruência
+  \draw[manualblue, thick, fill=manualblue!12] (2.6,0) circle (1.25);
+  \draw[manualred, thick, fill=manualred!12, fill opacity=0.7] (3.2,0) circle (1.25);
+  \node[font=\tiny, align=center] at (2.9,0.0) {autoconceito\\$\approx$ experiência};
+  \node[font=\tiny, align=center] at (2.9,-1.8) {\textbf{CONGRUÊNCIA}\\{\tiny abertura à experiência → pleno funcionamento}};
+\end{tikzpicture}
+```
+Incongruência e congruência em Rogers: a saúde psicológica cresce com a sobreposição entre o **autoconceito** e a **experiência organísmica** [@rogers1951].
+:::
+
+### A condição terapêutica — e a hipótese testável
+
+Da teoria decorre a terapia (Cap. 89): se a incongruência nasce de afeto condicional, ela se desfaz num vínculo de **consideração positiva incondicional**, **empatia** e **congruência do terapeuta** — as famosas condições "necessárias e suficientes" da mudança [@rogers1957]. Note o mérito raro: Rogers formulou sua teoria clínica como **hipótese empírica** e foi pioneiro em gravar sessões e submeter a psicoterapia à pesquisa. A evidência moderna dá-lhe razão parcial: a qualidade da **aliança terapêutica** e a empatia estão entre os preditores mais consistentes de bom desfecho em qualquer terapia [@fluckiger2018], embora quase nunca sejam *suficientes* sozinhas (Cap. 95).
+
+### Eu real × eu ideal
+
+Rogers operacionalizou a incongruência como distância entre o **eu real** (como me vejo) e o **eu ideal** (como sinto que deveria ser): discrepâncias grandes correlacionam-se com baixa autoestima, ansiedade e depressão — e a redução dessa distância era um dos seus indicadores de progresso terapêutico (medido com a técnica *Q-sort*). O tema segue vivo na pesquisa sobre autodiscrepâncias e autoestima contemporânea.
+
+## Maslow: a personalidade saudável e a autorrealização
+
+Abraham Maslow contribuiu com a pergunta complementar: como é a personalidade no seu **melhor**? Sua hierarquia de necessidades (Cap. 51) culmina na **autorrealização** — tornar-se aquilo que se pode ser [@maslow1943]. Em vez de estudar pacientes, Maslow estudou biografias e contemporâneos que julgava realizados (Einstein, Eleanor Roosevelt, entre outros) e extraiu um retrato: percepção acurada da realidade, aceitação de si e dos outros, espontaneidade, foco em problemas fora de si, autonomia relativa à cultura, relações profundas (poucas e escolhidas), senso ético, humor não hostil, criatividade e **experiências de pico** — momentos de absorção, plenitude e transcendência.
+
+O retrato é inspirador — e metodologicamente frágil: amostra escolhida a dedo pelo próprio teórico, critérios subjetivos, raciocínio circular (os traços da autorrealização são os traços das pessoas que Maslow escolheu por considerá-las autorrealizadas). Como vimos no Cap. 51, a evidência para a **hierarquia rígida** também é fraca: necessidades coexistem e a ordem varia entre pessoas e culturas [@wahba_bridwell1976; @tay_diener2011]. Ainda assim, a intuição central — bem-estar envolve mais que ausência de sofrimento; inclui propósito, crescimento e vínculo — foi vindicada pela pesquisa posterior, da teoria da autodeterminação [@deci_ryan2000] à psicologia positiva [@seligman2000].
+
+::: {.na-pratica}
+💡 **O humanismo que você encontra por aí.** Poucas teorias psicológicas penetraram tanto na cultura: a educação centrada no aluno, a gestão que fala em "desenvolvimento de potencial", o vocabulário terapêutico do acolhimento e da escuta ativa, os grupos de encontro, o coaching. A herança tem dois gumes. O legítimo: práticas de escuta empática e aceitação têm apoio empírico como ingredientes de relações que promovem mudança [@fluckiger2018], e a entrevista motivacional — herdeira direta de Rogers — é hoje intervenção baseada em evidências [@miller_rollnick2013]. O degradado: a redução do crescimento pessoal a slogans ("basta acreditar em você") e a indústria da autoajuda, que frequentemente promete o vocabulário humanista sem a honestidade empírica — inclusive o culto à autoestima como panaceia, que a evidência não sustenta: autoestima elevada é mais consequência do que causa de desempenho, e inflá-la artificialmente não melhora resultados [@baumeister2003].
+:::
+
+::: {.atencao}
+⚠️ **Visão positiva não é ingenuidade comprovada — nem refutada.** Críticos acusam o humanismo de otimismo antropológico: se a tendência humana básica é ao crescimento, de onde vêm a crueldade e a destrutividade? Rogers respondia que o mal resulta da distorção do desenvolvimento por condições adversas — resposta coerente, mas difícil de testar contra a alternativa (a de que a agressividade é parte do repertório básico, como sustentam perspectivas evolucionistas — Cap. 74). O ponto metodológico a reter: postulados sobre a "natureza última" do ser humano — benigna (Rogers), conflitiva (Freud) ou neutra (Skinner) — funcionam como **pressupostos de partida**, quase imunes a refutação direta. O que a ciência testa são suas consequências específicas: e aí o humanismo teve êxitos reais (condições relacionais de mudança) e fracassos reais (hierarquia rígida, autorrealização como constructo mensurável).
+:::
+
+## Balanço: contribuições e limites
+
+No ativo: a reabilitação da **experiência subjetiva** como objeto legítimo (antecipando a virada para o estudo científico do bem-estar), o **autoconceito** como estrutura central da personalidade (hoje um dos constructos mais pesquisados da psicologia social e da personalidade), a hipótese relacional da mudança terapêutica — confirmada em linhas gerais —, o pioneirismo de Rogers na **pesquisa em psicoterapia**, e a agenda da saúde psicológica positiva, retomada com métodos melhores pela psicologia positiva (Cap. 100) e pela teoria da autodeterminação, que deu forma testável às intuições humanistas com suas necessidades de autonomia, competência e vínculo [@ryan_deci2000].
+
+No passivo: constructos centrais vagos e de difícil operacionalização (tendência à realização, experiência organísmica), base empírica original estreita (casos clínicos, biografias selecionadas), viés cultural — o ideal do indivíduo autônomo que "se realiza" é reconhecivelmente ocidental e individualista, menos exportável a culturas de eu interdependente [@markus_kitayama1991] — e a facilidade com que suas ideias degeneram em clichê motivacional. Como teoria **completa** da personalidade, o humanismo é insuficiente: diz pouco sobre estrutura de diferenças individuais (Cap. 67) e processos cognitivos específicos (Cap. 68). Como **perspectiva** — sobre o que perguntar (saúde, e não só doença) e sobre como tratar pessoas (com consideração e empatia) —, permanece influente e parcialmente vindicado.
+
+## Síntese
+
+::: {.callout-sintese}
+- Rogers: a personalidade organiza-se em torno do **autoconceito**, formado sob a necessidade de **consideração positiva**. Afeto condicional gera **condições de valor** → distorção/negação da experiência → **incongruência** (ansiedade, rigidez); congruência define a **pessoa em pleno funcionamento** [@rogers1951; @rogers1961].
+- A hipótese terapêutica (aceitação incondicional + empatia + congruência) [@rogers1957] foi parcialmente confirmada: fatores relacionais predizem desfecho [@fluckiger2018] — mas raramente bastam.
+- **Eu real × eu ideal**: discrepâncias grandes associam-se a pior ajustamento.
+- Maslow: retrato da **autorrealização** e experiências de pico [@maslow1943] — inspirador, metodologicamente frágil; a hierarquia rígida não se sustenta [@tay_diener2011].
+- O culto à autoestima como causa universal de sucesso não tem apoio [@baumeister2003]; as intuições humanistas sérias renasceram testáveis na autodeterminação [@ryan_deci2000] e na psicologia positiva [@seligman2000].
+- Limites: constructos vagos, base empírica estreita, viés individualista ocidental.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Tendência à realização**
+:   Postulado rogeriano de uma inclinação intrínseca do organismo a manter-se e desenvolver suas potencialidades [@rogers1951].
+
+**Autoconceito (self)**
+:   Imagem organizada e relativamente estável que a pessoa tem de si mesma.
+
+**Condições de valor**
+:   Critérios internalizados do que é preciso ser para merecer afeto, originados de consideração positiva condicional.
+
+**Incongruência**
+:   Descompasso entre a experiência do organismo e o autoconceito, mantido por distorção e negação.
+
+**Consideração positiva incondicional**
+:   Aceitação da pessoa sem condições — ingrediente central da hipótese terapêutica de Rogers [@rogers1957].
+
+**Pessoa em pleno funcionamento**
+:   Ideal rogeriano de saúde: abertura à experiência, confiança organísmica, vida presente e criativa [@rogers1961].
+
+**Autorrealização**
+:   Em Maslow, realização plena do potencial individual, topo da hierarquia de necessidades [@maslow1943].
+
+**Experiência de pico**
+:   Episódio de absorção, plenitude e transcendência descrito por Maslow como marca da vida autorrealizada.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina condições de valor e explique, na cadeia causal rogeriana, como elas produzem incongruência.
+
+2. **(Conceitual.)** Diferencie a visão de defesa em Rogers (distorção/negação a serviço do autoconceito) da visão freudiana (defesa contra pulsões). O que muda no que está sendo "protegido"?
+
+3. **(Análise.)** Um estudante que internalizou "só valho se for o primeiro da turma" tira o segundo lugar. Descreva a reação dele em termos rogerianos (autoconceito, experiência organísmica, distorção) e proponha o que um ambiente de consideração incondicional mudaria.
+
+4. **(Avaliação.)** Aponte duas fraquezas metodológicas do estudo de Maslow sobre pessoas autorrealizadas e explique por que elas comprometem as conclusões.
+
+5. **(Avaliação.)** "A pesquisa moderna confirmou Rogers." Em que sentido isso é verdadeiro [@fluckiger2018] e em que sentido é exagerado?
+
+6. **(Síntese.)** Usando Markus e Kitayama (Cap. 64), discuta: o ideal da "pessoa em pleno funcionamento" é universal ou culturalmente situado? Como seria uma versão interdependente desse ideal?
