@@ -1,5 +1,160 @@
 # 78. Transtornos de ansiedade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** medo, ansiedade e transtorno de ansiedade, e explicar por que a ansiedade é, na origem, adaptativa.
+- **Descrever** os principais transtornos de ansiedade do DSM-5-TR — fobia específica, transtorno de ansiedade social, transtorno de pânico, agorafobia e transtorno de ansiedade generalizada.
+- **Explicar** por que TOC e TEPT deixaram de ser classificados como transtornos de ansiedade.
+- **Integrar** as explicações biológica (circuito do medo, temperamento), comportamental (modelo de dois fatores, evitação) e cognitiva (interpretação catastrófica).
+- **Analisar** o modelo cognitivo do pânico e por que a evitação, embora alivie a curto prazo, mantém o transtorno.
+- **Reconhecer** por que a exposição é o ingrediente ativo dos tratamentos eficazes.
 :::
+
+A ansiedade é a mais comum das perturbações psicológicas e uma das mais mal compreendidas — precisamente porque todos a sentimos. Antes de uma prova, de uma entrevista, de uma conversa difícil, o coração acelera e o pensamento antecipa o pior. Esse estado não é um defeito: é um sistema de alarme que a evolução ajustou para nos preparar para a ameaça. O problema começa quando o alarme dispara **sem incêndio**, dispara **forte demais** ou **não desliga** — e passa a atrapalhar em vez de proteger. Este capítulo mostra como um mecanismo de defesa exemplar se converte em sofrimento clínico, e por que entender essa conversão aponta diretamente para o tratamento.
+
+## Medo, ansiedade e transtorno
+
+Convém separar dois termos que o uso cotidiano funde. O **medo** é a resposta a uma ameaça **presente e identificável** — o carro que vem em sua direção —, com ativação simpática imediata voltada à ação (lutar ou fugir). A **ansiedade** é orientada ao **futuro**: uma apreensão difusa diante de uma ameaça antecipada, muitas vezes vaga, acompanhada de tensão e vigilância. Ambas são normais e úteis. Tornam-se **transtorno** quando são desproporcionais à ameaça real, persistem além do necessário e produzem sofrimento e prejuízo funcional (os critérios do Cap. 76).
+
+Os transtornos de ansiedade são, em conjunto, a categoria mais prevalente: grandes levantamentos epidemiológicos estimam que cerca de um quarto a um terço das pessoas preencherá critérios para algum deles ao longo da vida, com início tipicamente precoce e predomínio no sexo feminino [@kessler2005]. São também altamente tratáveis — o que torna o subtratamento uma perda evitável.
+
+## O mapa dos transtornos de ansiedade
+
+O DSM-5-TR agrupa vários quadros que compartilham o núcleo ansioso, mas diferem no **objeto** e no **padrão** do medo:
+
+- **Fobia específica:** medo intenso e desproporcional de um objeto ou situação circunscritos (animais, altura, sangue, voar), com evitação. É comum e frequentemente restrito na vida da pessoa.
+- **Transtorno de ansiedade social:** medo acentuado de situações de exposição ao julgamento alheio (falar em público, comer diante de outros), por temor de agir de modo humilhante. Vai muito além da timidez.
+- **Transtorno de pânico:** **ataques de pânico** recorrentes e inesperados — surtos abruptos de terror com sintomas físicos intensos (palpitação, falta de ar, tontura, sensação de morte iminente) — seguidos de preocupação persistente com novos ataques.
+- **Agorafobia:** medo de situações das quais fugir seria difícil ou embaraçoso, ou onde socorro não estaria disponível (multidões, transporte, filas), levando a evitação que pode chegar ao confinamento em casa. Associa-se com frequência ao pânico.
+- **Transtorno de ansiedade generalizada (TAG):** preocupação excessiva e incontrolável com múltiplos domínios da vida, na maior parte dos dias, com tensão, fadiga e dificuldade de concentração.
+
+O DSM-5 também reclassificou o **transtorno de ansiedade de separação** e o **mutismo seletivo** — antes ligados à infância — dentro deste grupo.
+
+::: {.atencao}
+⚠️ **TOC e TEPT não são mais transtornos de ansiedade.** Até o DSM-IV, o transtorno obsessivo-compulsivo e o transtorno de estresse pós-traumático figuravam entre os transtornos de ansiedade. O DSM-5 os retirou daqui e criou capítulos próprios — "transtornos obsessivo-compulsivos e relacionados" (Cap. 81) e "transtornos relacionados a trauma e a estressores" (Cap. 80). A razão: embora a ansiedade participe dos dois, seus mecanismos, curso e resposta a tratamento os distinguem o bastante para merecerem categorias separadas. É um bom exemplo de como a classificação evolui (Cap. 77).
+:::
+
+## De onde vem a ansiedade patológica
+
+Nenhum fator isolado explica os transtornos de ansiedade; a integração dos três níveis (Cap. 76) é a regra.
+
+### O nível biológico: o circuito do medo e o temperamento
+
+No centro da resposta de medo está a **amígdala**, que avalia rapidamente sinais de ameaça e dispara a cascata autonômica e hormonal, sob modulação do córtex pré-frontal (Cap. 24). Joseph LeDoux mapeou uma "via rápida" que leva informação sensorial à amígdala antes de o córtex processá-la conscientemente — razão pela qual o susto precede o reconhecimento [@ledoux2000]. Nos transtornos de ansiedade observa-se, em graus variados, hiperreatividade desse circuito e regulação pré-frontal insuficiente, além de alterações em sistemas de neurotransmissão (GABA, serotonina, noradrenalina) que são também o alvo dos medicamentos.
+
+A vulnerabilidade tem componente **hereditário** moderado — metanálises de estudos com gêmeos estimam herdabilidade em torno de 30–40% para os transtornos de ansiedade [@hettema2001] — que se expressa, desde cedo, como **temperamento**. Jerome Kagan descreveu a **inibição comportamental**: bebês que reagem com forte perturbação a novidade tendem a se tornar crianças tímidas e cautelosas e apresentam maior risco de ansiedade social na vida adulta [@kagan1988]. É a diátese do modelo diátese-estresse tomando forma observável na infância.
+
+### O nível comportamental: como o medo é aprendido e mantido
+
+A aprendizagem (Vol 7) explica boa parte da aquisição e, sobretudo, da **manutenção** dos medos. O caso do **pequeno Albert**, de Watson e Rayner, mostrou que um medo pode ser adquirido por **condicionamento clássico**: um estímulo neutro (um rato branco) associado a um susto passa a eliciar medo [@watson_rayner1920] (Cap. 39). Mas o condicionamento clássico sozinho não explica por que os medos **persistem** por anos sem novas associações. A resposta está no **modelo de dois fatores** de Mowrer [@mowrer1960]: o medo é *adquirido* por condicionamento clássico e *mantido* por condicionamento operante. Toda vez que a pessoa **evita** o objeto temido, a ansiedade cai — e esse alívio **reforça negativamente** a evitação, tornando-a mais provável. A evitação é a grande vilã: ela dá alívio imediato e, com isso, impede que a pessoa descubra que o desastre temido não aconteceria. A @fig-dois-fatores esquematiza o ciclo.
+
+::: {#fig-dois-fatores}
+```{.tikz}
+%%| filename: dois-fatores-evitacao
+%%| alt: Diagrama em ciclo do modelo de dois fatores da manutenção da ansiedade. Quatro caixas ligadas por setas em círculo. Começando em cima: "Situação temida" leva a "Ansiedade sobe" (seta para a direita, em vermelho); "Ansiedade sobe" leva a "Evitação ou fuga" (seta para baixo); "Evitação ou fuga" leva a "Alívio imediato — ansiedade cai" (seta para a esquerda, em verde); e "Alívio imediato" volta reforçando a "Evitação", fechando o ciclo, com um rótulo indicando reforço negativo. Uma seta tracejada lateral, rotulada "o desastre temido nunca é desmentido", indica por que o medo se perpetua.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.1cm, minimum height=1.1cm}]
+  \node[cx, draw=manualgray] (sit) at (0,3) {Situação temida};
+  \node[cx, draw=manualred, fill=manualred!8] (ans) at (5,3) {Ansiedade sobe};
+  \node[cx, draw=manualblue, fill=manualblue!8] (evi) at (5,0) {Evitação / fuga};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (ali) at (0,0) {Alívio imediato\\(ansiedade cai)};
+
+  \draw[->, >=Stealth, thick] (sit) -- (ans);
+  \draw[->, >=Stealth, thick, manualred] (ans) -- (evi);
+  \draw[->, >=Stealth, thick, manualgreen] (evi) -- (ali);
+  \draw[->, >=Stealth, thick] (ali) -- node[left, font=\scriptsize, align=center, text=manualgreen] {reforço\\negativo} (sit);
+
+  \node[font=\scriptsize\itshape, text=manualgray, align=center, anchor=west] at (6.4,1.5)
+    {a crença no desastre\\nunca é desmentida};
+  \draw[dashed, manualgray, ->, >=Stealth] (6.3,1.5) -- (evi.east);
+\end{tikzpicture}
+```
+O modelo de dois fatores. O medo, adquirido por condicionamento clássico, mantém-se porque a evitação produz alívio imediato (reforço negativo) e, ao evitar, a pessoa nunca aprende que o desastre temido não se concretizaria. Romper esse ciclo é o princípio da exposição.
+:::
+
+Dois refinamentos importam. A **preparação** (*preparedness*) de Seligman explica por que fobias se formam muito mais facilmente a cobras, aranhas e alturas — ameaças ancestrais — do que a tomadas ou carros, perigos modernos: a evolução nos predispôs a temer certos objetos [@seligman1971; @ohman_mineka2001]. E o medo também se aprende por **observação** e por **transmissão de informação** (Bandura, Cap. 41): não é preciso ser mordido para temer cães — basta ver alguém apavorado ou ouvir advertências repetidas [@bandura1977].
+
+### O nível cognitivo: a interpretação catastrófica
+
+Para a abordagem cognitiva, o que gera e mantém a ansiedade não é a situação, mas sua **interpretação**. David Clark propôs o modelo cognitivo mais influente do pânico: o ataque resulta da **interpretação catastrófica de sensações corporais benignas** [@clark1986]. Uma palpitação após subir escadas é lida como "estou tendo um infarto"; a interpretação amplifica a ansiedade, que intensifica as sensações físicas, que "confirmam" a catástrofe — um **círculo vicioso** que escala em minutos até o ataque completo (@fig-panico). Some-se a isso a **sensibilidade à ansiedade** (o medo das próprias sensações de ansiedade) e os **vieses atencionais** que fazem a pessoa ansiosa detectar ameaça em toda parte, e se tem o motor cognitivo do transtorno.
+
+::: {#fig-panico}
+```{.tikz}
+%%| filename: circulo-panico
+%%| alt: Diagrama em círculo vicioso do modelo cognitivo do pânico de Clark. Cinco caixas ligadas por setas formando um ciclo fechado. No topo, "Gatilho (interno ou externo)" leva a "Sensações corporais" (por exemplo palpitação, tontura); estas levam a "Interpretação catastrófica" (destacada em vermelho, por exemplo vou ter um infarto); esta leva a "Apreensão / medo" que leva de volta a "Intensificação das sensações corporais", fechando e realimentando o ciclo. Setas curvas indicam que cada passo amplifica o seguinte, escalando até o ataque de pânico.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.3cm, minimum height=1.05cm}]
+  \node[cx, draw=manualgray] (gat) at (0,4.2) {Gatilho\\(interno/externo)};
+  \node[cx, draw=manualblue, fill=manualblue!8] (sen) at (4.4,2.6) {Sensações\\corporais};
+  \node[cx, draw=manualred, fill=manualred!10] (int) at (2.6,-0.2) {Interpretação\\catastrófica};
+  \node[cx, draw=manualred, fill=manualred!8] (med) at (-2.6,-0.2) {Apreensão\\e medo};
+  \node[cx, draw=manualblue, fill=manualblue!8] (amp) at (-4.4,2.6) {Sensações\\se intensificam};
+
+  \draw[->, >=Stealth, thick] (gat) -- (sen);
+  \draw[->, >=Stealth, thick] (sen) -- (int);
+  \draw[->, >=Stealth, thick, manualred] (int) -- (med);
+  \draw[->, >=Stealth, thick] (med) -- (amp);
+  \draw[->, >=Stealth, thick] (amp) to[bend left=20] (sen);
+\end{tikzpicture}
+```
+O círculo vicioso do pânico [@clark1986]. Sensações corporais benignas, interpretadas como catástrofe iminente, geram medo, que intensifica as sensações — a espiral escala até o ataque. Quebrar a interpretação catastrófica é o alvo da terapia cognitiva do pânico.
+:::
+
+## O tratamento converge para a exposição
+
+A convergência entre teoria e tratamento é notável. Se a evitação mantém o medo, então o ingrediente terapêutico decisivo é o oposto dela: a **exposição** — o contato gradual, repetido e prolongado com o objeto ou situação temida, sem a fuga, até que a ansiedade diminua e a pessoa aprenda, pela experiência, que o desastre não ocorre (Cap. 90). A exposição, isolada ou dentro da terapia cognitivo-comportamental (TCC, Cap. 91), é o tratamento psicológico mais bem estabelecido para os transtornos de ansiedade, com eficácia robusta em metanálises [@hofmann2008]. No plano farmacológico, os **antidepressivos** (sobretudo os ISRS) são de primeira linha; os **benzodiazepínicos** aliviam rápido, mas seu uso prolongado é problemático pelo risco de tolerância e dependência (Cap. 94).
+
+::: {.na-pratica}
+💡 **Por que "só evitar o que dá medo" piora com o tempo.** A intuição manda evitar aquilo que causa aflição — e é exatamente o que consolida o transtorno. Cada esquiva ensina ao cérebro duas mentiras: que a situação era de fato perigosa e que só a fuga trouxe a salvação. A pesquisa sobre exposição inverte a lógica: aproximar-se do medo, de forma planejada e segura, é o que o desfaz [@craske2014]. Isso vale para além da clínica — a pessoa tímida que aceita falar em público, o recém-formado que enfrenta a entrevista, quem volta a dirigir depois de um susto. O princípio é o mesmo do Cap. 39: extinção exige contato com o estímulo sem a consequência temida. Não se trata de "encarar o medo" de qualquer jeito, mas de fazê-lo de modo gradual, repetido e sustentado — e o alívio duradouro vem do outro lado.
+:::
+
+::: {.callout-sintese}
+- **Medo** (ameaça presente) e **ansiedade** (ameaça futura) são adaptativos; viram transtorno quando desproporcionais, persistentes e incapacitantes.
+- Os transtornos de ansiedade são os mais **prevalentes** e muito tratáveis [@kessler2005]; incluem fobia específica, ansiedade social, pânico, agorafobia e TAG.
+- **TOC e TEPT saíram** da categoria no DSM-5, ganhando capítulos próprios (Caps. 80 e 81).
+- Etiologia integrada: circuito do medo com amígdala hiperreativa e regulação pré-frontal insuficiente [@ledoux2000], herdabilidade moderada e **temperamento** inibido [@hettema2001; @kagan1988]; medo **adquirido** por condicionamento e **mantido** pela evitação (modelo de dois fatores) [@mowrer1960]; **preparação** evolutiva [@seligman1971] e aprendizagem observacional [@bandura1977]; e **interpretação catastrófica** no pânico [@clark1986].
+- A **evitação** dá alívio imediato (reforço negativo) e perpetua o medo; a **exposição** é o ingrediente ativo do tratamento eficaz [@hofmann2008; @craske2014], ao lado dos ISRS.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Ansiedade × medo**
+:   Medo é a resposta a ameaça presente e identificável; ansiedade é a apreensão orientada a uma ameaça futura e difusa.
+
+**Ataque de pânico**
+:   Surto abrupto de terror intenso com sintomas físicos (palpitação, falta de ar, tontura) e sensação de catástrofe iminente.
+
+**Agorafobia**
+:   Medo de situações de fuga difícil ou socorro indisponível, levando a evitação que pode confinar a pessoa em casa.
+
+**Inibição comportamental**
+:   Traço temperamental precoce de forte reatividade à novidade, fator de risco para ansiedade social [@kagan1988].
+
+**Modelo de dois fatores**
+:   Explicação de que o medo é adquirido por condicionamento clássico e mantido por condicionamento operante, via reforço negativo da evitação [@mowrer1960].
+
+**Preparação (preparedness)**
+:   Predisposição evolutiva a associar medo mais facilmente a certos objetos ancestrais (cobras, alturas) [@seligman1971].
+
+**Interpretação catastrófica**
+:   Leitura de sensações corporais benignas como sinal de catástrofe iminente, motor do círculo vicioso do pânico [@clark1986].
+
+**Exposição**
+:   Contato gradual, repetido e prolongado com o estímulo temido, sem fuga, até a extinção do medo; ingrediente ativo do tratamento [@craske2014].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie medo e ansiedade e explique em que sentido ambos são adaptativos antes de se tornarem transtorno.
+
+2. **(Conceitual.)** Por que o DSM-5 retirou TOC e TEPT da categoria dos transtornos de ansiedade? O que esse movimento ilustra sobre a natureza da classificação (Cap. 77)?
+
+3. **(Análise.)** Use o modelo de dois fatores para explicar por que uma pessoa com fobia de elevador continua com medo mesmo tendo décadas sem qualquer experiência ruim em elevadores. Qual é o papel exato da evitação?
+
+4. **(Aplicação.)** Aplique o modelo de Clark a alguém que tem um ataque de pânico ao sentir o coração acelerar na academia. Descreva o círculo vicioso passo a passo e indique onde a terapia cognitiva intervém.
+
+5. **(Integração.)** Combine temperamento inibido (Kagan), preparação (Seligman) e aprendizagem observacional (Bandura) para explicar por que uma criança específica desenvolve fobia de cães enquanto o irmão, na mesma casa, não desenvolve.
+
+6. **(Reflexão crítica.)** "A melhor forma de lidar com o medo é evitar o que o provoca." Refute essa afirmação com base no modelo de dois fatores e na pesquisa sobre exposição, distinguindo o alívio de curto prazo do resultado de longo prazo.
