@@ -1,5 +1,107 @@
 # 101. Psicologia jurídica e forense
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** a psicologia **jurídica** da psicologia **forense** e mapear seus campos de atuação.
+- **Explicar** por que o testemunho ocular é falível e como memórias falsas se formam em contexto legal.
+- **Analisar** o fenômeno das confissões falsas.
+- **Compreender** os conceitos de imputabilidade e a avaliação psicológica pericial.
+- **Reconhecer** os mitos sobre "detecção de mentiras" e os limites da avaliação de risco.
+- **Situar** a psicologia jurídica no sistema de justiça brasileiro.
 :::
+
+Onde a psicologia encontra a lei, nasce um campo aplicado de grande responsabilidade — porque suas conclusões afetam a liberdade, a guarda de filhos, a responsabilização penal. A **psicologia jurídica** (ou forense) aplica o conhecimento psicológico ao sistema de justiça: ao comportamento de testemunhas, réus, vítimas e júris; à avaliação pericial; à atuação em varas de família, na execução penal e na proteção de crianças. É um domínio onde os achados da psicologia científica — em especial os da memória (Vol 8) e da psicologia social (Vol 12) — têm consequências diretas e onde o rigor não é luxo acadêmico, mas salvaguarda contra o erro judicial.
+
+## Jurídica ou forense? Um campo, vários cenários
+
+Os termos costumam ser usados como sinônimos, mas há uma distinção útil. A **psicologia forense**, em sentido estrito, refere-se à aplicação da psicologia diretamente ao processo judicial — sobretudo a **perícia** que assessora o juiz (avaliar imputabilidade, credibilidade, risco, capacidade parental). A **psicologia jurídica**, em sentido amplo (predominante na tradição brasileira), abrange toda a interface entre psicologia e Direito: a atuação em varas de família e da infância, no sistema prisional, na mediação de conflitos, na proteção de vítimas, na pesquisa sobre o comportamento no contexto legal. Em ambas, o psicólogo transita por um terreno de tensões: a lógica da justiça (culpa, prova, decisão) nem sempre coincide com a da clínica (cuidado, sigilo, vínculo), e navegar essa diferença é parte do ofício.
+
+## A falibilidade do testemunho ocular
+
+Nenhuma contribuição da psicologia à justiça é tão bem estabelecida — e tão contraintuitiva — quanto a demonstração de que a **memória de testemunhas é reconstrutiva e maleável** (Cap. 45). O senso comum e o sistema legal tendem a tratar a memória como uma gravação fiel; a ciência mostra que ela é reconstruída a cada evocação e vulnerável à sugestão. O trabalho seminal é o de Elizabeth Loftus.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o efeito da desinformação** [@loftus_palmer1974]
+
+**Desenho.** Loftus e Palmer mostraram a participantes um vídeo de um acidente de carro e depois perguntaram sobre a velocidade dos veículos, variando **um único verbo**: "Quão rápido os carros iam quando se **bateram/colidiram/espatifaram/tocaram**?".
+
+**Resultado.** A palavra alterou a lembrança. Quem ouviu "espatifaram" estimou velocidades maiores e, uma semana depois, **relatou ter visto vidro quebrado** que não existia no vídeo. A formulação da pergunta plantou uma falsa memória.
+
+**Interpretação.** Informações apresentadas **após** um evento integram-se à memória dele — o **efeito da desinformação**. Perguntas sugestivas, reconhecimentos mal conduzidos e a mera passagem do tempo podem contaminar o relato de uma testemunha sincera.
+
+**Limitações.** Estudos de laboratório com vídeos podem subestimar (ou superestimar) o efeito em crimes reais, emocionalmente intensos. Mas a robustez do fenômeno, replicado por décadas, levou a reformas concretas em protocolos policiais.
+:::
+
+As implicações são graves: o reconhecimento equivocado por testemunhas oculares é, comprovadamente, a **principal causa** de condenações errôneas posteriormente revertidas por prova de DNA. Daí decorrem recomendações práticas com base científica: alinhamentos de suspeitos conduzidos "às cegas" (por quem não sabe quem é o suspeito), com composição justa, instruções neutras e registro do grau de confiança da testemunha *no momento* do reconhecimento — pois a confiança, com o tempo, infla de modo enganoso.
+
+## Confissões falsas
+
+Se é difícil aceitar que uma testemunha honesta erre, é ainda mais contraintuitivo que alguém **confesse um crime que não cometeu**. No entanto, confissões falsas existem e figuram entre as causas de erros judiciais. Elas resultam da interação entre **técnicas de interrogatório** psicologicamente coercitivas — longas horas, isolamento, apresentação de falsas "provas", minimização da gravidade, promessas implícitas — e **vulnerabilidades** do interrogado (juventude, deficiência intelectual, sugestionabilidade, exaustão) [@kassin2008]. Em casos extremos, a pessoa passa a *acreditar* na própria culpa (confissão "internalizada"). O paradoxo — uma confissão parece a prova definitiva, mas pode ser fabricada pelo próprio procedimento — é uma das lições mais importantes que a psicologia oferece ao Direito, e fundamenta a defesa de interrogatórios gravados e de salvaguardas para populações vulneráveis.
+
+## Imputabilidade e avaliação pericial
+
+Um dos papéis periciais mais delicados envolve a **imputabilidade** — a capacidade de responder penalmente por um ato. O Direito brasileiro considera **inimputável** quem, por transtorno mental ou desenvolvimento incompleto, era, ao tempo do crime, incapaz de entender o caráter ilícito do ato ou de determinar-se conforme esse entendimento. A avaliação pericial busca esclarecer essa condição, subsidiando a decisão judicial (que cabe ao juiz, não ao perito). É crucial ressaltar: **transtorno mental não equivale a inimputabilidade nem a periculosidade** — a imensa maioria das pessoas com transtorno mental não comete crimes e são, mais frequentemente, **vítimas** do que autores de violência. Associar automaticamente doença mental e crime é um estigma que a psicologia forense tem o dever de combater, não de reforçar.
+
+## Os mitos da "detecção de mentiras"
+
+::: {.atencao}
+⚠️ **O polígrafo não é uma "máquina da verdade".** Um dos maiores mitos que a psicologia forense precisa desfazer é o do **detector de mentiras**. O polígrafo mede excitação fisiológica (batimentos, respiração, condutância da pele) — não mentira. Uma pessoa honesta e nervosa ativa; um mentiroso calmo ou treinado, não. Sua acurácia é modesta e sua taxa de erros, alta demais para decisões judiciais, razão pela qual é rejeitado como prova na maioria dos sistemas legais sérios. O mesmo vale para a crença de que se detecta a mentira pela linguagem corporal (desviar o olhar, gaguejar): a pesquisa mostra que as pessoas — inclusive profissionais experientes — acertam pouco mais que o acaso ao julgar se alguém mente, e que os sinais populares de mentira são folclore, não ciência [@vrij2008]. A confiança excessiva na própria capacidade de "ler" a mentira é, ela própria, uma fonte de erro.
+:::
+
+## Avaliação de risco e psicopatia
+
+Outra demanda forense é a **avaliação de risco** de reincidência ou de violência. Aqui a psicologia oferece um avanço real, porém limitado: instrumentos **atuariais e estruturados**, baseados em fatores estatisticamente associados ao risco, superam o julgamento clínico não estruturado ("intuição do especialista") — mas fornecem **probabilidades para grupos**, não certezas sobre indivíduos, e erram nos dois sentidos (falsos positivos e negativos). Usá-los com humildade epistêmica é imperativo ético. Um construto relevante nesse contexto é a **psicopatia**, avaliada pela escala de Robert Hare [@hare2003] — um padrão de insensibilidade afetiva, manipulação, impulsividade e ausência de remorso, associado a maior risco de reincidência violenta. Mesmo aqui, porém, rótulos têm peso: um diagnóstico de psicopatia influencia decisões judiciais e não pode ser aplicado levianamente.
+
+## A psicologia jurídica no Brasil
+
+No Brasil, a psicologia jurídica é uma especialidade consolidada e reconhecida pelo CFP. O psicólogo atua em **varas de família** (avaliação e mediação em disputas de guarda, sempre orientado pelo **melhor interesse da criança**), nas **varas da infância e juventude** (medidas protetivas e socioeducativas), no **sistema prisional** e na execução penal, no atendimento a vítimas de violência e no enfrentamento à violência doméstica (Lei Maria da Penha). Um debate ético marcante do campo no país foi o **depoimento especial** de crianças vítimas de abuso: como colher o relato reduzindo a revitimização e a contaminação da memória — tema em que os achados sobre sugestionabilidade infantil são diretamente aplicados. A psicologia jurídica brasileira caracteriza-se, ainda, por uma postura crítica quanto ao seu próprio papel: recusa reduzir-se a produtora de laudos que rotulam e punem, buscando contribuir para uma justiça mais informada, menos iatrogênica e atenta aos direitos humanos.
+
+::: {.callout-sintese}
+- A **psicologia forense** (perícia no processo) e a **jurídica** (interface ampla com o Direito) aplicam a psicologia ao sistema de justiça.
+- O **testemunho ocular** é reconstrutivo e maleável; o **efeito da desinformação** [@loftus_palmer1974] o contamina, e reconhecimentos equivocados são a maior causa de condenações errôneas.
+- **Confissões falsas** [@kassin2008] resultam de interrogatórios coercitivos sobre pessoas vulneráveis.
+- **Transtorno mental ≠ inimputabilidade ≠ periculosidade**; a decisão sobre imputabilidade é do juiz, subsidiada pela perícia.
+- O **polígrafo** e os "sinais de mentira" são mitos: detectar mentira por fisiologia ou linguagem corporal beira o acaso [@vrij2008].
+- A **avaliação de risco** estruturada supera a intuição, mas dá probabilidades, não certezas; a **psicopatia** [@hare2003] é fator de risco, porém rótulo de peso.
+- No Brasil, o campo atua em varas de família, infância, sistema prisional e proteção a vítimas, com postura crítica e atenta a direitos.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicologia jurídica / forense**
+:   Aplicação do conhecimento psicológico ao sistema de justiça; a forense enfatiza a perícia no processo judicial.
+
+**Efeito da desinformação**
+:   Distorção da memória de um evento por informações apresentadas posteriormente [@loftus_palmer1974].
+
+**Confissão falsa**
+:   Admissão de um crime não cometido, induzida por interrogatório coercitivo e/ou vulnerabilidade do interrogado.
+
+**Imputabilidade**
+:   Capacidade de responder penalmente por um ato; a inimputabilidade decorre de incapacidade de entender ou de se determinar.
+
+**Avaliação de risco**
+:   Estimativa estruturada da probabilidade de reincidência ou violência; fornece probabilidades para grupos, não certezas.
+
+**Psicopatia**
+:   Padrão de insensibilidade afetiva, manipulação e ausência de remorso, avaliado pela escala de Hare [@hare2003].
+
+**Depoimento especial**
+:   Procedimento de escuta de crianças vítimas que busca reduzir a revitimização e a contaminação do relato.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Como o experimento de Loftus e Palmer demonstra que a memória de testemunhas é maleável? O que é o efeito da desinformação?
+
+2. **(Conceitual.)** Por que uma pessoa inocente confessaria um crime? Relacione técnicas de interrogatório com vulnerabilidades do interrogado.
+
+3. **(Conceitual.)** Explique por que "transtorno mental" não equivale a "inimputabilidade" nem a "periculosidade". Quem decide sobre a imputabilidade?
+
+4. **(Reflexão crítica.)** Por que o polígrafo não é uma máquina da verdade? Que erro cometem profissionais que confiam em "ler" a mentira pela linguagem corporal?
+
+5. **(Integração.)** A avaliação de risco estruturada supera a intuição clínica, mas tem limites. Quais? Por que usá-la exige humildade epistêmica?
+
+6. **(Reflexão crítica.)** Como os achados sobre sugestionabilidade da memória informam o depoimento especial de crianças no Brasil?
