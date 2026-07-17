@@ -1,5 +1,179 @@
 # 70. Cognição social e atribuição
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** o campo da psicologia social e situar a cognição social como o estudo de como percebemos, interpretamos e explicamos o mundo social.
+- **Explicar** por que a mente funciona como um "avaro cognitivo" e como esquemas, heurísticas e o processamento em duas velocidades organizam o julgamento social.
+- **Descrever** os modelos de atribuição de causas (inferência correspondente e covariação de Kelley) e o que eles preveem.
+- **Analisar** o erro fundamental de atribuição e a assimetria ator–observador, reconhecendo seus limites transculturais.
+- **Reconhecer** como expectativas sociais se autoconfirmam (profecia autorrealizadora) e como vieses do próprio observador distorcem a percepção de pessoas.
+- **Avaliar criticamente** afirmações cotidianas sobre "ler" o caráter alheio à luz da evidência.
 :::
+
+Os onze volumes anteriores olharam para dentro do indivíduo: seu cérebro, sua percepção, sua memória, sua personalidade. Este volume vira a lente para fora. A **psicologia social** é o estudo científico de como pensamentos, sentimentos e comportamentos das pessoas são influenciados pela presença — real, imaginada ou implícita — de outras pessoas [@allport1954]. É a disciplina que Kurt Lewin resumiu numa fórmula famosa: o comportamento é função da pessoa **e** da situação, $C = f(P, S)$ [@lewin1951]. Nenhum traço de personalidade explica sozinho por que a mesma pessoa é generosa num contexto e mesquinha noutro; a situação social carrega um peso que a intuição sistematicamente subestima — como este capítulo vai mostrar.
+
+Começamos pela porta de entrada de toda vida social: a **cognição social**, o modo como formamos impressões, interpretamos situações e, sobretudo, explicamos *por que* as pessoas fazem o que fazem. Antes de influenciar alguém, obedecer, amar ou discriminar (os temas dos próximos capítulos), o ser humano precisa primeiro dar sentido ao mundo social — e o faz com uma maquinaria mental que é ao mesmo tempo espantosamente eficiente e sistematicamente enviesada.
+
+## A mente social: o avaro cognitivo
+
+O mundo social é excessivamente complexo para ser processado por inteiro. A cada instante, uma pessoa poderia considerar dezenas de intenções, contextos e histórias por trás de um único gesto alheio. Como não há recursos cognitivos para tanto, a mente recorre a atalhos. A metáfora que organizou o campo por décadas é a do **avaro cognitivo** (*cognitive miser*): tratamos a atenção e o esforço mental como recursos escassos e gastamos o mínimo necessário para chegar a uma resposta "boa o bastante" [@fiske_taylor1991]. Uma reformulação posterior — o **estrategista motivado** — acrescenta que nem sempre economizamos: quando o resultado importa muito, investimos mais análise; a economia é a regra, não uma lei.
+
+Esse processamento econômico se apoia em três ferramentas que reaparecerão o volume inteiro:
+
+- **Esquemas**: estruturas de conhecimento que organizam o que sabemos sobre um tipo de pessoa, papel ou situação (o esquema de "professor", de "festa de aniversário"). Esquemas preenchem lacunas, guiam a atenção e a memória — e por isso também distorcem, fazendo-nos "ver" o que esperávamos ver.
+- **Heurísticas**: regras práticas de julgamento rápido — disponibilidade, representatividade, ancoragem — que Kahneman e Tversky mapearam (Cap. 47) e que operam intensamente no domínio social [@tversky_kahneman1974].
+- **Processamento em duas velocidades**: um sistema rápido, automático e intuitivo (Sistema 1) e um sistema lento, deliberado e custoso (Sistema 2) [@kahneman2011]. Boa parte da cognição social roda no Sistema 1, e a correção deliberada só entra em cena quando há motivação e recursos disponíveis.
+
+Guardar essa arquitetura é essencial: os vieses que veremos a seguir não são defeitos de gente distraída ou preconceituosa, e sim o preço de uma máquina projetada para ser rápida.
+
+## Atribuição: a busca por causas
+
+O ser humano é um explicador compulsivo. Diante de um comportamento — o próprio ou o alheio —, não nos contentamos em registrá-lo; queremos saber *por quê*. Fritz Heider, o fundador do campo, chamou cada pessoa comum de "psicólogo ingênuo" (*naïve psychologist*): alguém que, sem formação, formula teorias causais sobre a conduta alheia o tempo todo [@heider1958]. O estudo de como fazemos isso é a **teoria da atribuição**.
+
+Heider propôs a distinção que estrutura todo o campo: atribuições **internas** (ou disposicionais) localizam a causa do comportamento na pessoa — seu caráter, sua personalidade, suas intenções — enquanto atribuições **externas** (ou situacionais) a localizam nas circunstâncias — a pressão, o contexto, o acaso. Quando um motorista fecha o seu carro no trânsito, você pode concluir "que sujeito grosseiro" (interna) ou "deve estar levando alguém ao hospital" (externa). A diferença entre as duas leituras, veremos, tem consequências enormes.
+
+### O modelo de covariação de Kelley
+
+Como o psicólogo ingênuo decide entre causa interna e externa? Harold Kelley propôs que, quando temos informação suficiente, agimos como cientistas intuitivos aplicando um **princípio de covariação**: atribuímos um efeito à causa com a qual ele varia em conjunto [@kelley1967]. Três tipos de informação alimentam o cálculo:
+
+- **Consenso** — outras pessoas reagem assim ao mesmo estímulo? (Todo mundo ri deste filme, ou só o João?)
+- **Distintividade** — a pessoa reage assim só a este estímulo, ou a muitos? (O João ri só deste filme, ou de qualquer coisa?)
+- **Consistência** — a pessoa reage assim sempre que encontra este estímulo? (O João ri deste filme toda vez?)
+
+Os padrões preveem a atribuição, como resume a @tbl-covariacao. Consenso **baixo** + distintividade **baixa** + consistência **alta** aponta para a **pessoa** ("o João é risonho"). Consenso **alto** + distintividade **alta** + consistência **alta** aponta para o **estímulo/situação** ("o filme é engraçado"). O modelo é normativamente elegante e descreve bem o julgamento quando a informação está disponível — mas as pessoas raramente têm os três dados à mão e, mesmo quando têm, tendem a subusar o consenso [@nisbett_wilson1977].
+
+| Padrão de informação | Atribuição típica |
+|----------------------|-------------------|
+| Consenso **baixo**, distintividade **baixa**, consistência **alta** | À **pessoa** (interna) |
+| Consenso **alto**, distintividade **alta**, consistência **alta** | Ao **estímulo/situação** (externa) |
+| Consistência **baixa** (varia entre ocasiões) | Às **circunstâncias** daquele momento |
+
+: Padrões de covariação e a atribuição que cada um favorece, segundo o modelo de Kelley [@kelley1967]. {#tbl-covariacao}
+
+### Inferência correspondente e o processo em três estágios
+
+Muitas vezes, porém, não temos tempo nem dados para o cálculo de Kelley — vemos uma pessoa agir uma única vez. A **teoria da inferência correspondente** trata desse caso: inferimos uma disposição estável ("é uma pessoa hostil") a partir de um único comportamento ("foi hostil"), especialmente quando o ato parece livremente escolhido, produz efeitos incomuns e é socialmente indesejável [@jones_davis1965]. O problema é que fazemos essa inferência **rápido demais** e a corrigimos **de menos**.
+
+Daniel Gilbert propôs que a atribuição disposicional ocorre em três estágios, ilustrados na @fig-tres-estagios: primeiro **categorizamos** o comportamento ("aquilo foi agressivo"), depois **caracterizamos** a pessoa quase automaticamente ("ele é agressivo") e só então, *se houver recursos cognitivos disponíveis*, **corrigimos** levando a situação em conta ("mas ele tinha acabado de ser provocado") [@gilbert1988]. Os dois primeiros passos são baratos e automáticos (Sistema 1); o terceiro é caro e deliberado (Sistema 2) — e é o primeiro a falhar quando estamos ocupados, distraídos ou sob pressão de tempo. Essa arquitetura explica o viés mais célebre da psicologia social.
+
+::: {#fig-tres-estagios}
+```{.tikz}
+%%| filename: tres-estagios-atribuicao
+%%| alt: Fluxograma horizontal com três caixas ligadas por setas. Da esquerda para a direita: "Categorização" (o que a pessoa fez), "Caracterização" (que disposição isso indica) e "Correção" (a situação explica?). As duas primeiras caixas são azuis e trazem a etiqueta "automático, barato"; a terceira é vermelha e traz "controlado, caro — falha sob carga cognitiva".
+\begin{tikzpicture}[
+  passo/.style={draw, thick, rounded corners=4pt, minimum width=3.4cm, minimum height=1.6cm, align=center, font=\small},
+  fluxo/.style={->, >=Stealth, thick, manualgray}
+]
+  \node[passo, draw=manualblue, fill=manualblue!8] (cat) at (0,0)
+    {\textbf{Categorização}\\{\small o que a pessoa fez?}};
+  \node[passo, draw=manualblue, fill=manualblue!8] (car) at (4.7,0)
+    {\textbf{Caracterização}\\{\small que disposição}\\{\small isso indica?}};
+  \node[passo, draw=manualred, fill=manualred!8] (cor) at (9.4,0)
+    {\textbf{Correção}\\{\small a situação}\\{\small explica?}};
+
+  \draw[fluxo] (cat) -- (car);
+  \draw[fluxo] (car) -- (cor);
+
+  \node[font=\scriptsize\itshape, text=manualblue, align=center] at (2.35,-1.5)
+    {automático, barato};
+  \node[font=\scriptsize\itshape, text=manualred, align=center] at (9.4,-1.9)
+    {controlado, caro —\\falha sob carga cognitiva};
+\end{tikzpicture}
+```
+O modelo em três estágios da atribuição disposicional [@gilbert1988]. A correção situacional é o passo mais frágil: exige recursos que o observador nem sempre tem, e sua ausência produz o erro fundamental de atribuição.
+:::
+
+## O erro fundamental de atribuição
+
+Batizado por Lee Ross, o **erro fundamental de atribuição** (também chamado de **viés de correspondência**) é a tendência a superestimar fatores disposicionais e subestimar fatores situacionais ao explicar o comportamento *dos outros* [@ross1977]. Vemos a pessoa que tropeça como desastrada, não como alguém que pisou num piso escorregadio; o colega que se atrasa como irresponsável, não como vítima de um engarrafamento. A demonstração experimental mais influente é elegante e perturbadora.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o discurso atribuído.** Jones e Harris pediram a estudantes que lessem um ensaio a favor ou contra o regime de Fidel Castro, supostamente escrito por outro estudante, e que estimassem a verdadeira atitude do autor [@jones_harris1967]. Num grupo, disseram que o autor **escolhera livremente** a posição; noutro, que ela lhe fora **designada** por sorteio, sem liberdade de escolha. **Resultado:** mesmo na condição designada — em que a posição do ensaio nada dizia sobre a crença real do autor —, os participantes inferiram que quem escrevera a favor de Castro era mais pró-Castro. **Interpretação:** os observadores não conseguiram descontar a restrição situacional óbvia (o sorteio) e leram a conduta como reflexo de uma disposição interna. **Limitações:** o efeito varia com a saliência da restrição e é mais fraco quando a coação é muito evidente; a magnitude também depende da cultura, como veremos.
+:::
+
+Por que "fundamental"? Porque parece robusto e porque suas consequências sociais são amplas: culpar os pobres pela pobreza, os desempregados pelo desemprego, as vítimas por seu infortúnio — o chamado fenômeno da **crença num mundo justo** — ganha combustível de um viés que apaga a força das circunstâncias. Reconhecê-lo é, talvez, a lição mais transferível de todo este volume: *antes de concluir que alguém é assim, pergunte em que situação ele estava.*
+
+### A assimetria ator–observador — e sua ressalva
+
+Curiosamente, o viés se inverte quando explicamos a nós mesmos. Jones e Nisbett descreveram a **assimetria ator–observador**: tendemos a atribuir o comportamento *alheio* a disposições e o *nosso próprio* a circunstâncias [@jones_nisbett1972]. "Ele gritou porque é estúpido; eu gritei porque estava sob pressão." Parte da explicação é perceptual (como ator, você vê a situação à sua frente, não o próprio rosto; como observador, a pessoa é a figura saliente) e parte é informacional (você conhece a variabilidade do seu próprio comportamento ao longo do tempo, mas não a do outro).
+
+::: {.atencao}
+⚠️ **A assimetria ator–observador é mais fraca do que os manuais diziam.** Uma meta-análise de Malle, reunindo mais de 170 estudos, encontrou um efeito global próximo de zero: a assimetria só aparece com robustez sob condições específicas (por exemplo, para eventos negativos) e chega a se **inverter** em outras [@malle2006]. É um bom lembrete metodológico deste manual: mesmo achados clássicos e "de senso comum" precisam sobreviver à agregação quantitativa — e nem todos sobrevivem intactos. O erro fundamental de atribuição, por outro lado, mostrou-se bem mais resistente.
+:::
+
+### A cultura molda a atribuição
+
+Seria o erro fundamental de atribuição um universal da mente humana ou um hábito cultural? A pesquisa transcultural sugere a segunda coisa, ao menos em parte. Comparando participantes estadunidenses e chineses, Morris e Peng mostraram que, ao explicar o mesmo evento (inclusive um homicídio real noticiado), os norte-americanos privilegiavam disposições do indivíduo, enquanto os chineses davam muito mais peso a fatores contextuais e relacionais [@morris_peng1994]. O padrão se encaixa na distinção mais ampla entre culturas **individualistas** e **coletivistas** e entre modos de pensar **analítico** e **holístico** [@nisbett2001; @markus_kitayama1991]: onde o self é concebido como independente, a pessoa salta aos olhos como causa; onde é concebido como interdependente, o campo situacional ganha destaque. O "erro" é, em boa medida, ocidental — mais uma advertência contra generalizar amostras WEIRD (Cap. 1) para a humanidade toda.
+
+## Quando a expectativa cria o fato
+
+A cognição social não apenas interpreta o mundo — às vezes o **produz**. Um esquema ou uma expectativa sobre alguém pode desencadear um comportamento que confirma a expectativa original, fechando um círculo. É a **profecia autorrealizadora** (*self-fulfilling prophecy*), e sua demonstração escolar é um clássico.
+
+::: {.experimento}
+🔬 **Experimento Clássico — Pigmalião na sala de aula.** Rosenthal e Jacobson aplicaram um teste a alunos do ensino fundamental e informaram aos professores que certas crianças — escolhidas **ao acaso** — eram "florescentes" (*bloomers*), prestes a um salto intelectual [@rosenthal_jacobson1968]. Nenhuma diferença real distinguia esses alunos dos demais. **Resultado:** meses depois, os alunos rotulados como promissores apresentaram ganhos de QI significativamente maiores que os colegas, sobretudo nas séries iniciais. **Interpretação:** a expectativa do professor alterou seu comportamento — mais atenção, tarefas mais desafiadoras, feedback mais caloroso, mais tempo de resposta —, e esse tratamento diferenciado produziu o desempenho esperado. A crença criou a realidade que "previa". **Limitações:** o estudo original foi criticado por questões metodológicas e o tamanho do efeito é modesto e variável entre replicações; ainda assim, a existência de efeitos de expectativa do professor é hoje bem estabelecida por meta-análises.
+:::
+
+O mecanismo geral é a **confirmação comportamental**: ao interagir com alguém que esperamos ser hostil, agimos de modo defensivo ou frio, eliciando dele a hostilidade que antecipávamos [@snyder1977]. Some-se a isso o **viés de confirmação** — buscamos e lembramos preferencialmente informação que confirma nossas hipóteses (Cap. 47) — e temos uma máquina de autovalidação. Essa dinâmica é o motor oculto de muitos estereótipos, que o Cap. 75 retoma: o preconceito não só distorce a percepção, mas pode moldar o comportamento do alvo até que ele pareça justificar o preconceito.
+
+::: {.na-pratica}
+💡 **Descontar a situação como higiene mental.** O antídoto prático para o erro fundamental de atribuição cabe numa pergunta que você pode treinar: *"Se eu estivesse exatamente na situação dessa pessoa — com a mesma pressão, a mesma informação, o mesmo cansaço —, eu agiria de forma tão diferente?"* Gestores que fazem essa pergunta antes de rotular um funcionário como "desmotivado" descobrem, com frequência, um processo mal desenhado. Professores que a fazem antes de rotular um aluno como "preguiçoso" descobrem, com frequência, fome, sono ruim ou uma casa caótica. Isso não dilui responsabilidade — apenas impede que a explicação disposicional, barata e automática, encerre a investigação cedo demais.
+:::
+
+## Os limites de "ler" pessoas
+
+A cultura popular vende a ideia de que basta observar micro-expressões, postura e "linguagem corporal" para decifrar o caráter e as intenções alheias. A evidência recomenda humildade. A acurácia da percepção de pessoas a partir de fatias finas de comportamento existe, mas é modesta e muito dependente do traço e do contexto [@ambady1992]; a detecção de mentira por leigos — e mesmo por profissionais — mal supera o acaso [@bond_depaulo2006]; e a maior parte dos cursos comerciais de "leitura corporal" incorre no efeito Barnum e na ilusão de que a intuição treinada é confiável (Cap. 69). Some-se a isso o **efeito de halo** — a tendência a deixar uma impressão global positiva (beleza, simpatia) contaminar avaliações de traços não relacionados (inteligência, honestidade) [@nisbett_wilson1977] — e fica claro por que a impressão de que "sabemos ler as pessoas" é, ela própria, um produto da cognição social enviesada que este capítulo descreveu.
+
+::: {.callout-sintese}
+- A **psicologia social** estuda como a presença dos outros molda pensamento, sentimento e ação; a **cognição social** é a porta de entrada: como percebemos e explicamos o mundo social.
+- A mente social é um **avaro cognitivo**: usa esquemas, heurísticas e processamento em duas velocidades para economizar esforço — o que a torna eficiente e sistematicamente enviesada [@fiske_taylor1991; @kahneman2011].
+- A **atribuição** classifica causas em **internas** (disposição) e **externas** (situação). O modelo de **covariação** de Kelley usa consenso, distintividade e consistência [@kelley1967]; a **inferência correspondente** infere disposições de atos únicos [@jones_davis1965], num processo de três estágios em que a correção situacional é o passo frágil [@gilbert1988].
+- O **erro fundamental de atribuição** superestima disposições e subestima situações ao explicar os outros [@ross1977; @jones_harris1967]; a **assimetria ator–observador** existe, mas é fraca [@malle2006]; e todo o viés é modulado pela **cultura** (mais forte no Ocidente individualista) [@morris_peng1994].
+- Expectativas podem **criar** a realidade que preveem: a **profecia autorrealizadora** e a confirmação comportamental fecham o círculo entre crença e fato [@rosenthal_jacobson1968; @snyder1977].
+- "Ler pessoas" com precisão é muito mais difícil do que a cultura popular sugere: acurácia modesta, detecção de mentira próxima do acaso e efeito de halo à espreita.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicologia social**
+:   Estudo científico de como pensamentos, sentimentos e comportamentos são influenciados pela presença real, imaginada ou implícita de outras pessoas [@allport1954].
+
+**Avaro cognitivo**
+:   Metáfora segundo a qual a mente economiza esforço de processamento, recorrendo a atalhos "bons o bastante" [@fiske_taylor1991].
+
+**Esquema**
+:   Estrutura de conhecimento que organiza informação sobre um tipo de pessoa, papel ou situação, guiando atenção, memória e inferência.
+
+**Atribuição**
+:   Processo de inferir a causa de um comportamento, classificando-a como interna (disposicional) ou externa (situacional) [@heider1958].
+
+**Modelo de covariação**
+:   Proposta de Kelley segundo a qual atribuímos um efeito à causa com que ele covaria, usando consenso, distintividade e consistência [@kelley1967].
+
+**Erro fundamental de atribuição (viés de correspondência)**
+:   Tendência a superestimar causas disposicionais e subestimar causas situacionais ao explicar o comportamento alheio [@ross1977].
+
+**Assimetria ator–observador**
+:   Tendência a explicar a própria conduta por fatores situacionais e a alheia por disposições; efeito real, porém fraco [@jones_nisbett1972; @malle2006].
+
+**Profecia autorrealizadora**
+:   Expectativa que, ao alterar o comportamento de quem a sustenta, produz a confirmação de si mesma [@rosenthal_jacobson1968].
+
+**Efeito de halo**
+:   Contaminação da avaliação de um traço por uma impressão global (positiva ou negativa) sobre a pessoa.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina atribuição interna e externa e explique como os três tipos de informação do modelo de Kelley (consenso, distintividade, consistência) levam a cada uma.
+
+2. **(Conceitual.)** Usando o modelo de três estágios de Gilbert, explique por que uma pessoa ocupada ou distraída comete *mais* o erro fundamental de atribuição do que uma pessoa descansada e atenta.
+
+3. **(Análise.)** No experimento de Jones e Harris, por que o resultado da condição "posição designada por sorteio" é a evidência decisiva do viés de correspondência? O que os participantes *deveriam* ter concluído?
+
+4. **(Aplicação.)** Um professor comenta: "Consigo ver logo na primeira semana quais alunos vão longe." Discuta esse comentário à luz da profecia autorrealizadora e do viés de confirmação. Que risco ele embute?
+
+5. **(Reflexão crítica.)** O erro fundamental de atribuição é mais forte em culturas ocidentais [@morris_peng1994]. O que esse achado implica para a pretensão de que os vieses da cognição social sejam "universais da mente humana"? Conecte com o problema das amostras WEIRD (Cap. 1).
+
+6. **(Integração.)** Um gerente conclui que um funcionário é "desmotivado" porque tem entregado tarefas atrasadas. Aplique o descontar da situação, a assimetria ator–observador (como o próprio funcionário provavelmente se explica?) e proponha que informação de covariação resolveria a disputa entre as duas leituras.
