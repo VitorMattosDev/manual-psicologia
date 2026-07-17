@@ -14,7 +14,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 67 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 11/49
+**Progresso:** 68 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 12/49
 
 > **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ — Fase 3 (Diferenças, Sociedade e Aplicações) iniciada.** Próximo: Fase 3, Vol 11 (Personalidade).
 
@@ -140,7 +140,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 65 | Teorias psicodinâmicas | `capitulos/vol11-personalidade/cap-65-psicodinamicas.qmd` | ✅ |
 | 66 | Teorias humanistas | `capitulos/vol11-personalidade/cap-66-humanistas.qmd` | ✅ |
 | 67 | Teorias dos traços (Big Five / CGF) | `capitulos/vol11-personalidade/cap-67-tracos-big-five.qmd` | ✅ |
-| 68 | Teorias sociocognitivas | `capitulos/vol11-personalidade/cap-68-sociocognitivas.qmd` | ⬜ |
+| 68 | Teorias sociocognitivas | `capitulos/vol11-personalidade/cap-68-sociocognitivas.qmd` | ✅ |
 | 69 | Avaliação da personalidade | `capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.qmd` | ⬜ |
 
 ### Vol 12 — Psicologia Social

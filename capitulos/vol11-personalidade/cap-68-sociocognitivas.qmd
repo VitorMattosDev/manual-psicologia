@@ -1,5 +1,124 @@
 # 68. Teorias sociocognitivas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstituir** a crítica de Mischel e o debate pessoa–situação, com sua resolução.
+- **Explicar** o determinismo recíproco e o papel da autoeficácia na teoria de Bandura.
+- **Descrever** o locus de controle (Rotter) e os mindsets (Dweck) como variáveis sociocognitivas.
+- **Apresentar** o modelo CAPS e as assinaturas comportamentais se–então.
+- **Avaliar** o legado do teste do marshmallow à luz das replicações.
+- **Integrar** traços e processos sociocognitivos em uma visão unificada da personalidade.
 :::
+
+As teorias dos traços mapeiam **o que** as pessoas tipicamente fazem; as teorias **sociocognitivas** perguntam **como** e **por quê** — quais processos mentais convertem uma situação em comportamento, e por que a mesma pessoa é firme no trabalho e insegura em casa. Herdeiras da aprendizagem social de Bandura (Cap. 41) e da revolução cognitiva (Cap. 12), elas definem a personalidade não como um estoque de disposições, mas como um **sistema de processamento**: crenças, expectativas, metas, competências e estratégias de autorregulação que interagem com as situações — e as transformam. O capítulo abre com o terremoto que deu origem a essa família: o ataque de Walter Mischel à própria noção de consistência da personalidade.
+
+## O debate pessoa–situação
+
+### O desafio de Mischel
+
+Em 1968, Mischel revisou décadas de estudos que correlacionavam medidas de traço com comportamentos observados em situações específicas — e encontrou correlações teimosamente baixas, raramente acima de **0,30** (o "coeficiente de personalidade", como ironizou) [@mischel1968]. A honestidade de uma criança ao colar na prova mal predizia sua honestidade ao mentir para os pais; a pontualidade num contexto mal predizia noutro. Conclusão provocadora: a consistência transituacional dos traços seria em boa parte **ilusão** do observador (lembre o erro fundamental de atribuição, que veremos no Cap. 70) — e as **situações** governariam o comportamento muito mais do que as disposições. O campo entrou em crise: se Mischel estivesse totalmente certo, a psicologia da personalidade não teria objeto.
+
+### A resolução: agregação e interação
+
+Três décadas de dados resolveram o debate de forma instrutiva para toda a psicologia [@kenrick_funder1988]. Primeiro, a **agregação**: correlações de 0,30 entre traço e **um ato isolado** são esperadas — um ato é uma "amostra de n = 1", saturada de ruído situacional. Agregando comportamentos em muitas ocasiões (como uma prova de muitos itens é mais confiável que uma de um item — Cap. 16), a previsão sobe para 0,60–0,80. Segundo, a **simetria**: os efeitos das situações sobre o comportamento, quando expressos na mesma métrica, têm em média magnitude semelhante aos dos traços — a situação também não é onipotente. Terceiro, o **interacionismo**: pessoa e situação não competem, interagem — traços se expressam mais em situações "fracas" (pouco estruturadas, sem roteiro claro) do que em "fortes" (um semáforo vermelho iguala tímidos e expansivos); e as pessoas **escolhem e criam** suas situações (Cap. 64). O saldo: os traços são reais e preditivos *no agregado*; a variabilidade situacional também é real e sistemática — e é ela que as teorias sociocognitivas colocam no centro.
+
+## Bandura: determinismo recíproco e autoeficácia
+
+Albert Bandura deu à família sua arquitetura geral: o **determinismo recíproco** — pessoa, comportamento e ambiente causam-se mutuamente, em um triângulo de influências bidirecionais [@bandura1986] (@fig-determinismo-reciproco). A pessoa (crenças, expectativas, afetos) escolhe e interpreta ambientes; os ambientes modelam crenças e oferecem consequências; o comportamento altera o ambiente e retroage sobre a pessoa. A personalidade não está "dentro" do indivíduo nem "fora", na situação: está no **padrão estável dessas transações**.
+
+::: {#fig-determinismo-reciproco}
+```{.tikz}
+%%| filename: determinismo-reciproco
+%%| alt: Triângulo com setas bidirecionais entre três vértices: pessoa (crenças, expectativas, afetos) no topo, comportamento no vértice inferior esquerdo e ambiente no vértice inferior direito. Cada par de vértices é ligado por uma seta de duas pontas, indicando influência mútua.
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[fill=manualblue!15, rounded corners] (-1.55,2.2) rectangle (1.55,3.3);
+  \node[align=center] at (0,2.75) {\textbf{PESSOA}\\{\tiny crenças, expectativas, metas, afetos}};
+  \draw[fill=manualgreen!15, rounded corners] (-4.4,-0.55) rectangle (-1.6,0.55);
+  \node[align=center] at (-3.0,0) {\textbf{COMPORTAMENTO}\\{\tiny ações, escolhas, persistência}};
+  \draw[fill=manualred!15, rounded corners] (1.6,-0.55) rectangle (4.4,0.55);
+  \node[align=center] at (3.0,0) {\textbf{AMBIENTE}\\{\tiny contextos, consequências, pessoas}};
+  \draw[<->, very thick, manualgray] (-1.35,2.1) -- (-2.6,0.65);
+  \draw[<->, very thick, manualgray] (1.35,2.1) -- (2.6,0.65);
+  \draw[<->, very thick, manualgray] (-1.5,0) -- (1.5,0);
+\end{tikzpicture}
+```
+O **determinismo recíproco** de Bandura: pessoa, comportamento e ambiente influenciam-se mutuamente — a personalidade é o padrão estável dessas transações [@bandura1986].
+:::
+
+O motor cognitivo central do sistema é a **autoeficácia**: a crença na própria capacidade de executar as ações necessárias para produzir determinados resultados [@bandura1977]. Não é autoestima (avaliação global de valor próprio), nem otimismo difuso: é específica de domínio ("consigo aprender estatística", "consigo falar em público") e prediz **escolha** de desafios, **esforço**, **persistência** diante de obstáculos e desempenho — efeitos documentados da educação à reabilitação. Suas quatro fontes, em ordem de força: **experiências de domínio** (êxitos próprios graduais), **experiências vicárias** (ver modelos semelhantes ter êxito — Cap. 41), **persuasão social** e a leitura dos **estados fisiológicos** (interpretar o coração acelerado como energia ou como pânico). A autoeficácia é o protótipo da "adaptação característica" (Cap. 64): mais específica que um traço, mais estável que um humor, e — crucialmente — **modificável**.
+
+## Rotter e Dweck: expectativas generalizadas
+
+Antes de Bandura, Julian Rotter já havia formulado a lógica expectativa-valor: o comportamento depende da **expectativa** de que ele leve a certo resultado e do **valor** desse resultado. Sua contribuição mais duradoura é o **locus de controle**: a expectativa generalizada sobre **onde** estão as causas dos resultados da vida [@rotter1966]. O locus **interno** atribui resultados a ações e características próprias ("passei porque estudei"); o **externo**, à sorte, ao destino ou a outros poderosos ("passei porque a prova foi fácil"). Internalidade associa-se, em média, a melhor desempenho acadêmico, saúde e enfrentamento ativo — com a ressalva de que internalidade extrema em contextos incontroláveis produz autoculpabilização (compare com o desamparo aprendido e os estilos atribucionais, Caps. 42 e 56).
+
+Na mesma família conceitual estão os ***mindsets*** de Carol Dweck: a crença de que capacidades são **fixas** (mindset fixo — "inteligência é um dom que se tem ou não") ou **desenvolvíveis** (mindset de crescimento) [@dweck2006]. A crença orienta metas (parecer competente × aprender), a leitura do erro (veredito × informação) e a resposta à dificuldade (desistência × estratégia). A ciência recente pede sobriedade: metanálises indicam efeitos **pequenos** das intervenções de mindset, concentrados em estudantes vulneráveis — úteis em escala, mas longe da panaceia que o marketing educacional sugeriu (Cap. 42).
+
+## Mischel construtivo: o sistema CAPS e as assinaturas se–então
+
+A contribuição madura de Mischel não foi destruir a personalidade, mas **redefinir onde procurá-la**. No modelo **CAPS** (*Cognitive-Affective Personality System*), desenvolvido com Yuichi Shoda, a personalidade é uma rede de **unidades cognitivo-afetivas** — codificações (como a pessoa categoriza situações), expectativas e crenças, afetos, metas e competências autorregulatórias — cujas ativações dependem das **características psicológicas da situação** [@mischel_shoda1995]. A consequência central: a consistência da personalidade não está num nível uniforme de comportamento através de todas as situações, mas em **assinaturas comportamentais se–então** estáveis: *se* situação do tipo X, *então* comportamento Y. Nos dados de um acampamento infantil que observou crianças por semanas, a agressividade de cada criança variava enormemente entre situações — mas o **perfil** situacional de cada uma ("agressivo quando adulto repreende; dócil quando colega provoca", ou o inverso) era estável e distintivo como uma impressão digital. Duas pessoas com a mesma média de agressividade (mesmo "traço") podem ter assinaturas opostas — e é a assinatura que revela a dinâmica psicológica singular (as codificações e expectativas que aquela pessoa aplica a cada tipo de situação). Traço e assinatura são, assim, dois retratos complementares: a média e o padrão de variação.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o teste do marshmallow (e sua reviravolta).** No paradigma de **adiamento de gratificação** de Mischel, crianças de 4–5 anos podiam comer um doce imediatamente ou esperar sozinhas vários minutos para ganhar dois [@mischel1989]. **Desenho:** a espera era filmada; décadas depois, os pesquisadores correlacionaram os segundos de espera com desfechos adolescentes e adultos. **Resultados originais:** mais espera predizia melhor desempenho acadêmico e competência social anos depois — e as crianças bem-sucedidas não "resistiam" por força bruta, mas por **estratégias atencionais**: cobrir os olhos, cantar, transformar mentalmente o doce ("é só uma nuvem") — evidência de que a autorregulação é uma *competência cognitiva* treinável, não uma virtude fixa. **A reviravolta:** a replicação conceitual de Watts, Duncan e Quan, com amostra maior, mais diversa e controles de fundo familiar e cognição, encontrou associações **bem menores**, que encolhiam ainda mais sob controles — sugerindo que parte do efeito original refletia diferenças socioeconômicas e cognitivas, não a "força de vontade" em si [@watts2018]. Esperar por um segundo doce é mais racional para quem aprendeu que promessas de adultos se cumprem. **Interpretação atual:** a autorregulação importa, mas como parte de um sistema pessoa-em-contexto — uma lição perfeitamente sociocognitiva, e um belo exemplo do valor das replicações (Cap. 105).
+:::
+
+::: {.na-pratica}
+💡 **Pensar em "se–então" muda intervenções.** O rótulo de traço sugere sermões ("seja menos agressivo"); a assinatura sugere engenharia de situações e de interpretações. Na clínica e na escola: mapeie *quando* o padrão dispara (se crítica pública → explosão; se tarefa nova sem instrução → paralisia), depois trabalhe a **codificação** da situação (crítica como informação, não humilhação), as **expectativas** (autoeficácia via êxitos graduais) e o **contexto** (dar instrução antes da tarefa). É também a lógica das **intenções de implementação** — planos "se X, então farei Y" que convertem metas vagas em gatilhos situacionais concretos e aumentam de modo confiável a taxa de execução de intenções.
+:::
+
+## Integração: traços e processos, dois andares do mesmo edifício
+
+O contraste entre os Caps. 67 e 68 é hoje menos guerra do que divisão de trabalho. Os **traços** descrevem as regularidades médias — o *que* — com economia e poder preditivo atuarial; os **processos sociocognitivos** explicam a dinâmica — o *como* — e localizam as alavancas de mudança. O CAPS pode ser lido como o mecanismo que **gera** tanto a média (o traço) quanto a variação sistemática (a assinatura); a autoeficácia, o locus de controle e os mindsets são adaptações características que traduzem os traços em vidas concretas dentro de contextos concretos (nível 2 de McAdams, Cap. 64). Uma ciência completa da personalidade precisa dos dois andares — e das narrativas que os habitam.
+
+## Síntese
+
+::: {.callout-sintese}
+- **Mischel (1968)**: correlações traço–ato isolado ~0,30 → crise pessoa–situação [@mischel1968]. Resolução: **agregação** eleva a predição; efeitos de situações têm magnitude comparável; **interacionismo** (situações fracas × fortes; seleção de nichos) [@kenrick_funder1988].
+- **Bandura**: **determinismo recíproco** (pessoa ⇄ comportamento ⇄ ambiente) [@bandura1986]; **autoeficácia** — específica de domínio, quatro fontes, prediz esforço e persistência, e é modificável [@bandura1977].
+- **Rotter**: **locus de controle** interno × externo como expectativa generalizada [@rotter1966]. **Dweck**: mindsets fixo × de crescimento — efeitos reais, porém pequenos [@dweck2006].
+- **CAPS**: personalidade como rede cognitivo-afetiva; consistência está nas **assinaturas se–então**, estáveis e distintivas [@mischel_shoda1995].
+- **Marshmallow**: adiamento como competência atencional [@mischel1989]; replicação mostrou efeitos bem menores sob controles socioeconômicos [@watts2018].
+- Integração: traços = descrição agregada; processos sociocognitivos = mecanismo e alavancas de mudança.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Debate pessoa–situação**
+:   Controvérsia sobre se disposições ou situações governam o comportamento; resolvida pelo interacionismo e pela agregação [@kenrick_funder1988].
+
+**Situação forte / fraca**
+:   Contexto com roteiro claro que uniformiza o comportamento / contexto ambíguo em que os traços se expressam.
+
+**Determinismo recíproco**
+:   Influência causal mútua entre pessoa, comportamento e ambiente [@bandura1986].
+
+**Autoeficácia**
+:   Crença na própria capacidade de executar as ações necessárias a um resultado, em domínio específico [@bandura1977].
+
+**Locus de controle**
+:   Expectativa generalizada de que os resultados dependem de si (interno) ou de forças externas [@rotter1966].
+
+**Mindset (fixo / de crescimento)**
+:   Crença de que capacidades são imutáveis ou desenvolvíveis, com efeitos sobre metas e reação ao erro [@dweck2006].
+
+**CAPS**
+:   Sistema cognitivo-afetivo de personalidade: rede de codificações, expectativas, afetos, metas e competências ativada pelas características psicológicas das situações [@mischel_shoda1995].
+
+**Assinatura comportamental se–então**
+:   Perfil estável e distintivo de variação do comportamento por tipo de situação ("se X, então Y").
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que foi o "coeficiente de personalidade" de Mischel e quais três achados resolveram o debate pessoa–situação?
+
+2. **(Conceitual.)** Diferencie autoeficácia de autoestima e de locus de controle. Dê um exemplo em que uma pessoa tem alta autoeficácia num domínio e baixa noutro.
+
+3. **(Análise.)** Dois alunos têm a mesma média de participação em aula, mas um participa *se* o tema é técnico e cala *se* há debate aberto; o outro, o inverso. O que as assinaturas se–então revelam que o "traço de participação" esconde? Proponha hipóteses sobre as codificações de cada um.
+
+4. **(Aplicação.)** Usando as quatro fontes de autoeficácia de Bandura, desenhe um plano de quatro passos para aumentar a autoeficácia em matemática de uma criança que "se acha burra".
+
+5. **(Avaliação.)** O que a replicação de Watts e colegas [-@watts2018] mudou na interpretação do teste do marshmallow — e por que isso **não** significa que "autorregulação não importa"?
+
+6. **(Síntese.)** Explique como o CAPS pode gerar, ao mesmo tempo, o traço (média) e a assinatura (variação) — e por que isso torna as abordagens dos Caps. 67 e 68 complementares, não rivais.
