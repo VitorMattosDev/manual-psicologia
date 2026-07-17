@@ -1,5 +1,98 @@
 # 58. Desenvolvimento pré-natal e infância
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** as três fases do desenvolvimento pré-natal e a ação dos teratógenos.
+- **Caracterizar** as capacidades sensoriais e os reflexos do recém-nascido.
+- **Explicar** os métodos engenhosos que revelam o que os bebês percebem e sabem.
+- **Discutir** o desenvolvimento motor, perceptual e a competência precoce do lactente.
+- **Avaliar** o papel da maturação e da experiência no início da vida.
 :::
+
+Antes do primeiro pensamento consciente, antes da primeira palavra, o desenvolvimento já está em curso a toda velocidade. Nos nove meses da gestação e nos dois primeiros anos de vida, o ser humano passa de uma única célula a uma criança que anda, fala as primeiras palavras e reconhece rostos, vozes e intenções. Este capítulo acompanha esse começo vertiginoso. Veremos que o feto e o recém-nascido, longe da "confusão zumbidora e florescente" que William James (Cap. 7) imaginou, chegam ao mundo **equipados** — com reflexos, preferências sensoriais e uma sede de estímulo — e que decifrar o que um bebê que não fala sabe exigiu da psicologia alguns de seus métodos mais engenhosos.
+
+## Desenvolvimento pré-natal
+
+O desenvolvimento pré-natal divide-se em três períodos. O **período germinativo** (as duas primeiras semanas após a concepção) vai da fecundação à implantação do zigoto, já em multiplicação celular, na parede uterina. O **período embrionário** (da 3ª à 8ª semana) é a fase de formação dos principais órgãos e sistemas (organogênese): o coração começa a bater, surgem o tubo neural — origem do sistema nervoso (Cap. 23) — e os esboços de membros e órgãos. Por concentrar a formação das estruturas básicas, é o período de **maior vulnerabilidade**. O **período fetal** (da 9ª semana ao nascimento) é de crescimento, refinamento e amadurecimento funcional: o feto move-se, os sistemas se aperfeiçoam e, no terceiro trimestre, alcança-se a **viabilidade** — a capacidade de sobreviver fora do útero.
+
+Nos últimos meses, o feto já **aprende**. Estudos demonstram que recém-nascidos preferem a voz da própria mãe e reconhecem, com poucos dias de vida, sons e histórias a que foram expostos ainda no útero — evidência de audição funcional e memória pré-natal. O ambiente uterino não é um refúgio isolado, mas o primeiro contexto de experiência.
+
+Justamente por isso, ele é permeável a agentes nocivos. **Teratógenos** são substâncias ou condições — álcool, certas drogas e medicamentos, vírus (como rubéola e zika), radiação, desnutrição — capazes de causar danos ao desenvolvimento pré-natal. Sua ação segue princípios: o dano depende da **dose**, da **suscetibilidade genética** e, crucialmente, do **momento** da exposição — cada estrutura é mais vulnerável durante seu período crítico de formação (Cap. 57). O álcool é exemplar: o consumo materno pode causar a **síndrome alcoólica fetal**, com prejuízos físicos, cognitivos e comportamentais duradouros, sem um limiar seguro estabelecido [@streissguth1994]. Não há álcool "seguro" na gravidez.
+
+## O recém-nascido equipado
+
+O recém-nascido chega ao mundo com um repertório de **reflexos** — respostas automáticas que revelam a integridade do sistema nervoso e, em vários casos, têm valor adaptativo. O reflexo de **sucção** e o de **procura** (*rooting* — virar a cabeça e buscar com a boca ao ter a bochecha tocada) garantem a alimentação. O reflexo de **preensão** fecha a mão sobre o que toca a palma. O reflexo de **Moro** (de sobressalto) abre bruscamente os braços diante de perda de apoio. Muitos desses reflexos desaparecem nos primeiros meses, à medida que o córtex amadurece e assume o controle — sua persistência ou ausência é, para o pediatra, um sinal neurológico importante.
+
+Os sentidos funcionam, embora de modo desigual. A **audição** é relativamente madura ao nascer. O **olfato** e o **paladar** são apurados: o bebê reconhece o cheiro do leite materno e prefere o sabor doce. A **visão**, porém, é o sentido mais imaturo: a acuidade do recém-nascido é baixa (enxerga com nitidez apenas objetos próximos, à distância aproximada do rosto de quem o amamenta) e amadurece rapidamente ao longo do primeiro ano.
+
+## Decifrando o que o bebê sabe
+
+Como perguntar a quem não fala? A psicologia do desenvolvimento respondeu com métodos que exploram aquilo que o bebê **pode** fazer: olhar, sugar, surpreender-se. O princípio comum é usar a **atenção** como janela para a mente.
+
+::: {.experimento}
+🔬 **A caixa de olhar de Fantz.** Nos anos 1960, Robert Fantz criou um aparato simples e revolucionário para medir a **preferência visual** dos bebês [@fantz1961]. Deitado numa câmara, o lactente via dois estímulos lado a lado enquanto o experimentador, por um visor, media **por quanto tempo** ele fixava cada um. A lógica: se o bebê olha sistematicamente mais para um estímulo, é porque o **distingue** do outro e o **prefere**. Fantz descobriu que, já nos primeiros dias, os bebês olhavam mais para padrões **complexos** do que para superfícies lisas e, notavelmente, mais para um desenho esquemático de **rosto** do que para os mesmos elementos embaralhados. **Interpretação:** a percepção de forma não é uma habilidade puramente aprendida ao longo de meses — o recém-nascido já vem ao mundo predisposto a atender a padrões e, em especial, a rostos. **Relevância:** o **método da preferência visual** (e sua variante, a **habituação**) fundou a ciência da cognição do bebê, ao transformar o olhar em medida.
+:::
+
+O procedimento de **habituação** refina essa ideia. Bebês, como todos nós, param de responder a um estímulo repetido (habituam-se, Cap. 39); se um estímulo **novo** é então apresentado e a atenção **se recupera** (desabituação), conclui-se que o bebê **discriminou** a novidade. Com essa ferramenta, revelou-se que lactentes distinguem cores, sons de fala, quantidades e muito mais. Uma variante poderosa, o paradigma da **violação de expectativa**, mede a surpresa: bebês olham **por mais tempo** para eventos fisicamente **impossíveis** (um objeto que parece atravessar uma parede sólida), sinal de que possuíam uma **expectativa** que foi violada — evidência de conhecimento precoce sobre o mundo físico (Cap. 59).
+
+::: {.base-neural}
+🧠 **Um cérebro que se esculpe.** O cérebro do recém-nascido tem quase todos os seus ~86 bilhões de neurônios, mas poucas conexões. O primeiro ano é de **sinaptogênese** explosiva: formam-se sinapses a um ritmo vertiginoso, em excesso. A seguir, a experiência **esculpe** essa exuberância pela **poda sináptica** (Cap. 28) — conexões usadas se fortalecem, as ociosas se eliminam ("*use it or lose it*"). Some-se a **mielinização** progressiva, que acelera a condução neural e sustenta os ganhos motores e cognitivos. É a plasticidade em sua forma mais intensa: o ambiente dos primeiros anos, literalmente, molda a arquitetura do cérebro.
+:::
+
+## Desenvolvimento motor e perceptual
+
+O desenvolvimento motor segue uma sequência ordenada e universal na direção — sentar antes de engatinhar, engatinhar antes de andar —, ainda que o **ritmo** varie muito entre crianças normais. Duas tendências o organizam: a **cefalocaudal** (da cabeça para os pés: controla-se o pescoço antes do tronco, e o tronco antes das pernas) e a **proximodistal** (do centro para as extremidades). Essa sequência resulta da interação entre **maturação** do sistema nervoso e **oportunidade** de prática: a maturação abre a possibilidade, mas é a experiência ativa — tentar, cair, tentar de novo — que consolida cada conquista.
+
+A percepção também se desenvolve depressa. O clássico experimento do **abismo visual** de Gibson e Walk (Cap. 34) mostrou que, por volta da idade em que engatinham, os bebês já percebem profundidade e hesitam em avançar sobre a aparente queda [@gibson_walk1960] — percepção de profundidade que combina maturação visual e a experiência recém-adquirida de locomoção.
+
+::: {.na-pratica}
+**O poder da interação responsiva.** A pesquisa desenvolvimental converge num ponto prático: o que mais impulsiona o desenvolvimento inicial não são brinquedos caros ou estimulação artificial, mas a **interação responsiva e sensível** do cuidador. Conversar com o bebê (o "banho de linguagem"), responder ao seu choro, brincar de esconde-esconde, nomear o mundo — essas trocas cotidianas, do tipo "servir e devolver", constroem tanto os vínculos afetivos (Cap. 60) quanto as bases da linguagem (Cap. 48) e da cognição. A privação de estímulo e de vínculo no início da vida, ao contrário, deixa marcas profundas, como mostraram tristemente os estudos com crianças institucionalizadas em ambientes negligentes.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- O desenvolvimento pré-natal tem três fases: **germinativa**, **embrionária** (organogênese, máxima vulnerabilidade) e **fetal** (crescimento e viabilidade).
+- **Teratógenos** (como o álcool) causam dano conforme **dose**, **genética** e **momento** da exposição. Não há dose segura de álcool na gestação.
+- O recém-nascido chega **equipado**: **reflexos** (sucção, procura, preensão, Moro), audição madura, olfato e paladar apurados e visão imatura mas em rápido amadurecimento.
+- **Preferência visual** (Fantz), **habituação** e **violação de expectativa** são os métodos que revelam a mente do bebê — usando o olhar como medida.
+- O desenvolvimento motor segue as direções **cefalocaudal** e **proximodistal**, por interação de maturação e prática; o **abismo visual** mostra percepção precoce de profundidade.
+- Cérebro em **sinaptogênese** e **poda** intensas; o motor do desenvolvimento inicial é a **interação responsiva** do cuidador.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Períodos pré-natais**
+:   Germinativo (implantação), embrionário (organogênese) e fetal (crescimento e viabilidade).
+
+**Teratógeno**
+:   Agente que causa dano ao desenvolvimento pré-natal, dependendo de dose, genética e momento [@streissguth1994].
+
+**Reflexos do recém-nascido**
+:   Respostas automáticas (sucção, procura, preensão, Moro) que indicam integridade neural.
+
+**Preferência visual**
+:   Método que infere discriminação e preferência pelo tempo de fixação do olhar do bebê [@fantz1961].
+
+**Habituação / violação de expectativa**
+:   Queda da atenção ao repetido e sua recuperação diante do novo ou impossível, indicando discriminação e expectativa.
+
+**Tendências cefalocaudal e proximodistal**
+:   Direções do desenvolvimento motor: da cabeça aos pés e do centro às extremidades.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie as três fases do desenvolvimento pré-natal e diga por que a embrionária é a de maior vulnerabilidade.
+
+2. **(Conceitual.)** Explique os três princípios da ação dos teratógenos, usando o álcool como exemplo.
+
+3. **(Análise.)** Como a lógica da **habituação** permite concluir que um bebê distingue dois estímulos que não pode nomear?
+
+4. **(Aplicação.)** Um paradigma de violação de expectativa mostra que bebês de 4 meses olham mais para um objeto que "atravessa" uma parede sólida. O que isso sugere sobre seu conhecimento do mundo físico?
+
+5. **(Análise.)** Por que a sequência do desenvolvimento motor é universal, mas o ritmo, não? Que dois fatores explicam essa combinação?
+
+6. **(Avaliação.)** Avalie a afirmação: "O recém-nascido é uma folha em branco." Contraponha-a com evidências de competência sensorial e perceptual precoce.
