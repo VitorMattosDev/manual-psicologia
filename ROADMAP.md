@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 56 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 0/49
+**Progresso:** 63 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 7/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ — Fase 2 (Processos Psicológicos Básicos) completa.** Próximo: Fase 3, Vol 10 (Desenvolvimento Humano).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ — Fase 3 (Diferenças, Sociedade e Aplicações) iniciada.** Próximo: Fase 3, Vol 11 (Personalidade).
 
 ---
 
@@ -125,13 +125,13 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 10 — Desenvolvimento Humano
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 57 | Conceitos e questões do desenvolvimento | `capitulos/vol10-desenvolvimento/cap-57-conceitos-desenvolvimento.qmd` | ⬜ |
-| 58 | Desenvolvimento pré-natal e infância | `capitulos/vol10-desenvolvimento/cap-58-pre-natal-infancia.qmd` | ⬜ |
-| 59 | Desenvolvimento cognitivo (Piaget, Vygotsky) | `capitulos/vol10-desenvolvimento/cap-59-desenvolvimento-cognitivo.qmd` | ⬜ |
-| 60 | Desenvolvimento social e emocional (apego, Erikson) | `capitulos/vol10-desenvolvimento/cap-60-desenvolvimento-social-emocional.qmd` | ⬜ |
-| 61 | Desenvolvimento moral (Kohlberg e críticas) | `capitulos/vol10-desenvolvimento/cap-61-desenvolvimento-moral.qmd` | ⬜ |
-| 62 | Adolescência | `capitulos/vol10-desenvolvimento/cap-62-adolescencia.qmd` | ⬜ |
-| 63 | Idade adulta e envelhecimento | `capitulos/vol10-desenvolvimento/cap-63-adultez-envelhecimento.qmd` | ⬜ |
+| 57 | Conceitos e questões do desenvolvimento | `capitulos/vol10-desenvolvimento/cap-57-conceitos-desenvolvimento.qmd` | ✅ |
+| 58 | Desenvolvimento pré-natal e infância | `capitulos/vol10-desenvolvimento/cap-58-pre-natal-infancia.qmd` | ✅ |
+| 59 | Desenvolvimento cognitivo (Piaget, Vygotsky) | `capitulos/vol10-desenvolvimento/cap-59-desenvolvimento-cognitivo.qmd` | ✅ |
+| 60 | Desenvolvimento social e emocional (apego, Erikson) | `capitulos/vol10-desenvolvimento/cap-60-desenvolvimento-social-emocional.qmd` | ✅ |
+| 61 | Desenvolvimento moral (Kohlberg e críticas) | `capitulos/vol10-desenvolvimento/cap-61-desenvolvimento-moral.qmd` | ✅ |
+| 62 | Adolescência | `capitulos/vol10-desenvolvimento/cap-62-adolescencia.qmd` | ✅ |
+| 63 | Idade adulta e envelhecimento | `capitulos/vol10-desenvolvimento/cap-63-adultez-envelhecimento.qmd` | ✅ |
 
 ### Vol 11 — Personalidade
 | Cap | Título | Arquivo | Status |

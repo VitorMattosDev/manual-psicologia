@@ -1,5 +1,155 @@
 # 57. Conceitos e questões do desenvolvimento
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** desenvolvimento humano e a perspectiva do ciclo vital (*life-span*).
+- **Discutir** as grandes questões do campo: natureza × cultura, continuidade × estágios e estabilidade × mudança.
+- **Distinguir** os principais delineamentos de pesquisa desenvolvimental (transversal, longitudinal, sequencial).
+- **Explicar** os conceitos de período crítico e sensível, temperamento e a interação genótipo–ambiente.
+- **Situar** o desenvolvimento em seus contextos, com o modelo bioecológico de Bronfenbrenner.
 :::
+
+Abrimos a Fase 3 com a pergunta que atravessa toda a psicologia sob o ângulo do **tempo**: como um recém-nascido — quase todo reflexo e choro — se torna uma criança que fala, um adolescente que argumenta, um adulto que planeja e um idoso que revê a própria vida? A **psicologia do desenvolvimento** estuda as mudanças e continuidades no comportamento, na cognição e na emoção ao longo de toda a existência. Ela retoma, agora com lentes cronológicas, tudo o que a Fase 2 mapeou — biologia, percepção, aprendizagem, memória, motivação, emoção — e pergunta como cada processo **surge, amadurece e se transforma**. Este capítulo estabelece os conceitos, as grandes questões e os métodos que organizam o volume inteiro.
+
+## O que é desenvolvimento e a perspectiva do ciclo vital
+
+**Desenvolvimento** é o conjunto de mudanças sistemáticas e contínuas que ocorrem no indivíduo entre a concepção e a morte. A palavra-chave é *sistemáticas*: não qualquer mudança, mas as que seguem alguma ordem, direção ou padrão. Durante boa parte do século XX, o campo concentrou-se na infância e na adolescência, como se o desenvolvimento "terminasse" na vida adulta. A **perspectiva do ciclo vital** (*life-span*), sistematizada por Paul Baltes, rompeu com essa visão: o desenvolvimento é um **processo que dura a vida toda**, sem ponto de chegada, marcado por ganhos e perdas em todas as idades [@baltes1987].
+
+Baltes formulou princípios que definem a área. O desenvolvimento é **multidimensional** (opera em várias dimensões — física, cognitiva, socioemocional) e **multidirecional** (algumas capacidades crescem enquanto outras declinam, em qualquer fase). É sempre um balanço de **ganhos e perdas**: a especialização do adolescente em sua língua materna, por exemplo, custa a perda da facilidade infantil para sons de outros idiomas. É **plástico** — modificável pela experiência, dentro de limites (Cap. 28) — e profundamente **contextual**, moldado por forças históricas e culturais. Não existe "o" desenvolvimento no vácuo: há trajetórias, situadas em corpos, épocas e culturas.
+
+## As três grandes questões
+
+Todo debate no campo pode ser reconduzido a três eixos clássicos.
+
+**Natureza × cultura (*nature–nurture*).** Quanto do que nos tornamos vem da herança genética e da maturação biológica, e quanto vem da experiência, do aprendizado e do ambiente? Como já vimos (Cap. 2 e 26), a pergunta bem formulada não é "qual das duas", mas **como as duas interagem**. Genes e ambiente não são forças separadas que se somam; eles se coproduzem. A epigenética (Cap. 26) mostra que a experiência regula a expressão gênica, e a genética comportamental mostra que nossos genes influenciam os ambientes que buscamos e evocamos.
+
+**Continuidade × descontinuidade (estágios).** O desenvolvimento é uma curva **gradual e contínua**, como o crescimento em altura, ou uma escada de **estágios qualitativos**, em que a criança reorganiza sua forma de pensar em saltos, tornando-se qualitativamente diferente? Teorias como a de Piaget (Cap. 59) e Erikson (Cap. 60) são **estagistas**: postulam fases distintas, com ordem fixa. Já as teorias da aprendizagem e do processamento de informação enfatizam a **continuidade** — acúmulo gradual de habilidades. Hoje se reconhece que ambas capturam parte da verdade: há aquisições graduais e reorganizações relativamente abruptas.
+
+**Estabilidade × mudança.** Somos, no essencial, os mesmos ao longo da vida — o bebê tímido vira o adulto reservado —, ou nos transformamos profundamente? A pesquisa sobre **temperamento** e personalidade sugere considerável estabilidade de traços, ao lado de real capacidade de mudança, sobretudo diante de intervenções e experiências marcantes.
+
+::: {.atencao}
+⚠️ **Descrever não é explicar.** Uma armadilha comum é confundir a **descrição** de uma sequência (por exemplo, "aos 2 anos a criança começa a combinar palavras") com a **explicação** dela (*por que* isso acontece então?). Marcos de desenvolvimento (*milestones*) descrevem médias populacionais e variam muito entre crianças normais. Um marco atingido "no tempo" não garante nada, e um leve atraso raramente indica problema. Idade cronológica é um índice grosseiro: o que importa são os **mecanismos** — maturação, experiência, oportunidade — por trás da mudança.
+:::
+
+## Como se estuda o desenvolvimento: delineamentos
+
+Estudar a mudança ao longo do tempo exige delineamentos próprios (Cap. 15), cada um com uma troca característica (@fig-delineamentos).
+
+No **estudo transversal**, comparam-se, ao **mesmo tempo**, pessoas de **idades diferentes** (por exemplo, grupos de 20, 40 e 60 anos). É rápido e barato, mas confunde idade com **coorte**: as diferenças entre um jovem e um idoso hoje podem refletir não o envelhecimento, mas o fato de terem crescido em épocas distintas (o **efeito de coorte** ou de geração). No **estudo longitudinal**, acompanham-se **as mesmas pessoas** ao longo de **muitos anos**. É o delineamento que melhor capta a mudança individual, mas é caro, demorado e sofre com a **perda de participantes** (atrito) e com efeitos de época que afetam toda a amostra. O **delineamento sequencial** combina os dois — vários grupos de idade acompanhados por um período —, permitindo separar efeitos de idade, de coorte e de época. Foi essa estratégia que permitiu, por exemplo, revisar conclusões pessimistas sobre o declínio cognitivo (Cap. 63).
+
+::: {#fig-delineamentos}
+```{.tikz}
+%%| filename: delineamentos-desenvolvimento
+%%| alt: Diagrama comparando delineamentos transversal e longitudinal. No transversal, três grupos de idades diferentes (20, 40, 60 anos) são medidos em um único ano. No longitudinal, um único grupo é medido repetidamente ao longo de várias décadas, envelhecendo de 20 para 40 e 60 anos.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  % Transversal
+  \node[font=\small\bfseries, text=manualblue] at (2,3.4) {Transversal};
+  \node[align=center, font=\tiny] at (2,3.0) {(um momento, várias idades)};
+  \draw[manualgray, dashed] (2,-0.3) -- (2,2.6) node[above, font=\tiny, text=manualgray] {ano 2026};
+  \node[draw, rounded corners, fill=manualblue!12, minimum width=1.3cm] at (2,2.2) {grupo 20 anos};
+  \node[draw, rounded corners, fill=manualblue!12, minimum width=1.3cm] at (2,1.4) {grupo 40 anos};
+  \node[draw, rounded corners, fill=manualblue!12, minimum width=1.3cm] at (2,0.6) {grupo 60 anos};
+  % Longitudinal
+  \node[font=\small\bfseries, text=manualred] at (8,3.4) {Longitudinal};
+  \node[align=center, font=\tiny] at (8,3.0) {(um grupo, ao longo do tempo)};
+  \node[draw, rounded corners, fill=manualred!12, minimum width=1.1cm] (a) at (6.2,1.4) {20 anos};
+  \node[draw, rounded corners, fill=manualred!12, minimum width=1.1cm] (b) at (8,1.4) {40 anos};
+  \node[draw, rounded corners, fill=manualred!12, minimum width=1.1cm] (c) at (9.8,1.4) {60 anos};
+  \draw[->, thick, manualred] (a) -- (b);
+  \draw[->, thick, manualred] (b) -- (c);
+  \node[font=\tiny] at (6.2,0.7) {2026};
+  \node[font=\tiny] at (8,0.7) {2046};
+  \node[font=\tiny] at (9.8,0.7) {2066};
+\end{tikzpicture}
+```
+Dois delineamentos centrais. O **transversal** compara idades num só momento (mas confunde idade e coorte); o **longitudinal** segue as mesmas pessoas ao longo do tempo (mas é lento e sofre atrito). O **sequencial** combina ambos.
+:::
+
+## Período crítico, período sensível e a interação genótipo–ambiente
+
+O momento importa. Um **período crítico** é uma janela temporal restrita em que uma experiência específica é **necessária** para o desenvolvimento normal de uma capacidade; passada a janela, a oportunidade se fecha. O exemplo clássico é a *imprinting* em aves (Cap. 60) e o desenvolvimento da visão binocular. Em humanos, o conceito é geralmente abrandado para **período sensível**: uma fase de **maior receptividade** a certas experiências (como a aquisição de línguas na primeira infância), fora da qual o aprendizado ainda é possível, mas mais custoso.
+
+A relação entre genes e ambiente é ela própria evolutiva. Sandra Scarr e Kathleen McCartney (Cap. 26) propuseram que a influência do genótipo sobre o ambiente **muda com a idade**: na infância, o ambiente é largamente **evocado** e **provido** pelos pais (correlação passiva e evocativa); com o tempo, a criança passa a **selecionar ativamente** ambientes compatíveis com suas disposições (correlação ativa, o *niche-picking*). Não somos receptáculos passivos do ambiente: nós o construímos.
+
+O **temperamento** — o estilo comportamental e emocional constitucional, visível já nos primeiros meses — é uma das evidências mais claras da contribuição biológica precoce. Alexander Thomas e Stella Chess, em um estudo longitudinal pioneiro, descreveram três padrões: crianças de temperamento **fácil**, **difícil** e **de aquecimento lento** [@thomas_chess1977]. Mais importante que rotular, porém, foi seu conceito de **ajuste (*goodness of fit*)**: o desenvolvimento saudável não depende de um temperamento "melhor", mas da **compatibilidade** entre o temperamento da criança e as demandas e o estilo do ambiente que a cerca.
+
+## O desenvolvimento em contexto: o modelo bioecológico
+
+Nenhuma criança se desenvolve no vazio. Urie Bronfenbrenner propôs enxergar o desenvolvimento dentro de **sistemas encaixados**, como bonecas russas (@fig-bronfenbrenner) [@bronfenbrenner1979]. O **microssistema** é o ambiente imediato de interações diárias (família, escola, amigos). O **mesossistema** são as conexões entre esses ambientes (a relação entre casa e escola). O **exossistema** são contextos que afetam a criança indiretamente (o trabalho dos pais, políticas públicas). O **macrossistema** é a cultura mais ampla — valores, leis, condições socioeconômicas. E o **cronossistema** acrescenta a dimensão do **tempo**: eventos históricos e transições ao longo da vida. O modelo é um antídoto contra explicações reducionistas: entender uma criança exige entender as camadas de contexto que a envolvem.
+
+::: {#fig-bronfenbrenner}
+```{.tikz}
+%%| filename: modelo-bioecologico
+%%| alt: Diagrama de círculos concêntricos representando o modelo bioecológico de Bronfenbrenner. No centro está o indivíduo, envolvido sucessivamente pelo microssistema, mesossistema, exossistema e macrossistema, com o cronossistema representado por uma seta de tempo atravessando todas as camadas.
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[fill=manualblue!5, draw=manualblue!40] (0,0) circle (3.2);
+  \draw[fill=manualblue!8, draw=manualblue!40] (0,0) circle (2.5);
+  \draw[fill=manualblue!12, draw=manualblue!50] (0,0) circle (1.8);
+  \draw[fill=manualblue!18, draw=manualblue!60] (0,0) circle (1.1);
+  \draw[fill=manualred!25, draw=manualred] (0,0) circle (0.5);
+  \node[font=\tiny\bfseries] at (0,0) {indivíduo};
+  \node[font=\tiny, text=manualblue!70!black] at (0,0.8) {microssistema};
+  \node[font=\tiny, text=manualblue!70!black] at (0,1.5) {mesossistema};
+  \node[font=\tiny, text=manualblue!70!black] at (0,2.2) {exossistema};
+  \node[font=\tiny, text=manualblue!70!black] at (0,2.9) {macrossistema};
+  \draw[->, thick, manualgreen!50!black] (-3.6,-3.4) -- (3.6,-3.4) node[right, font=\tiny] {tempo};
+  \node[font=\tiny, text=manualgreen!50!black] at (0,-3.7) {cronossistema};
+\end{tikzpicture}
+```
+O modelo **bioecológico** de Bronfenbrenner: o indivíduo desenvolve-se dentro de sistemas encaixados, do microssistema imediato ao macrossistema cultural, tudo atravessado pelo tempo (cronossistema).
+:::
+
+::: {.na-pratica}
+**Por que a perspectiva do desenvolvimento importa na prática.** Compreender trajetórias tem consequências concretas. Na **educação**, alinhar exigências ao nível de desenvolvimento (nem aquém, nem além) é a essência do bom ensino. Na **saúde**, reconhecer períodos sensíveis fundamenta a importância da intervenção precoce em atrasos e da estimulação nos primeiros anos. Na **clínica**, distinguir o que é variação normal do que é sinal de alerta evita tanto o alarmismo quanto a negligência. E no **plano social**, o modelo bioecológico justifica por que investir no contexto — creches de qualidade, licença parental, redução da pobreza — é investir no desenvolvimento infantil.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- O **desenvolvimento** são as mudanças sistemáticas ao longo da vida. A perspectiva do **ciclo vital** (Baltes) o vê como processo **multidimensional, multidirecional, plástico e contextual**, com ganhos e perdas em toda idade.
+- As **três grandes questões** são: **natureza × cultura** (que interagem, não competem), **continuidade × estágios** e **estabilidade × mudança**.
+- **Delineamentos**: o **transversal** é rápido mas confunde idade e coorte; o **longitudinal** capta a mudança individual mas é lento e sofre atrito; o **sequencial** combina ambos.
+- **Períodos críticos** (janelas necessárias) e **sensíveis** (janelas de maior receptividade) marcam o papel do momento. Genes e ambiente se correlacionam de forma passiva, evocativa e ativa (*niche-picking*).
+- O **temperamento** é a base biológica precoce; o que prediz bom desenvolvimento é o **ajuste** (*goodness of fit*) com o ambiente.
+- O modelo **bioecológico** de Bronfenbrenner situa o indivíduo em sistemas encaixados (micro, meso, exo, macro, crono).
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Perspectiva do ciclo vital (*life-span*)**
+:   Visão do desenvolvimento como processo que dura toda a vida, com ganhos e perdas em cada fase [@baltes1987].
+
+**Efeito de coorte**
+:   Diferença entre grupos etários que decorre de terem nascido em épocas distintas, e não da idade em si.
+
+**Estudo longitudinal / transversal / sequencial**
+:   Acompanhar as mesmas pessoas no tempo / comparar idades num só momento / combinar ambos.
+
+**Período crítico / sensível**
+:   Janela em que uma experiência é necessária (crítico) ou de máxima receptividade (sensível) ao desenvolvimento.
+
+**Temperamento**
+:   Estilo emocional e comportamental constitucional, visível na primeira infância [@thomas_chess1977].
+
+**Ajuste (*goodness of fit*)**
+:   Compatibilidade entre o temperamento da criança e as demandas de seu ambiente.
+
+**Modelo bioecológico**
+:   Modelo de Bronfenbrenner com sistemas encaixados (micro, meso, exo, macro, crono) [@bronfenbrenner1979].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie os cinco atributos do desenvolvimento na perspectiva do ciclo vital de Baltes.
+
+2. **(Conceitual.)** Explique por que um estudo transversal que encontra menor vocabulário em idosos do que em jovens não prova, por si só, que o vocabulário declina com a idade.
+
+3. **(Análise.)** Diferencie período crítico de período sensível e dê um exemplo de cada.
+
+4. **(Aplicação.)** Uma criança de temperamento "difícil" tem pais pacientes e flexíveis; outra, com o mesmo temperamento, tem pais rígidos e impacientes. Use o conceito de *goodness of fit* para prever trajetórias diferentes.
+
+5. **(Análise.)** Escolha um problema de desenvolvimento (por exemplo, dificuldade escolar) e analise-o pelas cinco camadas do modelo bioecológico.
+
+6. **(Avaliação.)** "Natureza *versus* cultura" é uma pergunta mal formulada. Reformule-a de modo cientificamente mais produtivo, usando os conceitos de epigenética e correlação genótipo–ambiente.
