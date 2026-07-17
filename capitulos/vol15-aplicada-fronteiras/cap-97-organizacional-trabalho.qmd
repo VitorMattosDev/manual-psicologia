@@ -1,5 +1,132 @@
 # 97. Psicologia organizacional e do trabalho
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Traçar** a trajetória do campo, da administração científica de Taylor aos estudos de Hawthorne e ao movimento das relações humanas.
+- **Distinguir** os dois grandes eixos da área: a psicologia **do pessoal** (seleção, avaliação) e o **comportamento organizacional**.
+- **Comparar** as principais teorias da motivação no trabalho (Herzberg, fixação de metas, características do cargo).
+- **Explicar** o que a psicologia sabe sobre liderança, satisfação e engajamento.
+- **Analisar** o estresse ocupacional e a **síndrome de burnout** como problema de saúde do trabalhador.
+- **Situar** o campo no mundo do trabalho brasileiro e seus desafios contemporâneos.
 :::
+
+Passamos a maior parte da vida adulta trabalhando. A **psicologia organizacional e do trabalho** (POT) — também chamada psicologia industrial-organizacional (I/O) — aplica o conhecimento psicológico ao comportamento humano no contexto do trabalho: como se seleciona, motiva, lidera, satisfaz e adoece quem trabalha, e como as organizações podem ser ao mesmo tempo produtivas e saudáveis. É uma das áreas aplicadas mais antigas e de maior empregabilidade da psicologia, e um território onde as tensões entre a eficiência da empresa e o bem-estar da pessoa estão sempre presentes.
+
+## Das origens: de Taylor a Hawthorne
+
+No início do século XX, a **administração científica** de Frederick Taylor buscava a eficiência máxima decompondo cada tarefa em movimentos elementares e cronometrando-os, tratando o trabalhador quase como uma extensão da máquina [@taylor1911]. Ganhos de produtividade vieram, mas ao custo de um modelo desumanizado, que ignorava a psicologia de quem trabalhava. A reação a esse modelo produziu um dos episódios fundadores da área.
+
+::: {.experimento}
+🔬 **Experimento Clássico — os estudos de Hawthorne** [@roethlisberger_dickson1939]
+
+**Desenho.** Entre 1924 e 1932, na fábrica Hawthorne da Western Electric, pesquisadores (mais tarde liderados por Elton Mayo) manipularam condições de trabalho — sobretudo a **iluminação** — para medir seu efeito sobre a produtividade de um grupo de operárias.
+
+**Resultado.** A produtividade subia quando a iluminação aumentava — mas **também subia quando diminuía**, e mesmo quando voltava ao patamar original. Praticamente qualquer mudança elevava o desempenho.
+
+**Interpretação.** O que movia as trabalhadoras não era a iluminação, mas o fato de estarem sendo **observadas, consultadas e tratadas como grupo especial**. Fatores **sociais e psicológicos** — atenção, pertencimento, moral do grupo — pesavam mais que as condições físicas. Nascia o **movimento das relações humanas** e a ideia de que a organização é um sistema social.
+
+**Limitações.** Reanálises posteriores questionaram a interpretação original e o rigor dos dados; parte do efeito talvez se devesse a incentivos e à rotatividade das participantes. Mas o estudo batizou um fenômeno real — o **efeito Hawthorne**, a alteração do comportamento por saber-se observado — e reorientou o campo para o humano.
+:::
+
+## Os dois eixos do campo
+
+A POT organiza-se em torno de dois grandes eixos complementares. A **psicologia do pessoal** ocupa-se do indivíduo e da relação entre pessoa e cargo: **recrutamento e seleção**, análise de cargos, avaliação de desempenho, treinamento e desenvolvimento. Seu instrumento clássico é a avaliação psicológica aplicada ao trabalho — testes de aptidão, de personalidade e, sobretudo, entrevistas. A pesquisa mostra que **entrevistas estruturadas** (com perguntas padronizadas e critérios de pontuação) e **testes de capacidade cognitiva geral** estão entre os melhores preditores de desempenho, superando a intuição do entrevistador, notoriamente falha [@schmidt_hunter1998].
+
+O **comportamento organizacional**, por sua vez, estuda os processos coletivos: motivação, liderança, satisfação, cultura e clima, dinâmica de grupos, comunicação e mudança organizacional. Enquanto a psicologia do pessoal pergunta "quem contratar e como desenvolvê-lo", o comportamento organizacional pergunta "como fazer as pessoas trabalharem bem juntas".
+
+## Motivação no trabalho
+
+Por que uma pessoa se esforça? As teorias da motivação (Cap. 51) ganham, no trabalho, formulações específicas. Três se destacam.
+
+Frederick Herzberg propôs a **teoria dos dois fatores** [@herzberg1959]: os **fatores higiênicos** (salário, condições, segurança, supervisão) previnem a insatisfação quando adequados, mas não geram satisfação; já os **fatores motivadores** (reconhecimento, responsabilidade, realização, crescimento) é que produzem satisfação genuína. A implicação — que enriquecer o cargo motiva mais do que apenas melhorar condições — é influente, ainda que a rígida separação entre os dois tipos tenha sido criticada empiricamente.
+
+A **teoria da fixação de metas** de Locke e Latham é uma das mais bem sustentadas da psicologia aplicada [@locke_latham2002]: metas **específicas e desafiadoras** produzem desempenho superior a metas vagas ("faça o seu melhor") ou fáceis — desde que a pessoa as aceite, receba *feedback* e tenha capacidade para alcançá-las. Daí a popularidade de metas mensuráveis na gestão.
+
+Finalmente, o **modelo das características do cargo** de Hackman e Oldham [@hackman_oldham1976] identifica cinco dimensões do trabalho — variedade de habilidades, identidade da tarefa, significado, autonomia e *feedback* — que geram estados psicológicos (sentir o trabalho como significativo, responsabilizar-se por ele, conhecer os resultados) e, destes, motivação e satisfação (@fig-caracteristicas-cargo). Redesenhar cargos para elevar essas dimensões — o **enriquecimento do trabalho** — é uma das aplicações mais concretas do campo.
+
+::: {#fig-caracteristicas-cargo}
+```{.tikz}
+%%| filename: caracteristicas-cargo
+%%| alt: Fluxograma da esquerda para a direita. Cinco características do cargo (variedade, identidade, significado, autonomia, feedback) levam a três estados psicológicos, que levam a resultados de motivação e satisfação.
+\begin{tikzpicture}[font=\scriptsize,
+  box/.style={draw, rounded corners, align=center, fill=manualblue!12, minimum height=13mm, text width=22mm, inner sep=3pt},
+  st/.style={draw, rounded corners, align=center, fill=manualgreen!15, minimum height=13mm, text width=22mm, inner sep=3pt},
+  res/.style={draw, rounded corners, align=center, fill=manualyellow!25, minimum height=13mm, text width=20mm, inner sep=3pt}]
+  \node[box] (c) {\textbf{Características}\\{do cargo}\\{\tiny variedade · autonomia}\\{\tiny significado · feedback}};
+  \node[st, right=12mm of c] (e) {\textbf{Estados}\\{psicológicos}\\{\tiny sentido · responsa-}\\{\tiny bilidade · resultados}};
+  \node[res, right=12mm of e] (r) {\textbf{Resultados}\\{\tiny motivação}\\{\tiny satisfação}\\{\tiny desempenho}};
+  \draw[-{Latex}, thick] (c) -- (e);
+  \draw[-{Latex}, thick] (e) -- (r);
+\end{tikzpicture}
+```
+O modelo das características do cargo [@hackman_oldham1976]: propriedades do trabalho geram estados psicológicos que, por sua vez, produzem motivação, satisfação e desempenho.
+:::
+
+## Liderança, satisfação e engajamento
+
+O estudo da **liderança** percorreu várias fases: das teorias dos **traços** (o líder nasce feito — hipótese pouco sustentada) aos **estilos** (orientado à tarefa × às pessoas), às teorias **contingenciais** (o melhor estilo depende da situação). A síntese contemporânea mais influente distingue a liderança **transacional** — trocas de desempenho por recompensa — da **transformacional**, que inspira, oferece visão e estimula intelectualmente os liderados, associada a melhores resultados e maior satisfação das equipes [@bass1985].
+
+A **satisfação no trabalho** — o quanto a pessoa gosta do que faz — relaciona-se modestamente com desempenho, mas fortemente com **rotatividade**, absenteísmo e saúde. Mais recentemente, o foco deslocou-se para o **engajamento** (*work engagement*): um estado de vigor, dedicação e absorção, distinto da mera satisfação e ligado tanto ao desempenho quanto ao bem-estar. Um trabalhador pode estar satisfeito e desengajado (confortável, mas apático) — a distinção importa para a gestão.
+
+## O lado sombrio: estresse ocupacional e burnout
+
+O trabalho é fonte de identidade e sustento, mas também de adoecimento. O **estresse ocupacional** surge do desequilíbrio entre as demandas do trabalho e os recursos da pessoa. Um modelo influente, o de **demanda-controle** de Karasek, prevê que os cargos mais nocivos são os de **alta demanda e baixo controle** — muita exigência, pouca autonomia — típicos de linhas de produção e teleatendimento [@karasek1979].
+
+O desfecho mais estudado do estresse crônico no trabalho é a **síndrome de burnout** (esgotamento profissional), caracterizada por Christina Maslach por três dimensões: **exaustão emocional** (sentir-se esgotado), **despersonalização/cinismo** (atitude distante e endurecida em relação ao trabalho e às pessoas atendidas) e **redução da realização pessoal** (sensação de incompetência) [@maslach2001]. O burnout foi reconhecido pela CID-11 como **fenômeno ocupacional** (não um transtorno mental), e é especialmente prevalente em profissões de cuidado — saúde, educação — onde a demanda emocional é alta.
+
+::: {.na-pratica}
+💡 **Prevenir burnout é organizacional, não só individual.** A tentação é tratar o esgotamento como problema do indivíduo ("faça yoga, gerencie seu tempo"). A evidência mostra o contrário: as causas mais fortes do burnout são **organizacionais** — sobrecarga crônica, falta de controle, recompensa insuficiente, injustiça, valores em conflito, ruptura da comunidade de trabalho [@maslach2001]. Intervenções que só pedem resiliência ao trabalhador, sem mudar as condições, transferem a ele a culpa por um problema que é do sistema. A prevenção eficaz combina os dois níveis — mas começa pela organização.
+:::
+
+## A POT no Brasil e as fronteiras do trabalho
+
+No Brasil, a psicologia organizacional foi historicamente uma das primeiras áreas de emprego da profissão, ligada a recrutamento e seleção. O campo hoje amplia-se para a **saúde do trabalhador** (com forte diálogo com a legislação trabalhista e as normas sobre riscos psicossociais), a qualidade de vida no trabalho, a diversidade e inclusão, e as transformações do mundo laboral: o **trabalho remoto**, a **precarização** e a **uberização** (trabalho por plataformas, sem vínculo), a automação e a inteligência artificial. Essas mudanças reabrem, em novos termos, a tensão fundadora do campo — entre a produtividade que a organização busca e a dignidade e a saúde de quem trabalha —, exigindo da POT um compromisso ético, e não apenas técnico, com o bem-estar do trabalhador.
+
+::: {.callout-sintese}
+- A POT nasce da reação à **administração científica** [@taylor1911]; os **estudos de Hawthorne** [@roethlisberger_dickson1939] revelaram o peso dos fatores sociais e batizaram o **efeito Hawthorne**.
+- Dois eixos: **psicologia do pessoal** (seleção, avaliação — entrevistas estruturadas e testes cognitivos são os melhores preditores [@schmidt_hunter1998]) e **comportamento organizacional**.
+- Motivação: **dois fatores** de Herzberg [@herzberg1959], **fixação de metas** específicas e desafiadoras [@locke_latham2002], **características do cargo** [@hackman_oldham1976].
+- Liderança **transformacional** supera a transacional [@bass1985]; **engajamento** é mais que satisfação.
+- **Estresse ocupacional** cresce com alta demanda e baixo controle [@karasek1979]; o **burnout** tem três dimensões [@maslach2001] e causas sobretudo **organizacionais**.
+- No Brasil, o campo enfrenta a precarização, a uberização e a saúde mental no trabalho.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Efeito Hawthorne**
+:   Alteração do comportamento (em geral, melhora do desempenho) decorrente do fato de a pessoa saber-se observada.
+
+**Psicologia do pessoal**
+:   Eixo da POT voltado a seleção, avaliação, treinamento e à relação pessoa-cargo.
+
+**Comportamento organizacional**
+:   Eixo da POT voltado aos processos coletivos: motivação, liderança, cultura, grupos.
+
+**Teoria da fixação de metas**
+:   Proposição de que metas específicas e desafiadoras, aceitas e com *feedback*, elevam o desempenho [@locke_latham2002].
+
+**Liderança transformacional**
+:   Estilo que inspira e estimula os liderados por meio de visão e significado, associado a melhores resultados [@bass1985].
+
+**Burnout**
+:   Síndrome de esgotamento profissional com exaustão, cinismo e redução da realização pessoal [@maslach2001].
+
+**Modelo demanda-controle**
+:   Modelo segundo o qual o estresse ocupacional é maior em cargos de alta demanda e baixo controle [@karasek1979].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que os estudos de Hawthorne descobriram e por que reorientaram a psicologia do trabalho? Defina o efeito Hawthorne.
+
+2. **(Conceitual.)** Distinga os fatores higiênicos dos motivadores de Herzberg. Por que aumentar o salário pode reduzir a insatisfação sem gerar satisfação?
+
+3. **(Conceitual.)** Explique as cinco características do cargo do modelo de Hackman e Oldham. Como um gestor poderia "enriquecer" um trabalho monótono?
+
+4. **(Reflexão crítica.)** Descreva as três dimensões do burnout. Por que tratá-lo apenas como falta de resiliência individual é um erro?
+
+5. **(Integração.)** Compare liderança transacional e transformacional. Relacione a segunda com a teoria da fixação de metas e o engajamento.
+
+6. **(Reflexão crítica.)** Como a uberização e o trabalho por plataformas reabrem a tensão histórica entre produtividade e dignidade? Que papel a POT pode ter nesse debate?
