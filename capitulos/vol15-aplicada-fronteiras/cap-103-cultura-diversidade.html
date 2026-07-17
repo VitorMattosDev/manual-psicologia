@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#cultura-como-variável-psicológica" id="toc-cultura-como-variável-psicológica" class="nav-link active" data-scroll-target="#cultura-como-variável-psicológica">Cultura como variável psicológica</a></li>
+  <li><a href="#o-problema-weird" id="toc-o-problema-weird" class="nav-link" data-scroll-target="#o-problema-weird">O problema WEIRD</a></li>
+  <li><a href="#self-independente-e-interdependente" id="toc-self-independente-e-interdependente" class="nav-link" data-scroll-target="#self-independente-e-interdependente">Self independente e interdependente</a></li>
+  <li><a href="#viés-cultural-na-avaliação-e-competência-cultural" id="toc-viés-cultural-na-avaliação-e-competência-cultural" class="nav-link" data-scroll-target="#viés-cultural-na-avaliação-e-competência-cultural">Viés cultural na avaliação e competência cultural</a></li>
+  <li><a href="#diversidade-decolonialidade-e-brasil" id="toc-diversidade-decolonialidade-e-brasil" class="nav-link" data-scroll-target="#diversidade-decolonialidade-e-brasil">Diversidade, decolonialidade e Brasil</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +745,504 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Explicar</strong> por que a cultura é uma variável psicológica central e o que é a psicologia transcultural.</li>
+<li><strong>Distinguir</strong> as abordagens <strong>emic</strong> e <strong>etic</strong> e o debate universalismo × relativismo.</li>
+<li><strong>Analisar</strong> o problema das amostras <strong>WEIRD</strong> e seu impacto sobre a validade da psicologia.</li>
+<li><strong>Comparar</strong> as construções independente e interdependente do self (individualismo × coletivismo).</li>
+<li><strong>Reconhecer</strong> o viés cultural na avaliação psicológica e o conceito de competência cultural.</li>
+<li><strong>Situar</strong> a diversidade e a perspectiva decolonial no contexto brasileiro.</li>
+</ul>
 </div>
+<p>Toda a psicologia examinada neste manual pretende dizer algo sobre “o ser humano”. Mas de qual ser humano? Este capítulo confronta a disciplina com uma questão desconfortável e fecunda: quanto do que a psicologia descreve é <strong>universal</strong> e quanto é produto de uma <strong>cultura</strong> específica? A <strong>psicologia transcultural</strong> (ou intercultural) estuda como a cultura molda o comportamento e os processos mentais, e testa se as teorias psicológicas — quase todas formuladas no Ocidente — valem para o resto da humanidade. É, ao mesmo tempo, um campo aplicado e um exercício de autocrítica da ciência psicológica.</p>
+<section id="cultura-como-variável-psicológica" class="level2">
+<h2 class="anchored" data-anchor-id="cultura-como-variável-psicológica">Cultura como variável psicológica</h2>
+<p>Por muito tempo, a psicologia tratou a cultura como ruído a ser controlado — uma variação superficial sobre uma natureza humana única e universal. A psicologia transcultural inverte a lente: a cultura não é o cenário onde a mente atua, mas parte constitutiva de como ela se forma. Da percepção à emoção, da memória ao senso de self, muitos processos que pareciam “naturais” mostram-se moldados pela cultura em que a pessoa se desenvolve — retomando, em escala aplicada, a grande questão <em>natureza × cultura</em> do Cap. 2 e a perspectiva sociocultural de Vygotsky (Cap. 59).</p>
+<p>Uma distinção metodológica organiza o campo. A abordagem <strong>etic</strong> busca <strong>universais</strong> — dimensões que se aplicam a todas as culturas e permitem compará-las (por exemplo, todas têm alguma forma de emoção de medo). A abordagem <strong>emic</strong> busca compreender cada cultura <strong>a partir de dentro</strong>, em seus próprios termos e categorias, sem impor conceitos externos. O erro clássico é o <strong>etic imposto</strong>: tomar um conceito local (ocidental) como se fosse universal e “encontrá-lo” em toda parte porque é isso que os instrumentos procuram. A boa psicologia transcultural transita entre as duas lentes.</p>
+</section>
+<section id="o-problema-weird" class="level2">
+<h2 class="anchored" data-anchor-id="o-problema-weird">O problema WEIRD</h2>
+<p>A autocrítica mais contundente veio em 2010, e abalou as pretensões de universalidade da disciplina.</p>
+<div class="experimento">
+<p>🔬 <strong>Análise Clássica — as amostras WEIRD</strong> <span class="citation" data-cites="henrich2010">(<a href="../../referencias.html#ref-henrich2010" role="doc-biblioref">Henrich; Heine; Norenzayan, 2010</a>)</span></p>
+<p><strong>O achado.</strong> Joseph Henrich e colaboradores revisaram a base empírica das principais revistas de psicologia e constataram que a esmagadora maioria dos participantes — algo como 96% — vinha de sociedades <strong>WEIRD</strong>: <em>Western, Educated, Industrialized, Rich, Democratic</em> (ocidentais, escolarizadas, industrializadas, ricas, democráticas). Boa parte, de estudantes universitários norte-americanos.</p>
+<p><strong>O problema.</strong> Essas amostras representam uma fração minúscula e <strong>atípica</strong> da humanidade. Ao comparar populações, os autores mostraram que os participantes WEIRD estão, em vários domínios — percepção visual (ilusões de ótica), raciocínio, cooperação, noções de justiça, senso de self —, entre os <strong>mais extremos</strong> do planeta, e não no “centro” da natureza humana.</p>
+<p><strong>A implicação.</strong> Generalizar da psicologia de estudantes ocidentais para “o ser humano” é uma inferência arriscada. Muitas “leis” da psicologia podem ser, na verdade, particularidades de uma cultura específica.</p>
+<p><strong>Limitações.</strong> O artigo não afirma que <em>nada</em> se generaliza — alguns processos são de fato universais. Ele exige que a universalidade seja <strong>demonstrada</strong>, não presumida. O efeito foi profundo: hoje, a representatividade das amostras é uma exigência crescente de qualidade.</p>
+</div>
+<p>O problema WEIRD conecta-se diretamente à crise de replicabilidade (Cap. 105): uma ciência construída sobre amostras estreitas produz conclusões frágeis. E tem implicação prática imediata para o Brasil, cuja população difere enormemente das amostras que fundam grande parte da literatura importada.</p>
+</section>
+<section id="self-independente-e-interdependente" class="level2">
+<h2 class="anchored" data-anchor-id="self-independente-e-interdependente">Self independente e interdependente</h2>
+<p>O exemplo mais estudado de variação cultural profunda diz respeito ao <strong>self</strong>. Markus e Kitayama propuseram que culturas diferem na construção da pessoa <span class="citation" data-cites="markus_kitayama1991">(<a href="../../referencias.html#ref-markus_kitayama1991" role="doc-biblioref">Markus; Kitayama, 1991</a>)</span> (<a href="#fig-self-cultural" class="quarto-xref">Figura&nbsp;<span>103.1</span></a>). Em culturas <strong>individualistas</strong> (grande parte do Ocidente), predomina o self <strong>independente</strong>: a pessoa é concebida como uma unidade autônoma, definida por atributos internos (traços, preferências, objetivos), e o valor está em ser único, expressar-se e realizar-se. Em culturas <strong>coletivistas</strong> (grande parte da Ásia, África, América Latina), predomina o self <strong>interdependente</strong>: a pessoa se define pelas relações, papéis e grupos a que pertence, e o valor está na harmonia, no pertencimento e no ajuste ao coletivo.</p>
+<p>Essa diferença não é abstrata: modula a motivação (autorrealização × dever para com o grupo), a emoção (orgulho × emoções relacionais como o respeito), a cognição (atenção analítica a objetos × holística a contextos) e até a saúde mental e a psicoterapia. Uma terapia que pressupõe autonomia e assertividade como metas — valores individualistas — pode não fazer sentido, ou até causar dano, num contexto interdependente.</p>
+<div id="fig-self-cultural" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-self-cultural-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Dois diagramas lado a lado. À esquerda, self independente: um círculo central separado de outros círculos. À direita, self interdependente: um círculo central sobreposto e ligado a outros círculos." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="305.156563pt" height="150.654446pt" viewbox="-68.014948 -68.014942 305.156563 150.654446">
+<defs>
+<path id="tz_self_cultural_g0-69" d="M5.6-1.875965H5.160648C4.972354-.878705 4.672478-.390535 3.472976-.390535H2.196762V-2.259527H2.657036C3.249813-2.259527 3.452055-2.099128 3.452055-1.492403H3.891407V-3.417186H3.452055C3.452055-2.817435 3.256787-2.650062 2.657036-2.650062H2.196762V-4.344707H3.403238C4.379577-4.344707 4.777086-4.072727 4.916563-3.068493H5.355915L5.118804-4.735243H.397509V-4.344707H1.143711V-.390535H.397509V0H5.244334L5.6-1.875965Z"></path>
+<path id="tz_self_cultural_g0-85" d="M5.718555-4.219178C5.718555-4.33076 5.725529-4.337733 5.739477-4.351681C5.802242-4.393524 6.150934-4.393524 6.23462-4.393524H6.464757V-4.78406C6.374097-4.777086 5.739477-4.756164 5.474471-4.756164C5.202491-4.756164 4.546949-4.78406 4.47721-4.78406V-4.393524H4.707347C4.811955-4.393524 4.951432-4.38655 5.05604-4.379577C5.216438-4.365629 5.223412-4.358655 5.223412-4.219178V-1.63188C5.223412-.599751 4.379577-.306849 3.584558-.306849C2.280448-.306849 2.196762-1.101868 2.196762-1.590037V-4.393524H2.942964V-4.78406C2.782565-4.770112 1.785305-4.756164 1.673724-4.756164C1.520299-4.756164 .550934-4.770112 .397509-4.78406V-4.393524H1.143711V-1.610959C1.143711-.739228 1.889913 .083686 3.556663 .083686C5.118804 .083686 5.718555-.795019 5.718555-1.603985V-4.219178Z"></path>
+<path id="tz_self_cultural_g0-101" d="M3.598506-1.45056C3.744956-1.45056 3.84259-1.45056 3.84259-1.659776C3.84259-1.862017 3.793773-2.385056 3.459029-2.726775C3.082441-3.103362 2.566376-3.159153 2.182814-3.159153C.892653-3.159153 .278954-2.39203 .278954-1.569116C.278954-.739228 .920548 .041843 2.30137 .041843C2.552428 .041843 2.956912 .013948 3.305604-.174346C3.717061-.390535 3.84259-.72528 3.84259-.795019C3.84259-.948443 3.689166-.948443 3.619427-.948443C3.493898-.948443 3.459029-.941469 3.403238-.829888C3.152179-.313823 2.517559-.313823 2.399004-.313823C1.297136-.313823 1.262267-1.129763 1.248319-1.45056H3.598506ZM1.248319-1.743462C1.255293-2.015442 1.290162-2.838356 2.189788-2.838356S3.138232-2.043337 3.152179-1.743462H1.248319Z"></path>
+<path id="tz_self_cultural_g0-117" d="M2.915068-3.082441V-2.691905C3.326526-2.691905 3.382316-2.691905 3.382316-2.419925V-1.129763C3.382316-.550934 2.93599-.278954 2.405978-.278954C1.806227-.278954 1.799253-.432379 1.799253-.767123V-3.138232L.446326-3.082441V-2.691905C.857783-2.691905 .913574-2.691905 .913574-2.419925V-.843836C.913574-.034869 1.687671 .041843 2.287422 .041843C2.517559 .041843 3.033624 .041843 3.431133-.4533V.041843L4.735243 0V-.390535C4.323786-.390535 4.267995-.390535 4.267995-.662516V-3.138232L2.915068-3.082441Z"></path>
+<path id="tz_self_cultural_g1-83" d="M2.411955-3.990037C1.506351-4.187298 1.479452-4.788045 1.479452-4.913574C1.479452-5.334994 1.75741-5.855044 2.663014-5.855044C4.079701-5.855044 4.42939-4.886675 4.52802-4.294894C4.554919-4.151432 4.554919-4.1066 4.761146-4.1066C4.985305-4.1066 4.994271-4.151432 4.994271-4.366625V-5.998506C4.994271-6.1599 4.994271-6.258531 4.814944-6.258531C4.734247-6.258531 4.72528-6.249564 4.617684-6.150934L4.223163-5.76538C3.721046-6.1599 3.138232-6.258531 2.654047-6.258531C1.219427-6.258531 .591781-5.352927 .591781-4.456289C.591781-3.81071 .959402-3.398257 1.0401-3.308593C1.53325-2.815442 1.829141-2.752677 2.761644-2.555417C2.905106-2.528518 3.048568-2.501619 3.183064-2.465753C3.71208-2.358157 3.864508-2.331258 4.160399-2.026401C4.169365-2.008468 4.402491-1.766376 4.402491-1.371856C4.402491-1.192528 4.348692-.331756 3.19203-.331756C2.654047-.331756 1.120797-.430386 1.049066-1.829141C1.0401-1.990535 1.0401-2.044334 .824907-2.044334C.591781-2.044334 .591781-1.990535 .591781-1.775342V-.152428C.591781 .008966 .591781 .107597 .771108 .107597C.842839 .107597 .860772 .107597 .941469 .026899C.995268-.008966 1.192528-.233126 1.362889-.376588C1.909838 .017933 2.707846 .107597 3.200996 .107597C4.716314 .107597 5.290162-.896638 5.290162-1.820174C5.290162-2.788543 4.563885-3.532752 3.71208-3.71208L2.411955-3.990037Z"></path>
+<path id="tz_self_cultural_g1-100" d="M3.299626-6.150934V-5.711582C3.837609-5.711582 3.90934-5.711582 3.90934-5.361893V-3.631382C3.514819-3.918306 3.0934-4.034869 2.663014-4.034869C1.201494-4.034869 .349689-3.147198 .349689-1.990535C.349689-.798007 1.192528 .053798 2.555417 .053798C3.120299 .053798 3.568618-.161395 3.855542-.394521V.053798L5.514321 0V-.439352C4.976339-.439352 4.904608-.439352 4.904608-.789041V-6.222665L3.299626-6.150934ZM3.855542-.977335C3.658281-.663512 3.227895-.304857 2.654047-.304857C1.542217-.304857 1.542217-1.380822 1.542217-1.972603C1.542217-2.492653 1.551183-2.878207 1.784309-3.209963C2.017435-3.568618 2.447821-3.676214 2.761644-3.676214C3.209963-3.676214 3.577584-3.478954 3.855542-3.129265V-.977335Z"></path>
+<path id="tz_self_cultural_g1-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_self_cultural_g1-102" d="M2.080199-3.541719H3.147198V-3.981071H2.026401V-4.868742C2.026401-5.846077 2.725778-5.917808 2.949938-5.917808C2.976837-5.917808 3.066501-5.917808 3.066501-5.899875C3.066501-5.890909 3.066501-5.881943 3.048568-5.86401C2.949938-5.747447 2.905106-5.621918 2.905106-5.478456C2.905106-5.101868 3.209963-4.904608 3.469988-4.904608C3.765878-4.904608 4.043836-5.119801 4.043836-5.478456C4.043836-5.881943 3.694147-6.276463 2.99477-6.276463C2.0533-6.276463 1.084932-5.872976 1.084932-4.868742V-3.981071H.394521V-3.541719H1.084932V-.439352H.475218V0C1.13873-.026899 1.192528-.026899 1.622914-.026899C1.847073-.026899 2.367123-.026899 2.842341 0V-.439352H2.080199V-3.541719Z"></path>
+<path id="tz_self_cultural_g1-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_self_cultural_g1-108" d="M2.071233-6.222665L.466252-6.150934V-5.711582C1.004234-5.711582 1.075965-5.711582 1.075965-5.361893V-.439352H.466252V0C1.075965-.026899 1.183562-.026899 1.569116-.026899C1.963636-.026899 2.196762-.017933 2.680946 0V-.439352H2.071233V-6.222665Z"></path>
+<path id="tz_self_cultural_g1-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_self_cultural_g1-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_self_cultural_g1-114" d="M1.972603-1.95467C1.972603-2.609215 2.214695-3.649315 3.084433-3.676214C2.985803-3.577584 2.940971-3.425156 2.940971-3.281694C2.940971-2.887173 3.254795-2.707846 3.505853-2.707846C3.792777-2.707846 4.079701-2.905106 4.079701-3.281694C4.079701-3.738979 3.61345-4.034869 3.084433-4.034869C2.456787-4.034869 2.071233-3.577584 1.873973-3.057534H1.865006V-4.034869L.367621-3.963138V-3.523786C.905604-3.523786 .977335-3.523786 .977335-3.174097V-.439352H.367621V0C1.031133-.026899 1.084932-.026899 1.515318-.026899C1.739477-.026899 2.259527-.026899 2.734745 0V-.439352H1.972603V-1.95467Z"></path>
+<path id="tz_self_cultural_g1-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+<path id="tz_self_cultural_g2-111" d="M3.063512-1.061021C3.063512-1.683686 2.475716-2.231631 1.693649-2.231631S.323786-1.683686 .323786-1.061021C.323786-.463263 .916563 .054795 1.693649 .054795C2.475716 .054795 3.063512-.463263 3.063512-1.061021ZM1.693649-.124533C.821918-.124533 .821918-.86675 .821918-1.110834C.821918-1.334994 .821918-2.067248 1.693649-2.067248S2.56538-1.334994 2.56538-1.110834C2.56538-.86675 2.56538-.124533 1.693649-.124533Z"></path>
+<path id="tz_self_cultural_g2-114" d="M1.215442-1.115816C1.215442-1.579078 1.479452-2.027397 1.952677-2.03736C1.947696-2.032379 1.882939-1.967621 1.882939-1.858032C1.882939-1.678705 2.022416-1.603985 2.132005-1.603985C2.256538-1.603985 2.386052-1.688667 2.386052-1.858032C2.386052-2.047323 2.206725-2.201743 1.942715-2.201743C1.693649-2.201743 1.374844-2.072229 1.180573-1.653798H1.175592V-2.201743L.37858-2.146949V-1.927771C.747198-1.927771 .79203-1.892902 .79203-1.648817V-.418431C.79203-.26401 .79203-.219178 .468244-.219178H.37858V0C.587796-.014944 .811955-.019925 1.021171-.019925C1.280199-.019925 1.524284-.009963 1.733499 0V-.219178H1.599004C1.215442-.219178 1.215442-.268991 1.215442-.423412V-1.115816Z"></path>
+<path id="tz_self_cultural_g2-116" d="M1.225405-1.927771H2.107098V-2.146949H1.225405V-3.063512H1.016189C1.011208-2.595268 .762142-2.107098 .254047-2.092154V-1.927771H.782067V-.627646C.782067-.059776 1.250311 .054795 1.559153 .054795C1.932752 .054795 2.211706-.219178 2.211706-.627646V-.901619H2.002491V-.64259C2.002491-.268991 1.783313-.124533 1.608966-.124533C1.225405-.124533 1.225405-.523039 1.225405-.627646V-1.927771Z"></path>
+<path id="tz_self_cultural_g2-117" d="M2.132005-2.146949V-1.927771C2.500623-1.927771 2.545455-1.892902 2.545455-1.648817V-.836862C2.545455-.37858 2.201743-.109589 1.793275-.109589C1.285181-.109589 1.265255-.313823 1.265255-.56787V-2.201743L.408468-2.146949V-1.927771C.79203-1.927771 .821918-1.88792 .821918-1.633873V-.547945C.86675 .009963 1.429639 .054795 1.753425 .054795C2.171856 .054795 2.41594-.134496 2.56538-.368618V.054795L3.402242 0V-.219178C3.033624-.219178 2.988792-.254047 2.988792-.498132V-2.201743L2.132005-2.146949Z"></path>
+</defs>
+<g id="tz_self_cultural_page1">
+<g stroke-miterlimit="10" transform="translate(-3.127463,10.156736)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g transform="translate(-41.35603,68.88185)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g1-83"></use>
+<use x="2.767026" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="7.63553" y="10.156736" href="#tz_self_cultural_g1-108"></use>
+<use x="10.582779" y="10.156736" href="#tz_self_cultural_g1-102"></use>
+<use x="17.361449" y="10.156736" href="#tz_self_cultural_g1-105"></use>
+<use x="20.308698" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="26.203186" y="10.156736" href="#tz_self_cultural_g1-100"></use>
+<use x="32.097674" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="36.966179" y="10.156736" href="#tz_self_cultural_g1-112"></use>
+<use x="43.155399" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="48.023904" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="53.918392" y="10.156736" href="#tz_self_cultural_g1-100"></use>
+<use x="59.812881" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="64.681385" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="70.281126" y="10.156736" href="#tz_self_cultural_g1-116"></use>
+<use x="74.407267" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M27.03001 0C27.03001 14.92845 14.92845 27.03001 0 27.03001S-27.03001 14.92845-27.03001 0S-14.92845-27.03001 0-27.03001S27.03001-14.92845 27.03001 0ZM0 0" fill="none"></path>
+<g transform="translate(-6.40276,-2.40138)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g0-69"></use>
+<use x="2.761557" y="10.156736" href="#tz_self_cultural_g0-85"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M64.93082 28.45274C64.93082 37.0956 57.92458 44.10184 49.28172 44.10184C40.63887 44.10184 33.63263 37.0956 33.63263 28.45274C33.63263 19.80989 40.63887 12.80365 49.28172 12.80365C57.92458 12.80365 64.93082 19.80989 64.93082 28.45274ZM49.28172 28.45274" fill="none"></path>
+<g transform="translate(41.2955,26.91505)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M15.6491 56.90549C15.6491 65.54834 8.64285 72.55458 0 72.55458S-15.6491 65.54834-15.6491 56.90549C-15.6491 48.26263-8.64285 41.2564 0 41.2564S15.6491 48.26263 15.6491 56.90549ZM0 56.90549" fill="none"></path>
+<g transform="translate(-7.98622,55.3678)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-33.63263 28.45274C-33.63263 37.0956-40.63887 44.10184-49.28172 44.10184C-57.92458 44.10184-64.93082 37.0956-64.93082 28.45274C-64.93082 19.80989-57.92458 12.80365-49.28172 12.80365C-40.63887 12.80365-33.63263 19.80989-33.63263 28.45274ZM-49.28172 28.45274" fill="none"></path>
+<g transform="translate(-57.26794,26.91505)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-33.63263-28.45274C-33.63263-19.80989-40.63887-12.80365-49.28172-12.80365C-57.92458-12.80365-64.93082-19.80989-64.93082-28.45274C-64.93082-37.0956-57.92458-44.10184-49.28172-44.10184C-40.63887-44.10184-33.63263-37.0956-33.63263-28.45274ZM-49.28172-28.45274" fill="none"></path>
+<g transform="translate(-57.26794,-29.99043)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M15.6491-56.90549C15.6491-48.26263 8.64285-41.2564 0-41.2564S-15.6491-48.26263-15.6491-56.90549C-15.6491-65.54834-8.64285-72.55458 0-72.55458S15.6491-65.54834 15.6491-56.90549ZM0-56.90549" fill="none"></path>
+<g transform="translate(-7.98622,-58.44318)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M64.93082-28.45274C64.93082-19.80989 57.92458-12.80365 49.28172-12.80365C40.63887-12.80365 33.63263-19.80989 33.63263-28.45274C33.63263-37.0956 40.63887-44.10184 49.28172-44.10184C57.92458-44.10184 64.93082-37.0956 64.93082-28.45274ZM49.28172-28.45274" fill="none"></path>
+<g transform="translate(41.2955,-29.99043)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(139.86957,68.88185)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g1-83"></use>
+<use x="2.767026" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="7.63553" y="10.156736" href="#tz_self_cultural_g1-108"></use>
+<use x="10.582779" y="10.156736" href="#tz_self_cultural_g1-102"></use>
+<use x="17.361449" y="10.156736" href="#tz_self_cultural_g1-105"></use>
+<use x="20.308698" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="25.908439" y="10.156736" href="#tz_self_cultural_g1-116"></use>
+<use x="30.034579" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="34.903084" y="10.156736" href="#tz_self_cultural_g1-114"></use>
+<use x="39.27971" y="10.156736" href="#tz_self_cultural_g1-100"></use>
+<use x="45.174198" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="50.042703" y="10.156736" href="#tz_self_cultural_g1-112"></use>
+<use x="56.231923" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="61.100428" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="66.994916" y="10.156736" href="#tz_self_cultural_g1-100"></use>
+<use x="72.889404" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+<use x="77.757909" y="10.156736" href="#tz_self_cultural_g1-110"></use>
+<use x="83.35765" y="10.156736" href="#tz_self_cultural_g1-116"></use>
+<use x="87.483791" y="10.156736" href="#tz_self_cultural_g1-101"></use>
+</g>
+</g>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M240.9701 19.20569C240.9701 30.20558 232.05316 39.12251 221.05327 39.12251S201.13644 30.20558 201.13644 19.20569S210.05338-.71114 221.05327-.71114S240.9701 8.2058 240.9701 19.20569ZM221.05327 19.20569"></path>
+<g transform="translate(213.06705,17.668)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0L221.05327 19.20569" fill="none"></path>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M207.70518 38.41138C207.70518 49.41127 198.78825 58.3282 187.78836 58.3282S167.87154 49.41127 167.87154 38.41138C167.87154 27.41148 176.78847 18.49455 187.78836 18.49455S207.70518 27.41148 207.70518 38.41138ZM187.78836 38.41138"></path>
+<g transform="translate(179.80214,36.87369)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0V38.41138" fill="none"></path>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M174.44028 19.20569C174.44028 30.20558 165.52335 39.12251 154.52345 39.12251C143.52356 39.12251 134.60663 30.20558 134.60663 19.20569S143.52356-.71114 154.52345-.71114C165.52335-.71114 174.44028 8.2058 174.44028 19.20569ZM154.52345 19.20569"></path>
+<g transform="translate(146.53723,17.668)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0L154.52345 19.20569" fill="none"></path>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M174.44028-19.20569C174.44028-8.2058 165.52335 .71114 154.52345 .71114C143.52356 .71114 134.60663-8.2058 134.60663-19.20569S143.52356-39.12251 154.52345-39.12251C165.52335-39.12251 174.44028-30.20558 174.44028-19.20569ZM154.52345-19.20569"></path>
+<g transform="translate(146.53723,-20.74338)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0L154.52345-19.20569" fill="none"></path>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M207.70518-38.41138C207.70518-27.41148 198.78825-18.49455 187.78836-18.49455S167.87154-27.41148 167.87154-38.41138C167.87154-49.41127 176.78847-58.3282 187.78836-58.3282S207.70518-49.41127 207.70518-38.41138ZM187.78836-38.41138"></path>
+<g transform="translate(179.80214,-39.94907)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0V-38.41138" fill="none"></path>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M240.9701-19.20569C240.9701-8.2058 232.05316 .71114 221.05327 .71114S201.13644-8.2058 201.13644-19.20569S210.05338-39.12251 221.05327-39.12251S240.9701-30.20558 240.9701-19.20569ZM221.05327-19.20569"></path>
+<g transform="translate(213.06705,-20.74338)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+<use x=".262658" y="10.156736" href="#tz_self_cultural_g2-117"></use>
+<use x="3.99871" y="10.156736" href="#tz_self_cultural_g2-116"></use>
+<use x="6.696965" y="10.156736" href="#tz_self_cultural_g2-114"></use>
+<use x="9.395219" y="10.156736" href="#tz_self_cultural_g2-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,1.0" stroke-dashoffset="0.0">
+<path d="M187.78836 0L221.05327-19.20569" fill="none"></path>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#256d0e" stroke="#256d0e">
+<g fill="#fff">
+<path d="M210.55063 0C210.55063 12.57141 200.35977 22.76227 187.78836 22.76227S165.0261 12.57141 165.0261 0S175.21695-22.76227 187.78836-22.76227S210.55063-12.57141 210.55063 0ZM187.78836 0"></path>
+<g transform="translate(183.20122,-1.55554)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-3.127463,10.156736)scale(-1,-1)">
+<g fill="#256d0e">
+<g stroke="none">
+<g fill="#266d0e">
+<use x="-3.127463" y="10.156736" href="#tz_self_cultural_g0-101"></use>
+<use x="1.003576" y="10.156736" href="#tz_self_cultural_g0-117"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-self-cultural-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;103.1: Construções culturais do self <span class="citation" data-cites="markus_kitayama1991">(<a href="../../referencias.html#ref-markus_kitayama1991" role="doc-biblioref">Markus; Kitayama, 1991</a>)</span>: no self independente, a pessoa é autônoma e separada; no interdependente, define-se pelas relações que a constituem.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="viés-cultural-na-avaliação-e-competência-cultural" class="level2">
+<h2 class="anchored" data-anchor-id="viés-cultural-na-avaliação-e-competência-cultural">Viés cultural na avaliação e competência cultural</h2>
+<p>A variação cultural tem consequência técnica direta na <strong>avaliação psicológica</strong>. Um teste desenvolvido e normatizado numa cultura pode ser <strong>enviesado</strong> em outra: itens que pressupõem conhecimentos, valores ou estilos de resposta específicos penalizam quem vem de outro contexto — problema já apontado para os testes de inteligência (Cap. 50) e para a neuropsicologia (Cap. 99). Aplicar um instrumento a uma população para a qual não foi adaptado e validado produz medidas inválidas e diagnósticos injustos. Daí a exigência ética e científica de <strong>adaptação transcultural</strong> cuidadosa, e não mera tradução.</p>
+<p>No plano da intervenção, o conceito-chave é a <strong>competência cultural</strong>: a capacidade do profissional de compreender e respeitar o contexto cultural do cliente, reconhecer os próprios vieses e adaptar a prática — sem cair no extremo oposto do estereótipo (“todo membro do grupo X pensa assim”). A competência cultural é hoje parte das diretrizes éticas da profissão em vários países, e responde a uma verdade simples: não existe intervenção culturalmente neutra.</p>
+<div class="atencao">
+<p>⚠️ <strong>Universalismo e relativismo: evitar os dois extremos.</strong> O campo navega entre dois riscos. O <strong>universalismo ingênuo</strong> presume que categorias ocidentais (inclusive de transtorno mental) valem para todos, ignorando <strong>síndromes culturalmente moldadas</strong> e impondo um único modelo de normalidade — um resquício etnocêntrico e, historicamente, colonial. O <strong>relativismo radical</strong>, no extremo oposto, nega qualquer universal e torna impossível comparar culturas ou defender direitos humanos transculturais (não se pode chamar nada de “errado” em nenhuma cultura). A posição madura é o <strong>universalismo relativo</strong>: há processos psicológicos universais, mas eles se <strong>expressam</strong> de formas culturalmente específicas — e distinguir a estrutura universal da manifestação cultural é a tarefa científica central.</p>
+</div>
+</section>
+<section id="diversidade-decolonialidade-e-brasil" class="level2">
+<h2 class="anchored" data-anchor-id="diversidade-decolonialidade-e-brasil">Diversidade, decolonialidade e Brasil</h2>
+<p>O escopo da psicologia da diversidade vai além da comparação entre nações: inclui as diferenças <strong>dentro</strong> de cada sociedade — de raça, etnia, gênero, orientação sexual, classe, religião, deficiência — e o modo como relações de poder atravessam a experiência psicológica. Um movimento crescente, a <strong>psicologia decolonial</strong>, critica o caráter eurocêntrico da disciplina e busca valorizar saberes e formas de cuidado de povos historicamente subalternizados.</p>
+<p>No Brasil, esse debate é incontornável. O país é profundamente diverso e desigual, e a psicologia tem se confrontado com o <strong>racismo</strong> e seus efeitos sobre a saúde mental, com os saberes e a saúde dos <strong>povos indígenas</strong> e das <strong>comunidades tradicionais</strong> (a “psicologia dos povos”), com as questões de <strong>gênero e sexualidade</strong> — em que o CFP tem posição firme contra a patologização da homossexualidade e as “terapias de conversão” (Cap. 90) — e com a <strong>religiosidade</strong> afro-brasileira e popular como dimensão de sentido e cuidado. A psicologia brasileira contemporânea reconhece que uma ciência formulada em amostras WEIRD não pode ser importada acriticamente: precisa ser <strong>recontextualizada</strong>, dialogar com a realidade nacional e assumir um compromisso com a equidade. É a lição de fundo deste capítulo — que a universalidade da mente humana convive com a irredutível diversidade de suas formas.</p>
+<div class="callout-sintese">
+<ul>
+<li>A <strong>psicologia transcultural</strong> estuda como a cultura molda a mente e testa a universalidade das teorias psicológicas.</li>
+<li>Abordagens <strong>emic</strong> (de dentro) × <strong>etic</strong> (universal); o erro é o <strong>etic imposto</strong>.</li>
+<li>O problema <strong>WEIRD</strong> <span class="citation" data-cites="henrich2010">(<a href="../../referencias.html#ref-henrich2010" role="doc-biblioref">Henrich; Heine; Norenzayan, 2010</a>)</span>: ~96% dos participantes vêm de sociedades atípicas, minando generalizações sobre “o ser humano”.</li>
+<li>Culturas diferem na construção do <strong>self</strong>: <strong>independente</strong> (individualista) × <strong>interdependente</strong> (coletivista) <span class="citation" data-cites="markus_kitayama1991">(<a href="../../referencias.html#ref-markus_kitayama1991" role="doc-biblioref">Markus; Kitayama, 1991</a>)</span>, com efeitos sobre motivação, emoção, cognição e terapia.</li>
+<li>Testes podem ser <strong>enviesados</strong> entre culturas; a resposta é a <strong>adaptação transcultural</strong> e a <strong>competência cultural</strong> do profissional.</li>
+<li>Entre <strong>universalismo ingênuo</strong> e <strong>relativismo radical</strong>, a posição madura é o <strong>universalismo relativo</strong>.</li>
+<li>No Brasil, a <strong>psicologia decolonial</strong> e da diversidade enfrenta racismo, questões de gênero, saberes indígenas e a recontextualização de uma ciência importada.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Psicologia transcultural</strong></dt>
+<dd>
+Campo que estuda como a cultura molda o comportamento e testa a validade transcultural das teorias psicológicas.
+</dd>
+<dt><strong>Emic × etic</strong></dt>
+<dd>
+Abordar uma cultura a partir de suas próprias categorias (emic) versus por dimensões universais comparáveis (etic).
+</dd>
+<dt><strong>Amostras WEIRD</strong></dt>
+<dd>
+Participantes de sociedades ocidentais, escolarizadas, industrializadas, ricas e democráticas — atípicas e sobre-representadas <span class="citation" data-cites="henrich2010">(<a href="../../referencias.html#ref-henrich2010" role="doc-biblioref">Henrich; Heine; Norenzayan, 2010</a>)</span>.
+</dd>
+<dt><strong>Self independente × interdependente</strong></dt>
+<dd>
+Construção da pessoa como unidade autônoma (individualismo) versus definida pelas relações (coletivismo) <span class="citation" data-cites="markus_kitayama1991">(<a href="../../referencias.html#ref-markus_kitayama1991" role="doc-biblioref">Markus; Kitayama, 1991</a>)</span>.
+</dd>
+<dt><strong>Competência cultural</strong></dt>
+<dd>
+Capacidade do profissional de compreender e respeitar o contexto cultural do cliente e reconhecer os próprios vieses.
+</dd>
+<dt><strong>Universalismo relativo</strong></dt>
+<dd>
+Posição segundo a qual há processos psicológicos universais que se expressam de formas culturalmente específicas.
+</dd>
+<dt><strong>Psicologia decolonial</strong></dt>
+<dd>
+Movimento que critica o eurocentrismo da disciplina e valoriza saberes de povos historicamente subalternizados.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Distinga as abordagens emic e etic. O que é o “etic imposto” e por que é um erro?</p></li>
+<li><p><strong>(Conceitual.)</strong> Explique o problema WEIRD. Por que ele ameaça a pretensão da psicologia de descrever “o ser humano”?</p></li>
+<li><p><strong>(Conceitual.)</strong> Compare o self independente e o interdependente. Dê um exemplo de como essa diferença afetaria uma psicoterapia.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Por que traduzir um teste não basta para usá-lo em outra cultura? O que a adaptação transcultural exige?</p></li>
+<li><p><strong>(Integração.)</strong> Explique por que o universalismo ingênuo e o relativismo radical são ambos problemáticos. O que é o universalismo relativo?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Por que a psicologia brasileira não pode importar acriticamente teorias de amostras WEIRD? Cite dois temas da diversidade brasileira que exigem recontextualização.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-henrich2010" class="csl-entry" role="listitem">
+HENRICH, Joseph; HEINE, Steven J.; NORENZAYAN, Ara. <a href="https://doi.org/10.1017/S0140525X0999152X">The weirdest people in the world?</a> <strong>Behavioral and Brain Sciences</strong>, v. 33, n. 2-3, p. 61–83, 2010.
+</div>
+<div id="ref-markus_kitayama1991" class="csl-entry" role="listitem">
+MARKUS, Hazel R.; KITAYAMA, Shinobu. Culture and the self: Implications for cognition, emotion, and motivation. <strong>Psychological Review</strong>, v. 98, n. 2, p. 224–253, 1991.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1670,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol15-aplicada-fronteiras/cap-103-cultura-diversidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
