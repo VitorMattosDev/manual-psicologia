@@ -1,5 +1,146 @@
 # 73. Relações interpessoais e atração
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que a necessidade de pertencer é uma motivação humana fundamental e suas consequências para a saúde.
+- **Descrever** os grandes determinantes da atração interpessoal: proximidade, familiaridade, semelhança e atratividade física.
+- **Distinguir** as teorias evolucionistas e socioculturais das preferências de parceiro, avaliando a evidência de cada uma.
+- **Aplicar** a teoria triangular do amor e o modelo de investimento à compreensão de relacionamentos e sua estabilidade.
+- **Reconhecer** os preditores de deterioração conjugal e a base neural do amor romântico.
+- **Avaliar criticamente** mitos populares sobre atração e o funcionamento do namoro on-line.
 :::
+
+Depois de estudar como pensamos sobre os outros (Cap. 70), como os persuadimos (Cap. 71) e como cedemos a eles (Cap. 72), chegamos ao vínculo mais íntimo: por que nos aproximamos de certas pessoas, o que é o amor e o que mantém — ou desfaz — uma relação. Longe de ser um tema "mole", a atração e as relações próximas estão entre os mais bem estudados da psicologia social, com achados robustos, contraintuitivos e de enorme relevância para a saúde. Como veremos, a qualidade dos nossos laços sociais é um dos preditores mais fortes de bem-estar e longevidade que a ciência conhece.
+
+## A necessidade de pertencer
+
+Antes de qualquer teoria da atração, um fato fundacional: os seres humanos têm uma **necessidade de pertencer** (*need to belong*) — uma motivação básica de formar e manter relações interpessoais duradouras e positivas [@baumeister_leary1995]. Não é um luxo cultural nem uma preferência individual; é um sistema motivacional com raízes evolutivas, comparável à fome ou à sede. Ao longo da história da espécie, pertencer a um grupo foi condição de sobrevivência: sozinho, o ser humano é presa fácil. Roy Baumeister e Mark Leary reuniram evidências de que a falta de vínculos produz sofrimento intenso e prejuízos amplos à saúde física e mental, enquanto vínculos satisfatórios protegem.
+
+A demonstração mais impressionante dessa raiz profunda vem da neurociência social: a **exclusão social ativa regiões cerebrais associadas à dor física**. No paradigma *Cyberball*, participantes jogam uma bola virtual e, a certa altura, são excluídos pelos outros "jogadores" (na verdade, o computador). Essa rejeição trivial ativa o córtex cingulado anterior dorsal — a mesma área envolvida no componente aflitivo da dor corporal [@eisenberger2003]. A metáfora "fiquei magoado", "aquilo doeu", não é apenas metáfora: a dor social e a dor física compartilham circuitos. Isso ilumina por que o ostracismo é uma punição tão universal e temida, e por que a solidão crônica é hoje reconhecida como fator de risco de morte comparável ao tabagismo.
+
+## Os determinantes da atração
+
+O que faz duas pessoas se aproximarem? A pesquisa converge em alguns fatores surpreendentemente prosaicos.
+
+### Proximidade e familiaridade
+
+O maior preditor de com quem você formará laços não é afinidade de alma — é **proximidade física**. No estudo clássico de Festinger, Schachter e Back num conjunto habitacional de estudantes casados, a probabilidade de duas pessoas se tornarem amigas caía drasticamente com a distância entre suas portas; morar ao lado da escada ou da caixa de correio — pontos de passagem — multiplicava os contatos e as amizades [@festinger1950]. A proximidade importa porque aumenta a **familiaridade**, e a familiaridade, por si só, gera simpatia: é o **efeito da mera exposição**, demonstrado por Zajonc — quanto mais somos expostos a um estímulo neutro (um rosto, uma palavra, uma melodia), mais tendemos a gostar dele [@zajonc1968]. Num experimento em sala de aula, mulheres que apenas frequentaram as aulas sem interagir foram avaliadas como mais atraentes quanto maior o número de vezes em que haviam aparecido [@moreland_beach1992]. A implicação é curiosa e um pouco desencantada: parte de "gostar de alguém" é apenas tê-lo visto o bastante.
+
+### Semelhança
+
+Ditados populares brigam: "os opostos se atraem" contra "cada qual com seu igual". A ciência dá a vitória, folgada, ao segundo. A **semelhança** — de atitudes, valores, nível socioeconômico, escolaridade, até traços de personalidade — é um preditor robusto de atração e de estabilidade relacional [@montoya2008]. Gostamos de quem concorda conosco (valida nossa visão de mundo, reduz conflito, facilita atividades conjuntas). A ideia de que a **complementaridade** (as diferenças que se encaixam) sustentaria relações tem pouco apoio empírico como regra geral; o que parece complementaridade costuma ser, no fundo, semelhança de valores com divisão de tarefas.
+
+### Atratividade física e o efeito de halo
+
+A aparência pesa mais do que gostamos de admitir, sobretudo nos estágios iniciais. No célebre "baile do computador", em que casais foram formados ao acaso, o único preditor de quanto uma pessoa desejava rever a outra foi a **atratividade física** — acima de inteligência, personalidade ou aptidões [@walster1966]. Por trás disso opera o estereótipo do **"o que é belo é bom"**: atribuímos automaticamente a pessoas atraentes uma porção de qualidades positivas não relacionadas — mais inteligentes, mais sociáveis, mais competentes [@dion1972]. É o efeito de halo (Cap. 70) aplicado ao rosto, com consequências reais em contratações, julgamentos e salários. Vale notar, contra o mito da beleza como capricho cultural, que existe considerável **concordância entre culturas e observadores** sobre quais rostos são atraentes, com traços como simetria e "mediania" (a face-média de uma população) sendo consistentemente preferidos [@langlois2000] — o que sugere componentes perceptuais e possivelmente evolutivos, sem apagar a enorme variação histórica e cultural nos padrões de beleza.
+
+## Preferências de parceiro: evolução × cultura
+
+Por que homens e mulheres, **em média**, relatam dar pesos um pouco diferentes a certos atributos na escolha de parceiros de longo prazo? Há duas grandes explicações, e o debate entre elas é um dos mais instrutivos da área.
+
+A **psicologia evolucionista** (Cap. 13) parte da teoria do investimento parental: como o investimento reprodutivo mínimo da fêmea é muito maior, pressões seletivas diferentes teriam moldado preferências parcialmente distintas. O estudo transcultural de David Buss, com mais de 10 mil pessoas em 37 culturas, encontrou um padrão recorrente: mulheres tendendo a valorizar um pouco mais recursos e status do parceiro; homens, um pouco mais juventude e atratividade física (sinais de fertilidade); ambos valorizando acima de tudo, porém, bondade e inteligência [@buss1989].
+
+A explicação **sociocultural**, de Eagly e Wood, contesta a leitura evolucionista: os mesmos dados de Buss mostram que as diferenças entre os sexos **diminuem** nas sociedades com maior igualdade de gênero [@eagly_wood1999]. Segundo a **teoria dos papéis sociais**, as preferências refletiriam a divisão de trabalho e o acesso desigual a recursos — quando a mulher pode obter status por conta própria, valoriza menos o status do parceiro. O veredito equilibrado deste manual: há provavelmente **tanto** predisposições evoluídas **quanto** modelagem cultural, e o próprio dado de que as diferenças encolhem com a igualdade social é evidência de que a cultura tem papel causal considerável. Apresentar apenas um dos lados seria má ciência.
+
+## O que é o amor?
+
+### A teoria triangular de Sternberg
+
+A distinção mais útil da área separa o **amor apaixonado** (*passionate love*) — o estado intenso, absorvente e fisiologicamente excitado do início, com idealização e desejo — do **amor companheiro** (*companionate love*) — o afeto profundo, a confiança e o compromisso que sustentam relações longas. Robert Sternberg integrou essas ideias na **teoria triangular do amor**: todo relacionamento amoroso pode ser descrito por três componentes que variam de forma independente [@sternberg1986], representados nos vértices da @fig-triangulo-amor.
+
+::: {#fig-triangulo-amor}
+```{.tikz}
+%%| filename: triangulo-amor
+%%| alt: Triângulo com um vértice em cada canto rotulado com um componente do amor: no topo "Intimidade" (proximidade, confiança), embaixo à esquerda "Paixão" (atração, desejo) e embaixo à direita "Compromisso" (decisão de manter). Ao longo de cada lado, o nome do tipo de amor formado pela combinação de dois componentes: entre intimidade e paixão, "amor romântico"; entre intimidade e compromisso, "amor companheiro"; entre paixão e compromisso, "amor fátuo". No centro, "amor consumado" (os três juntos).
+\begin{tikzpicture}[
+  vert/.style={draw, thick, rounded corners=3pt, align=center, font=\small\bfseries, inner sep=4pt},
+  lado/.style={font=\scriptsize\itshape, text=manualgray}
+]
+  \coordinate (top) at (0,4.2);
+  \coordinate (bl) at (-3.8,-1.2);
+  \coordinate (br) at (3.8,-1.2);
+
+  \draw[thick, manualgray] (top) -- (bl) -- (br) -- cycle;
+
+  \node[vert, draw=manualblue, fill=manualblue!8] at (top) {Intimidade\\{\scriptsize\mdseries proximidade, confiança}};
+  \node[vert, draw=manualred, fill=manualred!8] at (bl) {Paixão\\{\scriptsize\mdseries atração, desejo}};
+  \node[vert, draw=manualgreen, fill=manualgreen!8] at (br) {Compromisso\\{\scriptsize\mdseries decisão de manter}};
+
+  \node[lado, anchor=east, rotate=57] at (-2.1,1.7) {amor romântico};
+  \node[lado, anchor=west, rotate=-57] at (2.1,1.7) {amor fátuo};
+  \node[lado, below=2pt] at (0,-1.2) {amor companheiro};
+
+  \node[font=\small\bfseries, text=manualgray, align=center] at (0,0.9) {amor\\consumado};
+\end{tikzpicture}
+```
+A teoria triangular do amor de Sternberg [@sternberg1986]. Cada lado combina dois componentes; os três juntos formam o "amor consumado". Paixão sozinha é paixoneta; intimidade sozinha, amizade; compromisso sozinho, amor vazio.
+:::
+
+**Intimidade** (proximidade, calor, confiança), **paixão** (atração física, excitação, desejo) e **compromisso** (a decisão de manter a relação) combinam-se em diferentes tipos de amor. Paixão + intimidade, sem compromisso, é o **amor romântico** do início. Intimidade + compromisso, com a paixão arrefecida, é o **amor companheiro** de casais de longa data. Paixão + compromisso sem intimidade é o **amor fátuo** (o casamento-relâmpago). Os três juntos formam o **amor consumado**, difícil de alcançar e mais difícil de manter. A teoria capta bem a trajetória típica: a paixão costuma ser intensa e declinar; a intimidade e o compromisso crescem mais lentamente e sustentam a relação a longo prazo.
+
+::: {.base-neural}
+🧠 **Base Neural — o cérebro apaixonado.** Estudos de neuroimagem com pessoas intensamente apaixonadas mostram que ver a foto do amado ativa regiões ricas em dopamina do **sistema de recompensa** — a área tegmental ventral e o núcleo caudado —, as mesmas envolvidas na motivação por recompensas e na dependência de substâncias [@aron2005]. O amor apaixonado se parece, no cérebro, menos com uma emoção e mais com um **sistema motivacional** (um impulso dirigido a um alvo), o que explica sua qualidade obsessiva, a "fissura" pela pessoa e os sintomas de abstinência na separação. Simultaneamente, há redução de atividade em áreas ligadas ao julgamento crítico e ao medo — a base neural da idealização ("o amor é cego"). Com o tempo, o sistema de apego, mediado por ocitocina e vasopressina (Cap. 25), assume o lugar do arroubo dopaminérgico inicial: a neuroquímica do amor companheiro difere da do apaixonado.
+:::
+
+### O que mantém — e o que desfaz — uma relação
+
+Explicar a atração inicial é uma coisa; explicar por que casais permanecem juntos é outra. O **modelo de investimento** de Caryl Rusbult prediz o compromisso a partir de três fatores: a **satisfação** (a relação supre minhas necessidades?), a **qualidade das alternativas** (há opções melhores fora?) e o **volume de investimentos** já feitos (tempo, filhos, bens, história compartilhada — coisas que se perderiam com o término) [@rusbult1980]. O modelo explica por que pessoas satisfeitas às vezes deixam relações (alternativas muito atraentes) e por que pessoas insatisfeitas às vezes permanecem (poucas alternativas e altíssimo investimento) — inclusive, de forma dolorosa, em relações abusivas.
+
+Do lado da deterioração, as pesquisas de John Gottman com casais, acompanhados por décadas, identificaram preditores comportamentais notavelmente acurados de divórcio. Quatro padrões de interação negativa — que ele chamou de "os quatro cavaleiros" — são especialmente tóxicos: **crítica** (atacar o caráter, não o comportamento), **desprezo** (sarcasmo, humilhação — o preditor mais forte), **defensividade** (recusar responsabilidade) e **estonewalling** (fechar-se, retirar-se emocionalmente) [@gottman1994]. A razão entre interações positivas e negativas distingue casais estáveis de instáveis com alta precisão. A mensagem prática é otimista: são padrões de **comportamento**, e comportamento pode ser mudado.
+
+::: {.na-pratica}
+💡 **O que a ciência das relações recomenda.** Traduzindo os achados em conduta: (1) **A proximidade e a repetição constroem laços** — amizades e vínculos exigem exposição e contato frequente, não apenas "boa química"; invista em estar presente. (2) **Não confie só na paixão** para prever a durabilidade de uma relação; ela quase sempre declina, e o que resta (intimidade e compromisso) é o que decide [@sternberg1986]. (3) **Cuide da razão positivo/negativo:** pequenos gestos de apreço, escuta e reparo após conflitos importam mais que grandes declarações; vigie os quatro cavaleiros, sobretudo o **desprezo** [@gottman1994]. (4) **Lembre que solidão é um risco de saúde:** cultivar vínculos não é frivolidade, é medicina preventiva [@baumeister_leary1995; @eisenberger2003].
+:::
+
+::: {.atencao}
+⚠️ **Mitos da atração e do namoro on-line.** Três crenças populares merecem correção. **"Os opostos se atraem":** a evidência favorece a semelhança, não a complementaridade [@montoya2008]. **"O amor à primeira vista é o amor verdadeiro":** o que se sente à primeira vista é atração e paixão incipiente (rota dopaminérgica e efeito de halo da beleza), não o vínculo que sustenta uma relação. E o **namoro on-line**: apesar de dar acesso a um número enorme de candidatos, os aplicativos têm poder limitado para *prever compatibilidade* — os algoritmos que prometem casar almas com base em questionários carecem de suporte científico, porque a satisfação de um casal depende muito mais de como as duas pessoas **interagem ao longo do tempo** e das circunstâncias que enfrentam juntas do que de traços pré-existentes combináveis por fórmula [@finkel2012]. O aplicativo é bom para *apresentar* pessoas; não para adivinhar quem dará certo com quem.
+:::
+
+::: {.callout-sintese}
+- A **necessidade de pertencer** é uma motivação humana fundamental; a exclusão social ativa circuitos da **dor física** [@baumeister_leary1995; @eisenberger2003], e a qualidade dos laços prediz saúde e longevidade.
+- A atração é impulsionada por fatores prosaicos: **proximidade** e **familiaridade** (efeito da mera exposição) [@festinger1950; @zajonc1968], **semelhança** (não complementaridade) [@montoya2008] e **atratividade física**, com o estereótipo "o que é belo é bom" [@walster1966; @dion1972].
+- As **preferências de parceiro** têm explicações evolucionista [@buss1989] e sociocultural [@eagly_wood1999]; o encolhimento das diferenças entre sexos com a igualdade de gênero é evidência do peso da cultura.
+- A **teoria triangular** decompõe o amor em intimidade, paixão e compromisso [@sternberg1986]; o amor apaixonado é, no cérebro, um sistema de recompensa dopaminérgico [@aron2005].
+- O **modelo de investimento** prevê o compromisso por satisfação, alternativas e investimentos [@rusbult1980]; os **quatro cavaleiros** de Gottman (crítica, desprezo, defensividade, estonewalling) predizem a ruptura [@gottman1994].
+- Mitos a corrigir: opostos **não** se atraem como regra; o algoritmo de namoro **não** prediz compatibilidade de forma validada [@finkel2012].
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Necessidade de pertencer**
+:   Motivação humana fundamental de formar e manter relações interpessoais positivas e duradouras [@baumeister_leary1995].
+
+**Efeito da mera exposição**
+:   Aumento da simpatia por um estímulo em função da repetição da exposição a ele [@zajonc1968].
+
+**Estereótipo "o que é belo é bom"**
+:   Atribuição automática de qualidades positivas não relacionadas a pessoas fisicamente atraentes [@dion1972].
+
+**Amor apaixonado × companheiro**
+:   Estado intenso, excitado e idealizador do início versus afeto profundo, confiança e compromisso das relações longas.
+
+**Teoria triangular do amor**
+:   Modelo que decompõe o amor em intimidade, paixão e compromisso, cujas combinações definem tipos de amor [@sternberg1986].
+
+**Modelo de investimento**
+:   Teoria que prediz o compromisso relacional a partir de satisfação, qualidade das alternativas e volume de investimentos [@rusbult1980].
+
+**Quatro cavaleiros**
+:   Padrões de interação negativa preditores de ruptura conjugal: crítica, desprezo, defensividade e estonewalling [@gottman1994].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique o efeito da mera exposição e como ele conecta proximidade física a formação de amizades, usando o estudo de Festinger e colegas.
+
+2. **(Conceitual.)** Descreva os três componentes da teoria triangular de Sternberg e classifique, com eles, três relações: uma paixão de férias, uma amizade profunda e um casamento de 40 anos.
+
+3. **(Análise.)** Os dados de Buss são citados por evolucionistas e por Eagly e Wood para conclusões diferentes. Qual achado, dentro dos próprios dados, é a principal evidência a favor da explicação sociocultural?
+
+4. **(Aplicação.)** Uma pessoa insatisfeita permanece numa relação ruim. Use os três fatores do modelo de investimento de Rusbult para explicar por que, e aponte qual fator uma intervenção poderia mais realisticamente alterar.
+
+5. **(Reflexão crítica.)** Aplicativos de namoro afirmam usar algoritmos que "encontram sua alma gêmea". Com base em Finkel et al. [-@finkel2012], explique por que essa promessa é cientificamente frágil, apesar de os aplicativos serem úteis para outra coisa.
+
+6. **(Integração.)** Conecte a base neural do amor apaixonado (sistema de recompensa dopaminérgico [@aron2005]) com o declínio típico da paixão previsto por Sternberg. Por que faz sentido, biológica e psicologicamente, que a paixão seja intensa e transitória, enquanto o apego é mais estável?
