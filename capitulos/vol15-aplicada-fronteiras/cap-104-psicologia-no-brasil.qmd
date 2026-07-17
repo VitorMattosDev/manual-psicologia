@@ -1,5 +1,101 @@
 # 104. A psicologia no Brasil (história, profissão, CFP/CRP, ética)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstituir** as principais fases da história da psicologia no Brasil, das ideias psicológicas à profissão regulamentada.
+- **Explicar** a regulamentação da profissão e a estrutura do Sistema Conselhos (CFP e CRPs).
+- **Descrever** os princípios fundamentais do Código de Ética Profissional do Psicólogo.
+- **Analisar** a virada do "compromisso social" e o papel da psicologia na Reforma Psiquiátrica.
+- **Mapear** os campos de atuação e os desafios contemporâneos da profissão no país.
+- **Situar** a psicologia brasileira como ciência e profissão socialmente comprometida.
 :::
+
+Percorrido o panorama internacional da psicologia aplicada, este capítulo vira a lente para casa: como a psicologia se constituiu, se organizou e se regula no **Brasil**. Não se trata apenas de história local, mas de compreender a identidade particular que a disciplina assumiu no país — marcada, desde os anos 1980, por um forte **compromisso social**. Conhecer essa trajetória é indispensável para quem vai exercer a profissão aqui: define o que é ser psicólogo no Brasil, sob quais regras e a serviço de quem.
+
+## Das ideias psicológicas à ciência
+
+A psicologia como saber precede em muito a psicologia como profissão. No Brasil colonial e imperial, ideias psicológicas circulavam dentro da medicina, da educação, da filosofia e do direito — em teses sobre a "alma", a loucura, a criança, a criminalidade. Autores como **Manoel Bomfim**, no início do século XX, já articulavam psicologia e questão social. A institucionalização científica ganhou corpo nas primeiras décadas do século XX, sobretudo pela via da **educação** e da **higiene mental** [@antunes2012].
+
+Três figuras são emblemáticas dessa fase de fundação. **Ulysses Pernambucano**, em Recife, foi pioneiro na assistência psiquiátrica e na psicologia aplicada à educação e ao trabalho. **Helena Antipoff**, educadora russa radicada em Minas Gerais, desenvolveu a psicologia escolar, os estudos sobre a criança "excepcional" e a formação de professores. **Emílio Mira y López**, psiquiatra espanhol que se instalou no Rio de Janeiro, foi central na psicologia aplicada ao trabalho e na avaliação psicológica, fundando o ISOP (Instituto de Seleção e Orientação Profissional). A esse período pertence também **Nise da Silveira**, cuja obra no campo da saúde mental e da arte como terapia se tornaria uma referência humanista e internacional.
+
+## O nascimento da profissão
+
+O marco divisor é a **Lei nº 4.119, de 1962**, que regulamentou a formação e o exercício da profissão de psicólogo no Brasil, criando os cursos de graduação e definindo as atribuições privativas [@lei4119_1962]. A partir dela, a psicologia deixou de ser atividade de médicos, educadores e pesquisadores de várias origens para tornar-se uma **profissão autônoma**, com identidade e reserva de mercado próprias. Foi uma conquista, mas trouxe consigo um modelo inicial fortemente **clínico, individual e voltado às elites** — a imagem do psicólogo de consultório privado —, que marcaria as primeiras décadas e mais tarde seria alvo de intensa autocrítica.
+
+Para organizar e fiscalizar a nova profissão, a **Lei nº 5.766, de 1971**, criou o **Sistema Conselhos**: o **Conselho Federal de Psicologia (CFP)**, de âmbito nacional, e os **Conselhos Regionais de Psicologia (CRPs)**, estaduais. Trata-se de autarquias com função de **orientar, disciplinar e fiscalizar** o exercício profissional, zelando pela ética e pela qualidade dos serviços prestados à sociedade — e não de sindicatos ou associações de defesa corporativa. Inscrever-se no CRP é condição legal para exercer a profissão.
+
+## O Código de Ética Profissional
+
+O exercício da psicologia é regido pelo **Código de Ética Profissional do Psicólogo**, cuja versão vigente foi estabelecida pela Resolução CFP nº 010/2005 [@cfp2005etica]. Ele não é uma lista de proibições, mas um conjunto de **princípios** que orientam a conduta profissional, ancorados no respeito à dignidade e à liberdade humanas e nos direitos fundamentais. Entre seus pilares:
+
+- **Respeito e promoção dos direitos humanos** e recusa de práticas de discriminação, crueldade ou opressão — o psicólogo não pode ser conivente com tortura, violência ou preconceito.
+- **Sigilo profissional** como regra, protegendo a intimidade de quem é atendido, com exceções restritas e cuidadosamente definidas (proteção da vida, determinação legal).
+- **Competência e responsabilidade técnica**: atuar apenas com base em conhecimento fundamentado, buscar atualização e reconhecer os limites da própria qualificação.
+- **Consentimento, informação e autonomia** de quem recebe o serviço.
+- **Compromisso com a produção e a divulgação responsável do conhecimento** e com a qualidade dos serviços à população.
+
+::: {.na-pratica}
+💡 **A ética não é acessório — é o núcleo da prática.** Muitos estudantes veem o Código de Ética como formalidade burocrática. Na prática profissional, ele é o instrumento cotidiano de decisão diante de dilemas reais: até onde vai o sigilo quando há risco de vida? Como agir com um adolescente cujos pais querem informações? O que fazer diante de uma demanda que fere direitos? O Código não dá respostas prontas para tudo, mas fornece os **princípios** para raciocinar eticamente — e o descumprimento pode levar a processo ético-disciplinar no CRP, com sanções que vão da advertência à cassação do registro. Dominar a ética é tão parte da competência profissional quanto dominar as técnicas.
+:::
+
+## A virada do compromisso social
+
+O momento mais decisivo da identidade da psicologia brasileira veio nos anos 1970 e 1980, no contexto da redemocratização. Uma geração de psicólogos passou a criticar duramente o modelo herdado — elitista, importado, descolado da realidade nacional e alheio às desigualdades do país. Dessa crítica nasceu o **compromisso social** da psicologia: a ideia de que a profissão deve estar a serviço da **maioria da população**, e não apenas de quem pode pagar um consultório, e deve engajar-se na transformação das condições de sofrimento.
+
+Figura central desse movimento foi **Silvia Lane**, que ajudou a fundar uma **psicologia social crítica** brasileira, articulada à realidade latino-americana e atenta às determinações históricas e sociais do psiquismo [@lane1984]. A virada teve consequências concretas: expandiu a psicologia para as **políticas públicas**, para as periferias, para os movimentos sociais, e reorientou a formação. O CFP, historicamente, assumiu posições públicas em defesa dos direitos humanos — contra a tortura na ditadura, pela despatologização da homossexualidade (a célebre resolução de 1999 que veda tratar a homossexualidade como doença), contra as "terapias de conversão" e o preconceito.
+
+## Psicologia e Reforma Psiquiátrica
+
+Um capítulo à parte dessa história é o engajamento na **Reforma Psiquiátrica** brasileira. Inspirado pela crítica ao manicômio (o movimento antimanicomial, dialogando com Franco Basaglia e com o legado humanista de Nise da Silveira), o Brasil construiu um modelo de atenção à saúde mental **de base comunitária e territorial**, substituindo progressivamente o hospital psiquiátrico por serviços abertos. O marco legal é a **Lei nº 10.216, de 2001**, que redirecionou o modelo assistencial e protegeu os direitos das pessoas com transtornos mentais [@lei10216_2001]. Seu principal dispositivo são os **Centros de Atenção Psicossocial (CAPS)**, onde o psicólogo integra equipes multiprofissionais no cuidado em liberdade. A saúde mental tornou-se, assim, um dos maiores campos de atuação da profissão no país — e uma expressão prática do compromisso social.
+
+## Campos de atuação e desafios contemporâneos
+
+Hoje o psicólogo brasileiro atua em um leque amplo: além da clínica, na **saúde** (SUS, hospitais, CAPS), na **assistência social** (CRAS e CREAS, no âmbito do SUAS), na **educação** (com a expansão trazida pela Lei 13.935/2019, Cap. 98), nas **organizações**, no **sistema de justiça** e na pesquisa. É uma das profissões que mais crescem no país, com marcante predominância de **mulheres** entre os profissionais.
+
+Os desafios são consideráveis: a **precarização** do trabalho e os baixos salários em parte das áreas; a qualidade heterogênea da formação diante da forte expansão de cursos; a necessidade de consolidar práticas **baseadas em evidências** (Cap. 95) sem abrir mão do compromisso social; a regulação de novas modalidades como o **atendimento on-line**; e a permanente tensão entre a psicologia como técnica e como prática socialmente transformadora. A psicologia brasileira encerra este manual, assim, com uma identidade particular e valiosa: uma ciência e profissão que, mais do que em muitos lugares, assumiu explicitamente o compromisso de estar a serviço da dignidade e dos direitos de toda a população.
+
+::: {.callout-sintese}
+- As **ideias psicológicas** no Brasil circularam na medicina, educação e direito antes da profissão; **Pernambucano**, **Antipoff**, **Mira y López** e **Nise da Silveira** marcaram a fundação [@antunes2012].
+- A **Lei 4.119/1962** criou a profissão; a **Lei 5.766/1971** instituiu o **Sistema Conselhos** (CFP e CRPs), que orienta, disciplina e fiscaliza [@lei4119_1962].
+- O **Código de Ética** (2005) [@cfp2005etica] assenta-se em direitos humanos, sigilo, competência e autonomia — núcleo, não acessório, da prática.
+- A virada do **compromisso social** (anos 1980), com **Silvia Lane** [@lane1984], reorientou a profissão para a maioria da população e as políticas públicas.
+- Na **Reforma Psiquiátrica** (Lei 10.216/2001) [@lei10216_2001], o psicólogo integra os **CAPS** no cuidado em liberdade.
+- A profissão cresce e se diversifica (SUS, SUAS, educação, justiça), enfrentando precarização, qualidade da formação e a tensão entre técnica e transformação social.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Lei nº 4.119/1962**
+:   Lei que regulamentou a formação e o exercício da profissão de psicólogo no Brasil.
+
+**Sistema Conselhos (CFP/CRP)**
+:   Conjunto do Conselho Federal e dos Conselhos Regionais de Psicologia, que orientam, disciplinam e fiscalizam a profissão.
+
+**Código de Ética Profissional do Psicólogo**
+:   Conjunto de princípios que regem a conduta profissional, ancorado nos direitos humanos e no sigilo (Resolução CFP 010/2005).
+
+**Compromisso social**
+:   Orientação, firmada nos anos 1980, de que a psicologia deve servir à maioria da população e à transformação social.
+
+**Reforma Psiquiátrica**
+:   Processo de substituição do modelo manicomial por atenção comunitária em saúde mental (Lei 10.216/2001).
+
+**CAPS (Centro de Atenção Psicossocial)**
+:   Serviço territorial e aberto de saúde mental, base do cuidado em liberdade no SUS.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Que lei regulamentou a profissão de psicólogo no Brasil e em que ano? Qual foi a limitação do modelo profissional inicial?
+
+2. **(Conceitual.)** Qual é a função do Sistema Conselhos (CFP e CRPs)? Por que ele não se confunde com um sindicato?
+
+3. **(Conceitual.)** Cite três princípios do Código de Ética Profissional. Por que a ética é o "núcleo" e não um "acessório" da prática?
+
+4. **(Reflexão crítica.)** O que motivou a virada do compromisso social nos anos 1980? Como ela mudou o público e os espaços de atuação da psicologia?
+
+5. **(Integração.)** Explique o papel da psicologia na Reforma Psiquiátrica. O que os CAPS representam frente ao modelo manicomial?
+
+6. **(Reflexão crítica.)** Quais são os principais desafios contemporâneos da profissão no Brasil? Como conciliar prática baseada em evidências e compromisso social?
