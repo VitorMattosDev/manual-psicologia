@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 86 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 30/49
+**Progresso:** 95 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 39/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅ · Vol 13 ✅** Próximo: Fase 3, Vol 14 (Tratamentos e Terapias).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅ · Vol 13 ✅ · Vol 14 ✅** Próximo: Fase 3, Vol 15 (Psicologia Aplicada e Fronteiras).
 
 ---
 
@@ -171,15 +171,15 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 14 — Tratamentos e Terapias
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 87 | Fundamentos da intervenção psicológica | `capitulos/vol14-tratamentos-terapias/cap-87-fundamentos-intervencao.qmd` | ⬜ |
-| 88 | Terapias psicodinâmicas | `capitulos/vol14-tratamentos-terapias/cap-88-terapias-psicodinamicas.qmd` | ⬜ |
-| 89 | Terapias humanistas | `capitulos/vol14-tratamentos-terapias/cap-89-terapias-humanistas.qmd` | ⬜ |
-| 90 | Terapia comportamental | `capitulos/vol14-tratamentos-terapias/cap-90-terapia-comportamental.qmd` | ⬜ |
-| 91 | Terapia cognitivo-comportamental (TCC) | `capitulos/vol14-tratamentos-terapias/cap-91-tcc.qmd` | ⬜ |
-| 92 | Terapias contextuais (ACT, DBT, mindfulness) | `capitulos/vol14-tratamentos-terapias/cap-92-terapias-contextuais.qmd` | ⬜ |
-| 93 | Terapias sistêmicas e de grupo | `capitulos/vol14-tratamentos-terapias/cap-93-terapias-sistemicas.qmd` | ⬜ |
-| 94 | Tratamentos biomédicos (psicofármacos) | `capitulos/vol14-tratamentos-terapias/cap-94-psicofarmacos.qmd` | ⬜ |
-| 95 | Eficácia e prática baseada em evidências | `capitulos/vol14-tratamentos-terapias/cap-95-pratica-baseada-evidencias.qmd` | ⬜ |
+| 87 | Fundamentos da intervenção psicológica | `capitulos/vol14-tratamentos-terapias/cap-87-fundamentos-intervencao.qmd` | ✅ |
+| 88 | Terapias psicodinâmicas | `capitulos/vol14-tratamentos-terapias/cap-88-terapias-psicodinamicas.qmd` | ✅ |
+| 89 | Terapias humanistas | `capitulos/vol14-tratamentos-terapias/cap-89-terapias-humanistas.qmd` | ✅ |
+| 90 | Terapia comportamental | `capitulos/vol14-tratamentos-terapias/cap-90-terapia-comportamental.qmd` | ✅ |
+| 91 | Terapia cognitivo-comportamental (TCC) | `capitulos/vol14-tratamentos-terapias/cap-91-tcc.qmd` | ✅ |
+| 92 | Terapias contextuais (ACT, DBT, mindfulness) | `capitulos/vol14-tratamentos-terapias/cap-92-terapias-contextuais.qmd` | ✅ |
+| 93 | Terapias sistêmicas e de grupo | `capitulos/vol14-tratamentos-terapias/cap-93-terapias-sistemicas.qmd` | ✅ |
+| 94 | Tratamentos biomédicos (psicofármacos) | `capitulos/vol14-tratamentos-terapias/cap-94-psicofarmacos.qmd` | ✅ |
+| 95 | Eficácia e prática baseada em evidências | `capitulos/vol14-tratamentos-terapias/cap-95-pratica-baseada-evidencias.qmd` | ✅ |
 
 ### Vol 15 — Psicologia Aplicada e Fronteiras
 | Cap | Título | Arquivo | Status |
