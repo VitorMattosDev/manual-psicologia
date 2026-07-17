@@ -1,5 +1,144 @@
 # 95. Eficácia e prática baseada em evidências
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstituir** o debate sobre a eficácia da psicoterapia, do desafio de Eysenck à resposta da meta-análise.
+- **Interpretar** o conceito de tamanho de efeito e o que significa dizer que "a psicoterapia funciona".
+- **Retomar** o veredito do Dodo à luz da controvérsia entre fatores comuns e tratamentos específicos.
+- **Definir** tratamentos apoiados empiricamente e o modelo tripé da prática baseada em evidências.
+- **Distinguir** eficácia (*efficacy*) de efetividade (*effectiveness*) e conhecer os limites do ensaio clínico randomizado.
+- **Identificar** ameaças à validade da pesquisa (viés de alegiança, viés de publicação) e o problema das terapias prejudiciais.
 :::
+
+Percorremos oito capítulos de terapias — psicodinâmicas, humanistas, comportamentais, cognitivas, contextuais, sistêmicas, biomédicas. Cada uma com sua teoria, cada uma convicta de sua eficácia. Chega o momento de fazer a pergunta que organiza toda a psicologia como ciência (Cap. 3): **o que a evidência mostra?** A psicoterapia funciona? Alguma é melhor que as outras? Como um profissional decide o que oferecer? Este capítulo — o fecho do volume — trata da eficácia e da **prática baseada em evidências**, e ensina a atravessar tanto o ceticismo que descarta o que funciona quanto o entusiasmo que aceita qualquer promessa.
+
+## "A psicoterapia funciona?" — o desafio de Eysenck
+
+Por décadas, presumia-se simplesmente que a psicoterapia ajudava. Em 1952, Hans Eysenck lançou uma bomba: revisando os dados disponíveis, afirmou que pacientes neuróticos tratados com psicoterapia **não melhoravam mais** do que os que não recebiam tratamento algum — a maioria melhoraria de qualquer modo, por **remissão espontânea** [@eysenck1952]. A provocação era metodologicamente frágil (comparações precárias, definições vagas), mas fez um enorme bem à área: forçou a psicoterapia a **provar** o que afirmava, em vez de presumir. A pergunta "funciona?" tornou-se empírica, e não mais uma questão de fé nas escolas.
+
+A resposta definitiva veio um quarto de século depois, com uma inovação metodológica: a **meta-análise** — técnica de combinar estatisticamente os resultados de muitos estudos para estimar um efeito médio (Cap. 19).
+
+::: {.experimento}
+🔬 **Experimento Clássico — a meta-análise de Smith e Glass** [@smith_glass1977]
+
+**Desenho.** Mary Lee Smith e Gene Glass — este, um dos inventores da própria técnica — reuniram **375 estudos** controlados de resultado de psicoterapia (depois ampliados para mais de 475), abrangendo dezenas de milhares de pacientes e as mais variadas abordagens. Em vez de contar "quantos estudos deram positivo", calcularam o **tamanho de efeito** médio: quão distante, em desvios-padrão, o paciente tratado ficava do não tratado.
+
+**Resultado.** O tamanho de efeito médio foi de cerca de **0,85** desvio-padrão. Em termos práticos: a pessoa **média** que fazia terapia terminava melhor do que **cerca de 80%** das pessoas que não a faziam. A psicoterapia funcionava — e o efeito era **grande**.
+
+**Interpretação.** O estudo encerrou o debate aberto por Eysenck: a psicoterapia produz benefícios substanciais, muito além da remissão espontânea. Fundou, além disso, a era da **avaliação quantitativa** cumulativa da psicoterapia, hoje o padrão da área.
+
+**Limitações.** Meta-análises herdam a qualidade dos estudos que agregam ("lixo entra, lixo sai") e são vulneráveis ao **viés de publicação** (estudos positivos são mais publicados, inflando o efeito). Estimativas posteriores, com controles mais rigorosos, tenderam a ser mais modestas — mas a conclusão central, de que a psicoterapia é eficaz, foi **replicada** exaustivamente.
+:::
+
+## O veredito do Dodo, revisitado
+
+Estabelecido *que* a psicoterapia funciona, ressurge a pergunta do Cap. 87: **qual** funciona melhor? Aqui reabre-se a controvérsia mais persistente da área. Um segundo achado de Smith e Glass — e de meta-análises subsequentes — foi que as **diferenças entre abordagens** eram muito menores do que a diferença entre tratar e não tratar. Terapias tão distintas quanto a psicodinâmica, a humanista e a cognitivo-comportamental produziam resultados médios **semelhantes** para muitos quadros. Era o **veredito do pássaro Dodo** confirmado empiricamente: "todos venceram e todos devem receber prêmios" [@luborsky1975].
+
+Como interpretar isso? Duas grandes posições organizam o debate, e a resposta importa para tudo o que se faz na clínica.
+
+- O **modelo dos fatores comuns**, defendido por Bruce Wampold, toma a equivalência como prova de que o essencial da mudança está no que as terapias **partilham** — aliança, empatia, esperança, um rationale convincente, o engajamento do paciente — e não em suas técnicas específicas [@wampold2015]. A relação e o terapeuta importariam mais do que o método.
+- O **modelo dos tratamentos específicos** contesta a generalização. A equivalência valeria para muitos quadros, mas **não para todos**: em transtornos como fobias, TOC, TEPT e transtornos alimentares, tratamentos específicos — sobretudo a **exposição** — superam claramente terapias genéricas ou de apoio. Para esses, escolher a terapia certa faz diferença mensurável.
+
+A síntese contemporânea recusa o falso dilema: **os dois têm razão, em domínios diferentes**. Os fatores comuns respondem por grande parte do efeito geral e são condição necessária de qualquer boa terapia; os fatores específicos acrescentam ganho decisivo em quadros bem definidos. O bom clínico cultiva ambos.
+
+## Tratamentos apoiados empiricamente
+
+Nos anos 1990, a psicologia clínica organizou-se para responder "o que funciona para quê" de forma sistemática. Chambless e Hollon propuseram **critérios** para classificar um tratamento como **apoiado empiricamente** (*empirically supported treatment*, EST): eficácia demonstrada em **ensaios controlados randomizados** (ECR), de preferência por **equipes independentes**, com manual de tratamento e população definida [@chambless1998]. Forças-tarefa passaram a publicar **listas** de tratamentos com suporte empírico por transtorno.
+
+O movimento teve o mérito enorme de conectar a prática à evidência e de proteger o público de terapias sem base. Mas foi criticado: privilegiaria terapias **manualizáveis e de curto prazo** (mais fáceis de testar em ECR — leia-se, sobretudo, a TCC), penalizando abordagens valiosas porém menos "empacotáveis"; reduziria a terapia a protocolos por diagnóstico, ignorando a pessoa; e trataria o ECR como árbitro único, quando ele tem limites importantes (ver adiante). Essas críticas levaram a uma formulação mais ampla — a prática baseada em evidências.
+
+## A prática baseada em evidências: o tripé
+
+A **prática baseada em evidências em psicologia** (PBE), tal como a American Psychological Association a definiu, é a integração de **três** componentes [@apa2006] (@fig-tripe):
+
+1. **A melhor evidência de pesquisa disponível** — o que os estudos rigorosos mostram sobre o que funciona.
+2. **A expertise clínica** do profissional — sua capacidade de avaliar, formular o caso, construir a relação e aplicar a evidência ao paciente concreto.
+3. **As características, valores e preferências do paciente** — sua cultura, seus objetivos, o que faz sentido para ele.
+
+O conceito é decisivo porque desfaz duas caricaturas. Não é "seguir o manual ignorando a pessoa" (isso é só a primeira perna); nem é "fazer o que a intuição do terapeuta mandar" (isso descarta a evidência). É a **integração** das três: evidência aplicada com julgamento clínico e respeito às preferências de quem se trata. É o mesmo espírito da medicina baseada em evidências — e o modelo que o Código de Ética e as diretrizes de formação em psicologia buscam promover.
+
+::: {#fig-tripe}
+```{.tikz}
+%%| filename: tripe-pbe
+%%| alt: Diagrama de três círculos parcialmente sobrepostos representando a prática baseada em evidências. Um círculo azul "Melhor evidência de pesquisa", um verde "Expertise clínica" e um amarelo "Valores e preferências do paciente". Na interseção central dos três lê-se "Prática baseada em evidências".
+\begin{tikzpicture}[font=\small]
+  \begin{scope}[opacity=0.55]
+    \fill[manualblue!30]   (0,1.15) circle (1.75);
+    \fill[manualgreen!30]  (-1.35,-1.05) circle (1.75);
+    \fill[manualyellow!45] (1.35,-1.05) circle (1.75);
+  \end{scope}
+  \node[align=center, text=manualblue!70!black] at (0,2.25) {\textbf{Evidência}\\{\scriptsize de pesquisa}};
+  \node[align=center, text=manualgreen!60!black] at (-2.4,-1.75) {\textbf{Expertise}\\{\scriptsize clínica}};
+  \node[align=center, text=manualyellow!45!black] at (2.4,-1.75) {\textbf{Valores do}\\{\scriptsize paciente}};
+  \node[align=center, font=\scriptsize\bfseries] at (0,-0.35) {Prática baseada\\em evidências};
+\end{tikzpicture}
+```
+O tripé da prática baseada em evidências [@apa2006]: a integração da melhor evidência de pesquisa, da expertise clínica do profissional e dos valores e preferências do paciente. Nenhuma das três pernas, sozinha, sustenta a boa prática.
+:::
+
+## Eficácia × efetividade e os limites do ensaio randomizado
+
+Uma distinção crucial atravessa toda a pesquisa de tratamento. A **eficácia** (*efficacy*) é o desempenho de uma terapia em condições **ideais e controladas** — o ECR, com pacientes selecionados (um só diagnóstico, sem comorbidades), terapeutas treinados e supervisionados, protocolo rígido. A **efetividade** (*effectiveness*) é o desempenho no **mundo real** — pacientes com múltiplos problemas, terapeutas variados, condições de serviço público. As duas nem sempre coincidem: uma terapia que brilha no ECR pode render menos na clínica cotidiana.
+
+O ECR é o **padrão-ouro** para estabelecer causalidade (Cap. 14) e é insubstituível para responder "esta terapia causa melhora?". Mas tem limites reconhecidos: sua alta validade interna custa **validade externa** (os pacientes "limpos" do ensaio não se parecem com os reais); é mais adaptado a terapias curtas e protocolares; o cegamento é difícil em psicoterapia (paciente e terapeuta sabem o que recebem); e há o **efeito de alegiança** — estudos conduzidos por defensores de uma abordagem tendem a favorecê-la. Por isso a evidência robusta combina ECR com estudos de efetividade, dados naturalísticos e monitoramento de desfechos na prática. Uma tendência promissora é o **tratamento informado por *feedback***: medir rotineiramente o progresso do paciente sessão a sessão e ajustar o rumo — o que melhora resultados, sobretudo nos casos que vão mal.
+
+::: {.atencao}
+⚠️ **A terapia também pode fazer mal.** Um ponto que o entusiasmo costuma esquecer: nem toda psicoterapia é benigna. Uma fração dos pacientes **piora** durante o tratamento, e algumas intervenções são comprovadamente **prejudiciais** — o *debriefing* psicológico de sessão única após traumas, que pode aumentar o risco de TEPT; certas técnicas de "recuperação de memórias" que induzem memórias falsas (Cap. 45); "terapias de conversão", ineficazes e danosas (Cap. 90); e abordagens confrontativas em populações vulneráveis. "Não fazer mal" (não maleficência) é um princípio ético, mas também empírico: exige medir desfechos, reconhecer a deterioração e abandonar o que a evidência condena. Que a psicoterapia *em média* funcione não garante que *toda* terapia, com *todo* paciente, ajude — mais uma razão para a prática baseada em evidências.
+:::
+
+## O cuidado em evidência, no Brasil e no mundo
+
+A prática baseada em evidências dialoga com a organização real dos serviços. Diretrizes públicas — como as de saúde de vários países e as recomendações que orientam o SUS — buscam oferecer, em escala, tratamentos com suporte empírico, equilibrando eficácia, custo e acesso. No Brasil, isso levanta desafios próprios: a maior parte da evidência vem de outros contextos culturais e precisa de adaptação e validação local (Cap. 103); o acesso a psicoterapia qualificada é desigual; e a rede pública (CAPS, atenção básica) opera sob restrições que a pesquisa de efetividade — não a de eficácia idealizada — é que ajuda a informar. A ciência da eficácia não é um luxo acadêmico: é a base para decidir, com recursos finitos, o que oferecer a quem sofre.
+
+## Encerrando o volume
+
+Este volume começou perguntando, no Cap. 87, por que a psicoterapia funciona; encerra mostrando **que** ela funciona, e como saber o que funciona para quê. Entre um ponto e outro, percorremos as grandes tradições de tratar o sofrimento humano — do divã à cadeira vazia, da exposição à reestruturação cognitiva, da aceitação ao lítio. A lição que as atravessa é a mesma que abre o manual: a psicologia é uma ciência, e tratar o sofrimento com seriedade significa submeter cada promessa de cura ao tribunal da evidência — com a humildade de reconhecer que o essencial, muitas vezes, é a relação, e com o rigor de saber que, para muitos males, a técnica certa faz toda a diferença. Descritas as terapias e medida sua eficácia, o **Vol 15** levará a psicologia aplicada para além da clínica — à saúde, ao trabalho, à escola, ao esporte, à cultura e às fronteiras da disciplina.
+
+::: {.callout-sintese}
+- O desafio de **Eysenck** [@eysenck1952] forçou a psicoterapia a provar sua eficácia; a **meta-análise de Smith e Glass** respondeu: efeito médio de ~0,85 DP — o paciente médio supera ~80% dos não tratados [@smith_glass1977].
+- O **veredito do Dodo** [@luborsky1975] reaparece: abordagens diferentes rendem resultados semelhantes para muitos quadros — os **fatores comuns** [@wampold2015] explicam grande parte do efeito, mas **tratamentos específicos** (exposição) vencem em fobias, TOC, TEPT.
+- Os **tratamentos apoiados empiricamente** [@chambless1998] ligaram prática e evidência via ECR, ao custo de privilegiar terapias manualizáveis.
+- A **prática baseada em evidências** é o tripé: melhor evidência + expertise clínica + valores do paciente [@apa2006] — nem manual cego, nem intuição solta.
+- **Eficácia** (condições ideais, ECR) ≠ **efetividade** (mundo real); o ECR é padrão-ouro para causalidade, mas tem limites (validade externa, alegiança, cegamento).
+- A psicoterapia também pode **causar dano** (*debriefing*, memórias falsas, "conversão"); medir desfechos e abandonar o prejudicial é imperativo ético e empírico.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Meta-análise**
+:   Técnica que combina estatisticamente os resultados de muitos estudos para estimar um efeito médio (Cap. 19).
+
+**Tamanho de efeito**
+:   Medida padronizada da magnitude de um efeito (p. ex., a distância, em desvios-padrão, entre grupo tratado e não tratado).
+
+**Veredito do pássaro Dodo**
+:   Achado de que terapias *bona fide* diferentes produzem resultados semelhantes para muitos quadros [@luborsky1975].
+
+**Tratamento apoiado empiricamente (EST)**
+:   Terapia com eficácia demonstrada em ensaios controlados randomizados, com manual e população definidos [@chambless1998].
+
+**Prática baseada em evidências (PBE)**
+:   Integração da melhor evidência de pesquisa, da expertise clínica e dos valores do paciente [@apa2006].
+
+**Eficácia × efetividade**
+:   Desempenho de uma terapia em condições ideais e controladas (eficácia) versus no mundo real (efetividade).
+
+**Efeito de alegiança**
+:   Tendência de estudos conduzidos por defensores de uma abordagem a produzir resultados que a favorecem.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Qual foi o desafio lançado por Eysenck e como a meta-análise de Smith e Glass o respondeu? O que significa, na prática, um tamanho de efeito de 0,85?
+
+2. **(Conceitual.)** Explique o veredito do Dodo e as duas leituras que ele admite (fatores comuns × tratamentos específicos). Por que a melhor síntese não escolhe um só lado?
+
+3. **(Conceitual.)** Defina os três componentes da prática baseada em evidências. Por que reduzi-la a "seguir o manual" é uma caricatura?
+
+4. **(Reflexão crítica.)** Distinga eficácia de efetividade. Cite dois limites do ensaio clínico randomizado e explique por que a evidência robusta não pode depender só dele.
+
+5. **(Integração.)** Como o efeito de alegiança e o viés de publicação podem inflar a aparente superioridade de uma terapia? Relacione com a leitura crítica de artigos (Cap. 21).
+
+6. **(Reflexão crítica.)** "Se a psicoterapia funciona em média, qualquer terapia ajuda." Refute essa afirmação usando o conceito de terapias prejudiciais e o princípio da não maleficência.
