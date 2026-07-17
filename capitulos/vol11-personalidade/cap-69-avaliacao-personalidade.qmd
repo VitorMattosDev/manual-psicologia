@@ -1,5 +1,119 @@
 # 69. Avaliação da personalidade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** as principais fontes de dados sobre personalidade (autorrelato, informantes, comportamento, desempenho).
+- **Descrever** os grandes inventários objetivos (MMPI, NEO-PI-R) e seus mecanismos de controle de resposta.
+- **Explicar** a lógica das técnicas projetivas (Rorschach, TAT) e o estado da evidência sobre elas.
+- **Aplicar** os critérios psicométricos (fidedignidade, validade, normatização) à avaliação de qualquer teste.
+- **Reconhecer** o efeito Barnum e os sinais de pseudoavaliação.
+- **Situar** a avaliação psicológica no contexto profissional brasileiro (CFP e SATEPSI).
 :::
+
+As teorias dos capítulos anteriores só viram ciência — e só viram prática responsável — quando é possível **medir** aquilo de que falam. Este capítulo fecha o volume com a pergunta operacional: como se avalia a personalidade de alguém com rigor? A resposta mobiliza tudo o que os Caps. 16 e 50 estabeleceram sobre psicometria (fidedignidade, validade, normatização) e o aplica ao terreno onde as apostas são altas: seleção de pessoal, perícias judiciais, avaliação clínica, pesquisa. É também o terreno onde prosperam os impostores — dos testes virais de redes sociais às tipologias corporativas sem lastro — e onde a distinção entre avaliação científica e entretenimento precisa ficar nítida.
+
+## De onde vêm os dados: as quatro janelas
+
+Nenhuma fonte de informação sobre uma pessoa é completa; cada uma abre uma janela com vidro próprio.
+
+- **Autorrelato (dados S)**: a pessoa descreve a si mesma em questionários ou entrevista. É a fonte mais usada — ninguém tem mais acesso à própria vida interior — mas está sujeita a pontos cegos e a vieses de apresentação.
+- **Relato de informantes (dados I)**: pais, cônjuges, colegas avaliam a pessoa. O modelo **SOKA** (assimetria de conhecimento eu–outro) mostra que a vantagem depende do traço: o próprio indivíduo conhece melhor seus estados internos (neuroticismo); os outros enxergam melhor os traços muito visíveis e avaliativos (como inteligência e criatividade — e até certos aspectos de amabilidade), onde a autoimagem distorce [@vazire2010]. Agregar juízes melhora a medida.
+- **Dados de vida (dados L)**: registros objetivos — histórico escolar, multas, curtidas, o estado do quarto. Rastros comportamentais reais, mas de interpretação ambígua.
+- **Testes de desempenho e observação (dados T)**: comportamento em situações padronizadas — do adiamento de gratificação (Cap. 68) a dinâmicas de grupo em processos seletivos.
+
+A convergência entre janelas — a lógica multitraço-multimétodo [@campbell_fiske1959] — é o que dá confiança de que se está medindo o constructo, e não o método.
+
+## Inventários objetivos de autorrelato
+
+### MMPI: a via empírica
+
+O **MMPI** (Inventário Multifásico de Personalidade de Minnesota), criado nos anos 1940 e hoje na família MMPI-2/MMPI-3, é o inventário clínico mais estudado do mundo [@hathaway_mckinley1943]. Sua construção foi **empírica por critério**: em vez de escolher itens pela cara ("teoricamente, deprimidos concordariam com isso"), os autores retiveram os itens que **de fato discriminavam** grupos clínicos de controles — importasse ou não o conteúdo aparente do item. O resultado são escalas clínicas (depressão, paranoia, psicopatia etc.) e, tão importante quanto, **escalas de validade** que detectam estilos de resposta: a escala **L** ("Lie", virtudes improváveis — "nunca menti"), a **F** (respostas raras, sugerindo exagero de sintomas ou resposta aleatória) e a **K** (defensividade sutil). Um perfil MMPI só é interpretável depois que as escalas de validade autorizam.
+
+### NEO-PI-R e a medição do CGF
+
+Na pesquisa e em contextos não clínicos, o padrão é medir os Cinco Grandes Fatores com inventários como o **NEO-PI-R**, que avalia os cinco domínios e trinta facetas [@costa_mccrae1992], ou versões breves como o BFI. Aqui a construção foi **racional-fatorial**: itens escritos a partir do constructo e depurados por análise fatorial. No Brasil, instrumentos do CGF adaptados e normatizados incluem versões do NEO e a Bateria Fatorial de Personalidade (BFP), construída sobre o modelo.
+
+### O problema das respostas enviesadas
+
+Todo autorrelato enfrenta estilos de resposta: **desejabilidade social** — apresentar-se de forma favorável, medida classicamente pela escala de Crowne e Marlowe [@crowne_marlowe1960] —, **aquiescência** (tendência a concordar com qualquer item), respostas extremas ou aleatórias. As defesas do ofício: escalas de validade, itens balanceados (metade invertida), formatos de escolha forçada, instruções e contexto que reduzam a pressão para embelezar — e a lembrança de que, em seleção de pessoal, algum embelezamento é a norma, o que exige normas e pontos de corte apropriados ao contexto.
+
+## Técnicas projetivas
+
+A **hipótese projetiva** vem da tradição psicodinâmica (Cap. 65): diante de um estímulo **ambíguo**, a pessoa não teria como responder "certo" e, portanto, revelaria — sem perceber — sua organização interna: conflitos, necessidades, modos de perceber.
+
+O **Rorschach** apresenta dez pranchas de manchas de tinta simétricas; codificam-se localização, determinantes (forma, cor, movimento), conteúdo e qualidade das respostas [@rorschach1921]. O **TAT** (Teste de Apercepção Temática), de Murray e Morgan, pede histórias sobre cenas interpessoais ambíguas, codificadas para necessidades e pressões — foi dele que saiu a tradição de medir motivos implícitos de realização, poder e afiliação [@murray1938; @mcclelland1961].
+
+O estado da evidência exige nuance [@lilienfeld2000]. Contra: a interpretação clínica livre dessas técnicas tem fidedignidade entre avaliadores baixa; muitos índices tradicionais do Rorschach carecem de validade demonstrada e alguns **superpatologizam** pessoas normais; o uso em decisões de alto impacto (perícias, seleção) sem apoio de outras fontes é indefensável. A favor: sistemas de codificação padronizados (como o Sistema Compreensivo de Exner e seu sucessor R-PAS) melhoraram a fidedignidade; um subconjunto de índices tem validade replicada (ex.: indicadores de desorganização do pensamento associados a psicose); e medidas de **motivos implícitos** via narrativas predizem desfechos de longo prazo que o autorrelato não capta — motivos implícitos e autorrelatados correlacionam-se pouco e predizem coisas diferentes [@mcclelland1961; @meyer2001]. O veredito prático: projetivas não são adivinhação nem bola de cristal — são instrumentos de validade **heterogênea**, defensáveis apenas nos usos específicos em que cada índice demonstrou funcionar, e sempre integrados a outras fontes.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o efeito Barnum.** Bertram Forer aplicou a seus alunos um "teste de personalidade" e devolveu a cada um uma análise "individualizada" — na verdade, o **mesmo** texto para todos, montado com frases de horóscopo: "Você tem grande necessidade de ser admirado", "Às vezes é extrovertido, às vezes reservado", "Tem potencial que ainda não aproveitou" [@forer1949]. **Resultado:** a avaliação média da precisão do "seu" perfil foi 4,26 em 5. **Interpretação:** descrições vagas, de dupla saída e lisonjeiras são aceitas como retratos precisos de si — o **efeito Barnum** (ou Forer). **Implicações:** o efeito explica a plausibilidade subjetiva de horóscopos, grafologia, numerologia e testes pop sem validade: a *sensação* de "sou eu!" não é evidência de precisão. É por isso que a validação de um instrumento exige critérios externos (predição, discriminação entre pessoas), nunca a satisfação do avaliado. **Limitações e desdobramentos:** replicações mostraram que o efeito cresce quando o texto é apresentado como "feito para você" e quando é favorável — exatamente as condições dos produtos comerciais do ramo.
+:::
+
+::: {.atencao}
+⚠️ **Como reconhecer uma pseudoavaliação.** Sinais de alerta: (1) classifica pessoas em **tipos** fixos e lisonjeiros ("você é um Golfinho Estratégico") em vez de dimensões contínuas com erro de medida; (2) não publica — ou não possui — estudos de fidedignidade e validade revisados por pares; (3) todo resultado "acerta" (imunizado pelo efeito Barnum); (4) promete decisões de alto impacto (contratar, promover, diagnosticar) a partir de um único instrumento breve; (5) confunde popularidade comercial com evidência. O contraste com a avaliação séria: dimensões, normas, intervalos de confiança, validade documentada para **aquele uso específico** — e a integração de múltiplas fontes [@meyer2001; @pittenger1993].
+:::
+
+## O contexto brasileiro: CFP e SATEPSI
+
+No Brasil, o uso de testes psicológicos é **ato privativo de psicólogos** e regulado pelo Conselho Federal de Psicologia. Desde 2003, o CFP mantém o **SATEPSI** (Sistema de Avaliação de Testes Psicológicos), que analisa os estudos de fidedignidade, validade e **normatização brasileira** de cada instrumento e publica a lista dos aprovados para uso profissional; a Resolução CFP nº 09/2018 consolidou as diretrizes da avaliação psicológica [@cfp2018]. A exigência de normas nacionais não é burocracia: normas importadas distorcem a interpretação (Cap. 50), e vários instrumentos clássicos já ficaram indisponíveis no país por não demonstrarem estudos locais atualizados. A avaliação psicológica profissional, nos termos das resoluções, é um **processo** — múltiplas fontes, instrumentos aprovados, contexto e finalidade definidos, devolutiva ao avaliado — e não a aplicação isolada de um teste [@cfp2018; @meyer2001].
+
+::: {.na-pratica}
+💡 **Checklist do consumidor de testes.** Antes de aceitar conclusões de qualquer avaliação de personalidade — num processo seletivo, numa matéria de jornal, num app: **Quem** aplicou (profissional habilitado?)? **Qual** instrumento (aprovado no SATEPSI, no caso brasileiro? com validade publicada para esse uso?)? **Como** foi interpretado (normas adequadas? múltiplas fontes? margem de erro reconhecida?)? **Para quê** (o instrumento foi validado para *essa* decisão?)? Uma resposta ruim a qualquer uma dessas perguntas rebaixa a "avaliação" a opinião com aparência técnica. E lembre a assimetria SOKA [@vazire2010]: para se conhecer melhor, às vezes a pergunta mais informativa não é "como eu me vejo?", mas "como três pessoas que me conhecem bem me descreveriam?".
+:::
+
+## Fechando o volume
+
+O Vol 11 percorreu o conceito e as grandes teorias da personalidade — psicodinâmica, humanista, traços, sociocognitiva — e terminou nas condições de sua medição honesta. O quadro integrado: uma arquitetura dimensional herdável e estável no agregado (Cap. 67), animada por processos cognitivo-afetivos que interagem com situações (Cap. 68), narrada pela própria pessoa em histórias que dão sentido (Cap. 64) — com as tradições clínicas (Caps. 65–66) lembrando que personalidade é também conflito, defesa, vínculo e busca de crescimento. No Vol 12, a lente se desloca do indivíduo para o **contexto social**: como as pessoas pensam umas sobre as outras, influenciam-se e se comportam em grupo — a psicologia social.
+
+## Síntese
+
+::: {.callout-sintese}
+- Quatro janelas de dados: **autorrelato (S)**, **informantes (I)**, **vida (L)**, **testes/observação (T)**; a assimetria SOKA define quem enxerga o quê melhor [@vazire2010]; validade se demonstra por convergência multimétodo [@campbell_fiske1959].
+- **MMPI**: construção empírica por critério + **escalas de validade** (L, F, K) [@hathaway_mckinley1943]. **NEO-PI-R**: medição racional-fatorial do CGF em domínios e facetas [@costa_mccrae1992]. Vieses de resposta (desejabilidade social [@crowne_marlowe1960], aquiescência) exigem controles.
+- **Projetivas** (Rorschach, TAT): validade **heterogênea** — índices específicos funcionam, a interpretação livre não; jamais como fonte única [@lilienfeld2000; @meyer2001]; motivos implícitos predizem o que o autorrelato não capta [@mcclelland1961].
+- **Efeito Barnum** [@forer1949]: descrições vagas e lisonjeiras parecem precisas — a satisfação do avaliado não valida nada.
+- Brasil: testes são ato privativo do psicólogo; o **SATEPSI** (CFP) exige fidedignidade, validade e **normas brasileiras**; avaliação é processo multifonte [@cfp2018].
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Dados S / I / L / T**
+:   Autorrelato, informantes, registros de vida e testes/observação — as quatro fontes clássicas de dados de personalidade.
+
+**Construção empírica por critério**
+:   Seleção de itens pela capacidade demonstrada de discriminar grupos, independentemente do conteúdo aparente (método do MMPI) [@hathaway_mckinley1943].
+
+**Escalas de validade**
+:   Escalas que detectam estilos de resposta (fingir virtude, exagerar sintomas, defensividade) antes da interpretação do perfil.
+
+**Desejabilidade social**
+:   Tendência a responder de modo a causar boa impressão [@crowne_marlowe1960].
+
+**Hipótese projetiva**
+:   Suposição de que respostas a estímulos ambíguos revelam a organização interna não consciente da pessoa.
+
+**Efeito Barnum (Forer)**
+:   Aceitação de descrições vagas, universais e lisonjeiras como retratos individuais precisos [@forer1949].
+
+**Motivos implícitos**
+:   Necessidades (realização, poder, afiliação) medidas por narrativas, pouco correlacionadas com o autorrelato e preditoras de desfechos próprios [@mcclelland1961].
+
+**SATEPSI**
+:   Sistema do CFP que avalia e autoriza testes psicológicos para uso profissional no Brasil, exigindo estudos e normas nacionais [@cfp2018].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva as quatro fontes de dados (S, I, L, T) e um ponto forte e um fraco de cada.
+
+2. **(Conceitual.)** Explique a diferença entre a construção empírica por critério (MMPI) e a racional-fatorial (NEO-PI-R). Que vantagem cada uma compra, e a que custo?
+
+3. **(Análise.)** Um candidato responde ao MMPI com L altíssimo e F baixo. Outro, com F altíssimo. O que cada padrão sugere, e por que interpretar as escalas clínicas antes das de validade seria um erro?
+
+4. **(Aplicação.)** Projete um mini-estudo para testar se o resultado de um teste viral de internet é efeito Barnum: amostra, manipulação, medida e resultado esperado sob cada hipótese [@forer1949].
+
+5. **(Avaliação.)** "Rorschach é pseudociência" × "Rorschach é uma radiografia da alma". Usando Lilienfeld et al. [-@lilienfeld2000] e Meyer et al. [-@meyer2001], formule a posição intermediária que a evidência sustenta.
+
+6. **(Síntese.)** Uma empresa quer prever quais trainees terão bom desempenho. Combine o que este volume estabeleceu (Cap. 67: validade preditiva da conscienciosidade; Cap. 68: autoeficácia e assinaturas; este capítulo: fontes múltiplas e SATEPSI) para desenhar um protocolo de avaliação defensável.
