@@ -1,5 +1,129 @@
 # 46. Pensamento, conceitos e resolução de problemas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** como conceitos e categorias organizam o pensamento, contrastando a visão clássica com a teoria dos protótipos.
+- **Descrever** os níveis de categorização e o papel do nível básico.
+- **Distinguir** algoritmos de heurísticas na resolução de problemas e nomear estratégias heurísticas.
+- **Analisar** a resolução de problemas como busca num espaço de estados (Newell e Simon).
+- **Identificar** obstáculos ao pensamento — fixidez funcional, disposição mental (Einstellung) — e o papel do insight e da incubação.
+- **Caracterizar** a expertise como reorganização do conhecimento em *chunks*.
 :::
+
+Com a memória mapeada, voltamo-nos ao que ela alimenta: o **pensamento** — a manipulação mental de informação para formar conceitos, raciocinar, resolver problemas e decidir. A **cognição** é o conjunto desses processos, e a psicologia cognitiva (Cap. 12) trata a mente como um sistema que representa e processa informação. Este capítulo cobre dois pilares desse edifício: como o pensamento **organiza o mundo em conceitos** e como **ataca problemas**. O próximo (Cap. 47) tratará de um terceiro, a decisão sob incerteza. O fio condutor é que a mente humana é, a um só tempo, extraordinariamente eficiente — graças a atalhos que a tornam rápida — e sistematicamente vulnerável — porque esses mesmos atalhos a enganam.
+
+## Conceitos e categorias
+
+Pensar seria impossível se tratássemos cada objeto como único. Em vez disso, agrupamos coisas em **categorias** e formamos **conceitos** — representações mentais de uma classe de objetos, eventos ou ideias. Categorizar é o alicerce da cognição: ao classificar um novo animal como "cão", herdamos instantaneamente um vasto conhecimento (late, tem dono, não voa) sem ter de reaprendê-lo. Conceitos são a economia cognitiva que nos poupa de afogar na singularidade infinita das coisas.
+
+Como representamos um conceito? A **visão clássica** dizia que uma categoria se define por um conjunto de **características necessárias e suficientes** — "triângulo" é *toda* figura fechada de três lados retos, nem mais nem menos. Funciona para conceitos formais, mas fracassa para os naturais. Que características necessárias e suficientes definem "jogo", ou "cadeira", ou "vegetal"? Sempre há exceções. Eleanor Rosch propôs a alternativa hoje dominante: a **teoria dos protótipos**. Categorias naturais organizam-se em torno de um **protótipo** — o melhor exemplar, o mais típico —, e classificamos um item pela sua **semelhança** a esse protótipo, não por regras rígidas [@rosch1975]. Isso explica a **estrutura graduada** das categorias: um pardal é "mais ave" que um pinguim, e as pessoas concordam nisso e respondem mais rápido a "o pardal é uma ave?" do que a "o pinguim é uma ave?". A categoria tem membros mais e menos centrais — algo que a visão clássica de tudo-ou-nada não capta.
+
+::: {#fig-niveis-categoria}
+```{.tikz}
+%%| filename: niveis-categoria
+%%| alt: Diagrama de três níveis de categorização. No topo, o nível superordenado, mais geral, exemplificado por móvel. No meio, o nível básico, exemplificado por cadeira, destacado como o mais usado. Embaixo, o nível subordinado, mais específico, exemplificado por cadeira de balanço e poltrona.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \tikzset{cat/.style={rectangle, rounded corners, draw=manualgray, fill=manualgray!8, align=center, minimum height=0.7cm, inner sep=3pt}}
+  \node[cat] (sup) at (3,3) {\textbf{Móvel}\\{\tiny superordenado — geral, pouca imagem comum}};
+  \node[cat, draw=manualgreen, fill=manualgreen!10, font=\bfseries] (bas) at (3,1.5) {Cadeira\\{\tiny NÍVEL BÁSICO — o mais usado e informativo}};
+  \node[cat] (sub1) at (1.1,0) {Cadeira de balanço\\{\tiny subordinado}};
+  \node[cat] (sub2) at (5.0,0) {Poltrona\\{\tiny subordinado}};
+  \draw[->] (sup) -- (bas);
+  \draw[->] (bas) -- (sub1);
+  \draw[->] (bas) -- (sub2);
+\end{tikzpicture}
+```
+Níveis de categorização. O **nível básico** ("cadeira") é o que usamos por padrão: mais informativo que o superordenado ("móvel", geral demais) e mais econômico que o subordinado ("cadeira de balanço", específico demais). É o primeiro que a criança aprende e o mais rápido de nomear.
+:::
+
+As categorias organizam-se ainda em **hierarquias** de três níveis (@fig-niveis-categoria). O **nível básico** — "cadeira", "cão", "maçã" — é privilegiado cognitivamente: é o que nomeamos por padrão, o mais rápido de reconhecer, o primeiro que as crianças aprendem. Ele equilibra informatividade e economia, ao contrário do superordenado (geral demais: "móvel") e do subordinado (específico demais: "cadeira de balanço").
+
+## Resolvendo problemas
+
+Um **problema** existe quando há uma distância entre onde se está (estado inicial) e onde se quer chegar (estado-meta), sem um caminho óbvio. Problemas **bem definidos** têm estado inicial, meta e operações claros (um quebra-cabeça, uma equação); os **mal definidos** têm metas vagas e muitos caminhos possíveis ("escrever um bom texto", "ser feliz") e são a maioria na vida real.
+
+Para atravessar essa distância, dispomos de dois grandes tipos de método. Um **algoritmo** é um procedimento que, seguido à risca, **garante** a solução — como testar exaustivamente todas as combinações de um cadeado. É confiável, mas muitas vezes inviável: o número de possibilidades explode. Uma **heurística** é um atalho mental que **não garante** a solução, mas em geral a alcança com muito menos esforço. As heurísticas de resolução de problemas incluem:
+
+- A **análise meios-fins**: identificar a diferença entre o estado atual e a meta e escolher, a cada passo, a ação que mais a reduz — criando submetas intermediárias. É a estratégia central do modelo de Newell e Simon.
+- O **trabalho de trás para frente**: partir da meta e retroceder até o estado inicial, útil quando o ponto de chegada é claro e o de partida, difuso (comum em provas de geometria).
+- O **raciocínio por analogia**: aplicar a solução de um problema já resolvido a um novo problema estruturalmente parecido — poderoso, mas depende de reconhecer a analogia, o que muitas vezes falha.
+
+Allen Newell e Herbert Simon formalizaram a resolução de problemas como uma **busca num espaço de estados**: o solucionador navega uma "árvore" de estados possíveis, aplicando operadores para ir de um a outro até atingir a meta, guiado por heurísticas que podam os ramos inúteis [@newell_simon1972]. Foi um marco da ciência cognitiva e da inteligência artificial nascente — a mente (e a máquina) como um buscador de caminhos.
+
+## Os obstáculos do pensamento
+
+Se a mente é hábil, ela também tropeça de maneiras previsíveis. Dois obstáculos clássicos mostram como a experiência, que costuma ajudar, pode aprisionar.
+
+::: {.experimento}
+🔬 **Fixidez funcional: o problema da vela (Duncker).** Karl Duncker deu a participantes uma vela, uma caixa de tachinhas e fósforos, com a tarefa de fixar a vela na parede de modo que, acesa, não pingasse cera no chão. A solução exige uma percepção pouco óbvia: **esvaziar a caixa** de tachinhas, pregá-la na parede como suporte e apoiar a vela nela. A maioria trava — porque vê a caixa apenas como *recipiente* de tachinhas, não como possível *prateleira* [@duncker1945]. Esse bloqueio é a **fixidez funcional**: a dificuldade de conceber um objeto numa função diferente da habitual. Reveladoramente, quando a caixa é apresentada **vazia**, ao lado das tachinhas, muito mais gente resolve — livre da função "recipiente", enxerga a função "suporte".
+:::
+
+::: {.experimento}
+🔬 **Disposição mental: os jarros de água (Luchins).** Abraham Luchins deu a participantes uma série de problemas de medir volumes com três jarros, todos solúveis por uma mesma fórmula trabalhosa (encher B, subtrair A e dois C). Depois de resolver vários assim, apresentou problemas que admitiam uma solução **muito mais simples** — e também ainda funcionavam pela fórmula antiga. A maioria continuou usando a fórmula longa, **cega** para o atalho evidente; alguns nem resolviam um problema que *só* tinha a solução simples [@luchins1942]. É o **efeito Einstellung** ou **disposição mental** (*mental set*): a tendência a persistir numa abordagem que funcionou antes, mesmo quando há outra melhor. Um grupo de controle, sem a série prévia, achava o atalho de imediato. A experiência criou um sulco mental — e o sulco virou armadilha.
+:::
+
+Contra esses bloqueios, um fenômeno curioso: a **incubação**. Afastar-se de um problema difícil e voltar depois costuma favorecer a solução — o "deixa eu dormir sobre isso". Uma explicação plausível é que o intervalo permite que a **disposição mental inadequada se dissipe** (esquecemos a abordagem travada), abrindo espaço para reestruturar o problema. É aparentada ao **insight** de Köhler (Cap. 42): a solução que surge de súbito, "do nada", depois de uma pausa, quando os elementos se reorganizam numa nova configuração.
+
+## A expertise
+
+Por que um enxadrista mestre enxerga em segundos a jogada que um iniciante não vê em minutos? A resposta não é memória "maior" nem raciocínio "mais veloz" em geral, e sim **conhecimento melhor organizado**. Num estudo clássico, mostraram-se a mestres e a novatos, por poucos segundos, posições de um tabuleiro de xadrez. Diante de posições de **partidas reais**, os mestres reconstruíam-nas quase perfeitamente, muito além dos novatos. Mas diante de peças dispostas **ao acaso**, a vantagem dos mestres **desaparecia**: lembravam tão pouco quanto os iniciantes [@chase_simon1973]. A interpretação: o mestre não tem uma memória prodigiosa genérica; ele percebe o tabuleiro em grandes **chunks** significativos — configurações táticas familiares — que, num arranjo aleatório e sem sentido, não existem. A expertise é, em boa medida, um vasto repertório de padrões reconhecíveis, construído por anos de prática (Cap. 42), que permite ao especialista "ver" a estrutura onde o leigo vê peças soltas.
+
+::: {.na-pratica}
+**Pensar melhor.** Vários achados deste capítulo têm tradução prática. Para vencer a **fixidez funcional** e a **disposição mental**, ajuda descrever os objetos e o problema em termos genéricos ("um objeto plano" em vez de "uma caixa"), listar deliberadamente usos alternativos e questionar a primeira abordagem que "cola". Diante de um impasse, a **incubação** é uma estratégia real, não preguiça: fazer uma pausa, dormir, mudar de tarefa. Para transferir soluções, vale treinar o **raciocínio por analogia**, buscando ativamente a estrutura profunda comum a problemas de superfícies diferentes. E, como o estudo do xadrez sugere, não há atalho para a expertise: ela se constrói acumulando e organizando padrões por prática deliberada.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Conceitos** e **categorias** organizam o pensamento e economizam cognição. A **visão clássica** (características necessárias e suficientes) falha para categorias naturais; a **teoria dos protótipos** (Rosch) as descreve por semelhança a um melhor exemplar, com **estrutura graduada**.
+- As categorias formam hierarquias; o **nível básico** ("cadeira") é o cognitivamente privilegiado.
+- Resolver problemas usa **algoritmos** (garantem a solução, mas custam caro) ou **heurísticas** (atalhos: meios-fins, trás para frente, analogia). Newell e Simon modelaram a resolução como **busca num espaço de estados**.
+- Obstáculos: a **fixidez funcional** (Duncker, vela) e a **disposição mental / Einstellung** (Luchins, jarros). A **incubação** e o **insight** ajudam a superá-los.
+- A **expertise** (Chase e Simon, xadrez) é conhecimento **reorganizado em chunks**, não memória genérica maior — a vantagem some com posições aleatórias.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Conceito / categoria**
+:   Representação mental de uma classe de objetos, eventos ou ideias, que agrupa o semelhante e economiza cognição.
+
+**Teoria dos protótipos**
+:   Categorias organizam-se por semelhança a um melhor exemplar (protótipo), com estrutura graduada [@rosch1975].
+
+**Nível básico**
+:   O nível intermediário de categorização, mais informativo e usado por padrão (p. ex., "cadeira").
+
+**Algoritmo / heurística**
+:   Procedimento que garante a solução (mas custoso) / atalho mental que costuma resolver sem garantia.
+
+**Espaço de estados**
+:   Conjunto de estados e operações entre eles; resolver é buscar um caminho do inicial ao meta [@newell_simon1972].
+
+**Fixidez funcional**
+:   Dificuldade de conceber um objeto numa função diferente da habitual [@duncker1945].
+
+**Disposição mental (Einstellung)**
+:   Tendência a persistir numa abordagem já bem-sucedida, mesmo havendo outra melhor [@luchins1942].
+
+**Incubação**
+:   Melhora na solução após um afastamento do problema, ligada à dissipação da disposição mental.
+
+**Expertise**
+:   Desempenho superior baseado em conhecimento organizado em *chunks* de padrões familiares [@chase_simon1973].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Por que a visão clássica dos conceitos falha para categorias como "jogo" ou "ave"? Como a teoria dos protótipos resolve isso?
+
+2. **(Conceitual.)** O que torna o **nível básico** especial? Dê um exemplo de trio superordenado / básico / subordinado.
+
+3. **(Aplicação.)** Escolha um problema real e mostre como aplicar **análise meios-fins** e **trabalho de trás para frente**. Quando um algoritmo seria inviável?
+
+4. **(Análise.)** Explique como o problema da vela (Duncker) demonstra a fixidez funcional. Por que apresentar a caixa vazia facilita a solução?
+
+5. **(Reflexão crítica.)** No estudo dos jarros de água, por que ter resolvido problemas antes *prejudicou* o desempenho? Que lição isso traz para hábitos de resolução de problemas?
+
+6. **(Integração.)** O estudo do xadrez mostra que a vantagem dos mestres some com tabuleiros aleatórios. O que isso revela sobre a natureza da expertise e sua relação com a memória (Cap. 43) e a prática (Cap. 42)?
