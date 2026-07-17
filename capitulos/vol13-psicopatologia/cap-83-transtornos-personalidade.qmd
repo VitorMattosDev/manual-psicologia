@@ -1,5 +1,135 @@
 # 83. Transtornos de personalidade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** transtorno de personalidade e distingui-lo dos transtornos episódicos dos capítulos anteriores.
+- **Descrever** os três agrupamentos (clusters) e os dez transtornos de personalidade do modelo categórico.
+- **Caracterizar** o transtorno de personalidade borderline e a teoria biossocial de Linehan.
+- **Distinguir** transtorno de personalidade antissocial de psicopatia.
+- **Explicar** por que o modelo categórico entrou em crise e como os modelos dimensionais (DSM-5 alternativo e CID-11) respondem a ela.
+- **Combater** o pessimismo terapêutico, reconhecendo que esses transtornos são tratáveis.
 :::
+
+Até aqui, tratamos de transtornos que, em geral, **surgem** na vida de alguém: uma pessoa tinha um funcionamento e passou a ter episódios de depressão, pânico ou psicose. Os transtornos de personalidade são diferentes. Eles não são episódios que vêm e vão, mas padrões **persistentes** de pensar, sentir e se relacionar que constituem o próprio jeito de ser da pessoa — rígidos, disseminados por todas as áreas da vida e fonte de sofrimento para ela ou para quem a cerca. Isso os torna, ao mesmo tempo, os transtornos mais difíceis de delimitar (onde termina a personalidade "difícil" e começa a patológica?) e os que mais expõem o dilema central deste volume: categoria ou dimensão? É também um território carregado de estigma — inclusive entre profissionais —, que este capítulo procura desarmar.
+
+## O que define um transtorno de personalidade
+
+Um **transtorno de personalidade** é um padrão duradouro de experiência interna e comportamento que se **desvia** acentuadamente das expectativas da cultura, é **inflexível** e **disseminado** por muitas situações, tem início na adolescência ou início da vida adulta, é **estável** ao longo do tempo e causa **sofrimento ou prejuízo**. A rigidez é a chave: onde a personalidade saudável se adapta ao contexto, a patológica repete o mesmo padrão ainda quando ele fracassa.
+
+Um traço frequente complica o quadro: muitos desses padrões são **egossintônicos** — a pessoa os vive como parte natural de si, não como um problema a tratar. Por isso quem tem transtorno de personalidade muitas vezes procura ajuda pelas **consequências** (conflitos, depressão, perdas) e não pelo padrão em si, e por isso o diagnóstico exige cautela redobrada com a relatividade cultural (Cap. 76): "desvio das expectativas da cultura" é um critério que já foi mal usado.
+
+## O modelo categórico: três clusters, dez transtornos
+
+O DSM-5-TR mantém, em sua seção principal, o modelo **categórico** com dez transtornos de personalidade agrupados em três *clusters* por semelhança aparente (@fig-clusters):
+
+::: {#fig-clusters}
+```{.tikz}
+%%| filename: clusters-personalidade
+%%| alt: Três caixas horizontais empilhadas, uma por cluster de transtornos de personalidade. No topo, caixa cinza "Cluster A — esquisito/excêntrico", listando paranoide, esquizoide e esquizotípico, com a nota desconfiança e distanciamento. No centro, caixa vermelha "Cluster B — dramático/emocional/errático", listando antissocial, borderline, histriônico e narcisista, com a nota impulsividade e instabilidade. Embaixo, caixa azul "Cluster C — ansioso/temeroso", listando esquiva, dependente e obsessivo-compulsivo da personalidade, com a nota ansiedade e medo.
+\begin{tikzpicture}[font=\small,
+  cl/.style={draw, thick, rounded corners=4pt, align=left, minimum width=11cm, minimum height=1.5cm, text width=10.4cm}]
+  \node[cl, draw=manualgray, fill=manualgray!12] (a) at (0,3.4)
+    {\textbf{Cluster A — esquisito / excêntrico} {\scriptsize(desconfiança, distanciamento)}\\
+     {\footnotesize Paranoide $\cdot$ Esquizoide $\cdot$ Esquizotípico}};
+  \node[cl, draw=manualred, fill=manualred!8] (b) at (0,1.5)
+    {\textbf{Cluster B — dramático / emocional / errático} {\scriptsize(impulsividade, instabilidade)}\\
+     {\footnotesize Antissocial $\cdot$ \textbf{Borderline} $\cdot$ Histriônico $\cdot$ Narcisista}};
+  \node[cl, draw=manualblue, fill=manualblue!8] (c) at (0,-0.4)
+    {\textbf{Cluster C — ansioso / temeroso} {\scriptsize(ansiedade, medo)}\\
+     {\footnotesize Esquiva $\cdot$ Dependente $\cdot$ Obsessivo-compulsivo da personalidade}};
+\end{tikzpicture}
+```
+Os três *clusters* do modelo categórico dos transtornos de personalidade. Os agrupamentos captam semelhanças superficiais, mas a pesquisa mostra que suas fronteiras são fluidas — parte da crise que motivou os modelos dimensionais.
+:::
+
+- **Cluster A (esquisito/excêntrico):** **paranoide** (desconfiança pervasiva), **esquizoide** (distanciamento das relações, restrição emocional) e **esquizotípico** (excentricidade, distorções perceptuais e cognitivas — geneticamente aparentado à esquizofrenia).
+- **Cluster B (dramático/emocional/errático):** **antissocial**, **borderline**, **histriônico** (busca excessiva de atenção) e **narcisista** (grandiosidade, necessidade de admiração, empatia reduzida).
+- **Cluster C (ansioso/temeroso):** **esquiva** (inibição social por medo de rejeição), **dependente** (necessidade excessiva de ser cuidado) e **obsessivo-compulsivo da personalidade** (perfeccionismo e controle rígidos — que **não** se confunde com o TOC do Cap. 81).
+
+Os dois transtornos mais estudados e clinicamente relevantes merecem tratamento próprio.
+
+## Transtorno de personalidade borderline
+
+O **transtorno de personalidade borderline (TPB)** organiza-se em torno de uma palavra: **instabilidade**. Instabilidade das emoções (mudanças intensas e rápidas de humor), das relações (idealização e desvalorização alternadas), da autoimagem (senso de identidade difuso) e do controle dos impulsos. Somam-se um **medo intenso de abandono**, sentimentos crônicos de vazio, e comportamentos **autolesivos** e de risco, com elevada taxa de tentativas de suicídio — o que faz do TPB um dos transtornos de personalidade mais graves [@gunderson2011].
+
+A explicação mais influente é a **teoria biossocial** de Marsha Linehan: o TPB resulta da transação entre uma **vulnerabilidade emocional** de base biológica (alta sensibilidade, reações intensas e retorno lento à linha de base) e um **ambiente invalidante** — um contexto que crônica e repetidamente ignora, pune ou trivializa as experiências emocionais da pessoa [@linehan1993; @crowell2009]. Nem a vulnerabilidade sozinha, nem o ambiente sozinho: é a interação (mais uma vez, a diátese-estresse do Cap. 76) que impede o desenvolvimento das habilidades de **regulação emocional**. A pessoa fica com emoções intensas e sem ferramentas para modulá-las — e a autolesão, por exemplo, torna-se uma forma aprendida (e reforçada) de aliviar uma dor emocional insuportável.
+
+::: {.atencao}
+⚠️ **O estigma do "borderline" e o pessimismo terapêutico.** Poucos diagnósticos carregam tanto preconceito, inclusive entre profissionais de saúde, que às vezes tratam pessoas com TPB como "manipuladoras" ou "sem solução". As duas ideias são falsas e prejudiciais. Os comportamentos vistos como "manipulação" são, em geral, tentativas desesperadas e pouco eficazes de regular a emoção e obter cuidado. E, quanto ao prognóstico, estudos de seguimento mostram que o TPB tem um curso **mais favorável** do que se pensava: com tratamento adequado — e mesmo sem ele, ao longo dos anos —, uma parcela substancial das pessoas alcança remissão dos sintomas. O pessimismo terapêutico não é realismo; é uma profecia que atrapalha o cuidado.
+:::
+
+## Transtorno de personalidade antissocial e psicopatia
+
+O **transtorno de personalidade antissocial (TPAS)** caracteriza-se por um padrão pervasivo de **desrespeito e violação dos direitos dos outros**: enganar, manipular, agir por impulso, desconsiderar a segurança alheia e a própria, irresponsabilidade e — o traço central — **ausência de remorso**. O diagnóstico exige indícios de transtorno de conduta antes dos 15 anos, sinalizando o início precoce.
+
+É preciso distingui-lo da **psicopatia**, um construto relacionado, porém mais restrito e mais bem preditivo, com raízes na descrição clínica de Cleckley e operacionalizado por Robert Hare [@cleckley1941; @hare2003]. A psicopatia soma ao padrão antissocial um núcleo **interpessoal-afetivo** distintivo: charme superficial, grandiosidade, manipulação fria, e sobretudo **frieza emocional** — ausência de empatia, de medo e de culpa. A relação entre os dois é assimétrica: a maioria das pessoas com TPAS **não** é psicopata, e nem toda pessoa com traços psicopáticos comete crimes ou preenche o TPAS. Confundir os dois — e ambos com "criminoso" — é um erro comum e consequente.
+
+::: {.atencao}
+⚠️ **Nem todo psicopata é criminoso, nem todo criminoso é psicopata.** A cultura popular equipara psicopatia a assassino em série. A realidade é mais prosaica e mais interessante: traços psicopáticos distribuem-se dimensionalmente na população, e muitas pessoas com esses traços atuam dentro da lei — às vezes com "sucesso" em ambientes que premiam frieza e assertividade. Por outro lado, a imensa maioria dos crimes é cometida por pessoas **sem** psicopatia, movidas por circunstâncias sociais, impulsividade ou necessidade. Psicopatia é um construto psicológico mensurável, não um veredito moral nem um sinônimo de violência — uma distinção que o Cap. 101 (psicologia forense) retoma.
+:::
+
+## A crise do modelo categórico e a virada dimensional
+
+O modelo dos dez transtornos acumulou problemas que o tornaram, para muitos pesquisadores, insustentável. A **comorbidade** é a regra: quem preenche um transtorno de personalidade costuma preencher vários. A **heterogeneidade** interna é enorme (duas pessoas com o mesmo diagnóstico de borderline podem compartilhar pouquíssimos sintomas). Os limiares são **arbitrários**, e a categoria "não especificado" acabava sendo a mais usada. Tudo isso aponta para a mesma conclusão do Cap. 77: personalidade **varia em graus**, não em tipos [@widiger2007].
+
+A resposta veio em dois movimentos. O DSM-5 incluiu, em sua Seção III (para estudo), um **Modelo Alternativo (AMPD)** que descreve o transtorno por dois eixos: (1) o **nível de funcionamento da personalidade** (a gravidade das perturbações do self e das relações) e (2) o perfil em **cinco domínios de traços patológicos** — afetividade negativa, distanciamento, antagonismo, desinibição e psicoticismo. Não é coincidência que esses domínios sejam, em boa parte, versões **desadaptativas dos cinco grandes fatores** da personalidade normal (Cap. 67) [@skodol2011]: a psicopatologia da personalidade é o extremo do mesmo espaço de traços que descreve todo mundo. A **CID-11** foi ainda mais longe e **aboliu** as categorias, adotando um sistema **inteiramente dimensional**: classifica-se a **gravidade** do transtorno (leve, moderado, grave) e, opcionalmente, qualificadores de traço, mantendo apenas um "padrão borderline" como concessão. É a maior aposta dimensional de toda a nosologia psiquiátrica atual.
+
+## O tratamento
+
+Ao contrário do velho pessimismo, os transtornos de personalidade — sobretudo o TPB — são **tratáveis**, e a **psicoterapia** é o tratamento principal (os medicamentos têm papel coadjuvante, para sintomas específicos). Para o TPB, a **terapia comportamental dialética (DBT)** de Linehan é a mais estabelecida: ensina, de forma estruturada, habilidades de regulação emocional, tolerância ao mal-estar, atenção plena e eficácia interpessoal, e tem forte evidência de reduzir autolesão e hospitalizações (Cap. 92) [@storebo2020]. Outras abordagens com suporte incluem a **terapia baseada na mentalização (MBT)** e a **terapia do esquema** [@bateman2008]. O denominador comum é ajudar a pessoa a desenvolver as capacidades de regulação e de relação que o desenvolvimento não consolidou.
+
+::: {.na-pratica}
+💡 **Ambiente invalidante x ambiente validante — uma lição para além da clínica.** A teoria biossocial de Linehan identifica a **invalidação** — dizer a alguém, repetidamente, que o que ele sente é errado, exagerado ou inexistente — como um ingrediente central no desenvolvimento da desregulação emocional. A **validação**, por contraste, não significa concordar com tudo nem aprovar todo comportamento; significa reconhecer que a emoção da pessoa faz sentido dado o ponto de vista dela ("entendo por que isso te deixou tão magoado"). Essa distinção é uma ferramenta prática poderosa para pais, professores, casais e amigos: validar a emoção e, ao mesmo tempo, orientar o comportamento é mais eficaz do que negar o sentimento para tentar corrigir a ação. É a psicopatologia devolvendo à vida cotidiana uma habilidade que boa parte de nós nunca aprendeu explicitamente.
+:::
+
+::: {.callout-sintese}
+- Transtornos de personalidade são padrões **persistentes, inflexíveis e disseminados**, de início precoce, muitas vezes **egossintônicos** — não episódios que vêm e vão.
+- O modelo categórico do DSM-5-TR tem **dez** transtornos em três *clusters*: A (esquisito), B (dramático) e C (ansioso).
+- O **borderline** gira em torno da **instabilidade** e do medo de abandono; explica-se pela **teoria biossocial** de Linehan (vulnerabilidade emocional × ambiente invalidante) [@linehan1993; @crowell2009] e é mais tratável do que o estigma sugere.
+- O **antissocial** difere da **psicopatia**, que acrescenta o núcleo afetivo de frieza e ausência de empatia [@hare2003; @cleckley1941]; nem todo psicopata é criminoso, nem todo criminoso é psicopata.
+- O modelo categórico entrou em **crise** (comorbidade, heterogeneidade, limiares arbitrários) [@widiger2007]; o **AMPD** do DSM-5 e a **CID-11** (totalmente dimensional) descrevem a personalidade patológica como gravidade + traços, ligados aos Cinco Grandes Fatores (Cap. 67) [@skodol2011].
+- O tratamento é sobretudo **psicoterápico** — DBT, MBT, terapia do esquema [@storebo2020; @bateman2008] —, e o pessimismo terapêutico é infundado.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Transtorno de personalidade**
+:   Padrão duradouro, inflexível e disseminado de experiência e comportamento que se desvia da cultura, é estável e causa sofrimento ou prejuízo.
+
+**Egossintônico**
+:   Vivido pela pessoa como parte natural de si, e não como sintoma a ser tratado — típico dos transtornos de personalidade.
+
+**Clusters A, B, C**
+:   Agrupamentos categóricos: A (esquisito/excêntrico), B (dramático/emocional), C (ansioso/temeroso).
+
+**Transtorno de personalidade borderline**
+:   Padrão de instabilidade de emoções, relações, autoimagem e impulsos, com medo de abandono e risco de autolesão [@gunderson2011].
+
+**Teoria biossocial**
+:   Explicação do TPB pela transação entre vulnerabilidade emocional biológica e ambiente invalidante [@linehan1993].
+
+**Psicopatia**
+:   Construto que soma ao padrão antissocial um núcleo interpessoal-afetivo de frieza, manipulação e ausência de empatia e culpa [@hare2003].
+
+**Modelo dimensional (AMPD / CID-11)**
+:   Descrição da personalidade patológica por gravidade do funcionamento e domínios de traços, em vez de categorias discretas [@skodol2011].
+
+**Terapia comportamental dialética (DBT)**
+:   Tratamento estruturado do TPB centrado em habilidades de regulação emocional e validação [@storebo2020].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que distingue um transtorno de personalidade dos transtornos episódicos dos capítulos anteriores? Explique por que o caráter egossintônico dificulta a busca de tratamento.
+
+2. **(Conceitual.)** Descreva os três *clusters* e dê um transtorno de cada. Por que o transtorno obsessivo-compulsivo da personalidade não deve ser confundido com o TOC (Cap. 81)?
+
+3. **(Análise.)** Use a teoria biossocial de Linehan para explicar como vulnerabilidade emocional e ambiente invalidante se combinam no desenvolvimento do borderline. Por que nenhum dos dois, isolado, seria suficiente?
+
+4. **(Conceitual.)** Diferencie transtorno de personalidade antissocial e psicopatia. Por que a afirmação "todo criminoso é psicopata" está errada nas duas direções?
+
+5. **(Reflexão crítica.)** Cite três problemas do modelo categórico dos transtornos de personalidade e explique como o modelo dimensional (AMPD ou CID-11) responde a cada um. Que relação isso tem com os Cinco Grandes Fatores (Cap. 67)?
+
+6. **(Aplicação.)** Distinga invalidação de validação com um exemplo do cotidiano (um filho que chega chorando da escola). Mostre como validar a emoção sem necessariamente aprovar o comportamento.
