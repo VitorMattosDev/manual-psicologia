@@ -1,5 +1,143 @@
 # 74. Comportamento pró-social e agressão
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o efeito espectador e o modelo de decisão de cinco passos que determina se alguém ajuda numa emergência.
+- **Distinguir** as explicações egoístas e a hipótese da empatia–altruísmo para o comportamento de ajuda.
+- **Situar** as raízes evolutivas do altruísmo (seleção de parentesco e reciprocidade) e o papel de fatores situacionais como a pressa.
+- **Descrever** as principais teorias da agressão: instintiva, frustração–agressão, aprendizagem social e o modelo geral da agressão.
+- **Avaliar** criticamente o debate sobre catarse e sobre o efeito da violência na mídia e nos videogames.
+- **Aplicar** o conhecimento para aumentar a probabilidade de receber e prestar ajuda e para reduzir a agressão.
 :::
+
+Os seres humanos são capazes dos dois extremos: do sacrifício anônimo por um estranho à crueldade deliberada contra o semelhante. Este capítulo estuda esses dois polos do comportamento social — o **pró-social** (ações que beneficiam outros) e a **agressão** (ações que visam causar dano) — e mostra que ambos, longe de serem simples reflexos da bondade ou da maldade individual, são governados por situações, aprendizagens e cálculos em grande parte invisíveis a quem age. Começamos por um caso que chocou os Estados Unidos e fundou um campo de pesquisa.
+
+## Por que não ajudamos: o efeito espectador
+
+Em 1964, em Nova York, Kitty Genovese foi assassinada perto de casa num ataque prolongado. A imprensa noticiou — com exageros que só décadas depois seriam corrigidos — que 38 vizinhos teriam testemunhado o crime sem chamar a polícia. Verdadeiro nos detalhes ou não, o episódio provocou a pergunta que moveu John Darley e Bibb Latané: por que pessoas boas deixam de ajudar? A resposta que encontraram é contraintuitiva e uma das mais sólidas da psicologia social: **quanto mais testemunhas há, menos provável é que qualquer uma ajude**. É o **efeito espectador** (*bystander effect*).
+
+::: {.experimento}
+🔬 **Experimento Clássico — a crise epiléptica.** Darley e Latané puseram participantes para conversar por interfone, supostamente para preservar o anonimato, cada um em sua sala [@darley_latane1968]. A certa altura, um dos "participantes" (na verdade, uma gravação) simulava um ataque epiléptico, pedindo socorro. A variável manipulada era o número de pessoas que o participante **acreditava** estarem ouvindo. **Resultado:** quando o participante pensava ser a **única** testemunha, 85% saíram para ajudar, rapidamente. Quando acreditava haver **outras quatro** pessoas ouvindo, apenas 31% ajudaram, e mais devagar. **Interpretação:** a presença de outros dilui a responsabilidade individual — a **difusão de responsabilidade** ("alguém já deve estar ligando para a emergência"). **Limitações:** o efeito é robusto e replicado em meta-análises, mas atenua-se ou some quando a emergência é inequívoca e perigosa, situação em que a presença de outros pode até *aumentar* a ajuda [@fischer2011].
+:::
+
+Latané e Darley explicaram o fenômeno com um **modelo de decisão de cinco passos**: para ajudar, a pessoa precisa passar por **todos** os cinco, e falhar em qualquer um interrompe a ajuda (@fig-espectador). É preciso (1) **notar** o evento — a pressa e a sobrecarga urbana já bloqueiam aqui; (2) **interpretá-lo como emergência** — e é neste passo que entra a **ignorância pluralística**: cada um, ao ver os outros aparentemente calmos, conclui que não é grave, e a calma coletiva é uma ilusão feita de indivíduos igualmente inseguros; (3) **assumir responsabilidade** — bloqueada pela difusão em grupos grandes; (4) **saber como ajudar**; e (5) **decidir agir**, pesando custos e riscos.
+
+::: {#fig-espectador}
+```{.tikz}
+%%| filename: modelo-espectador
+%%| alt: Fluxograma vertical com cinco caixas de decisão empilhadas, cada uma com uma pergunta. De cima para baixo: "Notei o evento?", "É uma emergência?", "É minha responsabilidade?", "Sei como ajudar?", "Decido agir?". Uma seta verde de "sim" desce de cada caixa para a seguinte, e a última leva a "AJUDA". De cada caixa sai também uma seta vermelha lateral de "não" que leva a "não ajuda", com o obstáculo típico anotado ao lado: pressa, ignorância pluralística, difusão de responsabilidade, falta de competência, custo alto.
+\begin{tikzpicture}[
+  passo/.style={draw, thick, rounded corners=4pt, minimum width=4.2cm, minimum height=1.0cm, align=center, font=\small, draw=manualblue, fill=manualblue!8},
+  sim/.style={->, >=Stealth, thick, manualgreen},
+  nao/.style={->, >=Stealth, thick, manualred},
+  obst/.style={font=\scriptsize\itshape, text=manualred, anchor=west}
+]
+  \node[passo] (p1) at (0,8)  {Notei o evento?};
+  \node[passo] (p2) at (0,6.4){É uma emergência?};
+  \node[passo] (p3) at (0,4.8){É minha responsabilidade?};
+  \node[passo] (p4) at (0,3.2){Sei como ajudar?};
+  \node[passo] (p5) at (0,1.6){Decido agir?};
+  \node[draw, thick, rounded corners=4pt, minimum width=4.2cm, minimum height=1.0cm, align=center, font=\small\bfseries, draw=manualgreen, fill=manualgreen!12] (aj) at (0,0) {AJUDA};
+
+  \node[draw, thick, rounded corners=3pt, minimum width=2.2cm, minimum height=0.8cm, align=center, font=\scriptsize, draw=manualred, fill=manualred!8] (na) at (5.6,4.8) {não ajuda};
+
+  \draw[sim] (p1) -- (p2);
+  \draw[sim] (p2) -- (p3);
+  \draw[sim] (p3) -- (p4);
+  \draw[sim] (p4) -- (p5);
+  \draw[sim] (p5) -- (aj);
+
+  \draw[nao] (p1) -| node[obst, pos=0.02] {pressa} (na);
+  \draw[nao] (p2) -| node[obst, pos=0.05] {ignorância pluralística} (na);
+  \draw[nao] (p3) -- node[obst, pos=0.4] {difusão de responsabilidade} (na);
+  \draw[nao] (p4) -| node[obst, pos=0.05] {falta de competência} (na);
+  \draw[nao] (p5) -| node[obst, pos=0.02] {custo alto} (na);
+\end{tikzpicture}
+```
+O modelo de decisão do espectador [@darley_latane1968]. Ajudar exige passar por cinco decisões sucessivas; falhar em qualquer uma interrompe a ajuda. Cada passo tem um obstáculo social típico.
+:::
+
+Note o que o modelo faz: transforma "aquelas pessoas eram más/insensíveis" (uma atribuição disposicional — o erro do Cap. 70) numa análise situacional que qualquer um de nós reconheceria em si. Os vizinhos de Genovese não eram monstros; estavam presos numa estrutura social que desliga a ajuda.
+
+## Por que ajudamos: egoísmo ou altruísmo genuíno?
+
+Se às vezes falhamos, muitas vezes ajudamos — inclusive a estranhos, a alto custo e sem plateia. A grande questão teórica é: existe **altruísmo genuíno**, ou toda ajuda é, no fundo, egoísta (para reduzir o próprio mal-estar diante do sofrimento alheio, obter reconhecimento ou evitar culpa)? Daniel Batson defendeu, contra o consenso cínico, a **hipótese da empatia–altruísmo**: quando sentimos **empatia** por alguém — quando adotamos sua perspectiva e nos importamos com seu bem-estar —, desenvolvemos uma motivação **genuinamente altruísta**, voltada ao bem do outro e não ao alívio do próprio desconforto [@batson1991]. Seus experimentos engenhosos mostraram que pessoas com alta empatia ajudam **mesmo quando poderiam sair de cena facilmente** (o que descartaria a motivação de fugir do próprio mal-estar) — um resultado difícil de explicar apenas pelo egoísmo.
+
+As explicações não são exclusivas: há ajuda egoísta (reduzir a própria aflição, o "alívio do estado negativo") e há ajuda empática. E há raízes mais profundas, evolutivas. A **seleção de parentesco** explica por que ajudamos preferencialmente parentes: genes que promovem o sacrifício por consanguíneos se propagam através dos parentes salvos [@hamilton1964]. A **reciprocidade** explica a ajuda entre não parentes: "ajudo você hoje esperando ser ajudado amanhã", um cálculo que sustenta a cooperação em espécies com memória social [@trivers1971]. Que a disposição a ajudar tem raízes precoces sugere-o o achado de que crianças de menos de dois anos ajudam espontaneamente um adulto em dificuldade, sem serem recompensadas [@warneken2006].
+
+::: {.experimento}
+🔬 **Experimento Clássico — o bom samaritano com pressa.** Darley e Batson recrutaram seminaristas para uma palestra em outro prédio — alguns, ironicamente, sobre a parábola do Bom Samaritano [@darley_batson1973]. Manipularam a **pressa**: a uns disseram "você está atrasado, corra"; a outros, "há tempo de sobra". No caminho, todos passavam por um homem caído numa passagem, tossindo e gemendo (um confederado). **Resultado:** entre os sem pressa, 63% pararam para ajudar; entre os apressados, apenas **10%** — alguns literalmente passaram por cima do homem a caminho de discursar sobre ajudar o próximo. O tema da palestra quase não importou. **Interpretação:** um fator situacional trivial — ter ou não 5 minutos — pesou mais que valores, religião ou personalidade. É o triunfo da situação sobre a disposição, e um antídoto contra o moralismo fácil: parte de "ser uma boa pessoa" é ter tempo e atenção sobrando.
+:::
+
+## A agressão
+
+**Agressão** é qualquer comportamento dirigido a causar dano a outro que está motivado a evitá-lo. Distingue-se a agressão **hostil** (impulsiva, movida por raiva, um fim em si) da **instrumental** (fria, meio para outro objetivo). De onde ela vem? Quatro grandes tradições respondem.
+
+- **Perspectiva biológica/instintiva.** Freud postulou um instinto de morte; os etólogos, um instinto de agressão. A versão moderna é mais matizada: há **predisposições** biológicas (herdabilidade moderada, papel da testosterona e da baixa atividade serotoninérgica, envolvimento da amígdala e do córtex pré-frontal na regulação), mas não um "instinto" que se acumula e precisa ser descarregado. A biologia estabelece propensões, não destinos.
+- **Hipótese da frustração–agressão.** A frustração — o bloqueio de um objetivo — gera uma prontidão para agredir [@dollard1939]. A reformulação de Berkowitz refinou a ideia: a frustração produz **raiva**, um estado de prontidão que se converte em agressão sobretudo na presença de **pistas agressivas** no ambiente (o "efeito da arma": a mera presença de uma arma aumenta respostas agressivas) [@berkowitz1989].
+- **Teoria da aprendizagem social.** Bandura mostrou que a agressão é, em grande medida, **aprendida por observação e imitação** de modelos, e mantida por suas consequências — o experimento do boneco Bobo (Cap. 41) é o marco: crianças que viram um adulto agredir o boneco reproduziram a agressão, inclusive formas novas [@bandura_ross1961].
+- **Modelo Geral da Agressão (GAM).** A síntese contemporânea integra tudo: fatores da pessoa (traços, crenças) e da situação (provocação, dor, calor, pistas agressivas) alimentam o estado interno presente (cognições, afeto, ativação), que — filtrado por avaliação e decisão — resulta ou não em agressão, num ciclo que também retroalimenta a aprendizagem [@anderson_bushman2002].
+
+### Catarse e violência na mídia: dois debates
+
+::: {.atencao}
+⚠️ **O mito da catarse.** A crença popular — e freudiana — de que "extravasar" a raiva a descarrega e acalma (a **hipótese da catarse**) é uma das ideias mais persistentes e mais **desmentidas** da psicologia. Bushman testou-a diretamente: participantes provocados que socaram um saco de pancadas pensando na pessoa que os irritara ficaram **depois mais agressivos**, não menos [@bushman2002]. "Descarregar" a agressão a **ensaia e reforça**, em vez de esvaziá-la — coerente com a aprendizagem social e o oposto do que recomendam terapias e produtos que prometem alívio pela expressão bruta da raiva. O que reduz a agressão é o contrário: reduzir a ativação (esperar, respirar, sair da situação) e reinterpretar a provocação.
+:::
+
+O segundo debate, o do efeito da **violência na mídia e nos videogames**, é mais nuançado — e um bom estudo de caso sobre como a ciência lida com controvérsia. Há consenso razoável de que a exposição à violência midiática produz um aumento **pequeno, porém real e estatisticamente confiável**, na agressividade de curto prazo (pensamentos, afeto e comportamento agressivos) e uma dessensibilização à violência, conforme meta-análises [@anderson2010]. Ao mesmo tempo, críticos apontam que os tamanhos de efeito são modestos, que medidas de agressão em laboratório têm validade discutível e que fatores como pré-disposição, ambiente familiar e saúde mental pesam muito mais — advertindo contra transformar videogames em bode expiatório de tragédias sociais [@ferguson2015]. A posição equilibrada: a mídia violenta é **um** fator de risco entre muitos, com efeito real mas pequeno, que não "cria assassinos" nem é inócuo. Apresentar só um dos lados — "videogame não faz nada" ou "videogame causa massacres" — distorce a evidência.
+
+::: {.na-pratica}
+💡 **Como aumentar a ajuda — e reduzir a agressão.** Do lado pró-social: se você **precisar** de ajuda numa emergência com muitas pessoas, **quebre a difusão de responsabilidade** apontando para alguém específico — "você, de camisa azul, chame o SAMU" —, o que remove o anonimato e a hesitação coletiva. Para promover ajuda, reduza a ambiguidade da situação e ensine competência (primeiros socorros aumentam a chance de agir). Do lado da agressão: como a catarse não funciona, as estratégias eficazes são **reduzir a excitação** antes de responder (o intervalo entre o gatilho e a ação), **reinterpretar** a provocação (o erro fundamental de atribuição infla a hostilidade percebida — Cap. 70), remover **pistas agressivas** do ambiente e cultivar respostas incompatíveis com a raiva (empatia, humor). Nada disso é fácil no calor do momento — por isso o treino prévio importa.
+:::
+
+::: {.callout-sintese}
+- O **efeito espectador**: quanto mais testemunhas, menor a chance de ajuda, por **difusão de responsabilidade** e **ignorância pluralística** [@darley_latane1968]; ajudar exige vencer **cinco passos** de decisão, cada um com seu obstáculo.
+- A **hipótese da empatia–altruísmo** sustenta que a empatia gera motivação genuinamente altruísta, não apenas egoísta [@batson1991]; o altruísmo tem raízes na **seleção de parentesco** e na **reciprocidade** [@hamilton1964; @trivers1971] e aparece cedo no desenvolvimento [@warneken2006].
+- Fatores situacionais triviais, como a **pressa**, superam valores na predição da ajuda [@darley_batson1973].
+- A **agressão** é explicada por predisposições biológicas, pela **frustração–agressão** (raiva + pistas agressivas) [@berkowitz1989], pela **aprendizagem social** [@bandura_ross1961] e sintetizada no **Modelo Geral da Agressão** [@anderson_bushman2002].
+- A **catarse é um mito**: extravasar a raiva aumenta a agressão [@bushman2002]; a **violência na mídia** é um fator de risco real, porém pequeno, entre muitos [@anderson2010; @ferguson2015].
+- Para aumentar a ajuda, remova o anonimato apontando alguém específico; para reduzir a agressão, baixe a excitação e reinterprete a provocação — não "descarregue".
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Comportamento pró-social**
+:   Qualquer ação destinada a beneficiar outra pessoa.
+
+**Efeito espectador**
+:   Redução da probabilidade de um indivíduo ajudar à medida que aumenta o número de testemunhas [@darley_latane1968].
+
+**Difusão de responsabilidade**
+:   Diluição do senso de responsabilidade pessoal pela presença de outros, que reduz a ajuda.
+
+**Ignorância pluralística**
+:   Situação em que cada pessoa, vendo os outros aparentemente calmos, conclui erroneamente que não há emergência.
+
+**Hipótese da empatia–altruísmo**
+:   Proposta de que a empatia gera motivação genuinamente voltada ao bem do outro, não ao alívio do próprio desconforto [@batson1991].
+
+**Agressão**
+:   Comportamento dirigido a causar dano a outro que está motivado a evitá-lo; hostil (impulsiva) ou instrumental (calculada).
+
+**Hipótese da frustração–agressão**
+:   Ideia de que o bloqueio de objetivos gera prontidão para agredir, mediada pela raiva e por pistas agressivas [@dollard1939; @berkowitz1989].
+
+**Hipótese da catarse**
+:   Crença, empiricamente refutada, de que expressar a raiva a descarrega e reduz; na verdade, a reforça [@bushman2002].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva os cinco passos do modelo de decisão do espectador e nomeie o obstáculo social típico de cada um.
+
+2. **(Conceitual.)** Diferencie difusão de responsabilidade e ignorância pluralística. Em qual dos cinco passos cada uma atua?
+
+3. **(Análise.)** Como os experimentos de Batson tentam distinguir altruísmo genuíno de motivação egoísta? Qual manipulação é a chave, e por quê?
+
+4. **(Aplicação.)** Você passa mal numa estação de metrô lotada e ninguém se aproxima. Com base no efeito espectador, o que exatamente você deveria fazer ou dizer para maximizar a chance de receber ajuda?
+
+5. **(Reflexão crítica.)** "Bater num saco de pancadas ajuda a extravasar a raiva." Avalie a afirmação com os dados de Bushman [-@bushman2002] e explique por que a intuição da catarse é tão difícil de abandonar.
+
+6. **(Integração.)** Um pai pergunta se deve proibir videogames violentos. Formule uma resposta que reconheça a evidência de Anderson [-@anderson2010] **e** as ressalvas de Ferguson [-@ferguson2015], situando a mídia como fator de risco entre outros e evitando os dois exageros do debate.
