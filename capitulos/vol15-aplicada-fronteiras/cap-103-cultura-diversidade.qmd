@@ -1,5 +1,135 @@
 # 103. Psicologia, cultura e diversidade (transcultural)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** por que a cultura é uma variável psicológica central e o que é a psicologia transcultural.
+- **Distinguir** as abordagens **emic** e **etic** e o debate universalismo × relativismo.
+- **Analisar** o problema das amostras **WEIRD** e seu impacto sobre a validade da psicologia.
+- **Comparar** as construções independente e interdependente do self (individualismo × coletivismo).
+- **Reconhecer** o viés cultural na avaliação psicológica e o conceito de competência cultural.
+- **Situar** a diversidade e a perspectiva decolonial no contexto brasileiro.
 :::
+
+Toda a psicologia examinada neste manual pretende dizer algo sobre "o ser humano". Mas de qual ser humano? Este capítulo confronta a disciplina com uma questão desconfortável e fecunda: quanto do que a psicologia descreve é **universal** e quanto é produto de uma **cultura** específica? A **psicologia transcultural** (ou intercultural) estuda como a cultura molda o comportamento e os processos mentais, e testa se as teorias psicológicas — quase todas formuladas no Ocidente — valem para o resto da humanidade. É, ao mesmo tempo, um campo aplicado e um exercício de autocrítica da ciência psicológica.
+
+## Cultura como variável psicológica
+
+Por muito tempo, a psicologia tratou a cultura como ruído a ser controlado — uma variação superficial sobre uma natureza humana única e universal. A psicologia transcultural inverte a lente: a cultura não é o cenário onde a mente atua, mas parte constitutiva de como ela se forma. Da percepção à emoção, da memória ao senso de self, muitos processos que pareciam "naturais" mostram-se moldados pela cultura em que a pessoa se desenvolve — retomando, em escala aplicada, a grande questão *natureza × cultura* do Cap. 2 e a perspectiva sociocultural de Vygotsky (Cap. 59).
+
+Uma distinção metodológica organiza o campo. A abordagem **etic** busca **universais** — dimensões que se aplicam a todas as culturas e permitem compará-las (por exemplo, todas têm alguma forma de emoção de medo). A abordagem **emic** busca compreender cada cultura **a partir de dentro**, em seus próprios termos e categorias, sem impor conceitos externos. O erro clássico é o **etic imposto**: tomar um conceito local (ocidental) como se fosse universal e "encontrá-lo" em toda parte porque é isso que os instrumentos procuram. A boa psicologia transcultural transita entre as duas lentes.
+
+## O problema WEIRD
+
+A autocrítica mais contundente veio em 2010, e abalou as pretensões de universalidade da disciplina.
+
+::: {.experimento}
+🔬 **Análise Clássica — as amostras WEIRD** [@henrich2010]
+
+**O achado.** Joseph Henrich e colaboradores revisaram a base empírica das principais revistas de psicologia e constataram que a esmagadora maioria dos participantes — algo como 96% — vinha de sociedades **WEIRD**: *Western, Educated, Industrialized, Rich, Democratic* (ocidentais, escolarizadas, industrializadas, ricas, democráticas). Boa parte, de estudantes universitários norte-americanos.
+
+**O problema.** Essas amostras representam uma fração minúscula e **atípica** da humanidade. Ao comparar populações, os autores mostraram que os participantes WEIRD estão, em vários domínios — percepção visual (ilusões de ótica), raciocínio, cooperação, noções de justiça, senso de self —, entre os **mais extremos** do planeta, e não no "centro" da natureza humana.
+
+**A implicação.** Generalizar da psicologia de estudantes ocidentais para "o ser humano" é uma inferência arriscada. Muitas "leis" da psicologia podem ser, na verdade, particularidades de uma cultura específica.
+
+**Limitações.** O artigo não afirma que *nada* se generaliza — alguns processos são de fato universais. Ele exige que a universalidade seja **demonstrada**, não presumida. O efeito foi profundo: hoje, a representatividade das amostras é uma exigência crescente de qualidade.
+:::
+
+O problema WEIRD conecta-se diretamente à crise de replicabilidade (Cap. 105): uma ciência construída sobre amostras estreitas produz conclusões frágeis. E tem implicação prática imediata para o Brasil, cuja população difere enormemente das amostras que fundam grande parte da literatura importada.
+
+## Self independente e interdependente
+
+O exemplo mais estudado de variação cultural profunda diz respeito ao **self**. Markus e Kitayama propuseram que culturas diferem na construção da pessoa [@markus_kitayama1991] (@fig-self-cultural). Em culturas **individualistas** (grande parte do Ocidente), predomina o self **independente**: a pessoa é concebida como uma unidade autônoma, definida por atributos internos (traços, preferências, objetivos), e o valor está em ser único, expressar-se e realizar-se. Em culturas **coletivistas** (grande parte da Ásia, África, América Latina), predomina o self **interdependente**: a pessoa se define pelas relações, papéis e grupos a que pertence, e o valor está na harmonia, no pertencimento e no ajuste ao coletivo.
+
+Essa diferença não é abstrata: modula a motivação (autorrealização × dever para com o grupo), a emoção (orgulho × emoções relacionais como o respeito), a cognição (atenção analítica a objetos × holística a contextos) e até a saúde mental e a psicoterapia. Uma terapia que pressupõe autonomia e assertividade como metas — valores individualistas — pode não fazer sentido, ou até causar dano, num contexto interdependente.
+
+::: {#fig-self-cultural}
+```{.tikz}
+%%| filename: self-cultural
+%%| alt: Dois diagramas lado a lado. À esquerda, self independente: um círculo central separado de outros círculos. À direita, self interdependente: um círculo central sobreposto e ligado a outros círculos.
+\begin{tikzpicture}[font=\scriptsize]
+  % Independente
+  \begin{scope}[xshift=0cm]
+    \node[font=\bfseries\small] at (0,2.5) {Self independente};
+    \draw[thick, manualblue] (0,0) circle (0.95) node {\textbf{EU}};
+    \foreach \a in {30,90,150,210,270,330}
+      \draw[manualgray] (\a:2.0) circle (0.55) node {\tiny outro};
+  \end{scope}
+  % Interdependente
+  \begin{scope}[xshift=6.6cm]
+    \node[font=\bfseries\small] at (0,2.5) {Self interdependente};
+    \foreach \a in {30,90,150,210,270,330} {
+      \draw[manualgreen, fill=manualgreen!12] (\a:1.35) circle (0.7) node {\tiny outro};
+      \draw[manualgray, densely dotted] (0,0) -- (\a:1.35);
+    }
+    \draw[thick, manualgreen!60!black, fill=white] (0,0) circle (0.8) node {\textbf{eu}};
+  \end{scope}
+\end{tikzpicture}
+```
+Construções culturais do self [@markus_kitayama1991]: no self independente, a pessoa é autônoma e separada; no interdependente, define-se pelas relações que a constituem.
+:::
+
+## Viés cultural na avaliação e competência cultural
+
+A variação cultural tem consequência técnica direta na **avaliação psicológica**. Um teste desenvolvido e normatizado numa cultura pode ser **enviesado** em outra: itens que pressupõem conhecimentos, valores ou estilos de resposta específicos penalizam quem vem de outro contexto — problema já apontado para os testes de inteligência (Cap. 50) e para a neuropsicologia (Cap. 99). Aplicar um instrumento a uma população para a qual não foi adaptado e validado produz medidas inválidas e diagnósticos injustos. Daí a exigência ética e científica de **adaptação transcultural** cuidadosa, e não mera tradução.
+
+No plano da intervenção, o conceito-chave é a **competência cultural**: a capacidade do profissional de compreender e respeitar o contexto cultural do cliente, reconhecer os próprios vieses e adaptar a prática — sem cair no extremo oposto do estereótipo ("todo membro do grupo X pensa assim"). A competência cultural é hoje parte das diretrizes éticas da profissão em vários países, e responde a uma verdade simples: não existe intervenção culturalmente neutra.
+
+::: {.atencao}
+⚠️ **Universalismo e relativismo: evitar os dois extremos.** O campo navega entre dois riscos. O **universalismo ingênuo** presume que categorias ocidentais (inclusive de transtorno mental) valem para todos, ignorando **síndromes culturalmente moldadas** e impondo um único modelo de normalidade — um resquício etnocêntrico e, historicamente, colonial. O **relativismo radical**, no extremo oposto, nega qualquer universal e torna impossível comparar culturas ou defender direitos humanos transculturais (não se pode chamar nada de "errado" em nenhuma cultura). A posição madura é o **universalismo relativo**: há processos psicológicos universais, mas eles se **expressam** de formas culturalmente específicas — e distinguir a estrutura universal da manifestação cultural é a tarefa científica central.
+:::
+
+## Diversidade, decolonialidade e Brasil
+
+O escopo da psicologia da diversidade vai além da comparação entre nações: inclui as diferenças **dentro** de cada sociedade — de raça, etnia, gênero, orientação sexual, classe, religião, deficiência — e o modo como relações de poder atravessam a experiência psicológica. Um movimento crescente, a **psicologia decolonial**, critica o caráter eurocêntrico da disciplina e busca valorizar saberes e formas de cuidado de povos historicamente subalternizados.
+
+No Brasil, esse debate é incontornável. O país é profundamente diverso e desigual, e a psicologia tem se confrontado com o **racismo** e seus efeitos sobre a saúde mental, com os saberes e a saúde dos **povos indígenas** e das **comunidades tradicionais** (a "psicologia dos povos"), com as questões de **gênero e sexualidade** — em que o CFP tem posição firme contra a patologização da homossexualidade e as "terapias de conversão" (Cap. 90) — e com a **religiosidade** afro-brasileira e popular como dimensão de sentido e cuidado. A psicologia brasileira contemporânea reconhece que uma ciência formulada em amostras WEIRD não pode ser importada acriticamente: precisa ser **recontextualizada**, dialogar com a realidade nacional e assumir um compromisso com a equidade. É a lição de fundo deste capítulo — que a universalidade da mente humana convive com a irredutível diversidade de suas formas.
+
+::: {.callout-sintese}
+- A **psicologia transcultural** estuda como a cultura molda a mente e testa a universalidade das teorias psicológicas.
+- Abordagens **emic** (de dentro) × **etic** (universal); o erro é o **etic imposto**.
+- O problema **WEIRD** [@henrich2010]: ~96% dos participantes vêm de sociedades atípicas, minando generalizações sobre "o ser humano".
+- Culturas diferem na construção do **self**: **independente** (individualista) × **interdependente** (coletivista) [@markus_kitayama1991], com efeitos sobre motivação, emoção, cognição e terapia.
+- Testes podem ser **enviesados** entre culturas; a resposta é a **adaptação transcultural** e a **competência cultural** do profissional.
+- Entre **universalismo ingênuo** e **relativismo radical**, a posição madura é o **universalismo relativo**.
+- No Brasil, a **psicologia decolonial** e da diversidade enfrenta racismo, questões de gênero, saberes indígenas e a recontextualização de uma ciência importada.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicologia transcultural**
+:   Campo que estuda como a cultura molda o comportamento e testa a validade transcultural das teorias psicológicas.
+
+**Emic × etic**
+:   Abordar uma cultura a partir de suas próprias categorias (emic) versus por dimensões universais comparáveis (etic).
+
+**Amostras WEIRD**
+:   Participantes de sociedades ocidentais, escolarizadas, industrializadas, ricas e democráticas — atípicas e sobre-representadas [@henrich2010].
+
+**Self independente × interdependente**
+:   Construção da pessoa como unidade autônoma (individualismo) versus definida pelas relações (coletivismo) [@markus_kitayama1991].
+
+**Competência cultural**
+:   Capacidade do profissional de compreender e respeitar o contexto cultural do cliente e reconhecer os próprios vieses.
+
+**Universalismo relativo**
+:   Posição segundo a qual há processos psicológicos universais que se expressam de formas culturalmente específicas.
+
+**Psicologia decolonial**
+:   Movimento que critica o eurocentrismo da disciplina e valoriza saberes de povos historicamente subalternizados.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Distinga as abordagens emic e etic. O que é o "etic imposto" e por que é um erro?
+
+2. **(Conceitual.)** Explique o problema WEIRD. Por que ele ameaça a pretensão da psicologia de descrever "o ser humano"?
+
+3. **(Conceitual.)** Compare o self independente e o interdependente. Dê um exemplo de como essa diferença afetaria uma psicoterapia.
+
+4. **(Reflexão crítica.)** Por que traduzir um teste não basta para usá-lo em outra cultura? O que a adaptação transcultural exige?
+
+5. **(Integração.)** Explique por que o universalismo ingênuo e o relativismo radical são ambos problemáticos. O que é o universalismo relativo?
+
+6. **(Reflexão crítica.)** Por que a psicologia brasileira não pode importar acriticamente teorias de amostras WEIRD? Cite dois temas da diversidade brasileira que exigem recontextualização.
