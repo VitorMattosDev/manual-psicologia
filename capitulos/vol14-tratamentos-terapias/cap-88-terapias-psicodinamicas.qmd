@@ -1,5 +1,143 @@
 # 88. Terapias psicodinâmicas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o princípio central das terapias psicodinâmicas: tornar consciente o inconsciente e ganhar *insight* sobre conflitos.
+- **Descrever** as técnicas clássicas (associação livre, interpretação, análise da transferência e da resistência) e o papel do *setting*.
+- **Diferenciar** a psicanálise clássica das psicoterapias psicodinâmicas breves e da terapia interpessoal.
+- **Analisar** os conceitos de transferência, contratransferência e insight com o auxílio dos "triângulos" de Malan.
+- **Avaliar** a evidência de eficácia das terapias psicodinâmicas e as principais críticas.
+- **Reconhecer** o que a abordagem legou às demais terapias, mesmo às que a rejeitam.
 :::
+
+Toda a psicoterapia moderna nasceu aqui. A tradição psicodinâmica — herdeira da psicanálise de Freud (Cap. 10) — foi a primeira a propor que se pode tratar o sofrimento psíquico pela palavra e pela relação, e forjou o vocabulário que ainda usamos: inconsciente, transferência, resistência, insight, mecanismos de defesa. Este capítulo apresenta a versão terapêutica dessa tradição — não a teoria da personalidade (Cap. 65), mas o que se **faz** numa sala de psicoterapia psicodinâmica — e confronta a fama de "não científica" com o que a pesquisa contemporânea de fato mostra.
+
+## O princípio: tornar consciente o inconsciente
+
+A premissa fundadora, herdada de Freud, é que boa parte do sofrimento tem raízes **inconscientes**: conflitos, desejos e emoções que a pessoa não reconhece, frequentemente originados em experiências precoces e relações significativas, e que se expressam de forma disfarçada em sintomas, sonhos, atos falhos e padrões repetitivos de relacionamento. O sintoma, nessa leitura, não é um defeito a ser eliminado diretamente, mas um **compromisso** — uma solução parcial e custosa para um conflito que o paciente não pode encarar de frente.
+
+Daí o objetivo terapêutico: o **insight**. Trazer à consciência o que estava recalcado, compreender a origem e o sentido dos padrões que se repetem, e — com essa compreensão — libertar-se deles. A fórmula clássica de Freud, "onde estava o isso, deve advir o eu", resume a aposta: ampliar o território do que a pessoa reconhece e pode governar em si mesma. Diferentemente das terapias que virão nos próximos capítulos, a psicodinâmica dá primazia ao **entendimento** sobre a modificação direta de comportamentos ou pensamentos — muda-se ao compreender.
+
+## As ferramentas clássicas
+
+**Associação livre.** A regra fundamental do método clássico: pede-se ao paciente que diga tudo o que lhe vier à mente, sem censura, seleção ou preocupação com lógica ou decoro. Os desvios, hesitações e bloqueios nesse fluxo revelam onde o inconsciente resiste — e é justamente aí que o trabalho se concentra.
+
+**A regra da abstinência e a neutralidade.** O analista clássico fala pouco, evita dar conselhos e opiniões pessoais, e mantém uma postura de **neutralidade** relativa. O propósito não é frieza: é criar uma "tela" sobre a qual o paciente possa projetar seus padrões, tornando-os visíveis. O divã — o paciente deitado, o analista fora de seu campo de visão — servia a esse mesmo fim, favorecendo a associação e reduzindo a regulação social do encontro face a face.
+
+**Interpretação.** O principal instrumento do terapeuta. Interpretar é oferecer ao paciente uma leitura do sentido inconsciente do que ele traz — ligar o sintoma de hoje ao conflito de ontem, nomear o que se repete. A boa interpretação é oportuna (respeita o momento em que o paciente pode recebê-la) e dosada.
+
+**Análise da resistência.** Ao longo do processo, o paciente inevitavelmente **resiste** — atrasa-se, esquece, muda de assunto, ataca o método, "não tem nada para dizer". A resistência não é um obstáculo a remover à força; é informação. Ela sinaliza a proximidade de material ameaçador e torna-se, ela própria, objeto de análise.
+
+## Transferência e contratransferência
+
+O conceito mais original e mais influente da técnica psicodinâmica é a **transferência**: a tendência do paciente a reviver, na relação com o terapeuta, padrões emocionais originados em relações significativas do passado, sobretudo as precoces. O paciente pode passar a temer, idealizar, seduzir ou hostilizar o terapeuta como se este fosse uma figura de sua história. Longe de ser um ruído, a transferência é o **material clínico por excelência**: ela traz para dentro da sala, ao vivo, o padrão que causa sofrimento fora dela — e permite trabalhá-lo no momento em que acontece (@fig-triangulos).
+
+A **contratransferência** é a contrapartida: as reações emocionais que o paciente desperta no terapeuta. Antes vista como um problema (a subjetividade do analista "contaminando" o campo), passou a ser entendida, na clínica contemporânea, como uma **bússola**: o que o terapeuta sente pode informar sobre o que o paciente evoca nos outros — desde que o terapeuta, por sua própria análise e supervisão, saiba distinguir o que é dele do que é do paciente.
+
+::: {#fig-triangulos}
+```{.tikz}
+%%| filename: triangulos-malan
+%%| alt: Dois triângulos lado a lado representando o modelo de Malan. À esquerda, o "triângulo do conflito" com vértices Impulso/sentimento no topo, Ansiedade embaixo à esquerda e Defesa embaixo à direita. À direita, o "triângulo da pessoa" com vértices Terapeuta (transferência) no topo, Pessoas atuais embaixo à esquerda e Pessoas do passado (pais) embaixo à direita. Uma seta liga o vértice do impulso ao vértice do terapeuta, indicando que o conflito se atualiza na relação terapêutica.
+\begin{tikzpicture}[font=\small, v/.style={align=center, font=\scriptsize}]
+  % triangulo do conflito
+  \coordinate (i) at (0,2.2);
+  \coordinate (a) at (-1.5,0);
+  \coordinate (d) at (1.5,0);
+  \draw[thick, manualblue] (i)--(a)--(d)--cycle;
+  \node[v, above] at (i) {\textbf{Impulso}\\sentimento};
+  \node[v, below left] at (a) {Ansiedade};
+  \node[v, below right] at (d) {Defesa};
+  \node[font=\scriptsize\itshape, text=manualgray] at (0,-0.9) {conflito};
+  % triangulo da pessoa
+  \begin{scope}[xshift=6cm]
+    \coordinate (t) at (0,2.2);
+    \coordinate (p) at (-1.5,0);
+    \coordinate (q) at (1.5,0);
+    \draw[thick, manualred] (t)--(p)--(q)--cycle;
+    \node[v, above] at (t) {\textbf{Terapeuta}\\transferência};
+    \node[v, below left] at (p) {Pessoas\\atuais};
+    \node[v, below right] at (q) {Pessoas do\\passado};
+    \node[font=\scriptsize\itshape, text=manualgray] at (0,-0.9) {relações};
+  \end{scope}
+  \draw[->, >=Stealth, thick, manualgray] (i) to[bend left=15] (4.5,2.2);
+\end{tikzpicture}
+```
+Os dois "triângulos" de Malan [@malan1979]. No **triângulo do conflito**, um impulso ou sentimento gera ansiedade, contra a qual se erguem defesas. No **triângulo da pessoa**, esse padrão se repete com as figuras do passado, com pessoas atuais e — decisivamente — com o terapeuta (transferência). Interpretar é ligar os vértices: mostrar como o mesmo conflito se atualiza na relação terapêutica.
+:::
+
+## Da psicanálise clássica às terapias psicodinâmicas breves
+
+A psicanálise clássica é intensiva e longa: várias sessões semanais ao longo de anos. Ao longo do século XX, desenvolveu-se toda uma família de **psicoterapias psicodinâmicas** que preservam os conceitos centrais — inconsciente, transferência, insight — mas em formato mais leve: uma ou duas sessões por semana, face a face, com duração menor e foco mais definido. David Malan e Habib Davanloo, entre outros, criaram as **terapias psicodinâmicas breves**, focais: em vez de explorar toda a vida psíquica, elege-se um **foco** — um conflito central — e trabalha-se ativamente sobre ele em um número limitado de sessões [@malan1979]. Os "triângulos" da @fig-triangulos são, precisamente, o mapa que orienta esse trabalho focal.
+
+Um ramo aparentado, embora hoje bastante autônomo e manualizado, é a **terapia interpessoal** (TIP) de Klerman e Weissman [@klerman1984]. Ela herda da tradição a atenção às relações, mas foca o **presente**: liga os sintomas (originalmente, da depressão) a problemas interpessoais atuais — lutos, transições de papel, disputas de papéis, déficits interpessoais — e trabalha-os de forma estruturada, em cerca de 12 a 16 sessões. A TIP tornou-se um dos tratamentos psicológicos mais bem validados para a depressão (Cap. 95).
+
+::: {.estudo-caso}
+📋 **Estudo de Caso — o padrão que se repete**
+
+Marcos, 34 anos, procura terapia queixando-se de que "todos os chefes acabam me perseguindo". Já trocou de emprego quatro vezes; em cada um, uma história parecida: começa admirado, depois se sente injustiçado, entra em conflito com a autoridade e pede demissão. Nas primeiras semanas de terapia, mostra-se colaborativo e elogia a terapeuta. Por volta da oitava sessão, começa a chegar atrasado, questiona se a terapia "leva a algum lugar" e comenta, irritado, que a terapeuta "parece achar que sabe tudo".
+
+A terapeuta reconhece ali uma **transferência**: o padrão que Marcos vive com figuras de autoridade está se atualizando na relação com ela — admiração inicial, depois ressentimento e desafio. Em vez de se defender, ela interpreta com cuidado: nota como o mesmo enredo que ele descreve com os chefes parece estar se repetindo entre eles dois, e o convida a olhar para isso. Ao ligar o presente da sala à história de Marcos — um pai exigente que ele nunca sentiu que o aprovava —, abre-se a possibilidade de **insight**: não são "todos os chefes", é um padrão que ele carrega e reencena. Compreender esse padrão, no calor da relação terapêutica, é o que pode interromper a repetição. *(Caso ilustrativo fictício.)*
+:::
+
+## A evidência: uma reputação em revisão
+
+Por décadas, a psicanálise carregou a fama de ser "não científica" — crítica que Popper (Cap. 3) tornou célebre ao apontar sua dificuldade de gerar previsões falsificáveis, e que Eysenck (Cap. 95) radicalizou ao questionar se a psicoterapia funcionava. Parte dessa crítica é justa quanto à **metateoria** e à sua resistência histórica à testagem empírica. Mas ela não se transfere automaticamente para a **eficácia** das terapias psicodinâmicas contemporâneas, que passaram a ser testadas com o mesmo instrumental das demais.
+
+Meta-análises indicam que as psicoterapias psicodinâmicas produzem melhoras significativas em diversos quadros, com tamanhos de efeito comparáveis aos de outras terapias baseadas em evidência, e — achado mais debatido — que esses ganhos podem **crescer** após o término, sugerindo que os processos postos em marcha continuam operando [@shedler2010; @leichsenring2008]. Essas revisões são contestadas quanto à qualidade e à seleção dos estudos, e a base de ensaios controlados ainda é menor do que a da TCC. A leitura prudente: as terapias psicodinâmicas **breves e focais** têm suporte empírico crescente para vários transtornos; a psicanálise clássica de longuíssimo prazo permanece muito mais difícil de avaliar por ensaios controlados.
+
+::: {.atencao}
+⚠️ **Criticar a teoria não é o mesmo que negar o efeito.** É comum confundir três perguntas distintas: (1) a metapsicologia freudiana é uma boa teoria científica? (2) os conceitos clínicos (transferência, defesa, insight) são úteis? (3) as terapias psicodinâmicas funcionam? As respostas podem divergir. Pode-se achar a metapsicologia datada e ainda assim reconhecer que a transferência é um fenômeno clínico observável e que a terapia psicodinâmica breve tem eficácia demonstrada. Rejeitar tudo em bloco — ou defender tudo em bloco — é o erro a evitar.
+:::
+
+## O que ficou para todas as terapias
+
+Mesmo abordagens que romperam com Freud herdaram muito da tradição psicodinâmica. A própria noção de que **a relação terapêutica é curativa** — hoje central na pesquisa de fatores comuns (Cap. 87) — vem daí. O conceito de **aliança** tem raiz na ideia de aliança de trabalho. A atenção aos processos **não conscientes** ressurge, com outra roupagem, na psicologia cognitiva (esquemas, processamento automático — Cap. 91). E o reconhecimento de que **padrões precoces de relação** moldam o funcionamento adulto foi validado, por outra via, pela teoria do apego (Cap. 60). A psicodinâmica é, nesse sentido, menos uma escola entre outras do que o tronco de onde as demais se ramificaram — inclusive por oposição.
+
+::: {.callout-sintese}
+- As terapias psicodinâmicas visam o **insight**: tornar consciente o conflito inconsciente que se expressa em sintomas e padrões repetitivos.
+- Técnicas clássicas: **associação livre**, **neutralidade/abstinência**, **interpretação** e **análise da resistência**.
+- A **transferência** (revivência de padrões passados na relação com o terapeuta) é o material clínico central; a **contratransferência** é bússola, não só ruído — os "triângulos" de Malan mapeiam esse trabalho [@malan1979].
+- Da psicanálise clássica derivaram as **psicoterapias psicodinâmicas breves e focais** e, aparentada, a **terapia interpessoal** (TIP) [@klerman1984], bem validada para a depressão.
+- A evidência contemporânea sustenta a eficácia das terapias psicodinâmicas, sobretudo breves, com efeitos comparáveis a outras terapias [@shedler2010; @leichsenring2008] — ainda que a base de ensaios seja menor e as revisões, debatidas.
+- Criticar a **teoria** freudiana não equivale a negar o **efeito** clínico; a tradição legou às demais terapias a centralidade da relação, do não consciente e das relações precoces.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Insight**
+:   Compreensão consciente da origem e do sentido de conflitos e padrões antes inconscientes; objetivo central da terapia psicodinâmica.
+
+**Associação livre**
+:   Regra de dizer tudo o que vem à mente sem censura; os bloqueios revelam a resistência.
+
+**Interpretação**
+:   Intervenção pela qual o terapeuta oferece ao paciente uma leitura do sentido inconsciente de sua fala, sintoma ou conduta.
+
+**Transferência**
+:   Revivência, na relação com o terapeuta, de padrões emocionais originados em relações significativas do passado.
+
+**Contratransferência**
+:   Reações emocionais que o paciente desperta no terapeuta; usada como fonte de informação clínica.
+
+**Resistência**
+:   Oposição (consciente ou não) ao trabalho terapêutico, sinalizando a proximidade de material ameaçador.
+
+**Terapia interpessoal (TIP)**
+:   Psicoterapia breve e estruturada que liga os sintomas a problemas interpessoais atuais (luto, transições, disputas, déficits) [@klerman1984].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique o objetivo central da terapia psicodinâmica. Por que o sintoma é entendido como um "compromisso" e não apenas como um defeito?
+
+2. **(Conceitual.)** Defina transferência e contratransferência. Por que a transferência é considerada o material clínico mais valioso, e não um obstáculo?
+
+3. **(Aplicação.)** No caso de Marcos, identifique o padrão que se repete e explique como a interpretação da transferência pode interromper a repetição. Ligue os dois "triângulos" de Malan ao caso.
+
+4. **(Reflexão crítica.)** Distinga três perguntas: a teoria freudiana é científica? os conceitos clínicos são úteis? as terapias psicodinâmicas funcionam? Por que confundi-las leva a erros?
+
+5. **(Integração.)** Que heranças da tradição psicodinâmica reaparecem em abordagens que romperam com Freud (fatores comuns, esquemas cognitivos, teoria do apego)?
+
+6. **(Reflexão crítica.)** As meta-análises sugerem que os ganhos da terapia psicodinâmica podem crescer após o término. Que explicações isso admite, e por que esse achado é ao mesmo tempo promissor e metodologicamente delicado?
