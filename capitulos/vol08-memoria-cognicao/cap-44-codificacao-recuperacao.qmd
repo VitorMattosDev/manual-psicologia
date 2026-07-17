@@ -1,5 +1,122 @@
 # 44. Codificação, armazenamento e recuperação
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** os níveis de processamento e por que a codificação profunda (semântica) supera a rasa.
+- **Distinguir** ensaio de manutenção de ensaio elaborativo e descrever técnicas de codificação eficazes (imagística, mnemônicas, autorreferência).
+- **Descrever** a consolidação como processo de armazenamento, incluindo sua base sináptica e o papel do sono.
+- **Definir** o princípio da especificidade de codificação e as pistas de recuperação.
+- **Diferenciar** memória dependente de contexto, de estado e congruente com o humor, com base em evidência.
+- **Comparar** recordação e reconhecimento como medidas de recuperação.
 :::
+
+O capítulo anterior desenhou a *arquitetura* da memória — seus armazéns e sistemas. Este examina o que se passa *dentro* de cada um dos três processos que a definem: como a informação entra (codificação), como se estabiliza e perdura (armazenamento), e como volta à consciência (recuperação). A tese que atravessa o capítulo é simples e libertadora: a qualidade da memória depende muito menos de uma suposta "boa memória" inata do que de *como* se codifica e de *como* se tenta recuperar. Entender esses mecanismos é, na prática, aprender a lembrar melhor.
+
+## Codificação: nem tudo que entra fica
+
+Codificar é transformar a experiência num traço de memória — e o formato dessa transformação decide quanto ela durará. Uma informação pode ser codificada de modos diferentes: **visualmente** (a aparência das letras `G-A-T-O`), **acusticamente** (o som "gato") ou **semanticamente** (o *significado* — um felino doméstico). Craik e Lockhart propuseram que esses modos formam **níveis de processamento**, do mais raso ao mais profundo, e que **quanto mais profundo o processamento, mais durável a memória** [@craik_lockhart1972].
+
+::: {#fig-niveis}
+```{.tikz}
+%%| filename: niveis-processamento
+%%| alt: Diagrama de três níveis de processamento em profundidade crescente. No nível raso, estrutural, processa-se a aparência (a palavra está em maiúsculas?), com memória fraca. No nível intermediário, fonológico, processa-se o som (rima com outra palavra?), com memória média. No nível profundo, semântico, processa-se o significado (encaixa na frase?), com memória forte.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \tikzset{lv/.style={rectangle, rounded corners, align=center, minimum height=1.0cm, minimum width=6.2cm, inner sep=4pt}}
+  \node[lv, draw=manualgray, fill=manualgray!8] (r) at (0,2.4) {\textbf{Raso — estrutural:} a aparência\\{\tiny ``a palavra está em MAIÚSCULAS?''} $\;\rightarrow\;$ memória fraca};
+  \node[lv, draw=manualyellow!70!black, fill=manualyellow!12] (m) at (0.4,1.0) {\textbf{Médio — fonológico:} o som\\{\tiny ``rima com \emph{pato}?''} $\;\rightarrow\;$ memória intermediária};
+  \node[lv, draw=manualgreen, fill=manualgreen!10] (p) at (0.8,-0.4) {\textbf{Profundo — semântico:} o significado\\{\tiny ``encaixa na frase \emph{o \_\_\_ mia}?''} $\;\rightarrow\;$ memória forte};
+  \draw[->, very thick, manualblue] (-3.6,2.9) -- (-3.6,-0.9) node[midway, left, font=\tiny, align=center, rotate=90, anchor=south] {profundidade crescente};
+\end{tikzpicture}
+```
+Níveis de processamento. Perguntas que forçam o processamento do **significado** (semântico, profundo) produzem memória muito mais durável do que as que exigem só a aparência (estrutural) ou o som (fonológico) — ainda que o tempo de estudo seja o mesmo.
+:::
+
+A prova experimental é engenhosa: apresenta-se uma lista de palavras e, para cada uma, faz-se uma pergunta que *força* certo nível — sobre a fonte da letra (raso), sobre a rima (médio) ou sobre o encaixe numa frase (profundo). Num teste-surpresa posterior, lembram-se muito melhor as palavras processadas **semanticamente**, embora ninguém soubesse que haveria teste e o tempo de exposição fosse igual [@craik_tulving1975]. Não é o *tempo* nem a *intenção* de memorizar que mais importam, e sim a **profundidade** do processamento.
+
+Daí a distinção crucial entre dois tipos de ensaio (repetição). O **ensaio de manutenção** — repetir mecanicamente ("três-sete-nove, três-sete-nove") — mantém o item na memória de trabalho, mas é codificação rasa e transfere mal para o longo prazo. O **ensaio elaborativo** — conectar o novo material a conhecimentos que já temos, buscar significado, criar exemplos — é codificação profunda e produz memórias robustas. Repetir dez vezes uma definição sem entendê-la ("decorar") é ensaio de manutenção disfarçado; explicá-la com as próprias palavras e ligá-la ao que já se sabe é ensaio elaborativo.
+
+::: {.na-pratica}
+**Técnicas de codificação que funcionam.** A pesquisa oferece ferramentas concretas para codificar em profundidade:
+
+- **Imagística visual.** Converter informação verbal em imagens mentais vívidas cria uma segunda via de acesso (a "dupla codificação", verbal + visual). Palavras concretas e imagináveis são mais bem lembradas que abstratas.
+- **Método de loci** (o "palácio da memória"). Associar cada item a um local numa rota mental familiar (os cômodos de casa) e depois "percorrê-la" para recuperá-los. É a técnica milenar dos oradores e dos campeões de memória — e explora a poderosa memória espacial.
+- **Mnemônicas** (acrônimos, siglas, versinhos) impõem estrutura e significado a material arbitrário, transformando ensaio de manutenção em elaborativo.
+- **Efeito de autorreferência.** Relacionar o material a *si mesmo* ("isto já me aconteceu?") produz memória ainda melhor que o processamento semântico genérico — o self é uma estrutura rica à qual ancorar.
+- **Prática de recuperação e espaçamento** (Cap. 42): testar-se e distribuir o estudo são, em rigor, técnicas de codificação/consolidação — as mais bem sustentadas por evidência.
+:::
+
+## Armazenamento: a consolidação
+
+Codificar não fixa a memória de imediato. Um traço recém-formado é frágil e precisa de tempo para se estabilizar — a **consolidação**, o processo pelo qual uma memória lábil se torna duradoura e resistente à interferência. É por isso que uma pancada na cabeça costuma apagar os minutos *anteriores* ao acidente (amnésia retrógrada para o que ainda não consolidara), mas não o que já estava firme na memória antiga.
+
+::: {.base-neural}
+**A base sináptica da memória.** Onde, fisicamente, reside um traço de memória? Em **mudanças nas sinapses**. Eric Kandel, estudando o molusco marinho *Aplysia* (de circuito neural simples), mostrou que a aprendizagem altera a força das conexões entre neurônios específicos, e que memórias *duradouras* exigem **síntese de novas proteínas** e o crescimento de novas conexões sinápticas [@kandel1998]. No cérebro dos mamíferos, o mecanismo central candidato é a **potenciação de longa duração** (LTP): o fortalecimento persistente de uma sinapse após estimulação intensa, um correlato plausível do "neurônios que disparam juntos conectam-se juntos" (a regra de Hebb, Cap. 28). A consolidação tem ainda um nível *sistêmico*: com o tempo, memórias explícitas que dependiam do **hipocampo** (Cap. 43) tornam-se gradualmente independentes dele, "arquivando-se" no neocórtex — razão pela qual as memórias antigas de H.M. sobreviveram à perda do hipocampo. E, como vimos no Vol 6, o **sono** é decisivo para a consolidação: durante o sono, o cérebro reativa e reorganiza as memórias do dia, transferindo-as e integrando-as. Estudar e depois dormir consolida; virar a noite sabota o próprio esforço.
+:::
+
+## Recuperação: a arte de encontrar
+
+Uma memória armazenada mas inacessível é, na prática, esquecida. A recuperação depende de **pistas** (*cues*) — estímulos que reativam o traço. O fenômeno "na ponta da língua" (sabemos que sabemos, sentimos a forma da palavra, mas não a alcançamos) mostra que armazenamento e recuperação são distintos: a informação *está lá*, falta a pista certa.
+
+O princípio que rege a eficácia das pistas é a **especificidade de codificação**, de Tulving e Thomson: uma pista funciona na medida em que reinstaura as condições presentes *no momento da codificação* [@tulving_thomson1973]. Lembramos melhor quando o contexto da recuperação **coincide** com o da aprendizagem. Disso decorrem três efeitos aparentados:
+
+::: {.experimento}
+🔬 **Memória dependente de contexto (Godden e Baddeley, 1975).** Mergulhadores aprenderam listas de palavras em dois ambientes: em terra firme e **debaixo d'água**. Depois, foram testados em cada um dos dois ambientes. O resultado desenhou uma dissociação limpa: recordavam melhor as palavras **no mesmo ambiente** em que as haviam aprendido — o que fora codificado sob a água era mais bem recuperado sob a água, e o aprendido em terra, em terra [@godden_baddeley1975]. O contexto físico funciona como um conjunto de pistas; recuperar no mesmo lugar reinstaura essas pistas. É uma razão (entre outras) pela qual pode ajudar estudar em condições semelhantes às da prova — e pela qual voltar ao lugar onde tivemos uma ideia às vezes a traz de volta.
+:::
+
+Aparentados a ele estão a **memória dependente de estado** — recupera-se melhor no mesmo estado *fisiológico* da codificação (o que foi aprendido cansado, sóbrio ou cafeinado tende a voltar melhor no mesmo estado) — e a **memória congruente com o humor**, a tendência a lembrar mais facilmente material cujo tom emocional combina com o humor atual (deprimidos evocam desproporcionalmente memórias tristes, um círculo vicioso relevante para a depressão, Cap. 79).
+
+Por fim, nem toda recuperação é igualmente exigente. A **recordação** (*recall*) pede reproduzir a informação sem pistas fortes (uma dissertação, "o que você jantou anteontem?"); o **reconhecimento** (*recognition*) pede apenas identificá-la entre alternativas (uma questão de múltipla escolha, "foi esta a pessoa?"). O reconhecimento é quase sempre mais fácil, porque a própria alternativa correta funciona como pista poderosa — o que explica por que "sei o rosto mas não o nome" (reconhecemos, não recordamos) e por que uma prova de múltipla escolha parece mais leve que uma dissertativa. Essa distinção terá peso decisivo no próximo capítulo, quando examinarmos como o reconhecimento pode falhar — e fabricar — memórias.
+
+## Síntese
+
+::: {.callout-sintese}
+- A durabilidade de uma memória depende da **profundidade da codificação**: o processamento **semântico** (profundo) supera o fonológico e o estrutural (rasos), independentemente do tempo ou da intenção (Craik e Lockhart; Craik e Tulving).
+- **Ensaio elaborativo** (buscar significado, conectar ao que se sabe) codifica muito melhor que **ensaio de manutenção** (repetir mecanicamente). Técnicas eficazes: imagística, método de loci, mnemônicas, **autorreferência**.
+- O armazenamento requer **consolidação**: estabilização gradual do traço, com base **sináptica** (LTP, síntese proteica — Kandel), transferência hipocampo→neocórtex e papel crucial do **sono**.
+- A recuperação depende de **pistas**; a **especificidade de codificação** (Tulving) diz que a melhor pista reinstaura o contexto da codificação.
+- Daí a memória **dependente de contexto** (Godden e Baddeley, mergulhadores), **dependente de estado** e **congruente com o humor**.
+- A **recordação** (sem pistas) é mais difícil que o **reconhecimento** (identificar entre opções), pois este oferece a pista pronta.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Níveis de processamento**
+:   Ideia de que a profundidade da codificação (estrutural < fonológica < semântica) determina a durabilidade da memória [@craik_lockhart1972].
+
+**Ensaio de manutenção / elaborativo**
+:   Repetir mecanicamente (raso) / conectar ao significado e ao conhecimento prévio (profundo).
+
+**Efeito de autorreferência**
+:   Melhora da memória quando o material é relacionado a si mesmo.
+
+**Consolidação**
+:   Processo pelo qual uma memória lábil se estabiliza e se torna duradoura e resistente à interferência.
+
+**Potenciação de longa duração (LTP)**
+:   Fortalecimento persistente de uma sinapse após estimulação intensa; correlato neural da aprendizagem [@kandel1998].
+
+**Especificidade de codificação**
+:   Uma pista recupera melhor quanto mais reinstaura as condições da codificação [@tulving_thomson1973].
+
+**Memória dependente de contexto / de estado / congruente com o humor**
+:   Melhor recuperação no mesmo ambiente físico / no mesmo estado fisiológico / em humor condizente com o material [@godden_baddeley1975].
+
+**Recordação / reconhecimento**
+:   Recuperar sem pistas fortes / identificar a informação correta entre alternativas.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Ordene do mais raso ao mais profundo: processar o som de uma palavra, sua aparência, seu significado. Qual produz melhor memória e por quê?
+
+2. **(Conceitual.)** Por que "decorar" repetindo uma definição sem entendê-la funciona tão mal? Reescreva essa estratégia como ensaio elaborativo.
+
+3. **(Aplicação.)** Explique o **método de loci** e use-o para memorizar uma lista de cinco compras. Por que ele funciona?
+
+4. **(Integração.)** Ligue a consolidação ao Vol 6: por que "virar a noite" estudando pode prejudicar a memória mais do que ajudar?
+
+5. **(Reflexão crítica.)** O experimento dos mergulhadores sugere estudar no ambiente da prova. Isso é sempre prático? Que outra estratégia (dificuldades desejáveis, Cap. 42) poderia até contrariar essa recomendação?
+
+6. **(Conceitual.)** Por que reconhecemos um rosto mas não recuperamos o nome? Explique com a diferença entre recordação e reconhecimento e o papel das pistas.
