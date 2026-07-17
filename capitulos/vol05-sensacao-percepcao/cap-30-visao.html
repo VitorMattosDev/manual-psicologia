@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#a-luz-como-estímulo" id="toc-a-luz-como-estímulo" class="nav-link active" data-scroll-target="#a-luz-como-estímulo">A luz como estímulo</a></li>
+  <li><a href="#o-olho-formando-a-imagem" id="toc-o-olho-formando-a-imagem" class="nav-link" data-scroll-target="#o-olho-formando-a-imagem">O olho: formando a imagem</a></li>
+  <li><a href="#bastonetes-e-cones-dois-sistemas-de-visão" id="toc-bastonetes-e-cones-dois-sistemas-de-visão" class="nav-link" data-scroll-target="#bastonetes-e-cones-dois-sistemas-de-visão">Bastonetes e cones: dois sistemas de visão</a></li>
+  <li><a href="#as-cores-duas-teorias-que-se-complementam" id="toc-as-cores-duas-teorias-que-se-complementam" class="nav-link" data-scroll-target="#as-cores-duas-teorias-que-se-complementam">As cores: duas teorias que se complementam</a></li>
+  <li><a href="#do-olho-ao-cérebro-detectores-e-duas-correntes" id="toc-do-olho-ao-cérebro-detectores-e-duas-correntes" class="nav-link" data-scroll-target="#do-olho-ao-cérebro-detectores-e-duas-correntes">Do olho ao cérebro: detectores e duas correntes</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,778 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Descrever</strong> as propriedades físicas da luz (comprimento de onda, intensidade, pureza) e a que dimensão perceptual cada uma corresponde.</li>
+<li><strong>Traçar</strong> o caminho da luz no olho e explicar como cada estrutura contribui para formar a imagem na retina.</li>
+<li><strong>Comparar</strong> bastonetes e cones quanto a função, distribuição e papel na visão em diferentes níveis de luz.</li>
+<li><strong>Explicar</strong> as teorias tricromática e do processo oponente e por que ambas, em estágios diferentes, são necessárias.</li>
+<li><strong>Mapear</strong> as vias visuais do olho ao córtex, incluindo os detectores de características e as duas correntes (o “quê” e o “onde/como”).</li>
+<li><strong>Interpretar</strong> casos como cegueira cortical (blindsight) e agnosia visual como evidências de que “ver” é composto de processos dissociáveis.</li>
+</ul>
 </div>
+<p>Dos sentidos humanos, a visão é o mais dominante: cerca de um quarto do córtex participa do processamento visual, e quando a informação visual conflita com a de outros sentidos, costuma vencer. Este capítulo aplica os princípios gerais do Cap. 29 ao caso concreto do olho — o sentido de que mais dependemos e o mais bem estudado. Veremos a cadeia completa: da luz que entra pela córnea aos neurônios do córtex que respondem a bordas e movimentos, até o ponto em que “ver uma coisa” e “saber o que ela é” se revelam operações separadas, que a lesão cerebral pode dissociar. A visão parece imediata e sem esforço; é, na verdade, uma das construções mais elaboradas do cérebro.</p>
+<section id="a-luz-como-estímulo" class="level2">
+<h2 class="anchored" data-anchor-id="a-luz-como-estímulo">A luz como estímulo</h2>
+<p>O estímulo da visão é uma faixa estreita do espectro eletromagnético — a <strong>luz visível</strong>, entre cerca de 400 e 700 nanômetros de comprimento de onda. Três propriedades físicas da luz mapeiam-se em três dimensões da experiência. O <strong>comprimento de onda</strong> determina a <strong>matiz</strong> (a cor percebida: ondas curtas tendem ao azul, longas ao vermelho). A <strong>intensidade</strong> (amplitude) determina o <strong>brilho</strong>. E a <strong>pureza</strong> — o quão concentrada a luz é em torno de um único comprimento de onda — determina a <strong>saturação</strong> (o quão “viva” ou “lavada” a cor parece). Vale reter, desde já, que “cor” não é uma propriedade da luz: a luz tem comprimentos de onda; a cor é a experiência que o cérebro constrói a partir deles. Uma pétala não é vermelha no escuro — ela apenas reflete ondas longas que, na presença de luz e de um sistema visual, produzem a experiência do vermelho.</p>
+</section>
+<section id="o-olho-formando-a-imagem" class="level2">
+<h2 class="anchored" data-anchor-id="o-olho-formando-a-imagem">O olho: formando a imagem</h2>
+<p>A luz atravessa uma sequência de estruturas antes de virar sinal neural (<a href="#fig-olho" class="quarto-xref">Figura&nbsp;<span>30.1</span></a>). Primeiro, a <strong>córnea</strong>, a membrana transparente e curva que faz a maior parte do foco. Depois, a <strong>pupila</strong>, o orifício cuja abertura é regulada pela <strong>íris</strong> (o anel colorido): ela se contrai na luz forte e dilata no escuro, controlando quanta luz entra. Em seguida, o <strong>cristalino</strong>, uma lente que ajusta o foco fino por <strong>acomodação</strong> — mudando de curvatura para focar objetos próximos ou distantes. Quando o globo ocular é longo ou curto demais, a imagem se forma antes ou depois da retina, produzindo miopia e hipermetropia — corrigidas por lentes que reposicionam o foco.</p>
+<div id="fig-olho" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-olho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Corte horizontal esquemático do olho humano visto de cima. À esquerda, entrando a luz, aparecem em sequência: a córnea (curva externa), a pupila e a íris, o cristalino (lente oval). O interior é o humor vítreo. Na parede posterior, curva, está a retina; um ponto central marca a fóvea e, logo abaixo, o ponto cego, de onde parte o nervo óptico para a direita." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="280.050819pt" height="136.859577pt" viewbox="-68.014948 -68.014945 280.050819 136.859577">
+<defs>
+<path id="tz_olho_esquema_g0-16" d="M1.522291-3.514819L.358655-3.427148V-3.164134C.868742-3.164134 .940473-3.116314 .940473-2.725778V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.211457-.02391C1.315068-.02391 1.793275-.02391 2.072229 0V-.263014C1.554172-.263014 1.522291-.302864 1.522291-.613699V-3.514819Z"></path>
+<path id="tz_olho_esquema_g0-19" d="M3.156164-4.98132C3.243836-5.045081 3.315567-5.116812 3.315567-5.244334C3.315567-5.427646 3.148194-5.563138 3.004732-5.563138C2.972852-5.563138 2.86127-5.563138 2.757659-5.435616L1.737484-4.224159L1.904857-4.040847L3.156164-4.98132Z"></path>
+<path id="tz_olho_esquema_g0-47" d="M3.714072-5.650809C3.753923-5.746451 3.753923-5.778331 3.753923-5.794271C3.753923-5.897883 3.674222-5.977584 3.57061-5.977584C3.443088-5.977584 3.411208-5.881943 3.371357-5.786301L.510087 1.665753C.470237 1.761395 .470237 1.793275 .470237 1.809215C.470237 1.912827 .549938 1.992528 .653549 1.992528C.781071 1.992528 .812951 1.896887 .852802 1.801245L3.714072-5.650809Z"></path>
+<path id="tz_olho_esquema_g0-97" d="M3.347447-2.375093C3.347447-3.156164 2.590286-3.55467 1.865006-3.55467C1.203487-3.55467 .613699-3.299626 .613699-2.773599C.613699-2.534496 .781071-2.391034 .988294-2.391034C1.211457-2.391034 1.362889-2.550436 1.362889-2.765629C1.362889-2.956912 1.243337-3.092403 1.067995-3.132254C1.362889-3.331507 1.793275-3.331507 1.849066-3.331507C2.295392-3.331507 2.741719-3.020672 2.741719-2.367123V-2.12005C2.279452-2.096139 1.745455-2.072229 1.187547-1.841096C.486177-1.538232 .350685-1.075965 .350685-.812951C.350685-.127522 1.155666 .079701 1.705604 .079701C2.287422 .079701 2.646077-.247073 2.82142-.565878C2.86127-.263014 3.068493 .039851 3.419178 .039851C3.498879 .039851 4.176339 .00797 4.176339-.71731V-1.155666H3.929265V-.71731C3.929265-.390535 3.809714-.263014 3.642341-.263014C3.347447-.263014 3.347447-.629639 3.347447-.71731V-2.375093ZM2.741719-1.123786C2.741719-.350685 2.088169-.143462 1.769365-.143462C1.354919-.143462 1.004234-.422416 1.004234-.804981C1.004234-1.331009 1.498381-1.872976 2.741719-1.912827V-1.123786Z"></path>
+<path id="tz_olho_esquema_g0-99" d="M2.933001-3.164134C2.709838-3.092403 2.677958-2.909091 2.677958-2.81345C2.677958-2.598257 2.82939-2.438854 3.052553-2.438854C3.259776-2.438854 3.427148-2.582316 3.427148-2.82142C3.427148-3.315567 2.885181-3.55467 2.13599-3.55467C1.028144-3.55467 .278954-2.669988 .278954-1.721544C.278954-.70934 1.107846 .079701 2.11208 .079701C3.235866 .079701 3.514819-.860772 3.514819-.956413S3.411208-1.052055 3.387298-1.052055C3.331507-1.052055 3.291656-1.044085 3.267746-.964384C3.211955-.797011 2.988792-.167372 2.191781-.167372C1.697634-.167372 .988294-.549938 .988294-1.729514C.988294-2.87721 1.578082-3.307597 2.1599-3.307597C2.231631-3.307597 2.654047-3.307597 2.933001-3.164134Z"></path>
+<path id="tz_olho_esquema_g0-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_olho_esquema_g0-102" d="M1.522291-3.172105H2.478705V-3.435118H1.498381V-4.335741C1.498381-5.029141 1.888917-5.387796 2.239601-5.387796C2.367123-5.387796 2.438854-5.355915 2.470735-5.347945C2.327273-5.276214 2.287422-5.140722 2.287422-5.037111C2.287422-4.829888 2.438854-4.678456 2.646077-4.678456C2.86127-4.678456 3.004732-4.829888 3.004732-5.037111C3.004732-5.379826 2.669988-5.610959 2.247572-5.610959C1.649813-5.610959 .940473-5.180573 .940473-4.327771V-3.435118H.286924V-3.172105H.940473V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.083935-.02391 1.275218-.02391C1.745455-.02391 1.761395-.02391 2.279452 0V-.263014H2.12005C1.538232-.263014 1.522291-.350685 1.522291-.637609V-3.172105Z"></path>
+<path id="tz_olho_esquema_g0-103" d="M1.378829-.549938C1.131756-.573848 .932503-.789041 .932503-1.075965C.932503-1.267248 .980324-1.338979 1.036115-1.41071C1.370859-1.211457 1.681694-1.171606 1.872976-1.171606C2.662017-1.171606 3.243836-1.721544 3.243836-2.343213C3.243836-2.646077 3.108344-2.901121 2.917061-3.108344C3.028643-3.203985 3.291656-3.371357 3.682192-3.379328C3.650311-3.355417 3.610461-3.315567 3.610461-3.188045C3.610461-3.044583 3.714072-2.940971 3.857534-2.940971C3.969116-2.940971 4.104608-3.012702 4.104608-3.196015C4.104608-3.331507 4.000996-3.602491 3.650311-3.602491C3.514819-3.602491 3.132254-3.57061 2.765629-3.235866C2.566376-3.379328 2.255542-3.514819 1.880946-3.514819C1.091905-3.514819 .510087-2.964882 .510087-2.343213C.510087-1.968618 .71731-1.689664 .884682-1.530262C.70934-1.331009 .645579-1.075965 .645579-.884682C.645579-.557908 .804981-.310834 .980324-.175342C.565878-.063761 .239103 .247073 .239103 .613699C.239103 1.187547 1.060025 1.633873 2.11208 1.633873C3.108344 1.633873 3.985056 1.227397 3.985056 .597758C3.985056 .167372 3.730012-.167372 3.466999-.302864C2.996762-.549938 2.606227-.549938 1.825156-.549938H1.378829ZM1.880946-1.40274C1.139726-1.40274 1.139726-2.16787 1.139726-2.343213C1.139726-2.638107 1.179577-2.84533 1.299128-3.004732C1.43462-3.188045 1.657783-3.283686 1.872976-3.283686C2.614197-3.283686 2.614197-2.518555 2.614197-2.343213C2.614197-2.048319 2.574346-1.841096 2.454795-1.681694C2.279452-1.458531 2.024408-1.40274 1.880946-1.40274ZM2.255542-.03188C2.470735-.03188 3.514819-.03188 3.514819 .605729C3.514819 1.036115 2.901121 1.40274 2.11208 1.40274C1.315068 1.40274 .70934 1.036115 .70934 .605729C.70934 .438356 .836862-.03188 1.490411-.03188H2.255542Z"></path>
+<path id="tz_olho_esquema_g0-105" d="M1.554172-4.909589C1.554172-5.140722 1.370859-5.355915 1.107846-5.355915C.876712-5.355915 .669489-5.172603 .669489-4.917559C.669489-4.638605 .900623-4.471233 1.107846-4.471233C1.3868-4.471233 1.554172-4.702366 1.554172-4.909589ZM.358655-3.427148V-3.164134C.868742-3.164134 .940473-3.116314 .940473-2.725778V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.211457-.02391C1.315068-.02391 1.793275-.02391 2.072229 0V-.263014C1.554172-.263014 1.522291-.302864 1.522291-.613699V-3.514819L.358655-3.427148Z"></path>
+<path id="tz_olho_esquema_g0-108" d="M1.522291-5.531258L.334745-5.443587V-5.180573C.876712-5.180573 .940473-5.124782 .940473-4.734247V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.227397-.02391C1.3868-.02391 1.817186-.02391 2.12802 0V-.263014C1.617933-.263014 1.522291-.263014 1.522291-.621669V-5.531258Z"></path>
+<path id="tz_olho_esquema_g0-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_olho_esquema_g0-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_olho_esquema_g0-112" d="M2.096139 1.283188C1.586052 1.283188 1.490411 1.283188 1.490411 .924533V-.390535C1.865006 .01594 2.271482 .079701 2.526526 .079701C3.53873 .079701 4.415442-.70137 4.415442-1.721544C4.415442-2.717808 3.610461-3.514819 2.646077-3.514819C2.335243-3.514819 1.872976-3.435118 1.466501-3.020672V-3.514819L.278954-3.427148V-3.164134C.844832-3.164134 .884682-3.116314 .884682-2.781569V.924533C.884682 1.283188 .789041 1.283188 .278954 1.283188V1.546202C.621669 1.522291 .972354 1.522291 1.187547 1.522291C1.41868 1.522291 1.753425 1.522291 2.096139 1.546202V1.283188ZM1.490411-2.654047C1.673724-2.972852 2.072229-3.267746 2.574346-3.267746C3.188045-3.267746 3.706102-2.590286 3.706102-1.721544C3.706102-.804981 3.132254-.143462 2.486675-.143462C2.207721-.143462 1.841096-.263014 1.586052-.661519C1.490411-.797011 1.490411-.804981 1.490411-.956413V-2.654047Z"></path>
+<path id="tz_olho_esquema_g0-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_olho_esquema_g0-115" d="M2.83736-3.347447C2.83736-3.474969 2.83736-3.55467 2.733748-3.55467C2.693898-3.55467 2.669988-3.55467 2.542466-3.427148C2.526526-3.419178 2.454795-3.347447 2.430884-3.347447C2.422914-3.347447 2.406974-3.347447 2.359153-3.379328C2.231631-3.466999 2.000498-3.55467 1.641843-3.55467C.526027-3.55467 .278954-2.948941 .278954-2.566376C.278954-2.16787 .573848-1.936737 .597758-1.912827C.916563-1.673724 1.099875-1.641843 1.633873-1.546202C2.008468-1.474471 2.622167-1.362889 2.622167-.820922C2.622167-.510087 2.414944-.143462 1.681694-.143462C.876712-.143462 .645579-.765131 .541968-1.187547C.510087-1.291158 .502117-1.331009 .406476-1.331009C.278954-1.331009 .278954-1.267248 .278954-1.115816V-.127522C.278954 0 .278954 .079701 .382565 .079701C.430386 .079701 .438356 .071731 .581818-.079701C.621669-.119552 .70934-.223163 .749191-.263014C1.107846 .063761 1.482441 .079701 1.689664 .079701C2.701868 .079701 3.052553-.502117 3.052553-1.028144C3.052553-1.41071 2.82142-1.968618 1.872976-2.14396C1.809215-2.1599 1.362889-2.239601 1.331009-2.239601C1.083935-2.295392 .70934-2.462765 .70934-2.781569C.70934-3.020672 .884682-3.355417 1.641843-3.355417C2.534496-3.355417 2.574346-2.701868 2.590286-2.478705C2.598257-2.414944 2.654047-2.391034 2.709838-2.391034C2.83736-2.391034 2.83736-2.446824 2.83736-2.598257V-3.347447Z"></path>
+<path id="tz_olho_esquema_g0-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_olho_esquema_g0-117" d="M2.662017-3.427148V-3.164134C3.203985-3.164134 3.267746-3.108344 3.267746-2.717808V-1.331009C3.267746-.645579 2.8533-.143462 2.255542-.143462C1.570112-.143462 1.538232-.486177 1.538232-.884682V-3.514819L.326775-3.427148V-3.164134C.932503-3.164134 .932503-3.140224 .932503-2.430884V-1.235367C.932503-.661519 .932503 .079701 2.207721 .079701C2.956912 .079701 3.243836-.494147 3.283686-.565878H3.291656V.079701L4.479203 0V-.263014C3.937235-.263014 3.873474-.318804 3.873474-.70934V-3.514819L2.662017-3.427148Z"></path>
+<path id="tz_olho_esquema_g0-118" d="M3.53076-2.614197C3.722042-3.060523 3.993026-3.164134 4.28792-3.172105V-3.435118C4.008966-3.411208 3.993026-3.411208 3.666252-3.411208C3.594521-3.411208 3.219925-3.411208 2.972852-3.435118V-3.172105C3.251806-3.156164 3.323537-2.980822 3.323537-2.84533C3.323537-2.765629 3.307597-2.725778 3.275716-2.654047L2.414944-.645579L1.474471-2.805479C1.42665-2.909091 1.42665-2.956912 1.42665-2.972852C1.42665-3.172105 1.713574-3.172105 1.849066-3.172105V-3.435118C1.506351-3.411208 1.131756-3.411208 .980324-3.411208C.812951-3.411208 .430386-3.411208 .175342-3.435118V-3.172105C.661519-3.172105 .70137-3.124284 .820922-2.8533L2.016438-.095641C2.072229 .02391 2.12005 .079701 2.231631 .079701S2.399004 .01594 2.438854-.079701L3.53076-2.614197Z"></path>
+</defs>
+<g id="tz_olho_esquema_page1">
+<g stroke-miterlimit="10" transform="translate(51.438529,.414841)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<g fill="#f7fafe">
+<path d="M68.2864 0C68.2864 37.71402 37.71402 68.2864 0 68.2864S-68.2864 37.71402-68.2864 0S-37.71402-68.2864 0-68.2864S68.2864-37.71402 68.2864 0ZM0 0"></path>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M-59.75093 31.29819C-77.03386 21.31992-82.95564-.78043-72.97737-18.06335C-69.80696-23.55507-65.24265-28.11938-59.75093-31.2898" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-108.78445,45.5918)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-99"></use>
+<use x="55.202248" y=".414841" href="#tz_olho_esquema_g0-19"></use>
+<use x="55.202248" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="59.43643" y=".414841" href="#tz_olho_esquema_g0-114"></use>
+<use x="62.736601" y=".414841" href="#tz_olho_esquema_g0-110"></use>
+<use x="67.441248" y=".414841" href="#tz_olho_esquema_g0-101"></use>
+<use x="71.204966" y=".414841" href="#tz_olho_esquema_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-91.04869 42.67911L-70.74661 27.45247" fill="none"></path>
+<g transform="matrix(0.79997,-0.59999,0.59999,0.79997,-72.12625,28.48721)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M-49.7923 21.33955L-44.10184 9.95863" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M-49.7923-21.33955L-44.10184-9.95863" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-113.27054,-44.67911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="50.4976" y=".414841" href="#tz_olho_esquema_g0-19"></use>
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-16"></use>
+<use x="53.790853" y=".414841" href="#tz_olho_esquema_g0-114"></use>
+<use x="57.091023" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="59.443347" y=".414841" href="#tz_olho_esquema_g0-115"></use>
+<use x="65.606439" y=".414841" href="#tz_olho_esquema_g0-47"></use>
+<use x="72.66341" y=".414841" href="#tz_olho_esquema_g0-112"></use>
+<use x="77.368058" y=".414841" href="#tz_olho_esquema_g0-117"></use>
+<use x="82.072705" y=".414841" href="#tz_olho_esquema_g0-112"></use>
+<use x="86.777353" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="89.129677" y=".414841" href="#tz_olho_esquema_g0-108"></use>
+<use x="91.482" y=".414841" href="#tz_olho_esquema_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-73.9773-36.98865L-50.73203-17.61778" fill="none"></path>
+<g transform="matrix(0.76819,0.64015,-0.64015,0.76819,-52.05684,-18.7218)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#3fb618" stroke="#3fb618">
+<g fill="#e8f7e4">
+<path d="M-27.31482 0C-27.31482 13.35716-31.64587 24.185-36.98865 24.185C-42.33142 24.185-46.66248 13.35716-46.66248 0S-42.33142-24.185-36.98865-24.185C-31.64587-24.185-27.31482-13.35716-27.31482 0ZM-36.98865 0"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-54.01598,-56.8378)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#3fb618">
+<g stroke="none">
+<g fill="#3fb618">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-99"></use>
+<use x="55.202248" y=".414841" href="#tz_olho_esquema_g0-114"></use>
+<use x="58.502418" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="60.854741" y=".414841" href="#tz_olho_esquema_g0-115"></use>
+<use x="64.195044" y=".414841" href="#tz_olho_esquema_g0-116"></use>
+<use x="67.488298" y=".414841" href="#tz_olho_esquema_g0-97"></use>
+<use x="71.722481" y=".414841" href="#tz_olho_esquema_g0-108"></use>
+<use x="74.074804" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="76.427128" y=".414841" href="#tz_olho_esquema_g0-110"></use>
+<use x="81.131776" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M-36.98865-46.94684V-28.68265" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,-36.98865,-30.40726)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#972f29" stroke="#972f29">
+<path d="M48.36957 48.36957C75.03665 21.70248 75.03665-21.535 48.36957-48.20209" fill="none"></path>
+</g>
+</g>
+<g transform="translate(83.0294,34.3061)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#972f29">
+<g stroke="none">
+<g fill="#972f29">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-114"></use>
+<use x="54.7387" y=".414841" href="#tz_olho_esquema_g0-101"></use>
+<use x="58.502418" y=".414841" href="#tz_olho_esquema_g0-116"></use>
+<use x="61.795671" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="64.147995" y=".414841" href="#tz_olho_esquema_g0-110"></use>
+<use x="68.852642" y=".414841" href="#tz_olho_esquema_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M69.88641 2.84544C69.88641 3.72911 69.17007 4.44545 68.2864 4.44545C67.40274 4.44545 66.6864 3.72911 66.6864 2.84544C66.6864 1.96178 67.40274 1.24544 68.2864 1.24544C69.17007 1.24544 69.88641 1.96178 69.88641 2.84544ZM68.2864 2.84544" stroke="none"></path>
+</g>
+<g transform="translate(81.48605,7.18086)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-102"></use>
+<use x="54.026086" y=".414841" href="#tz_olho_esquema_g0-19"></use>
+<use x="54.026086" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="58.260268" y=".414841" href="#tz_olho_esquema_g0-118"></use>
+<use x="62.494451" y=".414841" href="#tz_olho_esquema_g0-101"></use>
+<use x="66.258169" y=".414841" href="#tz_olho_esquema_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M62.77322-21.33955C62.77322-20.45589 62.05688-19.73955 61.17322-19.73955C60.28955-19.73955 59.57321-20.45589 59.57321-21.33955C59.57321-22.22322 60.28955-22.93956 61.17322-22.93956C62.05688-22.93956 62.77322-22.22322 62.77322-21.33955ZM61.17322-21.33955" stroke="none"></path>
+</g>
+<g transform="translate(82.3603,-25.86754)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-112"></use>
+<use x="56.378409" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="60.612592" y=".414841" href="#tz_olho_esquema_g0-110"></use>
+<use x="65.082008" y=".414841" href="#tz_olho_esquema_g0-116"></use>
+<use x="68.375261" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="75.432232" y=".414841" href="#tz_olho_esquema_g0-99"></use>
+<use x="79.19595" y=".414841" href="#tz_olho_esquema_g0-101"></use>
+<use x="82.959668" y=".414841" href="#tz_olho_esquema_g0-103"></use>
+<use x="87.193851" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#b35210" stroke="#b35210">
+<path d="M61.17322-21.33955C91.04869-36.98865 91.04869-36.98865 108.1205-54.06003" fill="none"></path>
+<g transform="translate(112.05347,-56.06003)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(51.438529,.414841)scale(-1,-1)">
+<g fill="#99460e">
+<g stroke="none">
+<g fill="#99460e">
+<use x="51.438529" y=".414841" href="#tz_olho_esquema_g0-110"></use>
+<use x="56.143177" y=".414841" href="#tz_olho_esquema_g0-101"></use>
+<use x="59.906895" y=".414841" href="#tz_olho_esquema_g0-114"></use>
+<use x="63.207065" y=".414841" href="#tz_olho_esquema_g0-118"></use>
+<use x="67.441248" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="74.49822" y=".414841" href="#tz_olho_esquema_g0-19"></use>
+<use x="74.49822" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+<use x="78.732402" y=".414841" href="#tz_olho_esquema_g0-112"></use>
+<use x="83.43705" y=".414841" href="#tz_olho_esquema_g0-116"></use>
+<use x="86.730303" y=".414841" href="#tz_olho_esquema_g0-105"></use>
+<use x="89.082627" y=".414841" href="#tz_olho_esquema_g0-99"></use>
+<use x="92.846345" y=".414841" href="#tz_olho_esquema_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#b35210" stroke="#b35210">
+<g stroke-width="0.8">
+<path d="M-119.50143 14.22636L-69.53166 7.65135" fill="none"></path>
+<g transform="matrix(0.99141,-0.13045,0.13045,0.99141,-71.9847,7.97412)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g fill="#b35210" stroke="#b35210">
+<g stroke-width="0.8">
+<path d="M-119.50143-14.22636L-69.53166-7.65135" fill="none"></path>
+<g transform="matrix(0.99141,0.13045,-0.13045,0.99141,-71.9847,-7.97412)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-olho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;30.1: O olho em corte. A luz é focada pela córnea e pelo cristalino sobre a retina, no fundo do olho. A fóvea é a região de máxima acuidade; o ponto cego, onde o nervo óptico deixa o olho, não tem receptores.
+</figcaption>
+</figure>
+</div>
+<p>No fundo do olho está a <strong>retina</strong>, um tecido de várias camadas onde acontece a transdução. É útil notar um detalhe contraintuitivo: a retina é “de trás para frente” — a luz precisa atravessar camadas de neurônios antes de chegar aos fotorreceptores no fundo. E há um <strong>ponto cego</strong>: o lugar onde o nervo óptico sai do olho não tem receptores, de modo que existe um buraco no campo visual de cada olho que normalmente não notamos — o cérebro o “preenche” com o entorno, um primeiro indício de quão ativamente ele constrói o que vemos.</p>
+</section>
+<section id="bastonetes-e-cones-dois-sistemas-de-visão" class="level2">
+<h2 class="anchored" data-anchor-id="bastonetes-e-cones-dois-sistemas-de-visão">Bastonetes e cones: dois sistemas de visão</h2>
+<p>Os fotorreceptores vêm em dois tipos, com uma bela divisão de trabalho. Os <strong>cones</strong>, concentrados na <strong>fóvea</strong> (o centro da retina), respondem à cor e fornecem a máxima acuidade, mas exigem bastante luz — são os receptores da visão diurna. Os <strong>bastonetes</strong>, espalhados pela periferia da retina, são muito mais sensíveis e funcionam com pouquíssima luz, porém não distinguem cor e têm baixa resolução — são os receptores da visão noturna. Essa dupla arquitetura explica várias experiências cotidianas: à noite tudo parece acinzentado (só os bastonetes operam, e eles não veem cor); e uma estrela fraca desaparece se você a fita diretamente — a imagem cai na fóvea, cheia de cones insensíveis à luz fraca — mas reaparece se você olha ligeiramente de lado, jogando-a sobre os bastonetes da periferia.</p>
+<p>A transdução ocorre em <strong>fotopigmentos</strong>: moléculas que mudam de forma ao absorver luz, disparando a cascata que gera o sinal neural. É a decomposição desses pigmentos que, ao entrarmos num cinema escuro, nos deixa cegos por um momento e depois vai devolvendo a visão à medida que os bastonetes se <strong>adaptam ao escuro</strong> — um processo que leva vários minutos e ilustra, no nível químico, a adaptação sensorial do Cap. 29.</p>
+</section>
+<section id="as-cores-duas-teorias-que-se-complementam" class="level2">
+<h2 class="anchored" data-anchor-id="as-cores-duas-teorias-que-se-complementam">As cores: duas teorias que se complementam</h2>
+<p>Como poucos tipos de cone produzem milhões de cores percebidas? A resposta ocupou os maiores nomes da fisiologia do século XIX e terminou não com uma teoria vencedora, mas com duas — cada uma correta em seu estágio.</p>
+<p>A <strong>teoria tricromática</strong> (ou de Young-Helmholtz), proposta por Thomas Young e desenvolvida por Hermann von Helmholtz, sustenta que existem três tipos de cone, sensíveis preferencialmente a comprimentos de onda curtos (azul), médios (verde) e longos (vermelho) <span class="citation" data-cites="young1802 helmholtz1867">(<a href="../../referencias.html#ref-helmholtz1867" role="doc-biblioref">Helmholtz, 1867</a>; <a href="../../referencias.html#ref-young1802" role="doc-biblioref">Young, 1802</a>)</span>. Qualquer cor resulta da razão de ativação entre os três — como uma tela que compõe tudo a partir de três subpixels. A teoria previu, décadas antes de qualquer confirmação, que haveria exatamente três fotopigmentos — o que a biologia molecular acabou por confirmar. Ela também explica a forma mais comum de <strong>daltonismo</strong>: a ausência ou alteração de um tipo de cone (em geral o do verde ou do vermelho, num gene ligado ao cromossomo X, por isso muito mais frequente em homens) colapsa a distinção entre certas cores.</p>
+<div id="fig-cor-dois-estagios" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cor-dois-estagios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Diagrama em dois estágios ligados por setas. À esquerda, o estágio dos receptores: três círculos rotulados cone C (curto/azul), cone M (médio/verde) e cone L (longo/vermelho). Setas levam ao estágio oponente à direita: três barras com pares antagônicos vermelho-verde, azul-amarelo e preto-branco. O rótulo geral indica que a informação dos três cones é recodificada em canais oponentes antes de seguir ao cérebro." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="321.534406pt" height="113.792877pt" viewbox="-68.014948 -68.014944 321.534406 113.792877">
+<defs>
+<path id="tz_cor_dois_estagios_g0-36" d="M1.506351-2.175841C1.777335-2.375093 2.024408-2.630137 2.215691-2.917061C2.558406-3.435118 2.646077-3.945205 2.646077-3.977086C2.646077-4.096638 2.534496-4.096638 2.462765-4.096638C2.375093-4.096638 2.303362-4.096638 2.279452-3.993026C2.080199-3.156164 1.609963-2.462765 .597758-2.11208C.533998-2.088169 .478207-2.072229 .478207-1.992528S.541968-1.888917 .565878-1.880946C.852802-1.785305 1.203487-1.657783 1.609963-1.259278C2.048319-.820922 2.191781-.358655 2.263512-.071731C2.303362 .087671 2.303362 .111582 2.462765 .111582C2.534496 .111582 2.646077 .111582 2.646077-.00797C2.646077-.02391 2.566376-.549938 2.215691-1.075965C1.984558-1.41071 1.705604-1.657783 1.506351-1.809215H6.957908C6.686924-1.609963 6.439851-1.354919 6.248568-1.067995C5.905853-.549938 5.818182-.039851 5.818182-.00797C5.818182 .111582 5.929763 .111582 6.001494 .111582C6.089166 .111582 6.160897 .111582 6.184807 .00797C6.39203-.876712 6.902117-1.546202 7.866501-1.872976C7.930262-1.888917 7.994022-1.912827 7.994022-1.992528S7.922291-2.096139 7.890411-2.10411C6.830386-2.462765 6.36812-3.211955 6.200747-3.913325C6.160897-4.072727 6.160897-4.096638 6.001494-4.096638C5.929763-4.096638 5.818182-4.096638 5.818182-3.977086C5.818182-3.961146 5.897883-3.435118 6.248568-2.909091C6.479701-2.574346 6.758655-2.327273 6.957908-2.175841H1.506351Z"></path>
+<path id="tz_cor_dois_estagios_g1-67" d="M5.634869-5.403736C5.634869-5.531258 5.634869-5.610959 5.531258-5.610959C5.475467-5.610959 5.467497-5.602989 5.395766-5.499377L4.98929-4.909589C4.702366-5.220423 4.176339-5.610959 3.411208-5.610959C1.809215-5.610959 .470237-4.327771 .470237-2.725778C.470237-1.115816 1.801245 .167372 3.419178 .167372C4.758157 .167372 5.634869-.892653 5.634869-1.865006C5.634869-1.944707 5.634869-2.016438 5.507347-2.016438C5.419676-2.016438 5.395766-1.976588 5.387796-1.896887C5.324035-.669489 4.335741-.095641 3.490909-.095641C2.81345-.095641 1.299128-.510087 1.299128-2.725778C1.299128-4.869738 2.733748-5.347945 3.490909-5.347945C4.2401-5.347945 5.164633-4.813948 5.371856-3.443088C5.379826-3.379328 5.387796-3.323537 5.499377-3.323537C5.634869-3.323537 5.634869-3.379328 5.634869-3.53076V-5.403736Z"></path>
+<path id="tz_cor_dois_estagios_g1-76" d="M4.933499-2.072229H4.686426C4.590785-1.243337 4.471233-.263014 3.012702-.263014H2.271482C1.904857-.263014 1.888917-.318804 1.888917-.589788V-4.790037C1.888917-5.068991 1.888917-5.180573 2.638107-5.180573H2.893151V-5.443587C2.534496-5.419676 1.952677-5.419676 1.578082-5.419676C1.044085-5.419676 1.028144-5.419676 .350685-5.443587V-5.180573H.526027C1.139726-5.180573 1.155666-5.092902 1.155666-4.798007V-.645579C1.155666-.350685 1.139726-.263014 .526027-.263014H.350685V0H4.702366L4.933499-2.072229Z"></path>
+<path id="tz_cor_dois_estagios_g1-77" d="M2.024408-5.260274C1.960648-5.419676 1.952677-5.443587 1.729514-5.443587H.390535V-5.180573H.565878C1.179577-5.180573 1.195517-5.092902 1.195517-4.798007V-.852802C1.195517-.645579 1.195517-.263014 .390535-.263014V0C.749191-.02391 1.123786-.02391 1.331009-.02391S1.912827-.02391 2.271482 0V-.263014C1.466501-.263014 1.466501-.645579 1.466501-.852802V-5.084932L1.474471-5.092902L3.482939-.191283C3.53076-.087671 3.56264 0 3.674222 0C3.777833 0 3.817684-.095641 3.857534-.191283L5.889913-5.156663L5.897883-5.148692V-.645579C5.897883-.350685 5.881943-.263014 5.268244-.263014H5.092902V0C5.72254-.02391 5.738481-.02391 6.224658-.02391S6.726775-.02391 7.356413 0V-.263014H7.181071C6.567372-.263014 6.551432-.350685 6.551432-.645579V-4.798007C6.551432-5.092902 6.567372-5.180573 7.181071-5.180573H7.356413V-5.443587H6.009465C5.794271-5.443587 5.778331-5.419676 5.72254-5.276214L3.873474-.757161L2.024408-5.260274Z"></path>
+<path id="tz_cor_dois_estagios_g1-97" d="M3.347447-2.375093C3.347447-3.156164 2.590286-3.55467 1.865006-3.55467C1.203487-3.55467 .613699-3.299626 .613699-2.773599C.613699-2.534496 .781071-2.391034 .988294-2.391034C1.211457-2.391034 1.362889-2.550436 1.362889-2.765629C1.362889-2.956912 1.243337-3.092403 1.067995-3.132254C1.362889-3.331507 1.793275-3.331507 1.849066-3.331507C2.295392-3.331507 2.741719-3.020672 2.741719-2.367123V-2.12005C2.279452-2.096139 1.745455-2.072229 1.187547-1.841096C.486177-1.538232 .350685-1.075965 .350685-.812951C.350685-.127522 1.155666 .079701 1.705604 .079701C2.287422 .079701 2.646077-.247073 2.82142-.565878C2.86127-.263014 3.068493 .039851 3.419178 .039851C3.498879 .039851 4.176339 .00797 4.176339-.71731V-1.155666H3.929265V-.71731C3.929265-.390535 3.809714-.263014 3.642341-.263014C3.347447-.263014 3.347447-.629639 3.347447-.71731V-2.375093ZM2.741719-1.123786C2.741719-.350685 2.088169-.143462 1.769365-.143462C1.354919-.143462 1.004234-.422416 1.004234-.804981C1.004234-1.331009 1.498381-1.872976 2.741719-1.912827V-1.123786Z"></path>
+<path id="tz_cor_dois_estagios_g1-98" d="M1.466501-5.531258L.278954-5.443587V-5.180573C.820922-5.180573 .884682-5.124782 .884682-4.734247V0H1.131756L1.41868-.494147C1.609963-.223163 1.984558 .079701 2.526526 .079701C3.53873 .079701 4.415442-.70137 4.415442-1.721544C4.415442-2.725778 3.594521-3.514819 2.622167-3.514819C1.992528-3.514819 1.601993-3.172105 1.466501-3.028643V-5.531258ZM1.490411-2.518555C1.490411-2.669988 1.490411-2.685928 1.609963-2.82939C1.841096-3.124284 2.215691-3.291656 2.574346-3.291656C2.988792-3.291656 3.299626-3.044583 3.459029-2.805479C3.594521-2.590286 3.706102-2.311333 3.706102-1.729514C3.706102-1.546202 3.706102-.980324 3.419178-.605729C3.132254-.247073 2.757659-.143462 2.494645-.143462C2.11208-.143462 1.793275-.342715 1.586052-.653549C1.490411-.804981 1.490411-.812951 1.490411-.964384V-2.518555Z"></path>
+<path id="tz_cor_dois_estagios_g1-99" d="M2.933001-3.164134C2.709838-3.092403 2.677958-2.909091 2.677958-2.81345C2.677958-2.598257 2.82939-2.438854 3.052553-2.438854C3.259776-2.438854 3.427148-2.582316 3.427148-2.82142C3.427148-3.315567 2.885181-3.55467 2.13599-3.55467C1.028144-3.55467 .278954-2.669988 .278954-1.721544C.278954-.70934 1.107846 .079701 2.11208 .079701C3.235866 .079701 3.514819-.860772 3.514819-.956413S3.411208-1.052055 3.387298-1.052055C3.331507-1.052055 3.291656-1.044085 3.267746-.964384C3.211955-.797011 2.988792-.167372 2.191781-.167372C1.697634-.167372 .988294-.549938 .988294-1.729514C.988294-2.87721 1.578082-3.307597 2.1599-3.307597C2.231631-3.307597 2.654047-3.307597 2.933001-3.164134Z"></path>
+<path id="tz_cor_dois_estagios_g1-100" d="M2.622167-5.443587V-5.180573C3.164134-5.180573 3.227895-5.124782 3.227895-4.734247V-3.052553C2.948941-3.355417 2.574346-3.514819 2.1599-3.514819C1.163636-3.514819 .278954-2.741719 .278954-1.713574C.278954-.73325 1.075965 .079701 2.080199 .079701C2.550436 .079701 2.940971-.143462 3.203985-.422416V.079701L4.415442 0V-.263014C3.873474-.263014 3.809714-.318804 3.809714-.70934V-5.531258L2.622167-5.443587ZM3.203985-.988294C3.203985-.844832 3.203985-.812951 3.084433-.653549C2.86127-.334745 2.494645-.143462 2.12005-.143462C1.753425-.143462 1.43462-.334745 1.243337-.629639C1.028144-.940473 .988294-1.331009 .988294-1.705604C.988294-2.16787 1.060025-2.494645 1.243337-2.773599C1.43462-3.068493 1.793275-3.291656 2.199751-3.291656C2.582316-3.291656 2.964882-3.100374 3.203985-2.685928V-.988294Z"></path>
+<path id="tz_cor_dois_estagios_g1-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_cor_dois_estagios_g1-104" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C2.032379-3.514819 1.665753-3.068493 1.522291-2.81345H1.514321V-5.531258L.326775-5.443587V-5.180573C.868742-5.180573 .932503-5.124782 .932503-4.734247V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_cor_dois_estagios_g1-108" d="M1.522291-5.531258L.334745-5.443587V-5.180573C.876712-5.180573 .940473-5.124782 .940473-4.734247V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.227397-.02391C1.3868-.02391 1.817186-.02391 2.12802 0V-.263014C1.617933-.263014 1.522291-.263014 1.522291-.621669V-5.531258Z"></path>
+<path id="tz_cor_dois_estagios_g1-109" d="M6.224658-2.414944C6.224658-3.060523 5.945704-3.514819 5.076961-3.514819C4.343711-3.514819 3.977086-3.012702 3.849564-2.781569C3.706102-3.355417 3.251806-3.514819 2.733748-3.514819C1.960648-3.514819 1.594022-2.964882 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.16787-3.291656 2.669988-3.291656C3.188045-3.291656 3.275716-2.885181 3.275716-2.446824V-.621669C3.275716-.263014 3.180075-.263014 2.669988-.263014V0C3.012702-.02391 3.363387-.02391 3.57858-.02391C3.809714-.02391 4.144458-.02391 4.487173 0V-.263014C3.977086-.263014 3.881445-.263014 3.881445-.621669V-2.064259C3.881445-2.901121 4.511083-3.291656 5.0132-3.291656C5.531258-3.291656 5.618929-2.885181 5.618929-2.446824V-.621669C5.618929-.263014 5.523288-.263014 5.0132-.263014V0C5.355915-.02391 5.7066-.02391 5.921793-.02391C6.152927-.02391 6.487671-.02391 6.830386 0V-.263014C6.320299-.263014 6.224658-.263014 6.224658-.621669V-2.414944Z"></path>
+<path id="tz_cor_dois_estagios_g1-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_cor_dois_estagios_g1-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_cor_dois_estagios_g1-112" d="M2.096139 1.283188C1.586052 1.283188 1.490411 1.283188 1.490411 .924533V-.390535C1.865006 .01594 2.271482 .079701 2.526526 .079701C3.53873 .079701 4.415442-.70137 4.415442-1.721544C4.415442-2.717808 3.610461-3.514819 2.646077-3.514819C2.335243-3.514819 1.872976-3.435118 1.466501-3.020672V-3.514819L.278954-3.427148V-3.164134C.844832-3.164134 .884682-3.116314 .884682-2.781569V.924533C.884682 1.283188 .789041 1.283188 .278954 1.283188V1.546202C.621669 1.522291 .972354 1.522291 1.187547 1.522291C1.41868 1.522291 1.753425 1.522291 2.096139 1.546202V1.283188ZM1.490411-2.654047C1.673724-2.972852 2.072229-3.267746 2.574346-3.267746C3.188045-3.267746 3.706102-2.590286 3.706102-1.721544C3.706102-.804981 3.132254-.143462 2.486675-.143462C2.207721-.143462 1.841096-.263014 1.586052-.661519C1.490411-.797011 1.490411-.804981 1.490411-.956413V-2.654047Z"></path>
+<path id="tz_cor_dois_estagios_g1-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_cor_dois_estagios_g1-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_cor_dois_estagios_g1-117" d="M2.662017-3.427148V-3.164134C3.203985-3.164134 3.267746-3.108344 3.267746-2.717808V-1.331009C3.267746-.645579 2.8533-.143462 2.255542-.143462C1.570112-.143462 1.538232-.486177 1.538232-.884682V-3.514819L.326775-3.427148V-3.164134C.932503-3.164134 .932503-3.140224 .932503-2.430884V-1.235367C.932503-.661519 .932503 .079701 2.207721 .079701C2.956912 .079701 3.243836-.494147 3.283686-.565878H3.291656V.079701L4.479203 0V-.263014C3.937235-.263014 3.873474-.318804 3.873474-.70934V-3.514819L2.662017-3.427148Z"></path>
+<path id="tz_cor_dois_estagios_g1-118" d="M3.53076-2.614197C3.722042-3.060523 3.993026-3.164134 4.28792-3.172105V-3.435118C4.008966-3.411208 3.993026-3.411208 3.666252-3.411208C3.594521-3.411208 3.219925-3.411208 2.972852-3.435118V-3.172105C3.251806-3.156164 3.323537-2.980822 3.323537-2.84533C3.323537-2.765629 3.307597-2.725778 3.275716-2.654047L2.414944-.645579L1.474471-2.805479C1.42665-2.909091 1.42665-2.956912 1.42665-2.972852C1.42665-3.172105 1.713574-3.172105 1.849066-3.172105V-3.435118C1.506351-3.411208 1.131756-3.411208 .980324-3.411208C.812951-3.411208 .430386-3.411208 .175342-3.435118V-3.172105C.661519-3.172105 .70137-3.124284 .820922-2.8533L2.016438-.095641C2.072229 .02391 2.12005 .079701 2.231631 .079701S2.399004 .01594 2.438854-.079701L3.53076-2.614197Z"></path>
+<path id="tz_cor_dois_estagios_g1-122" d="M3.307597-3.156164C3.363387-3.227895 3.379328-3.243836 3.379328-3.307597C3.379328-3.435118 3.283686-3.435118 3.156164-3.435118H.446326L.350685-2.10411H.597758C.645579-2.933001 .820922-3.211955 1.713574-3.211955H2.622167L.310834-.294894C.255044-.223163 .239103-.207223 .239103-.135492C.239103 0 .326775 0 .462267 0H3.259776L3.403238-1.538232H3.156164C3.076463-.613699 2.925031-.247073 1.944707-.247073H.996264L3.307597-3.156164Z"></path>
+<path id="tz_cor_dois_estagios_g2-19" d="M3.882441-5.263263C4.00797-5.326027 4.223163-5.44259 4.223163-5.738481C4.223163-6.043337 3.945205-6.312329 3.676214-6.312329C3.461021-6.312329 3.371357-6.213699 3.120299-5.935741C2.914072-5.711582 2.411955-5.137733 2.196762-4.913574L2.47472-4.545953L3.882441-5.263263Z"></path>
+<path id="tz_cor_dois_estagios_g2-40" d="M3.523786 2.098132C3.523786 2.044334 3.496887 2.017435 3.38929 1.909838C2.214695 .806974 1.891905-.789041 1.891905-2.241594C1.891905-3.738979 2.241594-5.299128 3.353425-6.375093C3.514819-6.527522 3.523786-6.536488 3.523786-6.590286C3.523786-6.697883 3.425156-6.724782 3.344458-6.724782C3.156164-6.724782 2.680946-6.276463 2.582316-6.177833C1.685679-5.334994 .986301-3.945205 .986301-2.241594C.986301-.080697 2.080199 1.23736 2.546451 1.676712C2.618182 1.739477 3.147198 2.241594 3.344458 2.241594C3.380324 2.241594 3.523786 2.241594 3.523786 2.098132Z"></path>
+<path id="tz_cor_dois_estagios_g2-41" d="M3.129265-2.241594C3.129265-4.402491 2.035367-5.720548 1.569116-6.1599C1.497385-6.222665 .968369-6.724782 .771108-6.724782C.708344-6.724782 .591781-6.706849 .591781-6.58132C.591781-6.527522 .627646-6.491656 .71731-6.401993C1.811208-5.34396 2.223661-3.918306 2.223661-2.241594C2.223661-.744209 1.873973 .81594 .762142 1.891905C.600747 2.044334 .591781 2.0533 .591781 2.098132C.591781 2.223661 .699377 2.241594 .771108 2.241594C.959402 2.241594 1.43462 1.793275 1.53325 1.694645C2.429888 .851806 3.129265-.537983 3.129265-2.241594Z"></path>
+<path id="tz_cor_dois_estagios_g2-49" d="M3.263761-5.586052C3.263761-5.783313 3.263761-5.881943 3.003736-5.881943C2.896139-5.881943 2.878207-5.881943 2.797509-5.819178C2.107098-5.308095 1.147696-5.308095 .968369-5.308095H.789041V-4.868742H.968369C1.183562-4.868742 1.667746-4.895641 2.169863-5.04807V-.439352H.887671V0C1.228394-.026899 2.313325-.026899 2.716812-.026899C3.138232-.026899 4.196264-.026899 4.563885 0V-.439352H3.263761V-5.586052Z"></path>
+<path id="tz_cor_dois_estagios_g2-50" d="M4.770112-2.017435H4.312827C4.294894-1.891905 4.214197-1.255293 4.079701-1.192528C3.963138-1.147696 3.299626-1.147696 3.147198-1.147696H1.865006C2.340224-1.53325 2.878207-1.95467 3.326526-2.268493C4.079701-2.797509 4.770112-3.281694 4.770112-4.160399C4.770112-5.209465 3.81071-5.881943 2.510585-5.881943C1.398755-5.881943 .529016-5.352927 .529016-4.52802C.529016-4.061768 .887671-3.846575 1.201494-3.846575C1.488418-3.846575 1.865006-4.052802 1.865006-4.519054C1.865006-4.716314 1.784309-5.04807 1.389788-5.155666C1.703611-5.406725 2.107098-5.44259 2.286426-5.44259C3.021669-5.44259 3.48792-4.895641 3.48792-4.151432C3.48792-3.505853 3.102366-2.914072 2.627148-2.429888L.627646-.457285C.529016-.358655 .529016-.349689 .529016-.170361V0H4.492154L4.770112-2.017435Z"></path>
+<path id="tz_cor_dois_estagios_g2-58" d="M2.178829-3.272727C2.178829-3.685181 1.847073-3.981071 1.479452-3.981071C1.066999-3.981071 .771108-3.649315 .771108-3.281694C.771108-2.887173 1.084932-2.57335 1.479452-2.57335C1.865006-2.57335 2.178829-2.887173 2.178829-3.272727ZM2.178829-.699377C2.178829-1.111831 1.847073-1.407721 1.479452-1.407721C1.066999-1.407721 .771108-1.075965 .771108-.708344C.771108-.29589 1.102864 0 1.470486 0C1.882939 0 2.178829-.331756 2.178829-.699377Z"></path>
+<path id="tz_cor_dois_estagios_g2-69" d="M6.662017-2.47472H6.204732C6.007472-1.327024 5.810212-.439352 4.070735-.439352H2.645081V-2.940971H3.165131C4.043836-2.940971 4.133499-2.546451 4.133499-1.891905H4.590785V-4.42939H4.133499C4.133499-3.774844 4.052802-3.380324 3.165131-3.380324H2.645081V-5.657783H4.061768C5.487422-5.657783 5.76538-5.039103 5.908842-3.918306H6.366127L6.088169-6.097136H.376588V-5.657783H1.344956V-.439352H.376588V0H6.240598L6.662017-2.47472Z"></path>
+<path id="tz_cor_dois_estagios_g2-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_cor_dois_estagios_g2-99" d="M4.411457-1.0401C4.411457-1.183562 4.276961-1.183562 4.178331-1.183562C3.999004-1.183562 3.999004-1.174595 3.927273-1.0132C3.747945-.582814 3.344458-.331756 2.815442-.331756C1.542217-.331756 1.542217-1.622914 1.542217-2.026401C1.542217-2.564384 1.551183-3.676214 2.725778-3.676214C2.788543-3.676214 3.272727-3.667248 3.272727-3.622416C3.272727-3.61345 3.254795-3.58655 3.245828-3.577584C3.165131-3.478954 3.129265-3.335492 3.129265-3.209963C3.129265-2.842341 3.407223-2.627148 3.71208-2.627148C3.990037-2.627148 4.294894-2.815442 4.294894-3.218929C4.294894-4.061768 3.039601-4.061768 2.689913-4.061768C.968369-4.061768 .349689-2.96787 .349689-1.990535C.349689-.860772 1.156663 .053798 2.645081 .053798C2.976837 .053798 3.416189 0 3.792777-.233126C4.303861-.546949 4.411457-1.0132 4.411457-1.0401Z"></path>
+<path id="tz_cor_dois_estagios_g2-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_cor_dois_estagios_g2-103" d="M1.936737-.762142C1.649813-.762142 1.524284-.762142 1.371856-.878705C1.23736-.995268 1.165629-1.147696 1.165629-1.327024S1.228394-1.596015 1.23736-1.604981C1.569116-1.43462 1.963636-1.371856 2.358157-1.371856C3.730012-1.371856 4.196264-2.116065 4.196264-2.698879C4.196264-3.066501 4.025903-3.362391 3.837609-3.550685C4.079701-3.676214 4.259029-3.694147 4.375592-3.71208C4.366625-3.676214 4.348692-3.622416 4.348692-3.532752C4.348692-3.29066 4.536986-3.129265 4.752179-3.129265C4.94944-3.129265 5.155666-3.272727 5.155666-3.541719C5.155666-3.774844 4.976339-4.088667 4.563885-4.088667C4.124533-4.088667 3.747945-3.873474 3.577584-3.747945C3.200996-3.972105 2.788543-4.034869 2.358157-4.034869C.986301-4.034869 .52005-3.29066 .52005-2.707846C.52005-2.214695 .824907-1.891905 .986301-1.75741C.798007-1.551183 .690411-1.246326 .690411-.977335C.690411-.591781 .878705-.286924 1.066999-.116563C.385554 .071731 .29589 .457285 .29589 .654545C.29589 1.192528 .91457 1.802242 2.645081 1.802242C4.214197 1.802242 5.003238 1.309091 5.003238 .627646C5.003238 .313823 4.886675-.242092 4.267995-.529016C3.747945-.762142 3.272727-.762142 2.385056-.762142H1.936737ZM2.358157-1.730511C1.551183-1.730511 1.551183-2.304359 1.551183-2.698879C1.551183-3.102366 1.551183-3.676214 2.358157-3.676214S3.165131-3.102366 3.165131-2.707846C3.165131-2.304359 3.165131-1.730511 2.358157-1.730511ZM2.887173 .125529C3.165131 .125529 4.20523 .125529 4.20523 .663512C4.20523 .950436 3.873474 1.443587 2.654047 1.443587C1.470486 1.443587 1.093898 .995268 1.093898 .645579C1.093898 .125529 1.667746 .125529 1.802242 .125529H2.887173Z"></path>
+<path id="tz_cor_dois_estagios_g2-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_cor_dois_estagios_g2-109" d="M7.989041-2.734745C7.989041-3.792777 7.352428-4.034869 6.563387-4.034869C5.630884-4.034869 5.173599-3.469988 5.003238-3.19203C4.805978-3.999004 4.016936-4.034869 3.622416-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.272727 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.999004-3.496887 3.999004-2.815442V-.439352H3.38929V0C4.052802-.026899 4.160399-.026899 4.519054-.026899C4.886675-.026899 4.976339-.026899 5.657783 0V-.439352H5.04807V-2.27746C5.04807-3.272727 5.872976-3.676214 6.410959-3.676214C6.751681-3.676214 6.939975-3.496887 6.939975-2.815442V-.439352H6.330262V0C6.993773-.026899 7.10137-.026899 7.460025-.026899C7.827646-.026899 7.91731-.026899 8.598755 0V-.439352H7.989041V-2.734745Z"></path>
+<path id="tz_cor_dois_estagios_g2-110" d="M5.039103-2.734745C5.039103-3.801743 4.393524-4.034869 3.61345-4.034869C2.510585-4.034869 2.071233-3.227895 2.008468-3.0934H1.999502V-4.034869L.448319-3.963138V-3.523786C.986301-3.523786 1.058032-3.523786 1.058032-3.174097V-.439352H.448319V0C1.111831-.026899 1.219427-.026899 1.578082-.026899C1.945704-.026899 2.035367-.026899 2.716812 0V-.439352H2.107098V-2.27746C2.107098-3.281694 2.932005-3.676214 3.469988-3.676214C3.81071-3.676214 3.990037-3.48792 3.990037-2.815442V-.439352H3.380324V0C4.043836-.026899 4.151432-.026899 4.510087-.026899C4.877709-.026899 4.967372-.026899 5.648817 0V-.439352H5.039103V-2.734745Z"></path>
+<path id="tz_cor_dois_estagios_g2-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_cor_dois_estagios_g2-112" d="M2.636115 1.300125H2.026401V-.349689C2.555417 .053798 3.048568 .053798 3.218929 .053798C4.62665 .053798 5.532254-.798007 5.532254-1.990535C5.532254-3.174097 4.716314-4.034869 3.362391-4.034869C2.636115-4.034869 2.142964-3.730012 1.972603-3.604483V-4.034869L.367621-3.963138V-3.523786C.546949-3.523786 .690411-3.523786 .806974-3.496887C.977335-3.469988 .977335-3.371357 .977335-3.183064V1.300125H.367621V1.739477C1.031133 1.712578 1.13873 1.712578 1.497385 1.712578C1.865006 1.712578 1.95467 1.712578 2.636115 1.739477V1.300125ZM2.026401-3.0934C2.187796-3.29066 2.609215-3.649315 3.218929-3.649315C3.846575-3.649315 4.339726-3.0934 4.339726-1.999502C4.339726-.753176 3.703113-.304857 3.111333-.304857C2.654047-.304857 2.268493-.564882 2.026401-.932503V-3.0934Z"></path>
+<path id="tz_cor_dois_estagios_g2-114" d="M1.972603-1.95467C1.972603-2.609215 2.214695-3.649315 3.084433-3.676214C2.985803-3.577584 2.940971-3.425156 2.940971-3.281694C2.940971-2.887173 3.254795-2.707846 3.505853-2.707846C3.792777-2.707846 4.079701-2.905106 4.079701-3.281694C4.079701-3.738979 3.61345-4.034869 3.084433-4.034869C2.456787-4.034869 2.071233-3.577584 1.873973-3.057534H1.865006V-4.034869L.367621-3.963138V-3.523786C.905604-3.523786 .977335-3.523786 .977335-3.174097V-.439352H.367621V0C1.031133-.026899 1.084932-.026899 1.515318-.026899C1.739477-.026899 2.259527-.026899 2.734745 0V-.439352H1.972603V-1.95467Z"></path>
+<path id="tz_cor_dois_estagios_g2-115" d="M3.559651-3.801743C3.559651-3.963138 3.559651-4.061768 3.380324-4.061768C3.29066-4.061768 3.147198-3.990037 2.985803-3.900374C2.698879-4.025903 2.349191-4.061768 2.0533-4.061768C1.775342-4.061768 .349689-4.061768 .349689-2.878207C.349689-1.936737 1.524284-1.739477 1.838107-1.685679C2.57335-1.560149 3.165131-1.461519 3.165131-.950436C3.165131-.304857 2.322291-.304857 2.125031-.304857C1.667746-.304857 1.084932-.42142 .824907-1.246326C.780075-1.398755 .771108-1.425654 .582814-1.425654C.349689-1.425654 .349689-1.371856 .349689-1.156663V-.206227C.349689-.044832 .349689 .053798 .529016 .053798C.591781 .053798 .609714 .053798 .806974-.071731L1.049066-.224159C1.470486 .053798 1.945704 .053798 2.125031 .053798C2.394022 .053798 3.828643 .053798 3.828643-1.255293C3.828643-1.712578 3.568618-1.999502 3.407223-2.133998C3.003736-2.47472 2.716812-2.519552 2.008468-2.636115C1.578082-2.707846 1.0132-2.797509 1.0132-3.200996C1.0132-3.738979 1.847073-3.738979 2.044334-3.738979C3.048568-3.738979 3.084433-3.209963 3.102366-2.96787C3.111333-2.842341 3.236862-2.842341 3.326526-2.842341C3.550685-2.842341 3.559651-2.887173 3.559651-3.102366V-3.801743Z"></path>
+<path id="tz_cor_dois_estagios_g2-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+</defs>
+<g id="tz_cor_dois_estagios_page1">
+<g stroke-miterlimit="10" transform="translate(7.401459,27.662911)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g transform="translate(-72.36624,85.95367)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g2-69"></use>
+<use x="14.364147" y="27.662911" href="#tz_cor_dois_estagios_g2-115"></use>
+<use x="18.549247" y="27.662911" href="#tz_cor_dois_estagios_g2-116"></use>
+<use x="22.60169" y="27.662911" href="#tz_cor_dois_estagios_g2-19"></use>
+<use x="22.675388" y="27.662911" href="#tz_cor_dois_estagios_g2-97"></use>
+<use x="27.833062" y="27.662911" href="#tz_cor_dois_estagios_g2-103"></use>
+<use x="33.138104" y="27.662911" href="#tz_cor_dois_estagios_g2-105"></use>
+<use x="36.085353" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="44.927089" y="27.662911" href="#tz_cor_dois_estagios_g2-49"></use>
+<use x="50.232131" y="27.662911" href="#tz_cor_dois_estagios_g2-58"></use>
+<use x="57.894973" y="27.662911" href="#tz_cor_dois_estagios_g2-99"></use>
+<use x="62.610568" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="67.91561" y="27.662911" href="#tz_cor_dois_estagios_g2-110"></use>
+<use x="73.810099" y="27.662911" href="#tz_cor_dois_estagios_g2-101"></use>
+<use x="78.678603" y="27.662911" href="#tz_cor_dois_estagios_g2-115"></use>
+<use x="86.400398" y="27.662911" href="#tz_cor_dois_estagios_g2-40"></use>
+<use x="90.526539" y="27.662911" href="#tz_cor_dois_estagios_g2-116"></use>
+<use x="94.65268" y="27.662911" href="#tz_cor_dois_estagios_g2-114"></use>
+<use x="99.029305" y="27.662911" href="#tz_cor_dois_estagios_g2-105"></use>
+<use x="101.976554" y="27.662911" href="#tz_cor_dois_estagios_g2-99"></use>
+<use x="106.69215" y="27.662911" href="#tz_cor_dois_estagios_g2-114"></use>
+<use x="111.068775" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="116.373817" y="27.662911" href="#tz_cor_dois_estagios_g2-109"></use>
+<use x="125.141855" y="27.662911" href="#tz_cor_dois_estagios_g2-19"></use>
+<use x="125.215554" y="27.662911" href="#tz_cor_dois_estagios_g2-97"></use>
+<use x="130.373228" y="27.662911" href="#tz_cor_dois_estagios_g2-116"></use>
+<use x="134.499369" y="27.662911" href="#tz_cor_dois_estagios_g2-105"></use>
+<use x="137.446617" y="27.662911" href="#tz_cor_dois_estagios_g2-99"></use>
+<use x="142.162213" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="147.467255" y="27.662911" href="#tz_cor_dois_estagios_g2-41"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#dfecfb">
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#dfecfb">
+<path d="M12.0925 56.90549C12.0925 63.58406 6.67857 68.99799 0 68.99799S-12.0925 63.58406-12.0925 56.90549C-12.0925 50.22691-6.67857 44.81299 0 44.81299S12.0925 50.22691 12.0925 56.90549ZM0 56.90549"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-3.06949,54.17216)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-67"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#3fb618">
+<g fill="#e3f5dd">
+<g stroke-width="0.8">
+<g stroke="#3fb618">
+<g fill="#e3f5dd">
+<path d="M12.0925 25.60728C12.0925 32.28586 6.67857 37.69978 0 37.69978S-12.0925 32.28586-12.0925 25.60728C-12.0925 18.92871-6.67857 13.51479 0 13.51479S12.0925 18.92871 12.0925 25.60728ZM0 25.60728"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-3.89172,22.87396)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-77"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#f9e3e2">
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#f9e3e2">
+<path d="M12.0925-5.69046C12.0925 .98811 6.67857 6.40204 0 6.40204S-12.0925 .98811-12.0925-5.69046S-6.67857-17.78296 0-17.78296S12.0925-12.36903 12.0925-5.69046ZM0-5.69046"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-2.6542,-8.42378)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-76"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(114.79677,85.95367)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g2-69"></use>
+<use x="14.364147" y="27.662911" href="#tz_cor_dois_estagios_g2-115"></use>
+<use x="18.549247" y="27.662911" href="#tz_cor_dois_estagios_g2-116"></use>
+<use x="22.60169" y="27.662911" href="#tz_cor_dois_estagios_g2-19"></use>
+<use x="22.675388" y="27.662911" href="#tz_cor_dois_estagios_g2-97"></use>
+<use x="27.833062" y="27.662911" href="#tz_cor_dois_estagios_g2-103"></use>
+<use x="33.138104" y="27.662911" href="#tz_cor_dois_estagios_g2-105"></use>
+<use x="36.085353" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="44.927089" y="27.662911" href="#tz_cor_dois_estagios_g2-50"></use>
+<use x="50.232131" y="27.662911" href="#tz_cor_dois_estagios_g2-58"></use>
+<use x="57.894973" y="27.662911" href="#tz_cor_dois_estagios_g2-99"></use>
+<use x="62.610568" y="27.662911" href="#tz_cor_dois_estagios_g2-97"></use>
+<use x="67.768242" y="27.662911" href="#tz_cor_dois_estagios_g2-110"></use>
+<use x="73.662731" y="27.662911" href="#tz_cor_dois_estagios_g2-97"></use>
+<use x="78.820405" y="27.662911" href="#tz_cor_dois_estagios_g2-105"></use>
+<use x="81.767653" y="27.662911" href="#tz_cor_dois_estagios_g2-115"></use>
+<use x="89.489448" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="94.79449" y="27.662911" href="#tz_cor_dois_estagios_g2-112"></use>
+<use x="100.98371" y="27.662911" href="#tz_cor_dois_estagios_g2-111"></use>
+<use x="106.288752" y="27.662911" href="#tz_cor_dois_estagios_g2-110"></use>
+<use x="112.18324" y="27.662911" href="#tz_cor_dois_estagios_g2-101"></use>
+<use x="117.051745" y="27.662911" href="#tz_cor_dois_estagios_g2-110"></use>
+<use x="122.651486" y="27.662911" href="#tz_cor_dois_estagios_g2-116"></use>
+<use x="126.777627" y="27.662911" href="#tz_cor_dois_estagios_g2-101"></use>
+<use x="131.646132" y="27.662911" href="#tz_cor_dois_estagios_g2-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke-width="0.8">
+<path d="M222.19945 66.8639H136.30528C134.09612 66.8639 132.30528 65.07307 132.30528 62.8639V50.94707C132.30528 48.7379 134.09612 46.94707 136.30528 46.94707H222.19945C224.40862 46.94707 226.19945 48.7379 226.19945 50.94707V62.8639C226.19945 65.07307 224.40862 66.8639 222.19945 66.8639ZM132.30528 46.94707" fill="none"></path>
+</g>
+<g transform="translate(143.1199,54.12772)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-118"></use>
+<use x="11.635642" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+<use x="15.39936" y="27.662911" href="#tz_cor_dois_estagios_g1-114"></use>
+<use x="18.69953" y="27.662911" href="#tz_cor_dois_estagios_g1-109"></use>
+<use x="25.756501" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+<use x="29.52022" y="27.662911" href="#tz_cor_dois_estagios_g1-108"></use>
+<use x="31.872543" y="27.662911" href="#tz_cor_dois_estagios_g1-104"></use>
+<use x="36.577191" y="27.662911" href="#tz_cor_dois_estagios_g1-111"></use>
+<use x="45.986486" y="27.662911" href="#tz_cor_dois_estagios_g0-36"></use>
+<use x="59.629964" y="27.662911" href="#tz_cor_dois_estagios_g1-118"></use>
+<use x="63.864147" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+<use x="67.627865" y="27.662911" href="#tz_cor_dois_estagios_g1-114"></use>
+<use x="70.928035" y="27.662911" href="#tz_cor_dois_estagios_g1-100"></use>
+<use x="75.632683" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke-width="0.8">
+<path d="M222.19945 35.5657H136.30528C134.09612 35.5657 132.30528 33.77487 132.30528 31.5657V19.64886C132.30528 17.4397 134.09612 15.64886 136.30528 15.64886H222.19945C224.40862 15.64886 226.19945 17.4397 226.19945 19.64886V31.5657C226.19945 33.77487 224.40862 35.5657 222.19945 35.5657ZM132.30528 15.64886" fill="none"></path>
+</g>
+<g transform="translate(147.60956,22.82951)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-97"></use>
+<use x="11.635642" y="27.662911" href="#tz_cor_dois_estagios_g1-122"></use>
+<use x="15.39936" y="27.662911" href="#tz_cor_dois_estagios_g1-117"></use>
+<use x="20.104008" y="27.662911" href="#tz_cor_dois_estagios_g1-108"></use>
+<use x="27.631444" y="27.662911" href="#tz_cor_dois_estagios_g0-36"></use>
+<use x="41.274922" y="27.662911" href="#tz_cor_dois_estagios_g1-97"></use>
+<use x="45.509105" y="27.662911" href="#tz_cor_dois_estagios_g1-109"></use>
+<use x="52.566076" y="27.662911" href="#tz_cor_dois_estagios_g1-97"></use>
+<use x="56.800259" y="27.662911" href="#tz_cor_dois_estagios_g1-114"></use>
+<use x="60.100429" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+<use x="63.864147" y="27.662911" href="#tz_cor_dois_estagios_g1-108"></use>
+<use x="66.216471" y="27.662911" href="#tz_cor_dois_estagios_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke-width="0.8">
+<path d="M222.19945 4.26796H136.30528C134.09612 4.26796 132.30528 2.47713 132.30528 .26796V-11.64888C132.30528-13.85805 134.09612-15.64888 136.30528-15.64888H222.19945C224.40862-15.64888 226.19945-13.85805 226.19945-11.64888V.26796C226.19945 2.47713 224.40862 4.26796 222.19945 4.26796ZM132.30528-15.64888" fill="none"></path>
+</g>
+<g transform="translate(147.60608,-7.69046)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(7.401459,27.662911)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="7.401459" y="27.662911" href="#tz_cor_dois_estagios_g1-112"></use>
+<use x="12.106107" y="27.662911" href="#tz_cor_dois_estagios_g1-114"></use>
+<use x="15.406277" y="27.662911" href="#tz_cor_dois_estagios_g1-101"></use>
+<use x="19.169995" y="27.662911" href="#tz_cor_dois_estagios_g1-116"></use>
+<use x="22.463248" y="27.662911" href="#tz_cor_dois_estagios_g1-111"></use>
+<use x="31.872543" y="27.662911" href="#tz_cor_dois_estagios_g0-36"></use>
+<use x="45.516021" y="27.662911" href="#tz_cor_dois_estagios_g1-98"></use>
+<use x="50.220669" y="27.662911" href="#tz_cor_dois_estagios_g1-114"></use>
+<use x="53.520839" y="27.662911" href="#tz_cor_dois_estagios_g1-97"></use>
+<use x="57.755022" y="27.662911" href="#tz_cor_dois_estagios_g1-110"></use>
+<use x="62.45967" y="27.662911" href="#tz_cor_dois_estagios_g1-99"></use>
+<use x="66.223388" y="27.662911" href="#tz_cor_dois_estagios_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M12.4925 56.90549H128.82993" fill="none"></path>
+<g transform="translate(127.10532,56.90549)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M12.30586 27.7571L128.87587 48.12363" fill="none"></path>
+<g transform="matrix(0.98506,0.17209,-0.17209,0.98506,127.17703,47.82683)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M12.30586-3.54065L128.87587 16.82542" fill="none"></path>
+<g transform="matrix(0.98506,0.17209,-0.17209,0.98506,127.17703,16.52863)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M12.4925 25.60728H128.82993" fill="none"></path>
+<g transform="translate(127.10532,25.60728)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M11.79387 52.7879L146.71382 5.6816" fill="none"></path>
+<g transform="matrix(0.94408,-0.3296,0.3296,0.94408,145.08565,6.25005)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M12.4925-5.69046H128.82993" fill="none"></path>
+<g transform="translate(127.10532,-5.69046)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M4.2304 0L.64584 1.35075L1.8246 0L.64584-1.35075Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cor-dois-estagios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;30.2: As duas teorias da cor operam em estágios sucessivos. Os três tipos de cone (tricromático) alimentam, mais adiante, canais oponentes que codificam pares antagônicos. As teorias não competem: descrevem etapas diferentes do mesmo processamento.
+</figcaption>
+</figure>
+</div>
+<p>A teoria tricromática, porém, não explicava dois fatos teimosos: por que nunca vemos um “vermelho-esverdeado” ou um “azul-amarelado”, e por que fitar um quadrado vermelho e depois olhar uma parede branca produz uma <strong>pós-imagem</strong> verde. Ewald Hering respondeu com a <strong>teoria do processo oponente</strong>: a cor é codificada por três pares antagônicos — vermelho <em>versus</em> verde, azul <em>versus</em> amarelo, preto <em>versus</em> branco —, de modo que ativar um polo inibe o outro <span class="citation" data-cites="hering1878">(<a href="../../referencias.html#ref-hering1878" role="doc-biblioref">Hering, 1878</a>)</span>. Um canal não pode sinalizar vermelho e verde ao mesmo tempo (daí a ausência do “vermelho-esverdeado”); e a fadiga do polo “vermelho” deixa o “verde” temporariamente dominante ao olharmos o branco (daí a pós-imagem). Por décadas as duas teorias pareceram rivais, até que Leo Hurvich e Dorothea Jameson mostraram que ambas estão certas — <strong>em estágios diferentes</strong> <span class="citation" data-cites="hurvich_jameson1957">(<a href="../../referencias.html#ref-hurvich_jameson1957" role="doc-biblioref">Hurvich; Jameson, 1957</a>)</span>. Nos receptores, a visão é tricromática (três cones); nas células seguintes da retina e adiante, os sinais dos cones são recombinados em canais oponentes (<a href="#fig-cor-dois-estagios" class="quarto-xref">Figura&nbsp;<span>30.2</span></a>). É um dos exemplos mais elegantes, em toda a psicologia, de duas teorias “concorrentes” que se revelaram etapas complementares de um mesmo mecanismo.</p>
+</section>
+<section id="do-olho-ao-cérebro-detectores-e-duas-correntes" class="level2">
+<h2 class="anchored" data-anchor-id="do-olho-ao-cérebro-detectores-e-duas-correntes">Do olho ao cérebro: detectores e duas correntes</h2>
+<p>Os axônios das células ganglionares da retina formam o <strong>nervo óptico</strong>, que leva o sinal — via uma estação no tálamo, o núcleo geniculado lateral — ao <strong>córtex visual primário</strong> (V1), no lobo occipital (Cap. 24). E é aqui que a neurociência da visão deu um de seus maiores saltos.</p>
+<div class="experimento">
+<p><strong>Hubel, Wiesel e os detectores de características</strong> <span class="citation" data-cites="hubel_wiesel1962">(<a href="../../referencias.html#ref-hubel_wiesel1962" role="doc-biblioref">Hubel; Wiesel, 1962</a>)</span></p>
+<p><strong>Desenho.</strong> David Hubel e Torsten Wiesel inseriram microeletrodos em neurônios isolados do córtex visual de gatos e mediram a que exatamente cada célula respondia, projetando pontos, barras e bordas em várias posições e orientações na tela diante do animal.</p>
+<p><strong>Resultado.</strong> Descobriram que os neurônios de V1 não respondem a “luz” em geral, mas a <em>características específicas</em>: uma dada célula dispara intensamente para uma barra numa orientação particular (digamos, inclinada a 45°) e ignora as demais; outra responde a bordas em movimento numa direção; outra, a um ângulo. São <strong>detectores de características</strong> — cada neurônio é sintonizado para um traço elementar da imagem.</p>
+<p><strong>Interpretação.</strong> A percepção visual começa decompondo a cena em elementos simples (bordas, orientações, movimentos), que estágios posteriores recombinam em formas e objetos. A visão é <em>análise antes de síntese</em>. O achado rendeu o Nobel e fundou a ideia, hoje central, de que o córtex processa a informação de modo hierárquico — princípio que inspirou diretamente as redes neurais artificiais de visão computacional (Vol 15, Cap. 105).</p>
+<p><strong>Limitações.</strong> O modelo puramente hierárquico e ascendente (“de baixo para cima”) captura os primeiros estágios, mas subestima o peso das conexões de retorno e das expectativas (“de cima para baixo”), que o Cap. 33 mostrará serem decisivas. Ver não é só montar bordas: é montá-las guiado pelo que se espera ver.</p>
+</div>
+<p>A partir de V1, o processamento se divide em <strong>duas grandes correntes</strong> <span class="citation" data-cites="ungerleider_mishkin1982">(<a href="../../referencias.html#ref-ungerleider_mishkin1982" role="doc-biblioref">Ungerleider; Mishkin, 1982</a>)</span>. A <strong>via ventral</strong> (“o quê”), que segue para o lobo temporal, especializa-se em <em>reconhecer</em> objetos, rostos e cores — responde à pergunta “o que é isto?”. A <strong>via dorsal</strong> (“onde/como”), rumo ao lobo parietal, especializa-se na <em>localização</em> e na <em>ação guiada visualmente</em> — “onde está e como pego?” <span class="citation" data-cites="goodale_milner1992">(<a href="../../referencias.html#ref-goodale_milner1992" role="doc-biblioref">Goodale; Milner, 1992</a>)</span>. A dissociação é real, não apenas teórica: há pacientes que, por lesão na via ventral, não conseguem <em>reconhecer</em> a fenda de uma caixa de correio, mas <em>inserem</em> nela uma carta com a orientação correta (a via dorsal, intacta, guia a mão); e o padrão inverso também ocorre. “Ver para saber” e “ver para agir” são funções separáveis do cérebro.</p>
+<div class="estudo-caso">
+<p><strong>Quando o olho vê e a mente não reconhece.</strong> O caso mais célebre de dissociação visual é o do “homem que confundiu a mulher com um chapéu”, descrito pelo neurologista Oliver Sacks <span class="citation" data-cites="sacks1985">(<a href="../../referencias.html#ref-sacks1985" role="doc-biblioref">Sacks, 1985</a>)</span>. O paciente, um músico culto, tinha os olhos perfeitos, mas uma lesão na via ventral lhe causara <strong>agnosia visual</strong>: enxergava formas, cores e detalhes, porém não conseguia <em>integrá-los num objeto reconhecível</em>. Diante de uma luva, descrevia “uma superfície contínua dobrada sobre si mesma” com “cinco bolsas” — e não conseguia dizer que era uma luva até calçá-la. Ao fim de uma consulta, tentou pegar a própria cabeça para pôr no lugar do chapéu, confundindo a esposa com o objeto. O caso ilustra, de forma dramática, a tese deste capítulo: “ver” não é um ato único, mas uma cadeia de operações — e a sensação pode estar intacta enquanto o reconhecimento, que é percepção, falha.</p>
+</div>
+<div class="base-neural">
+<p><strong>Blindsight: ver sem saber que se vê.</strong> Uma dissociação ainda mais desconcertante aparece na <strong>visão cega</strong> (<em>blindsight</em>). Pacientes com lesão no córtex visual primário (V1) relatam-se <em>cegos</em> numa parte do campo visual — não têm nenhuma experiência consciente de ver ali. E, no entanto, quando solicitados a “adivinhar” a posição ou a orientação de um objeto apresentado nessa região, acertam muito acima do acaso <span class="citation" data-cites="weiskrantz1974">(<a href="../../referencias.html#ref-weiskrantz1974" role="doc-biblioref">Weiskrantz et al., 1974</a>)</span>. A informação visual chega ao cérebro por vias secundárias que contornam V1 e guia o comportamento, mas <em>sem gerar experiência consciente</em>. O blindsight mostra que boa parte do processamento visual é inconsciente, e que a consciência visual depende de circuitos específicos (o córtex visual primário entre eles) — um tema que o Vol 6 retomará ao tratar da natureza da consciência.</p>
+</div>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>A luz visível tem três propriedades físicas — <strong>comprimento de onda, intensidade e pureza</strong> — que correspondem a três dimensões perceptuais: <strong>matiz, brilho e saturação</strong>. A cor não está na luz; é construída pelo cérebro.</li>
+<li>No <strong>olho</strong>, córnea e cristalino focam a luz (por <strong>acomodação</strong>) sobre a <strong>retina</strong>; a <strong>fóvea</strong> dá acuidade máxima e o <strong>ponto cego</strong> não tem receptores.</li>
+<li><strong>Cones</strong> (fóvea, visão diurna, cor, alta acuidade, precisam de luz) e <strong>bastonetes</strong> (periferia, visão noturna, sem cor, altíssima sensibilidade) dividem o trabalho da visão.</li>
+<li>A cor é explicada por <strong>duas teorias em estágios sucessivos</strong>: a <strong>tricromática</strong> (três cones) nos receptores e a do <strong>processo oponente</strong> (pares vermelho-verde, azul-amarelo, preto-branco) adiante — o que explica pós-imagens e a ausência de cores como “vermelho-esverdeado”.</li>
+<li><strong>Hubel e Wiesel</strong> mostraram que os neurônios de V1 são <strong>detectores de características</strong> (bordas, orientações, movimento): a visão analisa antes de sintetizar, de forma hierárquica.</li>
+<li>A partir de V1, a <strong>via ventral</strong> (“o quê”) reconhece objetos e a <strong>via dorsal</strong> (“onde/como”) localiza e guia a ação. Casos de <strong>agnosia visual</strong> e <strong>blindsight</strong> provam que ver, reconhecer e ter consciência do que se vê são processos dissociáveis.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Acomodação</strong></dt>
+<dd>
+Ajuste da curvatura do cristalino para focar objetos a distâncias diferentes.
+</dd>
+<dt><strong>Retina</strong></dt>
+<dd>
+Tecido no fundo do olho onde ocorre a transdução da luz em sinais neurais.
+</dd>
+<dt><strong>Fóvea</strong></dt>
+<dd>
+Região central da retina, densa em cones, responsável pela máxima acuidade visual.
+</dd>
+<dt><strong>Ponto cego</strong></dt>
+<dd>
+Local de saída do nervo óptico, sem fotorreceptores; produz uma lacuna no campo visual que o cérebro preenche.
+</dd>
+<dt><strong>Cones</strong></dt>
+<dd>
+Fotorreceptores da fóvea, responsáveis pela cor e pela alta acuidade; exigem boa iluminação (visão diurna).
+</dd>
+<dt><strong>Bastonetes</strong></dt>
+<dd>
+Fotorreceptores periféricos, muito sensíveis à luz fraca, sem visão de cor (visão noturna).
+</dd>
+<dt><strong>Teoria tricromática (Young-Helmholtz)</strong></dt>
+<dd>
+Explica a visão de cor por três tipos de cone sensíveis a ondas curtas, médias e longas <span class="citation" data-cites="young1802 helmholtz1867">(<a href="../../referencias.html#ref-helmholtz1867" role="doc-biblioref">Helmholtz, 1867</a>; <a href="../../referencias.html#ref-young1802" role="doc-biblioref">Young, 1802</a>)</span>.
+</dd>
+<dt><strong>Teoria do processo oponente</strong></dt>
+<dd>
+Explica a cor por três pares antagônicos (vermelho-verde, azul-amarelo, preto-branco); dá conta das pós-imagens <span class="citation" data-cites="hering1878 hurvich_jameson1957">(<a href="../../referencias.html#ref-hering1878" role="doc-biblioref">Hering, 1878</a>; <a href="../../referencias.html#ref-hurvich_jameson1957" role="doc-biblioref">Hurvich; Jameson, 1957</a>)</span>.
+</dd>
+<dt><strong>Detector de características</strong></dt>
+<dd>
+Neurônio cortical sintonizado para um traço elementar da imagem (uma orientação, uma borda, um movimento) <span class="citation" data-cites="hubel_wiesel1962">(<a href="../../referencias.html#ref-hubel_wiesel1962" role="doc-biblioref">Hubel; Wiesel, 1962</a>)</span>.
+</dd>
+<dt><strong>Via ventral (“o quê”)</strong></dt>
+<dd>
+Corrente visual rumo ao lobo temporal, especializada no reconhecimento de objetos e rostos <span class="citation" data-cites="ungerleider_mishkin1982">(<a href="../../referencias.html#ref-ungerleider_mishkin1982" role="doc-biblioref">Ungerleider; Mishkin, 1982</a>)</span>.
+</dd>
+<dt><strong>Via dorsal (“onde/como”)</strong></dt>
+<dd>
+Corrente visual rumo ao lobo parietal, especializada em localização espacial e ação guiada pela visão <span class="citation" data-cites="goodale_milner1992">(<a href="../../referencias.html#ref-goodale_milner1992" role="doc-biblioref">Goodale; Milner, 1992</a>)</span>.
+</dd>
+<dt><strong>Agnosia visual</strong></dt>
+<dd>
+Incapacidade de reconhecer objetos apesar de visão sensorial intacta, por lesão na via ventral <span class="citation" data-cites="sacks1985">(<a href="../../referencias.html#ref-sacks1985" role="doc-biblioref">Sacks, 1985</a>)</span>.
+</dd>
+<dt><strong>Visão cega (blindsight)</strong></dt>
+<dd>
+Capacidade de responder a estímulos visuais sem experiência consciente de vê-los, após lesão em V1 <span class="citation" data-cites="weiskrantz1974">(<a href="../../referencias.html#ref-weiskrantz1974" role="doc-biblioref">Weiskrantz et al., 1974</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Relacione cada propriedade física da luz (comprimento de onda, intensidade, pureza) à dimensão perceptual correspondente. Por que se diz que “a cor não está na luz”?</p></li>
+<li><p><strong>(Recuperação.)</strong> Compare cones e bastonetes quanto a localização, sensibilidade à luz e visão de cor. Use essa comparação para explicar por que uma estrela fraca some quando a fitamos diretamente.</p></li>
+<li><p><strong>(Aplicação.)</strong> Você fita por trinta segundos um adesivo verde-limão e depois desvia o olhar para uma folha branca, vendo uma mancha avermelhada. Explique o fenômeno com a teoria do processo oponente.</p></li>
+<li><p><strong>(Aplicação/Integração.)</strong> Duas teorias da cor pareceram rivais por décadas e hoje são vistas como complementares. Explique em que estágio cada uma opera e relacione isso à ideia, vista no Cap. 29, de que a ciência frequentemente refina modelos em vez de descartá-los.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Um paciente afirma-se cego numa metade do campo visual, mas acerta a posição de objetos ali quando é forçado a “adivinhar” (blindsight). O que esse caso sugere sobre a relação entre processamento visual e consciência?</p></li>
+<li><p><strong>(Integração.)</strong> Os detectores de características de Hubel e Wiesel inspiraram as redes neurais de visão computacional. Com base na ideia de processamento hierárquico (“análise antes de síntese”), explique por que decompor a imagem em bordas simples é um bom ponto de partida para reconhecer objetos complexos.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-goodale_milner1992" class="csl-entry" role="listitem">
+GOODALE, Melvyn A.; MILNER, A. David. <a href="https://doi.org/10.1016/0166-2236(92)90344-8">Separate visual pathways for perception and action</a>. <strong>Trends in Neurosciences</strong>, v. 15, n. 1, p. 20–25, 1992.
+</div>
+<div id="ref-helmholtz1867" class="csl-entry" role="listitem">
+HELMHOLTZ, Hermann von. <strong>Handbuch der physiologischen Optik</strong>. Leipzig: Leopold Voss, 1867.
+</div>
+<div id="ref-hering1878" class="csl-entry" role="listitem">
+HERING, Ewald. <strong>Zur Lehre vom Lichtsinne</strong>. Wien: Carl Gerold’s Sohn, 1878.
+</div>
+<div id="ref-hubel_wiesel1962" class="csl-entry" role="listitem">
+HUBEL, David H.; WIESEL, Torsten N. <a href="https://doi.org/10.1113/jphysiol.1962.sp006837">Receptive fields, binocular interaction and functional architecture in the cat’s visual cortex</a>. <strong>The Journal of Physiology</strong>, v. 160, n. 1, p. 106–154, 1962.
+</div>
+<div id="ref-hurvich_jameson1957" class="csl-entry" role="listitem">
+HURVICH, Leo M.; JAMESON, Dorothea. <a href="https://doi.org/10.1037/h0041403">An opponent-process theory of color vision</a>. <strong>Psychological Review</strong>, v. 64, n. 6, p. 384–404, 1957.
+</div>
+<div id="ref-sacks1985" class="csl-entry" role="listitem">
+SACKS, Oliver. <strong>The Man Who Mistook His Wife for a Hat and Other Clinical Tales</strong>. New York: Summit Books, 1985.
+</div>
+<div id="ref-ungerleider_mishkin1982" class="csl-entry" role="listitem">
+UNGERLEIDER, Leslie G.; MISHKIN, Mortimer. Two cortical visual systems. <em>Em</em>: INGLE, David J.; GOODALE, Melvyn A.; MANSFIELD, Richard J. W. (Eds.). <strong>Analysis of Visual Behavior</strong>. Cambridge, MA: MIT Press, 1982. p. 549–586.
+</div>
+<div id="ref-weiskrantz1974" class="csl-entry" role="listitem">
+WEISKRANTZ, Lawrence <em>et al.</em> <a href="https://doi.org/10.1093/brain/97.1.709">Visual capacity in the hemianopic field following a restricted occipital ablation</a>. <strong>Brain</strong>, v. 97, n. 4, p. 709–728, 1974.
+</div>
+<div id="ref-young1802" class="csl-entry" role="listitem">
+YOUNG, Thomas. <a href="https://doi.org/10.1098/rstl.1802.0004">The Bakerian Lecture: On the theory of light and colours</a>. <strong>Philosophical Transactions of the Royal Society of London</strong>, v. 92, p. 12–48, 1802.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1945,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-30-visao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

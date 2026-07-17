@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#dois-sentidos-de-mão-dupla-ascendente-e-descendente" id="toc-dois-sentidos-de-mão-dupla-ascendente-e-descendente" class="nav-link active" data-scroll-target="#dois-sentidos-de-mão-dupla-ascendente-e-descendente">Dois sentidos de mão dupla: ascendente e descendente</a></li>
+  <li><a href="#a-gestalt-o-todo-antes-das-partes" id="toc-a-gestalt-o-todo-antes-das-partes" class="nav-link" data-scroll-target="#a-gestalt-o-todo-antes-das-partes">A Gestalt: o todo antes das partes</a></li>
+  <li><a href="#a-terceira-dimensão-pistas-de-profundidade" id="toc-a-terceira-dimensão-pistas-de-profundidade" class="nav-link" data-scroll-target="#a-terceira-dimensão-pistas-de-profundidade">A terceira dimensão: pistas de profundidade</a></li>
+  <li><a href="#constâncias-um-mundo-estável-apesar-de-sensações-que-mudam" id="toc-constâncias-um-mundo-estável-apesar-de-sensações-que-mudam" class="nav-link" data-scroll-target="#constâncias-um-mundo-estável-apesar-de-sensações-que-mudam">Constâncias: um mundo estável apesar de sensações que mudam</a></li>
+  <li><a href="#duas-visões-da-percepção-construir-ou-captar" id="toc-duas-visões-da-percepção-construir-ou-captar" class="nav-link" data-scroll-target="#duas-visões-da-percepção-construir-ou-captar">Duas visões da percepção: construir ou captar?</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,566 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Distinguir</strong> processamento ascendente (bottom-up) de descendente (top-down) e explicar por que a percepção usa os dois.</li>
+<li><strong>Enunciar</strong> os princípios de organização perceptual da Gestalt (figura-fundo e leis de agrupamento) e o princípio da pregnância.</li>
+<li><strong>Classificar</strong> as pistas de profundidade em binoculares e monoculares e explicar como o cérebro reconstrói a terceira dimensão.</li>
+<li><strong>Explicar</strong> as constâncias perceptuais (de tamanho, forma e claridade) e por que são indispensáveis a uma percepção estável.</li>
+<li><strong>Descrever</strong> o experimento do abismo visual e o que ele revela sobre o desenvolvimento da percepção de profundidade.</li>
+<li><strong>Contrastar</strong> as visões construtivista e ecológica da percepção, avaliando o que cada uma acerta.</li>
+</ul>
 </div>
+<p>Os capítulos anteriores levaram o sinal do receptor ao córtex. Mas uma retina cheia de manchas de luz ainda não é <em>ver um mundo</em>: é preciso organizar essas manchas em objetos, separá-los do fundo, situá-los em profundidade e mantê-los estáveis apesar de a imagem na retina mudar a cada passo. Este capítulo trata dessa passagem — da sensação à percepção propriamente dita — e defende a tese central de todo o volume: <strong>a percepção é uma construção ativa e inteligente</strong>, não uma cópia do mundo. O cérebro não recebe uma cena pronta; ele resolve, a cada instante e sem que percebamos, um problema de reconstrução de enorme dificuldade — e o faz tão bem que a dificuldade nos é invisível.</p>
+<section id="dois-sentidos-de-mão-dupla-ascendente-e-descendente" class="level2">
+<h2 class="anchored" data-anchor-id="dois-sentidos-de-mão-dupla-ascendente-e-descendente">Dois sentidos de mão dupla: ascendente e descendente</h2>
+<p>A percepção combina dois fluxos de informação. O <strong>processamento ascendente</strong> (<em>bottom-up</em>) parte dos dados sensoriais brutos — as bordas, as cores, os contrastes detectados na retina e em V1 (Cap. 30) — e vai montando formas cada vez mais complexas. O <strong>processamento descendente</strong> (<em>top-down</em>) vai no sentido inverso: usa conhecimento prévio, expectativas e contexto para <em>interpretar</em> os dados, muitas vezes preenchendo o que falta. Ler uma palavra com uma letra borrada, entender uma frase abafada num ambiente ruidoso, reconhecer um amigo de relance: em todos esses casos, o que você sabe completa o que os sentidos apenas insinuam. A percepção normal é o encontro constante desses dois sentidos — e é o processamento descendente que torna a percepção, ao mesmo tempo, tão poderosa e tão sujeita a ilusões (Cap. 34): o cérebro vê, em parte, o que espera ver.</p>
+</section>
+<section id="a-gestalt-o-todo-antes-das-partes" class="level2">
+<h2 class="anchored" data-anchor-id="a-gestalt-o-todo-antes-das-partes">A Gestalt: o todo antes das partes</h2>
+<p>No início do século XX, os psicólogos da Gestalt (Cap. 9) fizeram uma descoberta que continua no centro da percepção: o todo é diferente da soma das partes. Ao ver quatro pontos, você não vê “quatro pontos”, mas um quadrado; ao ouvir uma sequência de notas, ouve uma melodia, que sobrevive à mudança de tom. O cérebro <strong>organiza</strong> automaticamente os elementos sensoriais em conjuntos coerentes, segundo princípios que Max Wertheimer e colegas catalogaram <span class="citation" data-cites="wertheimer1923 koffka1935">(<a href="../../referencias.html#ref-koffka1935" role="doc-biblioref">Koffka, 1935</a>; <a href="../../referencias.html#ref-wertheimer1923" role="doc-biblioref">Wertheimer, 1923</a>)</span> e que a pesquisa moderna confirmou e refinou <span class="citation" data-cites="wagemans2012">(<a href="../../referencias.html#ref-wagemans2012" role="doc-biblioref">Wagemans et al., 2012</a>)</span>.</p>
+<p>A organização mais básica é a <strong>figura-fundo</strong>: diante de qualquer cena, separamos um objeto (a <em>figura</em>) do resto (o <em>fundo</em>). Essa segmentação é tão fundamental — e tão ativa — que, em imagens ambíguas como o clássico vaso de Rubin (em que os mesmos contornos podem ser um vaso ou dois rostos de perfil), a percepção <em>alterna</em> entre as duas leituras sem que a imagem mude: prova de que a organização é imposta pela mente, não dada pelo estímulo. Sobre esse pano de fundo operam as <strong>leis de agrupamento</strong>, ilustradas na <a href="#fig-gestalt" class="quarto-xref">Figura&nbsp;<span>33.1</span></a>: tendemos a agrupar elementos <strong>próximos</strong> (proximidade), <strong>semelhantes</strong> (similaridade), alinhados numa trajetória suave (<strong>continuidade</strong>), e a <strong>fechar</strong> contornos incompletos (fechamento), vendo um triângulo onde há apenas três cantos sugeridos. Tudo isso serve a um princípio geral, o da <strong>pregnância</strong> (<em>Prägnanz</em>): percebemos a organização mais simples, estável e regular que os dados permitem.</p>
+<div id="fig-gestalt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gestalt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Três painéis lado a lado ilustrando leis da Gestalt. Painel 1 (proximidade): pontos dispostos em três pares de colunas próximas, que se veem como três grupos verticais. Painel 2 (similaridade): uma grade de pontos em que colunas alternam entre preenchidos e vazios, vistos como colunas por cor. Painel 3 (fechamento): três formas em canto (&quot;Pac-Man&quot;) posicionadas de modo a sugerir um triângulo branco que não está desenhado." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="315.565529pt" height="126.484802pt" viewbox="-68.014948 -68.014947 315.565529 126.484802">
+<defs>
+<path id="tz_gestalt_agrupamento_g0-97" d="M3.347447-2.375093C3.347447-3.156164 2.590286-3.55467 1.865006-3.55467C1.203487-3.55467 .613699-3.299626 .613699-2.773599C.613699-2.534496 .781071-2.391034 .988294-2.391034C1.211457-2.391034 1.362889-2.550436 1.362889-2.765629C1.362889-2.956912 1.243337-3.092403 1.067995-3.132254C1.362889-3.331507 1.793275-3.331507 1.849066-3.331507C2.295392-3.331507 2.741719-3.020672 2.741719-2.367123V-2.12005C2.279452-2.096139 1.745455-2.072229 1.187547-1.841096C.486177-1.538232 .350685-1.075965 .350685-.812951C.350685-.127522 1.155666 .079701 1.705604 .079701C2.287422 .079701 2.646077-.247073 2.82142-.565878C2.86127-.263014 3.068493 .039851 3.419178 .039851C3.498879 .039851 4.176339 .00797 4.176339-.71731V-1.155666H3.929265V-.71731C3.929265-.390535 3.809714-.263014 3.642341-.263014C3.347447-.263014 3.347447-.629639 3.347447-.71731V-2.375093ZM2.741719-1.123786C2.741719-.350685 2.088169-.143462 1.769365-.143462C1.354919-.143462 1.004234-.422416 1.004234-.804981C1.004234-1.331009 1.498381-1.872976 2.741719-1.912827V-1.123786Z"></path>
+<path id="tz_gestalt_agrupamento_g0-99" d="M2.933001-3.164134C2.709838-3.092403 2.677958-2.909091 2.677958-2.81345C2.677958-2.598257 2.82939-2.438854 3.052553-2.438854C3.259776-2.438854 3.427148-2.582316 3.427148-2.82142C3.427148-3.315567 2.885181-3.55467 2.13599-3.55467C1.028144-3.55467 .278954-2.669988 .278954-1.721544C.278954-.70934 1.107846 .079701 2.11208 .079701C3.235866 .079701 3.514819-.860772 3.514819-.956413S3.411208-1.052055 3.387298-1.052055C3.331507-1.052055 3.291656-1.044085 3.267746-.964384C3.211955-.797011 2.988792-.167372 2.191781-.167372C1.697634-.167372 .988294-.549938 .988294-1.729514C.988294-2.87721 1.578082-3.307597 2.1599-3.307597C2.231631-3.307597 2.654047-3.307597 2.933001-3.164134Z"></path>
+<path id="tz_gestalt_agrupamento_g0-100" d="M2.622167-5.443587V-5.180573C3.164134-5.180573 3.227895-5.124782 3.227895-4.734247V-3.052553C2.948941-3.355417 2.574346-3.514819 2.1599-3.514819C1.163636-3.514819 .278954-2.741719 .278954-1.713574C.278954-.73325 1.075965 .079701 2.080199 .079701C2.550436 .079701 2.940971-.143462 3.203985-.422416V.079701L4.415442 0V-.263014C3.873474-.263014 3.809714-.318804 3.809714-.70934V-5.531258L2.622167-5.443587ZM3.203985-.988294C3.203985-.844832 3.203985-.812951 3.084433-.653549C2.86127-.334745 2.494645-.143462 2.12005-.143462C1.753425-.143462 1.43462-.334745 1.243337-.629639C1.028144-.940473 .988294-1.331009 .988294-1.705604C.988294-2.16787 1.060025-2.494645 1.243337-2.773599C1.43462-3.068493 1.793275-3.291656 2.199751-3.291656C2.582316-3.291656 2.964882-3.100374 3.203985-2.685928V-.988294Z"></path>
+<path id="tz_gestalt_agrupamento_g0-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_gestalt_agrupamento_g0-102" d="M1.522291-3.172105H2.478705V-3.435118H1.498381V-4.335741C1.498381-5.029141 1.888917-5.387796 2.239601-5.387796C2.367123-5.387796 2.438854-5.355915 2.470735-5.347945C2.327273-5.276214 2.287422-5.140722 2.287422-5.037111C2.287422-4.829888 2.438854-4.678456 2.646077-4.678456C2.86127-4.678456 3.004732-4.829888 3.004732-5.037111C3.004732-5.379826 2.669988-5.610959 2.247572-5.610959C1.649813-5.610959 .940473-5.180573 .940473-4.327771V-3.435118H.286924V-3.172105H.940473V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.083935-.02391 1.275218-.02391C1.745455-.02391 1.761395-.02391 2.279452 0V-.263014H2.12005C1.538232-.263014 1.522291-.350685 1.522291-.637609V-3.172105Z"></path>
+<path id="tz_gestalt_agrupamento_g0-104" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C2.032379-3.514819 1.665753-3.068493 1.522291-2.81345H1.514321V-5.531258L.326775-5.443587V-5.180573C.868742-5.180573 .932503-5.124782 .932503-4.734247V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_gestalt_agrupamento_g0-105" d="M1.554172-4.909589C1.554172-5.140722 1.370859-5.355915 1.107846-5.355915C.876712-5.355915 .669489-5.172603 .669489-4.917559C.669489-4.638605 .900623-4.471233 1.107846-4.471233C1.3868-4.471233 1.554172-4.702366 1.554172-4.909589ZM.358655-3.427148V-3.164134C.868742-3.164134 .940473-3.116314 .940473-2.725778V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.211457-.02391C1.315068-.02391 1.793275-.02391 2.072229 0V-.263014C1.554172-.263014 1.522291-.302864 1.522291-.613699V-3.514819L.358655-3.427148Z"></path>
+<path id="tz_gestalt_agrupamento_g0-108" d="M1.522291-5.531258L.334745-5.443587V-5.180573C.876712-5.180573 .940473-5.124782 .940473-4.734247V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.227397-.02391C1.3868-.02391 1.817186-.02391 2.12802 0V-.263014C1.617933-.263014 1.522291-.263014 1.522291-.621669V-5.531258Z"></path>
+<path id="tz_gestalt_agrupamento_g0-109" d="M6.224658-2.414944C6.224658-3.060523 5.945704-3.514819 5.076961-3.514819C4.343711-3.514819 3.977086-3.012702 3.849564-2.781569C3.706102-3.355417 3.251806-3.514819 2.733748-3.514819C1.960648-3.514819 1.594022-2.964882 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.16787-3.291656 2.669988-3.291656C3.188045-3.291656 3.275716-2.885181 3.275716-2.446824V-.621669C3.275716-.263014 3.180075-.263014 2.669988-.263014V0C3.012702-.02391 3.363387-.02391 3.57858-.02391C3.809714-.02391 4.144458-.02391 4.487173 0V-.263014C3.977086-.263014 3.881445-.263014 3.881445-.621669V-2.064259C3.881445-2.901121 4.511083-3.291656 5.0132-3.291656C5.531258-3.291656 5.618929-2.885181 5.618929-2.446824V-.621669C5.618929-.263014 5.523288-.263014 5.0132-.263014V0C5.355915-.02391 5.7066-.02391 5.921793-.02391C6.152927-.02391 6.487671-.02391 6.830386 0V-.263014C6.320299-.263014 6.224658-.263014 6.224658-.621669V-2.414944Z"></path>
+<path id="tz_gestalt_agrupamento_g0-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_gestalt_agrupamento_g0-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_gestalt_agrupamento_g0-112" d="M2.096139 1.283188C1.586052 1.283188 1.490411 1.283188 1.490411 .924533V-.390535C1.865006 .01594 2.271482 .079701 2.526526 .079701C3.53873 .079701 4.415442-.70137 4.415442-1.721544C4.415442-2.717808 3.610461-3.514819 2.646077-3.514819C2.335243-3.514819 1.872976-3.435118 1.466501-3.020672V-3.514819L.278954-3.427148V-3.164134C.844832-3.164134 .884682-3.116314 .884682-2.781569V.924533C.884682 1.283188 .789041 1.283188 .278954 1.283188V1.546202C.621669 1.522291 .972354 1.522291 1.187547 1.522291C1.41868 1.522291 1.753425 1.522291 2.096139 1.546202V1.283188ZM1.490411-2.654047C1.673724-2.972852 2.072229-3.267746 2.574346-3.267746C3.188045-3.267746 3.706102-2.590286 3.706102-1.721544C3.706102-.804981 3.132254-.143462 2.486675-.143462C2.207721-.143462 1.841096-.263014 1.586052-.661519C1.490411-.797011 1.490411-.804981 1.490411-.956413V-2.654047Z"></path>
+<path id="tz_gestalt_agrupamento_g0-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_gestalt_agrupamento_g0-115" d="M2.83736-3.347447C2.83736-3.474969 2.83736-3.55467 2.733748-3.55467C2.693898-3.55467 2.669988-3.55467 2.542466-3.427148C2.526526-3.419178 2.454795-3.347447 2.430884-3.347447C2.422914-3.347447 2.406974-3.347447 2.359153-3.379328C2.231631-3.466999 2.000498-3.55467 1.641843-3.55467C.526027-3.55467 .278954-2.948941 .278954-2.566376C.278954-2.16787 .573848-1.936737 .597758-1.912827C.916563-1.673724 1.099875-1.641843 1.633873-1.546202C2.008468-1.474471 2.622167-1.362889 2.622167-.820922C2.622167-.510087 2.414944-.143462 1.681694-.143462C.876712-.143462 .645579-.765131 .541968-1.187547C.510087-1.291158 .502117-1.331009 .406476-1.331009C.278954-1.331009 .278954-1.267248 .278954-1.115816V-.127522C.278954 0 .278954 .079701 .382565 .079701C.430386 .079701 .438356 .071731 .581818-.079701C.621669-.119552 .70934-.223163 .749191-.263014C1.107846 .063761 1.482441 .079701 1.689664 .079701C2.701868 .079701 3.052553-.502117 3.052553-1.028144C3.052553-1.41071 2.82142-1.968618 1.872976-2.14396C1.809215-2.1599 1.362889-2.239601 1.331009-2.239601C1.083935-2.295392 .70934-2.462765 .70934-2.781569C.70934-3.020672 .884682-3.355417 1.641843-3.355417C2.534496-3.355417 2.574346-2.701868 2.590286-2.478705C2.598257-2.414944 2.654047-2.391034 2.709838-2.391034C2.83736-2.391034 2.83736-2.446824 2.83736-2.598257V-3.347447Z"></path>
+<path id="tz_gestalt_agrupamento_g0-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_gestalt_agrupamento_g0-120" d="M2.454795-1.865006C2.677958-2.14396 2.909091-2.414944 3.148194-2.677958C3.411208-2.956912 3.690162-3.164134 4.192279-3.172105V-3.435118C3.881445-3.411208 3.865504-3.411208 3.506849-3.411208C3.466999-3.411208 2.996762-3.411208 2.749689-3.435118V-3.172105C2.901121-3.156164 2.933001-3.060523 2.933001-2.956912S2.893151-2.757659 2.797509-2.646077L2.295392-2.056289L1.665753-2.805479C1.570112-2.917061 1.570112-2.972852 1.570112-2.988792C1.570112-3.044583 1.617933-3.164134 1.817186-3.172105V-3.435118C1.498381-3.411208 1.052055-3.411208 .964384-3.411208C.820922-3.411208 .414446-3.411208 .175342-3.435118V-3.172105C.71731-3.172105 .72528-3.164134 1.139726-2.677958L1.960648-1.681694L1.235367-.828892C1.036115-.605729 .74122-.278954 .135492-.263014V0C.430386-.02391 .486177-.02391 .820922-.02391C.836862-.02391 1.323039-.02391 1.578082 0V-.263014C1.474471-.278954 1.3868-.334745 1.3868-.478207S1.482441-.73325 1.506351-.773101C1.705604-1.012204 1.920797-1.251308 2.12802-1.482441L2.781569-.70137C2.940971-.518057 2.940971-.502117 2.940971-.446326C2.940971-.382565 2.885181-.270984 2.693898-.263014V0C3.036613-.02391 3.395268-.02391 3.5467-.02391C3.690162-.02391 4.096638-.02391 4.335741 0V-.263014C3.841594-.263014 3.761893-.302864 3.55467-.549938L2.454795-1.865006Z"></path>
+</defs>
+<g id="tz_gestalt_agrupamento_page1">
+<g stroke-miterlimit="10" transform="translate(-64.826906,-13.589846)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M3.2 0C3.2 1.76732 1.76732 3.2 0 3.2S-3.2 1.76732-3.2 0S-1.76732-3.2 0-3.2S3.2-1.76732 3.2 0ZM0 0" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M3.2-14.22636C3.2-12.45905 1.76732-11.02637 0-11.02637S-3.2-12.45905-3.2-14.22636C-3.2-15.99368-1.76732-17.42636 0-17.42636S3.2-15.99368 3.2-14.22636ZM0-14.22636" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M3.2-28.45274C3.2-26.68542 1.76732-25.25275 0-25.25275S-3.2-26.68542-3.2-28.45274S-1.76732-31.65274 0-31.65274S3.2-30.22006 3.2-28.45274ZM0-28.45274" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M3.2-42.67911C3.2-40.91179 1.76732-39.47911 0-39.47911S-3.2-40.91179-3.2-42.67911S-1.76732-45.8791 0-45.8791S3.2-44.44643 3.2-42.67911ZM0-42.67911" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M34.49818 0C34.49818 1.76732 33.0655 3.2 31.29819 3.2C29.53087 3.2 28.09819 1.76732 28.09819 0S29.53087-3.2 31.29819-3.2C33.0655-3.2 34.49818-1.76732 34.49818 0ZM31.29819 0" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M34.49818-14.22636C34.49818-12.45905 33.0655-11.02637 31.29819-11.02637C29.53087-11.02637 28.09819-12.45905 28.09819-14.22636C28.09819-15.99368 29.53087-17.42636 31.29819-17.42636C33.0655-17.42636 34.49818-15.99368 34.49818-14.22636ZM31.29819-14.22636" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M34.49818-28.45274C34.49818-26.68542 33.0655-25.25275 31.29819-25.25275C29.53087-25.25275 28.09819-26.68542 28.09819-28.45274S29.53087-31.65274 31.29819-31.65274C33.0655-31.65274 34.49818-30.22006 34.49818-28.45274ZM31.29819-28.45274" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M34.49818-42.67911C34.49818-40.91179 33.0655-39.47911 31.29819-39.47911C29.53087-39.47911 28.09819-40.91179 28.09819-42.67911S29.53087-45.8791 31.29819-45.8791C33.0655-45.8791 34.49818-44.44643 34.49818-42.67911ZM31.29819-42.67911" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M65.79637 0C65.79637 1.76732 64.3637 3.2 62.59637 3.2C60.82906 3.2 59.39638 1.76732 59.39638 0S60.82906-3.2 62.59637-3.2C64.3637-3.2 65.79637-1.76732 65.79637 0ZM62.59637 0" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M65.79637-14.22636C65.79637-12.45905 64.3637-11.02637 62.59637-11.02637C60.82906-11.02637 59.39638-12.45905 59.39638-14.22636C59.39638-15.99368 60.82906-17.42636 62.59637-17.42636C64.3637-17.42636 65.79637-15.99368 65.79637-14.22636ZM62.59637-14.22636" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M65.79637-28.45274C65.79637-26.68542 64.3637-25.25275 62.59637-25.25275C60.82906-25.25275 59.39638-26.68542 59.39638-28.45274S60.82906-31.65274 62.59637-31.65274C64.3637-31.65274 65.79637-30.22006 65.79637-28.45274ZM62.59637-28.45274" stroke="none"></path>
+</g>
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M65.79637-42.67911C65.79637-40.91179 64.3637-39.47911 62.59637-39.47911C60.82906-39.47911 59.39638-40.91179 59.39638-42.67911S60.82906-45.8791 62.59637-45.8791C64.3637-45.8791 65.79637-44.44643 65.79637-42.67911ZM62.59637-42.67911" stroke="none"></path>
+</g>
+<g transform="translate(16.9271,-67.44139)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-64.826906,-13.589846)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-64.826906" y="-13.589846" href="#tz_gestalt_agrupamento_g0-112"></use>
+<use x="-60.122259" y="-13.589846" href="#tz_gestalt_agrupamento_g0-114"></use>
+<use x="-56.822089" y="-13.589846" href="#tz_gestalt_agrupamento_g0-111"></use>
+<use x="-52.823138" y="-13.589846" href="#tz_gestalt_agrupamento_g0-120"></use>
+<use x="-48.353723" y="-13.589846" href="#tz_gestalt_agrupamento_g0-105"></use>
+<use x="-46.001399" y="-13.589846" href="#tz_gestalt_agrupamento_g0-109"></use>
+<use x="-38.944428" y="-13.589846" href="#tz_gestalt_agrupamento_g0-105"></use>
+<use x="-36.592104" y="-13.589846" href="#tz_gestalt_agrupamento_g0-100"></use>
+<use x="-31.887456" y="-13.589846" href="#tz_gestalt_agrupamento_g0-97"></use>
+<use x="-27.653273" y="-13.589846" href="#tz_gestalt_agrupamento_g0-100"></use>
+<use x="-22.948626" y="-13.589846" href="#tz_gestalt_agrupamento_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M133.88278 0C133.88278 1.65688 132.53966 3 130.88278 3S127.88278 1.65688 127.88278 0S129.2259-3 130.88278-3S133.88278-1.65688 133.88278 0ZM130.88278 0" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M133.88278-14.22636C133.88278-12.56949 132.53966-11.22636 130.88278-11.22636S127.88278-12.56949 127.88278-14.22636C127.88278-15.88324 129.2259-17.22636 130.88278-17.22636S133.88278-15.88324 133.88278-14.22636ZM130.88278-14.22636" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M133.88278-28.45274C133.88278-26.79587 132.53966-25.45274 130.88278-25.45274S127.88278-26.79587 127.88278-28.45274C127.88278-30.10962 129.2259-31.45274 130.88278-31.45274S133.88278-30.10962 133.88278-28.45274ZM130.88278-28.45274" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M133.88278-42.67911C133.88278-41.02223 132.53966-39.67911 130.88278-39.67911S127.88278-41.02223 127.88278-42.67911C127.88278-44.33598 129.2259-45.67911 130.88278-45.67911S133.88278-44.33598 133.88278-42.67911ZM130.88278-42.67911" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M149.73187 0C149.73187 1.76732 148.2992 3.2 146.53188 3.2S143.33188 1.76732 143.33188 0S144.76456-3.2 146.53188-3.2S149.73187-1.76732 149.73187 0ZM146.53188 0" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M149.73187-14.22636C149.73187-12.45905 148.2992-11.02637 146.53188-11.02637S143.33188-12.45905 143.33188-14.22636C143.33188-15.99368 144.76456-17.42636 146.53188-17.42636S149.73187-15.99368 149.73187-14.22636ZM146.53188-14.22636" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M149.73187-28.45274C149.73187-26.68542 148.2992-25.25275 146.53188-25.25275S143.33188-26.68542 143.33188-28.45274S144.76456-31.65274 146.53188-31.65274S149.73187-30.22006 149.73187-28.45274ZM146.53188-28.45274" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M149.73187-42.67911C149.73187-40.91179 148.2992-39.47911 146.53188-39.47911S143.33188-40.91179 143.33188-42.67911S144.76456-45.8791 146.53188-45.8791S149.73187-44.44643 149.73187-42.67911ZM146.53188-42.67911" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M165.18097 0C165.18097 1.65688 163.83784 3 162.18097 3S159.18097 1.65688 159.18097 0S160.5241-3 162.18097-3S165.18097-1.65688 165.18097 0ZM162.18097 0" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M165.18097-14.22636C165.18097-12.56949 163.83784-11.22636 162.18097-11.22636S159.18097-12.56949 159.18097-14.22636C159.18097-15.88324 160.5241-17.22636 162.18097-17.22636S165.18097-15.88324 165.18097-14.22636ZM162.18097-14.22636" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M165.18097-28.45274C165.18097-26.79587 163.83784-25.45274 162.18097-25.45274S159.18097-26.79587 159.18097-28.45274C159.18097-30.10962 160.5241-31.45274 162.18097-31.45274S165.18097-30.10962 165.18097-28.45274ZM162.18097-28.45274" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-width="0.8">
+<path d="M165.18097-42.67911C165.18097-41.02223 163.83784-39.67911 162.18097-39.67911S159.18097-41.02223 159.18097-42.67911C159.18097-44.33598 160.5241-45.67911 162.18097-45.67911S165.18097-44.33598 165.18097-42.67911ZM162.18097-42.67911" fill="none"></path>
+</g>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M181.03006 0C181.03006 1.76732 179.59738 3.2 177.83006 3.2S174.63007 1.76732 174.63007 0S176.06274-3.2 177.83006-3.2S181.03006-1.76732 181.03006 0ZM177.83006 0" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M181.03006-14.22636C181.03006-12.45905 179.59738-11.02637 177.83006-11.02637S174.63007-12.45905 174.63007-14.22636C174.63007-15.99368 176.06274-17.42636 177.83006-17.42636S181.03006-15.99368 181.03006-14.22636ZM177.83006-14.22636" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M181.03006-28.45274C181.03006-26.68542 179.59738-25.25275 177.83006-25.25275S174.63007-26.68542 174.63007-28.45274S176.06274-31.65274 177.83006-31.65274S181.03006-30.22006 181.03006-28.45274ZM177.83006-28.45274" stroke="none"></path>
+</g>
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M181.03006-42.67911C181.03006-40.91179 179.59738-39.47911 177.83006-39.47911S174.63007-40.91179 174.63007-42.67911S176.06274-45.8791 177.83006-45.8791S181.03006-44.44643 181.03006-42.67911ZM177.83006-42.67911" stroke="none"></path>
+</g>
+<g transform="translate(132.60982,-68.21916)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-64.826906,-13.589846)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-64.826906" y="-13.589846" href="#tz_gestalt_agrupamento_g0-115"></use>
+<use x="-61.486604" y="-13.589846" href="#tz_gestalt_agrupamento_g0-105"></use>
+<use x="-59.13428" y="-13.589846" href="#tz_gestalt_agrupamento_g0-109"></use>
+<use x="-52.077308" y="-13.589846" href="#tz_gestalt_agrupamento_g0-105"></use>
+<use x="-49.724985" y="-13.589846" href="#tz_gestalt_agrupamento_g0-108"></use>
+<use x="-47.372661" y="-13.589846" href="#tz_gestalt_agrupamento_g0-97"></use>
+<use x="-43.138478" y="-13.589846" href="#tz_gestalt_agrupamento_g0-114"></use>
+<use x="-39.838308" y="-13.589846" href="#tz_gestalt_agrupamento_g0-105"></use>
+<use x="-37.485984" y="-13.589846" href="#tz_gestalt_agrupamento_g0-100"></use>
+<use x="-32.781336" y="-13.589846" href="#tz_gestalt_agrupamento_g0-97"></use>
+<use x="-28.547153" y="-13.589846" href="#tz_gestalt_agrupamento_g0-100"></use>
+<use x="-23.842506" y="-13.589846" href="#tz_gestalt_agrupamento_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M250.95296-11.38092C250.95296-4.78099 245.6028 .56917 239.00287 .56917S227.05278-4.78099 227.05278-11.38092S232.40294-23.33101 239.00287-23.33101S250.95296-17.98085 250.95296-11.38092ZM239.00287-11.38092" stroke="none"></path>
+</g>
+<g fill="#fff" stroke="#fff">
+<path d="M239.00287-11.38092L250.95296-4.55211C254.25282-10.26767 252.29445-17.57639 246.57889-20.87625C244.76276-21.92473 242.70097-22.47723 240.60385-22.47723Z" stroke="none"></path>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M313.5489-11.38092C313.5489-4.78099 308.19875 .56917 301.59882 .56917S289.64873-4.78099 289.64873-11.38092S294.99889-23.33101 301.59882-23.33101S313.5489-17.98085 313.5489-11.38092ZM301.59882-11.38092" stroke="none"></path>
+</g>
+<g fill="#fff" stroke="#fff">
+<path d="M301.59882-11.38092L289.64873-4.55211C286.34886-10.26767 288.30724-17.57639 294.0228-20.87625C295.83893-21.92473 297.90071-22.47723 299.99783-22.47723Z" stroke="none"></path>
+</g>
+<g fill="#3fb618" stroke="#3fb618">
+<path d="M282.25114 42.67911C282.25114 49.27904 276.90099 54.6292 270.30106 54.6292S258.35097 49.27904 258.35097 42.67911S263.70113 30.72902 270.30106 30.72902S282.25114 36.07918 282.25114 42.67911ZM270.30106 42.67911" stroke="none"></path>
+</g>
+<g fill="#fff" stroke="#fff">
+<path d="M270.30106 42.67911L260.05806 36.70384C263.35793 30.98828 270.66664 29.0299 276.3822 32.32977C278.19833 33.37825 279.7078 34.88771 280.75627 36.70384Z" stroke="none"></path>
+</g>
+<g transform="translate(249.40492,-53.99236)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-64.826906,-13.589846)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-64.826906" y="-13.589846" href="#tz_gestalt_agrupamento_g0-102"></use>
+<use x="-62.23935" y="-13.589846" href="#tz_gestalt_agrupamento_g0-101"></use>
+<use x="-58.475632" y="-13.589846" href="#tz_gestalt_agrupamento_g0-99"></use>
+<use x="-54.947146" y="-13.589846" href="#tz_gestalt_agrupamento_g0-104"></use>
+<use x="-50.242499" y="-13.589846" href="#tz_gestalt_agrupamento_g0-97"></use>
+<use x="-46.008316" y="-13.589846" href="#tz_gestalt_agrupamento_g0-109"></use>
+<use x="-38.951345" y="-13.589846" href="#tz_gestalt_agrupamento_g0-101"></use>
+<use x="-35.187626" y="-13.589846" href="#tz_gestalt_agrupamento_g0-110"></use>
+<use x="-30.718211" y="-13.589846" href="#tz_gestalt_agrupamento_g0-116"></use>
+<use x="-27.424958" y="-13.589846" href="#tz_gestalt_agrupamento_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gestalt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;33.1: Leis de agrupamento da Gestalt. Agrupamos por proximidade (colunas próximas viram grupos), por similaridade (colunas por cor) e por fechamento (três cantos sugerem um triângulo que não está desenhado). O cérebro impõe organização aos dados.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-terceira-dimensão-pistas-de-profundidade" class="level2">
+<h2 class="anchored" data-anchor-id="a-terceira-dimensão-pistas-de-profundidade">A terceira dimensão: pistas de profundidade</h2>
+<p>A imagem na retina é bidimensional; o mundo, não. Reconstruir a profundidade a partir de uma projeção plana é um dos feitos mais impressionantes da percepção, e o cérebro o realiza combinando dois conjuntos de pistas.</p>
+<p>As <strong>pistas binoculares</strong> dependem de termos dois olhos. A principal é a <strong>disparidade retiniana</strong>: como os olhos ficam a alguns centímetros um do outro, cada um recebe uma imagem ligeiramente diferente, e o cérebro usa o grau dessa diferença para calcular a distância (quanto mais perto o objeto, maior a disparidade) — é o princípio dos filmes e óculos 3D. A <strong>convergência</strong>, pista secundária, usa o quanto os olhos giram para dentro ao fixar algo próximo. As <strong>pistas monoculares</strong>, disponíveis com um olho só, são as que os pintores dominam há séculos (<a href="#fig-profundidade" class="quarto-xref">Figura&nbsp;<span>33.2</span></a>): objetos mais distantes projetam imagens <strong>menores</strong> (tamanho relativo), linhas paralelas parecem convergir ao longe (<strong>perspectiva linear</strong>), objetos que <strong>encobrem</strong> outros parecem mais próximos (interposição), a textura fica mais fina e densa com a distância (<strong>gradiente de textura</strong>), e, quando nos movemos, objetos próximos parecem passar mais rápido que os distantes (<strong>paralaxe de movimento</strong>). Somadas, essas pistas bastam para uma reconstrução tão convincente que uma tela plana pode nos dar a ilusão vívida de espaço.</p>
+<div id="fig-profundidade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-profundidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Cena esquemática ilustrando pistas monoculares de profundidade. Dois trilhos convergem de baixo (largos, próximos) para um ponto de fuga no alto (perspectiva linear). Ao longo deles, retângulos representando postes ficam cada vez menores rumo ao topo (tamanho relativo). Perto da base, um retângulo encobre parcialmente outro (interposição). Uma linha de horizonte cruza o alto da figura." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="228.735651pt" height="127.158047pt" viewbox="-68.014948 -68.014951 228.735651 127.158047">
+<defs>
+<path id="tz_pistas_profundidade_g0-101" d="M3.291656-1.817186C3.466999-1.817186 3.514819-1.817186 3.514819-2.000498C3.514819-2.709838 3.124284-3.55467 2.000498-3.55467C1.012204-3.55467 .239103-2.733748 .239103-1.745455C.239103-.71731 1.099875 .079701 2.10411 .079701C3.116314 .079701 3.514819-.773101 3.514819-.956413C3.514819-.988294 3.490909-1.067995 3.387298-1.067995C3.299626-1.067995 3.283686-1.012204 3.267746-.964384C2.980822-.191283 2.295392-.167372 2.15193-.167372C1.793275-.167372 1.42665-.334745 1.187547-.70137S.948443-1.578082 .948443-1.817186H3.291656ZM.956413-2.024408C1.028144-3.140224 1.705604-3.331507 2.000498-3.331507C2.933001-3.331507 2.964882-2.207721 2.972852-2.024408H.956413Z"></path>
+<path id="tz_pistas_profundidade_g0-104" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C2.032379-3.514819 1.665753-3.068493 1.522291-2.81345H1.514321V-5.531258L.326775-5.443587V-5.180573C.868742-5.180573 .932503-5.124782 .932503-4.734247V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_pistas_profundidade_g0-105" d="M1.554172-4.909589C1.554172-5.140722 1.370859-5.355915 1.107846-5.355915C.876712-5.355915 .669489-5.172603 .669489-4.917559C.669489-4.638605 .900623-4.471233 1.107846-4.471233C1.3868-4.471233 1.554172-4.702366 1.554172-4.909589ZM.358655-3.427148V-3.164134C.868742-3.164134 .940473-3.116314 .940473-2.725778V-.621669C.940473-.263014 .844832-.263014 .334745-.263014V0C.645579-.02391 1.091905-.02391 1.211457-.02391C1.315068-.02391 1.793275-.02391 2.072229 0V-.263014C1.554172-.263014 1.522291-.302864 1.522291-.613699V-3.514819L.358655-3.427148Z"></path>
+<path id="tz_pistas_profundidade_g0-110" d="M3.873474-2.414944C3.873474-3.084433 3.57061-3.514819 2.733748-3.514819C1.944707-3.514819 1.586052-2.940971 1.490411-2.749689H1.482441V-3.514819L.326775-3.427148V-3.164134C.868742-3.164134 .932503-3.108344 .932503-2.717808V-.621669C.932503-.263014 .836862-.263014 .326775-.263014V0C.669489-.02391 1.020174-.02391 1.235367-.02391C1.466501-.02391 1.801245-.02391 2.14396 0V-.263014C1.633873-.263014 1.538232-.263014 1.538232-.621669V-2.064259C1.538232-2.901121 2.175841-3.291656 2.662017-3.291656S3.267746-2.948941 3.267746-2.446824V-.621669C3.267746-.263014 3.172105-.263014 2.662017-.263014V0C3.004732-.02391 3.355417-.02391 3.57061-.02391C3.801743-.02391 4.136488-.02391 4.479203 0V-.263014C3.969116-.263014 3.873474-.263014 3.873474-.621669V-2.414944Z"></path>
+<path id="tz_pistas_profundidade_g0-111" d="M3.985056-1.697634C3.985056-2.693898 3.164134-3.55467 2.11208-3.55467S.239103-2.693898 .239103-1.697634S1.091905 .079701 2.11208 .079701C3.140224 .079701 3.985056-.70137 3.985056-1.697634ZM2.11208-.167372C1.681694-.167372 1.346949-.374595 1.171606-.653549C.972354-.980324 .948443-1.370859 .948443-1.769365C.948443-2.072229 .948443-2.550436 1.195517-2.893151C1.40274-3.172105 1.737484-3.331507 2.11208-3.331507C2.526526-3.331507 2.86924-3.132254 3.052553-2.8533C3.267746-2.518555 3.275716-2.088169 3.275716-1.769365C3.275716-1.40274 3.259776-.964384 3.036613-.629639C2.82142-.310834 2.462765-.167372 2.11208-.167372Z"></path>
+<path id="tz_pistas_profundidade_g0-114" d="M1.466501-1.817186C1.466501-2.414944 1.713574-3.275716 2.478705-3.291656C2.430884-3.259776 2.351183-3.196015 2.351183-3.012702C2.351183-2.765629 2.542466-2.654047 2.701868-2.654047C2.893151-2.654047 3.060523-2.781569 3.060523-3.012702C3.060523-3.291656 2.805479-3.514819 2.454795-3.514819C1.936737-3.514819 1.586052-3.124284 1.41868-2.677958H1.41071V-3.514819L.278954-3.427148V-3.164134C.820922-3.164134 .884682-3.108344 .884682-2.717808V-.621669C.884682-.263014 .789041-.263014 .278954-.263014V0C.589788-.02391 1.028144-.02391 1.219427-.02391C1.689664-.02391 1.705604-.02391 2.223661 0V-.263014H2.064259C1.482441-.263014 1.466501-.350685 1.466501-.637609V-1.817186Z"></path>
+<path id="tz_pistas_profundidade_g0-116" d="M1.482441-3.172105H2.669988V-3.435118H1.482441V-4.901619H1.235367C1.227397-4.176339 .900623-3.419178 .159402-3.395268V-3.172105H.876712V-.996264C.876712-.063761 1.594022 .079701 1.960648 .079701C2.494645 .079701 2.81345-.398506 2.81345-.996264V-1.44259H2.566376V-1.012204C2.566376-.462267 2.319303-.167372 2.016438-.167372C1.482441-.167372 1.482441-.852802 1.482441-.980324V-3.172105Z"></path>
+<path id="tz_pistas_profundidade_g0-122" d="M3.307597-3.156164C3.363387-3.227895 3.379328-3.243836 3.379328-3.307597C3.379328-3.435118 3.283686-3.435118 3.156164-3.435118H.446326L.350685-2.10411H.597758C.645579-2.933001 .820922-3.211955 1.713574-3.211955H2.622167L.310834-.294894C.255044-.223163 .239103-.207223 .239103-.135492C.239103 0 .326775 0 .462267 0H3.259776L3.403238-1.538232H3.156164C3.076463-.613699 2.925031-.247073 1.944707-.247073H.996264L3.307597-3.156164Z"></path>
+<path id="tz_pistas_profundidade_g1-24" d="M2.259527 .139477H1.708593V.481196C2.175841 .488169 2.350187 .662516 2.350187 .850809C2.350187 1.12279 1.987547 1.227397 1.311083 1.227397H1.060025V1.422665H1.401743C1.408717 1.422665 1.966625 1.422665 2.322291 1.345953C2.608219 1.283188 2.901121 1.164633 2.901121 .850809C2.901121 .571856 2.691905 .390535 2.259527 .320797V.139477Z"></path>
+<path id="tz_pistas_profundidade_g1-97" d="M3.110336-1.868991C3.110336-2.238605 3.110336-2.503611 2.789539-2.761644C2.503611-2.998755 2.168867-3.110336 1.75741-3.110336C1.094894-3.110336 .627646-2.859278 .627646-2.433873C.627646-2.21071 .781071-2.092154 .962391-2.092154C1.150685-2.092154 1.290162-2.231631 1.290162-2.419925C1.290162-2.538481 1.234371-2.684932 1.046077-2.740722C1.297136-2.915068 1.701619-2.915068 1.743462-2.915068C2.133998-2.915068 2.559402-2.657036 2.559402-2.071233V-1.855044C2.175841-1.841096 1.715567-1.820174 1.206476-1.63188C.578829-1.401743 .383562-1.018182 .383562-.704359C.383562-.104608 1.108842 .069738 1.603985 .069738C2.161893 .069738 2.489664-.244085 2.636115-.516065C2.66401-.230137 2.852304 .034869 3.173101 .034869C3.187049 .034869 3.863512 .034869 3.863512-.627646V-1.011208H3.626401V-.63462C3.626401-.564882 3.626401-.230137 3.368369-.230137S3.110336-.557908 3.110336-.648568V-1.868991ZM2.559402-.983313C2.559402-.313823 1.973599-.125529 1.659776-.125529C1.30411-.125529 .969365-.36264 .969365-.704359C.969365-1.08792 1.30411-1.624907 2.559402-1.673724V-.983313Z"></path>
+<path id="tz_pistas_profundidade_g1-99" d="M2.712827-2.782565C2.587298-2.726775 2.517559-2.615193 2.517559-2.475716C2.517559-2.287422 2.650062-2.147945 2.84533-2.147945C3.033624-2.147945 3.180075-2.266501 3.180075-2.489664C3.180075-3.110336 2.21071-3.110336 2.015442-3.110336C.969365-3.110336 .320797-2.308344 .320797-1.506351C.320797-.627646 1.066999 .069738 1.980573 .069738C3.019676 .069738 3.263761-.753176 3.263761-.836862S3.173101-.920548 3.145205-.920548C3.054545-.920548 3.047572-.899626 3.012702-.801993C2.859278-.369614 2.489664-.153425 2.064259-.153425C1.583064-.153425 .955417-.509091 .955417-1.513325C.955417-2.399004 1.387796-2.887173 2.036364-2.887173C2.127024-2.887173 2.461768-2.887173 2.712827-2.782565Z"></path>
+<path id="tz_pistas_profundidade_g1-101" d="M3.068493-1.590037C3.214944-1.590037 3.263761-1.590037 3.263761-1.743462C3.263761-2.357161 2.922042-3.110336 1.882939-3.110336C.969365-3.110336 .27198-2.385056 .27198-1.527273C.27198-.641594 1.046077 .069738 1.973599 .069738C2.915068 .069738 3.263761-.683437 3.263761-.836862C3.263761-.864757 3.249813-.934496 3.145205-.934496C3.054545-.934496 3.040598-.892653 3.019676-.822914C2.803487-.258032 2.273474-.153425 2.022416-.153425C1.694645-.153425 1.380822-.299875 1.171606-.564882C.913574-.892653 .9066-1.318057 .9066-1.590037H3.068493ZM.913574-1.771357C.990286-2.75467 1.617933-2.915068 1.882939-2.915068C2.740722-2.915068 2.768618-1.945704 2.775592-1.771357H.913574Z"></path>
+<path id="tz_pistas_profundidade_g1-104" d="M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.924782-3.075467 1.583064-2.705853 1.429639-2.440847H1.422665V-4.839851L.376588-4.763138V-4.51208C.843836-4.51208 .899626-4.463263 .899626-4.121544V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z"></path>
+<path id="tz_pistas_profundidade_g1-105" d="M1.471482-4.302864C1.471482-4.505106 1.30411-4.700374 1.066999-4.700374C.857783-4.700374 .669489-4.533001 .669489-4.302864C.669489-4.051806 .871731-3.898381 1.066999-3.898381C1.290162-3.898381 1.471482-4.072727 1.471482-4.302864ZM.411457-2.998755V-2.747696C.850809-2.747696 .913574-2.705853 .913574-2.364134V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.415691-.027895 1.66675-.020922 1.910834 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.54396V-3.075467L.411457-2.998755Z"></path>
+<path id="tz_pistas_profundidade_g1-108" d="M1.436613-4.839851L.390535-4.763138V-4.51208C.857783-4.51208 .913574-4.463263 .913574-4.121544V-.550934C.913574-.251059 .843836-.251059 .390535-.251059V0C.404483 0 .892653-.027895 1.171606-.027895C1.436613-.027895 1.694645-.020922 1.959651 0V-.251059C1.506351-.251059 1.436613-.251059 1.436613-.550934V-4.839851Z"></path>
+<path id="tz_pistas_profundidade_g1-109" d="M5.732503-2.113076C5.732503-2.719801 5.432628-3.075467 4.686426-3.075467C4.135492-3.075467 3.758904-2.775592 3.57061-2.426899C3.431133-2.922042 3.054545-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-1.806227C3.591532-2.538481 4.170361-2.880199 4.630635-2.880199C5.118804-2.880199 5.181569-2.496638 5.181569-2.140971V-.550934C5.181569-.251059 5.111831-.251059 4.658531-.251059V0C4.672478 0 5.160648-.027895 5.453549-.027895C5.711582-.027895 6.192777-.006974 6.255542 0V-.251059C5.802242-.251059 5.732503-.251059 5.732503-.550934V-2.113076Z"></path>
+<path id="tz_pistas_profundidade_g1-110" d="M3.591532-2.113076C3.591532-2.719801 3.291656-3.075467 2.545455-3.075467C1.973599-3.075467 1.603985-2.761644 1.408717-2.399004H1.401743V-3.075467L.376588-2.998755V-2.747696C.843836-2.747696 .899626-2.698879 .899626-2.357161V-.550934C.899626-.251059 .829888-.251059 .376588-.251059V0C.390535 0 .878705-.027895 1.171606-.027895C1.429639-.027895 1.910834-.006974 1.973599 0V-.251059C1.520299-.251059 1.45056-.251059 1.45056-.550934V-1.806227C1.45056-2.538481 2.02939-2.880199 2.489664-2.880199C2.977833-2.880199 3.040598-2.496638 3.040598-2.140971V-.550934C3.040598-.251059 2.970859-.251059 2.517559-.251059V0C2.531507 0 3.019676-.027895 3.312578-.027895C3.57061-.027895 4.051806-.006974 4.11457 0V-.251059C3.66127-.251059 3.591532-.251059 3.591532-.550934V-2.113076Z"></path>
+<path id="tz_pistas_profundidade_g1-111" d="M3.689166-1.48543C3.689166-2.357161 2.942964-3.110336 1.980573-3.110336S.27198-2.357161 .27198-1.48543C.27198-.620672 1.039103 .069738 1.980573 .069738S3.689166-.620672 3.689166-1.48543ZM1.980573-.153425C1.72254-.153425 1.345953-.237111 1.115816-.578829C.927522-.864757 .9066-1.227397 .9066-1.548194C.9066-1.84807 .913574-2.259527 1.157659-2.559402C1.332005-2.761644 1.624907-2.915068 1.980573-2.915068C2.39203-2.915068 2.684932-2.719801 2.838356-2.503611C3.033624-2.231631 3.054545-1.882939 3.054545-1.548194S3.033624-.843836 2.831382-.557908C2.643088-.292902 2.322291-.153425 1.980573-.153425Z"></path>
+<path id="tz_pistas_profundidade_g1-112" d="M1.93873 1.101868C1.48543 1.101868 1.415691 1.101868 1.415691 .801993V-.334745C1.45056-.299875 1.778331 .069738 2.364134 .069738C3.284682 .069738 4.072727-.620672 4.072727-1.506351C4.072727-2.364134 3.361395-3.075467 2.475716-3.075467C2.078207-3.075467 1.673724-2.929016 1.387796-2.650062V-3.075467L.341719-2.998755V-2.747696C.829888-2.747696 .864757-2.712827 .864757-2.419925V.801993C.864757 1.101868 .795019 1.101868 .341719 1.101868V1.352927C.355666 1.352927 .843836 1.325031 1.136737 1.325031C1.39477 1.325031 1.875965 1.345953 1.93873 1.352927V1.101868ZM1.415691-2.322291C1.624907-2.670984 2.02939-2.852304 2.399004-2.852304C2.984807-2.852304 3.438107-2.238605 3.438107-1.506351C3.438107-.711333 2.915068-.125529 2.322291-.125529C1.708593-.125529 1.436613-.662516 1.415691-.704359V-2.322291Z"></path>
+<path id="tz_pistas_profundidade_g1-114" d="M1.387796-1.590037C1.387796-2.175841 1.659776-2.880199 2.322291-2.880199C2.259527-2.831382 2.203736-2.740722 2.203736-2.629141C2.203736-2.399004 2.385056-2.308344 2.517559-2.308344C2.684932-2.308344 2.838356-2.419925 2.838356-2.629141C2.838356-2.866252 2.615193-3.075467 2.287422-3.075467C1.93873-3.075467 1.555168-2.859278 1.345953-2.329265H1.338979V-3.075467L.341719-2.998755V-2.747696C.808966-2.747696 .864757-2.698879 .864757-2.357161V-.550934C.864757-.251059 .795019-.251059 .341719-.251059V0C.376588 0 .850809-.027895 1.136737-.027895C1.436613-.027895 1.743462-.013948 2.043337 0V-.251059H1.903861C1.387796-.251059 1.387796-.327771 1.387796-.564882V-1.590037Z"></path>
+<path id="tz_pistas_profundidade_g1-115" d="M2.643088-2.929016C2.643088-3.047572 2.643088-3.110336 2.545455-3.110336C2.510585-3.110336 2.496638-3.110336 2.405978-3.02665C2.39203-3.019676 2.322291-2.956912 2.280448-2.922042C2.071233-3.068493 1.806227-3.110336 1.548194-3.110336C.550934-3.110336 .313823-2.587298 .313823-2.238605C.313823-2.015442 .411457-1.834122 .578829-1.694645C.843836-1.464508 1.108842-1.415691 1.54122-1.345953C1.889913-1.283188 2.454795-1.185554 2.454795-.718306C2.454795-.446326 2.266501-.125529 1.597011-.125529S.683437-.564882 .557908-1.039103C.536986-1.129763 .530012-1.157659 .432379-1.157659C.313823-1.157659 .313823-1.108842 .313823-.969365V-.111582C.313823 .006974 .313823 .069738 .411457 .069738C.474222 .069738 .606725-.076712 .746202-.230137C1.053051 .055791 1.429639 .069738 1.597011 .069738C2.503611 .069738 2.838356-.418431 2.838356-.913574C2.838356-1.17858 2.719801-1.387796 2.538481-1.555168C2.273474-1.799253 1.952677-1.855044 1.708593-1.896887C1.150685-1.994521 .697385-2.078207 .697385-2.447821C.697385-2.670984 .885679-2.942964 1.548194-2.942964C2.357161-2.942964 2.39203-2.378082 2.405978-2.175841C2.412951-2.099128 2.496638-2.099128 2.524533-2.099128C2.643088-2.099128 2.643088-2.147945 2.643088-2.280448V-2.929016Z"></path>
+<path id="tz_pistas_profundidade_g1-116" d="M1.401743-2.75467H2.489664V-3.005729H1.401743V-4.288917H1.164633C1.157659-3.66127 .871731-2.970859 .202242-2.949938V-2.75467H.850809V-.871731C.850809-.09066 1.436613 .069738 1.827148 .069738C2.294396 .069738 2.615193-.327771 2.615193-.878705V-1.262267H2.378082V-.885679C2.378082-.411457 2.154919-.153425 1.882939-.153425C1.401743-.153425 1.401743-.739228 1.401743-.864757V-2.75467Z"></path>
+<path id="tz_pistas_profundidade_g1-118" d="M3.305604-2.322291C3.500872-2.747696 3.849564-2.75467 3.961146-2.75467V-3.005729C3.7868-2.991781 3.605479-2.977833 3.431133-2.977833C3.242839-2.977833 2.984807-2.984807 2.796513-3.005729V-2.75467C3.089415-2.740722 3.089415-2.510585 3.089415-2.489664C3.089415-2.454795 3.082441-2.385056 3.033624-2.287422L2.245579-.564882L1.380822-2.461768C1.380822-2.468742 1.338979-2.545455 1.338979-2.594271C1.338979-2.75467 1.57609-2.75467 1.694645-2.75467V-3.005729C1.680697-3.005729 1.185554-2.977833 .899626-2.977833C.690411-2.977833 .418431-2.984807 .216189-3.005729V-2.75467C.599751-2.75467 .683437-2.740722 .788045-2.503611L1.889913-.076712C1.924782 .006974 1.966625 .069738 2.085181 .069738C2.217684 .069738 2.245579 .006974 2.280448-.069738L3.305604-2.322291Z"></path>
+<path id="tz_pistas_profundidade_g1-126" d="M3.124284-4.6934C2.922042-4.47721 2.719801-4.372603 2.524533-4.372603C2.343213-4.372603 2.133998-4.47721 2.078207-4.51208C1.827148-4.630635 1.680697-4.6934 1.527273-4.6934C1.241345-4.6934 1.136737-4.581818 .697385-4.135492L.836862-3.996015C1.039103-4.212204 1.241345-4.316812 1.436613-4.316812C1.617933-4.316812 1.827148-4.212204 1.882939-4.177335C2.133998-4.05878 2.280448-3.996015 2.433873-3.996015C2.719801-3.996015 2.824408-4.107597 3.263761-4.553923L3.124284-4.6934Z"></path>
+</defs>
+<g id="tz_pistas_profundidade_page1">
+<g stroke-miterlimit="10" transform="translate(-46.407667,58.545348)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.4">
+<path d="M-8.5359 113.81097H207.70511" fill="none"></path>
+</g>
+</g>
+<g transform="translate(162.1306,118.14638)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.407667,58.545348)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-46.407667" y="58.545348" href="#tz_pistas_profundidade_g0-104"></use>
+<use x="-41.703019" y="58.545348" href="#tz_pistas_profundidade_g0-111"></use>
+<use x="-37.468836" y="58.545348" href="#tz_pistas_profundidade_g0-114"></use>
+<use x="-34.168666" y="58.545348" href="#tz_pistas_profundidade_g0-105"></use>
+<use x="-31.816342" y="58.545348" href="#tz_pistas_profundidade_g0-122"></use>
+<use x="-28.052624" y="58.545348" href="#tz_pistas_profundidade_g0-111"></use>
+<use x="-23.818441" y="58.545348" href="#tz_pistas_profundidade_g0-110"></use>
+<use x="-19.349026" y="58.545348" href="#tz_pistas_profundidade_g0-116"></use>
+<use x="-16.055773" y="58.545348" href="#tz_pistas_profundidade_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M17.07181 0L99.5846 113.81097" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M182.09738 0L99.5846 113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#7db3ef" stroke="#7db3ef">
+<g stroke-width="0.8">
+<path d="M22.76227 8.5359H176.40692" fill="none"></path>
+</g>
+</g>
+<g fill="#7db3ef" stroke="#7db3ef">
+<g stroke-width="0.8">
+<path d="M44.10184 36.98865H155.06735" fill="none"></path>
+</g>
+</g>
+<g fill="#7db3ef" stroke="#7db3ef">
+<g stroke-width="0.8">
+<path d="M62.59595 62.59595H136.57324" fill="none"></path>
+</g>
+</g>
+<g fill="#7db3ef" stroke="#7db3ef">
+<g stroke-width="0.8">
+<path d="M76.25314 82.51277H122.91605" fill="none"></path>
+</g>
+</g>
+<g fill="#7db3ef" stroke="#7db3ef">
+<g stroke-width="0.8">
+<path d="M85.35823 96.73915H113.81097" fill="none"></path>
+</g>
+</g>
+<g fill="#2c7f10" stroke="#2c7f10">
+<path d="M5.69046 5.69046V48.36957H17.07181V5.69046ZM17.07181 48.36957" stroke="none"></path>
+</g>
+<g fill="#2c7f10" stroke="#2c7f10">
+<path d="M167.871 42.67911V73.9773H176.40692V42.67911ZM176.40692 73.9773" stroke="none"></path>
+</g>
+<g fill="#2c7f10" stroke="#2c7f10">
+<path d="M133.7278 73.9773V95.31686H139.41826V73.9773ZM139.41826 95.31686" stroke="none"></path>
+</g>
+<g fill="#e1726c" stroke="#e1726c">
+<g stroke="#000">
+<path d="M39.83366 5.69046V42.67911H65.44139V5.69046ZM65.44139 42.67911"></path>
+</g>
+</g>
+<g fill="#ff7518" stroke="#ff7518">
+<g stroke="#000">
+<path d="M56.90549 2.84544V34.1432H82.51277V2.84544ZM82.51277 34.1432"></path>
+</g>
+</g>
+<g transform="translate(31.71335,48.11867)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.407667,58.545348)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-46.407667" y="58.545348" href="#tz_pistas_profundidade_g1-105"></use>
+<use x="-44.152221" y="58.545348" href="#tz_pistas_profundidade_g1-110"></use>
+<use x="-39.966514" y="58.545348" href="#tz_pistas_profundidade_g1-116"></use>
+<use x="-36.853171" y="58.545348" href="#tz_pistas_profundidade_g1-101"></use>
+<use x="-33.310879" y="58.545348" href="#tz_pistas_profundidade_g1-114"></use>
+<use x="-30.197536" y="58.545348" href="#tz_pistas_profundidade_g1-112"></use>
+<use x="-25.58288" y="58.545348" href="#tz_pistas_profundidade_g1-111"></use>
+<use x="-21.61164" y="58.545348" href="#tz_pistas_profundidade_g1-115"></use>
+<use x="-18.455399" y="58.545348" href="#tz_pistas_profundidade_g1-105"></use>
+<use x="-16.199953" y="58.545348" href="#tz_pistas_profundidade_g1-24"></use>
+<use x="-16.19995" y="58.545348" href="#tz_pistas_profundidade_g1-99"></use>
+<use x="-12.657659" y="58.545348" href="#tz_pistas_profundidade_g1-126"></use>
+<use x="-12.657656" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="-8.686415" y="58.545348" href="#tz_pistas_profundidade_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-18.35533,53.05222)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.407667,58.545348)scale(-1,-1)">
+<g fill="#1f5b0c">
+<g stroke="none">
+<g fill="#205b0c">
+<use x="-46.407667" y="58.545348" href="#tz_pistas_profundidade_g1-116"></use>
+<use x="-43.294324" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="-39.323083" y="58.545348" href="#tz_pistas_profundidade_g1-109"></use>
+<use x="-32.778151" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="-28.80691" y="58.545348" href="#tz_pistas_profundidade_g1-110"></use>
+<use x="-24.406721" y="58.545348" href="#tz_pistas_profundidade_g1-104"></use>
+<use x="-20.006532" y="58.545348" href="#tz_pistas_profundidade_g1-111"></use>
+<use x="-13.3509" y="58.545348" href="#tz_pistas_profundidade_g1-114"></use>
+<use x="-10.237557" y="58.545348" href="#tz_pistas_profundidade_g1-101"></use>
+<use x="-6.695265" y="58.545348" href="#tz_pistas_profundidade_g1-108"></use>
+<use x="-4.439819" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="-.468579" y="58.545348" href="#tz_pistas_profundidade_g1-116"></use>
+<use x="2.644764" y="58.545348" href="#tz_pistas_profundidade_g1-105"></use>
+<use x="4.90021" y="58.545348" href="#tz_pistas_profundidade_g1-118"></use>
+<use x="8.87145" y="58.545348" href="#tz_pistas_profundidade_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(68.74695,23.85728)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.407667,58.545348)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-46.407667" y="58.545348" href="#tz_pistas_profundidade_g1-112"></use>
+<use x="-41.793011" y="58.545348" href="#tz_pistas_profundidade_g1-101"></use>
+<use x="-38.250719" y="58.545348" href="#tz_pistas_profundidade_g1-114"></use>
+<use x="-35.137376" y="58.545348" href="#tz_pistas_profundidade_g1-115"></use>
+<use x="-31.981135" y="58.545348" href="#tz_pistas_profundidade_g1-112"></use>
+<use x="-27.36648" y="58.545348" href="#tz_pistas_profundidade_g1-101"></use>
+<use x="-23.824188" y="58.545348" href="#tz_pistas_profundidade_g1-99"></use>
+<use x="-20.281896" y="58.545348" href="#tz_pistas_profundidade_g1-116"></use>
+<use x="-17.168553" y="58.545348" href="#tz_pistas_profundidade_g1-105"></use>
+<use x="-14.913107" y="58.545348" href="#tz_pistas_profundidade_g1-118"></use>
+<use x="-11.156334" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="-4.500702" y="58.545348" href="#tz_pistas_profundidade_g1-108"></use>
+<use x="-2.245257" y="58.545348" href="#tz_pistas_profundidade_g1-105"></use>
+<use x=".010189" y="58.545348" href="#tz_pistas_profundidade_g1-110"></use>
+<use x="4.410378" y="58.545348" href="#tz_pistas_profundidade_g1-101"></use>
+<use x="7.95267" y="58.545348" href="#tz_pistas_profundidade_g1-97"></use>
+<use x="11.92391" y="58.545348" href="#tz_pistas_profundidade_g1-114"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-profundidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;33.2: Pistas monoculares de profundidade numa cena plana. Trilhos que convergem (perspectiva linear), postes que encolhem ao longe (tamanho relativo) e formas que encobrem outras (interposição) bastam para o cérebro reconstruir a distância com um só olho.
+</figcaption>
+</figure>
+</div>
+<p>Quando começamos a perceber profundidade? A resposta veio de um experimento tão engenhoso quanto célebre.</p>
+<div class="experimento">
+<p><strong>O abismo visual</strong> <span class="citation" data-cites="gibson_walk1960">(<a href="../../referencias.html#ref-gibson_walk1960" role="doc-biblioref">Gibson; Walk, 1960</a>)</span></p>
+<p><strong>Desenho.</strong> Eleanor Gibson e Richard Walk construíram uma plataforma coberta por vidro resistente: de um lado, um padrão xadrez logo sob o vidro (o lado “raso”); do outro, o mesmo padrão vários palmos abaixo, criando a <em>aparência</em> de um precipício (o lado “fundo”), embora o vidro tornasse tudo seguro. Colocavam bebês que já engatinhavam no centro e chamavam a mãe do lado do abismo.</p>
+<p><strong>Resultado.</strong> A maioria dos bebês engatinhava alegremente pelo lado raso, mas <em>recusava-se</em> a avançar sobre o “abismo”, mesmo com a mãe chamando — alguns choravam, outros davam meia-volta. Filhotes de várias espécies, testados assim que andavam, evitavam o lado fundo desde o primeiro dia.</p>
+<p><strong>Interpretação.</strong> A percepção de profundidade está presente muito cedo — nos humanos, já quando o bebê começa a engatinhar —, e nos animais que dependem dela para sobreviver, praticamente ao nascer. Isso sugere uma base largamente inata, embora a experiência de locomoção a refine (bebês tornam-se mais cautelosos após semanas engatinhando).</p>
+<p><strong>Limitações.</strong> Como os bebês testados já engatinhavam, não se pode excluir totalmente o papel do aprendizado precoce; e o método mede o <em>medo</em> da altura, não apenas a percepção dela — um bebê pode perceber o abismo sem temê-lo, ou vice-versa. Ainda assim, o abismo visual continua um marco no estudo da percepção infantil.</p>
+</div>
+</section>
+<section id="constâncias-um-mundo-estável-apesar-de-sensações-que-mudam" class="level2">
+<h2 class="anchored" data-anchor-id="constâncias-um-mundo-estável-apesar-de-sensações-que-mudam">Constâncias: um mundo estável apesar de sensações que mudam</h2>
+<p>Se a percepção seguisse fielmente a imagem retiniana, o mundo seria um caos: uma pessoa que se afasta encolheria, uma porta que se abre viraria um trapézio, o papel deste texto pareceria cinza na penumbra e branco ofuscante ao sol. Nada disso acontece, graças às <strong>constâncias perceptuais</strong> — a capacidade de perceber os objetos como estáveis apesar das variações da estimulação sensorial. Pela <strong>constância de tamanho</strong>, sabemos que a pessoa que se afasta continua do mesmo tamanho, embora sua imagem diminua; pela <strong>constância de forma</strong>, a porta segue retangular, embora sua projeção mude; pela <strong>constância de claridade (e de cor)</strong>, o papel permanece branco e a maçã vermelha sob luzes muito diferentes, porque o cérebro leva em conta a iluminação. As constâncias são um triunfo do processamento descendente: o cérebro corrige a imagem bruta usando seu conhecimento sobre distância, ângulo e luz — e, como veremos no próximo capítulo, é justamente quando esses mecanismos de correção são “enganados” que surgem muitas das ilusões visuais.</p>
+</section>
+<section id="duas-visões-da-percepção-construir-ou-captar" class="level2">
+<h2 class="anchored" data-anchor-id="duas-visões-da-percepção-construir-ou-captar">Duas visões da percepção: construir ou captar?</h2>
+<p>Como o cérebro chega a uma percepção tão rica e acertada? Há duas grandes respostas, e vale apresentá-las de forma equilibrada. A visão <strong>construtivista</strong>, dominante e alinhada a tudo que vimos até aqui, sustenta que a percepção é uma <em>inferência</em>: a partir de dados sensoriais ambíguos e incompletos, o cérebro constrói a “melhor hipótese” sobre o que há no mundo, usando conhecimento prévio. Modelos computacionais dessa tradição, como o de reconhecimento de objetos por componentes simples (<em>geons</em>) de Biederman, mostram como formas complexas podem ser reconhecidas a partir de um pequeno vocabulário de volumes elementares <span class="citation" data-cites="biederman1987">(<a href="../../referencias.html#ref-biederman1987" role="doc-biblioref">Biederman, 1987</a>)</span>.</p>
+<p>A visão <strong>ecológica</strong>, proposta por James Gibson, discorda da ênfase na inferência. Para Gibson, o ambiente é tão rico em informação — sobretudo quando o observador se <em>move</em> — que a percepção seria em boa medida <strong>direta</strong>: o fluxo óptico e os gradientes já <em>especificam</em> a estrutura do mundo, sem necessidade de tanta reconstrução interna <span class="citation" data-cites="gibson1979">(<a href="../../referencias.html#ref-gibson1979" role="doc-biblioref">Gibson, 1979</a>)</span>. A verdade, hoje, é vista como uma síntese: Gibson tinha razão ao insistir na riqueza da informação disponível e no papel do movimento, e ao criticar experimentos com estímulos empobrecidos e estáticos; mas o construtivismo tem razão ao mostrar que, quando a informação é ambígua — e ela frequentemente é —, o cérebro <em>precisa</em> preencher lacunas com conhecimento, como as constâncias e as ilusões deixam claro. Não é preciso escolher um vencedor: a percepção capta um mundo estruturado <em>e</em> o reconstrói ativamente.</p>
+<div class="na-pratica">
+<p><strong>A percepção como princípio de design.</strong> Os mecanismos deste capítulo são a base, muitas vezes invisível, do design visual. As leis da Gestalt orientam interfaces e sinalização: elementos relacionados são postos próximos (proximidade), botões de mesma função recebem a mesma cor (similaridade), e um bom layout respeita a figura-fundo para que o essencial “salte” do resto. As pistas de profundidade dão a ilusão de relevo em telas planas — sombras e sobreposições que fazem um botão parecer “clicável”. As constâncias explicam por que ajustamos automaticamente cores sob iluminações diferentes, um problema central para fotografia, telas e impressão. E o processamento descendente ensina o projetista a trabalhar <em>com</em> as expectativas do usuário: uma interface que viola convenções aprendidas (um ícone de lixeira que salva o arquivo) confunde, porque o cérebro percebe o que espera. Entender como organizamos o que vemos é entender como tornar o que se vê compreensível.</p>
+</div>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>A percepção combina processamento <strong>ascendente</strong> (dos dados sensoriais para cima) e <strong>descendente</strong> (do conhecimento e das expectativas para baixo); o segundo torna a percepção poderosa e, ao mesmo tempo, sujeita a ilusões.</li>
+<li>A <strong>Gestalt</strong> mostrou que o cérebro organiza os elementos em todos: separa <strong>figura e fundo</strong> e agrupa por <strong>proximidade, similaridade, continuidade e fechamento</strong>, buscando a organização mais simples (<strong>pregnância</strong>).</li>
+<li>A profundidade é reconstruída por <strong>pistas binoculares</strong> (disparidade retiniana, convergência) e <strong>monoculares</strong> (tamanho relativo, perspectiva linear, interposição, gradiente de textura, paralaxe de movimento).</li>
+<li>O <strong>abismo visual</strong> de Gibson e Walk indica que a percepção de profundidade surge muito cedo, com forte base inata refinada pela experiência.</li>
+<li>As <strong>constâncias</strong> (de tamanho, forma e claridade) mantêm o mundo estável apesar de a imagem retiniana mudar — um triunfo do processamento descendente que corrige a imagem bruta.</li>
+<li>As visões <strong>construtivista</strong> (percepção como inferência) e <strong>ecológica</strong> (percepção como captação direta de um ambiente rico) hoje se sintetizam: o cérebro capta um mundo estruturado <em>e</em> o reconstrói ativamente.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Processamento ascendente (bottom-up)</strong></dt>
+<dd>
+Construção da percepção a partir dos dados sensoriais brutos rumo a formas complexas.
+</dd>
+<dt><strong>Processamento descendente (top-down)</strong></dt>
+<dd>
+Uso de conhecimento, contexto e expectativas para interpretar e completar os dados sensoriais.
+</dd>
+<dt><strong>Figura-fundo</strong></dt>
+<dd>
+Organização perceptual que separa um objeto (figura) do restante da cena (fundo).
+</dd>
+<dt><strong>Leis de agrupamento</strong></dt>
+<dd>
+Princípios da Gestalt (proximidade, similaridade, continuidade, fechamento) pelos quais elementos são reunidos em conjuntos <span class="citation" data-cites="wertheimer1923">(<a href="../../referencias.html#ref-wertheimer1923" role="doc-biblioref">Wertheimer, 1923</a>)</span>.
+</dd>
+<dt><strong>Pregnância (Prägnanz)</strong></dt>
+<dd>
+Tendência a perceber a organização mais simples, regular e estável possível <span class="citation" data-cites="koffka1935">(<a href="../../referencias.html#ref-koffka1935" role="doc-biblioref">Koffka, 1935</a>)</span>.
+</dd>
+<dt><strong>Pistas binoculares</strong></dt>
+<dd>
+Informações de profundidade que dependem dos dois olhos, como a disparidade retiniana e a convergência.
+</dd>
+<dt><strong>Disparidade retiniana</strong></dt>
+<dd>
+Diferença entre as imagens dos dois olhos, usada pelo cérebro para estimar distância.
+</dd>
+<dt><strong>Pistas monoculares</strong></dt>
+<dd>
+Informações de profundidade disponíveis com um olho só (tamanho relativo, perspectiva linear, interposição, gradiente de textura, paralaxe de movimento).
+</dd>
+<dt><strong>Constâncias perceptuais</strong></dt>
+<dd>
+Percepção de objetos como estáveis em tamanho, forma e claridade apesar das mudanças na imagem retiniana.
+</dd>
+<dt><strong>Abismo visual</strong></dt>
+<dd>
+Aparato que testa a percepção de profundidade em bebês e animais jovens <span class="citation" data-cites="gibson_walk1960">(<a href="../../referencias.html#ref-gibson_walk1960" role="doc-biblioref">Gibson; Walk, 1960</a>)</span>.
+</dd>
+<dt><strong>Percepção direta (ecológica)</strong></dt>
+<dd>
+Tese de Gibson de que o ambiente, sobretudo com o movimento, especifica a percepção sem grande inferência interna <span class="citation" data-cites="gibson1979">(<a href="../../referencias.html#ref-gibson1979" role="doc-biblioref">Gibson, 1979</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Diferencie processamento ascendente e descendente. Dê um exemplo cotidiano em que o conhecimento prévio (descendente) completa uma informação sensorial incompleta.</p></li>
+<li><p><strong>(Recuperação.)</strong> Explique a organização figura-fundo e por que imagens ambíguas, como o vaso de Rubin, mostram que a organização perceptual é imposta pela mente.</p></li>
+<li><p><strong>(Aplicação.)</strong> Você olha uma fotografia de uma estrada reta e “vê” a profundidade, embora a imagem seja plana. Identifique ao menos três pistas monoculares que produzem esse efeito.</p></li>
+<li><p><strong>(Aplicação.)</strong> Um amigo que se afasta projeta uma imagem cada vez menor na sua retina, mas você não o percebe encolhendo. Qual constância explica isso e como o processamento descendente a torna possível?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> O experimento do abismo visual é frequentemente usado para afirmar que a percepção de profundidade é inata. Que limitações do método convém lembrar antes de tirar essa conclusão de forma categórica?</p></li>
+<li><p><strong>(Integração.)</strong> Contraste as visões construtivista e ecológica da percepção. Em vez de escolher uma, explique o que cada uma acerta e como a percepção pode ser, ao mesmo tempo, captação de um mundo rico e reconstrução ativa.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-biederman1987" class="csl-entry" role="listitem">
+BIEDERMAN, Irving. <a href="https://doi.org/10.1037/0033-295X.94.2.115">Recognition-by-components: A theory of human image understanding</a>. <strong>Psychological Review</strong>, v. 94, n. 2, p. 115–147, 1987.
+</div>
+<div id="ref-gibson_walk1960" class="csl-entry" role="listitem">
+GIBSON, Eleanor J.; WALK, Richard D. <a href="https://doi.org/10.1038/scientificamerican0460-64">The visual cliff</a>. <strong>Scientific American</strong>, v. 202, n. 4, p. 64–71, 1960.
+</div>
+<div id="ref-gibson1979" class="csl-entry" role="listitem">
+GIBSON, James J. <strong>The Ecological Approach to Visual Perception</strong>. Boston: Houghton Mifflin, 1979.
+</div>
+<div id="ref-koffka1935" class="csl-entry" role="listitem">
+KOFFKA, Kurt. <strong>Principles of Gestalt Psychology</strong>. New York: Harcourt, Brace; World, 1935.
+</div>
+<div id="ref-wagemans2012" class="csl-entry" role="listitem">
+WAGEMANS, Johan <em>et al.</em> <a href="https://doi.org/10.1037/a0029333">A century of Gestalt psychology in visual perception: I. Perceptual grouping and figure-ground organization</a>. <strong>Psychological Bulletin</strong>, v. 138, n. 6, p. 1172–1217, 2012.
+</div>
+<div id="ref-wertheimer1923" class="csl-entry" role="listitem">
+WERTHEIMER, Max. <a href="https://doi.org/10.1007/BF00410640">Untersuchungen zur Lehre von der Gestalt. II</a>. <strong>Psychologische Forschung</strong>, v. 4, n. 1, p. 301–350, 1923.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1733,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol05-sensacao-percepcao/cap-33-organizacao-perceptual.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

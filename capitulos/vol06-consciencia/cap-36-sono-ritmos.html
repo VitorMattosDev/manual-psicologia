@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-relógio-biológico-ritmos-circadianos" id="toc-o-relógio-biológico-ritmos-circadianos" class="nav-link active" data-scroll-target="#o-relógio-biológico-ritmos-circadianos">O relógio biológico: ritmos circadianos</a></li>
+  <li><a href="#os-estágios-do-sono" id="toc-os-estágios-do-sono" class="nav-link" data-scroll-target="#os-estágios-do-sono">Os estágios do sono</a></li>
+  <li><a href="#a-arquitetura-de-uma-noite" id="toc-a-arquitetura-de-uma-noite" class="nav-link" data-scroll-target="#a-arquitetura-de-uma-noite">A arquitetura de uma noite</a></li>
+  <li><a href="#para-que-serve-dormir" id="toc-para-que-serve-dormir" class="nav-link" data-scroll-target="#para-que-serve-dormir">Para que serve dormir?</a></li>
+  <li><a href="#quando-o-sono-falta-ou-falha" id="toc-quando-o-sono-falta-ou-falha" class="nav-link" data-scroll-target="#quando-o-sono-falta-ou-falha">Quando o sono falta ou falha</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,464 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Descrever</strong> o ritmo circadiano e o papel do núcleo supraquiasmático, da luz e da melatonina em sincronizá-lo.</li>
+<li><strong>Identificar</strong> os estágios do sono (NREM 1–3 e REM) por seus padrões de EEG e características fisiológicas.</li>
+<li><strong>Traçar</strong> a arquitetura de uma noite de sono num hipnograma e explicar como os ciclos se transformam ao longo dela.</li>
+<li><strong>Avaliar</strong> as principais funções do sono: consolidação da memória, restauração e limpeza metabólica.</li>
+<li><strong>Analisar</strong> os efeitos da privação de sono sobre cognição, humor e saúde.</li>
+<li><strong>Reconhecer</strong> os principais transtornos do sono e boas práticas de higiene do sono.</li>
+</ul>
 </div>
+<p>Passamos cerca de um terço da vida dormindo — um estado em que ficamos vulneráveis, imóveis e desligados do mundo. Que a evolução tenha preservado algo tão custoso em praticamente todos os animais é a pista mais forte de que o sono não é um mero “apagar”, e sim um processo ativo e vital. Este capítulo estuda o sono sob dois ângulos complementares. Primeiro, o <strong>relógio</strong> que decide <em>quando</em> dormimos: o ritmo circadiano que organiza a fisiologia num ciclo de aproximadamente 24 horas. Depois, a <strong>estrutura</strong> do próprio sono — seus estágios, medidos objetivamente pelo eletroencefalograma — e as funções que hoje se atribuem a ele, da consolidação da memória à faxina metabólica do cérebro. Ao longo do caminho veremos que dormir bem não é luxo: é uma necessidade biológica cuja falta cobra um preço cognitivo e de saúde mensurável.</p>
+<section id="o-relógio-biológico-ritmos-circadianos" class="level2">
+<h2 class="anchored" data-anchor-id="o-relógio-biológico-ritmos-circadianos">O relógio biológico: ritmos circadianos</h2>
+<p>Quase todos os processos do corpo — temperatura, hormônios, atenção, sono — oscilam num ciclo de cerca de 24 horas, o <strong>ritmo circadiano</strong> (do latim <em>circa diem</em>, “cerca de um dia”). Esse ritmo é <strong>endógeno</strong>: persiste mesmo sem pistas externas. Experimentos clássicos em que voluntários viveram semanas isolados de qualquer relógio ou luz natural mostraram que o corpo continua a alternar sono e vigília num ciclo próprio, “de forma livre” (<em>free-running</em>), que na maioria das pessoas roda um pouco <em>acima</em> de 24 horas <span class="citation" data-cites="czeisler1999">(<a href="../../referencias.html#ref-czeisler1999" role="doc-biblioref"><span class="nocase">Czeisler et al.</span>, 1999</a>)</span>. Como o dia real tem exatamente 24 horas, o relógio precisa ser ajustado diariamente por sinais ambientais — os <strong>zeitgebers</strong> (“doadores de tempo”, em alemão), sendo a <strong>luz</strong> o mais poderoso.</p>
+<p>O maestro desse relógio é o <strong>núcleo supraquiasmático</strong> (NSQ), um pequeno aglomerado de neurônios no hipotálamo, logo acima do quiasma óptico. Que o NSQ seja o marca-passo central ficou demonstrado por experimentos elegantes: lesioná-lo abole os ritmos circadianos, e transplantar tecido do NSQ de um animal doador para um animal sem relógio <em>restaura</em> o ritmo — com o período característico do <strong>doador</strong>, prova de que a informação temporal está no próprio tecido <span class="citation" data-cites="ralph1990">(<a href="../../referencias.html#ref-ralph1990" role="doc-biblioref">Ralph et al., 1990</a>)</span>. O NSQ recebe informação de luz diretamente da retina (por uma via especializada) e, à noite, ordena à glândula pineal que secrete <strong>melatonina</strong>, o hormônio que sinaliza “escuridão” ao corpo e favorece o sono. A luz — especialmente a de comprimento azulado, abundante no dia e nas telas — suprime a melatonina; daí telas à noite atrasarem o sono. Desalinhar o relógio interno do tempo externo produz o <strong>jet lag</strong> (após voos transmeridionais) e o desgaste de quem faz turnos noturnos, associado a piora cognitiva e a riscos de saúde a longo prazo.</p>
+<div class="base-neural">
+<p><strong>Dois processos regulam o sono.</strong> O modelo influente de Alexander Borbély descreve o sono como produto de dois processos que se somam <span class="citation" data-cites="borbely1982">(<a href="../../referencias.html#ref-borbely1982" role="doc-biblioref">Borbély, 1982</a>)</span>. O <strong>processo C</strong> (circadiano) é o sinal do relógio do NSQ, que empurra para a vigília durante o dia e para o sono à noite, independentemente de há quanto tempo se está acordado. O <strong>processo S</strong> (homeostático) é a <strong>pressão de sono</strong> que se acumula quanto mais tempo ficamos despertos — associada ao acúmulo de adenosina no cérebro — e se dissipa ao dormir. (A cafeína, aliás, age bloqueando os receptores de adenosina, mascarando temporariamente essa pressão.) A hora em que sentimos sono resulta da interação dos dois: por isso podemos “furar” o sono numa noite virada e sentir uma paradoxal recuperação de ânimo pela manhã, quando o processo C sobe mesmo com o processo S alto.</p>
+</div>
+</section>
+<section id="os-estágios-do-sono" class="level2">
+<h2 class="anchored" data-anchor-id="os-estágios-do-sono">Os estágios do sono</h2>
+<p>O sono não é um estado único e homogêneo. A descoberta que fundou a ciência moderna do sono veio quando Eugene Aserinsky e Nathaniel Kleitman notaram, monitorando dorminhocos, períodos em que os olhos se moviam rapidamente sob as pálpebras.</p>
+<div class="experimento">
+<p><strong>A descoberta do sono REM</strong> <span class="citation" data-cites="aserinsky_kleitman1953">(<a href="../../referencias.html#ref-aserinsky_kleitman1953" role="doc-biblioref">Aserinsky; Kleitman, 1953</a>)</span></p>
+<p><strong>Desenho.</strong> Aserinsky e Kleitman registraram, ao longo de noites inteiras, os movimentos oculares e a atividade cerebral (EEG) de pessoas dormindo. Quando observavam surtos de <strong>movimentos oculares rápidos</strong> (REM, <em>rapid eye movements</em>), despertavam a pessoa e perguntavam o que se passava.</p>
+<p><strong>Resultado.</strong> Os períodos de REM recorriam ciclicamente pela noite e vinham acompanhados de EEG paradoxalmente <em>ativo</em>, parecido com o da vigília. E, ao serem despertadas durante o REM, as pessoas relatavam <strong>sonhos vívidos</strong> na grande maioria das vezes — muito mais do que quando despertadas fora do REM.</p>
+<p><strong>Interpretação.</strong> O sono tem uma organização interna: alterna fases distintas, e uma delas (o REM) associa-se fortemente ao sonhar. Estava aberto o caminho para mapear objetivamente a arquitetura do sono e, com William Dement, descrever seus ciclos <span class="citation" data-cites="dement_kleitman1957">(<a href="../../referencias.html#ref-dement_kleitman1957" role="doc-biblioref">Dement; Kleitman, 1957</a>)</span>.</p>
+<p><strong>Limitações.</strong> Sonhos também ocorrem fora do REM (Cap. 37), então a equação “REM = sonho” é uma simplificação. Ainda assim, a descoberta transformou o sono de mistério em objeto mensurável.</p>
+</div>
+<p>A classificação atual divide o sono em <strong>NREM</strong> (sem movimentos oculares rápidos), subdividido em três estágios de profundidade crescente, e o <strong>REM</strong>:</p>
+<ul>
+<li><strong>N1</strong> (adormecer): transição breve entre vigília e sono; o EEG perde o ritmo alfa da vigília relaxada. Podem ocorrer os solavancos e a sensação de cair (mioclonias hípnicas).</li>
+<li><strong>N2</strong>: sono leve consolidado, marcado por padrões de EEG característicos — os <strong>fusos do sono</strong> (surtos rápidos, ligados à consolidação da memória) e os <strong>complexos K</strong>. Ocupa a maior parte da noite.</li>
+<li><strong>N3</strong> (sono de ondas lentas ou profundo): dominado por ondas <strong>delta</strong>, lentas e amplas. É o sono mais reparador e mais difícil de despertar; predomina no início da noite e associa-se à restauração física e à liberação de hormônio do crescimento.</li>
+<li><strong>REM</strong>: EEG rápido e dessincronizado (parecido com a vigília), movimentos oculares rápidos, sonhos vívidos e <strong>atonia muscular</strong> — uma paralisia protetora que impede o corpo de “encenar” o sonho. Por combinar cérebro ativo e corpo paralisado, o REM é também chamado de <strong>sono paradoxal</strong>.</li>
+</ul>
+</section>
+<section id="a-arquitetura-de-uma-noite" class="level2">
+<h2 class="anchored" data-anchor-id="a-arquitetura-de-uma-noite">A arquitetura de uma noite</h2>
+<p>Ao longo da noite, esses estágios se sucedem em <strong>ciclos</strong> de aproximadamente 90 minutos, tipicamente quatro a seis por noite. Mas os ciclos não são iguais: sua composição muda sistematicamente do começo ao fim (<a href="#fig-hipnograma" class="quarto-xref">Figura&nbsp;<span>36.1</span></a>). No início da noite, predomina o <strong>N3</strong> profundo; as primeiras horas concentram o sono de ondas lentas. À medida que a noite avança, o N3 mingua e os episódios de <strong>REM</strong> se alongam — o REM mais longo e mais rico em sonhos ocorre perto do amanhecer, razão pela qual costumamos acordar em meio a um sonho. Esse arranjo tem consequências práticas: quem dorme pouco sacrifica sobretudo o REM do fim da noite, e quem acorda no meio de um ciclo profundo sente a <strong>inércia do sono</strong> — aquele torpor grogue dos despertares abruptos.</p>
+<div id="fig-hipnograma" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hipnograma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Um hipnograma esquemático de uma noite de sono. O eixo horizontal marca as horas de sono, de zero a cerca de cinco ciclos. O eixo vertical marca os estágios, de cima para baixo: vigília, REM, N1, N2, N3. A linha desce rapidamente ao N3 no início da noite e depois oscila para cima; ao longo da noite, os trechos de N3 encolhem e os trechos de REM (destacados) ficam cada vez mais longos, sobretudo perto do fim." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="286.777484pt" height="136.058142pt" viewbox="-68.014948 -68.014949 286.777484 136.058142">
+<defs>
+<path id="tz_hipnograma_g0-16" d="M1.250311-2.201743L.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743Z"></path>
+<path id="tz_hipnograma_g0-19" d="M2.450809-3.048568C2.510585-3.088418 2.580324-3.138232 2.580324-3.242839S2.495641-3.476961 2.351183-3.476961C2.271482-3.476961 2.236613-3.442092 2.1868-3.39726L1.414695-2.665006L1.544209-2.500623L2.450809-3.048568Z"></path>
+<path id="tz_hipnograma_g0-49" d="M1.982565-3.16812C1.982565-3.317559 1.967621-3.317559 1.803238-3.317559C1.449564-2.998755 .896638-2.998755 .797011-2.998755H.712329V-2.779577H.797011C.911582-2.779577 1.235367-2.794521 1.524284-2.919054V-.428394C1.524284-.273973 1.524284-.219178 .996264-.219178H.747198V0C1.021171-.019925 1.464508-.019925 1.753425-.019925S2.485679-.019925 2.759651 0V-.219178H2.510585C1.982565-.219178 1.982565-.273973 1.982565-.428394V-3.16812Z"></path>
+<path id="tz_hipnograma_g0-50" d="M2.933998-.961395H2.724782C2.709838-.86675 2.660025-.557908 2.580324-.508095C2.540473-.478207 2.122042-.478207 2.047323-.478207H1.070984C1.399751-.722291 1.768369-1.001245 2.067248-1.200498C2.515567-1.50934 2.933998-1.798257 2.933998-2.326276C2.933998-2.963885 2.331258-3.317559 1.618929-3.317559C.946451-3.317559 .4533-2.929016 .4533-2.440847C.4533-2.181818 .672478-2.136986 .742217-2.136986C.876712-2.136986 1.036115-2.22665 1.036115-2.430884C1.036115-2.610212 .9066-2.709838 .752179-2.724782C.891656-2.948941 1.180573-3.098381 1.514321-3.098381C1.997509-3.098381 2.400996-2.809465 2.400996-2.321295C2.400996-1.902864 2.11208-1.58406 1.728518-1.260274L.513076-.229141C.463263-.184309 .458281-.184309 .4533-.14944V0H2.769614L2.933998-.961395Z"></path>
+<path id="tz_hipnograma_g0-51" d="M1.643836-1.648817C2.102117-1.648817 2.405978-1.364882 2.405978-.871731C2.405978-.363636 2.092154-.094645 1.648817-.094645C1.594022-.094645 1.001245-.094645 .747198-.353674C.951432-.383562 1.011208-.537983 1.011208-.657534C1.011208-.841843 .871731-.961395 .707347-.961395C.547945-.961395 .398506-.856787 .398506-.647572C.398506-.129514 .986301 .109589 1.663761 .109589C2.480697 .109589 2.988792-.383562 2.988792-.86675C2.988792-1.275218 2.625156-1.62391 2.057285-1.753425C2.655044-1.947696 2.814446-2.326276 2.814446-2.60523C2.814446-3.013699 2.306351-3.317559 1.678705-3.317559C1.066002-3.317559 .572852-3.058531 .572852-2.610212C.572852-2.37609 .762142-2.316314 .856787-2.316314C1.001245-2.316314 1.140722-2.420922 1.140722-2.600249C1.140722-2.714819 1.080946-2.854296 .901619-2.884184C1.115816-3.113325 1.559153-3.128269 1.663761-3.128269C2.027397-3.128269 2.286426-2.94396 2.286426-2.60523C2.286426-2.316314 2.097136-1.863014 1.574097-1.833126C1.43462-1.828144 1.414695-1.823163 1.285181-1.818182C1.230386-1.8132 1.175592-1.808219 1.175592-1.733499C1.175592-1.648817 1.225405-1.648817 1.315068-1.648817H1.643836Z"></path>
+<path id="tz_hipnograma_g0-52" d="M3.073474-.811955V-1.031133H2.450809V-3.222914C2.450809-3.342466 2.445828-3.372354 2.316314-3.372354C2.216687-3.372354 2.211706-3.367372 2.156912-3.297634L.313823-1.031133V-.811955H1.972603V-.423412C1.972603-.268991 1.972603-.219178 1.539228-.219178H1.364882V0C1.599004-.009963 1.92279-.019925 2.211706-.019925S2.819427-.009963 3.058531 0V-.219178H2.884184C2.450809-.219178 2.450809-.268991 2.450809-.423412V-.811955H3.073474ZM2.012453-2.834371V-1.031133H.547945L2.012453-2.834371Z"></path>
+<path id="tz_hipnograma_g0-53" d="M.976339-2.744707C1.240349-2.67995 1.464508-2.67995 1.519303-2.67995C1.858032-2.67995 2.107098-2.779577 2.236613-2.849315C2.356164-2.909091 2.694894-3.123288 2.694894-3.232877C2.694894-3.307597 2.6401-3.317559 2.625156-3.317559C2.615193-3.317559 2.60523-3.317559 2.550436-3.292653C2.361146-3.227895 2.052304-3.158157 1.723537-3.158157C1.439601-3.158157 1.165629-3.20797 .901619-3.297634C.846824-3.317559 .836862-3.317559 .826899-3.317559C.757161-3.317559 .757161-3.257783 .757161-3.178082V-1.683686C.757161-1.599004 .757161-1.534247 .851806-1.534247C.9066-1.534247 .911582-1.544209 .956413-1.599004C1.145704-1.818182 1.409714-1.927771 1.748443-1.927771C2.03736-1.927771 2.196762-1.758406 2.266501-1.653798C2.381071-1.484433 2.405978-1.260274 2.405978-1.021171C2.405978-.811955 2.386052-.533001 2.191781-.33873C1.967621-.109589 1.683686-.094645 1.574097-.094645C1.250311-.094645 .886675-.234122 .732254-.52802C.941469-.542964 1.011208-.692403 1.011208-.806974C1.011208-.966376 .891656-1.085928 .732254-1.085928C.622665-1.085928 .4533-1.021171 .4533-.79203C.4533-.303861 .931507 .109589 1.58406 .109589C2.326276 .109589 2.933998-.388543 2.933998-1.006227C2.933998-1.569116 2.450809-2.092154 1.758406-2.092154C1.444583-2.092154 1.190535-2.012453 .976339-1.84807V-2.744707Z"></path>
+<path id="tz_hipnograma_g0-69" d="M4.164384-1.349938H3.955168C3.81071-.533001 3.616438-.219178 2.665006-.219178H1.738481C1.494396-.219178 1.494396-.254047 1.494396-.408468V-1.643836H2.072229C2.570361-1.643836 2.709838-1.539228 2.709838-1.061021H2.919054V-2.445828H2.709838C2.709838-1.967621 2.570361-1.863014 2.072229-1.863014H1.494396V-2.973848C1.494396-3.128269 1.494396-3.163138 1.738481-3.163138H2.620174C3.452055-3.163138 3.676214-2.963885 3.785803-2.196762H3.995019L3.830635-3.382316H.41345V-3.163138H.562889C.966376-3.163138 .966376-3.113325 .966376-2.958904V-.423412C.966376-.268991 .966376-.219178 .562889-.219178H.41345V0H3.915318L4.164384-1.349938Z"></path>
+<path id="tz_hipnograma_g0-77" d="M1.618929-3.28269C1.564134-3.402242 1.50934-3.402242 1.404732-3.402242H.443337V-3.183064H.592777C.996264-3.183064 .996264-3.13325 .996264-2.978829V-.552927C.996264-.423412 .996264-.219178 .443337-.219178V0C.667497-.014944 .886675-.019925 1.110834-.019925C1.250311-.019925 1.574097-.014944 1.778331 0V-.219178C1.225405-.219178 1.225405-.423412 1.225405-.552927V-3.153176H1.230386L2.674969-.119552C2.714819-.034869 2.759651 0 2.82939 0C2.924035 0 2.958904-.069738 2.978829-.11457L4.448319-3.193026H4.4533V-.423412C4.4533-.268991 4.4533-.219178 4.049813-.219178H3.900374V0C4.129514-.009963 4.418431-.019925 4.687422-.019925S5.240349-.009963 5.474471 0V-.219178H5.325031C4.921544-.219178 4.921544-.268991 4.921544-.423412V-2.978829C4.921544-3.13325 4.921544-3.183064 5.325031-3.183064H5.474471V-3.402242H4.513076C4.403487-3.402242 4.358655-3.402242 4.303861-3.287671L2.958904-.468244L1.618929-3.28269Z"></path>
+<path id="tz_hipnograma_g0-78" d="M1.539228-3.342466C1.489415-3.402242 1.479452-3.402242 1.379826-3.402242H.41345V-3.183064H.607721C.667497-3.183064 .896638-3.178082 .946451-3.163138C.961395-3.153176 .966376-3.148194 .966376-3.068493V-.552927C.966376-.423412 .966376-.219178 .41345-.219178V0C.637609-.014944 .856787-.019925 1.080946-.019925C1.220423-.019925 1.544209-.014944 1.748443 0V-.219178C1.195517-.219178 1.195517-.423412 1.195517-.552927V-3.01868L3.676214-.059776C3.726027 0 3.745953 0 3.800747 0C3.915318 0 3.915318-.044832 3.915318-.14944V-2.849315C3.915318-2.978829 3.915318-3.183064 4.468244-3.183064V-3.402242C4.244085-3.387298 4.024907-3.382316 3.800747-3.382316C3.66127-3.382316 3.337484-3.387298 3.13325-3.402242V-3.183064C3.686177-3.183064 3.686177-2.978829 3.686177-2.849315V-.782067L1.539228-3.342466Z"></path>
+<path id="tz_hipnograma_g0-82" d="M2.973848-1.69863C3.292653-1.783313 3.905355-2.027397 3.905355-2.485679C3.905355-3.003736 3.13325-3.402242 2.306351-3.402242H.423412V-3.183064H.572852C.976339-3.183064 .976339-3.13325 .976339-2.978829V-.423412C.976339-.268991 .976339-.219178 .572852-.219178H.423412V0C.652553-.009963 .956413-.019925 1.230386-.019925S1.793275-.009963 2.03736 0V-.219178H1.88792C1.484433-.219178 1.484433-.268991 1.484433-.423412V-1.618929H2.251557C2.520548-1.618929 2.75467-1.549191 2.909091-1.419676C3.0934-1.270237 3.0934-1.150685 3.0934-.856787C3.0934-.473225 3.0934-.278954 3.35741-.079701C3.5467 .064757 3.845579 .109589 4.059776 .109589C4.537983 .109589 4.667497-.298879 4.667497-.463263C4.667497-.557908 4.617684-.56787 4.562889-.56787C4.483188-.56787 4.463263-.537983 4.458281-.468244C4.438356-.184309 4.254047-.054795 4.084682-.054795C3.745953-.054795 3.701121-.433375 3.66127-.752179C3.646326-.886675 3.62142-1.085928 3.606476-1.150685C3.531756-1.444583 3.272727-1.618929 2.973848-1.69863ZM2.251557-1.783313H1.484433V-2.993773C1.484433-3.143213 1.494396-3.16812 1.643836-3.183064H1.997509C2.560399-3.183064 3.32254-3.183064 3.32254-2.485679C3.32254-1.912827 2.75467-1.783313 2.251557-1.783313Z"></path>
+<path id="tz_hipnograma_g0-86" d="M3.985056-2.874222C4.084682-3.083437 4.268991-3.183064 4.607721-3.183064V-3.402242C4.433375-3.387298 4.234122-3.382316 4.059776-3.382316C3.995019-3.382316 3.641345-3.387298 3.412204-3.402242V-3.183064C3.66127-3.183064 3.775841-3.073474 3.775841-2.968867C3.775841-2.929016 3.760897-2.899128 3.745953-2.86924L2.600249-.478207L1.399751-2.998755C1.374844-3.048568 1.374844-3.058531 1.374844-3.068493C1.374844-3.183064 1.65878-3.183064 1.788294-3.183064V-3.402242C1.599004-3.39726 1.220423-3.382316 .986301-3.382316C.836862-3.382316 .533001-3.387298 .273973-3.402242V-3.183064H.393524C.707347-3.183064 .762142-3.143213 .821918-3.023661L2.261519-.009963C2.30137 .07472 2.331258 .109589 2.440847 .109589S2.580324 .07472 2.620174-.009963L3.985056-2.874222Z"></path>
+<path id="tz_hipnograma_g0-97" d="M2.60523-1.479452C2.60523-1.957659 2.102117-2.231631 1.484433-2.231631C1.180573-2.231631 .60274-2.216687 .60274-1.793275C.60274-1.608966 .742217-1.524284 .86675-1.524284C1.001245-1.524284 1.13076-1.618929 1.13076-1.788294C1.13076-1.907846 1.061021-1.982565 1.016189-2.012453C1.180573-2.067248 1.419676-2.067248 1.474471-2.067248C1.897883-2.067248 2.161893-1.833126 2.161893-1.474471V-1.344956C1.678705-1.32005 1.409714-1.305106 1.026152-1.17061C.697385-1.05604 .408468-.846824 .408468-.523039C.408468-.054795 .986301 .054795 1.384807 .054795C1.768369 .054795 2.067248-.099626 2.221669-.353674C2.241594-.179328 2.356164 .029888 2.610212 .029888C2.645081 .029888 3.212951 .029888 3.212951-.448319V-.722291H3.003736V-.458281C3.003736-.408468 3.003736-.18929 2.804483-.18929S2.60523-.408468 2.60523-.458281V-1.479452ZM2.161893-.707347C2.161893-.159402 1.564134-.109589 1.439601-.109589C1.145704-.109589 .86675-.26401 .86675-.523039C.86675-.687422 .971357-1.145704 2.161893-1.195517V-.707347Z"></path>
+<path id="tz_hipnograma_g0-99" d="M2.236613-2.007472C2.166874-1.957659 2.127024-1.877958 2.127024-1.788294C2.127024-1.62391 2.251557-1.524284 2.391034-1.524284C2.510585-1.524284 2.655044-1.603985 2.655044-1.793275C2.655044-2.216687 2.102117-2.231631 1.753425-2.231631C.777086-2.231631 .358655-1.574097 .358655-1.075965C.358655-.458281 .941469 .054795 1.693649 .054795C2.555417 .054795 2.724782-.552927 2.724782-.597758C2.724782-.667497 2.650062-.667497 2.620174-.667497C2.540473-.667497 2.535492-.652553 2.510585-.592777C2.34122-.179328 1.977584-.124533 1.758406-.124533C1.330012-.124533 .856787-.41345 .856787-1.080946C.856787-1.300125 .901619-1.574097 1.085928-1.783313C1.325031-2.052304 1.618929-2.052304 1.77335-2.052304C1.92279-2.052304 2.062267-2.052304 2.236613-2.007472Z"></path>
+<path id="tz_hipnograma_g0-100" d="M2.102117-3.402242V-3.183064C2.470735-3.183064 2.515567-3.148194 2.515567-2.90411V-1.932752C2.405978-2.027397 2.136986-2.201743 1.723537-2.201743C.976339-2.201743 .358655-1.69863 .358655-1.070984C.358655-.468244 .921544 .054795 1.663761 .054795C2.072229 .054795 2.356164-.124533 2.495641-.244085V.054795L3.352428 0V-.219178C2.983811-.219178 2.938979-.254047 2.938979-.498132V-3.457036L2.102117-3.402242ZM2.495641-.542964C2.256538-.174346 1.88792-.109589 1.693649-.109589C1.444583-.109589 1.195517-.209215 1.031133-.428394C.871731-.632628 .856787-.916563 .856787-1.070984C.856787-1.205479 .86675-1.534247 1.080946-1.763387C1.255293-1.942715 1.514321-2.03736 1.758406-2.03736C1.902864-2.03736 2.256538-2.007472 2.495641-1.668742V-.542964Z"></path>
+<path id="tz_hipnograma_g0-101" d="M2.575342-1.120797C2.67995-1.120797 2.724782-1.120797 2.724782-1.240349C2.724782-1.574097 2.545455-2.231631 1.613948-2.231631C.856787-2.231631 .323786-1.688667 .323786-1.09589C.323786-.463263 .931507 .054795 1.688667 .054795C2.480697 .054795 2.724782-.498132 2.724782-.592777C2.724782-.67746 2.645081-.67746 2.620174-.67746C2.545455-.67746 2.535492-.657534 2.505604-.587796C2.366127-.244085 1.997509-.124533 1.718555-.124533C1.315068-.124533 1.090909-.348692 1.016189-.433375C.821918-.672478 .821918-.986301 .821918-1.120797H2.575342ZM.83188-1.275218C.891656-1.932752 1.374844-2.067248 1.608966-2.067248C2.30137-2.067248 2.336239-1.419676 2.34122-1.275218H.83188Z"></path>
+<path id="tz_hipnograma_g0-103" d="M2.291407-1.937733C2.530511-2.082192 2.75467-2.087173 2.834371-2.092154C2.819427-2.072229 2.794521-2.042341 2.794521-1.972603C2.794521-1.872976 2.859278-1.788294 2.978829-1.788294S3.163138-1.872976 3.163138-1.972603C3.163138-2.102117 3.058531-2.256538 2.819427-2.256538C2.699875-2.256538 2.435866-2.231631 2.171856-2.027397C2.057285-2.097136 1.833126-2.201743 1.524284-2.201743C.936488-2.201743 .52802-1.853051 .52802-1.469489C.52802-1.215442 .712329-1.031133 .787049-.971357C.667497-.826899 .637609-.67746 .637609-.56787C.637609-.303861 .806974-.139477 .851806-.104608C.60274-.039851 .313823 .119552 .313823 .383562C.313823 .777086 .971357 1.026152 1.693649 1.026152C2.361146 1.026152 3.073474 .806974 3.073474 .373599C3.073474 .14944 2.94396-.089664 2.699875-.209215C2.366127-.368618 2.047323-.368618 1.514321-.368618C1.389788-.368618 1.17061-.368618 1.145704-.373599C.9066-.41345 .851806-.607721 .851806-.702366C.851806-.801993 .901619-.881694 .916563-.881694C.926526-.881694 .936488-.876712 .951432-.871731C1.150685-.767123 1.344956-.737235 1.519303-.737235C2.107098-.737235 2.515567-1.085928 2.515567-1.469489C2.515567-1.708593 2.351183-1.882939 2.291407-1.937733ZM1.524284-.901619C1.085928-.901619 .966376-1.190535 .966376-1.469489C.966376-1.743462 1.085928-2.03736 1.519303-2.03736C1.957659-2.03736 2.07721-1.748443 2.07721-1.469489C2.07721-1.195517 1.957659-.901619 1.524284-.901619ZM1.529265 .009963C2.027397 .009963 2.729763 .009963 2.729763 .383562C2.729763 .627646 2.286426 .861768 1.693649 .861768C1.120797 .861768 .657534 .64259 .657534 .37858C.657534 .224159 .83188 .009963 1.205479 .009963H1.529265Z"></path>
+<path id="tz_hipnograma_g0-104" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.579078-2.201743 1.32005-1.863014 1.24533-1.748443V-3.457036L.408468-3.402242V-3.183064C.777086-3.183064 .821918-3.148194 .821918-2.90411V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_hipnograma_g0-105" d="M1.260274-3.068493C1.260274-3.232877 1.125778-3.372354 .956413-3.372354C.801993-3.372354 .652553-3.252802 .652553-3.068493C.652553-2.889166 .801993-2.764633 .956413-2.764633C1.125778-2.764633 1.260274-2.90411 1.260274-3.068493ZM.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743L.433375-2.146949Z"></path>
+<path id="tz_hipnograma_g0-108" d="M1.250311-3.457036L.41345-3.402242V-3.183064C.782067-3.183064 .826899-3.148194 .826899-2.90411V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.622665-.014944 .826899-.019925 1.036115-.019925S1.454545-.014944 1.663761 0V-.219178H1.574097C1.250311-.219178 1.250311-.26401 1.250311-.418431V-3.457036Z"></path>
+<path id="tz_hipnograma_g0-109" d="M4.722291-1.504359C4.722291-2.117061 4.254047-2.201743 3.880448-2.201743C3.392279-2.201743 3.108344-1.957659 2.968867-1.738481C2.844334-2.196762 2.336239-2.201743 2.15193-2.201743C1.638854-2.201743 1.349938-1.927771 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.838107 1.77335-2.03736 2.097136-2.03736C2.460772-2.03736 2.550436-1.833126 2.550436-1.50934V-.418431C2.550436-.26401 2.550436-.219178 2.22665-.219178H2.136986V0C2.351183-.014944 2.560399-.019925 2.774595-.019925C2.983811-.019925 3.198007-.014944 3.407223 0V-.219178H3.317559C2.993773-.219178 2.993773-.26401 2.993773-.418431V-1.285181C2.993773-1.838107 3.501868-2.03736 3.825654-2.03736C4.18929-2.03736 4.278954-1.833126 4.278954-1.50934V-.418431C4.278954-.26401 4.278954-.219178 3.955168-.219178H3.865504V0C4.079701-.014944 4.288917-.019925 4.503113-.019925C4.712329-.019925 4.926526-.014944 5.135741 0V-.219178H5.046077C4.722291-.219178 4.722291-.26401 4.722291-.418431V-1.504359Z"></path>
+<path id="tz_hipnograma_g0-110" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.618929-2.201743 1.339975-1.907846 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_hipnograma_g0-111" d="M3.063512-1.061021C3.063512-1.683686 2.475716-2.231631 1.693649-2.231631S.323786-1.683686 .323786-1.061021C.323786-.463263 .916563 .054795 1.693649 .054795C2.475716 .054795 3.063512-.463263 3.063512-1.061021ZM1.693649-.124533C.821918-.124533 .821918-.86675 .821918-1.110834C.821918-1.334994 .821918-2.067248 1.693649-2.067248S2.56538-1.334994 2.56538-1.110834C2.56538-.86675 2.56538-.124533 1.693649-.124533Z"></path>
+<path id="tz_hipnograma_g0-112" d="M1.648817 .747198H1.559153C1.235367 .747198 1.235367 .702366 1.235367 .547945V-.229141C1.449564-.039851 1.718555 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.824408-2.201743 2.087173-2.201743C1.693649-2.201743 1.384807-2.062267 1.215442-1.917808V-2.201743L.37858-2.146949V-1.927771C.737235-1.927771 .79203-1.927771 .79203-1.713574V.547945C.79203 .702366 .79203 .747198 .468244 .747198H.37858V.966376C.592777 .951432 .801993 .946451 1.016189 .946451C1.225405 .946451 1.439601 .951432 1.648817 .966376V.747198ZM1.235367-1.653798C1.449564-1.957659 1.828144-2.022416 2.027397-2.022416C2.520548-2.022416 2.874222-1.579078 2.874222-1.075965C2.874222-.533001 2.460772-.109589 1.967621-.109589C1.743462-.109589 1.479452-.204234 1.305106-.428394C1.235367-.513076 1.235367-.523039 1.235367-.617684V-1.653798Z"></path>
+<path id="tz_hipnograma_g0-114" d="M1.215442-1.115816C1.215442-1.579078 1.479452-2.027397 1.952677-2.03736C1.947696-2.032379 1.882939-1.967621 1.882939-1.858032C1.882939-1.678705 2.022416-1.603985 2.132005-1.603985C2.256538-1.603985 2.386052-1.688667 2.386052-1.858032C2.386052-2.047323 2.206725-2.201743 1.942715-2.201743C1.693649-2.201743 1.374844-2.072229 1.180573-1.653798H1.175592V-2.201743L.37858-2.146949V-1.927771C.747198-1.927771 .79203-1.892902 .79203-1.648817V-.418431C.79203-.26401 .79203-.219178 .468244-.219178H.37858V0C.587796-.014944 .811955-.019925 1.021171-.019925C1.280199-.019925 1.524284-.009963 1.733499 0V-.219178H1.599004C1.215442-.219178 1.215442-.268991 1.215442-.423412V-1.115816Z"></path>
+<path id="tz_hipnograma_g0-115" d="M2.22665-2.092154C2.22665-2.176837 2.22665-2.231631 2.146949-2.231631C2.122042-2.231631 2.102117-2.22665 2.062267-2.196762C2.042341-2.176837 1.952677-2.097136 1.932752-2.097136C1.927771-2.097136 1.917808-2.097136 1.88792-2.117061C1.77335-2.181818 1.589041-2.231631 1.339975-2.231631C.518057-2.231631 .348692-1.853051 .348692-1.62391C.348692-1.155666 .926526-1.066002 1.384807-.996264C1.673724-.951432 2.132005-.881694 2.132005-.542964C2.132005-.368618 1.987547-.109589 1.384807-.109589C1.046077-.109589 .71731-.234122 .56787-.762142C.542964-.851806 .537983-.86675 .4533-.86675C.348692-.86675 .348692-.826899 .348692-.722291V-.084682C.348692 0 .348692 .054795 .428394 .054795C.468244 .054795 .473225 .049813 .56787-.044832L.697385-.169365C.946451 .049813 1.260274 .054795 1.384807 .054795C2.216687 .054795 2.381071-.37858 2.381071-.627646C2.381071-.851806 2.256538-1.016189 2.067248-1.135741C1.867995-1.260274 1.718555-1.280199 1.300125-1.344956C.98132-1.39477 .597758-1.454545 .597758-1.718555C.597758-1.892902 .79203-2.082192 1.334994-2.082192C1.748443-2.082192 1.987547-1.917808 2.017435-1.574097C2.022416-1.499377 2.027397-1.469489 2.122042-1.469489C2.22665-1.469489 2.22665-1.504359 2.22665-1.608966V-2.092154Z"></path>
+</defs>
+<g id="tz_hipnograma_page1">
+<g stroke-miterlimit="10" transform="translate(-41.484296,57.992732)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<path d="M0 0H234.02393" fill="none"></path>
+<g transform="translate(231.54964,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(241.88261,-1.7361)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-104"></use>
+<use x="-37.748244" y="57.992732" href="#tz_hipnograma_g0-111"></use>
+<use x="-34.358123" y="57.992732" href="#tz_hipnograma_g0-114"></use>
+<use x="-31.659869" y="57.992732" href="#tz_hipnograma_g0-97"></use>
+<use x="-28.269748" y="57.992732" href="#tz_hipnograma_g0-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M0 0V121.63623" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,0.0,119.16194)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+<g transform="translate(-23.29716,119.67502)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-86"></use>
+<use x="-36.599749" y="57.992732" href="#tz_hipnograma_g0-105"></use>
+<use x="-34.593357" y="57.992732" href="#tz_hipnograma_g0-103"></use>
+<use x="-31.895099" y="57.992732" href="#tz_hipnograma_g0-19"></use>
+<use x="-31.203234" y="57.992732" href="#tz_hipnograma_g0-16"></use>
+<use x="-29.196841" y="57.992732" href="#tz_hipnograma_g0-108"></use>
+<use x="-27.190448" y="57.992732" href="#tz_hipnograma_g0-105"></use>
+<use x="-25.184055" y="57.992732" href="#tz_hipnograma_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d3d6d8" stroke="#d3d6d8">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 120.92502H229.32942" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-18.82487,95.04062)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-82"></use>
+<use x="-36.655098" y="57.992732" href="#tz_hipnograma_g0-69"></use>
+<use x="-32.171836" y="57.992732" href="#tz_hipnograma_g0-77"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d3d6d8" stroke="#d3d6d8">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 96.74002H229.32942" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-11.83867,70.8556)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-78"></use>
+<use x="-36.599749" y="57.992732" href="#tz_hipnograma_g0-49"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d3d6d8" stroke="#d3d6d8">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 72.55501H229.32942" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-11.83867,46.67061)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-78"></use>
+<use x="-36.599749" y="57.992732" href="#tz_hipnograma_g0-50"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d3d6d8" stroke="#d3d6d8">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 48.37001H229.32942" fill="none"></path>
+</g>
+</g>
+<g transform="translate(-11.83867,22.4856)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-78"></use>
+<use x="-36.599749" y="57.992732" href="#tz_hipnograma_g0-51"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#d3d6d8" stroke="#d3d6d8">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 24.185H229.32942" fill="none"></path>
+</g>
+</g>
+<g transform="translate(42.40042,-6.75517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-49"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(86.50226,-6.75517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-50"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(130.6041,-6.75517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-51"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(174.70593,-6.75517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-52"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(218.80777,-6.75517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-53"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M0 120.92502H6.61499V72.55501H13.23067V48.37001H24.25613V24.185H44.10184V48.37001H52.92206V96.74002H63.94751V48.37001H74.97298V24.185H90.40889V48.37001H99.22911V96.74002H119.07481V48.37001H130.10028V24.185H138.9205V48.37001H147.74142V96.74002H174.20212V48.37001H185.22758V96.74002H220.50919V120.92502" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M52.92206 96.74002H63.94751" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M99.22911 96.74002H119.07481" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M147.74142 96.74002H174.20212" fill="none"></path>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<path d="M185.22758 96.74002H220.50919" fill="none"></path>
+</g>
+</g>
+<g transform="translate(184.35452,103.95491)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-82"></use>
+<use x="-36.655098" y="57.992732" href="#tz_hipnograma_g0-69"></use>
+<use x="-32.171836" y="57.992732" href="#tz_hipnograma_g0-77"></use>
+<use x="-23.897173" y="57.992732" href="#tz_hipnograma_g0-97"></use>
+<use x="-20.507052" y="57.992732" href="#tz_hipnograma_g0-108"></use>
+<use x="-18.500659" y="57.992732" href="#tz_hipnograma_g0-111"></use>
+<use x="-15.110538" y="57.992732" href="#tz_hipnograma_g0-110"></use>
+<use x="-11.374487" y="57.992732" href="#tz_hipnograma_g0-103"></use>
+<use x="-7.984366" y="57.992732" href="#tz_hipnograma_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(4.63528,13.26114)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-41.484296,57.992732)scale(-1,-1)">
+<g fill="#1f5b0c">
+<g stroke="none">
+<g fill="#205b0c">
+<use x="-41.484296" y="57.992732" href="#tz_hipnograma_g0-78"></use>
+<use x="-36.599749" y="57.992732" href="#tz_hipnograma_g0-51"></use>
+<use x="-30.857305" y="57.992732" href="#tz_hipnograma_g0-112"></use>
+<use x="-27.121253" y="57.992732" href="#tz_hipnograma_g0-114"></use>
+<use x="-24.422998" y="57.992732" href="#tz_hipnograma_g0-101"></use>
+<use x="-21.378813" y="57.992732" href="#tz_hipnograma_g0-100"></use>
+<use x="-17.642761" y="57.992732" href="#tz_hipnograma_g0-111"></use>
+<use x="-14.25264" y="57.992732" href="#tz_hipnograma_g0-109"></use>
+<use x="-8.786929" y="57.992732" href="#tz_hipnograma_g0-105"></use>
+<use x="-6.780537" y="57.992732" href="#tz_hipnograma_g0-110"></use>
+<use x="-3.044485" y="57.992732" href="#tz_hipnograma_g0-97"></use>
+<use x="2.69796" y="57.992732" href="#tz_hipnograma_g0-110"></use>
+<use x="6.434012" y="57.992732" href="#tz_hipnograma_g0-111"></use>
+<use x="12.176457" y="57.992732" href="#tz_hipnograma_g0-105"></use>
+<use x="14.18285" y="57.992732" href="#tz_hipnograma_g0-110"></use>
+<use x="17.227038" y="57.992732" href="#tz_hipnograma_g0-19"></use>
+<use x="17.918903" y="57.992732" href="#tz_hipnograma_g0-16"></use>
+<use x="19.925296" y="57.992732" href="#tz_hipnograma_g0-99"></use>
+<use x="22.969482" y="57.992732" href="#tz_hipnograma_g0-105"></use>
+<use x="24.975875" y="57.992732" href="#tz_hipnograma_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hipnograma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;36.1: Hipnograma esquemático de uma noite. O sono desce rápido ao N3 profundo no início; ao longo da noite, o N3 rareia e os episódios de REM (vermelho) se alongam, sendo o último — perto do despertar — o mais longo. Um ciclo completo dura cerca de 90 minutos.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="para-que-serve-dormir" class="level2">
+<h2 class="anchored" data-anchor-id="para-que-serve-dormir">Para que serve dormir?</h2>
+<p>Nenhuma teoria única esgota as funções do sono; provavelmente ele serve a várias ao mesmo tempo. Três linhas de evidência se destacam.</p>
+<p>A primeira é a <strong>consolidação da memória</strong>. Dormir depois de aprender melhora a retenção de forma mensurável, e não por mera passagem do tempo: o sono <em>reprocessa</em> ativamente o que foi aprendido <span class="citation" data-cites="diekelmann_born2010 rasch_born2013">(<a href="../../referencias.html#ref-diekelmann_born2010" role="doc-biblioref">Diekelmann; Born, 2010</a>; <a href="../../referencias.html#ref-rasch_born2013" role="doc-biblioref">Rasch; Born, 2013</a>)</span>. Durante o sono de ondas lentas, o hipocampo parece “reproduzir” (<em>replay</em>) os padrões de atividade do aprendizado recente, transferindo-os gradualmente para o córtex — um mecanismo que retomaremos ao estudar a memória (Vol 8). O sono profundo favorece a memória declarativa (fatos), e o REM parece contribuir para memórias procedimentais e emocionais. Robert Stickgold e Matthew Walker documentaram ganhos de desempenho em tarefas motoras e perceptuais <em>após</em> uma noite de sono, ausentes num intervalo igual de vigília <span class="citation" data-cites="walker2017">(<a href="../../referencias.html#ref-walker2017" role="doc-biblioref">Walker, 2017</a>)</span>.</p>
+<p>A segunda é a <strong>restauração e a limpeza metabólica</strong>. O sono está ligado à reparação tecidual e ao equilíbrio energético, mas uma descoberta recente acrescentou um mecanismo notável: durante o sono, o espaço entre as células do cérebro se expande e o fluxo de líquido cefalorraquidiano aumenta, arrastando resíduos metabólicos — inclusive proteínas ligadas a doenças neurodegenerativas — num sistema apelidado de <strong>glinfático</strong> <span class="citation" data-cites="xie2013">(<a href="../../referencias.html#ref-xie2013" role="doc-biblioref"><span class="nocase">Xie et al.</span>, 2013</a>)</span>. Dormir, nessa visão, é em parte uma faxina que só pode ocorrer com o “escritório” fechado. A terceira linha, evolutiva, nota que o sono também <strong>conserva energia</strong> e mantém o animal seguro e inativo nas horas de maior risco — o que ajuda a explicar por que espécies diferentes dormem quantidades tão variadas.</p>
+</section>
+<section id="quando-o-sono-falta-ou-falha" class="level2">
+<h2 class="anchored" data-anchor-id="quando-o-sono-falta-ou-falha">Quando o sono falta ou falha</h2>
+<p>A <strong>privação de sono</strong> — aguda ou crônica — degrada quase tudo o que a mente faz. Poucas noites mal dormidas já pioram a atenção sustentada (com “microssonos” involuntários), a memória de trabalho, o humor, o autocontrole e o tempo de reação; dirigir sonolento rivaliza com dirigir alcoolizado em risco de acidente. A curto prazo, a privação eleva a irritabilidade e a reatividade emocional (a amígdala fica mais reativa e menos regulada pelo córtex pré-frontal). A longo prazo, o sono insuficiente crônico associa-se a maior risco de obesidade, diabetes, hipertensão, imunidade reduzida e transtornos de humor — sublinhando que o sono é um pilar da saúde, não um tempo “perdido”.</p>
+<p>Entre os <strong>transtornos do sono</strong>, os mais comuns e importantes incluem: a <strong>insônia</strong> (dificuldade crônica de iniciar ou manter o sono, com prejuízo diurno); a <strong>apneia obstrutiva do sono</strong> (colapsos repetidos das vias aéreas que fragmentam o sono e reduzem a oxigenação, muitas vezes sem que a pessoa perceba, deixando sonolência diurna e riscos cardiovasculares); a <strong>narcolepsia</strong> (sonolência diurna irresistível e intrusões de fenômenos do REM na vigília, como a <strong>cataplexia</strong> — perda súbita do tônus muscular desencadeada por emoção —, ligada à perda de neurônios de orexina/hipocretina); e as <strong>parassonias</strong>, comportamentos anormais durante o sono, como o sonambulismo e os terrores noturnos (que surgem no N3 profundo) ou o transtorno comportamental do REM (em que falha a atonia protetora e a pessoa “encena” os sonhos).</p>
+<div class="na-pratica">
+<p><strong>Higiene do sono: o que a ciência recomenda.</strong> Boa parte das dificuldades comuns com o sono responde a hábitos, sem necessidade de medicação. As recomendações apoiadas em evidência decorrem diretamente do que vimos: (1) <strong>horários regulares</strong> de deitar e levantar, inclusive nos fins de semana, ancoram o processo circadiano (C); (2) <strong>luz natural pela manhã</strong> e <strong>penumbra à noite</strong> — evitando telas brilhantes na última hora — mantêm o relógio e a melatonina alinhados; (3) <strong>evitar cafeína à tarde/noite</strong> impede que ela bloqueie a pressão de sono (processo S) na hora errada; (4) o álcool, embora pareça relaxar, <strong>fragmenta o sono e suprime o REM</strong>; (5) manter o quarto <strong>escuro, silencioso e fresco</strong> e reservá-lo ao sono fortalece a associação cama–dormir. Para a insônia crônica, a <strong>terapia cognitivo-comportamental para insônia (TCC-I)</strong> é hoje o tratamento de primeira linha, mais eficaz a longo prazo do que hipnóticos.</p>
+</div>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>O <strong>ritmo circadiano</strong> é um ciclo endógeno de ~24 h, regido pelo <strong>núcleo supraquiasmático</strong> e sincronizado por <em>zeitgebers</em>, sobretudo a <strong>luz</strong>, que controla a <strong>melatonina</strong>. O sono resulta da interação do processo <strong>circadiano (C)</strong> com a <strong>pressão homeostática (S)</strong>.</li>
+<li>Aserinsky e Kleitman descobriram o <strong>sono REM</strong>, associado a sonhos vívidos. O sono alterna <strong>NREM</strong> (N1, N2 com fusos, N3 de ondas lentas) e <strong>REM</strong> (paradoxal: cérebro ativo, corpo em atonia).</li>
+<li>Uma noite compõe-se de <strong>ciclos de ~90 min</strong>: o <strong>N3</strong> predomina no início; o <strong>REM</strong> se alonga em direção ao amanhecer (ver o hipnograma).</li>
+<li>O sono serve, entre outras funções, à <strong>consolidação da memória</strong> (replay hipocampal), à <strong>restauração</strong> e à <strong>limpeza glinfática</strong> de resíduos metabólicos.</li>
+<li>A <strong>privação de sono</strong> degrada atenção, memória, humor e autocontrole, e o déficit crônico eleva riscos de saúde. Transtornos importantes: <strong>insônia</strong>, <strong>apneia</strong>, <strong>narcolepsia</strong> e <strong>parassonias</strong>. A <strong>TCC-I</strong> é a primeira linha para insônia.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Ritmo circadiano</strong></dt>
+<dd>
+Ciclo biológico endógeno de aproximadamente 24 horas que organiza sono, temperatura e hormônios.
+</dd>
+<dt><strong>Núcleo supraquiasmático (NSQ)</strong></dt>
+<dd>
+Marca-passo circadiano do hipotálamo, sincronizado pela luz via retina <span class="citation" data-cites="ralph1990">(<a href="../../referencias.html#ref-ralph1990" role="doc-biblioref">Ralph et al., 1990</a>)</span>.
+</dd>
+<dt><strong>Zeitgeber</strong></dt>
+<dd>
+Sinal ambiental que ajusta o relógio interno ao tempo externo; a luz é o principal.
+</dd>
+<dt><strong>Melatonina</strong></dt>
+<dd>
+Hormônio secretado pela pineal no escuro, que sinaliza a noite e favorece o sono.
+</dd>
+<dt><strong>Processos C e S</strong></dt>
+<dd>
+No modelo de Borbély, o impulso circadiano (C) e a pressão homeostática de sono (S), cuja soma determina a propensão ao sono <span class="citation" data-cites="borbely1982">(<a href="../../referencias.html#ref-borbely1982" role="doc-biblioref">Borbély, 1982</a>)</span>.
+</dd>
+<dt><strong>Sono NREM / REM</strong></dt>
+<dd>
+NREM: estágios N1–N3 de profundidade crescente (N3 = ondas lentas). REM: sono paradoxal, com EEG ativo, sonhos vívidos e atonia muscular <span class="citation" data-cites="aserinsky_kleitman1953">(<a href="../../referencias.html#ref-aserinsky_kleitman1953" role="doc-biblioref">Aserinsky; Kleitman, 1953</a>)</span>.
+</dd>
+<dt><strong>Hipnograma</strong></dt>
+<dd>
+Gráfico dos estágios do sono ao longo da noite, mostrando os ciclos de ~90 min.
+</dd>
+<dt><strong>Sistema glinfático</strong></dt>
+<dd>
+Fluxo aumentado de líquido no cérebro durante o sono, que remove resíduos metabólicos <span class="citation" data-cites="xie2013">(<a href="../../referencias.html#ref-xie2013" role="doc-biblioref"><span class="nocase">Xie et al.</span>, 2013</a>)</span>.
+</dd>
+<dt><strong>Consolidação da memória</strong></dt>
+<dd>
+Estabilização e reprocessamento de memórias durante o sono, com <em>replay</em> dos padrões do aprendizado <span class="citation" data-cites="diekelmann_born2010">(<a href="../../referencias.html#ref-diekelmann_born2010" role="doc-biblioref">Diekelmann; Born, 2010</a>)</span>.
+</dd>
+<dt><strong>Apneia / narcolepsia / parassonias</strong></dt>
+<dd>
+Principais transtornos do sono: obstrução respiratória; sonolência com intrusões de REM (cataplexia); e comportamentos anormais durante o sono.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> O que é um <em>zeitgeber</em>? Explique o papel da luz, do NSQ e da melatonina na sincronização do ritmo circadiano.</p></li>
+<li><p><strong>(Recuperação.)</strong> Descreva os estágios do sono e o que distingue o REM (“paradoxal”) do sono de ondas lentas (N3).</p></li>
+<li><p><strong>(Aplicação.)</strong> Usando o modelo de dois processos (C e S), explique por que virar a noite estudando e depois sentir um “segundo fôlego” pela manhã não significa que você está descansado.</p></li>
+<li><p><strong>(Interpretação.)</strong> Observando o hipnograma (<a href="#fig-hipnograma" class="quarto-xref">Figura&nbsp;<span>36.1</span></a>), explique por que quem corta as últimas horas de sono perde sobretudo REM, e que consequência isso pode ter.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> “Dormir é tempo perdido; quem dorme menos, produz mais.” Avalie essa ideia à luz das funções do sono e dos efeitos da privação.</p></li>
+<li><p><strong>(Aplicação.)</strong> Um colega dorme mal há meses. Que recomendações de higiene do sono, e por quê, você sugeriria — e por que a TCC-I é preferível a depender de hipnóticos a longo prazo?</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-aserinsky_kleitman1953" class="csl-entry" role="listitem">
+ASERINSKY, Eugene; KLEITMAN, Nathaniel. <a href="https://doi.org/10.1126/science.118.3062.273">Regularly occurring periods of eye motility, and concomitant phenomena, during sleep</a>. <strong>Science</strong>, v. 118, n. 3062, p. 273–274, 1953.
+</div>
+<div id="ref-borbely1982" class="csl-entry" role="listitem">
+BORBÉLY, Alexander A. A two process model of sleep regulation. <strong>Human Neurobiology</strong>, v. 1, n. 3, p. 195–204, 1982.
+</div>
+<div id="ref-czeisler1999" class="csl-entry" role="listitem">
+<span class="nocase">CZEISLER, Charles A. <em>et al.</em></span> <a href="https://doi.org/10.1126/science.284.5423.2177">Stability, precision, and near-24-hour period of the human circadian pacemaker</a>. <strong>Science</strong>, v. 284, n. 5423, p. 2177–2181, 1999.
+</div>
+<div id="ref-dement_kleitman1957" class="csl-entry" role="listitem">
+DEMENT, William; KLEITMAN, Nathaniel. <a href="https://doi.org/10.1037/h0048189">The relation of eye movements during sleep to dream activity</a>. <strong>Journal of Experimental Psychology</strong>, v. 53, n. 5, p. 339–346, 1957.
+</div>
+<div id="ref-diekelmann_born2010" class="csl-entry" role="listitem">
+DIEKELMANN, Susanne; BORN, Jan. <a href="https://doi.org/10.1038/nrn2762">The memory function of sleep</a>. <strong>Nature Reviews Neuroscience</strong>, v. 11, n. 2, p. 114–126, 2010.
+</div>
+<div id="ref-ralph1990" class="csl-entry" role="listitem">
+RALPH, Martin R. <em>et al.</em> <a href="https://doi.org/10.1126/science.2305266">Transplanted suprachiasmatic nucleus determines circadian period</a>. <strong>Science</strong>, v. 247, n. 4945, p. 975–978, 1990.
+</div>
+<div id="ref-rasch_born2013" class="csl-entry" role="listitem">
+RASCH, Björn; BORN, Jan. <a href="https://doi.org/10.1152/physrev.00032.2012">About sleep’s role in memory</a>. <strong>Physiological Reviews</strong>, v. 93, n. 2, p. 681–766, 2013.
+</div>
+<div id="ref-walker2017" class="csl-entry" role="listitem">
+WALKER, Matthew. <strong>Why We Sleep: Unlocking the Power of Sleep and Dreams</strong>. New York: Scribner, 2017.
+</div>
+<div id="ref-xie2013" class="csl-entry" role="listitem">
+<span class="nocase">XIE, Lulu <em>et al.</em></span> <a href="https://doi.org/10.1126/science.1241224">Sleep drives metabolite clearance from the adult brain</a>. <strong>Science</strong>, v. 342, n. 6156, p. 373–377, 2013.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1631,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol06-consciencia/cap-36-sono-ritmos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

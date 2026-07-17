@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-rato-que-tinha-um-mapa-tolman" id="toc-o-rato-que-tinha-um-mapa-tolman" class="nav-link active" data-scroll-target="#o-rato-que-tinha-um-mapa-tolman">O rato que tinha um mapa: Tolman</a></li>
+  <li><a href="#o-macaco-que-teve-uma-ideia-köhler-e-o-insight" id="toc-o-macaco-que-teve-uma-ideia-köhler-e-o-insight" class="nav-link" data-scroll-target="#o-macaco-que-teve-uma-ideia-köhler-e-o-insight">O macaco que teve uma ideia: Köhler e o insight</a></li>
+  <li><a href="#quando-aprendemos-que-nada-adianta-desamparo" id="toc-quando-aprendemos-que-nada-adianta-desamparo" class="nav-link" data-scroll-target="#quando-aprendemos-que-nada-adianta-desamparo">Quando aprendemos que nada adianta: desamparo</a></li>
+  <li><a href="#o-motivo-por-dentro-intrínseco-e-extrínseco" id="toc-o-motivo-por-dentro-intrínseco-e-extrínseco" class="nav-link" data-scroll-target="#o-motivo-por-dentro-intrínseco-e-extrínseco">O motivo por dentro: intrínseco e extrínseco</a></li>
+  <li><a href="#o-que-a-ciência-da-aprendizagem-diz-sobre-estudar" id="toc-o-que-a-ciência-da-aprendizagem-diz-sobre-estudar" class="nav-link" data-scroll-target="#o-que-a-ciência-da-aprendizagem-diz-sobre-estudar">O que a ciência da aprendizagem diz sobre estudar</a></li>
+  <li><a href="#fechando-o-volume" id="toc-fechando-o-volume" class="nav-link" data-scroll-target="#fechando-o-volume">Fechando o volume</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +747,147 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Explicar</strong> por que a aprendizagem latente e os mapas cognitivos de Tolman desafiaram o behaviorismo radical.</li>
+<li><strong>Descrever</strong> a aprendizagem por insight de Köhler e o que ela sugere sobre reestruturação cognitiva.</li>
+<li><strong>Definir</strong> desamparo aprendido e ligar o conceito à explicação da depressão e ao estilo atribucional.</li>
+<li><strong>Distinguir</strong> motivação intrínseca de extrínseca e explicar o efeito de supercompensação (o custo de recompensar o que já é prazeroso).</li>
+<li><strong>Aplicar</strong> princípios da ciência da aprendizagem — prática distribuída, efeito de teste, dificuldades desejáveis — para estudar melhor.</li>
+<li><strong>Sintetizar</strong> as contribuições e os limites das abordagens comportamental e cognitiva da aprendizagem.</li>
+</ul>
 </div>
+<p>Os capítulos anteriores mostraram, cada um a seu modo, que a “caixa-preta” behaviorista não se sustentava: já em Rescorla o organismo <em>previa</em>; em Tolman e Bandura, ele <em>representava</em> e <em>decidia</em>. Este capítulo encerra o volume abrindo por completo a caixa. A tese central é que, entre o estímulo e a resposta, entre o comportamento e a consequência, existe um <strong>organismo que pensa</strong> — que forma expectativas, constrói representações internas do mundo, tem insights e é movido por motivos que nem sempre se reduzem a recompensas externas. Não se trata de negar o condicionamento, mas de reconhecer que ele opera <em>através</em> de uma mente. Ao final, traduzimos essa ciência da aprendizagem em conselhos práticos de estudo — pois entender como se aprende deveria mudar como aprendemos.</p>
+<section id="o-rato-que-tinha-um-mapa-tolman" class="level2">
+<h2 class="anchored" data-anchor-id="o-rato-que-tinha-um-mapa-tolman">O rato que tinha um mapa: Tolman</h2>
+<p>O golpe mais elegante contra o behaviorismo radical veio de dentro do próprio laboratório de labirintos, das mãos de <strong>Edward Tolman</strong>. Se a aprendizagem fosse só o fortalecimento de respostas por reforço, então sem reforço não deveria haver aprendizagem. Tolman mostrou que não é assim.</p>
+<div class="experimento">
+<p>🔬 <strong>Aprendizagem latente (Tolman e Honzik, 1930).</strong> Três grupos de ratos percorreram um labirinto complexo por vários dias. O grupo 1 encontrava <strong>comida</strong> ao chegar ao fim (reforço a cada tentativa) e, como esperado, reduzia rápido seus erros. O grupo 2 <strong>nunca</strong> era recompensado e melhorava pouco. O grupo 3 era o crucial: passava os primeiros dez dias <strong>sem</strong> recompensa (como o grupo 2), mas a partir do 11º dia passava a encontrar comida. Se a aprendizagem dependesse do reforço, esse grupo deveria começar então a aprender lentamente, do zero. Não foi o que ocorreu: no dia <em>seguinte</em> à introdução da recompensa, o grupo 3 despencou para o nível de erros do grupo 1 — como se soubesse o labirinto o tempo todo <span class="citation" data-cites="tolman_honzik1930">(<a href="../../referencias.html#ref-tolman_honzik1930" role="doc-biblioref">Tolman; Honzik, 1930</a>)</span>. A conclusão de Tolman: durante os dez dias “sem aprender”, os ratos haviam de fato aprendido o traçado — uma <strong>aprendizagem latente</strong>, adquirida sem reforço e sem manifestação comportamental, que só se <em>expressou</em> quando surgiu um motivo para tal.</p>
+</div>
+<p>A aprendizagem latente reforça a lição do Cap. 41 (aprender ≠ executar) e acrescenta a peça teórica de Tolman: o rato constrói um <strong>mapa cognitivo</strong>, uma representação interna do layout espacial do ambiente, e não apenas uma cadeia de respostas motoras encadeadas <span class="citation" data-cites="tolman1948">(<a href="../../referencias.html#ref-tolman1948" role="doc-biblioref">Tolman, 1948</a>)</span>. A prova disso vem dos experimentos de atalho: bloqueado o caminho habitual, o rato escolhe, entre rotas novas, aquela que aponta <em>na direção</em> do objetivo — algo impossível se ele tivesse aprendido só “vire à esquerda, depois à direita”. Ele tem um mapa, não um roteiro. Décadas depois, a neurociência daria substrato a Tolman: o hipocampo contém <strong>células de lugar</strong> que disparam em pontos específicos do espaço, um mapa cognitivo literalmente inscrito no cérebro (tema que reencontraremos na memória, Cap. 43).</p>
+</section>
+<section id="o-macaco-que-teve-uma-ideia-köhler-e-o-insight" class="level2">
+<h2 class="anchored" data-anchor-id="o-macaco-que-teve-uma-ideia-köhler-e-o-insight">O macaco que teve uma ideia: Köhler e o insight</h2>
+<p>Se Tolman atacou o reforço, <strong>Wolfgang Köhler</strong>, da tradição da Gestalt (Cap. 9), atacou o <em>gradualismo</em> — a ideia de Thorndike de que toda aprendizagem é lenta, por tentativa e erro. Estudando chimpanzés durante a Primeira Guerra, Köhler apresentou-lhes problemas cuja solução exigia combinar meios: uma banana pendurada alto demais para o alcance, com caixotes espalhados pela jaula, ou fora das grades, com dois bastões encaixáveis por perto. Os chimpanzés não convergiam para a solução por aproximações graduais. Passavam um tempo aparentemente parados, “estudando” a situação — e então, subitamente, agiam de forma <strong>certeira e completa</strong>: empilhavam os caixotes, ou encaixavam os bastões para formar uma vara mais longa, resolvendo o problema de uma vez <span class="citation" data-cites="kohler1917">(<a href="../../referencias.html#ref-kohler1917" role="doc-biblioref">Köhler, 1917</a>)</span>. Köhler chamou isso de <strong>insight</strong>: uma reestruturação súbita da percepção do problema, um “clique” em que os elementos se reorganizam numa configuração que revela a solução. Uma vez alcançado, o insight transfere-se de imediato a problemas análogos — diferentemente do que se esperaria de uma resposta lentamente reforçada. O insight sugere que ao menos parte da aprendizagem envolve <strong>manipular representações internas</strong> do problema, não apenas emitir e reforçar respostas.</p>
+</section>
+<section id="quando-aprendemos-que-nada-adianta-desamparo" class="level2">
+<h2 class="anchored" data-anchor-id="quando-aprendemos-que-nada-adianta-desamparo">Quando aprendemos que nada adianta: desamparo</h2>
+<p>Nem toda aprendizagem cognitiva é benigna. Uma das mais consequentes é aprender que <strong>nossos atos não têm efeito</strong> — e desistir de agir.</p>
+<div class="experimento">
+<p>🔬 <strong>Desamparo aprendido (Seligman e Maier, 1967).</strong> Cães foram expostos a choques. Um grupo podia interrompê-los executando uma resposta; outro recebia exatamente os mesmos choques, mas de forma <strong>incontrolável</strong> — nada que fizesse os fazia cessar. Numa segunda fase, todos foram postos numa caixa de onde bastava saltar uma barreira baixa para escapar do choque. Os cães do primeiro grupo aprendiam a saltar depressa. Os que haviam sofrido choques <em>incontroláveis</em>, porém, em grande parte <strong>nem tentavam</strong>: ficavam passivos, suportando o choque que agora era perfeitamente evitável <span class="citation" data-cites="seligman_maier1967">(<a href="../../referencias.html#ref-seligman_maier1967" role="doc-biblioref">Seligman; Maier, 1967</a>)</span>. Haviam aprendido, na fase anterior, que suas respostas eram <strong>irrelevantes</strong> — e transferiam essa expectativa de impotência para a nova situação. Seligman chamou o fenômeno de <strong>desamparo aprendido</strong>.</p>
+</div>
+<p>O desamparo aprendido tornou-se um influente <strong>modelo da depressão</strong>: a exposição a eventos incontroláveis pode gerar passividade, desânimo e a crença generalizada de que agir não adianta. Refinamentos posteriores (que discutiremos no Cap. 79) enfatizaram o <strong>estilo atribucional</strong>: não é só a incontrolabilidade objetiva, mas <em>como</em> a pessoa a explica — atribuir os fracassos a causas internas (“a culpa é minha”), estáveis (“será sempre assim”) e globais (“estraga tudo na minha vida”) é o padrão que mais predispõe ao desamparo e à depressão. Note-se que, anos depois, o próprio Seligman inverteria o sinal do programa, ajudando a fundar a <strong>psicologia positiva</strong> (Cap. 100) e o estudo do <em>otimismo aprendido</em> — a impotência aprendida tem uma contrapartida na esperança que também se aprende.</p>
+</section>
+<section id="o-motivo-por-dentro-intrínseco-e-extrínseco" class="level2">
+<h2 class="anchored" data-anchor-id="o-motivo-por-dentro-intrínseco-e-extrínseco">O motivo por dentro: intrínseco e extrínseco</h2>
+<p>Toda a tradição do reforço supõe que o comportamento é movido por consequências <strong>externas</strong>. Mas muito do que fazemos — brincar, ler por prazer, explorar, criar — parece movido de dentro, pela própria atividade. A <strong>motivação intrínseca</strong> é fazer algo por ser inerentemente interessante ou satisfatório; a <strong>motivação extrínseca</strong>, fazê-lo por uma recompensa ou pressão externa (nota, dinheiro, evitar punição). A distinção teria pouca graça se as duas apenas se somassem. O achado surpreendente é que, às vezes, elas se <strong>subtraem</strong>.</p>
+<div class="atencao">
+<p><strong>O custo oculto da recompensa (efeito de supercompensação).</strong> Uma intuição difundida — e a base de muitos sistemas de incentivo — é que recompensar um comportamento sempre o fortalece. Experimentos de motivação mostram que nem sempre. Quando se passa a <strong>recompensar externamente</strong> uma atividade que a pessoa já fazia por prazer, a motivação <em>intrínseca</em> pode <strong>diminuir</strong>: retirada a recompensa, ela faz menos do que antes de ser recompensada. É o <strong>efeito de supercompensação</strong> (<em>overjustification</em>): a recompensa externa “explica demais” a ação, e a pessoa passa a atribuí-la ao prêmio (“faço isto pela recompensa”), erodindo o interesse original. O estudo clássico deu a crianças que gostavam de desenhar uma recompensa prometida por desenhar; depois, elas desenhavam espontaneamente <em>menos</em> do que crianças não recompensadas. A <strong>teoria da autodeterminação</strong> de Deci e Ryan explica o mecanismo: recompensas percebidas como <em>controladoras</em> minam a sensação de <strong>autonomia</strong>, enfraquecendo a motivação intrínseca; recompensas percebidas como <em>informativas</em> (que reconhecem competência) tendem a não fazer esse estrago <span class="citation" data-cites="deci_ryan2000">(<a href="../../referencias.html#ref-deci_ryan2000" role="doc-biblioref">Deci; Ryan, 2000</a>)</span>. A lição prática é fina: incentivos externos são úteis para tarefas enfadonhas ou para dar partida a um hábito, mas usá-los sobre o que já é intrinsecamente gratificante pode sair caro.</p>
+</div>
+</section>
+<section id="o-que-a-ciência-da-aprendizagem-diz-sobre-estudar" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-ciência-da-aprendizagem-diz-sobre-estudar">O que a ciência da aprendizagem diz sobre estudar</h2>
+<p>Encerremos com a aplicação mais imediata deste volume à sua vida: <strong>como aprender melhor</strong>. Há aqui um dos maiores descompassos da educação — o que as pessoas <em>sentem</em> que funciona (e por isso praticam) muitas vezes é o oposto do que os experimentos mostram funcionar.</p>
+<ul>
+<li><strong>Prática distribuída, não amontoada.</strong> Estudar em sessões espaçadas ao longo do tempo produz retenção muito maior do que a mesma quantidade de estudo concentrada de uma vez (a “virada” antes da prova). O amontoamento (<em>cramming</em>) dá bom desempenho <em>imediato</em> — o que o torna enganosamente atraente —, mas péssima retenção a longo prazo. Distribuir o estudo é a recomendação mais robusta de toda a área.</li>
+<li><strong>Efeito de teste (prática de recuperação).</strong> <em>Testar-se</em> — tentar recuperar a informação da memória (com flashcards, questões, explicando sem olhar) — consolida a aprendizagem muito mais do que reler passivamente. Reler cria uma <strong>fluência ilusória</strong>: o texto parece familiar e conclui-se, erradamente, que se sabe. Recuperar ativamente, ainda que custe mais e produza erros, fortalece a memória de modo duradouro. É por isso que estudar <em>não</em> é sobretudo pôr informação <em>para dentro</em>, mas exercitar tirá-la <em>para fora</em>.</li>
+<li><strong>Dificuldades desejáveis.</strong> Os dois pontos acima são casos de um princípio geral: condições de estudo que tornam a aprendizagem <em>mais difícil e lenta no momento</em> — espaçar, testar-se, intercalar tópicos, variar o contexto — costumam produzir aprendizagem <em>mais forte e transferível</em> a longo prazo. Aquilo que parece atrapalhar frequentemente ajuda; aquilo que dá sensação de facilidade (reler, sublinhar, manter tudo agrupado) frequentemente ilude.</li>
+</ul>
+<div class="na-pratica">
+<p><strong>Um protocolo de estudo baseado em evidência.</strong> Traduzindo o acima em prática: (1) <strong>espace</strong> as revisões, retomando o material em intervalos crescentes em vez de tudo de uma vez; (2) <strong>teste-se</strong> com frequência — feche o livro e tente recuperar, use questões e flashcards, explique o conteúdo a si mesmo ou a outra pessoa; (3) <strong>intercale</strong> temas afins em vez de esgotar um antes de passar ao próximo; (4) desconfie da <strong>sensação de facilidade</strong> — se está confortável demais, provavelmente é fluência ilusória, não aprendizagem; (5) apoie-se na <strong>motivação intrínseca</strong> sempre que possível, conectando o que estuda a interesses e objetivos próprios, e reservando incentivos externos para o que ainda não engancha. Cada item deste protocolo é a aplicação direta de um achado deste capítulo.</p>
+</div>
+</section>
+<section id="fechando-o-volume" class="level2">
+<h2 class="anchored" data-anchor-id="fechando-o-volume">Fechando o volume</h2>
+<p>O Vol 7 percorreu a aprendizagem do reflexo ao pensamento. Começamos com a associação entre estímulos (condicionamento clássico, Cap. 39), passamos à associação entre comportamento e consequência (operante, Cap. 40), abrimos espaço para o social ao introduzir a modelação (Cap. 41) e, agora, completamos o arco reconhecendo o organismo cognitivo — que representa, tem insights, aprende a impotência ou a esperança, e é movido por motivos internos além dos externos. O fio condutor é uma reconciliação: o condicionamento é real e poderoso, mas opera <em>dentro</em> de limites biológicos (Garcia, Breland) e <em>através</em> de processos cognitivos (Tolman, Köhler, Bandura). Aprender, no ser humano, é ao mesmo tempo associar e compreender. Esse organismo que representa e recupera informação é, precisamente, o tema do próximo volume: a <strong>memória e a cognição</strong>.</p>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>A <strong>aprendizagem latente</strong> (Tolman e Honzik) mostra que se aprende <strong>sem reforço</strong> e sem manifestação imediata: o reforço afeta o desempenho, não a aquisição. O rato constrói um <strong>mapa cognitivo</strong>, não uma cadeia de respostas.</li>
+<li>A <strong>aprendizagem por insight</strong> (Köhler) revela reestruturação súbita e completa do problema, contra o gradualismo por tentativa e erro; sugere manipulação de representações internas.</li>
+<li>O <strong>desamparo aprendido</strong> (Seligman e Maier) — aprender que os atos não têm efeito — gera passividade e é um modelo influente da <strong>depressão</strong>, refinado pelo <strong>estilo atribucional</strong>.</li>
+<li><strong>Motivação intrínseca</strong> (pela própria atividade) e <strong>extrínseca</strong> (por recompensa externa) podem se subtrair: o <strong>efeito de supercompensação</strong> mostra que recompensar o já prazeroso pode minar o interesse, por corroer a <strong>autonomia</strong> (Deci e Ryan).</li>
+<li>A ciência da aprendizagem recomenda <strong>prática distribuída</strong>, <strong>efeito de teste</strong> (recuperação ativa) e <strong>dificuldades desejáveis</strong> — e alerta contra a <strong>fluência ilusória</strong> de reler.</li>
+<li>O volume reconcilia condicionamento e cognição: aprender é associar <strong>e</strong> compreender, dentro de limites biológicos e através de processos mentais.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Aprendizagem latente</strong></dt>
+<dd>
+Aprendizagem que ocorre sem reforço e sem se manifestar no comportamento, até haver motivo para expressá-la <span class="citation" data-cites="tolman_honzik1930">(<a href="../../referencias.html#ref-tolman_honzik1930" role="doc-biblioref">Tolman; Honzik, 1930</a>)</span>.
+</dd>
+<dt><strong>Mapa cognitivo</strong></dt>
+<dd>
+Representação interna da estrutura (p.&nbsp;ex., espacial) do ambiente, permitindo atalhos e flexibilidade <span class="citation" data-cites="tolman1948">(<a href="../../referencias.html#ref-tolman1948" role="doc-biblioref">Tolman, 1948</a>)</span>.
+</dd>
+<dt><strong>Insight</strong></dt>
+<dd>
+Reestruturação súbita da percepção de um problema que revela a solução de forma completa e transferível <span class="citation" data-cites="kohler1917">(<a href="../../referencias.html#ref-kohler1917" role="doc-biblioref">Köhler, 1917</a>)</span>.
+</dd>
+<dt><strong>Desamparo aprendido</strong></dt>
+<dd>
+Passividade que resulta de aprender que as próprias respostas não controlam os eventos; modelo da depressão <span class="citation" data-cites="seligman_maier1967">(<a href="../../referencias.html#ref-seligman_maier1967" role="doc-biblioref">Seligman; Maier, 1967</a>)</span>.
+</dd>
+<dt><strong>Estilo atribucional</strong></dt>
+<dd>
+Padrão habitual de explicar eventos (interno/estável/global ou não), que modula a vulnerabilidade ao desamparo.
+</dd>
+<dt><strong>Motivação intrínseca / extrínseca</strong></dt>
+<dd>
+Agir pela satisfação inerente à atividade / por recompensa ou pressão externa.
+</dd>
+<dt><strong>Efeito de supercompensação (overjustification)</strong></dt>
+<dd>
+Queda da motivação intrínseca quando se passa a recompensar externamente uma atividade já prazerosa <span class="citation" data-cites="deci_ryan2000">(<a href="../../referencias.html#ref-deci_ryan2000" role="doc-biblioref">Deci; Ryan, 2000</a>)</span>.
+</dd>
+<dt><strong>Prática de recuperação (efeito de teste)</strong></dt>
+<dd>
+Testar-se (recuperar da memória) consolida a aprendizagem mais que a releitura passiva.
+</dd>
+<dt><strong>Dificuldades desejáveis</strong></dt>
+<dd>
+Condições de estudo mais difíceis no momento (espaçar, testar-se, intercalar) que fortalecem a aprendizagem a longo prazo.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Explique como o grupo 3 do experimento de Tolman e Honzik demonstra a aprendizagem latente. Que ideia teórica (o mapa cognitivo) Tolman propôs a partir disso?</p></li>
+<li><p><strong>(Comparação.)</strong> Contraste a aprendizagem por <strong>insight</strong> de Köhler com a aprendizagem por <strong>tentativa e erro</strong> de Thorndike (Cap. 40). Que evidência distingue uma da outra?</p></li>
+<li><p><strong>(Aplicação.)</strong> Como o modelo do <strong>desamparo aprendido</strong> ajuda a entender a passividade em situações de adversidade crônica? Que papel o estilo atribucional desempenha?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> Uma escola decide pagar os alunos por cada livro lido. Usando o <strong>efeito de supercompensação</strong> e a teoria da autodeterminação, discuta um risco desse plano e quando ele poderia, ainda assim, valer a pena.</p></li>
+<li><p><strong>(Aplicação.)</strong> Você tem duas semanas para uma prova. Monte um plano de estudo que aplique <strong>prática distribuída</strong>, <strong>efeito de teste</strong> e ao menos uma outra <strong>dificuldade desejável</strong>, explicando por que cada escolha supera reler o material.</p></li>
+<li><p><strong>(Integração.)</strong> Ao longo do volume, o condicionamento revelou-se limitado pela biologia (Garcia, Breland) e pela cognição (Tolman, Köhler, Bandura). Escreva um parágrafo que reconcilie as abordagens comportamental e cognitiva da aprendizagem.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-deci_ryan2000" class="csl-entry" role="listitem">
+DECI, Edward L.; RYAN, Richard M. The <span>«what»</span> and <span>«why»</span> of goal pursuits: Human needs and the self-determination of behavior. <strong>Psychological Inquiry</strong>, v. 11, n. 4, p. 227–268, 2000.
+</div>
+<div id="ref-kohler1917" class="csl-entry" role="listitem">
+KÖHLER, Wolfgang. <strong>Intelligenzpr<span>ü</span>fungen an Menschenaffen</strong>. Berlin: Springer, 1917.
+</div>
+<div id="ref-seligman_maier1967" class="csl-entry" role="listitem">
+SELIGMAN, Martin E. P.; MAIER, Steven F. <a href="https://doi.org/10.1037/h0024514">Failure to escape traumatic shock</a>. <strong>Journal of Experimental Psychology</strong>, v. 74, n. 1, p. 1–9, 1967.
+</div>
+<div id="ref-tolman1948" class="csl-entry" role="listitem">
+TOLMAN, Edward C. <a href="https://doi.org/10.1037/h0061626">Cognitive maps in rats and men</a>. <strong>Psychological Review</strong>, v. 55, n. 4, p. 189–208, 1948.
+</div>
+<div id="ref-tolman_honzik1930" class="csl-entry" role="listitem">
+TOLMAN, Edward C.; HONZIK, Charles H. Introduction and removal of reward, and maze performance in rats. <strong>University of California Publications in Psychology</strong>, v. 4, p. 257–275, 1930.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1315,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol07-aprendizagem/cap-42-cognicao-aprendizagem.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
