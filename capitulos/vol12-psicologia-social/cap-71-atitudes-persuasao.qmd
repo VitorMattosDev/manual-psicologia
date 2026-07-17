@@ -1,5 +1,160 @@
 # 71. Atitudes e persuasão
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** atitude, descrever seus componentes e explicar quando atitudes preveem — e quando não preveem — o comportamento.
+- **Distinguir** as duas rotas da persuasão (central e periférica) do Modelo de Probabilidade de Elaboração e prever qual delas opera em cada situação.
+- **Identificar** os principais fatores da persuasão (fonte, mensagem, canal, público) e os princípios de influência de Cialdini.
+- **Explicar** a teoria da dissonância cognitiva e como a mudança de comportamento arrasta a mudança de atitude.
+- **Reconhecer** táticas de manipulação (apelo ao medo, prova social, escassez) e estratégias de resistência, como a inoculação atitudinal.
+- **Avaliar criticamente** alegações sobre publicidade subliminar e outros mitos da persuasão.
 :::
+
+Se o Cap. 70 tratou de como interpretamos o mundo social, este trata de algo mais quente: o que **sentimos** a respeito dele e como esses sentimentos podem ser mudados por outras pessoas. As atitudes são a moeda corrente da vida social — opiniões sobre marcas, políticos, grupos, ideias, sobre nós mesmos. E a persuasão, a arte e a ciência de mudá-las, é um dos campos mais antigos e aplicados da psicologia social: move a propaganda, o marketing, as campanhas de saúde, a política eleitoral e as brigas na mesa de jantar. Compreender seus mecanismos é, ao mesmo tempo, aprender a persuadir com responsabilidade e a resistir à manipulação — dois lados da mesma competência.
+
+## O que é uma atitude
+
+Uma **atitude** é uma avaliação — favorável ou desfavorável — de um objeto, pessoa, grupo ou ideia, que predispõe a pessoa a reagir de certo modo [@eagly_chaiken1993]. A tradição clássica descreve três componentes, o chamado **modelo ABC**: **afeto** (o que se sente), **comportamento** (a tendência a agir) e **cognição** (as crenças que sustentam a avaliação). Sua atitude em relação a andar de bicicleta na cidade pode combinar prazer (afeto), o hábito de pedalar todo dia (comportamento) e a crença de que é saudável e sustentável (cognição). Nem sempre os três alinham — e essa tensão é fértil, como veremos na dissonância.
+
+### Atitudes preveem o comportamento?
+
+A pergunta parece trivial — é claro que quem gosta de algo age de acordo — mas a resposta científica começou com um escândalo. Em 1934, Richard LaPiere viajou pelos Estados Unidos com um casal chinês numa época de forte preconceito antiasiático e registrou que quase todos os 250 hotéis e restaurantes os atenderam sem problemas. Meses depois, escreveu a esses estabelecimentos perguntando se aceitariam "membros da raça chinesa": mais de 90% dos que responderam disseram que **não** [@lapiere1934]. Atitude declarada e comportamento real divergiram frontalmente.
+
+O estudo tinha falhas graves (quem respondeu à carta pode não ter sido quem os atendeu; a acompanhante branca alterava a situação), mas plantou uma pergunta que levou décadas para amadurecer. A resposta moderna: atitudes preveem comportamento **sob condições específicas**. A previsão melhora quando (1) há **correspondência de especificidade** entre atitude e ação — atitudes gerais preveem padrões gerais de conduta, atitudes específicas preveem atos específicos [@ajzen_fishbein1977]; (2) a atitude é **forte, acessível** e baseada em experiência direta, ativando-se automaticamente diante do objeto [@fazio1990]; e (3) a pressão situacional é fraca. A **teoria do comportamento planejado** integrou esses fatores: a intenção de agir — melhor preditor do ato — depende da atitude, das **normas subjetivas** (o que os outros esperam) e do **controle comportamental percebido** [@ajzen1991].
+
+## Persuasão: as duas rotas
+
+Como se muda uma atitude? A resposta mais influente da psicologia social é o **Modelo de Probabilidade de Elaboração** (ELM, na sigla em inglês) de Petty e Cacioppo [@petty_cacioppo1986]. A ideia central: existem **duas rotas** para a persuasão, e qual delas opera depende de o público estar **motivado e capaz** de processar cuidadosamente a mensagem — a "probabilidade de elaboração" (@fig-elm).
+
+Pela **rota central**, o receptor examina os argumentos com atenção, pesa a evidência e é persuadido pela **qualidade do conteúdo**. Exige motivação (o tema importa para você) e capacidade (você tem tempo, conhecimento e concentração). A mudança de atitude que resulta é **duradoura, resistente** à contrapersuasão e **preditiva do comportamento**.
+
+Pela **rota periférica**, o receptor, desmotivado ou incapaz de analisar, apoia-se em **pistas superficiais** — a beleza ou fama de quem fala, o número de argumentos (não sua força), a música, a simpatia. A mudança que resulta é **frágil, temporária** e mau preditor de conduta. É a rota da maior parte da publicidade: ninguém elabora criticamente um comercial de refrigerante de 15 segundos.
+
+::: {#fig-elm}
+```{.tikz}
+%%| filename: elm-duas-rotas
+%%| alt: Diagrama de fluxo que parte de uma caixa "Mensagem persuasiva" à esquerda e chega a um losango de decisão "Motivação e capacidade de elaborar?". Do losango sai, para cima, a rota central (alta elaboração), que passa por "avalia a qualidade dos argumentos" e leva a "mudança duradoura e resistente"; para baixo, a rota periférica (baixa elaboração), que passa por "usa pistas superficiais" e leva a "mudança frágil e temporária".
+\begin{tikzpicture}[
+  cx/.style={draw, thick, rounded corners=4pt, minimum width=3.4cm, minimum height=1.2cm, align=center, font=\small},
+  dec/.style={draw, thick, rounded corners=4pt, minimum width=3.2cm, minimum height=1.4cm, align=center, font=\small, fill=manualyellow!12, draw=manualyellow!80!black},
+  fluxo/.style={->, >=Stealth, thick}
+]
+  \node[cx, draw=manualgray, fill=manualgray!8] (msg) at (0,0) {\textbf{Mensagem}\\\textbf{persuasiva}};
+  \node[dec] (dec) at (4.2,0) {Motivação e\\capacidade de\\elaborar?};
+
+  \node[cx, draw=manualblue, fill=manualblue!8] (cen) at (9.2,2.2)
+    {\textbf{Rota central}\\{\small avalia a qualidade}\\{\small dos argumentos}};
+  \node[cx, draw=manualred, fill=manualred!8] (per) at (9.2,-2.2)
+    {\textbf{Rota periférica}\\{\small usa pistas}\\{\small superficiais}};
+
+  \node[cx, draw=manualblue, fill=manualblue!8, minimum width=3.8cm] (dur) at (14.2,2.2)
+    {mudança duradoura\\e resistente};
+  \node[cx, draw=manualred, fill=manualred!8, minimum width=3.8cm] (fra) at (14.2,-2.2)
+    {mudança frágil\\e temporária};
+
+  \draw[fluxo, manualgray] (msg) -- (dec);
+  \draw[fluxo, manualblue] (dec) to[bend left=15] node[midway, above left, font=\scriptsize, text=manualblue] {alta} (cen);
+  \draw[fluxo, manualred] (dec) to[bend right=15] node[midway, below left, font=\scriptsize, text=manualred] {baixa} (per);
+  \draw[fluxo, manualblue] (cen) -- (dur);
+  \draw[fluxo, manualred] (per) -- (fra);
+\end{tikzpicture}
+```
+As duas rotas da persuasão no Modelo de Probabilidade de Elaboração [@petty_cacioppo1986]. Quanto maior a motivação e a capacidade do público, mais a persuasão depende da qualidade dos argumentos (rota central) e mais duradoura é a mudança de atitude.
+:::
+
+O modelo tem uma implicação prática elegante: **a mesma mensagem funciona por rotas diferentes em públicos diferentes**. Anúncios de produtos de baixo envolvimento (goma de mascar) apostam na rota periférica — celebridade, repetição, emoção. Mensagens de alto envolvimento (um plano de saúde, um voto) precisam de argumentos sólidos, porque o público *vai* elaborar. Errar a rota é desperdiçar a mensagem.
+
+## Os ingredientes da persuasão
+
+A pesquisa clássica sobre comunicação, iniciada por Carl Hovland no programa de Yale, organizou os fatores da persuasão em quatro perguntas: **quem** diz (a fonte), **o quê** (a mensagem), **por qual meio** (o canal) e **a quem** (o público) [@hovland1953].
+
+- **A fonte.** Fontes **críveis** (competentes e confiáveis) e **atraentes** persuadem mais. A credibilidade opera sobretudo pela rota central; a atratividade e a simpatia, pela periférica. Curiosamente, o **efeito do adormecido** (*sleeper effect*) mostra que uma mensagem de fonte pouco confiável pode ganhar força com o tempo, à medida que o receptor esquece a fonte mas retém o conteúdo.
+- **A mensagem.** Argumentos dos **dois lados** (refutando o oposto) funcionam melhor com públicos instruídos ou já contrários; mensagens de um lado só, com públicos já favoráveis. O **apelo ao medo** persuade — mas só quando acompanhado de uma recomendação **clara e factível** de como evitar a ameaça; medo sem saída gera negação, não mudança [@witte_allen2000].
+- **O canal e o público.** Mensagens vívidas favorecem a via emocional; textos densos, a analítica. E o público importa: pessoas com alta **necessidade de cognição** — que gostam de pensar — respondem à rota central; as demais, à periférica.
+
+### Os seis princípios de Cialdini
+
+Robert Cialdini destilou décadas de pesquisa (e trabalho de campo infiltrado em equipes de vendas) em princípios de **influência** que operam majoritariamente pela rota periférica, acionando respostas quase automáticas [@cialdini2009]:
+
+1. **Reciprocidade** — sentimo-nos obrigados a retribuir favores (a amostra grátis, o brinde).
+2. **Compromisso e coerência** — depois de assumir uma posição, tendemos a mantê-la para parecer consistentes.
+3. **Prova social** — na dúvida, fazemos o que os outros fazem ("mais vendido", "milhões já usaram").
+4. **Afeição/simpatia** — dizemos "sim" a quem gostamos e a quem nos parece semelhante.
+5. **Autoridade** — obedecemos a especialistas e símbolos de autoridade (o jaleco, o título).
+6. **Escassez** — valorizamos mais o que é raro ou está por acabar ("últimas unidades", "só hoje").
+
+Duas dessas alavancas ancoram táticas sequenciais clássicas. Na do **pé na porta** (*foot-in-the-door*), consegue-se primeiro um pequeno "sim" para depois obter um grande — apoiada no princípio da coerência [@freedman_fraser1966]. Na da **porta na cara** (*door-in-the-face*), faz-se um pedido enorme, que será recusado, para em seguida obter a concessão desejada, que parece razoável por comparação — apoiada na reciprocidade [@cialdini1975].
+
+## Dissonância: quando o comportamento muda a atitude
+
+Vimos que atitudes influenciam o comportamento. A grande contribuição de Leon Festinger foi mostrar a seta contrária, e mais contraintuitiva: **o comportamento muda a atitude**. Sua **teoria da dissonância cognitiva** postula que sustentar simultaneamente cognições inconsistentes — ou agir contra a própria crença — gera um estado desagradável de tensão (a dissonância), que a pessoa é motivada a reduzir, muitas vezes **ajustando a própria atitude** para alinhá-la ao que já fez [@festinger1957]. O experimento fundador foi apresentado no Cap. 1 (Festinger e Carlsmith, 1959): quem recebeu apenas US$ 1 para mentir passou a *gostar mais* da tarefa tediosa do que quem recebeu US$ 20 — porque, sem justificativa externa suficiente, a única saída para o desconforto era passar a acreditar na própria mentira.
+
+A dissonância explica um leque enorme de fenômenos: por que valorizamos mais aquilo que nos custou esforço (**justificação do esforço** — a iniciação difícil que faz o grupo parecer mais valioso), por que a decisão entre duas opções próximas nos leva a supervalorizar a escolhida logo após decidir, e por que punições **brandas** (mas suficientes) internalizam melhor uma proibição do que ameaças severas. Uma teoria rival, a **autopercepção** de Bem, explica parte dos mesmos dados sem postular desconforto interno: às vezes inferimos nossas atitudes observando nosso próprio comportamento, como faríamos com um estranho ("comi três fatias, devo estar gostando") [@bem1972]. O consenso atual: a dissonância opera quando o comportamento contraria uma atitude prévia e clara; a autopercepção, quando a atitude era fraca ou ambígua desde o início.
+
+::: {.experimento}
+🔬 **Experimento Clássico — a justificação do esforço.** Aronson e Mills submeteram estudantes a uma "iniciação" para participar de um grupo de discussão sobre sexo [@aronson_mills1959]. Um grupo passou por iniciação **severa** (ler em voz alta material embaraçoso); outro, por iniciação **branda**; um terceiro, por nenhuma. Em seguida, todos ouviram a mesma discussão de grupo, deliberadamente monótona, e a avaliaram. **Resultado:** quem passou pela iniciação severa avaliou o grupo como **mais interessante e valioso** que os demais. **Interpretação:** "sofri muito para entrar num grupo chato" é dissonante; elevar o valor do grupo restaura a coerência. **Implicações:** ilumina trotes universitários, ritos militares e o compromisso reforçado por sacrifício em seitas e organizações — quanto mais custa entrar, mais se valoriza o que se conquistou. **Limitações:** como boa parte da psicologia social clássica dos anos 1950–60, usou amostra pequena e engano, e passa hoje por reexame sob os critérios de replicabilidade (Cap. 1).
+:::
+
+## Resistir à persuasão
+
+Se a persuasão é uma tecnologia, a resistência é a contramedida. A estratégia mais estudada é a **inoculação atitudinal** de McGuire: assim como uma vacina expõe o organismo a uma versão enfraquecida do vírus para que ele desenvolva defesas, expor a pessoa a uma **versão fraca** de um argumento contrário — junto com sua refutação — a torna mais resistente a ataques futuros mais fortes [@mcguire1964]. Antecipar e rebater os contra-argumentos que virão é mais eficaz do que apenas reforçar a posição original. O princípio ressurgiu com força na era da desinformação: campanhas de *prebunking* — inocular o público contra técnicas de manipulação **antes** que ele as encontre — reduzem a suscetibilidade a notícias falsas de forma mensurável [@lewandowsky2012].
+
+::: {.na-pratica}
+💡 **Kit de defesa do consumidor de persuasão.** Diante de qualquer mensagem que queira mudar sua opinião ou sua conduta: (1) **identifique a rota** — estão me dando argumentos ou pistas superficiais (celebridade, "todo mundo tem", "só hoje")? (2) **nomeie o princípio** — isto é reciprocidade (recebi um brinde?), escassez (criaram urgência?), prova social (apelaram à maioria?), autoridade (símbolos sem substância?). (3) **separe a fonte da mensagem** — o argumento se sustenta *independentemente* de quem o diz? (4) **desconfie do medo sem saída e da urgência artificial** — decisões boas raramente exigem "agora ou nunca". Nomear a tática desarma boa parte de seu poder, que depende de operar fora da consciência.
+:::
+
+::: {.atencao}
+⚠️ **O mito da publicidade subliminar.** A lenda nasceu em 1957, quando o publicitário James Vicary alegou ter aumentado vendas de pipoca e refrigerante num cinema ao inserir mensagens ("Coma pipoca", "Beba Coca") por frações de segundo, imperceptíveis à consciência. O caso entrou para o folclore como prova do poder oculto da propaganda — mas Vicary depois **admitiu que fabricara os dados**, e o estudo nunca existiu como descrito. Décadas de pesquisa mostram que estímulos subliminares podem produzir efeitos **pequenos, fugazes e dependentes de o receptor já estar motivado** (uma imagem subliminar de bebida aumenta um pouco a escolha de beber em quem já está com sede), mas **não** implantam desejos novos nem controlam decisões [@pratkanis1992]. A persuasão real é muito mais banal — e por isso mesmo mais eficaz: opera à luz do dia, pela rota periférica, contando que você não esteja prestando atenção.
+:::
+
+::: {.callout-sintese}
+- Uma **atitude** é uma avaliação de um objeto, com componentes de **afeto, comportamento e cognição** (modelo ABC) [@eagly_chaiken1993].
+- Atitudes preveem comportamento **sob condições**: correspondência de especificidade, força e acessibilidade da atitude, e situação de baixa pressão [@ajzen_fishbein1977; @fazio1990]; a teoria do comportamento planejado integra atitude, normas e controle percebido [@ajzen1991].
+- O **ELM** distingue a **rota central** (elaboração dos argumentos → mudança duradoura) da **rota periférica** (pistas superficiais → mudança frágil), conforme a motivação e a capacidade do público [@petty_cacioppo1986].
+- A persuasão depende de **fonte, mensagem, canal e público** [@hovland1953]; os **princípios de Cialdini** (reciprocidade, coerência, prova social, afeição, autoridade, escassez) acionam respostas quase automáticas [@cialdini2009].
+- A **dissonância cognitiva** mostra que agir contra a própria crença — sem justificativa externa suficiente — leva a **mudar a atitude** [@festinger1957]; a autopercepção explica os casos de atitude fraca [@bem1972].
+- Resiste-se à persuasão pela **inoculação atitudinal** (expor-se a argumentos fracos e refutá-los) [@mcguire1964]; a publicidade **subliminar** onipotente é um mito com origem em dados fabricados [@pratkanis1992].
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Atitude**
+:   Avaliação favorável ou desfavorável de um objeto, pessoa, grupo ou ideia, com componentes afetivo, comportamental e cognitivo [@eagly_chaiken1993].
+
+**Modelo de Probabilidade de Elaboração (ELM)**
+:   Teoria segundo a qual a persuasão ocorre pela rota central (análise dos argumentos) ou periférica (pistas superficiais), conforme a probabilidade de elaboração [@petty_cacioppo1986].
+
+**Rota central / periférica**
+:   Central: persuasão pela qualidade dos argumentos, com mudança duradoura. Periférica: persuasão por pistas superficiais, com mudança frágil.
+
+**Princípios de influência de Cialdini**
+:   Reciprocidade, compromisso/coerência, prova social, afeição, autoridade e escassez [@cialdini2009].
+
+**Pé na porta / porta na cara**
+:   Táticas sequenciais: começar com um pedido pequeno para obter um grande (coerência) [@freedman_fraser1966]; ou com um pedido enorme recusado para obter a concessão desejada (reciprocidade) [@cialdini1975].
+
+**Dissonância cognitiva**
+:   Tensão gerada por cognições inconsistentes ou por agir contra a própria crença, reduzida frequentemente pela mudança de atitude [@festinger1957].
+
+**Justificação do esforço**
+:   Tendência a valorizar mais aquilo que custou esforço ou sofrimento para se obter [@aronson_mills1959].
+
+**Inoculação atitudinal**
+:   Fortalecimento da resistência à persuasão pela exposição prévia a versões fracas de argumentos contrários, seguidas de refutação [@mcguire1964].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva os três componentes do modelo ABC de uma atitude e dê um exemplo em que os três não estejam alinhados.
+
+2. **(Conceitual.)** Explique, pelo ELM, por que a mesma propaganda deveria usar estratégias diferentes para vender goma de mascar e para vender um plano de previdência. Que tipo de mudança de atitude cada rota produz?
+
+3. **(Análise.)** O estudo de LaPiere (1934) é frequentemente citado como prova de que "atitudes não preveem comportamento". Aponte duas falhas metodológicas do estudo e reformule a conclusão correta sobre *quando* atitudes preveem conduta.
+
+4. **(Aplicação.)** Identifique qual princípio de Cialdini está em jogo em cada tática: (a) "9 em cada 10 dentistas recomendam"; (b) "leve agora, restam 3 unidades"; (c) uma ONG envia um cartão de brinde antes de pedir doação; (d) o vendedor descobre que vocês torcem para o mesmo time.
+
+5. **(Reflexão crítica.)** Dissonância cognitiva e autopercepção explicam os mesmos dados de Festinger e Carlsmith por mecanismos diferentes. Como um pesquisador poderia desenhar um experimento para distinguir as duas — isto é, para detectar se há ou não desconforto interno envolvido?
+
+6. **(Integração.)** Uma campanha de saúde quer que jovens usem protetor solar. Combine: um **apelo ao medo** bem calibrado [@witte_allen2000], a rota do ELM adequada ao público, um princípio de Cialdini e uma dose de **inoculação** contra o argumento "bronzeado é bonito". Justifique cada escolha.
