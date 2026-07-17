@@ -1,5 +1,148 @@
 # 45. Esquecimento e memória falsa
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** a curva do esquecimento de Ebbinghaus e o padrão temporal da perda de memória.
+- **Comparar** as principais teorias do esquecimento: decaimento, interferência, falha de recuperação e esquecimento motivado.
+- **Explicar** a natureza reconstrutiva da memória a partir de Bartlett e dos esquemas.
+- **Analisar** o efeito de desinformação e a criação de memórias falsas nos experimentos de Loftus.
+- **Avaliar** a confiabilidade do testemunho ocular e das memórias "flash", com implicações forenses.
+- **Discutir** com equilíbrio a controvérsia das memórias recuperadas.
 :::
+
+Os capítulos anteriores trataram a memória por seu êxito — como codificamos, guardamos e recuperamos. Este trata de seus **fracassos**, e a lição central é dupla e contraintuitiva. Primeira: esquecer não é um defeito a lamentar, mas em boa medida uma função **adaptativa** — uma mente que retivesse tudo seria paralisada pelo irrelevante. Segunda, e mais perturbadora: a memória não apenas *perde* informação, ela a **inventa**. Longe do "gravador" fiel do senso comum, lembrar é um ato de **reconstrução**, e uma reconstrução pode ser tão vívida, confiante e detalhada quanto falsa. Poucos temas da psicologia têm consequências práticas tão graves — na justiça, na clínica, na vida — quanto este.
+
+## A curva do esquecimento
+
+O estudo científico do esquecimento nasce com Hermann Ebbinghaus, que no fim do século XIX se tomou como único sujeito e memorizou centenas de sílabas sem sentido (como `WID`, `ZOF`), medindo quanto retinha após intervalos crescentes [@ebbinghaus1885]. O resultado é a **curva do esquecimento** (@fig-ebbinghaus): a perda é **rápida no início** — despencamos nas primeiras horas e no primeiro dia — e depois **desacelera**, estabilizando-se num patamar. O que sobrevive aos primeiros dias tende a permanecer por muito mais tempo.
+
+::: {#fig-ebbinghaus}
+```{.tikz}
+%%| filename: curva-esquecimento
+%%| alt: Gráfico da curva do esquecimento de Ebbinghaus. O eixo horizontal é o tempo desde a aprendizagem, o vertical é a porcentagem retida. A curva parte de cem por cento, cai acentuadamente nas primeiras horas e no primeiro dia, e depois se achata num patamar baixo. Uma segunda curva tracejada, mais alta, mostra o efeito da revisão espaçada, que eleva a retenção.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (0,0) -- (7.2,0) node[right, font=\tiny] {tempo};
+  \draw[->, thick] (0,0) -- (0,4.3) node[above, font=\tiny, align=center] {\% retida};
+  \foreach \y/\l in {0/0,2/50,4/100} {\draw (-0.05,\y) -- (0.05,\y); \node[left, font=\tiny] at (-0.1,\y) {\l};}
+  \node[below, font=\tiny] at (0,-0.1) {0};
+  \node[below, font=\tiny] at (1.5,-0.1) {1 dia};
+  \node[below, font=\tiny] at (4.0,-0.1) {6 dias};
+  % curva do esquecimento
+  \draw[very thick, curva, manualblue] (0,4) .. controls (0.5,2.6) and (1.0,1.9) .. (1.5,1.6)
+     .. controls (2.6,1.15) and (4.0,0.95) .. (6.5,0.85);
+  \node[text=manualblue, font=\tiny\bfseries, align=left] at (5.2,1.45) {sem revisão};
+  % curva com revisão espaçada
+  \draw[very thick, dashed, manualgreen] (0,4) .. controls (0.6,3.3) and (1.2,3.1) .. (1.5,3.4)
+     .. controls (2.2,2.7) and (2.6,2.6) .. (3.0,2.9)
+     .. controls (3.8,2.4) and (4.4,2.4) .. (6.5,2.7);
+  \node[text=manualgreen!50!black, font=\tiny\bfseries] at (5.0,3.2) {com revisão espaçada};
+\end{tikzpicture}
+```
+A curva do esquecimento de Ebbinghaus (azul): a retenção cai depressa nas primeiras horas e depois se estabiliza. A **revisão espaçada** (verde tracejado) reergue a curva a cada retomada, aplanando a perda — a base da prática distribuída (Cap. 42).
+:::
+
+A curva tem uma contrapartida prática poderosa: cada **revisão** reergue a retenção, e revisões *espaçadas* no tempo aplanam a curva, tornando o esquecimento cada vez mais lento. É o fundamento fisiológico da prática distribuída do Cap. 42.
+
+## Por que esquecemos
+
+Quatro teorias, não excludentes, explicam a perda de memória.
+
+O **decaimento** propõe que traços não usados simplesmente se apagam com o tempo, por desuso. Ele descreve bem a memória sensorial e de curto prazo, mas explica mal o longo prazo — memórias antigas podem ressurgir intactas décadas depois, o que puro decaimento não previria.
+
+A **interferência** costuma ser mais importante: outras memórias competem e atrapalham. Na **interferência proativa**, o que aprendemos *antes* dificulta o novo (o número de telefone antigo teima em vir no lugar do atual). Na **interferência retroativa**, o novo aprendizado prejudica o *antigo* (aprender espanhol embaralha o francês que já sabíamos). Quanto mais semelhante o material, maior a interferência.
+
+A **falha de recuperação** (esquecimento dependente de pista) sustenta que muita informação continua armazenada, mas inacessível por falta da pista adequada — o "na ponta da língua" do Cap. 44. Aqui, "esquecer" é não encontrar, não é ter perdido.
+
+Por fim, o **esquecimento motivado** propõe que às vezes bloqueamos ativamente memórias ameaçadoras — a ideia freudiana de **repressão** (Cap. 10). Este é o mais controverso: há evidência de que se pode *suprimir* voluntariamente a recuperação de algo, mas a noção clínica clássica de traumas inteiros reprimidos e depois fielmente recuperados é fortemente contestada, como veremos adiante.
+
+## A memória é reconstrução
+
+Chegamos ao ponto que redefine tudo. A memória não recupera uma gravação; ela **reconstrói** o passado a cada evocação, preenchendo lacunas com inferências, expectativas e conhecimento geral — e a reconstrução pode introduzir erros dos quais não temos a menor consciência.
+
+::: {.experimento}
+🔬 **A "Guerra dos Fantasmas" (Bartlett, 1932).** Frederic Bartlett pediu a participantes britânicos que lessem uma lenda folclórica de índios norte-americanos, "A Guerra dos Fantasmas", cheia de elementos estranhos à cultura deles, e que a recontassem repetidamente ao longo do tempo. As reproduções distorciam-se de modo sistemático e revelador: os detalhes culturalmente estranhos eram **omitidos** ou **alterados** para fazer sentido (canoas viravam barcos, caça a focas virava pescaria), a história **encurtava** e ganhava coerência "ocidental" [@bartlett1932]. Bartlett concluiu que lembrar é um "esforço em busca de significado": não reproduzimos o material, nós o **reconstruímos** para caber em nossos **esquemas** — estruturas mentais que organizam o conhecimento sobre o mundo. Os esquemas ajudam a compreender e a lembrar o típico, mas ao custo de distorcer o atípico na direção do esperado.
+:::
+
+Se a memória se reconstrói a partir de esquemas e de informação disponível no momento da recuperação, então **informação introduzida depois do evento** pode contaminar a lembrança. Foi o que Elizabeth Loftus demonstrou de forma decisiva, com enormes implicações para a justiça.
+
+::: {.experimento}
+🔬 **O efeito de desinformação (Loftus e Palmer, 1974).** Participantes assistiram a um vídeo de um acidente de trânsito e depois responderam a perguntas sobre ele. A manipulação estava em uma única palavra. Perguntou-se a que velocidade os carros iam quando se "**bateram**" (*hit*) — ou, para outros grupos, quando se "**colidiram**", "**destruíram**" (*smashed*). A estimativa de velocidade subiu conforme a violência do verbo: quem ouviu "destruíram" relatou carros mais rápidos [@loftus_palmer1974]. Mais grave veio uma semana depois: perguntados se tinham visto **vidro quebrado** (não havia nenhum no vídeo), os que tinham ouvido "destruíram" afirmaram tê-lo visto com o dobro de frequência dos demais. A palavra sugestiva não só enviesou o julgamento — **alterou a própria memória** do evento, inserindo um detalhe que nunca existiu. É o **efeito de desinformação**: informação enganosa apresentada *após* um evento integra-se à memória dele.
+:::
+
+## Fabricando memórias inteiras
+
+O efeito de desinformação distorce detalhes. Loftus foi além e mostrou que se pode implantar um **evento inteiro** que jamais ocorreu.
+
+::: {.experimento}
+🔬 **"Perdido no shopping" (Loftus e Pickrell, 1995).** Pesquisadores apresentaram a adultos, com a cumplicidade de um familiar, quatro relatos de episódios da própria infância — três verdadeiros e **um falso**: ter-se perdido num shopping center por volta dos cinco anos, chorado, e sido resgatado por um idoso. Após algumas entrevistas em que se pedia que recordassem mais detalhes, cerca de **um quarto** dos participantes passou a "lembrar" o episódio inventado — muitos acrescentando detalhes vívidos e sensoriais próprios, e alguns resistindo a acreditar, ao final, que aquilo nunca acontecera [@loftus_pickrell1995]. A sugestão repetida, combinada à pressão para recordar e à autoridade da fonte, bastou para fabricar uma memória autobiográfica **inteira e sentida como real**.
+:::
+
+E não é preciso sequer sugestão externa: certas memórias falsas surgem espontaneamente do próprio funcionamento associativo da memória.
+
+::: {.experimento}
+🔬 **Falsas memórias em laboratório (o paradigma DRM).** Roediger e McDermott ressuscitaram um método simples e contundente. Apresenta-se uma lista de palavras todas associadas a um mesmo tema — *cama, descanso, acordar, cansado, sonho, noite, cobertor, cochilo...* — mas a palavra que as une, `SONO`, **nunca aparece**. No teste, a maioria dos participantes "reconhece" `SONO` com tanta ou mais confiança do que as palavras realmente apresentadas [@roediger_mcdermott1995]. A memória, ativando o conceito central por associação, registra-o como se tivesse sido visto. A demonstração é notável porque produz memórias falsas de modo confiável, em pessoas comuns, sem trauma nem má-fé — apenas o funcionamento normal de uma memória associativa e reconstrutiva.
+:::
+
+## Implicações: testemunho, memórias "flash" e a controvérsia
+
+::: {.na-pratica}
+**O testemunho ocular e a justiça.** A pesquisa sobre memória reconstrutiva tem consequências diretas e sombrias no sistema penal. O testemunho ocular, que júris consideram muito persuasivo, é **falível** de modos sistemáticos: a memória da testemunha pode ser contaminada por perguntas sugestivas, pelo modo como um reconhecimento é conduzido, pela exposição à mídia e pelo próprio ato de recontar. Análises de condenações posteriormente revertidas por DNA mostram que o **reconhecimento equivocado por testemunhas** é a principal causa isolada de erros judiciais. E — ponto crucial do Cap. 38 — a **confiança** de uma testemunha não é bom indicador de sua **exatidão**: pode-se estar sinceramente certíssimo e redondamente errado. Daí as recomendações baseadas em evidência: alinhamentos de suspeitos conduzidos "às cegas" (por quem não sabe quem é o suspeito), instruções neutras, registro imediato do grau de confiança e cautela com identificações tardias.
+:::
+
+Um caso especial ilustra tudo isso: as **memórias "flash"** (*flashbulb memories*) — lembranças vívidas, detalhadas e confiantes de *onde estávamos* ao saber de um evento chocante (um atentado, uma morte pública). Brown e Kulik supuseram que a emoção intensa "fotografaria" a cena com fidelidade especial [@brown_kulik1977]. Estudos posteriores desmentiram a parte da fidelidade: comparando o relato feito no dia seguinte a um choque nacional com o relato do mesmo sujeito anos depois, encontram-se **distorções substanciais** — mudam detalhes, o local, com quem se estava. O que a emoção intensifica é a **vividez e a confiança**, não a exatidão. A memória flash é o retrato perfeito do descompasso, que atravessa este capítulo, entre o quanto uma lembrança *parece* verdadeira e o quanto ela *é*.
+
+Tudo isso desemboca numa das controvérsias mais delicadas da psicologia: as **memórias recuperadas** de abuso na infância, supostamente reprimidas por anos e reavivadas na terapia adulta. O equilíbrio científico aqui é essencial e exige cuidado nos dois sentidos. De um lado, o abuso infantil é real, comum e gravíssimo, e vítimas merecem crédito. De outro, a pesquisa deste capítulo mostra que técnicas sugestivas — hipnose (Cap. 38), imaginação guiada, insistência para "recuperar" — podem **fabricar** memórias vívidas de eventos que não ocorreram [@loftus1993]. A ciência não nega o trauma nem a possibilidade de recordar tardiamente algo verdadeiro; ela alerta que uma memória recuperada sob sugestão, sem corroboração independente, não pode ser tomada como prova de que o evento ocorreu — porque confiança e detalhe, como vimos, não garantem realidade.
+
+## Síntese
+
+::: {.callout-sintese}
+- A **curva do esquecimento** (Ebbinghaus) mostra perda rápida no início e depois lenta; a **revisão espaçada** aplana a curva.
+- Esquecemos por **decaimento**, **interferência** (proativa e retroativa), **falha de recuperação** (dependente de pista) e, controversamente, **esquecimento motivado** (repressão).
+- A memória é **reconstrutiva**: lembrar preenche lacunas com **esquemas** e inferências (Bartlett, "Guerra dos Fantasmas"), o que introduz distorções sistemáticas.
+- O **efeito de desinformação** (Loftus e Palmer) mostra que informação posterior altera a memória; "Perdido no shopping" (Loftus e Pickrell) implanta eventos inteiros; o paradigma **DRM** produz falsas memórias espontâneas.
+- O **testemunho ocular** é falível e é a principal causa de erros judiciais; **confiança ≠ exatidão**. As **memórias "flash"** são vívidas e confiantes, porém imprecisas.
+- Na controvérsia das **memórias recuperadas**, o equilíbrio: o abuso é real, mas técnicas sugestivas podem fabricar lembranças; sem corroboração, confiança e detalhe não provam o evento.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Curva do esquecimento**
+:   Padrão de perda de memória: rápida no início, depois lenta [@ebbinghaus1885].
+
+**Interferência proativa / retroativa**
+:   Memórias antigas atrapalham as novas / memórias novas atrapalham as antigas.
+
+**Falha de recuperação**
+:   Esquecimento por ausência da pista adequada, com a informação ainda armazenada.
+
+**Esquemas**
+:   Estruturas mentais que organizam o conhecimento e guiam (e distorcem) a reconstrução da memória [@bartlett1932].
+
+**Memória reconstrutiva**
+:   Concepção de que lembrar reconstrói o passado a partir de fragmentos, esquemas e inferências, e não o reproduz.
+
+**Efeito de desinformação**
+:   Alteração da memória de um evento por informação enganosa apresentada depois dele [@loftus_palmer1974].
+
+**Memória falsa**
+:   Lembrança sentida como real de algo que não ocorreu ou não ocorreu como recordado [@loftus_pickrell1995; @roediger_mcdermott1995].
+
+**Memória "flash" (flashbulb)**
+:   Lembrança vívida e confiante de um evento chocante, porém não mais exata que outras [@brown_kulik1977].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva a forma da curva do esquecimento de Ebbinghaus. Como a revisão espaçada a modifica?
+
+2. **(Conceitual.)** Distinga interferência proativa de retroativa com um exemplo de cada. Por que a semelhança do material aumenta a interferência?
+
+3. **(Reflexão crítica.)** Em que sentido a "Guerra dos Fantasmas" de Bartlett mostra que a memória é reconstrutiva, e não reprodutiva? Qual o papel dos esquemas?
+
+4. **(Aplicação.)** Como o efeito de desinformação (Loftus e Palmer) deveria mudar a forma como um policial ou advogado formula perguntas a uma testemunha?
+
+5. **(Análise.)** Por que o paradigma DRM é tão convincente como demonstração de memória falsa? O que ele revela que "Perdido no shopping" não revela (e vice-versa)?
+
+6. **(Integração.)** Explique por que "confiança não é exatidão" e como esse princípio se aplica a memórias "flash", ao testemunho ocular e à controvérsia das memórias recuperadas.
