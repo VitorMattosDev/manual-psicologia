@@ -1,5 +1,125 @@
 # 81. TOC e transtornos relacionados
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** obsessões e compulsões e descrever o transtorno obsessivo-compulsivo (TOC) e seus temas mais comuns.
+- **Explicar** por que o TOC ganhou capítulo próprio no DSM-5 e quais transtornos o acompanham.
+- **Reconhecer** que pensamentos intrusivos são universais, e que o que distingue o TOC é a **interpretação** dada a eles.
+- **Analisar** o círculo vicioso obsessão–ansiedade–compulsão e o paradoxo da supressão de pensamentos.
+- **Descrever** o circuito cerebral e a genética envolvidos no TOC.
+- **Justificar** por que a exposição com prevenção de resposta (EPR) é o tratamento de escolha.
 :::
+
+"Ser um pouco TOC" virou elogio de organização — um mal-entendido que este capítulo desfaz logo de início. O transtorno obsessivo-compulsivo não é gostar de ordem: é ficar aprisionado num ciclo angustiante de pensamentos indesejados e rituais que a própria pessoa reconhece como excessivos, mas não consegue interromper. É um dos transtornos mais incapacitantes e, ao mesmo tempo, um dos mais bem compreendidos em termos de mecanismo e de tratamento — razão pela qual ele ensina, melhor do que quase qualquer outro quadro, como uma variação normal da mente (todos temos pensamentos estranhos) se converte em sofrimento clínico.
+
+## Obsessões, compulsões e o ciclo que as une
+
+O TOC define-se por dois componentes:
+
+- **Obsessões** são pensamentos, imagens ou impulsos **intrusivos, recorrentes e indesejados** que provocam ansiedade acentuada. A pessoa não os quer, os reconhece como produto da própria mente e tenta resistir a eles. Temas comuns: contaminação, dúvida ("será que tranquei a porta?"), necessidade de simetria e ordem, e pensamentos **tabu** de conteúdo agressivo, sexual ou religioso.
+- **Compulsões** são comportamentos repetitivos (lavar, verificar, ordenar, contar) ou atos mentais (rezar, repetir palavras) que a pessoa se sente **obrigada** a executar para reduzir a ansiedade gerada pela obsessão ou para "prevenir" um desastre temido.
+
+O que liga os dois é um **círculo vicioso** com a mesma lógica do modelo de dois fatores (Cap. 78): a obsessão dispara ansiedade; a compulsão a alivia momentaneamente; o alívio **reforça negativamente** a compulsão, tornando-a mais provável e mais frequente; e, como a compulsão "funcionou" (o desastre não veio), a pessoa nunca aprende que ele não viria de qualquer modo (@fig-ciclo-toc). O ritual é uma prisão que a própria pessoa reconstrói a cada dia.
+
+::: {#fig-ciclo-toc}
+```{.tikz}
+%%| filename: ciclo-toc
+%%| alt: Diagrama em círculo do ciclo obsessivo-compulsivo com quatro caixas ligadas por setas. Começando em cima: "Obsessão (pensamento intrusivo)" leva a "Ansiedade sobe" (seta vermelha para a direita); esta leva a "Compulsão / ritual (lavar, checar)" (seta para baixo); esta leva a "Alívio imediato" (seta verde para a esquerda); e o alívio volta reforçando a obsessão, fechando o ciclo, com o rótulo reforço negativo. Uma seta tracejada lateral indica que o desastre temido nunca é desmentido.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.4cm, minimum height=1.15cm}]
+  \node[cx, draw=manualgray] (obs) at (0,3) {Obsessão\\{\scriptsize pensamento intrusivo}};
+  \node[cx, draw=manualred, fill=manualred!8] (ans) at (5.2,3) {Ansiedade sobe};
+  \node[cx, draw=manualblue, fill=manualblue!8] (comp) at (5.2,0) {Compulsão\\{\scriptsize lavar, checar}};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (ali) at (0,0) {Alívio imediato};
+  \draw[->, >=Stealth, thick] (obs) -- (ans);
+  \draw[->, >=Stealth, thick, manualred] (ans) -- (comp);
+  \draw[->, >=Stealth, thick, manualgreen] (comp) -- (ali);
+  \draw[->, >=Stealth, thick] (ali) -- node[left, font=\scriptsize, align=center, text=manualgreen] {reforço\\negativo} (obs);
+  \node[font=\scriptsize\itshape, text=manualgray, align=center, anchor=west] at (6.6,1.5)
+    {o desastre temido\\nunca é desmentido};
+  \draw[dashed, manualgray, ->, >=Stealth] (6.5,1.5) -- (comp.east);
+\end{tikzpicture}
+```
+O círculo vicioso do TOC. A compulsão alivia a ansiedade da obsessão e é reforçada negativamente por esse alívio; ao ritualizar, a pessoa impede a descoberta de que o desastre não aconteceria. Romper o ciclo — expor-se à obsessão **sem** ritualizar — é o princípio do tratamento.
+:::
+
+O DSM-5 reuniu o TOC com um grupo de **transtornos relacionados** que compartilham a repetição e a dificuldade de inibir comportamentos: o **transtorno dismórfico corporal** (preocupação obsessiva com um defeito percebido na aparência), o **transtorno de acumulação** (dificuldade extrema de descartar objetos, categoria nova no DSM-5) e os **comportamentos repetitivos focados no corpo** — a **tricotilomania** (arrancar cabelos) e o **transtorno de escoriação** (beliscar a pele). Retirar o TOC dos transtornos de ansiedade (Cap. 78) reconheceu que, embora a ansiedade participe, seu mecanismo e circuito cerebral são próprios.
+
+## Todos temos pensamentos intrusivos
+
+Aqui está a descoberta que reorganizou a compreensão do TOC. Rachman e de Silva pediram a pessoas **sem** o transtorno que relatassem seus pensamentos intrusivos indesejados — e descobriram que o conteúdo era essencialmente o **mesmo** dos pensamentos obsessivos de pacientes com TOC: impulsos de agredir alguém querido, imagens sexuais perturbadoras, dúvidas absurdas [@rachman_desilva1978]. A diferença não está no **conteúdo** do pensamento, mas na **reação** a ele. A maioria das pessoas tem um pensamento bizarro ("e se eu empurrasse esta pessoa nos trilhos?"), acha estranho e o descarta. A pessoa com TOC **interpreta** o mesmo pensamento como carregado de significado e responsabilidade ("ter esse pensamento me torna perigoso", "se eu não fizer algo, será minha culpa").
+
+Foi Paul Salkovskis quem transformou isso num modelo cognitivo: o TOC nasce de **avaliações disfuncionais** dos pensamentos intrusivos normais, marcadas por **responsabilidade inflada** e por **fusão pensamento-ação** — a crença de que pensar algo é moralmente equivalente a fazê-lo, ou que pensar aumenta a probabilidade de que aconteça [@salkovskis1985]. Dado esse significado catastrófico, a pessoa se sente compelida a **neutralizar** o pensamento (a compulsão), o que confirma a importância dele e fecha o ciclo.
+
+::: {.experimento}
+🔬 **Experimento Clássico — não pense no urso branco** [@wegner1987]
+
+**Desenho.** Daniel Wegner pediu a participantes que, durante cinco minutos, **não** pensassem em um urso branco, verbalizando o fluxo de consciência e tocando um sino cada vez que o urso lhes ocorresse. Depois, pediu-lhes que *deliberadamente* pensassem no urso.
+
+**Resultado.** Suprimir o pensamento foi um fracasso: o urso surgia repetidamente durante a fase de supressão. Pior: na fase seguinte, quem antes havia tentado suprimir pensava no urso *ainda mais* do que quem nunca tentou — um **efeito rebote**.
+
+**Interpretação.** Wegner propôs a teoria dos **processos irônicos**: monitorar se um pensamento proibido apareceu exige, paradoxalmente, manter esse pensamento ativo, de modo que o esforço de suprimir o realimenta. É a razão psicológica pela qual "pare de pensar nisso" não funciona — e por que a estratégia central do TOC (afastar o pensamento indesejado) está fadada a intensificá-lo.
+
+**Limitações.** O efeito rebote é real, mas de tamanho variável e sensível ao contexto e às instruções; nem toda supressão fracassa igualmente. Ainda assim, a lição central — tentar não pensar em algo o torna mais insistente — é robusta e diretamente aplicável ao TOC.
+:::
+
+## O nível biológico
+
+O TOC tem base neurobiológica bem caracterizada. A genética é substancial: o transtorno agrega-se em famílias e a herdabilidade é considerável, sobretudo nas formas de início precoce [@pauls2010]. No cérebro, o achado mais consistente é a **hiperatividade de um circuito** que liga o **córtex orbitofrontal**, o **cíngulo anterior** e os **gânglios da base** (o circuito córtico-estriato-tálamo-cortical) — um sistema envolvido na detecção de erros e na geração de "algo está errado, aja". Quando hiperativo, ele produziria a sensação persistente de que algo precisa ser corrigido, apesar de a ação já ter sido feita [@stein2019]. Notavelmente, tanto o tratamento medicamentoso quanto a psicoterapia bem-sucedida **normalizam** a atividade desse circuito — mais uma ilustração da via de mão dupla entre psicologia e biologia (Cap. 1). O sistema serotoninérgico está implicado, e é por isso que os ISRS ajudam no TOC — em geral em **doses mais altas** e por mais tempo do que na depressão.
+
+## O tratamento: expor-se sem ritualizar
+
+Se a compulsão mantém o TOC ao aliviar a ansiedade e impedir a desconfirmação, o tratamento eficaz ataca exatamente esse elo. A **exposição com prevenção de resposta (EPR)**, desenvolvida por Edna Foa, expõe a pessoa ao gatilho da obsessão (tocar a maçaneta "contaminada") e a impede de executar o ritual (lavar as mãos), sustentando a ansiedade até que ela **decline por conta própria** — e a pessoa aprenda, pela experiência direta, que a catástrofe não ocorre e que a ansiedade passa sem o ritual [@foa2005]. A EPR é o tratamento psicológico de escolha para o TOC, com forte suporte empírico e frequentemente superior à medicação isolada [@abramowitz2018]. O tratamento combina-se, quando necessário, com ISRS em doses adequadas.
+
+::: {.na-pratica}
+💡 **Por que dar tranquilidade a quem tem TOC não ajuda.** Diante de alguém que pergunta obsessivamente "você tem certeza de que tranquei a porta?", o impulso natural de familiares é responder, tranquilizar, ajudar a verificar. Isso alivia por segundos — e piora o quadro no longo prazo, porque a tranquilização alheia funciona como **mais uma compulsão** (agora terceirizada) que sustenta o ciclo. A pesquisa sobre EPR e sobre a "acomodação familiar" mostra que reduzir a participação da família nos rituais é parte do tratamento [@abramowitz2018]. A regra, contraintuitiva, é a mesma da ansiedade e do trauma: o alívio que a evitação e a reasseguração trazem é a moeda com que o transtorno se compra. Tolerar a incerteza — não eliminá-la — é o caminho da recuperação.
+:::
+
+::: {.callout-sintese}
+- O **TOC** combina **obsessões** (pensamentos intrusivos e indesejados que geram ansiedade) e **compulsões** (rituais que a aliviam), unidas por um **círculo vicioso** de reforço negativo — não é "gostar de ordem".
+- O DSM-5 deu-lhe capítulo próprio, com transtornos relacionados: **dismórfico corporal, acumulação, tricotilomania e escoriação**.
+- **Pensamentos intrusivos são universais** [@rachman_desilva1978]; o TOC nasce da **interpretação** deles, com responsabilidade inflada e **fusão pensamento-ação** [@salkovskis1985].
+- **Suprimir pensamentos os intensifica** (efeito rebote / processos irônicos) [@wegner1987], o que explica por que a estratégia natural do TOC fracassa.
+- Biologicamente, há **herdabilidade** relevante [@pauls2010] e **hiperatividade** do circuito órbito-fronto-estriatal, normalizada tanto por fármaco quanto por terapia [@stein2019].
+- O tratamento de escolha é a **exposição com prevenção de resposta (EPR)** [@foa2005; @abramowitz2018], com ISRS em doses altas quando indicado; tranquilizar e acomodar rituais perpetua o transtorno.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Obsessão**
+:   Pensamento, imagem ou impulso intrusivo, recorrente e indesejado que provoca ansiedade acentuada.
+
+**Compulsão**
+:   Comportamento ou ato mental repetitivo executado para reduzir a ansiedade de uma obsessão ou prevenir um desastre temido.
+
+**Fusão pensamento-ação**
+:   Crença de que ter um pensamento equivale moralmente a agir, ou torna o evento mais provável; central no modelo cognitivo do TOC [@salkovskis1985].
+
+**Responsabilidade inflada**
+:   Sensação exagerada de ser responsável por evitar danos, que amplifica o significado dado às obsessões [@salkovskis1985].
+
+**Processos irônicos**
+:   Tendência de a supressão deliberada de um pensamento aumentar sua ocorrência (efeito rebote) [@wegner1987].
+
+**Circuito córtico-estriato-tálamo-cortical**
+:   Alça cerebral (córtex orbitofrontal, cíngulo anterior, gânglios da base) hiperativa no TOC [@stein2019].
+
+**Exposição com prevenção de resposta (EPR)**
+:   Tratamento que expõe ao gatilho da obsessão e impede a compulsão, permitindo o declínio natural da ansiedade [@foa2005].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina obsessão e compulsão e explique como elas se articulam num círculo vicioso. Por que "ser um pouco TOC" é um uso equivocado do termo?
+
+2. **(Conceitual.)** Rachman e de Silva mostraram que pessoas sem TOC têm os mesmos pensamentos intrusivos que os pacientes. O que, então, distingue quem tem TOC de quem não tem?
+
+3. **(Análise.)** Aplique o experimento do urso branco de Wegner ao TOC: por que a estratégia de "afastar" o pensamento obsessivo tende a intensificá-lo?
+
+4. **(Aplicação.)** Descreva um plano de exposição com prevenção de resposta para uma pessoa com obsessão de contaminação e compulsão de lavar as mãos. Por que a prevenção da resposta é indispensável — não bastaria a exposição?
+
+5. **(Reflexão crítica.)** Uma mãe verifica o fogão junto com a filha com TOC toda noite "para acalmá-la". Explique, com o conceito de reforço negativo e acomodação familiar, por que isso mantém o transtorno.
+
+6. **(Integração.)** Compare o círculo vicioso do TOC com o do pânico (Cap. 78) e o modelo de dois fatores do TEPT (Cap. 80). Que princípio comum de manutenção e de tratamento une os três transtornos?

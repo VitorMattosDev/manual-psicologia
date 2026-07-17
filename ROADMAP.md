@@ -161,7 +161,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 78 | Transtornos de ansiedade | `capitulos/vol13-psicopatologia/cap-78-transtornos-ansiedade.qmd` | ✅ |
 | 79 | Transtornos do humor (depressivos e bipolares) | `capitulos/vol13-psicopatologia/cap-79-transtornos-humor.qmd` | ✅ |
 | 80 | Transtornos relacionados a trauma e estresse | `capitulos/vol13-psicopatologia/cap-80-trauma-estresse.qmd` | ✅ |
-| 81 | TOC e transtornos relacionados | `capitulos/vol13-psicopatologia/cap-81-toc-relacionados.qmd` | ⬜ |
+| 81 | TOC e transtornos relacionados | `capitulos/vol13-psicopatologia/cap-81-toc-relacionados.qmd` | ✅ |
 | 82 | Esquizofrenia e transtornos psicóticos | `capitulos/vol13-psicopatologia/cap-82-esquizofrenia-psicoticos.qmd` | ⬜ |
 | 83 | Transtornos de personalidade | `capitulos/vol13-psicopatologia/cap-83-transtornos-personalidade.qmd` | ⬜ |
 | 84 | Transtornos alimentares | `capitulos/vol13-psicopatologia/cap-84-transtornos-alimentares.qmd` | ⬜ |
