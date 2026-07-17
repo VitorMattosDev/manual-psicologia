@@ -1,5 +1,137 @@
 # 93. Terapias sistêmicas e de grupo
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o giro sistêmico: tratar relações e sistemas, e não apenas indivíduos isolados.
+- **Contrastar** causalidade linear e circular e compreender o conceito de "paciente identificado".
+- **Descrever** as principais escolas de terapia familiar (estrutural, estratégica, sistêmica, transgeracional).
+- **Compreender** os princípios da terapia de casal baseada em evidência.
+- **Identificar** os fatores terapêuticos da terapia de grupo segundo Yalom e as vantagens do formato.
+- **Avaliar** a evidência de eficácia das terapias sistêmicas e de grupo e reconhecer seus cuidados éticos.
 :::
+
+Todas as terapias vistas até aqui — psicodinâmica, humanista, comportamental, cognitiva, contextual — têm um traço em comum: tratam o **indivíduo**. Mas e se o problema não estiver *dentro* de uma pessoa, e sim *entre* as pessoas? A adolescente que "tem" anorexia, a criança que "tem" um problema de comportamento, o casal que não para de brigar — em muitos casos, o sofrimento é propriedade de um **sistema de relações**, não de um cérebro individual. As **terapias sistêmicas** operam essa virada: o paciente é a família, o casal ou o grupo. Este capítulo apresenta essa tradição e, com ela, a terapia de grupo, que aproveita o poder terapêutico das relações entre pares.
+
+## O giro sistêmico: do indivíduo ao sistema
+
+A terapia familiar nasceu, nos anos 1950, do encontro entre a clínica e a **teoria geral dos sistemas** e a **cibernética**. Sua tese central: a família é um **sistema** — um conjunto de elementos (seus membros) interligados, cujo comportamento só se entende pelas relações entre eles, não pela soma de suas partes. O que acontece com um membro afeta e é afetado por todos; o sistema tende à **homeostase** (a manter seu equilíbrio, mesmo que disfuncional), e resiste à mudança de formas às vezes surpreendentes.
+
+Disso decorre a substituição da **causalidade linear** (A causa B) pela **causalidade circular** (A afeta B, que afeta A, num ciclo sem começo nem culpado único — @fig-causalidade). O marido "se fecha porque a esposa cobra"; a esposa "cobra porque o marido se fecha". Quem começou? A pergunta é mal formulada: trata-se de um **padrão circular** que ambos alimentam e que se automantém. A terapia não busca o culpado; busca alterar o **padrão de interação**.
+
+::: {#fig-causalidade}
+```{.tikz}
+%%| filename: causalidade-circular
+%%| alt: Dois esquemas. À esquerda, "Causalidade linear": uma seta reta de uma caixa A para uma caixa B, sugerindo que A causa B. À direita, "Causalidade circular": duas caixas, Pessoa A e Pessoa B, ligadas por duas setas curvas formando um ciclo — A afeta B e B afeta A —, indicando um padrão que se retroalimenta sem começo nem culpado único.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=2pt, align=center, minimum width=1.5cm, minimum height=1cm}]
+  % linear
+  \node[cx] (a) at (0,0) {A};
+  \node[cx] (b) at (2.6,0) {B};
+  \draw[->,>=Stealth,thick] (a)--(b);
+  \node[font=\scriptsize\bfseries] at (1.3,1.5) {Linear};
+  \node[font=\scriptsize\itshape,text=manualgray] at (1.3,-1.4) {A causa B};
+  % circular
+  \begin{scope}[xshift=6cm]
+    \node[cx, fill=manualblue!8] (x) at (0,0) {Pessoa\\A};
+    \node[cx, fill=manualgreen!8] (y) at (3,0) {Pessoa\\B};
+    \draw[->,>=Stealth,thick] (x) to[bend left=35] (y);
+    \draw[->,>=Stealth,thick] (y) to[bend left=35] (x);
+    \node[font=\scriptsize\bfseries] at (1.5,1.7) {Circular};
+    \node[font=\scriptsize\itshape,text=manualgray] at (1.5,-1.7) {padrão que se retroalimenta};
+  \end{scope}
+\end{tikzpicture}
+```
+Da causalidade **linear** à **circular**. Em vez de perguntar "quem causou o problema?", a terapia sistêmica vê padrões de interação que se retroalimentam: cada comportamento é, ao mesmo tempo, causa e efeito do outro. Isso desloca o foco da culpa para a mudança do padrão.
+:::
+
+O conceito mais provocativo dessa tradição é o **paciente identificado**: o membro que "carrega" o sintoma e é levado à terapia como "o problema da família". Na leitura sistêmica, esse sintoma pode ser a **expressão de uma disfunção do sistema inteiro** — e às vezes cumpre uma função (por exemplo, o problema do filho mantém os pais unidos em torno dele, adiando um conflito conjugal). Tratar apenas o indivíduo, nesses casos, é como calar o alarme sem apagar o incêndio: o sistema pode simplesmente "produzir" o sintoma em outro membro.
+
+## As escolas da terapia familiar
+
+Várias tradições desenvolveram esse insight comum em métodos distintos:
+
+**Terapia estrutural** (Salvador Minuchin). Foca a **estrutura** da família: seus subsistemas (conjugal, parental, fraterno), as **fronteiras** entre eles e as hierarquias [@minuchin1974]. Famílias saudáveis têm fronteiras **claras** (nem rígidas demais, nem difusas demais). Duas disfunções típicas: o **emaranhamento** (fronteiras difusas, todos superenvolvidos, sem autonomia) e o **desligamento** (fronteiras rígidas, distância excessiva). O terapeuta é ativo: entra na dinâmica, redesenha fronteiras, reforça a hierarquia parental quando ela se perdeu.
+
+**Terapia estratégica** (Jay Haley, grupo de Palo Alto). Foca a **solução** do problema apresentado, com intervenções diretivas e planejadas, muitas vezes na forma de **tarefas** e prescrições — inclusive a célebre e contraintuitiva **prescrição do sintoma** (pedir que o casal, por exemplo, agende deliberadamente as brigas), que expõe o caráter voluntário e padronizado do que parecia incontrolável.
+
+**Terapia sistêmica de Milan** e as abordagens pós-modernas, que enfatizam as **narrativas** e os significados que a família constrói, e técnicas como as **perguntas circulares** (perguntar a um membro como *outro* se sente, revelando as percepções cruzadas).
+
+**Terapia transgeracional** (Murray Bowen). Olha para além do núcleo, através das **gerações** [@bowen1978]. Seus conceitos-chave: a **diferenciação do self** (o grau em que a pessoa mantém autonomia emocional sem se fundir nem se cortar da família) e a **triangulação** (quando a tensão entre duas pessoas é aliviada arrastando uma terceira para o conflito — o filho "puxado" para a briga dos pais). Padrões emocionais, mostra Bowen, transmitem-se por gerações.
+
+## Terapia de casal
+
+A terapia de casal aplica o pensamento sistêmico à díade conjugal. As abordagens mais validadas hoje combinam raízes comportamentais, cognitivas e emocionais. A **terapia comportamental de casal** trabalha a troca de comportamentos positivos, a comunicação e a resolução de problemas. A **terapia focada na emoção para casais** (EFT, de Sue Johnson, com raiz na teoria do apego — Cap. 60) entende os conflitos crônicos como **protestos de apego**: sob a briga sobre a louça, está o medo de não ser importante para o outro. Ajudar o casal a acessar e comunicar essas necessidades de vínculo, em vez de encenar o ciclo de ataque-e-retraimento, reorganiza a relação. As pesquisas de John Gottman, por décadas de observação de casais em laboratório, identificaram preditores robustos de ruptura — como os "quatro cavaleiros" do apocalipse conjugal: crítica, desprezo, defensividade e evasão —, dando base empírica à intervenção.
+
+## Terapia de grupo
+
+Um formato distinto, mas aparentado no espírito relacional, é a **terapia de grupo**: um pequeno número de pacientes (tipicamente 6 a 10) que se reúne regularmente com um ou dois terapeutas. Longe de ser apenas "terapia individual feita em escala para economizar", o grupo tem um **poder terapêutico próprio**, que Irvin Yalom sistematizou nos **fatores terapêuticos** [@yalom2005]:
+
+- **Universalidade** — descobrir que não se está sozinho, que outros sofrem do mesmo ("não sou o único").
+- **Instilação de esperança** — ver colegas mais adiantados melhorarem.
+- **Transmissão de informação** e **altruísmo** — ajudar os outros, o que é em si terapêutico.
+- **Aprendizagem interpessoal** — o grupo funciona como um **microcosmo social**: cada um reencena, ali, seus padrões de relação, que se tornam visíveis e podem ser trabalhados ao vivo (eco da transferência do Cap. 88, agora distribuída pelo grupo).
+- **Coesão grupal** — o equivalente grupal da aliança terapêutica; o senso de pertencimento e aceitação, um dos fatores mais associados a bom resultado.
+- **Catarse**, **fatores existenciais** e a **recapitulação corretiva** da família de origem.
+
+::: {.na-pratica}
+💡 **Por que o grupo alcança o que a terapia individual não alcança.** Uma pessoa com ansiedade social vai à terapia individual e trabalha seus medos — mas com uma única pessoa, o terapeuta, numa relação segura e assimétrica. No grupo, ela está diante de várias pessoas, exatamente a situação que teme — e ali pode, com apoio, **experimentar** relacionar-se, receber *feedback* honesto de pares (não de um profissional pago para ser gentil) e descobrir, na prática, que suas previsões catastróficas não se confirmam. O grupo oferece **universalidade** (ver que outros têm medos parecidos desfaz a vergonha do isolamento) e um **laboratório vivo** de relações. Para problemas que *são* interpessoais — solidão, vergonha, dificuldades de vínculo —, o formato grupal não é um substituto econômico da terapia individual: é, muitas vezes, o tratamento de escolha.
+:::
+
+Aparentados da terapia de grupo, embora sem a condução de um profissional, são os **grupos de ajuda mútua** e de autoajuda — dos Alcoólicos Anônimos e outros grupos de 12 passos (Cap. 86) a grupos de enlutados e de pacientes crônicos. Eles mobilizam sobretudo a universalidade, o altruísmo e a esperança, e têm papel importante na rede de cuidado, complementando (sem substituir) o tratamento profissional.
+
+::: {.atencao}
+⚠️ **A leitura sistêmica tem um limite ético importante: violência não é "circular".** A causalidade circular é uma ferramenta poderosa contra a busca simplista de culpados — mas mal aplicada, pode se tornar perigosa. Em situações de **violência doméstica ou abuso**, dizer que "ambos contribuem para o padrão" é inaceitável: responsabiliza a vítima e relativiza a agressão. Há assimetrias de poder — entre um adulto e uma criança, entre agressor e agredida — em que a responsabilidade **não** é distribuída igualmente, e o dever do terapeuta é proteger, não "equilibrar o sistema". A boa terapia sistêmica reconhece esses limites: nem toda dinâmica relacional é simétrica, e a neutralidade diante da violência é cumplicidade.
+:::
+
+## A evidência
+
+As terapias familiares e de casal baseadas em evidência têm eficácia bem estabelecida para um conjunto específico de problemas, em que a dimensão relacional é central: os **transtornos alimentares em adolescentes** (a terapia familiar é o tratamento de primeira linha para a anorexia nessa faixa — Cap. 84), os **problemas de conduta** infantojuvenis, o uso de substâncias em adolescentes e a **sofrimento conjugal**. A terapia de casal reduz o sofrimento relacional e pode aliviar a depressão quando esta se enlaça com o conflito conjugal. A terapia de **grupo**, por sua vez, mostra eficácia comparável à individual para muitos quadros, com a vantagem adicional do custo e do alcance — razão de seu peso em serviços públicos como os CAPS brasileiros (Cap. 104). Como sempre, a indicação é o que importa: sistemas para problemas de sistemas, grupos para o que é interpessoal.
+
+::: {.callout-sintese}
+- As terapias **sistêmicas** tratam relações e sistemas (família, casal), não indivíduos isolados; a família é um sistema que tende à **homeostase**.
+- A **causalidade circular** substitui a linear: padrões de interação se retroalimentam, sem culpado único; o **paciente identificado** pode expressar uma disfunção do sistema inteiro.
+- Escolas: **estrutural** (Minuchin — fronteiras, emaranhamento/desligamento) [@minuchin1974], **estratégica** (Haley — tarefas, prescrição do sintoma), de **Milan**/narrativa, e **transgeracional** (Bowen — diferenciação, triangulação) [@bowen1978].
+- A **terapia de casal** baseada em evidência (comportamental, focada na emoção/apego, base de Gottman) trata o sofrimento conjugal e ciclos de ataque-retraimento.
+- A **terapia de grupo** tem poder próprio, sistematizado por Yalom nos **fatores terapêuticos** (universalidade, esperança, aprendizagem interpessoal, coesão) [@yalom2005]; o grupo é um microcosmo social.
+- Eficácia estabelecida para transtornos alimentares e de conduta em jovens, uso de substâncias e sofrimento conjugal; **limite ético**: violência e abuso **não** são "circulares" — não se responsabiliza a vítima.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sistema (familiar)**
+:   Conjunto de membros interligados cujo comportamento só se entende pelas relações entre eles; tende à homeostase.
+
+**Causalidade circular**
+:   Concepção de que os comportamentos se retroalimentam mutuamente (A afeta B e B afeta A), sem começo nem culpado único.
+
+**Paciente identificado**
+:   Membro que carrega o sintoma e é apresentado como "o problema", podendo expressar uma disfunção do sistema inteiro.
+
+**Fronteiras (Minuchin)**
+:   Regras que definem a participação nos subsistemas familiares; podem ser claras, difusas (emaranhamento) ou rígidas (desligamento).
+
+**Diferenciação do self (Bowen)**
+:   Grau de autonomia emocional da pessoa em relação à família, sem fusão nem corte; conceito da terapia transgeracional.
+
+**Triangulação**
+:   Alívio da tensão entre duas pessoas pela inclusão de uma terceira no conflito.
+
+**Fatores terapêuticos (Yalom)**
+:   Mecanismos de mudança próprios da terapia de grupo (universalidade, esperança, aprendizagem interpessoal, coesão etc.) [@yalom2005].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que significa dizer que a terapia sistêmica trata o "sistema" e não o indivíduo? Explique o conceito de paciente identificado com um exemplo.
+
+2. **(Conceitual.)** Contraste causalidade linear e circular usando o exemplo do casal (um se fecha, o outro cobra). Por que a pergunta "quem começou?" é mal formulada?
+
+3. **(Conceitual.)** Diferencie emaranhamento e desligamento (Minuchin) e explique o que Bowen entende por diferenciação do self e triangulação.
+
+4. **(Aplicação.)** Uma pessoa com ansiedade social poderia se beneficiar mais da terapia de grupo do que da individual. Justifique com pelo menos três fatores terapêuticos de Yalom.
+
+5. **(Integração.)** A terapia de casal focada na emoção lê os conflitos como "protestos de apego". Relacione essa ideia com a teoria do apego (Cap. 60).
+
+6. **(Reflexão crítica.)** Por que aplicar a "causalidade circular" a situações de violência doméstica é eticamente inaceitável? Qual é o dever do terapeuta diante de assimetrias de poder?
