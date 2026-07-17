@@ -1,5 +1,127 @@
 # 47. Tomada de decisão e heurísticas (vieses cognitivos)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Contrastar** os dois sistemas de pensamento (rápido/intuitivo e lento/deliberado) e a ideia de racionalidade limitada.
+- **Explicar** as heurísticas da representatividade, disponibilidade e ancoragem, e os vieses que geram.
+- **Analisar** a falácia da conjunção e a negligência da taxa de base como falhas do raciocínio probabilístico.
+- **Descrever** o efeito de enquadramento e a aversão à perda à luz da teoria do prospecto.
+- **Identificar** o viés de confirmação, o excesso de confiança e o viés retrospectivo.
+- **Avaliar** estratégias de "desenviesamento" e o debate sobre a racionalidade humana.
 :::
+
+Encerramos a tríade do pensamento (conceitos, problemas, decisão) com o domínio em que a mente mais fascina e mais escorrega: a **decisão sob incerteza**. Como escolhemos entre opções cujos resultados não conhecemos? A economia clássica supunha um agente **racional** que pondera probabilidades e utilidades e maximiza o esperado. A psicologia mostrou que o agente real é outro: rápido, intuitivo, econômico — e por isso vulnerável a **vieses cognitivos** sistemáticos. O programa de pesquisa que revelou isso, conduzido por Amos Tversky e Daniel Kahneman a partir dos anos 1970, é um dos mais influentes de toda a ciência do século XX, e rendeu a Kahneman o Nobel de Economia. Sua lição não é que somos "burros", e sim que a mente usa **atalhos** (heurísticas) admiravelmente eficientes na maior parte do tempo — que, em condições identificáveis, produzem erros previsíveis.
+
+## Dois sistemas de pensamento
+
+Kahneman sintetizou décadas de pesquisa numa distinção didática entre dois modos de operação da mente [@kahneman2011]. O **Sistema 1** é rápido, automático, intuitivo, associativo e sem esforço — reconhece um rosto, completa "pão com...", sente medo de um vulto. O **Sistema 2** é lento, deliberado, sequencial e custoso — resolve `17 × 24`, preenche um formulário, pesa argumentos. O Sistema 1 está sempre ligado e propõe respostas imediatas; o Sistema 2, preguiçoso e limitado, em geral as **endossa** sem checar. A maioria dos vieses nasce daí: o Sistema 1 oferece uma resposta intuitiva plausível, e o Sistema 2 não faz o esforço de corrigi-la. Essa arquitetura enraíza-se numa ideia mais antiga, a **racionalidade limitada** de Herbert Simon: como temos tempo, informação e capacidade de processamento finitos, não *maximizamos* — nos **satisfazemos** (*satisficing*), aceitando a primeira opção boa o bastante [@simon1955]. As heurísticas são a forma concreta dessa racionalidade limitada.
+
+## As três grandes heurísticas
+
+::: {.experimento}
+🔬 **Representatividade e a falácia da conjunção (o problema de Linda).** Tversky e Kahneman descreveram "Linda": 31 anos, solteira, franca, muito inteligente, formada em filosofia, engajada em questões de justiça social e antinucleares na juventude. Perguntaram o que é **mais provável**: (a) Linda é caixa de banco; ou (b) Linda é caixa de banco **e** feminista. A maioria escolhe (b) — o que é **logicamente impossível**, pois a conjunção de dois eventos nunca pode ser mais provável que um deles isolado (todo caixa-feminista é caixa) [@tversky_kahneman1983]. O erro nasce da **heurística da representatividade**: julgamos a probabilidade pela *semelhança* de Linda ao estereótipo de feminista, não pelas leis da probabilidade. É a **falácia da conjunção**.
+:::
+
+A **heurística da representatividade** — julgar a probabilidade de algo pertencer a uma categoria por quão parecido é com o protótipo dela (Cap. 46) — produz outro erro grave: a **negligência da taxa de base**. Diga que "Steve é tímido, organizado e detalhista" e pergunte se é mais provável que seja bibliotecário ou agricultor: as pessoas dizem bibliotecário (parece o estereótipo), **ignorando** que há muitíssimo mais agricultores que bibliotecários na população — a taxa de base, que a probabilidade correta exige considerar [@tversky_kahneman1974]. A semelhança grita mais alto que as frequências.
+
+A **heurística da disponibilidade** julga a frequência ou probabilidade de um evento pela **facilidade com que exemplos vêm à mente**. Como o vívido, o recente e o midiático são mais "disponíveis", superestimamos suas frequências: tememos mais acidentes de avião que de carro (embora o carro seja muito mais letal), e superestimamos mortes por causas espetaculares (tubarões, terrorismo) e subestimamos as silenciosas (diabetes, AVC). A cobertura da mídia enviesa diretamente nossas estimativas de risco.
+
+A **heurística da ancoragem e ajuste** mostra como um número arbitrário contamina um juízo. Apresentado um valor inicial (a **âncora**), ajustamos a partir dele — e o ajuste é tipicamente **insuficiente**, de modo que a estimativa final fica presa perto da âncora. Num experimento clássico, girou-se uma roleta (visivelmente aleatória) antes de perguntar que porcentagem de países africanos há na ONU: quem viu números altos deu estimativas maiores que quem viu números baixos [@tversky_kahneman1974]. Um número irrelevante e sabidamente casual mexeu no juízo. A ancoragem opera em negociações, preços ("de R\$ 200 por R\$ 99"), sentenças judiciais e avaliações de todo tipo.
+
+## Enquadramento e aversão à perda
+
+Talvez o achado mais subversivo seja que a *forma de apresentar* opções logicamente idênticas muda a escolha — o **efeito de enquadramento** (*framing*).
+
+::: {.experimento}
+🔬 **O problema da doença asiática (Tversky e Kahneman, 1981).** Pediu-se que se escolhesse um programa contra uma epidemia que ameaça 600 vidas. Num enquadramento de **ganhos**: o programa A "salva 200 pessoas"; o B tem 1/3 de chance de salvar todas e 2/3 de não salvar ninguém. A maioria escolheu o **certo** (A) — avessa ao risco quando se fala em salvar. Outro grupo recebeu opções *matematicamente idênticas*, mas enquadradas como **perdas**: o programa C leva "400 pessoas a morrer"; o D tem 1/3 de chance de ninguém morrer e 2/3 de todos morrerem. Agora a maioria escolheu o **arriscado** (D) — buscando o risco para evitar a perda certa [@tversky_kahneman1981]. As duas versões descrevem exatamente os mesmos resultados; só muda a moldura "salvar" ou "morrer". A preferência inverteu-se apenas pela palavra.
+:::
+
+Esse padrão é explicado pela **teoria do prospecto** de Kahneman e Tversky, uma descrição psicológica (não normativa) de como realmente decidimos sob risco [@kahneman_tversky1979]. Duas ideias centrais (@fig-prospecto). Primeira: avaliamos resultados como **ganhos e perdas relativos a um ponto de referência**, não em termos de riqueza absoluta. Segunda, e decisiva: a **aversão à perda** — perdas pesam mais que ganhos equivalentes (perder R\$ 100 dói mais do que ganhar R\$ 100 agrada, por um fator de cerca de 2). A curva de valor é **assimétrica**: mais íngreme no lado das perdas. Daí muitos fenômenos reais: o **efeito de posse** (exigimos mais para vender algo do que pagaríamos para comprá-lo), a relutância em realizar prejuízos, o poder de "não perca esta chance" na publicidade.
+
+::: {#fig-prospecto}
+```{.tikz}
+%%| filename: prospecto-valor
+%%| alt: Gráfico da função de valor da teoria do prospecto. O eixo horizontal representa perdas à esquerda e ganhos à direita, cruzando num ponto de referência na origem. O eixo vertical é o valor psicológico. A curva tem forma de S: no lado dos ganhos é côncava e sobe suavemente; no lado das perdas é convexa e cai muito mais acentuadamente, ilustrando que as perdas pesam mais que os ganhos equivalentes.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (-3.4,0) -- (3.4,0) node[right, font=\tiny] {perdas $\;\leftarrow\;|\;\rightarrow\;$ ganhos};
+  \draw[->, thick] (0,-3.0) -- (0,2.4) node[above, font=\tiny] {valor psicológico};
+  \node[font=\tiny, align=center] at (2.0,-0.35) {ponto de\\referência};
+  \draw[->, manualgray] (1.3,-0.5) .. controls (0.7,-0.4) .. (0.1,-0.08);
+  % ganho: côncavo, suave
+  \draw[very thick, curva, manualgreen] (0,0) .. controls (0.8,0.9) and (1.8,1.3) .. (3.0,1.5);
+  % perda: convexo, íngreme
+  \draw[very thick, curva, manualred] (0,0) .. controls (-0.8,-1.6) and (-1.8,-2.4) .. (-3.0,-2.7);
+  \node[text=manualgreen!50!black, font=\tiny\bfseries] at (2.3,1.85) {ganhos: sobe devagar};
+  \node[text=manualred, font=\tiny\bfseries, align=center] at (-1.9,-2.9) {perdas: despenca\\(pesa mais)};
+\end{tikzpicture}
+```
+A função de valor da teoria do prospecto. O valor é medido a partir de um **ponto de referência** (não da riqueza absoluta). A curva é **assimétrica**: a queda no lado das **perdas** é mais íngreme que a subida no lado dos **ganhos** — a **aversão à perda**.
+:::
+
+## Mais vieses: confirmação, confiança, retrospecto
+
+O **viés de confirmação** é a tendência a buscar, notar e lembrar evidências que **confirmam** o que já cremos, e a ignorar ou descontar as que contrariam. Peter Wason demonstrou-o com sua tarefa "2–4–6": dada a tripla 2–4–6, os participantes deviam descobrir a regra que a gerava propondo novas triplas para teste. A regra era simplesmente "três números crescentes", mas quase todos formulavam hipóteses estreitas ("sobe de 2 em 2") e só testavam triplas que as **confirmariam** (8–10–12), raramente tentando triplas que as **refutariam** — que teriam revelado a regra depressa [@wason1960]. Preferimos confirmar a testar; é a raiz psicológica de muita crença resistente à evidência, de teorias da conspiração a diagnósticos precoces que se autoconfirmam.
+
+O **excesso de confiança** é a tendência sistemática a superestimar a exatidão dos próprios juízos e conhecimentos: quando as pessoas dizem estar "99% certas", erram muito mais que 1% das vezes. E o **viés retrospectivo** (*hindsight bias*, o "eu sabia o tempo todo") é a tendência, depois de conhecer o resultado, a achar que ele era previsível — reescrevemos nossa memória de expectativa para casá-la com o que ocorreu (elo com a memória reconstrutiva, Cap. 45). Ele nos faz aprender menos com o passado (pois nada nos surpreende em retrospecto) e julgar injustamente decisões que eram razoáveis com a informação disponível na hora.
+
+## Somos irracionais?
+
+::: {.atencao}
+**Heurísticas não são estupidez — e há debate.** É tentador ler esta lista de vieses como um veredito de que a mente humana é irremediavelmente falha. Duas correções. Primeira: as heurísticas são **adaptativas**. Elas trocam um pouco de exatidão por muita velocidade e economia, e na maioria dos ambientes reais acertam — um cérebro que calculasse probabilidades bayesianas antes de fugir de um predador não teria deixado descendentes. Gerd Gigerenzer e outros argumentam que muitas heurísticas são "**rápidas e frugais**" e, em ambientes apropriados, tão ou mais acuradas que métodos complexos — e que vários "vieses" somem quando a informação é apresentada em **frequências naturais** ("10 em 1000") em vez de probabilidades ("1%"). O debate entre a tradição "heurísticas-e-vieses" (que enfatiza os erros) e a "racionalidade ecológica" (que enfatiza a adequação ao ambiente) segue vivo e produtivo. Segunda: reconhecer um viés é o primeiro passo para mitigá-lo. **Desenviesar** é difícil (os vieses persistem mesmo em quem os conhece), mas há estratégias: acionar deliberadamente o Sistema 2, considerar a hipótese oposta ("como eu estaria errado?"), usar frequências em vez de probabilidades, buscar taxas de base, e recorrer a algoritmos e listas de verificação em decisões importantes. Saber que a intuição pode enganar é, ela própria, uma ferramenta cognitiva.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- Decidimos com dois sistemas: **Sistema 1** (rápido, intuitivo) e **Sistema 2** (lento, deliberado). Operamos sob **racionalidade limitada** (Simon): satisfazemos em vez de maximizar.
+- **Representatividade** (julgar por semelhança) gera a **falácia da conjunção** (Linda) e a **negligência da taxa de base**. **Disponibilidade** (julgar pela facilidade de lembrar) distorce percepções de risco. **Ancoragem** prende estimativas a um valor inicial arbitrário.
+- O **efeito de enquadramento** (doença asiática) mostra que a moldura "ganho/perda" inverte escolhas idênticas. A **teoria do prospecto** explica: avaliamos ganhos e perdas a partir de um **ponto de referência**, com **aversão à perda** (perdas pesam mais).
+- **Viés de confirmação** (Wason, 2–4–6), **excesso de confiança** e **viés retrospectivo** ("eu sabia") completam o quadro.
+- Heurísticas são **atalhos adaptativos**, não estupidez; há debate (Gigerenzer, racionalidade ecológica) e estratégias de **desenviesamento** (Sistema 2, hipótese oposta, frequências naturais).
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Sistema 1 / Sistema 2**
+:   Pensamento rápido, automático e intuitivo / lento, deliberado e custoso [@kahneman2011].
+
+**Racionalidade limitada**
+:   Decidir com recursos finitos, satisfazendo (aceitar o bom o bastante) em vez de maximizar [@simon1955].
+
+**Heurística da representatividade**
+:   Julgar probabilidade pela semelhança ao protótipo; gera a falácia da conjunção e a negligência da taxa de base [@tversky_kahneman1983].
+
+**Heurística da disponibilidade**
+:   Julgar frequência pela facilidade de trazer exemplos à mente; distorce a percepção de risco.
+
+**Ancoragem e ajuste**
+:   Estimar a partir de um valor inicial, ajustando de forma insuficiente [@tversky_kahneman1974].
+
+**Efeito de enquadramento**
+:   Mudança de escolha conforme opções idênticas sejam descritas como ganhos ou perdas [@tversky_kahneman1981].
+
+**Teoria do prospecto / aversão à perda**
+:   Avaliamos ganhos e perdas a partir de um ponto de referência; perdas pesam mais que ganhos equivalentes [@kahneman_tversky1979].
+
+**Viés de confirmação**
+:   Tendência a buscar e valorizar evidência que confirma as próprias crenças [@wason1960].
+
+**Viés retrospectivo**
+:   Após saber o resultado, achá-lo previsível ("eu sabia o tempo todo").
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie Sistema 1 e Sistema 2 com um exemplo de tarefa típica de cada. Por que a maioria dos vieses "escapa" pelo Sistema 2?
+
+2. **(Análise.)** Por que julgar (b) "caixa e feminista" mais provável que (a) "caixa" é logicamente impossível? Que heurística produz esse erro?
+
+3. **(Aplicação.)** Explique, pela heurística da disponibilidade, por que muita gente teme mais avião que automóvel. Que dado corrige a intuição?
+
+4. **(Reflexão crítica.)** No problema da doença asiática, as opções são idênticas nos dois enquadramentos. Por que a escolha se inverte? Ligue à aversão à perda e ao ponto de referência.
+
+5. **(Análise.)** Na tarefa 2–4–6 de Wason, por que testar apenas triplas que *confirmam* a hipótese é uma estratégia ruim? O que seria testar para *refutar*?
+
+6. **(Avaliação.)** As heurísticas nos tornam irracionais? Apresente o argumento da "racionalidade ecológica" e duas estratégias concretas de desenviesamento.
