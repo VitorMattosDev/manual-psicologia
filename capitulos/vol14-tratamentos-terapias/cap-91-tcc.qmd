@@ -1,5 +1,144 @@
 # 91. Terapia cognitivo-comportamental (TCC)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o modelo cognitivo: não são os eventos, mas a interpretação deles, que produz as emoções.
+- **Descrever** os três níveis de cognição de Beck (pensamentos automáticos, crenças intermediárias e crenças nucleares/esquemas).
+- **Identificar** distorções cognitivas comuns e aplicar a reestruturação cognitiva.
+- **Diferenciar** a terapia cognitiva de Beck da terapia racional-emotiva de Ellis (modelo ABC).
+- **Reconhecer** como a TCC integra técnicas cognitivas e comportamentais, incluindo os experimentos comportamentais.
+- **Avaliar** a evidência de eficácia da TCC e discutir seus limites e críticas.
 :::
+
+A terapia comportamental tratava o comportamento; faltava a peça que a revolução cognitiva (Cap. 12) tornou incontornável — a **cognição**. E se, entre o evento e a emoção, houvesse um elo decisivo: o **pensamento**? A **terapia cognitivo-comportamental** (TCC) nasceu dessa síntese, unindo o rigor comportamental à atenção aos processos mentais. Tornou-se, ao longo de meio século, a psicoterapia mais pesquisada e mais amplamente recomendada do mundo — o tratamento psicológico de primeira linha para depressão, transtornos de ansiedade e muitos outros quadros. Este capítulo apresenta seu modelo, suas técnicas e a evidência que a sustenta, sem perder de vista suas limitações.
+
+## O modelo cognitivo: o elo entre evento e emoção
+
+A intuição fundadora é tão antiga quanto o estoico Epicteto — "não são as coisas que nos perturbam, mas a opinião que temos delas" — e tão testável quanto a psicologia contemporânea permitiu. O **modelo cognitivo** afirma que não é a situação, em si, que causa nossas emoções, mas a **interpretação** que fazemos dela. Dois estudantes recebem a mesma nota mediana; um pensa "não sou capaz, vou fracassar em tudo" e afunda na tristeza; o outro pensa "estudei pouco desta vez, posso melhorar" e se mobiliza. Mesmo evento, interpretações diferentes, emoções e comportamentos diferentes (@fig-modelo-cognitivo).
+
+Essa cadeia — situação → pensamento → emoção → comportamento — é o coração da TCC, e ela é **circular**: o comportamento (evitar, por exemplo) retroalimenta a situação e confirma o pensamento, fechando círculos viciosos. O sofrimento psicológico, nessa leitura, é mantido por padrões de pensamento **enviesados e inflexíveis** — e, como pensamentos podem ser examinados e revistos, o sofrimento pode ser tratado ao se trabalhar diretamente sobre eles.
+
+::: {#fig-modelo-cognitivo}
+```{.tikz}
+%%| filename: modelo-cognitivo
+%%| alt: Diagrama em ciclo com quatro caixas ligadas por setas. "Situação" no alto à esquerda aponta para "Pensamento automático" à direita; este aponta para baixo para "Emoção"; "Emoção" aponta para "Comportamento"; e "Comportamento" retorna com uma seta para "Situação", indicando um ciclo que se retroalimenta. Uma chave destaca que o pensamento é o elo sobre o qual a terapia intervém.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.2cm, minimum height=1.1cm}]
+  \node[cx, draw=manualgray] (sit) at (0,3) {\textbf{Situação}\\{\scriptsize evento gatilho}};
+  \node[cx, draw=manualblue, fill=manualblue!8] (pen) at (5,3) {\textbf{Pensamento}\\{\scriptsize interpretação automática}};
+  \node[cx, draw=manualred, fill=manualred!8] (emo) at (5,0.4) {\textbf{Emoção}};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (comp) at (0,0.4) {\textbf{Comportamento}};
+  \draw[->,>=Stealth,thick] (sit)--(pen);
+  \draw[->,>=Stealth,thick] (pen)--(emo);
+  \draw[->,>=Stealth,thick] (emo)--(comp);
+  \draw[->,>=Stealth,thick] (comp)--(sit);
+  \node[font=\scriptsize\itshape, text=manualblue!70!black, align=center] at (7.9,1.7) {ponto de\\intervenção\\da TCC};
+  \draw[->,>=Stealth, manualblue!70!black] (7.0,1.7) to[bend right=20] (6.55,2.4);
+\end{tikzpicture}
+```
+O modelo cognitivo. Entre a **situação** e a **emoção** interpõe-se o **pensamento** automático; a emoção gera **comportamento**, que retroalimenta a situação. A TCC intervém sobre o elo cognitivo — e também sobre o comportamental —, quebrando o círculo vicioso.
+:::
+
+## Os três níveis de cognição (Beck)
+
+Aaron Beck, psiquiatra de formação psicanalítica, chegou ao modelo cognitivo ao notar que seus pacientes deprimidos relatavam um fluxo de **pensamentos automáticos** negativos que a teoria freudiana não previa. Ele organizou a cognição em três níveis de profundidade [@beck1979; @beck1967]:
+
+1. **Pensamentos automáticos.** O nível mais superficial e acessível: pensamentos rápidos, involuntários, que surgem numa situação específica ("vou passar vergonha", "ele me acha um idiota"). São o alvo inicial da terapia.
+2. **Crenças intermediárias.** Regras, atitudes e suposições condicionais que organizam os automáticos ("se eu não for perfeito, não valho nada"; "devo agradar a todos").
+3. **Crenças nucleares** (ou **esquemas**). O nível mais profundo: convicções absolutas e globais sobre si, os outros e o mundo, geralmente formadas cedo ("sou incapaz", "sou indigno de amor", "o mundo é perigoso"). Os esquemas funcionam como lentes que filtram toda a experiência, dando origem, de cima para baixo, às crenças intermediárias e aos automáticos.
+
+Na depressão, Beck identificou a **tríade cognitiva negativa**: visões negativas de **si mesmo**, do **mundo** e do **futuro**. A terapia começa pelos pensamentos automáticos (mais acessíveis) e, gradualmente, alcança as crenças nucleares que os sustentam.
+
+## As distorções cognitivas
+
+Os pensamentos automáticos disfuncionais seguem padrões recorrentes de erro — as **distorções cognitivas**. Reconhecê-las é o primeiro passo para questioná-las:
+
+- **Catastrofização**: antecipar o pior resultado possível ("se eu gaguejar, minha carreira acabou").
+- **Pensamento tudo-ou-nada** (dicotômico): ver em preto e branco, sem meios-termos ("se não foi perfeito, foi um fracasso total").
+- **Supergeneralização**: tirar de um episódio uma regra geral ("fui rejeitado uma vez, serei sempre rejeitado").
+- **Filtro mental / abstração seletiva**: focar apenas o negativo, ignorando o positivo.
+- **Leitura mental**: presumir que se sabe o que os outros pensam ("todos notaram que me atrapalhei").
+- **Personalização**: atribuir a si a causa de eventos alheios.
+- **Raciocínio emocional**: tomar o sentimento como prova ("sinto que sou um fracasso, logo sou").
+
+## A técnica: reestruturação cognitiva
+
+A intervenção central é a **reestruturação cognitiva**: identificar, examinar e modificar pensamentos disfuncionais. Não se trata de "pensar positivo" nem de negar a realidade, mas de submeter os pensamentos a um **teste de realidade** — tratá-los como **hipóteses**, não como fatos. O instrumento é o **questionamento socrático**: o terapeuta, em vez de refutar o pensamento do paciente, faz perguntas que o levam a examiná-lo por si mesmo — "Que evidências apoiam esse pensamento? Que evidências o contradizem? Há outra maneira de ver a situação? Se um amigo pensasse isso, o que você lhe diria? Qual a pior, a melhor e a mais provável hipótese?".
+
+Uma ferramenta prática é o **registro de pensamentos disfuncionais**: uma tabela em que o paciente anota a situação, a emoção (e sua intensidade), o pensamento automático, as evidências a favor e contra, e uma resposta alternativa mais equilibrada. Com a prática, esse exame — feito com o terapeuta na sessão — internaliza-se e a pessoa passa a fazê-lo sozinha no cotidiano.
+
+::: {.estudo-caso}
+📋 **Estudo de Caso — reestruturando um pensamento**
+
+Joana, 28 anos, em tratamento para depressão, chega abalada: enviou uma mensagem a uma amiga e não recebeu resposta em três horas. **Situação:** amiga não respondeu. **Emoção:** tristeza (80/100), ansiedade (60/100). **Pensamento automático:** "Ela está brava comigo. Ninguém gosta de mim de verdade." O terapeuta reconhece aí **leitura mental** e **supergeneralização**, e conduz o exame socrático. *Que evidências você tem de que ela está brava?* "Nenhuma direta." *Que outras explicações existem para o silêncio de três horas?* "Pode estar no trabalho, ocupada, sem ver a mensagem." *Se sua irmã lhe contasse isso, o que você diria a ela?* "Que está tirando conclusões demais." Ao fim, Joana formula uma resposta alternativa: "Não sei por que ela não respondeu; o mais provável é que esteja ocupada. Um silêncio não prova que ninguém gosta de mim." A tristeza cai para 40/100. O pensamento não foi negado nem substituído por otimismo forçado — foi **testado** e encontrado sem base. *(Caso ilustrativo fictício.)*
+:::
+
+## Beck e Ellis: duas raízes, um modelo
+
+A TCC tem dois fundadores quase simultâneos. Além de Beck, **Albert Ellis** desenvolveu, já nos anos 1950, a **terapia racional-emotiva comportamental** (TREC/REBT), organizada no **modelo ABC**: um **A**contecimento ativador não gera diretamente a **C**onsequência emocional; entre eles está a **B** (*belief*), a crença ou interpretação [@ellis1962]. O sofrimento vem de **crenças irracionais**, tipicamente exigências absolutas ("eu *devo* ser aprovado por todos", "as coisas *têm* que ser como quero"). Ellis era mais **confrontativo** que Beck: disputava vigorosamente as crenças irracionais (o passo **D**, de *disputing*), em vez de guiar o paciente por perguntas. As duas abordagens convergem no essencial — a cognição medeia a emoção — e, somadas ao legado comportamental do Cap. 90, formam a TCC contemporânea. Donald Meichenbaum acrescentou uma terceira contribuição, a **modificação cognitivo-comportamental** e o treino auto-instrucional [@meichenbaum1977].
+
+::: {.na-pratica}
+💡 **Cognitivo + comportamental: os experimentos comportamentais.** A TCC não é só conversar sobre pensamentos: seu recurso mais potente é **testá-los na realidade**. Um paciente com ansiedade social acredita que "se eu ficar em silêncio numa roda, todos vão me achar estranho e me excluir". Em vez de apenas discutir a crença, o terapeuta propõe um **experimento comportamental**: propositalmente fazer uma pausa silenciosa numa conversa e **observar** o que de fato acontece. A previsão catastrófica ("serei excluído") é confrontada com dados reais (em geral, ninguém repara ou reage mal). Aqui a herança comportamental (a exposição do Cap. 90) e a cognitiva se fundem: a exposição não serve só à habituação, mas também a **coletar evidências** que refutam a crença. É por isso que a sigla une as duas letras — a TCC trabalha pensamento *e* ação, cada um corrigindo o outro.
+:::
+
+## A evidência e os limites
+
+A TCC é a psicoterapia com a **maior base de ensaios controlados** já acumulada. Meta-análises sustentam sua eficácia para um amplo espectro de transtornos — depressão, transtornos de ansiedade, TOC, TEPT, transtornos alimentares, insônia, e como adjuvante em quadros psicóticos e bipolares [@hofmann2008; @dobson1989]. Na depressão, ela iguala-se em média a outras terapias validadas e à medicação, com uma vantagem importante: parece **reduzir a recaída** após o término mais do que a medicação isolada, provavelmente porque ensina habilidades que persistem [@hollon2005; @cuijpers2013]. Por sua estrutura, foco no presente, duração limitada e orientação a metas, tornou-se a abordagem mais recomendada por diretrizes de saúde pública mundo afora.
+
+Esse sucesso, porém, convive com críticas legítimas, que a honestidade científica exige registrar.
+
+::: {.atencao}
+⚠️ **Quatro cautelas sobre a TCC.** (1) **O tamanho dos efeitos pode estar superestimado.** Reanálises apontam **viés de publicação** (estudos negativos publicados menos) e queda dos efeitos ao longo das décadas, à medida que os ensaios ficaram mais rigorosos e os grupos-controle, melhores. (2) **O mecanismo é incerto.** Há evidência de que mudanças ocorrem *antes* de a reestruturação cognitiva ser ensinada, e de que a **ativação comportamental** sozinha iguala a TCC completa na depressão — o que questiona se é mesmo a *mudança de cognições* que cura, ou os fatores comuns e comportamentais. (3) **Nem tudo é "distorção".** Pensamentos negativos podem ser **realistas** (o desempregado que teme não pagar as contas não está distorcendo nada); tratar sofrimento derivado de condições reais como "erro de pensamento" pode individualizar problemas sociais e soar como culpabilização. (4) **Foco no sintoma presente** pode ser raso para quadros ligados a história de trauma, sentido de vida ou padrões relacionais profundos. Essas críticas não invalidam a TCC — a mais validada das terapias —, mas convocam humildade e integração, e ajudam a explicar o surgimento das terapias contextuais do próximo capítulo.
+:::
+
+::: {.callout-sintese}
+- O **modelo cognitivo**: não é o evento, mas sua **interpretação**, que gera a emoção; situação → pensamento → emoção → comportamento formam um ciclo que se retroalimenta.
+- Beck organizou a cognição em três níveis — **pensamentos automáticos**, **crenças intermediárias** e **crenças nucleares/esquemas** — e descreveu a **tríade cognitiva negativa** da depressão [@beck1967; @beck1979].
+- Os pensamentos disfuncionais seguem **distorções cognitivas** (catastrofização, tudo-ou-nada, supergeneralização, leitura mental etc.).
+- A **reestruturação cognitiva** trata pensamentos como hipóteses a testar, via **questionamento socrático** e registro de pensamentos; Ellis propôs, em paralelo, o **modelo ABC** da TREC [@ellis1962].
+- A TCC integra o cognitivo e o comportamental — os **experimentos comportamentais** testam crenças na realidade —, unindo a herança do Cap. 90.
+- É a terapia mais validada, eficaz para amplo espectro de transtornos e com boa **prevenção de recaída** [@hofmann2008; @hollon2005; @cuijpers2013]; críticas legítimas: viés de publicação, mecanismo incerto, risco de patologizar sofrimento realista, e limites para quadros profundos.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Modelo cognitivo**
+:   Tese de que a interpretação de um evento, e não o evento em si, determina a resposta emocional e comportamental.
+
+**Pensamentos automáticos**
+:   Pensamentos rápidos e involuntários que surgem em situações específicas; nível superficial e acessível da cognição.
+
+**Crenças nucleares (esquemas)**
+:   Convicções absolutas e globais sobre si, os outros e o mundo, formadas cedo, que filtram toda a experiência.
+
+**Tríade cognitiva negativa**
+:   Visões negativas de si, do mundo e do futuro, características da depressão segundo Beck.
+
+**Distorção cognitiva**
+:   Padrão sistemático de erro no pensamento (catastrofização, tudo-ou-nada, supergeneralização, leitura mental etc.).
+
+**Reestruturação cognitiva**
+:   Processo de identificar, examinar e modificar pensamentos disfuncionais, tratando-os como hipóteses a testar.
+
+**Modelo ABC (Ellis)**
+:   Esquema da TREC: o Acontecimento (A) não causa a Consequência emocional (C) diretamente; entre eles está a crença (B) [@ellis1962].
+
+**Experimento comportamental**
+:   Teste planejado, na realidade, de uma previsão catastrófica, para coletar evidências que confirmem ou refutem uma crença.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie o modelo cognitivo. Usando o exemplo dos dois estudantes com a mesma nota, mostre como a interpretação, e não o evento, produz a emoção.
+
+2. **(Conceitual.)** Descreva os três níveis de cognição de Beck e explique por que a terapia costuma começar pelos pensamentos automáticos, mesmo tendo os esquemas como raiz.
+
+3. **(Aplicação.)** Identifique as distorções cognitivas no pensamento de Joana e reproduza o questionamento socrático que o terapeuta usou. Por que isso não é "pensar positivo"?
+
+4. **(Conceitual.)** Compare a terapia cognitiva de Beck e a TREC de Ellis: em que convergem e em que diferem quanto ao estilo do terapeuta?
+
+5. **(Integração.)** Explique como um experimento comportamental une a herança comportamental (Cap. 90) e a cognitiva. Por que a exposição pode servir tanto à habituação quanto ao teste de crenças?
+
+6. **(Reflexão crítica.)** Nem todo pensamento negativo é uma distorção. Discuta o risco de a TCC patologizar sofrimento que decorre de condições reais e adversas, e como uma boa prática evita esse erro.
