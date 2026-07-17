@@ -1,5 +1,119 @@
 # 63. Idade adulta e envelhecimento
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Caracterizar** a vida adulta e o conceito de adultez emergente.
+- **Distinguir** inteligência fluida e cristalizada e descrever o curso do envelhecimento cognitivo.
+- **Explicar** a teoria da seletividade socioemocional e o paradoxo do bem-estar na velhice.
+- **Apresentar** o modelo de otimização seletiva com compensação (envelhecimento bem-sucedido).
+- **Discutir** as transições da vida adulta, a morte e o processo de luto de forma crítica.
 :::
+
+Fechamos o volume percorrendo a maior parte da vida: das primeiras décadas adultas à velhice e à morte. Por muito tempo, a psicologia tratou a vida adulta como um platô sem história — o fim do "desenvolvimento" e a antessala do declínio. A perspectiva do ciclo vital (Cap. 57) desfez esse quadro: a vida adulta é palco de ganhos e perdas, transformações e continuidades, até o fim. Veremos que o envelhecimento cognitivo é mais matizado do que o estereótipo do declínio sugere, e que — talvez surpreendentemente — o **bem-estar emocional** tende a **melhorar** com a idade. Ao encerrar, tocamos no último tema do desenvolvimento: a morte e o luto.
+
+## A vida adulta: transições e a adultez emergente
+
+A vida adulta costuma ser dividida em jovem (aprox. 20–40), média (40–65) e tardia (65+), mas as fronteiras são culturais e cada vez mais fluidas. As tarefas psicossociais que Erikson (Cap. 60) associou a essas fases — **intimidade** (formar vínculos comprometidos), **generatividade** (contribuir para as próximas gerações via trabalho, filhos, legado) e, na velhice, **integridade** (aceitar a vida vivida) — permanecem um mapa útil, ainda que não uma sequência rígida.
+
+Nas sociedades contemporâneas, o período entre o fim da adolescência e a assunção plena dos papéis adultos alongou-se. Jeffrey Arnett propôs chamá-lo de **adultez emergente** (aproximadamente 18–25 anos): uma fase, típica de culturas industrializadas, marcada pela exploração de identidade em amor e trabalho, pela instabilidade, pela sensação de estar "entre" a adolescência e a vida adulta e por adiar compromissos como casamento, filhos e carreira estável [@arnett2000]. Não é um estágio universal, mas um produto histórico das oportunidades e demandas das sociedades modernas — um bom exemplo de como o **contexto** molda as trajetórias de desenvolvimento (Cap. 57).
+
+A ideia popular de uma **"crise da meia-idade"** universal, aos 40–50 anos, não encontra forte respaldo empírico: a maioria das pessoas atravessa a meia-idade sem crise, e a reavaliação de vida típica da fase raramente assume a forma dramática do estereótipo.
+
+## Cognição na vida adulta: fluida × cristalizada
+
+O envelhecimento cognitivo não é um declínio uniforme, mas uma **dissociação** entre dois tipos de capacidade (@fig-fluida-cristalizada), retomando a distinção de Cattell (Cap. 49). A **inteligência fluida** — a capacidade de raciocinar rapidamente sobre problemas novos, a velocidade de processamento e a memória de trabalho — atinge o pico no início da vida adulta e **declina** gradualmente a partir daí. Já a **inteligência cristalizada** — o conhecimento acumulado, o vocabulário, a experiência e o julgamento — **mantém-se ou aumenta** até idades avançadas.
+
+::: {#fig-fluida-cristalizada}
+```{.tikz}
+%%| filename: inteligencia-fluida-cristalizada
+%%| alt: Gráfico com duas curvas ao longo da idade adulta. A inteligência fluida sobe até cerca dos 25 anos e depois declina de forma constante. A inteligência cristalizada sobe ao longo da vida e mantém-se elevada em platô até a velhice avançada, com leve queda no fim.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (0,0) -- (9.2,0) node[right, font=\tiny] {idade};
+  \draw[->, thick] (0,0) -- (0,3.4) node[above, font=\tiny, align=center] {desempenho};
+  \foreach \x/\a in {1/20, 3/40, 5/60, 7/80} { \node[font=\tiny, below] at (\x,0) {\a}; }
+  % fluida
+  \draw[very thick, curva, manualblue] (0.4,1.6) .. controls (1.2,2.9) and (1.6,3.0) .. (2,2.9)
+     .. controls (4,2.4) and (6,1.2) .. (8.6,0.4);
+  \node[text=manualblue, font=\tiny, right] at (6.0,0.9) {fluida};
+  % cristalizada
+  \draw[very thick, curva, manualred] (0.4,1.0) .. controls (3,2.2) and (5,2.7) .. (7,2.75)
+     .. controls (7.8,2.75) and (8.2,2.5) .. (8.6,2.2);
+  \node[text=manualred, font=\tiny, right] at (6.2,2.95) {cristalizada};
+\end{tikzpicture}
+```
+Dois cursos distintos: a inteligência **fluida** (raciocínio novo, velocidade) declina após o início da vida adulta; a **cristalizada** (conhecimento acumulado, vocabulário) mantém-se ou cresce até idades avançadas.
+:::
+
+Aqui, a metodologia foi decisiva. Estudos **transversais** antigos pintavam um quadro pessimista de declínio precoce e generalizado — mas confundiam idade com **coorte** (Cap. 57): idosos tinham menos escolaridade que os jovens. Os estudos **longitudinais e sequenciais** de K. Warner Schaie (o Seattle Longitudinal Study) revelaram um panorama bem mais otimista: muitas capacidades se mantêm estáveis até por volta dos 60 anos, e o declínio significativo é mais tardio e seletivo do que se supunha [@schaie1994]. Um mecanismo central do declínio fluido é a **lentificação da velocidade de processamento** [@salthouse1996]: processar informação mais devagar afeta em cascata a memória de trabalho e o raciocínio. Ainda assim, a experiência e as estratégias acumuladas frequentemente **compensam** a perda de velocidade em tarefas do mundo real, e a manutenção da atividade cognitiva, física e social protege a cognição (a ideia de **reserva cognitiva**).
+
+::: {.atencao}
+⚠️ **Envelhecer não é adoecer.** É crucial distinguir o **envelhecimento cognitivo normal** — lentificação, pequenas falhas de memória para nomes e detalhes, com preservação do funcionamento — das **demências**, como a doença de Alzheimer, que são **patologias**, não parte inevitável do envelhecer. A maioria dos idosos **não** desenvolve demência. Confundir os dois alimenta o **idadismo** (preconceito etário) e o pessimismo desnecessário. A neuropsicologia (Cap. 99) dedica-se justamente a traçar essa fronteira entre o esperado e o patológico.
+:::
+
+## A vida emocional melhora: seletividade socioemocional
+
+Um dos achados mais notáveis — e contraintuitivos — da psicologia do envelhecimento é o **paradoxo do bem-estar**: apesar das perdas (saúde, entes queridos, papéis), os idosos relatam, em média, **bem-estar emocional igual ou superior** ao de jovens, com menos emoções negativas e maior estabilidade afetiva. Laura Carstensen explicou-o com a **teoria da seletividade socioemocional** [@carstensen1999]. A ideia central é que a **percepção do tempo restante** molda as prioridades. Quando o tempo é percebido como **amplo** (juventude), priorizam-se metas de **aquisição de conhecimento** e expansão de horizontes — conhecer gente nova, buscar informação, preparar o futuro. Quando o tempo é percebido como **limitado** (velhice, mas também doenças graves em qualquer idade), as prioridades deslocam-se para metas **emocionalmente significativas**: cultivar relações próximas e gratificantes, saborear o presente, buscar sentido. Os idosos investem seletivamente no que importa emocionalmente — e, por isso, vivem uma vida afetiva mais rica e regulada.
+
+## Envelhecer bem: otimização seletiva com compensação
+
+Como se envelhece **bem**? Paul e Margret Baltes propuseram o modelo da **otimização seletiva com compensação (SOC)** [@baltes_baltes1990], uma estratégia geral de adaptação às perdas com três componentes. Na **seleção**, diante de recursos reduzidos, escolhem-se e priorizam-se menos domínios ou metas (concentrar-se no que mais importa). Na **otimização**, investe-se e treina-se para maximizar o desempenho nos domínios selecionados. Na **compensação**, empregam-se meios alternativos para contornar as perdas. O exemplo célebre é o do pianista Arthur Rubinstein, que, na velhice, tocava **menos** peças (seleção), as **ensaiava mais** (otimização) e, para disfarçar a lentidão dos dedos, **desacelerava** as passagens anteriores aos trechos rápidos, criando contraste (compensação). Envelhecer bem, nessa visão, não é evitar as perdas — inevitáveis —, mas **gerenciá-las** de modo inteligente e flexível, otimizando os ganhos possíveis.
+
+::: {.na-pratica}
+**Ingredientes do envelhecimento bem-sucedido.** A pesquisa gerontológica, incluindo estudos longitudinais que acompanham pessoas por décadas (como o Grant Study de Harvard, Cap. sobre personalidade e o trabalho de Vaillant), converge em fatores que predizem envelhecer com saúde e satisfação: **relações sociais próximas e afetuosas** — o preditor mais robusto de bem-estar e longevidade [@vaillant2000]; **atividade física** regular; **engajamento cognitivo e social** contínuo (aprender, trabalhar, participar); **atitude e sentido** — encontrar propósito e manter senso de controle; e a ausência de hábitos nocivos (tabagismo, abuso de álcool). Envelhecer bem é, em grande medida, resultado de escolhas e contextos acumulados ao longo de toda a vida — o que reforça a visão do ciclo vital.
+:::
+
+## O fim da vida: morte e luto
+
+O último tema do desenvolvimento é a morte. Elisabeth Kübler-Ross, a partir do trabalho com pacientes terminais, descreveu **cinco reações** frequentes diante da morte iminente ou de uma perda: **negação**, **raiva**, **barganha**, **depressão** e **aceitação** [@kubler_ross1969]. Sua contribuição histórica foi imensa — humanizou o cuidado com o morrer e fundou os cuidados paliativos modernos. Mas o modelo é hoje **criticado** por sugerir estágios **fixos e sequenciais**: a pesquisa mostra que o luto e o enfrentamento da morte são **altamente individuais**, não seguem uma ordem universal, e nem todos passam por todas as fases. O luto saudável, na visão atual, não é "completar estágios" nem "superar" a perda, mas **integrá-la** à vida que continua — oscilando entre o confronto e o alívio, e reconstruindo sentido. A maioria das pessoas mostra, aliás, notável **resiliência** diante da perda.
+
+## Encerrando o Vol 10
+
+Percorremos o desenvolvimento humano da concepção à morte: seus **conceitos e métodos** (Cap. 57), o **começo pré-natal e infantil** (Cap. 58), o **pensamento** de Piaget e Vygotsky (Cap. 59), os **vínculos** e as etapas de Erikson (Cap. 60), a **moralidade** (Cap. 61), a **adolescência** (Cap. 62) e, agora, a **vida adulta e a velhice**. O fio condutor foi a perspectiva do ciclo vital: desenvolver-se é um processo que dura a vida inteira, feito de ganhos e perdas, moldado pela interação incessante entre biologia, experiência e cultura. Com as trajetórias mapeadas, o manual segue para o Vol 11, que pergunta o que torna cada pessoa **singular e consistente** ao longo dessa jornada: a **personalidade**.
+
+## Síntese
+
+::: {.callout-sintese}
+- A vida adulta tem tarefas psicossociais (**intimidade**, **generatividade**, **integridade**); a **adultez emergente** (Arnett) é uma fase moderna de exploração entre 18–25 anos. A "crise da meia-idade" universal carece de respaldo.
+- A cognição se dissocia: a inteligência **fluida** declina após o início da vida adulta; a **cristalizada** se mantém ou cresce. Estudos **longitudinais** (Schaie) desmentiram o pessimismo dos transversais; a lentificação da **velocidade de processamento** (Salthouse) é mecanismo central.
+- O envelhecimento normal **não** é demência; confundi-los alimenta o **idadismo**.
+- **Paradoxo do bem-estar**: o afeto melhora com a idade. A **seletividade socioemocional** (Carstensen) explica: o tempo percebido como limitado desloca as metas para o emocionalmente significativo.
+- O modelo **SOC** (Baltes) — seleção, otimização, compensação — descreve o envelhecimento bem-sucedido; relações próximas são o maior preditor de bem-estar.
+- Os "**cinco estágios**" de Kübler-Ross humanizaram o cuidado, mas o luto é individual e não sequencial; a **resiliência** é a regra.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Adultez emergente**
+:   Fase (aprox. 18–25 anos) de exploração e instabilidade, típica de sociedades modernas [@arnett2000].
+
+**Inteligência fluida / cristalizada**
+:   Raciocínio novo e velocidade (declina) versus conhecimento acumulado (mantém-se ou cresce).
+
+**Seletividade socioemocional**
+:   Teoria de que o tempo percebido como limitado prioriza metas emocionalmente significativas [@carstensen1999].
+
+**Otimização seletiva com compensação (SOC)**
+:   Estratégia de envelhecer bem por seleção de metas, otimização e compensação de perdas [@baltes_baltes1990].
+
+**Reserva cognitiva**
+:   Resiliência da cognição à idade e à patologia, ligada a atividade mental, física e social ao longo da vida.
+
+**Cinco estágios do luto**
+:   Negação, raiva, barganha, depressão e aceitação (Kübler-Ross), hoje vistos como não sequenciais [@kubler_ross1969].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie inteligência fluida e cristalizada e descreva o curso de cada uma na vida adulta.
+
+2. **(Conceitual.)** Por que estudos transversais superestimaram o declínio cognitivo do envelhecimento? Como os longitudinais de Schaie corrigiram isso?
+
+3. **(Análise.)** Explique o **paradoxo do bem-estar** na velhice usando a teoria da seletividade socioemocional. Por que uma pessoa jovem com doença terminal poderia exibir prioridades "de idoso"?
+
+4. **(Aplicação.)** Dê um exemplo próprio (esporte, trabalho, estudo) de como alguém poderia usar **seleção, otimização e compensação** para lidar com uma perda de capacidade.
+
+5. **(Avaliação.)** Avalie criticamente o modelo dos "cinco estágios do luto" de Kübler-Ross. Qual sua contribuição histórica e qual sua principal falha?
+
+6. **(Síntese.)** Usando a perspectiva do ciclo vital, argumente por que "envelhecer bem" começa muito antes da velhice.
