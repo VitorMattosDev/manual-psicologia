@@ -1,5 +1,107 @@
 # 60. Desenvolvimento social e emocional (apego, Erikson)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a teoria do apego de Bowlby e a evidência de Harlow sobre a natureza do vínculo.
+- **Descrever** os padrões de apego identificados na Situação Estranha de Ainsworth.
+- **Discutir** os modelos internos de funcionamento e as consequências do apego ao longo da vida.
+- **Caracterizar** os oito estágios psicossociais de Erik Erikson.
+- **Avaliar** a interação entre temperamento, parentalidade e cultura no desenvolvimento socioemocional.
 :::
+
+Somos, antes de tudo, seres de vínculo. Muito antes de raciocinar sobre o mundo, o bebê forma laços afetivos que serão a matriz de sua vida emocional e social. Este capítulo trata de como esses laços se constroem — a teoria do **apego** — e de como o desenvolvimento social e emocional se estende por toda a vida, na visão dos **estágios psicossociais** de Erikson. Veremos que a necessidade de pertencer (Cap. 53) tem raízes profundas e precoces, e que a qualidade dos primeiros vínculos deixa marcas — não deterministas, mas reais — sobre como amamos, confiamos e nos regulamos emocionalmente.
+
+## Apego: a natureza do primeiro vínculo
+
+Por que o bebê se liga a quem cuida dele? A resposta antiga, das teorias comportamental e psicanalítica, era utilitária: o bebê ama a mãe porque ela o **alimenta** — o vínculo seria um subproduto da redução do impulso da fome. Um experimento célebre demoliu essa ideia.
+
+::: {.experimento}
+🔬 **As mães de arame e de pano (Harlow).** Harry Harlow separou macacos rhesus recém-nascidos de suas mães e ofereceu-lhes duas "mães" substitutas: uma de **arame**, que fornecia o **leite** por uma mamadeira, e outra de **pano macio**, aquecida, mas sem alimento [@harlow1958]. Se o vínculo fosse mera consequência da alimentação, os filhotes deveriam preferir a mãe de arame. O oposto ocorreu: eles se agarravam à **mãe de pano** a maior parte do tempo, indo à de arame apenas para se alimentar e correndo de volta ao pano. Diante de um estímulo assustador, buscavam o **conforto do contato** com a mãe de pano, usando-a como **base segura** para explorar. **Interpretação:** o vínculo não nasce do alimento, mas do **conforto do contato** — a necessidade de aconchego é primária, não derivada. **Relevância:** o estudo (eticamente hoje inadmissível) foi decisivo para a teoria do apego e revelou os efeitos devastadores da privação social precoce sobre o desenvolvimento.
+:::
+
+John Bowlby integrou essas evidências numa teoria de inspiração **etológica e evolutiva** [@bowlby1969]. Para ele, o **apego** é um sistema comportamental **inato**, selecionado pela evolução porque manter o bebê próximo do cuidador aumenta a sobrevivência. O bebê emite **comportamentos de apego** (chorar, sorrir, agarrar-se, seguir) que evocam cuidado; o cuidador funciona como uma **base segura** a partir da qual a criança explora o mundo e um **porto seguro** ao qual retorna diante da ameaça. O apego típico consolida-se por volta dos 6–8 meses, quando surgem a **ansiedade de separação** e o **estranhamento** diante de desconhecidos.
+
+### Os padrões de apego: a Situação Estranha
+
+Mary Ainsworth, colaboradora de Bowlby, desenvolveu um procedimento laboratorial para **medir** a qualidade do apego: a **Situação Estranha** [@ainsworth1978]. Numa sequência padronizada de episódios, a criança (por volta de 1 ano) é observada brincando, separando-se e reencontrando o cuidador, e diante de um estranho. O que revela o padrão de apego não é se a criança chora na separação, mas **como ela se comporta no reencontro**. Ainsworth identificou três padrões (um quarto foi acrescentado depois):
+
+- **Apego seguro** (o mais comum): a criança usa o cuidador como base segura, protesta na separação e é **facilmente reconfortada** no reencontro, retomando a exploração. Associa-se a cuidado **sensível e responsivo**.
+- **Apego inseguro-evitativo**: a criança parece indiferente, explora sem checar o cuidador e o **evita** no reencontro. Associa-se a cuidado distante ou rejeitador.
+- **Apego inseguro-ambivalente (resistente)**: a criança fica muito angustiada na separação e, no reencontro, mostra-se **ambivalente** — busca o contato e ao mesmo tempo resiste, difícil de acalmar. Associa-se a cuidado inconsistente.
+- **Apego desorganizado** (acréscimo posterior): comportamentos contraditórios e desorientados no reencontro, frequentemente ligado a contextos de medo, maus-tratos ou negligência.
+
+::: {.atencao}
+⚠️ **Apego não é só "criação".** Três ressalvas evitam leituras simplistas. Primeira: o **temperamento** da criança (Cap. 57) contribui para seu comportamento na Situação Estranha, de modo que o padrão reflete a **relação**, não apenas o estilo do cuidador nem só a criança. Segunda: os padrões têm **variação cultural** — meta-análises mostram que a distribuição entre seguro, evitativo e resistente difere entre países, refletindo práticas de criação distintas, o que exige cautela ao tratar o "seguro" como norma universal absoluta [@ijzendoorn_kroonenberg1988]. Terceira: o apego na infância **prediz**, mas não **determina** o futuro — é uma probabilidade, não um destino, e pode ser revisto por experiências posteriores.
+:::
+
+Bowlby propôs que, a partir dessas experiências, a criança constrói **modelos internos de funcionamento** (*internal working models*): representações mentais sobre se pode contar com os outros e se é digna de cuidado. Esses modelos tenderiam a se projetar sobre relações futuras. De fato, Cindy Hazan e Phillip Shaver mostraram que o **amor romântico adulto** pode ser descrito como um processo de apego, com estilos (seguro, evitativo, ansioso) que ecoam os padrões infantis [@hazan_shaver1987] — ponte com as relações interpessoais (Cap. 73).
+
+::: {.base-neural}
+🧠 **A química do vínculo.** O apego tem substrato neuroquímico. A **ocitocina** (Cap. 25) — liberada no parto, na amamentação e no contato afetuoso — favorece a ligação entre cuidador e bebê e a confiança social. O sistema de **recompensa** dopaminérgico (Cap. 52) torna a interação com o bebê gratificante para o cuidador, e vice-versa. Já o estresse precoce grave e a privação de vínculo desregulam o eixo HHA (Cap. 25, 56), com efeitos duradouros sobre a reatividade ao estresse — mostrando que a experiência relacional dos primeiros anos calibra sistemas biológicos de regulação emocional.
+:::
+
+## Erikson: o desenvolvimento psicossocial ao longo da vida
+
+Se o apego descreve o início da vida emocional, Erik Erikson ofereceu um mapa que cobre **toda a existência**. Discípulo dissidente da psicanálise, Erikson reformulou as fases de Freud (Cap. 10) em termos **psicossociais**, e não psicossexuais: em cada etapa, o desenvolvimento é impulsionado pela relação entre o indivíduo e seu mundo social [@erikson1950]. Ele foi, além disso, um dos primeiros a estender o desenvolvimento pela vida adulta e a velhice, antecipando a perspectiva do ciclo vital (Cap. 57).
+
+Erikson propôs **oito estágios**, cada um organizado em torno de uma **crise** — uma tensão entre dois polos — cuja resolução relativamente positiva produz uma "virtude" ou força do ego:
+
+1. **Confiança × desconfiança** (0–1 ano): a partir do cuidado consistente, o bebê desenvolve confiança básica no mundo. Convergência direta com o apego seguro.
+2. **Autonomia × vergonha/dúvida** (1–3 anos): a criança exerce a vontade e o autocontrole ("eu faço sozinho").
+3. **Iniciativa × culpa** (3–6 anos): planeja, imagina, empreende brincadeiras e projetos.
+4. **Produtividade × inferioridade** (6–12 anos): aprende competências valorizadas (escola, habilidades); o sucesso gera senso de capacidade.
+5. **Identidade × confusão de papéis** (adolescência): a grande tarefa de "descobrir quem se é" (Cap. 62).
+6. **Intimidade × isolamento** (início da vida adulta): formar vínculos íntimos e comprometidos.
+7. **Generatividade × estagnação** (vida adulta): contribuir para as gerações seguintes — filhos, trabalho, legado (Cap. 63).
+8. **Integridade × desespero** (velhice): olhar a vida vivida com senso de sentido e aceitação, ou com arrependimento.
+
+::: {.na-pratica}
+**O que fica da teoria de Erikson.** A teoria de Erikson não é uma sequência rígida a ser cumprida — as idades são aproximadas e as crises se revisitam ao longo da vida. Seu valor duradouro é triplo. Primeiro, **ampliou** o desenvolvimento para toda a vida, contra a fixação freudiana na infância. Segundo, deu ao **social** o papel central, mostrando que amadurecer é negociar tensões entre necessidades pessoais e demandas do mundo. Terceiro, ofereceu um vocabulário útil — "crise de identidade", "generatividade" — para pensar transições da vida. Como quadro descritivo e reflexivo, permanece influente; como teoria testável, é criticado por ser vago e difícil de falsear.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- O estudo de **Harlow** mostrou que o vínculo nasce do **conforto do contato**, não do alimento — refutando a teoria da redução do impulso.
+- Bowlby: o **apego** é um sistema **inato e adaptativo**; o cuidador é **base segura** e **porto seguro**. Consolida-se aos 6–8 meses (ansiedade de separação).
+- A **Situação Estranha** (Ainsworth) revela padrões — **seguro**, **evitativo**, **ambivalente** e **desorganizado** — pelo comportamento no **reencontro**.
+- O apego reflete a **relação** (temperamento + cuidado), varia entre culturas e **prediz sem determinar**. Gera **modelos internos** que ecoam no amor adulto (Hazan e Shaver).
+- Erikson: **oito estágios psicossociais**, cada um com uma **crise** entre dois polos, da confiança básica à integridade — estendendo o desenvolvimento por toda a vida.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Apego**
+:   Vínculo emocional inato e adaptativo entre criança e cuidador; base segura para explorar [@bowlby1969].
+
+**Base segura / porto seguro**
+:   O cuidador como ponto de partida para a exploração e refúgio diante da ameaça.
+
+**Situação Estranha**
+:   Procedimento de Ainsworth que avalia o padrão de apego pelo comportamento no reencontro [@ainsworth1978].
+
+**Padrões de apego**
+:   Seguro, inseguro-evitativo, inseguro-ambivalente e desorganizado.
+
+**Modelos internos de funcionamento**
+:   Representações mentais sobre confiança nos outros e no próprio valor, que se projetam em relações futuras.
+
+**Estágios psicossociais**
+:   As oito crises do desenvolvimento social ao longo da vida, de Erikson [@erikson1950].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Como o experimento de Harlow refuta a ideia de que o bebê se apega a quem o alimenta?
+
+2. **(Conceitual.)** Na Situação Estranha, por que o comportamento **no reencontro** — e não o choro na separação — é o que distingue os padrões de apego?
+
+3. **(Análise.)** Explique por que o padrão de apego reflete a **relação**, e não apenas o cuidador ou apenas a criança. Que papel o temperamento e a cultura desempenham?
+
+4. **(Aplicação.)** Usando os "modelos internos de funcionamento", explique como o apego infantil poderia influenciar um estilo de relacionamento amoroso na vida adulta.
+
+5. **(Conceitual.)** Relacione o primeiro estágio de Erikson (confiança × desconfiança) com o conceito de apego seguro.
+
+6. **(Avaliação.)** A teoria de Erikson é elogiada como descrição e criticada como ciência. Explique essa tensão, apontando uma força e uma limitação metodológica.
