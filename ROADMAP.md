@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 42 / 105 concluídos · Fase 1: 21/21 · Fase 2: 21/35 · Fase 3: 0/49
+**Progresso:** 50 / 105 concluídos · Fase 1: 21/21 · Fase 2: 29/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ — Vol 7 (Aprendizagem) completo.** Próximo: Fase 2, Vol 8 (Memória e Cognição).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ — Vol 8 (Memória e Cognição) completo.** Próximo: Fase 2, Vol 9 (Motivação e Emoção).
 
 ---
 
@@ -99,14 +99,14 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 8 — Memória e Cognição
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 43 | Modelos de memória | `capitulos/vol08-memoria-cognicao/cap-43-modelos-memoria.qmd` | ⬜ |
-| 44 | Codificação, armazenamento e recuperação | `capitulos/vol08-memoria-cognicao/cap-44-codificacao-recuperacao.qmd` | ⬜ |
-| 45 | Esquecimento e memória falsa | `capitulos/vol08-memoria-cognicao/cap-45-esquecimento-memoria-falsa.qmd` | ⬜ |
-| 46 | Pensamento, conceitos e resolução de problemas | `capitulos/vol08-memoria-cognicao/cap-46-pensamento-problemas.qmd` | ⬜ |
-| 47 | Tomada de decisão e heurísticas (vieses cognitivos) | `capitulos/vol08-memoria-cognicao/cap-47-decisao-heuristicas.qmd` | ⬜ |
-| 48 | Linguagem | `capitulos/vol08-memoria-cognicao/cap-48-linguagem.qmd` | ⬜ |
-| 49 | Inteligência: teorias | `capitulos/vol08-memoria-cognicao/cap-49-inteligencia-teorias.qmd` | ⬜ |
-| 50 | Inteligência: avaliação e controvérsias | `capitulos/vol08-memoria-cognicao/cap-50-inteligencia-avaliacao.qmd` | ⬜ |
+| 43 | Modelos de memória | `capitulos/vol08-memoria-cognicao/cap-43-modelos-memoria.qmd` | ✅ |
+| 44 | Codificação, armazenamento e recuperação | `capitulos/vol08-memoria-cognicao/cap-44-codificacao-recuperacao.qmd` | ✅ |
+| 45 | Esquecimento e memória falsa | `capitulos/vol08-memoria-cognicao/cap-45-esquecimento-memoria-falsa.qmd` | ✅ |
+| 46 | Pensamento, conceitos e resolução de problemas | `capitulos/vol08-memoria-cognicao/cap-46-pensamento-problemas.qmd` | ✅ |
+| 47 | Tomada de decisão e heurísticas (vieses cognitivos) | `capitulos/vol08-memoria-cognicao/cap-47-decisao-heuristicas.qmd` | ✅ |
+| 48 | Linguagem | `capitulos/vol08-memoria-cognicao/cap-48-linguagem.qmd` | ✅ |
+| 49 | Inteligência: teorias | `capitulos/vol08-memoria-cognicao/cap-49-inteligencia-teorias.qmd` | ✅ |
+| 50 | Inteligência: avaliação e controvérsias | `capitulos/vol08-memoria-cognicao/cap-50-inteligencia-avaliacao.qmd` | ✅ |
 
 ### Vol 9 — Motivação e Emoção
 | Cap | Título | Arquivo | Status |

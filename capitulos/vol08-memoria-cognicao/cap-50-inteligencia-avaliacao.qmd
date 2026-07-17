@@ -1,5 +1,138 @@
 # 50. Inteligência: avaliação e controvérsias
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Reconstituir** a história dos testes de inteligência, de Binet ao QI de desvio.
+- **Aplicar** os critérios de um bom teste (padronização, confiabilidade, validade) à avaliação da inteligência.
+- **Interpretar** a distribuição normal do QI e seus extremos.
+- **Ponderar** a herdabilidade e a influência ambiental da inteligência, incluindo o efeito Flynn.
+- **Analisar** criticamente as controvérsias sobre diferenças entre grupos, o viés dos testes e a ameaça do estereótipo.
+- **Avaliar** o que os testes de inteligência predizem — e o que não predizem.
 :::
+
+Encerramos o volume — e o tema da inteligência — descendo da teoria (Cap. 49) à prática da **medida** e ao campo minado das **controvérsias**. Poucas áreas da psicologia tiveram impacto social tão concreto quanto a testagem da inteligência: ela orientou decisões escolares, militares, migratórias e clínicas, para o bem e, historicamente, também para graves abusos. Justamente por isso, este capítulo exige o que o manual vem praticando desde o Cap. 1: **rigor científico** para distinguir o que os dados sustentam, e **responsabilidade ética** para não ultrapassar o que eles autorizam. A inteligência é mensurável de forma útil — e é um terreno onde a má ciência causou danos reais.
+
+## Uma breve história da medida
+
+A testagem moderna nasce de um pedido prático. Em 1904, o governo francês encarregou Alfred Binet de identificar crianças que precisariam de apoio escolar. Com Théodore Simon, Binet criou o primeiro teste de inteligência bem-sucedido, baseado na ideia de **idade mental**: uma criança que resolve os problemas típicos de uma criança de 8 anos tem idade mental de 8, qualquer que seja sua idade real [@binet_simon1905]. Binet via seu teste como um instrumento **prático e provisório** para ajudar, e advertia explicitamente contra tratá-lo como medida de um valor inato e fixo — uma cautela que seus sucessores frequentemente ignoraram.
+
+Nos Estados Unidos, Lewis Terman, de Stanford, adaptou e ampliou o teste no **Stanford-Binet** [@terman1916], popularizando o **quociente de inteligência (QI)**, definido como a razão entre idade mental e idade cronológica, multiplicada por 100 (QI = IM/IC × 100). A fórmula funciona para crianças, mas quebra nos adultos (a idade mental estabiliza). David Wechsler resolveu isso com o **QI de desvio**: em vez de razão de idades, o QI passou a expressar a posição do indivíduo **em relação à sua faixa etária**, numa distribuição de média 100 [@wechsler1939]. As escalas Wechsler (WAIS para adultos, WISC para crianças), que fornecem um QI total e índices separados (compreensão verbal, raciocínio perceptual, memória de trabalho, velocidade de processamento — ecoando a estrutura CHC do Cap. 49), são hoje os testes de inteligência mais usados no mundo.
+
+## O que faz um bom teste
+
+Um teste de inteligência, como qualquer instrumento de medida (Cap. 16), só vale se atender a três critérios técnicos.
+
+A **padronização** é a aplicação e a pontuação segundo procedimentos uniformes, com resultados interpretados frente a **normas** — o desempenho de uma grande amostra representativa. É a padronização que dá sentido a um escore: "110" só significa algo comparado à distribuição da população. Essa distribuição, para o QI, aproxima-se da **curva normal** (@fig-curva-qi).
+
+::: {#fig-curva-qi}
+```{.tikz}
+%%| filename: curva-normal-qi
+%%| alt: Curva normal em forma de sino da distribuição do QI, com média 100 e desvio-padrão 15. O eixo horizontal marca os escores 55, 70, 85, 100, 115, 130 e 145. Cerca de 68 por cento da população fica entre 85 e 115, e cerca de 95 por cento entre 70 e 130. As caudas marcam deficiência intelectual abaixo de 70 e superdotação acima de 130.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (-3.6,0) -- (3.8,0) node[right, font=\tiny] {QI};
+  % curva normal
+  \draw[very thick, curva, manualblue] plot[domain=-3.3:3.3, samples=80] (\x, {2.7*exp(-\x*\x/2)});
+  % marcas de DP
+  \foreach \x/\l in {-3/55,-2/70,-1/85,0/100,1/115,2/130,3/145}{
+    \draw[manualgray] (\x,0.05) -- (\x,-0.05);
+    \node[below, font=\tiny] at (\x,-0.08) {\l};
+  }
+  % faixa 68%
+  \draw[<->, manualgreen, thick] (-1,1.7) -- (1,1.7);
+  \node[text=manualgreen!50!black, font=\tiny] at (0,1.95) {$\approx 68\%$};
+  % faixa 95%
+  \draw[<->, manualred, thick] (-2,0.7) -- (2,0.7);
+  \node[text=manualred, font=\tiny] at (0,0.95) {$\approx 95\%$};
+  % caudas
+  \node[font=\tiny, align=center, text=manualgray] at (-2.7,1.2) {def.\\intelectual\\{\tiny ($<70$)}};
+  \node[font=\tiny, align=center, text=manualgray] at (2.7,1.2) {super-\\dotação\\{\tiny ($>130$)}};
+\end{tikzpicture}
+```
+A distribuição do QI aproxima-se de uma **curva normal**, com média **100** e desvio-padrão **15**. Cerca de **68%** da população situa-se entre 85 e 115 (±1 DP) e **95%** entre 70 e 130 (±2 DP). As caudas correspondem à deficiência intelectual (<70) e à superdotação (>130).
+:::
+
+A **confiabilidade** é a consistência da medida (Cap. 16): os testes de QI são, tecnicamente, dos instrumentos mais **confiáveis** da psicologia — os escores são estáveis ao longo do tempo e entre versões. A **validade** é a questão mais delicada: o teste mede o que pretende e prediz o que deveria? Os testes têm boa **validade preditiva** para desempenho **acadêmico** (para o qual foram feitos) e razoável para desempenho profissional — mas, como veremos, o alcance dessa predição é frequentemente exagerado, e "medir bem uma habilidade" não é o mesmo que "medir toda a inteligência".
+
+## Os extremos da distribuição
+
+Nas caudas da curva estão dois grupos. A **deficiência intelectual** (antes "retardo mental", termo hoje abandonado) é diagnosticada não só por QI baixo (abaixo de ~70), mas — crucialmente, no DSM-5-TR e na CID-11 — pela presença de limitações significativas no **funcionamento adaptativo** (habilidades conceituais, sociais e práticas do cotidiano), com início no período do desenvolvimento. O QI sozinho não define o diagnóstico. No outro extremo, a **superdotação** (QI acima de ~130). Um estudo célebre e instrutivo foi o de Terman, que acompanhou por décadas mais de mil crianças de QI muito alto (apelidadas "os Termitas"). O resultado desfez um mito: elas se saíram bem na vida, em média, mas **não** se tornaram, em bloco, gênios revolucionários — e o sucesso entre elas dependeu fortemente de fatores **não intelectuais** como motivação, persistência e oportunidades familiares. QI alto ajuda, mas está longe de ser destino.
+
+## Herança e ambiente
+
+De onde vêm as diferenças de inteligência entre indivíduos? Como toda característica complexa (Cap. 26), de **ambos**, genes e ambiente, em interação. Os estudos de gêmeos e adoção estimam a **herdabilidade** do QI em adultos entre cerca de 0,5 e 0,7 — isto é, boa parte da *variação entre indivíduos* numa população associa-se a diferenças genéticas. Mas três ressalvas, já antecipadas no Cap. 26, são indispensáveis para não distorcer esse número:
+
+::: {.atencao}
+**O que "herdabilidade" não quer dizer.** Primeiro: **herdabilidade é uma propriedade de populações, não de indivíduos** — não faz sentido dizer que "70% do *seu* QI é genético". Segundo: **herdabilidade não é imutabilidade** — uma característica altamente herdável pode ser fortemente modificada pelo ambiente (a estatura é muito herdável e, ainda assim, subiu com a nutrição). Terceiro, e decisivo: **a herdabilidade *dentro* de um grupo nada diz sobre as causas das diferenças *entre* grupos** — este é o erro lógico central por trás de todo mau uso do conceito. A própria herdabilidade **varia com o ambiente**: em contextos de privação, o peso do ambiente aumenta e a herdabilidade *diminui*, porque a pobreza impede que o potencial genético se expresse. O ambiente importa enormemente: nutrição, saúde, estimulação, escolaridade e ausência de toxinas (como o chumbo) afetam o desenvolvimento cognitivo, e a escolaridade, em particular, **eleva** o QI de forma mensurável.
+:::
+
+A prova mais eloquente de que o ambiente pesa é o **efeito Flynn**: ao longo do século XX, os escores de QI **subiram** de forma sustentada em quase todos os países medidos — cerca de **3 pontos por década** [@flynn1987]. Como o patrimônio genético de uma população não muda em poucas gerações, o ganho só pode ser **ambiental**: melhor nutrição e saúde, mais escolaridade, ambientes mais complexos e cognitivamente exigentes, maior familiaridade com o raciocínio abstrato que os testes cobram. O efeito Flynn é o argumento definitivo contra a ideia de um QI fixo e puramente inato de populações.
+
+## As controvérsias
+
+Nenhum tema da psicologia foi tão instrumentalizado ideologicamente quanto as **diferenças de inteligência entre grupos** (sociais, étnicos, de sexo). Aqui, o manual assume a posição do **consenso científico responsável**, resumida por forças-tarefa da própria Associação Americana de Psicologia [@neisser1996].
+
+Diferenças **médias** de escore entre grupos sociais existem nos dados — mas a questão que importa é a das **causas**, e sobre ela a ciência é clara em rejeitar a explicação genética. Livros como *The Bell Curve* [@herrnstein_murray1994] argumentaram que tais diferenças refletiriam causas genéticas e seriam pouco maleáveis; a resposta majoritária da comunidade científica foi de **forte crítica**, metodológica e conceitual. As razões: (1) o erro lógico da herdabilidade entre grupos, já exposto; (2) o efeito Flynn, que mostra ganhos ambientais maiores que as diferenças entre grupos, em poucas gerações; (3) o peso documentado de fatores **socioeconômicos, educacionais e históricos** (pobreza, discriminação, acesso desigual à escola e à saúde); e (4) a fragilidade das próprias categorias de "raça" como variáveis biológicas. A conclusão do consenso: **não há evidência que sustente uma explicação genética para diferenças médias entre grupos sociais**, e há ampla evidência do peso do ambiente.
+
+Duas questões técnicas reforçam a cautela. O **viés de teste** (Cap. 16): itens que pressupõem vocabulário ou experiências de um grupo cultural específico penalizam quem não os partilha; a psicometria desenvolveu métodos para detectar e reduzir esse viés, mas ele mostra que um escore reflete também **familiaridade cultural**, não só "capacidade pura". E a **ameaça do estereótipo**, demonstrada por Claude Steele e Joshua Aronson: quando membros de um grupo negativamente estereotipado são lembrados desse estereótipo antes de um teste, seu desempenho **cai** — o medo de confirmar o estereótipo consome recursos cognitivos (memória de trabalho, Cap. 43) [@steele_aronson1995]. É um mecanismo situacional, não genético, que pode inflar artificialmente diferenças entre grupos na hora do teste.
+
+::: {.na-pratica}
+**O que o QI prediz — e o que não prediz.** Encerrando com o balanço prático: os testes de inteligência **predizem**, de forma estatisticamente real, o desempenho **escolar** (sua função original) e, mais fracamente, o desempenho **profissional** e até alguns desfechos de **saúde e longevidade**. São, nesse sentido, instrumentos úteis. Mas seu poder preditivo é habitualmente **superestimado**: o QI explica apenas uma fração da variação em qualquer desfecho de vida — motivação, persistência (Cap. 42), habilidades sociais, personalidade (Cap. 67), oportunidades e sorte respondem por muito mais. Um escore de QI é uma medida **parcial e situada** de um recorte da capacidade cognitiva; não é uma medida do valor de uma pessoa, de seu caráter, de sua criatividade nem de seu destino. Usá-lo com essa consciência — como ferramenta limitada, jamais como veredito — é a diferença entre a boa e a má psicologia da inteligência.
+:::
+
+## Fechando o volume
+
+O Vol 8 percorreu a mente que representa e processa informação: da arquitetura da **memória** (Cap. 43–45) aos processos do **pensamento** (Cap. 46–48) e à natureza da **inteligência** (Cap. 49–50). O fio comum foi um duplo movimento: admirar a potência da cognição humana — sua memória vasta, sua linguagem infinita, sua capacidade de abstrair e decidir — e, ao mesmo tempo, mapear com honestidade suas falhas sistemáticas e os limites do que sabemos medir. Essa mente que lembra, pensa e difere de pessoa para pessoa não opera, porém, no vazio: ela é movida por necessidades, desejos e afetos. É a esse motor — a **motivação e a emoção** — que o próximo volume se dedica.
+
+## Síntese
+
+::: {.callout-sintese}
+- A testagem nasce com **Binet** (idade mental, fim prático); **Terman** populariza o **QI** (IM/IC × 100); **Wechsler** cria o **QI de desvio** (posição relativa à faixa etária), base das escalas WAIS/WISC.
+- Um bom teste exige **padronização** (normas), **confiabilidade** (os testes de QI são muito confiáveis) e **validade** (boa para desempenho acadêmico, frequentemente superestimada).
+- O QI distribui-se numa **curva normal** (média 100, DP 15). Os extremos: **deficiência intelectual** (QI baixo *e* déficit adaptativo) e **superdotação** (o estudo de Terman mostrou que QI alto não é destino).
+- A inteligência é influenciada por **genes e ambiente**; a **herdabilidade** (~0,5–0,7 em adultos) **não** significa imutabilidade nem explica diferenças *entre* grupos. O **efeito Flynn** (alta secular do QI) prova o peso do ambiente.
+- Sobre **diferenças entre grupos**, o consenso científico (APA) **rejeita** a explicação genética, apontando fatores socioeconômicos, **viés de teste** e **ameaça do estereótipo** (Steele e Aronson).
+- O QI prediz desempenho escolar e (mais fracamente) profissional e de saúde, mas explica só uma **fração** dos desfechos de vida — é medida parcial, não veredito.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Idade mental**
+:   Nível de desempenho típico de certa idade, base do primeiro teste de Binet [@binet_simon1905].
+
+**Quociente de inteligência (QI)**
+:   Medida padronizada de inteligência; originalmente IM/IC × 100 (Terman), hoje **QI de desvio** relativo à faixa etária (Wechsler).
+
+**Padronização**
+:   Aplicação e pontuação uniformes, com interpretação frente a normas de uma amostra representativa.
+
+**Curva normal do QI**
+:   Distribuição em sino, média 100 e DP 15; ~68% entre 85–115, ~95% entre 70–130.
+
+**Herdabilidade**
+:   Proporção da variação de uma característica numa *população* associada a diferenças genéticas — não é imutabilidade nem se aplica a indivíduos ou a diferenças entre grupos.
+
+**Efeito Flynn**
+:   Aumento secular e sustentado dos escores de QI ao longo do século XX, de origem ambiental [@flynn1987].
+
+**Viés de teste**
+:   Itens que penalizam quem não partilha o vocabulário ou as experiências de um grupo cultural.
+
+**Ameaça do estereótipo**
+:   Queda de desempenho quando se ativa um estereótipo negativo sobre o grupo do avaliado [@steele_aronson1995].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique a diferença entre o QI de razão (IM/IC × 100) e o QI de desvio. Por que o segundo foi necessário para adultos?
+
+2. **(Aplicação.)** Um escore de QI é 130. Usando a curva normal (média 100, DP 15), diga aproximadamente que porcentagem da população fica abaixo dele.
+
+3. **(Conceitual.)** Por que o diagnóstico de deficiência intelectual não se baseia só no QI? O que mais é exigido?
+
+4. **(Reflexão crítica.)** Explique por que "herdabilidade dentro de um grupo" não permite concluir nada sobre "diferenças entre grupos". Como o efeito Flynn reforça esse argumento?
+
+5. **(Análise.)** O que é a ameaça do estereótipo e por que ela pode inflar artificialmente diferenças de escore entre grupos? Ligue ao papel da memória de trabalho.
+
+6. **(Avaliação.)** "O QI determina o sucesso na vida." Avalie essa afirmação com base no que os testes predizem e no que deixam de fora.
