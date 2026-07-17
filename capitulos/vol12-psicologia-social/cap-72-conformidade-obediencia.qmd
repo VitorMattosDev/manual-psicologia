@@ -1,5 +1,129 @@
 # 72. Conformidade, obediência e influência social
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** conformidade, complacência e obediência como formas de influência social crescente.
+- **Explicar** os experimentos de Sherif e Asch e diferenciar a influência **informacional** da **normativa**.
+- **Descrever** o experimento de obediência de Milgram, seus fatores moduladores e o estado atual da evidência.
+- **Reavaliar** o Estudo da Prisão de Stanford à luz das críticas contemporâneas.
+- **Analisar** a influência da minoria e por que ela produz mudança mais profunda que a da maioria.
+- **Aplicar** o conhecimento sobre influência social para reconhecer pressões de grupo e preservar a autonomia moral.
 :::
+
+Este é, talvez, o capítulo mais perturbador do volume. Ele mostra o quanto do nosso comportamento — inclusive comportamento que julgaríamos impensável — depende não de quem somos, mas de quem está ao nosso redor. A **influência social** é o processo pelo qual as pessoas mudam pensamentos, sentimentos e ações em resposta aos outros, e ela se manifesta em três graus de intensidade crescente. Na **conformidade**, ajustamos nosso comportamento ou opinião a um padrão de grupo, muitas vezes sem que ninguém peça. Na **complacência** (*compliance*), cedemos a um pedido explícito — foi o tema das táticas do Cap. 71. Na **obediência**, executamos uma ordem de uma autoridade. Os experimentos que se seguem estão entre os mais famosos — e mais debatidos — de toda a psicologia, e explicam desde modinhas inofensivas até atrocidades históricas.
+
+## Conformidade: a pressão silenciosa do grupo
+
+### Sherif e a formação de normas
+
+Muzafer Sherif fez a primeira demonstração experimental de como um grupo cria uma norma do nada, explorando o **efeito autocinético**: um ponto de luz fixo numa sala escura parece mover-se (uma ilusão perceptual). Sozinhos, os participantes davam estimativas muito variáveis de quanto a luz "se movia"; reunidos, convergiam rapidamente para uma estimativa comum de grupo — e, o mais revelador, **mantinham** essa norma coletiva mesmo quando testados novamente sozinhos, dias depois [@sherif1936]. A norma fora internalizada. Como a situação era genuinamente ambígua (ninguém sabia a resposta certa), os participantes usaram uns aos outros como fonte de informação. Nasce aqui um conceito-chave: a **influência informacional**.
+
+### Asch e o poder do óbvio
+
+Solomon Asch desconfiou que a conformidade de Sherif dependia da ambiguidade. E se a resposta certa fosse **evidente**? Seu experimento tornou-se um marco.
+
+::: {.experimento}
+🔬 **Experimento Clássico — as linhas de Asch.** Participantes foram reunidos em grupos para uma suposta tarefa de percepção visual: dizer qual de três linhas de comparação tinha o mesmo comprimento que uma linha-padrão [@asch1956]. A resposta era óbvia — o erro entre pessoas testadas sozinhas era inferior a 1%. Mas todos os demais integrantes do grupo eram **confederados** do experimentador, instruídos a dar, em ensaios críticos, a mesma resposta **unânime e claramente errada**. **Resultado:** cerca de 75% dos participantes reais se conformaram à maioria errada **pelo menos uma vez**, e a taxa média de respostas conformistas ficou em torno de 33% dos ensaios críticos. Numa entrevista posterior, muitos sabiam que o grupo estava errado, mas cederam para não destoar. **Fatores moduladores:** a conformidade despencava quando um único confederado dava a resposta certa (um **aliado** dissidente quebrava a unanimidade) e era pouco sensível ao tamanho do grupo além de três ou quatro pessoas. **Interpretação:** aqui a pressão não era por informação — a resposta era óbvia —, mas pelo desejo de ser aceito e não parecer estranho: a **influência normativa**.
+:::
+
+O experimento de Asch cristalizou a distinção que organiza todo o campo, formalizada por Deutsch e Gerard [@deutsch_gerard1955] e resumida na @tbl-influencia:
+
+| | Influência **informacional** | Influência **normativa** |
+|---|---|---|
+| **Motivo** | estar certo | ser aceito |
+| **Quando domina** | situação ambígua, incerta | resposta clara, mas há plateia |
+| **Resultado** | conversão genuína (privada) | conformidade pública, sem convicção |
+| **Exemplo** | seguir a multidão numa emergência confusa | rir de uma piada sem graça do chefe |
+
+: As duas motivações da conformidade [@deutsch_gerard1955]. {#tbl-influencia}
+
+A conformidade não é, em si, boa ou má. Ela lubrifica a vida social (dirigir na mão certa, respeitar a fila) e transmite conhecimento acumulado. Torna-se perigosa quando cala o dissenso diante de um erro coletivo — e é por isso que a única voz discordante no grupo de Asch tinha tanto poder: ela libertava os demais.
+
+## Obediência: os experimentos de Milgram
+
+Se a conformidade de Asch já é inquietante, a obediência estudada por Stanley Milgram é assombrosa. Milgram, filho de judeus, queria entender como cidadãos comuns puderam participar do Holocausto. A hipótese "os alemães são diferentes" não sobreviveu ao seu laboratório em New Haven.
+
+::: {.experimento}
+🔬 **Experimento Clássico — a obediência à autoridade.** Voluntários comuns (recrutados por anúncio, de várias profissões) chegavam a um laboratório de Yale para um suposto estudo sobre "aprendizagem e memória" [@milgram1963]. Por um sorteio viciado, o participante era sempre o "professor" e um confederado, o "aluno". A tarefa: aplicar choques elétricos ao aluno a cada erro, aumentando a voltagem em 15 volts a cada vez, de 15 até **450 volts**, num painel com etiquetas que iam de "Choque leve" a "Perigo: choque severo" e, no fim, um sinistro "XXX". Não havia choque real; o aluno, numa sala ao lado, encenava — reclamava, gritava, implorava que parassem, mencionava um problema cardíaco e, nas voltagens mais altas, **silenciava**. Quando o professor hesitava, o experimentador de jaleco usava uma sequência fixa de comandos: "Por favor, continue", "O experimento exige que você continue", "É absolutamente essencial que você continue", "Você não tem escolha, precisa continuar". **Resultado:** **65% dos participantes** foram até os 450 volts — o máximo. Praticamente todos chegaram a 300 volts. E não o faziam com frieza: suavam, tremiam, riam nervosamente, protestavam — e obedeciam. **Interpretação:** pessoas comuns, sem qualquer traço patológico, infligem sofrimento extremo a um inocente sob a direção de uma autoridade que julgam legítima. Milgram falou de um **estado agêntico**: o indivíduo passa a se ver como mero instrumento da vontade alheia, transferindo a responsabilidade para a autoridade.
+:::
+
+O gênio de Milgram foi realizar **dezenas de variações**, mostrando que a obediência não é constante — ela responde à situação, o que a torna ainda mais assustadora, pois significa que pequenos detalhes de arranjo social empurram para cima ou para baixo. A obediência **caía** drasticamente quando:
+
+- a autoridade dava ordens **por telefone**, em vez de presente na sala;
+- o experimento ocorria num escritório comum, e não sob o prestígio de Yale;
+- o participante via **outros "professores" se recusarem** (o poder do modelo dissidente, ecoando o aliado de Asch);
+- a **proximidade da vítima** aumentava — obedecia-se menos quando era preciso pressionar a mão do aluno sobre a placa de choque.
+
+::: {.atencao}
+⚠️ **O que Milgram provou — e o que não provou.** Os estudos de Milgram são um patrimônio da psicologia e, ao mesmo tempo, um caso central no debate ético que originou os comitês de pesquisa (Cap. 20): o estresse imposto aos participantes seria hoje inaceitável sem salvaguardas rigorosas. Além disso, análises dos arquivos originais mostraram que Milgram **selecionou e enfatizou** os resultados mais dramáticos, que a taxa de 65% variava enormemente entre as condições e que muitos participantes desconfiavam da autenticidade dos choques [@perry2013]. Uma **replicação parcial e eticamente reformulada**, interrompendo aos 150 volts (o ponto que, nos dados de Milgram, melhor previa a ida até o fim), encontrou taxas de obediência ainda altas, sugerindo que o fenômeno é real mesmo depurado do sensacionalismo [@burger2009]. A leitura madura: **não** é que "todos nós temos um carrasco dentro"; é que arranjos sociais específicos — autoridade percebida como legítima, gradualismo, distância da vítima, difusão de responsabilidade — tornam a crueldade muito mais provável do que a intuição admite. Uma releitura influente acrescenta que os participantes não obedecem cegamente, mas se **identificam** com a causa científica que a autoridade representa, cooperando ativamente com ela [@haslam_reicher2012].
+:::
+
+## O Estudo da Prisão de Stanford: um clássico reexaminado
+
+Nenhum estudo ilustra melhor a necessidade de ceticismo — inclusive diante dos próprios ícones da disciplina — do que o **Estudo da Prisão de Stanford**, conduzido por Philip Zimbardo em 1971. Estudantes saudáveis foram designados **ao acaso** para os papéis de "guardas" e "prisioneiros" numa prisão simulada no porão do departamento de psicologia. Em poucos dias, segundo o relato original, os guardas tornaram-se cruéis e os prisioneiros, apáticos e traumatizados, a ponto de o experimento ser interrompido em seis dias [@haney_zimbardo1973]. Por décadas, o estudo foi ensinado como a prova definitiva de que "a situação corrompe" — de que papéis sociais podem transformar pessoas boas em tiranas.
+
+::: {.atencao}
+⚠️ **A queda de um ícone.** O Estudo da Prisão de Stanford **não foi um experimento** no sentido rigoroso (sem grupo-controle, N minúsculo, um único cenário) e, pior, evidências que vieram à tona — gravações de arquivo, entrevistas e o trabalho do historiador Thibault Le Texier — mostraram que a brutalidade dos guardas foi em boa medida **encenada sob instrução**: Zimbardo e seus assistentes orientaram os guardas a serem duros, um "prisioneiro" célebre admitiu ter fingido o colapso para sair mais cedo, e o relato publicado selecionou os episódios mais dramáticos [@letexier2019]. Uma tentativa de replicação televisionada pela BBC chegou a resultados **opostos**, com os prisioneiros se organizando coletivamente contra os guardas [@reicher_haslam2006]. A conclusão não é que "papéis não importam" — importam —, mas que a demonstração canônica era **teatro dirigido**, não ciência. O caso é hoje ensinado neste manual como lição dupla: sobre o poder das situações **e** sobre por que precisamos de método, replicação e ceticismo mesmo — sobretudo — diante das histórias mais sedutoras.
+:::
+
+O contraste com Milgram é instrutivo. Milgram, apesar dos problemas, produziu um fenômeno **robusto e replicável**; Stanford produziu uma narrativa poderosa que não resistiu ao escrutínio dos arquivos. Ambos ensinam sobre a força da situação — mas apenas um ensina como *saber* que ela é forte.
+
+## A influência da minoria
+
+Toda a discussão até aqui pode sugerir que a maioria sempre vence e que o desvio é fadado ao fracasso. Não é o caso — e a exceção é a história de todo progresso social. Serge Moscovici mostrou que uma **minoria** pode influenciar a maioria, desde que seja **consistente**: mantendo sua posição com firmeza, coerência e confiança ao longo do tempo, sem ceder [@moscovici1969]. A diferença qualitativa é crucial. A maioria tende a produzir **conformidade pública** (concordância superficial, pela influência normativa), enquanto a minoria consistente, quando funciona, produz **conversão privada** — leva os outros a *repensar* a questão, gerando mudança mais profunda e duradoura, ainda que muitas vezes tardia e sem crédito. Movimentos como o sufrágio feminino, os direitos civis e a mudança de atitudes sobre tabagismo ou meio ambiente começaram como minorias consistentes e ridicularizadas. O dissidente de Asch, o "professor" que se recusa em Milgram, a minoria de Moscovici: em cada caso, uma voz que não cede reabre um espaço de escolha que o consenso havia fechado.
+
+::: {.na-pratica}
+💡 **Preservar a autonomia sob pressão social.** As lições destes experimentos são diretamente acionáveis. (1) **Nomeie a pressão:** perceber "estou cedendo por influência normativa, não porque mudei de ideia" já restaura parte da liberdade. (2) **Busque ou seja o aliado:** um único dissidente destrava os demais — em reuniões, em júris, em grupos de amigos, a primeira voz discordante é a mais valiosa e a mais difícil. (3) **Desconfie do gradualismo:** Milgram avançava 15 volts por vez; muitas escaladas éticas (fraudes, abusos institucionais) funcionam assim, um pequeno passo de cada vez que nunca parece o momento de parar. Definir de antemão a linha que não se cruza é a defesa. (4) **Questione a legitimidade da autoridade:** "Quem manda isso, e com que direito?" é a pergunta que o estado agêntico desliga.
+:::
+
+::: {.callout-sintese}
+- A **influência social** cresce em três graus: **conformidade** (ajuste a um padrão), **complacência** (ceder a um pedido) e **obediência** (cumprir uma ordem).
+- **Sherif** mostrou a formação de normas em situação ambígua (influência **informacional**); **Asch** mostrou conformidade contra a evidência óbvia (influência **normativa**), quebrada por um único aliado [@sherif1936; @asch1956; @deutsch_gerard1955].
+- **Milgram**: 65% dos participantes comuns aplicaram o choque máximo sob ordem de uma autoridade legítima; a obediência é **modulada pela situação** (proximidade, prestígio, presença de dissidentes) [@milgram1963]. O fenômeno é real, mas o relato original foi seletivo [@perry2013; @burger2009].
+- O **Estudo da Prisão de Stanford** não foi um experimento rigoroso e sua brutalidade foi em parte **encenada sob instrução**: um clássico que a evidência de arquivo derrubou [@letexier2019; @reicher_haslam2006].
+- Uma **minoria consistente** pode converter a maioria, produzindo mudança **privada e profunda**, ao contrário da conformidade pública imposta pela maioria [@moscovici1969].
+- Autonomia sob pressão se preserva nomeando a influência, buscando aliados, desconfiando do gradualismo e questionando a legitimidade da autoridade.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Influência social**
+:   Mudança de pensamento, sentimento ou comportamento em resposta a outras pessoas, nas formas de conformidade, complacência e obediência.
+
+**Conformidade**
+:   Ajuste do próprio comportamento ou opinião a um padrão percebido do grupo [@asch1956].
+
+**Influência informacional**
+:   Conformidade motivada pelo desejo de estar certo, usando os outros como fonte de informação em situações ambíguas [@deutsch_gerard1955].
+
+**Influência normativa**
+:   Conformidade motivada pelo desejo de ser aceito e evitar desaprovação, mesmo contra a própria percepção [@deutsch_gerard1955].
+
+**Obediência**
+:   Cumprimento de uma ordem emitida por uma figura de autoridade [@milgram1963].
+
+**Estado agêntico**
+:   Condição em que o indivíduo se percebe como instrumento da vontade de uma autoridade e transfere a ela a responsabilidade por seus atos [@milgram1963].
+
+**Influência da minoria**
+:   Processo pelo qual uma minoria consistente altera a posição da maioria, gerando conversão privada e duradoura [@moscovici1969].
+
+**Conversão privada × conformidade pública**
+:   Mudança interna genuína de atitude versus concordância externa sem convicção.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie conformidade, complacência e obediência, dando um exemplo cotidiano de cada uma.
+
+2. **(Conceitual.)** Explique por que o experimento de Sherif ilustra a influência **informacional** e o de Asch, a **normativa**. O que a mudança de ambiguidade da tarefa tem a ver com isso?
+
+3. **(Análise.)** Liste três variações de Milgram que **reduziram** a obediência e explique, em cada caso, qual mecanismo psicológico foi enfraquecido.
+
+4. **(Reflexão crítica.)** O Estudo da Prisão de Stanford foi ensinado por décadas como prova de que "a situação corrompe". À luz das evidências de Le Texier e da replicação da BBC, o que se pode e o que não se pode concluir dele? Por que esse caso é um bom argumento a favor da replicação?
+
+5. **(Aplicação.)** Um funcionário percebe que a empresa está adotando, um passo de cada vez, uma prática antiética. Usando o gradualismo de Milgram e o poder do dissidente de Asch, proponha uma estratégia concreta para ele resistir sem ser isolado.
+
+6. **(Integração.)** Compare a "conversão privada" da influência da minoria [@moscovici1969] com a mudança de atitude "duradoura" da rota central do ELM (Cap. 71). Que semelhança há entre uma minoria consistente e um argumento de alta qualidade?
