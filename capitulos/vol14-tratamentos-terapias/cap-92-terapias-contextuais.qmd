@@ -1,5 +1,133 @@
 # 92. Terapias contextuais (ACT, DBT, mindfulness)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Situar** a "terceira onda" da TCC e sua mudança de foco: da *mudança do conteúdo* para a *mudança da relação* com a experiência interna.
+- **Explicar** a aceitação, a atenção plena (*mindfulness*) e a ação orientada por valores como estratégias terapêuticas.
+- **Descrever** a Terapia de Aceitação e Compromisso (ACT) e seus processos de flexibilidade psicológica.
+- **Compreender** a Terapia Comportamental Dialética (DBT), sua dialética aceitação–mudança e seus módulos de habilidades.
+- **Diferenciar** as intervenções baseadas em mindfulness (MBSR, MBCT) e sua aplicação à prevenção de recaída.
+- **Avaliar** criticamente a evidência das terapias contextuais e distinguir promessa de exagero.
 :::
+
+A TCC clássica ensinava a **mudar** os pensamentos disfuncionais. A "terceira onda" das terapias comportamentais, surgida nos anos 1990-2000, propôs algo diferente e, à primeira vista, contraintuitivo: e se, em vez de lutar para eliminar pensamentos e emoções indesejados, aprendêssemos a **mudar nossa relação** com eles — a aceitá-los, observá-los sem nos fundirmos a eles, e agir conforme o que valorizamos apesar deles? Essa virada — que reabilita conceitos como aceitação, atenção plena e valores, com raízes tanto no comportamentalismo radical quanto em tradições contemplativas — define as **terapias contextuais**. Elas não substituem a TCC; ampliam-na, e respondem a algumas de suas limitações (Cap. 91).
+
+## A virada da terceira onda
+
+A primeira onda foi **comportamental** (Cap. 90): mudar comportamentos. A segunda foi **cognitiva** (Cap. 91): mudar pensamentos. A terceira desloca o alvo mais uma vez. Seu ponto de partida é uma constatação clínica e experimental: a tentativa de **controlar ou suprimir** experiências internas indesejadas frequentemente as **agrava**. Quanto mais tentamos *não* pensar em algo, mais pensamos (o efeito do "urso branco" — Cap. 47); quanto mais lutamos contra a ansiedade, mais ansiosos ficamos. A luta é parte do problema.
+
+Daí a proposta central: em vez de mudar o **conteúdo** da experiência interna (o *que* se pensa e sente), muda-se a **relação** com ela — o **contexto** em que ela ocorre. Aceitar a presença de um pensamento não significa concordar com ele nem resignar-se; significa deixar de gastar energia na guerra contra ele, liberando essa energia para viver. A **aceitação**, a **atenção plena** (*mindfulness*) e a orientação por **valores** tornam-se, assim, os pilares de uma nova geração de terapias.
+
+::: {.atencao}
+⚠️ **Aceitação não é resignação, e mindfulness não é relaxamento.** Dois mal-entendidos frequentes. **Aceitar** uma emoção dolorosa não é gostar dela, aprovar a situação que a causou, nem desistir de mudar o que pode ser mudado; é parar de lutar contra a *experiência interna* — que não se pode controlar diretamente — para poder agir sobre o *mundo*, que às vezes se pode. E **mindfulness** não é uma técnica de relaxamento nem esvaziar a mente: é prestar atenção, de propósito, ao momento presente, **sem julgamento** [@kabat_zinn2003]. Muitas vezes o praticante observa exatamente o desconforto — sem fugir dele. O relaxamento, quando vem, é efeito colateral, não o objetivo.
+:::
+
+## Terapia de Aceitação e Compromisso (ACT)
+
+A **ACT** (pronuncia-se como a palavra inglesa "act", agir), de Steven Hayes, é talvez a mais teoricamente articulada das terapias contextuais [@hayes1999; @hayes2006]. Seu objetivo não é reduzir sintomas diretamente, mas aumentar a **flexibilidade psicológica**: a capacidade de estar em contato com o momento presente e, conforme a situação, persistir ou mudar de comportamento a serviço de valores escolhidos. A ACT organiza-se em torno de seis processos inter-relacionados (o "hexaflex", @fig-hexaflex):
+
+- **Aceitação** — acolher experiências internas sem lutar para eliminá-las.
+- **Desfusão cognitiva** — ver os pensamentos *como* pensamentos (eventos mentais transitórios), e não como verdades literais com que se está fundido. Um exercício típico: repetir uma palavra angustiante até que ela vire só um som, ou dizer "estou tendo o pensamento de que sou um fracasso" em vez de "sou um fracasso".
+- **Contato com o momento presente** — atenção plena ao aqui-e-agora.
+- **Self como contexto** — o "eu observador" que contém as experiências sem se confundir com elas.
+- **Valores** — o que de fato importa para a pessoa, as direções de vida escolhidas.
+- **Ação com compromisso** — agir concretamente na direção dos valores, apesar do desconforto.
+
+A metáfora que resume a ACT: em vez de esperar as ondas do mar (as emoções difíceis) pararem para então navegar, aprende-se a **surfar** — a agir na direção que importa mesmo com o mar agitado.
+
+::: {#fig-hexaflex}
+```{.tikz}
+%%| filename: hexaflex-act
+%%| alt: Diagrama em hexágono com seis processos da ACT dispostos nos vértices, todos ligados por linhas a um núcleo central rotulado "Flexibilidade psicológica". Os seis processos são: Aceitação, Desfusão, Contato com o presente, Self como contexto, Valores e Ação com compromisso.
+\begin{tikzpicture}[font=\small,
+  p/.style={draw, thick, rounded corners=2pt, align=center, fill=manualblue!8, font=\scriptsize, minimum width=2.1cm, minimum height=0.85cm}]
+  \node[circle, draw, very thick, fill=manualyellow!20, align=center, font=\scriptsize\bfseries] (c) at (0,0) {Flexibilidade\\psicológica};
+  \node[p] (a) at (90:2.9)  {Aceitação};
+  \node[p] (d) at (150:2.9) {Desfusão};
+  \node[p] (pr) at (210:2.9) {Contato com\\o presente};
+  \node[p] (s) at (270:2.9) {Self como\\contexto};
+  \node[p] (v) at (330:2.9) {Valores};
+  \node[p] (ac) at (30:2.9) {Ação com\\compromisso};
+  \foreach \n in {a,d,pr,s,v,ac} \draw[manualgray] (c)--(\n);
+\end{tikzpicture}
+```
+O "hexaflex" da ACT [@hayes2006]. Seis processos — aceitação, desfusão, contato com o presente, self como contexto, valores e ação com compromisso — convergem para a **flexibilidade psicológica**, o objetivo central da terapia. Os processos da metade superior visam a abertura à experiência; os da inferior, o engajamento na vida valorizada.
+:::
+
+## Terapia Comportamental Dialética (DBT)
+
+A **DBT**, de Marsha Linehan, foi desenvolvida especificamente para o transtorno da personalidade *borderline* e para pessoas com comportamento suicida crônico e desregulação emocional grave (Cap. 83) [@linehan1993]. Seu nome traz sua ideia-chave: a **dialética** entre **aceitação** e **mudança**. Linehan percebeu que pacientes gravemente desregulados reagiam mal tanto a uma terapia puramente de mudança (sentiam-se invalidados: "você me diz que estou errado, como todos sempre disseram") quanto a uma puramente de aceitação (sentiam-se abandonados: "então nada vai melhorar?"). A solução foi **sintetizar** os polos: validar radicalmente o sofrimento da pessoa *e*, ao mesmo tempo, ensiná-la a mudar. Aceitação e mudança, tese e antítese, mantidas em tensão produtiva.
+
+A DBT é intensiva e estruturada, combinando terapia individual, **grupo de treino de habilidades**, coaching telefônico entre sessões e reuniões de equipe. As habilidades organizam-se em quatro **módulos**:
+
+1. **Mindfulness** — observar e descrever a experiência sem julgamento (o núcleo, herdado das tradições contemplativas).
+2. **Tolerância ao mal-estar** — sobreviver a crises sem piorar as coisas (sem autolesão, sem impulsos destrutivos), usando técnicas de distração, autoacalmar-se e aceitação radical.
+3. **Regulação emocional** — identificar, compreender e modular emoções intensas.
+4. **Efetividade interpessoal** — pedir o que se precisa, dizer não e manter relações e autorrespeito.
+
+A DBT é hoje o tratamento com **melhor suporte empírico** para o transtorno *borderline*, com ensaios controlados mostrando redução de tentativas de suicídio, autolesões e hospitalizações [@linehan2006].
+
+## Mindfulness: MBSR e MBCT
+
+A atenção plena entrou na medicina e na psicologia ocidentais sobretudo por Jon Kabat-Zinn, que criou o programa de **Redução de Estresse Baseada em Mindfulness** (MBSR): oito semanas de treino sistemático em meditação para pacientes com dor crônica e estresse [@kabat_zinn1990; @kabat_zinn2003]. A partir dele, Segal, Williams e Teasdale desenvolveram a **Terapia Cognitiva Baseada em Mindfulness** (MBCT), voltada especificamente à **prevenção de recaída** na depressão recorrente [@segal2002].
+
+A lógica da MBCT é elegante. Pessoas que tiveram vários episódios depressivos ficam vulneráveis a um mecanismo de recaída: diante de uma tristeza passageira, disparam **ruminação** — padrões automáticos de pensamento negativo que aprofundam o humor e reativam o episódio. A MBCT ensina a **reconhecer** esses padrões no momento em que surgem e a **desengajar-se** deles pela atenção plena, em vez de alimentá-los. Ensaios mostram que ela reduz a recaída em pacientes com três ou mais episódios prévios, com eficácia comparável à da medicação de manutenção [@teasdale2000].
+
+::: {.na-pratica}
+💡 **Desfusão em três segundos.** Um exemplo do que as terapias contextuais fazem de diferente. Pensamento: "Sou um fracasso." A **TCC clássica** perguntaria: que evidências apoiam e refutam esse pensamento? É verdade? (reestruturação — mudar o conteúdo). A **ACT** faria outra coisa: em vez de discutir se o pensamento é verdadeiro, mudaria a relação com ele. "Repare que você está tendo o **pensamento** de que é um fracasso. Obrigado, mente. Agora — o que você quer fazer com o seu dia?" O objetivo não é provar que o pensamento é falso, mas **retirar-lhe o poder de ditar o comportamento**. Você pode ir à entrevista de emprego *carregando* o pensamento "sou um fracasso", sem precisar primeiro convencê-lo do contrário. As duas estratégias podem ser úteis; a terceira onda apenas mostra que nem sempre é preciso ganhar a discussão com a própria mente para viver bem.
+:::
+
+## A evidência: promessa com cautela
+
+As terapias contextuais acumulam evidência favorável, mas o entusiasmo em torno delas exige uma dose de rigor. A **ACT** tem eficácia demonstrada para ansiedade, depressão, dor crônica e outros quadros, com tamanhos de efeito em geral **moderados** [@powers2009], e há bons ensaios para aplicações específicas, como o TOC [@twohig2010]. A **DBT** é sólida para o *borderline* [@linehan2006], e a **MBCT** para a prevenção de recaída depressiva [@teasdale2000]. Contudo, uma revisão crítica influente de Öst apontou que muitos estudos da terceira onda tinham, à época, **qualidade metodológica inferior** à dos ensaios da TCC clássica [@ost2008] — alerta que estimulou a melhoria dos estudos subsequentes.
+
+Duas questões permanecem em aberto. Primeiro, as terapias contextuais superam a TCC tradicional, ou apenas a **igualam** por outra via? A maioria das comparações diretas sugere equivalência — mais um capítulo do veredito do Dodo (Cap. 87). Segundo, os **mecanismos** propostos (flexibilidade psicológica, desfusão) são de fato o que produz a mudança? A pesquisa de processos ainda busca essa confirmação. A leitura equilibrada: as terapias contextuais são acréscimos valiosos ao arsenal — especialmente para dor crônica, quadros com forte componente de evitação experiencial, e desregulação emocional grave —, sem serem a "revolução" que às vezes se anuncia. Elas dialogam, aliás, com achados de fronteira sobre meditação e bem-estar que o Cap. 100 retomará.
+
+::: {.callout-sintese}
+- A **terceira onda** desloca o foco de *mudar o conteúdo* de pensamentos e emoções para *mudar a relação* com eles, partindo da constatação de que **controlar/suprimir** a experiência interna frequentemente a agrava.
+- Pilares: **aceitação** (parar a luta contra a experiência interna), **mindfulness** (atenção ao presente sem julgamento) [@kabat_zinn2003] e **valores** (direções de vida escolhidas).
+- A **ACT** visa a **flexibilidade psicológica** por seis processos (hexaflex: aceitação, desfusão, presente, self como contexto, valores, ação com compromisso) [@hayes1999; @hayes2006].
+- A **DBT** sintetiza dialeticamente **aceitação e mudança** e ensina quatro módulos de habilidades; é o tratamento com melhor evidência para o transtorno *borderline* [@linehan1993; @linehan2006].
+- **MBSR** e **MBCT**: a MBCT previne recaída na depressão recorrente ao interromper a **ruminação**, com eficácia comparável à medicação de manutenção [@segal2002; @teasdale2000].
+- A evidência é favorável, com efeitos em geral moderados [@powers2009]; críticas de qualidade metodológica [@ost2008] e a incerteza sobre mecanismos pedem cautela — em geral, **igualam** a TCC, não a superam.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Terapias contextuais (terceira onda)**
+:   Geração de terapias comportamentais que muda a relação com a experiência interna (aceitação, mindfulness, valores) em vez de seu conteúdo.
+
+**Aceitação**
+:   Acolher experiências internas indesejadas sem lutar para eliminá-las, liberando energia para a ação valorizada; não é resignação.
+
+**Mindfulness (atenção plena)**
+:   Atenção intencional ao momento presente, sem julgamento [@kabat_zinn2003].
+
+**Flexibilidade psicológica**
+:   Capacidade de contatar o presente e persistir ou mudar comportamento a serviço de valores; objetivo central da ACT.
+
+**Desfusão cognitiva**
+:   Ver os pensamentos como eventos mentais transitórios, e não como verdades literais às quais se está fundido.
+
+**Dialética aceitação–mudança**
+:   Princípio da DBT que sintetiza validar radicalmente o sofrimento e, ao mesmo tempo, promover a mudança.
+
+**MBCT**
+:   Terapia cognitiva baseada em mindfulness, voltada à prevenção de recaída na depressão recorrente ao interromper a ruminação [@segal2002].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva a mudança de foco da terceira onda em relação às duas primeiras. Que constatação sobre o controle da experiência interna a motiva?
+
+2. **(Conceitual.)** Diferencie aceitação de resignação e mindfulness de relaxamento. Por que esses mal-entendidos comprometem a compreensão das terapias contextuais?
+
+3. **(Aplicação.)** Diante do pensamento "sou um fracasso", contraste o que fariam a TCC clássica (reestruturação) e a ACT (desfusão). Em que situações cada estratégia pode ser mais útil?
+
+4. **(Conceitual.)** Explique a dialética aceitação–mudança da DBT. Por que pacientes com desregulação emocional grave reagiam mal a uma terapia *só* de mudança ou *só* de aceitação?
+
+5. **(Integração.)** Como a MBCT previne a recaída depressiva? Relacione seu mecanismo (interromper a ruminação) com o conceito de ruminação e com a prevenção de recaída discutida na TCC (Cap. 91).
+
+6. **(Reflexão crítica.)** As terapias contextuais são uma "revolução" ou mais um caso do veredito do Dodo? Discuta a crítica de Öst sobre qualidade metodológica e a incerteza sobre mecanismos.
