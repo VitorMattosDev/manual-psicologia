@@ -1,5 +1,112 @@
 # 61. Desenvolvimento moral (Kohlberg e críticas)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o método dos dilemas morais e os três níveis de Kohlberg.
+- **Distinguir** os seis estágios do raciocínio moral e o que os define.
+- **Avaliar** as críticas à teoria de Kohlberg (viés cultural, de gênero e a lacuna juízo–ação).
+- **Apresentar** a alternativa de Gilligan (ética do cuidado) e a distinção moral × convenção de Turiel.
+- **Discutir** a virada intuicionista de Haidt e o papel da emoção no julgamento moral.
 :::
+
+Como as pessoas decidem o que é certo e errado — e como esse senso de justiça se desenvolve da infância à vida adulta? O estudo do **desenvolvimento moral** foi dominado por décadas pela teoria cognitiva de Lawrence Kohlberg, que via o raciocínio moral amadurecer em estágios, como o pensamento em Piaget (Cap. 59). Este capítulo apresenta essa teoria influente, examina as críticas que a redimensionaram — de viés de gênero e cultural à lacuna entre o que dizemos e o que fazemos — e chega à virada contemporânea que devolveu à **emoção** e à **intuição** um papel central na moralidade.
+
+## Kohlberg: o raciocínio moral em estágios
+
+Inspirado em Piaget, Lawrence Kohlberg interessou-se não pelo que as pessoas julgam certo, mas pelo **raciocínio** por trás do julgamento — o *porquê* de uma resposta. Seu método eram **dilemas morais** hipotéticos, apresentados a pessoas de várias idades. O mais famoso é o **dilema de Heinz**: um homem cuja esposa está morrendo não tem dinheiro para o remédio que a salvaria, e o farmacêutico se recusa a baixar o preço. Heinz deve roubar o remédio? Para Kohlberg, o interessante não era o "sim" ou "não", mas a **justificativa** — e as justificativas, ele observou, evoluíam em uma sequência ordenada de **três níveis**, cada um com dois estágios (@fig-kohlberg) [@kohlberg1969].
+
+::: {#fig-kohlberg}
+```{.tikz}
+%%| filename: niveis-kohlberg
+%%| alt: Diagrama em escada ascendente com três níveis do desenvolvimento moral de Kohlberg, do mais baixo ao mais alto: pré-convencional (obediência e interesse próprio), convencional (aprovação social e lei e ordem) e pós-convencional (contrato social e princípios éticos universais).
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[fill=manualblue!10, draw=manualblue!50] (0,0) rectangle (5,0.95);
+  \node[align=center] at (2.5,0.48) {\textbf{Pré-convencional}\\{\tiny 1. punição \quad 2. interesse próprio}};
+  \draw[fill=manualgreen!12, draw=manualgreen!60!black] (1.3,0.95) rectangle (6.3,1.9);
+  \node[align=center] at (3.8,1.4) {\textbf{Convencional}\\{\tiny 3. aprovação \quad 4. lei e ordem}};
+  \draw[fill=manualyellow!25, draw=manualyellow!70!black] (2.6,1.9) rectangle (7.6,2.85);
+  \node[align=center] at (5.1,2.35) {\textbf{Pós-convencional}\\{\tiny 5. contrato social \quad 6. princípios universais}};
+  \draw[->, very thick, manualgray] (-0.4,-0.2) -- (-0.4,3.1) node[above, font=\tiny, align=center] {maturidade\\do juízo};
+\end{tikzpicture}
+```
+Os três níveis (seis estágios) do raciocínio moral de Kohlberg. O foco do julgamento desloca-se das **consequências para o self** (pré-convencional) para as **normas do grupo** (convencional) e, por fim, para **princípios abstratos** de justiça (pós-convencional).
+:::
+
+No nível **pré-convencional** (típico de crianças), o certo e o errado se definem pelas **consequências para o próprio indivíduo**. No **estágio 1**, evita-se o que traz **punição** ("não pode roubar porque vai preso"); no **estágio 2**, guia-se pelo **interesse próprio** e por trocas ("pode roubar se ele precisa da esposa viva").
+
+No nível **convencional** (típico de adolescentes e da maioria dos adultos), o certo se define pela **conformidade às normas sociais**. No **estágio 3**, busca-se a **aprovação** e ser "boa pessoa" aos olhos dos próximos; no **estágio 4**, valoriza-se a **lei e a ordem** e o dever de manter o sistema social ("roubar é errado porque a lei deve ser respeitada").
+
+No nível **pós-convencional** (alcançado por uma minoria), a moralidade repousa em **princípios abstratos** que podem transcender leis específicas. No **estágio 5**, entende-se a lei como um **contrato social** flexível, feito para o bem comum e passível de revisão; no **estágio 6**, orienta-se por **princípios éticos universais** de justiça e dignidade, mesmo contra a lei vigente — o raciocínio de figuras como Gandhi ou Martin Luther King diante de leis injustas.
+
+Para Kohlberg, a sequência é **universal e invariante**: avança-se sempre na mesma ordem, sem pular etapas, ainda que muitos nunca cheguem aos estágios mais altos. O desenvolvimento se daria pela exposição a raciocínios um pouco acima do próprio (ecoando a ZDP e o desequilíbrio piagetiano).
+
+## As críticas a Kohlberg
+
+A teoria, imensamente influente, foi alvo de três grandes objeções.
+
+**Viés cultural.** Ao valorizar princípios abstratos e individuais de justiça no topo da escala, Kohlberg pode ter tomado uma moralidade **ocidental, individualista e liberal** como padrão universal do desenvolvimento (Cap. 103). Culturas coletivistas, que valorizam a harmonia do grupo, a lealdade e o dever comunitário, tenderiam a ser classificadas em estágios "inferiores" — o que talvez reflita **valores diferentes**, não moralidade menos desenvolvida.
+
+**Viés de gênero e a ética do cuidado.** Carol Gilligan, ex-colaboradora de Kohlberg, objetou que sua escala fora construída a partir de amostras masculinas e privilegiava uma **ética da justiça** (direitos, regras, imparcialidade) tipicamente enfatizada por homens, subvalorizando uma **ética do cuidado** (responsabilidade, relações, compaixão) mais presente nas respostas de muitas mulheres [@gilligan1982]. Assim, mulheres apareceriam, injustamente, em estágios mais baixos. A pesquisa posterior **não confirmou** diferenças de gênero robustas nos escores de Kohlberg, mas a contribuição de Gilligan permaneceu: mostrou que **justiça e cuidado são duas vozes morais legítimas**, e que a teoria original ouvira apenas uma.
+
+**A lacuna entre juízo e ação.** Talvez a crítica mais séria: Kohlberg mediu **raciocínio**, não **comportamento**. Saber justificar o que é certo em um estágio elevado não garante **agir** de acordo — a história e a psicologia social (Cap. 72, 74) estão cheias de pessoas que raciocinam bem e agem mal. O julgamento moral é apenas um dos determinantes da conduta moral.
+
+::: {.atencao}
+⚠️ **Moral não é convenção.** Elliot Turiel mostrou que, desde cedo, as crianças distinguem dois domínios que Kohlberg misturava. As **transgressões morais** (bater, machucar, roubar) envolvem dano, direitos e justiça: as crianças as julgam erradas **independentemente** de regras — erradas mesmo que uma autoridade permitisse, e erradas em qualquer lugar. Já as **convenções sociais** (vestimenta, formas de tratamento, etiqueta) dependem de acordo: são erradas **porque** há uma regra, e mudam de cultura para cultura [@turiel1983]. Crianças de 3–4 anos já traçam essa distinção — evidência de que a competência moral básica é mais precoce e menos dependente de raciocínio abstrato do que Kohlberg supunha.
+:::
+
+## A virada intuicionista: a emoção volta à moral
+
+Kohlberg herdou de Piaget uma visão **racionalista**: julgar moralmente seria, no fundo, **raciocinar**. As últimas décadas questionaram essa premissa. Jonathan Haidt propôs o **modelo social-intuicionista**: na maioria das vezes, o julgamento moral é uma **intuição rápida e emocional** — uma reação quase imediata de aprovação ou repulsa — e o raciocínio vem **depois**, como uma **justificativa** construída para defender o que já sentimos [@haidt2001]. Sua evidência mais provocadora é o *dumbfounding* moral (o "mudez moral"): diante de cenários cuidadosamente construídos para não causar dano a ninguém mas que provocam repulsa, as pessoas **insistem** que é errado — mesmo depois de ficarem sem argumentos, dizendo "não sei explicar, mas é errado". A emoção, aqui, precede e conduz o juízo.
+
+Essa virada não anula Kohlberg, mas o reposiciona. A imagem de Haidt — a emoção como o **elefante** e o raciocínio como o **cavaleiro** que sobre ele tenta justificar a direção — captura um consenso emergente: a moralidade humana é uma parceria entre **intuição afetiva** e **raciocínio deliberado**, com a intuição frequentemente liderando. Damásio (Cap. 54) já mostrara, com pacientes de lesão pré-frontal ventromedial, que **sem emoção não há bom julgamento moral e prático** — o raciocínio frio, sozinho, não basta.
+
+::: {.na-pratica}
+**Como se educa moralmente?** As diferentes teorias apontam caminhos complementares. Da tradição cognitiva (Piaget/Kohlberg) vem o valor da **discussão de dilemas** e da tomada de perspectiva: expor a criança a pontos de vista e a raciocínios um pouco mais avançados estimula o desenvolvimento do juízo. Da ética do cuidado (Gilligan) vem a ênfase na **empatia** e na responsabilidade pelo outro. Da abordagem intuicionista (Haidt) e das evidências sobre a lacuna juízo–ação vem um alerta: cultivar **hábitos, emoções morais** (empatia, culpa, indignação) e **exemplos** importa tanto quanto ensinar a argumentar. Formar pessoas morais é mais do que formar bons raciocinadores morais.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- Kohlberg estudou o **raciocínio** por trás do julgamento moral com **dilemas** (Heinz), propondo três níveis: **pré-convencional** (consequências para o self), **convencional** (normas do grupo) e **pós-convencional** (princípios abstratos de justiça).
+- A sequência seria **universal e invariante**, avançando pela exposição a raciocínios mais elevados.
+- **Críticas**: viés **cultural** (privilegia a moral individualista ocidental), viés de **gênero** (Gilligan: subvaloriza a **ética do cuidado**) e a **lacuna juízo–ação** (raciocinar bem não é agir bem).
+- Turiel: crianças distinguem cedo **transgressões morais** (dano/justiça, independentes de regra) de **convenções sociais** (dependentes de acordo).
+- Haidt (**social-intuicionismo**): o julgamento moral é sobretudo **intuição emocional**, com o raciocínio como justificativa posterior — o "elefante e o cavaleiro". A emoção é parte constitutiva da moral (Damásio).
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Dilema moral**
+:   História hipotética com conflito de valores (ex.: dilema de Heinz) usada para sondar o raciocínio moral.
+
+**Níveis de Kohlberg**
+:   Pré-convencional (self), convencional (normas), pós-convencional (princípios) [@kohlberg1969].
+
+**Ética do cuidado**
+:   Orientação moral centrada em relações, responsabilidade e compaixão, destacada por Gilligan [@gilligan1982].
+
+**Domínio moral × convencional**
+:   Transgressões que envolvem dano/justiça (independem de regra) versus normas de acordo social [@turiel1983].
+
+**Modelo social-intuicionista**
+:   Tese de que o juízo moral é intuição emocional rápida, seguida de racionalização [@haidt2001].
+
+**Lacuna juízo–ação**
+:   Discrepância entre o que a pessoa julga certo e o modo como efetivamente age.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva os três níveis de Kohlberg em uma frase cada, indicando o que define o "certo" em cada um.
+
+2. **(Conceitual.)** Por que, para Kohlberg, importa mais a **justificativa** do que a resposta ("sim/não") ao dilema de Heinz?
+
+3. **(Análise.)** Explique como o viés cultural pode fazer um membro de uma cultura coletivista pontuar "baixo" na escala de Kohlberg sem ser moralmente menos desenvolvido.
+
+4. **(Aplicação.)** Use a distinção de Turiel entre moral e convenção para classificar: (a) empurrar um colega; (b) chamar o professor pelo primeiro nome; (c) furar a fila. Justifique.
+
+5. **(Análise.)** O que o fenômeno do *dumbfounding* moral sugere sobre a relação entre emoção e raciocínio no julgamento moral?
+
+6. **(Avaliação.)** "Ensinar as crianças a raciocinar sobre dilemas as tornará mais morais." Avalie essa afirmação à luz da lacuna juízo–ação e da abordagem intuicionista.
