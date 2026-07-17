@@ -1,5 +1,145 @@
 # 90. Terapia comportamental
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** o princípio comportamental: comportamentos-problema são aprendidos e podem ser reaprendidos.
+- **Descrever** a dessensibilização sistemática e a exposição, e o mecanismo de habituação/extinção que as sustenta.
+- **Diferenciar** exposição gradual, *flooding* e prevenção de resposta, e indicar seus usos.
+- **Compreender** técnicas operantes: reforço, economia de fichas, manejo de contingências e ativação comportamental.
+- **Analisar** a base experimental da terapia comportamental (Jones, Wolpe) e a evidência de sua eficácia.
+- **Reconhecer** limites e cuidados éticos das técnicas comportamentais.
 :::
+
+Enquanto as terapias psicodinâmica e humanista buscavam o passado ou o crescimento interior, um grupo de clínicos e pesquisadores fez outra aposta, nos anos 1950-60: e se o sofrimento não precisasse de interpretação nem de insight, mas de **reaprendizagem**? Se um medo foi aprendido, pode ser desaprendido — sem escavar sua origem. A **terapia comportamental** nasceu dessa transposição direta das leis da aprendizagem (Vol 7) para a clínica. É a abordagem que primeiro submeteu a psicoterapia a ensaios controlados rigorosos, e a que produziu os tratamentos mais eficazes que temos para toda uma classe de transtornos — as fobias, o TOC, o TEPT.
+
+## O princípio: o sintoma é o problema
+
+A terapia comportamental rompe frontalmente com a psicanálise em um ponto: o sintoma **não** é o sinal de superfície de um conflito profundo. O sintoma **é** o problema. Uma fobia de elevador é um comportamento de evitação aprendido e mantido; não é necessário descobrir o que o elevador "simboliza". Se o comportamento-problema foi adquirido segundo as leis do condicionamento clássico e operante (Caps. 39-40), pode ser modificado segundo essas mesmas leis. O foco desloca-se radicalmente: do passado para o **presente** (o que mantém o comportamento agora?), do inconsciente para o **observável**, do insight para a **ação**.
+
+Isso trouxe uma vantagem metodológica decisiva: comportamentos são mensuráveis. Pode-se contar quantas vezes a pessoa evita, medir sua ansiedade, definir metas objetivas e verificar se o tratamento funciona. A terapia comportamental foi, por isso, pioneira na avaliação empírica — e a antiga preocupação psicanalítica com a "substituição de sintomas" (remover um sintoma faria surgir outro) simplesmente **não se confirmou** nos dados.
+
+## Da aprendizagem do medo ao seu desaprender
+
+A raiz clínica está num experimento fundador. Watson havia condicionado, no pequeno Albert, um medo antes inexistente (Cap. 8). A pergunta natural era: se o medo pode ser condicionado, pode ser **descondicionado**? Mary Cover Jones respondeu.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o pequeno Peter, de Mary Cover Jones** [@jones1924]
+
+**Desenho.** Peter, um menino de quase três anos, tinha medo intenso de coelhos (e de outros objetos peludos). Jones — muitas vezes chamada a "mãe da terapia comportamental" — tratou o medo de forma sistemática. A cada dia, o coelho era aproximado **gradualmente**, enquanto Peter comia algo de que gostava, num contexto agradável e seguro, na presença de outras crianças que não temiam o animal.
+
+**Resultado.** Progressivamente, a distância tolerada diminuiu: de o coelho à porta, à mesma sala, à cadeira ao lado, até Peter tocar e brincar com o animal sem medo. O medo foi eliminado, e o ganho se manteve.
+
+**Interpretação.** Jones demonstrou, décadas antes de a terapia comportamental existir como campo, dois princípios que a fundariam: a **exposição gradual** ao estímulo temido e a associação desse estímulo a um estado incompatível com o medo (comer, relaxar) — o embrião da inibição recíproca. O medo condicionado podia ser desfeito por reaprendizagem.
+
+**Limitações.** Estudo de caso único, sem controle experimental e com recursos combinados (exposição, modelação social, alimentação), o que impede isolar o ingrediente ativo. Ainda assim, o roteiro provou-se robusto e escalável.
+:::
+
+## Dessensibilização sistemática e o princípio da exposição
+
+Nos anos 1950, Joseph Wolpe transformou a intuição de Jones em método. Sua **dessensibilização sistemática** [@wolpe1958] combina três passos: (1) treino em **relaxamento** profundo — Wolpe adotou o relaxamento muscular progressivo de Edmund Jacobson [@jacobson1929]; (2) construção de uma **hierarquia de ansiedade**, ordenando situações do menos ao mais temido; e (3) apresentação gradual dos itens da hierarquia enquanto a pessoa permanece relaxada, subindo de degrau apenas quando o anterior deixa de gerar ansiedade. O princípio teórico de Wolpe era a **inibição recíproca**: relaxamento e ansiedade são incompatíveis; ao evocar o estímulo temido em estado de relaxamento, a resposta de ansiedade é inibida e enfraquece.
+
+Pesquisas posteriores mostraram que o relaxamento, embora útil, **não é o ingrediente essencial**: o que cura é a **exposição** — o contato mantido com o estímulo temido, na ausência da consequência catastrófica antecipada. A explicação atual combina dois mecanismos. A **habituação**: a resposta de ansiedade, se a pessoa permanece na situação sem fugir, diminui naturalmente com o tempo (@fig-habituacao). E a **extinção** e o **novo aprendizado** (na leitura de Foa, o **processamento emocional**): a evitação impede a pessoa de descobrir que a catástrofe temida não ocorre; a exposição fornece essa informação corretiva, criando uma nova aprendizagem que compete com o medo [@foa1986].
+
+::: {#fig-habituacao}
+```{.tikz}
+%%| filename: curva-habituacao
+%%| alt: Gráfico com eixo horizontal "Tempo na situação temida" e eixo vertical "Ansiedade". Duas curvas partem de um ponto alto. A curva da evitação (tracejada, vermelha) cai abruptamente quando a pessoa foge, com um rótulo "alívio imediato, medo mantido". A curva da exposição (contínua, azul) sobe um pouco, atinge um pico e depois decai gradualmente ao longo do tempo até um nível baixo, com o rótulo "habituação".
+\begin{tikzpicture}[font=\small]
+  \draw[->,>=Stealth] (0,0)--(8.4,0) node[right,font=\scriptsize]{tempo na situação};
+  \draw[->,>=Stealth] (0,0)--(0,4.4) node[above,font=\scriptsize]{ansiedade};
+  % curva exposicao (habituacao)
+  \draw[curva, manualblue, thick] (0,2.6)
+      .. controls (0.8,3.6) and (1.6,3.7) .. (2.2,3.4)
+      .. controls (3.4,2.7) and (4.6,1.5) .. (6,1.0)
+      .. controls (7,0.7) and (7.6,0.65) .. (8,0.6);
+  \node[text=manualblue!70!black, font=\scriptsize] at (6.5,1.55) {exposição:};
+  \node[text=manualblue!70!black, font=\scriptsize] at (6.7,1.15) {habituação};
+  % curva evitacao
+  \draw[curva, manualred, thick, dashed] (0,2.6)
+      .. controls (0.4,3.1) and (0.7,3.2) .. (0.9,3.1)
+      .. controls (1.1,2.0) and (1.2,0.6) .. (1.4,0.4);
+  \node[text=manualred, font=\scriptsize, align=center] at (2.6,0.55) {evitação: alívio\\imediato, medo mantido};
+\end{tikzpicture}
+```
+Por que a exposição funciona e a evitação não. Ao **fugir** (curva vermelha tracejada), a ansiedade cai de imediato — um alívio que **reforça negativamente** a fuga e mantém o medo. Ao **permanecer** exposto (curva azul), a ansiedade sobe, atinge um pico e depois decai por **habituação**, ensinando ao organismo que a situação é tolerável e a catástrofe não ocorre.
+:::
+
+## Variantes da exposição
+
+A partir desse princípio, desdobra-se uma família de técnicas:
+
+- **Exposição gradual** *in vivo*: enfrentar a situação real, degrau a degrau, na vida cotidiana — a forma mais eficaz para fobias.
+- **Exposição imaginária**: quando o estímulo não pode ser reproduzido (memórias traumáticas, no TEPT), a pessoa revive a cena em imaginação, sob orientação — núcleo da terapia de exposição prolongada [@foa2005].
+- ***Flooding*** (exposição intensiva): confronto direto com o estímulo mais temido, sem gradação. Rápido e eficaz, porém mais aversivo e menos tolerado.
+- **Prevenção de resposta**: no TOC, a exposição ao gatilho (tocar algo "contaminado") é combinada à **abstenção do ritual** (não lavar as mãos), permitindo que a ansiedade se extinga sem a neutralização compulsiva. A **exposição e prevenção de resposta** (EPR) é o tratamento psicológico de primeira linha para o TOC (Cap. 81).
+
+## Técnicas operantes: mudando as consequências
+
+Se a exposição deriva do condicionamento clássico, outro ramo da terapia comportamental deriva do **operante** (Cap. 40): mudar o comportamento alterando suas **consequências**. Reforçar o que se quer aumentar, retirar o reforço do que se quer diminuir.
+
+A **economia de fichas** (*token economy*), desenvolvida por Ayllon e Azrin em contextos institucionais, é o exemplo clássico: comportamentos desejáveis são reforçados com fichas trocáveis por privilégios, estruturando a mudança de forma sistemática [@ayllon_azrin1968]. O **manejo de contingências** aplica o mesmo princípio ao tratamento de adições — recompensar diretamente a abstinência comprovada é uma das intervenções mais eficazes nesse campo (Cap. 86). A **modelação** (Bandura, Cap. 41) usa a aprendizagem observacional: ver um modelo interagir sem medo com o objeto temido facilita a própria aproximação. E a **ativação comportamental**, hoje um tratamento validado para a depressão, parte de uma observação simples: a depressão reduz o engajamento em atividades gratificantes, o que aprofunda o humor deprimido, num círculo vicioso; reprogramar gradualmente atividades prazerosas e significativas rompe o ciclo — às vezes com eficácia comparável à da terapia cognitiva completa.
+
+::: {.na-pratica}
+💡 **Construindo uma hierarquia de exposição.** Uma pessoa com fobia de cães e o terapeuta constroem juntos uma escala de 0 a 100 de ansiedade (as "unidades subjetivas de perturbação"). Exemplo: ver a foto de um cão (20); assistir a um vídeo (35); observar um cachorro preso a distância (50); ficar na mesma sala que um cão dócil (65); aproximar-se dele (80); tocá-lo (95). O tratamento sobe degrau a degrau: só se avança quando o item atual, repetido, deixa de gerar ansiedade significativa. A regra de ouro é **não sair na hora do pico** — encerrar a exposição enquanto ainda se está muito ansioso ensina exatamente a lição errada (que fugir alivia). Permanecer até a ansiedade cair é o que consolida o novo aprendizado.
+:::
+
+## Terapia aversiva: potência e cautela ética
+
+Nem toda técnica comportamental visa reduzir medo; algumas visam reduzir comportamentos indesejados associando-os a consequências desagradáveis — a **terapia aversiva**. Historicamente aplicada ao alcoolismo (associar a bebida a um fármaco que provoca náusea) e, de forma tristemente célebre e hoje condenada, a tentativas de "conversão" da orientação sexual, ela ilustra o duplo filo das técnicas comportamentais: são poderosas justamente porque atuam diretamente sobre o comportamento, e por isso mesmo exigem **rigor ético**. A eficácia de uma técnica nunca justifica, por si só, seu uso; os fins importam. As técnicas aversivas têm hoje indicações muito restritas, e a psicologia repudia expressamente seu emprego contra a diversidade sexual (Cap. 104).
+
+::: {.atencao}
+⚠️ **O "mito da substituição de sintomas".** A objeção psicanalítica clássica à terapia comportamental era: remover o sintoma sem tratar o conflito subjacente faria o conflito "vazar" por outro sintoma. Décadas de acompanhamento **não** sustentaram essa previsão. Tratar diretamente uma fobia ou um TOC não produz, em regra, um sintoma substituto — ao contrário, a melhora frequentemente **generaliza** para outras áreas (a pessoa ganha autoeficácia, reduz a evitação em geral). Isso não significa que o contexto seja irrelevante: um bom terapeuta comportamental avalia fatores mantenedores e a vida da pessoa. Mas a premissa de que o sintoma é apenas a "ponta do iceberg" de um conflito oculto não resistiu ao teste empírico.
+:::
+
+## Eficácia e limites
+
+A terapia comportamental produz os tratamentos com **maior suporte empírico** para os transtornos de ansiedade, fobias específicas, TOC e TEPT — quadros em que a exposição, em suas variantes, é o padrão-ouro (Caps. 78, 80, 81) [@foa2005; @barlow2014]. Seus efeitos são geralmente rápidos, mensuráveis e duradouros. Os limites também são claros: problemas difusos, existenciais ou fortemente ligados a significado e sentido respondem menos a técnicas puramente comportamentais; a adesão à exposição é exigente (ela é, por definição, desconfortável); e a modificação de comportamento diz pouco, por si, sobre pensamentos e emoções. Foi para incorporar explicitamente a **cognição** que a terapia comportamental se expandiu na direção que o próximo capítulo descreve — a terapia cognitivo-comportamental.
+
+::: {.callout-sintese}
+- Para a terapia comportamental, o **sintoma é o problema**: comportamentos aprendidos podem ser reaprendidos, com foco no presente e no observável.
+- Mary Cover Jones (o pequeno Peter) mostrou que o medo condicionado pode ser desfeito por **exposição gradual** [@jones1924]; Wolpe formalizou-a na **dessensibilização sistemática** com relaxamento e hierarquia [@wolpe1958; @jacobson1929].
+- O ingrediente ativo é a **exposição**, que age por **habituação** e por **novo aprendizado/processamento emocional** [@foa1986]; a **evitação** dá alívio imediato mas mantém o medo.
+- Variantes: exposição gradual, imaginária, *flooding* e **prevenção de resposta** (padrão-ouro no TOC).
+- Técnicas **operantes**: economia de fichas [@ayllon_azrin1968], manejo de contingências, modelação e **ativação comportamental** (validada para depressão).
+- A terapia comportamental oferece os melhores tratamentos para ansiedade, fobias, TOC e TEPT [@foa2005]; o "mito da substituição de sintomas" não se confirmou; técnicas aversivas exigem forte cautela ética.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Dessensibilização sistemática**
+:   Técnica de Wolpe que combina relaxamento, hierarquia de ansiedade e aproximação gradual do estímulo temido [@wolpe1958].
+
+**Exposição**
+:   Contato mantido com o estímulo temido sem a fuga/evitação, permitindo habituação e novo aprendizado; ingrediente ativo do tratamento do medo.
+
+**Habituação**
+:   Redução natural da resposta de ansiedade quando a pessoa permanece na situação temida sem fugir.
+
+**Prevenção de resposta**
+:   Combinação de exposição ao gatilho com abstenção do ritual/compulsão; central no tratamento do TOC.
+
+**Inibição recíproca**
+:   Princípio de Wolpe segundo o qual relaxamento e ansiedade, sendo incompatíveis, não coexistem; base teórica da dessensibilização.
+
+**Economia de fichas**
+:   Sistema operante em que comportamentos desejáveis são reforçados com fichas trocáveis por privilégios [@ayllon_azrin1968].
+
+**Ativação comportamental**
+:   Tratamento da depressão que reprograma atividades gratificantes e significativas para romper o ciclo inatividade–humor deprimido.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Como a terapia comportamental entende o sintoma, em contraste com a psicanálise? Que consequência prática decorre dessa diferença?
+
+2. **(Conceitual.)** Explique, com a @fig-habituacao, por que a exposição reduz o medo e a evitação o mantém. O que é reforço negativo nesse contexto?
+
+3. **(Aplicação.)** Construa uma hierarquia de exposição de cinco degraus para alguém com medo de falar em público. Por que a pessoa não deve encerrar a exposição no pico da ansiedade?
+
+4. **(Integração.)** Ligue o experimento de Watson com o pequeno Albert (Cap. 8) ao de Jones com o pequeno Peter. O que a passagem de um ao outro demonstra sobre a aprendizagem do medo?
+
+5. **(Reflexão crítica.)** O que era o "mito da substituição de sintomas" e por que ele não se confirmou? Isso significa que o contexto de vida do paciente é irrelevante?
+
+6. **(Reflexão crítica.)** A terapia aversiva pode ser eficaz para reduzir certos comportamentos. Por que a eficácia não basta para justificar seu uso? Use o exemplo histórico das tentativas de "conversão".
