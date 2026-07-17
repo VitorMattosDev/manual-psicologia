@@ -1,5 +1,133 @@
 # 59. Desenvolvimento cognitivo (Piaget, Vygotsky)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** os mecanismos da teoria de Piaget: esquema, assimilação, acomodação e equilibração.
+- **Caracterizar** os quatro estágios do desenvolvimento cognitivo piagetiano.
+- **Avaliar** criticamente a teoria de Piaget à luz da pesquisa contemporânea sobre a cognição do bebê.
+- **Descrever** a teoria sociocultural de Vygotsky: mediação, zona de desenvolvimento proximal e andaimes.
+- **Comparar** as abordagens de Piaget e Vygotsky e situá-las na visão do processamento de informação.
 :::
+
+Se o capítulo anterior mostrou *que* o bebê sabe muito, este pergunta *como* o pensamento se transforma da infância à adolescência. Duas grandes teorias organizam o campo. Jean Piaget, biólogo suíço, viu a criança como um **pequeno cientista** que constrói ativamente o conhecimento ao interagir com o mundo físico, atravessando estágios qualitativamente distintos. Lev Vygotsky, psicólogo russo, viu a criança como um **aprendiz social**, cujo pensamento se desenvolve de fora para dentro, na interação com pessoas mais experientes e com as ferramentas da cultura. Longe de se anularem, as duas visões iluminam faces complementares do desenvolvimento cognitivo.
+
+## Piaget: a criança que constrói o conhecimento
+
+Piaget rejeitou tanto a ideia de que o conhecimento é dado pela biologia quanto a de que é simplesmente absorvido do ambiente. Para ele, a criança **constrói** ativamente estruturas mentais — daí o rótulo **construtivismo**. A unidade básica dessa construção é o **esquema**: um padrão organizado de pensamento ou ação (o esquema de sugar, o esquema de "cachorro"). O desenvolvimento avança por dois processos complementares. Na **assimilação**, a criança incorpora uma experiência nova a um esquema já existente (chamar de "cachorro" qualquer animal de quatro patas). Na **acomodação**, ela **modifica** o esquema para dar conta do que não coube (criar um novo esquema, "gato", ao perceber a diferença). O motor de tudo é a **equilibração**: o impulso para restaurar o equilíbrio cognitivo sempre que uma novidade gera desequilíbrio (dissonância). Assimilar e acomodar, em ciclos, é como a inteligência cresce.
+
+### Os quatro estágios
+
+Piaget propôs que todas as crianças atravessam, na **mesma ordem**, quatro estágios qualitativamente distintos (@fig-piaget).
+
+::: {#fig-piaget}
+```{.tikz}
+%%| filename: estagios-piaget
+%%| alt: Linha do tempo horizontal com os quatro estágios de Piaget dispostos em blocos sucessivos, do nascimento à adolescência: sensório-motor (0 a 2 anos), pré-operatório (2 a 7 anos), operatório concreto (7 a 11 anos) e operatório formal (11 anos em diante), cada um com sua aquisição-chave.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  \draw[->, very thick, manualgray] (0,0) -- (12.2,0) node[right, font=\tiny] {idade};
+  \foreach \x/\a in {0.4/0, 3.2/2, 6.6/7, 9.6/11} { \draw[manualgray] (\x,-0.12) -- (\x,0.12); \node[font=\tiny, below] at (\x,-0.15) {\a}; }
+  \node[draw, rounded corners, fill=manualblue!12, align=center, minimum height=1cm, text width=2.3cm] at (1.8,1.2) {\textbf{Sensório-motor}\\{\tiny 0--2 anos}\\{\tiny permanência do objeto}};
+  \node[draw, rounded corners, fill=manualgreen!12, align=center, minimum height=1cm, text width=2.3cm] at (4.9,1.2) {\textbf{Pré-operatório}\\{\tiny 2--7 anos}\\{\tiny símbolo, egocentrismo}};
+  \node[draw, rounded corners, fill=manualyellow!25, align=center, minimum height=1cm, text width=2.3cm] at (8.1,1.2) {\textbf{Op. concreto}\\{\tiny 7--11 anos}\\{\tiny conservação}};
+  \node[draw, rounded corners, fill=manualred!14, align=center, minimum height=1cm, text width=2.3cm] at (11,1.2) {\textbf{Op. formal}\\{\tiny 11+ anos}\\{\tiny hipotético-abstrato}};
+\end{tikzpicture}
+```
+Os quatro estágios do desenvolvimento cognitivo de Piaget, com a aquisição-chave de cada um. A ordem é fixa e universal; as idades são aproximadas.
+:::
+
+No estágio **sensório-motor** (0–2 anos), o bebê conhece o mundo pela ação e pela percepção — sugando, pegando, olhando. Sua grande conquista é a **permanência do objeto**: a compreensão de que os objetos continuam a existir quando saem de vista. Para Piaget, o bebê jovem que não procura um brinquedo escondido "acredita" que ele deixou de existir.
+
+No estágio **pré-operatório** (2–7 anos), floresce a **função simbólica**: a criança usa palavras, imagens e o faz de conta para representar o mundo. Mas o pensamento ainda é limitado. É **egocêntrico** — a criança tem dificuldade de adotar a perspectiva de outro (não no sentido de egoísmo, mas de descentração cognitiva) — e ainda não domina a **conservação**: não entende que a quantidade se mantém apesar de mudanças na aparência.
+
+::: {.experimento}
+🔬 **As tarefas de conservação.** Numa das demonstrações mais célebres de Piaget, mostra-se à criança dois copos idênticos com a mesma quantidade de líquido. Diante dela, despeja-se o conteúdo de um deles num copo **alto e fino**. Perguntada qual copo tem mais líquido, a criança pré-operatória aponta o copo alto — "porque está mais cheio". Ela se **centra** numa única dimensão (a altura) e ignora a compensação (o outro é mais largo); falta-lhe a **reversibilidade** mental (imaginar o líquido voltando ao copo original). Só no estágio seguinte a criança afirma, com naturalidade, que "é a mesma coisa, você só passou de um copo para o outro". **Interpretação:** a conservação marca uma reorganização qualitativa do pensamento — a capacidade de operar mentalmente sobre transformações. **Limitação:** experimentos posteriores mostraram que pequenas mudanças no procedimento (reduzir a ênfase na mudança, tornar a pergunta menos sugestiva) fazem crianças mais novas acertarem, sugerindo que Piaget **subestimou** a competência infantil.
+:::
+
+No estágio **operatório concreto** (7–11 anos), a criança domina a conservação e o raciocínio lógico, mas ainda ancorado no **concreto** — no que pode manipular e imaginar de forma tangível. Finalmente, no estágio **operatório formal** (a partir dos 11 anos), emerge o pensamento **hipotético-dedutivo e abstrato**: o adolescente raciocina sobre possibilidades, hipóteses e ideias abstratas, testando-as sistematicamente — a base do pensamento científico (Cap. 62).
+
+### Avaliação da teoria de Piaget
+
+O legado de Piaget é imenso: ele fundou a psicologia cognitiva do desenvolvimento e sua descrição da **sequência** das aquisições permanece amplamente confirmada. Mas a pesquisa contemporânea o corrigiu em pontos importantes. O principal é que Piaget **subestimou** as competências dos bebês e das crianças pequenas, em parte porque suas tarefas exigiam habilidades motoras e verbais que mascaravam o que a criança de fato sabia.
+
+::: {.atencao}
+⚠️ **O bebê sabia mais do que Piaget imaginava.** Usando o método de violação de expectativa (Cap. 58), Renée Baillargeon mostrou que bebês de apenas 3,5–4,5 meses — muito antes do previsto por Piaget — já demonstram **permanência do objeto**: olham mais para eventos "impossíveis" em que um objeto oculto parece ter desaparecido [@baillargeon1987]. Karen Wynn foi além e sugeriu que bebês de 5 meses têm expectativas numéricas rudimentares — "surpreendem-se" quando 1 + 1 não resulta em 2 objetos atrás de uma tela [@wynn1992]. A lição metodológica é profunda: **medir a competência pela ação motora** (procurar o objeto) subestima o que a mente já representa. O desenvolvimento é menos abrupto e mais precoce do que a teoria dos estágios sugeria; hoje muitos pesquisadores preferem falar em mudanças **contínuas e específicas de domínio**, e não em reorganizações globais em bloco.
+:::
+
+## Vygotsky: a origem social da mente
+
+Enquanto Piaget via a criança construindo o conhecimento sozinha em interação com objetos, Lev Vygotsky (Cap. 12) enfatizou que o desenvolvimento cognitivo é, na raiz, **social e cultural** [@vygotsky1978]. Para ele, as funções mentais superiores — atenção voluntária, memória lógica, formação de conceitos — surgem primeiro **entre** pessoas (no plano interpsicológico) e só depois se **internalizam** no indivíduo (plano intrapsicológico). A criança pensa, primeiro, com a ajuda dos outros; depois, sozinha. Central nessa passagem é a **mediação** por **ferramentas culturais** — sobretudo a **linguagem**, que de instrumento de comunicação se torna instrumento de pensamento (o **discurso privado**, aquele falar sozinho da criança, é para Vygotsky o pensamento em processo de internalização).
+
+O conceito mais influente de Vygotsky é a **zona de desenvolvimento proximal (ZDP)**: a distância entre o que a criança consegue fazer **sozinha** e o que consegue fazer **com a ajuda** de alguém mais capaz (@fig-zdp). É nessa zona — no que ainda não se domina, mas já se alcança com apoio — que o ensino é eficaz e o desenvolvimento acontece. O apoio ajustado que o adulto oferece, e que vai retirando à medida que a criança avança, ficou conhecido como **andaime (*scaffolding*)** — uma estrutura temporária que sustenta a construção e depois se remove.
+
+::: {#fig-zdp}
+```{.tikz}
+%%| filename: zona-desenvolvimento-proximal
+%%| alt: Três círculos concêntricos. O círculo interno representa o que a criança faz sozinha; o anel intermediário, a zona de desenvolvimento proximal (o que faz com ajuda); e o círculo externo, o que ainda não consegue fazer nem com ajuda.
+\begin{tikzpicture}[font=\scriptsize]
+  \draw[fill=manualred!8, draw=manualred!30] (0,0) circle (3);
+  \draw[fill=manualyellow!22, draw=manualyellow!70!black, thick] (0,0) circle (2.1);
+  \draw[fill=manualgreen!18, draw=manualgreen!60!black] (0,0) circle (1.1);
+  \node[font=\tiny\bfseries, align=center] at (0,0) {faz\\sozinha};
+  \node[font=\tiny\bfseries, align=center, text=manualyellow!45!black] at (0,1.6) {ZDP};
+  \node[font=\tiny, align=center, text=manualyellow!45!black] at (0,1.25) {(faz com ajuda)};
+  \node[font=\tiny, align=center, text=manualred!70!black] at (0,2.6) {ainda não alcança};
+\end{tikzpicture}
+```
+A **zona de desenvolvimento proximal** (Vygotsky): entre o que a criança já faz sozinha e o que ainda não alcança, há uma faixa em que ela avança **com ajuda** — o alvo do bom ensino.
+:::
+
+::: {.na-pratica}
+**Da teoria à sala de aula.** As duas teorias transformaram a educação. De Piaget herdamos a pedagogia **ativa** e a **prontidão**: a criança aprende fazendo, manipulando, explorando — e o ensino deve respeitar o nível cognitivo em que ela se encontra. De Vygotsky herdamos o ensino na **ZDP**, o **andaimamento** e a **aprendizagem colaborativa**: um bom professor (ou colega mais avançado) desafia o aluno logo acima do que ele já domina e oferece apoio graduado, retirando-o à medida que a autonomia cresce. Combinadas, as duas visões sustentam a educação contemporânea: aprender é construir ativamente (Piaget), mas essa construção é social e mediada pela cultura (Vygotsky).
+:::
+
+## Piaget, Vygotsky e o processamento de informação
+
+As duas teorias divergem em ênfase — Piaget no indivíduo e no universal, Vygotsky no social e no cultural; Piaget em estágios, Vygotsky em processos contínuos —, mas ambas rejeitam a criança como receptáculo passivo. Uma terceira tradição, a do **processamento de informação** (Cap. 12 e 43), completa o quadro sem recorrer a estágios: encara o desenvolvimento cognitivo como o **aprimoramento gradual** de capacidades específicas — atenção, velocidade de processamento, memória de trabalho, estratégias e conhecimento —, que se tornam mais eficientes com a maturação e a experiência. Onde Piaget via saltos qualitativos, essa abordagem vê melhoria quantitativa e contínua nos "componentes" do pensamento. As três perspectivas, juntas, oferecem uma imagem mais rica do que qualquer uma isolada.
+
+## Síntese
+
+::: {.callout-sintese}
+- Piaget: a criança **constrói** o conhecimento via **esquemas**, **assimilação**, **acomodação** e **equilibração** (construtivismo).
+- Quatro estágios: **sensório-motor** (permanência do objeto), **pré-operatório** (símbolo, egocentrismo, sem conservação), **operatório concreto** (conservação, lógica concreta) e **operatório formal** (raciocínio hipotético-abstrato).
+- A pesquisa moderna (Baillargeon, Wynn) mostra que Piaget **subestimou** a competência do bebê; o desenvolvimento é mais precoce, contínuo e específico de domínio do que os estágios sugerem.
+- Vygotsky: a mente tem **origem social**; funções superiores vão do interpsicológico ao intrapsicológico por **mediação** cultural (linguagem).
+- A **ZDP** é a faixa entre o que a criança faz sozinha e o que faz com ajuda; o **andaime** é o apoio graduado que sustenta esse avanço.
+- O **processamento de informação** descreve o desenvolvimento como aprimoramento **gradual** de atenção, velocidade, memória e estratégias, sem estágios.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Esquema / assimilação / acomodação**
+:   Estrutura mental; incorporar o novo ao esquema existente; modificar o esquema diante do novo (Piaget).
+
+**Equilibração**
+:   Impulso para restaurar o equilíbrio cognitivo, motor do desenvolvimento em Piaget.
+
+**Permanência do objeto**
+:   Compreensão de que objetos continuam a existir fora da vista; conquista do estágio sensório-motor.
+
+**Conservação**
+:   Entendimento de que a quantidade se mantém apesar de mudanças na aparência; marca do operatório concreto.
+
+**Zona de desenvolvimento proximal (ZDP)**
+:   Distância entre o que a criança faz sozinha e o que faz com ajuda de alguém mais capaz [@vygotsky1978].
+
+**Andaime (*scaffolding*)**
+:   Apoio ajustado e temporário que o mais experiente oferece e retira à medida que a criança avança.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Defina assimilação e acomodação e dê um exemplo de cada com um esquema infantil.
+
+2. **(Conceitual.)** Explique o que a tarefa de conservação do líquido revela sobre o pensamento pré-operatório (centração, reversibilidade).
+
+3. **(Análise.)** Como os estudos de Baillargeon e Wynn desafiam a cronologia de Piaget? Que problema metodológico da teoria original eles expõem?
+
+4. **(Aplicação.)** Um professor quer ensinar frações a um aluno que ainda não as domina sozinho. Descreva como ele usaria a ZDP e o andaimamento.
+
+5. **(Comparação.)** Contraste as respostas de Piaget e Vygotsky à pergunta: "de onde vem o pensamento?" Em que ponto o "discurso privado" da criança é interpretado de modo diferente por cada um?
+
+6. **(Avaliação.)** A abordagem do processamento de informação dispensa estágios. Que aspectos do desenvolvimento cognitivo ela explica bem — e quais talvez explique pior que uma teoria de estágios?
