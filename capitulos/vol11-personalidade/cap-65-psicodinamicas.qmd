@@ -1,5 +1,142 @@
 # 65. Teorias psicodinâmicas
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** o modelo estrutural freudiano (id, ego, superego) como teoria da personalidade.
+- **Explicar** o papel da ansiedade e dos mecanismos de defesa na dinâmica da personalidade.
+- **Resumir** a teoria do desenvolvimento psicossexual e suas noções de fixação e caráter.
+- **Comparar** as reformulações de Jung, Adler, Horney e Erikson à teoria original de Freud.
+- **Avaliar criticamente** o que a evidência contemporânea sustenta e o que rejeita no legado psicodinâmico.
 :::
+
+Começamos o percurso teórico pela família mais antiga — e mais controversa. O Cap. 10 apresentou a psicanálise como sistema histórico: sua origem no consultório de Freud, o método clínico, a extensa influência cultural. Aqui a retomamos com outro foco: **o que ela diz sobre a personalidade** — sobre por que cada pessoa desenvolve seus padrões característicos de desejar, temer e se defender. A tese central de todas as teorias psicodinâmicas é que a personalidade resulta de **forças em conflito**, em grande parte **inconscientes**, moldadas nas relações da infância. O comportamento visível seria a resultante — muitas vezes disfarçada — desse jogo interno de pressões. Veremos a arquitetura proposta por Freud, as defesas do ego, as revisões dos dissidentes e, ao final, o balanço científico: o que sobreviveu ao teste da evidência e o que não passou dele.
+
+## A arquitetura freudiana: id, ego e superego
+
+Na formulação madura de Freud, a personalidade é um sistema de três instâncias em interação permanente [@freud1923]. O **id**, presente desde o nascimento, é o reservatório das pulsões — sexualidade e agressividade em sentido amplo — e opera pelo **princípio do prazer**: quer descarga imediata, ignora lógica, tempo e realidade. O **ego** desenvolve-se para mediar entre o id e o mundo: opera pelo **princípio de realidade**, adiando e canalizando a satisfação por vias viáveis e seguras — é a instância executiva, sede do pensamento racional e da percepção. O **superego**, herdeiro da internalização das figuras parentais e das normas culturais, é o juiz interno: o ideal a alcançar e a consciência que pune com **culpa**.
+
+A personalidade de cada um refletiria o **equilíbrio de forças** entre as instâncias: um id dominante produziria impulsividade; um superego tirânico, rigidez e culpa crônica; um ego forte, flexibilidade adaptativa. Crucialmente, a maior parte desse jogo ocorreria **fora da consciência** — a metáfora clássica do iceberg (@fig-iceberg-freud): a consciência é a ponta; sob a linha d'água estendem-se o pré-consciente (acessível com esforço) e o vasto inconsciente.
+
+::: {#fig-iceberg-freud}
+```{.tikz}
+%%| filename: iceberg-freud
+%%| alt: Esquema do modelo freudiano como um iceberg. Acima da linha d'água, uma pequena ponta rotulada consciente. Logo abaixo da linha, uma faixa rotulada pré-consciente. Na grande massa submersa, o rótulo inconsciente. Sobrepostas ao iceberg, as três instâncias: o superego atravessa os níveis consciente e inconsciente à esquerda, o ego atravessa o centro em todos os níveis, e o id ocupa somente a região inconsciente profunda.
+\begin{tikzpicture}[font=\scriptsize]
+  % água
+  \draw[manualblue, thick] (-4.6,0) -- (4.6,0) node[right, font=\tiny] {linha d'água};
+  % iceberg
+  \draw[fill=manualblue!10, rounded corners=2pt] (-2.2,-4.2) -- (-3.1,-1.6) -- (-1.9,0) -- (-0.9,0.9) -- (0.4,1.2) -- (1.4,0.4) -- (2.1,0) -- (3.0,-1.8) -- (1.9,-4.2) -- cycle;
+  % níveis
+  \node[font=\tiny, text=manualgray] at (3.6,0.6) {\textbf{consciente}};
+  \node[font=\tiny, text=manualgray] at (3.7,-0.7) {\textbf{pré-consciente}};
+  \node[font=\tiny, text=manualgray] at (3.6,-2.6) {\textbf{inconsciente}};
+  \draw[dashed, manualgray] (-3.4,-1.2) -- (3.1,-1.2);
+  % instâncias
+  \node[text=manualred] at (0.1,0.55) {\textbf{EGO}};
+  \node[font=\tiny, text=manualred, align=center] at (0.1,-1.9) {\textbf{EGO}\\{\tiny (defesas, em grande}\\{\tiny parte inconscientes)}};
+  \node[text=manualgreen!60!black, align=center] at (-1.7,-0.5) {\textbf{SUPEREGO}};
+  \node[text=manualblue!70!black, align=center] at (0.0,-3.4) {\textbf{ID}};
+  \draw[->, thick, manualred] (0.1,0.3) -- (0.1,-1.2);
+\end{tikzpicture}
+```
+A metáfora do iceberg: só uma fração da vida mental é consciente. O **id** é todo inconsciente; **ego** e **superego** atravessam os três níveis — inclusive as defesas do ego, que operam sem que percebamos [@freud1923].
+:::
+
+### Ansiedade e mecanismos de defesa
+
+Quando os impulsos do id ameaçam irromper, ou o superego condena, o ego experimenta **ansiedade** — um sinal de perigo interno. Para manejá-la, recorre aos **mecanismos de defesa**: operações inconscientes que distorcem a percepção da realidade ou do próprio desejo, reduzindo o desconforto. O catálogo foi sistematizado por Anna Freud [@freud_anna1936]. Os mais citados:
+
+| Defesa | Operação | Exemplo |
+|---|---|---|
+| **Repressão** | Expulsar da consciência o conteúdo ameaçador | "Esquecer" um episódio humilhante |
+| **Negação** | Recusar-se a reconhecer uma realidade externa | "Esse diagnóstico deve estar errado" |
+| **Projeção** | Atribuir a outros o próprio impulso inaceitável | O hostil que vê hostilidade em todos |
+| **Racionalização** | Criar justificativas aceitáveis para atos motivados por outra coisa | "Nem queria mesmo a vaga" |
+| **Deslocamento** | Redirecionar o impulso a um alvo mais seguro | Brigar em casa após humilhação no trabalho |
+| **Formação reativa** | Expressar o oposto exagerado do impulso | Solicitude excessiva encobrindo rancor |
+| **Regressão** | Retornar a padrões de fase anterior | Comportamento infantil sob estresse intenso |
+| **Sublimação** | Canalizar o impulso para fins socialmente valiosos | Agressividade virando cirurgia ou esporte |
+
+A ideia envelheceu bem — em parte. A pesquisa contemporânea confirma que as pessoas usam estratégias defensivas de manejo de ameaça, que elas variam em **maturidade** e que defesas maduras (humor, sublimação, antecipação) predizem melhor saúde mental e adaptação ao longo da vida, como mostraram os estudos longitudinais de Vaillant [@vaillant1992; @cramer2000]. O que não se sustenta é o mecanismo original: a "energia psíquica" represada e a repressão como esquecimento ativo de traumas não têm apoio empírico sólido — a memória de eventos traumáticos tende, ao contrário, a ser persistente (Cap. 45) [@mcnally2003].
+
+## O desenvolvimento psicossexual e a noção de caráter
+
+Freud sustentou que a personalidade adulta se forma nos conflitos das **fases psicossexuais** (oral, anal, fálica, latência, genital), cada qual centrada numa zona de prazer e num conflito típico — o mais célebre, o **complexo de Édipo** na fase fálica (Cap. 10). Gratificação excessiva ou frustração em uma fase produziria **fixação**, deixando uma assinatura no caráter adulto: o "caráter oral" dependente e ávido; o "caráter anal" obstinado, avarento e ordeiro. Dessa tese decorre o princípio mais influente do freudismo: **a infância é o destino** — os primeiros anos moldariam de modo decisivo a personalidade.
+
+O balanço empírico é misto e, no conjunto, desfavorável à formulação literal. A infância importa, sim — a qualidade do cuidado precoce prediz desenvolvimento socioemocional (Cap. 60) — mas não pelos mecanismos propostos: não há evidência das fases psicossexuais como estágios universais, nem de que treinamento esfincteriano molde o caráter, nem do Édipo como pivô do desenvolvimento moral [@westen1998]. A associação estatística entre práticas de criação específicas e traços adultos é fraca; e o determinismo infantil subestima a plasticidade posterior e o peso genético (Cap. 64).
+
+## Os dissidentes: a psicologia do ego e os neofreudianos
+
+A primeira geração de seguidores rompeu com Freud em pontos hoje instrutivos — quase todos na direção de **menos sexo, mais cultura e relações**.
+
+**Carl Jung** rejeitou a centralidade da libido sexual e propôs uma psique com um **inconsciente coletivo** — um repertório universal de **arquétipos** (imagens primordiais como a Grande Mãe, o Herói, a Sombra) herdado da história da espécie [@jung1921]. Cientificamente, o inconsciente coletivo é infalseável e permanece fora da psicologia empírica; mas Jung legou ao campo uma distinção extraordinariamente fecunda: **introversão × extroversão**, a orientação preferencial da energia para dentro ou para fora — dimensão que a pesquisa de traços confirmaria como um dos pilares da personalidade (Cap. 67), ainda que com definição diferente da junguiana.
+
+**Alfred Adler** deslocou o motor da personalidade do sexo para o **social**: o humano nasce em radical desamparo e a vida psíquica se organiza em torno da superação dos **sentimentos de inferioridade** — a busca de superioridade ou perfeição [@adler1927]. Quando a compensação fracassa ou se exacerba, surge o **complexo de inferioridade**. Adler cunhou a noção de **estilo de vida** (o modo singular de cada um perseguir suas metas) e antecipou temas modernos: metas e crenças como núcleo da personalidade (Cap. 68) e o interesse social como critério de saúde.
+
+**Karen Horney** fez a crítica interna mais contundente. Contra a biologia freudiana, argumentou que a neurose nasce da **ansiedade básica** — o sentimento infantil de estar só e desamparado num mundo hostil, produto de relações parentais falhas, não de pulsões [@horney1967]. Diante dela, a pessoa cristaliza estratégias interpessoais rígidas: **mover-se em direção** às pessoas (complacência), **contra** elas (agressão) ou **para longe** delas (desapego). Horney também demoliu o viés de gênero da teoria clássica — à "inveja do pênis" respondeu que o que as mulheres invejam são os **privilégios sociais** masculinos, inaugurando a crítica feminista em psicologia.
+
+**Erik Erikson**, já apresentado no Cap. 60, completou o movimento: rebatizou o desenvolvimento de psicossexual para **psicossocial**, estendeu-o à vida inteira e fez da **identidade** — não da libido — a questão organizadora [@erikson1950].
+
+::: {.estudo-caso}
+📋 **Estudo de caso — o mesmo paciente, quatro leituras.** Bruno, 34 anos, procura terapia por episódios de irritabilidade explosiva com o filho pequeno, seguidos de culpa intensa. Relata pai severo e distante. Um analista **freudiano** clássico exploraria a identificação com o agressor e o conflito entre impulso hostil (id) e condenação interna (superego), com a culpa como sinal do superego punitivo. Um **junguiano** examinaria a Sombra — os conteúdos que Bruno rejeita em si — e sua projeção no filho. Um **adleriano** investigaria o sentimento de inferioridade reativado pela paternidade e o estilo de vida compensatório de "nunca falhar". Uma leitura **horneyana** veria a ansiedade básica da infância de Bruno e a estratégia rígida de mover-se *contra* reaparecendo sob estresse. O caso (fictício) ilustra o traço comum da família psicodinâmica — buscar o padrão atual na história afetiva e em processos não conscientes — e também seu calcanhar de aquiles: as quatro leituras são plausíveis, e a teoria não diz como decidir **empiricamente** entre elas.
+:::
+
+## Balanço científico: o que fica e o que cai
+
+A crítica metodológica é conhecida (Caps. 3 e 10): conceitos elásticos, hipóteses acomodáveis a qualquer resultado — a **infalseabilidade** apontada por Popper [@popper1963] —, base de dados restrita a casos clínicos interpretados pelo próprio teórico e ausência de testes preditivos rigorosos [@grunbaum1984]. Como teoria científica unificada da personalidade, a psicanálise clássica **fracassou**: fases psicossexuais, Édipo universal, energia libidinal e boa parte da metapsicologia não encontraram apoio.
+
+Mas o balanço honesto registra a coluna dos créditos. A pesquisa moderna — cognitiva, social e de neurociência — sustenta versões reformuladas de várias intuições psicodinâmicas centrais [@westen1998]: (1) grande parte da vida mental é de fato **não consciente**, incluindo avaliações e motivações que guiam o comportamento — ainda que esse "inconsciente cognitivo" seja mais processador eficiente do que caldeirão de desejos reprimidos [@kihlstrom1987]; (2) processos afetivos e motivacionais **conflitam** e o autocontrole é disputado (Caps. 47 e 52); (3) **experiências relacionais precoces** organizam modelos internos que se reeditam em vínculos adultos — a linha que vai do apego de Bowlby, ele próprio formado na tradição psicanalítica, à pesquisa contemporânea (Cap. 60); (4) as pessoas usam **defesas** de maturidade variável, com consequências para a saúde [@vaillant1992]. E a psicoterapia psicodinâmica moderna, testada em ensaios controlados, mostra eficácia para vários quadros [@shedler2010; @leichsenring2008] — tema do Cap. 88.
+
+::: {.atencao}
+⚠️ **Nem hagiografia, nem caricatura.** Dois erros simétricos rondam Freud. O primeiro é tratá-lo como verdade revelada — postura que ainda persiste em nichos e que é incompatível com a atitude científica. O segundo é o descarte caricato ("tudo pseudociência"), que joga fora contribuições reais: a ideia de processamento não consciente, o peso das relações precoces, as defesas, a própria invenção da psicoterapia como prática sistemática. A posição madura é a mesma que aplicamos a qualquer teoria: **desagregá-la em hipóteses testáveis** e deixar a evidência decidir peça por peça — foi o que fez a pesquisa que este capítulo resume.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- Teorias **psicodinâmicas**: personalidade como resultante de forças em conflito, majoritariamente inconscientes, com raízes na história afetiva infantil.
+- Modelo estrutural [@freud1923]: **id** (princípio do prazer) × **ego** (princípio de realidade) × **superego** (norma internalizada); ansiedade dispara **mecanismos de defesa** [@freud_anna1936] — defesas maduras predizem melhor adaptação [@vaillant1992].
+- Fases psicossexuais, fixação e "caráter": sem apoio empírico como formulado; a repressão de traumas contraria a evidência sobre memória [@mcnally2003].
+- Dissidentes: **Jung** (inconsciente coletivo — infalseável; introversão/extroversão — fecunda), **Adler** (inferioridade e compensação, estilo de vida), **Horney** (ansiedade básica, crítica de gênero), **Erikson** (desenvolvimento psicossocial).
+- Balanço [@westen1998]: caem a metapsicologia e o determinismo psicossexual; ficam, reformulados, o processamento não consciente [@kihlstrom1987], o conflito motivacional, o peso das relações precoces e as defesas.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Id / Ego / Superego**
+:   Instâncias do modelo estrutural: pulsões sob o princípio do prazer; mediação executiva sob o princípio de realidade; normas e ideais internalizados [@freud1923].
+
+**Mecanismo de defesa**
+:   Operação inconsciente do ego que distorce percepção ou desejo para reduzir ansiedade (repressão, projeção, sublimação etc.) [@freud_anna1936].
+
+**Fixação**
+:   Na teoria freudiana, aprisionamento parcial da libido em uma fase psicossexual, marcando o caráter adulto.
+
+**Inconsciente coletivo / arquétipos**
+:   Em Jung, repertório psíquico universal herdado e suas imagens primordiais [@jung1921].
+
+**Complexo de inferioridade**
+:   Em Adler, exacerbação patológica dos sentimentos de inferioridade que organizam a busca de superação [@adler1927].
+
+**Ansiedade básica**
+:   Em Horney, sentimento infantil de desamparo em mundo hostil, raiz das estratégias neuróticas (em direção a, contra, para longe de) [@horney1967].
+
+**Inconsciente cognitivo**
+:   Concepção contemporânea do processamento não consciente como operação eficiente e normal da mente, não como reservatório de conteúdos reprimidos [@kihlstrom1987].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Descreva as três instâncias do modelo estrutural e o princípio de funcionamento de cada uma.
+
+2. **(Conceitual.)** Identifique o mecanismo de defesa: (a) o fumante que coleciona estudos "provando" que cigarro não faz tão mal; (b) a funcionária furiosa com o chefe que chega em casa e briga com o irmão; (c) o rival que se torna exageradamente elogioso.
+
+3. **(Análise.)** Compare como Freud, Adler e Horney explicariam a origem de um padrão adulto de perfeccionismo extremo.
+
+4. **(Avaliação.)** Por que a infalseabilidade é um defeito fatal para uma teoria científica? Ilustre com um conceito psicodinâmico e proponha como ele **poderia** ser reformulado em hipótese testável.
+
+5. **(Avaliação.)** Westen [-@westen1998] defende que a ciência moderna confirmou várias teses psicodinâmicas "sem os créditos". Quais? Em que a versão moderna difere da original em cada caso?
+
+6. **(Síntese.)** O apego (Cap. 60) nasceu dentro da tradição psicanalítica e virou ciência empírica de primeira linha. O que Bowlby e Ainsworth fizeram de diferente — metodologicamente — que permitiu essa transição?
