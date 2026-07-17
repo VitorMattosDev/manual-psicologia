@@ -1,5 +1,137 @@
 # 64. O conceito de personalidade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** personalidade e distingui-la de temperamento e caráter.
+- **Diferenciar** as abordagens nomotética e idiográfica ao estudo da pessoa.
+- **Descrever** os três níveis de análise da personalidade propostos por McAdams.
+- **Resumir** a evidência sobre estabilidade e mudança da personalidade ao longo da vida.
+- **Explicar** o papel de genes, ambiente e cultura na formação da personalidade.
+- **Justificar** por que a personalidade importa: seu poder preditivo sobre desfechos de vida.
 :::
+
+O Vol 10 mapeou as trajetórias que todos compartilhamos: engatinhar antes de andar, o apego, a puberdade, o envelhecer. Mas qualquer observador da vida humana nota o oposto do compartilhado: duas irmãs criadas na mesma casa podem ser uma expansiva e impulsiva, a outra reservada e metódica. Este volume pergunta o que torna cada pessoa **singular** — e, ao mesmo tempo, **reconhecível** de um ano para o outro. Esse objeto é a **personalidade**: os padrões relativamente estáveis e distintivos de pensar, sentir e se comportar que caracterizam um indivíduo [@allport1937]. Neste capítulo, delimitamos o conceito, as grandes questões do campo e o que já se sabe sobre origem, estabilidade e consequências da personalidade. Os capítulos seguintes percorrem as quatro grandes famílias teóricas — psicodinâmica, humanista, dos traços e sociocognitiva — e fecham com a avaliação.
+
+## O que é (e o que não é) personalidade
+
+A definição clássica tem três ingredientes. Primeiro, **padrões**: personalidade não é um ato isolado, mas uma regularidade — a pessoa "ansiosa" não é a que se preocupou uma vez, e sim a que tende a se preocupar em muitas situações. Segundo, **estabilidade relativa**: os padrões persistem no tempo e através de contextos — com nuances importantes que veremos adiante. Terceiro, **distintividade**: personalidade é o que diferencia as pessoas entre si, não o que todas compartilham (a fome é universal; a gula organizada de um gourmet, não).
+
+Convém separar o conceito de dois vizinhos. O **temperamento** designa as diferenças individuais precoces, de forte base biológica, em reatividade e autorregulação — o "material bruto" emocional visível já no bebê (Cap. 58): nível de atividade, irritabilidade, medo do novo [@thomas_chess1977]. Jerome Kagan mostrou que cerca de 15–20% dos bebês exibem **inibição comportamental** — reatividade intensa e retraimento diante da novidade — e que esse perfil, ligado à reatividade da amígdala, prediz (probabilisticamente, não deterministicamente) timidez e risco de ansiedade anos depois [@kagan1994]. A personalidade adulta emerge do temperamento **esculpido pela experiência**: o temperamento propõe, o ambiente dispõe. Já o **caráter**, no uso cotidiano, carrega avaliação moral ("pessoa de bom caráter"). A psicologia científica da personalidade procura **descrever e explicar** diferenças individuais, não julgá-las — embora dimensões como honestidade e responsabilidade sejam, elas próprias, objeto legítimo de estudo.
+
+::: {.atencao}
+⚠️ **Personalidade não é destino nem rótulo.** Dizer que alguém "tem" um traço é resumir uma **tendência estatística** de comportamento, não decretar uma essência imutável. Traços descrevem probabilidades: a pessoa extrovertida fala mais *em média*, mas também tem seus silêncios. Usar conceitos de personalidade como rótulos fixos ("ele é assim mesmo, não adianta") comete dois erros: ignora a variabilidade situacional (Cap. 68) e ignora que a personalidade **muda** ao longo da vida — inclusive, em parte, por esforço deliberado e por experiências transformadoras.
+:::
+
+## Nomotético × idiográfico: leis gerais ou pessoas singulares?
+
+Gordon Allport, pioneiro do campo, formulou uma tensão que o atravessa até hoje [@allport1937]. A abordagem **nomotética** (do grego *nomos*, lei) busca **dimensões gerais** aplicáveis a todos — por exemplo, situar qualquer pessoa em um contínuo de extroversão — e é o caminho da ciência quantitativa: permite comparar, medir, correlacionar e prever. A abordagem **idiográfica** (*idios*, próprio) busca compreender a **organização única** de uma vida particular — a configuração irrepetível de disposições, histórias e significados que faz de alguém quem é — e se expressa em estudos de caso, biografias e narrativas de vida. As duas não competem: a nomotética fornece o mapa comum; a idiográfica lembra que nenhum mapa esgota o território de uma pessoa. A boa psicologia da personalidade — e a boa prática clínica — transita entre as duas.
+
+## Três níveis para conhecer uma pessoa
+
+O que precisamos saber para dizer que **conhecemos** alguém? Dan McAdams propôs uma resposta influente: a personalidade se organiza em **três níveis** complementares [@mcadams1995; @mcadams_pals2006] (@fig-niveis-mcadams).
+
+1. **Traços disposicionais** — as tendências amplas e descontextualizadas (extroversão, ansiedade, meticulosidade). É o "esboço psicológico" que se capta até de um estranho; o nível dos modelos como o Big Five (Cap. 67).
+2. **Adaptações características** — metas, valores, estratégias, interesses e crenças **contextualizados** no tempo, lugar e papéis da pessoa: o que ela quer, como enfrenta, em que acredita (autoeficácia, *locus* de controle, *mindsets* — Cap. 68). Duas pessoas igualmente extrovertidas podem ter projetos de vida opostos.
+3. **Narrativas de identidade** — a **história de vida internalizada** que a pessoa constrói para dar unidade e propósito à própria existência: como ela conta suas origens, viradas, quedas e redenções. É o nível mais singular — e o mais próximo da abordagem idiográfica.
+
+::: {#fig-niveis-mcadams}
+```{.tikz}
+%%| filename: niveis-mcadams
+%%| alt: Diagrama de três camadas empilhadas. A camada da base, mais larga, representa os traços disposicionais (tendências amplas, comparáveis entre pessoas). A camada do meio representa as adaptações características (metas, valores e estratégias contextualizadas). A camada do topo, mais estreita, representa a narrativa de identidade (história de vida internalizada, única). Uma seta ao lado indica que, da base ao topo, cresce a singularidade e o contexto.
+\begin{tikzpicture}[font=\small]
+  \draw[fill=manualblue!18, rounded corners] (-4.1,0) rectangle (4.1,1.1);
+  \node at (0,0.72) {\textbf{1. Traços disposicionais}};
+  \node[font=\tiny] at (0,0.3) {tendências amplas e estáveis — comparáveis entre pessoas (Big Five)};
+  \draw[fill=manualgreen!18, rounded corners] (-3.3,1.35) rectangle (3.3,2.45);
+  \node at (0,2.07) {\textbf{2. Adaptações características}};
+  \node[font=\tiny] at (0,1.65) {metas, valores, estratégias — situadas em contexto e papéis};
+  \draw[fill=manualred!18, rounded corners] (-2.5,2.7) rectangle (2.5,3.8);
+  \node at (0,3.42) {\textbf{3. Narrativa de identidade}};
+  \node[font=\tiny] at (0,3.0) {a história de vida internalizada — única};
+  \draw[->, thick, manualgray] (4.8,0.2) -- (4.8,3.7);
+  \node[font=\tiny, rotate=90, anchor=south] at (5.1,1.95) {+ singularidade, + contexto};
+\end{tikzpicture}
+```
+Os três níveis da personalidade segundo McAdams: conhecer uma pessoa é conhecer seus **traços**, suas **adaptações características** e sua **narrativa de identidade** [@mcadams1995].
+:::
+
+Esse esquema também organiza o volume: as teorias dos traços (Cap. 67) dominam o nível 1; as sociocognitivas (Cap. 68), o nível 2; as psicodinâmicas e humanistas (Caps. 65–66) circulam pelos três, com ênfase nos significados e na história pessoal.
+
+## A personalidade é estável ou muda?
+
+As duas coisas — e a aparente contradição se desfaz quando distinguimos **tipos de estabilidade**. A **consistência de ordem** (*rank-order*) pergunta se as pessoas mantêm sua posição relativa no grupo: o adolescente mais extrovertido da turma será um dos adultos mais extrovertidos? A metanálise de Roberts e DelVecchio, com mais de 150 estudos longitudinais, mostrou que essa consistência é moderada na infância, cresce ao longo da vida adulta e atinge um platô alto (correlações teste-reteste em torno de 0,7) por volta dos 50–70 anos [@roberts_delvecchio2000] — a personalidade vai se "consolidando", mas nunca vira pedra. Já a **mudança de nível médio** pergunta se o grupo inteiro se desloca com a idade: e se desloca. Em média, da adolescência à meia-idade as pessoas se tornam mais **conscienciosas**, mais **amáveis** e mais **estáveis emocionalmente** — o chamado **princípio da maturidade** [@roberts_mroczek2008]. Boa parte dessa mudança acompanha a assunção de papéis adultos (trabalho, parceria estável, parentalidade): investir em papéis sociais convoca — e treina — responsabilidade e regulação (princípio do investimento social).
+
+Portanto: quem você é aos 20 prediz razoavelmente quem você será aos 60 (estabilidade relativa), e ainda assim o seu eu de 60 tende a ser mais maduro que o de 20 (mudança normativa). E há espaço para mudança **individual** fora da norma — inclusive por psicoterapia, que produz mudanças mensuráveis de traços, sobretudo redução de neuroticismo.
+
+## De onde vem a personalidade?
+
+### Genes e ambientes
+
+A genética do comportamento (Cap. 26) fala alto aqui. Estudos com gêmeos — incluindo os célebres gêmeos idênticos criados separados de Minnesota [@bouchard1990] — e a metanálise de praticamente toda a literatura de gêmeos [@polderman2015] convergem: cerca de **40–50%** da variação dos traços de personalidade entre pessoas associa-se a diferenças genéticas. O achado surpreendente está no restante: o ambiente que importa é majoritariamente o **não compartilhado** — experiências únicas de cada indivíduo (amizades, acasos, percepções idiossincráticas da mesma família) —, enquanto o ambiente compartilhado (o "estilo do lar" comum aos irmãos) explica pouco da semelhança entre eles [@plomin2018]. Irmãos criados juntos não são muito mais parecidos em personalidade do que seria esperado apenas pelos genes que compartilham. Isso não significa que os pais "não importam": significa que sua influência não opera tornando os filhos parecidos entre si, e que herdabilidade descreve **variação em uma população**, não o quanto da *sua* personalidade é "genética" (Cap. 26). Lembre também da correlação gene–ambiente [@scarr_mccartney1983]: pessoas **selecionam e criam** nichos compatíveis com suas disposições — o extrovertido procura festas que reforçam sua extroversão.
+
+### Cultura e o eu
+
+A personalidade se expressa — e em parte se constitui — dentro de significados culturais. Markus e Kitayama contrastaram o **eu independente**, predominante em culturas ocidentais individualistas (a pessoa como entidade autônoma, definida por atributos internos), com o **eu interdependente**, mais saliente em muitas culturas asiáticas, africanas e latino-americanas (a pessoa definida por relações e pertencimentos) [@markus_kitayama1991]. Isso não impede comparações — a estrutura de cinco fatores reaparece com razoável robustez em dezenas de culturas [@mccrae_terracciano2005] —, mas adverte: o *significado*, a *expressão* e o *valor* de um traço variam culturalmente (a assertividade celebrada num contexto pode ser rudeza em outro), e boa parte da pesquisa clássica vem de amostras WEIRD [@henrich2010].
+
+## Por que a personalidade importa
+
+Personalidade prediz. Uma revisão de dados longitudinais mostrou que traços de personalidade predizem **mortalidade, divórcio e sucesso ocupacional** com magnitudes comparáveis — às vezes superiores — às do nível socioeconômico e da capacidade cognitiva [@roberts2007]. A conscienciosidade prediz saúde e longevidade (via hábitos e adesão a cuidados); o neuroticismo prediz risco de transtornos internalizantes e pior qualidade conjugal; a extroversão, redes sociais mais amplas e afeto positivo [@ozer_benet2006]. São efeitos probabilísticos e modestos caso a caso, mas **acumulados ao longo de décadas** tornam-se consequências de vida — pela mesma lógica atuarial que faz pequenos vieses renderem grandes diferenças no agregado.
+
+::: {.na-pratica}
+💡 **Onde você encontra a psicologia da personalidade.** Ela está na **seleção de pessoal** (testes de integridade e conscienciosidade predizem desempenho — Cap. 97), na **clínica** (o neuroticismo é um dos maiores fatores gerais de risco psicopatológico; os transtornos de personalidade são o tema do Cap. 83), na **saúde** (perfis de risco e adesão a tratamento), na **orientação de carreira** e até no design de intervenções públicas. Também está — de forma bem menos científica — nos testes virais de internet e nas tipologias corporativas da moda; o Cap. 69 dará os critérios para separar avaliação séria de entretenimento com verniz técnico.
+:::
+
+## Um mapa das teorias que vêm por aí
+
+Cada família teórica do volume responde de um ângulo à pergunta "por que somos como somos?". As **psicodinâmicas** (Cap. 65) apontam para conflitos e defesas em grande parte inconscientes, forjados na história afetiva. As **humanistas** (Cap. 66) veem uma tendência à realização e um autoconceito construído no olhar do outro. As **teorias dos traços** (Cap. 67) descrevem a arquitetura dimensional das diferenças individuais e suas bases biológicas. As **sociocognitivas** (Cap. 68) explicam a pessoa pela interação dinâmica entre cognição, comportamento e situação. São menos rivais excludentes do que **lentes em níveis diferentes** — descrição estrutural, dinâmica motivacional, processo cognitivo-situacional — e o teste de cada uma, como sempre, é a evidência.
+
+## Síntese
+
+::: {.callout-sintese}
+- **Personalidade**: padrões relativamente estáveis e distintivos de pensar, sentir e agir. Distingue-se do **temperamento** (base biológica precoce, ex.: inibição comportamental de Kagan) e do **caráter** (noção moral leiga).
+- **Nomotético** (leis gerais, dimensões comuns) × **idiográfico** (a organização única de uma vida): abordagens complementares (Allport).
+- **McAdams**: três níveis — traços disposicionais, adaptações características, narrativa de identidade.
+- Estabilidade **e** mudança: consistência de ordem cresce com a idade (Roberts & DelVecchio); em nível médio, o **princípio da maturidade** — mais conscienciosidade, amabilidade e estabilidade emocional com a idade.
+- Origens: herdabilidade de ~40–50%; o ambiente decisivo é o **não compartilhado**; cultura molda o **eu** (independente × interdependente).
+- Personalidade **prediz** desfechos de vida (saúde, trabalho, relações) tanto quanto NSE e cognição (Roberts et al.).
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Personalidade**
+:   Padrões relativamente estáveis e distintivos de pensamento, emoção e comportamento de um indivíduo [@allport1937].
+
+**Temperamento**
+:   Diferenças individuais precoces, de forte base biológica, em reatividade e autorregulação [@thomas_chess1977].
+
+**Abordagem nomotética / idiográfica**
+:   Busca de dimensões gerais comparáveis entre pessoas / compreensão da organização única de um indivíduo.
+
+**Adaptações características**
+:   Metas, valores, estratégias e crenças contextualizadas — o segundo nível de McAdams [@mcadams1995].
+
+**Consistência de ordem (rank-order)**
+:   Manutenção da posição relativa de cada pessoa no grupo ao longo do tempo [@roberts_delvecchio2000].
+
+**Princípio da maturidade**
+:   Tendência normativa de aumento de conscienciosidade, amabilidade e estabilidade emocional na vida adulta [@roberts_mroczek2008].
+
+**Ambiente não compartilhado**
+:   Experiências únicas de cada indivíduo, principal componente ambiental das diferenças de personalidade [@plomin2018].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Quais são os três ingredientes da definição de personalidade? Diferencie personalidade, temperamento e caráter.
+
+2. **(Conceitual.)** Explique a diferença entre consistência de ordem e mudança de nível médio. Como os dois achados podem ser verdadeiros ao mesmo tempo?
+
+3. **(Análise.)** "Irmãos criados na mesma casa têm personalidades pouco mais parecidas do que o esperado pelos genes." O que esse achado diz — e o que ele **não** diz — sobre a influência dos pais?
+
+4. **(Aplicação.)** Escolha uma pessoa que você conhece bem e esboce os três níveis de McAdams para ela: dois traços, duas adaptações características e um tema central de sua narrativa de identidade.
+
+5. **(Avaliação.)** Um gestor afirma: "Personalidade não prediz nada; cada situação é uma situação." Use a evidência deste capítulo para avaliar criticamente a afirmação — sem cair no extremo oposto do determinismo de traços.
+
+6. **(Síntese.)** Como a distinção entre eu independente e interdependente (Markus & Kitayama) complica — sem inviabilizar — o projeto nomotético de comparar personalidades entre culturas?
