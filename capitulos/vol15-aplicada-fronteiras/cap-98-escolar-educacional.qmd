@@ -1,5 +1,102 @@
 # 98. Psicologia escolar e educacional
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** a psicologia **educacional** (ciência da aprendizagem e do ensino) da psicologia **escolar** (atuação profissional na escola).
+- **Aplicar** princípios da aprendizagem e da memória ao ensino eficaz.
+- **Explicar** o papel da motivação e das teorias de mentalidade no desempenho escolar.
+- **Descrever** as dificuldades de aprendizagem e o modelo de educação inclusiva.
+- **Analisar** a virada da atuação escolar do modelo clínico-individual ao institucional.
+- **Situar** a psicologia escolar no sistema educacional brasileiro.
 :::
+
+Depois do trabalho, a escola: a instituição onde passamos a infância e a juventude aprendendo. A **psicologia educacional** é a ciência de como as pessoas aprendem em contextos de ensino e como ensinar melhor; a **psicologia escolar** é o campo de atuação profissional que leva a psicologia para dentro da escola. As duas se alimentam mutuamente — e ambas retomam, aplicadas ao aprender formal, os processos que este manual já examinou: aprendizagem (Vol 7), memória e cognição (Vol 8), motivação (Vol 9) e desenvolvimento (Vol 10).
+
+## Duas faces de um mesmo campo
+
+Convém distinguir, de início, duas atividades. A **psicologia educacional** é uma disciplina de pesquisa: estuda os processos de ensino-aprendizagem, o desenvolvimento cognitivo aplicado à escola, a avaliação, a instrução eficaz. Foi fundada por nomes como Edward Thorndike, que trouxe o método experimental para a educação. A **psicologia escolar**, por sua vez, é a prática profissional do psicólogo no sistema educativo — historicamente ligada à avaliação de alunos, hoje voltada cada vez mais à instituição como um todo. Uma produz conhecimento; a outra o aplica no cotidiano da escola. Este capítulo percorre as duas.
+
+## O que a ciência sabe sobre aprender e ensinar
+
+Décadas de pesquisa cognitiva convergem em um conjunto de princípios que tornam a aprendizagem mais duradoura — e que, notavelmente, contrariam as práticas de estudo mais populares.
+
+O achado mais robusto é o **efeito de teste** (ou prática de recuperação): **recuperar** ativamente a informação da memória — respondendo a perguntas, tentando lembrar — fixa o aprendizado muito mais do que reler ou sublinhar [@roediger_karpicke2006]. Testar não é só medir o que se sabe; é um dos meios mais potentes de *aprender*. A segunda descoberta é a **prática distribuída**: estudar em sessões espaçadas ao longo do tempo supera largamente o "estudo de véspera" concentrado (*cramming*), que produz retenção que evapora [@cepeda2006]. Ambos exploram diretamente o que se sabe sobre a curva do esquecimento (Cap. 45).
+
+::: {.na-pratica}
+💡 **Por que reler é uma ilusão.** A releitura e o marca-texto são as técnicas de estudo mais usadas — e das menos eficazes [@dunlosky2013]. Elas geram uma sensação enganosa de domínio (a **fluência** do material familiar é confundida com aprendizado real), mas produzem retenção frágil. As técnicas de maior evidência são a **prática de recuperação** (autoteste, *flashcards*) e a **prática distribuída** (espaçar o estudo). Ensinar os alunos a estudar assim — e a desconfiar da fluência — é uma das contribuições mais concretas da psicologia à educação.
+:::
+
+## Motivação e mentalidade
+
+Aprender exige esforço sustentado, e esforço depende de motivação. A distinção entre motivação **intrínseca** (fazer por interesse) e **extrínseca** (por recompensa ou nota), da teoria da autodeterminação (Cap. 51), é central: ambientes que apoiam a **autonomia**, a **competência** e o **pertencimento** cultivam a motivação intrínseca, associada a aprendizado mais profundo [@deci_ryan2000]. Recompensas externas mal usadas podem, paradoxalmente, minar o interesse espontâneo.
+
+Uma linha influente e debatida é a das **mentalidades** (*mindsets*) de Carol Dweck [@dweck2006]. Alunos com **mentalidade fixa** creem que a inteligência é imutável e, diante do fracasso, desistem ("não sou bom nisso"); alunos com **mentalidade de crescimento** creem que a capacidade se desenvolve com esforço e estratégia, e persistem. Intervenções que promovem a mentalidade de crescimento mostram efeitos positivos, embora modestos e dependentes do contexto — um caso instrutivo de como a psicologia educacional refina, e às vezes redimensiona, promessas iniciais entusiasmadas.
+
+## Dificuldades de aprendizagem e educação inclusiva
+
+Nem todos aprendem do mesmo modo ou no mesmo ritmo. Os **transtornos específicos de aprendizagem** (Cap. 85) — como a **dislexia** (dificuldade na leitura), a **discalculia** (na matemática) e a disgrafia — são condições do neurodesenvolvimento, não fruto de preguiça ou falta de inteligência. Identificá-los cedo e oferecer intervenção adequada muda trajetórias escolares inteiras.
+
+O paradigma contemporâneo é a **educação inclusiva**: em vez de segregar alunos com deficiência ou transtornos em espaços separados, a escola se adapta para acolher a todos, com apoios e **adaptações razoáveis**. O psicólogo escolar tem papel-chave nessa engrenagem — na avaliação, no planejamento de estratégias, na orientação de professores e famílias. No Brasil, a inclusão é diretriz legal (a Política Nacional de Educação Especial na Perspectiva Inclusiva e a Lei Brasileira de Inclusão), embora sua efetivação enfrente obstáculos concretos de formação e recursos.
+
+::: {.atencao}
+⚠️ **Cuidado com a medicalização e a patologização.** Uma crítica central da psicologia escolar brasileira é a tendência de transformar problemas **pedagógicos, sociais ou institucionais** em supostos distúrbios **individuais** da criança. Um aluno que não acompanha pode estar diante de um ensino inadequado, de uma sala superlotada ou de vulnerabilidade social — e não necessariamente de um transtorno a ser diagnosticado e medicado. Rotular e medicalizar o "fracasso escolar" desloca para a criança a responsabilidade por falhas do sistema. Boa psicologia escolar investiga o contexto antes de patologizar o indivíduo.
+:::
+
+## Da clínica na escola à escola como objeto
+
+A história da psicologia escolar é, em boa medida, a história de uma virada de foco. No modelo tradicional — **clínico-remediativo** —, o psicólogo funcionava como um "consertador de alunos": recebia encaminhamentos de crianças "problemáticas", aplicava testes, diagnosticava e tratava, como se o problema residisse inteiramente no indivíduo. Esse modelo foi duramente criticado por individualizar e culpabilizar, ignorando que muitos problemas escolares nascem das relações, das práticas de ensino e da própria organização da escola.
+
+A psicologia escolar contemporânea, sobretudo na tradição crítica brasileira, propõe uma atuação **institucional e preventiva**: o objeto não é o aluno isolado, mas o **processo de escolarização** como um todo — as relações entre alunos, professores, gestão e comunidade. O psicólogo passa a trabalhar com formação de professores, mediação de conflitos, projetos coletivos, enfrentamento do *bullying*, melhoria do clima escolar e promoção de saúde mental na comunidade. É um deslocamento do "o que há de errado com esta criança?" para "o que, no processo educativo, produz e mantém este problema?".
+
+## A psicologia escolar no Brasil
+
+No Brasil, esse campo ganhou impulso importante com a aprovação da **Lei nº 13.935/2019**, que determina a presença de psicólogos e assistentes sociais nas redes públicas de educação básica — uma conquista que expande enormemente o espaço de atuação e cobra da categoria um modelo teórico à altura. A perspectiva hegemônica na formação brasileira é a **crítica**, que articula a psicologia às condições sociais da educação e recusa tanto o tecnicismo quanto a psicologização dos problemas escolares. O desafio prático é traduzir essa perspectiva em ações efetivas dentro de escolas com recursos escassos, alta demanda e desigualdades profundas — fazendo da psicologia escolar um instrumento de garantia do direito de aprender.
+
+::: {.callout-sintese}
+- A psicologia **educacional** pesquisa como se aprende e ensina; a **escolar** é a atuação profissional na escola.
+- Princípios com forte evidência: **efeito de teste** (prática de recuperação) [@roediger_karpicke2006] e **prática distribuída** [@cepeda2006] superam reler e o estudo de véspera [@dunlosky2013].
+- **Motivação intrínseca** (autonomia, competência, pertencimento) [@deci_ryan2000] e **mentalidade de crescimento** [@dweck2006] favorecem o aprender — a segunda com efeitos reais, porém modestos.
+- **Transtornos de aprendizagem** (dislexia, discalculia) são condições do neurodesenvolvimento; a resposta contemporânea é a **educação inclusiva**.
+- A psicologia escolar deslocou-se do modelo **clínico-remediativo** (consertar o aluno) para o **institucional** (o processo de escolarização), evitando medicalizar o fracasso.
+- No Brasil, a **Lei 13.935/2019** ampliou a presença do psicólogo na educação básica, sob a perspectiva **crítica**.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicologia educacional**
+:   Disciplina científica que estuda os processos de ensino e aprendizagem.
+
+**Psicologia escolar**
+:   Campo de atuação profissional do psicólogo no sistema educativo.
+
+**Efeito de teste (prática de recuperação)**
+:   Fortalecimento da memória pela recuperação ativa da informação, superior à releitura [@roediger_karpicke2006].
+
+**Prática distribuída**
+:   Estudo espaçado ao longo do tempo, mais eficaz que o estudo concentrado [@cepeda2006].
+
+**Mentalidade de crescimento**
+:   Crença de que a capacidade se desenvolve com esforço e estratégia, associada à persistência [@dweck2006].
+
+**Educação inclusiva**
+:   Paradigma em que a escola se adapta para acolher todos os alunos, com apoios e adaptações razoáveis.
+
+**Medicalização da educação**
+:   Tendência a converter problemas pedagógicos ou sociais em supostos distúrbios individuais a diagnosticar e medicar.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Distinga psicologia educacional de psicologia escolar. Dê um exemplo de atividade típica de cada uma.
+
+2. **(Conceitual.)** Explique o efeito de teste e a prática distribuída. Por que reler e sublinhar são menos eficazes do que parecem?
+
+3. **(Conceitual.)** Compare mentalidade fixa e de crescimento. Que cautela a pesquisa recente recomenda quanto ao tamanho desse efeito?
+
+4. **(Reflexão crítica.)** O que significa "medicalizar o fracasso escolar" e por que isso é problemático? Cite fatores contextuais que podem explicar dificuldades de um aluno.
+
+5. **(Integração.)** Descreva a virada do modelo clínico-remediativo para o institucional na psicologia escolar. O que muda na pergunta que o psicólogo faz?
+
+6. **(Reflexão crítica.)** Que oportunidades e desafios a Lei 13.935/2019 traz para a psicologia escolar brasileira?
