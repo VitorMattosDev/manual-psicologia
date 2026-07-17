@@ -1,5 +1,189 @@
 # 76. Normalidade e anormalidade
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Avaliar** os critérios que se usam para separar o normal do anormal — estatístico, normativo, sofrimento, disfunção e perigo — e por que nenhum deles, sozinho, dá conta.
+- **Explicar** o conceito de *disfunção prejudicial* de Wakefield e o que ele tenta resolver ao juntar um componente factual e um componente valorativo.
+- **Distinguir** a visão categórica da visão dimensional (contínua) da psicopatologia e as consequências práticas de cada uma.
+- **Reconstruir** o experimento de Rosenhan, o que ele parecia mostrar e por que hoje ele é lido com forte reserva.
+- **Analisar** a crítica de Szasz e o problema do rótulo, do estigma e da relatividade cultural do diagnóstico.
+- **Descrever** o modelo biopsicossocial e o modelo diátese-estresse como estruturas integradoras para o volume inteiro.
 :::
+
+Uma pessoa lava as mãos vinte vezes ao dia; outra ouve uma voz que ninguém mais ouve; uma terceira passa duas semanas sem conseguir sair da cama. Quando cada um desses estados deixa de ser uma variação da experiência humana e passa a ser um **transtorno** — algo que a psicologia e a medicina se propõem a nomear, estudar e tratar? A pergunta parece técnica, mas é, na raiz, conceitual e até política. Este volume trata do sofrimento psíquico quando ele se organiza em quadros reconhecíveis; e não há como começar sem enfrentar a questão que assombra a disciplina inteira: **onde termina o normal e começa o patológico?** Este capítulo mostra que a fronteira é real o bastante para justificar o cuidado clínico e nebulosa o bastante para exigir humildade permanente.
+
+## O que conta como "anormal"?
+
+O termo *anormal* significa, literalmente, "afastado da norma". Mas há vários sentidos de norma, e cada um sugere um critério diferente — todos úteis, nenhum suficiente.
+
+**Critério estatístico.** Anormal seria o raro, o que se afasta da média. Tem apelo objetivo: pode-se medir. Mas fracassa em duas direções. A genialidade e a santidade são estatisticamente raras e não são transtornos; a cárie dentária e a ansiedade leve são comuníssimas e nem por isso desejáveis. Raridade não é sofrimento, e frequência não é saúde.
+
+**Critério normativo (violação de normas sociais).** Anormal seria o que viola as regras e expectativas de uma sociedade. Aqui o problema é grave: as normas variam entre culturas e épocas, e usar a norma social como critério de doença já serviu para patologizar dissidência. Até 1973 a homossexualidade constava do manual diagnóstico norte-americano; sua retirada não foi uma descoberta de laboratório, mas o reconhecimento de que uma variação normal da sexualidade havia sido confundida com patologia por preconceito [@bayer1987]. O episódio é o alerta permanente deste volume: **o poder de nomear o anormal é um poder que erra, e erra em direções socialmente reveladoras.**
+
+**Critério do sofrimento subjetivo (*distress*).** Anormal seria o que causa dor à própria pessoa. Capta muita coisa — a depressão dói —, mas não tudo: em alguns quadros (certos estados maníacos, alguns transtornos de personalidade) a pessoa pode não sofrer, ou sofrer menos que quem convive com ela.
+
+**Critério da disfunção (*dysfunction*).** Anormal seria o que prejudica o funcionamento da pessoa em áreas importantes da vida — trabalho, estudos, relações, autocuidado. É o critério que mais se aproxima do uso clínico, e o que os manuais atuais mais enfatizam.
+
+**Critério do perigo (*danger*).** Anormal seria o que põe em risco a própria pessoa ou terceiros. É o critério de menor alcance — a maioria das pessoas com transtorno mental não é perigosa, e vinculá-lo à periculosidade alimenta um estigma injusto (voltaremos a isso) — mas pesa nas decisões clínicas e legais mais delicadas.
+
+Na prática clínica, esses critérios costumam ser resumidos nos **quatro Ds** — *deviance* (desvio), *distress* (sofrimento), *dysfunction* (disfunção) e *danger* (perigo) — e usados **em conjunto**, nenhum deles bastando isoladamente [@comer2015]. Um comportamento que é ao mesmo tempo desviante, sofrido, incapacitante e arriscado é claramente do domínio clínico; um que preenche só um dos critérios exige cautela. Vale acrescentar o polo positivo: Marie Jahoda propôs pensar a saúde mental não como mera ausência de doença, mas por traços positivos — autonomia, percepção acurada da realidade, domínio do ambiente, integração —, lembrando que "normal" não é só "não patológico" [@jahoda1958].
+
+::: {.atencao}
+⚠️ **Anormal não é sinônimo de perigoso, nem de "sem razão".** Duas confusões custam caro. A primeira liga transtorno mental a violência: os dados mostram que pessoas com transtorno mental são, na média, **mais frequentemente vítimas** do que autoras de violência, e que a maior parte da violência social não tem relação com transtorno [@swanson2015]. A segunda supõe que o comportamento patológico seja incompreensível: quase sempre ele tem uma lógica interna — a evitação na ansiedade "faz sentido" dado o medo — e é essa lógica que a psicopatologia procura reconstruir, não descartar.
+:::
+
+## Disfunção prejudicial: um critério de duas peças
+
+Insatisfeito com critérios puramente estatísticos ou puramente valorativos, Jerome Wakefield propôs uma definição influente: transtorno mental é uma **disfunção prejudicial** (*harmful dysfunction*) [@wakefield1992]. A expressão tem, de propósito, duas peças de naturezas diferentes:
+
+- **Disfunção** é um componente **factual**: algum mecanismo mental (medo, humor, percepção, atenção) não está desempenhando a função para a qual foi moldado pela evolução. Essa parte é, em princípio, objeto de ciência.
+- **Prejudicial** é um componente **valorativo**: essa falha causa dano segundo os valores da cultura da pessoa. Essa parte depende de julgamentos que a ciência não decide sozinha.
+
+A elegância da proposta é reconhecer que o diagnóstico é **inevitavelmente híbrido**: nem puro fato, nem pura convenção. Isso explica por que a homossexualidade não é transtorno (não há disfunção de mecanismo algum) e por que o luto normal não é depressão (a tristeza após uma perda é a resposta *esperada* do mecanismo, não uma falha dele). A definição tem críticos — nem sempre é claro qual seria a "função evolutiva projetada" de um sistema mental, e algumas condições parecem prejudiciais sem disfunção óbvia —, mas ela nomeia com precisão a tensão que nenhum manual diagnóstico consegue eliminar.
+
+## Categorias ou dimensões?
+
+Há duas grandes maneiras de conceber o objeto deste volume, e a escolha entre elas tem consequências.
+
+A **visão categórica** trata os transtornos como espécies discretas: você tem ou não tem depressão, do mesmo modo que tem ou não tem gravidez. É a lógica dos manuais diagnósticos (Cap. 77), que fixam limiares — tantos sintomas por tantas semanas — para decidir de que lado da fronteira a pessoa está. Sua vantagem é prática: facilita a comunicação, a decisão de tratar e a pesquisa. Sua fragilidade é que a natureza raramente respeita as linhas: muitas pessoas ficam logo abaixo do limiar (e sofrem), e a comorbidade — ter dois, três diagnósticos ao mesmo tempo — é a regra, não a exceção, o que sugere que as "categorias" não são tão separadas quanto parecem.
+
+A **visão dimensional** trata a psicopatologia como o extremo de traços contínuos que todos possuímos em algum grau: ansiedade, humor, impulsividade, desconfiança distribuem-se numa curva, e o "transtorno" é uma região dessa curva, não uma ilha à parte. A evidência acumulada favorece fortemente essa leitura para boa parte dos quadros [@haslam2020]. Ela deu origem a modelos como o **HiTOP** (*Hierarchical Taxonomy of Psychopathology*), que organiza os sintomas em dimensões hierárquicas em vez de caixas fechadas, e inspirou a iniciativa **RDoC** do instituto de saúde mental norte-americano, que propõe estudar sistemas psicobiológicos (medo, recompensa, cognição) atravessando os diagnósticos tradicionais [@insel2010]. A @fig-continuum contrasta as duas visões.
+
+::: {#fig-continuum}
+```{.tikz}
+%%| filename: categorico-dimensional
+%%| alt: Comparação entre a visão categórica e a dimensional da psicopatologia. Em cima, a visão categórica é representada por duas caixas separadas por um espaço vazio: à esquerda uma caixa verde rotulada "Saudável", à direita uma caixa vermelha rotulada "Transtorno", sugerindo dois grupos distintos. Embaixo, a visão dimensional é representada por uma barra horizontal com gradiente contínuo do verde à esquerda ao vermelho à direita, sem corte nítido, com uma linha tracejada vertical marcando o "limiar clínico" convencionado, indicando que a fronteira é uma decisão sobre um contínuo.
+\begin{tikzpicture}[font=\small]
+  % ----- categórica -----
+  \node[anchor=west, font=\bfseries] at (-0.3,3.4) {Visão categórica};
+  \node[draw=manualgreen, fill=manualgreen!10, thick, rounded corners=3pt,
+        minimum width=3.2cm, minimum height=1.1cm, align=center] at (1.6,2.2) {Saudável};
+  \node[draw=manualred, fill=manualred!10, thick, rounded corners=3pt,
+        minimum width=3.2cm, minimum height=1.1cm, align=center] at (6.4,2.2) {Transtorno};
+
+  % ----- dimensional -----
+  \node[anchor=west, font=\bfseries] at (-0.3,0.6) {Visão dimensional};
+  \shade[left color=manualgreen!25, right color=manualred!35]
+    (0,-0.9) rectangle (8,-0.1);
+  \draw[thick] (0,-0.9) rectangle (8,-0.1);
+  \draw[dashed, thick, manualgray] (5.6,-1.25) -- (5.6,0.15);
+  \node[font=\scriptsize, text=manualgray, align=center] at (5.6,-1.6) {limiar clínico\\(convencionado)};
+  \node[font=\scriptsize] at (0.9,-0.5) {traço leve};
+  \node[font=\scriptsize] at (7.0,-0.5) {traço intenso};
+\end{tikzpicture}
+```
+Duas concepções de psicopatologia. Na categórica, saúde e transtorno são grupos distintos; na dimensional, o transtorno é o extremo de um contínuo e o limiar clínico é uma convenção útil traçada sobre ele.
+:::
+
+Os manuais atuais são, na prática, **híbridos**: mantêm categorias por conveniência clínica, mas incorporam cada vez mais gradações de gravidade e modelos dimensionais (o modelo alternativo de transtornos de personalidade do DSM-5-TR é o exemplo mais claro, Cap. 83).
+
+## Uma breve história do olhar sobre a loucura
+
+A forma de conceber a anormalidade mudou radicalmente ao longo da história, e conhecer essa trajetória vacina contra a ilusão de que o olhar atual é definitivo.
+
+Nas explicações **demonológicas**, o sofrimento psíquico era possessão, castigo ou influência sobrenatural, e o "tratamento" ia da reza à trepanação e à fogueira. A tradição **hipocrática** ofereceu, já na Antiguidade, uma alternativa naturalista: os transtornos viriam de desequilíbrios dos humores corporais — uma teoria errada, mas que localizava a causa no corpo e não no demônio. Na Idade Moderna europeia surgiram os **asilos**, muitas vezes lugares de reclusão e maus-tratos. A virada humanitária tem nomes: Philippe Pinel, na França pós-revolucionária, e a reforma do **tratamento moral**, que retirou correntes e propôs regime de respeito, trabalho e rotina [@shorter1997]. No século XIX, Emil Kraepelin lançou as bases da classificação moderna ao distinguir, pela observação sistemática do curso clínico, quadros que ainda hoje reconhecemos (o que ele chamou *dementia praecox*, hoje esquizofrenia, e a *psicose maníaco-depressiva*) — a raiz do **modelo médico** que estrutura os manuais atuais [@shorter1997].
+
+O modelo médico trouxe ganhos imensos — pesquisa, tratamento, redução de culpa moral — e um risco: reduzir o sofrimento a *doença do cérebro* e esquecer o resto. É contra esse risco que se ergueram tanto as críticas radicais quanto os modelos integradores que veremos a seguir.
+
+## A crítica antipsiquiátrica e o poder do rótulo
+
+Nos anos 1960-70, um conjunto de autores — o movimento vagamente chamado **antipsiquiatria** — questionou a própria legitimidade do diagnóstico. O mais provocativo foi Thomas Szasz, para quem a "doença mental" seria um **mito**: doença, argumentava, é uma lesão física demonstrável; problemas de comportamento e de vida seriam "problemas de vida" reconceituados como doença para justificar controle social e médico [@szasz1961]. A tese, hoje, é considerada exagerada — há substrato biológico e sofrimento real demais para chamar tudo de mito, e a posição de Szasz teve efeitos práticos duvidosos —, mas ela cravou uma pergunta que não se pode ignorar: **quando o diagnóstico ajuda a pessoa e quando ele serve para controlá-la?**
+
+O episódio mais célebre dessa era é o experimento de Rosenhan — e ele merece um tratamento cuidadoso, porque a lição que devemos tirar dele mudou.
+
+::: {.experimento}
+🔬 **Experimento Clássico — "Sãos em lugares insanos"** [@rosenhan1973]
+
+**Desenho relatado.** David Rosenhan e sete colaboradores sem qualquer transtorno ("pseudopacientes") teriam se apresentado a hospitais psiquiátricos queixando-se de ouvir vozes que diziam palavras como "vazio" e "baque". Fora essa única queixa inventada, comportavam-se normalmente e relatavam suas vidas reais. Todos teriam sido internados, a maioria com diagnóstico de esquizofrenia. Uma vez dentro, teriam agido de modo inteiramente normal — e, ainda assim, a alta viria apenas depois de dias a semanas, com o diagnóstico de "esquizofrenia em remissão". Comportamentos banais (tomar notas) eram interpretados à luz do rótulo ("paciente exibe comportamento de escrita").
+
+**Interpretação de Rosenhan.** Uma vez colado, o rótulo psiquiátrico reorganiza a percepção de tudo o que a pessoa faz: os profissionais não conseguiam distinguir o são do insano, e o contexto (estar num hospital psiquiátrico) determinava a leitura do comportamento. O estudo, publicado na *Science*, teve impacto enorme sobre a reforma dos manuais e dos hospitais.
+
+**Por que hoje o lemos com reserva.** Investigação histórica posterior levantou dúvidas sérias sobre a veracidade do relato: registros de ao menos um pseudopaciente divergem do publicado, outros participantes não foram localizados, e há indícios de que dados possam ter sido selecionados ou embelezados [@cahalan2019]. **Lição dupla.** O estudo continua valioso por um motivo conceitual robusto e independente de sua execução — o poder do rótulo e do contexto sobre a percepção é real e bem documentado por outras vias (Cap. 70). Mas ele próprio virou um caso exemplar da lição deste manual: um achado famoso, repetido por décadas nos livros, que não resiste bem ao escrutínio. Ceticismo se aplica também aos estudos de que gostamos.
+:::
+
+O ponto que sobrevive é o do **estigma**. Rótulos psiquiátricos, além de descrever, **modificam** como a pessoa é vista e como ela se vê. O sociólogo Erving Goffman descreveu como o estigma "estraga" a identidade social, e a pesquisa contemporânea documenta o **estigma internalizado** — quando a pessoa absorve os estereótipos negativos sobre seu diagnóstico e passa a se tratar segundo eles, o que agrava o sofrimento e afasta do tratamento [@corrigan2002]. Daí a importância, também terminológica, da **linguagem centrada na pessoa** ("uma pessoa com esquizofrenia", não "um esquizofrênico"): o diagnóstico é algo que a pessoa *tem*, não algo que ela *é*.
+
+## Cultura e psicopatologia
+
+O que conta como transtorno, como ele se manifesta e como é interpretado varia entre culturas — tema que o Cap. 103 aprofunda, mas que precisa entrar já aqui. Existem **síndromes ligadas à cultura** (o *susto* na América Latina, o *ataque de nervios*, o *taijin kyofusho* japonês — medo de ofender os outros com o próprio corpo, um contraste revelador com a fobia social ocidental, centrada no medo de *ser* avaliado). Mais importante que a lista de exóticos é o princípio: mesmo transtornos "universais" como a depressão têm **expressão idiomática** distinta — em muitas culturas o sofrimento depressivo se manifesta sobretudo em queixas corporais, e não na linguagem da tristeza. O DSM-5-TR incorporou esse aprendizado com a *Entrevista de Formulação Cultural* e o conceito de **idiomas culturais de sofrimento** [@apa2013dsm5; @kirmayer2007]. E vale a advertência WEIRD de sempre (Cap. 1): boa parte do que "sabemos" sobre psicopatologia foi estabelecido em populações ocidentais e não se transporta automaticamente para o Brasil.
+
+## O modelo biopsicossocial e a diátese-estresse
+
+Se nenhum critério isolado basta, e se o modelo puramente médico é insuficiente, o que a psicopatologia contemporânea coloca no lugar? Uma estrutura **integradora**. O **modelo biopsicossocial**, proposto por George Engel, sustenta que qualquer transtorno resulta da interação de fatores **biológicos** (genes, neuroquímica, temperamento), **psicológicos** (aprendizagens, crenças, estilos de enfrentamento) e **sociais** (família, cultura, adversidade, apoio) [@engel1977] — os três níveis de análise do Cap. 1 reaparecem aqui como programa clínico.
+
+A versão mais precisa e testável dessa ideia é o **modelo diátese-estresse**: cada pessoa carrega uma **vulnerabilidade** (diátese) — genética, temperamental, adquirida — que só se converte em transtorno quando encontra um **estresse** ambiental suficiente. Nem a vulnerabilidade sozinha, nem o estresse sozinho bastam; é a **interação** que produz o quadro (@fig-diatese). Isso explica por que duas pessoas expostas à mesma adversidade seguem destinos diferentes, e por que a mesma vulnerabilidade pode nunca se manifestar em um ambiente protetor.
+
+::: {#fig-diatese}
+```{.tikz}
+%%| filename: diatese-estresse
+%%| alt: Gráfico do modelo diátese-estresse. O eixo horizontal representa o nível de estresse ambiental (de baixo a alto) e o eixo vertical o risco de desenvolver o transtorno (de baixo a alto). Três retas partem da base: uma reta verde de inclinação suave, rotulada "vulnerabilidade baixa", que sobe pouco mesmo com muito estresse; uma reta azul de inclinação média, rotulada "vulnerabilidade média"; e uma reta vermelha de inclinação acentuada, rotulada "vulnerabilidade alta", que cruza cedo a linha tracejada horizontal do "limiar do transtorno". A figura mostra que, quanto maior a diátese, menos estresse é preciso para ultrapassar o limiar.
+\begin{tikzpicture}[font=\small]
+  \draw[->, >=Stealth, thick, manualgray] (0,0) -- (7.4,0) node[right, font=\small] {Estresse};
+  \draw[->, >=Stealth, thick, manualgray] (0,0) -- (0,5.2) node[above, font=\small, align=center] {Risco de\\transtorno};
+  % limiar
+  \draw[dashed, thick, manualgray] (0,3.6) -- (7,3.6);
+  \node[font=\scriptsize, text=manualgray, anchor=east] at (7,3.9) {limiar do transtorno};
+  % retas
+  \draw[very thick, manualgreen] (0,0.3) -- (7,1.7) node[right, font=\scriptsize, text=manualgreen] {vulnerab. baixa};
+  \draw[very thick, manualblue]  (0,0.3) -- (7,4.0) node[right, font=\scriptsize, text=manualblue] {vulnerab. média};
+  \draw[very thick, manualred]   (0,0.5) -- (4.6,5.0) node[right, font=\scriptsize, text=manualred] {vulnerab. alta};
+\end{tikzpicture}
+```
+O modelo diátese-estresse. Quanto maior a vulnerabilidade (diátese), menor o nível de estresse necessário para ultrapassar o limiar do transtorno. Vulnerabilidade e estresse se combinam; nenhum dos dois age sozinho.
+:::
+
+O modelo diátese-estresse ganhou apoio empírico direto na genética do comportamento (Cap. 26). No estudo longitudinal de Caspi e colaboradores, uma variante do gene transportador de serotonina só se associava a maior risco de depressão **em quem havia sofrido eventos de vida adversos** — o gene sozinho não previa quase nada, e a adversidade tinha efeito maior em quem carregava a variante de risco [@caspi2003]. Ainda que a replicação desse achado específico de interação gene-ambiente seja debatida, ele se tornou o retrato paradigmático de como diátese e estresse se multiplicam em vez de apenas se somar. É essa estrutura — vulnerabilidade × ambiente, biologia × psicologia × sociedade — que os próximos capítulos aplicarão, transtorno por transtorno.
+
+::: {.na-pratica}
+💡 **Por que a fronteira importa na vida real.** A decisão sobre onde traçar a linha entre normal e patológico não é acadêmica: define quem recebe tratamento e cuidado, quem paga um plano de saúde, quem consegue um afastamento do trabalho, quem responde ou não a um processo. Traçar a linha larga demais **patologiza** a experiência humana comum (tristeza vira depressão, timidez vira transtorno, luto vira doença) e expande indevidamente o uso de medicamentos; traçar estreita demais **abandona** quem sofre abaixo do limiar. Não há ajuste perfeito — há um julgamento clínico e social que precisa ser feito com transparência sobre seus critérios. Por isso este volume insiste: entender *como* o diagnóstico é construído é parte de usá-lo bem.
+:::
+
+::: {.callout-sintese}
+- Nenhum critério isolado — estatístico, normativo, sofrimento, disfunção, perigo — separa o normal do patológico; na clínica eles se combinam nos **quatro Ds**, e a saúde mental tem também um polo **positivo** (Jahoda).
+- A **disfunção prejudicial** de Wakefield mostra que o diagnóstico é híbrido: um componente factual (falha de mecanismo) e um valorativo (dano segundo a cultura).
+- A psicopatologia tende a ser mais **dimensional** que categórica; os manuais são híbridos práticos, e modelos como HiTOP e RDoC empurram para o contínuo.
+- A história (demonológico → hipocrático → asilos → tratamento moral → modelo médico de Kraepelin) mostra que o olhar sobre a loucura é mutável e sujeito a erro social — a despatologização da homossexualidade é o alerta permanente.
+- O **rótulo** tem poder: o experimento de Rosenhan popularizou a ideia (hoje lido com reserva por suas fragilidades), mas o **estigma** e o estigma internalizado são fenômenos reais; daí a linguagem centrada na pessoa.
+- Cultura molda a expressão e a interpretação do sofrimento; os achados são majoritariamente WEIRD.
+- O **modelo biopsicossocial** e o **diátese-estresse** integram biologia, psicologia e sociedade, e vulnerabilidade × estresse é a estrutura que o volume aplicará a cada transtorno.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Quatro Ds**
+:   Critérios combinados do julgamento clínico de anormalidade: *deviance* (desvio da norma), *distress* (sofrimento), *dysfunction* (prejuízo funcional) e *danger* (perigo) [@comer2015].
+
+**Disfunção prejudicial**
+:   Definição de transtorno mental como falha de um mecanismo mental evolutivamente projetado (componente factual) que causa dano segundo os valores da cultura (componente valorativo) [@wakefield1992].
+
+**Visão categórica × dimensional**
+:   Conceber transtornos como espécies discretas (com limiar) versus como extremos de traços contínuos [@haslam2020].
+
+**Modelo médico**
+:   Abordagem que trata os transtornos como doenças a diagnosticar, com etiologia e curso próprios, na tradição de Kraepelin.
+
+**Estigma internalizado**
+:   Absorção, pela própria pessoa, dos estereótipos negativos associados ao seu diagnóstico, com prejuízo à autoestima e à adesão ao tratamento [@corrigan2002].
+
+**Modelo biopsicossocial**
+:   Concepção do transtorno como interação de fatores biológicos, psicológicos e sociais [@engel1977].
+
+**Modelo diátese-estresse**
+:   Proposta de que o transtorno resulta da interação entre uma vulnerabilidade preexistente (diátese) e o estresse ambiental; nenhum dos dois basta sozinho.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique cada um dos quatro Ds e mostre, com um exemplo, por que nenhum deles isoladamente é suficiente para definir um transtorno.
+
+2. **(Conceitual.)** A definição de disfunção prejudicial de Wakefield tem uma peça factual e uma valorativa. Use-a para explicar por que a homossexualidade não é transtorno e por que o luto normal não é depressão.
+
+3. **(Análise.)** Contraste a visão categórica e a dimensional da psicopatologia. Cite uma vantagem prática de cada uma e explique por que a comorbidade frequente é um argumento a favor da visão dimensional.
+
+4. **(Reflexão crítica.)** O experimento de Rosenhan foi por décadas a prova preferida do poder do rótulo. Sabendo das dúvidas levantadas por Cahalan [-@cahalan2019], como você formularia hoje a lição do estudo sem depender de sua veracidade factual?
+
+5. **(Aplicação.)** Uma pessoa procura ajuda após a morte do cônjuge, chorando muito e sem vontade de sair de casa há duas semanas. Usando os critérios do capítulo (quatro Ds, disfunção prejudicial, luto normal × patológico), discuta os riscos de diagnosticar cedo demais e de diagnosticar tarde demais.
+
+6. **(Integração.)** Escolha um transtorno que você conheça e descreva-o nos três componentes do modelo biopsicossocial. Em seguida, use o modelo diátese-estresse e o estudo de Caspi et al. [-@caspi2003] para explicar por que duas pessoas com a mesma vulnerabilidade genética podem ter destinos diferentes.
