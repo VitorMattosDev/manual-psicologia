@@ -1,5 +1,141 @@
 # 87. Fundamentos da intervenção psicológica
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** psicoterapia e situar seu surgimento histórico, da "cura pela fala" às terapias contemporâneas.
+- **Distinguir** fatores comuns de fatores específicos e compreender o debate do "veredito do pássaro Dodo".
+- **Explicar** a aliança terapêutica e por que ela é um dos preditores mais robustos de resultado.
+- **Descrever** o enquadre (*setting*), o contrato terapêutico e os princípios éticos da intervenção.
+- **Diferenciar** os formatos (individual, grupo, casal, família) e quem exerce a psicoterapia.
+- **Reconhecer** o papel da expectativa e do efeito placebo, evitando tanto o ceticismo quanto o entusiasmo ingênuos.
 :::
+
+O Vol 13 descreveu o sofrimento psíquico; este volume pergunta o que fazer com ele. Antes de percorrer as grandes escolas de terapia — psicodinâmica, humanista, comportamental, cognitiva, contextual — convém estabelecer o que **todas** têm em comum: o encontro entre alguém que sofre e alguém treinado para ajudar, dentro de um enquadre que torna esse encontro terapêutico. Este capítulo trata desses fundamentos transversais. Ele responde a uma pergunta que atravessará todo o volume: quando a psicoterapia funciona, **por que** funciona — pela técnica específica de cada escola, ou por algo que elas partilham?
+
+## O que é psicoterapia
+
+**Psicoterapia** é o tratamento de problemas de natureza emocional, comportamental ou interpessoal por meios **psicológicos** — fundamentalmente pela relação e pela comunicação entre paciente e terapeuta —, conduzido por um profissional treinado, com objetivos acordados e método fundamentado. A definição exclui tanto a conversa amistosa (falta o método e o enquadre) quanto a intervenção puramente biológica (o remédio age pela farmacologia, não pela relação). O que a psicoterapia mobiliza são processos psicológicos: aprendizagem, insight, regulação emocional, mudança de significados, exercício de novos comportamentos.
+
+O nascimento da psicoterapia moderna costuma ser datado do fim do século XIX, quando Josef Breuer e Sigmund Freud descreveram o caso de Anna O. e cunharam a expressão que a paciente usou: *talking cure*, a **cura pela fala** [@breuer_freud1895]. A ideia era revolucionária: sintomas físicos e psíquicos poderiam ser aliviados não por banhos, choques ou reclusão — o arsenal do asilo do século XIX —, mas por **falar**, num contexto de escuta atenta. Dessa raiz brotaram, ao longo do século XX, dezenas de abordagens, muitas vezes em oposição frontal umas às outras. Hoje estima-se que existam **centenas** de "marcas" de psicoterapia. O volume que aqui começa organiza essa profusão em algumas grandes famílias e, ao final (Cap. 95), pergunta o que a evidência diz sobre qual funciona, para quem.
+
+## O grande debate: fatores comuns × fatores específicos
+
+Se há centenas de terapias que se dizem eficazes, e muitas se contradizem, uma pergunta se impõe: o que exatamente cura? Duas respostas competem.
+
+A tese dos **fatores específicos** afirma que cada terapia funciona por seu **ingrediente ativo** próprio — a exposição na terapia comportamental, a reestruturação de crenças na terapia cognitiva, a interpretação da transferência na psicanálise. Nessa visão, escolher a terapia certa para o problema certo é decisivo, como escolher o antibiótico certo para a bactéria.
+
+A tese dos **fatores comuns** afirma que o essencial da mudança está no que **todas** as terapias partilham: uma relação de confiança, um terapeuta que oferece esperança e uma explicação plausível para o sofrimento, um ritual de tratamento, a oportunidade de expressar emoções e experimentar novos comportamentos. Jerome Frank, em *Persuasion and Healing*, argumentou que toda psicoterapia — e mesmo a cura religiosa e o xamanismo — compartilha essa estrutura: um sofredor **desmoralizado**, um curador socialmente legitimado, um enquadre ritual e um **mito** (uma explicação) que restaura o sentido e a esperança [@frank1961].
+
+Essa controvérsia tem um marco de origem. Em 1936, Saul Rosenzweig sugeriu que os fatores comuns explicariam por que terapias tão diferentes obtêm resultados semelhantes, e ilustrou a ideia com uma cena de *Alice no País das Maravilhas*: ao fim da corrida caótica, o pássaro Dodo declara que **"todos venceram e todos devem receber prêmios"** [@rosenzweig1936]. O **veredito do pássaro Dodo** batizou desde então a hipótese de que as diferentes psicoterapias, apesar de suas técnicas contrastantes, produzem benefícios **equivalentes** — tese retomada empiricamente décadas depois (Cap. 95) e ainda hoje debatida [@luborsky1975; @wampold2015].
+
+::: {.atencao}
+⚠️ **"Equivalência" não significa "qualquer coisa serve".** O veredito do Dodo é frequentemente mal interpretado. Ele afirma que terapias *bona fide* — estruturadas, coerentes, aplicadas por terapeutas treinados e acreditadas por eles — tendem a resultados médios semelhantes para muitos quadros. Não afirma que toda intervenção equivale a toda outra: há terapias sem evidência e até prejudiciais, e há transtornos (como fobias, TOC e TEPT) em que técnicas específicas — sobretudo a exposição — superam claramente alternativas genéricas. A leitura madura integra os dois níveis: os fatores comuns são o **solo** em que a mudança cresce; os fatores específicos são, para vários problemas, o que faz a diferença adicional.
+:::
+
+## A aliança terapêutica
+
+De todos os fatores comuns, o mais estudado e o mais robusto é a **aliança terapêutica** (ou aliança de trabalho): a qualidade do vínculo colaborativo entre paciente e terapeuta. Edward Bordin a decompôs em três elementos — o **vínculo** afetivo, o acordo sobre os **objetivos** e o acordo sobre as **tarefas** do tratamento (@fig-alianca). Décadas de pesquisa mostram uma associação consistente, embora moderada, entre a força da aliança e o desfecho terapêutico, através de praticamente todas as abordagens [@wampold2015; @norcross2011]. A relação não é apenas o pano de fundo onde a técnica atua; é, em boa medida, o próprio agente de mudança.
+
+::: {#fig-alianca}
+```{.tikz}
+%%| filename: alianca-terapeutica
+%%| alt: Diagrama de três círculos parcialmente sobrepostos formando a aliança terapêutica. Um círculo azul rotulado "Vínculo (confiança, respeito, afeto)", um verde rotulado "Objetivos (acordo sobre as metas)" e um amarelo rotulado "Tarefas (acordo sobre o método)". No centro, onde os três se sobrepõem, lê-se "Aliança de trabalho".
+\begin{tikzpicture}[font=\small]
+  \begin{scope}[opacity=0.55]
+    \fill[manualblue!30]   (0,1.1) circle (1.7);
+    \fill[manualgreen!30]  (-1.3,-1.0) circle (1.7);
+    \fill[manualyellow!40] (1.3,-1.0) circle (1.7);
+  \end{scope}
+  \node[align=center, text=manualblue!70!black] at (0,2.15) {\textbf{Vínculo}\\{\scriptsize confiança, afeto}};
+  \node[align=center, text=manualgreen!60!black] at (-2.2,-1.7) {\textbf{Objetivos}\\{\scriptsize acordo sobre metas}};
+  \node[align=center, text=manualyellow!45!black] at (2.2,-1.7) {\textbf{Tarefas}\\{\scriptsize acordo sobre o método}};
+  \node[align=center, font=\scriptsize\bfseries] at (0,-0.35) {Aliança\\de trabalho};
+\end{tikzpicture}
+```
+Os três componentes da aliança de trabalho segundo Bordin: vínculo, acordo sobre objetivos e acordo sobre tarefas. A força da aliança é um dos preditores mais consistentes de bom resultado, em todas as abordagens [@norcross2011].
+:::
+
+::: {.experimento}
+🔬 **Experimento Clássico — as condições necessárias e suficientes de Rogers** [@rogers1957]
+
+**Desenho.** Carl Rogers formulou uma hipótese ousada e testável: a mudança terapêutica dependeria não da técnica ou da teoria do terapeuta, mas de **seis condições relacionais**, das quais três centrais — **empatia**, **consideração positiva incondicional** e **autenticidade** (congruência) do terapeuta. Ele foi pioneiro em **gravar** sessões e submetê-las a análise sistemática, transformando a psicoterapia em objeto de pesquisa empírica.
+
+**Resultado.** Estudos subsequentes, ao longo de décadas, encontraram associações positivas e replicáveis entre essas condições relacionais — sobretudo a empatia — e os desfechos do tratamento, em diferentes abordagens.
+
+**Interpretação.** Rogers antecipou, dos anos 1950, o que a pesquisa sobre fatores comuns confirmaria: a relação é terapêutica em si. Sua ênfase influenciou todas as escolas, inclusive as que discordam de sua teoria da personalidade.
+
+**Limitações.** As correlações são moderadas, não perfeitas; a direção causal é difícil de isolar (pacientes que melhoram podem *gerar* melhores relações); e há quadros em que a relação, sozinha, é insuficiente. As condições de Rogers são, hoje, entendidas como **necessárias, mas nem sempre suficientes**.
+:::
+
+## O enquadre, o contrato e a ética
+
+A psicoterapia acontece dentro de um **enquadre** (*setting*): um conjunto de combinações estáveis — horário e duração fixos das sessões, local, honorários, regras sobre faltas e contatos fora da sessão — que criam um espaço previsível e seguro. O enquadre não é burocracia: a própria estabilidade permite que o paciente se exponha, e desvios do enquadre (atrasos, cancelamentos, pedidos incomuns) tornam-se, muitas vezes, material clínico significativo.
+
+O **contrato terapêutico** explicita objetivos, método, frequência e responsabilidades de ambas as partes — base do consentimento informado. E toda a prática se sustenta em princípios **éticos**, que no Brasil o Código de Ética Profissional do Psicólogo formaliza (Cap. 104): **sigilo** (a confidencialidade do que se fala, com exceções legais em situações de risco grave), **competência** (atuar apenas dentro do que a formação habilita), **não maleficência** e respeito à autonomia do paciente. A relação terapêutica é assimétrica em poder e intimidade, o que torna certas fronteiras inegociáveis — proibição de relações sexuais ou de exploração do vínculo, cuidado com conflitos de interesse, atenção às **relações múltiplas**.
+
+::: {.na-pratica}
+💡 **Por que a psicoterapia não é "conselho de amigo".** Um bom amigo escuta, apoia e às vezes acerta. Por que pagar por algo que se poderia obter de graça? Porque o enquadre profissional oferece o que a amizade não pode: **imparcialidade** (o terapeuta não tem interesse próprio na sua decisão, ao contrário do amigo que quer você por perto), **sigilo garantido**, **competência técnica** (métodos testados para problemas específicos), **assimetria protetora** (o foco é inteiramente você, sem reciprocidade — você não precisa cuidar do terapeuta) e uma relação que suporta ser questionada, revista e até criticada sem se romper. O amigo faz bem; o terapeuta faz um trabalho diferente, com ferramentas e responsabilidades que a amizade não comporta.
+:::
+
+## Formatos e modalidades
+
+A psicoterapia pode acontecer em diferentes **formatos**. A modalidade **individual** é a mais comum. Mas há também a terapia de **grupo** (vários pacientes e um ou dois terapeutas — Cap. 93), a terapia de **casal** e a terapia **familiar** (Cap. 93), cada qual com indicações próprias. Varia igualmente a **duração**: intervenções breves e focais (algumas sessões a alguns meses) contrastam com tratamentos de longo prazo. E varia o **profissional**: no Brasil, a psicoterapia é exercida por **psicólogos** e, em certas abordagens e contextos, por **médicos psiquiatras**; a prescrição de psicofármacos (Cap. 94) é, no entanto, ato médico. O cuidado eficaz frequentemente combina profissões — o modelo de tratamento colaborativo, em que psicoterapia e farmacoterapia se articulam.
+
+## Expectativa, placebo e esperança
+
+Nenhum tratamento age no vácuo das expectativas de quem o recebe. O **efeito placebo** — melhora produzida pela expectativa de melhorar, e não pelo ingrediente ativo — é real e poderoso em saúde mental, e coloca um problema metodológico central: como saber se uma terapia funciona *além* da expectativa que ela mobiliza? Daí a exigência, na pesquisa de eficácia (Cap. 95), de grupos de comparação e de controles rigorosos.
+
+Mas há uma leitura mais rica. Frank já observara que a **desmoralização** — a perda de esperança e de sentido — é o denominador comum do sofrimento que leva as pessoas à terapia, e que **remoralizar**, restaurar a expectativa de que a mudança é possível, é parte legítima da cura, não um artefato a ser descartado [@frank1961]. A esperança mobilizada pela terapia não é "só placebo"; é um dos mecanismos pelos quais o tratamento age. O desafio científico é distinguir o que a terapia acrescenta *sobre* essa esperança — e é essa distinção que organiza todo o Cap. 95.
+
+## O mapa do volume
+
+Com esses fundamentos, o volume percorrerá as grandes famílias de intervenção, cada uma com sua teoria do sofrimento e da cura: as terapias **psicodinâmicas** (Cap. 88), herdeiras de Freud, que buscam o insight sobre conflitos inconscientes; as **humanistas** (Cap. 89), que apostam no crescimento e na relação; as **comportamentais** (Cap. 90) e **cognitivo-comportamentais** (Cap. 91), que reeducam comportamentos e cognições; as **contextuais** de terceira onda (Cap. 92), que trabalham a relação com a experiência interna; as **sistêmicas e de grupo** (Cap. 93), que tratam relações e não só indivíduos; e os tratamentos **biomédicos** (Cap. 94). Ao final, o Cap. 95 confronta tudo isso com a evidência. Em todos eles, os fundamentos deste capítulo — aliança, enquadre, ética, esperança — continuarão presentes, como o solo comum sob teorias divergentes.
+
+::: {.callout-sintese}
+- **Psicoterapia** é o tratamento do sofrimento psíquico por meios psicológicos, dentro de um enquadre profissional; nasceu com a "cura pela fala" de Breuer e Freud [@breuer_freud1895].
+- O debate central opõe **fatores específicos** (o ingrediente ativo de cada escola) a **fatores comuns** (relação, esperança, ritual, explicação) — Frank [@frank1961]; o **veredito do Dodo** propõe equivalência de resultados entre terapias *bona fide* [@rosenzweig1936; @luborsky1975].
+- A **aliança terapêutica** (vínculo + objetivos + tarefas) é um dos preditores mais robustos de bom desfecho, em todas as abordagens [@norcross2011; @wampold2015].
+- Rogers mostrou empiricamente que condições relacionais — **empatia, aceitação, autenticidade** — predizem resultado [@rogers1957]: necessárias, nem sempre suficientes.
+- O **enquadre**, o **contrato** e a **ética** (sigilo, competência, fronteiras) distinguem a psicoterapia do conselho de amigo.
+- **Expectativa e esperança** (remoralização) são parte legítima da cura, não apenas artefato — o que torna o controle de placebo essencial na pesquisa de eficácia.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Psicoterapia**
+:   Tratamento do sofrimento emocional, comportamental ou interpessoal por meios psicológicos — relação e comunicação —, conduzido por profissional treinado dentro de um enquadre.
+
+**Fatores comuns**
+:   Elementos partilhados por todas as terapias (relação, esperança, explicação plausível, ritual) aos quais se atribui boa parte do efeito terapêutico.
+
+**Fatores específicos**
+:   Ingredientes ativos próprios de cada abordagem (exposição, reestruturação cognitiva, interpretação) que a diferenciam das demais.
+
+**Veredito do pássaro Dodo**
+:   Hipótese de que terapias *bona fide* diferentes produzem benefícios equivalentes para muitos quadros [@rosenzweig1936].
+
+**Aliança terapêutica**
+:   Qualidade do vínculo colaborativo entre paciente e terapeuta, composta de vínculo, acordo sobre objetivos e acordo sobre tarefas; forte preditor de resultado.
+
+**Enquadre (*setting*)**
+:   Conjunto de combinações estáveis (horário, local, honorários, regras) que dá previsibilidade e segurança ao tratamento.
+
+**Desmoralização / remoralização**
+:   Perda de esperança e sentido que caracteriza quem busca terapia (Frank); restaurar essa esperança é parte da cura.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie fatores comuns de fatores específicos. Dê um exemplo de cada e explique por que a distinção importa para escolher um tratamento.
+
+2. **(Conceitual.)** O que afirma — e o que **não** afirma — o veredito do pássaro Dodo? Por que dizer "todas as terapias são equivalentes" é uma leitura imprecisa?
+
+3. **(Reflexão crítica.)** A aliança terapêutica correlaciona-se com bom resultado. Por que essa correlação, sozinha, não prova que a aliança *causa* a melhora? Que explicações alternativas existem?
+
+4. **(Aplicação.)** Um amigo diz que terapia é "dinheiro jogado fora, pois conversar com amigos faz o mesmo". Responda apontando o que o enquadre profissional oferece que a amizade não pode.
+
+5. **(Integração.)** Rogers propôs empatia, aceitação e autenticidade como condições da mudança. Como esse achado dos anos 1950 se conecta com a pesquisa contemporânea sobre fatores comuns?
+
+6. **(Reflexão crítica.)** "A melhora na terapia é só efeito placebo." Usando as ideias de desmoralização e remoralização de Frank, explique por que essa frase é ao mesmo tempo parcialmente verdadeira e enganosa.
