@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#de-onde-vêm-os-dados-as-quatro-janelas" id="toc-de-onde-vêm-os-dados-as-quatro-janelas" class="nav-link active" data-scroll-target="#de-onde-vêm-os-dados-as-quatro-janelas">De onde vêm os dados: as quatro janelas</a></li>
+  <li><a href="#inventários-objetivos-de-autorrelato" id="toc-inventários-objetivos-de-autorrelato" class="nav-link" data-scroll-target="#inventários-objetivos-de-autorrelato">Inventários objetivos de autorrelato</a>
+  <ul class="collapse">
+  <li><a href="#mmpi-a-via-empírica" id="toc-mmpi-a-via-empírica" class="nav-link" data-scroll-target="#mmpi-a-via-empírica">MMPI: a via empírica</a></li>
+  <li><a href="#neo-pi-r-e-a-medição-do-cgf" id="toc-neo-pi-r-e-a-medição-do-cgf" class="nav-link" data-scroll-target="#neo-pi-r-e-a-medição-do-cgf">NEO-PI-R e a medição do CGF</a></li>
+  <li><a href="#o-problema-das-respostas-enviesadas" id="toc-o-problema-das-respostas-enviesadas" class="nav-link" data-scroll-target="#o-problema-das-respostas-enviesadas">O problema das respostas enviesadas</a></li>
+  </ul></li>
+  <li><a href="#técnicas-projetivas" id="toc-técnicas-projetivas" class="nav-link" data-scroll-target="#técnicas-projetivas">Técnicas projetivas</a></li>
+  <li><a href="#o-contexto-brasileiro-cfp-e-satepsi" id="toc-o-contexto-brasileiro-cfp-e-satepsi" class="nav-link" data-scroll-target="#o-contexto-brasileiro-cfp-e-satepsi">O contexto brasileiro: CFP e SATEPSI</a></li>
+  <li><a href="#fechando-o-volume" id="toc-fechando-o-volume" class="nav-link" data-scroll-target="#fechando-o-volume">Fechando o volume</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +751,172 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Distinguir</strong> as principais fontes de dados sobre personalidade (autorrelato, informantes, comportamento, desempenho).</li>
+<li><strong>Descrever</strong> os grandes inventários objetivos (MMPI, NEO-PI-R) e seus mecanismos de controle de resposta.</li>
+<li><strong>Explicar</strong> a lógica das técnicas projetivas (Rorschach, TAT) e o estado da evidência sobre elas.</li>
+<li><strong>Aplicar</strong> os critérios psicométricos (fidedignidade, validade, normatização) à avaliação de qualquer teste.</li>
+<li><strong>Reconhecer</strong> o efeito Barnum e os sinais de pseudoavaliação.</li>
+<li><strong>Situar</strong> a avaliação psicológica no contexto profissional brasileiro (CFP e SATEPSI).</li>
+</ul>
 </div>
+<p>As teorias dos capítulos anteriores só viram ciência — e só viram prática responsável — quando é possível <strong>medir</strong> aquilo de que falam. Este capítulo fecha o volume com a pergunta operacional: como se avalia a personalidade de alguém com rigor? A resposta mobiliza tudo o que os Caps. 16 e 50 estabeleceram sobre psicometria (fidedignidade, validade, normatização) e o aplica ao terreno onde as apostas são altas: seleção de pessoal, perícias judiciais, avaliação clínica, pesquisa. É também o terreno onde prosperam os impostores — dos testes virais de redes sociais às tipologias corporativas sem lastro — e onde a distinção entre avaliação científica e entretenimento precisa ficar nítida.</p>
+<section id="de-onde-vêm-os-dados-as-quatro-janelas" class="level2">
+<h2 class="anchored" data-anchor-id="de-onde-vêm-os-dados-as-quatro-janelas">De onde vêm os dados: as quatro janelas</h2>
+<p>Nenhuma fonte de informação sobre uma pessoa é completa; cada uma abre uma janela com vidro próprio.</p>
+<ul>
+<li><strong>Autorrelato (dados S)</strong>: a pessoa descreve a si mesma em questionários ou entrevista. É a fonte mais usada — ninguém tem mais acesso à própria vida interior — mas está sujeita a pontos cegos e a vieses de apresentação.</li>
+<li><strong>Relato de informantes (dados I)</strong>: pais, cônjuges, colegas avaliam a pessoa. O modelo <strong>SOKA</strong> (assimetria de conhecimento eu–outro) mostra que a vantagem depende do traço: o próprio indivíduo conhece melhor seus estados internos (neuroticismo); os outros enxergam melhor os traços muito visíveis e avaliativos (como inteligência e criatividade — e até certos aspectos de amabilidade), onde a autoimagem distorce <span class="citation" data-cites="vazire2010">(<a href="../../referencias.html#ref-vazire2010" role="doc-biblioref">Vazire, 2010</a>)</span>. Agregar juízes melhora a medida.</li>
+<li><strong>Dados de vida (dados L)</strong>: registros objetivos — histórico escolar, multas, curtidas, o estado do quarto. Rastros comportamentais reais, mas de interpretação ambígua.</li>
+<li><strong>Testes de desempenho e observação (dados T)</strong>: comportamento em situações padronizadas — do adiamento de gratificação (Cap. 68) a dinâmicas de grupo em processos seletivos.</li>
+</ul>
+<p>A convergência entre janelas — a lógica multitraço-multimétodo <span class="citation" data-cites="campbell_fiske1959">(<a href="../../referencias.html#ref-campbell_fiske1959" role="doc-biblioref">Campbell; Fiske, 1959</a>)</span> — é o que dá confiança de que se está medindo o constructo, e não o método.</p>
+</section>
+<section id="inventários-objetivos-de-autorrelato" class="level2">
+<h2 class="anchored" data-anchor-id="inventários-objetivos-de-autorrelato">Inventários objetivos de autorrelato</h2>
+<section id="mmpi-a-via-empírica" class="level3">
+<h3 class="anchored" data-anchor-id="mmpi-a-via-empírica">MMPI: a via empírica</h3>
+<p>O <strong>MMPI</strong> (Inventário Multifásico de Personalidade de Minnesota), criado nos anos 1940 e hoje na família MMPI-2/MMPI-3, é o inventário clínico mais estudado do mundo <span class="citation" data-cites="hathaway_mckinley1943">(<a href="../../referencias.html#ref-hathaway_mckinley1943" role="doc-biblioref">Hathaway; McKinley, 1943</a>)</span>. Sua construção foi <strong>empírica por critério</strong>: em vez de escolher itens pela cara (“teoricamente, deprimidos concordariam com isso”), os autores retiveram os itens que <strong>de fato discriminavam</strong> grupos clínicos de controles — importasse ou não o conteúdo aparente do item. O resultado são escalas clínicas (depressão, paranoia, psicopatia etc.) e, tão importante quanto, <strong>escalas de validade</strong> que detectam estilos de resposta: a escala <strong>L</strong> (“Lie”, virtudes improváveis — “nunca menti”), a <strong>F</strong> (respostas raras, sugerindo exagero de sintomas ou resposta aleatória) e a <strong>K</strong> (defensividade sutil). Um perfil MMPI só é interpretável depois que as escalas de validade autorizam.</p>
+</section>
+<section id="neo-pi-r-e-a-medição-do-cgf" class="level3">
+<h3 class="anchored" data-anchor-id="neo-pi-r-e-a-medição-do-cgf">NEO-PI-R e a medição do CGF</h3>
+<p>Na pesquisa e em contextos não clínicos, o padrão é medir os Cinco Grandes Fatores com inventários como o <strong>NEO-PI-R</strong>, que avalia os cinco domínios e trinta facetas <span class="citation" data-cites="costa_mccrae1992">(<a href="../../referencias.html#ref-costa_mccrae1992" role="doc-biblioref">Costa; McCrae, 1992</a>)</span>, ou versões breves como o BFI. Aqui a construção foi <strong>racional-fatorial</strong>: itens escritos a partir do constructo e depurados por análise fatorial. No Brasil, instrumentos do CGF adaptados e normatizados incluem versões do NEO e a Bateria Fatorial de Personalidade (BFP), construída sobre o modelo.</p>
+</section>
+<section id="o-problema-das-respostas-enviesadas" class="level3">
+<h3 class="anchored" data-anchor-id="o-problema-das-respostas-enviesadas">O problema das respostas enviesadas</h3>
+<p>Todo autorrelato enfrenta estilos de resposta: <strong>desejabilidade social</strong> — apresentar-se de forma favorável, medida classicamente pela escala de Crowne e Marlowe <span class="citation" data-cites="crowne_marlowe1960">(<a href="../../referencias.html#ref-crowne_marlowe1960" role="doc-biblioref">Crowne; Marlowe, 1960</a>)</span> —, <strong>aquiescência</strong> (tendência a concordar com qualquer item), respostas extremas ou aleatórias. As defesas do ofício: escalas de validade, itens balanceados (metade invertida), formatos de escolha forçada, instruções e contexto que reduzam a pressão para embelezar — e a lembrança de que, em seleção de pessoal, algum embelezamento é a norma, o que exige normas e pontos de corte apropriados ao contexto.</p>
+</section>
+</section>
+<section id="técnicas-projetivas" class="level2">
+<h2 class="anchored" data-anchor-id="técnicas-projetivas">Técnicas projetivas</h2>
+<p>A <strong>hipótese projetiva</strong> vem da tradição psicodinâmica (Cap. 65): diante de um estímulo <strong>ambíguo</strong>, a pessoa não teria como responder “certo” e, portanto, revelaria — sem perceber — sua organização interna: conflitos, necessidades, modos de perceber.</p>
+<p>O <strong>Rorschach</strong> apresenta dez pranchas de manchas de tinta simétricas; codificam-se localização, determinantes (forma, cor, movimento), conteúdo e qualidade das respostas <span class="citation" data-cites="rorschach1921">(<a href="../../referencias.html#ref-rorschach1921" role="doc-biblioref">Rorschach, 1921</a>)</span>. O <strong>TAT</strong> (Teste de Apercepção Temática), de Murray e Morgan, pede histórias sobre cenas interpessoais ambíguas, codificadas para necessidades e pressões — foi dele que saiu a tradição de medir motivos implícitos de realização, poder e afiliação <span class="citation" data-cites="murray1938 mcclelland1961">(<a href="../../referencias.html#ref-mcclelland1961" role="doc-biblioref">McClelland, 1961</a>; <a href="../../referencias.html#ref-murray1938" role="doc-biblioref">Murray, 1938</a>)</span>.</p>
+<p>O estado da evidência exige nuance <span class="citation" data-cites="lilienfeld2000">(<a href="../../referencias.html#ref-lilienfeld2000" role="doc-biblioref">Lilienfeld; Wood; Garb, 2000</a>)</span>. Contra: a interpretação clínica livre dessas técnicas tem fidedignidade entre avaliadores baixa; muitos índices tradicionais do Rorschach carecem de validade demonstrada e alguns <strong>superpatologizam</strong> pessoas normais; o uso em decisões de alto impacto (perícias, seleção) sem apoio de outras fontes é indefensável. A favor: sistemas de codificação padronizados (como o Sistema Compreensivo de Exner e seu sucessor R-PAS) melhoraram a fidedignidade; um subconjunto de índices tem validade replicada (ex.: indicadores de desorganização do pensamento associados a psicose); e medidas de <strong>motivos implícitos</strong> via narrativas predizem desfechos de longo prazo que o autorrelato não capta — motivos implícitos e autorrelatados correlacionam-se pouco e predizem coisas diferentes <span class="citation" data-cites="mcclelland1961 meyer2001">(<a href="../../referencias.html#ref-mcclelland1961" role="doc-biblioref">McClelland, 1961</a>; <a href="../../referencias.html#ref-meyer2001" role="doc-biblioref">Meyer et al., 2001</a>)</span>. O veredito prático: projetivas não são adivinhação nem bola de cristal — são instrumentos de validade <strong>heterogênea</strong>, defensáveis apenas nos usos específicos em que cada índice demonstrou funcionar, e sempre integrados a outras fontes.</p>
+<div class="experimento">
+<p>🔬 <strong>Experimento Clássico — o efeito Barnum.</strong> Bertram Forer aplicou a seus alunos um “teste de personalidade” e devolveu a cada um uma análise “individualizada” — na verdade, o <strong>mesmo</strong> texto para todos, montado com frases de horóscopo: “Você tem grande necessidade de ser admirado”, “Às vezes é extrovertido, às vezes reservado”, “Tem potencial que ainda não aproveitou” <span class="citation" data-cites="forer1949">(<a href="../../referencias.html#ref-forer1949" role="doc-biblioref">Forer, 1949</a>)</span>. <strong>Resultado:</strong> a avaliação média da precisão do “seu” perfil foi 4,26 em 5. <strong>Interpretação:</strong> descrições vagas, de dupla saída e lisonjeiras são aceitas como retratos precisos de si — o <strong>efeito Barnum</strong> (ou Forer). <strong>Implicações:</strong> o efeito explica a plausibilidade subjetiva de horóscopos, grafologia, numerologia e testes pop sem validade: a <em>sensação</em> de “sou eu!” não é evidência de precisão. É por isso que a validação de um instrumento exige critérios externos (predição, discriminação entre pessoas), nunca a satisfação do avaliado. <strong>Limitações e desdobramentos:</strong> replicações mostraram que o efeito cresce quando o texto é apresentado como “feito para você” e quando é favorável — exatamente as condições dos produtos comerciais do ramo.</p>
+</div>
+<div class="atencao">
+<p>⚠️ <strong>Como reconhecer uma pseudoavaliação.</strong> Sinais de alerta: (1) classifica pessoas em <strong>tipos</strong> fixos e lisonjeiros (“você é um Golfinho Estratégico”) em vez de dimensões contínuas com erro de medida; (2) não publica — ou não possui — estudos de fidedignidade e validade revisados por pares; (3) todo resultado “acerta” (imunizado pelo efeito Barnum); (4) promete decisões de alto impacto (contratar, promover, diagnosticar) a partir de um único instrumento breve; (5) confunde popularidade comercial com evidência. O contraste com a avaliação séria: dimensões, normas, intervalos de confiança, validade documentada para <strong>aquele uso específico</strong> — e a integração de múltiplas fontes <span class="citation" data-cites="meyer2001 pittenger1993">(<a href="../../referencias.html#ref-meyer2001" role="doc-biblioref">Meyer et al., 2001</a>; <a href="../../referencias.html#ref-pittenger1993" role="doc-biblioref">Pittenger, 1993</a>)</span>.</p>
+</div>
+</section>
+<section id="o-contexto-brasileiro-cfp-e-satepsi" class="level2">
+<h2 class="anchored" data-anchor-id="o-contexto-brasileiro-cfp-e-satepsi">O contexto brasileiro: CFP e SATEPSI</h2>
+<p>No Brasil, o uso de testes psicológicos é <strong>ato privativo de psicólogos</strong> e regulado pelo Conselho Federal de Psicologia. Desde 2003, o CFP mantém o <strong>SATEPSI</strong> (Sistema de Avaliação de Testes Psicológicos), que analisa os estudos de fidedignidade, validade e <strong>normatização brasileira</strong> de cada instrumento e publica a lista dos aprovados para uso profissional; a Resolução CFP nº 09/2018 consolidou as diretrizes da avaliação psicológica <span class="citation" data-cites="cfp2018">(<a href="../../referencias.html#ref-cfp2018" role="doc-biblioref">Conselho Federal de Psicologia, 2018</a>)</span>. A exigência de normas nacionais não é burocracia: normas importadas distorcem a interpretação (Cap. 50), e vários instrumentos clássicos já ficaram indisponíveis no país por não demonstrarem estudos locais atualizados. A avaliação psicológica profissional, nos termos das resoluções, é um <strong>processo</strong> — múltiplas fontes, instrumentos aprovados, contexto e finalidade definidos, devolutiva ao avaliado — e não a aplicação isolada de um teste <span class="citation" data-cites="cfp2018 meyer2001">(<a href="../../referencias.html#ref-cfp2018" role="doc-biblioref">Conselho Federal de Psicologia, 2018</a>; <a href="../../referencias.html#ref-meyer2001" role="doc-biblioref">Meyer et al., 2001</a>)</span>.</p>
+<div class="na-pratica">
+<p>💡 <strong>Checklist do consumidor de testes.</strong> Antes de aceitar conclusões de qualquer avaliação de personalidade — num processo seletivo, numa matéria de jornal, num app: <strong>Quem</strong> aplicou (profissional habilitado?)? <strong>Qual</strong> instrumento (aprovado no SATEPSI, no caso brasileiro? com validade publicada para esse uso?)? <strong>Como</strong> foi interpretado (normas adequadas? múltiplas fontes? margem de erro reconhecida?)? <strong>Para quê</strong> (o instrumento foi validado para <em>essa</em> decisão?)? Uma resposta ruim a qualquer uma dessas perguntas rebaixa a “avaliação” a opinião com aparência técnica. E lembre a assimetria SOKA <span class="citation" data-cites="vazire2010">(<a href="../../referencias.html#ref-vazire2010" role="doc-biblioref">Vazire, 2010</a>)</span>: para se conhecer melhor, às vezes a pergunta mais informativa não é “como eu me vejo?”, mas “como três pessoas que me conhecem bem me descreveriam?”.</p>
+</div>
+</section>
+<section id="fechando-o-volume" class="level2">
+<h2 class="anchored" data-anchor-id="fechando-o-volume">Fechando o volume</h2>
+<p>O Vol 11 percorreu o conceito e as grandes teorias da personalidade — psicodinâmica, humanista, traços, sociocognitiva — e terminou nas condições de sua medição honesta. O quadro integrado: uma arquitetura dimensional herdável e estável no agregado (Cap. 67), animada por processos cognitivo-afetivos que interagem com situações (Cap. 68), narrada pela própria pessoa em histórias que dão sentido (Cap. 64) — com as tradições clínicas (Caps. 65–66) lembrando que personalidade é também conflito, defesa, vínculo e busca de crescimento. No Vol 12, a lente se desloca do indivíduo para o <strong>contexto social</strong>: como as pessoas pensam umas sobre as outras, influenciam-se e se comportam em grupo — a psicologia social.</p>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>Quatro janelas de dados: <strong>autorrelato (S)</strong>, <strong>informantes (I)</strong>, <strong>vida (L)</strong>, <strong>testes/observação (T)</strong>; a assimetria SOKA define quem enxerga o quê melhor <span class="citation" data-cites="vazire2010">(<a href="../../referencias.html#ref-vazire2010" role="doc-biblioref">Vazire, 2010</a>)</span>; validade se demonstra por convergência multimétodo <span class="citation" data-cites="campbell_fiske1959">(<a href="../../referencias.html#ref-campbell_fiske1959" role="doc-biblioref">Campbell; Fiske, 1959</a>)</span>.</li>
+<li><strong>MMPI</strong>: construção empírica por critério + <strong>escalas de validade</strong> (L, F, K) <span class="citation" data-cites="hathaway_mckinley1943">(<a href="../../referencias.html#ref-hathaway_mckinley1943" role="doc-biblioref">Hathaway; McKinley, 1943</a>)</span>. <strong>NEO-PI-R</strong>: medição racional-fatorial do CGF em domínios e facetas <span class="citation" data-cites="costa_mccrae1992">(<a href="../../referencias.html#ref-costa_mccrae1992" role="doc-biblioref">Costa; McCrae, 1992</a>)</span>. Vieses de resposta (desejabilidade social <span class="citation" data-cites="crowne_marlowe1960">(<a href="../../referencias.html#ref-crowne_marlowe1960" role="doc-biblioref">Crowne; Marlowe, 1960</a>)</span>, aquiescência) exigem controles.</li>
+<li><strong>Projetivas</strong> (Rorschach, TAT): validade <strong>heterogênea</strong> — índices específicos funcionam, a interpretação livre não; jamais como fonte única <span class="citation" data-cites="lilienfeld2000 meyer2001">(<a href="../../referencias.html#ref-lilienfeld2000" role="doc-biblioref">Lilienfeld; Wood; Garb, 2000</a>; <a href="../../referencias.html#ref-meyer2001" role="doc-biblioref">Meyer et al., 2001</a>)</span>; motivos implícitos predizem o que o autorrelato não capta <span class="citation" data-cites="mcclelland1961">(<a href="../../referencias.html#ref-mcclelland1961" role="doc-biblioref">McClelland, 1961</a>)</span>.</li>
+<li><strong>Efeito Barnum</strong> <span class="citation" data-cites="forer1949">(<a href="../../referencias.html#ref-forer1949" role="doc-biblioref">Forer, 1949</a>)</span>: descrições vagas e lisonjeiras parecem precisas — a satisfação do avaliado não valida nada.</li>
+<li>Brasil: testes são ato privativo do psicólogo; o <strong>SATEPSI</strong> (CFP) exige fidedignidade, validade e <strong>normas brasileiras</strong>; avaliação é processo multifonte <span class="citation" data-cites="cfp2018">(<a href="../../referencias.html#ref-cfp2018" role="doc-biblioref">Conselho Federal de Psicologia, 2018</a>)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Dados S / I / L / T</strong></dt>
+<dd>
+Autorrelato, informantes, registros de vida e testes/observação — as quatro fontes clássicas de dados de personalidade.
+</dd>
+<dt><strong>Construção empírica por critério</strong></dt>
+<dd>
+Seleção de itens pela capacidade demonstrada de discriminar grupos, independentemente do conteúdo aparente (método do MMPI) <span class="citation" data-cites="hathaway_mckinley1943">(<a href="../../referencias.html#ref-hathaway_mckinley1943" role="doc-biblioref">Hathaway; McKinley, 1943</a>)</span>.
+</dd>
+<dt><strong>Escalas de validade</strong></dt>
+<dd>
+Escalas que detectam estilos de resposta (fingir virtude, exagerar sintomas, defensividade) antes da interpretação do perfil.
+</dd>
+<dt><strong>Desejabilidade social</strong></dt>
+<dd>
+Tendência a responder de modo a causar boa impressão <span class="citation" data-cites="crowne_marlowe1960">(<a href="../../referencias.html#ref-crowne_marlowe1960" role="doc-biblioref">Crowne; Marlowe, 1960</a>)</span>.
+</dd>
+<dt><strong>Hipótese projetiva</strong></dt>
+<dd>
+Suposição de que respostas a estímulos ambíguos revelam a organização interna não consciente da pessoa.
+</dd>
+<dt><strong>Efeito Barnum (Forer)</strong></dt>
+<dd>
+Aceitação de descrições vagas, universais e lisonjeiras como retratos individuais precisos <span class="citation" data-cites="forer1949">(<a href="../../referencias.html#ref-forer1949" role="doc-biblioref">Forer, 1949</a>)</span>.
+</dd>
+<dt><strong>Motivos implícitos</strong></dt>
+<dd>
+Necessidades (realização, poder, afiliação) medidas por narrativas, pouco correlacionadas com o autorrelato e preditoras de desfechos próprios <span class="citation" data-cites="mcclelland1961">(<a href="../../referencias.html#ref-mcclelland1961" role="doc-biblioref">McClelland, 1961</a>)</span>.
+</dd>
+<dt><strong>SATEPSI</strong></dt>
+<dd>
+Sistema do CFP que avalia e autoriza testes psicológicos para uso profissional no Brasil, exigindo estudos e normas nacionais <span class="citation" data-cites="cfp2018">(<a href="../../referencias.html#ref-cfp2018" role="doc-biblioref">Conselho Federal de Psicologia, 2018</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Descreva as quatro fontes de dados (S, I, L, T) e um ponto forte e um fraco de cada.</p></li>
+<li><p><strong>(Conceitual.)</strong> Explique a diferença entre a construção empírica por critério (MMPI) e a racional-fatorial (NEO-PI-R). Que vantagem cada uma compra, e a que custo?</p></li>
+<li><p><strong>(Análise.)</strong> Um candidato responde ao MMPI com L altíssimo e F baixo. Outro, com F altíssimo. O que cada padrão sugere, e por que interpretar as escalas clínicas antes das de validade seria um erro?</p></li>
+<li><p><strong>(Aplicação.)</strong> Projete um mini-estudo para testar se o resultado de um teste viral de internet é efeito Barnum: amostra, manipulação, medida e resultado esperado sob cada hipótese <span class="citation" data-cites="forer1949">(<a href="../../referencias.html#ref-forer1949" role="doc-biblioref">Forer, 1949</a>)</span>.</p></li>
+<li><p><strong>(Avaliação.)</strong> “Rorschach é pseudociência” × “Rorschach é uma radiografia da alma”. Usando Lilienfeld et al. <span class="citation" data-cites="lilienfeld2000">(<a href="../../referencias.html#ref-lilienfeld2000" role="doc-biblioref">2000</a>)</span> e Meyer et al. <span class="citation" data-cites="meyer2001">(<a href="../../referencias.html#ref-meyer2001" role="doc-biblioref">2001</a>)</span>, formule a posição intermediária que a evidência sustenta.</p></li>
+<li><p><strong>(Síntese.)</strong> Uma empresa quer prever quais trainees terão bom desempenho. Combine o que este volume estabeleceu (Cap. 67: validade preditiva da conscienciosidade; Cap. 68: autoeficácia e assinaturas; este capítulo: fontes múltiplas e SATEPSI) para desenhar um protocolo de avaliação defensável.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-campbell_fiske1959" class="csl-entry" role="listitem">
+CAMPBELL, Donald T.; FISKE, Donald W. <a href="https://doi.org/10.1037/h0046016">Convergent and discriminant validation by the multitrait-multimethod matrix</a>. <strong>Psychological Bulletin</strong>, v. 56, n. 2, p. 81–105, 1959.
+</div>
+<div id="ref-cfp2018" class="csl-entry" role="listitem">
+CONSELHO FEDERAL DE PSICOLOGIA. <strong>Resolu<span>ç</span><span>ã</span>o CFP n<span></span> 009/2018: Estabelece diretrizes para a realiza<span>ç</span><span>ã</span>o de Avalia<span>ç</span><span>ã</span>o Psicol<span>ó</span>gica no exerc<span>í</span>cio profissional e regulamenta o <span>SATEPSI</span></strong>. Bras<span>í</span>liaConselho Federal de Psicologia, 2018.
+</div>
+<div id="ref-costa_mccrae1992" class="csl-entry" role="listitem">
+COSTA, Paul T.; MCCRAE, Robert R. <strong>Revised NEO Personality Inventory (NEO-PI-R) and NEO Five-Factor Inventory (NEO-FFI) Professional Manual</strong>. Odessa, FL: Psychological Assessment Resources, 1992.
+</div>
+<div id="ref-crowne_marlowe1960" class="csl-entry" role="listitem">
+CROWNE, Douglas P.; MARLOWE, David. A new scale of social desirability independent of psychopathology. <strong>Journal of Consulting Psychology</strong>, v. 24, n. 4, p. 349–354, 1960.
+</div>
+<div id="ref-forer1949" class="csl-entry" role="listitem">
+FORER, Bertram R. <a href="https://doi.org/10.1037/h0059240">The fallacy of personal validation: A classroom demonstration of gullibility</a>. <strong>The Journal of Abnormal and Social Psychology</strong>, v. 44, n. 1, p. 118–123, 1949.
+</div>
+<div id="ref-hathaway_mckinley1943" class="csl-entry" role="listitem">
+HATHAWAY, Starke R.; MCKINLEY, J. Charnley. <strong>The Minnesota Multiphasic Personality Inventory</strong>. Minneapolis: University of Minnesota Press, 1943.
+</div>
+<div id="ref-lilienfeld2000" class="csl-entry" role="listitem">
+LILIENFELD, Scott O.; WOOD, James M.; GARB, Howard N. <a href="https://doi.org/10.1111/1529-1006.002">The scientific status of projective techniques</a>. <strong>Psychological Science in the Public Interest</strong>, v. 1, n. 2, p. 27–66, 2000.
+</div>
+<div id="ref-mcclelland1961" class="csl-entry" role="listitem">
+MCCLELLAND, David C. <strong>The Achieving Society</strong>. Princeton: Van Nostrand, 1961.
+</div>
+<div id="ref-meyer2001" class="csl-entry" role="listitem">
+MEYER, Gregory J. <em>et al.</em> Psychological testing and psychological assessment: A review of evidence and issues. <strong>American Psychologist</strong>, v. 56, n. 2, p. 128–165, 2001.
+</div>
+<div id="ref-murray1938" class="csl-entry" role="listitem">
+MURRAY, Henry A. <strong>Explorations in Personality</strong>. New York: Oxford University Press, 1938.
+</div>
+<div id="ref-pittenger1993" class="csl-entry" role="listitem">
+PITTENGER, David J. <a href="https://doi.org/10.3102/00346543063004467">The utility of the <span>Myers-Briggs Type Indicator</span></a>. <strong>Review of Educational Research</strong>, v. 63, n. 4, p. 467–488, 1993.
+</div>
+<div id="ref-rorschach1921" class="csl-entry" role="listitem">
+RORSCHACH, Hermann. <strong>Psychodiagnostik</strong>. Bern: Bircher, 1921.
+</div>
+<div id="ref-vazire2010" class="csl-entry" role="listitem">
+VAZIRE, Simine. Who knows what about a person? The self-other knowledge asymmetry (<span>SOKA</span>) model. <strong>Journal of Personality and Social Psychology</strong>, v. 98, n. 2, p. 281–300, 2010.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1344,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol11-personalidade/cap-69-avaliacao-personalidade.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

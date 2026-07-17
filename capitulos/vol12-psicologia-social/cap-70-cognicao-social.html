@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -688,8 +737,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#a-mente-social-o-avaro-cognitivo" id="toc-a-mente-social-o-avaro-cognitivo" class="nav-link active" data-scroll-target="#a-mente-social-o-avaro-cognitivo">A mente social: o avaro cognitivo</a></li>
+  <li><a href="#atribuição-a-busca-por-causas" id="toc-atribuição-a-busca-por-causas" class="nav-link" data-scroll-target="#atribuição-a-busca-por-causas">Atribuição: a busca por causas</a>
+  <ul class="collapse">
+  <li><a href="#o-modelo-de-covariação-de-kelley" id="toc-o-modelo-de-covariação-de-kelley" class="nav-link" data-scroll-target="#o-modelo-de-covariação-de-kelley">O modelo de covariação de Kelley</a></li>
+  <li><a href="#inferência-correspondente-e-o-processo-em-três-estágios" id="toc-inferência-correspondente-e-o-processo-em-três-estágios" class="nav-link" data-scroll-target="#inferência-correspondente-e-o-processo-em-três-estágios">Inferência correspondente e o processo em três estágios</a></li>
+  </ul></li>
+  <li><a href="#o-erro-fundamental-de-atribuição" id="toc-o-erro-fundamental-de-atribuição" class="nav-link" data-scroll-target="#o-erro-fundamental-de-atribuição">O erro fundamental de atribuição</a>
+  <ul class="collapse">
+  <li><a href="#a-assimetria-atorobservador-e-sua-ressalva" id="toc-a-assimetria-atorobservador-e-sua-ressalva" class="nav-link" data-scroll-target="#a-assimetria-atorobservador-e-sua-ressalva">A assimetria ator–observador — e sua ressalva</a></li>
+  <li><a href="#a-cultura-molda-a-atribuição" id="toc-a-cultura-molda-a-atribuição" class="nav-link" data-scroll-target="#a-cultura-molda-a-atribuição">A cultura molda a atribuição</a></li>
+  </ul></li>
+  <li><a href="#quando-a-expectativa-cria-o-fato" id="toc-quando-a-expectativa-cria-o-fato" class="nav-link" data-scroll-target="#quando-a-expectativa-cria-o-fato">Quando a expectativa cria o fato</a></li>
+  <li><a href="#os-limites-de-ler-pessoas" id="toc-os-limites-de-ler-pessoas" class="nav-link" data-scroll-target="#os-limites-de-ler-pessoas">Os limites de “ler” pessoas</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +782,586 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Definir</strong> o campo da psicologia social e situar a cognição social como o estudo de como percebemos, interpretamos e explicamos o mundo social.</li>
+<li><strong>Explicar</strong> por que a mente funciona como um “avaro cognitivo” e como esquemas, heurísticas e o processamento em duas velocidades organizam o julgamento social.</li>
+<li><strong>Descrever</strong> os modelos de atribuição de causas (inferência correspondente e covariação de Kelley) e o que eles preveem.</li>
+<li><strong>Analisar</strong> o erro fundamental de atribuição e a assimetria ator–observador, reconhecendo seus limites transculturais.</li>
+<li><strong>Reconhecer</strong> como expectativas sociais se autoconfirmam (profecia autorrealizadora) e como vieses do próprio observador distorcem a percepção de pessoas.</li>
+<li><strong>Avaliar criticamente</strong> afirmações cotidianas sobre “ler” o caráter alheio à luz da evidência.</li>
+</ul>
 </div>
+<p>Os onze volumes anteriores olharam para dentro do indivíduo: seu cérebro, sua percepção, sua memória, sua personalidade. Este volume vira a lente para fora. A <strong>psicologia social</strong> é o estudo científico de como pensamentos, sentimentos e comportamentos das pessoas são influenciados pela presença — real, imaginada ou implícita — de outras pessoas <span class="citation" data-cites="allport1954">(<a href="../../referencias.html#ref-allport1954" role="doc-biblioref">Allport, 1954</a>)</span>. É a disciplina que Kurt Lewin resumiu numa fórmula famosa: o comportamento é função da pessoa <strong>e</strong> da situação, <span class="math inline">\(C = f(P, S)\)</span> <span class="citation" data-cites="lewin1951">(<a href="../../referencias.html#ref-lewin1951" role="doc-biblioref">Lewin, 1951</a>)</span>. Nenhum traço de personalidade explica sozinho por que a mesma pessoa é generosa num contexto e mesquinha noutro; a situação social carrega um peso que a intuição sistematicamente subestima — como este capítulo vai mostrar.</p>
+<p>Começamos pela porta de entrada de toda vida social: a <strong>cognição social</strong>, o modo como formamos impressões, interpretamos situações e, sobretudo, explicamos <em>por que</em> as pessoas fazem o que fazem. Antes de influenciar alguém, obedecer, amar ou discriminar (os temas dos próximos capítulos), o ser humano precisa primeiro dar sentido ao mundo social — e o faz com uma maquinaria mental que é ao mesmo tempo espantosamente eficiente e sistematicamente enviesada.</p>
+<section id="a-mente-social-o-avaro-cognitivo" class="level2">
+<h2 class="anchored" data-anchor-id="a-mente-social-o-avaro-cognitivo">A mente social: o avaro cognitivo</h2>
+<p>O mundo social é excessivamente complexo para ser processado por inteiro. A cada instante, uma pessoa poderia considerar dezenas de intenções, contextos e histórias por trás de um único gesto alheio. Como não há recursos cognitivos para tanto, a mente recorre a atalhos. A metáfora que organizou o campo por décadas é a do <strong>avaro cognitivo</strong> (<em>cognitive miser</em>): tratamos a atenção e o esforço mental como recursos escassos e gastamos o mínimo necessário para chegar a uma resposta “boa o bastante” <span class="citation" data-cites="fiske_taylor1991">(<a href="../../referencias.html#ref-fiske_taylor1991" role="doc-biblioref">Fiske; Taylor, 1991</a>)</span>. Uma reformulação posterior — o <strong>estrategista motivado</strong> — acrescenta que nem sempre economizamos: quando o resultado importa muito, investimos mais análise; a economia é a regra, não uma lei.</p>
+<p>Esse processamento econômico se apoia em três ferramentas que reaparecerão o volume inteiro:</p>
+<ul>
+<li><strong>Esquemas</strong>: estruturas de conhecimento que organizam o que sabemos sobre um tipo de pessoa, papel ou situação (o esquema de “professor”, de “festa de aniversário”). Esquemas preenchem lacunas, guiam a atenção e a memória — e por isso também distorcem, fazendo-nos “ver” o que esperávamos ver.</li>
+<li><strong>Heurísticas</strong>: regras práticas de julgamento rápido — disponibilidade, representatividade, ancoragem — que Kahneman e Tversky mapearam (Cap. 47) e que operam intensamente no domínio social <span class="citation" data-cites="tversky_kahneman1974">(<a href="../../referencias.html#ref-tversky_kahneman1974" role="doc-biblioref">Tversky; Kahneman, 1974</a>)</span>.</li>
+<li><strong>Processamento em duas velocidades</strong>: um sistema rápido, automático e intuitivo (Sistema 1) e um sistema lento, deliberado e custoso (Sistema 2) <span class="citation" data-cites="kahneman2011">(<a href="../../referencias.html#ref-kahneman2011" role="doc-biblioref">Kahneman, 2011</a>)</span>. Boa parte da cognição social roda no Sistema 1, e a correção deliberada só entra em cena quando há motivação e recursos disponíveis.</li>
+</ul>
+<p>Guardar essa arquitetura é essencial: os vieses que veremos a seguir não são defeitos de gente distraída ou preconceituosa, e sim o preço de uma máquina projetada para ser rápida.</p>
+</section>
+<section id="atribuição-a-busca-por-causas" class="level2">
+<h2 class="anchored" data-anchor-id="atribuição-a-busca-por-causas">Atribuição: a busca por causas</h2>
+<p>O ser humano é um explicador compulsivo. Diante de um comportamento — o próprio ou o alheio —, não nos contentamos em registrá-lo; queremos saber <em>por quê</em>. Fritz Heider, o fundador do campo, chamou cada pessoa comum de “psicólogo ingênuo” (<em>naïve psychologist</em>): alguém que, sem formação, formula teorias causais sobre a conduta alheia o tempo todo <span class="citation" data-cites="heider1958">(<a href="../../referencias.html#ref-heider1958" role="doc-biblioref">Heider, 1958</a>)</span>. O estudo de como fazemos isso é a <strong>teoria da atribuição</strong>.</p>
+<p>Heider propôs a distinção que estrutura todo o campo: atribuições <strong>internas</strong> (ou disposicionais) localizam a causa do comportamento na pessoa — seu caráter, sua personalidade, suas intenções — enquanto atribuições <strong>externas</strong> (ou situacionais) a localizam nas circunstâncias — a pressão, o contexto, o acaso. Quando um motorista fecha o seu carro no trânsito, você pode concluir “que sujeito grosseiro” (interna) ou “deve estar levando alguém ao hospital” (externa). A diferença entre as duas leituras, veremos, tem consequências enormes.</p>
+<section id="o-modelo-de-covariação-de-kelley" class="level3">
+<h3 class="anchored" data-anchor-id="o-modelo-de-covariação-de-kelley">O modelo de covariação de Kelley</h3>
+<p>Como o psicólogo ingênuo decide entre causa interna e externa? Harold Kelley propôs que, quando temos informação suficiente, agimos como cientistas intuitivos aplicando um <strong>princípio de covariação</strong>: atribuímos um efeito à causa com a qual ele varia em conjunto <span class="citation" data-cites="kelley1967">(<a href="../../referencias.html#ref-kelley1967" role="doc-biblioref">Kelley, 1967</a>)</span>. Três tipos de informação alimentam o cálculo:</p>
+<ul>
+<li><strong>Consenso</strong> — outras pessoas reagem assim ao mesmo estímulo? (Todo mundo ri deste filme, ou só o João?)</li>
+<li><strong>Distintividade</strong> — a pessoa reage assim só a este estímulo, ou a muitos? (O João ri só deste filme, ou de qualquer coisa?)</li>
+<li><strong>Consistência</strong> — a pessoa reage assim sempre que encontra este estímulo? (O João ri deste filme toda vez?)</li>
+</ul>
+<p>Os padrões preveem a atribuição, como resume a <a href="#tbl-covariacao" class="quarto-xref">Tabela&nbsp;<span>70.1</span></a>. Consenso <strong>baixo</strong> + distintividade <strong>baixa</strong> + consistência <strong>alta</strong> aponta para a <strong>pessoa</strong> (“o João é risonho”). Consenso <strong>alto</strong> + distintividade <strong>alta</strong> + consistência <strong>alta</strong> aponta para o <strong>estímulo/situação</strong> (“o filme é engraçado”). O modelo é normativamente elegante e descreve bem o julgamento quando a informação está disponível — mas as pessoas raramente têm os três dados à mão e, mesmo quando têm, tendem a subusar o consenso <span class="citation" data-cites="nisbett_wilson1977">(<a href="../../referencias.html#ref-nisbett_wilson1977" role="doc-biblioref">Nisbett; Wilson, 1977</a>)</span>.</p>
+<div id="tbl-covariacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-covariacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;70.1: Padrões de covariação e a atribuição que cada um favorece, segundo o modelo de Kelley <span class="citation" data-cites="kelley1967">(<a href="../../referencias.html#ref-kelley1967" role="doc-biblioref">Kelley, 1967</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-covariacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Padrão de informação</th>
+<th>Atribuição típica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Consenso <strong>baixo</strong>, distintividade <strong>baixa</strong>, consistência <strong>alta</strong></td>
+<td>À <strong>pessoa</strong> (interna)</td>
+</tr>
+<tr class="even">
+<td>Consenso <strong>alto</strong>, distintividade <strong>alta</strong>, consistência <strong>alta</strong></td>
+<td>Ao <strong>estímulo/situação</strong> (externa)</td>
+</tr>
+<tr class="odd">
+<td>Consistência <strong>baixa</strong> (varia entre ocasiões)</td>
+<td>Às <strong>circunstâncias</strong> daquele momento</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="inferência-correspondente-e-o-processo-em-três-estágios" class="level3">
+<h3 class="anchored" data-anchor-id="inferência-correspondente-e-o-processo-em-três-estágios">Inferência correspondente e o processo em três estágios</h3>
+<p>Muitas vezes, porém, não temos tempo nem dados para o cálculo de Kelley — vemos uma pessoa agir uma única vez. A <strong>teoria da inferência correspondente</strong> trata desse caso: inferimos uma disposição estável (“é uma pessoa hostil”) a partir de um único comportamento (“foi hostil”), especialmente quando o ato parece livremente escolhido, produz efeitos incomuns e é socialmente indesejável <span class="citation" data-cites="jones_davis1965">(<a href="../../referencias.html#ref-jones_davis1965" role="doc-biblioref">Jones; Davis, 1965</a>)</span>. O problema é que fazemos essa inferência <strong>rápido demais</strong> e a corrigimos <strong>de menos</strong>.</p>
+<p>Daniel Gilbert propôs que a atribuição disposicional ocorre em três estágios, ilustrados na <a href="#fig-tres-estagios" class="quarto-xref">Figura&nbsp;<span>70.1</span></a>: primeiro <strong>categorizamos</strong> o comportamento (“aquilo foi agressivo”), depois <strong>caracterizamos</strong> a pessoa quase automaticamente (“ele é agressivo”) e só então, <em>se houver recursos cognitivos disponíveis</em>, <strong>corrigimos</strong> levando a situação em conta (“mas ele tinha acabado de ser provocado”) <span class="citation" data-cites="gilbert1988">(<a href="../../referencias.html#ref-gilbert1988" role="doc-biblioref">Gilbert; Pelham; Krull, 1988</a>)</span>. Os dois primeiros passos são baratos e automáticos (Sistema 1); o terceiro é caro e deliberado (Sistema 2) — e é o primeiro a falhar quando estamos ocupados, distraídos ou sob pressão de tempo. Essa arquitetura explica o viés mais célebre da psicologia social.</p>
+<div id="fig-tres-estagios" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tres-estagios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Fluxograma horizontal com três caixas ligadas por setas. Da esquerda para a direita: &quot;Categorização&quot; (o que a pessoa fez), &quot;Caracterização&quot; (que disposição isso indica) e &quot;Correção&quot; (a situação explica?). As duas primeiras caixas são azuis e trazem a etiqueta &quot;automático, barato&quot;; a terceira é vermelha e traz &quot;controlado, caro — falha sob carga cognitiva&quot;." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="363.631153pt" height="87.338859pt" viewbox="-68.014948 -68.014946 363.631153 87.338859">
+<defs>
+<path id="tz_tres_estagios_atribuicao_g0-19" d="M4.100623-4.365629C4.198257-4.428394 4.281943-4.491158 4.281943-4.623661C4.281943-4.770112 4.163387-4.853798 4.05878-4.853798C3.961146-4.853798 3.884433-4.791034 3.856538-4.763138L2.705853-3.765878C2.636115-3.703113 2.622167-3.696139 2.622167-3.654296S2.684932-3.486924 2.768618-3.486924C2.789539-3.486924 2.810461-3.486924 2.880199-3.535741L4.100623-4.365629Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-44" d="M1.590037-.09066C1.471482 .390535 1.185554 .801993 .767123 1.136737C.676463 1.206476 .669489 1.21345 .669489 1.248319C.669489 1.297136 .718306 1.352927 .767123 1.352927C.9066 1.352927 1.820174 .516065 1.820174-.341719C1.820174-.606725 1.701619-.801993 1.457534-.801993C1.171606-.801993 .969365-.550934 .969365-.320797C.969365-.104608 1.115816 0 1.30411 0C1.471482 0 1.534247-.048817 1.590037-.09066Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-97" d="M3.814695-2.587298C3.84259-2.691905 3.84259-2.705853 3.84259-2.733748C3.84259-2.887173 3.731009-2.942964 3.626401-2.942964C3.396264-2.942964 3.326526-2.705853 3.319552-2.684932C3.145205-2.970859 2.887173-3.075467 2.636115-3.075467C1.785305-3.075467 .899626-2.092154 .899626-1.073973C.899626-.327771 1.373848 .069738 1.889913 .069738C2.336239 .069738 2.705853-.258032 2.84533-.404483C2.93599-.069738 3.263761 .069738 3.514819 .069738C3.731009 .069738 3.912329-.034869 4.065753-.285928C4.233126-.557908 4.33076-.976339 4.33076-.99726C4.33076-1.08792 4.2401-1.08792 4.184309-1.08792C4.05878-1.08792 4.051806-1.073973 4.009963-.899626C3.912329-.536986 3.793773-.125529 3.535741-.125529C3.340473-.125529 3.312578-.334745 3.312578-.4533S3.312578-.585803 3.354421-.746202L3.814695-2.587298ZM2.887173-.948443C2.831382-.732254 2.677958-.564882 2.517559-.411457C2.231631-.160399 2.015442-.125529 1.910834-.125529C1.590037-.125529 1.429639-.425405 1.429639-.788045C1.429639-1.080946 1.603985-1.84807 1.799253-2.224658C2.022416-2.636115 2.357161-2.880199 2.636115-2.880199C3.110336-2.880199 3.200996-2.273474 3.200996-2.203736C3.200996-2.182814 3.194022-2.154919 3.180075-2.106102L2.887173-.948443Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-98" d="M2.294396-4.637609C2.30137-4.665504 2.315318-4.714321 2.315318-4.742217C2.315318-4.846824 2.203736-4.839851 2.127024-4.832877L1.373848-4.770112C1.283188-4.763138 1.192528-4.756164 1.192528-4.609714C1.192528-4.51208 1.283188-4.51208 1.373848-4.51208C1.708593-4.51208 1.708593-4.463263 1.708593-4.400498C1.708593-4.358655 1.708593-4.344707 1.680697-4.247073L1.004234-1.555168C.941469-1.30411 .941469-1.143711 .941469-1.053051C.941469-.313823 1.39477 .069738 1.896887 .069738C2.75467 .069738 3.633375-.927522 3.633375-1.93873C3.633375-2.636115 3.194022-3.075467 2.643088-3.075467C2.266501-3.075467 1.973599-2.84533 1.8132-2.719801L2.294396-4.637609ZM1.903861-.125529C1.610959-.125529 1.401743-.376588 1.401743-.829888C1.401743-1.199502 1.659776-2.133998 1.701619-2.203736C1.910834-2.538481 2.280448-2.880199 2.629141-2.880199C2.956912-2.880199 3.103362-2.559402 3.103362-2.224658C3.103362-1.903861 2.908095-1.12279 2.733748-.795019C2.475716-.306849 2.127024-.125529 1.903861-.125529Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-99" d="M3.382316-2.629141C3.180075-2.57335 3.110336-2.405978 3.110336-2.287422C3.110336-2.175841 3.187049-2.057285 3.361395-2.057285C3.47995-2.057285 3.710087-2.133998 3.710087-2.468742C3.710087-2.922042 3.221918-3.075467 2.838356-3.075467C1.862017-3.075467 .9066-2.12005 .9066-1.129763C.9066-.474222 1.345953 .069738 2.12005 .069738C3.242839 .069738 3.772852-.585803 3.772852-.676463C3.772852-.732254 3.675218-.843836 3.612453-.843836C3.577584-.843836 3.556663-.822914 3.507846-.767123C3.082441-.258032 2.475716-.125529 2.127024-.125529S1.457534-.327771 1.457534-.892653C1.457534-1.220423 1.610959-1.959651 1.931756-2.364134C2.21071-2.719801 2.545455-2.880199 2.84533-2.880199C2.963885-2.880199 3.263761-2.84533 3.382316-2.629141Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-100" d="M4.33076-4.637609C4.337733-4.665504 4.351681-4.714321 4.351681-4.742217C4.351681-4.846824 4.2401-4.839851 4.163387-4.832877L3.410212-4.770112C3.319552-4.763138 3.228892-4.756164 3.228892-4.609714C3.228892-4.51208 3.319552-4.51208 3.410212-4.51208C3.744956-4.51208 3.744956-4.463263 3.744956-4.400498C3.744956-4.379577 3.744956-4.365629 3.717061-4.267995L3.326526-2.684932C3.166127-2.929016 2.929016-3.075467 2.636115-3.075467C1.785305-3.075467 .899626-2.092154 .899626-1.073973C.899626-.327771 1.373848 .069738 1.889913 .069738C2.336239 .069738 2.705853-.258032 2.84533-.404483C2.93599-.069738 3.263761 .069738 3.514819 .069738C3.731009 .069738 3.912329-.034869 4.065753-.285928C4.233126-.557908 4.33076-.976339 4.33076-.99726C4.33076-1.08792 4.2401-1.08792 4.184309-1.08792C4.05878-1.08792 4.051806-1.073973 4.009963-.899626C3.912329-.536986 3.793773-.125529 3.535741-.125529C3.340473-.125529 3.312578-.334745 3.312578-.4533S3.347447-.718306 3.354421-.739228L4.33076-4.637609ZM2.887173-.948443C2.831382-.732254 2.677958-.564882 2.517559-.411457C2.231631-.160399 2.015442-.125529 1.910834-.125529C1.590037-.125529 1.429639-.425405 1.429639-.788045C1.429639-1.080946 1.603985-1.84807 1.799253-2.224658C2.022416-2.636115 2.357161-2.880199 2.636115-2.880199C3.110336-2.880199 3.200996-2.273474 3.200996-2.203736C3.200996-2.182814 3.194022-2.154919 3.180075-2.106102L2.887173-.948443Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-102" d="M2.154919-2.75467H2.810461C2.93599-2.75467 3.02665-2.75467 3.02665-2.908095C3.02665-3.005729 2.929016-3.005729 2.824408-3.005729H2.203736C2.280448-3.466002 2.364134-3.891407 2.399004-4.037858C2.468742-4.379577 2.538481-4.714321 2.817435-4.714321C2.929016-4.714321 3.040598-4.686426 3.124284-4.616687C2.991781-4.560897 2.901121-4.435367 2.901121-4.29589C2.901121-4.093649 3.068493-4.05878 3.145205-4.05878C3.347447-4.05878 3.500872-4.226152 3.500872-4.442341C3.500872-4.742217 3.180075-4.909589 2.817435-4.909589C2.057285-4.909589 1.896887-4.086675 1.855044-3.870486L1.687671-3.005729H1.157659C1.03213-3.005729 .948443-3.005729 .948443-2.852304C.948443-2.75467 1.03213-2.75467 1.143711-2.75467H1.638854L1.185554-.278954C.9066 1.227397 .704359 1.227397 .550934 1.227397C.523039 1.227397 .376588 1.227397 .258032 1.12279C.481196 1.03213 .481196 .836862 .481196 .808966C.481196 .606725 .313823 .571856 .237111 .571856C.034869 .571856-.118555 .739228-.118555 .955417C-.118555 1.26924 .223163 1.422665 .54396 1.422665C1.21345 1.422665 1.48543 .530012 1.57609 .195268C1.638854-.041843 1.701619-.278954 1.743462-.516065L2.154919-2.75467Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-103" d="M3.807721-2.587298C3.835616-2.691905 3.835616-2.705853 3.835616-2.733748C3.835616-2.887173 3.724035-2.942964 3.619427-2.942964C3.472976-2.942964 3.354421-2.838356 3.312578-2.698879C3.145205-2.956912 2.901121-3.075467 2.629141-3.075467C1.778331-3.075467 .9066-2.099128 .9066-1.12279C.9066-.481196 1.318057 0 1.903861 0C2.252553 0 2.545455-.188294 2.733748-.348692C2.712827-.258032 2.517559 .495143 2.517559 .509091C2.461768 .655542 2.203736 1.227397 1.48543 1.227397C1.387796 1.227397 1.143711 1.227397 .976339 1.164633C1.143711 1.066999 1.143711 .885679 1.143711 .878705C1.143711 .739228 1.046077 .641594 .892653 .641594C.718306 .641594 .54396 .788045 .54396 1.018182C.54396 1.387796 .990286 1.422665 1.464508 1.422665C2.468742 1.422665 2.942964 .885679 3.054545 .446326L3.807721-2.587298ZM2.894147-.983313C2.838356-.767123 2.371108-.195268 1.924782-.195268C1.603985-.195268 1.443587-.481196 1.443587-.843836C1.443587-1.136737 1.617933-1.917808 1.834122-2.287422C2.078207-2.705853 2.399004-2.880199 2.629141-2.880199C3.110336-2.880199 3.194022-2.280448 3.194022-2.217684L3.173101-2.12005L2.894147-.983313Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-104" d="M2.294396-4.637609C2.30137-4.665504 2.315318-4.714321 2.315318-4.742217C2.315318-4.846824 2.203736-4.839851 2.127024-4.832877L1.373848-4.770112C1.283188-4.763138 1.192528-4.756164 1.192528-4.609714C1.192528-4.51208 1.283188-4.51208 1.373848-4.51208C1.708593-4.51208 1.708593-4.463263 1.708593-4.400498C1.708593-4.372603 1.687671-4.274969 1.680697-4.2401L.690411-.285928C.662516-.188294 .662516-.174346 .662516-.139477C.662516-.006974 .760149 .069738 .885679 .069738C1.115816 .069738 1.171606-.146451 1.185554-.209215C1.192528-.230137 1.283188-.592777 1.338979-.836862C1.422665-1.143711 1.499377-1.457534 1.57609-1.771357C1.597011-1.841096 1.778331-2.287422 2.113076-2.601245C2.30137-2.768618 2.559402-2.880199 2.824408-2.880199C3.131258-2.880199 3.214944-2.636115 3.214944-2.405978C3.214944-1.994521 2.887173-1.143711 2.768618-.829888C2.698879-.655542 2.698879-.606725 2.698879-.516065C2.698879-.139477 2.998755 .069738 3.319552 .069738C4.016936 .069738 4.33076-.885679 4.33076-.99726C4.33076-1.08792 4.2401-1.08792 4.184309-1.08792C4.05878-1.08792 4.051806-1.066999 4.016936-.941469C3.898381-.509091 3.647323-.125529 3.340473-.125529C3.242839-.125529 3.166127-.174346 3.166127-.36264C3.166127-.516065 3.228892-.669489 3.284682-.829888C3.410212-1.157659 3.703113-1.917808 3.703113-2.30137C3.703113-2.880199 3.284682-3.075467 2.84533-3.075467C2.21071-3.075467 1.827148-2.615193 1.771357-2.552428L2.294396-4.637609Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-105" d="M2.489664-4.344707C2.489664-4.491158 2.385056-4.588792 2.245579-4.588792C2.050311-4.588792 1.896887-4.407472 1.896887-4.254047C1.896887-4.128518 1.980573-4.009963 2.147945-4.009963C2.322291-4.009963 2.489664-4.177335 2.489664-4.344707ZM1.471482-1.72254C1.422665-1.590037 1.297136-1.26924 1.227397-1.073973C1.157659-.892653 1.060025-.641594 1.060025-.516065C1.060025-.195268 1.311083 .069738 1.680697 .069738C2.378082 .069738 2.691905-.885679 2.691905-.99726C2.691905-1.08792 2.601245-1.08792 2.545455-1.08792C2.419925-1.08792 2.412951-1.066999 2.378082-.941469C2.287422-.606725 2.057285-.125529 1.701619-.125529C1.534247-.125529 1.534247-.292902 1.534247-.36264C1.534247-.530012 1.652802-.829888 1.743462-1.053051C1.820174-1.26924 2.168867-2.154919 2.203736-2.259527C2.245579-2.378082 2.245579-2.399004 2.245579-2.489664C2.245579-2.803487 2.001494-3.075467 1.617933-3.075467C.934496-3.075467 .613699-2.133998 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.843836-1.917808 .885679-1.917808 .9066-2.008468C1.136737-2.817435 1.471482-2.880199 1.597011-2.880199C1.680697-2.880199 1.771357-2.859278 1.771357-2.643088C1.771357-2.489664 1.715567-2.350187 1.659776-2.203736L1.471482-1.72254Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-108" d="M2.294396-4.637609C2.30137-4.665504 2.315318-4.714321 2.315318-4.742217C2.315318-4.846824 2.203736-4.839851 2.127024-4.832877L1.373848-4.770112C1.283188-4.763138 1.192528-4.756164 1.192528-4.609714C1.192528-4.51208 1.283188-4.51208 1.373848-4.51208C1.708593-4.51208 1.708593-4.463263 1.708593-4.400498C1.708593-4.351681 1.694645-4.29589 1.680697-4.247073L.822914-.822914C.788045-.683437 .788045-.63462 .788045-.585803C.788045-.125529 1.171606 .069738 1.478456 .069738C1.638854 .069738 1.855044 .013948 2.043337-.306849C2.196762-.578829 2.287422-.969365 2.287422-.99726C2.287422-1.08792 2.196762-1.08792 2.140971-1.08792C2.015442-1.08792 2.008468-1.066999 1.980573-.948443C1.882939-.578829 1.764384-.125529 1.499377-.125529C1.30411-.125529 1.276214-.334745 1.276214-.4533S1.311083-.718306 1.318057-.739228L2.294396-4.637609Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-109" d="M3.228892-.613699C3.187049-.460274 3.11731-.18132 3.11731-.139477C3.11731 .013948 3.228892 .069738 3.333499 .069738C3.57061 .069738 3.619427-.139477 3.647323-.244085C3.675218-.36264 3.765878-.711333 3.807721-.864757C3.828643-.969365 3.898381-1.234371 3.919303-1.338979C3.940224-1.408717 4.030884-1.75741 4.037858-1.806227C4.051806-1.84807 4.261021-2.308344 4.546949-2.57335C4.756164-2.761644 5.000249-2.880199 5.279203-2.880199C5.6-2.880199 5.676712-2.636115 5.676712-2.405978C5.676712-1.994521 5.348941-1.150685 5.230386-.829888C5.160648-.655542 5.160648-.606725 5.160648-.516065C5.160648-.139477 5.460523 .069738 5.78132 .069738C6.478705 .069738 6.792528-.885679 6.792528-.99726C6.792528-1.08792 6.701868-1.08792 6.646077-1.08792C6.520548-1.08792 6.513574-1.066999 6.478705-.941469C6.360149-.509091 6.109091-.125529 5.802242-.125529C5.704608-.125529 5.627895-.174346 5.627895-.36264C5.627895-.516065 5.69066-.669489 5.746451-.829888C5.87198-1.157659 6.164882-1.917808 6.164882-2.30137C6.164882-2.84533 5.788294-3.075467 5.307098-3.075467C4.770112-3.075467 4.400498-2.775592 4.11457-2.405978C4.051806-2.984807 3.577584-3.075467 3.256787-3.075467C2.636115-3.075467 2.280448-2.657036 2.12005-2.475716C2.078207-2.915068 1.701619-3.075467 1.429639-3.075467C1.129763-3.075467 .976339-2.880199 .871731-2.705853C.72528-2.475716 .613699-2.050311 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.885679-1.917808 .892653-1.924782 .941469-2.12005C1.060025-2.601245 1.192528-2.880199 1.408717-2.880199S1.624907-2.629141 1.624907-2.545455C1.624907-2.412951 1.534247-2.057285 1.478456-1.8132L1.283188-1.060025C1.262267-.955417 1.192528-.690411 1.164633-.585803C1.129763-.432379 1.066999-.188294 1.066999-.139477C1.066999 .013948 1.17858 .069738 1.283188 .069738C1.520299 .069738 1.569116-.139477 1.597011-.244085C1.624907-.36264 1.715567-.711333 1.75741-.864757C1.862017-1.297136 1.966625-1.729514 1.987547-1.806227C1.987547-1.8132 2.217684-2.343213 2.531507-2.608219C2.629141-2.684932 2.866252-2.880199 3.235866-2.880199C3.563636-2.880199 3.633375-2.622167 3.633375-2.399004C3.633375-2.238605 3.584558-2.050311 3.542715-1.868991C3.500872-1.72254 3.410212-1.352927 3.375342-1.199502L3.228892-.613699Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-110" d="M2.12005-2.48269C2.071233-2.908095 1.708593-3.075467 1.429639-3.075467C1.129763-3.075467 .976339-2.880199 .871731-2.705853C.72528-2.475716 .613699-2.050311 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.885679-1.917808 .892653-1.924782 .941469-2.12005C1.060025-2.601245 1.192528-2.880199 1.408717-2.880199S1.624907-2.629141 1.624907-2.545455C1.624907-2.412951 1.534247-2.057285 1.478456-1.8132L1.283188-1.060025C1.262267-.955417 1.192528-.690411 1.164633-.585803C1.129763-.432379 1.066999-.188294 1.066999-.139477C1.066999 .013948 1.17858 .069738 1.283188 .069738C1.520299 .069738 1.569116-.139477 1.597011-.244085C1.624907-.36264 1.715567-.711333 1.75741-.864757C1.778331-.969365 1.84807-1.234371 1.868991-1.338979C1.889913-1.408717 1.980573-1.75741 1.987547-1.806227C2.001494-1.84807 2.21071-2.308344 2.496638-2.57335C2.705853-2.761644 2.949938-2.880199 3.228892-2.880199C3.549689-2.880199 3.626401-2.636115 3.626401-2.405978C3.626401-1.994521 3.29863-1.150685 3.180075-.829888C3.110336-.655542 3.110336-.606725 3.110336-.516065C3.110336-.139477 3.410212 .069738 3.731009 .069738C4.428394 .069738 4.742217-.885679 4.742217-.99726C4.742217-1.08792 4.651557-1.08792 4.595766-1.08792C4.470237-1.08792 4.463263-1.066999 4.428394-.941469C4.309838-.509091 4.05878-.125529 3.75193-.125529C3.654296-.125529 3.577584-.174346 3.577584-.36264C3.577584-.516065 3.640349-.669489 3.696139-.829888C3.821669-1.157659 4.11457-1.917808 4.11457-2.30137C4.11457-2.84533 3.737983-3.075467 3.256787-3.075467C2.705853-3.075467 2.329265-2.747696 2.12005-2.48269Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-111" d="M4.037858-1.875965C4.037858-2.552428 3.563636-3.075467 2.84533-3.075467C1.84807-3.075467 .9066-2.106102 .9066-1.129763C.9066-.418431 1.408717 .069738 2.099128 .069738C3.096389 .069738 4.037858-.9066 4.037858-1.875965ZM2.106102-.125529C1.910834-.125529 1.457534-.223163 1.457534-.892653C1.457534-1.199502 1.597011-1.931756 1.931756-2.364134C2.175841-2.691905 2.531507-2.880199 2.838356-2.880199C3.082441-2.880199 3.486924-2.733748 3.486924-2.113076C3.486924-1.875965 3.382316-1.206476 3.082441-.732254C2.866252-.397509 2.475716-.125529 2.106102-.125529Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-114" d="M1.862017-1.297136C1.896887-1.45056 1.93873-1.597011 1.973599-1.750436C2.015442-1.917808 2.092154-2.217684 2.399004-2.566376C2.538481-2.726775 2.740722-2.880199 3.047572-2.880199C3.124284-2.880199 3.361395-2.873225 3.521793-2.761644C3.375342-2.691905 3.312578-2.566376 3.312578-2.447821C3.312578-2.252553 3.466002-2.21071 3.556663-2.21071C3.689166-2.21071 3.905355-2.308344 3.905355-2.594271C3.905355-2.949938 3.472976-3.075467 3.061519-3.075467C2.873225-3.075467 2.496638-3.061519 2.099128-2.601245C1.987547-2.984807 1.624907-3.075467 1.429639-3.075467C1.129763-3.075467 .976339-2.880199 .871731-2.705853C.72528-2.475716 .613699-2.050311 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.885679-1.917808 .892653-1.924782 .941469-2.12005C1.060025-2.601245 1.192528-2.880199 1.408717-2.880199S1.624907-2.629141 1.624907-2.545455C1.624907-2.412951 1.534247-2.057285 1.478456-1.8132L1.283188-1.060025C1.262267-.955417 1.192528-.690411 1.164633-.585803C1.129763-.432379 1.066999-.188294 1.066999-.139477C1.066999 .013948 1.17858 .069738 1.283188 .069738C1.436613 .069738 1.527273-.041843 1.555168-.097634C1.57609-.146451 1.638854-.397509 1.673724-.54396L1.862017-1.297136Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-115" d="M2.991781-2.594271C2.956912-2.580324 2.775592-2.48269 2.775592-2.30137C2.775592-2.21071 2.824408-2.092154 2.998755-2.092154C3.082441-2.092154 3.305604-2.133998 3.305604-2.468742C3.305604-2.915068 2.831382-3.075467 2.426899-3.075467C1.429639-3.075467 1.199502-2.322291 1.199502-2.050311C1.199502-1.48543 1.750436-1.380822 2.008468-1.332005C2.336239-1.26924 2.726775-1.199502 2.726775-.843836C2.726775-.655542 2.552428-.125529 1.715567-.125529C1.499377-.125529 1.094894-.167372 .948443-.467248C1.192528-.530012 1.234371-.732254 1.234371-.808966C1.234371-.941469 1.136737-1.039103 .990286-1.039103C.801993-1.039103 .627646-.899626 .627646-.606725C.627646-.188294 1.060025 .069738 1.701619 .069738C2.894147 .069738 3.166127-.774097 3.166127-1.08792C3.166127-1.297136 3.075467-1.492403 2.908095-1.638854C2.705853-1.806227 2.531507-1.841096 2.154919-1.910834C1.945704-1.952677 1.638854-2.008468 1.638854-2.294396C1.638854-2.419925 1.75741-2.880199 2.419925-2.880199C2.580324-2.880199 2.880199-2.84533 2.991781-2.594271Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-116" d="M2.022416-2.75467H2.712827C2.838356-2.75467 2.922042-2.75467 2.922042-2.908095C2.922042-3.005729 2.838356-3.005729 2.726775-3.005729H2.085181L2.336239-4.009963C2.364134-4.107597 2.364134-4.121544 2.364134-4.14944C2.364134-4.274969 2.266501-4.358655 2.140971-4.358655C1.903861-4.358655 1.84807-4.128518 1.834122-4.065753L1.569116-3.005729H.878705C.753176-3.005729 .669489-3.005729 .669489-2.852304C.669489-2.75467 .753176-2.75467 .864757-2.75467H1.506351L1.025156-.822914C.990286-.683437 .990286-.63462 .990286-.585803C.990286-.153425 1.332005 .069738 1.694645 .069738C2.447821 .069738 2.894147-.892653 2.894147-1.004234C2.894147-1.08792 2.803487-1.08792 2.75467-1.08792C2.643088-1.08792 2.636115-1.073973 2.594271-.976339C2.266501-.237111 1.903861-.125529 1.715567-.125529C1.478456-.125529 1.478456-.383562 1.478456-.4533C1.478456-.571856 1.513325-.718306 1.520299-.739228L2.022416-2.75467Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-117" d="M4.051806-2.712827C4.065753-2.775592 4.072727-2.782565 4.072727-2.796513C4.072727-2.901121 3.996015-3.005729 3.849564-3.005729C3.626401-3.005729 3.556663-2.803487 3.535741-2.705853L3.082441-.878705C3.033624-.676463 2.705853-.125529 2.217684-.125529C1.896887-.125529 1.75741-.36264 1.75741-.690411C1.75741-1.08792 1.980573-1.66675 2.168867-2.147945C2.217684-2.280448 2.245579-2.357161 2.245579-2.489664C2.245579-2.838356 1.966625-3.075467 1.624907-3.075467C.934496-3.075467 .613699-2.127024 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.843836-1.917808 .885679-1.917808 .9066-2.008468C1.12279-2.768618 1.436613-2.880199 1.603985-2.880199C1.72254-2.880199 1.778331-2.803487 1.778331-2.650062C1.778331-2.489664 1.729514-2.378082 1.603985-2.043337C1.352927-1.387796 1.26924-1.066999 1.26924-.795019C1.26924-.097634 1.799253 .069738 2.189788 .069738C2.622167 .069738 2.866252-.167372 3.068493-.369614C3.180075-.027895 3.514819 .069738 3.724035 .069738C3.940224 .069738 4.121544-.034869 4.274969-.285928C4.442341-.557908 4.539975-.976339 4.539975-.99726C4.539975-1.08792 4.449315-1.08792 4.393524-1.08792C4.267995-1.08792 4.261021-1.073973 4.219178-.899626C4.121544-.536986 4.002989-.125529 3.744956-.125529C3.549689-.125529 3.521793-.334745 3.521793-.4533S3.521793-.585803 3.563636-.746202L4.051806-2.712827Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-118" d="M3.891407-2.538481C3.891407-3.061519 3.612453-3.082441 3.563636-3.082441C3.382316-3.082441 3.200996-2.901121 3.200996-2.726775C3.200996-2.629141 3.256787-2.580324 3.291656-2.538481C3.431133-2.399004 3.493898-2.217684 3.493898-2.015442C3.493898-1.736488 3.110336-.125529 2.30137-.125529C2.036364-.125529 1.764384-.251059 1.764384-.732254C1.764384-1.115816 1.987547-1.687671 2.182814-2.182814C2.245579-2.357161 2.245579-2.426899 2.245579-2.489664C2.245579-2.838356 1.966625-3.075467 1.624907-3.075467C.934496-3.075467 .613699-2.127024 .613699-2.008468C.613699-1.917808 .704359-1.917808 .760149-1.917808C.843836-1.917808 .885679-1.917808 .9066-2.008468C1.12279-2.768618 1.436613-2.880199 1.603985-2.880199C1.72254-2.880199 1.778331-2.803487 1.778331-2.650062C1.778331-2.489664 1.729514-2.378082 1.603985-2.043337C1.276214-1.192528 1.276214-.983313 1.276214-.822914C1.276214-.083686 1.868991 .069738 2.280448 .069738C3.445081 .069738 3.891407-2.036364 3.891407-2.538481Z"></path>
+<path id="tz_tres_estagios_atribuicao_g0-124" d="M8.145455-1.75741C8.250062-1.75741 8.340722-1.75741 8.340722-1.855044S8.250062-1.952677 8.145455-1.952677H1.17858C1.073973-1.952677 .983313-1.952677 .983313-1.855044S1.073973-1.75741 1.17858-1.75741H8.145455Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-24" d="M3.174097 .107597H2.125031V.546949C2.492653 .546949 3.003736 .609714 3.003736 .995268C3.003736 1.452553 1.95467 1.452553 1.596015 1.452553H1.23736V1.811208H1.766376C4.052802 1.811208 4.052802 1.219427 4.052802 .986301C4.052802 .52005 3.676214 .331756 3.174097 .242092V.107597Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-67" d="M7.065504-5.998506C7.065504-6.1599 7.065504-6.258531 6.886177-6.258531C6.796513-6.258531 6.77858-6.240598 6.697883-6.168867L6.106102-5.648817C5.595019-6.06127 4.940473-6.258531 4.285928-6.258531C1.972603-6.258531 .591781-4.895641 .591781-3.075467C.591781-1.300125 1.918804 .107597 4.294894 .107597C5.980573 .107597 7.065504-.968369 7.065504-2.044334C7.065504-2.241594 6.975841-2.241594 6.832379-2.241594C6.733748-2.241594 6.617186-2.241594 6.608219-2.098132C6.536488-.798007 5.34396-.331756 4.492154-.331756C4.00797-.331756 3.138232-.430386 2.537484-1.093898C2.062267-1.63188 1.999502-2.465753 1.999502-3.075467C1.999502-4.151432 2.214695-4.689415 2.582316-5.101868C3.003736-5.577086 3.730012-5.819178 4.474222-5.819178C5.263263-5.819178 6.303362-5.34396 6.536488-3.918306C6.554421-3.801743 6.662017-3.801743 6.796513-3.801743C7.038605-3.801743 7.065504-3.819676 7.065504-4.061768V-5.998506Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-97" d="M4.339726-2.67198C4.339726-3.461021 3.694147-4.061768 2.313325-4.061768C1.802242-4.061768 .654545-4.043836 .654545-3.218929C.654545-2.815442 .959402-2.627148 1.23736-2.627148C1.542217-2.627148 1.820174-2.842341 1.820174-3.209963C1.820174-3.469988 1.667746-3.622416 1.640847-3.649315C1.730511-3.667248 1.945704-3.703113 2.27746-3.703113C2.923039-3.703113 3.29066-3.380324 3.29066-2.67198V-2.385056C1.802242-2.385056 .29589-1.999502 .29589-1.004234C.29589-.116563 1.416687 .053798 2.062267 .053798C2.743711 .053798 3.209963-.242092 3.452055-.663512C3.452055-.430386 3.452055 0 4.411457 0H4.850809C5.021171 0 5.1467 0 5.1467-.224159C5.1467-.439352 5.003238-.439352 4.913574-.439352C4.339726-.448319 4.339726-.537983 4.339726-.753176V-2.67198ZM3.29066-1.246326C3.29066-.304857 2.25056-.304857 2.214695-.304857C1.75741-.304857 1.380822-.600747 1.380822-1.004234C1.380822-1.300125 1.542217-1.999502 3.29066-2.080199V-1.246326Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-99" d="M4.411457-1.0401C4.411457-1.183562 4.276961-1.183562 4.178331-1.183562C3.999004-1.183562 3.999004-1.174595 3.927273-1.0132C3.747945-.582814 3.344458-.331756 2.815442-.331756C1.542217-.331756 1.542217-1.622914 1.542217-2.026401C1.542217-2.564384 1.551183-3.676214 2.725778-3.676214C2.788543-3.676214 3.272727-3.667248 3.272727-3.622416C3.272727-3.61345 3.254795-3.58655 3.245828-3.577584C3.165131-3.478954 3.129265-3.335492 3.129265-3.209963C3.129265-2.842341 3.407223-2.627148 3.71208-2.627148C3.990037-2.627148 4.294894-2.815442 4.294894-3.218929C4.294894-4.061768 3.039601-4.061768 2.689913-4.061768C.968369-4.061768 .349689-2.96787 .349689-1.990535C.349689-.860772 1.156663 .053798 2.645081 .053798C2.976837 .053798 3.416189 0 3.792777-.233126C4.303861-.546949 4.411457-1.0132 4.411457-1.0401Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-101" d="M4.267995-1.927771C4.456289-1.927771 4.563885-1.927771 4.563885-2.178829C4.563885-2.37609 4.545953-3.165131 3.963138-3.649315C3.559651-3.981071 3.021669-4.061768 2.582316-4.061768C1.049066-4.061768 .29589-3.0934 .29589-2.017435C.29589-.842839 1.183562 .053798 2.707846 .053798C4.187298 .053798 4.563885-.896638 4.563885-1.0401C4.563885-1.219427 4.384558-1.219427 4.33076-1.219427C4.169365-1.219427 4.151432-1.165629 4.097634-1.0401C3.891407-.573848 3.344458-.331756 2.779577-.331756C1.506351-.331756 1.488418-1.488418 1.488418-1.927771H4.267995ZM1.488418-2.25056C1.506351-2.663014 1.551183-3.703113 2.582316-3.703113C3.631382-3.703113 3.667248-2.609215 3.685181-2.25056H1.488418Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-103" d="M1.936737-.762142C1.649813-.762142 1.524284-.762142 1.371856-.878705C1.23736-.995268 1.165629-1.147696 1.165629-1.327024S1.228394-1.596015 1.23736-1.604981C1.569116-1.43462 1.963636-1.371856 2.358157-1.371856C3.730012-1.371856 4.196264-2.116065 4.196264-2.698879C4.196264-3.066501 4.025903-3.362391 3.837609-3.550685C4.079701-3.676214 4.259029-3.694147 4.375592-3.71208C4.366625-3.676214 4.348692-3.622416 4.348692-3.532752C4.348692-3.29066 4.536986-3.129265 4.752179-3.129265C4.94944-3.129265 5.155666-3.272727 5.155666-3.541719C5.155666-3.774844 4.976339-4.088667 4.563885-4.088667C4.124533-4.088667 3.747945-3.873474 3.577584-3.747945C3.200996-3.972105 2.788543-4.034869 2.358157-4.034869C.986301-4.034869 .52005-3.29066 .52005-2.707846C.52005-2.214695 .824907-1.891905 .986301-1.75741C.798007-1.551183 .690411-1.246326 .690411-.977335C.690411-.591781 .878705-.286924 1.066999-.116563C.385554 .071731 .29589 .457285 .29589 .654545C.29589 1.192528 .91457 1.802242 2.645081 1.802242C4.214197 1.802242 5.003238 1.309091 5.003238 .627646C5.003238 .313823 4.886675-.242092 4.267995-.529016C3.747945-.762142 3.272727-.762142 2.385056-.762142H1.936737ZM2.358157-1.730511C1.551183-1.730511 1.551183-2.304359 1.551183-2.698879C1.551183-3.102366 1.551183-3.676214 2.358157-3.676214S3.165131-3.102366 3.165131-2.707846C3.165131-2.304359 3.165131-1.730511 2.358157-1.730511ZM2.887173 .125529C3.165131 .125529 4.20523 .125529 4.20523 .663512C4.20523 .950436 3.873474 1.443587 2.654047 1.443587C1.470486 1.443587 1.093898 .995268 1.093898 .645579C1.093898 .125529 1.667746 .125529 1.802242 .125529H2.887173Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-105" d="M2.15193-5.523288C2.15193-5.989539 1.775342-6.231631 1.452553-6.231631C1.0401-6.231631 .744209-5.881943 .744209-5.532254C.744209-5.155666 1.049066-4.82391 1.452553-4.82391C1.793275-4.82391 2.15193-5.092902 2.15193-5.523288ZM.493151-3.963138V-3.523786C1.0132-3.523786 1.075965-3.523786 1.075965-3.174097V-.439352H.466252V0C1.066999-.017933 1.183562-.026899 1.560149-.026899C1.999502-.026899 2.116065-.017933 2.618182 0V-.439352H2.071233V-4.034869L.493151-3.963138Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-111" d="M5.003238-1.95467C5.003238-3.129265 4.178331-4.061768 2.654047-4.061768C1.075965-4.061768 .29589-3.084433 .29589-1.95467C.29589-.842839 1.102864 .053798 2.645081 .053798C4.250062 .053798 5.003238-.887671 5.003238-1.95467ZM2.654047-.331756C1.488418-.331756 1.488418-1.273225 1.488418-2.0533C1.488418-2.806476 1.488418-3.703113 2.645081-3.703113C3.81071-3.703113 3.81071-2.806476 3.81071-2.0533C3.81071-1.282192 3.81071-.331756 2.654047-.331756Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-114" d="M1.972603-1.95467C1.972603-2.609215 2.214695-3.649315 3.084433-3.676214C2.985803-3.577584 2.940971-3.425156 2.940971-3.281694C2.940971-2.887173 3.254795-2.707846 3.505853-2.707846C3.792777-2.707846 4.079701-2.905106 4.079701-3.281694C4.079701-3.738979 3.61345-4.034869 3.084433-4.034869C2.456787-4.034869 2.071233-3.577584 1.873973-3.057534H1.865006V-4.034869L.367621-3.963138V-3.523786C.905604-3.523786 .977335-3.523786 .977335-3.174097V-.439352H.367621V0C1.031133-.026899 1.084932-.026899 1.515318-.026899C1.739477-.026899 2.259527-.026899 2.734745 0V-.439352H1.972603V-1.95467Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-116" d="M1.999502-3.541719H3.353425V-3.981071H1.999502V-5.693649H1.542217C1.53325-4.850809 1.111831-3.927273 .19726-3.900374V-3.541719H.950436V-1.102864C.950436-.080697 1.838107 .053798 2.394022 .053798C3.0934 .053798 3.523786-.448319 3.523786-1.102864V-1.578082H3.066501V-1.129763C3.066501-.493151 2.743711-.331756 2.519552-.331756C1.999502-.331756 1.999502-.869738 1.999502-1.084932V-3.541719Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-122" d="M4.133499-3.550685C4.223163-3.658281 4.23213-3.694147 4.23213-3.774844C4.23213-3.981071 4.088667-3.981071 3.927273-3.981071H.555915L.439352-2.37609H.896638C.959402-3.254795 1.183562-3.622416 2.178829-3.622416H2.932005L.394521-.448319C.304857-.331756 .29589-.304857 .29589-.215193C.29589 0 .430386 0 .600747 0H4.097634L4.267995-1.838107H3.81071C3.730012-.91457 3.559651-.385554 2.385056-.385554H1.604981L4.133499-3.550685Z"></path>
+<path id="tz_tres_estagios_atribuicao_g1-126" d="M4.151432-6.222665C3.936239-5.989539 3.694147-5.890909 3.443088-5.890909C3.245828-5.890909 3.039601-5.944707 2.689913-6.070237C2.411955-6.177833 2.196762-6.222665 2.035367-6.222665C1.649813-6.222665 1.488418-6.052304 1.129763-5.693649C1.049066-5.603985 .932503-5.478456 .887671-5.433624L1.147696-5.182565C1.362889-5.415691 1.604981-5.514321 1.85604-5.514321C2.0533-5.514321 2.259527-5.460523 2.609215-5.334994C2.887173-5.227397 3.102366-5.182565 3.263761-5.182565C3.649315-5.182565 3.81071-5.352927 4.169365-5.711582C4.250062-5.801245 4.366625-5.926775 4.411457-5.971606L4.151432-6.222665Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-24" d="M1.407721 1.604981C1.327024 1.604981 1.264259 1.604981 1.201494 1.613948V1.838107C1.578082 1.811208 1.981569 1.85604 2.501619 1.775342C3.048568 1.694645 3.398257 1.515318 3.398257 1.120797S3.057534 .537983 2.636115 .466252V.19726H1.972603V.636613C2.492653 .645579 2.734745 .869738 2.734745 1.120797C2.734745 1.596015 1.891905 1.604981 1.604981 1.604981H1.407721Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-63" d="M1.918804-1.838107C1.918804-1.775342 1.918804-1.694645 2.044334-1.694645S2.169863-1.75741 2.169863-1.918804V-2.187796C2.169863-3.048568 2.636115-3.703113 3.308593-4.169365C3.58655-4.366625 3.828643-4.644583 3.828643-5.101868C3.828643-5.648817 3.443088-6.321295 2.080199-6.321295C1.084932-6.321295 .511083-5.720548 .511083-5.128767C.511083-4.814944 .726276-4.689415 .932503-4.689415C1.165629-4.689415 1.344956-4.859776 1.344956-5.101868C1.344956-5.24533 1.273225-5.523288 .878705-5.523288C1.183562-6.034371 1.793275-6.097136 2.062267-6.097136C3.048568-6.097136 3.057534-5.505355 3.057534-5.1467C3.057534-4.635616 2.896139-4.465255 2.743711-4.312827C1.918804-3.469988 1.918804-2.456787 1.918804-2.089166V-1.838107ZM2.528518-.484184C2.528518-.753176 2.313325-.968369 2.044334-.968369S1.560149-.753176 1.560149-.484184S1.775342 0 2.044334 0S2.528518-.215193 2.528518-.484184Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-97" d="M3.066501-.645579C3.111333-.268991 3.371357 .053798 3.756912 .053798C3.981071 .053798 4.545953-.080697 4.545953-.798007V-1.300125H4.294894V-.806974C4.294894-.708344 4.294894-.260025 3.972105-.260025S3.649315-.690411 3.649315-.833873V-2.402989C3.649315-2.914072 3.649315-3.218929 3.245828-3.58655C2.914072-3.882441 2.483686-4.016936 2.035367-4.016936C1.282192-4.016936 .654545-3.640349 .654545-3.066501C.654545-2.788543 .842839-2.636115 1.075965-2.636115C1.318057-2.636115 1.488418-2.815442 1.488418-3.048568C1.488418-3.434122 1.093898-3.478954 1.084932-3.478954C1.327024-3.71208 1.75741-3.792777 2.017435-3.792777C2.47472-3.792777 2.985803-3.452055 2.985803-2.663014V-2.367123C2.501619-2.349191 1.829141-2.304359 1.228394-2.017435C.582814-1.703611 .385554-1.23736 .385554-.878705C.385554-.143462 1.255293 .09863 1.85604 .09863C2.600249 .09863 2.940971-.394521 3.066501-.645579ZM2.985803-1.264259C2.985803-.394521 2.313325-.125529 1.918804-.125529C1.497385-.125529 1.102864-.430386 1.102864-.878705C1.102864-1.470486 1.613948-2.098132 2.985803-2.15193V-1.264259Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-99" d="M3.263761-3.523786C3.075467-3.48792 2.896139-3.362391 2.896139-3.102366C2.896139-2.86924 3.075467-2.689913 3.308593-2.689913S3.730012-2.842341 3.730012-3.120299C3.730012-3.676214 3.102366-4.016936 2.313325-4.016936C1.165629-4.016936 .304857-3.057534 .304857-1.936737C.304857-.780075 1.23736 .09863 2.295392 .09863C3.541719 .09863 3.828643-.986301 3.828643-1.066999C3.828643-1.174595 3.730012-1.174595 3.703113-1.174595C3.604483-1.174595 3.604483-1.156663 3.550685-1.004234C3.344458-.385554 2.842341-.152428 2.385056-.152428C1.811208-.152428 1.075965-.61868 1.075965-1.945704C1.075965-3.344458 1.793275-3.765878 2.331258-3.765878C2.447821-3.765878 2.932005-3.747945 3.263761-3.523786Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-100" d="M3.48792-1.075965C3.48792-.91457 3.48792-.887671 3.353425-.699377C3.075467-.29589 2.663014-.125529 2.304359-.125529C1.918804-.125529 1.560149-.340722 1.327024-.71731C1.093898-1.102864 1.075965-1.63188 1.075965-1.918804C1.075965-2.340224 1.129763-2.815442 1.362889-3.174097C1.560149-3.461021 1.927771-3.738979 2.402989-3.738979C2.779577-3.738979 3.138232-3.550685 3.380324-3.209963C3.48792-3.066501 3.48792-3.057534 3.48792-2.887173V-1.075965ZM3.514819-3.434122C3.469988-3.48792 3.066501-3.963138 2.367123-3.963138C1.264259-3.963138 .304857-3.084433 .304857-1.927771C.304857-.806974 1.201494 .09863 2.268493 .09863C2.923039 .09863 3.326526-.286924 3.48792-.475218V.09863L4.841843 0V-.277958C4.23213-.277958 4.151432-.340722 4.151432-.780075V-6.222665L2.824408-6.124035V-5.846077C3.434122-5.846077 3.514819-5.783313 3.514819-5.34396V-3.434122Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-101" d="M3.58655-2.0533C3.783811-2.0533 3.828643-2.0533 3.828643-2.241594C3.828643-3.165131 3.326526-4.016936 2.178829-4.016936C1.102864-4.016936 .260025-3.084433 .260025-1.972603C.260025-.798007 1.201494 .09863 2.295392 .09863S3.828643-.860772 3.828643-1.066999C3.828643-1.129763 3.783811-1.183562 3.703113-1.183562C3.61345-1.183562 3.58655-1.120797 3.577584-1.084932C3.272727-.170361 2.47472-.152428 2.340224-.152428C1.909838-.152428 1.542217-.394521 1.33599-.699377C1.0401-1.13873 1.031133-1.676712 1.031133-2.0533H3.58655ZM1.0401-2.268493C1.120797-3.649315 1.927771-3.792777 2.178829-3.792777C2.67198-3.792777 3.209963-3.416189 3.218929-2.268493H1.0401Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-102" d="M2.689913-3.58655V-3.864508H1.622914V-4.877709C1.622914-5.693649 2.062267-6.097136 2.447821-6.097136C2.537484-6.097136 2.627148-6.079203 2.716812-6.043337C2.627148-6.007472 2.483686-5.899875 2.483686-5.675716C2.483686-5.44259 2.654047-5.281196 2.878207-5.281196C3.120299-5.281196 3.281694-5.451557 3.281694-5.684682C3.281694-6.025405 2.940971-6.321295 2.447821-6.321295C1.748443-6.321295 1.0132-5.792279 1.0132-4.895641V-3.864508H.304857V-3.58655H1.0132V-.690411C1.0132-.277958 .91457-.277958 .32279-.277958V0C.798007-.017933 .91457-.026899 1.371856-.026899C1.730511-.026899 1.945704-.017933 2.510585 0V-.277958H2.331258C1.676712-.277958 1.649813-.376588 1.649813-.708344V-3.58655H2.689913Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-105" d="M1.649813-3.963138L.358655-3.864508V-3.58655C.932503-3.58655 1.0132-3.532752 1.0132-3.0934V-.690411C1.0132-.277958 .91457-.277958 .32279-.277958V0C.726276-.017933 .91457-.026899 1.309091-.026899C1.452553-.026899 1.829141-.026899 2.268493 0V-.277958C1.685679-.277958 1.649813-.32279 1.649813-.672478V-3.963138ZM1.676712-5.523288C1.676712-5.792279 1.461519-6.007472 1.192528-6.007472C.91457-6.007472 .708344-5.783313 .708344-5.523288S.91457-5.039103 1.192528-5.039103C1.461519-5.039103 1.676712-5.254296 1.676712-5.523288Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-108" d="M1.649813-6.222665L.32279-6.124035V-5.846077C.932503-5.846077 1.0132-5.783313 1.0132-5.34396V-.690411C1.0132-.277958 .91457-.277958 .32279-.277958V0C.744209-.017933 .91457-.026899 1.327024-.026899C1.748443-.026899 1.900872-.017933 2.340224 0V-.277958C1.748443-.277958 1.649813-.277958 1.649813-.690411V-6.222665Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-110" d="M1.667746-2.322291C1.667746-3.272727 2.340224-3.738979 2.905106-3.738979C3.434122-3.738979 3.550685-3.299626 3.550685-2.761644V-.690411C3.550685-.277958 3.452055-.277958 2.860274-.277958V0C3.281694-.017933 3.452055-.026899 3.882441-.026899S4.42939-.017933 4.904608 0V-.277958C4.447323-.277958 4.223163-.277958 4.214197-.555915V-2.27746C4.214197-3.021669 4.214197-3.281694 3.963138-3.595517C3.756912-3.846575 3.416189-3.963138 2.96787-3.963138C2.133998-3.963138 1.748443-3.344458 1.622914-3.0934H1.613948V-3.963138L.313823-3.864508V-3.58655C.923537-3.58655 1.004234-3.523786 1.004234-3.084433V-.690411C1.004234-.277958 .905604-.277958 .313823-.277958V0C.735243-.017933 .905604-.026899 1.33599-.026899S1.882939-.017933 2.358157 0V-.277958C1.766376-.277958 1.667746-.277958 1.667746-.690411V-2.322291Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-111" d="M4.339726-1.909838C4.339726-3.084433 3.407223-4.016936 2.304359-4.016936C1.165629-4.016936 .260025-3.057534 .260025-1.909838C.260025-.789041 1.192528 .09863 2.295392 .09863C3.434122 .09863 4.339726-.806974 4.339726-1.909838ZM2.304359-.152428C1.85604-.152428 1.479452-.376588 1.273225-.726276C1.0401-1.102864 1.031133-1.578082 1.031133-1.990535C1.031133-2.322291 1.031133-2.833375 1.255293-3.200996C1.524284-3.658281 1.972603-3.792777 2.295392-3.792777C2.806476-3.792777 3.174097-3.505853 3.353425-3.200996C3.559651-2.824408 3.568618-2.367123 3.568618-1.990535C3.568618-1.65878 3.568618-1.13873 3.344458-.744209C3.0934-.331756 2.680946-.152428 2.304359-.152428Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-112" d="M1.622914-3.012702C1.927771-3.532752 2.420922-3.71208 2.797509-3.71208C3.496887-3.71208 4.034869-2.905106 4.034869-1.936737C4.034869-.91457 3.425156-.125529 2.698879-.125529C2.295392-.125529 1.95467-.358655 1.739477-.672478C1.622914-.851806 1.622914-.869738 1.622914-1.0401V-3.012702ZM1.622914-.430386C1.85604-.19726 2.160897 .09863 2.752677 .09863C3.819676 .09863 4.805978-.762142 4.805978-1.936737C4.805978-3.066501 3.927273-3.963138 2.86924-3.963138C2.385056-3.963138 1.936737-3.765878 1.596015-3.398257V-3.963138L.268991-3.864508V-3.58655C.905604-3.58655 .959402-3.532752 .959402-3.147198V1.049066C.959402 1.461519 .860772 1.461519 .268991 1.461519V1.739477C.690411 1.721544 .860772 1.712578 1.291158 1.712578S1.838107 1.721544 2.313325 1.739477V1.461519C1.721544 1.461519 1.622914 1.461519 1.622914 1.049066V-.430386Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-113" d="M3.58655-3.174097C3.165131-3.882441 2.654047-3.963138 2.340224-3.963138C1.282192-3.963138 .304857-3.102366 .304857-1.927771C.304857-.789041 1.219427 .09863 2.268493 .09863C2.645081 .09863 3.102366-.035866 3.48792-.529016V1.049066C3.48792 1.461519 3.38929 1.461519 2.797509 1.461519V1.739477C3.218929 1.721544 3.38929 1.712578 3.819676 1.712578S4.366625 1.721544 4.841843 1.739477V1.461519C4.250062 1.461519 4.151432 1.461519 4.151432 1.049066V-3.963138H3.927273L3.58655-3.174097ZM3.514819-1.23736C3.514819-1.075965 3.514819-1.0401 3.380324-.798007C3.156164-.412453 2.779577-.125529 2.304359-.125529C1.640847-.125529 1.075965-.91457 1.075965-1.927771C1.075965-2.96787 1.712578-3.71208 2.402989-3.71208C3.102366-3.71208 3.514819-2.96787 3.514819-2.47472V-1.23736Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-115" d="M3.084433-3.783811C3.084433-3.936239 3.084433-4.016936 2.976837-4.016936C2.932005-4.016936 2.914072-4.016936 2.797509-3.90934C2.779577-3.891407 2.698879-3.81071 2.645081-3.765878C2.367123-3.963138 2.089166-4.016936 1.784309-4.016936C.600747-4.016936 .304857-3.362391 .304857-2.905106C.304857-2.618182 .430386-2.385056 .636613-2.187796C.941469-1.909838 1.282192-1.847073 1.739477-1.766376C2.196762-1.676712 2.349191-1.649813 2.546451-1.497385C2.636115-1.425654 2.860274-1.255293 2.860274-.91457C2.860274-.125529 1.95467-.125529 1.829141-.125529C.91457-.125529 .681445-.887671 .573848-1.371856C.546949-1.461519 .537983-1.515318 .430386-1.515318C.304857-1.515318 .304857-1.443587 .304857-1.282192V-.134496C.304857 .017933 .304857 .09863 .412453 .09863C.466252 .09863 .475218 .089664 .636613-.080697C.672478-.134496 .771108-.251059 .81594-.29589C1.192528 .071731 1.604981 .09863 1.829141 .09863C2.932005 .09863 3.317559-.546949 3.317559-1.147696C3.317559-1.551183 3.138232-1.793275 2.940971-1.999502C2.636115-2.295392 2.313325-2.358157 1.649813-2.483686C1.416687-2.528518 .762142-2.645081 .762142-3.156164C.762142-3.443088 .968369-3.819676 1.784309-3.819676C2.752677-3.819676 2.815442-3.075467 2.833375-2.851308C2.842341-2.743711 2.842341-2.689913 2.958904-2.689913C3.084433-2.689913 3.084433-2.752677 3.084433-2.923039V-3.783811Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-116" d="M2.914072-3.58655V-3.864508H1.613948V-5.514321H1.362889C1.353923-4.761146 1.0401-3.837609 .170361-3.81071V-3.58655H.950436V-1.111831C.950436-.107597 1.676712 .09863 2.15193 .09863C2.752677 .09863 3.066501-.475218 3.066501-1.111831V-1.622914H2.815442V-1.13873C2.815442-.475218 2.537484-.152428 2.214695-.152428C1.613948-.152428 1.613948-.941469 1.613948-1.102864V-3.58655H2.914072Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-117" d="M3.550685-1.497385C3.550685-.699377 3.102366-.125529 2.456787-.125529C1.712578-.125529 1.667746-.511083 1.667746-.995268V-3.963138L.313823-3.864508V-3.58655C1.004234-3.58655 1.004234-3.559651 1.004234-2.761644V-1.416687C1.004234-.833873 1.004234-.457285 1.416687-.143462C1.676712 .035866 2.044334 .09863 2.402989 .09863C2.86924 .09863 3.308593-.107597 3.568618-.645579H3.577584V.09863L4.904608 0V-.277958C4.294894-.277958 4.214197-.340722 4.214197-.780075V-3.963138L2.860274-3.864508V-3.58655C3.469988-3.58655 3.550685-3.523786 3.550685-3.084433V-1.497385Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-120" d="M2.734745-2.017435C2.67198-2.098132 2.67198-2.107098 2.67198-2.116065C2.67198-2.133998 3.371357-2.985803 3.443088-3.057534C3.721046-3.362391 4.025903-3.577584 4.572852-3.58655V-3.864508C4.312827-3.837609 4.070735-3.837609 3.81071-3.837609C3.469988-3.837609 3.308593-3.837609 2.949938-3.864508V-3.58655C3.084433-3.568618 3.200996-3.496887 3.200996-3.317559C3.200996-3.174097 3.120299-3.075467 3.075467-3.021669L2.501619-2.313325L1.802242-3.200996C1.739477-3.281694 1.721544-3.299626 1.721544-3.362391C1.721544-3.469988 1.820174-3.577584 2.026401-3.58655V-3.864508C1.685679-3.846575 1.452553-3.837609 1.049066-3.837609C1.031133-3.837609 .52005-3.837609 .170361-3.864508V-3.58655C.789041-3.58655 .806974-3.568618 1.219427-3.039601L2.142964-1.882939C1.945704-1.649813 1.470486-1.058032 1.273225-.833873C.824907-.29589 .313823-.277958 .125529-.277958V0C.385554-.026899 .627646-.026899 .887671-.026899C1.174595-.026899 1.461519-.017933 1.748443 0V-.277958C1.524284-.304857 1.497385-.457285 1.497385-.546949C1.497385-.573848 1.497385-.699377 1.63188-.860772C1.847073-1.13873 2.080199-1.407721 2.304359-1.676712L3.012702-.771108C3.183064-.573848 3.183064-.555915 3.183064-.502117C3.183064-.403487 3.0934-.286924 2.878207-.277958V0C3.254795-.017933 3.469988-.026899 3.855542-.026899C3.873474-.026899 4.384558-.026899 4.734247 0V-.277958C4.375592-.277958 4.1066-.277958 3.90934-.529016L2.734745-2.017435Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-122" d="M3.595517-3.577584C3.676214-3.676214 3.676214-3.694147 3.676214-3.730012C3.676214-3.864508 3.58655-3.864508 3.434122-3.864508H.484184L.385554-2.394022H.636613C.690411-3.308593 .851806-3.640349 1.865006-3.640349H2.86924L.340722-.304857C.260025-.206227 .260025-.188294 .260025-.143462C.260025 0 .340722 0 .502117 0H3.550685L3.703113-1.703611H3.452055C3.362391-.708344 3.245828-.251059 2.125031-.251059H1.075965L3.595517-3.577584Z"></path>
+<path id="tz_tres_estagios_atribuicao_g2-126" d="M3.667248-5.998506C3.425156-5.756413 3.218929-5.586052 2.940971-5.586052C2.743711-5.586052 2.57335-5.66675 2.295392-5.819178C2.178829-5.881943 1.972603-5.998506 1.75741-5.998506C1.425654-5.998506 1.255293-5.819178 .771108-5.290162L.932503-5.137733C1.174595-5.379826 1.380822-5.550187 1.65878-5.550187C1.85604-5.550187 2.026401-5.469489 2.304359-5.317061C2.420922-5.254296 2.627148-5.137733 2.842341-5.137733C3.174097-5.137733 3.344458-5.317061 3.828643-5.846077L3.667248-5.998506Z"></path>
+</defs>
+<g id="tz_tres_estagios_atribuicao_page1">
+<g stroke-miterlimit="10" transform="translate(-19.427574,-44.939205)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<path d="M44.36958 22.76228H-44.36958C-46.57875 22.76228-48.36958 20.97145-48.36958 18.76228V-18.76228C-48.36958-20.97145-46.57875-22.76228-44.36958-22.76228H44.36958C46.57875-22.76228 48.36958-20.97145 48.36958-18.76228V18.76228C48.36958 20.97145 46.57875 22.76228 44.36958 22.76228ZM-48.36958-22.76228"></path>
+</g>
+</g>
+</g>
+<g transform="translate(-38.59799,-7.75)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-19.427574,-44.939205)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-13.374072" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-67"></use>
+<use x="-5.711236" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="-.553562" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-116"></use>
+<use x="3.572578" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-101"></use>
+<use x="8.441083" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-103"></use>
+<use x="13.746125" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-111"></use>
+<use x="19.051167" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-114"></use>
+<use x="23.427793" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-105"></use>
+<use x="26.375041" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-122"></use>
+<use x="31.090637" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="36.248311" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-24"></use>
+<use x="36.248314" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-99"></use>
+<use x="40.890211" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-126"></use>
+<use x="40.963909" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="46.121584" y="-55.898109" href="#tz_tres_estagios_atribuicao_g1-111"></use>
+<use x="-19.427574" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="-11.748089" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-113"></use>
+<use x="-6.884416" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-117"></use>
+<use x="-1.76476" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-101"></use>
+<use x="5.406222" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="13.085707" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-112"></use>
+<use x="18.461346" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-101"></use>
+<use x="22.560534" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="26.195497" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="29.830459" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="34.43815" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="42.117635" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-102"></use>
+<use x="44.933445" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-101"></use>
+<use x="49.032634" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-122"></use>
+<use x="53.128359" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-63"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<g stroke-width="0.8">
+<g stroke="#2780e3">
+<g fill="#eef5fd">
+<path d="M178.09738 22.76228H89.35822C87.14905 22.76228 85.35822 20.97145 85.35822 18.76228V-18.76228C85.35822-20.97145 87.14905-22.76228 89.35822-22.76228H178.09738C180.30655-22.76228 182.09738-20.97145 182.09738-18.76228V18.76228C182.09738 20.97145 180.30655 22.76228 178.09738 22.76228ZM85.35822-22.76228"></path>
+</g>
+</g>
+</g>
+<g transform="translate(99.37927,-14.125)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-19.427574,-44.939205)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-19.427574" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-67"></use>
+<use x="-11.764738" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="-6.607064" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-114"></use>
+<use x="-2.230439" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="2.927235" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-99"></use>
+<use x="7.642831" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-116"></use>
+<use x="11.768972" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-101"></use>
+<use x="16.637477" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-114"></use>
+<use x="21.014102" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-105"></use>
+<use x="23.961351" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-122"></use>
+<use x="28.676946" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="33.83462" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-24"></use>
+<use x="33.834623" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-99"></use>
+<use x="38.476521" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-126"></use>
+<use x="38.550219" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="43.707893" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-111"></use>
+<use x="-14.186349" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-113"></use>
+<use x="-9.322675" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-117"></use>
+<use x="-4.203019" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-101"></use>
+<use x="2.967963" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-100"></use>
+<use x="8.087619" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="10.647447" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="14.28241" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-112"></use>
+<use x="19.658049" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="24.26574" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="27.900702" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="30.460531" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-24"></use>
+<use x="30.460531" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-99"></use>
+<use x="34.556256" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-126"></use>
+<use x="34.556256" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="39.163946" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="-8.169027" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="-5.609199" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="-1.974236" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="1.660726" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="9.340211" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="11.900039" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-110"></use>
+<use x="17.019695" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-100"></use>
+<use x="22.139351" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="24.69918" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-99"></use>
+<use x="28.794905" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="33.402595" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-63"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#fcf0f0">
+<g stroke-width="0.8">
+<g stroke="#d7433b">
+<g fill="#fcf0f0">
+<path d="M311.8252 22.76228H223.08603C220.87686 22.76228 219.08603 20.97145 219.08603 18.76228V-18.76228C219.08603-20.97145 220.87686-22.76228 223.08603-22.76228H311.8252C314.03436-22.76228 315.8252-20.97145 315.8252-18.76228V18.76228C315.8252 20.97145 314.03436 22.76228 311.8252 22.76228ZM219.08603-22.76228"></path>
+</g>
+</g>
+</g>
+<g transform="translate(246.49335,-13.25)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-19.427574,-44.939205)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-19.427574" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-67"></use>
+<use x="-11.764738" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-111"></use>
+<use x="-6.459696" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-114"></use>
+<use x="-2.083071" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-114"></use>
+<use x="2.293555" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-101"></use>
+<use x="7.162059" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-24"></use>
+<use x="7.162062" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-99"></use>
+<use x="11.80396" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-126"></use>
+<use x="11.877658" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-97"></use>
+<use x="17.035332" y="-66.857013" href="#tz_tres_estagios_atribuicao_g1-111"></use>
+<use x="-18.791866" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="-11.112381" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-115"></use>
+<use x="-7.477419" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="-4.91759" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-116"></use>
+<use x="-1.333831" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-117"></use>
+<use x="3.785825" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="8.393516" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-24"></use>
+<use x="8.393516" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-99"></use>
+<use x="12.489241" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-126"></use>
+<use x="12.489241" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="17.096932" y="-55.898109" href="#tz_tres_estagios_atribuicao_g2-111"></use>
+<use x="-14.672259" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-101"></use>
+<use x="-10.573071" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-120"></use>
+<use x="-5.709397" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-112"></use>
+<use x="-.589741" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-108"></use>
+<use x="1.970087" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-105"></use>
+<use x="4.529915" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-99"></use>
+<use x="8.62564" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-97"></use>
+<use x="13.233331" y="-44.939205" href="#tz_tres_estagios_atribuicao_g2-63"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M48.76958 0H80.8325" fill="none"></path>
+<g transform="translate(78.35822,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<g fill="#6c757d" stroke="#6c757d">
+<path d="M182.49738 0H214.56032" fill="none"></path>
+<g transform="translate(212.08603,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="translate(33.33467,-44.42911)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-19.427574,-44.939205)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-19.427574" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="-15.221075" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-117"></use>
+<use x="-10.809779" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-116"></use>
+<use x="-8.03681" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="-3.830311" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-109"></use>
+<use x="2.833677" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-19"></use>
+<use x="2.83369" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="7.040189" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-116"></use>
+<use x="9.813158" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-105"></use>
+<use x="12.38133" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-99"></use>
+<use x="15.768665" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="19.975164" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-44"></use>
+<use x="25.521076" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-98"></use>
+<use x="28.908412" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="33.11491" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-114"></use>
+<use x="36.195066" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="40.401564" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-116"></use>
+<use x="43.174534" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(223.3622,-59.81003)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-19.427574,-44.939205)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-9.931188" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-99"></use>
+<use x="-6.543852" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="-2.337354" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-110"></use>
+<use x="2.278726" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-116"></use>
+<use x="5.051696" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-114"></use>
+<use x="8.131851" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="12.33835" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-108"></use>
+<use x="14.49694" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="18.703439" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-100"></use>
+<use x="22.909937" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="27.116436" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-44"></use>
+<use x="32.662348" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-99"></use>
+<use x="36.049683" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="40.256182" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-114"></use>
+<use x="43.336338" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="50.520576" y="-52.909317" href="#tz_tres_estagios_atribuicao_g0-124"></use>
+<use x="-19.427574" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-102"></use>
+<use x="-16.859382" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="-12.652883" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-108"></use>
+<use x="-10.494293" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-104"></use>
+<use x="-6.287794" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x=".896444" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-115"></use>
+<use x="4.28378" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="8.490278" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-98"></use>
+<use x="15.264935" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-99"></use>
+<use x="18.652271" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="22.858769" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-114"></use>
+<use x="25.938925" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-103"></use>
+<use x="29.735842" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+<use x="36.920081" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-99"></use>
+<use x="40.307416" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-111"></use>
+<use x="44.104333" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-103"></use>
+<use x="47.90125" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-110"></use>
+<use x="52.51733" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-105"></use>
+<use x="55.085502" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-116"></use>
+<use x="57.858471" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-105"></use>
+<use x="60.426643" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-118"></use>
+<use x="64.22356" y="-44.939205" href="#tz_tres_estagios_atribuicao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tres-estagios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;70.1: O modelo em três estágios da atribuição disposicional <span class="citation" data-cites="gilbert1988">(<a href="../../referencias.html#ref-gilbert1988" role="doc-biblioref">Gilbert; Pelham; Krull, 1988</a>)</span>. A correção situacional é o passo mais frágil: exige recursos que o observador nem sempre tem, e sua ausência produz o erro fundamental de atribuição.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="o-erro-fundamental-de-atribuição" class="level2">
+<h2 class="anchored" data-anchor-id="o-erro-fundamental-de-atribuição">O erro fundamental de atribuição</h2>
+<p>Batizado por Lee Ross, o <strong>erro fundamental de atribuição</strong> (também chamado de <strong>viés de correspondência</strong>) é a tendência a superestimar fatores disposicionais e subestimar fatores situacionais ao explicar o comportamento <em>dos outros</em> <span class="citation" data-cites="ross1977">(<a href="../../referencias.html#ref-ross1977" role="doc-biblioref">Ross, 1977</a>)</span>. Vemos a pessoa que tropeça como desastrada, não como alguém que pisou num piso escorregadio; o colega que se atrasa como irresponsável, não como vítima de um engarrafamento. A demonstração experimental mais influente é elegante e perturbadora.</p>
+<div class="experimento">
+<p>🔬 <strong>Experimento Clássico — o discurso atribuído.</strong> Jones e Harris pediram a estudantes que lessem um ensaio a favor ou contra o regime de Fidel Castro, supostamente escrito por outro estudante, e que estimassem a verdadeira atitude do autor <span class="citation" data-cites="jones_harris1967">(<a href="../../referencias.html#ref-jones_harris1967" role="doc-biblioref">Jones; Harris, 1967</a>)</span>. Num grupo, disseram que o autor <strong>escolhera livremente</strong> a posição; noutro, que ela lhe fora <strong>designada</strong> por sorteio, sem liberdade de escolha. <strong>Resultado:</strong> mesmo na condição designada — em que a posição do ensaio nada dizia sobre a crença real do autor —, os participantes inferiram que quem escrevera a favor de Castro era mais pró-Castro. <strong>Interpretação:</strong> os observadores não conseguiram descontar a restrição situacional óbvia (o sorteio) e leram a conduta como reflexo de uma disposição interna. <strong>Limitações:</strong> o efeito varia com a saliência da restrição e é mais fraco quando a coação é muito evidente; a magnitude também depende da cultura, como veremos.</p>
+</div>
+<p>Por que “fundamental”? Porque parece robusto e porque suas consequências sociais são amplas: culpar os pobres pela pobreza, os desempregados pelo desemprego, as vítimas por seu infortúnio — o chamado fenômeno da <strong>crença num mundo justo</strong> — ganha combustível de um viés que apaga a força das circunstâncias. Reconhecê-lo é, talvez, a lição mais transferível de todo este volume: <em>antes de concluir que alguém é assim, pergunte em que situação ele estava.</em></p>
+<section id="a-assimetria-atorobservador-e-sua-ressalva" class="level3">
+<h3 class="anchored" data-anchor-id="a-assimetria-atorobservador-e-sua-ressalva">A assimetria ator–observador — e sua ressalva</h3>
+<p>Curiosamente, o viés se inverte quando explicamos a nós mesmos. Jones e Nisbett descreveram a <strong>assimetria ator–observador</strong>: tendemos a atribuir o comportamento <em>alheio</em> a disposições e o <em>nosso próprio</em> a circunstâncias <span class="citation" data-cites="jones_nisbett1972">(<a href="../../referencias.html#ref-jones_nisbett1972" role="doc-biblioref">Jones; Nisbett, 1972</a>)</span>. “Ele gritou porque é estúpido; eu gritei porque estava sob pressão.” Parte da explicação é perceptual (como ator, você vê a situação à sua frente, não o próprio rosto; como observador, a pessoa é a figura saliente) e parte é informacional (você conhece a variabilidade do seu próprio comportamento ao longo do tempo, mas não a do outro).</p>
+<div class="atencao">
+<p>⚠️ <strong>A assimetria ator–observador é mais fraca do que os manuais diziam.</strong> Uma meta-análise de Malle, reunindo mais de 170 estudos, encontrou um efeito global próximo de zero: a assimetria só aparece com robustez sob condições específicas (por exemplo, para eventos negativos) e chega a se <strong>inverter</strong> em outras <span class="citation" data-cites="malle2006">(<a href="../../referencias.html#ref-malle2006" role="doc-biblioref">Malle, 2006</a>)</span>. É um bom lembrete metodológico deste manual: mesmo achados clássicos e “de senso comum” precisam sobreviver à agregação quantitativa — e nem todos sobrevivem intactos. O erro fundamental de atribuição, por outro lado, mostrou-se bem mais resistente.</p>
+</div>
+</section>
+<section id="a-cultura-molda-a-atribuição" class="level3">
+<h3 class="anchored" data-anchor-id="a-cultura-molda-a-atribuição">A cultura molda a atribuição</h3>
+<p>Seria o erro fundamental de atribuição um universal da mente humana ou um hábito cultural? A pesquisa transcultural sugere a segunda coisa, ao menos em parte. Comparando participantes estadunidenses e chineses, Morris e Peng mostraram que, ao explicar o mesmo evento (inclusive um homicídio real noticiado), os norte-americanos privilegiavam disposições do indivíduo, enquanto os chineses davam muito mais peso a fatores contextuais e relacionais <span class="citation" data-cites="morris_peng1994">(<a href="../../referencias.html#ref-morris_peng1994" role="doc-biblioref">Morris; Peng, 1994</a>)</span>. O padrão se encaixa na distinção mais ampla entre culturas <strong>individualistas</strong> e <strong>coletivistas</strong> e entre modos de pensar <strong>analítico</strong> e <strong>holístico</strong> <span class="citation" data-cites="nisbett2001 markus_kitayama1991">(<a href="../../referencias.html#ref-markus_kitayama1991" role="doc-biblioref">Markus; Kitayama, 1991</a>; <a href="../../referencias.html#ref-nisbett2001" role="doc-biblioref">Nisbett et al., 2001</a>)</span>: onde o self é concebido como independente, a pessoa salta aos olhos como causa; onde é concebido como interdependente, o campo situacional ganha destaque. O “erro” é, em boa medida, ocidental — mais uma advertência contra generalizar amostras WEIRD (Cap. 1) para a humanidade toda.</p>
+</section>
+</section>
+<section id="quando-a-expectativa-cria-o-fato" class="level2">
+<h2 class="anchored" data-anchor-id="quando-a-expectativa-cria-o-fato">Quando a expectativa cria o fato</h2>
+<p>A cognição social não apenas interpreta o mundo — às vezes o <strong>produz</strong>. Um esquema ou uma expectativa sobre alguém pode desencadear um comportamento que confirma a expectativa original, fechando um círculo. É a <strong>profecia autorrealizadora</strong> (<em>self-fulfilling prophecy</em>), e sua demonstração escolar é um clássico.</p>
+<div class="experimento">
+<p>🔬 <strong>Experimento Clássico — Pigmalião na sala de aula.</strong> Rosenthal e Jacobson aplicaram um teste a alunos do ensino fundamental e informaram aos professores que certas crianças — escolhidas <strong>ao acaso</strong> — eram “florescentes” (<em>bloomers</em>), prestes a um salto intelectual <span class="citation" data-cites="rosenthal_jacobson1968">(<a href="../../referencias.html#ref-rosenthal_jacobson1968" role="doc-biblioref">Rosenthal; Jacobson, 1968</a>)</span>. Nenhuma diferença real distinguia esses alunos dos demais. <strong>Resultado:</strong> meses depois, os alunos rotulados como promissores apresentaram ganhos de QI significativamente maiores que os colegas, sobretudo nas séries iniciais. <strong>Interpretação:</strong> a expectativa do professor alterou seu comportamento — mais atenção, tarefas mais desafiadoras, feedback mais caloroso, mais tempo de resposta —, e esse tratamento diferenciado produziu o desempenho esperado. A crença criou a realidade que “previa”. <strong>Limitações:</strong> o estudo original foi criticado por questões metodológicas e o tamanho do efeito é modesto e variável entre replicações; ainda assim, a existência de efeitos de expectativa do professor é hoje bem estabelecida por meta-análises.</p>
+</div>
+<p>O mecanismo geral é a <strong>confirmação comportamental</strong>: ao interagir com alguém que esperamos ser hostil, agimos de modo defensivo ou frio, eliciando dele a hostilidade que antecipávamos <span class="citation" data-cites="snyder1977">(<a href="../../referencias.html#ref-snyder1977" role="doc-biblioref">Snyder; Tanke; Berscheid, 1977</a>)</span>. Some-se a isso o <strong>viés de confirmação</strong> — buscamos e lembramos preferencialmente informação que confirma nossas hipóteses (Cap. 47) — e temos uma máquina de autovalidação. Essa dinâmica é o motor oculto de muitos estereótipos, que o Cap. 75 retoma: o preconceito não só distorce a percepção, mas pode moldar o comportamento do alvo até que ele pareça justificar o preconceito.</p>
+<div class="na-pratica">
+<p>💡 <strong>Descontar a situação como higiene mental.</strong> O antídoto prático para o erro fundamental de atribuição cabe numa pergunta que você pode treinar: <em>“Se eu estivesse exatamente na situação dessa pessoa — com a mesma pressão, a mesma informação, o mesmo cansaço —, eu agiria de forma tão diferente?”</em> Gestores que fazem essa pergunta antes de rotular um funcionário como “desmotivado” descobrem, com frequência, um processo mal desenhado. Professores que a fazem antes de rotular um aluno como “preguiçoso” descobrem, com frequência, fome, sono ruim ou uma casa caótica. Isso não dilui responsabilidade — apenas impede que a explicação disposicional, barata e automática, encerre a investigação cedo demais.</p>
+</div>
+</section>
+<section id="os-limites-de-ler-pessoas" class="level2">
+<h2 class="anchored" data-anchor-id="os-limites-de-ler-pessoas">Os limites de “ler” pessoas</h2>
+<p>A cultura popular vende a ideia de que basta observar micro-expressões, postura e “linguagem corporal” para decifrar o caráter e as intenções alheias. A evidência recomenda humildade. A acurácia da percepção de pessoas a partir de fatias finas de comportamento existe, mas é modesta e muito dependente do traço e do contexto <span class="citation" data-cites="ambady1992">(<a href="../../referencias.html#ref-ambady1992" role="doc-biblioref">Ambady; Rosenthal, 1992</a>)</span>; a detecção de mentira por leigos — e mesmo por profissionais — mal supera o acaso <span class="citation" data-cites="bond_depaulo2006">(<a href="../../referencias.html#ref-bond_depaulo2006" role="doc-biblioref">Bond; DePaulo, 2006</a>)</span>; e a maior parte dos cursos comerciais de “leitura corporal” incorre no efeito Barnum e na ilusão de que a intuição treinada é confiável (Cap. 69). Some-se a isso o <strong>efeito de halo</strong> — a tendência a deixar uma impressão global positiva (beleza, simpatia) contaminar avaliações de traços não relacionados (inteligência, honestidade) <span class="citation" data-cites="nisbett_wilson1977">(<a href="../../referencias.html#ref-nisbett_wilson1977" role="doc-biblioref">Nisbett; Wilson, 1977</a>)</span> — e fica claro por que a impressão de que “sabemos ler as pessoas” é, ela própria, um produto da cognição social enviesada que este capítulo descreveu.</p>
+<div class="callout-sintese">
+<ul>
+<li>A <strong>psicologia social</strong> estuda como a presença dos outros molda pensamento, sentimento e ação; a <strong>cognição social</strong> é a porta de entrada: como percebemos e explicamos o mundo social.</li>
+<li>A mente social é um <strong>avaro cognitivo</strong>: usa esquemas, heurísticas e processamento em duas velocidades para economizar esforço — o que a torna eficiente e sistematicamente enviesada <span class="citation" data-cites="fiske_taylor1991 kahneman2011">(<a href="../../referencias.html#ref-fiske_taylor1991" role="doc-biblioref">Fiske; Taylor, 1991</a>; <a href="../../referencias.html#ref-kahneman2011" role="doc-biblioref">Kahneman, 2011</a>)</span>.</li>
+<li>A <strong>atribuição</strong> classifica causas em <strong>internas</strong> (disposição) e <strong>externas</strong> (situação). O modelo de <strong>covariação</strong> de Kelley usa consenso, distintividade e consistência <span class="citation" data-cites="kelley1967">(<a href="../../referencias.html#ref-kelley1967" role="doc-biblioref">Kelley, 1967</a>)</span>; a <strong>inferência correspondente</strong> infere disposições de atos únicos <span class="citation" data-cites="jones_davis1965">(<a href="../../referencias.html#ref-jones_davis1965" role="doc-biblioref">Jones; Davis, 1965</a>)</span>, num processo de três estágios em que a correção situacional é o passo frágil <span class="citation" data-cites="gilbert1988">(<a href="../../referencias.html#ref-gilbert1988" role="doc-biblioref">Gilbert; Pelham; Krull, 1988</a>)</span>.</li>
+<li>O <strong>erro fundamental de atribuição</strong> superestima disposições e subestima situações ao explicar os outros <span class="citation" data-cites="ross1977 jones_harris1967">(<a href="../../referencias.html#ref-jones_harris1967" role="doc-biblioref">Jones; Harris, 1967</a>; <a href="../../referencias.html#ref-ross1977" role="doc-biblioref">Ross, 1977</a>)</span>; a <strong>assimetria ator–observador</strong> existe, mas é fraca <span class="citation" data-cites="malle2006">(<a href="../../referencias.html#ref-malle2006" role="doc-biblioref">Malle, 2006</a>)</span>; e todo o viés é modulado pela <strong>cultura</strong> (mais forte no Ocidente individualista) <span class="citation" data-cites="morris_peng1994">(<a href="../../referencias.html#ref-morris_peng1994" role="doc-biblioref">Morris; Peng, 1994</a>)</span>.</li>
+<li>Expectativas podem <strong>criar</strong> a realidade que preveem: a <strong>profecia autorrealizadora</strong> e a confirmação comportamental fecham o círculo entre crença e fato <span class="citation" data-cites="rosenthal_jacobson1968 snyder1977">(<a href="../../referencias.html#ref-rosenthal_jacobson1968" role="doc-biblioref">Rosenthal; Jacobson, 1968</a>; <a href="../../referencias.html#ref-snyder1977" role="doc-biblioref">Snyder; Tanke; Berscheid, 1977</a>)</span>.</li>
+<li>“Ler pessoas” com precisão é muito mais difícil do que a cultura popular sugere: acurácia modesta, detecção de mentira próxima do acaso e efeito de halo à espreita.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Psicologia social</strong></dt>
+<dd>
+Estudo científico de como pensamentos, sentimentos e comportamentos são influenciados pela presença real, imaginada ou implícita de outras pessoas <span class="citation" data-cites="allport1954">(<a href="../../referencias.html#ref-allport1954" role="doc-biblioref">Allport, 1954</a>)</span>.
+</dd>
+<dt><strong>Avaro cognitivo</strong></dt>
+<dd>
+Metáfora segundo a qual a mente economiza esforço de processamento, recorrendo a atalhos “bons o bastante” <span class="citation" data-cites="fiske_taylor1991">(<a href="../../referencias.html#ref-fiske_taylor1991" role="doc-biblioref">Fiske; Taylor, 1991</a>)</span>.
+</dd>
+<dt><strong>Esquema</strong></dt>
+<dd>
+Estrutura de conhecimento que organiza informação sobre um tipo de pessoa, papel ou situação, guiando atenção, memória e inferência.
+</dd>
+<dt><strong>Atribuição</strong></dt>
+<dd>
+Processo de inferir a causa de um comportamento, classificando-a como interna (disposicional) ou externa (situacional) <span class="citation" data-cites="heider1958">(<a href="../../referencias.html#ref-heider1958" role="doc-biblioref">Heider, 1958</a>)</span>.
+</dd>
+<dt><strong>Modelo de covariação</strong></dt>
+<dd>
+Proposta de Kelley segundo a qual atribuímos um efeito à causa com que ele covaria, usando consenso, distintividade e consistência <span class="citation" data-cites="kelley1967">(<a href="../../referencias.html#ref-kelley1967" role="doc-biblioref">Kelley, 1967</a>)</span>.
+</dd>
+<dt><strong>Erro fundamental de atribuição (viés de correspondência)</strong></dt>
+<dd>
+Tendência a superestimar causas disposicionais e subestimar causas situacionais ao explicar o comportamento alheio <span class="citation" data-cites="ross1977">(<a href="../../referencias.html#ref-ross1977" role="doc-biblioref">Ross, 1977</a>)</span>.
+</dd>
+<dt><strong>Assimetria ator–observador</strong></dt>
+<dd>
+Tendência a explicar a própria conduta por fatores situacionais e a alheia por disposições; efeito real, porém fraco <span class="citation" data-cites="jones_nisbett1972 malle2006">(<a href="../../referencias.html#ref-jones_nisbett1972" role="doc-biblioref">Jones; Nisbett, 1972</a>; <a href="../../referencias.html#ref-malle2006" role="doc-biblioref">Malle, 2006</a>)</span>.
+</dd>
+<dt><strong>Profecia autorrealizadora</strong></dt>
+<dd>
+Expectativa que, ao alterar o comportamento de quem a sustenta, produz a confirmação de si mesma <span class="citation" data-cites="rosenthal_jacobson1968">(<a href="../../referencias.html#ref-rosenthal_jacobson1968" role="doc-biblioref">Rosenthal; Jacobson, 1968</a>)</span>.
+</dd>
+<dt><strong>Efeito de halo</strong></dt>
+<dd>
+Contaminação da avaliação de um traço por uma impressão global (positiva ou negativa) sobre a pessoa.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Defina atribuição interna e externa e explique como os três tipos de informação do modelo de Kelley (consenso, distintividade, consistência) levam a cada uma.</p></li>
+<li><p><strong>(Conceitual.)</strong> Usando o modelo de três estágios de Gilbert, explique por que uma pessoa ocupada ou distraída comete <em>mais</em> o erro fundamental de atribuição do que uma pessoa descansada e atenta.</p></li>
+<li><p><strong>(Análise.)</strong> No experimento de Jones e Harris, por que o resultado da condição “posição designada por sorteio” é a evidência decisiva do viés de correspondência? O que os participantes <em>deveriam</em> ter concluído?</p></li>
+<li><p><strong>(Aplicação.)</strong> Um professor comenta: “Consigo ver logo na primeira semana quais alunos vão longe.” Discuta esse comentário à luz da profecia autorrealizadora e do viés de confirmação. Que risco ele embute?</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> O erro fundamental de atribuição é mais forte em culturas ocidentais <span class="citation" data-cites="morris_peng1994">(<a href="../../referencias.html#ref-morris_peng1994" role="doc-biblioref">Morris; Peng, 1994</a>)</span>. O que esse achado implica para a pretensão de que os vieses da cognição social sejam “universais da mente humana”? Conecte com o problema das amostras WEIRD (Cap. 1).</p></li>
+<li><p><strong>(Integração.)</strong> Um gerente conclui que um funcionário é “desmotivado” porque tem entregado tarefas atrasadas. Aplique o descontar da situação, a assimetria ator–observador (como o próprio funcionário provavelmente se explica?) e proponha que informação de covariação resolveria a disputa entre as duas leituras.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-allport1954" class="csl-entry" role="listitem">
+ALLPORT, Gordon W. <strong>The Nature of Prejudice</strong>. Reading, MA: Addison-Wesley, 1954.
+</div>
+<div id="ref-ambady1992" class="csl-entry" role="listitem">
+AMBADY, Nalini; ROSENTHAL, Robert. Thin slices of expressive behavior as predictors of interpersonal consequences: A meta-analysis. <strong>Psychological Bulletin</strong>, v. 111, n. 2, p. 256–274, 1992.
+</div>
+<div id="ref-bond_depaulo2006" class="csl-entry" role="listitem">
+BOND, Charles F.; DEPAULO, Bella M. Accuracy of deception judgments. <strong>Personality and Social Psychology Review</strong>, v. 10, n. 3, p. 214–234, 2006.
+</div>
+<div id="ref-fiske_taylor1991" class="csl-entry" role="listitem">
+FISKE, Susan T.; TAYLOR, Shelley E. <strong>Social Cognition</strong>. 2. ed. New York: McGraw-Hill, 1991.
+</div>
+<div id="ref-gilbert1988" class="csl-entry" role="listitem">
+GILBERT, Daniel T.; PELHAM, Brett W.; KRULL, Douglas S. On cognitive busyness: When person perceivers meet persons perceived. <strong>Journal of Personality and Social Psychology</strong>, v. 54, n. 5, p. 733–740, 1988.
+</div>
+<div id="ref-heider1958" class="csl-entry" role="listitem">
+HEIDER, Fritz. <strong>The Psychology of Interpersonal Relations</strong>. New York: Wiley, 1958.
+</div>
+<div id="ref-jones_davis1965" class="csl-entry" role="listitem">
+JONES, Edward E.; DAVIS, Keith E. From acts to dispositions: The attribution process in person perception. <em>Em</em>: BERKOWITZ, Leonard (Ed.). <strong>Advances in Experimental Social Psychology</strong>. New York: Academic Press, 1965. v. 2 p. 219–266.
+</div>
+<div id="ref-jones_harris1967" class="csl-entry" role="listitem">
+JONES, Edward E.; HARRIS, Victor A. The attribution of attitudes. <strong>Journal of Experimental Social Psychology</strong>, v. 3, n. 1, p. 1–24, 1967.
+</div>
+<div id="ref-jones_nisbett1972" class="csl-entry" role="listitem">
+JONES, Edward E.; NISBETT, Richard E. The actor and the observer: Divergent perceptions of the causes of behavior. <em>Em</em>: JONES, Edward E. <em>et al.</em> (Eds.). <strong>Attribution: Perceiving the Causes of Behavior</strong>. Morristown, NJ: General Learning Press, 1972. p. 79–94.
+</div>
+<div id="ref-kahneman2011" class="csl-entry" role="listitem">
+KAHNEMAN, Daniel. <strong>Thinking, Fast and Slow</strong>. New York: Farrar, Straus; Giroux, 2011.
+</div>
+<div id="ref-kelley1967" class="csl-entry" role="listitem">
+KELLEY, Harold H. Attribution theory in social psychology. <em>Em</em>: LEVINE, David (Ed.). <strong>Nebraska Symposium on Motivation</strong>. Lincoln: University of Nebraska Press, 1967. v. 15 p. 192–238.
+</div>
+<div id="ref-lewin1951" class="csl-entry" role="listitem">
+LEWIN, Kurt. <strong>Field Theory in Social Science: Selected Theoretical Papers</strong>. New York: Harper; Row, 1951.
+</div>
+<div id="ref-malle2006" class="csl-entry" role="listitem">
+MALLE, Bertram F. The actor-observer asymmetry in attribution: A (surprising) meta-analysis. <strong>Psychological Bulletin</strong>, v. 132, n. 6, p. 895–919, 2006.
+</div>
+<div id="ref-markus_kitayama1991" class="csl-entry" role="listitem">
+MARKUS, Hazel R.; KITAYAMA, Shinobu. Culture and the self: Implications for cognition, emotion, and motivation. <strong>Psychological Review</strong>, v. 98, n. 2, p. 224–253, 1991.
+</div>
+<div id="ref-morris_peng1994" class="csl-entry" role="listitem">
+MORRIS, Michael W.; PENG, Kaiping. Culture and cause: American and Chinese attributions for social and physical events. <strong>Journal of Personality and Social Psychology</strong>, v. 67, n. 6, p. 949–971, 1994.
+</div>
+<div id="ref-nisbett2001" class="csl-entry" role="listitem">
+NISBETT, Richard E. <em>et al.</em> Culture and systems of thought: Holistic versus analytic cognition. <strong>Psychological Review</strong>, v. 108, n. 2, p. 291–310, 2001.
+</div>
+<div id="ref-nisbett_wilson1977" class="csl-entry" role="listitem">
+NISBETT, Richard E.; WILSON, Timothy D. <a href="https://doi.org/10.1037/0033-295X.84.3.231">Telling more than we can know: Verbal reports on mental processes</a>. <strong>Psychological Review</strong>, v. 84, n. 3, p. 231–259, 1977.
+</div>
+<div id="ref-rosenthal_jacobson1968" class="csl-entry" role="listitem">
+ROSENTHAL, Robert; JACOBSON, Lenore. <strong>Pygmalion in the Classroom: Teacher Expectation and Pupils’ Intellectual Development</strong>. New York: Holt, Rinehart; Winston, 1968.
+</div>
+<div id="ref-ross1977" class="csl-entry" role="listitem">
+ROSS, Lee. The intuitive psychologist and his shortcomings: Distortions in the attribution process. <em>Em</em>: BERKOWITZ, Leonard (Ed.). <strong>Advances in Experimental Social Psychology</strong>. New York: Academic Press, 1977. v. 10 p. 173–220.
+</div>
+<div id="ref-snyder1977" class="csl-entry" role="listitem">
+SNYDER, Mark; TANKE, Elizabeth D.; BERSCHEID, Ellen. Social perception and interpersonal behavior: On the self-fulfilling nature of social stereotypes. <strong>Journal of Personality and Social Psychology</strong>, v. 35, n. 9, p. 656–666, 1977.
+</div>
+<div id="ref-tversky_kahneman1974" class="csl-entry" role="listitem">
+TVERSKY, Amos; KAHNEMAN, Daniel. <a href="https://doi.org/10.1126/science.185.4157.1124">Judgment under uncertainty: Heuristics and biases</a>. <strong>Science</strong>, v. 185, n. 4157, p. 1124–1131, 1974.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1789,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

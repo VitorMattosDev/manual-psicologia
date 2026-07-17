@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#conformidade-a-pressão-silenciosa-do-grupo" id="toc-conformidade-a-pressão-silenciosa-do-grupo" class="nav-link active" data-scroll-target="#conformidade-a-pressão-silenciosa-do-grupo">Conformidade: a pressão silenciosa do grupo</a>
+  <ul class="collapse">
+  <li><a href="#sherif-e-a-formação-de-normas" id="toc-sherif-e-a-formação-de-normas" class="nav-link" data-scroll-target="#sherif-e-a-formação-de-normas">Sherif e a formação de normas</a></li>
+  <li><a href="#asch-e-o-poder-do-óbvio" id="toc-asch-e-o-poder-do-óbvio" class="nav-link" data-scroll-target="#asch-e-o-poder-do-óbvio">Asch e o poder do óbvio</a></li>
+  </ul></li>
+  <li><a href="#obediência-os-experimentos-de-milgram" id="toc-obediência-os-experimentos-de-milgram" class="nav-link" data-scroll-target="#obediência-os-experimentos-de-milgram">Obediência: os experimentos de Milgram</a></li>
+  <li><a href="#o-estudo-da-prisão-de-stanford-um-clássico-reexaminado" id="toc-o-estudo-da-prisão-de-stanford-um-clássico-reexaminado" class="nav-link" data-scroll-target="#o-estudo-da-prisão-de-stanford-um-clássico-reexaminado">O Estudo da Prisão de Stanford: um clássico reexaminado</a></li>
+  <li><a href="#a-influência-da-minoria" id="toc-a-influência-da-minoria" class="nav-link" data-scroll-target="#a-influência-da-minoria">A influência da minoria</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +748,208 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Distinguir</strong> conformidade, complacência e obediência como formas de influência social crescente.</li>
+<li><strong>Explicar</strong> os experimentos de Sherif e Asch e diferenciar a influência <strong>informacional</strong> da <strong>normativa</strong>.</li>
+<li><strong>Descrever</strong> o experimento de obediência de Milgram, seus fatores moduladores e o estado atual da evidência.</li>
+<li><strong>Reavaliar</strong> o Estudo da Prisão de Stanford à luz das críticas contemporâneas.</li>
+<li><strong>Analisar</strong> a influência da minoria e por que ela produz mudança mais profunda que a da maioria.</li>
+<li><strong>Aplicar</strong> o conhecimento sobre influência social para reconhecer pressões de grupo e preservar a autonomia moral.</li>
+</ul>
 </div>
+<p>Este é, talvez, o capítulo mais perturbador do volume. Ele mostra o quanto do nosso comportamento — inclusive comportamento que julgaríamos impensável — depende não de quem somos, mas de quem está ao nosso redor. A <strong>influência social</strong> é o processo pelo qual as pessoas mudam pensamentos, sentimentos e ações em resposta aos outros, e ela se manifesta em três graus de intensidade crescente. Na <strong>conformidade</strong>, ajustamos nosso comportamento ou opinião a um padrão de grupo, muitas vezes sem que ninguém peça. Na <strong>complacência</strong> (<em>compliance</em>), cedemos a um pedido explícito — foi o tema das táticas do Cap. 71. Na <strong>obediência</strong>, executamos uma ordem de uma autoridade. Os experimentos que se seguem estão entre os mais famosos — e mais debatidos — de toda a psicologia, e explicam desde modinhas inofensivas até atrocidades históricas.</p>
+<section id="conformidade-a-pressão-silenciosa-do-grupo" class="level2">
+<h2 class="anchored" data-anchor-id="conformidade-a-pressão-silenciosa-do-grupo">Conformidade: a pressão silenciosa do grupo</h2>
+<section id="sherif-e-a-formação-de-normas" class="level3">
+<h3 class="anchored" data-anchor-id="sherif-e-a-formação-de-normas">Sherif e a formação de normas</h3>
+<p>Muzafer Sherif fez a primeira demonstração experimental de como um grupo cria uma norma do nada, explorando o <strong>efeito autocinético</strong>: um ponto de luz fixo numa sala escura parece mover-se (uma ilusão perceptual). Sozinhos, os participantes davam estimativas muito variáveis de quanto a luz “se movia”; reunidos, convergiam rapidamente para uma estimativa comum de grupo — e, o mais revelador, <strong>mantinham</strong> essa norma coletiva mesmo quando testados novamente sozinhos, dias depois <span class="citation" data-cites="sherif1936">(<a href="../../referencias.html#ref-sherif1936" role="doc-biblioref">Sherif, 1936</a>)</span>. A norma fora internalizada. Como a situação era genuinamente ambígua (ninguém sabia a resposta certa), os participantes usaram uns aos outros como fonte de informação. Nasce aqui um conceito-chave: a <strong>influência informacional</strong>.</p>
+</section>
+<section id="asch-e-o-poder-do-óbvio" class="level3">
+<h3 class="anchored" data-anchor-id="asch-e-o-poder-do-óbvio">Asch e o poder do óbvio</h3>
+<p>Solomon Asch desconfiou que a conformidade de Sherif dependia da ambiguidade. E se a resposta certa fosse <strong>evidente</strong>? Seu experimento tornou-se um marco.</p>
+<div class="experimento">
+<p>🔬 <strong>Experimento Clássico — as linhas de Asch.</strong> Participantes foram reunidos em grupos para uma suposta tarefa de percepção visual: dizer qual de três linhas de comparação tinha o mesmo comprimento que uma linha-padrão <span class="citation" data-cites="asch1956">(<a href="../../referencias.html#ref-asch1956" role="doc-biblioref">Asch, 1956</a>)</span>. A resposta era óbvia — o erro entre pessoas testadas sozinhas era inferior a 1%. Mas todos os demais integrantes do grupo eram <strong>confederados</strong> do experimentador, instruídos a dar, em ensaios críticos, a mesma resposta <strong>unânime e claramente errada</strong>. <strong>Resultado:</strong> cerca de 75% dos participantes reais se conformaram à maioria errada <strong>pelo menos uma vez</strong>, e a taxa média de respostas conformistas ficou em torno de 33% dos ensaios críticos. Numa entrevista posterior, muitos sabiam que o grupo estava errado, mas cederam para não destoar. <strong>Fatores moduladores:</strong> a conformidade despencava quando um único confederado dava a resposta certa (um <strong>aliado</strong> dissidente quebrava a unanimidade) e era pouco sensível ao tamanho do grupo além de três ou quatro pessoas. <strong>Interpretação:</strong> aqui a pressão não era por informação — a resposta era óbvia —, mas pelo desejo de ser aceito e não parecer estranho: a <strong>influência normativa</strong>.</p>
+</div>
+<p>O experimento de Asch cristalizou a distinção que organiza todo o campo, formalizada por Deutsch e Gerard <span class="citation" data-cites="deutsch_gerard1955">(<a href="../../referencias.html#ref-deutsch_gerard1955" role="doc-biblioref">Deutsch; Gerard, 1955</a>)</span> e resumida na <a href="#tbl-influencia" class="quarto-xref">Tabela&nbsp;<span>72.1</span></a>:</p>
+<div id="tbl-influencia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-influencia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;72.1: As duas motivações da conformidade <span class="citation" data-cites="deutsch_gerard1955">(<a href="../../referencias.html#ref-deutsch_gerard1955" role="doc-biblioref">Deutsch; Gerard, 1955</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-influencia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Influência <strong>informacional</strong></th>
+<th>Influência <strong>normativa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Motivo</strong></td>
+<td>estar certo</td>
+<td>ser aceito</td>
+</tr>
+<tr class="even">
+<td><strong>Quando domina</strong></td>
+<td>situação ambígua, incerta</td>
+<td>resposta clara, mas há plateia</td>
+</tr>
+<tr class="odd">
+<td><strong>Resultado</strong></td>
+<td>conversão genuína (privada)</td>
+<td>conformidade pública, sem convicção</td>
+</tr>
+<tr class="even">
+<td><strong>Exemplo</strong></td>
+<td>seguir a multidão numa emergência confusa</td>
+<td>rir de uma piada sem graça do chefe</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A conformidade não é, em si, boa ou má. Ela lubrifica a vida social (dirigir na mão certa, respeitar a fila) e transmite conhecimento acumulado. Torna-se perigosa quando cala o dissenso diante de um erro coletivo — e é por isso que a única voz discordante no grupo de Asch tinha tanto poder: ela libertava os demais.</p>
+</section>
+</section>
+<section id="obediência-os-experimentos-de-milgram" class="level2">
+<h2 class="anchored" data-anchor-id="obediência-os-experimentos-de-milgram">Obediência: os experimentos de Milgram</h2>
+<p>Se a conformidade de Asch já é inquietante, a obediência estudada por Stanley Milgram é assombrosa. Milgram, filho de judeus, queria entender como cidadãos comuns puderam participar do Holocausto. A hipótese “os alemães são diferentes” não sobreviveu ao seu laboratório em New Haven.</p>
+<div class="experimento">
+<p>🔬 <strong>Experimento Clássico — a obediência à autoridade.</strong> Voluntários comuns (recrutados por anúncio, de várias profissões) chegavam a um laboratório de Yale para um suposto estudo sobre “aprendizagem e memória” <span class="citation" data-cites="milgram1963">(<a href="../../referencias.html#ref-milgram1963" role="doc-biblioref">Milgram, 1963</a>)</span>. Por um sorteio viciado, o participante era sempre o “professor” e um confederado, o “aluno”. A tarefa: aplicar choques elétricos ao aluno a cada erro, aumentando a voltagem em 15 volts a cada vez, de 15 até <strong>450 volts</strong>, num painel com etiquetas que iam de “Choque leve” a “Perigo: choque severo” e, no fim, um sinistro “XXX”. Não havia choque real; o aluno, numa sala ao lado, encenava — reclamava, gritava, implorava que parassem, mencionava um problema cardíaco e, nas voltagens mais altas, <strong>silenciava</strong>. Quando o professor hesitava, o experimentador de jaleco usava uma sequência fixa de comandos: “Por favor, continue”, “O experimento exige que você continue”, “É absolutamente essencial que você continue”, “Você não tem escolha, precisa continuar”. <strong>Resultado:</strong> <strong>65% dos participantes</strong> foram até os 450 volts — o máximo. Praticamente todos chegaram a 300 volts. E não o faziam com frieza: suavam, tremiam, riam nervosamente, protestavam — e obedeciam. <strong>Interpretação:</strong> pessoas comuns, sem qualquer traço patológico, infligem sofrimento extremo a um inocente sob a direção de uma autoridade que julgam legítima. Milgram falou de um <strong>estado agêntico</strong>: o indivíduo passa a se ver como mero instrumento da vontade alheia, transferindo a responsabilidade para a autoridade.</p>
+</div>
+<p>O gênio de Milgram foi realizar <strong>dezenas de variações</strong>, mostrando que a obediência não é constante — ela responde à situação, o que a torna ainda mais assustadora, pois significa que pequenos detalhes de arranjo social empurram para cima ou para baixo. A obediência <strong>caía</strong> drasticamente quando:</p>
+<ul>
+<li>a autoridade dava ordens <strong>por telefone</strong>, em vez de presente na sala;</li>
+<li>o experimento ocorria num escritório comum, e não sob o prestígio de Yale;</li>
+<li>o participante via <strong>outros “professores” se recusarem</strong> (o poder do modelo dissidente, ecoando o aliado de Asch);</li>
+<li>a <strong>proximidade da vítima</strong> aumentava — obedecia-se menos quando era preciso pressionar a mão do aluno sobre a placa de choque.</li>
+</ul>
+<div class="atencao">
+<p>⚠️ <strong>O que Milgram provou — e o que não provou.</strong> Os estudos de Milgram são um patrimônio da psicologia e, ao mesmo tempo, um caso central no debate ético que originou os comitês de pesquisa (Cap. 20): o estresse imposto aos participantes seria hoje inaceitável sem salvaguardas rigorosas. Além disso, análises dos arquivos originais mostraram que Milgram <strong>selecionou e enfatizou</strong> os resultados mais dramáticos, que a taxa de 65% variava enormemente entre as condições e que muitos participantes desconfiavam da autenticidade dos choques <span class="citation" data-cites="perry2013">(<a href="../../referencias.html#ref-perry2013" role="doc-biblioref">Perry, 2013</a>)</span>. Uma <strong>replicação parcial e eticamente reformulada</strong>, interrompendo aos 150 volts (o ponto que, nos dados de Milgram, melhor previa a ida até o fim), encontrou taxas de obediência ainda altas, sugerindo que o fenômeno é real mesmo depurado do sensacionalismo <span class="citation" data-cites="burger2009">(<a href="../../referencias.html#ref-burger2009" role="doc-biblioref">Burger, 2009</a>)</span>. A leitura madura: <strong>não</strong> é que “todos nós temos um carrasco dentro”; é que arranjos sociais específicos — autoridade percebida como legítima, gradualismo, distância da vítima, difusão de responsabilidade — tornam a crueldade muito mais provável do que a intuição admite. Uma releitura influente acrescenta que os participantes não obedecem cegamente, mas se <strong>identificam</strong> com a causa científica que a autoridade representa, cooperando ativamente com ela <span class="citation" data-cites="haslam_reicher2012">(<a href="../../referencias.html#ref-haslam_reicher2012" role="doc-biblioref">Haslam; Reicher, 2012</a>)</span>.</p>
+</div>
+</section>
+<section id="o-estudo-da-prisão-de-stanford-um-clássico-reexaminado" class="level2">
+<h2 class="anchored" data-anchor-id="o-estudo-da-prisão-de-stanford-um-clássico-reexaminado">O Estudo da Prisão de Stanford: um clássico reexaminado</h2>
+<p>Nenhum estudo ilustra melhor a necessidade de ceticismo — inclusive diante dos próprios ícones da disciplina — do que o <strong>Estudo da Prisão de Stanford</strong>, conduzido por Philip Zimbardo em 1971. Estudantes saudáveis foram designados <strong>ao acaso</strong> para os papéis de “guardas” e “prisioneiros” numa prisão simulada no porão do departamento de psicologia. Em poucos dias, segundo o relato original, os guardas tornaram-se cruéis e os prisioneiros, apáticos e traumatizados, a ponto de o experimento ser interrompido em seis dias <span class="citation" data-cites="haney_zimbardo1973">(<a href="../../referencias.html#ref-haney_zimbardo1973" role="doc-biblioref">Haney; Banks; Zimbardo, 1973</a>)</span>. Por décadas, o estudo foi ensinado como a prova definitiva de que “a situação corrompe” — de que papéis sociais podem transformar pessoas boas em tiranas.</p>
+<div class="atencao">
+<p>⚠️ <strong>A queda de um ícone.</strong> O Estudo da Prisão de Stanford <strong>não foi um experimento</strong> no sentido rigoroso (sem grupo-controle, N minúsculo, um único cenário) e, pior, evidências que vieram à tona — gravações de arquivo, entrevistas e o trabalho do historiador Thibault Le Texier — mostraram que a brutalidade dos guardas foi em boa medida <strong>encenada sob instrução</strong>: Zimbardo e seus assistentes orientaram os guardas a serem duros, um “prisioneiro” célebre admitiu ter fingido o colapso para sair mais cedo, e o relato publicado selecionou os episódios mais dramáticos <span class="citation" data-cites="letexier2019">(<a href="../../referencias.html#ref-letexier2019" role="doc-biblioref">Le Texier, 2019</a>)</span>. Uma tentativa de replicação televisionada pela BBC chegou a resultados <strong>opostos</strong>, com os prisioneiros se organizando coletivamente contra os guardas <span class="citation" data-cites="reicher_haslam2006">(<a href="../../referencias.html#ref-reicher_haslam2006" role="doc-biblioref">Reicher; Haslam, 2006</a>)</span>. A conclusão não é que “papéis não importam” — importam —, mas que a demonstração canônica era <strong>teatro dirigido</strong>, não ciência. O caso é hoje ensinado neste manual como lição dupla: sobre o poder das situações <strong>e</strong> sobre por que precisamos de método, replicação e ceticismo mesmo — sobretudo — diante das histórias mais sedutoras.</p>
+</div>
+<p>O contraste com Milgram é instrutivo. Milgram, apesar dos problemas, produziu um fenômeno <strong>robusto e replicável</strong>; Stanford produziu uma narrativa poderosa que não resistiu ao escrutínio dos arquivos. Ambos ensinam sobre a força da situação — mas apenas um ensina como <em>saber</em> que ela é forte.</p>
+</section>
+<section id="a-influência-da-minoria" class="level2">
+<h2 class="anchored" data-anchor-id="a-influência-da-minoria">A influência da minoria</h2>
+<p>Toda a discussão até aqui pode sugerir que a maioria sempre vence e que o desvio é fadado ao fracasso. Não é o caso — e a exceção é a história de todo progresso social. Serge Moscovici mostrou que uma <strong>minoria</strong> pode influenciar a maioria, desde que seja <strong>consistente</strong>: mantendo sua posição com firmeza, coerência e confiança ao longo do tempo, sem ceder <span class="citation" data-cites="moscovici1969">(<a href="../../referencias.html#ref-moscovici1969" role="doc-biblioref">Moscovici; Lage; Naffrechoux, 1969</a>)</span>. A diferença qualitativa é crucial. A maioria tende a produzir <strong>conformidade pública</strong> (concordância superficial, pela influência normativa), enquanto a minoria consistente, quando funciona, produz <strong>conversão privada</strong> — leva os outros a <em>repensar</em> a questão, gerando mudança mais profunda e duradoura, ainda que muitas vezes tardia e sem crédito. Movimentos como o sufrágio feminino, os direitos civis e a mudança de atitudes sobre tabagismo ou meio ambiente começaram como minorias consistentes e ridicularizadas. O dissidente de Asch, o “professor” que se recusa em Milgram, a minoria de Moscovici: em cada caso, uma voz que não cede reabre um espaço de escolha que o consenso havia fechado.</p>
+<div class="na-pratica">
+<p>💡 <strong>Preservar a autonomia sob pressão social.</strong> As lições destes experimentos são diretamente acionáveis. (1) <strong>Nomeie a pressão:</strong> perceber “estou cedendo por influência normativa, não porque mudei de ideia” já restaura parte da liberdade. (2) <strong>Busque ou seja o aliado:</strong> um único dissidente destrava os demais — em reuniões, em júris, em grupos de amigos, a primeira voz discordante é a mais valiosa e a mais difícil. (3) <strong>Desconfie do gradualismo:</strong> Milgram avançava 15 volts por vez; muitas escaladas éticas (fraudes, abusos institucionais) funcionam assim, um pequeno passo de cada vez que nunca parece o momento de parar. Definir de antemão a linha que não se cruza é a defesa. (4) <strong>Questione a legitimidade da autoridade:</strong> “Quem manda isso, e com que direito?” é a pergunta que o estado agêntico desliga.</p>
+</div>
+<div class="callout-sintese">
+<ul>
+<li>A <strong>influência social</strong> cresce em três graus: <strong>conformidade</strong> (ajuste a um padrão), <strong>complacência</strong> (ceder a um pedido) e <strong>obediência</strong> (cumprir uma ordem).</li>
+<li><strong>Sherif</strong> mostrou a formação de normas em situação ambígua (influência <strong>informacional</strong>); <strong>Asch</strong> mostrou conformidade contra a evidência óbvia (influência <strong>normativa</strong>), quebrada por um único aliado <span class="citation" data-cites="sherif1936 asch1956 deutsch_gerard1955">(<a href="../../referencias.html#ref-asch1956" role="doc-biblioref">Asch, 1956</a>; <a href="../../referencias.html#ref-deutsch_gerard1955" role="doc-biblioref">Deutsch; Gerard, 1955</a>; <a href="../../referencias.html#ref-sherif1936" role="doc-biblioref">Sherif, 1936</a>)</span>.</li>
+<li><strong>Milgram</strong>: 65% dos participantes comuns aplicaram o choque máximo sob ordem de uma autoridade legítima; a obediência é <strong>modulada pela situação</strong> (proximidade, prestígio, presença de dissidentes) <span class="citation" data-cites="milgram1963">(<a href="../../referencias.html#ref-milgram1963" role="doc-biblioref">Milgram, 1963</a>)</span>. O fenômeno é real, mas o relato original foi seletivo <span class="citation" data-cites="perry2013 burger2009">(<a href="../../referencias.html#ref-burger2009" role="doc-biblioref">Burger, 2009</a>; <a href="../../referencias.html#ref-perry2013" role="doc-biblioref">Perry, 2013</a>)</span>.</li>
+<li>O <strong>Estudo da Prisão de Stanford</strong> não foi um experimento rigoroso e sua brutalidade foi em parte <strong>encenada sob instrução</strong>: um clássico que a evidência de arquivo derrubou <span class="citation" data-cites="letexier2019 reicher_haslam2006">(<a href="../../referencias.html#ref-letexier2019" role="doc-biblioref">Le Texier, 2019</a>; <a href="../../referencias.html#ref-reicher_haslam2006" role="doc-biblioref">Reicher; Haslam, 2006</a>)</span>.</li>
+<li>Uma <strong>minoria consistente</strong> pode converter a maioria, produzindo mudança <strong>privada e profunda</strong>, ao contrário da conformidade pública imposta pela maioria <span class="citation" data-cites="moscovici1969">(<a href="../../referencias.html#ref-moscovici1969" role="doc-biblioref">Moscovici; Lage; Naffrechoux, 1969</a>)</span>.</li>
+<li>Autonomia sob pressão se preserva nomeando a influência, buscando aliados, desconfiando do gradualismo e questionando a legitimidade da autoridade.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Influência social</strong></dt>
+<dd>
+Mudança de pensamento, sentimento ou comportamento em resposta a outras pessoas, nas formas de conformidade, complacência e obediência.
+</dd>
+<dt><strong>Conformidade</strong></dt>
+<dd>
+Ajuste do próprio comportamento ou opinião a um padrão percebido do grupo <span class="citation" data-cites="asch1956">(<a href="../../referencias.html#ref-asch1956" role="doc-biblioref">Asch, 1956</a>)</span>.
+</dd>
+<dt><strong>Influência informacional</strong></dt>
+<dd>
+Conformidade motivada pelo desejo de estar certo, usando os outros como fonte de informação em situações ambíguas <span class="citation" data-cites="deutsch_gerard1955">(<a href="../../referencias.html#ref-deutsch_gerard1955" role="doc-biblioref">Deutsch; Gerard, 1955</a>)</span>.
+</dd>
+<dt><strong>Influência normativa</strong></dt>
+<dd>
+Conformidade motivada pelo desejo de ser aceito e evitar desaprovação, mesmo contra a própria percepção <span class="citation" data-cites="deutsch_gerard1955">(<a href="../../referencias.html#ref-deutsch_gerard1955" role="doc-biblioref">Deutsch; Gerard, 1955</a>)</span>.
+</dd>
+<dt><strong>Obediência</strong></dt>
+<dd>
+Cumprimento de uma ordem emitida por uma figura de autoridade <span class="citation" data-cites="milgram1963">(<a href="../../referencias.html#ref-milgram1963" role="doc-biblioref">Milgram, 1963</a>)</span>.
+</dd>
+<dt><strong>Estado agêntico</strong></dt>
+<dd>
+Condição em que o indivíduo se percebe como instrumento da vontade de uma autoridade e transfere a ela a responsabilidade por seus atos <span class="citation" data-cites="milgram1963">(<a href="../../referencias.html#ref-milgram1963" role="doc-biblioref">Milgram, 1963</a>)</span>.
+</dd>
+<dt><strong>Influência da minoria</strong></dt>
+<dd>
+Processo pelo qual uma minoria consistente altera a posição da maioria, gerando conversão privada e duradoura <span class="citation" data-cites="moscovici1969">(<a href="../../referencias.html#ref-moscovici1969" role="doc-biblioref">Moscovici; Lage; Naffrechoux, 1969</a>)</span>.
+</dd>
+<dt><strong>Conversão privada × conformidade pública</strong></dt>
+<dd>
+Mudança interna genuína de atitude versus concordância externa sem convicção.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Diferencie conformidade, complacência e obediência, dando um exemplo cotidiano de cada uma.</p></li>
+<li><p><strong>(Conceitual.)</strong> Explique por que o experimento de Sherif ilustra a influência <strong>informacional</strong> e o de Asch, a <strong>normativa</strong>. O que a mudança de ambiguidade da tarefa tem a ver com isso?</p></li>
+<li><p><strong>(Análise.)</strong> Liste três variações de Milgram que <strong>reduziram</strong> a obediência e explique, em cada caso, qual mecanismo psicológico foi enfraquecido.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> O Estudo da Prisão de Stanford foi ensinado por décadas como prova de que “a situação corrompe”. À luz das evidências de Le Texier e da replicação da BBC, o que se pode e o que não se pode concluir dele? Por que esse caso é um bom argumento a favor da replicação?</p></li>
+<li><p><strong>(Aplicação.)</strong> Um funcionário percebe que a empresa está adotando, um passo de cada vez, uma prática antiética. Usando o gradualismo de Milgram e o poder do dissidente de Asch, proponha uma estratégia concreta para ele resistir sem ser isolado.</p></li>
+<li><p><strong>(Integração.)</strong> Compare a “conversão privada” da influência da minoria <span class="citation" data-cites="moscovici1969">(<a href="../../referencias.html#ref-moscovici1969" role="doc-biblioref">Moscovici; Lage; Naffrechoux, 1969</a>)</span> com a mudança de atitude “duradoura” da rota central do ELM (Cap. 71). Que semelhança há entre uma minoria consistente e um argumento de alta qualidade?</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-asch1956" class="csl-entry" role="listitem">
+ASCH, Solomon E. Studies of independence and conformity: I. A minority of one against a unanimous majority. <strong>Psychological Monographs: General and Applied</strong>, v. 70, n. 9, p. 1–70, 1956.
+</div>
+<div id="ref-burger2009" class="csl-entry" role="listitem">
+BURGER, Jerry M. Replicating Milgram: Would people still obey today? <strong>American Psychologist</strong>, v. 64, n. 1, p. 1–11, 2009.
+</div>
+<div id="ref-deutsch_gerard1955" class="csl-entry" role="listitem">
+DEUTSCH, Morton; GERARD, Harold B. A study of normative and informational social influences upon individual judgment. <strong>The Journal of Abnormal and Social Psychology</strong>, v. 51, n. 3, p. 629–636, 1955.
+</div>
+<div id="ref-haney_zimbardo1973" class="csl-entry" role="listitem">
+HANEY, Craig; BANKS, Curtis; ZIMBARDO, Philip. Interpersonal dynamics in a simulated prison. <strong>International Journal of Criminology and Penology</strong>, v. 1, p. 69–97, 1973.
+</div>
+<div id="ref-haslam_reicher2012" class="csl-entry" role="listitem">
+HASLAM, S. Alexander; REICHER, Stephen D. Contesting the <span>«nature»</span> of conformity: What Milgram and Zimbardo’s studies really show. <strong>PLoS Biology</strong>, v. 10, n. 11, p. e1001426, 2012.
+</div>
+<div id="ref-letexier2019" class="csl-entry" role="listitem">
+LE TEXIER, Thibault. Debunking the Stanford Prison Experiment. <strong>American Psychologist</strong>, v. 74, n. 7, p. 823–839, 2019.
+</div>
+<div id="ref-milgram1963" class="csl-entry" role="listitem">
+MILGRAM, Stanley. Behavioral study of obedience. <strong>Journal of Abnormal and Social Psychology</strong>, v. 67, n. 4, p. 371–378, 1963.
+</div>
+<div id="ref-moscovici1969" class="csl-entry" role="listitem">
+MOSCOVICI, Serge; LAGE, Elisabeth; NAFFRECHOUX, Martine. Influence of a consistent minority on the responses of a majority in a color perception task. <strong>Sociometry</strong>, v. 32, n. 4, p. 365–380, 1969.
+</div>
+<div id="ref-perry2013" class="csl-entry" role="listitem">
+PERRY, Gina. <strong>Behind the Shock Machine: The Untold Story of the Notorious Milgram Psychology Experiments</strong>. New York: The New Press, 2013.
+</div>
+<div id="ref-reicher_haslam2006" class="csl-entry" role="listitem">
+REICHER, Stephen D.; HASLAM, S. Alexander. Rethinking the psychology of tyranny: The BBC prison study. <strong>British Journal of Social Psychology</strong>, v. 45, n. 1, p. 1–40, 2006.
+</div>
+<div id="ref-sherif1936" class="csl-entry" role="listitem">
+SHERIF, Muzafer. <strong>The Psychology of Social Norms</strong>. New York: Harper, 1936.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1377,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

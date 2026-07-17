@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#do-instinto-ao-impulso" id="toc-do-instinto-ao-impulso" class="nav-link active" data-scroll-target="#do-instinto-ao-impulso">Do instinto ao impulso</a></li>
+  <li><a href="#arousal-ótimo-e-incentivos" id="toc-arousal-ótimo-e-incentivos" class="nav-link" data-scroll-target="#arousal-ótimo-e-incentivos">Arousal ótimo e incentivos</a></li>
+  <li><a href="#a-hierarquia-de-necessidades-de-maslow" id="toc-a-hierarquia-de-necessidades-de-maslow" class="nav-link" data-scroll-target="#a-hierarquia-de-necessidades-de-maslow">A hierarquia de necessidades de Maslow</a></li>
+  <li><a href="#a-teoria-da-autodeterminação" id="toc-a-teoria-da-autodeterminação" class="nav-link" data-scroll-target="#a-teoria-da-autodeterminação">A teoria da autodeterminação</a></li>
+  <li><a href="#integrando-as-teorias" id="toc-integrando-as-teorias" class="nav-link" data-scroll-target="#integrando-as-teorias">Integrando as teorias</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,539 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Definir</strong> motivação e distinguir os componentes de ativação, direção e persistência do comportamento.</li>
+<li><strong>Comparar</strong> as grandes famílias teóricas: instinto, redução de impulso, arousal ótimo, incentivo e hierarquia de necessidades.</li>
+<li><strong>Explicar</strong> a teoria da autodeterminação e a distinção entre motivação intrínseca e extrínseca.</li>
+<li><strong>Analisar</strong> o efeito da sobrejustificação e suas implicações práticas para escola e trabalho.</li>
+<li><strong>Avaliar</strong> criticamente a pirâmide de Maslow à luz da evidência empírica.</li>
+</ul>
 </div>
+<p>Abrimos o Vol 9 com a pergunta que move — literalmente — toda a psicologia do comportamento dirigido: <strong>por que fazemos o que fazemos?</strong> O volume anterior descreveu a mente que lembra, pensa e difere de pessoa para pessoa (Vols 7–8); mas essa mente não se ativa no vácuo. Ela é impulsionada por necessidades, desejos e metas. A <strong>motivação</strong> é o conjunto de processos que <strong>ativam, dirigem e mantêm</strong> o comportamento em direção a um objetivo. Note os três componentes: a motivação explica por que uma pessoa <em>inicia</em> uma ação (ativação), por que escolhe <em>aquela</em> ação e não outra (direção) e por que <em>insiste</em> nela diante de obstáculos (persistência). Este capítulo percorre as principais teorias que a psicologia construiu para dar conta desse motor — das mais antigas e biológicas às mais contemporâneas e cognitivas.</p>
+<section id="do-instinto-ao-impulso" class="level2">
+<h2 class="anchored" data-anchor-id="do-instinto-ao-impulso">Do instinto ao impulso</h2>
+<p>As primeiras teorias científicas da motivação, no início do século XX, apoiaram-se no conceito de <strong>instinto</strong>: padrões de comportamento complexos, não aprendidos e universais à espécie, herdados como a herança darwiniana o sugeria (Cap. 13). William James chegou a listar dezenas de instintos humanos. O problema apareceu rápido: a lista <strong>inflacionava sem limite</strong> — para cada comportamento, propunha-se um instinto correspondente (o instinto de sociabilidade, de curiosidade, de aquisição), o que <em>nomeava</em> o comportamento sem <em>explicá-lo</em>. Um instinto que se infere do próprio comportamento que deveria explicar é uma pseudoexplicação circular. A teoria dos instintos entrou em declínio, embora a intuição de fundo — que parte de nossa motivação é biologicamente preparada — retorne, refinada, na perspectiva evolucionista.</p>
+<p>Na esteira do behaviorismo (Cap. 8), Clark Hull propôs a <strong>teoria da redução de impulso</strong> (<em>drive reduction</em>) <span class="citation" data-cites="hull1943">(<a href="../../referencias.html#ref-hull1943" role="doc-biblioref">Hull, 1943</a>)</span>. A lógica é homeostática (Cap. 25): um desvio de um estado fisiológico ideal — falta de água, de comida — gera uma <strong>necessidade</strong> biológica, que produz um estado de tensão psicológica, o <strong>impulso</strong> (<em>drive</em>), e o organismo age para <strong>reduzir</strong> essa tensão, restaurando a homeostase. Comer reduz o impulso de fome; beber reduz o de sede. O comportamento que reduz o impulso é reforçado e tende a se repetir. A teoria é elegante e explica bem as motivações de sobrevivência, mas tropeça em um fato incômodo: <strong>nem toda motivação reduz tensão</strong>. Buscamos ativamente montanhas-russas, filmes de terror, palavras cruzadas e viagens — comportamentos que <em>aumentam</em> a estimulação. Se toda meta fosse reduzir tensão, o repouso absoluto seria o paraíso; não é.</p>
+</section>
+<section id="arousal-ótimo-e-incentivos" class="level2">
+<h2 class="anchored" data-anchor-id="arousal-ótimo-e-incentivos">Arousal ótimo e incentivos</h2>
+<p>A resposta a esse paradoxo é a <strong>teoria do arousal (ativação) ótimo</strong>. Não buscamos o <em>mínimo</em> de estimulação, mas um <strong>nível ótimo</strong> — nem tédio nem sobrecarga. Quando o arousal está baixo, procuramos estimulação (buscamos novidade); quando está alto demais, procuramos acalmar-nos. Essa relação em forma de U invertido entre ativação e desempenho é a <strong>lei de Yerkes-Dodson</strong> <span class="citation" data-cites="yerkes_dodson1908">(<a href="../../referencias.html#ref-yerkes_dodson1908" role="doc-biblioref">Yerkes; Dodson, 1908</a>)</span>: o desempenho é máximo em um nível <em>intermediário</em> de ativação e cai tanto na apatia quanto na ansiedade extrema (<a href="#fig-yerkes-dodson" class="quarto-xref">Figura&nbsp;<span>51.1</span></a>). A lei acrescenta uma nuance importante: o nível ótimo é <strong>mais baixo para tarefas difíceis</strong> (que exigem concentração fina) e <strong>mais alto para tarefas simples</strong> (que se beneficiam de energia bruta) — por isso a adrenalina ajuda num sprint, mas atrapalha numa prova de cálculo.</p>
+<div id="fig-yerkes-dodson" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-yerkes-dodson-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Duas curvas em U invertido relacionando nível de ativação (eixo horizontal, de baixo a alto) e desempenho (eixo vertical). A curva de tarefa simples tem pico deslocado para a direita, em ativação alta; a curva de tarefa difícil tem pico deslocado para a esquerda, em ativação intermediária-baixa. Ambas caem nas extremidades." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="234.222725pt" height="135.152677pt" viewbox="-68.014948 -68.014948 234.222725 135.152677">
+<defs>
+<path id="tz_yerkes_dodson_g0-16" d="M1.250311-2.201743L.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743Z"></path>
+<path id="tz_yerkes_dodson_g0-19" d="M2.450809-3.048568C2.510585-3.088418 2.580324-3.138232 2.580324-3.242839S2.495641-3.476961 2.351183-3.476961C2.271482-3.476961 2.236613-3.442092 2.1868-3.39726L1.414695-2.665006L1.544209-2.500623L2.450809-3.048568Z"></path>
+<path id="tz_yerkes_dodson_g0-24" d="M1.912827 .109589H1.469489V.353674C1.65878 .353674 1.987547 .37858 1.987547 .607721C1.987547 .737235 1.867995 .816936 1.569116 .851806C1.339975 .881694 1.175592 .861768 .951432 .876712V1.041096C1.270237 1.021171 1.484433 1.046077 1.833126 1.001245C2.276463 .946451 2.430884 .806974 2.430884 .607721C2.430884 .358655 2.206725 .249066 1.912827 .214197V.109589Z"></path>
+<path id="tz_yerkes_dodson_g0-97" d="M2.60523-1.479452C2.60523-1.957659 2.102117-2.231631 1.484433-2.231631C1.180573-2.231631 .60274-2.216687 .60274-1.793275C.60274-1.608966 .742217-1.524284 .86675-1.524284C1.001245-1.524284 1.13076-1.618929 1.13076-1.788294C1.13076-1.907846 1.061021-1.982565 1.016189-2.012453C1.180573-2.067248 1.419676-2.067248 1.474471-2.067248C1.897883-2.067248 2.161893-1.833126 2.161893-1.474471V-1.344956C1.678705-1.32005 1.409714-1.305106 1.026152-1.17061C.697385-1.05604 .408468-.846824 .408468-.523039C.408468-.054795 .986301 .054795 1.384807 .054795C1.768369 .054795 2.067248-.099626 2.221669-.353674C2.241594-.179328 2.356164 .029888 2.610212 .029888C2.645081 .029888 3.212951 .029888 3.212951-.448319V-.722291H3.003736V-.458281C3.003736-.408468 3.003736-.18929 2.804483-.18929S2.60523-.408468 2.60523-.458281V-1.479452ZM2.161893-.707347C2.161893-.159402 1.564134-.109589 1.439601-.109589C1.145704-.109589 .86675-.26401 .86675-.523039C.86675-.687422 .971357-1.145704 2.161893-1.195517V-.707347Z"></path>
+<path id="tz_yerkes_dodson_g0-98" d="M1.215442-3.457036L.37858-3.402242V-3.183064C.747198-3.183064 .79203-3.148194 .79203-2.90411V0H1.001245C1.041096-.064757 1.080946-.134496 1.115816-.199253C1.13076-.229141 1.150685-.26401 1.17061-.293898C1.384807-.064757 1.688667 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.819427-2.201743 2.067248-2.201743C1.798257-2.201743 1.484433-2.132005 1.215442-1.92279V-3.457036ZM1.235367-1.663761C1.404732-1.907846 1.733499-2.03736 2.032379-2.03736C2.620174-2.03736 2.874222-1.603985 2.874222-1.075965C2.874222-.787049 2.809465-.533001 2.615193-.348692C2.455791-.199253 2.211706-.109589 1.972603-.109589C1.633873-.109589 1.374844-.298879 1.235367-.52802V-1.663761Z"></path>
+<path id="tz_yerkes_dodson_g0-99" d="M2.236613-2.007472C2.166874-1.957659 2.127024-1.877958 2.127024-1.788294C2.127024-1.62391 2.251557-1.524284 2.391034-1.524284C2.510585-1.524284 2.655044-1.603985 2.655044-1.793275C2.655044-2.216687 2.102117-2.231631 1.753425-2.231631C.777086-2.231631 .358655-1.574097 .358655-1.075965C.358655-.458281 .941469 .054795 1.693649 .054795C2.555417 .054795 2.724782-.552927 2.724782-.597758C2.724782-.667497 2.650062-.667497 2.620174-.667497C2.540473-.667497 2.535492-.652553 2.510585-.592777C2.34122-.179328 1.977584-.124533 1.758406-.124533C1.330012-.124533 .856787-.41345 .856787-1.080946C.856787-1.300125 .901619-1.574097 1.085928-1.783313C1.325031-2.052304 1.618929-2.052304 1.77335-2.052304C1.92279-2.052304 2.062267-2.052304 2.236613-2.007472Z"></path>
+<path id="tz_yerkes_dodson_g0-100" d="M2.102117-3.402242V-3.183064C2.470735-3.183064 2.515567-3.148194 2.515567-2.90411V-1.932752C2.405978-2.027397 2.136986-2.201743 1.723537-2.201743C.976339-2.201743 .358655-1.69863 .358655-1.070984C.358655-.468244 .921544 .054795 1.663761 .054795C2.072229 .054795 2.356164-.124533 2.495641-.244085V.054795L3.352428 0V-.219178C2.983811-.219178 2.938979-.254047 2.938979-.498132V-3.457036L2.102117-3.402242ZM2.495641-.542964C2.256538-.174346 1.88792-.109589 1.693649-.109589C1.444583-.109589 1.195517-.209215 1.031133-.428394C.871731-.632628 .856787-.916563 .856787-1.070984C.856787-1.205479 .86675-1.534247 1.080946-1.763387C1.255293-1.942715 1.514321-2.03736 1.758406-2.03736C1.902864-2.03736 2.256538-2.007472 2.495641-1.668742V-.542964Z"></path>
+<path id="tz_yerkes_dodson_g0-101" d="M2.575342-1.120797C2.67995-1.120797 2.724782-1.120797 2.724782-1.240349C2.724782-1.574097 2.545455-2.231631 1.613948-2.231631C.856787-2.231631 .323786-1.688667 .323786-1.09589C.323786-.463263 .931507 .054795 1.688667 .054795C2.480697 .054795 2.724782-.498132 2.724782-.592777C2.724782-.67746 2.645081-.67746 2.620174-.67746C2.545455-.67746 2.535492-.657534 2.505604-.587796C2.366127-.244085 1.997509-.124533 1.718555-.124533C1.315068-.124533 1.090909-.348692 1.016189-.433375C.821918-.672478 .821918-.986301 .821918-1.120797H2.575342ZM.83188-1.275218C.891656-1.932752 1.374844-2.067248 1.608966-2.067248C2.30137-2.067248 2.336239-1.419676 2.34122-1.275218H.83188Z"></path>
+<path id="tz_yerkes_dodson_g0-102" d="M1.255293-1.927771H1.96264V-2.146949H1.235367V-2.684932C1.235367-3.153176 1.544209-3.347447 1.77335-3.347447C1.808219-3.347447 1.907846-3.337484 1.907846-3.32254L1.897883-3.312578C1.867995-3.28269 1.818182-3.222914 1.818182-3.118306C1.818182-2.978829 1.917808-2.864259 2.072229-2.864259C2.236613-2.864259 2.331258-2.978829 2.331258-3.123288C2.331258-3.337484 2.117061-3.511831 1.783313-3.511831C1.344956-3.511831 .83188-3.232877 .83188-2.689913V-2.146949H.348692V-1.927771H.83188V-.418431C.83188-.26401 .83188-.219178 .508095-.219178H.418431V0C.627646-.014944 .851806-.019925 1.061021-.019925C1.32005-.019925 1.564134-.009963 1.77335 0V-.219178H1.638854C1.255293-.219178 1.255293-.268991 1.255293-.423412V-1.927771Z"></path>
+<path id="tz_yerkes_dodson_g0-104" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.579078-2.201743 1.32005-1.863014 1.24533-1.748443V-3.457036L.408468-3.402242V-3.183064C.777086-3.183064 .821918-3.148194 .821918-2.90411V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_yerkes_dodson_g0-105" d="M1.260274-3.068493C1.260274-3.232877 1.125778-3.372354 .956413-3.372354C.801993-3.372354 .652553-3.252802 .652553-3.068493C.652553-2.889166 .801993-2.764633 .956413-2.764633C1.125778-2.764633 1.260274-2.90411 1.260274-3.068493ZM.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743L.433375-2.146949Z"></path>
+<path id="tz_yerkes_dodson_g0-108" d="M1.250311-3.457036L.41345-3.402242V-3.183064C.782067-3.183064 .826899-3.148194 .826899-2.90411V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.622665-.014944 .826899-.019925 1.036115-.019925S1.454545-.014944 1.663761 0V-.219178H1.574097C1.250311-.219178 1.250311-.26401 1.250311-.418431V-3.457036Z"></path>
+<path id="tz_yerkes_dodson_g0-109" d="M4.722291-1.504359C4.722291-2.117061 4.254047-2.201743 3.880448-2.201743C3.392279-2.201743 3.108344-1.957659 2.968867-1.738481C2.844334-2.196762 2.336239-2.201743 2.15193-2.201743C1.638854-2.201743 1.349938-1.927771 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.838107 1.77335-2.03736 2.097136-2.03736C2.460772-2.03736 2.550436-1.833126 2.550436-1.50934V-.418431C2.550436-.26401 2.550436-.219178 2.22665-.219178H2.136986V0C2.351183-.014944 2.560399-.019925 2.774595-.019925C2.983811-.019925 3.198007-.014944 3.407223 0V-.219178H3.317559C2.993773-.219178 2.993773-.26401 2.993773-.418431V-1.285181C2.993773-1.838107 3.501868-2.03736 3.825654-2.03736C4.18929-2.03736 4.278954-1.833126 4.278954-1.50934V-.418431C4.278954-.26401 4.278954-.219178 3.955168-.219178H3.865504V0C4.079701-.014944 4.288917-.019925 4.503113-.019925C4.712329-.019925 4.926526-.014944 5.135741 0V-.219178H5.046077C4.722291-.219178 4.722291-.26401 4.722291-.418431V-1.504359Z"></path>
+<path id="tz_yerkes_dodson_g0-110" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.618929-2.201743 1.339975-1.907846 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_yerkes_dodson_g0-111" d="M3.063512-1.061021C3.063512-1.683686 2.475716-2.231631 1.693649-2.231631S.323786-1.683686 .323786-1.061021C.323786-.463263 .916563 .054795 1.693649 .054795C2.475716 .054795 3.063512-.463263 3.063512-1.061021ZM1.693649-.124533C.821918-.124533 .821918-.86675 .821918-1.110834C.821918-1.334994 .821918-2.067248 1.693649-2.067248S2.56538-1.334994 2.56538-1.110834C2.56538-.86675 2.56538-.124533 1.693649-.124533Z"></path>
+<path id="tz_yerkes_dodson_g0-112" d="M1.648817 .747198H1.559153C1.235367 .747198 1.235367 .702366 1.235367 .547945V-.229141C1.449564-.039851 1.718555 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.824408-2.201743 2.087173-2.201743C1.693649-2.201743 1.384807-2.062267 1.215442-1.917808V-2.201743L.37858-2.146949V-1.927771C.737235-1.927771 .79203-1.927771 .79203-1.713574V.547945C.79203 .702366 .79203 .747198 .468244 .747198H.37858V.966376C.592777 .951432 .801993 .946451 1.016189 .946451C1.225405 .946451 1.439601 .951432 1.648817 .966376V.747198ZM1.235367-1.653798C1.449564-1.957659 1.828144-2.022416 2.027397-2.022416C2.520548-2.022416 2.874222-1.579078 2.874222-1.075965C2.874222-.533001 2.460772-.109589 1.967621-.109589C1.743462-.109589 1.479452-.204234 1.305106-.428394C1.235367-.513076 1.235367-.523039 1.235367-.617684V-1.653798Z"></path>
+<path id="tz_yerkes_dodson_g0-114" d="M1.215442-1.115816C1.215442-1.579078 1.479452-2.027397 1.952677-2.03736C1.947696-2.032379 1.882939-1.967621 1.882939-1.858032C1.882939-1.678705 2.022416-1.603985 2.132005-1.603985C2.256538-1.603985 2.386052-1.688667 2.386052-1.858032C2.386052-2.047323 2.206725-2.201743 1.942715-2.201743C1.693649-2.201743 1.374844-2.072229 1.180573-1.653798H1.175592V-2.201743L.37858-2.146949V-1.927771C.747198-1.927771 .79203-1.892902 .79203-1.648817V-.418431C.79203-.26401 .79203-.219178 .468244-.219178H.37858V0C.587796-.014944 .811955-.019925 1.021171-.019925C1.280199-.019925 1.524284-.009963 1.733499 0V-.219178H1.599004C1.215442-.219178 1.215442-.268991 1.215442-.423412V-1.115816Z"></path>
+<path id="tz_yerkes_dodson_g0-115" d="M2.22665-2.092154C2.22665-2.176837 2.22665-2.231631 2.146949-2.231631C2.122042-2.231631 2.102117-2.22665 2.062267-2.196762C2.042341-2.176837 1.952677-2.097136 1.932752-2.097136C1.927771-2.097136 1.917808-2.097136 1.88792-2.117061C1.77335-2.181818 1.589041-2.231631 1.339975-2.231631C.518057-2.231631 .348692-1.853051 .348692-1.62391C.348692-1.155666 .926526-1.066002 1.384807-.996264C1.673724-.951432 2.132005-.881694 2.132005-.542964C2.132005-.368618 1.987547-.109589 1.384807-.109589C1.046077-.109589 .71731-.234122 .56787-.762142C.542964-.851806 .537983-.86675 .4533-.86675C.348692-.86675 .348692-.826899 .348692-.722291V-.084682C.348692 0 .348692 .054795 .428394 .054795C.468244 .054795 .473225 .049813 .56787-.044832L.697385-.169365C.946451 .049813 1.260274 .054795 1.384807 .054795C2.216687 .054795 2.381071-.37858 2.381071-.627646C2.381071-.851806 2.256538-1.016189 2.067248-1.135741C1.867995-1.260274 1.718555-1.280199 1.300125-1.344956C.98132-1.39477 .597758-1.454545 .597758-1.718555C.597758-1.892902 .79203-2.082192 1.334994-2.082192C1.748443-2.082192 1.987547-1.917808 2.017435-1.574097C2.022416-1.499377 2.027397-1.469489 2.122042-1.469489C2.22665-1.469489 2.22665-1.504359 2.22665-1.608966V-2.092154Z"></path>
+<path id="tz_yerkes_dodson_g0-116" d="M1.225405-1.927771H2.107098V-2.146949H1.225405V-3.063512H1.016189C1.011208-2.595268 .762142-2.107098 .254047-2.092154V-1.927771H.782067V-.627646C.782067-.059776 1.250311 .054795 1.559153 .054795C1.932752 .054795 2.211706-.219178 2.211706-.627646V-.901619H2.002491V-.64259C2.002491-.268991 1.783313-.124533 1.608966-.124533C1.225405-.124533 1.225405-.523039 1.225405-.627646V-1.927771Z"></path>
+<path id="tz_yerkes_dodson_g0-118" d="M2.75467-1.628892C2.839352-1.793275 2.968867-1.92279 3.277709-1.927771V-2.146949C3.148194-2.136986 3.01868-2.127024 2.844334-2.127024C2.839352-2.127024 2.515567-2.132005 2.336239-2.146949V-1.927771C2.470735-1.92279 2.555417-1.863014 2.555417-1.748443C2.555417-1.69863 2.535492-1.653798 2.530511-1.648817L1.897883-.41345L1.215442-1.743462C1.205479-1.763387 1.190535-1.793275 1.190535-1.823163C1.190535-1.927771 1.3599-1.927771 1.459527-1.927771V-2.146949C1.230386-2.132005 .871731-2.127024 .836862-2.127024C.637609-2.127024 .488169-2.127024 .278954-2.146949V-1.927771C.577833-1.927771 .647572-1.927771 .722291-1.778331L1.603985-.059776C1.638854 .009963 1.663761 .054795 1.778331 .054795S1.917808 .004981 1.952677-.059776L2.75467-1.628892Z"></path>
+<path id="tz_yerkes_dodson_g0-120" d="M3.193026-2.146949C3.048568-2.136986 2.909091-2.127024 2.714819-2.127024C2.540473-2.127024 2.336239-2.132005 2.161893-2.146949V-1.927771C2.251557-1.917808 2.256538-1.843088 2.256538-1.833126C2.256538-1.743462 2.206725-1.693649 2.067248-1.554172L1.818182-1.315068C1.589041-1.534247 1.330012-1.788294 1.330012-1.838107C1.330012-1.92279 1.439601-1.927771 1.459527-1.927771V-2.146949C1.255293-2.132005 .86675-2.127024 .841843-2.127024C.64259-2.127024 .498132-2.127024 .288917-2.146949V-1.927771H.383562C.697385-1.927771 .702366-1.917808 .971357-1.648817L1.559153-1.05604C1.524284-1.026152 1.090909-.587796 1.016189-.523039C.876712-.393524 .692403-.224159 .259029-.219178V0C.403487-.009963 .542964-.019925 .737235-.019925C.911582-.019925 1.115816-.014944 1.290162 0V-.219178C1.215442-.229141 1.200498-.283935 1.200498-.313823C1.200498-.398506 1.270237-.473225 1.290162-.493151C1.339975-.547945 1.673724-.871731 1.703611-.901619C1.877958-.732254 2.092154-.523039 2.216687-.383562C2.256538-.333748 2.261519-.333748 2.261519-.308842C2.261519-.224159 2.15193-.219178 2.132005-.219178V0C2.336239-.014944 2.724782-.019925 2.749689-.019925C2.948941-.019925 3.0934-.019925 3.302615 0V-.219178H3.20797C2.933998-.219178 2.879203-.259029 2.819427-.298879C2.769614-.333748 2.191781-.931507 1.967621-1.160648C2.580324-1.793275 2.709838-1.92279 3.193026-1.927771V-2.146949Z"></path>
+<path id="tz_yerkes_dodson_g0-126" d="M2.620174-3.367372C2.470735-3.232877 2.321295-3.153176 2.15193-3.153176C2.012453-3.153176 1.853051-3.212951 1.738481-3.257783C1.529265-3.342466 1.419676-3.367372 1.32005-3.367372C1.085928-3.367372 .946451-3.237858 .797011-3.0934C.747198-3.053549 .662516-2.968867 .657534-2.963885L.767123-2.844334C.916563-2.978829 1.066002-3.058531 1.235367-3.058531C1.374844-3.058531 1.534247-2.998755 1.648817-2.953923C1.858032-2.86924 1.967621-2.844334 2.067248-2.844334C2.30137-2.844334 2.440847-2.973848 2.590286-3.118306C2.6401-3.158157 2.724782-3.242839 2.729763-3.247821L2.620174-3.367372Z"></path>
+</defs>
+<g id="tz_yerkes_dodson_page1">
+<g stroke-miterlimit="10" transform="translate(-46.775246,56.838203)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<path d="M0 0H177.97166" fill="none"></path>
+<g transform="translate(175.49738,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(185.83035,-1.27406)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-46.775246" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-43.385125" y="56.838203" href="#tz_yerkes_dodson_g0-116"></use>
+<use x="-40.68687" y="56.838203" href="#tz_yerkes_dodson_g0-105"></use>
+<use x="-38.680477" y="56.838203" href="#tz_yerkes_dodson_g0-118"></use>
+<use x="-35.463325" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-32.073204" y="56.838203" href="#tz_yerkes_dodson_g0-24"></use>
+<use x="-32.073191" y="56.838203" href="#tz_yerkes_dodson_g0-99"></use>
+<use x="-29.029005" y="56.838203" href="#tz_yerkes_dodson_g0-126"></use>
+<use x="-29.029003" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-25.638882" y="56.838203" href="#tz_yerkes_dodson_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M0 0V109.68526" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,0.0,107.21097)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(-17.98637,118.51616)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-46.775246" y="56.838203" href="#tz_yerkes_dodson_g0-100"></use>
+<use x="-43.039194" y="56.838203" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-39.995009" y="56.838203" href="#tz_yerkes_dodson_g0-115"></use>
+<use x="-37.262156" y="56.838203" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-34.21797" y="56.838203" href="#tz_yerkes_dodson_g0-109"></use>
+<use x="-28.75226" y="56.838203" href="#tz_yerkes_dodson_g0-112"></use>
+<use x="-24.843242" y="56.838203" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-21.799057" y="56.838203" href="#tz_yerkes_dodson_g0-110"></use>
+<use x="-18.063005" y="56.838203" href="#tz_yerkes_dodson_g0-104"></use>
+<use x="-14.326953" y="56.838203" href="#tz_yerkes_dodson_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(8.99878,-7.00517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-46.775246" y="56.838203" href="#tz_yerkes_dodson_g0-98"></use>
+<use x="-43.039194" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-39.649073" y="56.838203" href="#tz_yerkes_dodson_g0-105"></use>
+<use x="-37.64268" y="56.838203" href="#tz_yerkes_dodson_g0-120"></use>
+<use x="-34.079596" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(153.57156,-7.00517)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-46.775246" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-43.385125" y="56.838203" href="#tz_yerkes_dodson_g0-108"></use>
+<use x="-41.378732" y="56.838203" href="#tz_yerkes_dodson_g0-116"></use>
+<use x="-38.680477" y="56.838203" href="#tz_yerkes_dodson_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M11.38092 9.83229L13.8886 12.06732L16.39627 14.65921L18.90395 17.63664L21.41162 21.01784L23.9193 24.81148L26.42697 29.00064L28.93465 33.56534L31.44232 38.47649L33.95 43.67029L36.45767 49.09895L38.96535 54.66785L41.47302 60.27539L43.9807 65.81563L46.48837 71.1783L48.99605 76.21275L51.50372 80.84344L54.01141 84.89932L56.51909 88.31915L59.02676 90.9853L61.53444 92.80788L64.04211 93.77518L66.54979 93.83075L69.05746 92.97676L71.56514 91.23927L74.07281 88.66605L76.58049 85.34216L79.08817 81.34056L81.59584 76.77586L84.10352 71.78004L86.61119 66.44603L89.11887 60.92314L91.62654 55.31691L94.13422 49.7376L96.64189 44.2907L99.14957 39.06825L101.65724 34.11845L104.16492 29.50774L106.67259 25.27126L109.18028 21.44028L111.68796 18.01175L114.19563 14.98874L116.70331 12.34995L119.21098 10.07585L121.71866 8.1417L124.22633 6.51709L126.73401 5.16469L129.24168 4.04718L131.74936 3.14458L134.25703 2.42258L136.76471 1.83951L139.27238 1.38972L141.78006 1.04153L144.28773 .77191L146.79541 .56569L149.30309 .41113L151.81076 .29478L154.31844 .21056L156.82611 .14717L159.33379 .10289" fill="none"></path>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(33.94637,92.00305)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#2780e3">
+<g stroke="none">
+<g fill="#2780e3">
+<use x="-46.775246" y="50.860619" href="#tz_yerkes_dodson_g0-116"></use>
+<use x="-44.076991" y="50.860619" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-40.68687" y="50.860619" href="#tz_yerkes_dodson_g0-114"></use>
+<use x="-37.988616" y="50.860619" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-34.94443" y="50.860619" href="#tz_yerkes_dodson_g0-102"></use>
+<use x="-32.765074" y="50.860619" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-46.567696" y="56.838203" href="#tz_yerkes_dodson_g0-100"></use>
+<use x="-42.831644" y="56.838203" href="#tz_yerkes_dodson_g0-105"></use>
+<use x="-40.825251" y="56.838203" href="#tz_yerkes_dodson_g0-102"></use>
+<use x="-39.337759" y="56.838203" href="#tz_yerkes_dodson_g0-19"></use>
+<use x="-38.645893" y="56.838203" href="#tz_yerkes_dodson_g0-16"></use>
+<use x="-36.6395" y="56.838203" href="#tz_yerkes_dodson_g0-99"></use>
+<use x="-33.595315" y="56.838203" href="#tz_yerkes_dodson_g0-105"></use>
+<use x="-31.588922" y="56.838203" href="#tz_yerkes_dodson_g0-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="1.2">
+<g fill="#d7433b" stroke="#d7433b">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M11.38092 .11981L14.12955 .1667L16.87817 .23053L19.62682 .31519L22.37544 .4272L25.12407 .57437L27.87271 .76454L30.62134 1.00679L33.36996 1.32199L36.1186 1.71533L38.86723 2.21027L41.61586 2.82504L44.3645 3.58568L47.11313 4.4987L49.86176 5.60059L52.6104 6.91476L55.35902 8.46861L58.10765 10.27904L60.85628 12.3786L63.60492 14.76993L66.35355 17.47644L69.10217 20.50728L71.85081 23.8546L74.59944 27.52495L77.34807 31.47792L80.09671 35.70442L82.84534 40.15363L85.59396 44.77217L88.3426 49.50272L91.09123 54.26582L93.83986 58.98724L96.5885 63.58104L99.33713 67.9521L102.08575 72.01709L104.8344 75.66269L107.58302 78.83809L110.33165 81.44302L113.08029 83.42276L115.82892 84.73825L118.57755 85.3439L121.32617 85.22408L124.07481 84.37877L126.82344 82.84317L129.57207 80.65633L132.32071 77.85603L135.06934 74.51782L137.81796 70.71854L140.5666 66.55196L143.31523 62.09492L146.06386 57.45035L148.8125 52.70416L151.56113 47.94757L154.30975 43.24437L157.0584 38.66753L159.80702 34.29645L162.55565 30.1468L165.30429 26.28761L168.05292 22.72667L170.80154 19.47443L173.55019 16.5543" fill="none"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(142.74171,83.95367)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-46.775246,56.838203)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-44.613157" y="50.860619" href="#tz_yerkes_dodson_g0-116"></use>
+<use x="-41.914903" y="50.860619" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-38.524782" y="50.860619" href="#tz_yerkes_dodson_g0-114"></use>
+<use x="-35.826527" y="50.860619" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-32.782342" y="50.860619" href="#tz_yerkes_dodson_g0-102"></use>
+<use x="-30.602986" y="50.860619" href="#tz_yerkes_dodson_g0-97"></use>
+<use x="-46.775246" y="56.838203" href="#tz_yerkes_dodson_g0-115"></use>
+<use x="-44.042393" y="56.838203" href="#tz_yerkes_dodson_g0-105"></use>
+<use x="-42.036" y="56.838203" href="#tz_yerkes_dodson_g0-109"></use>
+<use x="-36.570289" y="56.838203" href="#tz_yerkes_dodson_g0-112"></use>
+<use x="-32.834238" y="56.838203" href="#tz_yerkes_dodson_g0-108"></use>
+<use x="-30.827845" y="56.838203" href="#tz_yerkes_dodson_g0-101"></use>
+<use x="-27.783659" y="56.838203" href="#tz_yerkes_dodson_g0-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-yerkes-dodson-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;51.1: A <strong>lei de Yerkes-Dodson</strong>: o desempenho segue um U invertido em função da ativação. O nível ótimo é mais baixo para tarefas difíceis (azul) e mais alto para tarefas simples (vermelho tracejado).
+</figcaption>
+</figure>
+</div>
+<p>Enquanto impulso e arousal explicam a motivação <strong>de dentro</strong> (<em>push</em>, empurra o organismo), a <strong>teoria do incentivo</strong> a explica <strong>de fora</strong> (<em>pull</em>, puxa o organismo): somos atraídos por estímulos externos — o cheiro da comida, o dinheiro, a aprovação — que adquiriram valor motivacional, muitas vezes por aprendizagem (Cap. 40). A comida motiva mais quando é saborosa do que quando é apenas nutritiva, mesmo com fome idêntica: o incentivo importa. As teorias modernas integram os dois vetores: o comportamento resulta da interação entre estados internos (<em>drives</em>) e o valor de incentivo dos objetos externos.</p>
+</section>
+<section id="a-hierarquia-de-necessidades-de-maslow" class="level2">
+<h2 class="anchored" data-anchor-id="a-hierarquia-de-necessidades-de-maslow">A hierarquia de necessidades de Maslow</h2>
+<p>Abraham Maslow, da tradição humanista (Cap. 11), propôs organizar as necessidades humanas em uma <strong>hierarquia</strong> <span class="citation" data-cites="maslow1943">(<a href="../../referencias.html#ref-maslow1943" role="doc-biblioref">Maslow, 1943</a>)</span>, popularmente representada como uma pirâmide (<a href="#fig-maslow" class="quarto-xref">Figura&nbsp;<span>51.2</span></a>). Na base estão as necessidades <strong>fisiológicas</strong> (fome, sede, sono); acima, <strong>segurança</strong> (abrigo, estabilidade); depois <strong>pertencimento e amor</strong> (afeto, aceitação); em seguida <strong>estima</strong> (respeito, reconhecimento); e no topo a <strong>autorrealização</strong> — a realização do próprio potencial. A tese central é que as necessidades <strong>inferiores</strong>, mais básicas, precisam estar razoavelmente satisfeitas antes que as <strong>superiores</strong> se tornem motivadoras: quem passa fome não se preocupa, no momento, com autorrealização.</p>
+<div id="fig-maslow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-maslow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Pirâmide dividida em cinco faixas horizontais. Da base ao topo: necessidades fisiológicas, segurança, pertencimento e amor, estima, e autorrealização no ápice. As faixas inferiores são mais largas, indicando necessidades mais básicas." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="192.755895pt" height="128.355995pt" viewbox="-68.014948 -68.014952 192.755895 128.355995">
+<defs>
+<path id="tz_piramide_maslow_g0-33" d="M5.275218-1.105853C4.652553-.657534 4.552927-.014944 4.552927-.004981C4.552927 .079701 4.622665 .079701 4.692403 .079701C4.79203 .079701 4.811955 .079701 4.836862-.019925C5.006227-.637609 5.439601-1.031133 6.057285-1.160648C6.097136-1.165629 6.156912-1.180573 6.156912-1.24533S6.097136-1.325031 6.057285-1.330012C5.379826-1.469489 4.996264-1.907846 4.841843-2.450809C4.811955-2.56538 4.806974-2.570361 4.692403-2.570361C4.622665-2.570361 4.552927-2.570361 4.552927-2.485679C4.552927-2.480697 4.652553-1.838107 5.275218-1.384807H.836862C.757161-1.384807 .622665-1.384807 .622665-1.24533S.757161-1.105853 .836862-1.105853H5.275218Z"></path>
+<path id="tz_piramide_maslow_g1-19" d="M2.450809-3.048568C2.510585-3.088418 2.580324-3.138232 2.580324-3.242839S2.495641-3.476961 2.351183-3.476961C2.271482-3.476961 2.236613-3.442092 2.1868-3.39726L1.414695-2.665006L1.544209-2.500623L2.450809-3.048568Z"></path>
+<path id="tz_piramide_maslow_g1-24" d="M1.912827 .109589H1.469489V.353674C1.65878 .353674 1.987547 .37858 1.987547 .607721C1.987547 .737235 1.867995 .816936 1.569116 .851806C1.339975 .881694 1.175592 .861768 .951432 .876712V1.041096C1.270237 1.021171 1.484433 1.046077 1.833126 1.001245C2.276463 .946451 2.430884 .806974 2.430884 .607721C2.430884 .358655 2.206725 .249066 1.912827 .214197V.109589Z"></path>
+<path id="tz_piramide_maslow_g1-45" d="M1.863014-.881694V-1.265255H.209215V-.881694H1.863014Z"></path>
+<path id="tz_piramide_maslow_g1-46" d="M1.305106-.303861C1.305106-.473225 1.17061-.607721 1.001245-.607721C.836862-.607721 .697385-.473225 .697385-.303861S.83188 0 1.001245 0C1.165629 0 1.305106-.134496 1.305106-.303861Z"></path>
+<path id="tz_piramide_maslow_g1-65" d="M2.615193-3.437111C2.575342-3.526775 2.560399-3.566625 2.440847-3.566625C2.351183-3.566625 2.311333-3.5467 2.266501-3.447073L.98132-.513076C.871731-.26401 .60274-.219178 .353674-.219178V0C.537983-.014944 .747198-.019925 .931507-.019925C.996264-.019925 1.349938-.014944 1.579078 0V-.219178C1.300125-.219178 1.200498-.343711 1.200498-.438356C1.200498-.468244 1.210461-.483188 1.225405-.523039L1.484433-1.110834H3.083437L3.387298-.41345C3.417186-.353674 3.417186-.343711 3.417186-.33873C3.417186-.219178 3.13325-.219178 2.988792-.219178V0C3.183064-.004981 3.556663-.019925 3.795766-.019925C4.049813-.019925 4.318804-.009963 4.52802 0V-.219178H4.398506C4.089664-.219178 4.014944-.249066 3.955168-.383562L2.615193-3.437111ZM2.281445-2.933998L2.988792-1.330012H1.579078L2.281445-2.933998Z"></path>
+<path id="tz_piramide_maslow_g1-69" d="M4.164384-1.349938H3.955168C3.81071-.533001 3.616438-.219178 2.665006-.219178H1.738481C1.494396-.219178 1.494396-.254047 1.494396-.408468V-1.643836H2.072229C2.570361-1.643836 2.709838-1.539228 2.709838-1.061021H2.919054V-2.445828H2.709838C2.709838-1.967621 2.570361-1.863014 2.072229-1.863014H1.494396V-2.973848C1.494396-3.128269 1.494396-3.163138 1.738481-3.163138H2.620174C3.452055-3.163138 3.676214-2.963885 3.785803-2.196762H3.995019L3.830635-3.382316H.41345V-3.163138H.562889C.966376-3.163138 .966376-3.113325 .966376-2.958904V-.423412C.966376-.268991 .966376-.219178 .562889-.219178H.41345V0H3.915318L4.164384-1.349938Z"></path>
+<path id="tz_piramide_maslow_g1-70" d="M3.740971-3.382316H.41345V-3.163138H.562889C.966376-3.163138 .966376-3.113325 .966376-2.958904V-.423412C.966376-.268991 .966376-.219178 .562889-.219178H.41345V0C.672478-.009963 .946451-.019925 1.255293-.019925C1.539228-.019925 1.907846-.019925 2.1868 0V-.219178H1.972603C1.494396-.219178 1.494396-.268991 1.494396-.428394V-1.58406H2.052304C2.550436-1.58406 2.674969-1.469489 2.674969-1.001245H2.884184V-2.386052H2.674969C2.674969-1.917808 2.550436-1.803238 2.052304-1.803238H1.494396V-2.973848C1.494396-3.128269 1.494396-3.163138 1.738481-3.163138H2.56538C3.35741-3.163138 3.596513-2.968867 3.696139-2.196762H3.905355L3.740971-3.382316Z"></path>
+<path id="tz_piramide_maslow_g1-80" d="M1.504359-1.514321H2.595268C3.262765-1.514321 3.995019-1.892902 3.995019-2.445828C3.995019-2.968867 3.337484-3.402242 2.545455-3.402242H.423412V-3.183064H.572852C.976339-3.183064 .976339-3.13325 .976339-2.978829V-.423412C.976339-.268991 .976339-.219178 .572852-.219178H.423412V0C.647572-.009963 .956413-.019925 1.240349-.019925S1.833126-.009963 2.057285 0V-.219178H1.907846C1.504359-.219178 1.504359-.268991 1.504359-.423412V-1.514321ZM2.425903-3.183064C3.237858-3.183064 3.412204-2.834371 3.412204-2.445828C3.412204-2.03736 3.217933-1.703611 2.420922-1.703611H1.484433V-2.993773C1.484433-3.148194 1.484433-3.183064 1.728518-3.183064H2.425903Z"></path>
+<path id="tz_piramide_maslow_g1-83" d="M3.073474-3.372354C3.073474-3.457036 3.073474-3.511831 2.993773-3.511831C2.968867-3.511831 2.938979-3.511831 2.894147-3.447073L2.699875-3.158157C2.465753-3.372354 2.15193-3.511831 1.69863-3.511831C.991283-3.511831 .483188-3.073474 .483188-2.570361C.483188-2.291407 .632628-2.07721 .787049-1.947696C1.041096-1.733499 1.290162-1.683686 1.519303-1.638854C1.613948-1.618929 2.271482-1.489415 2.306351-1.484433C2.6401-1.404732 2.94396-1.155666 2.94396-.816936C2.94396-.463263 2.595268-.109589 2.017435-.109589C1.788294-.109589 1.369863-.139477 1.066002-.33873C.826899-.498132 .707347-.722291 .692403-1.016189C.687422-1.100872 .687422-1.13076 .587796-1.13076C.483188-1.13076 .483188-1.090909 .483188-.986301V-.029888C.483188 .054795 .483188 .109589 .562889 .109589C.612702 .109589 .622665 .094645 .652553 .049813C.67746 .019925 .846824-.224159 .846824-.229141C1.215442 .049813 1.678705 .109589 2.017435 .109589C2.769614 .109589 3.247821-.383562 3.247821-.901619C3.247821-1.275218 3.01868-1.494396 2.929016-1.579078C2.694894-1.808219 2.425903-1.858032 2.017435-1.937733C1.738481-1.992528 1.449564-2.047323 1.399751-2.062267C1.200498-2.102117 .787049-2.286426 .787049-2.665006C.787049-2.993773 1.155666-3.307597 1.69863-3.307597C2.590286-3.307597 2.804483-2.719801 2.859278-2.356164C2.874222-2.286426 2.894147-2.271482 2.968867-2.271482C3.073474-2.271482 3.073474-2.306351 3.073474-2.410959V-3.372354Z"></path>
+<path id="tz_piramide_maslow_g1-97" d="M2.60523-1.479452C2.60523-1.957659 2.102117-2.231631 1.484433-2.231631C1.180573-2.231631 .60274-2.216687 .60274-1.793275C.60274-1.608966 .742217-1.524284 .86675-1.524284C1.001245-1.524284 1.13076-1.618929 1.13076-1.788294C1.13076-1.907846 1.061021-1.982565 1.016189-2.012453C1.180573-2.067248 1.419676-2.067248 1.474471-2.067248C1.897883-2.067248 2.161893-1.833126 2.161893-1.474471V-1.344956C1.678705-1.32005 1.409714-1.305106 1.026152-1.17061C.697385-1.05604 .408468-.846824 .408468-.523039C.408468-.054795 .986301 .054795 1.384807 .054795C1.768369 .054795 2.067248-.099626 2.221669-.353674C2.241594-.179328 2.356164 .029888 2.610212 .029888C2.645081 .029888 3.212951 .029888 3.212951-.448319V-.722291H3.003736V-.458281C3.003736-.408468 3.003736-.18929 2.804483-.18929S2.60523-.408468 2.60523-.458281V-1.479452ZM2.161893-.707347C2.161893-.159402 1.564134-.109589 1.439601-.109589C1.145704-.109589 .86675-.26401 .86675-.523039C.86675-.687422 .971357-1.145704 2.161893-1.195517V-.707347Z"></path>
+<path id="tz_piramide_maslow_g1-98" d="M1.215442-3.457036L.37858-3.402242V-3.183064C.747198-3.183064 .79203-3.148194 .79203-2.90411V0H1.001245C1.041096-.064757 1.080946-.134496 1.115816-.199253C1.13076-.229141 1.150685-.26401 1.17061-.293898C1.384807-.064757 1.688667 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.819427-2.201743 2.067248-2.201743C1.798257-2.201743 1.484433-2.132005 1.215442-1.92279V-3.457036ZM1.235367-1.663761C1.404732-1.907846 1.733499-2.03736 2.032379-2.03736C2.620174-2.03736 2.874222-1.603985 2.874222-1.075965C2.874222-.787049 2.809465-.533001 2.615193-.348692C2.455791-.199253 2.211706-.109589 1.972603-.109589C1.633873-.109589 1.374844-.298879 1.235367-.52802V-1.663761Z"></path>
+<path id="tz_piramide_maslow_g1-99" d="M2.236613-2.007472C2.166874-1.957659 2.127024-1.877958 2.127024-1.788294C2.127024-1.62391 2.251557-1.524284 2.391034-1.524284C2.510585-1.524284 2.655044-1.603985 2.655044-1.793275C2.655044-2.216687 2.102117-2.231631 1.753425-2.231631C.777086-2.231631 .358655-1.574097 .358655-1.075965C.358655-.458281 .941469 .054795 1.693649 .054795C2.555417 .054795 2.724782-.552927 2.724782-.597758C2.724782-.667497 2.650062-.667497 2.620174-.667497C2.540473-.667497 2.535492-.652553 2.510585-.592777C2.34122-.179328 1.977584-.124533 1.758406-.124533C1.330012-.124533 .856787-.41345 .856787-1.080946C.856787-1.300125 .901619-1.574097 1.085928-1.783313C1.325031-2.052304 1.618929-2.052304 1.77335-2.052304C1.92279-2.052304 2.062267-2.052304 2.236613-2.007472Z"></path>
+<path id="tz_piramide_maslow_g1-101" d="M2.575342-1.120797C2.67995-1.120797 2.724782-1.120797 2.724782-1.240349C2.724782-1.574097 2.545455-2.231631 1.613948-2.231631C.856787-2.231631 .323786-1.688667 .323786-1.09589C.323786-.463263 .931507 .054795 1.688667 .054795C2.480697 .054795 2.724782-.498132 2.724782-.592777C2.724782-.67746 2.645081-.67746 2.620174-.67746C2.545455-.67746 2.535492-.657534 2.505604-.587796C2.366127-.244085 1.997509-.124533 1.718555-.124533C1.315068-.124533 1.090909-.348692 1.016189-.433375C.821918-.672478 .821918-.986301 .821918-1.120797H2.575342ZM.83188-1.275218C.891656-1.932752 1.374844-2.067248 1.608966-2.067248C2.30137-2.067248 2.336239-1.419676 2.34122-1.275218H.83188Z"></path>
+<path id="tz_piramide_maslow_g1-103" d="M2.291407-1.937733C2.530511-2.082192 2.75467-2.087173 2.834371-2.092154C2.819427-2.072229 2.794521-2.042341 2.794521-1.972603C2.794521-1.872976 2.859278-1.788294 2.978829-1.788294S3.163138-1.872976 3.163138-1.972603C3.163138-2.102117 3.058531-2.256538 2.819427-2.256538C2.699875-2.256538 2.435866-2.231631 2.171856-2.027397C2.057285-2.097136 1.833126-2.201743 1.524284-2.201743C.936488-2.201743 .52802-1.853051 .52802-1.469489C.52802-1.215442 .712329-1.031133 .787049-.971357C.667497-.826899 .637609-.67746 .637609-.56787C.637609-.303861 .806974-.139477 .851806-.104608C.60274-.039851 .313823 .119552 .313823 .383562C.313823 .777086 .971357 1.026152 1.693649 1.026152C2.361146 1.026152 3.073474 .806974 3.073474 .373599C3.073474 .14944 2.94396-.089664 2.699875-.209215C2.366127-.368618 2.047323-.368618 1.514321-.368618C1.389788-.368618 1.17061-.368618 1.145704-.373599C.9066-.41345 .851806-.607721 .851806-.702366C.851806-.801993 .901619-.881694 .916563-.881694C.926526-.881694 .936488-.876712 .951432-.871731C1.150685-.767123 1.344956-.737235 1.519303-.737235C2.107098-.737235 2.515567-1.085928 2.515567-1.469489C2.515567-1.708593 2.351183-1.882939 2.291407-1.937733ZM1.524284-.901619C1.085928-.901619 .966376-1.190535 .966376-1.469489C.966376-1.743462 1.085928-2.03736 1.519303-2.03736C1.957659-2.03736 2.07721-1.748443 2.07721-1.469489C2.07721-1.195517 1.957659-.901619 1.524284-.901619ZM1.529265 .009963C2.027397 .009963 2.729763 .009963 2.729763 .383562C2.729763 .627646 2.286426 .861768 1.693649 .861768C1.120797 .861768 .657534 .64259 .657534 .37858C.657534 .224159 .83188 .009963 1.205479 .009963H1.529265Z"></path>
+<path id="tz_piramide_maslow_g1-105" d="M1.260274-3.068493C1.260274-3.232877 1.125778-3.372354 .956413-3.372354C.801993-3.372354 .652553-3.252802 .652553-3.068493C.652553-2.889166 .801993-2.764633 .956413-2.764633C1.125778-2.764633 1.260274-2.90411 1.260274-3.068493ZM.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743L.433375-2.146949Z"></path>
+<path id="tz_piramide_maslow_g1-108" d="M1.250311-3.457036L.41345-3.402242V-3.183064C.782067-3.183064 .826899-3.148194 .826899-2.90411V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.622665-.014944 .826899-.019925 1.036115-.019925S1.454545-.014944 1.663761 0V-.219178H1.574097C1.250311-.219178 1.250311-.26401 1.250311-.418431V-3.457036Z"></path>
+<path id="tz_piramide_maslow_g1-109" d="M4.722291-1.504359C4.722291-2.117061 4.254047-2.201743 3.880448-2.201743C3.392279-2.201743 3.108344-1.957659 2.968867-1.738481C2.844334-2.196762 2.336239-2.201743 2.15193-2.201743C1.638854-2.201743 1.349938-1.927771 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.838107 1.77335-2.03736 2.097136-2.03736C2.460772-2.03736 2.550436-1.833126 2.550436-1.50934V-.418431C2.550436-.26401 2.550436-.219178 2.22665-.219178H2.136986V0C2.351183-.014944 2.560399-.019925 2.774595-.019925C2.983811-.019925 3.198007-.014944 3.407223 0V-.219178H3.317559C2.993773-.219178 2.993773-.26401 2.993773-.418431V-1.285181C2.993773-1.838107 3.501868-2.03736 3.825654-2.03736C4.18929-2.03736 4.278954-1.833126 4.278954-1.50934V-.418431C4.278954-.26401 4.278954-.219178 3.955168-.219178H3.865504V0C4.079701-.014944 4.288917-.019925 4.503113-.019925C4.712329-.019925 4.926526-.014944 5.135741 0V-.219178H5.046077C4.722291-.219178 4.722291-.26401 4.722291-.418431V-1.504359Z"></path>
+<path id="tz_piramide_maslow_g1-110" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.618929-2.201743 1.339975-1.907846 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_piramide_maslow_g1-111" d="M3.063512-1.061021C3.063512-1.683686 2.475716-2.231631 1.693649-2.231631S.323786-1.683686 .323786-1.061021C.323786-.463263 .916563 .054795 1.693649 .054795C2.475716 .054795 3.063512-.463263 3.063512-1.061021ZM1.693649-.124533C.821918-.124533 .821918-.86675 .821918-1.110834C.821918-1.334994 .821918-2.067248 1.693649-2.067248S2.56538-1.334994 2.56538-1.110834C2.56538-.86675 2.56538-.124533 1.693649-.124533Z"></path>
+<path id="tz_piramide_maslow_g1-112" d="M1.648817 .747198H1.559153C1.235367 .747198 1.235367 .702366 1.235367 .547945V-.229141C1.449564-.039851 1.718555 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.824408-2.201743 2.087173-2.201743C1.693649-2.201743 1.384807-2.062267 1.215442-1.917808V-2.201743L.37858-2.146949V-1.927771C.737235-1.927771 .79203-1.927771 .79203-1.713574V.547945C.79203 .702366 .79203 .747198 .468244 .747198H.37858V.966376C.592777 .951432 .801993 .946451 1.016189 .946451C1.225405 .946451 1.439601 .951432 1.648817 .966376V.747198ZM1.235367-1.653798C1.449564-1.957659 1.828144-2.022416 2.027397-2.022416C2.520548-2.022416 2.874222-1.579078 2.874222-1.075965C2.874222-.533001 2.460772-.109589 1.967621-.109589C1.743462-.109589 1.479452-.204234 1.305106-.428394C1.235367-.513076 1.235367-.523039 1.235367-.617684V-1.653798Z"></path>
+<path id="tz_piramide_maslow_g1-114" d="M1.215442-1.115816C1.215442-1.579078 1.479452-2.027397 1.952677-2.03736C1.947696-2.032379 1.882939-1.967621 1.882939-1.858032C1.882939-1.678705 2.022416-1.603985 2.132005-1.603985C2.256538-1.603985 2.386052-1.688667 2.386052-1.858032C2.386052-2.047323 2.206725-2.201743 1.942715-2.201743C1.693649-2.201743 1.374844-2.072229 1.180573-1.653798H1.175592V-2.201743L.37858-2.146949V-1.927771C.747198-1.927771 .79203-1.892902 .79203-1.648817V-.418431C.79203-.26401 .79203-.219178 .468244-.219178H.37858V0C.587796-.014944 .811955-.019925 1.021171-.019925C1.280199-.019925 1.524284-.009963 1.733499 0V-.219178H1.599004C1.215442-.219178 1.215442-.268991 1.215442-.423412V-1.115816Z"></path>
+<path id="tz_piramide_maslow_g1-115" d="M2.22665-2.092154C2.22665-2.176837 2.22665-2.231631 2.146949-2.231631C2.122042-2.231631 2.102117-2.22665 2.062267-2.196762C2.042341-2.176837 1.952677-2.097136 1.932752-2.097136C1.927771-2.097136 1.917808-2.097136 1.88792-2.117061C1.77335-2.181818 1.589041-2.231631 1.339975-2.231631C.518057-2.231631 .348692-1.853051 .348692-1.62391C.348692-1.155666 .926526-1.066002 1.384807-.996264C1.673724-.951432 2.132005-.881694 2.132005-.542964C2.132005-.368618 1.987547-.109589 1.384807-.109589C1.046077-.109589 .71731-.234122 .56787-.762142C.542964-.851806 .537983-.86675 .4533-.86675C.348692-.86675 .348692-.826899 .348692-.722291V-.084682C.348692 0 .348692 .054795 .428394 .054795C.468244 .054795 .473225 .049813 .56787-.044832L.697385-.169365C.946451 .049813 1.260274 .054795 1.384807 .054795C2.216687 .054795 2.381071-.37858 2.381071-.627646C2.381071-.851806 2.256538-1.016189 2.067248-1.135741C1.867995-1.260274 1.718555-1.280199 1.300125-1.344956C.98132-1.39477 .597758-1.454545 .597758-1.718555C.597758-1.892902 .79203-2.082192 1.334994-2.082192C1.748443-2.082192 1.987547-1.917808 2.017435-1.574097C2.022416-1.499377 2.027397-1.469489 2.122042-1.469489C2.22665-1.469489 2.22665-1.504359 2.22665-1.608966V-2.092154Z"></path>
+<path id="tz_piramide_maslow_g1-116" d="M1.225405-1.927771H2.107098V-2.146949H1.225405V-3.063512H1.016189C1.011208-2.595268 .762142-2.107098 .254047-2.092154V-1.927771H.782067V-.627646C.782067-.059776 1.250311 .054795 1.559153 .054795C1.932752 .054795 2.211706-.219178 2.211706-.627646V-.901619H2.002491V-.64259C2.002491-.268991 1.783313-.124533 1.608966-.124533C1.225405-.124533 1.225405-.523039 1.225405-.627646V-1.927771Z"></path>
+<path id="tz_piramide_maslow_g1-117" d="M2.132005-2.146949V-1.927771C2.500623-1.927771 2.545455-1.892902 2.545455-1.648817V-.836862C2.545455-.37858 2.201743-.109589 1.793275-.109589C1.285181-.109589 1.265255-.313823 1.265255-.56787V-2.201743L.408468-2.146949V-1.927771C.79203-1.927771 .821918-1.88792 .821918-1.633873V-.547945C.86675 .009963 1.429639 .054795 1.753425 .054795C2.171856 .054795 2.41594-.134496 2.56538-.368618V.054795L3.402242 0V-.219178C3.033624-.219178 2.988792-.254047 2.988792-.498132V-2.201743L2.132005-2.146949Z"></path>
+<path id="tz_piramide_maslow_g1-122" d="M2.56538-1.947696C2.615193-2.002491 2.620174-2.007472 2.620174-2.052304C2.620174-2.146949 2.555417-2.146949 2.470735-2.146949H.463263L.398506-1.290162H.607721C.647572-1.843088 .806974-1.982565 1.389788-1.982565H2.027397L.368618-.209215C.318804-.154421 .313823-.14944 .313823-.099626C.313823 0 .373599 0 .463263 0H2.540473L2.6401-.986301H2.430884C2.371108-.423412 2.281445-.179328 1.579078-.179328H.911582L2.56538-1.947696Z"></path>
+</defs>
+<g id="tz_piramide_maslow_page1">
+<g stroke-miterlimit="10" transform="translate(17.223635,59.942543)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g fill="#d4e6fa" stroke="#d4e6fa">
+<path d="M-85.35823 0H85.35823L68.2864 25.60728H-68.2864Z" stroke="none"></path>
+</g>
+<g fill="#bed9f7" stroke="#bed9f7">
+<path d="M-68.2864 25.60728H68.2864L51.21501 51.21501H-51.21501Z" stroke="none"></path>
+</g>
+<g fill="#c6eaba" stroke="#c6eaba">
+<path d="M-51.21501 51.21501H51.21501L34.1432 76.82231H-34.1432Z" stroke="none"></path>
+</g>
+<g fill="#ffc8a3" stroke="#ffc8a3">
+<path d="M-34.1432 76.82231H34.1432L17.07181 102.43004H-17.07181Z" stroke="none"></path>
+</g>
+<g fill="#f3c7c4" stroke="#f3c7c4">
+<path d="M-17.07181 102.43004H17.07181L0 128.03734Z" stroke="none"></path>
+</g>
+<path d="M-85.35823 0H85.35823L0 128.03734Z" fill="none"></path>
+<path d="M-68.2864 25.60728H68.2864" fill="none"></path>
+<path d="M-51.21501 51.21501H51.21501" fill="none"></path>
+<path d="M-34.1432 76.82231H34.1432" fill="none"></path>
+<path d="M-17.07181 102.43004H17.07181" fill="none"></path>
+<g transform="translate(-17.26761,11.55363)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-70"></use>
+<use x="21.533934" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="23.540327" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+<use x="26.27318" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="28.279573" y="59.942543" href="#tz_piramide_maslow_g1-111"></use>
+<use x="31.669694" y="59.942543" href="#tz_piramide_maslow_g1-108"></use>
+<use x="33.676087" y="59.942543" href="#tz_piramide_maslow_g1-19"></use>
+<use x="33.676089" y="59.942543" href="#tz_piramide_maslow_g1-111"></use>
+<use x="37.06621" y="59.942543" href="#tz_piramide_maslow_g1-103"></use>
+<use x="40.456331" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="42.462724" y="59.942543" href="#tz_piramide_maslow_g1-99"></use>
+<use x="45.506909" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+<use x="48.89703" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-15.1391,37.19807)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-83"></use>
+<use x="20.959686" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="24.003872" y="59.942543" href="#tz_piramide_maslow_g1-103"></use>
+<use x="27.393993" y="59.942543" href="#tz_piramide_maslow_g1-117"></use>
+<use x="31.130045" y="59.942543" href="#tz_piramide_maslow_g1-114"></use>
+<use x="33.828299" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+<use x="37.21842" y="59.942543" href="#tz_piramide_maslow_g1-110"></use>
+<use x="40.954472" y="59.942543" href="#tz_piramide_maslow_g1-24"></use>
+<use x="40.954485" y="59.942543" href="#tz_piramide_maslow_g1-99"></use>
+<use x="43.998671" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-21.45164,62.31926)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-80"></use>
+<use x="21.533916" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="24.578101" y="59.942543" href="#tz_piramide_maslow_g1-114"></use>
+<use x="27.276356" y="59.942543" href="#tz_piramide_maslow_g1-116"></use>
+<use x="29.97461" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="33.018796" y="59.942543" href="#tz_piramide_maslow_g1-110"></use>
+<use x="36.754848" y="59.942543" href="#tz_piramide_maslow_g1-99"></use>
+<use x="39.799033" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="41.805426" y="59.942543" href="#tz_piramide_maslow_g1-109"></use>
+<use x="47.271137" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="50.315322" y="59.942543" href="#tz_piramide_maslow_g1-110"></use>
+<use x="53.878393" y="59.942543" href="#tz_piramide_maslow_g1-116"></use>
+<use x="56.576647" y="59.942543" href="#tz_piramide_maslow_g1-111"></use>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-10.42723,87.92656)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-69"></use>
+<use x="21.706897" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+<use x="24.43975" y="59.942543" href="#tz_piramide_maslow_g1-116"></use>
+<use x="27.138004" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="29.144397" y="59.942543" href="#tz_piramide_maslow_g1-109"></use>
+<use x="34.610108" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(-9.13205,107.68884)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="17.790935" y="53.964959" href="#tz_piramide_maslow_g1-65"></use>
+<use x="22.675481" y="53.964959" href="#tz_piramide_maslow_g1-117"></use>
+<use x="26.411533" y="53.964959" href="#tz_piramide_maslow_g1-116"></use>
+<use x="29.109788" y="53.964959" href="#tz_piramide_maslow_g1-111"></use>
+<use x="32.499909" y="53.964959" href="#tz_piramide_maslow_g1-45"></use>
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-114"></use>
+<use x="19.921889" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="22.966075" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+<use x="26.356196" y="59.942543" href="#tz_piramide_maslow_g1-108"></use>
+<use x="28.362589" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="30.368982" y="59.942543" href="#tz_piramide_maslow_g1-122"></use>
+<use x="33.413167" y="59.942543" href="#tz_piramide_maslow_g1-46"></use>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-width="0.8">
+<path d="M99.5846 0V127.23735" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,99.5846,127.63734)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linecap="round">
+ <g stroke-linejoin="round">
+ <path d="M-2.56 3.12257C-2.0923 1.24901-1.05006 .3643 0 0C-1.05006-.3643-2.0923-1.24901-2.56-3.12257" fill="none"></path>
+ </g>
+ </g>
+ </g>
+</g>
+</g>
+</g>
+<g transform="matrix(0.0,1.0,-1.0,0.0,103.61531,32.64671)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(17.223635,59.942543)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="17.223635" y="59.942543" href="#tz_piramide_maslow_g1-98"></use>
+<use x="20.959686" y="59.942543" href="#tz_piramide_maslow_g1-19"></use>
+<use x="20.959688" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+<use x="24.349809" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+<use x="27.082662" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="29.089055" y="59.942543" href="#tz_piramide_maslow_g1-99"></use>
+<use x="32.133241" y="59.942543" href="#tz_piramide_maslow_g1-97"></use>
+<use x="35.523362" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+<use x="40.608538" y="59.942543" href="#tz_piramide_maslow_g0-33"></use>
+<use x="49.741099" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+<use x="52.473952" y="59.942543" href="#tz_piramide_maslow_g1-117"></use>
+<use x="56.210004" y="59.942543" href="#tz_piramide_maslow_g1-112"></use>
+<use x="60.119022" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="63.163207" y="59.942543" href="#tz_piramide_maslow_g1-114"></use>
+<use x="65.861462" y="59.942543" href="#tz_piramide_maslow_g1-105"></use>
+<use x="67.867855" y="59.942543" href="#tz_piramide_maslow_g1-111"></use>
+<use x="71.257976" y="59.942543" href="#tz_piramide_maslow_g1-114"></use>
+<use x="73.95623" y="59.942543" href="#tz_piramide_maslow_g1-101"></use>
+<use x="77.000416" y="59.942543" href="#tz_piramide_maslow_g1-115"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-maslow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;51.2: A <strong>pirâmide de Maslow</strong>: necessidades organizadas da base (fisiológicas) ao topo (autorrealização). Segundo a proposta original, as inferiores predominariam sobre as superiores. A evidência (ver texto) sustenta a <em>importância</em> das categorias, mas <strong>não</strong> a ordem rígida.
+</figcaption>
+</figure>
+</div>
+<p>A pirâmide é uma das imagens mais difundidas da psicologia — e um bom caso para o rigor crítico do manual.</p>
+<div class="atencao">
+<p><strong>O que a evidência diz sobre Maslow.</strong> A hierarquia é intuitiva e pedagogicamente útil, mas a pesquisa empírica <strong>não confirma a ordem rígida</strong> que a pirâmide sugere. Revisões clássicas encontraram pouco apoio para a ideia de que uma necessidade precise estar satisfeita antes que a seguinte se ative <span class="citation" data-cites="wahba_bridwell1976">(<a href="../../referencias.html#ref-wahba_bridwell1976" role="doc-biblioref">Wahba; Bridwell, 1976</a>)</span>. Pessoas buscam sentido, afeto e realização mesmo em privação material — artistas famintos, resistências políticas, laços profundos formados na pobreza. Um grande estudo transcultural <span class="citation" data-cites="tay_diener2011">(<a href="../../referencias.html#ref-tay_diener2011" role="doc-biblioref">Tay; Diener, 2011</a>)</span> confirmou que as <em>categorias</em> de necessidade de Maslow predizem bem-estar em todo o mundo, mas de forma <strong>relativamente independente</strong>: satisfazer o pertencimento aumenta o bem-estar mesmo quando a segurança não está plena, e a ordem em que as necessidades importam <strong>varia entre culturas e indivíduos</strong>. Conclusão equilibrada: Maslow acertou o <em>catálogo</em> das grandes necessidades humanas, mas errou ao impor-lhes uma sequência universal e fixa.</p>
+</div>
+</section>
+<section id="a-teoria-da-autodeterminação" class="level2">
+<h2 class="anchored" data-anchor-id="a-teoria-da-autodeterminação">A teoria da autodeterminação</h2>
+<p>A teoria contemporânea mais influente sobre motivação é a <strong>teoria da autodeterminação</strong> (TAD), de Edward Deci e Richard Ryan <span class="citation" data-cites="deci_ryan2000 ryan_deci2000">(<a href="../../referencias.html#ref-deci_ryan2000" role="doc-biblioref">Deci; Ryan, 2000</a>; <a href="../../referencias.html#ref-ryan_deci2000" role="doc-biblioref">Ryan; Deci, 2000</a>)</span>. Seu ponto de partida é uma distinção decisiva:</p>
+<ul>
+<li><strong>Motivação intrínseca</strong> — fazer algo pela satisfação inerente à própria atividade (brincar, ler por prazer, resolver um enigma pelo desafio). A recompensa <em>é</em> a atividade.</li>
+<li><strong>Motivação extrínseca</strong> — fazer algo por uma consequência externa e separável: nota, dinheiro, evitar punição, aprovação.</li>
+</ul>
+<p>A TAD propõe que os seres humanos têm três <strong>necessidades psicológicas básicas</strong> cuja satisfação nutre a motivação intrínseca e o bem-estar: <strong>autonomia</strong> (sentir-se autor das próprias ações), <strong>competência</strong> (sentir-se eficaz, dominar desafios) e <strong>vínculo/pertencimento</strong> (<em>relatedness</em>, sentir-se conectado a outros). Ambientes que apoiam essas três necessidades geram motivação de melhor qualidade — mais persistente, criativa e associada a bem-estar — do que ambientes controladores baseados em pressão e recompensa.</p>
+<div class="experimento">
+<p>🔬 <strong>O efeito da sobrejustificação.</strong> Uma descoberta contraintuitiva e robusta: recompensar uma atividade <strong>intrinsecamente interessante</strong> pode <em>reduzir</em> o interesse por ela. No estudo clássico de Deci <span class="citation" data-cites="deci1971">(<a href="../../referencias.html#ref-deci1971" role="doc-biblioref">Deci, 1971</a>)</span>, estudantes que resolviam quebra-cabeças por prazer foram divididos: um grupo passou a receber dinheiro por peça resolvida; o outro, não. Quando as recompensas cessaram e os participantes ficaram livres para escolher o que fazer, os que haviam sido <strong>pagos</strong> dedicaram <em>menos</em> tempo espontâneo aos quebra-cabeças do que os que nunca foram pagos. A recompensa externa “explicou demais” o comportamento — a pessoa passa a atribuir sua ação ao pagamento (“faço isto pelo dinheiro”), corroendo a percepção de que agia por interesse próprio. É o <strong>efeito da sobrejustificação</strong> <span class="citation" data-cites="lepper1973">(<a href="../../referencias.html#ref-lepper1973" role="doc-biblioref">Lepper; Greene; Nisbett, 1973</a>)</span>, replicado em crianças (desenhar por uma “medalha” reduziu o desenho livre posterior). <strong>Interpretação:</strong> recompensas percebidas como <em>controladoras</em> minam a autonomia e a motivação intrínseca; recompensas percebidas como <em>informativas</em> (feedback que sinaliza competência) tendem a preservá-la. <strong>Limitação:</strong> o efeito é mais forte para tarefas já interessantes e para recompensas tangíveis e esperadas — pagar por uma tarefa tediosa, que ninguém faria por prazer, não corrói interesse que não existia.</p>
+</div>
+<div class="na-pratica">
+<p><strong>Motivar sem corromper.</strong> A TAD tem implicações diretas para educação, gestão e parentalidade. Para sustentar motivação de qualidade: (1) <strong>apoie a autonomia</strong> — ofereça escolhas, explique o porquê das tarefas, reduza controle desnecessário; (2) <strong>estruture desafios ótimos</strong> — nem fáceis demais (tédio) nem difíceis demais (frustração), alimentando a competência (ecoando Yerkes-Dodson e o conceito de <em>fluxo</em>); (3) <strong>use recompensas com cuidado</strong> — como <em>feedback</em> informativo, não como suborno que substitui o interesse; (4) <strong>nutra o vínculo</strong> — pessoas se engajam mais quando se sentem pertencentes e respeitadas. A lição prática do efeito da sobrejustificação: antes de pagar alguém para fazer o que já ama, pergunte-se se você não está prestes a transformar um prazer em trabalho.</p>
+</div>
+</section>
+<section id="integrando-as-teorias" class="level2">
+<h2 class="anchored" data-anchor-id="integrando-as-teorias">Integrando as teorias</h2>
+<p>Nenhuma teoria isolada esgota a motivação humana, e as boas explicações são <strong>complementares</strong>, cobrindo camadas diferentes. As motivações de sobrevivência (fome, sede) são bem descritas por <strong>impulso e homeostase</strong>; a busca de estimulação, por <strong>arousal ótimo</strong>; a atração por objetos e metas, por <strong>incentivos</strong>; e a motivação de crescimento — aprender, criar, conectar-se — pela <strong>autodeterminação</strong>. O capítulo seguinte desce ao substrato mais concreto dessa história: as motivações <strong>básicas</strong> de fome, sede e sexo, onde biologia e comportamento se entrelaçam de forma exemplar.</p>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li><strong>Motivação</strong> é o conjunto de processos que <strong>ativam, dirigem e mantêm</strong> o comportamento orientado a metas.</li>
+<li>A <strong>teoria do instinto</strong> falhou por circularidade; a <strong>redução de impulso</strong> (Hull) explica motivações homeostáticas, mas não a busca de estimulação.</li>
+<li>A teoria do <strong>arousal ótimo</strong> (lei de Yerkes-Dodson) postula um nível ideal de ativação em U invertido, mais baixo para tarefas difíceis. A teoria do <strong>incentivo</strong> enfatiza a atração por estímulos externos.</li>
+<li>A <strong>hierarquia de Maslow</strong> cataloga bem as grandes necessidades, mas a evidência <strong>rejeita</strong> sua ordem rígida e universal.</li>
+<li>A <strong>teoria da autodeterminação</strong> distingue motivação <strong>intrínseca</strong> e <strong>extrínseca</strong> e postula três necessidades básicas: <strong>autonomia, competência e vínculo</strong>.</li>
+<li>O <strong>efeito da sobrejustificação</strong> mostra que recompensas controladoras podem <em>minar</em> a motivação intrínseca por atividades já interessantes.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Motivação</strong></dt>
+<dd>
+Processos que ativam, dirigem e mantêm o comportamento em direção a um objetivo.
+</dd>
+<dt><strong>Impulso (<em>drive</em>)</strong></dt>
+<dd>
+Estado de tensão gerado por uma necessidade fisiológica, que impele o organismo a agir para reduzi-lo (Hull) <span class="citation" data-cites="hull1943">(<a href="../../referencias.html#ref-hull1943" role="doc-biblioref">Hull, 1943</a>)</span>.
+</dd>
+<dt><strong>Lei de Yerkes-Dodson</strong></dt>
+<dd>
+Relação em U invertido entre ativação e desempenho; o nível ótimo é mais baixo para tarefas difíceis <span class="citation" data-cites="yerkes_dodson1908">(<a href="../../referencias.html#ref-yerkes_dodson1908" role="doc-biblioref">Yerkes; Dodson, 1908</a>)</span>.
+</dd>
+<dt><strong>Motivação intrínseca / extrínseca</strong></dt>
+<dd>
+Fazer algo pela satisfação da própria atividade (intrínseca) <em>versus</em> por uma consequência externa separável (extrínseca).
+</dd>
+<dt><strong>Necessidades básicas (TAD)</strong></dt>
+<dd>
+Autonomia, competência e vínculo — cuja satisfação nutre a motivação intrínseca e o bem-estar <span class="citation" data-cites="deci_ryan2000">(<a href="../../referencias.html#ref-deci_ryan2000" role="doc-biblioref">Deci; Ryan, 2000</a>)</span>.
+</dd>
+<dt><strong>Efeito da sobrejustificação</strong></dt>
+<dd>
+Redução da motivação intrínseca por uma atividade após ela ser recompensada externamente <span class="citation" data-cites="deci1971 lepper1973">(<a href="../../referencias.html#ref-deci1971" role="doc-biblioref">Deci, 1971</a>; <a href="../../referencias.html#ref-lepper1973" role="doc-biblioref">Lepper; Greene; Nisbett, 1973</a>)</span>.
+</dd>
+<dt><strong>Hierarquia de necessidades</strong></dt>
+<dd>
+Organização proposta por Maslow das necessidades humanas, da fisiológica à autorrealização <span class="citation" data-cites="maslow1943">(<a href="../../referencias.html#ref-maslow1943" role="doc-biblioref">Maslow, 1943</a>)</span>.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Distinga os três componentes da motivação (ativação, direção, persistência) com um exemplo de cada.</p></li>
+<li><p><strong>(Conceitual.)</strong> Por que a teoria da redução de impulso não consegue explicar por que pagamos para andar de montanha-russa? Que teoria explica melhor esse caso?</p></li>
+<li><p><strong>(Aplicação.)</strong> Segundo a lei de Yerkes-Dodson, um atleta deveria buscar mais ou menos ativação antes de uma tarefa motora simples e potente? E antes de uma jogada que exige concentração fina? Justifique.</p></li>
+<li><p><strong>(Reflexão crítica.)</strong> A pirâmide de Maslow é amplamente ensinada. Que aspecto dela a evidência apoia e que aspecto ela <strong>não</strong> apoia?</p></li>
+<li><p><strong>(Análise.)</strong> Um professor decide pagar os alunos por cada livro lido. Usando o efeito da sobrejustificação, preveja um possível efeito colateral e proponha uma alternativa alinhada à teoria da autodeterminação.</p></li>
+<li><p><strong>(Avaliação.)</strong> “Recompensas sempre aumentam a motivação.” Avalie essa afirmação, distinguindo os casos em que ela vale dos casos em que se inverte.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-deci1971" class="csl-entry" role="listitem">
+DECI, Edward L. <a href="https://doi.org/10.1037/h0030644">Effects of externally mediated rewards on intrinsic motivation</a>. <strong>Journal of Personality and Social Psychology</strong>, v. 18, n. 1, p. 105–115, 1971.
+</div>
+<div id="ref-deci_ryan2000" class="csl-entry" role="listitem">
+DECI, Edward L.; RYAN, Richard M. The <span>«what»</span> and <span>«why»</span> of goal pursuits: Human needs and the self-determination of behavior. <strong>Psychological Inquiry</strong>, v. 11, n. 4, p. 227–268, 2000.
+</div>
+<div id="ref-hull1943" class="csl-entry" role="listitem">
+HULL, Clark L. <strong>Principles of Behavior: An Introduction to Behavior Theory</strong>. New York: Appleton-Century-Crofts, 1943.
+</div>
+<div id="ref-lepper1973" class="csl-entry" role="listitem">
+LEPPER, Mark R.; GREENE, David; NISBETT, Richard E. <a href="https://doi.org/10.1037/h0035519">Undermining children’s intrinsic interest with extrinsic reward: A test of the <span>«overjustification»</span> hypothesis</a>. <strong>Journal of Personality and Social Psychology</strong>, v. 28, n. 1, p. 129–137, 1973.
+</div>
+<div id="ref-maslow1943" class="csl-entry" role="listitem">
+MASLOW, Abraham H. <a href="https://doi.org/10.1037/h0054346">A theory of human motivation</a>. <strong>Psychological Review</strong>, v. 50, n. 4, p. 370–396, 1943.
+</div>
+<div id="ref-ryan_deci2000" class="csl-entry" role="listitem">
+RYAN, Richard M.; DECI, Edward L. <a href="https://doi.org/10.1037/0003-066X.55.1.68">Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being</a>. <strong>American Psychologist</strong>, v. 55, n. 1, p. 68–78, 2000.
+</div>
+<div id="ref-tay_diener2011" class="csl-entry" role="listitem">
+TAY, Louis; DIENER, Ed. Needs and subjective well-being around the world. <strong>Journal of Personality and Social Psychology</strong>, v. 101, n. 2, p. 354–365, 2011.
+</div>
+<div id="ref-wahba_bridwell1976" class="csl-entry" role="listitem">
+WAHBA, Mahmoud A.; BRIDWELL, Lawrence G. Maslow reconsidered: A review of research on the need hierarchy theory. <strong>Organizational Behavior and Human Performance</strong>, v. 15, n. 2, p. 212–240, 1976.
+</div>
+<div id="ref-yerkes_dodson1908" class="csl-entry" role="listitem">
+YERKES, Robert M.; DODSON, John D. <a href="https://doi.org/10.1002/cne.920180503">The relation of strength of stimulus to rapidity of habit-formation</a>. <strong>Journal of Comparative Neurology and Psychology</strong>, v. 18, n. 5, p. 459–482, 1908.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1706,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>

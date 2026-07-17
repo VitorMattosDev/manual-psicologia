@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -688,8 +708,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-que-é-estresse" id="toc-o-que-é-estresse" class="nav-link active" data-scroll-target="#o-que-é-estresse">O que é estresse</a></li>
+  <li><a href="#a-resposta-fisiológica-de-selye-a-cannon" id="toc-a-resposta-fisiológica-de-selye-a-cannon" class="nav-link" data-scroll-target="#a-resposta-fisiológica-de-selye-a-cannon">A resposta fisiológica: de Selye a Cannon</a></li>
+  <li><a href="#estresse-e-saúde" id="toc-estresse-e-saúde" class="nav-link" data-scroll-target="#estresse-e-saúde">Estresse e saúde</a></li>
+  <li><a href="#enfrentamento-coping" id="toc-enfrentamento-coping" class="nav-link" data-scroll-target="#enfrentamento-coping">Enfrentamento (<em>coping</em>)</a></li>
+  <li><a href="#fechando-o-volume" id="toc-fechando-o-volume" class="nav-link" data-scroll-target="#fechando-o-volume">Fechando o volume</a></li>
+  <li><a href="#síntese" id="toc-síntese" class="nav-link" data-scroll-target="#síntese">Síntese</a></li>
+  <li><a href="#glossário-do-capítulo" id="toc-glossário-do-capítulo" class="nav-link" data-scroll-target="#glossário-do-capítulo">Glossário do capítulo</a></li>
+  <li><a href="#para-refletir" id="toc-para-refletir" class="nav-link" data-scroll-target="#para-refletir">Para refletir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -713,11 +746,338 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="em-construcao">
-<p>🚧 Em construção.</p>
+<div class="callout-objetivos">
+<p>Ao final deste capítulo, você será capaz de:</p>
+<ul>
+<li><strong>Definir</strong> estresse como transação entre demandas e recursos, distinguindo estressor de resposta ao estresse.</li>
+<li><strong>Descrever</strong> a síndrome geral de adaptação de Selye e a resposta fisiológica ao estresse.</li>
+<li><strong>Explicar</strong> o modelo de avaliação e enfrentamento de Lazarus e Folkman.</li>
+<li><strong>Analisar</strong> as vias pelas quais o estresse crônico afeta a saúde física e imunológica.</li>
+<li><strong>Distinguir</strong> estratégias de enfrentamento e avaliar o papel do suporte social e do controle.</li>
+</ul>
 </div>
+<p>Encerramos o volume de motivação e emoção no ponto em que os dois se encontram sob pressão: o <strong>estresse</strong>. Quando as demandas da vida — uma prova, um luto, um engarrafamento, uma ameaça — são avaliadas como excedendo nossos recursos, o organismo mobiliza uma resposta ampla, fisiológica e psicológica, que chamamos de estresse. Bem calibrada e breve, essa resposta é adaptativa e até necessária; prolongada e descontrolada, ela adoece o corpo e a mente. Este capítulo — porta de entrada para a psicologia da saúde (Cap. 96) e para a psicopatologia (Fase 3) — examina o que é o estresse, como o corpo o executa, como ele afeta a saúde e o que podemos fazer para enfrentá-lo (<em>coping</em>).</p>
+<section id="o-que-é-estresse" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-estresse">O que é estresse</h2>
+<p>O termo carrega uma ambiguidade útil de desfazer. O <strong>estressor</strong> é o evento ou a demanda (o <em>estímulo</em>); a <strong>resposta ao estresse</strong> é a reação do organismo (fisiológica e psicológica); e o <strong>estresse</strong>, na concepção hoje dominante, é a <strong>transação</strong> entre os dois — a relação entre as demandas percebidas e os recursos percebidos para lidar com elas. Essa definição transacional, de Richard Lazarus, é decisiva: <strong>não é o evento em si que estressa, mas sua avaliação</strong>. O mesmo estressor (falar em público) devasta uma pessoa e estimula outra, conforme cada uma avalia a ameaça e os próprios recursos.</p>
+<p>Nem todo estresse é ruim. Hans Selye distinguiu o <strong>eustresse</strong> (estresse “bom”, desafiador e motivador — a véspera empolgante de um evento desejado) do <strong>distresse</strong> (estresse “ruim”, ameaçador e desgastante). A diferença remete à lei de Yerkes-Dodson (Cap. 51): uma dose moderada de ativação otimiza o desempenho; o excesso, sustentado, o prejudica.</p>
+</section>
+<section id="a-resposta-fisiológica-de-selye-a-cannon" class="level2">
+<h2 class="anchored" data-anchor-id="a-resposta-fisiológica-de-selye-a-cannon">A resposta fisiológica: de Selye a Cannon</h2>
+<p>Foi Hans Selye quem transformou o estresse em objeto científico, ao notar que ratos submetidos a agressões muito diferentes (frio, toxinas, cirurgia) desenvolviam o <strong>mesmo</strong> padrão de reações corporais <span class="citation" data-cites="selye1936">(<a href="../../referencias.html#ref-selye1936" role="doc-biblioref">Selye, 1936</a>)</span>. Chamou-o de <strong>síndrome geral de adaptação (SGA)</strong> — “geral” porque a resposta é <strong>inespecífica</strong>, a mesma qualquer que seja o estressor. A SGA tem três fases (<a href="#fig-sga" class="quarto-xref">Figura&nbsp;<span>56.1</span></a>):</p>
+<ol type="1">
+<li><strong>Alarme</strong> — o corpo detecta a ameaça e mobiliza recursos: dispara a resposta de <strong>luta ou fuga</strong> descrita por Walter Cannon <span class="citation" data-cites="cannon1932">(<a href="../../referencias.html#ref-cannon1932" role="doc-biblioref">Cannon, 1932</a>)</span>, com ativação do sistema nervoso simpático (Cap. 23) e liberação de <strong>adrenalina</strong> — coração acelera, respiração aumenta, glicose é liberada, digestão é suspensa. É a preparação de emergência para a ação.</li>
+<li><strong>Resistência</strong> — se o estressor persiste, o corpo se estabiliza num estado de mobilização elevada e sustentada, agora sob comando do eixo <strong>hipotálamo-hipófise-adrenal (HHA)</strong> e do <strong>cortisol</strong> (Cap. 25), o “hormônio do estresse” de ação mais lenta e prolongada. O organismo aguenta, mas a um custo crescente.</li>
+<li><strong>Exaustão</strong> — se o estressor não cessa, os recursos se esgotam; a resistência colapsa, e surge a vulnerabilidade a doenças, esgotamento e adoecimento. É aqui que o estresse crônico cobra sua fatura.</li>
+</ol>
+<div id="fig-sga" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sga-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<svg role="img" aria-label="Gráfico da síndrome geral de adaptação de Selye. O eixo horizontal é o tempo e o vertical é o nível de resistência ao estresse. A curva sobe abruptamente na fase de alarme, mantém-se elevada num platô na fase de resistência, e depois declina abaixo do nível normal na fase de exaustão. Uma linha tracejada marca o nível normal de resistência." version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="305.22134pt" height="132.787068pt" viewbox="-68.014948 -68.014949 305.22134 132.787068">
+<defs>
+<path id="tz_sindrome_geral_adaptacao_g0-65" d="M2.615193-3.437111C2.575342-3.526775 2.560399-3.566625 2.440847-3.566625C2.351183-3.566625 2.311333-3.5467 2.266501-3.447073L.98132-.513076C.871731-.26401 .60274-.219178 .353674-.219178V0C.537983-.014944 .747198-.019925 .931507-.019925C.996264-.019925 1.349938-.014944 1.579078 0V-.219178C1.300125-.219178 1.200498-.343711 1.200498-.438356C1.200498-.468244 1.210461-.483188 1.225405-.523039L1.484433-1.110834H3.083437L3.387298-.41345C3.417186-.353674 3.417186-.343711 3.417186-.33873C3.417186-.219178 3.13325-.219178 2.988792-.219178V0C3.183064-.004981 3.556663-.019925 3.795766-.019925C4.049813-.019925 4.318804-.009963 4.52802 0V-.219178H4.398506C4.089664-.219178 4.014944-.249066 3.955168-.383562L2.615193-3.437111ZM2.281445-2.933998L2.988792-1.330012H1.579078L2.281445-2.933998Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-69" d="M4.164384-1.349938H3.955168C3.81071-.533001 3.616438-.219178 2.665006-.219178H1.738481C1.494396-.219178 1.494396-.254047 1.494396-.408468V-1.643836H2.072229C2.570361-1.643836 2.709838-1.539228 2.709838-1.061021H2.919054V-2.445828H2.709838C2.709838-1.967621 2.570361-1.863014 2.072229-1.863014H1.494396V-2.973848C1.494396-3.128269 1.494396-3.163138 1.738481-3.163138H2.620174C3.452055-3.163138 3.676214-2.963885 3.785803-2.196762H3.995019L3.830635-3.382316H.41345V-3.163138H.562889C.966376-3.163138 .966376-3.113325 .966376-2.958904V-.423412C.966376-.268991 .966376-.219178 .562889-.219178H.41345V0H3.915318L4.164384-1.349938Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-82" d="M2.973848-1.69863C3.292653-1.783313 3.905355-2.027397 3.905355-2.485679C3.905355-3.003736 3.13325-3.402242 2.306351-3.402242H.423412V-3.183064H.572852C.976339-3.183064 .976339-3.13325 .976339-2.978829V-.423412C.976339-.268991 .976339-.219178 .572852-.219178H.423412V0C.652553-.009963 .956413-.019925 1.230386-.019925S1.793275-.009963 2.03736 0V-.219178H1.88792C1.484433-.219178 1.484433-.268991 1.484433-.423412V-1.618929H2.251557C2.520548-1.618929 2.75467-1.549191 2.909091-1.419676C3.0934-1.270237 3.0934-1.150685 3.0934-.856787C3.0934-.473225 3.0934-.278954 3.35741-.079701C3.5467 .064757 3.845579 .109589 4.059776 .109589C4.537983 .109589 4.667497-.298879 4.667497-.463263C4.667497-.557908 4.617684-.56787 4.562889-.56787C4.483188-.56787 4.463263-.537983 4.458281-.468244C4.438356-.184309 4.254047-.054795 4.084682-.054795C3.745953-.054795 3.701121-.433375 3.66127-.752179C3.646326-.886675 3.62142-1.085928 3.606476-1.150685C3.531756-1.444583 3.272727-1.618929 2.973848-1.69863ZM2.251557-1.783313H1.484433V-2.993773C1.484433-3.143213 1.494396-3.16812 1.643836-3.183064H1.997509C2.560399-3.183064 3.32254-3.183064 3.32254-2.485679C3.32254-1.912827 2.75467-1.783313 2.251557-1.783313Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-94" d="M1.693649-3.457036L.856787-2.804483L.976339-2.635118L1.693649-3.123288L2.405978-2.635118L2.535492-2.804483L1.693649-3.457036Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-97" d="M2.60523-1.479452C2.60523-1.957659 2.102117-2.231631 1.484433-2.231631C1.180573-2.231631 .60274-2.216687 .60274-1.793275C.60274-1.608966 .742217-1.524284 .86675-1.524284C1.001245-1.524284 1.13076-1.618929 1.13076-1.788294C1.13076-1.907846 1.061021-1.982565 1.016189-2.012453C1.180573-2.067248 1.419676-2.067248 1.474471-2.067248C1.897883-2.067248 2.161893-1.833126 2.161893-1.474471V-1.344956C1.678705-1.32005 1.409714-1.305106 1.026152-1.17061C.697385-1.05604 .408468-.846824 .408468-.523039C.408468-.054795 .986301 .054795 1.384807 .054795C1.768369 .054795 2.067248-.099626 2.221669-.353674C2.241594-.179328 2.356164 .029888 2.610212 .029888C2.645081 .029888 3.212951 .029888 3.212951-.448319V-.722291H3.003736V-.458281C3.003736-.408468 3.003736-.18929 2.804483-.18929S2.60523-.408468 2.60523-.458281V-1.479452ZM2.161893-.707347C2.161893-.159402 1.564134-.109589 1.439601-.109589C1.145704-.109589 .86675-.26401 .86675-.523039C.86675-.687422 .971357-1.145704 2.161893-1.195517V-.707347Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-99" d="M2.236613-2.007472C2.166874-1.957659 2.127024-1.877958 2.127024-1.788294C2.127024-1.62391 2.251557-1.524284 2.391034-1.524284C2.510585-1.524284 2.655044-1.603985 2.655044-1.793275C2.655044-2.216687 2.102117-2.231631 1.753425-2.231631C.777086-2.231631 .358655-1.574097 .358655-1.075965C.358655-.458281 .941469 .054795 1.693649 .054795C2.555417 .054795 2.724782-.552927 2.724782-.597758C2.724782-.667497 2.650062-.667497 2.620174-.667497C2.540473-.667497 2.535492-.652553 2.510585-.592777C2.34122-.179328 1.977584-.124533 1.758406-.124533C1.330012-.124533 .856787-.41345 .856787-1.080946C.856787-1.300125 .901619-1.574097 1.085928-1.783313C1.325031-2.052304 1.618929-2.052304 1.77335-2.052304C1.92279-2.052304 2.062267-2.052304 2.236613-2.007472Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-101" d="M2.575342-1.120797C2.67995-1.120797 2.724782-1.120797 2.724782-1.240349C2.724782-1.574097 2.545455-2.231631 1.613948-2.231631C.856787-2.231631 .323786-1.688667 .323786-1.09589C.323786-.463263 .931507 .054795 1.688667 .054795C2.480697 .054795 2.724782-.498132 2.724782-.592777C2.724782-.67746 2.645081-.67746 2.620174-.67746C2.545455-.67746 2.535492-.657534 2.505604-.587796C2.366127-.244085 1.997509-.124533 1.718555-.124533C1.315068-.124533 1.090909-.348692 1.016189-.433375C.821918-.672478 .821918-.986301 .821918-1.120797H2.575342ZM.83188-1.275218C.891656-1.932752 1.374844-2.067248 1.608966-2.067248C2.30137-2.067248 2.336239-1.419676 2.34122-1.275218H.83188Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-105" d="M1.260274-3.068493C1.260274-3.232877 1.125778-3.372354 .956413-3.372354C.801993-3.372354 .652553-3.252802 .652553-3.068493C.652553-2.889166 .801993-2.764633 .956413-2.764633C1.125778-2.764633 1.260274-2.90411 1.260274-3.068493ZM.433375-2.146949V-1.927771C.787049-1.927771 .826899-1.892902 .826899-1.648817V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.617684-.014944 .826899-.019925 1.031133-.019925C1.220423-.019925 1.439601-.014944 1.62391 0V-.219178C1.290162-.219178 1.250311-.219178 1.250311-.418431V-2.201743L.433375-2.146949Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-108" d="M1.250311-3.457036L.41345-3.402242V-3.183064C.782067-3.183064 .826899-3.148194 .826899-2.90411V-.418431C.826899-.26401 .826899-.219178 .503113-.219178H.41345V0C.622665-.014944 .826899-.019925 1.036115-.019925S1.454545-.014944 1.663761 0V-.219178H1.574097C1.250311-.219178 1.250311-.26401 1.250311-.418431V-3.457036Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-109" d="M4.722291-1.504359C4.722291-2.117061 4.254047-2.201743 3.880448-2.201743C3.392279-2.201743 3.108344-1.957659 2.968867-1.738481C2.844334-2.196762 2.336239-2.201743 2.15193-2.201743C1.638854-2.201743 1.349938-1.927771 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.838107 1.77335-2.03736 2.097136-2.03736C2.460772-2.03736 2.550436-1.833126 2.550436-1.50934V-.418431C2.550436-.26401 2.550436-.219178 2.22665-.219178H2.136986V0C2.351183-.014944 2.560399-.019925 2.774595-.019925C2.983811-.019925 3.198007-.014944 3.407223 0V-.219178H3.317559C2.993773-.219178 2.993773-.26401 2.993773-.418431V-1.285181C2.993773-1.838107 3.501868-2.03736 3.825654-2.03736C4.18929-2.03736 4.278954-1.833126 4.278954-1.50934V-.418431C4.278954-.26401 4.278954-.219178 3.955168-.219178H3.865504V0C4.079701-.014944 4.288917-.019925 4.503113-.019925C4.712329-.019925 4.926526-.014944 5.135741 0V-.219178H5.046077C4.722291-.219178 4.722291-.26401 4.722291-.418431V-1.504359Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-110" d="M2.988792-1.504359C2.988792-2.052304 2.615193-2.201743 2.15193-2.201743C1.618929-2.201743 1.339975-1.907846 1.225405-1.713574V-2.201743L.408468-2.146949V-1.927771C.777086-1.927771 .821918-1.892902 .821918-1.648817V-.418431C.821918-.26401 .821918-.219178 .498132-.219178H.408468V0C.622665-.014944 .83188-.019925 1.046077-.019925C1.255293-.019925 1.469489-.014944 1.678705 0V-.219178H1.589041C1.265255-.219178 1.265255-.26401 1.265255-.418431V-1.285181C1.265255-1.84807 1.783313-2.03736 2.092154-2.03736C2.460772-2.03736 2.545455-1.828144 2.545455-1.50934V-.418431C2.545455-.26401 2.545455-.219178 2.221669-.219178H2.132005V0C2.346202-.014944 2.555417-.019925 2.769614-.019925C2.978829-.019925 3.193026-.014944 3.402242 0V-.219178H3.312578C2.988792-.219178 2.988792-.26401 2.988792-.418431V-1.504359Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-111" d="M3.063512-1.061021C3.063512-1.683686 2.475716-2.231631 1.693649-2.231631S.323786-1.683686 .323786-1.061021C.323786-.463263 .916563 .054795 1.693649 .054795C2.475716 .054795 3.063512-.463263 3.063512-1.061021ZM1.693649-.124533C.821918-.124533 .821918-.86675 .821918-1.110834C.821918-1.334994 .821918-2.067248 1.693649-2.067248S2.56538-1.334994 2.56538-1.110834C2.56538-.86675 2.56538-.124533 1.693649-.124533Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-112" d="M1.648817 .747198H1.559153C1.235367 .747198 1.235367 .702366 1.235367 .547945V-.229141C1.449564-.039851 1.718555 .054795 2.002491 .054795C2.759651 .054795 3.372354-.4533 3.372354-1.075965C3.372354-1.673724 2.824408-2.201743 2.087173-2.201743C1.693649-2.201743 1.384807-2.062267 1.215442-1.917808V-2.201743L.37858-2.146949V-1.927771C.737235-1.927771 .79203-1.927771 .79203-1.713574V.547945C.79203 .702366 .79203 .747198 .468244 .747198H.37858V.966376C.592777 .951432 .801993 .946451 1.016189 .946451C1.225405 .946451 1.439601 .951432 1.648817 .966376V.747198ZM1.235367-1.653798C1.449564-1.957659 1.828144-2.022416 2.027397-2.022416C2.520548-2.022416 2.874222-1.579078 2.874222-1.075965C2.874222-.533001 2.460772-.109589 1.967621-.109589C1.743462-.109589 1.479452-.204234 1.305106-.428394C1.235367-.513076 1.235367-.523039 1.235367-.617684V-1.653798Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-114" d="M1.215442-1.115816C1.215442-1.579078 1.479452-2.027397 1.952677-2.03736C1.947696-2.032379 1.882939-1.967621 1.882939-1.858032C1.882939-1.678705 2.022416-1.603985 2.132005-1.603985C2.256538-1.603985 2.386052-1.688667 2.386052-1.858032C2.386052-2.047323 2.206725-2.201743 1.942715-2.201743C1.693649-2.201743 1.374844-2.072229 1.180573-1.653798H1.175592V-2.201743L.37858-2.146949V-1.927771C.747198-1.927771 .79203-1.892902 .79203-1.648817V-.418431C.79203-.26401 .79203-.219178 .468244-.219178H.37858V0C.587796-.014944 .811955-.019925 1.021171-.019925C1.280199-.019925 1.524284-.009963 1.733499 0V-.219178H1.599004C1.215442-.219178 1.215442-.268991 1.215442-.423412V-1.115816Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-115" d="M2.22665-2.092154C2.22665-2.176837 2.22665-2.231631 2.146949-2.231631C2.122042-2.231631 2.102117-2.22665 2.062267-2.196762C2.042341-2.176837 1.952677-2.097136 1.932752-2.097136C1.927771-2.097136 1.917808-2.097136 1.88792-2.117061C1.77335-2.181818 1.589041-2.231631 1.339975-2.231631C.518057-2.231631 .348692-1.853051 .348692-1.62391C.348692-1.155666 .926526-1.066002 1.384807-.996264C1.673724-.951432 2.132005-.881694 2.132005-.542964C2.132005-.368618 1.987547-.109589 1.384807-.109589C1.046077-.109589 .71731-.234122 .56787-.762142C.542964-.851806 .537983-.86675 .4533-.86675C.348692-.86675 .348692-.826899 .348692-.722291V-.084682C.348692 0 .348692 .054795 .428394 .054795C.468244 .054795 .473225 .049813 .56787-.044832L.697385-.169365C.946451 .049813 1.260274 .054795 1.384807 .054795C2.216687 .054795 2.381071-.37858 2.381071-.627646C2.381071-.851806 2.256538-1.016189 2.067248-1.135741C1.867995-1.260274 1.718555-1.280199 1.300125-1.344956C.98132-1.39477 .597758-1.454545 .597758-1.718555C.597758-1.892902 .79203-2.082192 1.334994-2.082192C1.748443-2.082192 1.987547-1.917808 2.017435-1.574097C2.022416-1.499377 2.027397-1.469489 2.122042-1.469489C2.22665-1.469489 2.22665-1.504359 2.22665-1.608966V-2.092154Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-116" d="M1.225405-1.927771H2.107098V-2.146949H1.225405V-3.063512H1.016189C1.011208-2.595268 .762142-2.107098 .254047-2.092154V-1.927771H.782067V-.627646C.782067-.059776 1.250311 .054795 1.559153 .054795C1.932752 .054795 2.211706-.219178 2.211706-.627646V-.901619H2.002491V-.64259C2.002491-.268991 1.783313-.124533 1.608966-.124533C1.225405-.124533 1.225405-.523039 1.225405-.627646V-1.927771Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-117" d="M2.132005-2.146949V-1.927771C2.500623-1.927771 2.545455-1.892902 2.545455-1.648817V-.836862C2.545455-.37858 2.201743-.109589 1.793275-.109589C1.285181-.109589 1.265255-.313823 1.265255-.56787V-2.201743L.408468-2.146949V-1.927771C.79203-1.927771 .821918-1.88792 .821918-1.633873V-.547945C.86675 .009963 1.429639 .054795 1.753425 .054795C2.171856 .054795 2.41594-.134496 2.56538-.368618V.054795L3.402242 0V-.219178C3.033624-.219178 2.988792-.254047 2.988792-.498132V-2.201743L2.132005-2.146949Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-120" d="M3.193026-2.146949C3.048568-2.136986 2.909091-2.127024 2.714819-2.127024C2.540473-2.127024 2.336239-2.132005 2.161893-2.146949V-1.927771C2.251557-1.917808 2.256538-1.843088 2.256538-1.833126C2.256538-1.743462 2.206725-1.693649 2.067248-1.554172L1.818182-1.315068C1.589041-1.534247 1.330012-1.788294 1.330012-1.838107C1.330012-1.92279 1.439601-1.927771 1.459527-1.927771V-2.146949C1.255293-2.132005 .86675-2.127024 .841843-2.127024C.64259-2.127024 .498132-2.127024 .288917-2.146949V-1.927771H.383562C.697385-1.927771 .702366-1.917808 .971357-1.648817L1.559153-1.05604C1.524284-1.026152 1.090909-.587796 1.016189-.523039C.876712-.393524 .692403-.224159 .259029-.219178V0C.403487-.009963 .542964-.019925 .737235-.019925C.911582-.019925 1.115816-.014944 1.290162 0V-.219178C1.215442-.229141 1.200498-.283935 1.200498-.313823C1.200498-.398506 1.270237-.473225 1.290162-.493151C1.339975-.547945 1.673724-.871731 1.703611-.901619C1.877958-.732254 2.092154-.523039 2.216687-.383562C2.256538-.333748 2.261519-.333748 2.261519-.308842C2.261519-.224159 2.15193-.219178 2.132005-.219178V0C2.336239-.014944 2.724782-.019925 2.749689-.019925C2.948941-.019925 3.0934-.019925 3.302615 0V-.219178H3.20797C2.933998-.219178 2.879203-.259029 2.819427-.298879C2.769614-.333748 2.191781-.931507 1.967621-1.160648C2.580324-1.793275 2.709838-1.92279 3.193026-1.927771V-2.146949Z"></path>
+<path id="tz_sindrome_geral_adaptacao_g0-126" d="M2.620174-3.367372C2.470735-3.232877 2.321295-3.153176 2.15193-3.153176C2.012453-3.153176 1.853051-3.212951 1.738481-3.257783C1.529265-3.342466 1.419676-3.367372 1.32005-3.367372C1.085928-3.367372 .946451-3.237858 .797011-3.0934C.747198-3.053549 .662516-2.968867 .657534-2.963885L.767123-2.844334C.916563-2.978829 1.066002-3.058531 1.235367-3.058531C1.374844-3.058531 1.534247-2.998755 1.648817-2.953923C1.858032-2.86924 1.967621-2.844334 2.067248-2.844334C2.30137-2.844334 2.440847-2.973848 2.590286-3.118306C2.6401-3.158157 2.724782-3.242839 2.729763-3.247821L2.620174-3.367372Z"></path>
+</defs>
+<g id="tz_sindrome_geral_adaptacao_page1">
+<g stroke-miterlimit="10" transform="translate(-49.127615,27.523161)scale(0.996264,-0.996264)">
+<g fill="#000" stroke="#000">
+<g stroke-width="0.4">
+<g stroke-width="0.8">
+<path d="M0 0H257.63943" fill="none"></path>
+<g transform="translate(255.16515,0.0)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(265.49812,-1.05159)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-116"></use>
+<use x="-46.429361" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+<use x="-43.385175" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-109"></use>
+<use x="-37.919465" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-112"></use>
+<use x="-34.010447" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="0.8">
+<path d="M0-36.98865V81.23251" fill="none"></path>
+<g transform="matrix(0.0,1.0,-1.0,0.0,0.0,78.75822)">
+<g stroke-dasharray="none" stroke-dashoffset="0.0">
+ <g stroke-linejoin="miter">
+ <path d="M5.4608 0L1.29181 1.57648L2.67429 0L1.29181-1.57648Z"></path>
+ </g>
+ </g>
+</g>
+<g transform="translate(-15.62518,89.0912)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#000">
+<g stroke="none">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-114"></use>
+<use x="-46.429361" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+<use x="-43.385175" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-115"></use>
+<use x="-40.652322" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-105"></use>
+<use x="-38.645929" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-115"></use>
+<use x="-35.913076" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-116"></use>
+<use x="-33.387803" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-94"></use>
+<use x="-33.21482" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+<use x="-30.170634" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-110"></use>
+<use x="-26.434583" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-99"></use>
+<use x="-23.390397" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-105"></use>
+<use x="-21.384004" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="3.0,3.0" stroke-dashoffset="0.0">
+<path d="M0 28.45274H256.07469" fill="none"></path>
+<g transform="translate(259.60767,26.71664)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-110"></use>
+<use x="-45.391564" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-111"></use>
+<use x="-42.001443" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-114"></use>
+<use x="-39.303188" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-109"></use>
+<use x="-33.837477" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+<use x="-30.447356" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-108"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<g stroke-width="1.2">
+<g fill="#2780e3" stroke="#2780e3">
+<path d="M8.5359 28.45274C19.91682-17.07181 31.29819-17.07181 42.67911 11.38092C56.90549 51.21501 65.44139 68.2864 79.66776 68.2864L159.33553 65.44139C187.78827 62.59595 210.55013-11.38092 244.69376-28.45274" fill="none"></path>
+</g>
+</g>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,2.0" stroke-dashoffset="0.0">
+<path d="M79.66776-36.98865V73.9773" fill="none"></path>
+</g>
+</g>
+<g fill="#6c757d" stroke="#6c757d">
+<g stroke-dasharray="0.4,2.0" stroke-dashoffset="0.0">
+<path d="M159.33553-36.98865V71.13185" fill="none"></path>
+</g>
+</g>
+<g transform="translate(34.73967,77.93166)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#d7433b">
+<g stroke="none">
+<g fill="#d7433b">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-65"></use>
+<use x="-44.243069" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-108"></use>
+<use x="-42.236676" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+<use x="-38.846555" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-114"></use>
+<use x="-36.1483" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-109"></use>
+<use x="-30.68259" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(102.80678,77.93166)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#1f5b0c">
+<g stroke="none">
+<g fill="#205b0c">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-82"></use>
+<use x="-44.298418" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+<use x="-41.254232" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-115"></use>
+<use x="-38.521379" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-105"></use>
+<use x="-36.514986" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-115"></use>
+<use x="-33.782133" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-116"></use>
+<use x="-31.25686" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-94"></use>
+<use x="-31.083877" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-101"></use>
+<use x="-28.039691" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-110"></use>
+<use x="-24.30364" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-99"></use>
+<use x="-21.259454" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-105"></use>
+<use x="-19.253061" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(193.96187,77.96835)">
+<g stroke="none" transform="scale(-1.00375,1.00375)translate(-49.127615,27.523161)scale(-1,-1)">
+<g fill="#6c757d">
+<g stroke="none">
+<g fill="#6c757d">
+<use x="-49.127615" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-69"></use>
+<use x="-44.644353" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-120"></use>
+<use x="-41.081269" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+<use x="-37.691148" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-117"></use>
+<use x="-33.955096" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-115"></use>
+<use x="-31.222243" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-116"></use>
+<use x="-28.523989" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-126"></use>
+<use x="-28.523987" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-97"></use>
+<use x="-25.133866" y="27.523161" href="#tz_sindrome_geral_adaptacao_g0-111"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sga-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;56.1: A <strong>síndrome geral de adaptação</strong> (Selye): após um breve choque, a resistência sobe na fase de <strong>alarme</strong>, mantém-se elevada na <strong>resistência</strong> e, se o estressor persiste, despenca abaixo do normal na <strong>exaustão</strong>.
+</figcaption>
+</figure>
+</div>
+<div class="base-neural">
+<p>🧠 <strong>Dois eixos, dois tempos.</strong> A resposta ao estresse tem duas vias com tempos distintos. A <strong>via rápida</strong> é o eixo <strong>simpático-adrenal-medular (SAM)</strong>: o hipotálamo ativa o sistema simpático, que faz a medula das suprarrenais liberar <strong>adrenalina</strong> e noradrenalina em segundos — é o “luta ou fuga” imediato. A <strong>via lenta</strong> é o eixo <strong>HHA</strong>: o hipotálamo libera CRH → a hipófise libera ACTH → o córtex das suprarrenais libera <strong>cortisol</strong>, ao longo de minutos a horas, sustentando a mobilização de energia e modulando a inflamação e a imunidade. Em situações agudas, os dois eixos são vitais e adaptativos. O problema é a <strong>ativação crônica</strong>: cortisol persistentemente alto desregula o metabolismo, o sistema imune, o humor e até estruturas cerebrais como o hipocampo (Cap. 24), sensível ao excesso de cortisol — ligando estresse crônico a prejuízos de memória.</p>
+</div>
+<p>O modelo de “luta ou fuga” foi complementado por Shelley Taylor, que argumentou que ele foi construído sobre estudos majoritariamente com machos e que as fêmeas de muitas espécies respondem também com um padrão de <strong>“cuidar e amparar”</strong> (<em>tend-and-befriend</em>): proteger a prole e buscar afiliação social sob estresse, um padrão associado à <strong>ocitocina</strong> <span class="citation" data-cites="taylor2000">(<a href="../../referencias.html#ref-taylor2000" role="doc-biblioref">Taylor et al., 2000</a>)</span>. É uma correção importante à visão clássica e uma ponte com a necessidade de pertencimento (Cap. 53): sob ameaça, buscar os outros é, em si, uma resposta ao estresse.</p>
+</section>
+<section id="estresse-e-saúde" class="level2">
+<h2 class="anchored" data-anchor-id="estresse-e-saúde">Estresse e saúde</h2>
+<p>Como o estresse <strong>psicológico</strong> adoece o <strong>corpo</strong>? A resposta está na cronicidade. Robert Sapolsky sintetizou-a numa imagem célebre: uma zebra que foge de um leão dispara a resposta de estresse por minutos e, sobrevivendo, volta a pastar; nós, humanos, ativamos a <em>mesma</em> resposta fisiológica de emergência diante de ameaças <strong>psicológicas e prolongadas</strong> — dívidas, conflitos, prazos — que não se resolvem em minutos <span class="citation" data-cites="sapolsky2004">(<a href="../../referencias.html#ref-sapolsky2004" role="doc-biblioref">Sapolsky, 2004</a>)</span>. Um sistema desenhado para emergências físicas breves passa a funcionar cronicamente, e é aí que ele nos corrói. O conceito de <strong>carga alostática</strong> <span class="citation" data-cites="mcewen1998">(<a href="../../referencias.html#ref-mcewen1998" role="doc-biblioref">McEwen, 1998</a>)</span> captura esse desgaste acumulado: o preço que o corpo paga por adaptações repetidas ou sustentadas ao estresse — hipertensão, desregulação metabólica e imunológica, inflamação crônica.</p>
+<p>A <strong>psiconeuroimunologia</strong> documenta a via imunológica: o estresse crônico <strong>suprime e desregula</strong> funções imunes, aumentando a vulnerabilidade a infecções e retardando a cicatrização.</p>
+<div class="experimento">
+<p>🔬 <strong>Estresse e o resfriado comum.</strong> Sheldon Cohen e colegas testaram diretamente se o estresse aumenta a suscetibilidade à doença <span class="citation" data-cites="cohen1991">(<a href="../../referencias.html#ref-cohen1991" role="doc-biblioref">Cohen; Tyrrell; Smith, 1991</a>)</span>. Voluntários saudáveis responderam a medidas de estresse psicológico e então — com consentimento — foram <strong>deliberadamente expostos</strong> a um vírus do resfriado (rinovírus) em gotas nasais, sob quarentena controlada. O resultado foi límpido e dose-dependente: quanto <strong>maior o nível de estresse psicológico</strong> relatado, <strong>maior a probabilidade</strong> de o participante efetivamente desenvolver o resfriado após a exposição ao vírus. <strong>Interpretação:</strong> o estresse não “inventa” o vírus, mas compromete as defesas, tornando a infecção mais provável — evidência experimental (não apenas correlacional) de que estados psicológicos afetam a resistência física. <strong>Relevância:</strong> confirma que a mente e o sistema imune conversam, fundamentando a psicologia da saúde (Cap. 96).</p>
+</div>
+<p>Padrões de reação ao estresse também importam. O <strong>padrão de comportamento tipo A</strong> (competitivo, impaciente, hostil) foi associado, em pesquisas clássicas, a maior risco cardiovascular <span class="citation" data-cites="friedman_rosenman1959">(<a href="../../referencias.html#ref-friedman_rosenman1959" role="doc-biblioref">Friedman; Rosenman, 1959</a>)</span>; refinamentos posteriores mostraram que o componente mais tóxico é a <strong>hostilidade</strong> crônica, mais do que a pressa ou a ambição em si.</p>
+</section>
+<section id="enfrentamento-coping" class="level2">
+<h2 class="anchored" data-anchor-id="enfrentamento-coping">Enfrentamento (<em>coping</em>)</h2>
+<p>Diante do estresse, não somos passivos: <strong>enfrentamos</strong>. Lazarus e Folkman deram ao campo seu modelo central, unindo avaliação e enfrentamento <span class="citation" data-cites="lazarus_folkman1984">(<a href="../../referencias.html#ref-lazarus_folkman1984" role="doc-biblioref">Lazarus; Folkman, 1984</a>)</span>. Tudo começa com a <strong>avaliação</strong> (<em>appraisal</em>), em dois momentos: na <strong>avaliação primária</strong>, julgamos se o evento é irrelevante, positivo ou uma <strong>ameaça/dano/desafio</strong>; na <strong>avaliação secundária</strong>, julgamos se temos <strong>recursos</strong> para lidar com ele. Do balanço entre demanda e recurso nasce (ou não) a resposta de estresse — e a estratégia de enfrentamento.</p>
+<p>O modelo distingue duas grandes famílias de <em>coping</em>:</p>
+<ul>
+<li><strong>Enfrentamento focado no problema</strong> — agir sobre o <strong>estressor</strong> para removê-lo ou reduzi-lo: fazer um plano de estudos, buscar informação, resolver o conflito. Tende a ser mais eficaz quando a situação é <strong>controlável</strong>.</li>
+<li><strong>Enfrentamento focado na emoção</strong> — agir sobre a <strong>resposta emocional</strong> ao estressor: reavaliar (Cap. 55), buscar apoio, relaxar, aceitar. Tende a ser mais adaptativo quando a situação é <strong>incontrolável</strong> (um luto, uma doença terminal), em que não há problema a “resolver”, mas há sofrimento a acolher.</li>
+</ul>
+<p>A escolha adaptativa, portanto, depende da <strong>controlabilidade</strong>: tentar controlar o incontrolável esgota; aceitar o que se poderia mudar paralisa. A flexibilidade em ajustar a estratégia ao contexto é a marca do bom enfrentamento.</p>
+<div class="na-pratica">
+<p><strong>Fatores que protegem contra o estresse.</strong> A pesquisa identifica moderadores robustos do impacto do estresse sobre a saúde. (1) <strong>Controle percebido:</strong> sentir que se tem algum controle sobre a situação reduz o impacto fisiológico do estressor — mesmo o controle <em>percebido</em>, ainda que ilusório, protege; a falta de controle é um ingrediente central do desamparo aprendido (Cap. 41) e da depressão. (2) <strong>Suporte social:</strong> ter vínculos e poder contar com os outros <strong>amortece</strong> o efeito do estresse (hipótese do <em>buffering</em>) e prediz melhor saúde e maior longevidade — retomando, no plano da saúde, a necessidade de pertencer (Cap. 53). (3) <strong>Otimismo e sentido:</strong> avaliar dificuldades como desafios temporários e encontrar significado na adversidade associam-se a melhor enfrentamento. (4) <strong>Hábitos:</strong> exercício físico, sono adequado (Cap. 36) e técnicas de relaxamento e <em>mindfulness</em> (Cap. 38, 92) reduzem a ativação fisiológica. O estresse é inevitável; seu impacto, em boa medida, é <strong>modulável</strong>.</p>
+</div>
+</section>
+<section id="fechando-o-volume" class="level2">
+<h2 class="anchored" data-anchor-id="fechando-o-volume">Fechando o volume</h2>
+<p>O Vol 9 percorreu o motor afetivo do comportamento: as <strong>teorias da motivação</strong> (Cap. 51), as motivações <strong>básicas</strong> (Cap. 52) e <strong>sociais</strong> (Cap. 53), as <strong>teorias da emoção</strong> (Cap. 54), sua <strong>expressão e regulação</strong> (Cap. 55) e, agora, o <strong>estresse e o enfrentamento</strong>. O fio condutor foi mostrar que motivação e emoção não são o “oposto irracional” da cognição, mas sistemas adaptativos, dotados de lógica própria, que dirigem, energizam e coloram tudo o que pensamos e fazemos — e cuja desregulação está na raiz de grande parte do sofrimento psíquico. Com os processos básicos (Fase 2) agora mapeados — biologia, sensação, consciência, aprendizagem, memória, cognição, motivação e emoção —, o manual está pronto para a <strong>Fase 3</strong>, que abre com o <strong>desenvolvimento humano</strong>: como esses processos surgem, amadurecem e se transformam ao longo de toda a vida.</p>
+</section>
+<section id="síntese" class="level2">
+<h2 class="anchored" data-anchor-id="síntese">Síntese</h2>
+<div class="callout-sintese">
+<ul>
+<li>O <strong>estresse</strong> é a <strong>transação</strong> entre demandas percebidas e recursos percebidos; distingue-se o <strong>estressor</strong> (evento) da <strong>resposta ao estresse</strong>. Há <strong>eustresse</strong> e <strong>distresse</strong>.</li>
+<li>A <strong>síndrome geral de adaptação</strong> (Selye) é inespecífica e tem três fases: <strong>alarme</strong> (luta ou fuga, adrenalina/SAM), <strong>resistência</strong> (cortisol/HHA) e <strong>exaustão</strong>.</li>
+<li>Taylor acrescentou o padrão <strong>cuidar e amparar</strong> (<em>tend-and-befriend</em>), ligado à ocitocina, à visão clássica de luta ou fuga.</li>
+<li>O estresse <strong>crônico</strong> adoece via <strong>carga alostática</strong> e desregulação <strong>imune</strong>; o estudo de Cohen mostrou experimentalmente que estresse aumenta a suscetibilidade ao resfriado. A <strong>hostilidade</strong> (tipo A) eleva o risco cardiovascular.</li>
+<li>Lazarus e Folkman: a <strong>avaliação</strong> (primária/secundária) precede o <strong>enfrentamento</strong>, dividido em <strong>focado no problema</strong> (situações controláveis) e <strong>focado na emoção</strong> (situações incontroláveis).</li>
+<li><strong>Controle percebido</strong>, <strong>suporte social</strong>, otimismo e hábitos saudáveis <strong>amortecem</strong> o impacto do estresse.</li>
+</ul>
+</div>
+</section>
+<section id="glossário-do-capítulo" class="level2">
+<h2 class="anchored" data-anchor-id="glossário-do-capítulo">Glossário do capítulo</h2>
+<div class="glossario">
+<dl>
+<dt><strong>Estresse (transacional)</strong></dt>
+<dd>
+Relação entre demandas percebidas e recursos percebidos para enfrentá-las (Lazarus).
+</dd>
+<dt><strong>Síndrome geral de adaptação (SGA)</strong></dt>
+<dd>
+Resposta corporal inespecífica ao estresse em três fases — alarme, resistência, exaustão <span class="citation" data-cites="selye1936">(<a href="../../referencias.html#ref-selye1936" role="doc-biblioref">Selye, 1936</a>)</span>.
+</dd>
+<dt><strong>Eixo HHA / cortisol</strong></dt>
+<dd>
+Via hipotálamo-hipófise-adrenal que libera cortisol, sustentando a resposta lenta ao estresse (Cap. 25).
+</dd>
+<dt><strong>Carga alostática</strong></dt>
+<dd>
+Desgaste acumulado no corpo pela ativação repetida ou crônica da resposta ao estresse <span class="citation" data-cites="mcewen1998">(<a href="../../referencias.html#ref-mcewen1998" role="doc-biblioref">McEwen, 1998</a>)</span>.
+</dd>
+<dt><strong>Cuidar e amparar (<em>tend-and-befriend</em>)</strong></dt>
+<dd>
+Padrão de resposta ao estresse por proteção e afiliação, ligado à ocitocina <span class="citation" data-cites="taylor2000">(<a href="../../referencias.html#ref-taylor2000" role="doc-biblioref">Taylor et al., 2000</a>)</span>.
+</dd>
+<dt><strong>Enfrentamento (<em>coping</em>) focado no problema / na emoção</strong></dt>
+<dd>
+Agir sobre o estressor (controlável) <em>versus</em> sobre a reação emocional (incontrolável) <span class="citation" data-cites="lazarus_folkman1984">(<a href="../../referencias.html#ref-lazarus_folkman1984" role="doc-biblioref">Lazarus; Folkman, 1984</a>)</span>.
+</dd>
+<dt><strong>Suporte social (<em>buffering</em>)</strong></dt>
+<dd>
+Efeito protetor dos vínculos sociais, que amortecem o impacto do estresse sobre a saúde.
+</dd>
+</dl>
+</div>
+</section>
+<section id="para-refletir" class="level2">
+<h2 class="anchored" data-anchor-id="para-refletir">Para refletir</h2>
+<ol type="1">
+<li><p><strong>(Recuperação.)</strong> Diferencie estressor, resposta ao estresse e estresse na definição transacional. Por que essa distinção importa?</p></li>
+<li><p><strong>(Conceitual.)</strong> Descreva as três fases da síndrome geral de adaptação e o principal hormônio envolvido em cada uma.</p></li>
+<li><p><strong>(Análise.)</strong> Usando a imagem da “zebra” de Sapolsky, explique por que o estresse crônico humano é mais nocivo que o estresse agudo de um animal fugindo de um predador.</p></li>
+<li><p><strong>(Aplicação.)</strong> Um estudante enfrenta uma prova difícil (controlável) e, no mesmo mês, o falecimento de um avô (incontrolável). Que tipo de enfrentamento tende a ser mais adaptativo para cada situação?</p></li>
+<li><p><strong>(Análise.)</strong> Como o estudo de Cohen sobre o resfriado comum fornece evidência <em>experimental</em> — e não apenas correlacional — da ligação entre estresse e saúde?</p></li>
+<li><p><strong>(Avaliação.)</strong> “O estresse é sempre prejudicial e deve ser eliminado.” Avalie essa afirmação distinguindo eustresse de distresse e citando fatores que modulam o impacto do estresse.</p></li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list" style="display: none">
+<div id="ref-cannon1932" class="csl-entry" role="listitem">
+CANNON, Walter B. <strong>The Wisdom of the Body</strong>. New York: W. W. Norton, 1932.
+</div>
+<div id="ref-cohen1991" class="csl-entry" role="listitem">
+COHEN, Sheldon; TYRRELL, David A. J.; SMITH, Andrew P. <a href="https://doi.org/10.1056/NEJM199108293250903">Psychological stress and susceptibility to the common cold</a>. <strong>New England Journal of Medicine</strong>, v. 325, n. 9, p. 606–612, 1991.
+</div>
+<div id="ref-friedman_rosenman1959" class="csl-entry" role="listitem">
+FRIEDMAN, Meyer; ROSENMAN, Ray H. <a href="https://doi.org/10.1001/jama.1959.03000290012005">Association of specific overt behavior pattern with blood and cardiovascular findings</a>. <strong>Journal of the American Medical Association</strong>, v. 169, n. 12, p. 1286–1296, 1959.
+</div>
+<div id="ref-lazarus_folkman1984" class="csl-entry" role="listitem">
+LAZARUS, Richard S.; FOLKMAN, Susan. <strong>Stress, Appraisal, and Coping</strong>. New York: Springer, 1984.
+</div>
+<div id="ref-mcewen1998" class="csl-entry" role="listitem">
+MCEWEN, Bruce S. <a href="https://doi.org/10.1111/j.1749-6632.1998.tb09546.x">Stress, adaptation, and disease: allostasis and allostatic load</a>. <strong>Annals of the New York Academy of Sciences</strong>, v. 840, n. 1, p. 33–44, 1998.
+</div>
+<div id="ref-sapolsky2004" class="csl-entry" role="listitem">
+SAPOLSKY, Robert M. <strong>Why Zebras Don’t Get Ulcers</strong>. 3. ed. New York: Henry Holt, 2004.
+</div>
+<div id="ref-selye1936" class="csl-entry" role="listitem">
+SELYE, Hans. <a href="https://doi.org/10.1038/138032a0">A syndrome produced by diverse nocuous agents</a>. <strong>Nature</strong>, v. 138, n. 3479, p. 32, 1936.
+</div>
+<div id="ref-taylor2000" class="csl-entry" role="listitem">
+TAYLOR, Shelley E. <em>et al.</em> <a href="https://doi.org/10.1037/0033-295X.107.3.411">Biobehavioral responses to stress in females: tend-and-befriend, not fight-or-flight</a>. <strong>Psychological Review</strong>, v. 107, n. 3, p. 411–429, 2000.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1145,7 +1505,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/VitorMattosDev/manual-psicologia/edit/main/capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd" class="toc-action"><i class="bi bi-github"></i>Editar essa página</a></li><li><a href="https://github.com/VitorMattosDev/manual-psicologia/issues/new" class="toc-action"><i class="bi empty"></i>Criar uma issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Feito com <a href="https://quarto.org">Quarto</a></p>
 </div>
