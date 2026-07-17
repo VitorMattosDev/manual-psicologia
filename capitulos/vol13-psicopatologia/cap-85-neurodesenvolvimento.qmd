@@ -1,5 +1,138 @@
 # 85. Transtornos do neurodesenvolvimento (TEA, TDAH)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** os transtornos do neurodesenvolvimento e o que os une.
+- **Descrever** o transtorno do espectro autista (TEA) por seus dois domínios centrais e o conceito de espectro.
+- **Explicar** as principais teorias cognitivas do autismo, incluindo a teoria da mente e a tarefa da falsa crença.
+- **Refutar**, com evidência, o mito de que vacinas causam autismo.
+- **Caracterizar** o TDAH como um transtorno de autorregulação e discutir os debates sobre seu diagnóstico.
+- **Reconhecer** a perspectiva da neurodiversidade e as abordagens de apoio baseadas em evidência.
 :::
+
+Os transtornos deste capítulo não "aparecem" na vida adulta: eles acompanham a pessoa desde o começo do desenvolvimento e moldam a trajetória de aprendizagem, comunicação e comportamento. Por isso o DSM-5 os reuniu sob o rótulo de **transtornos do neurodesenvolvimento** — um grupo que inclui a deficiência intelectual, os transtornos da comunicação, o transtorno específico da aprendizagem, os transtornos motores (como os tiques e a síndrome de Tourette) e os dois que este capítulo detalha: o **transtorno do espectro autista (TEA)** e o **transtorno de déficit de atenção/hiperatividade (TDAH)**. São também os transtornos em torno dos quais gravitam alguns dos debates mais acalorados da psicologia contemporânea — sobre diagnóstico, identidade e um dos mitos mais nocivos da história recente da saúde pública.
+
+## Transtorno do espectro autista
+
+O TEA define-se por **dois domínios centrais** de manifestações, presentes desde cedo no desenvolvimento (@fig-tea):
+
+1. **Déficits persistentes na comunicação e na interação social:** dificuldade na reciprocidade socioemocional, nos comportamentos comunicativos não verbais (contato visual, gestos, expressões) e no desenvolvimento e manutenção de relações.
+2. **Padrões restritos e repetitivos de comportamento, interesses ou atividades:** movimentos ou fala estereotipados, insistência em rotinas e rigidez, interesses intensos e focados, e **particularidades sensoriais** (hiper ou hiporreatividade a sons, texturas, luzes).
+
+::: {#fig-tea}
+```{.tikz}
+%%| filename: dominios-tea
+%%| alt: Diagrama com duas caixas lado a lado representando os dois domínios centrais do transtorno do espectro autista. À esquerda, caixa azul "Comunicação e interação social", listando reciprocidade socioemocional, comunicação não verbal e relações. À direita, caixa verde "Padrões restritos e repetitivos", listando estereotipias, insistência em rotinas, interesses focados e particularidades sensoriais. Abaixo das duas caixas, uma barra horizontal em gradiente rotulada "espectro: dos níveis 1 a 3 de suporte", indicando que a gravidade e a necessidade de apoio variam de forma contínua.
+\begin{tikzpicture}[font=\small,
+  dom/.style={draw, thick, rounded corners=4pt, align=center, minimum width=5cm, minimum height=2.6cm, text width=4.5cm}]
+  \node[dom, draw=manualblue, fill=manualblue!8] (soc) at (-2.9,1.6)
+    {\textbf{\textcolor{manualblue}{Comunicação e interação social}}\\[3pt]
+     {\scriptsize reciprocidade socioemocional}\\{\scriptsize comunicação não verbal}\\{\scriptsize relações}};
+  \node[dom, draw=manualgreen, fill=manualgreen!8] (rep) at (2.9,1.6)
+    {\textbf{\textcolor{manualgreen}{Padrões restritos e repetitivos}}\\[3pt]
+     {\scriptsize estereotipias, rotinas}\\{\scriptsize interesses focados}\\{\scriptsize particularidades sensoriais}};
+  \shade[left color=manualgray!12, right color=manualred!40] (-5.4,-0.7) rectangle (5.4,-0.05);
+  \draw[thick] (-5.4,-0.7) rectangle (5.4,-0.05);
+  \node[font=\scriptsize] at (-3.9,-0.375) {nível 1};
+  \node[font=\scriptsize] at (0,-0.375) {nível 2};
+  \node[font=\scriptsize] at (3.9,-0.375) {nível 3};
+  \node[font=\scriptsize\itshape, text=manualgray] at (0,-1.1) {espectro: necessidade de suporte crescente};
+\end{tikzpicture}
+```
+Os dois domínios centrais do TEA e sua natureza de **espectro**. O DSM-5 unificou os antigos subtipos numa dimensão única, com níveis de necessidade de suporte — reconhecendo que a apresentação varia enormemente de pessoa para pessoa.
+:::
+
+A palavra **espectro** é decisiva. O DSM-5 **unificou** os antigos diagnósticos separados (transtorno autista, síndrome de Asperger, transtorno global do desenvolvimento sem outra especificação) numa única categoria dimensional, com **níveis de suporte** (1 a 3), reconhecendo a enorme heterogeneidade: há pessoas autistas com deficiência intelectual e sem fala, e pessoas autistas com inteligência elevada e vida independente. Não existe "um autismo".
+
+### As teorias cognitivas
+
+Três teorias cognitivas, parciais e complementares, tentam explicar o perfil autista. A mais famosa é o déficit de **teoria da mente** — a capacidade de atribuir estados mentais (crenças, desejos, intenções) a si e aos outros (Cap. 59). A evidência fundadora é um experimento elegante.
+
+::: {.experimento}
+🔬 **Experimento Clássico — a tarefa da falsa crença (Sally-Anne)** [@baroncohen1985]
+
+**Desenho.** Baron-Cohen, Leslie e Frith apresentaram a crianças uma pequena encenação: a boneca **Sally** guarda uma bolinha em sua cesta e sai da sala; enquanto está fora, **Anne** transfere a bolinha para uma caixa. Sally volta. Pergunta-se à criança: **onde Sally vai procurar a bolinha?** A resposta correta ("na cesta", onde ela a deixou) exige entender que Sally age segundo sua *crença* — falsa —, não segundo a realidade.
+
+**Resultado.** A maioria das crianças com desenvolvimento típico a partir de cerca de 4 anos, e também a maioria das crianças com síndrome de Down, respondia corretamente. Já a maioria das crianças autistas respondia "na caixa" — indicando dificuldade em representar a crença falsa de outra pessoa.
+
+**Interpretação.** O achado sugeriu um déficit específico na teoria da mente, ajudando a explicar as dificuldades sociais e comunicativas do autismo sem recorrer a déficit intelectual geral.
+
+**Limitações.** A teoria da mente **não** explica tudo (não dá conta dos comportamentos repetitivos e das particularidades sensoriais), nem todos os autistas falham na tarefa, e a formulação original foi criticada por patologizar diferenças. Por isso ela hoje convive com outras: a **coerência central fraca** (tendência a processar detalhes em vez do todo, que explicaria tanto dificuldades quanto habilidades perceptuais superiores) [@happe2006] e a **disfunção executiva**.
+:::
+
+### As causas e o mito que precisa morrer
+
+O TEA é fortemente **genético**: estudos com gêmeos estimam herdabilidade em torno de 80%, com arquitetura poligênica e contribuição de variantes raras [@tick2016]. Fatores pré e perinatais (idade parental avançada, prematuridade) somam pequeno risco. O aumento da **prevalência** nas últimas décadas reflete, em grande parte, a ampliação dos critérios diagnósticos, a maior conscientização e a melhor identificação — não uma "epidemia".
+
+::: {.atencao}
+⚠️ **Vacinas NÃO causam autismo. Este é talvez o mito mais custoso da história recente.** A ideia nasceu de um artigo de 1998 que sugeriu ligação entre a vacina tríplice viral (sarampo, caxumba, rubéola) e o autismo [@wakefield1998]. O estudo revelou-se uma **fraude**: baseava-se em apenas 12 crianças, com dados manipulados e graves conflitos de interesse; foi formalmente **retratado** pela revista, e seu autor principal perdeu o registro médico por má conduta. Desde então, estudos com **milhões** de crianças, em vários países, não encontraram nenhuma associação entre vacinas e autismo [@taylor2014]. A cronologia que alimenta o mito é uma armadilha de raciocínio (Cap. 1): os primeiros sinais do TEA costumam se tornar visíveis na mesma faixa etária em que as vacinas são aplicadas — uma **coincidência temporal**, não uma relação causal (Cap. 15). O custo do mito foi real: queda da cobertura vacinal e surtos de sarampo, uma doença potencialmente fatal. É o exemplo mais dramático deste manual de por que confundir correlação temporal com causa, e por que fraude científica não desmentida, mata.
+:::
+
+## TDAH
+
+O **TDAH** caracteriza-se por um padrão persistente de **desatenção** e/ou **hiperatividade-impulsividade** que interfere no funcionamento, com início na infância (antes dos 12 anos, no DSM-5), presente em **mais de um ambiente** (casa, escola) e desproporcional ao esperado para a idade. Há três apresentações: predominantemente desatenta, predominantemente hiperativa-impulsiva e combinada. Longe de ser "criança levada", o TDAH persiste na vida adulta numa parcela significativa dos casos e associa-se a prejuízos acadêmicos, ocupacionais e relacionais.
+
+A explicação dominante o entende menos como um déficit de atenção e mais como um déficit de **autorregulação** e **funções executivas**: Russell Barkley enfatiza a dificuldade de **inibição** e de controle executivo do comportamento em direção a metas [@barkley1997]. No plano biológico, a herdabilidade é alta (~75%) [@faraone2005], com envolvimento de circuitos frontoestriatais e sistemas dopaminérgicos e noradrenérgicos — que são o alvo dos medicamentos.
+
+::: {.atencao}
+⚠️ **O TDAH é real — e seu diagnóstico é sensível ao contexto.** Duas afirmações verdadeiras convivem em tensão. Primeira: o TDAH é um transtorno legítimo, com base neurobiológica e genética sólida, e o subdiagnóstico priva muitas pessoas de ajuda eficaz. Segunda: seu diagnóstico depende de julgamento sobre o que é "desproporcional para a idade", e isso o torna vulnerável a erro. A evidência mais eloquente é o **efeito da idade relativa**: em vários países, as crianças **mais novas** de uma mesma turma escolar têm probabilidade sensivelmente maior de receber o diagnóstico e medicação do que as mais velhas da mesma sala — porque sua imaturidade normal é confundida com sintoma [@sayal2018]. Isso não invalida o transtorno; mostra que o diagnóstico exige critérios cuidadosos e olhar para o contexto, não apenas para a criança. É a lição do Cap. 76 (onde traçar a linha) em ação.
+:::
+
+## Tratamento e neurodiversidade
+
+Para o **TEA**, não há "cura" nem se busca uma: as intervenções com melhor evidência são **comportamentais e desenvolvimentais precoces**, que apoiam a comunicação, as habilidades sociais e a autonomia, respeitando as características da pessoa [@dawson2010; @lord2018]. Aqui entra a perspectiva da **neurodiversidade** — o movimento, liderado por pessoas autistas, que enquadra o autismo não só como transtorno a corrigir, mas como uma **variação** do funcionamento humano, cujo sofrimento decorre em boa parte da falta de acomodação social. A tensão entre o modelo médico (que foca no déficit e no suporte a necessidades reais, sobretudo nos casos com maior grau de suporte) e o modelo da neurodiversidade (que foca na aceitação e na adaptação do ambiente) é produtiva e reorganiza o campo. O objetivo contemporâneo é menos "normalizar" e mais **capacitar e incluir**.
+
+Para o **TDAH**, os **medicamentos estimulantes** (como o metilfenidato) são eficazes em reduzir sintomas no curto prazo, e a combinação com **intervenções comportamentais** e **treino de pais** compõe o cuidado; o grande estudo multicêntrico MTA confirmou o benefício do tratamento medicamentoso bem monitorado, ainda que o debate sobre efeitos de longo prazo permaneça [@mta1999]. Ajustes escolares e ambientais são parte essencial.
+
+::: {.na-pratica}
+💡 **Linguagem, respeito e a pessoa por trás do rótulo.** Como nenhum outro grupo de transtornos, o do neurodesenvolvimento nos ensina sobre linguagem e dignidade. Muitas pessoas autistas preferem a **linguagem de identidade** ("pessoa autista", "sou autista") à linguagem centrada na pessoa ("pessoa com autismo"), por vivenciarem o autismo como parte de quem são — o oposto da recomendação usual em saúde mental (Cap. 76). A lição prática é simples e poderosa: **pergunte à pessoa como ela prefere ser chamada**. Além disso, entender esses transtornos ajuda a reinterpretar comportamentos: a criança "distraída" pode ter dificuldade genuína de inibição; a "birra" diante de uma mudança de rotina pode ser sobrecarga sensorial. Substituir o julgamento moral pela compreensão do funcionamento é, aqui, a maior contribuição da psicologia ao cotidiano de famílias e escolas.
+:::
+
+::: {.callout-sintese}
+- Os **transtornos do neurodesenvolvimento** têm início no período de desenvolvimento e incluem TEA, TDAH, deficiência intelectual, transtornos da aprendizagem, da comunicação e motores.
+- O **TEA** tem dois domínios centrais — comunicação/interação social e padrões restritos/repetitivos com particularidades sensoriais — e é um **espectro** (o DSM-5 unificou os subtipos, com níveis de suporte).
+- Teorias cognitivas parciais: **teoria da mente** (tarefa da falsa crença) [@baroncohen1985], **coerência central fraca** [@happe2006] e disfunção executiva; nenhuma explica tudo.
+- O TEA é altamente **genético** (~80%) [@tick2016]; **vacinas não causam autismo** — o estudo original foi fraude retratada e milhões de crianças o desmentem [@wakefield1998; @taylor2014].
+- O **TDAH** é um transtorno de **autorregulação/função executiva** [@barkley1997], altamente hereditário [@faraone2005]; é real, mas seu diagnóstico é sensível ao contexto (efeito da idade relativa) [@sayal2018].
+- Tratam-se: TEA com **intervenção comportamental/desenvolvimental precoce** e inclusão [@dawson2010]; TDAH com **estimulantes** + intervenções comportamentais [@mta1999]. A **neurodiversidade** reformula o objetivo de "normalizar" para "incluir".
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Transtornos do neurodesenvolvimento**
+:   Grupo de transtornos com início no período de desenvolvimento que afetam a cognição, a comunicação, o comportamento e as habilidades motoras.
+
+**Transtorno do espectro autista (TEA)**
+:   Transtorno com déficits na comunicação/interação social e padrões restritos e repetitivos de comportamento, de gravidade variável (espectro).
+
+**Teoria da mente**
+:   Capacidade de atribuir estados mentais a si e aos outros; sua dificuldade, medida pela tarefa da falsa crença, associa-se ao autismo [@baroncohen1985].
+
+**Coerência central fraca**
+:   Estilo cognitivo de foco em detalhes em detrimento do todo, proposto no autismo [@happe2006].
+
+**TDAH**
+:   Padrão persistente de desatenção e/ou hiperatividade-impulsividade, entendido como déficit de autorregulação e função executiva [@barkley1997].
+
+**Efeito da idade relativa**
+:   Maior probabilidade de as crianças mais novas de uma turma receberem diagnóstico de TDAH, por confusão entre imaturidade e sintoma [@sayal2018].
+
+**Neurodiversidade**
+:   Perspectiva que concebe variações neurológicas como diferenças humanas a serem acomodadas, não apenas déficits a corrigir.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Quais são os dois domínios centrais do TEA? Explique por que a mudança para o conceito de "espectro" no DSM-5 foi importante.
+
+2. **(Conceitual.)** Descreva a tarefa da falsa crença e o que ela indica sobre a teoria da mente no autismo. Por que essa teoria é considerada uma explicação *parcial*?
+
+3. **(Reflexão crítica.)** Explique, usando os conceitos de correlação, causa e coincidência temporal (Cap. 15), por que a associação percebida entre vacinas e autismo é espúria. Que danos de saúde pública o mito causou?
+
+4. **(Análise.)** Por que é mais preciso descrever o TDAH como transtorno de autorregulação do que como "falta de atenção"? Como isso muda a compreensão do comportamento da criança?
+
+5. **(Avaliação.)** O efeito da idade relativa mostra que crianças mais novas de uma turma são mais diagnosticadas com TDAH. Isso prova que o TDAH "não existe"? Argumente, distinguindo a realidade do transtorno da fragilidade do diagnóstico.
+
+6. **(Integração.)** Contraste o modelo médico e o da neurodiversidade no autismo. Em que situações cada perspectiva é mais útil, e como a escolha da linguagem ("pessoa autista" x "pessoa com autismo") reflete esse debate?
