@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 75 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 19/49
+**Progresso:** 86 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 30/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅** Próximo: Fase 3, Vol 13 (Psicopatologia).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅ · Vol 13 ✅** Próximo: Fase 3, Vol 14 (Tratamentos e Terapias).
 
 ---
 
@@ -166,7 +166,7 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 | 83 | Transtornos de personalidade | `capitulos/vol13-psicopatologia/cap-83-transtornos-personalidade.qmd` | ✅ |
 | 84 | Transtornos alimentares | `capitulos/vol13-psicopatologia/cap-84-transtornos-alimentares.qmd` | ✅ |
 | 85 | Transtornos do neurodesenvolvimento (TEA, TDAH) | `capitulos/vol13-psicopatologia/cap-85-neurodesenvolvimento.qmd` | ✅ |
-| 86 | Transtornos por uso de substâncias | `capitulos/vol13-psicopatologia/cap-86-uso-substancias.qmd` | ⬜ |
+| 86 | Transtornos por uso de substâncias | `capitulos/vol13-psicopatologia/cap-86-uso-substancias.qmd` | ✅ |
 
 ### Vol 14 — Tratamentos e Terapias
 | Cap | Título | Arquivo | Status |

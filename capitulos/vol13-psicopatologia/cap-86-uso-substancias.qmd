@@ -1,5 +1,134 @@
 # 86. Transtornos por uso de substâncias
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** transtorno por uso de substâncias como um espectro e distinguir dependência física de dependência (adição).
+- **Descrever** o sistema cerebral de recompensa e como as substâncias o sequestram, incluindo a distinção "querer × gostar".
+- **Analisar** o modelo de doença cerebral da adição e suas críticas, à luz do estudo dos veteranos do Vietnã e do Rat Park.
+- **Integrar** os fatores genéticos, psicológicos e sociais do risco de adição.
+- **Avaliar** os tratamentos eficazes e o paradigma de redução de danos.
+- **Reconhecer** o papel do estigma e o valor de uma linguagem não moralizante.
 :::
+
+Chegamos ao capítulo que encerra o volume, e ele reúne todos os seus fios: biologia e ambiente, escolha e compulsão, doença e estigma. Os transtornos por uso de substâncias desafiam nossas intuições morais mais arraigadas — é fraqueza de caráter? é doença? é escolha? — e, ao respondê-las com evidência, a psicologia oferece uma de suas contribuições mais úteis e mais humanas. Aqui, mais do que em qualquer outro quadro, entender o mecanismo é o antídoto direto contra o preconceito que, ele próprio, impede o tratamento.
+
+## De abuso e dependência a um espectro
+
+O DSM-5 fez, neste campo, uma mudança conceitual importante: aposentou a antiga dicotomia entre "abuso" e "dependência" e adotou um único **transtorno por uso de substâncias**, avaliado num **espectro de gravidade** (leve, moderado, grave) conforme quantos de onze critérios a pessoa preenche. Os critérios organizam-se em quatro grupos: **perda de controle** (usar mais e por mais tempo do que pretendia, desejo de reduzir sem conseguir, fissura), **prejuízo social** (falhar em obrigações, abandonar atividades), **uso arriscado** (em situações perigosas, apesar de danos) e **critérios farmacológicos** (tolerância e abstinência). O DSM-5 também reconheceu, pela primeira vez, uma **adição comportamental** — o **transtorno do jogo** (*gambling*) —, e a CID-11 acrescentou o transtorno do jogo eletrônico (*gaming*), admitindo que a adição não requer necessariamente uma substância.
+
+::: {.atencao}
+⚠️ **Dependência física não é o mesmo que adição.** Uma distinção que desfaz muita confusão. **Tolerância** (precisar de mais para o mesmo efeito) e **abstinência** (sintomas ao interromper) são adaptações **fisiológicas** que podem ocorrer com o uso regular de várias substâncias — inclusive medicamentos legítimos, como certos analgésicos, sem que haja adição. A **adição** é um quadro **comportamental**: uso compulsivo apesar do prejuízo, perda de controle e fissura. Um paciente pode ter dependência física de um opioide prescrito para dor sem ser adicto; e há adições (à cocaína, ao jogo) com dependência física discreta. Confundir os dois leva a erros clínicos e a um medo injustificado de tratar a dor.
+:::
+
+## O cérebro sequestrado: o sistema de recompensa
+
+Por que substâncias tão diferentes — álcool, nicotina, cocaína, opioides, cannabis — produzem adição? Porque todas convergem sobre um mesmo alvo: o **sistema de recompensa** do cérebro, a via **mesolímbica** de dopamina que liga a área tegmentar ventral ao **núcleo accumbens** e ao córtex pré-frontal (Cap. 24). Esse sistema evoluiu para nos fazer repetir o que favorece a sobrevivência (comer, beber, sexo, laços sociais), sinalizando recompensa e aprendizado por meio da dopamina. As drogas de abuso **sequestram** esse circuito, produzindo picos de dopamina muito maiores e mais confiáveis do que qualquer recompensa natural — e o cérebro "aprende", com enorme força, que aquela substância importa acima de tudo (@fig-adicao).
+
+::: {#fig-adicao}
+```{.tikz}
+%%| filename: ciclo-adicao
+%%| alt: Diagrama em ciclo de três estágios da adição segundo Koob e Volkow, com três caixas dispostas em triângulo ligadas por setas que formam uma espiral descendente. No topo, "Intoxicação / prazer (pico de dopamina no núcleo accumbens)"; à direita embaixo, "Abstinência / afeto negativo (disforia, estresse, amígdala)"; à esquerda embaixo, "Preocupação / fissura (perda de controle pré-frontal, antecipação)". As setas circulam do topo para a direita, para a esquerda e de volta ao topo, e uma seta central indica que a cada volta o prazer diminui e a compulsão aumenta.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.9cm, minimum height=1.3cm}]
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (int) at (0,3.1) {\textbf{Intoxicação}\\{\scriptsize pico de dopamina}\\{\scriptsize (accumbens)}};
+  \node[cx, draw=manualred, fill=manualred!8] (abs) at (3.6,-1.4) {\textbf{Abstinência}\\{\scriptsize afeto negativo}\\{\scriptsize (amígdala)}};
+  \node[cx, draw=manualblue, fill=manualblue!8] (pre) at (-3.6,-1.4) {\textbf{Preocupação}\\{\scriptsize fissura, antecipação}\\{\scriptsize (pré-frontal)}};
+  \draw[->, >=Stealth, thick] (int) to[bend left=18] (abs);
+  \draw[->, >=Stealth, thick] (abs) to[bend left=18] (pre);
+  \draw[->, >=Stealth, thick] (pre) to[bend left=18] (int);
+  \node[font=\scriptsize\itshape, text=manualgray, align=center] at (0,0.35) {a cada volta:\\menos prazer,\\mais compulsão};
+\end{tikzpicture}
+```
+O ciclo de três estágios da adição [@koob_volkow2016]. Da intoxicação prazerosa passa-se à abstinência com afeto negativo e à preocupação/fissura, que reinicia o ciclo. Com a repetição, o controle pré-frontal enfraquece e a compulsão substitui o prazer.
+:::
+
+Um refinamento crucial explica por que a adição persiste mesmo quando a droga já não dá prazer. Robinson e Berridge propuseram a teoria da **sensibilização ao incentivo**, que dissocia **"querer"** (*wanting*, o impulso de buscar, mediado pela dopamina) de **"gostar"** (*liking*, o prazer de fato) [@robinson_berridge1993]. Com o uso repetido, o sistema de "querer" fica **hipersensível** aos estímulos associados à droga (a fissura), enquanto o "gostar" muitas vezes **diminui**. A pessoa passa a querer intensamente algo de que já não gosta — o retrato neurobiológico da compulsão, e a razão pela qual "é só querer parar" ignora que o problema é precisamente um sistema de *querer* desregulado.
+
+## O modelo de doença cerebral e seus críticos
+
+A leitura dominante nas neurociências, associada a Nora Volkow e ao instituto norte-americano de drogas, é o **modelo de doença cerebral**: a adição seria uma doença **crônica e recidivante** do cérebro, marcada por alterações duradouras nos circuitos de recompensa, motivação e controle [@volkow2016]. O modelo tem grandes virtudes: reduz a culpa moral, embasa o tratamento médico e explica a perda de controle. Mas ele é **contestado**, e a controvérsia é instrutiva — dois achados clássicos mostram por quê.
+
+::: {.experimento}
+🔬 **Experimento Clássico — os veteranos do Vietnã** [@robins1974]
+
+**Desenho.** Durante a Guerra do Vietnã, uma proporção alarmante de soldados norte-americanos tornou-se dependente de heroína. Lee Robins acompanhou sistematicamente esses veteranos após o retorno aos Estados Unidos — um "experimento natural" de escala rara.
+
+**Resultado.** Contrariando toda a expectativa da época, a **grande maioria** dos soldados dependentes **parou de usar heroína** ao voltar para casa, sem tratamento, e a maior parte **não** recaiu. A recaída foi muito menor do que a observada em dependentes tratados em clínicas nos EUA.
+
+**Interpretação.** O achado abalou a visão da adição como doença cerebral irreversível e puramente farmacológica. Mudar o **contexto** — sair do ambiente de guerra, estresse, disponibilidade e sinais associados ao uso, e retornar a uma vida com laços, papéis e alternativas — foi suficiente para a maioria interromper uma dependência grave. O ambiente não é um detalhe; é parte constitutiva da adição.
+
+**Limitações.** O contexto do Vietnã era extremo e talvez atípico (uso iniciado num ambiente muito específico), e "parar" não significa que não houve sofrimento; ainda assim, a magnitude do efeito é difícil de reconciliar com um determinismo estritamente cerebral.
+:::
+
+Na mesma direção aponta o célebre **Rat Park** de Bruce Alexander: ratos alojados sozinhos em gaiolas estéreis consumiam avidamente água com morfina, mas ratos em um ambiente enriquecido e social ("parque dos ratos") a consumiam muito menos [@alexander1981] — sugerindo que o isolamento e a pobreza de alternativas, não apenas a droga, movem o consumo compulsivo (os resultados tiveram replicação parcial e são debatidos, mas o princípio ressoa com o estudo do Vietnã). Autores como Gene Heyman e Carl Hart levaram a crítica adiante: dados epidemiológicos mostram que a **maioria** das pessoas que preenchem critérios de adição **se recupera** ao longo da vida, muitas sem tratamento formal, e que o comportamento de uso responde a incentivos, custos e contexto — o que é difícil de encaixar num modelo de doença puramente involuntária [@heyman2009; @hart2013].
+
+A síntese razoável não é escolher um lado. A adição envolve, sim, **alterações cerebrais reais** que tornam o controle mais difícil — e continua **sensível ao contexto, aos incentivos e ao sentido de vida**. Compulsão e escolha não são opostos absolutos; são polos de um continuum que a boa clínica leva a sério dos dois lados.
+
+## O risco: por que algumas pessoas, e não outras
+
+A maioria das pessoas que experimenta substâncias **não** desenvolve adição — o que reconduz à pergunta da diátese-estresse: quem adoece? A resposta é biopsicossocial. A **genética** responde por cerca de metade da vulnerabilidade [@goldman2005]. Fatores **psicológicos** pesam: adversidade e trauma na infância (as "experiências adversas"), transtornos coexistentes (a substância como automedicação para ansiedade, depressão, trauma), impulsividade. E o **social** é decisivo, como os estudos acima mostram: disponibilidade, pobreza de alternativas e recompensas, pressão de pares, isolamento, e as condições que o Cap. 103 discutirá no contexto brasileiro. A aprendizagem amarra tudo: os **sinais** associados ao uso (lugares, pessoas, horários) tornam-se gatilhos condicionados de fissura (Cap. 39), razão pela qual mudar o ambiente é terapêutico.
+
+## Tratamento e redução de danos
+
+A adição é **tratável**, e o tratamento funciona — apesar do pessimismo popular. No plano **farmacológico**, há opções eficazes e específicas: para a dependência de **opioides**, a terapia com agonistas (metadona, buprenorfina) reduz drasticamente overdoses e uso ilícito; para o **álcool**, naltrexona, acamprosato e dissulfiram; para a **nicotina**, terapia de reposição e outros fármacos. No plano **psicossocial**, têm forte evidência a **entrevista motivacional**, a **terapia cognitivo-comportamental** (identificar gatilhos, prevenir recaída), o **manejo de contingências** (recompensar a abstinência comprovada — uma das intervenções mais eficazes) [@prendergast2006] e os grupos de **ajuda mútua** (como os de 12 passos).
+
+::: {.na-pratica}
+💡 **Redução de danos: reduzir o sofrimento sem exigir a abstinência primeiro.** Por décadas, a única meta aceita foi a abstinência total, e quem não a alcançasse era considerado fracasso. A **redução de danos** parte de outra premissa: se a pessoa ainda usa, o objetivo imediato é **reduzir os danos** desse uso — programas de troca de seringas (que reduzem HIV e hepatites), distribuição de **naloxona** (que reverte overdose de opioides), salas de consumo supervisionado, testagem. A evidência mostra que essas medidas salvam vidas e, longe de "incentivar o uso", frequentemente **aproximam** a pessoa do sistema de saúde e do tratamento. No Brasil, a redução de danos é diretriz da política de saúde mental, e os **CAPS-AD** (Centros de Atenção Psicossocial Álcool e Drogas) são a porta de entrada do cuidado no SUS. Encarar a recaída como parte esperada do processo — não como fracasso moral — é, também, redução de danos aplicada à relação terapêutica.
+:::
+
+::: {.atencao}
+⚠️ **O estigma é uma barreira ao tratamento — e a linguagem importa.** Poucos transtornos são tão moralizados quanto a adição, vista como vício, falha de caráter ou escolha viciosa. Esse estigma tem custo mensurável: afasta as pessoas do tratamento, degrada a qualidade do cuidado e alimenta políticas punitivas em vez de sanitárias. A própria linguagem carrega julgamento — termos como "viciado", "drogado" e "limpo/sujo" (para exames) associam a pessoa à moral, não à saúde. A recomendação, coerente com todo o volume, é a **linguagem centrada na pessoa** ("pessoa com transtorno por uso de substâncias", "uso ativo" em vez de "sujo"). Não é preciosismo: estudos mostram que o rótulo usado altera até o quanto profissionais recomendam punição versus tratamento. Combater o estigma é parte do tratamento.
+:::
+
+## Encerrando o volume
+
+Este volume percorreu a psicopatologia do começo ao fim — da pergunta fundadora sobre onde termina o normal (Cap. 76) e de como a codificamos (Cap. 77), passando pelos grandes grupos de transtornos, até a adição que fecha o percurso. Duas lições atravessaram todos os capítulos. A primeira é integrativa: nenhum transtorno se explica por um só nível — genes, cérebro, aprendizagem, cognição, cultura e contexto se combinam, e a diátese-estresse é o fio condutor. A segunda é ética: o rótulo diagnóstico é uma ferramenta útil e perigosa, o estigma é um obstáculo tão real quanto os sintomas, e a linguagem com que falamos do sofrimento faz parte do cuidado. Descrevemos os transtornos; resta a pergunta que dá sentido a tudo isso — **como tratá-los?** É o que o **Vol 14** desenvolve, dos fundamentos da intervenção às terapias baseadas em evidência e aos tratamentos biomédicos.
+
+::: {.callout-sintese}
+- O DSM-5 substituiu "abuso/dependência" por um **transtorno por uso de substâncias** em **espectro de gravidade** (11 critérios) e reconheceu adições **comportamentais** (jogo; jogo eletrônico na CID-11).
+- **Dependência física** (tolerância, abstinência) ≠ **adição** (uso compulsivo apesar do dano).
+- Todas as drogas de abuso sequestram o **sistema de recompensa** dopaminérgico; a **sensibilização ao incentivo** dissocia "querer" (que aumenta) de "gostar" (que diminui) [@robinson_berridge1993], e o ciclo de três estágios troca prazer por compulsão [@koob_volkow2016].
+- O **modelo de doença cerebral** [@volkow2016] convive com fortes críticas: os **veteranos do Vietnã** [@robins1974] e o **Rat Park** [@alexander1981], mais a alta taxa de recuperação [@heyman2009; @hart2013], mostram que o **contexto** é constitutivo — compulsão e escolha coexistem.
+- Risco biopsicossocial: genética (~50%) [@goldman2005], trauma/comorbidade e, decisivamente, o ambiente e as alternativas disponíveis.
+- O tratamento **funciona**: agonistas para opioides, fármacos para álcool e nicotina, e intervenções psicossociais (entrevista motivacional, TCC, **manejo de contingências**) [@prendergast2006]; a **redução de danos** salva vidas, e o **estigma** e a linguagem moralizante são barreiras ao cuidado.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Transtorno por uso de substâncias**
+:   Padrão de uso com perda de controle, prejuízo social, uso arriscado e critérios farmacológicos, avaliado num espectro de gravidade.
+
+**Tolerância / abstinência**
+:   Adaptações fisiológicas: necessidade de doses maiores (tolerância) e sintomas ao cessar o uso (abstinência); constituem dependência física, não necessariamente adição.
+
+**Sistema de recompensa**
+:   Via dopaminérgica mesolímbica (área tegmentar ventral, núcleo accumbens, córtex pré-frontal) sequestrada pelas drogas de abuso.
+
+**Sensibilização ao incentivo**
+:   Teoria que separa "querer" (impulso de busca, que aumenta) de "gostar" (prazer, que diminui) na adição [@robinson_berridge1993].
+
+**Modelo de doença cerebral**
+:   Concepção da adição como doença crônica e recidivante do cérebro [@volkow2016], contestada pela sensibilidade da adição ao contexto.
+
+**Redução de danos**
+:   Abordagem que visa reduzir os prejuízos do uso (overdose, infecções) sem exigir a abstinência como pré-condição.
+
+**Manejo de contingências**
+:   Intervenção que reforça diretamente a abstinência comprovada; das mais eficazes no tratamento [@prendergast2006].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique a mudança do DSM-5 de "abuso/dependência" para um espectro. Diferencie dependência física de adição com um exemplo.
+
+2. **(Conceitual.)** O que é a sensibilização ao incentivo? Como a dissociação entre "querer" e "gostar" explica que alguém continue usando uma droga da qual já não sente prazer?
+
+3. **(Reflexão crítica.)** O estudo dos veteranos do Vietnã e o Rat Park desafiam o modelo de doença cerebral. Descreva cada um e explique como o contexto influenciou o uso. Isso prova que a adição "é só escolha"? Argumente por uma síntese.
+
+4. **(Integração.)** A maioria de quem experimenta drogas não se torna adicta. Use a diátese-estresse com um fator de cada nível (genético, psicológico, social) para explicar por que uma pessoa desenvolve adição e outra não.
+
+5. **(Aplicação.)** Uma cidade debate instalar um programa de troca de seringas e distribuição de naloxona. Um vereador diz que isso "incentiva o uso". Responda com base na evidência sobre redução de danos.
+
+6. **(Reflexão crítica.)** Explique por que a linguagem ("viciado", "limpo/sujo" x "pessoa com transtorno por uso de substâncias") não é mero preciosismo. Como o estigma atua como barreira concreta ao tratamento?
