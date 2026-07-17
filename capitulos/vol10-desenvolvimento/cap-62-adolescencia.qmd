@@ -1,5 +1,122 @@
 # 62. Adolescência
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** as transformações da puberdade e seu impacto psicológico.
+- **Explicar** o desenvolvimento do cérebro adolescente e sua relação com a tomada de risco.
+- **Caracterizar** a busca da identidade (Erikson) e os estados de identidade de Marcia.
+- **Discutir** o egocentrismo adolescente e as relações com pais e pares.
+- **Avaliar** criticamente a visão da adolescência como período de "tempestade e tormenta".
 :::
+
+A adolescência é a ponte entre a infância e a vida adulta — um período de transformações rápidas e simultâneas no corpo, no cérebro, na cognição e nas relações sociais. Culturalmente construída como fase distinta apenas na modernidade, ela concentra dois grandes projetos de desenvolvimento: **tornar-se adulto no corpo** (a puberdade) e **descobrir quem se é** (a identidade). Este capítulo examina essas transformações e enfrenta um estereótipo persistente: o da adolescência como época inevitável de crise e conflito. Veremos que a neurociência recente oferece uma explicação elegante — e mais compassiva — para a impulsividade e a busca de sensações típicas da idade.
+
+## Puberdade: a transformação do corpo
+
+A adolescência começa na **puberdade**, o processo de maturação sexual disparado por uma cascata hormonal (Cap. 25): o hipotálamo aciona a hipófise, que estimula gônadas (ovários e testículos) a produzir estrogênios e testosterona. Surgem as **características sexuais primárias** (maturação dos órgãos reprodutivos) e **secundárias** (pelos, mudança de voz, desenvolvimento das mamas), culminando na **menarca** (primeira menstruação) e na **espermarca**. O **estirão de crescimento** e essas mudanças ocorrem, em média, mais cedo nas meninas do que nos meninos.
+
+O que interessa à psicologia é menos a biologia em si e mais seu **significado social e o momento (*timing*)**. Amadurecer **fora de sincronia** com os pares tem efeitos psicológicos. A **maturação precoce** tende a ser vivida de modo diferente por meninos (às vezes vantajosa em status) e meninas (associada a maior risco de dificuldades, por chamar atenção adulta indesejada e por descompasso com pares). O corpo que muda, a nova imagem corporal e a reação do meio tornam a puberdade uma experiência tanto biológica quanto profundamente social.
+
+## O cérebro adolescente e a tomada de risco
+
+Por que adolescentes, apesar de já raciocinarem quase como adultos, tendem a assumir mais **riscos** — direção perigosa, uso de substâncias, sexo desprotegido? A resposta antiga ("eles não sabem os riscos") é falsa: adolescentes conhecem os riscos tão bem quanto adultos. A neurociência oferece uma explicação melhor, no **modelo dos dois sistemas** (@fig-cerebro-adolescente) [@steinberg2008; @casey2008].
+
+::: {#fig-cerebro-adolescente}
+```{.tikz}
+%%| filename: cerebro-adolescente-dois-sistemas
+%%| alt: Gráfico com duas curvas ao longo da idade, da infância à idade adulta. A curva do sistema socioemocional/de recompensa sobe rapidamente na adolescência, formando um pico por volta dos 15 anos. A curva do sistema de controle cognitivo (pré-frontal) sobe de forma lenta e linear, amadurecendo só no início da vida adulta. A distância entre as curvas na adolescência representa a janela de vulnerabilidade ao risco.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (0,0) -- (9.2,0) node[right, font=\tiny] {idade};
+  \draw[->, thick] (0,0) -- (0,3.6);
+  \foreach \x/\a in {1/10, 3.5/15, 6/20, 8.5/25} { \node[font=\tiny, below] at (\x,0) {\a}; }
+  % sistema socioemocional (pico na adolescencia)
+  \draw[very thick, curva, manualred]
+     (0.5,0.5) .. controls (2,1.2) and (2.8,3.0) .. (3.5,3.1)
+     .. controls (4.5,3.2) and (5.5,2.0) .. (8.7,1.6);
+  \node[text=manualred, font=\tiny, align=center] at (3.6,3.45) {sistema socioemocional / recompensa};
+  % controle cognitivo (linear lento)
+  \draw[very thick, curva, manualblue] (0.5,0.4) .. controls (4,1.0) and (6,2.3) .. (8.7,2.7);
+  \node[text=manualblue, font=\tiny, align=center, right] at (6.2,2.3) {controle\\cognitivo (PFC)};
+  % janela de risco
+  \draw[<->, manualgray, dashed] (3.5,3.05) -- (3.5,1.15);
+  \node[font=\tiny, text=manualgray, align=center, right] at (3.6,2.0) {janela de\\risco};
+\end{tikzpicture}
+```
+O **modelo dos dois sistemas**: o sistema **socioemocional** (busca de recompensa e sensações) amadurece cedo e dispara na adolescência, enquanto o **controle cognitivo** pré-frontal amadurece lenta e tardiamente. O descompasso abre uma janela de maior propensão ao risco.
+:::
+
+O sistema **socioemocional / de recompensa** (regiões límbicas, como o estriado, sensíveis à dopamina) amadurece **cedo** e torna-se hiper-reativo na adolescência, intensificando a busca de recompensas, sensações e a sensibilidade à aprovação dos pares. Já o sistema de **controle cognitivo** — o **córtex pré-frontal** (Cap. 24), responsável por planejamento, inibição de impulsos e avaliação de consequências — amadurece **devagar**, completando-se só por volta dos 25 anos. O resultado é um **descompasso temporal**: um acelerador potente com freios ainda em construção. Isso explica por que o risco adolescente é maior **na presença de pares** e **no calor da emoção** — exatamente quando o sistema socioemocional domina. Não é irracionalidade nem ignorância: é um cérebro em transição.
+
+::: {.base-neural}
+🧠 **Poda e mielinização no córtex.** A adolescência é uma segunda grande fase de remodelação cerebral (a primeira é a infância, Cap. 58). Ocorre intensa **poda sináptica** no córtex pré-frontal — eliminando conexões não usadas e tornando o processamento mais eficiente — junto com progressiva **mielinização**, que acelera a comunicação entre regiões. Essas mudanças aumentam a integração entre áreas de controle e de emoção. A imaturidade pré-frontal não é um "defeito", mas o preço de uma janela de **plasticidade** que permite ao adolescente adaptar-se ao ambiente adulto que o espera. É também a base neurobiológica para tratar adolescentes de forma distinta de adultos em contextos jurídicos (Cap. 101).
+:::
+
+## A busca da identidade
+
+A grande tarefa psicossocial da adolescência, para Erikson (Cap. 60), é resolver a crise **identidade × confusão de papéis**: integrar as várias facetas de si — valores, vocação, crenças, sexualidade, papéis sociais — em um senso coerente e contínuo de **quem se é**. É a "crise de identidade", termo que Erikson popularizou.
+
+James Marcia operacionalizou essa ideia identificando quatro **estados de identidade**, definidos pelo cruzamento de duas dimensões: ter passado (ou não) por uma **crise/exploração** e ter feito (ou não) um **compromisso** [@marcia1966]:
+
+- **Difusão de identidade**: sem exploração e sem compromisso — o adolescente não se questionou nem se decidiu.
+- **Hipoteca (*foreclosure*)**: compromisso sem exploração — adotou valores e planos prontos (dos pais, da religião) sem jamais questioná-los.
+- **Moratória**: exploração **em curso**, sem compromisso ainda — o adolescente está ativamente experimentando papéis e ideias (o estado de "crise" produtiva).
+- **Conquista de identidade (*achievement*)**: compromisso **após** exploração — atravessou o questionamento e chegou a escolhas próprias e assumidas.
+
+Esses estados não são uma escada rígida; a identidade continua a se revisar na vida adulta. Para grupos minoritários, acrescenta-se a tarefa de construir uma **identidade étnica e cultural** (Cap. 103), e a adolescência é também quando muitas pessoas exploram e afirmam sua **identidade sexual e de gênero**.
+
+::: {.atencao}
+⚠️ **O egocentrismo adolescente.** David Elkind descreveu uma forma de egocentrismo típica do início da adolescência, subproduto das novas capacidades de pensar sobre o próprio pensamento [@elkind1967]. Dois componentes se destacam. A **audiência imaginária**: a sensação de estar sempre sendo observado e julgado por todos (a espinha que "todo mundo vai notar"), que alimenta a autoconsciência aguda da idade. E a **fábula pessoal**: a crença de que as próprias experiências são únicas e de que "isso não vai acontecer comigo" — invulnerabilidade que contribui para a tomada de risco. Não confundir com o egocentrismo pré-operatório de Piaget (Cap. 59): aqui não é incapacidade de tomar a perspectiva do outro, mas uma preocupação excessiva com **como o self é visto**.
+:::
+
+## Relações: pais e pares
+
+A adolescência **reorganiza** as relações sociais, mas não as rompe. Cresce a importância dos **pares** — fonte de identidade, apoio e experimentação social — e aumenta a **conformidade** ao grupo (Cap. 72), especialmente no início da adolescência. Ao mesmo tempo, negocia-se maior **autonomia** frente aos pais. Ao contrário do estereótipo, a maioria dos adolescentes **não** vive em guerra com os pais: os conflitos costumam ser sobre questões cotidianas (horários, arrumação) e não sobre valores centrais, que em geral permanecem alinhados. Pais e pares influenciam **domínios diferentes**: os pares pesam mais em gostos e comportamentos imediatos; os pais, em valores de longo prazo, escolhas educacionais e morais.
+
+::: {.na-pratica}
+**A adolescência é mesmo "tempestade e tormenta"?** G. Stanley Hall, o primeiro a estudar cientificamente a fase, cunhou a expressão **"tempestade e estresse" (*Sturm und Drang*)**, retratando a adolescência como período universalmente turbulento [@hall1904]. A pesquisa moderna **relativizou** essa visão. Conflitos com pais, instabilidade de humor e comportamentos de risco de fato aumentam, em média, na adolescência — mas a maioria dos adolescentes **atravessa a fase sem crise grave**, com bom funcionamento e relações positivas. A turbulência é uma **tendência estatística**, não um destino universal, e varia muito com a cultura e o contexto. Tratar todo adolescente como problema em potencial é injusto e contraproducente; reconhecer a fase como de vulnerabilidade *e* de enorme potencial de desenvolvimento é mais acurado.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A **puberdade** é a maturação sexual disparada por hormônios; seu impacto psicológico depende do **timing** (maturação precoce/tardia) e do significado social do corpo que muda.
+- O **modelo dos dois sistemas** explica a tomada de risco: o sistema **socioemocional/de recompensa** amadurece cedo e dispara, enquanto o **controle pré-frontal** amadurece só por volta dos 25 anos — um descompasso, não ignorância dos riscos.
+- A grande tarefa é a **identidade** (Erikson). Marcia descreveu quatro **estados**: difusão, hipoteca, moratória e conquista, cruzando **exploração** e **compromisso**.
+- O **egocentrismo adolescente** (Elkind) inclui a **audiência imaginária** e a **fábula pessoal** (invulnerabilidade).
+- **Pares** ganham peso (conformidade) e negocia-se **autonomia** dos pais, mas sem ruptura de valores na maioria dos casos.
+- A visão de adolescência como **"tempestade e tormenta"** (Hall) é uma tendência estatística, não um destino universal.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Puberdade**
+:   Processo de maturação sexual disparado por hormônios, com características sexuais primárias e secundárias.
+
+**Modelo dos dois sistemas**
+:   Descompasso entre a maturação precoce do sistema de recompensa e a tardia do controle pré-frontal, explicando a tomada de risco [@steinberg2008].
+
+**Estados de identidade**
+:   Quatro configurações de Marcia (difusão, hipoteca, moratória, conquista) por exploração × compromisso [@marcia1966].
+
+**Audiência imaginária / fábula pessoal**
+:   Componentes do egocentrismo adolescente: sentir-se observado por todos; crer-se único e invulnerável [@elkind1967].
+
+**Tempestade e estresse (*Sturm und Drang*)**
+:   Visão clássica (Hall) da adolescência como fase turbulenta, hoje relativizada [@hall1904].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie características sexuais primárias e secundárias e explique por que o **timing** da puberdade importa psicologicamente.
+
+2. **(Conceitual.)** Por que "os adolescentes não conhecem os riscos" é uma explicação **falsa** para a tomada de risco? O que o modelo dos dois sistemas propõe em seu lugar?
+
+3. **(Aplicação.)** Classifique nos estados de Marcia: (a) um jovem que seguirá a profissão do pai sem nunca ter pensado em alternativas; (b) uma jovem experimentando cursos e ideias sem ainda se decidir. Justifique.
+
+4. **(Análise.)** Como a **fábula pessoal** de Elkind se conecta com a maior tomada de risco na adolescência?
+
+5. **(Análise.)** Explique por que o risco adolescente aumenta **na presença de pares**, usando o modelo dos dois sistemas.
+
+6. **(Avaliação.)** Avalie a tese de Hall de que a adolescência é universalmente um período de "tempestade e tormenta", distinguindo tendência estatística de destino inevitável.
