@@ -1,5 +1,129 @@
 # 54. Teorias da emoção
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Decompor** a emoção em seus três componentes: fisiológico, expressivo-comportamental e cognitivo-subjetivo.
+- **Comparar** as teorias clássicas de James-Lange, Cannon-Bard e dos dois fatores (Schachter-Singer).
+- **Explicar** o papel da avaliação cognitiva (*appraisal*) e o debate cognição × afeto (Lazarus × Zajonc).
+- **Descrever** o circuito neural do medo e a "via curta" da amígdala (LeDoux).
+- **Avaliar** a teoria da emoção construída e a controvérsia sobre emoções básicas universais.
 :::
+
+Motivação e emoção são as duas faces do sistema afetivo que nos move (Cap. 51). Se a motivação responde "por que agimos?", a emoção responde "como nos sentimos ao agir e ao viver o que nos acontece?". Uma **emoção** é uma resposta psicológica breve e intensa a um evento significativo, com três componentes que os teóricos organizam de modo recorrente: (1) uma **reação fisiológica** (coração acelera, mãos suam — Cap. 23); (2) uma **expressão comportamental** (a face de medo, a postura de fuga); e (3) uma **experiência subjetiva consciente**, o *sentir* (o "sinto medo"), muitas vezes acompanhado de uma **avaliação cognitiva** do evento. A grande questão teórica da psicologia da emoção — que estrutura este capítulo — é: **como esses componentes se relacionam e em que ordem ocorrem?** Sentimos medo porque trememos, ou trememos porque sentimos medo?
+
+## As teorias clássicas
+
+A pergunta acima não é retórica: foi literalmente proposta por William James. O **senso comum** diz: percebo o urso → sinto medo → meu corpo reage (corro, tremo). James, e independentemente o médico Carl Lange, inverteram a ordem na **teoria de James-Lange** [@james1884]: percebo o urso → meu corpo reage → **a percepção dessa reação corporal *é* a emoção**. Nas palavras de James, não choramos porque estamos tristes; estamos tristes *porque* choramos. A emoção seria a **leitura** que o cérebro faz do estado do corpo — uma tese notavelmente moderna, que ressurge em Damásio (Cap. 22) e nas teorias interoceptivas.
+
+Walter Cannon, com Philip Bard, levantou objeções contundentes à teoria de James-Lange e propôs uma alternativa, a **teoria de Cannon-Bard** [@cannon1927]. As críticas: (a) as respostas fisiológicas são **lentas demais** para explicar emoções que sentimos num instante; (b) elas são **inespecíficas** — o coração acelera no medo, na raiva e na excitação, então como o corpo "diria" ao cérebro *qual* emoção é?; (c) induzir a fisiologia artificialmente (injetar adrenalina) nem sempre produz a emoção. A proposta de Cannon-Bard: o estímulo é processado pelo **tálamo**, que dispara **simultaneamente** e de forma independente a reação corporal *e* a experiência emocional consciente. Sentimos e reagimos ao mesmo tempo; um não causa o outro.
+
+::: {#fig-teorias-emocao}
+```{.tikz}
+%%| filename: teorias-emocao
+%%| alt: Três diagramas horizontais comparando teorias da emoção a partir do mesmo estímulo (um urso). Na teoria de James-Lange, o estímulo leva à reação corporal e esta leva à emoção sentida, em sequência. Na de Cannon-Bard, o estímulo leva simultaneamente e em paralelo à reação corporal e à emoção. Na teoria dos dois fatores, o estímulo leva à reação corporal e, junto com a interpretação cognitiva do contexto, produz a emoção.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth,
+   box/.style={draw, rounded corners, minimum height=7mm, align=center, font=\tiny, inner sep=2pt}]
+  % James-Lange
+  \node[font=\tiny, text=manualgray] at (-0.4,2.4) {\textbf{James-Lange}};
+  \node[box, fill=manualblue!12] (jl1) at (0,1.8) {Estímulo};
+  \node[box, fill=manualred!12] (jl2) at (2.4,1.8) {Reação\\corporal};
+  \node[box, fill=manualyellow!25] (jl3) at (5.0,1.8) {Emoção\\sentida};
+  \draw[->] (jl1)--(jl2); \draw[->] (jl2)--(jl3);
+  % Cannon-Bard
+  \node[font=\tiny, text=manualgray] at (-0.4,0.9) {\textbf{Cannon-Bard}};
+  \node[box, fill=manualblue!12] (cb1) at (0,0.3) {Estímulo};
+  \node[box, fill=manualred!12] (cb2) at (3.0,0.75) {Reação corporal};
+  \node[box, fill=manualyellow!25] (cb3) at (3.0,-0.15) {Emoção sentida};
+  \draw[->] (cb1)--(cb2); \draw[->] (cb1)--(cb3);
+  % Dois fatores
+  \node[font=\tiny, text=manualgray] at (-0.4,-1.05) {\textbf{Dois fatores}};
+  \node[box, fill=manualblue!12] (sf1) at (0,-1.6) {Estímulo};
+  \node[box, fill=manualred!12] (sf2) at (2.4,-1.6) {Reação\\corporal};
+  \node[box, fill=manualgreen!14] (sf3) at (5.0,-1.6) {Interpret.\\contexto};
+  \node[box, fill=manualyellow!25] (sf4) at (7.5,-1.6) {Emoção\\sentida};
+  \draw[->] (sf1)--(sf2); \draw[->] (sf2)--(sf3); \draw[->] (sf3)--(sf4);
+\end{tikzpicture}
+```
+Três teorias clássicas diante do mesmo estímulo. **James-Lange:** a reação corporal *precede* e causa a emoção. **Cannon-Bard:** reação e emoção ocorrem em **paralelo**. **Dois fatores:** a emoção resulta da reação corporal *mais* a interpretação cognitiva do contexto.
+:::
+
+## A teoria dos dois fatores
+
+Stanley Schachter e Jerome Singer propuseram uma síntese que dominaria décadas: a **teoria dos dois fatores** [@schachter_singer1962]. A emoção requer **dois ingredientes**: (1) uma **ativação fisiológica** geral e inespecífica (o coração acelerado) e (2) uma **interpretação cognitiva** dessa ativação, que a rotula a partir do contexto. O corpo fornece a *intensidade*; a cognição fornece a *identidade* da emoção. A mesma taquicardia pode ser rotulada como "medo" numa emergência, "raiva" numa discussão ou "paixão" num encontro — dependendo do que a mente conclui sobre a situação.
+
+::: {.experimento}
+🔬 **Adrenalina e o poder do contexto.** No engenhoso experimento de Schachter e Singer, participantes receberam uma injeção de adrenalina (sob o pretexto de testar uma "vitamina"). Alguns foram **informados** dos efeitos (tremor, taquicardia); outros, **não**. Em seguida, cada um esperava numa sala com um comparsa que se comportava de modo **eufórico** (brincalhão, fazendo aviõezinhos de papel) ou **irritado** (reclamando de um questionário ofensivo). O achado central: os participantes **não informados** sobre os efeitos da injeção — que sentiam a ativação sem explicá-la — "pegaram" a emoção do comparsa, relatando-se mais eufóricos ou mais irritados conforme o modelo; os **informados**, que atribuíam a ativação à injeção, foram menos influenciados. **Interpretação:** quando há ativação corporal sem causa óbvia, a mente busca no contexto um rótulo — e é esse rótulo que define a emoção sentida. **Limitação:** o estudo teve problemas metodológicos e replicações mistas; sua tese forte (a fisiologia é totalmente inespecífica) foi depois moderada, mas o princípio de que a *interpretação* molda a emoção sobreviveu robustamente.
+:::
+
+Um fenômeno relacionado é a **transferência de excitação** (ou **atribuição errônea de excitação**): a ativação residual de uma fonte pode ser mal atribuída a outra. No clássico "experimento da ponte", homens que atravessavam uma ponte alta e assustadora — e portanto fisiologicamente ativados — mostraram-se mais atraídos por uma entrevistadora do que os que cruzavam uma ponte segura [@dutton_aron1974]: interpretaram o coração acelerado (na verdade, do medo) como atração. É a teoria dos dois fatores em ação — e um argumento a favor de encontros em situações emocionantes.
+
+## Cognição × afeto: o debate
+
+A ênfase na interpretação levantou uma questão de fundo: a **avaliação cognitiva** (*appraisal*) é *necessária* para a emoção? Richard Lazarus defendeu que **sim**: toda emoção começa com uma avaliação — muitas vezes rápida e não consciente — do significado do evento para o bem-estar da pessoa [@lazarus1991]. Não é o evento em si, mas seu *significado avaliado*, que determina a emoção: a mesma prova provoca alívio em quem a avalia como "fácil" e pânico em quem a avalia como "ameaça". A avaliação vem primeiro; a emoção, depois.
+
+Robert Zajonc discordou frontalmente: **"as preferências não precisam de inferências"** [@zajonc1980]. Podemos ter reações afetivas **antes** e **independentemente** de qualquer avaliação cognitiva elaborada — gostamos ou tememos algo num instante, sem processamento consciente. O efeito da **mera exposição** (preferir o que é familiar, mesmo sem reconhecê-lo) e reações a estímulos apresentados subliminarmente sustentam a **primazia do afeto**: o sentir pode preceder o pensar. O debate Lazarus–Zajonc, aparentemente irreconciliável, foi em grande parte resolvido pela neurociência, que mostrou existirem **múltiplas vias**: algumas emoções passam por avaliação cortical elaborada (Lazarus tem razão para elas), outras disparam por atalhos rápidos e pré-conscientes (Zajonc tem razão para essas).
+
+::: {.base-neural}
+🧠 **As duas vias do medo.** Joseph LeDoux mapeou o circuito do medo e encontrou exatamente a arquitetura que reconcilia o debate [@ledoux2000]. A informação sensual ameaçadora chega ao **tálamo** e segue por **duas vias** até a **amígdala**, o centro de detecção de ameaças: uma **via curta** (tálamo → amígdala), rápida e grosseira, que dispara a resposta de defesa em milissegundos, *antes* de o córtex identificar o que é; e uma **via longa** (tálamo → córtex → amígdala), mais lenta e precisa, que avalia o estímulo e pode confirmar ou cancelar o alarme. É por isso que saltamos ao ver uma forma sinuosa no chão *antes* de reconhecer que é só uma mangueira: a via curta agiu primeiro (Zajonc), e a via longa corrigiu depois (Lazarus). A via curta é evolutivamente vantajosa — em relação a ameaças, é melhor um alarme falso rápido que uma análise correta tardia demais.
+:::
+
+## Emoções básicas e emoção construída
+
+Existem **emoções básicas**, universais e biologicamente dadas? A tradição de Darwin (Cap. 13) e Paul Ekman diz que sim: um pequeno conjunto de emoções (alegria, tristeza, raiva, medo, nojo, surpresa) teria expressões faciais reconhecidas em todas as culturas, produto da evolução (Cap. 55). Essa visão dominou a psicologia da emoção por décadas.
+
+Lisa Feldman Barrett propôs uma alternativa radical, a **teoria da emoção construída** [@barrett2017]. Para ela, as emoções **não** são módulos inatos disparados por gatilhos fixos; são **construções** que o cérebro fabrica no momento, combinando três ingredientes: sinais corporais brutos de **valência** (agradável/desagradável) e **ativação** (alta/baixa) — o *afeto central* —, o **contexto** e, crucialmente, os **conceitos emocionais** aprendidos da cultura e da linguagem. Não "detectamos" medo; **construímos** uma instância de medo aplicando o conceito "medo" a uma sensação corporal num contexto. A evidência a favor inclui a grande variabilidade fisiológica e expressiva dentro de cada categoria emocional e as diferenças culturais nos conceitos de emoção (línguas têm palavras emocionais sem tradução direta).
+
+::: {.atencao}
+**Um debate em aberto — apresentado de forma equilibrada.** A disputa entre a visão das **emoções básicas** e a da **emoção construída** é uma das mais vivas da psicologia atual, e o manual não a resolve por decreto. A favor das emoções básicas: há real universalidade no reconhecimento de algumas expressões e circuitos afetivos conservados na evolução (o medo e a amígdala, o nojo e a ínsula). A favor da emoção construída: a variabilidade dentro das categorias é grande, os conceitos culturais moldam a experiência, e a universalidade do reconhecimento facial foi metodologicamente contestada. A posição mais defensável hoje é **integradora**: há componentes biológicos conservados (valência, ativação, alguns circuitos) *e* uma poderosa camada de construção conceitual e cultural que dá forma, nome e nuance ao que sentimos. Reconhecer a controvérsia — em vez de escondê-la — é o que a boa ciência exige.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- Uma **emoção** tem três componentes: **fisiológico**, **expressivo-comportamental** e **cognitivo-subjetivo**. As teorias diferem na *ordem* e na relação entre eles.
+- **James-Lange:** a emoção é a percepção da reação corporal (tremo, logo tenho medo). **Cannon-Bard:** reação e emoção ocorrem em **paralelo**, disparadas pelo tálamo.
+- **Teoria dos dois fatores** (Schachter-Singer): emoção = **ativação fisiológica + interpretação cognitiva** do contexto; sustentada pelo experimento da adrenalina e pela transferência de excitação.
+- **Lazarus** defende que a **avaliação cognitiva** precede a emoção; **Zajonc** defende a **primazia do afeto**. A neurociência reconcilia: há **múltiplas vias**.
+- **LeDoux:** o medo tem uma **via curta** (tálamo→amígdala, rápida) e uma **via longa** (via córtex, lenta e precisa).
+- Debate atual: **emoções básicas** universais (Darwin, Ekman) *versus* **emoção construída** (Barrett); a posição integradora reconhece componentes biológicos e construção conceitual/cultural.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Emoção**
+:   Resposta breve e intensa a um evento significativo, com componentes fisiológico, expressivo e subjetivo.
+
+**Teoria de James-Lange**
+:   A emoção é a percepção cerebral das reações corporais [@james1884].
+
+**Teoria de Cannon-Bard**
+:   Reação corporal e experiência emocional ocorrem simultânea e independentemente, via tálamo [@cannon1927].
+
+**Teoria dos dois fatores**
+:   Emoção = ativação fisiológica + rótulo cognitivo atribuído a partir do contexto [@schachter_singer1962].
+
+**Avaliação cognitiva (*appraisal*)**
+:   Interpretação do significado de um evento para o bem-estar, que, segundo Lazarus, origina a emoção [@lazarus1991].
+
+**Via curta / via longa (medo)**
+:   Atalho tálamo→amígdala (rápido, grosseiro) e rota tálamo→córtex→amígdala (lento, preciso) [@ledoux2000].
+
+**Emoção construída**
+:   Teoria de que emoções são construções do cérebro a partir de afeto central, contexto e conceitos aprendidos [@barrett2017].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Enuncie os três componentes de uma emoção e dê um exemplo de cada para o "medo".
+
+2. **(Conceitual.)** Qual foi a principal crítica de Cannon à teoria de James-Lange quanto à especificidade das respostas corporais?
+
+3. **(Aplicação.)** Use a teoria dos dois fatores para explicar por que um encontro em um parque de diversões pode aumentar a atração entre duas pessoas.
+
+4. **(Análise.)** Como o circuito de duas vias de LeDoux reconcilia o debate entre Lazarus e Zajonc? Ilustre com o exemplo da mangueira confundida com cobra.
+
+5. **(Reflexão crítica.)** Contraste a visão das emoções básicas com a teoria da emoção construída. Que evidência cada lado invoca?
+
+6. **(Avaliação.)** "Sentimos medo e por isso o corpo reage." Avalie essa afirmação de senso comum à luz das teorias de James-Lange e dos dois fatores.
