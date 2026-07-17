@@ -1,5 +1,122 @@
 # 52. Motivações básicas (fome, sede, sexo)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Explicar** a regulação homeostática da fome e da sede, distinguindo sinais de curto e longo prazo.
+- **Descrever** o papel do hipotálamo, da glicose e da leptina no controle do apetite.
+- **Discutir** a teoria do ponto de ajuste (*set point*) e seus limites diante da obesidade e das influências ambientais.
+- **Analisar** o ciclo de resposta sexual humana e a distinção entre motivação sexual e necessidades de sobrevivência.
+- **Integrar** fatores fisiológicos, psicológicos e socioculturais na explicação das motivações básicas.
 :::
+
+O capítulo anterior mapeou as grandes teorias da motivação; este as coloca à prova nas motivações mais **básicas** — aquelas que compartilhamos com outros animais e que garantem a sobrevivência do indivíduo (fome, sede) e da espécie (sexo). São o território clássico da **homeostase** (Cap. 25): o organismo monitora variáveis internas críticas e age para mantê-las dentro de uma faixa estreita. Mas, como veremos, mesmo essas motivações "puramente biológicas" são profundamente moduladas por aprendizagem, cognição e cultura — a fome humana não é a fome de um termostato.
+
+## A sede e o equilíbrio hídrico
+
+A **sede** ilustra a homeostase em sua forma mais límpida. O corpo regula dois compartimentos de água — o líquido *dentro* das células (intracelular) e o *fora* delas (extracelular, incluindo o sangue). Dois tipos de sede correspondem a esses compartimentos. A **sede osmótica** dispara quando a concentração de solutos no líquido extracelular sobe (ao comer algo salgado, por exemplo): a água sai das células por osmose, e osmorreceptores no hipotálamo detectam a desidratação celular. A **sede volêmica** dispara quando o volume de líquido extracelular cai (hemorragia, suor intenso), detectada por receptores de pressão e pelo sistema renina-angiotensina dos rins. Em ambos os casos, o hipotálamo integra os sinais e gera a experiência motivacional da sede, que dirige a busca por água. Curiosamente, paramos de beber **antes** que a água chegue às células — sinais antecipatórios da boca e do estômago encerram a bebida, evitando o excesso; é um mecanismo de *feedforward* que complementa a homeostase reativa.
+
+## A fome: a orquestra de sinais
+
+A fome é bem mais complexa que a sede, porque envolve muitos sinais, de horizontes temporais distintos, integrados sobretudo pelo **hipotálamo**. Historicamente, duas regiões hipotalâmicas foram identificadas por estudos de lesão em ratos: o **hipotálamo lateral** funcionava como um "centro da fome" (lesioná-lo levava o animal a parar de comer) e o **hipotálamo ventromedial** como um "centro da saciedade" (lesioná-lo produzia hiperfagia e obesidade). Esse modelo de "dois centros" é hoje visto como **simplificado demais** — a regulação envolve redes distribuídas e muitos núcleos, com destaque para o **núcleo arqueado**, que abriga populações neuronais opostas que estimulam ou inibem o apetite [@schwartz2000]. Ainda assim, a intuição de que o hipotálamo é o maestro da fome permanece correta.
+
+Que sinais o hipotálamo integra? Podemos organizá-los por prazo (@fig-fome-sinais):
+
+- **Curto prazo (por refeição).** A **glicose** no sangue é um sinal central: quedas de glicose disponível às células sinalizam fome (teoria **glicostática**). O estômago distendido envia sinais de saciedade pelo nervo vago. O intestino libera hormônios como a **colecistocinina (CCK)**, que sinaliza saciedade, e a **grelina**, produzida pelo estômago vazio, que é o principal sinal hormonal de **fome** (sobe antes das refeições, cai depois de comer).
+- **Longo prazo (reservas de energia).** A **leptina**, hormônio secretado pelo tecido adiposo em proporção à gordura corporal, informa o cérebro sobre as reservas de energia de longo prazo: mais gordura, mais leptina, menos fome. A descoberta da leptina, ao clonar-se o gene responsável por uma obesidade extrema em camundongos [@zhang1994], foi um marco — mostrou que o tecido adiposo é um órgão *endócrino* que "conversa" com o cérebro, não um depósito inerte.
+
+::: {#fig-fome-sinais}
+```{.tikz}
+%%| filename: fome-sinais
+%%| alt: Diagrama com o hipotálamo ao centro recebendo setas de sinais de fome e saciedade. À esquerda, sinais de fome: grelina do estômago vazio e queda de glicose. À direita, sinais de saciedade: distensão do estômago, colecistocinina do intestino, leptina do tecido adiposo e glicose alta. O hipotálamo integra e regula o comportamento alimentar.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth, node distance=6mm]
+  \node[draw, rounded corners, fill=manualblue!15, minimum width=2.4cm, minimum height=1cm, align=center] (hipo) at (0,0) {\textbf{Hipotálamo}\\{\tiny integra sinais}};
+  % fome (esquerda)
+  \node[draw, rounded corners, fill=manualred!12, align=center, font=\tiny] (grelina) at (-4.6,0.8) {Grelina\\{\tiny estômago vazio}};
+  \node[draw, rounded corners, fill=manualred!12, align=center, font=\tiny] (glidown) at (-4.6,-0.8) {Glicose baixa};
+  \draw[->, manualred] (grelina) -- (hipo);
+  \draw[->, manualred] (glidown) -- (hipo);
+  \node[text=manualred, font=\tiny] at (-4.6,1.7) {\textbf{FOME}};
+  % saciedade (direita)
+  \node[draw, rounded corners, fill=manualgreen!14, align=center, font=\tiny] (cck) at (4.6,1.4) {CCK / distensão};
+  \node[draw, rounded corners, fill=manualgreen!14, align=center, font=\tiny] (leptina) at (4.6,0) {Leptina\\{\tiny gordura}};
+  \node[draw, rounded corners, fill=manualgreen!14, align=center, font=\tiny] (gliup) at (4.6,-1.4) {Glicose alta};
+  \draw[->, manualgreen] (cck) -- (hipo);
+  \draw[->, manualgreen] (leptina) -- (hipo);
+  \draw[->, manualgreen] (gliup) -- (hipo);
+  \node[text=manualgreen!50!black, font=\tiny] at (4.6,2.2) {\textbf{SACIEDADE}};
+  % saída
+  \draw[->, thick, manualgray] (hipo) -- (0,-1.9) node[below, font=\tiny, align=center] {comportamento\\alimentar};
+\end{tikzpicture}
+```
+A fome resulta da **integração hipotalâmica** de múltiplos sinais: de fome (grelina, glicose baixa) e de saciedade (distensão gástrica, CCK, leptina, glicose alta), de horizontes de curto e longo prazo.
+:::
+
+## Ponto de ajuste e seus limites
+
+A observação de que o peso corporal tende a permanecer relativamente estável ao longo de anos sugeriu a **teoria do ponto de ajuste** (*set point*): o corpo "defenderia" um peso-alvo, ajustando fome e gasto energético para retornar a ele. Isso explica por que dietas restritivas frequentemente falham no longo prazo — restringir calorias reduz o metabolismo e aumenta a fome, empurrando o corpo de volta ao ponto defendido. Há evidência real de defesa fisiológica do peso.
+
+::: {.experimento}
+🔬 **O Estudo de Fome de Minnesota.** Durante a Segunda Guerra, Ancel Keys conduziu um experimento hoje impensável eticamente, mas cientificamente iluminador [@keys1950]. Trinta e seis objetores de consciência voluntários foram submetidos a semi-inanição controlada — cerca de metade das calorias habituais — por 24 semanas. Os efeitos foram profundos e reveladores: além da perda de ~25% do peso, os homens desenvolveram **preocupação obsessiva com comida** (colecionavam receitas, falavam de comida o tempo todo), apatia, irritabilidade, depressão, retraimento social e queda drástica do interesse sexual. Na fase de recuperação, muitos comeram compulsivamente. **Interpretação:** a fome não é apenas um sinal fisiológico, mas um estado motivacional que **reorganiza toda a cognição e a emoção** em torno da necessidade não satisfeita — confirmando a intuição de Maslow sobre a dominância das necessidades básicas (Cap. 51). **Relevância clínica:** o estudo ilumina por que restrição alimentar severa alimenta a compulsão e ajuda a compreender aspectos dos transtornos alimentares (Cap. 84).
+:::
+
+Mas a teoria do ponto de ajuste tem limites claros. Se o peso fosse rigidamente defendido, a **epidemia de obesidade** das últimas décadas seria inexplicável — nossos genes não mudaram tão rápido; o **ambiente** mudou. A abundância de alimentos ultraprocessados, ricos em açúcar e gordura, baratos e onipresentes, explora nossos sistemas de recompensa (Cap. 22) e sobrepuja a regulação homeostática. Muitos pesquisadores preferem hoje falar em **ponto de estabilização** (*settling point*): o peso se estabiliza no ponto de equilíbrio entre biologia e ambiente, e um ambiente "obesogênico" desloca esse ponto para cima. A fome humana, além disso, é fortemente influenciada por fatores **não homeostáticos**: o horário ("é hora do almoço"), a variedade de sabores disponíveis (comemos mais num bufê variado — a *saciedade sensorial específica*), o tamanho da porção, o estresse e o valor de incentivo (Cap. 51) da comida saborosa. Comemos, muitas vezes, sem ter fome fisiológica.
+
+## A motivação sexual
+
+O sexo é uma motivação básica com um estatuto peculiar: ao contrário da fome e da sede, **não é necessário à sobrevivência do indivíduo** — ninguém morre por abstinência —, mas é essencial à sobrevivência da *espécie*. Por isso sua base motivacional é diferente: menos homeostática, mais ligada a incentivos, hormônios e, no ser humano, a fatores psicológicos e culturais que muitas vezes suplantam os biológicos.
+
+A pesquisa científica sobre a resposta sexual humana foi inaugurada por William Masters e Virginia Johnson, que, rompendo tabus, estudaram a fisiologia da resposta sexual em laboratório [@masters_johnson1966]. Descreveram um **ciclo de resposta sexual** em quatro fases: **excitação** (aumento de fluxo sanguíneo genital, ereção, lubrificação), **platô** (ativação sustentada), **orgasmo** (contrações rítmicas, pico de prazer, ejaculação nos homens) e **resolução** (retorno ao estado basal, com um **período refratário** nos homens, ausente ou mais breve nas mulheres). Antes deles, Alfred Kinsey já havia chocado os Estados Unidos com levantamentos em larga escala sobre o comportamento sexual, revelando uma diversidade de práticas muito maior do que a moral pública admitia — um exemplo do valor (e dos limites metodológicos) do método de *survey* (Cap. 15).
+
+Os **hormônios** (Cap. 25) influenciam a motivação sexual, mas de modo mais frouxo nos humanos do que em outras espécies. Os **androgênios** (sobretudo a testosterona, presente em ambos os sexos) modulam o desejo em homens e mulheres. Mas, ao contrário de muitos animais cujo acasalamento é rigidamente controlado por ciclos hormonais (o estro), a sexualidade humana é **relativamente independente** do estado hormonal imediato: pode ocorrer a qualquer momento do ciclo e é fortemente guiada por estímulos externos, fantasia, contexto e vínculo afetivo.
+
+::: {.atencao}
+**Biologia não é destino, sobretudo no sexo.** É tentador reduzir a motivação sexual à biologia hormonal, mas nenhuma motivação humana é tão moldada por fatores **psicológicos e socioculturais**. Atração, valores, aprendizagem, roteiros culturais, orientação sexual e significado do vínculo pesam tanto ou mais que os hormônios. A orientação sexual, em particular, tem componentes biológicos, mas **não** é uma "escolha" nem se explica por hormônios circulantes na vida adulta. Tratar a sexualidade humana como mero mecanismo reprodutivo ignora justamente aquilo que a torna humana. O manual apresenta a fisiologia com rigor científico e, com igual rigor, recusa reducionismos que a biologia não autoriza.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- A **sede** é regulada homeostaticamente em dois compartimentos: **osmótica** (desidratação celular) e **volêmica** (queda de volume extracelular), integradas pelo hipotálamo.
+- A **fome** resulta da integração hipotalâmica de sinais de curto prazo (**glicose, grelina, CCK**, distensão gástrica) e longo prazo (**leptina**, proporcional à gordura).
+- A **teoria do ponto de ajuste** explica a defesa fisiológica do peso (Estudo de Minnesota), mas **não** a obesidade, melhor entendida com o **ponto de estabilização** e fatores ambientais e não homeostáticos.
+- O **Estudo de Fome de Minnesota** mostrou que a privação alimentar reorganiza toda a cognição e a emoção em torno da comida.
+- A **motivação sexual** garante a sobrevivência da espécie (não do indivíduo); o **ciclo de resposta sexual** (Masters e Johnson) tem quatro fases: excitação, platô, orgasmo e resolução.
+- Nos humanos, a sexualidade é **relativamente independente** dos hormônios imediatos e fortemente moldada por fatores psicológicos e culturais.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Homeostase**
+:   Manutenção ativa de variáveis internas (água, glicose) dentro de uma faixa estreita (Cap. 25).
+
+**Sede osmótica / volêmica**
+:   Sede por desidratação intracelular (aumento de solutos) *versus* por queda de volume do líquido extracelular.
+
+**Grelina / leptina**
+:   Hormônio da fome secretado pelo estômago vazio (grelina) *versus* hormônio da saciedade de longo prazo secretado pela gordura (leptina) [@zhang1994].
+
+**Teoria do ponto de ajuste (*set point*)**
+:   Tese de que o corpo defende um peso-alvo ajustando fome e metabolismo; complementada pela ideia de **ponto de estabilização**.
+
+**Saciedade sensorial específica**
+:   Queda do apetite por um alimento já consumido, com apetite preservado por sabores novos — leva a comer mais na variedade.
+
+**Ciclo de resposta sexual**
+:   Sequência de excitação, platô, orgasmo e resolução descrita por Masters e Johnson [@masters_johnson1966].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie sede osmótica de sede volêmica, indicando o gatilho fisiológico de cada uma.
+
+2. **(Conceitual.)** Classifique como sinal de fome ou de saciedade, e como de curto ou longo prazo: grelina, leptina, CCK, glicose baixa.
+
+3. **(Análise.)** Por que a teoria do ponto de ajuste tem dificuldade em explicar a epidemia de obesidade? Como o conceito de "ponto de estabilização" ajuda?
+
+4. **(Aplicação.)** Com base no Estudo de Fome de Minnesota, por que dietas muito restritivas tendem a produzir episódios de compulsão alimentar?
+
+5. **(Conceitual.)** Em que sentido a motivação sexual difere da fome e da sede quanto à necessidade para a sobrevivência? Que consequência isso tem para sua regulação?
+
+6. **(Reflexão crítica.)** Explique por que reduzir a sexualidade humana aos hormônios é um reducionismo inadequado. Cite ao menos dois fatores não hormonais relevantes.
