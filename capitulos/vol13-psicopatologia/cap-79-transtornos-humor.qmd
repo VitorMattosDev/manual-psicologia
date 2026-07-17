@@ -1,5 +1,174 @@
 # 79. Transtornos do humor (depressivos e bipolares)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** os principais transtornos do humor — depressivo maior, depressivo persistente, bipolar tipo I e tipo II — e distinguir tristeza de depressão clínica.
+- **Caracterizar** mania e hipomania e explicar por que o transtorno bipolar não é "mudança de humor rápida".
+- **Avaliar criticamente** a hipótese monoaminérgica (o "desequilíbrio químico") à luz da evidência atual.
+- **Integrar** as explicações cognitivas (tríade de Beck), de desamparo aprendido e reformulação atribucional, de ruminação e comportamental (perda de reforço).
+- **Reconhecer** os fatores de risco de suicídio e a natureza transdiagnóstica do comportamento suicida, com os recursos de ajuda disponíveis no Brasil.
+- **Situar** os tratamentos eficazes e o debate sobre a magnitude do efeito dos antidepressivos.
 :::
+
+Tristeza não é depressão, do mesmo modo que medo não é transtorno de ansiedade. Todos ficamos tristes diante de perdas e frustrações, e essa tristeza é adaptativa: sinaliza que algo importa, convoca apoio, força a reavaliação de metas. Os **transtornos do humor** são outra coisa — perturbações persistentes e incapacitantes do estado afetivo que colorem tudo o que a pessoa percebe, pensa e faz. Eles se distribuem em dois grandes polos: o rebaixamento (os transtornos **depressivos**) e a elevação patológica (os transtornos **bipolares**). A depressão é uma das principais causas de incapacidade no mundo, e este capítulo trata, junto dela, do desfecho mais grave da psicopatologia — o suicídio — com o cuidado que o tema exige.
+
+## O espectro do humor
+
+O humor pode ser pensado como uma dimensão que vai do rebaixamento profundo à elevação patológica, com o estado normal (**eutimia**) no centro (@fig-espectro-humor). Os transtornos ocupam os extremos.
+
+::: {#fig-espectro-humor}
+```{.tikz}
+%%| filename: espectro-humor
+%%| alt: Régua horizontal representando o espectro do humor. No centro, uma faixa verde rotulada "Eutimia (humor normal)". À esquerda, faixas em azul progressivamente mais escuras rotuladas "Depressão leve" e "Depressão grave". À direita, faixas em vermelho progressivamente mais intensas rotuladas "Hipomania" e "Mania". Sob a régua, chaves indicam que o transtorno depressivo ocupa o lado esquerdo, e o transtorno bipolar oscila entre os dois lados, atravessando o centro.
+\begin{tikzpicture}[font=\small]
+  \shade[left color=manualblue!55, right color=manualblue!12] (-6,0) rectangle (-1.2,0.9);
+  \fill[manualgreen!20] (-1.2,0) rectangle (1.2,0.9);
+  \shade[left color=manualred!12, right color=manualred!55] (1.2,0) rectangle (6,0.9);
+  \draw[thick] (-6,0) rectangle (6,0.9);
+  \draw[thick] (-1.2,0) -- (-1.2,0.9);
+  \draw[thick] (1.2,0) -- (1.2,0.9);
+  \node[font=\scriptsize] at (-4.4,0.45) {depressão};
+  \node[font=\scriptsize] at (-2.4,0.45) {leve};
+  \node[font=\scriptsize\bfseries] at (0,0.45) {eutimia};
+  \node[font=\scriptsize] at (2.6,0.45) {hipomania};
+  \node[font=\scriptsize] at (4.6,0.45) {mania};
+  % chaves
+  \draw[decorate, decoration={brace, amplitude=5pt, mirror}, manualblue] (-6,-0.15) -- (-1.2,-0.15)
+    node[midway, below, font=\scriptsize, text=manualblue, yshift=-3pt] {transtornos depressivos};
+  \draw[decorate, decoration={brace, amplitude=5pt, mirror}, manualred] (-5.6,-1.1) -- (5.6,-1.1)
+    node[midway, below, font=\scriptsize, text=manualred, yshift=-3pt] {transtorno bipolar (oscila entre os polos)};
+\end{tikzpicture}
+```
+O espectro do humor. Os transtornos depressivos ocupam o polo rebaixado; o transtorno bipolar caracteriza-se pela oscilação entre episódios depressivos e episódios de (hipo)mania, atravessando a eutimia.
+:::
+
+## Os transtornos depressivos
+
+O quadro central é o **transtorno depressivo maior (TDM)**. O DSM-5-TR exige, por pelo menos duas semanas, ao menos cinco sintomas — sendo obrigatório **humor deprimido** ou **perda de interesse e prazer (anedonia)** — acompanhados de alterações de sono, apetite, energia, concentração, atividade psicomotora, sentimentos de inutilidade ou culpa e, com frequência, pensamentos de morte. Não é "estar para baixo": é uma incapacidade abrangente que compromete trabalho, relações e autocuidado. O **transtorno depressivo persistente** (antiga distimia) é uma forma mais crônica e menos intensa, que dura anos. O DSM-5 acrescentou o **transtorno disfórico pré-menstrual** e, de modo controverso, o **transtorno disruptivo da desregulação do humor** na infância (criado, em parte, para conter o sobrediagnóstico de bipolaridade em crianças — um exemplo da tensão do Cap. 77).
+
+Epidemiologicamente, o TDM é um dos transtornos mais comuns, com prevalência ao longo da vida na casa dos 15–20%, e atinge **cerca de duas vezes mais mulheres que homens** a partir da adolescência — diferença cujas causas (hormonais, sociais, de estilo de enfrentamento como a ruminação) ainda são debatidas [@kessler2005].
+
+::: {.atencao}
+⚠️ **Luto não é depressão — mas a fronteira é delicada.** A tristeza intensa após uma perda é a resposta esperada, não uma doença (Cap. 76). O DSM-IV excluía explicitamente o luto recente do diagnóstico de depressão; o DSM-5 retirou essa "exclusão do luto", decisão que dividiu o campo: para uns, permite tratar quem de fato adoece durante o luto; para outros, arrisca **patologizar o pesar normal** e medicá-lo desnecessariamente [@frances2013]. O DSM-5-TR também formalizou o **transtorno do luto prolongado** para casos em que o sofrimento se torna incapacitante muito além do esperado. O julgamento clínico aqui é fino e reforça a lição do Cap. 76 sobre onde traçar a linha.
+:::
+
+## Os transtornos bipolares
+
+O que define o **transtorno bipolar** não é a depressão, mas a presença de episódios de **mania** ou **hipomania**. A **mania** é um período distinto de humor anormalmente elevado, expansivo ou irritável, com energia aumentada, e sintomas como grandiosidade, redução da necessidade de sono, fala acelerada, fuga de ideias, distração, aumento de atividades e envolvimento excessivo em atividades de risco (gastos, sexo, negócios impulsivos). No **tipo I**, há pelo menos um episódio maníaco completo, muitas vezes grave o bastante para exigir internação; no **tipo II**, ocorrem episódios de **hipomania** (uma forma mais leve, sem prejuízo grave nem psicose) alternados com episódios depressivos. A **ciclotimia** é a forma crônica e atenuada.
+
+::: {.atencao}
+⚠️ **"Sou meio bipolar" — o uso popular está errado.** Na fala cotidiana, "bipolar" virou sinônimo de humor que muda rápido ao longo do dia. O transtorno bipolar **não** é isso. Seus episódios duram **dias a semanas ou meses**, não minutos, e a mania é um estado sustentado e disruptivo, não uma irritação passageira. Confundir os dois banaliza um transtorno grave e atrapalha quem precisa de ajuda. O bipolar tem, além disso, forte carga genética e responde a tratamentos específicos que diferem dos da depressão unipolar.
+:::
+
+O transtorno bipolar é menos comum que a depressão unipolar (cerca de 1–2% para o tipo I), atinge homens e mulheres em proporção semelhante e é fortemente **hereditário** — estudos com gêmeos estimam herdabilidade em torno de 0,85, das mais altas de toda a psicopatologia [@mcguffin2003]. Um erro clínico frequente é diagnosticar depressão unipolar em quem, na verdade, tem bipolar, porque a pessoa procura ajuda na fase depressiva e não relata a hipomania (que raramente incomoda) — e antidepressivos isolados podem então precipitar a mania.
+
+## As explicações da depressão
+
+### O nível biológico e o mito do "desequilíbrio químico"
+
+A **hipótese monoaminérgica**, formulada nos anos 1960, propôs que a depressão resultaria de um déficit de neurotransmissores monoaminérgicos — sobretudo **serotonina** e **noradrenalina** — nas sinapses. A hipótese nasceu por engenharia reversa: descobriu-se que fármacos que aumentam essas monoaminas melhoram o humor, e inferiu-se que a falta delas causaria a doença. Foi uma hipótese produtiva, mas hoje se sabe que ela é, na melhor das hipóteses, **incompleta**.
+
+::: {.atencao}
+⚠️ **"A depressão é um desequilíbrio químico no cérebro."** Essa frase, repetida em propagandas e no senso comum, é uma simplificação que a evidência não sustenta. Contra ela pesam vários fatos: os antidepressivos elevam as monoaminas em horas, mas o efeito clínico leva **semanas** — descompasso incompatível com uma explicação de simples reposição; reduzir experimentalmente a serotonina não deprime pessoas saudáveis; e uma ampla revisão guarda-chuva concluiu que **não há evidência consistente de que a depressão seja causada por baixa serotonina** [@moncrieff2023]. Isso **não** significa que a biologia seja irrelevante nem que os medicamentos não funcionem — significa que o mecanismo é muito mais complexo (envolvendo plasticidade neural e o fator neurotrófico BDNF, o eixo do estresse com o cortisol elevado, circuitos e ritmos circadianos) e que a metáfora do "desequilíbrio químico" foi divulgada com uma segurança que a ciência nunca teve. É o reducionismo apressado do Cap. 1 em sua forma mais difundida.
+:::
+
+Há, ainda assim, biologia robusta na depressão: herdabilidade moderada (em torno de 0,37 para o TDM) [@sullivan2000], hiperatividade do eixo hipotálamo-hipófise-adrenal com cortisol elevado, e alterações de neuroplasticidade — a hipótese neurotrófica atual propõe que o estresse crônico prejudica a plasticidade em regiões como o hipocampo, e que os antidepressivos agem, em parte, restaurando-a [@harmer2017].
+
+### O nível psicológico
+
+Quatro tradições psicológicas, complementares, iluminam a depressão.
+
+A **teoria cognitiva de Aaron Beck** é a mais influente. Para Beck, a depressão se sustenta em **esquemas** negativos e na **tríade cognitiva**: visões negativas de **si mesmo** ("sou um fracasso"), do **mundo** ("nada dá certo") e do **futuro** ("nunca vai melhorar") [@beck1967; @beck1979]. Esses esquemas geram distorções sistemáticas do pensamento (supergeneralização, abstração seletiva, catastrofização) que se retroalimentam. A @fig-triade mostra a estrutura, base direta da terapia cognitiva (Cap. 91).
+
+::: {#fig-triade}
+```{.tikz}
+%%| filename: triade-cognitiva
+%%| alt: Diagrama triangular da tríade cognitiva de Beck. Um triângulo com um vértice em cada canto, cada um contendo uma caixa: no topo "Visão negativa de si mesmo (sou inútil, sou um fracasso)"; embaixo à esquerda "Visão negativa do mundo (tudo é hostil, nada dá certo)"; embaixo à direita "Visão negativa do futuro (nada vai melhorar, é sem esperança)". Setas de duas pontas ligam os três vértices entre si, indicando que as três visões se reforçam mutuamente. No centro, o rótulo "esquemas depressivos".
+\begin{tikzpicture}[font=\small,
+  vt/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.4cm, minimum height=1.1cm, draw=manualblue, fill=manualblue!8}]
+  \node[vt] (eu) at (0,3.2) {\textbf{Si mesmo}\\{\scriptsize sou inútil, um fracasso}};
+  \node[vt] (mundo) at (-3.2,-0.6) {\textbf{Mundo}\\{\scriptsize nada dá certo}};
+  \node[vt] (futuro) at (3.2,-0.6) {\textbf{Futuro}\\{\scriptsize sem esperança}};
+  \draw[<->, >=Stealth, thick, manualgray] (eu) -- (mundo);
+  \draw[<->, >=Stealth, thick, manualgray] (eu) -- (futuro);
+  \draw[<->, >=Stealth, thick, manualgray] (mundo) -- (futuro);
+  \node[font=\scriptsize\itshape, text=manualgray] at (0,0.7) {esquemas\\depressivos};
+\end{tikzpicture}
+```
+A tríade cognitiva de Beck. As visões negativas de si, do mundo e do futuro reforçam-se mutuamente e sustentam o estado depressivo. Modificá-las é o alvo da terapia cognitiva.
+:::
+
+A tradição do **desamparo aprendido** parte do experimento clássico de Seligman e Maier: cães expostos a choques inescapáveis deixavam de tentar fugir mesmo quando a fuga se tornava possível — haviam "aprendido" que suas ações não controlavam o resultado [@seligman_maier1967]. O paralelo com a passividade e a desesperança depressivas era evidente. A teoria foi depois **reformulada** por Abramson, Seligman e Teasdale para incorporar o **estilo atribucional**: adoece mais quem explica os fracassos por causas internas ("a culpa é minha"), estáveis ("será sempre assim") e globais ("estraga tudo") [@abramson1978]. A versão seguinte, a **teoria da desesperança**, identificou a expectativa de que resultados ruins são certos e incontroláveis como o núcleo de um subtipo de depressão [@abramson1989]. (Vale notar que a leitura contemporânea da própria neurociência inverteu parte da história original: a passividade seria o estado *default* diante do estresse, e o que se aprende é o *controle* — mas o valor clínico do modelo permanece.)
+
+Susan Nolen-Hoeksema acrescentou o papel da **ruminação**: remoer passivamente e repetidamente as causas e consequências do próprio mal-estar prolonga e aprofunda a depressão, em vez de resolvê-la — e a maior tendência à ruminação ajuda a explicar parte da diferença entre os sexos [@nolenhoeksema2000]. Por fim, a tradição **comportamental** de Lewinsohn localiza a depressão na **perda de reforço positivo**: eventos e perdas reduzem as fontes de prazer e recompensa, a pessoa se retrai, o que reduz ainda mais o reforço disponível, num círculo descendente — a lógica que fundamenta a **ativação comportamental** como tratamento [@lewinsohn1974].
+
+## Suicídio
+
+O suicídio é o desfecho mais grave da psicopatologia e uma das principais causas de morte entre jovens. Não é um transtorno em si, mas um comportamento **transdiagnóstico** — associa-se sobretudo à depressão, mas também ao transtorno bipolar, ao uso de substâncias, à esquizofrenia e aos transtornos de personalidade. Fatores de risco bem estabelecidos incluem tentativas anteriores (o preditor isolado mais forte), transtorno mental, desesperança, dor psíquica intensa, isolamento e acesso a meios letais. Um ponto contraintuitivo e importante: o risco pode **aumentar** no início da melhora de um episódio depressivo grave, quando a energia retorna antes do alívio do sofrimento.
+
+::: {.na-pratica}
+💡 **Falar sobre suicídio não induz ao suicídio.** Um dos mitos mais perigosos é o de que perguntar diretamente a alguém sobre pensamentos suicidas "planta a ideia". A evidência aponta o contrário: perguntar de forma acolhedora **abre espaço** para o alívio e para a busca de ajuda. Sinais de alerta merecem atenção séria, não minimização. No Brasil, o **Centro de Valorização da Vida (CVV)** oferece apoio emocional gratuito e sigiloso pelo telefone **188**, 24 horas, além de atendimento por chat e e-mail; em emergência, o SAMU (192) e os serviços de urgência estão disponíveis. Este manual é educacional e não substitui avaliação profissional: diante de risco, o caminho é procurar ajuda especializada.
+:::
+
+## Os tratamentos, em resumo
+
+A depressão dispõe de tratamentos eficazes que o Cap. 91 e o Cap. 94 detalham. No plano psicológico, a **terapia cognitivo-comportamental**, a **ativação comportamental** e a **terapia interpessoal** têm forte suporte empírico [@cuijpers2013]. No farmacológico, os **antidepressivos** (ISRS e outros) são amplamente usados — com uma ressalva que o leitor crítico deve conhecer.
+
+::: {.atencao}
+⚠️ **Os antidepressivos funcionam — mas o debate é sobre *quanto*.** Uma grande metanálise em rede confirmou que os antidepressivos superam o placebo no tratamento da depressão em adultos [@cipriani2018]. Ao mesmo tempo, análises que incluíram dados não publicados mostraram que a **diferença** entre fármaco e placebo, embora real, é **menor** do que a divulgação sugeria, e mais expressiva nos casos graves do que nos leves [@kirsch2008]. As duas leituras não se contradizem: os medicamentos ajudam, o efeito do placebo na depressão é grande, e a magnitude do benefício depende da gravidade. A conclusão prudente não é "não funcionam", mas "funcionam de forma modesta e desigual" — e a decisão deve pesar gravidade, preferências e riscos. É a leitura crítica de evidências do Vol 3 aplicada a uma das classes de medicamentos mais prescritas do mundo.
+:::
+
+Para o **transtorno bipolar**, o tratamento é distinto: **estabilizadores do humor** (o **lítio** é o mais estabelecido, com efeito anti-suicídio documentado) e antipsicóticos, e os antidepressivos são usados com cautela pelo risco de virada maníaca. Em quadros graves e refratários, a **eletroconvulsoterapia** — hoje segura e regulamentada, muito distante da imagem popular — permanece um dos tratamentos mais eficazes (Cap. 94).
+
+::: {.callout-sintese}
+- Os transtornos do humor ocupam os extremos de um espectro: **depressivos** (polo rebaixado) e **bipolares** (oscilação entre depressão e mania/hipomania).
+- O **TDM** exige duas semanas com humor deprimido ou anedonia mais sintomas associados; é comum e atinge cerca do **dobro** de mulheres [@kessler2005]. **Luto não é depressão**, e a retirada da exclusão do luto no DSM-5 é controversa [@frances2013].
+- O **bipolar** define-se pela **(hipo)mania**, com episódios de dias a meses (não minutos), forte herdabilidade [@mcguffin2003] e tratamento próprio.
+- O **"desequilíbrio químico"** é uma simplificação sem respaldo consistente [@moncrieff2023]; a biologia da depressão envolve genética moderada [@sullivan2000], eixo do estresse e neuroplasticidade [@harmer2017].
+- Psicologicamente: **tríade cognitiva** de Beck [@beck1979], **desamparo aprendido** e estilo atribucional [@seligman_maier1967; @abramson1978], **ruminação** [@nolenhoeksema2000] e **perda de reforço** [@lewinsohn1974].
+- O **suicídio** é transdiagnóstico; falar sobre ele não o induz, e o **CVV (188)** é o recurso brasileiro.
+- Tratamentos eficazes: TCC, ativação comportamental e terapia interpessoal [@cuijpers2013]; antidepressivos com benefício real, porém **modesto e dependente da gravidade** [@cipriani2018; @kirsch2008]; lítio e estabilizadores no bipolar.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Transtorno depressivo maior**
+:   Episódios de pelo menos duas semanas com humor deprimido ou anedonia e sintomas associados, com prejuízo funcional.
+
+**Anedonia**
+:   Perda acentuada de interesse e capacidade de sentir prazer; sintoma nuclear da depressão.
+
+**Mania / hipomania**
+:   Estados sustentados de humor elevado ou irritável com energia aumentada; a hipomania é mais leve, sem prejuízo grave nem psicose.
+
+**Hipótese monoaminérgica**
+:   Proposta de que a depressão decorre de déficit de serotonina/noradrenalina; hoje considerada incompleta e sem respaldo consistente para a versão do "desequilíbrio químico" [@moncrieff2023].
+
+**Tríade cognitiva**
+:   Visões negativas de si, do mundo e do futuro que sustentam a depressão, segundo Beck [@beck1979].
+
+**Desamparo aprendido**
+:   Passividade decorrente da experiência de não controlar os resultados; reformulado em termos de estilo atribucional [@seligman_maier1967; @abramson1978].
+
+**Ruminação**
+:   Foco passivo e repetitivo no próprio mal-estar e em suas causas, que prolonga a depressão [@nolenhoeksema2000].
+
+**Ativação comportamental**
+:   Tratamento que reverte a espiral depressiva reintroduzindo atividades reforçadoras [@lewinsohn1974].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie tristeza normal de transtorno depressivo maior usando os critérios de duração, número de sintomas e prejuízo. Por que a anedonia é tão central?
+
+2. **(Conceitual.)** Explique por que o transtorno bipolar não é "mudar de humor rapidamente" e por que diagnosticar depressão unipolar em alguém que na verdade tem bipolar pode ser perigoso.
+
+3. **(Reflexão crítica.)** Avalie a afirmação "a depressão é causada por um desequilíbrio químico de serotonina" à luz de três evidências apresentadas no capítulo. Por que rejeitá-la não implica dizer que a biologia é irrelevante?
+
+4. **(Análise.)** Use a tríade cognitiva de Beck e a ruminação de Nolen-Hoeksema para explicar como um episódio depressivo se automantém. Como cada uma sugere um alvo de tratamento?
+
+5. **(Aplicação.)** Um amigo comenta que não vai perguntar a um colega deprimido sobre ideias suicidas "para não colocar a ideia na cabeça dele". Responda com base na evidência do capítulo e indique um recurso concreto disponível no Brasil.
+
+6. **(Integração.)** Uma metanálise diz que antidepressivos superam o placebo; outra diz que a diferença é pequena e maior nos casos graves. Explique por que as duas podem estar certas e o que isso implica para a decisão de tratar uma depressão leve versus uma grave (conecte com a leitura crítica de evidências do Vol 3).
