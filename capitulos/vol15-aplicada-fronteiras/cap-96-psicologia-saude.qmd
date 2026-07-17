@@ -1,5 +1,137 @@
 # 96. Psicologia da saúde
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Contrastar** o modelo biomédico com o **modelo biopsicossocial** e explicar por que a saúde não se reduz à ausência de doença.
+- **Descrever** as vias pelas quais o estresse crônico adoece o corpo, integrando a psiconeuroimunologia.
+- **Analisar** o papel dos comportamentos de saúde (tabagismo, dieta, atividade física, adesão) na morbimortalidade.
+- **Explicar** o problema da não adesão ao tratamento e as estratégias para melhorá-la.
+- **Reconhecer** o suporte social e o enfrentamento como recursos que protegem a saúde.
+- **Situar** a psicologia da saúde no contexto do SUS e da atenção integral no Brasil.
 :::
+
+Abrimos o Vol 15 levando a psicologia para fora do consultório de saúde mental e para dentro do hospital, da unidade básica, da vida cotidiana do corpo. A **psicologia da saúde** é o campo que estuda como fatores psicológicos e comportamentais influenciam o adoecer, o curar e o manter-se saudável — e como esse conhecimento pode ser aplicado à prevenção, ao tratamento e às políticas públicas. Ela nasce de uma constatação simples e poderosa: as principais causas de morte no mundo contemporâneo — doenças cardiovasculares, cânceres, diabetes — têm, na sua origem, **comportamento**. Fumar, comer, mover-se, dormir, lidar com o estresse, seguir (ou não) uma prescrição são atos psicológicos com consequências fisiológicas medidas em anos de vida.
+
+## Do modelo biomédico ao biopsicossocial
+
+Por séculos, a medicina ocidental operou sob o **modelo biomédico**: a doença é uma avaria do corpo-máquina, redutível a causas físicas (um germe, uma lesão, um gene), e a cura é o reparo dessa avaria. O modelo é imensamente poderoso — deu-nos a antissepsia, os antibióticos, a cirurgia moderna — mas é **incompleto**. Ele não explica por que duas pessoas com a mesma infecção evoluem de modos tão diferentes, por que o estresse precede tantos adoecimentos, ou por que metade dos pacientes não toma o remédio prescrito.
+
+Em 1977, o psiquiatra George Engel propôs uma alternativa integradora: o **modelo biopsicossocial** [@engel1977]. Saúde e doença resultam da interação de três níveis (@fig-biopsicossocial): o **biológico** (genes, vírus, bioquímica), o **psicológico** (emoções, crenças, comportamento, estresse) e o **social** (cultura, pobreza, apoio, acesso a serviços). Não se trata de negar a biologia, mas de recusar o reducionismo: um infarto tem causa biológica (obstrução coronariana), psicológica (hostilidade crônica, tabagismo) e social (trabalho estressante, desigualdade). Tratar apenas um nível é tratar pela metade. Esse modelo é hoje o marco conceitual da psicologia da saúde e orienta a noção de **atenção integral** que fundamenta o SUS.
+
+::: {#fig-biopsicossocial}
+```{.tikz}
+%%| filename: biopsicossocial
+%%| alt: Três círculos parcialmente sobrepostos rotulados Biológico (azul), Psicológico (verde) e Social (amarelo). Na interseção central lê-se Saúde. O modelo biopsicossocial de Engel.
+\begin{tikzpicture}[font=\small]
+  \begin{scope}[opacity=0.55]
+    \fill[manualblue!30]   (0,1.15) circle (1.8);
+    \fill[manualgreen!30]  (-1.4,-1.05) circle (1.8);
+    \fill[manualyellow!45] (1.4,-1.05) circle (1.8);
+  \end{scope}
+  \node[align=center, text=manualblue!70!black] at (0,2.3) {\textbf{Biológico}\\{\scriptsize genes, vírus}};
+  \node[align=center, text=manualgreen!60!black] at (-2.5,-1.75) {\textbf{Psicológico}\\{\scriptsize emoção, hábito}};
+  \node[align=center, text=manualyellow!45!black] at (2.5,-1.75) {\textbf{Social}\\{\scriptsize cultura, acesso}};
+  \node[align=center, font=\scriptsize\bfseries] at (0,-0.35) {Saúde};
+\end{tikzpicture}
+```
+O modelo biopsicossocial [@engel1977]: saúde e doença emergem da interação dos três níveis. Nenhum, isolado, explica o adoecer.
+:::
+
+## Estresse e doença: como o psicológico vira corpo
+
+O capítulo sobre estresse e enfrentamento (Cap. 56) descreveu a fisiologia da resposta ao estresse: a ativação do eixo hipotálamo-hipófise-adrenal e a liberação de cortisol e catecolaminas, descritas por Hans Selye como **síndrome geral de adaptação** [@selye1936]. Essa resposta é adaptativa no curto prazo — prepara o organismo para lutar ou fugir. O problema é o estresse **crônico**: a ativação sustentada desgasta os sistemas (a *carga alostática*), elevando pressão arterial, prejudicando a cicatrização, favorecendo inflamação e comprometendo a imunidade.
+
+O elo entre mente e imunidade é o objeto da **psiconeuroimunologia** — o estudo de como processos psicológicos, o sistema nervoso e o sistema imune se comunicam. A demonstração mais elegante desse elo veio de um experimento que virou clássico da área.
+
+::: {.experimento}
+🔬 **Experimento Clássico — estresse e suscetibilidade ao resfriado** [@cohen1991]
+
+**Desenho.** Sheldon Cohen e colaboradores mediram o nível de estresse psicológico de centenas de voluntários saudáveis; em seguida, com consentimento, **inocularam** em suas vias nasais um rinovírus (o vírus do resfriado comum) e os mantiveram em quarentena, observando quem de fato adoecia.
+
+**Resultado.** Quanto maior o estresse psicológico prévio, **maior a probabilidade de desenvolver o resfriado** — uma relação dose-resposta. Expostos ao mesmo vírus, os mais estressados adoeciam mais.
+
+**Interpretação.** O estresse não "é" o vírus, mas modula a defesa do organismo contra ele. Fatores psicológicos alteram, de modo mensurável, a resistência a uma doença infecciosa — evidência direta do elo psiconeuroimunológico.
+
+**Limitações.** O resfriado experimental é um modelo brando; generalizar para doenças graves exige cautela. Ainda assim, o desenho — com infecção controlada e desfecho objetivo — tornou-se um marco por driblar a ambiguidade causal dos estudos correlacionais.
+:::
+
+Um segundo exemplo histórico é o **padrão de comportamento Tipo A** — competitividade, urgência de tempo e, sobretudo, **hostilidade** — associado por Friedman e Rosenman a maior risco de doença coronariana [@friedman_rosenman1959]. Pesquisas posteriores refinaram o achado: não é o Tipo A como um todo, mas o componente de **hostilidade e raiva crônica** que melhor prevê o risco cardíaco — um exemplo de como a psicologia da saúde depura hipóteses ao longo do tempo.
+
+## Comportamentos de saúde e a mudança de hábito
+
+Se o comportamento está na raiz das doenças crônicas, mudá-lo é a intervenção mais potente disponível. **Comportamentos de saúde** são ações que afetam o bem-estar físico: não fumar, alimentar-se bem, exercitar-se, dormir o suficiente, usar cinto de segurança, fazer exames preventivos. O desafio é que saber o que fazer quase nunca basta para fazê-lo — o abismo entre intenção e ação é o problema central deste campo.
+
+Vários modelos tentam explicar e prever a adoção de comportamentos saudáveis. Um dos mais influentes é o **modelo transteórico de estágios de mudança** de Prochaska e DiClemente [@prochaska1983], já apresentado no Cap. 87: a pessoa progride (não linearmente) da **pré-contemplação** à **contemplação**, **preparação**, **ação** e **manutenção**, com recaídas frequentes. A implicação prática é decisiva: uma intervenção eficaz precisa ser **ajustada ao estágio** — informar quem está em pré-contemplação, planejar com quem está em preparação, prevenir recaída em quem está na ação.
+
+::: {.na-pratica}
+💡 **Entrevista motivacional.** Confrontar um paciente resistente ("você precisa parar de fumar!") costuma aumentar sua defesa. A **entrevista motivacional**, desenvolvida por Miller e Rollnick [@miller_rollnick2013], inverte a lógica: em vez de impor, o profissional ajuda a pessoa a **explorar e resolver sua própria ambivalência**, evocando as razões que ela mesma tem para mudar. Empática e não confrontativa, é hoje uma das abordagens com melhor evidência para tabagismo, uso de álcool e adesão — e ilustra como a psicologia da saúde traduz teoria (a mudança vem de dentro) em técnica.
+:::
+
+## O problema da adesão
+
+Talvez nenhum tema revele melhor a natureza psicológica da saúde do que a **adesão ao tratamento** (*adherence*): o grau em que o comportamento do paciente corresponde à recomendação de saúde. As estimativas são desconcertantes — em condições crônicas, cerca de **metade** dos pacientes não toma a medicação como prescrita [@who2003adherence]. Remédios que funcionam nos ensaios falham na vida real não por ineficácia, mas porque não são tomados.
+
+A não adesão tem múltiplas causas: esquecimento, efeitos colaterais, custo, regimes complexos, crenças ("já estou bem, posso parar"), depressão, relação frágil com o profissional. Repreender não resolve. As estratégias com evidência atacam essas causas concretamente: **simplificar** o regime, usar lembretes, alinhar o tratamento às crenças e à rotina do paciente, fortalecer a comunicação, e envolver a pessoa na decisão (a **decisão compartilhada**). Aqui o tripé da prática baseada em evidências (Cap. 95) reaparece: sem considerar os valores e a realidade do paciente, a melhor prescrição fracassa.
+
+::: {.atencao}
+⚠️ **Adesão não é obediência.** A linguagem antiga falava em *compliance* (cumprimento), como se o bom paciente fosse o que obedece. A mudança para *adherence* — e, mais recentemente, para **concordância** — reflete uma virada ética e empírica: o paciente é agente, não executor de ordens. Um regime que ele não compreende, não aceita ou não pode custear não será seguido, por mais correto que seja. Culpar o paciente pela não adesão ignora as barreiras reais e a assimetria de poder na relação de cuidado.
+:::
+
+## Recursos que protegem: suporte social e enfrentamento
+
+Nem tudo na psicologia da saúde é risco; há também **fatores de proteção**. O mais robusto deles é o **suporte social**. Pessoas com vínculos sociais fortes vivem mais, adoecem menos e se recuperam melhor — um efeito comparável, em magnitude, ao de deixar de fumar [@holt_lunstad2010]. O suporte protege por vias diretas (amortece a resposta ao estresse — a **hipótese do amortecimento**) e indiretas (amigos incentivam bons hábitos e desencorajam maus). A solidão, inversamente, é hoje reconhecida como fator de risco à saúde física.
+
+O **enfrentamento** (*coping*), tal como Lazarus e Folkman o formularam (Cap. 56), também modula o impacto do estresse sobre a saúde [@lazarus_folkman1984]. O enfrentamento **focado no problema** (agir para mudar a situação) tende a ajudar quando há controle; o **focado na emoção** (regular o sofrimento) serve quando a situação é incontrolável — como num luto ou numa doença terminal. Não há estilo universalmente melhor: a flexibilidade em combiná-los conforme o contexto é que caracteriza o bom enfrentamento.
+
+## A psicologia da saúde no Brasil
+
+No Brasil, a psicologia da saúde encontra seu terreno mais fértil no **Sistema Único de Saúde (SUS)**, cujos princípios — universalidade, integralidade, equidade — dialogam diretamente com o modelo biopsicossocial. O psicólogo integra equipes de atenção básica, hospitais, unidades de terapia intensiva, cuidados paliativos e os Núcleos Ampliados de Saúde da Família. Nesses cenários, atua no manejo da dor, na adesão a tratamentos de doenças crônicas (HIV, diabetes, hipertensão), no apoio a pacientes e famílias diante do adoecimento grave, e na promoção de saúde em nível comunitário. A **desigualdade** — em renda, acesso e determinantes sociais — é, no contexto brasileiro, uma variável de saúde de primeira ordem, e insere a psicologia da saúde num compromisso que é tanto científico quanto ético e político.
+
+::: {.callout-sintese}
+- O **modelo biopsicossocial** [@engel1977] substitui o reducionismo biomédico: saúde e doença emergem da interação dos níveis biológico, psicológico e social.
+- O estresse **crônico** adoece por vias fisiológicas; a **psiconeuroimunologia** mostra o elo mente-imunidade — o estresse aumenta a suscetibilidade a infecções [@cohen1991].
+- A **hostilidade** (não o Tipo A inteiro) prevê risco cardíaco [@friedman_rosenman1959].
+- **Comportamentos de saúde** estão na raiz das doenças crônicas; mudá-los exige ajustar a intervenção ao **estágio de mudança** [@prochaska1983] e evocar a motivação do paciente [@miller_rollnick2013].
+- Cerca de **metade** dos pacientes crônicos não adere à medicação [@who2003adherence]; adesão é agência, não obediência.
+- **Suporte social** [@holt_lunstad2010] e **enfrentamento flexível** [@lazarus_folkman1984] protegem a saúde. No Brasil, o **SUS** e a atenção integral são o principal cenário do campo.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Modelo biopsicossocial**
+:   Marco de Engel segundo o qual saúde e doença resultam da interação de fatores biológicos, psicológicos e sociais [@engel1977].
+
+**Psiconeuroimunologia**
+:   Estudo das interações entre processos psicológicos, sistema nervoso e sistema imune.
+
+**Carga alostática**
+:   Desgaste cumulativo dos sistemas fisiológicos causado pela ativação repetida ou crônica da resposta ao estresse.
+
+**Comportamento de saúde**
+:   Ação que afeta o bem-estar físico (p. ex., fumar, exercitar-se, aderir a tratamento).
+
+**Adesão (*adherence*)**
+:   Grau em que o comportamento do paciente corresponde à recomendação de saúde acordada.
+
+**Suporte social**
+:   Recursos materiais e emocionais providos por uma rede de relações; fator de proteção à saúde.
+
+**Entrevista motivacional**
+:   Abordagem colaborativa e não confrontativa que evoca a motivação do próprio paciente para mudar [@miller_rollnick2013].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique os três níveis do modelo biopsicossocial e aplique-os a um caso de infarto. Por que tratar só o nível biológico é insuficiente?
+
+2. **(Conceitual.)** Como o experimento de Cohen [@cohen1991] demonstra o elo entre estresse e imunidade? Que vantagem metodológica ele tem sobre um estudo correlacional?
+
+3. **(Conceitual.)** Por que "saber que deveria mudar" raramente basta para mudar? Como o modelo de estágios de mudança orienta uma intervenção?
+
+4. **(Reflexão crítica.)** Metade dos pacientes crônicos não adere ao tratamento. Liste três causas e três estratégias de melhora. Por que "adesão não é obediência"?
+
+5. **(Integração.)** O suporte social protege a saúde com efeito comparável ao de parar de fumar. Discuta as vias (amortecimento e comportamental) e as implicações para políticas públicas.
+
+6. **(Reflexão crítica.)** Como o princípio da integralidade do SUS se relaciona com o modelo biopsicossocial? Que papel a desigualdade social desempenha como variável de saúde no Brasil?
