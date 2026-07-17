@@ -1,5 +1,154 @@
 # 51. Teorias da motivação
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** motivação e distinguir os componentes de ativação, direção e persistência do comportamento.
+- **Comparar** as grandes famílias teóricas: instinto, redução de impulso, arousal ótimo, incentivo e hierarquia de necessidades.
+- **Explicar** a teoria da autodeterminação e a distinção entre motivação intrínseca e extrínseca.
+- **Analisar** o efeito da sobrejustificação e suas implicações práticas para escola e trabalho.
+- **Avaliar** criticamente a pirâmide de Maslow à luz da evidência empírica.
 :::
+
+Abrimos o Vol 9 com a pergunta que move — literalmente — toda a psicologia do comportamento dirigido: **por que fazemos o que fazemos?** O volume anterior descreveu a mente que lembra, pensa e difere de pessoa para pessoa (Vols 7–8); mas essa mente não se ativa no vácuo. Ela é impulsionada por necessidades, desejos e metas. A **motivação** é o conjunto de processos que **ativam, dirigem e mantêm** o comportamento em direção a um objetivo. Note os três componentes: a motivação explica por que uma pessoa *inicia* uma ação (ativação), por que escolhe *aquela* ação e não outra (direção) e por que *insiste* nela diante de obstáculos (persistência). Este capítulo percorre as principais teorias que a psicologia construiu para dar conta desse motor — das mais antigas e biológicas às mais contemporâneas e cognitivas.
+
+## Do instinto ao impulso
+
+As primeiras teorias científicas da motivação, no início do século XX, apoiaram-se no conceito de **instinto**: padrões de comportamento complexos, não aprendidos e universais à espécie, herdados como a herança darwiniana o sugeria (Cap. 13). William James chegou a listar dezenas de instintos humanos. O problema apareceu rápido: a lista **inflacionava sem limite** — para cada comportamento, propunha-se um instinto correspondente (o instinto de sociabilidade, de curiosidade, de aquisição), o que *nomeava* o comportamento sem *explicá-lo*. Um instinto que se infere do próprio comportamento que deveria explicar é uma pseudoexplicação circular. A teoria dos instintos entrou em declínio, embora a intuição de fundo — que parte de nossa motivação é biologicamente preparada — retorne, refinada, na perspectiva evolucionista.
+
+Na esteira do behaviorismo (Cap. 8), Clark Hull propôs a **teoria da redução de impulso** (*drive reduction*) [@hull1943]. A lógica é homeostática (Cap. 25): um desvio de um estado fisiológico ideal — falta de água, de comida — gera uma **necessidade** biológica, que produz um estado de tensão psicológica, o **impulso** (*drive*), e o organismo age para **reduzir** essa tensão, restaurando a homeostase. Comer reduz o impulso de fome; beber reduz o de sede. O comportamento que reduz o impulso é reforçado e tende a se repetir. A teoria é elegante e explica bem as motivações de sobrevivência, mas tropeça em um fato incômodo: **nem toda motivação reduz tensão**. Buscamos ativamente montanhas-russas, filmes de terror, palavras cruzadas e viagens — comportamentos que *aumentam* a estimulação. Se toda meta fosse reduzir tensão, o repouso absoluto seria o paraíso; não é.
+
+## Arousal ótimo e incentivos
+
+A resposta a esse paradoxo é a **teoria do arousal (ativação) ótimo**. Não buscamos o *mínimo* de estimulação, mas um **nível ótimo** — nem tédio nem sobrecarga. Quando o arousal está baixo, procuramos estimulação (buscamos novidade); quando está alto demais, procuramos acalmar-nos. Essa relação em forma de U invertido entre ativação e desempenho é a **lei de Yerkes-Dodson** [@yerkes_dodson1908]: o desempenho é máximo em um nível *intermediário* de ativação e cai tanto na apatia quanto na ansiedade extrema (@fig-yerkes-dodson). A lei acrescenta uma nuance importante: o nível ótimo é **mais baixo para tarefas difíceis** (que exigem concentração fina) e **mais alto para tarefas simples** (que se beneficiam de energia bruta) — por isso a adrenalina ajuda num sprint, mas atrapalha numa prova de cálculo.
+
+::: {#fig-yerkes-dodson}
+```{.tikz}
+%%| filename: yerkes-dodson
+%%| alt: Duas curvas em U invertido relacionando nível de ativação (eixo horizontal, de baixo a alto) e desempenho (eixo vertical). A curva de tarefa simples tem pico deslocado para a direita, em ativação alta; a curva de tarefa difícil tem pico deslocado para a esquerda, em ativação intermediária-baixa. Ambas caem nas extremidades.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (0,0) -- (6.4,0) node[right, font=\tiny, align=center] {ativação};
+  \draw[->, thick] (0,0) -- (0,4) node[above, font=\tiny, align=center] {desempenho};
+  \node[below, font=\tiny] at (0.6,0) {baixa};
+  \node[below, font=\tiny] at (5.6,0) {alta};
+  % tarefa difícil: pico à esquerda
+  \draw[very thick, curva, manualblue] plot[domain=0.4:5.6, samples=60] (\x, {3.3*exp(-(\x-2.3)*(\x-2.3)/1.6)});
+  \node[text=manualblue, font=\tiny, align=center] at (1.5,3.4) {tarefa\\difícil};
+  % tarefa simples: pico à direita
+  \draw[very thick, curva, manualred, dashed] plot[domain=0.4:6.1, samples=60] (\x, {3.0*exp(-(\x-4.2)*(\x-4.2)/2.2)});
+  \node[text=manualred, font=\tiny, align=center] at (5.4,3.1) {tarefa\\simples};
+\end{tikzpicture}
+```
+A **lei de Yerkes-Dodson**: o desempenho segue um U invertido em função da ativação. O nível ótimo é mais baixo para tarefas difíceis (azul) e mais alto para tarefas simples (vermelho tracejado).
+:::
+
+Enquanto impulso e arousal explicam a motivação **de dentro** (*push*, empurra o organismo), a **teoria do incentivo** a explica **de fora** (*pull*, puxa o organismo): somos atraídos por estímulos externos — o cheiro da comida, o dinheiro, a aprovação — que adquiriram valor motivacional, muitas vezes por aprendizagem (Cap. 40). A comida motiva mais quando é saborosa do que quando é apenas nutritiva, mesmo com fome idêntica: o incentivo importa. As teorias modernas integram os dois vetores: o comportamento resulta da interação entre estados internos (*drives*) e o valor de incentivo dos objetos externos.
+
+## A hierarquia de necessidades de Maslow
+
+Abraham Maslow, da tradição humanista (Cap. 11), propôs organizar as necessidades humanas em uma **hierarquia** [@maslow1943], popularmente representada como uma pirâmide (@fig-maslow). Na base estão as necessidades **fisiológicas** (fome, sede, sono); acima, **segurança** (abrigo, estabilidade); depois **pertencimento e amor** (afeto, aceitação); em seguida **estima** (respeito, reconhecimento); e no topo a **autorrealização** — a realização do próprio potencial. A tese central é que as necessidades **inferiores**, mais básicas, precisam estar razoavelmente satisfeitas antes que as **superiores** se tornem motivadoras: quem passa fome não se preocupa, no momento, com autorrealização.
+
+::: {#fig-maslow}
+```{.tikz}
+%%| filename: piramide-maslow
+%%| alt: Pirâmide dividida em cinco faixas horizontais. Da base ao topo: necessidades fisiológicas, segurança, pertencimento e amor, estima, e autorrealização no ápice. As faixas inferiores são mais largas, indicando necessidades mais básicas.
+\begin{tikzpicture}[font=\scriptsize]
+  % pirâmide por faixas trapezoidais
+  \fill[manualblue!20] (-3,0) -- (3,0) -- (2.4,0.9) -- (-2.4,0.9) -- cycle;
+  \fill[manualblue!30] (-2.4,0.9) -- (2.4,0.9) -- (1.8,1.8) -- (-1.8,1.8) -- cycle;
+  \fill[manualgreen!30] (-1.8,1.8) -- (1.8,1.8) -- (1.2,2.7) -- (-1.2,2.7) -- cycle;
+  \fill[manualyellow!40] (-1.2,2.7) -- (1.2,2.7) -- (0.6,3.6) -- (-0.6,3.6) -- cycle;
+  \fill[manualred!30] (-0.6,3.6) -- (0.6,3.6) -- (0,4.5) -- cycle;
+  \draw (-3,0) -- (3,0) -- (0,4.5) -- cycle;
+  \draw (-2.4,0.9) -- (2.4,0.9);
+  \draw (-1.8,1.8) -- (1.8,1.8);
+  \draw (-1.2,2.7) -- (1.2,2.7);
+  \draw (-0.6,3.6) -- (0.6,3.6);
+  \node[font=\tiny] at (0,0.45) {Fisiológicas};
+  \node[font=\tiny] at (0,1.35) {Segurança};
+  \node[font=\tiny] at (0,2.25) {Pertencimento};
+  \node[font=\tiny] at (0,3.15) {Estima};
+  \node[font=\tiny, align=center] at (0,3.95) {Auto-\\realiz.};
+  \draw[->, manualgray, thick] (3.5,0) -- (3.5,4.5);
+  \node[rotate=90, anchor=south, font=\tiny, text=manualgray] at (3.8,2.25) {básicas $\to$ superiores};
+\end{tikzpicture}
+```
+A **pirâmide de Maslow**: necessidades organizadas da base (fisiológicas) ao topo (autorrealização). Segundo a proposta original, as inferiores predominariam sobre as superiores. A evidência (ver texto) sustenta a *importância* das categorias, mas **não** a ordem rígida.
+:::
+
+A pirâmide é uma das imagens mais difundidas da psicologia — e um bom caso para o rigor crítico do manual.
+
+::: {.atencao}
+**O que a evidência diz sobre Maslow.** A hierarquia é intuitiva e pedagogicamente útil, mas a pesquisa empírica **não confirma a ordem rígida** que a pirâmide sugere. Revisões clássicas encontraram pouco apoio para a ideia de que uma necessidade precise estar satisfeita antes que a seguinte se ative [@wahba_bridwell1976]. Pessoas buscam sentido, afeto e realização mesmo em privação material — artistas famintos, resistências políticas, laços profundos formados na pobreza. Um grande estudo transcultural [@tay_diener2011] confirmou que as *categorias* de necessidade de Maslow predizem bem-estar em todo o mundo, mas de forma **relativamente independente**: satisfazer o pertencimento aumenta o bem-estar mesmo quando a segurança não está plena, e a ordem em que as necessidades importam **varia entre culturas e indivíduos**. Conclusão equilibrada: Maslow acertou o *catálogo* das grandes necessidades humanas, mas errou ao impor-lhes uma sequência universal e fixa.
+:::
+
+## A teoria da autodeterminação
+
+A teoria contemporânea mais influente sobre motivação é a **teoria da autodeterminação** (TAD), de Edward Deci e Richard Ryan [@deci_ryan2000; @ryan_deci2000]. Seu ponto de partida é uma distinção decisiva:
+
+- **Motivação intrínseca** — fazer algo pela satisfação inerente à própria atividade (brincar, ler por prazer, resolver um enigma pelo desafio). A recompensa *é* a atividade.
+- **Motivação extrínseca** — fazer algo por uma consequência externa e separável: nota, dinheiro, evitar punição, aprovação.
+
+A TAD propõe que os seres humanos têm três **necessidades psicológicas básicas** cuja satisfação nutre a motivação intrínseca e o bem-estar: **autonomia** (sentir-se autor das próprias ações), **competência** (sentir-se eficaz, dominar desafios) e **vínculo/pertencimento** (*relatedness*, sentir-se conectado a outros). Ambientes que apoiam essas três necessidades geram motivação de melhor qualidade — mais persistente, criativa e associada a bem-estar — do que ambientes controladores baseados em pressão e recompensa.
+
+::: {.experimento}
+🔬 **O efeito da sobrejustificação.** Uma descoberta contraintuitiva e robusta: recompensar uma atividade **intrinsecamente interessante** pode *reduzir* o interesse por ela. No estudo clássico de Deci [@deci1971], estudantes que resolviam quebra-cabeças por prazer foram divididos: um grupo passou a receber dinheiro por peça resolvida; o outro, não. Quando as recompensas cessaram e os participantes ficaram livres para escolher o que fazer, os que haviam sido **pagos** dedicaram *menos* tempo espontâneo aos quebra-cabeças do que os que nunca foram pagos. A recompensa externa "explicou demais" o comportamento — a pessoa passa a atribuir sua ação ao pagamento ("faço isto pelo dinheiro"), corroendo a percepção de que agia por interesse próprio. É o **efeito da sobrejustificação** [@lepper1973], replicado em crianças (desenhar por uma "medalha" reduziu o desenho livre posterior). **Interpretação:** recompensas percebidas como *controladoras* minam a autonomia e a motivação intrínseca; recompensas percebidas como *informativas* (feedback que sinaliza competência) tendem a preservá-la. **Limitação:** o efeito é mais forte para tarefas já interessantes e para recompensas tangíveis e esperadas — pagar por uma tarefa tediosa, que ninguém faria por prazer, não corrói interesse que não existia.
+:::
+
+::: {.na-pratica}
+**Motivar sem corromper.** A TAD tem implicações diretas para educação, gestão e parentalidade. Para sustentar motivação de qualidade: (1) **apoie a autonomia** — ofereça escolhas, explique o porquê das tarefas, reduza controle desnecessário; (2) **estruture desafios ótimos** — nem fáceis demais (tédio) nem difíceis demais (frustração), alimentando a competência (ecoando Yerkes-Dodson e o conceito de *fluxo*); (3) **use recompensas com cuidado** — como *feedback* informativo, não como suborno que substitui o interesse; (4) **nutra o vínculo** — pessoas se engajam mais quando se sentem pertencentes e respeitadas. A lição prática do efeito da sobrejustificação: antes de pagar alguém para fazer o que já ama, pergunte-se se você não está prestes a transformar um prazer em trabalho.
+:::
+
+## Integrando as teorias
+
+Nenhuma teoria isolada esgota a motivação humana, e as boas explicações são **complementares**, cobrindo camadas diferentes. As motivações de sobrevivência (fome, sede) são bem descritas por **impulso e homeostase**; a busca de estimulação, por **arousal ótimo**; a atração por objetos e metas, por **incentivos**; e a motivação de crescimento — aprender, criar, conectar-se — pela **autodeterminação**. O capítulo seguinte desce ao substrato mais concreto dessa história: as motivações **básicas** de fome, sede e sexo, onde biologia e comportamento se entrelaçam de forma exemplar.
+
+## Síntese
+
+::: {.callout-sintese}
+- **Motivação** é o conjunto de processos que **ativam, dirigem e mantêm** o comportamento orientado a metas.
+- A **teoria do instinto** falhou por circularidade; a **redução de impulso** (Hull) explica motivações homeostáticas, mas não a busca de estimulação.
+- A teoria do **arousal ótimo** (lei de Yerkes-Dodson) postula um nível ideal de ativação em U invertido, mais baixo para tarefas difíceis. A teoria do **incentivo** enfatiza a atração por estímulos externos.
+- A **hierarquia de Maslow** cataloga bem as grandes necessidades, mas a evidência **rejeita** sua ordem rígida e universal.
+- A **teoria da autodeterminação** distingue motivação **intrínseca** e **extrínseca** e postula três necessidades básicas: **autonomia, competência e vínculo**.
+- O **efeito da sobrejustificação** mostra que recompensas controladoras podem *minar* a motivação intrínseca por atividades já interessantes.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Motivação**
+:   Processos que ativam, dirigem e mantêm o comportamento em direção a um objetivo.
+
+**Impulso (*drive*)**
+:   Estado de tensão gerado por uma necessidade fisiológica, que impele o organismo a agir para reduzi-lo (Hull) [@hull1943].
+
+**Lei de Yerkes-Dodson**
+:   Relação em U invertido entre ativação e desempenho; o nível ótimo é mais baixo para tarefas difíceis [@yerkes_dodson1908].
+
+**Motivação intrínseca / extrínseca**
+:   Fazer algo pela satisfação da própria atividade (intrínseca) *versus* por uma consequência externa separável (extrínseca).
+
+**Necessidades básicas (TAD)**
+:   Autonomia, competência e vínculo — cuja satisfação nutre a motivação intrínseca e o bem-estar [@deci_ryan2000].
+
+**Efeito da sobrejustificação**
+:   Redução da motivação intrínseca por uma atividade após ela ser recompensada externamente [@deci1971; @lepper1973].
+
+**Hierarquia de necessidades**
+:   Organização proposta por Maslow das necessidades humanas, da fisiológica à autorrealização [@maslow1943].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Distinga os três componentes da motivação (ativação, direção, persistência) com um exemplo de cada.
+
+2. **(Conceitual.)** Por que a teoria da redução de impulso não consegue explicar por que pagamos para andar de montanha-russa? Que teoria explica melhor esse caso?
+
+3. **(Aplicação.)** Segundo a lei de Yerkes-Dodson, um atleta deveria buscar mais ou menos ativação antes de uma tarefa motora simples e potente? E antes de uma jogada que exige concentração fina? Justifique.
+
+4. **(Reflexão crítica.)** A pirâmide de Maslow é amplamente ensinada. Que aspecto dela a evidência apoia e que aspecto ela **não** apoia?
+
+5. **(Análise.)** Um professor decide pagar os alunos por cada livro lido. Usando o efeito da sobrejustificação, preveja um possível efeito colateral e proponha uma alternativa alinhada à teoria da autodeterminação.
+
+6. **(Avaliação.)** "Recompensas sempre aumentam a motivação." Avalie essa afirmação, distinguindo os casos em que ela vale dos casos em que se inverte.
