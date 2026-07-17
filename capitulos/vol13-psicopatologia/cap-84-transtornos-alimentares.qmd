@@ -1,5 +1,140 @@
 # 84. Transtornos alimentares
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Distinguir** anorexia nervosa, bulimia nervosa e transtorno de compulsão alimentar.
+- **Explicar** por que muitos "sintomas" da anorexia são, na verdade, efeitos da inanição, com base no experimento de Minnesota.
+- **Integrar** os fatores biológicos, psicológicos (o modelo cognitivo transdiagnóstico de Fairburn) e socioculturais.
+- **Analisar** o círculo vicioso restrição–compulsão e o papel da supervalorização do peso e da forma.
+- **Avaliar** a evidência sobre a influência cultural do ideal de magreza, incluindo o estudo natural de Fiji.
+- **Descrever** os tratamentos de escolha e por que a anorexia é a mais letal — e mais difícil de tratar — das condições psiquiátricas.
 :::
+
+Os transtornos alimentares desfazem, de saída, dois mal-entendidos: não são "vaidade" nem "falta de força de vontade", e não são uma questão de comida. São transtornos mentais graves em que a alimentação, o peso e a forma corporal se tornam o palco de um sofrimento psicológico profundo, ligado a controle, identidade e valor pessoal. Têm, entre todos os quadros deste volume, uma característica sombria: a anorexia nervosa apresenta a **maior taxa de mortalidade** de qualquer transtorno mental. E ilustram, como nenhum outro, a integração biopsicossocial e um princípio metodológico precioso — o de que nem tudo que parece causa de um transtorno é, de fato, causa.
+
+## Os três quadros principais
+
+O DSM-5-TR descreve três transtornos alimentares centrais:
+
+- **Anorexia nervosa:** restrição da ingestão que leva a um peso corporal significativamente baixo, acompanhada de **medo intenso de ganhar peso** (ou comportamento persistente que o impede) e de uma **perturbação na vivência do próprio corpo** — a pessoa se percebe acima do peso mesmo estando abaixo dele. Há dois subtipos: restritivo e com compulsão/purgação. É o quadro mais letal, por complicações da inanição e por suicídio.
+- **Bulimia nervosa:** episódios recorrentes de **compulsão alimentar** (comer, em pouco tempo, uma quantidade claramente grande, com sensação de perda de controle) seguidos de **comportamentos compensatórios** (vômito autoinduzido, laxantes, jejum, exercício excessivo). O peso costuma estar dentro ou perto da faixa esperada, o que torna a bulimia mais fácil de ocultar.
+- **Transtorno de compulsão alimentar (TCA):** compulsões recorrentes **sem** os comportamentos compensatórios da bulimia, com marcado sofrimento. Foi reconhecido como diagnóstico próprio no DSM-5 e é o mais **prevalente** dos três, frequentemente associado à obesidade — embora obesidade e TCA não sejam a mesma coisa.
+
+O que perpassa a anorexia e a bulimia é a **supervalorização do peso e da forma**: avaliar o próprio valor pessoal predominantemente (ou exclusivamente) em função do corpo e do controle sobre a comida. Christopher Fairburn propôs que essa supervalorização é o **núcleo psicopatológico comum** e a base de um modelo **transdiagnóstico** — daí muitas pessoas migrarem entre diagnósticos ao longo do tempo [@fairburn2003].
+
+Os transtornos alimentares atingem predominantemente — mas **não** exclusivamente — mulheres, com início típico na adolescência e no início da vida adulta; os casos em homens são subdiagnosticados justamente pelo estereótipo [@smink2012].
+
+## O experimento que virou a lógica de ponta-cabeça
+
+Antes de buscar as causas, um alerta metodológico que muda tudo. Muitos comportamentos considerados "sintomas" da anorexia — obsessão por comida, rituais alimentares, episódios de compulsão, isolamento, irritabilidade — podem ser, na verdade, **consequências da inanição**, e não sua causa. A evidência vem de um estudo clássico e eticamente impensável hoje.
+
+::: {.experimento}
+🔬 **Experimento Clássico — o estudo de inanição de Minnesota** [@keys1950]
+
+**Desenho.** Durante a Segunda Guerra, Ancel Keys recrutou 36 objetores de consciência, homens saudáveis, para um estudo sobre os efeitos da fome (visando ajudar populações famintas do pós-guerra). Após um período de linha de base, eles passaram seis meses em **semi-inanição** (cerca de metade das calorias habituais), seguidos de realimentação.
+
+**Resultado.** A restrição calórica prolongada produziu, em homens **sem** qualquer transtorno alimentar prévio, um quadro impressionantemente parecido com a psicopatologia da anorexia: **preocupação obsessiva com comida** (colecionar receitas, rituais para prolongar as refeições), **episódios de compulsão** na fase de realimentação, alterações de humor (depressão, irritabilidade), retraimento social, queda de concentração e obsessão pelo próprio corpo.
+
+**Interpretação.** Boa parte do que se atribui como "personalidade anoréxica" ou "sintoma primário" é, na realidade, **efeito fisiológico e psicológico da própria fome**. Isso tem consequência clínica direta: **sem restaurar o peso e a nutrição, nenhuma psicoterapia avança** — o cérebro faminto não tem como se reorganizar. Metodologicamente, é um exemplo magistral de como confundir causa e consequência (Cap. 15): o que parecia causa do transtorno era, em parte, resultado da desnutrição.
+
+**Limitações.** A amostra era pequena, só de homens, e a inanição foi induzida por restrição externa, não pela psicopatologia interna da anorexia — de modo que o estudo ilumina os *efeitos da fome*, não a origem do transtorno. Ainda assim, a lição sobre causa e consequência é robusta e transformou o tratamento.
+:::
+
+## As causas: biologia, psicologia e cultura
+
+Feita a ressalva, a etiologia é genuinamente biopsicossocial.
+
+**Biológico.** A herdabilidade é substancial, sobretudo na anorexia. Estudos genéticos recentes trouxeram uma reviravolta: a anorexia associa-se não só a fatores psiquiátricos, mas também a marcadores **metabólicos**, o que levou a propô-la como um transtorno em parte "metabo-psiquiátrico" — a pessoa poderia ter uma biologia que torna a perda de peso, uma vez iniciada, mais fácil de sustentar e mais difícil de reverter [@watson2019]. Sistemas de serotonina e circuitos de recompensa e de imagem corporal também estão implicados.
+
+**Psicológico.** Traços de **perfeccionismo**, baixa autoestima, necessidade de controle e dificuldade de regulação emocional são fatores de risco recorrentes. No modelo de Fairburn, a supervalorização do peso/forma leva a **dieta restritiva rígida**, que — pela privação — precipita a **compulsão**, seguida de culpa e de compensação, que reforça a restrição, num **círculo vicioso** autoperpetuante (@fig-ciclo-alimentar). A restrição não é a solução do problema; é o motor dele.
+
+::: {#fig-ciclo-alimentar}
+```{.tikz}
+%%| filename: ciclo-restricao-compulsao
+%%| alt: Diagrama em círculo do ciclo restrição-compulsão. Quatro caixas ligadas por setas. No topo, "Supervalorização do peso e da forma" leva a "Dieta rígida e restrição extrema" (seta para a direita); esta leva a "Compulsão alimentar (perda de controle)" (seta vermelha para baixo), impulsionada pela privação; esta leva a "Culpa e compensação (purgação, jejum)" (seta para a esquerda); e a compensação retorna reforçando a supervalorização e a restrição, fechando o ciclo. Uma nota indica que a restrição, em vez de resolver, alimenta a compulsão.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.7cm, minimum height=1.15cm}]
+  \node[cx, draw=manualgray] (sup) at (0,3) {Supervalorização\\{\scriptsize do peso e da forma}};
+  \node[cx, draw=manualblue, fill=manualblue!8] (die) at (5.8,3) {Dieta rígida\\{\scriptsize restrição extrema}};
+  \node[cx, draw=manualred, fill=manualred!8] (comp) at (5.8,0) {Compulsão\\{\scriptsize perda de controle}};
+  \node[cx, draw=manualyellow!70!black, fill=manualyellow!12] (culpa) at (0,0) {Culpa e\\compensação};
+  \draw[->, >=Stealth, thick] (sup) -- (die);
+  \draw[->, >=Stealth, thick, manualred] (die) -- node[right, font=\scriptsize, align=left, text=manualred] {a privação\\precipita} (comp);
+  \draw[->, >=Stealth, thick] (comp) -- (culpa);
+  \draw[->, >=Stealth, thick] (culpa) -- (sup);
+\end{tikzpicture}
+```
+O círculo vicioso restrição–compulsão do modelo de Fairburn. A dieta rígida, longe de resolver, precipita a compulsão pela privação; a culpa reforça a supervalorização e a restrição. Romper a restrição — normalizar a alimentação — é, paradoxalmente, o que interrompe as compulsões.
+:::
+
+**Sociocultural.** A internalização do **ideal de magreza** veiculado pela mídia e a insatisfação corporal são fatores de risco bem documentados: metanálises mostram que a exposição e a internalização do ideal magro predizem sintomas alimentares [@stice2002]. A evidência mais elegante da influência cultural veio de um **experimento natural**.
+
+::: {.experimento}
+🔬 **Experimento Clássico — a chegada da televisão a Fiji** [@becker2002]
+
+**Desenho.** Anne Becker estudou meninas em Fiji **antes e depois** da introdução da televisão ocidental na ilha, em meados dos anos 1990 — uma cultura que tradicionalmente valorizava corpos robustos e o apetite saudável.
+
+**Resultado.** Poucos anos após a chegada da TV, cresceram acentuadamente a insatisfação corporal, a prática de dieta e as atitudes alimentares disfuncionais entre as adolescentes, muitas das quais passaram a querer se parecer com as personagens que viam.
+
+**Interpretação.** Trata-se de forte evidência de que fatores **culturais** moldam o risco de transtornos alimentares — não como causa única, mas como um poderoso ingrediente ambiental que interage com a vulnerabilidade individual. Foi uma demonstração quase experimental (uma mudança cultural datável, com medidas antes/depois) de um efeito que estudos correlacionais só sugeriam.
+
+**Limitações.** Não houve grupo-controle não exposto, e a TV chegou junto com outras mudanças sociais e econômicas, de modo que a atribuição causal exclusiva à mídia é limitada. Ainda assim, o desenho antes/depois torna o estudo muito mais persuasivo que uma correlação simples.
+:::
+
+## O tratamento
+
+Os tratamentos diferem por quadro. Para a **bulimia** e o **transtorno de compulsão alimentar**, a **terapia cognitivo-comportamental focada** (CBT-E, de Fairburn) é o tratamento de primeira linha, com a melhor evidência [@fairburn2008]; a fluoxetina (um ISRS) ajuda na bulimia. A lógica terapêutica é contraintuitiva e decorre da figura acima: **normalizar** a alimentação (comer regularmente, abandonar a restrição) é o que interrompe o ciclo de compulsões — restringir mais só o realimenta.
+
+A **anorexia** é a mais difícil de tratar. A prioridade absoluta é a **restauração do peso** (sem ela, como mostrou Minnesota, nada avança), e a intervenção com melhor evidência para adolescentes é o **tratamento baseado na família** (FBT, ou método Maudsley), que mobiliza os pais para reassumir, temporariamente, o controle da realimentação, sem culpabilizá-los [@lock2010; @treasure2010]. Não há medicamento com eficácia clara para a anorexia. As taxas de recaída são altas e o cuidado costuma ser prolongado e multiprofissional.
+
+::: {.na-pratica}
+💡 **Por que "é só comer" (ou "é só parar de comer") não funciona — e como conversar.** Dizer a uma pessoa com anorexia "é só comer" ou a uma pessoa com compulsão "é só ter força de vontade" revela um mal-entendido sobre a natureza do transtorno: o problema não é a comida, é o significado psicológico investido nela, mais os efeitos biológicos da fome ou do ciclo restrição-compulsão. Comentários sobre corpo e peso — mesmo elogios ("você emagreceu, está ótima!") — podem reforçar exatamente a supervalorização que sustenta o transtorno. O que ajuda é não centrar a conversa na aparência, expressar preocupação com o **sofrimento** (não com o peso), evitar policiar refeições e incentivar a busca de ajuda especializada. No Brasil, o cuidado é multiprofissional e disponível pelo SUS; casos graves são urgências médicas. E vale a advertência ética deste volume: este texto é educacional e não substitui avaliação profissional.
+:::
+
+::: {.callout-sintese}
+- Três quadros centrais: **anorexia** (restrição, baixo peso, medo de engordar, distorção da imagem — a mais **letal**), **bulimia** (compulsão + compensação) e **transtorno de compulsão alimentar** (compulsão sem compensação, o mais prevalente).
+- O núcleo psicopatológico comum da anorexia e da bulimia é a **supervalorização do peso e da forma** (modelo transdiagnóstico de Fairburn) [@fairburn2003].
+- O **estudo de Minnesota** mostrou que muitos "sintomas" são **efeitos da inanição**, não causas — por isso a restauração do peso precede a psicoterapia [@keys1950].
+- Etiologia biopsicossocial: herdabilidade e componentes **metabólicos** [@watson2019]; perfeccionismo e o **círculo restrição–compulsão**; e o **ideal de magreza** cultural [@stice2002], demonstrado pelo experimento natural de **Fiji** [@becker2002].
+- Tratamentos: **CBT-E** para bulimia e TCA [@fairburn2008]; **tratamento baseado na família** e restauração de peso para anorexia [@lock2010; @treasure2010]; "é só comer/parar de comer" não funciona.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Anorexia nervosa**
+:   Restrição alimentar que leva a baixo peso, com medo intenso de engordar e perturbação da imagem corporal; a de maior mortalidade entre os transtornos mentais.
+
+**Bulimia nervosa**
+:   Episódios de compulsão alimentar seguidos de comportamentos compensatórios (vômito, laxantes, jejum, exercício excessivo).
+
+**Transtorno de compulsão alimentar**
+:   Compulsões alimentares recorrentes com sofrimento, sem os comportamentos compensatórios da bulimia; o mais prevalente.
+
+**Supervalorização do peso e da forma**
+:   Avaliar o próprio valor pessoal predominantemente em função do corpo e do controle da comida; núcleo do modelo transdiagnóstico [@fairburn2003].
+
+**Círculo restrição–compulsão**
+:   Ciclo em que a dieta rígida precipita compulsão, seguida de culpa e compensação, que reforçam a restrição.
+
+**Efeitos da inanição**
+:   Consequências fisiológicas e psicológicas da fome prolongada (obsessão por comida, compulsão, alterações de humor), muitas vezes confundidas com causas do transtorno [@keys1950].
+
+**Tratamento baseado na família (FBT)**
+:   Intervenção de primeira linha para anorexia em adolescentes, que mobiliza os pais na restauração do peso [@lock2010].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie anorexia, bulimia e transtorno de compulsão alimentar quanto a peso, compulsão e comportamentos compensatórios.
+
+2. **(Reflexão crítica.)** Explique como o estudo de Minnesota mostra que confundir causa e consequência (Cap. 15) distorceu a compreensão da anorexia. Que implicação isso tem para a ordem do tratamento?
+
+3. **(Análise.)** Use o círculo restrição–compulsão para explicar por que "fazer dieta mais rígida" tende a aumentar as compulsões, e por que normalizar a alimentação as reduz.
+
+4. **(Avaliação.)** Por que o estudo de Fiji é uma evidência mais forte da influência cultural do que uma simples correlação entre consumo de mídia e sintomas alimentares? Aponte também sua principal limitação.
+
+5. **(Integração.)** Combine um fator biológico (herdabilidade/metabólico), um psicológico (perfeccionismo/supervalorização) e um sociocultural (ideal de magreza) para explicar por que uma adolescente específica desenvolve um transtorno alimentar e a colega, exposta à mesma mídia, não.
+
+6. **(Aplicação.)** Um amigo quer "ajudar" alguém com transtorno alimentar elogiando quando a pessoa emagrece e vigiando suas refeições. Explique por que essas duas atitudes podem piorar o quadro e proponha alternativas.
