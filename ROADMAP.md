@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 69 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 13/49
+**Progresso:** 75 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 19/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅** Próximo: Fase 3, Vol 12 (Psicologia Social).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ · Vol 10 ✅ · Vol 11 ✅ · Vol 12 ✅** Próximo: Fase 3, Vol 13 (Psicopatologia).
 
 ---
 
@@ -146,12 +146,12 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 12 — Psicologia Social
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 70 | Cognição social e atribuição | `capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd` | ⬜ |
-| 71 | Atitudes e persuasão | `capitulos/vol12-psicologia-social/cap-71-atitudes-persuasao.qmd` | ⬜ |
-| 72 | Conformidade, obediência e influência social | `capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd` | ⬜ |
-| 73 | Relações interpessoais e atração | `capitulos/vol12-psicologia-social/cap-73-relacoes-atracao.qmd` | ⬜ |
-| 74 | Comportamento pró-social e agressão | `capitulos/vol12-psicologia-social/cap-74-pro-social-agressao.qmd` | ⬜ |
-| 75 | Grupos, preconceito e processos intergrupais | `capitulos/vol12-psicologia-social/cap-75-grupos-preconceito.qmd` | ⬜ |
+| 70 | Cognição social e atribuição | `capitulos/vol12-psicologia-social/cap-70-cognicao-social.qmd` | ✅ |
+| 71 | Atitudes e persuasão | `capitulos/vol12-psicologia-social/cap-71-atitudes-persuasao.qmd` | ✅ |
+| 72 | Conformidade, obediência e influência social | `capitulos/vol12-psicologia-social/cap-72-conformidade-obediencia.qmd` | ✅ |
+| 73 | Relações interpessoais e atração | `capitulos/vol12-psicologia-social/cap-73-relacoes-atracao.qmd` | ✅ |
+| 74 | Comportamento pró-social e agressão | `capitulos/vol12-psicologia-social/cap-74-pro-social-agressao.qmd` | ✅ |
+| 75 | Grupos, preconceito e processos intergrupais | `capitulos/vol12-psicologia-social/cap-75-grupos-preconceito.qmd` | ✅ |
 
 ### Vol 13 — Psicopatologia
 | Cap | Título | Arquivo | Status |

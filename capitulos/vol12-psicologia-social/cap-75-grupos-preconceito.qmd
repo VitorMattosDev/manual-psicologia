@@ -1,5 +1,160 @@
 # 75. Grupos, preconceito e processos intergrupais
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** como a mera presença de outros e a pertença a grupos alteram o desempenho e o comportamento (facilitação social, ociosidade social, desindividuação).
+- **Analisar** os processos de decisão em grupo — polarização e pensamento grupal — e suas falhas.
+- **Distinguir** estereótipo, preconceito e discriminação e explicar suas origens cognitivas, motivacionais e sociais.
+- **Explicar** a teoria da identidade social e o experimento do grupo mínimo.
+- **Avaliar** as intervenções que reduzem o preconceito, com destaque para a hipótese do contato.
+- **Reconhecer** formas contemporâneas e sutis de viés, como o preconceito implícito, e os cuidados na sua mensuração.
 :::
+
+Chegamos ao capítulo que fecha o volume e o eleva do indivíduo e da díade ao **grupo** — o nível em que a psicologia social encontra a história, a política e as maiores tragédias humanas. Aqui se explica por que pessoas mudam ao vestir um uniforme, por que comitês inteligentes tomam decisões estúpidas, e como preconceito e discriminação — do racismo ao sexismo, da xenofobia à intolerância religiosa — brotam de processos mentais comuns a todos nós. É também o capítulo mais aplicado a um projeto ético: entender esses mecanismos é o primeiro passo para desarmá-los. Ele encerra o Vol 12 conectando tudo o que veio antes — cognição social, influência, atração e agressão — ao destino dos grupos humanos em conflito e em cooperação.
+
+## O indivíduo no grupo
+
+### Facilitação e ociosidade social
+
+A simples presença de outras pessoas muda como agimos. Já em 1898, Triplett notou que ciclistas pedalavam mais rápido acompanhados do que sozinhos — a primeira demonstração de **facilitação social**. O efeito, porém, tinha uma face contraditória: às vezes a plateia **piorava** o desempenho. Zajonc resolveu o paradoxo: a presença de outros aumenta a **ativação** (*arousal*), e a ativação favorece a resposta **dominante** — a mais provável no repertório da pessoa [@zajonc1965]. Em tarefas fáceis ou bem treinadas, a resposta dominante é a correta, e a plateia melhora o desempenho; em tarefas difíceis ou novas, a resposta dominante é o erro, e a plateia piora. Por isso o atleta experiente rende mais na competição e o iniciante "trava".
+
+Um efeito oposto surge quando o esforço individual se dilui no grupo. Na **ociosidade social** (*social loafing*), as pessoas se esforçam **menos** numa tarefa coletiva do que fariam sozinhas, porque a contribuição de cada uma se torna anônima e não avaliável [@latane1979]. Quem puxa uma corda em grupo puxa com menos força per capita do que puxaria sozinho. É a difusão de responsabilidade (Cap. 74) aplicada ao esforço — e some quando o desempenho individual pode ser identificado e avaliado. Note o contraste elegante: a plateia que nos **avalia** aumenta a ativação (facilitação); o grupo que nos **encobre** reduz o esforço (ociosidade).
+
+### Desindividuação
+
+Em multidões e sob anonimato, as pessoas podem perder o senso de identidade individual e de responsabilidade, tornando-se mais suscetíveis a impulsos e às normas do grupo — um estado chamado **desindividuação** [@festinger1952]. É o processo por trás de linchamentos, quebra-quebras e da crueldade facilitada por máscaras, uniformes e escuridão. A leitura tradicional via a desindividuação como "perda de controle" e regressão. A pesquisa contemporânea a corrige: sob anonimato, as pessoas não ficam simplesmente sem norma alguma — elas se guiam mais fortemente pelas **normas do grupo** com o qual se identificam naquele momento [@postmes_spears1998]. O anonimato de uma torcida pode gerar violência **ou** solidariedade festiva, dependendo da norma saliente. Não é ausência de norma; é troca da norma individual pela do grupo.
+
+## Decisões em grupo: quando muitas cabeças pensam pior
+
+Grupos deveriam decidir melhor que indivíduos — mais informação, mais perspectivas. Muitas vezes decidem pior, por dois processos.
+
+A **polarização de grupo** é a tendência de a discussão em grupo **intensificar** a inclinação inicial média dos membros: um grupo de pessoas moderadamente a favor de algo sai da discussão *mais* a favor; um grupo moderadamente cético sai *mais* cético [@myers_lamm1976]. A discussão não modera — radicaliza, porque expõe os membros a novos argumentos no mesmo sentido (influência informacional) e ao desejo de se posicionar favoravelmente frente à norma do grupo (influência normativa). É um motor psicológico de câmaras de eco e de radicalização on-line.
+
+O **pensamento grupal** (*groupthink*), descrito por Irving Janis a partir de fiascos de política externa (a invasão da Baía dos Porcos, a escalada no Vietnã), é a deterioração da eficiência mental e do juízo moral em grupos muito coesos que priorizam a **unanimidade** sobre a avaliação realista das alternativas [@janis1972]. Seus sintomas: ilusão de invulnerabilidade, pressão sobre dissidentes, autocensura, ilusão de unanimidade, "guardiões da mente" que filtram informação contrária. Os antídotos são organizacionais: encorajar a crítica, designar um "advogado do diabo", buscar avaliação externa, o líder reservar sua opinião para o fim. É o mesmo aprendizado de Asch e Moscovici (Cap. 72) em escala institucional: proteger o dissenso é proteger a qualidade da decisão.
+
+## Estereótipo, preconceito e discriminação
+
+Passamos agora ao território mais grave. Convém separar três conceitos frequentemente confundidos, que correspondem aos três componentes de uma atitude (Cap. 71):
+
+- **Estereótipo** (componente **cognitivo**): uma crença generalizada sobre os atributos de um grupo ("os X são preguiçosos/inteligentes/perigosos"). Estereótipos são, na origem, um caso do avaro cognitivo (Cap. 70): categorizamos pessoas em grupos para economizar processamento, e atribuímos ao indivíduo os traços do grupo.
+- **Preconceito** (componente **afetivo**): uma atitude — em geral negativa — dirigida a alguém *por causa* de sua pertença a um grupo.
+- **Discriminação** (componente **comportamental**): o tratamento desigual, injusto, dispensado a alguém em razão do grupo.
+
+Os três são distintos e nem sempre andam juntos (pode haver discriminação institucional sem preconceito pessoal consciente, e vice-versa), mas se reforçam. De onde vêm?
+
+### Raízes cognitivas
+
+Parte do preconceito nasce de mecanismos frios da cognição. A **categorização social** divide o mundo em "nós" (*ingroup*) e "eles" (*outgroup*), e desse ato simples decorrem distorções: o **viés de homogeneidade do exogrupo** ("eles são todos iguais; nós somos diversos") e a **correlação ilusória**, a percepção de uma associação inexistente entre um grupo minoritário e um comportamento raro (ambos distintivos e, por isso, memoráveis juntos), que faz nascer estereótipos negativos sem qualquer base real [@hamilton_gifford1976]. Uma vez formado, o estereótipo se autoperpetua pelo viés de confirmação e pela profecia autorrealizadora (Cap. 70).
+
+O **Modelo do Conteúdo dos Estereótipos** de Fiske organiza o conteúdo do preconceito em duas dimensões — **cordialidade** (o grupo é amigável ou ameaçador?) e **competência** (é capaz ou incapaz?) — cujo cruzamento gera quatro combinações, cada uma associada a uma emoção distinta [@fiske2002], como mostra a @fig-scm.
+
+::: {#fig-scm}
+```{.tikz}
+%%| filename: modelo-conteudo-estereotipos
+%%| alt: Plano cartesiano com o eixo horizontal rotulado "Cordialidade" (de baixa à esquerda a alta à direita) e o eixo vertical rotulado "Competência" (de baixa embaixo a alta em cima). Os quatro quadrantes trazem a emoção associada: em cima à direita (alta cordialidade, alta competência) "Admiração — o próprio grupo, aliados"; em cima à esquerda (baixa cordialidade, alta competência) "Inveja — ricos, certas minorias bem-sucedidas"; embaixo à direita (alta cordialidade, baixa competência) "Pena — idosos, deficientes"; embaixo à esquerda (baixa cordialidade, baixa competência) "Desprezo — grupos marginalizados".
+\begin{tikzpicture}[
+  quad/.style={align=center, font=\small},
+  emo/.style={font=\small\bfseries}
+]
+  % eixos
+  \draw[->, >=Stealth, thick, manualgray] (-4.4,0) -- (4.4,0) node[right, font=\small] {Cordialidade};
+  \draw[->, >=Stealth, thick, manualgray] (0,-4.4) -- (0,4.4) node[above, font=\small] {Competência};
+  \node[font=\scriptsize, text=manualgray] at (-4.0,-0.35) {baixa};
+  \node[font=\scriptsize, text=manualgray] at (4.0,-0.35) {alta};
+  \node[font=\scriptsize, text=manualgray, anchor=east] at (-0.15,-4.0) {baixa};
+  \node[font=\scriptsize, text=manualgray, anchor=east] at (-0.15,4.0) {alta};
+
+  % quadrantes
+  \node[quad, text=manualgreen] at (2.2,2.3)  {\textbf{Admiração}\\{\scriptsize endogrupo, aliados}};
+  \node[quad, text=manualyellow!70!black] at (-2.2,2.3) {\textbf{Inveja}\\{\scriptsize ricos, minorias}\\{\scriptsize bem-sucedidas}};
+  \node[quad, text=manualblue] at (2.2,-2.3)  {\textbf{Pena}\\{\scriptsize idosos, pessoas}\\{\scriptsize com deficiência}};
+  \node[quad, text=manualred] at (-2.2,-2.3) {\textbf{Desprezo}\\{\scriptsize grupos}\\{\scriptsize marginalizados}};
+\end{tikzpicture}
+```
+O Modelo do Conteúdo dos Estereótipos [@fiske2002]. O cruzamento de cordialidade e competência gera quatro tipos de preconceito, cada um com sua emoção característica. Os preconceitos "ambivalentes" (inveja e pena) misturam admiração e hostilidade.
+:::
+
+### Raízes motivacionais e sociais: a identidade social
+
+Por que basta dividir pessoas em grupos para que surja o favoritismo? A resposta de Henri Tajfel é uma das ideias mais poderosas do campo. Nos **experimentos de grupo mínimo**, Tajfel dividiu participantes em dois grupos com base num critério **trivial e arbitrário** (a preferência por um pintor, ou até um sorteio explícito) — sem história, sem interesse, sem contato entre os membros. Mesmo assim, ao distribuir recursos, as pessoas **favoreciam sistematicamente o próprio grupo** [@tajfel1971]. A mera categorização "nós/eles", por si só, já basta para gerar discriminação.
+
+Para explicá-lo, Tajfel e Turner formularam a **teoria da identidade social**: parte da nossa autoestima deriva dos grupos a que pertencemos (nossa **identidade social**), de modo que somos motivados a ver o endogrupo como superior ao exogrupo, pois isso nos valoriza [@tajfel_turner1979]. Favorecer o próprio grupo é uma forma de sentir-se bem consigo mesmo. Essa teoria conecta o preconceito não a uma patologia de indivíduos "maus", mas à necessidade universal de pertencimento e autoestima (Cap. 73) — o que o torna, ao mesmo tempo, mais compreensível e mais difícil de erradicar. Quando recursos são escassos e grupos competem por eles, o conflito realista se soma à identidade social e a hostilidade se intensifica, como mostrou o clássico estudo de acampamento de Sherif (a "Caverna dos Ladrões"), em que meninos divididos em dois times passaram da rivalidade à hostilidade aberta — e só voltaram a cooperar diante de **metas supraordenadas** que exigiam os dois grupos juntos [@sherif1961].
+
+## Como reduzir o preconceito
+
+O conhecimento acumulado aponta caminhos. O mais estudado é a **hipótese do contato**, formulada por Gordon Allport: o contato entre grupos reduz o preconceito, **mas não qualquer contato** [@allport1954]. São necessárias quatro condições: **status igual** entre os grupos na situação, **metas comuns**, **cooperação** (não competição) e **apoio de autoridades, leis ou normas**. A evidência acumulada é forte: uma meta-análise de mais de 500 estudos confirmou que o contato intergrupal, sobretudo quando satisfaz as condições de Allport, reduz de forma confiável o preconceito — e que parte do efeito se dá por reduzir a ansiedade e aumentar a empatia com o exogrupo [@pettigrew_tropp2006].
+
+::: {.experimento}
+🔬 **Experimento Clássico — a sala de aula em quebra-cabeça.** Inspirado nas condições de Allport, Elliot Aronson criou a técnica do **jigsaw** (quebra-cabeça) para salas recém-dessegregadas e tensas [@aronson1978]. Cada aluno de um pequeno grupo diversificado recebia **uma peça** da matéria e precisava ensiná-la aos colegas: ninguém passava na prova sem a contribuição de todos. A estrutura força **interdependência cooperativa** e **status igual** — exatamente as condições de Allport. **Resultado:** em comparação com salas tradicionais competitivas, as salas jigsaw apresentaram menor preconceito intergrupal, maior autoestima e melhor desempenho entre os alunos antes desfavorecidos, sem prejuízo para os demais. **Interpretação:** mudar a **estrutura de interdependência** — de competitiva para cooperativa — altera as relações intergrupais mais eficazmente do que apelos morais. Trata-se de engenharia situacional, coerente com toda a lição do volume: para mudar o comportamento, mude a situação.
+:::
+
+## Viés implícito: o preconceito que não confessamos
+
+À medida que normas sociais tornaram o preconceito explícito menos aceitável, os pesquisadores voltaram a atenção para formas **sutis e automáticas** de viés. O **racismo aversivo** descreve pessoas que endossam sinceramente a igualdade, mas nutrem sentimentos negativos automáticos que vazam em situações ambíguas, onde a discriminação pode ser racionalizada [@dovidio2000]. Devine mostrou que o **conhecimento** de um estereótipo cultural pode ser ativado automaticamente mesmo em pessoas de baixo preconceito — mas que inibi-lo e substituí-lo por respostas igualitárias é possível, ainda que exija esforço e motivação controlados [@devine1989]. O instrumento mais famoso para medir associações automáticas é o **Teste de Associação Implícita** (IAT), que cronometra a facilidade com que se associam categorias sociais a atributos positivos ou negativos [@greenwald1998].
+
+::: {.atencao}
+⚠️ **O que o IAT mede — e o que não mede.** O IAT foi uma contribuição importante ao mostrar que associações avaliativas automáticas existem e podem ser medidas. Mas a divulgação popular exagerou seu alcance, e a crítica científica impôs cautela: a **fidedignidade teste-reteste** do IAT é apenas moderada (a mesma pessoa varia de uma aplicação a outra); a **correlação entre o escore no IAT e comportamento discriminatório real** é pequena; e o escore individual **não** deve ser lido como um diagnóstico de "quão racista você é" [@oswald2013]. Isso não anula o fenômeno do viés automático — que é real e socialmente relevante — mas recomenda humildade: o IAT é útil em pesquisa agregada, e frágil como veredito sobre um indivíduo. É mais uma aplicação da lição psicométrica do Cap. 69 — fidedignidade e validade preditiva antes de qualquer uso de alto impacto — e do ceticismo que este manual pede diante de instrumentos sedutores.
+:::
+
+::: {.na-pratica}
+💡 **Reduzir o próprio viés e o dos grupos.** No plano individual: reconhecer que **todos** carregamos associações automáticas aprendidas com a cultura (não é acusação moral, é ponto de partida) é mais produtivo que a negação defensiva; a substituição deliberada de respostas estereotipadas por igualitárias, a exposição a exemplares que contrariam o estereótipo e a **tomada de perspectiva** do exogrupo reduzem o viés [@devine1989]. No plano organizacional: a lição mais robusta não é o apelo moral nem o treinamento pontual de "diversidade" (cuja eficácia isolada é fraca), e sim **desenhar estruturas de contato cooperativo, com status igual e metas comuns** — o princípio de Allport e do jigsaw [@pettigrew_tropp2006; @aronson1978]. Mudar a situação, de novo, supera mudar corações por decreto.
+:::
+
+## Encerrando o volume
+
+O Vol 12 percorreu o arco completo da vida social: como interpretamos os outros (Cap. 70), como mudamos e somos mudados de opinião (Cap. 71), como cedemos à conformidade e à autoridade (Cap. 72), como nos ligamos afetivamente (Cap. 73), como ajudamos e agredimos (Cap. 74) e, aqui, como nos organizamos em grupos que cooperam e entram em conflito. Uma tese atravessa todos os capítulos e é o principal legado da psicologia social: **a força da situação é sistematicamente subestimada**. Vimos pessoas comuns obedecerem, se conformarem, deixarem de ajudar e discriminarem — não por serem monstros, mas por estarem em arranjos sociais que tornam esses comportamentos prováveis. A boa notícia é o corolário: se a situação tem tanto poder, então **redesenhar situações** — proteger o dissenso, quebrar a difusão de responsabilidade, estruturar o contato cooperativo — é a alavanca mais realista para uma convivência mais decente. O próximo volume vira a lente para quando o sofrimento psíquico se torna clínico: a **psicopatologia**.
+
+::: {.callout-sintese}
+- A presença de outros produz **facilitação social** (via ativação e resposta dominante) [@zajonc1965] e, quando o esforço é anônimo, **ociosidade social** [@latane1979]; o anonimato leva à **desindividuação**, entendida hoje como troca da norma individual pela do grupo [@postmes_spears1998].
+- Grupos decidem pior por **polarização** (a discussão radicaliza a média inicial) [@myers_lamm1976] e **pensamento grupal** (coesão que sufoca o dissenso) [@janis1972]; o antídoto é proteger a crítica.
+- **Estereótipo** (cognição), **preconceito** (afeto) e **discriminação** (comportamento) têm raízes **cognitivas** (categorização, correlação ilusória) [@hamilton_gifford1976; @fiske2002] e **motivacionais**: a **identidade social** faz o mero "nós/eles" gerar favoritismo [@tajfel1971; @tajfel_turner1979].
+- O preconceito se reduz pelo **contato intergrupal** sob as condições de Allport — status igual, metas comuns, cooperação, apoio institucional [@allport1954; @pettigrew_tropp2006] —, exemplificado pela sala **jigsaw** [@aronson1978].
+- O **viés implícito** é real, mas o **IAT** tem fidedignidade e validade preditiva modestas e não serve como veredito individual [@greenwald1998; @oswald2013].
+- Lição integradora do volume: a **situação** pesa mais do que a intuição admite — e redesenhá-la é a via mais eficaz de mudança social.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Facilitação social**
+:   Efeito da presença de outros de melhorar tarefas fáceis e piorar as difíceis, via aumento da ativação e da resposta dominante [@zajonc1965].
+
+**Ociosidade social**
+:   Redução do esforço individual em tarefas coletivas quando a contribuição de cada um não é identificável [@latane1979].
+
+**Desindividuação**
+:   Perda do senso de identidade individual em situações de anonimato e grupo, com maior adesão às normas grupais salientes [@postmes_spears1998].
+
+**Pensamento grupal (groupthink)**
+:   Deterioração do juízo em grupos coesos que priorizam a unanimidade sobre a avaliação realista [@janis1972].
+
+**Estereótipo / preconceito / discriminação**
+:   Componentes cognitivo (crença sobre um grupo), afetivo (atitude, em geral negativa) e comportamental (tratamento desigual) do viés intergrupal.
+
+**Teoria da identidade social**
+:   Proposta de que parte da autoestima deriva dos grupos de pertença, motivando o favoritismo endogrupal [@tajfel_turner1979].
+
+**Experimento de grupo mínimo**
+:   Demonstração de que a categorização em grupos, mesmo trivial e arbitrária, basta para gerar favoritismo [@tajfel1971].
+
+**Hipótese do contato**
+:   Proposta de que o contato intergrupal reduz o preconceito quando há status igual, metas comuns, cooperação e apoio institucional [@allport1954; @pettigrew_tropp2006].
+
+**Viés implícito**
+:   Associações avaliativas automáticas sobre grupos sociais, medidas por instrumentos como o IAT, de validade preditiva individual limitada [@greenwald1998; @oswald2013].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Explique, com o conceito de resposta dominante, por que uma plateia melhora o desempenho de um pianista experiente e piora o de um iniciante.
+
+2. **(Conceitual.)** Diferencie estereótipo, preconceito e discriminação, ligando cada um a um componente da atitude (Cap. 71). Dê um exemplo em que um exista sem o outro.
+
+3. **(Análise.)** Por que o experimento do grupo mínimo de Tajfel é uma evidência tão forte a favor da teoria da identidade social? O que ele elimina como explicação alternativa do favoritismo?
+
+4. **(Aplicação.)** Uma escola quer reduzir a tensão entre dois grupos de alunos. Usando as quatro condições de Allport e o modelo jigsaw, desenhe uma intervenção concreta e explique por que "apenas colocá-los na mesma sala" tende a não funcionar.
+
+5. **(Reflexão crítica.)** Uma empresa quer usar o escore individual de funcionários no IAT para decidir promoções. Com base em Oswald et al. [-@oswald2013] e na lição psicométrica do Cap. 69, explique por que isso seria um erro — sem negar que o viés implícito exista.
+
+6. **(Integração.)** A tese central do volume é que "a força da situação é subestimada". Escolha um fenômeno de cada capítulo (atribuição, obediência, efeito espectador, preconceito) e mostre como cada um ilustra essa tese. Que implicação prática comum eles compartilham para quem quer mudar comportamentos?
