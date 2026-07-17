@@ -1,5 +1,130 @@
 # 80. Transtornos relacionados a trauma e estresse
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Descrever** o transtorno de estresse pós-traumático (TEPT) e seus quatro agrupamentos de sintomas.
+- **Distinguir** TEPT, transtorno de estresse agudo, transtornos de adaptação e o TEPT complexo da CID-11.
+- **Explicar** por que a maioria das pessoas expostas a trauma **não** desenvolve TEPT, e o que significa resiliência.
+- **Integrar** o modelo do medo condicionado e a falha de extinção com o modelo cognitivo do trauma.
+- **Analisar** por que a memória traumática é peculiar e como isso orienta o tratamento por exposição.
+- **Avaliar criticamente** o EMDR e a prática do *debriefing* de sessão única.
 :::
+
+Este é o único grupo de transtornos definido, por critério, por uma **causa externa**: o trauma. Enquanto a ansiedade ou a depressão podem surgir sem um desencadeante único, os transtornos deste capítulo pressupõem a exposição a um evento — violência, acidente grave, desastre, guerra, abuso. O DSM-5 reuniu-os num capítulo próprio, retirando o TEPT dos transtornos de ansiedade (Cap. 78), em reconhecimento de que o trauma põe em marcha mecanismos que vão além do medo: alterações de memória, de identidade, de visão de mundo. Entender esses mecanismos importa não só clinicamente, mas porque o trauma toca questões delicadas — a natureza da memória, os limites das intervenções de urgência e a notável capacidade humana de resistir.
+
+## O transtorno de estresse pós-traumático
+
+O **TEPT** desenvolve-se após a exposição a um evento traumático — vivido, testemunhado ou soubido ter acontecido a alguém próximo — envolvendo morte, ameaça de morte, violência ou violência sexual. Seus sintomas organizam-se em **quatro agrupamentos** (@fig-tept):
+
+- **Intrusão (revivência):** memórias intrusivas, pesadelos e *flashbacks*, em que a pessoa revive o evento como se ele estivesse acontecendo de novo, com intenso sofrimento diante de lembretes.
+- **Evitação:** esforço persistente para evitar pensamentos, sentimentos, pessoas, lugares e situações que remetam ao trauma.
+- **Alterações negativas de cognição e humor:** crenças distorcidas ("a culpa é minha", "o mundo é totalmente perigoso"), emoções negativas persistentes, anedonia, distanciamento afetivo, amnésia de partes do evento.
+- **Alterações de excitabilidade (hiperativação):** hipervigilância, resposta de sobressalto exagerada, irritabilidade, dificuldade de concentração e de sono.
+
+Para o diagnóstico, os sintomas duram **mais de um mês** e causam prejuízo. Quando o quadro ocorre e se resolve **dentro do primeiro mês**, fala-se em **transtorno de estresse agudo**. Já os **transtornos de adaptação** são reações desproporcionais a estressores que não atingem o limiar de "trauma" (uma demissão, um divórcio), com sintomas emocionais ou comportamentais que remitem quando a situação se estabiliza.
+
+::: {#fig-tept}
+```{.tikz}
+%%| filename: agrupamentos-tept
+%%| alt: Diagrama radial dos quatro agrupamentos de sintomas do TEPT. No centro, um círculo cinza rotulado "Evento traumático". Ao redor, quatro caixas ligadas ao centro por setas: no alto à esquerda "Intrusão (flashbacks, pesadelos, memórias que invadem)"; no alto à direita "Evitação (de lembretes, pensamentos, lugares)"; embaixo à esquerda "Cognição e humor negativos (culpa, distanciamento, anedonia)"; embaixo à direita "Hiperativação (sobressalto, hipervigilância, insônia)". Uma nota abaixo indica que os sintomas persistem por mais de um mês.
+\begin{tikzpicture}[font=\small,
+  cx/.style={draw, thick, rounded corners=3pt, align=center, minimum width=3.7cm, minimum height=1.25cm}]
+  \node[draw, thick, fill=manualgray!20, circle, align=center, font=\scriptsize\bfseries, inner sep=2pt] (ev) at (0,0) {Evento\\traumático};
+  \node[cx, draw=manualred, fill=manualred!8] (int) at (-3.7,2.2) {\textbf{Intrusão}\\{\scriptsize flashbacks, pesadelos}};
+  \node[cx, draw=manualblue, fill=manualblue!8] (evi) at (3.7,2.2) {\textbf{Evitação}\\{\scriptsize de lembretes}};
+  \node[cx, draw=manualyellow!70!black, fill=manualyellow!12] (cog) at (-3.7,-2.2) {\textbf{Cognição/humor}\\{\scriptsize culpa, anedonia}};
+  \node[cx, draw=manualgreen, fill=manualgreen!8] (hip) at (3.7,-2.2) {\textbf{Hiperativação}\\{\scriptsize sobressalto, insônia}};
+  \draw[->, >=Stealth, thick] (ev) -- (int);
+  \draw[->, >=Stealth, thick] (ev) -- (evi);
+  \draw[->, >=Stealth, thick] (ev) -- (cog);
+  \draw[->, >=Stealth, thick] (ev) -- (hip);
+  \node[font=\scriptsize\itshape, text=manualgray] at (0,-3.7) {persistindo por mais de um mês};
+\end{tikzpicture}
+```
+Os quatro agrupamentos de sintomas do TEPT. O evento traumático se desdobra em revivência, evitação, alterações negativas de cognição/humor e hiperativação, persistindo além de um mês.
+:::
+
+A **CID-11** trouxe uma novidade importante ausente do DSM: o **TEPT complexo**, associado a traumas **prolongados ou repetidos** dos quais a fuga é difícil (abuso na infância, cativeiro, violência doméstica crônica). Além dos sintomas do TEPT, ele inclui perturbações duradouras da "auto-organização": desregulação emocional grave, autoconceito negativo persistente e dificuldades crônicas nos relacionamentos [@brewin2000]. É um reconhecimento de que o trauma crônico deixa marcas mais profundas na personalidade do que o evento único.
+
+## A regra é a resiliência
+
+Um dos achados mais importantes — e mais contraintuitivos — deste campo é que **a maioria das pessoas expostas a trauma não desenvolve TEPT**. A exposição a eventos potencialmente traumáticos ao longo da vida é, na verdade, comum; o TEPT, embora sério, é o desfecho de uma minoria [@breslau1998]. George Bonanno documentou que o padrão mais frequente após a perda e a adversidade não é o colapso seguido de recuperação lenta, mas a **resiliência**: uma trajetória de perturbação transitória e leve, com manutenção do funcionamento [@bonanno2004]. Isso reorienta a pergunta da psicopatologia do trauma: não "por que o trauma adoece?", mas "**por que algumas pessoas adoecem e a maioria não?**". Fatores como gravidade e proximidade do trauma, história prévia, apoio social, e vulnerabilidade genética e neurobiológica ajudam a explicar a diferença [@yehuda2001] — de novo, a lógica diátese-estresse do Cap. 76.
+
+::: {.atencao}
+⚠️ **Reconhecer a resiliência não é minimizar o sofrimento.** Dizer que a maioria se recupera **não** significa que quem desenvolve TEPT é "fraco" ou que o trauma não importa — significa que a resposta humana ao trauma é variada, e que a recuperação natural é um recurso real a ser respeitado e apoiado, não interrompido. Essa constatação tem, aliás, consequências práticas diretas para as intervenções de urgência, como veremos.
+:::
+
+## Por que o trauma se fixa: memória e medo
+
+O núcleo do TEPT é uma **memória** que não se comporta como as outras. A neurobiologia oferece uma explicação coerente: durante o evento, a descarga de hormônios do estresse **sobreconsolida** a memória emocional (mediada pela amígdala), enquanto compromete o processamento contextual (mediado pelo hipocampo) que normalmente "carimba" a lembrança com marcadores de tempo e lugar [@yehuda2001]. O resultado é uma memória **intensa, fragmentada e sem contexto temporal** — por isso o *flashback* não é vivido como "isto aconteceu no passado", mas como "isto está acontecendo agora". A amígdala fica hiperreativa, e o córtex pré-frontal medial, que deveria inibir a resposta de medo, fica hipoativo: o freio da extinção falha.
+
+Isso conecta o TEPT diretamente à aprendizagem (Vol 7). Estímulos presentes no momento do trauma (um cheiro, um som, uma hora do dia) tornam-se **estímulos condicionados** que eliciam a resposta de medo (condicionamento clássico, Cap. 39), e a **evitação** desses gatilhos impede a extinção e mantém o transtorno (modelo de dois fatores, Cap. 78). O TEPT é, em parte, um caso de medo condicionado que não se extingue.
+
+No nível cognitivo, o modelo de Ehlers e Clark integra memória e significado: o TEPT persiste quando a pessoa processa o trauma de modo a produzir uma **sensação de ameaça atual**, seja por **avaliações negativas** excessivas (do evento — "eu deveria ter impedido"; das reações — "estou enlouquecendo"; do futuro — "nunca mais estarei seguro"), seja pela natureza **desorganizada** da memória traumática, mal integrada à memória autobiográfica [@ehlers_clark2000]. O trauma abala, ainda, pressupostos básicos sobre o mundo (que ele é seguro, previsível e justo), e reconstruir esse sentido é parte da recuperação.
+
+## O tratamento: aproximar-se da memória
+
+Se a evitação mantém o TEPT, o tratamento eficaz faz o oposto: ajuda a pessoa a **processar** a memória traumática em segurança. As **terapias focadas no trauma** — em especial a **exposição prolongada** de Edna Foa (revisitar a memória de forma controlada e repetida, até que perca o poder de aterrorizar) e a **terapia de processamento cognitivo** (reelaborar as avaliações distorcidas) — são os tratamentos com melhor evidência [@foa1986; @rothbaum2005; @bisson2013]. A lógica é a mesma da exposição na ansiedade: o contato repetido com o material temido, sem a fuga, permite a extinção e a reorganização da memória.
+
+::: {.atencao}
+⚠️ **O EMDR funciona — mas provavelmente não pelo motivo anunciado.** A **dessensibilização e reprocessamento por movimentos oculares (EMDR)**, criada por Francine Shapiro, pede que a pessoa evoque a memória traumática enquanto segue com os olhos um estímulo em movimento [@shapiro1989]. Os estudos mostram que o EMDR **reduz** os sintomas de TEPT, e ele figura entre os tratamentos recomendados. O problema é o *mecanismo*: metanálises que testaram os movimentos oculares isoladamente sugerem que **eles não acrescentam nada** — o ingrediente ativo parece ser a exposição à memória, comum a todas as terapias eficazes [@bisson2013]. É um caso instrutivo: um tratamento pode ser eficaz e, ao mesmo tempo, ter uma teoria explicativa questionável. Aceitar a eficácia não obriga a aceitar a explicação.
+:::
+
+::: {.atencao}
+⚠️ **O "debriefing" de sessão única não ajuda — e pode piorar.** Após desastres, tornou-se comum reunir vítimas para uma sessão única e obrigatória de relato detalhado do ocorrido logo nas primeiras horas (o *critical incident stress debriefing*). A intenção é boa; a evidência é ruim. Revisões sistemáticas concluíram que o *debriefing* psicológico de sessão única **não previne** o TEPT e, em alguns estudos, associou-se a **piores** desfechos — possivelmente por interromper a recuperação natural (a resiliência que é a regra) e por reforçar a memória traumática antes que ela se consolide [@rose2002]. É o exemplo mais claro do princípio ético "primeiro, não prejudicar" aplicado à psicologia: uma intervenção plausível e bem-intencionada que a pesquisa mostrou ser inútil ou nociva. O apoio recomendado nas primeiras horas é o "primeiros socorros psicológicos" — segurança, conforto, informação e conexão social —, não a revivência forçada.
+:::
+
+::: {.na-pratica}
+💡 **Memória traumática e o risco da sugestão.** O trauma expõe, de forma dramática, uma verdade do Vol 8 (Cap. 45): a memória é reconstrutiva, não uma gravação. Isso importa por dois lados. Por um lado, memórias traumáticas genuínas são frequentemente vívidas e persistentes. Por outro, o próprio processo de recordar é vulnerável à sugestão, e técnicas que buscam "recuperar" memórias supostamente reprimidas podem, em vez disso, **criar** memórias falsas convincentes — a controvérsia das memórias recuperadas dos anos 1990 [@loftus1995]. O clínico responsável caminha na estreita faixa entre acolher o relato de trauma real e não induzir lembranças pela sugestão. Ceticismo metodológico e empatia não são opostos: aqui, são exigências simultâneas.
+:::
+
+::: {.callout-sintese}
+- O TEPT segue a exposição a trauma e organiza-se em quatro agrupamentos: **intrusão, evitação, cognição/humor negativos e hiperativação**, por mais de um mês; abaixo de um mês, **estresse agudo**; estressores menores geram **transtornos de adaptação**.
+- A **CID-11** criou o **TEPT complexo** para traumas prolongados, com perturbações de auto-organização [@brewin2000].
+- A **regra é a resiliência**: a maioria dos expostos não desenvolve TEPT [@breslau1998; @bonanno2004]; a pergunta é por que alguns adoecem (diátese-estresse) [@yehuda2001].
+- O TEPT é sustentado por uma **memória sobreconsolidada, fragmentada e sem contexto** (amígdala hiperativa, hipocampo e pré-frontal comprometidos) e por **medo condicionado** que a evitação impede de extinguir; no plano cognitivo, avaliações negativas e memória desorganizada geram "ameaça atual" [@ehlers_clark2000].
+- Tratam-se as **terapias focadas no trauma** — exposição prolongada e processamento cognitivo [@foa1986; @rothbaum2005; @bisson2013]; o **EMDR** funciona, mas os movimentos oculares parecem inertes; o **debriefing** de sessão única não previne e pode piorar [@rose2002].
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**TEPT**
+:   Transtorno que se desenvolve após exposição a trauma, com sintomas de intrusão, evitação, alterações negativas de cognição/humor e hiperativação por mais de um mês.
+
+**Flashback**
+:   Revivência intrusiva do trauma como se ele estivesse ocorrendo no presente, marca da memória traumática sem contexto temporal.
+
+**Transtorno de estresse agudo**
+:   Reação traumática que ocorre e se resolve dentro do primeiro mês após o evento.
+
+**TEPT complexo**
+:   Categoria da CID-11 para traumas prolongados/repetidos, somando ao TEPT perturbações de regulação emocional, autoconceito e relações [@brewin2000].
+
+**Resiliência**
+:   Trajetória de perturbação leve e transitória com manutenção do funcionamento após adversidade; padrão mais comum de resposta ao trauma [@bonanno2004].
+
+**Exposição prolongada**
+:   Terapia focada no trauma que faz a pessoa revisitar a memória de forma controlada e repetida até a extinção do medo [@foa1986].
+
+**EMDR**
+:   Terapia que combina evocação da memória traumática com movimentos oculares; eficaz, embora os movimentos oculares pareçam não ser o ingrediente ativo [@shapiro1989; @bisson2013].
+
+**Debriefing psicológico**
+:   Intervenção de sessão única logo após o trauma; a evidência mostra que não previne o TEPT e pode ser prejudicial [@rose2002].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie e descreva os quatro agrupamentos de sintomas do TEPT. O que distingue o TEPT do transtorno de estresse agudo?
+
+2. **(Conceitual.)** O que a CID-11 acrescenta com o TEPT complexo e por que traumas prolongados justificam uma categoria distinta do trauma de evento único?
+
+3. **(Análise.)** Por que o *flashback* é vivido como "está acontecendo agora"? Ligue a resposta à sobreconsolidação da memória e ao papel comprometido do hipocampo.
+
+4. **(Reflexão crítica.)** O EMDR reduz sintomas, mas os movimentos oculares parecem inertes. Explique por que é possível um tratamento ser eficaz e sua teoria estar errada, e o que isso ensina sobre avaliar terapias.
+
+5. **(Aplicação.)** Uma ONG quer reunir sobreviventes de um desastre para uma sessão obrigatória de relato detalhado no dia seguinte. Com base em Rose et al. [-@rose2002] e no conceito de resiliência, aconselhe a organização.
+
+6. **(Integração.)** Relacione o modelo de dois fatores (Cap. 78) e a natureza reconstrutiva da memória (Cap. 45) com o tratamento do TEPT por exposição, explicando por que a evitação mantém o transtorno e por que a exposição o alivia.
