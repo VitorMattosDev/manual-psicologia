@@ -1,5 +1,140 @@
 # 56. Estresse e enfrentamento (coping)
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** estresse como transação entre demandas e recursos, distinguindo estressor de resposta ao estresse.
+- **Descrever** a síndrome geral de adaptação de Selye e a resposta fisiológica ao estresse.
+- **Explicar** o modelo de avaliação e enfrentamento de Lazarus e Folkman.
+- **Analisar** as vias pelas quais o estresse crônico afeta a saúde física e imunológica.
+- **Distinguir** estratégias de enfrentamento e avaliar o papel do suporte social e do controle.
 :::
+
+Encerramos o volume de motivação e emoção no ponto em que os dois se encontram sob pressão: o **estresse**. Quando as demandas da vida — uma prova, um luto, um engarrafamento, uma ameaça — são avaliadas como excedendo nossos recursos, o organismo mobiliza uma resposta ampla, fisiológica e psicológica, que chamamos de estresse. Bem calibrada e breve, essa resposta é adaptativa e até necessária; prolongada e descontrolada, ela adoece o corpo e a mente. Este capítulo — porta de entrada para a psicologia da saúde (Cap. 96) e para a psicopatologia (Fase 3) — examina o que é o estresse, como o corpo o executa, como ele afeta a saúde e o que podemos fazer para enfrentá-lo (*coping*).
+
+## O que é estresse
+
+O termo carrega uma ambiguidade útil de desfazer. O **estressor** é o evento ou a demanda (o *estímulo*); a **resposta ao estresse** é a reação do organismo (fisiológica e psicológica); e o **estresse**, na concepção hoje dominante, é a **transação** entre os dois — a relação entre as demandas percebidas e os recursos percebidos para lidar com elas. Essa definição transacional, de Richard Lazarus, é decisiva: **não é o evento em si que estressa, mas sua avaliação**. O mesmo estressor (falar em público) devasta uma pessoa e estimula outra, conforme cada uma avalia a ameaça e os próprios recursos.
+
+Nem todo estresse é ruim. Hans Selye distinguiu o **eustresse** (estresse "bom", desafiador e motivador — a véspera empolgante de um evento desejado) do **distresse** (estresse "ruim", ameaçador e desgastante). A diferença remete à lei de Yerkes-Dodson (Cap. 51): uma dose moderada de ativação otimiza o desempenho; o excesso, sustentado, o prejudica.
+
+## A resposta fisiológica: de Selye a Cannon
+
+Foi Hans Selye quem transformou o estresse em objeto científico, ao notar que ratos submetidos a agressões muito diferentes (frio, toxinas, cirurgia) desenvolviam o **mesmo** padrão de reações corporais [@selye1936]. Chamou-o de **síndrome geral de adaptação (SGA)** — "geral" porque a resposta é **inespecífica**, a mesma qualquer que seja o estressor. A SGA tem três fases (@fig-sga):
+
+1. **Alarme** — o corpo detecta a ameaça e mobiliza recursos: dispara a resposta de **luta ou fuga** descrita por Walter Cannon [@cannon1932], com ativação do sistema nervoso simpático (Cap. 23) e liberação de **adrenalina** — coração acelera, respiração aumenta, glicose é liberada, digestão é suspensa. É a preparação de emergência para a ação.
+2. **Resistência** — se o estressor persiste, o corpo se estabiliza num estado de mobilização elevada e sustentada, agora sob comando do eixo **hipotálamo-hipófise-adrenal (HHA)** e do **cortisol** (Cap. 25), o "hormônio do estresse" de ação mais lenta e prolongada. O organismo aguenta, mas a um custo crescente.
+3. **Exaustão** — se o estressor não cessa, os recursos se esgotam; a resistência colapsa, e surge a vulnerabilidade a doenças, esgotamento e adoecimento. É aqui que o estresse crônico cobra sua fatura.
+
+::: {#fig-sga}
+```{.tikz}
+%%| filename: sindrome-geral-adaptacao
+%%| alt: Gráfico da síndrome geral de adaptação de Selye. O eixo horizontal é o tempo e o vertical é o nível de resistência ao estresse. A curva sobe abruptamente na fase de alarme, mantém-se elevada num platô na fase de resistência, e depois declina abaixo do nível normal na fase de exaustão. Uma linha tracejada marca o nível normal de resistência.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \draw[->, thick] (0,0) -- (9.2,0) node[right, font=\tiny] {tempo};
+  \draw[->, thick] (0,-1.3) -- (0,3) node[above, font=\tiny, align=center] {resistência};
+  % nível normal
+  \draw[manualgray, dashed] (0,1) -- (9,1) node[right, font=\tiny, text=manualgray] {normal};
+  % curva SGA
+  \draw[very thick, curva, manualblue]
+     (0.3,1) .. controls (0.7,-0.6) and (1.1,-0.6) .. (1.5,0.4) % queda inicial (choque) e subida
+     .. controls (2.0,1.8) and (2.3,2.4) .. (2.8,2.4) % alarme sobe
+     -- (5.6,2.3) % resistência (platô)
+     .. controls (6.6,2.2) and (7.4,-0.4) .. (8.6,-1.0); % exaustão
+  % fases
+  \draw[manualgray, dotted] (2.8,-1.3) -- (2.8,2.6);
+  \draw[manualgray, dotted] (5.6,-1.3) -- (5.6,2.5);
+  \node[font=\tiny, text=manualred, align=center] at (1.6,2.8) {Alarme};
+  \node[font=\tiny, text=manualgreen!50!black, align=center] at (4.2,2.8) {Resistência};
+  \node[font=\tiny, text=manualgray, align=center] at (7.3,2.8) {Exaustão};
+\end{tikzpicture}
+```
+A **síndrome geral de adaptação** (Selye): após um breve choque, a resistência sobe na fase de **alarme**, mantém-se elevada na **resistência** e, se o estressor persiste, despenca abaixo do normal na **exaustão**.
+:::
+
+::: {.base-neural}
+🧠 **Dois eixos, dois tempos.** A resposta ao estresse tem duas vias com tempos distintos. A **via rápida** é o eixo **simpático-adrenal-medular (SAM)**: o hipotálamo ativa o sistema simpático, que faz a medula das suprarrenais liberar **adrenalina** e noradrenalina em segundos — é o "luta ou fuga" imediato. A **via lenta** é o eixo **HHA**: o hipotálamo libera CRH → a hipófise libera ACTH → o córtex das suprarrenais libera **cortisol**, ao longo de minutos a horas, sustentando a mobilização de energia e modulando a inflamação e a imunidade. Em situações agudas, os dois eixos são vitais e adaptativos. O problema é a **ativação crônica**: cortisol persistentemente alto desregula o metabolismo, o sistema imune, o humor e até estruturas cerebrais como o hipocampo (Cap. 24), sensível ao excesso de cortisol — ligando estresse crônico a prejuízos de memória.
+:::
+
+O modelo de "luta ou fuga" foi complementado por Shelley Taylor, que argumentou que ele foi construído sobre estudos majoritariamente com machos e que as fêmeas de muitas espécies respondem também com um padrão de **"cuidar e amparar"** (*tend-and-befriend*): proteger a prole e buscar afiliação social sob estresse, um padrão associado à **ocitocina** [@taylor2000]. É uma correção importante à visão clássica e uma ponte com a necessidade de pertencimento (Cap. 53): sob ameaça, buscar os outros é, em si, uma resposta ao estresse.
+
+## Estresse e saúde
+
+Como o estresse **psicológico** adoece o **corpo**? A resposta está na cronicidade. Robert Sapolsky sintetizou-a numa imagem célebre: uma zebra que foge de um leão dispara a resposta de estresse por minutos e, sobrevivendo, volta a pastar; nós, humanos, ativamos a *mesma* resposta fisiológica de emergência diante de ameaças **psicológicas e prolongadas** — dívidas, conflitos, prazos — que não se resolvem em minutos [@sapolsky2004]. Um sistema desenhado para emergências físicas breves passa a funcionar cronicamente, e é aí que ele nos corrói. O conceito de **carga alostática** [@mcewen1998] captura esse desgaste acumulado: o preço que o corpo paga por adaptações repetidas ou sustentadas ao estresse — hipertensão, desregulação metabólica e imunológica, inflamação crônica.
+
+A **psiconeuroimunologia** documenta a via imunológica: o estresse crônico **suprime e desregula** funções imunes, aumentando a vulnerabilidade a infecções e retardando a cicatrização.
+
+::: {.experimento}
+🔬 **Estresse e o resfriado comum.** Sheldon Cohen e colegas testaram diretamente se o estresse aumenta a suscetibilidade à doença [@cohen1991]. Voluntários saudáveis responderam a medidas de estresse psicológico e então — com consentimento — foram **deliberadamente expostos** a um vírus do resfriado (rinovírus) em gotas nasais, sob quarentena controlada. O resultado foi límpido e dose-dependente: quanto **maior o nível de estresse psicológico** relatado, **maior a probabilidade** de o participante efetivamente desenvolver o resfriado após a exposição ao vírus. **Interpretação:** o estresse não "inventa" o vírus, mas compromete as defesas, tornando a infecção mais provável — evidência experimental (não apenas correlacional) de que estados psicológicos afetam a resistência física. **Relevância:** confirma que a mente e o sistema imune conversam, fundamentando a psicologia da saúde (Cap. 96).
+:::
+
+Padrões de reação ao estresse também importam. O **padrão de comportamento tipo A** (competitivo, impaciente, hostil) foi associado, em pesquisas clássicas, a maior risco cardiovascular [@friedman_rosenman1959]; refinamentos posteriores mostraram que o componente mais tóxico é a **hostilidade** crônica, mais do que a pressa ou a ambição em si.
+
+## Enfrentamento (*coping*)
+
+Diante do estresse, não somos passivos: **enfrentamos**. Lazarus e Folkman deram ao campo seu modelo central, unindo avaliação e enfrentamento [@lazarus_folkman1984]. Tudo começa com a **avaliação** (*appraisal*), em dois momentos: na **avaliação primária**, julgamos se o evento é irrelevante, positivo ou uma **ameaça/dano/desafio**; na **avaliação secundária**, julgamos se temos **recursos** para lidar com ele. Do balanço entre demanda e recurso nasce (ou não) a resposta de estresse — e a estratégia de enfrentamento.
+
+O modelo distingue duas grandes famílias de *coping*:
+
+- **Enfrentamento focado no problema** — agir sobre o **estressor** para removê-lo ou reduzi-lo: fazer um plano de estudos, buscar informação, resolver o conflito. Tende a ser mais eficaz quando a situação é **controlável**.
+- **Enfrentamento focado na emoção** — agir sobre a **resposta emocional** ao estressor: reavaliar (Cap. 55), buscar apoio, relaxar, aceitar. Tende a ser mais adaptativo quando a situação é **incontrolável** (um luto, uma doença terminal), em que não há problema a "resolver", mas há sofrimento a acolher.
+
+A escolha adaptativa, portanto, depende da **controlabilidade**: tentar controlar o incontrolável esgota; aceitar o que se poderia mudar paralisa. A flexibilidade em ajustar a estratégia ao contexto é a marca do bom enfrentamento.
+
+::: {.na-pratica}
+**Fatores que protegem contra o estresse.** A pesquisa identifica moderadores robustos do impacto do estresse sobre a saúde. (1) **Controle percebido:** sentir que se tem algum controle sobre a situação reduz o impacto fisiológico do estressor — mesmo o controle *percebido*, ainda que ilusório, protege; a falta de controle é um ingrediente central do desamparo aprendido (Cap. 41) e da depressão. (2) **Suporte social:** ter vínculos e poder contar com os outros **amortece** o efeito do estresse (hipótese do *buffering*) e prediz melhor saúde e maior longevidade — retomando, no plano da saúde, a necessidade de pertencer (Cap. 53). (3) **Otimismo e sentido:** avaliar dificuldades como desafios temporários e encontrar significado na adversidade associam-se a melhor enfrentamento. (4) **Hábitos:** exercício físico, sono adequado (Cap. 36) e técnicas de relaxamento e *mindfulness* (Cap. 38, 92) reduzem a ativação fisiológica. O estresse é inevitável; seu impacto, em boa medida, é **modulável**.
+:::
+
+## Fechando o volume
+
+O Vol 9 percorreu o motor afetivo do comportamento: as **teorias da motivação** (Cap. 51), as motivações **básicas** (Cap. 52) e **sociais** (Cap. 53), as **teorias da emoção** (Cap. 54), sua **expressão e regulação** (Cap. 55) e, agora, o **estresse e o enfrentamento**. O fio condutor foi mostrar que motivação e emoção não são o "oposto irracional" da cognição, mas sistemas adaptativos, dotados de lógica própria, que dirigem, energizam e coloram tudo o que pensamos e fazemos — e cuja desregulação está na raiz de grande parte do sofrimento psíquico. Com os processos básicos (Fase 2) agora mapeados — biologia, sensação, consciência, aprendizagem, memória, cognição, motivação e emoção —, o manual está pronto para a **Fase 3**, que abre com o **desenvolvimento humano**: como esses processos surgem, amadurecem e se transformam ao longo de toda a vida.
+
+## Síntese
+
+::: {.callout-sintese}
+- O **estresse** é a **transação** entre demandas percebidas e recursos percebidos; distingue-se o **estressor** (evento) da **resposta ao estresse**. Há **eustresse** e **distresse**.
+- A **síndrome geral de adaptação** (Selye) é inespecífica e tem três fases: **alarme** (luta ou fuga, adrenalina/SAM), **resistência** (cortisol/HHA) e **exaustão**.
+- Taylor acrescentou o padrão **cuidar e amparar** (*tend-and-befriend*), ligado à ocitocina, à visão clássica de luta ou fuga.
+- O estresse **crônico** adoece via **carga alostática** e desregulação **imune**; o estudo de Cohen mostrou experimentalmente que estresse aumenta a suscetibilidade ao resfriado. A **hostilidade** (tipo A) eleva o risco cardiovascular.
+- Lazarus e Folkman: a **avaliação** (primária/secundária) precede o **enfrentamento**, dividido em **focado no problema** (situações controláveis) e **focado na emoção** (situações incontroláveis).
+- **Controle percebido**, **suporte social**, otimismo e hábitos saudáveis **amortecem** o impacto do estresse.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Estresse (transacional)**
+:   Relação entre demandas percebidas e recursos percebidos para enfrentá-las (Lazarus).
+
+**Síndrome geral de adaptação (SGA)**
+:   Resposta corporal inespecífica ao estresse em três fases — alarme, resistência, exaustão [@selye1936].
+
+**Eixo HHA / cortisol**
+:   Via hipotálamo-hipófise-adrenal que libera cortisol, sustentando a resposta lenta ao estresse (Cap. 25).
+
+**Carga alostática**
+:   Desgaste acumulado no corpo pela ativação repetida ou crônica da resposta ao estresse [@mcewen1998].
+
+**Cuidar e amparar (*tend-and-befriend*)**
+:   Padrão de resposta ao estresse por proteção e afiliação, ligado à ocitocina [@taylor2000].
+
+**Enfrentamento (*coping*) focado no problema / na emoção**
+:   Agir sobre o estressor (controlável) *versus* sobre a reação emocional (incontrolável) [@lazarus_folkman1984].
+
+**Suporte social (*buffering*)**
+:   Efeito protetor dos vínculos sociais, que amortecem o impacto do estresse sobre a saúde.
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Diferencie estressor, resposta ao estresse e estresse na definição transacional. Por que essa distinção importa?
+
+2. **(Conceitual.)** Descreva as três fases da síndrome geral de adaptação e o principal hormônio envolvido em cada uma.
+
+3. **(Análise.)** Usando a imagem da "zebra" de Sapolsky, explique por que o estresse crônico humano é mais nocivo que o estresse agudo de um animal fugindo de um predador.
+
+4. **(Aplicação.)** Um estudante enfrenta uma prova difícil (controlável) e, no mesmo mês, o falecimento de um avô (incontrolável). Que tipo de enfrentamento tende a ser mais adaptativo para cada situação?
+
+5. **(Análise.)** Como o estudo de Cohen sobre o resfriado comum fornece evidência *experimental* — e não apenas correlacional — da ligação entre estresse e saúde?
+
+6. **(Avaliação.)** "O estresse é sempre prejudicial e deve ser eliminado." Avalie essa afirmação distinguindo eustresse de distresse e citando fatores que modulam o impacto do estresse.

@@ -14,9 +14,9 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 
 **Legenda de status:** ⬜ pendente · 🔄 em andamento · ✅ concluído
 
-**Progresso:** 50 / 105 concluídos · Fase 1: 21/21 · Fase 2: 29/35 · Fase 3: 0/49
+**Progresso:** 56 / 105 concluídos · Fase 1: 21/21 · Fase 2: 35/35 · Fase 3: 0/49
 
-> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ — Vol 8 (Memória e Cognição) completo.** Próximo: Fase 2, Vol 9 (Motivação e Emoção).
+> **Vol 1 ✅ · Vol 2 ✅ · Vol 3 ✅ · Vol 4 ✅ · Vol 5 ✅ · Vol 6 ✅ · Vol 7 ✅ · Vol 8 ✅ · Vol 9 ✅ — Fase 2 (Processos Psicológicos Básicos) completa.** Próximo: Fase 3, Vol 10 (Desenvolvimento Humano).
 
 ---
 
@@ -111,12 +111,12 @@ arquivo e status. O Claude Code consome este arquivo para saber o que escrever a
 ### Vol 9 — Motivação e Emoção
 | Cap | Título | Arquivo | Status |
 |-----|--------|---------|--------|
-| 51 | Teorias da motivação | `capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd` | ⬜ |
-| 52 | Motivações básicas (fome, sede, sexo) | `capitulos/vol09-motivacao-emocao/cap-52-motivacoes-basicas.qmd` | ⬜ |
-| 53 | Motivações sociais (realização, pertencimento) | `capitulos/vol09-motivacao-emocao/cap-53-motivacoes-sociais.qmd` | ⬜ |
-| 54 | Teorias da emoção | `capitulos/vol09-motivacao-emocao/cap-54-teorias-emocao.qmd` | ⬜ |
-| 55 | Expressão e regulação emocional | `capitulos/vol09-motivacao-emocao/cap-55-expressao-regulacao.qmd` | ⬜ |
-| 56 | Estresse e enfrentamento (coping) | `capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd` | ⬜ |
+| 51 | Teorias da motivação | `capitulos/vol09-motivacao-emocao/cap-51-teorias-motivacao.qmd` | ✅ |
+| 52 | Motivações básicas (fome, sede, sexo) | `capitulos/vol09-motivacao-emocao/cap-52-motivacoes-basicas.qmd` | ✅ |
+| 53 | Motivações sociais (realização, pertencimento) | `capitulos/vol09-motivacao-emocao/cap-53-motivacoes-sociais.qmd` | ✅ |
+| 54 | Teorias da emoção | `capitulos/vol09-motivacao-emocao/cap-54-teorias-emocao.qmd` | ✅ |
+| 55 | Expressão e regulação emocional | `capitulos/vol09-motivacao-emocao/cap-55-expressao-regulacao.qmd` | ✅ |
+| 56 | Estresse e enfrentamento (coping) | `capitulos/vol09-motivacao-emocao/cap-56-estresse-coping.qmd` | ✅ |
 
 ---
 
