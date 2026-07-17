@@ -1,5 +1,127 @@
 # 55. Expressão e regulação emocional
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Avaliar** a evidência sobre a universalidade das expressões faciais e o papel das regras culturais de exibição.
+- **Explicar** a hipótese do *feedback* facial e ponderar a evidência de replicação.
+- **Distinguir** as principais estratégias de regulação emocional no modelo de Gross.
+- **Comparar** os efeitos da reavaliação cognitiva e da supressão expressiva.
+- **Aplicar** os princípios da regulação emocional ao bem-estar e à saúde.
 :::
+
+O capítulo anterior tratou de *como as emoções surgem*; este trata de *como as mostramos e as manejamos*. A emoção não fica encerrada no indivíduo: ela transborda em **expressões** — sobretudo faciais — que comunicam nosso estado aos outros e cumprem funções sociais decisivas. E, sendo criaturas sociais e reflexivas, não apenas sentimos e expressamos: nós **regulamos** — amplificamos, atenuamos, mascaramos ou reinterpretamos o que sentimos. Expressão e regulação são o lado *social e autorregulatório* da vida emocional, com consequências diretas para os relacionamentos, o desempenho e a saúde.
+
+## A expressão facial das emoções
+
+A ideia de que as emoções têm expressões faciais características e evolutivamente moldadas remonta a Darwin, cujo *A Expressão das Emoções no Homem e nos Animais* [@darwin1872] argumentou que essas expressões são inatas, universais à espécie e herdadas de nossos ancestrais — vestígios adaptativos (arreganhar os dentes na raiva; abrir olhos e narinas no medo, ampliando a captação sensorial).
+
+No século XX, Paul Ekman buscou testar essa universalidade. Em estudos transculturais que incluíram sociedades isoladas, com pouco contato com a mídia ocidental, encontrou que pessoas de culturas muito diferentes **reconheciam** e **produziam** expressões faciais semelhantes para um conjunto de emoções — as chamadas **emoções básicas**: alegria, tristeza, raiva, medo, nojo e surpresa [@ekman1971]. Esse achado foi por décadas uma das evidências mais fortes da base biológica da emoção.
+
+Mas a universalidade não é a história toda. Ekman também formulou o conceito de **regras de exibição** (*display rules*): normas **culturais** que governam quando, como e quanto uma emoção pode ser expressa [@ekman1969]. A emoção sentida pode ser universal, mas sua *exibição* é filtrada pela cultura. Num estudo clássico, japoneses e norte-americanos mostraram expressões faciais semelhantes ao assistir a um filme aversivo **sozinhos**; mas, na presença de uma figura de autoridade, os japoneses **mascararam** o desconforto muito mais — a cultura japonesa desencoraja a exibição de emoções negativas em público. Assim, a face reflete tanto o que sentimos quanto o que nossa cultura nos autoriza a mostrar.
+
+::: {.atencao}
+**Universalidade: um consenso mais matizado do que parece.** A tese de Ekman é frequentemente ensinada como fato consolidado ("seis emoções universais"), mas está sob revisão crítica ativa. Metanálises e reanálises apontam que o reconhecimento intercultural, embora **acima do acaso**, é menos perfeito e mais influenciado por método (escolha forçada entre rótulos infla o acerto) e por cultura do que se supunha. A crítica não nega que haja *alguma* universalidade — nega que o mapeamento entre emoção e expressão facial seja fixo e um-para-um, alinhando-se à teoria da emoção construída (Cap. 54). Posição equilibrada: há regularidades interculturais reais nas expressões, moduladas por regras de exibição e por variabilidade individual e contextual maior do que a versão clássica admitia.
+:::
+
+## O *feedback* facial
+
+Se a expressão facial normalmente *resulta* da emoção, poderia ela também *causá-la*? A **hipótese do *feedback* facial** — antecipada por James (Cap. 54) e por Darwin — propõe que os movimentos faciais **retroalimentam** a experiência emocional: sorrir intensificaria a alegria; franzir a testa, o desconforto. A face não seria só uma tela onde a emoção se projeta, mas parte do circuito que a produz.
+
+::: {.experimento}
+🔬 **A caneta na boca — e a lição sobre replicação.** O teste mais famoso da hipótese foi engenhoso [@strack1988]: participantes seguravam uma caneta **entre os dentes** (o que ativa músculos do sorriso, sem que percebam) ou **entre os lábios** (o que impede o sorriso) enquanto avaliavam o quão engraçados eram cartuns. Os do grupo "dentes" — sorrindo sem saber — acharam os cartuns **mais engraçados**, sustentando o *feedback* facial. O estudo virou clássico de manual. **Mas há uma segunda lição, metodológica.** Em 2016, uma grande **replicação registrada** em 17 laboratórios **não** reproduziu o efeito [@wagenmakers2016], abalando a confiança no achado — um episódio emblemático da **crise de replicabilidade** (Cap. 105). O debate seguiu: análises posteriores sugeriram que detalhes do procedimento (como a presença de câmeras) podem ter afetado os resultados, e evidência mais recente aponta um efeito **pequeno, porém real**, para algumas manipulações. **Interpretação honesta:** o *feedback* facial provavelmente existe, mas é **mais fraco e mais dependente de condições** do que a versão original sugeria — e o caso ilustra por que a ciência exige replicação antes de consagrar um resultado marcante.
+:::
+
+## Regular a emoção: o modelo de Gross
+
+Sentir uma emoção não obriga a vivê-la passivamente. A **regulação emocional** é o conjunto de processos pelos quais influenciamos *quais* emoções temos, *quando* as temos e *como* as experimentamos e expressamos. James Gross propôs o modelo mais influente, o **modelo processual**, que dispõe as estratégias ao longo da linha do tempo em que a emoção se desenrola [@gross1998] (@fig-gross). A ideia-chave: podemos intervir em **pontos diferentes** desse processo, e *onde* intervimos faz diferença nos resultados.
+
+::: {#fig-gross}
+```{.tikz}
+%%| filename: regulacao-gross
+%%| alt: Linha do tempo horizontal da geração de uma emoção, da situação à resposta emocional. Ao longo dela, cinco famílias de estratégias de regulação apontam para pontos sucessivos: seleção da situação, modificação da situação, direcionamento da atenção, mudança cognitiva (reavaliação) e modulação da resposta (supressão). As quatro primeiras são focadas nos antecedentes; a última é focada na resposta.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth]
+  % linha do tempo
+  \draw[->, very thick, manualgray] (0,0) -- (10.5,0);
+  \foreach \x/\l in {0.4/Situação, 3.3/Atenção, 6.2/Significado, 9.2/Resposta}{
+    \filldraw[manualblue] (\x,0) circle (2pt);
+    \node[below, font=\tiny, text=manualgray] at (\x,-0.15) {\l};
+  }
+  % estratégias antecedentes
+  \node[draw, rounded corners, fill=manualgreen!14, font=\tiny, align=center] at (1.6,1.3) {Seleção /\\modificação\\da situação};
+  \node[draw, rounded corners, fill=manualgreen!14, font=\tiny, align=center] at (4.4,1.3) {Direcionar\\atenção\\{\tiny (distração)}};
+  \node[draw, rounded corners, fill=manualblue!16, font=\tiny, align=center] at (7.1,1.6) {\textbf{Reavaliação}\\{\tiny mudar o significado}};
+  \draw[->, manualgreen] (1.6,0.85) -- (0.6,0.1);
+  \draw[->, manualgreen] (4.4,0.85) -- (3.4,0.1);
+  \draw[->, manualblue] (7.1,1.1) -- (6.3,0.1);
+  % estratégia de resposta
+  \node[draw, rounded corners, fill=manualred!14, font=\tiny, align=center] at (9.6,1.3) {\textbf{Supressão}\\{\tiny inibir expressão}};
+  \draw[->, manualred] (9.6,0.85) -- (9.3,0.1);
+  % rótulos de foco
+  \node[font=\tiny, text=manualgreen!50!black] at (3.0,2.3) {focadas nos ANTECEDENTES};
+  \node[font=\tiny, text=manualred] at (9.4,2.3) {focada na RESPOSTA};
+\end{tikzpicture}
+```
+O **modelo processual** de Gross: estratégias de regulação atuam em pontos sucessivos da geração da emoção. As **focadas nos antecedentes** (seleção/modificação da situação, atenção, reavaliação) agem *antes* de a emoção se formar plenamente; a **focada na resposta** (supressão) age *depois*.
+:::
+
+As cinco famílias de estratégias são: **seleção da situação** (evitar ou buscar situações — não ir à festa que dá ansiedade); **modificação da situação** (alterá-la — mudar de assunto); **direcionamento da atenção** (distrair-se, ou concentrar-se em outro aspecto); **mudança cognitiva** ou **reavaliação** (reinterpretar o significado — "a entrevista é uma oportunidade, não uma ameaça"); e **modulação da resposta** (agir sobre a emoção já formada — sobretudo a **supressão expressiva**, esconder o que se sente).
+
+## Reavaliação × supressão
+
+As duas estratégias mais estudadas — porque ocupam extremos da linha do tempo — são a **reavaliação cognitiva** (antecedente) e a **supressão expressiva** (resposta). A comparação entre elas é uma das descobertas mais úteis da área [@gross_john2003]:
+
+- A **reavaliação** intervém *cedo*, mudando o significado antes que a emoção se cristalize. É **eficaz e "barata"**: reduz a emoção negativa *sentida* e sua expressão, sem custo cognitivo relevante nem prejuízo à memória ou às relações. Está associada a mais afeto positivo, melhores relacionamentos e maior bem-estar.
+- A **supressão** intervém *tarde*, tentando esconder uma emoção já formada. É **menos eficaz e "cara"**: reduz a expressão externa, mas **não** a experiência interna negativa (a pessoa continua se sentindo mal); consome recursos cognitivos (prejudica a memória do que ocorreu, como um custo de atenção — Cap. 34); e é lida pelos outros como frieza ou distância, prejudicando as relações. Paradoxalmente, esconder emoções pode aumentar a ativação fisiológica, tanto em quem suprime quanto em seu interlocutor.
+
+::: {.na-pratica}
+**Regular melhor as próprias emoções.** A pesquisa sugere princípios práticos e baseados em evidência. (1) **Prefira a reavaliação à supressão** como estratégia habitual: reinterpretar uma situação estressante ("é um desafio, não uma catástrofe") é mais eficaz e saudável do que engolir o que se sente. (2) **Nomear a emoção** ajuda a regulá-la — pôr o sentimento em palavras ("estou ansioso porque...") reduz sua intensidade, um princípio explorado por várias terapias (Cap. 91–92). (3) **A supressão tem lugar pontual** — conter a raiva numa reunião é adaptativo —, mas como estilo de vida crônico cobra caro. (4) A regulação **flexível**, que escolhe a estratégia certa para cada contexto, é mais saudável que a rigidez. Regulação emocional é uma habilidade treinável, central para a saúde mental — e um alvo direto de intervenções clínicas, como veremos na Fase 3.
+:::
+
+O tema da regulação nos conduz naturalmente ao último capítulo do volume. Quando as demandas da vida excedem, de forma sustentada, nossa capacidade de enfrentá-las e regulá-las, entramos no território do **estresse** — e das estratégias de enfrentamento (*coping*) que decidem se ele nos fortalece ou nos adoece.
+
+## Síntese
+
+::: {.callout-sintese}
+- Darwin propôs que as **expressões faciais** são inatas e universais; Ekman encontrou reconhecimento intercultural de **emoções básicas**, mas a universalidade hoje é vista de forma **mais matizada**.
+- As **regras de exibição** (*display rules*) são normas culturais que filtram *quanto* e *quando* uma emoção pode ser mostrada.
+- A **hipótese do *feedback* facial** (sorrir intensifica a alegria) é plausível, mas o estudo da caneta **não replicou** em larga escala; o efeito é provavelmente **pequeno e condicional** — um caso da crise de replicabilidade.
+- O **modelo processual de Gross** dispõe as estratégias de regulação ao longo da geração da emoção: seleção/modificação da situação, atenção, **reavaliação** e **supressão**.
+- A **reavaliação** (antecedente) é eficaz e barata; a **supressão** (resposta) reduz a expressão mas não a experiência, custa recursos cognitivos e prejudica relações.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Regras de exibição (*display rules*)**
+:   Normas culturais que governam quando e como as emoções podem ser expressas [@ekman1969].
+
+**Emoções básicas**
+:   Conjunto de emoções (alegria, tristeza, raiva, medo, nojo, surpresa) com expressões faciais reconhecidas interculturalmente [@ekman1971].
+
+**Hipótese do *feedback* facial**
+:   Proposta de que os movimentos faciais retroalimentam e influenciam a experiência emocional [@strack1988].
+
+**Regulação emocional**
+:   Processos pelos quais influenciamos quais emoções temos, quando e como as vivemos e expressamos [@gross1998].
+
+**Reavaliação cognitiva**
+:   Reinterpretar o significado de uma situação para alterar seu impacto emocional (estratégia antecedente, eficaz).
+
+**Supressão expressiva**
+:   Inibir a expressão externa de uma emoção já em curso (estratégia de resposta, com custos cognitivos e sociais) [@gross_john2003].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** O que são regras de exibição? Dê um exemplo de como duas culturas podem exibir a mesma emoção de modos diferentes.
+
+2. **(Reflexão crítica.)** Por que o episódio da replicação do estudo da caneta na boca é importante para entender como a ciência psicológica funciona?
+
+3. **(Conceitual.)** No modelo de Gross, o que distingue uma estratégia focada nos antecedentes de uma focada na resposta? Dê um exemplo de cada.
+
+4. **(Análise.)** Compare reavaliação e supressão quanto ao efeito na emoção sentida, no custo cognitivo e nas relações interpessoais.
+
+5. **(Aplicação.)** Antes de uma prova, um estudante sente-se em pânico. Proponha uma estratégia de reavaliação e explique por que ela tende a ser melhor que "engolir" o medo.
+
+6. **(Avaliação.)** "Esconder o que se sente é sempre a atitude madura." Avalie essa afirmação com base na evidência sobre supressão expressiva.
