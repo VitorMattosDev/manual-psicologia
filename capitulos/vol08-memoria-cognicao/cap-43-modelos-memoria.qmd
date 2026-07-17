@@ -1,5 +1,155 @@
 # 43. Modelos de memória
 
-::: {.em-construcao}
-🚧 Em construção.
+::: {.callout-objetivos}
+Ao final deste capítulo, você será capaz de:
+
+- **Definir** memória como um sistema de três processos — codificação, armazenamento e recuperação.
+- **Descrever** o modelo modal (Atkinson–Shiffrin) e seus três armazéns: sensorial, de curto prazo e de longo prazo.
+- **Explicar** a capacidade e a duração de cada armazém, apoiando-se nos experimentos de Sperling e de Miller e no efeito de posição serial.
+- **Contrastar** o conceito de memória de curto prazo com o de memória de trabalho (Baddeley e Hitch) e nomear seus componentes.
+- **Distinguir** os tipos de memória de longo prazo (explícita × implícita; episódica × semântica).
+- **Relacionar** os sistemas de memória a seus substratos cerebrais, a partir do caso H.M.
 :::
+
+Abrimos o volume da **memória e cognição** pela faculdade que torna possível tudo o que se seguirá: sem memória, não há aprendizagem que perdure (Vol 7), não há identidade, não há pensamento que se estenda além do instante. **Memória** é a capacidade de reter e recuperar informação ao longo do tempo. Longe de ser um "arquivo" onde gravamos cópias fiéis do vivido — a metáfora intuitiva e, como veremos no Cap. 45, enganosa —, a memória é um conjunto de **processos ativos** distribuídos por sistemas cerebrais distintos. Este capítulo apresenta os grandes modelos que a psicologia construiu para descrever sua arquitetura: quantos "armazéns" existem, quanto cabe em cada um, por quanto tempo, e como se dividem os tipos de lembrança.
+
+## Memória como sistema de três processos
+
+Antes dos modelos, uma distinção que organiza todo o campo. Lembrar envolve três etapas, e uma falha em qualquer uma delas produz esquecimento. A **codificação** (*encoding*) é a conversão da informação num formato que o sistema possa armazenar — transformar o que vemos, ouvimos ou pensamos num traço de memória. O **armazenamento** (*storage*) é a manutenção desse traço ao longo do tempo. A **recuperação** (*retrieval*) é o acesso à informação guardada quando dela precisamos. A analogia (imperfeita) com um computador ajuda: codificar é digitar, armazenar é salvar no disco, recuperar é abrir o arquivo. Boa parte deste volume consiste em detalhar cada processo — o Cap. 44 aprofunda os três — mas já convém fixar: um nome "na ponta da língua" que não vem é uma falha de *recuperação*, não necessariamente de armazenamento.
+
+## O modelo modal: três armazéns
+
+O modelo mais influente da história da memória foi proposto por Richard Atkinson e Richard Shiffrin em 1968 — o **modelo modal** ou **multiarmazém** [@atkinson_shiffrin1968]. Ele descreve a memória como um fluxo através de três depósitos sucessivos, cada um com capacidade e duração próprias (@fig-modelo-modal).
+
+::: {#fig-modelo-modal}
+```{.tikz}
+%%| filename: modelo-modal
+%%| alt: Fluxograma do modelo multiarmazém da memória. O estímulo entra na memória sensorial. Da memória sensorial, a informação atendida passa para a memória de curto prazo; o não atendido decai. Da memória de curto prazo, o ensaio mantém a informação e a codificação transfere para a memória de longo prazo; o não ensaiado é deslocado. A memória de longo prazo devolve informação recuperada à de curto prazo.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize, node distance=0.5cm]
+  \tikzset{store/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, minimum width=2.4cm, minimum height=1.5cm, align=center, font=\footnotesize\bfseries}}
+  \node[align=center, font=\footnotesize\bfseries, text=manualgray] (in) at (-1.6,0) {Estímulo\\do ambiente};
+  \node[store] (ms) at (1.4,0) {Memória\\sensorial\\{\tiny (frações de s)}};
+  \node[store] (cp) at (5.2,0) {Curto prazo\\/ trabalho\\{\tiny ($\approx$20 s; 7 itens)}};
+  \node[store, draw=manualgreen, fill=manualgreen!8] (lp) at (9.0,0) {Longo prazo\\{\tiny (ilimitado;}\\{\tiny permanente)}};
+  \draw[->, thick] (in) -- (ms);
+  \draw[->, thick] (ms) -- node[above, font=\tiny] {atenção} (cp);
+  \draw[->, thick] (cp) -- node[above, font=\tiny] {codificação} (lp);
+  \draw[->, thick, manualgreen] ([yshift=-3pt]lp.south west) .. controls (7.1,-1.4) and (7.1,-1.4) .. node[below, font=\tiny] {recuperação} ([yshift=-3pt]cp.south east);
+  % decaimentos
+  \draw[->, dashed, manualgray] (ms.south) -- ++(0,-0.9) node[below, font=\tiny] {decai};
+  \draw[->, dashed, manualgray] (cp.north) -- ++(0,0.9) node[above, font=\tiny] {deslocado / decai};
+  % laço de ensaio
+  \draw[->, manualblue] (cp.north west) .. controls (4.4,1.3) and (6.0,1.3) .. node[above, font=\tiny] {ensaio} (cp.north east);
+\end{tikzpicture}
+```
+O modelo modal de Atkinson e Shiffrin. A informação flui da **memória sensorial** para a de **curto prazo** (se atendida) e desta para a de **longo prazo** (se codificada, em geral por ensaio). O que não é atendido ou ensaiado se perde. A recuperação traz de volta o material de longo prazo à consciência.
+:::
+
+**Memória sensorial.** Um registro brevíssimo e de grande capacidade que retém a impressão bruta dos sentidos por frações de segundo. George Sperling demonstrou-a com elegância: exibindo por um instante uma matriz de doze letras e pedindo que os participantes relatassem tudo, eles lembravam só quatro ou cinco — mas se, logo após o desaparecimento, um som indicasse *qual linha* relatar, acertavam quase todas *daquela* linha [@sperling1960]. A conclusão: por um átimo, **toda** a matriz esteve disponível (a memória icônica, visual); ela apenas se apagava rápido demais para ser relatada por inteiro. A memória sensorial auditiva (ecoica) dura um pouco mais, alguns segundos.
+
+**Memória de curto prazo (MCP).** O que atendemos passa a um armazém de **capacidade limitada** e **duração curta** (cerca de 20–30 segundos sem ensaio). George Miller, num artigo célebre, estimou essa capacidade no "número mágico **sete, mais ou menos dois**" — cerca de 7 itens [@miller1956]. O truque para expandi-la é o **agrupamento** (*chunking*): reorganizar itens isolados em unidades significativas. A sequência `F-B-I-C-I-A-U-S-A` (nove letras) excede a capacidade; reagrupada como `FBI-CIA-USA` (três *chunks*), cabe folgadamente. É o mesmo motivo pelo qual memorizamos um telefone em blocos. Sem **ensaio de manutenção** (repetir mentalmente), o conteúdo da MCP decai em segundos.
+
+::: {.experimento}
+🔬 **O efeito de posição serial.** Peça a alguém que ouça uma lista de 15 palavras e depois as recite em qualquer ordem. Um padrão robusto emerge: lembram-se melhor as **primeiras** palavras (efeito de **primazia**) e as **últimas** (efeito de **recência**), e pior as do meio — a curva de posição serial tem forma de U. A interpretação clássica no modelo modal é que os dois efeitos têm origens *diferentes*: a primazia reflete a **memória de longo prazo** (as primeiras palavras tiveram mais tempo de ensaio e foram transferidas), enquanto a recência reflete a **memória de curto prazo** (as últimas ainda estão no armazém temporário). A previsão decisiva confirma-se: introduzir uma tarefa distratora de 30 segundos antes do relato **elimina a recência** (esvazia a MCP) mas **preserva a primazia** (já consolidada na MLP). A dissociação é uma das melhores evidências de que curto e longo prazo são sistemas distintos.
+:::
+
+**Memória de longo prazo (MLP).** O armazém duradouro, de capacidade para fins práticos **ilimitada** e retenção que vai de minutos a uma vida inteira. É onde reside todo o conhecimento e toda a autobiografia. Os processos que transferem material da MCP para a MLP e que depois o recuperam são o tema do próximo capítulo.
+
+## Da memória de curto prazo à memória de trabalho
+
+O conceito de MCP como um simples "depósito de passagem" revelou-se insuficiente. Alan Baddeley e Graham Hitch propuseram substituí-lo pela **memória de trabalho** (*working memory*): não um armazém passivo, mas um sistema **ativo** que mantém *e manipula* informação para tarefas em curso — raciocinar, compreender uma frase, fazer uma conta de cabeça [@baddeley_hitch1974]. Seu modelo distingue componentes:
+
+- O **executivo central**, um sistema de atenção e controle que coordena os demais, aloca recursos e decide o foco.
+- A **alça fonológica**, que retém e ensaia informação verbal e sonora (a "voz interior" que repete um número).
+- O **esboço visuoespacial**, que retém e manipula informação visual e espacial (imaginar o trajeto até em casa, girar uma figura mentalmente).
+- O **buffer episódico** (acrescentado depois), que integra informação dos outros subsistemas com a memória de longo prazo num episódio coerente.
+
+A distinção é mais que terminológica. Ela explica por que conseguimos, ao mesmo tempo, repetir um número (alça fonológica) e visualizar um mapa (esboço visuoespacial) sem grande interferência — recursos separados —, mas não conseguimos fazer duas tarefas verbais simultâneas sem que uma atrapalhe a outra. A memória de trabalho é, hoje, um dos construtos centrais da ciência cognitiva, fortemente ligada à atenção (Cap. 34), ao raciocínio e mesmo à inteligência fluida (Cap. 49).
+
+## Os tipos de memória de longo prazo
+
+A memória de longo prazo não é um bloco único. Ela se ramifica em sistemas qualitativamente distintos, com substratos cerebrais próprios (@fig-tipos-mlp). A grande divisão é entre memória **explícita** (declarativa) e **implícita** (não declarativa).
+
+::: {#fig-tipos-mlp}
+```{.tikz}
+%%| filename: tipos-mlp
+%%| alt: Diagrama em árvore dos tipos de memória de longo prazo. A memória de longo prazo divide-se em explícita, que se pode declarar conscientemente, e implícita, sem consciência. A explícita subdivide-se em episódica, de eventos vividos, e semântica, de fatos e conceitos. A implícita subdivide-se em procedimental, de habilidades, e outras como o priming e o condicionamento clássico.
+\begin{tikzpicture}[>=Stealth, font=\scriptsize]
+  \tikzset{box/.style={rectangle, rounded corners, draw=manualblue, fill=manualblue!8, align=center, minimum height=0.7cm, inner sep=3pt}}
+  \tikzset{leaf/.style={rectangle, rounded corners, draw=manualgray, fill=manualgray!8, align=center, minimum height=0.7cm, inner sep=3pt}}
+  \node[box, font=\footnotesize\bfseries] (mlp) at (5,4) {Memória de longo prazo};
+  \node[box, draw=manualgreen, fill=manualgreen!8] (exp) at (2.3,2.6) {\textbf{Explícita}\\{\tiny (declarativa, consciente)}};
+  \node[box, draw=manualred, fill=manualred!8] (imp) at (7.7,2.6) {\textbf{Implícita}\\{\tiny (não declarativa)}};
+  \node[leaf] (epi) at (0.6,0.8) {Episódica\\{\tiny eventos vividos}};
+  \node[leaf] (sem) at (3.6,0.8) {Semântica\\{\tiny fatos, conceitos}};
+  \node[leaf] (pro) at (6.6,0.8) {Procedimental\\{\tiny habilidades}};
+  \node[leaf] (out) at (9.4,0.8) {Priming,\\condicionamento};
+  \draw[->] (mlp) -- (exp); \draw[->] (mlp) -- (imp);
+  \draw[->] (exp) -- (epi); \draw[->] (exp) -- (sem);
+  \draw[->] (imp) -- (pro); \draw[->] (imp) -- (out);
+\end{tikzpicture}
+```
+Os sistemas da memória de longo prazo. A **explícita** (que podemos declarar conscientemente) divide-se em **episódica** (eventos autobiográficos) e **semântica** (conhecimento geral); a **implícita** (sem acesso consciente) inclui a **procedimental** (habilidades), o *priming* e o condicionamento clássico (Cap. 39).
+:::
+
+A **memória explícita** reúne o que podemos evocar e declarar conscientemente. Endel Tulving subdividiu-a em **episódica** — a memória de eventos específicos que vivemos, situados no tempo e no espaço ("meu primeiro dia de aula"), uma espécie de viagem mental ao passado — e **semântica**, o conhecimento geral de fatos e conceitos, desligado de quando ou onde o aprendemos ("a capital da França é Paris") [@tulving1972]. A **memória implícita** opera sem consciência: inclui a memória **procedimental** de habilidades motoras e cognitivas (andar de bicicleta, digitar) — que executamos sem conseguir verbalizar como —, o *priming* (facilitação por exposição prévia) e as respostas do condicionamento clássico. Você sabe *andar de bicicleta* (implícito) sem conseguir *dizer* como o faz (o explícito falha onde o implícito é perfeito).
+
+::: {.base-neural}
+**O caso H.M. e a dissociação dos sistemas.** Nenhum paciente ensinou mais sobre memória do que Henry Molaison (conhecido por décadas apenas como **H.M.**). Em 1953, para tratar uma epilepsia grave, removeram-lhe cirurgicamente grande parte dos **lobos temporais mediais**, incluindo o **hipocampo** de ambos os lados [@scoville_milner1957]. As crises melhoraram — mas H.M. ficou incapaz de formar **novas memórias explícitas**: uma **amnésia anterógrada** densa. Conversava normalmente, mas minutos depois não recordava o encontro; releu a mesma revista por anos como se fosse inédita. Crucialmente, três coisas permaneceram intactas, e cada uma revela uma dissociação. Primeira: sua **memória de curto prazo** funcionava (retinha um número enquanto o ensaiava) — logo, MCP e MLP são sistemas distintos, e o hipocampo é necessário para transferir uma à outra, não para manter a primeira. Segunda: suas memórias **antigas**, anteriores à cirurgia, estavam preservadas — logo, o hipocampo consolida memórias novas mas não é seu depósito final. Terceira, a mais surpreendente: H.M. **aprendia habilidades motoras novas** (como desenhar diante de um espelho), melhorando dia após dia — embora jurasse nunca ter feito aquilo antes [@squire1988]. Ou seja, sua memória **implícita/procedimental** estava intacta enquanto a explícita ruíra: prova cabal de que são sistemas cerebrais separados. O que a psicologia inferira de experimentos, a lesão de H.M. escreveu no cérebro.
+:::
+
+## Síntese
+
+::: {.callout-sintese}
+- **Memória** é reter e recuperar informação por três processos: **codificação**, **armazenamento** e **recuperação**. Uma falha em qualquer um gera esquecimento.
+- O **modelo modal** (Atkinson–Shiffrin) postula três armazéns: **sensorial** (grande, brevíssimo — Sperling), **curto prazo** (~7 itens, ~20 s — Miller; expansível por *chunking*) e **longo prazo** (ilimitado, duradouro).
+- O **efeito de posição serial** (primazia + recência) dissocia MLP e MCP: uma distração elimina a recência mas poupa a primazia.
+- A **memória de trabalho** (Baddeley e Hitch) substitui a MCP passiva por um sistema ativo com **executivo central**, **alça fonológica**, **esboço visuoespacial** e **buffer episódico**.
+- A **MLP** divide-se em **explícita** (declarativa: **episódica** + **semântica**, Tulving) e **implícita** (procedimental, *priming*, condicionamento).
+- O caso **H.M.** (lesão do hipocampo) prova a separação dos sistemas: amnésia anterógrada explícita com MCP, memórias antigas e memória procedimental preservadas.
+:::
+
+## Glossário do capítulo
+
+::: {.glossario}
+**Codificação / armazenamento / recuperação**
+:   Os três processos da memória: converter em traço, manter no tempo e acessar quando necessário.
+
+**Modelo modal (multiarmazém)**
+:   Modelo de Atkinson e Shiffrin com três armazéns sucessivos (sensorial, curto prazo, longo prazo) [@atkinson_shiffrin1968].
+
+**Memória sensorial**
+:   Registro brevíssimo e de grande capacidade da impressão dos sentidos (icônica, ecoica) [@sperling1960].
+
+**Memória de curto prazo**
+:   Armazém de capacidade (~7 itens) e duração (~20 s) limitadas; capacidade expandida por *chunking* [@miller1956].
+
+**Efeito de posição serial**
+:   Melhor recordação dos primeiros (primazia) e últimos (recência) itens de uma lista.
+
+**Memória de trabalho**
+:   Sistema ativo que mantém e manipula informação, com executivo central e subsistemas verbal e visuoespacial [@baddeley_hitch1974].
+
+**Memória explícita / implícita**
+:   Declarável conscientemente (episódica + semântica) / expressa sem consciência (procedimental, *priming*).
+
+**Memória episódica / semântica**
+:   Eventos autobiográficos situados no tempo / conhecimento geral de fatos e conceitos [@tulving1972].
+
+**Amnésia anterógrada**
+:   Incapacidade de formar novas memórias explícitas após uma lesão, com memórias antigas preservadas [@scoville_milner1957].
+:::
+
+## Para refletir
+
+1. **(Recuperação.)** Nomeie os três armazéns do modelo modal e dê a capacidade e a duração aproximadas de cada um.
+
+2. **(Conceitual.)** Como o experimento de Sperling mostra que a memória sensorial guarda *mais* do que conseguimos relatar? Qual foi o papel da "dica de linha"?
+
+3. **(Reflexão crítica.)** Explique por que introduzir uma tarefa distratora antes do relato elimina o efeito de recência mas não o de primazia. O que isso revela sobre a arquitetura da memória?
+
+4. **(Comparação.)** Diferencie "memória de curto prazo" de "memória de trabalho". Por que conseguimos repetir um número e visualizar um mapa ao mesmo tempo, mas não fazer duas tarefas verbais simultâneas?
+
+5. **(Aplicação.)** Classifique cada uma como episódica, semântica, procedimental ou implícita: (a) saber que a água ferve a 100 °C; (b) lembrar-se da festa de ontem; (c) amarrar os sapatos; (d) reconhecer mais rápido uma palavra vista há pouco.
+
+6. **(Integração.)** Que três dissociações o caso H.M. revelou, e como cada uma sustenta a existência de sistemas de memória distintos?
