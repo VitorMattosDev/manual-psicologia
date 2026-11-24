@@ -6,7 +6,6 @@ Cobre a disciplina do básico ao avançado em 15 volumes (~105 capítulos), cons
 
 - **Proposta editorial:** [`PLANO.md`](PLANO.md)
 - **Fila de autoria (status por capítulo):** [`ROADMAP.md`](ROADMAP.md)
-- **Instruções operacionais para o Claude Code:** [`CLAUDE.md`](CLAUDE.md)
 
 > **Aviso.** Este manual é **educacional**. Não oferece diagnóstico, avaliação ou
 > orientação clínica, e não substitui um profissional qualificado.
@@ -70,7 +69,7 @@ quarto render capitulos/vol01-o-que-e-psicologia/cap-01-introducao.qmd --to html
 A fila autoritativa é o `ROADMAP.md`: um capítulo por linha, com caminho canônico e
 status (⬜ pendente · 🔄 em andamento · ✅ concluído). A autoria segue **fatia vertical** —
 completa-se um volume antes de abrir o próximo, e uma fase antes da próxima. O Cap. 1 é o
-**gabarito de estilo**: replique sua anatomia (`CLAUDE.md §4`).
+**gabarito de estilo**: replique sua anatomia.
 
 Commits de capítulo: `cap NN: <título>`.
 
